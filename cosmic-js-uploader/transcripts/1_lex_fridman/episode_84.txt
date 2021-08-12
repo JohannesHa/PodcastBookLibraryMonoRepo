@@ -1,0 +1,758 @@
+00:00:00
+The following is a conversation with Nick Bostrom, a philosopher, a University of Oxford and the director of the Future of Humanity Institute. He has worked on fascinating and important ideas in existential risk simulation, a hypothesis, human enhancement, ethics and the risks of superintelligent A.I systems, including in his book, Superintelligence. I can see talking to Nick multiple times in this podcast many hours each time because he has done some incredible work in artificial intelligence, in technology, space, science and really philosophy in general.
+00:00:36
+But we have to start somewhere. This conversation was recorded before the outbreak of the coronavirus pandemic that both Nick and I, I'm sure, will have a lot to say about next time we speak, and perhaps that is for the best, because the deepest lessons can be learned only in retrospect when the storm is passed. I do recommend you read many of his papers on the topic of existential risk, including the technical report titled Global Catastrophic Risks Survey that he co-authored with Anders Sandberg.
+00:01:09
+For everyone feeling the medical, psychological and financial burden of this crisis, I'm sending love your way. Stay strong. We're in this together, will beat this thing. This is the artificial intelligence podcast, if you enjoy it, subscribe on YouTube, reviewed with five stars, an Apple podcast, support on Pichon or simply connect with me on Twitter. Allex Friedman spelled F.R. Eyed Man as usual. I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation.
+00:01:41
+I hope that works for you and doesn't hurt the listening experience. This show was presented by Kashyap, the number one finance app in the App Store, when you get it, use Code Leks Podcast Cashable lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar since catch up does fractional share trading. Let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is an algorithmic marvel.
+00:02:10
+So big props to the Kashyap engineers for solving a hard problem that in the end provides an easy interface that takes a step up to the next layer abstraction over the stock market, making trading more accessible for new investors and diversification much easier. So, again, if you get cash out from the App Store or Google Play and use the Collects podcast, you get ten dollars in cash. Apple also donate ten dollars. The first, an organization that is helping to advance robotics and stem education for young people around the world.
+00:02:43
+And now here's my conversation with Nick Bostrom. At the risk of asking the Beatles to play yesterday or the Rolling Stones to play satisfaction, let me ask you the basics.
+00:03:13
+What is the simulation hypothesis that we are living in a computer simulation?
+00:03:20
+What is a computer simulation? How are we supposed to even think about that?
+00:03:24
+Well, so the hypothesis is meant to be understood in a literal sense, not that we can kind of metaphorically view the universe as an information processing physical system, but that there is some advanced civilization, have built a lot of computers, and that what we experience is an effect of what's going on inside one of those computers, so that the world around us and our own brains, everything we see and perceive and think and feel would exist because this computer is running certain programs.
+00:04:06
+Do you think of those computer as something similar to the computers of today, these deterministic sort of Turing machine type things? Is that all we're supposed to imagine or we're supposed to think of something more like like a like a quantum mechanical system, something much bigger, something much more complicated, something much more mysterious.
+00:04:28
+From our current perspective, the ones we have today would do fine. I mean, bigger. Certainly you'd need more and more memory and more processing power. I don't think anything else would be required now. It might well be that they do have ideas. Maybe they have quantum computers and other things that would give them even more. It seems kind of plausible, but I don't think it's a necessary assumption in order to get to the conclusion that a technologically mature civilization would be able to create these kinds of computer simulations with conscious beings inside them.
+00:05:03
+So do you think the simulation hypothesis is an idea that's most useful in philosophy, computer science, physics? Sort of. Where do you see it? Having valuable kind of starting point in terms of the thought experiment of it, is it useful?
+00:05:23
+I guess it's more informative and interesting and maybe important, but it's not designed to be useful for something else.
+00:05:34
+OK, interesting. Sure. But is it philosophically interesting or is there some kind of implications of computer science in physics?
+00:05:42
+I think not so much for computer science or physics per say. Certainly it would be of interest in philosophy, I think also to say cosmology or physics. And as much as you are interested in the fundamental building blocks of the world and the rules that govern it, and if we are in a simulation, understand the possibility that, say, physics at the level where the computer running the simulation could be different from the physics governing phenomena in the simulation. So I think it might be interesting from point of view of religion or just for for kind of trying to figure out what what the heck is going on.
+00:06:26
+So we mentioned the.
+00:06:30
+Simulation hypothesis, so far, not the results, a simulation argument, which I tend to make a distinction, so a simulation hypothesis, we are living in a computer simulation simulation argument. This argument that tries to show that one of three propositions is true, one of which is the simulation hypothesis. But there are two alternatives in the original simulation argument, which we can get to. Let's go there, by the way, confusing terms because people, I think, probably naturally think simulation argument equals simulation hypothesis.
+00:07:02
+Yeah, just terminology wise. But let's go. There's a simulation hypothesis means that we are living a simulation.
+00:07:09
+The hypothesis that we're living in simulation simulation argument has these three complete possibilities that cover all possibilities. So whatever.
+00:07:18
+So it's like a disjunction. It says at least one of these three is true. Yes. Although it doesn't on its own. Tell us which one. So the first one is that almost all civilizations at our current stage of technological development go extinct before they reach technological maturity. So there is some great filter that makes it so that basically none of the civilizations throughout I mean, remember, a vast cosmos will ever get to realize the full potential of technological development.
+00:07:59
+And this could be theoretically speaking, this could be because most civilizations kill themselves to equally or destroy themselves, or it might be super difficult to build a simulation. So the span of time theoretically could be both.
+00:08:15
+Now, I think it looks like we would technologically be able to get there in a time span that is short compared to, say, the lifetime of planets and other sort of astronomical processes.
+00:08:31
+So your intuition is to build a simulation is not well. So this is interesting concept of technological maturity. It's kind of an interesting concept to have other purposes as well.
+00:08:42
+We can see even based on our current limited understanding, what some lower bound would be on the capabilities that you could realize by just developing technologies that we already see are possible.
+00:08:55
+So, for example, one one of my research fellows here, Eric Drexler, back in the 80s studied molecular manufacturing, that is, you could analyze using theoretical tools and computer modeling the performance of various molecularly precise structures that we didn't then and still don't today have the ability to actually fabricate. But you could say that, well, if we could put these atoms together in this way, then the system would be stable and it would rotate with at this speed and have all these computational characteristics.
+00:09:33
+And he also outlined some pathways that would enable us to get to this kind of molecular manufacturing in the fullness of time.
+00:09:42
+And you could do other other studies done. You can look at the speed at which say it would be possible to colonize the galaxy if you had a mature technology. We have an upper limit, which is the speed of light. We have sort of a low our current limit, which is how fast current rockets go. We know we can go faster than that by just, you know, making them bigger and have more fuel and stuff. And you can then start to describe the technological affordance that would exist once a civilization has had enough time to develop ever.
+00:10:15
+At least those technologies we already know are possible, then maybe they will discover other new physical phenomena as well that we haven't realized that would enable them to do even more. But but at least there is this kind of basic set of capabilities. Can you just linger on that? How do we jump from molecular manufacturing to deep space exploration to mature techno technology? Like what's the connection?
+00:10:41
+Well, so this would be two examples of technological capabilities said that we can have a high degree of confidence are physically possible in our universe, and that a civilization that was allowed to continue to develop its science and technology would eventually attain.
+00:11:00
+You can intuit like we can kind of see this set of breakthroughs that are likely to happen. So you can see, like, what did you call it, the technological set with computers.
+00:11:11
+Maybe it's easier to put in one if we could just imagine bigger computers using exactly the same parts that we have.
+00:11:19
+So you could kind of scale things that way. Right. But you could also make processors a bit faster if you had this molecular nanotechnology that Director Baxter described. He. Characterized as a kind of crude computer built with these parts that that would perform at a million times the human brain while being significantly smaller the size of a sugar cube. And he made no claim that that's the optimum computing structure, like fraud. You know, we could build a faster computers that would be more efficient, but at least you could do that if you had the ability to do things that were atomically precise.
+00:11:54
+Yes. I mean, you can combine these two. You could have this kind of nano molecular ability to build things at the bottom and then say at this as a spatial scale that would be attainable through space colonizing technology.
+00:12:10
+You could then start, for example, to characterize a lower bound on the amount of computing power that technologically mature civilization would have if it could grab resources in a planet and so forth and then use this molecular nanotechnology to optimize them for computing.
+00:12:28
+You would get a very, very high, lower bound on the amount of compute.
+00:12:34
+So the difference in terms of technological, mature civilization is one that took that piece of technology to its to its lower bound. What is it?
+00:12:43
+Technological measures. So that means it's a stronger concept than we really need for the simulation hypothesis.
+00:12:48
+I just think it's interesting in its own right to say it would be the idea that there is at some stage of technological development where you basically maxed out, that you developed all those general-purpose widely useful technologies that could be developed or at least kind of come very close to the, you know, the nine point nine percent or something. So that's that's that's an independent question. You can think either that there is such a ceiling or as you might think, it just caused the technology to just goes on forever.
+00:13:19
+What is your sense for I would guess that there is a maximum that you would start to asymptotic towards.
+00:13:27
+So new things won't keep springing up new ceilings in terms of basic technological capabilities? I think that there is like a finite set of those that can exist in this universe. More of I mean, I wouldn't be surprised if we actually reached close to that level fairly shortly after we have, say, machine super intelligence. So I don't I don't think it would take millions of years for a human originating civilization to begin to do this. It is more likely to happen on historical timescales.
+00:14:03
+But that's that's an independent speculation from the simulation argument. I mean, for the purpose of the simulation argument. And it doesn't really matter whether it goes indefinitely far up or whether there is a ceiling, as long as we know we could at least get to a certain level. And it also doesn't matter whether that's going to happen in 100 years or 5000 years or 50 million years, like the timescale three didn't make any difference any longer than a little bit.
+00:14:30
+Like there's a big difference between one hundred years and 10 million years. Yeah. So it doesn't really not matter because you just said, does it matter if we jump scales to be on historical scales?
+00:14:46
+So we described desautel for the simulation argument. Sort of.
+00:14:53
+Doesn't it matter that we if it takes 10 million years, it gives us a lot more opportunity to destroy civilization in the meantime?
+00:15:02
+Yeah, well, so it would shift around the probabilities between these three alternatives. That is, if we are very, very far away from being able to create these simulations, if it's like the billions of years into the future, then it's more likely that we will fail ever to get there more time for us to kind of go extinct along the way. And so similarly for other civilizations.
+00:15:23
+So it is important to think about how hard it is to build a simulation in terms of figuring out which of the disjunct, but for the simulation argument itself, which is agnostic as to which of these three alternatives is true. Like, you don't have to like the simulation argument would be true. Whether or not we thought this could be done in five hundred years or it would take five hundred million years for sure. The simulation argument stands. I mean, I'm sure there might be some people who oppose it, but it doesn't matter.
+00:15:53
+And it's very nice those three cases cover it. But the fun part is at least not saying what the probabilities are, but kind of thinking about kind of enduring reasoning, about what's more likely what what are the kind of things that would make some of the arguments less and more. So like, let's actually I don't think we went through them. So no one is we destroy ourselves before we have a civil right.
+00:16:18
+So that's kind of sad. But we have to think not just what what might destroy us. I mean, there could be some whatever disastrous ometer or. Slamming the Earth a few years from now, that that could destroy us, right. But you would have to postulate in order for this first disjunct to be true, that almost all civilizations throughout the cosmos also failed to reach technological maturity. And the underlying assumption there is that there is likely a very large number of other intelligent civilizations.
+00:16:57
+Well, if there are. Yeah, then then they would virtually all have to succumb in the same way. I mean. Then that leads off another I guess there are a lot of little digressions that they're thinking, oh, they're oh, they're dragging us back.
+00:17:11
+Well, there are these there is a set of basic questions that always come up in conversations with interesting people like the Fermi paradox. Like those like you could almost define whether a person is interesting, whether at some point with a Fermi paradox comes off like, wow.
+00:17:30
+So for what it's worth, it looks to me that the universe is very big. I mean, in fact, according to the most popular current cosmological theory is infinitely big. And then it would follow pretty trivially that that it would contain a lot of other civilizations.
+00:17:48
+In fact, infinitely many, if you have some local stochastic city and infinite demand, it's like, you know, infinitely many lumps of matter, one next to another. There's kind of random stuff in each one.
+00:18:00
+Then you're going to get all possible outcomes with probability, one infinitely repeated.
+00:18:08
+So so then certainly that would be a lot of extra terrestrials out there.
+00:18:13
+If I sort of thought if the universe is very big, there might be a finite but large number if we were literally the only one we hadn't done.
+00:18:22
+Of course, if we went extinct, then all of civilization is at our current stage would have gone extinct before becoming technological mature. So then it kind of becomes trivially true that a very high fraction of those went extinct. But if we think there are many, I mean, it's interesting because there are certain things that plausibly.
+00:18:45
+Could kill us, like if you look at existential risks and it might be a different like that, that the best answer to what would be most likely to kill us might be a different answer than the best answer to the question. If there is something that kills almost everyone, what would that be? Because that would have to be some risk factor that was kind of uniform over all possible civilizations.
+00:19:10
+So in this for the for the figures argument, you have to think about not just us, but like every civilization dies before they create the simulation or something very close to everybody.
+00:19:24
+OK, so what's number two in the number two is the convergence hypothesis. That is that maybe like a lot of some of these civilizations do, make it through to technological maturity. But out of those who do get there, they all lose interest in creating these simulations.
+00:19:43
+So they just have the capability of doing it, but they choose not to. And not just a few of them decide not to, but, you know, you know, out of a million, you know, maybe not even a single one of them would do it.
+00:19:58
+And I think when you say lose interest, that sounds like unlikely because it's like they get bored or whatever. But it could be so many possibilities within that. I mean, losing interest could be.
+00:20:16
+It could be anything from it being exceptionally difficult to do to fundamentally changing the sort of the fabric of reality, if you do it, is ethical concerns.
+00:20:29
+All those kinds of things could be exceptionally strong pressures.
+00:20:32
+Well, certainly. I mean, yeah, ethical concerns. I mean, not really too difficult to do. I mean, in a sense, that's the first assumption that you get to technological maturity where you would have the ability using only a tiny fraction of your resources to create many, many simulations. So it wouldn't be the case that they would need to spend half of their GDP forever in order to create one simulation. And they had this, like, difficult debate about whether they should, you know, invest half of their GDP for this.
+00:21:03
+It would be like, well, if only a little fraction of the civilization feels like doing this at any point during maybe their, you know, millions of years of existence, then there would be millions of simulations.
+00:21:17
+But but certainly there could be many conceivable reasons for why there would be this many possible reasons for not running Ancestors' simulations. Or are the computer simulations, even if you could do so cheaply, by the way, it an ancestor simulation?
+00:21:34
+Well, that would be a type of computer simulation that would contain people like those we think have lived on our planet in the past and like ourselves in terms of the types of experiences to have and where those simulated people are conscious, like not just simulated in the same sense that a non player character would be simulated in the current computer game, where it kind of has an Avatar body and then a very simple mechanism that moves it forward or backwards or but but something where the the simulated being has a brain, let's say, that's simulated at a sufficient level of granularity, that that it would have the same subjective experiences as we have.
+00:22:20
+So where does consciousness fit into this? Do you think simulation? Because there are different ways to think about how this can be simulated, just like you're talking about now. Do we have to simulate each brain within the larger simulation? Is it enough to simulate just the brain, just the minds and not the simulation, not the big guy in the universe itself? Because there are different ways to think about this.
+00:22:47
+Yeah, I guess there is a kind of premise. In the simulation argument. Rolled in from philosophy of mind, that is, that it would be possible to create a conscious mind in a computer and that what determines whether some system is conscious or not is not like whether it's built from organic biological neurons, but maybe something like what the structure of the computation is that it implements. So we can discuss that if we want. But I think it would be forward as far as maybe that it would be sufficient.
+00:23:24
+So if you had. A computation that was identical to the competition in the human brain down to the level of neurons. If you had a simulation with a hundred billion neurons connected in the same way as the human brain, and you then roll that forward.
+00:23:41
+With the same kind of synaptic weights and so forth, you actually had the same behavior coming out of this as a human with a brain would have done done. I think that would be conscious now. It's possible you could also generate consciousness.
+00:23:57
+Without having that detailed assimilation there, I'm getting more uncertain exactly how much it could simplify or abstract away.
+00:24:08
+Can you linger on that?
+00:24:09
+What do you mean? There's a mist where you're placing consciousness in the second?
+00:24:14
+Well, so so if you are a computational, do you think that what creates consciousness is the implementation of a computation, some property, emergent property of the computation itself?
+00:24:25
+Yeah, the idea. Yeah, you could say that. But then the question is which what's the class of computations such that when they are done consciousness emerges. So if you just have like something that adds one plus one plus one plus one, the simple computation, you're thinking maybe that's not going to have any consciousness.
+00:24:45
+If, on the other hand, the competition is won like our human brains are performing, where as part of the competition there is like, you know, a global workspace, a sophisticated attention mechanism that is like self representations of other cognitive processes and a whole lot of other things that possibly would be conscious. And in fact, if it's exactly like ours, I think definitely it would. But exactly how much less than the full computation that the human brain is performing would be required is a little bit.
+00:25:23
+I think of an open question to ask is another interesting question as well, which is. Would it be? Sufficient to just have, say, the brain or would you need the environment? Right, that's a nice way in order to generate the same kind of experiences that we have. And there is a bunch of stuff we don't know.
+00:25:46
+I mean, if you look at, say, current virtual reality environments, one thing that's clear is that we don't have to simulate all details of them all the time in order to say that the human player, to have the perception that there is a full reality and that you can have a procedurally generated virtue might only render a scene when it's actually within the view of the player character.
+00:26:12
+And so, similarly, if this if this if this environment that that we perceive is simulated, it might be that all the parts that come into our view are rendered at any given time.
+00:26:27
+And a lot of aspects that never come into view, say the details of this microphone. I'm talking into exactly what each atom is doing at any given point in time might not be part of the simulation, only a more coarse representation.
+00:26:44
+So that to me is actually from an engineering perspective where the simulation hypothesis is really interesting to think about is how much how difficult is it to fake sort of in a virtual reality context?
+00:26:58
+I don't know.
+00:26:59
+Fake is the right word, but to construct a reality that is sufficiently real to us to be to be immersive in the way that the physical world is. I think that that's actually probably an unanswerable question of psychology, of computer science, of how how where is the line where it becomes so immersive that you don't want to leave that world.
+00:27:25
+Yeah. All right. That you don't realize while you're in it that it is a virtual world.
+00:27:30
+Those are two actually questions. Yours is the more sort of the good question about the realism, the mind from my perspective, what's interesting is it doesn't have to be real, but it.
+00:27:43
+How how can you construct a world that we wouldn't want to leave? Yeah, I mean, I think that might be to lower a bar. I mean, if you think so, when people first had the pong or something like that, they I'm sure there were people who wanted to keep playing it for a long time because it was fun and I wanted to be in this little world. I'm not sure we would say it's immersive.
+00:28:03
+I mean, I guess in some sense it is. But like an absorbing activity, it doesn't even have to be.
+00:28:08
+But they left that world, though. That's so like I think that bar is deceivingly high. So they eventually so that you can play Pong or Starcraft or whatever, more sophisticated games, four hours for four months. While World of Warcraft could be a big addiction, but eventually they escape that. You mean when it's absorbing enough that you would spend your entire life? It would, yeah.
+00:28:36
+Choose to spend your entire life in there and then thereby changing the concept of what reality is, is your reality. Your reality becomes the game not because you're fooled, but because you've made that choice.
+00:28:51
+Yeah. And it may be different. People might have different preferences regarding that. Some might, even if you had any perfect virtual reality, might still prefer not to spend the rest of their lives there. I mean, in philosophy, there's this experience machine thought experiment. You come across this. So Robert Nozick had this thought experiment where you imagine some crazy super duper neuroscientists of the future have created a machine that could give you any experience you want. If you step in there and for the rest of your life, you can kind of pre-programmed it in different ways.
+00:29:33
+So your fondest dreams could come true. You could whatever you dream, you want to be a great artist, a great lover, like Have a Wonderful Life.
+00:29:44
+All of these things, if you step into the experience machine, will be your experiences constantly happy and but would kind of disconnect from the rest of reality and you would float there in the tank.
+00:29:58
+And the Nozick thought that most people would choose not to enter the experience machine. I mean, many might want to go there for a holiday, but they wouldn't want to have to check out of existence permanently. And so he thought that was an argument against certain views of value. According to what we what we value is a function of what we experience, because in the experience machine, you can have an experience you want. And yet many people would think that would not be much value.
+00:30:29
+So therefore, what we value depends on other things than what we experience.
+00:30:35
+So, OK, can you can you take that argument further? I mean, what about the fact that maybe what we value is that up and down of life so you can have ups and downs in the experience machine.
+00:30:45
+Right. But what can to have in the experience machine? Well, I mean, that then becomes an interesting question to explore, but for example, real connection with other people.
+00:30:56
+If the experience machine is a a machine where it's only you like, that's something you wouldn't have, that you would have the subjective experience that would be like fake people.
+00:31:05
+Yeah, but when if you gave somebody flowers, there wouldn't be anybody there who actually got happy. It would just be a little simulation of somebody smiling. But the simulation would not be the kind of simulation I'm talking about in the simulation argument where the simulated creature is conscious. It would just be a kind of smiley face that would look perfect and real to.
+00:31:25
+So we're now drawing a distinction between appear to be perfectly real and actually being real. Yeah. So that could be one thing, I mean, like a big impact on history, maybe it was also something you won't have if you check into this experience machine. So some people might actually feel the life I want to have for me is one where I have a big positive impact on history unfolds. And so you could kind of explore these different possible explanations for why it is you wouldn't want to go into the experience machine if that's if that's what you feel.
+00:32:05
+And one interesting observation regarding this Nozick thought experiment and the conclusions he wanted to draw from it is how much is a kind of a status quo effect. So a lot of people might not want to jettison control out there to plug into this machine. But if they instead were told, well, what you've experienced up to this point was a dream. Now, do you want to disconnect from this and enter the real world when you have no idea maybe what the real world is?
+00:32:40
+Or maybe you could say while you're actually a farmer in Peru growing in peanuts and you could live for the rest of your life in this way? Or would you want to continue your dream alive as Lex Friedemann going around the world making podcast and doing research? So if the status quo was that the that they were actually in the experience machine, a lot of people might prefer to live the life that they are familiar with rather than sort of bail out into.
+00:33:14
+So it's interesting, the change itself, the leap. Yeah. So it might not be so much the the reality itself that we are after, but it's more that we are maybe involved in certain projects and relationships and we have, you know, a self identity and these things that our values are kind of connected with carrying that forward. And then whether it's inside a tank or outside a tank in Peru or whether inside a computer, outside a computer, that's kind of less important what what we ultimately care about.
+00:33:47
+So just to linger on it is interesting. I find maybe people are different, but I find myself quite willing to take the leap to the farmer in Peru, especially as the virtual reality system become more realistic. I find that possibility and I think more people would take that leap.
+00:34:08
+But I think in this in this thought experiment, just to make sure we are so in this case, that the farmer in Peru would not be a virtual reality, that would be the real the reality that your life like before this whole experience machine started. Well, I kind of assumed from that description you're being very specific, but that kind of idea just like washes away the concept of what's real.
+00:34:32
+I mean, I'm still a little hesitant about your kind of distinction between real and illusion, because when you can have an illusion that feels I mean, that looks real.
+00:34:46
+And what. I don't know how you can definitively say something is real or not like what's what's a good way to prove that something is real in that context?
+00:34:55
+Well, so I guess in this case, it's more depression. In one case, you're floating in a tank with these wires by the superduper neuroscientist's plugging into your head, giving your legs Friedemann experiences and the other, you're actually tilling the soil in Peru, growing peanuts. And then those peanuts are being eaten by other people all around the world, by the experts. And that's that's two different possible situations in the one and the same real world that that you could choose to occupy.
+00:35:27
+But just to be clear, when you're in a vat with wires in the neuroscientist's, you can still go farming in Peru, right?
+00:35:37
+Well, you could you could if you wanted to. You could have the experience of farming in Peru. But but that wouldn't be any peanuts grown.
+00:35:45
+Well, but what makes it peanut?
+00:35:47
+So so peanut could be grown and you could feed things with that peanut. And why can't all of that be done in a simulation? I hope, first of all, that they actually have peanut farms in Peru. I guess we'll get a lot of comments otherwise from angry.
+00:36:06
+Yes, I was with you up to the point when you started talking about you should know you can realize your own out of this in that climate now.
+00:36:15
+I mean, I think I mean, I I in the simulation, I think there is a sense, the importance of this in which it should all be real. Nevertheless, there is a distinction between inside a simulation and outside a simulation or in the case of Nozick thought experiment, whether you're in the VAT or outside the VAT. And some of those differences may or may not be important. I mean, that that comes down to your values and preferences.
+00:36:42
+So if they if they experience machine only gives you the experience of growing peanuts, but you're the only one in the experience machines other you can within the experience machine others can plug in.
+00:36:58
+Well, there are versions of the experience machine. So in fact you might want to have distinguishment, thought experiments, different versions of it. So it's like in the original thought experiment, maybe it's only just you and you think I wouldn't want to go in there. Well, that tells you something interesting about what you value and what you care about. Then you could say, well, what if you add the fact that that would be other people in there and you would interact with them?
+00:37:20
+Well, it starts to make it more attractive, right? Then you could add in, well, what if you could also have important long term effects on human history and the world and you could actually do something useful even though you were in there that makes it maybe even more attractive, like you could actually have a life that had a purpose and consequences. And so as you sort of add more into it, it becomes more similar to the the baseline reality that that you were comparing it to.
+00:37:50
+Yeah, but I just think inside the experience machine and. Without taking those steps you just mentioned, you you still have an impact on long term history.
+00:38:01
+Of the creatures that live inside that of the quote unquote, fake creatures that live inside that experience machine and that like at a certain point, you know, if there's a person waiting for you inside their experience machine, maybe your newly found wife and she dies.
+00:38:23
+She has fears. She hopes, and she exists in that machine.
+00:38:27
+When you plug out when you unplug yourself and plug back in, she's still there going about her life.
+00:38:33
+Well, in that case, yeah, she starts to have more of an independent existence, independent existence. But it depends, I think, on how she's implemented in the experience machine. Take one limited case where all she is is a static picture on the wall, a photograph. So you think, well, I can look at her. Right. But that's it. There's no doubt. Then you think, well, it doesn't really matter much what happens to that.
+00:38:58
+And in more than a normal photographs, if you tear it up right, it means you can't see it anymore. But you haven't harmed the person whose picture tore up the good.
+00:39:08
+But but if it is actually implemented, say, at a neural level of detail. So that is a fully realized digital mind with the same behavioral repertoire as you have done. Very possibly she would be a conscious person like you are and then you would what you do in in this experience machine would have real consequences for how this other mind felt.
+00:39:34
+So you have to specify which of these experienced machines you are talking about. I think it's not entirely obvious. That it will be possible to have an experienced machine that gave you a normal set of human experiences. Which include experiences of interacting with other people without that also generating consciousness corresponding to those other people.
+00:39:58
+That is, if you create another entity that you perceive and interact with, that to you looks entirely realistic. Not just when you say hello, they say hello back, but you have a rich interaction. Many days, deep conversations like it might be that the only possible way of implementing that would be one that also has a side effect. Instantiate that this other person in another detail that you would have a second consciousness there.
+00:40:25
+I think that's to some extent an open question.
+00:40:29
+So you don't think it's possible to fake consciousness of.
+00:40:32
+Well, it might be. I mean, I think you can certainly fake if you have a very limited interaction with somebody, you could certainly fake that that that is if all you have to go on is somebody said hello to you, that's not enough for you to tell whether that was a real person there or a prerecorded message or, you know, like a very superficial simulation that has no consciousness because that's something easy to fake. We could already fake it.
+00:40:57
+Now you can record a voice recording and you know, but but if you have a richer set of interactions where you're allowed to answer or ask open ended questions and probe from different angles, that could sort of be you could give canned answer to all of the possible ways that you could probe it, then it starts to become more plausible that the only way to realize this thing in such a way that you would get the right answer for many which angle you probably it would be a way of instantiating it.
+00:41:25
+We also instantiated a conscious mind Mousie on the intelligence part because there's something about me that says consciousness is easier to fake. Like I, I've recently gotten my hands on a lot of numbers. Don't ask me why or how, but and I've made them.
+00:41:42
+There's just the most robotic mobile platform for experiments and I made them scream and or moan in pain so on just to see when they're responding to me. And it's just a sort of psychological experiment myself. And I think they appear conscious to me pretty quickly. Like I to me at least, my brain can be tricked quite easily. Right. So if I introspect, it's harder for me to be tricked that something is intelligent. So I just have this feeling that inside this experience machine, just saying that you're conscious and having certain qualities of the interaction, like being able to suffer, like being able to hurt, like being able to wander about the essence of your own existence.
+00:42:29
+Not actually. I mean, you know, the creating the illusion that you're wandering about it is enough to create consciousness and create the illusion of consciousness and because of that, create a really immersive experience to where you feel like that is the real world.
+00:42:45
+So you think there's a big gap between appearing conscious and being conscious, or is it that you think it's very easy to be conscious?
+00:42:53
+I'm not sure what it means to be conscious. All I'm saying is the illusion of consciousness. Is enough for this to create a social interaction that's as good as if the thing was conscious, meaning I'm making about myself, right?
+00:43:10
+Yeah, I mean, I guess there are a few differences.
+00:43:12
+One is how good the interaction is, which might I mean, if you don't really care about, like, probing hard for whether the thing is conscious, maybe it would be a satisfactory interaction, whether or not you really thought it was conscious. Now, if you really care about it being. Conscious in like inside this experience machine, yes, how easy would it be to fake it? And you say it sounds easy, but then the question is, would that also mean it's very easy to instantiate consciousness?
+00:43:48
+It's much more widely spread in the world than we have thought. It doesn't require a big human brain with 100 billion neurons. All you need is some system that exhibits basic intentionality and can respond in order to have consciousness. Like in that case, I guess you still have a close coupling that I guess in that case would be where where they can come apart, where you could create the appearance of there being a conscious mind without actually not being another conscious mind.
+00:44:16
+I'm, yeah, somewhat agnostic exactly where these lines go. I think one one observation that makes it possible that. You could have very realistic appearances, relatively simply, which also is relevant for the simulation argument and in terms of thinking about how realistic would a virtual reality model have to be in order for the simulated creature not to notice that anything was awry?
+00:44:45
+Well, just think of our own humble brains during the wee hours of the night when we are dreaming many times.
+00:44:54
+Well, dreams are very immersive, but often you also don't realize that you're in a dream.
+00:45:00
+And that's produced by a simple, primitive three pound lumps of neural matter effortlessly.
+00:45:08
+So if a simple brain like this can create the virtual reality that seems pretty real to us, then how much easier would it be for a super intelligent civilisation with planetary sized computers optimized over the eons to create a realistic environment for you to interact with?
+00:45:28
+Yeah, by the way, behind that intuition is that our brain is not that impressive relative to the possibilities of what technology could bring. It's also possible that the brain is the epitome.
+00:45:41
+Is the ceiling like just the ceiling?
+00:45:46
+How is that possible?
+00:45:48
+Meaning like this is the smartest possible thing that the universe could create.
+00:45:53
+So that's unlikely. Unlikely to me. I mean, for some of these reasons we alluded to earlier in terms of. Designs we already have for computers that would be faster by many orders of magnitude than the human brain.
+00:46:12
+Yeah, but it could be that the constraints, the cognitive constraints in themselves is what enables the intelligence. So the the the more powerful you make the computer, the less likely it is to become super intelligent. This is where I say dumb things to push back on. Yeah, I'm not sure I thought that we might not. I mean, so there are different dimensions of intolerance at a simple one is just speed. Like if it gets all the same challenge faster in some sense, yes, you're smarter.
+00:46:42
+So there I think we have very strong evidence for thinking that you could have a computer in this universe that would be much faster than the human brain and therefore have speed superintelligence like be completely superior, maybe a million times faster. Then maybe there are other ways in which you could be smarter as well. Maybe more qualitative, always. Right. And there are the concepts are a little bit less clear cut. So it's harder to make a very crisp, neat, firmly logical argument for why that could be qualitative superintelligence as opposed to just things that were faster, although I still think it's very plausible and for various reasons that that are less than watertight arguments.
+00:47:26
+But when you consider, for example, if you look at animals and brains and even within humans, like there seems to be like Einstein versus random person, like it's not just that Einstein was a little bit faster, but like how long would it take a normal person to invent? General relativity is like it's not 20 percent longer than it took Einstein or something like that. It's like I don't know whether they would do it at all or it would take millions of years or some totally bizarre.
+00:47:53
+So but your intuition is that the computer size will get you the increasing the size of the computer and the speed of the computer might create some much more powerful levels of intelligence that would enable some of the things we've been talking about with the simulation being able to simulate an ultra realistic environment, ultra realistic perception of reality.
+00:48:18
+Yeah, I mean, it's strictly speaking, it would not be necessary to have superintelligence in order to have, say, the technology to make these simulations, ancestor simulations or other kinds of simulations. As a matter of fact, I think if. If there are if we are in a simulation, it would most likely be one built by a civilization that had superintelligence. It certainly would help a lot.
+00:48:45
+I mean, it could build more efficient, larger scale structures if you had superintelligence. I also think that if you had the technology to build these simulations, that's like a very advanced technology. It seems kind of easier to get the technology to superintelligence. Yeah. So I'd expect by the time they could make these fully realistic simulations of human history with human brains and they're like before that they got to that stage, they would have figured out how to create machine super intelligence or maybe biological enhancements of their own brains if they were biological creatures to start with.
+00:49:16
+So we talked about the the three parts of the simulation argument. One, we destroy ourselves before we ever create a simulation, too. We somehow everybody somehow loses interest in creating Simulation three. We're living in a simulation.
+00:49:33
+So you've kind of I don't know if your thinking has evolved on this point, but you kind of said that we know so little that these three cases might as well be equally probable. So probabilistically speaking, where do you stand on?
+00:49:49
+Yeah, I mean, I don't take Ekwall necessarily would be the most supported probability assignment.
+00:49:58
+So how would you without assigning actual numbers word, what's more or less likely in your in your view?
+00:50:05
+Well, I mean, I've historical I tended to punt on the question of IC as between these three.
+00:50:12
+So maybe as another way is which kind of things would make it.
+00:50:17
+Each of these more or less likely would kind of certainly in general terms, if if you think anything that, say, increases or reduces, the probability of one of these would tend to probability around on the other.
+00:50:34
+So if one becomes less probable, like the other would have to add up to one. Yes.
+00:50:39
+So if we consider the first hypothesis, the first alternative, that that there's this filter that makes it so that virtually no civilization reaches technological maturity, in particular our own civilization, if that's true, then it's like very unlikely that we would reach technological maturity, because if almost no civilization at our stage does it, then it's unlikely that we do it.
+00:51:06
+So hands are getting longer than that for a second. We don't know if it's the case that almost all civilizations at our current stage of technological maturity fail at our current stage of technological development failed to reach maturity.
+00:51:20
+That would give us a very strong reason for thinking we will fail to reach technological maturity. And also sort of the flipside of that is the fact that we've reached it means that many other civilizations have risen.
+00:51:31
+So that means if we get closer and closer to actually reaching technological maturity, there's less and less distance left where we could go extinct before we are there.
+00:51:43
+And therefore the probability that we will reach increases as we get closer. And that would make it less likely to be true that almost all civilizations at our current stage failed to get there like we would have this what the one case we'd started ourselves would be very close to getting there. That would be strong. Is not so hard to get to technological maturity.
+00:52:03
+So to the extent that we feel we are moving nearer to a technological maturity, that that would tend to reduce the probability of the first alternative and increase the probability of the other two. It doesn't need to be a monotonic change, like if every once in a while some new threat comes into view, some bad new thing you could do with some novel technology, for example, you know that that could change our probabilities in the other direction. But that that technology, again, you have to think about as that technology has to be able to equally in an even way, affect every civilization out there.
+00:52:43
+Yeah, pretty much. I mean, that's strictly speaking, it's not true.
+00:52:48
+I mean, that there could be two different existential risk and every civilization in a one or the other like, but none of them kills more than 50 percent like it.
+00:52:59
+Yeah, but that's incidentally. So some of my other work, I mean, on machine superintelligence like frontages to make substantial risks related to sort of superintelligent A.I and how we must make sure, you know, to handle that wisely and carefully. It's not the right kind of existential catastrophe to make. The first alternative to that, it might be bad for us if the future lost a lot of value as a result of it being shaped by some process that optimized for some completely non-human value.
+00:53:38
+But. Even if we got killed by a machine superintelligence is that machine superintelligence might still attain technological maturity size. So you're not very you're not human exclusive. This could be any intelligent species that looks like it's all about the technological maturity that the humans have to attain it. Right. It's like superintelligence because you replace us and that's just as well.
+00:54:03
+And so, no, I mean, it could interact with the second alternative, like if the thing that replaced us with the more likely or less likely, then we would be to have an interest in creating ancestral simulations, know that that could affect probabilities. But at First-order, if we all just die, then, yeah, we won't produce any simulations because we are dead. But if we all die and get replaced by some other intelligent thing that then gets to technological maturity, the question remains.
+00:54:36
+Of course, it might not. That thing that needs some of its resources to to do this stuff.
+00:54:42
+So can you reason about this stuff? That's a given how little we know about the universe, is it reasonable to to reason about these probabilities? So, like. How little? Well, maybe you can disagree, but to me, it's not trivial to figure out how difficult it is to build a simulation. We kind of talked about it a little bit. We also don't know, like as we tried to start building it, like start creating virtual worlds and so on, how that changes the fabric of society.
+00:55:16
+Like there's all these things along the way that can fundamentally change so many aspects of our society about our existence that we don't know anything about, like the kind of things we might discover when we understand to a greater degree the fundamental the physics like the theory, if we have a breakthrough, have a theory and everything, how that changes, how that changes deep space exploration and so on.
+00:55:44
+So is it still possible to reasonable probabilities, given how little we know? Yes, I think there will be a large residual of uncertainty that will just have to acknowledge and I think that's true for most of these big picture questions that we might wonder about.
+00:56:07
+It's just we are small, short lived, small brained, cognitively, very limited humans with little evidence. And it's amazing.
+00:56:17
+We can figure out as much as we can really about the cosmos.
+00:56:21
+But OK, so there's this cognitive trick that seems to happen when I look at the simulation argument, which for me it seems like case one and to feel unlikely, I want to say feel like they're supposed to sort of like it's it's not like I have too much scientific evidence to say that either one or two are not true. It just seems unlikely that every single civilization destroys itself. And it seemed like feels unlikely that the civilizations lose interest.
+00:56:54
+So naturally the without necessarily explicitly doing it. But this eliminates the simulation argument basically says it's very likely we're living in a simulation. Like to me, my mind naturally goes there. I think the mind goes there for a lot of people. Is that the incorrect place for it to go? Well, not not not necessarily.
+00:57:16
+I think the second alternative. Which has to do with the motivations and interests of technological immature civilizations. I think there is much we don't understand about that.
+00:57:33
+And can you talk about that a little bit? What do you think? I mean, this is a question that pops up when you when you build an AGI system or build a general intelligence or how does that change your motivation? Do you think it will fundamentally transform our motivations?
+00:57:48
+Well, it doesn't seem that implausible that once you take this leap to a technological maturity, I mean, I think like it involves creating machine superintendents, possibly that would be sort of on the path for basically all civilizations, maybe before they are able to create large numbers of untested simulations that would that that possibly could be one of these things that quite radically changes the orientation of a civilization is, in fact, optimizing for. There are other things as well.
+00:58:26
+So at the moment, we have not perfect control over our own being, our own mental states. Our own experiences are not under our direct control. So, for example, if if you want to experience pleasure and happiness, you might have to do a whole host of things in the external world to try to get into the stage, into the mental state where you experience pleasure, like some people get some pleasure from eating great food. Well, they can just turn that on.
+00:59:04
+They have to kind of actually got a nice restaurant and then have to make money, too. So there's like all this kind of activity that maybe arises from the fact that we are trying to ultimately produce mental states. But the only way to do that is by a whole host of complicated activities in the external world. Now, at some level of technological development, I think will become multipotent in the sense of gaining direct ability to choose our own internal configuration and enough knowledge and insight to be able to actually do that in a meaningful way.
+00:59:40
+So then it could turn out that there are a lot of. Instrumental goals that would drop out of the picture and be replaced by other instrumental goals because we could now serve some of these final goals in more direct ways. And who knows how all of that shakes out after civilisation's reflect on that and converge on different attractors and so on and so forth.
+01:00:06
+And that could be new new instrumental considerations that come into view as well that that we are just oblivious to that would maybe have a strong shaping effect on actions like very strong reasons to do something or not to do something. We just don't realize down there because we are so dumb fumbling through the universe.
+01:00:28
+But if if almost inevitably en route to attaining the ability to create my analysis and simulations, you do have this cognitive enhancement or advice from superintelligence or you yourself that maybe there's like this additional set of considerations coming into view. And it's obvious that the thing that makes sense is to do X, whereas right now it seems you could X, Y or Z and different people will do different things.
+01:00:52
+And we are kind of random in that sense.
+01:00:56
+Yeah, because at this time, with our limited technology, the impact of our decisions is minor. I mean, that's starting to change in some ways, but.
+01:01:06
+Well, I'm not sure it follows that the impact of our decisions is minor. Well, it's starting to change. I mean, I suppose one hundred years ago it was minor. It's starting to smell.
+01:01:18
+It depends on how you view it. But people did 100 years ago still have effects on the world today.
+01:01:26
+Oh, as I see as as a civilization in the together. Yeah.
+01:01:32
+So it might be that the greatest impact of individuals is not at technological maturity are very far down. It might be earlier on when there are different tracks, civilization could go down mean maybe the population is smaller, things still haven't settled out if you count the indirect effects that.
+01:01:54
+That that that those could be bigger than the direct effects that people have later on. So part three of the argument says that. So that leads us to a place where eventually somebody creates a simulation. That I think you had a conversation with Josh Rogin, I think there is some aspects here where you got stuck a little bit. How does that lead to where likely living in a simulation, so this kind of probability argument, if somebody eventually creates a simulation, why does that mean that we're now in a simulation?
+01:02:33
+What you get if you accept alternative three, first is that would be more.
+01:02:39
+Simulated people with our kinds of experiences, non simulated ones, like if in a kind of if you look at the world as a whole by the end of time, as it were, you just count it up.
+01:02:53
+That would be more simulated ones than on simulated ones.
+01:02:56
+Then there is an extra step to get from that. If you assume that, suppose for the sake of the argument that that's true. How do you get from that to the statement?
+01:03:08
+We are probably in a simulation.
+01:03:15
+So here you are introducing an indexical statement like it's that this person right now is in a simulation.
+01:03:23
+There are all these other people, you know, that are in simulations and some that are not in a simulation. But what probability should you have that you yourself is one of the simulated ones and that set up so? So, yeah.
+01:03:38
+So I call it the bland principle of indifference, which is that in in cases like this, when you have to, I guess, sets of observers. One of which is much larger than the other, and you can from any internal evidence, you have Taal which side you belong to, you should assign a probability that's proportional to the size of the assets so that if there are 10 times more assimilated people with your kinds of experiences, you would be 10 times more likely to be one of those.
+01:04:15
+Is that as intuitive as it sounds? I mean, that seems kind of if you don't have enough information, you should rationally just assign same probabilities as the size of the set.
+01:04:28
+It seems it seems pretty plausible to me.
+01:04:33
+Were the holes in this is it at the at the very beginning, the assumption that everything stretches sort of infinite time, essentially. You don't need infinite time.
+01:04:44
+You need what how long this is taking, however long it takes, I guess for a universe to produce an intelligent civilization that is intense. The technology to run some ancestor simulation got you. At some point when the first simulation is created, that stretch of time just a little longer than the all start creating simulations kind of like order.
+01:05:06
+Well, I mean, might a different it might if you think of there being a lot of different planets and some subset of them have life and then some subset of those get to intelligent life and some of those maybe eventually start creating simulations, they might get started at quite different times, like maybe on some planet it takes a billion years longer before you get like monkeys or before you get even bacteria then on another planet.
+01:05:34
+So like this might happen kind of at different cosmological epochs.
+01:05:42
+Is there a connection here to the doomsday argument and that sampling there?
+01:05:46
+Yeah, there is a connection in that they both involve an application of anthropic reasoning that is reasoning about these kind of indexical propositions. But the assumption you need in the case of the simulation argument is much weaker than the similar assumption you need to make the doomsday argument go through what is the doomsday argument?
+01:06:12
+And maybe you can speak to the anthropic reasoning and more General.
+01:06:16
+Yeah, that's that's a big and interesting topic in its own right and tropics. But the doomsday argument is this really first discovered by Brandon Carter, who was a theoretical physicist and developed by philosopher John Leslie? I think it might have been discovered initially in the 70s or 80s. And Lester wrote this book, I think, in 96. And there are some other versions as well by Richard Ghazi's, a physicist.
+01:06:44
+But let's focus on the Carter Lessler version, where it's an argument that we have systematically underestimated the probability that humanity will go extinct soon.
+01:07:01
+Now, I should say, most people probably think at the end of the day there is something wrong with this doomsday argument that it doesn't really hold. It's like there's something wrong with it, but it's hard to say exactly what is wrong with it. And different people have different accounts. My own view is it seems inconclusive, but I can say what the argument is. Yeah, that would be good. Yeah.
+01:07:25
+So maybe it's easier to explain via an analogy to sampling from Ernes. So you imagine you have a big and you have to earn in front of you and they have balls in them that have numbers.
+01:07:42
+So that is the terrorist looked the same. But inside one of our ten balls ball number one, two, three, up to ball number 10. And then in the other urn, you have a million balls numbered one to a million. And somebody puts one of these urns in front of you and ask you to guess what's the chance? It's the ten billion. And you say, well, 50 50 that I can tell which one it is, but then you're allowed to reach in and pick a ball at random from the urn.
+01:08:15
+And that's suppose you find that it's ball number seven. So that's strong evidence for the 10 handball hypothesis, like it's a lot more likely that you would get such a low number of ball if they're on the 10 balls in the air like it's in fact 10 percent done right. Then if there are a million balls, it would be very unlikely you would get number seven. So you perform a Bayesian update. And if your prior was 50 50 that it was the temblor and you become virtually certain after finding the random sample was seven, that it only has 10 balls in it.
+01:08:50
+So in the case of the answer, this is uncontroversial, just elementary probability theory. The doomsday argument says that you should result in a similar way with respect to different hypotheses about how many how many balls there will be in the urn of humanity. I said for how many humans that will have been by the time we go extinct.
+01:09:11
+So to simplify, let's suppose we only consider two hypotheses either maybe two hundred billion humans in total or two hundred trillion humans in total.
+01:09:23
+You could fill in the more hypothesis, but it doesn't change the principle here. So it's easiest to see if we just consider these two.
+01:09:29
+So you start with some prior based on ordinary empirical ideas about threats to civilization and so forth. And maybe I say it's a five percent chance that we will go extinct by the time that will have been two hundred billion.
+01:09:42
+Only kind of optimistic, let's say. I think probably we'll make it through colonize the universe.
+01:09:47
+And but then according to this doomsday argument, you should think of your own birth rank as a random sample. So your birth is your sequence in the position of all humans that have ever existed. And it turns out you're about human number of one hundred billion, give or take. That's roughly how many people have been born before you.
+01:10:12
+That's fascinating because I probably we each have a number which we would each have a number in this.
+01:10:18
+I mean, obviously the exact number would depend on where you started counting, like which ancestor was human enough to count as human. But those are not really important that are relatively few of. So, yeah. So you're roughly one hundred billion now. If they're only going to be two hundred billion in total, that's a perfectly unremarkable number. You're somewhere in the middle right run of the mill human.
+01:10:42
+Completely unsurprising. Yes.
+01:10:44
+Now if they're going to be two hundred trillion, you would be remarkably early like you would like.
+01:10:50
+What are the chances out of these two hundred trillion human that you should be human number of one hundred billion?
+01:10:57
+That seems it would have a much lower conditional probability. And so analogous to how in the urn case you thought after finding this low number of random sample you updated in favor of the Earth and having fewer balls. Similarly, in this case, you should update in favor of the human species having a lower total number of members.
+01:11:19
+That is doomed soon. You said doomed soon.
+01:11:23
+Yeah, well, that would be the hypothesis in this case that it will end up just like a hundred billion, just like that term for that hypothesis.
+01:11:31
+So so what what it kind of crucially relies on the doomsday argument is the idea that you should reason as if you were a random sample from the set of all humans that will ever have existed.
+01:11:44
+If you have that assumption, then I think the rest kind of follows. The question then is why should you make that assumption? In fact, you know, you're one hundred billion.
+01:11:53
+So so where do you get this prior? And then there is like a literature on that with different ways of supporting that assumption.
+01:12:00
+And that's just one example of a type of reasoning that seems to be kind of convenient when you think about humanity, when you when you think about sort of even like existential threats and so on, as it seems that quite naturally that you should assume that you're just an average case.
+01:12:21
+Yeah, that kind of a typical I randomly sample now in the case of the doomsday argument, it seems to lead to what intuitively we think is the wrong conclusion, or at least many people have this reaction that that's got to be something fishy about this argument, because from very, very weak premises, it gets this very striking implication that we have almost no chance of reaching size two hundred trillion humans in the future.
+01:12:48
+And how could we possibly get there?
+01:12:50
+Just by reflecting on when we were born? It seems you would need sophisticated arguments about the impossibility of space colonization, blah, blah. So one might be tempted to reject this key assumption. I call it the self sampling assumption, the idea that you should reason as if you were a random sample from all observers or in your some reference class.
+01:13:10
+However, it turns out that in other domains it looks like we need something like this cell sampling assumption to make sense of bona fide scientific inferences in contemporary cosmology.
+01:13:23
+For example, you have these multiverse theories and according to a lot of those, all possible human observations are made.
+01:13:32
+If you have a sufficiently large universe, you will have a lot of people observing all kinds of different things. All right. So if you have two competing theories, say, about the value of some constant.
+01:13:46
+It could be true, according to both of these theories, that there will be some observers observing the value that corresponds to the other theory, because there will be some observers that have hallucinations. There's a local fluctuation or an statistically anomalous measurement. These things will happen. And if you're not, observers make enough different observations. There will be some that sort of by chance make these different ones.
+01:14:13
+And so what we would want to say, as well as many more observers, a larger proportion of the observers will observe, as it were, the true value. And a few will observe the wrong value if we think of ourselves as a random sample, we should expect with our own probability to observe the true value, and that will then allow us to conclude that the evidence we actually have is evidence for the theories we think are supported. It kind of done is a way of making sense of these inferences that clearly seem correct, that we can make various observations and infer what the temperature of the cosmic background is.
+01:14:56
+And they are the fine structure, constant and all of this. But it seems that without rolling in some assumption similar to the self sampling assumption, this inference just doesn't go through. And there are other examples. So so there are these scientific context where it looks like this kind of anthropic reasoning is needed and makes perfect sense. And yet, in the case of the Dubost argument, it has this weird consequence and people might think there's something wrong with it.
+01:15:21
+They're so. There done this project that would consist in trying to figure out what are the legitimate ways of reasoning about these indexical facts when observer selection effects are in play, in other words, developing a theory of anthropic and that different views of looking at that. And it's a difficult methodological area. But to tie it back to the simulation argument, the key assumption there, this bland principle of indifference is much weaker than the self sampling assumption. So if you think about in the case of the doomsday argument, it says you should reason as if you are a random sample from all humans that would have lived, even though, in fact, you know that you are about number one hundred billion human and you're alive in the year 2020, whereas in the case of the simulation argument, it tested well.
+01:16:20
+If you actually have no way of telling which one you are, then you should assign this kind of uniform probability. Yeah, yeah, your role as the observer in the simulation argument is different, it seems like that because the observer, I keep assigning the individual consciousness.
+01:16:37
+Yeah, I mean, when you see a lot of observers in the simulation in the context of the simulation argument, but there are the relevant observers would be a the people in the original histories and B, the people in simulations. So this would be the class of observers that we need. I mean, there are also maybe the simulators, but we can set us aside for this. So the question is, given that class of observers, a small set of original history observers and a large class of simulated observers, which one should you think is you?
+01:17:08
+Where are you amongst us where observers may maybe having a little bit trouble wrap my head around the intricacies of what it means to be an observer in this in this in the different instantiations of the anthropic reasoning cases that we mentioned.
+01:17:27
+I mean, it is is it I mean, it may be an easier way of putting. It is just like are you simulated or not simulated? Given this assumption that these two groups of people exist.
+01:17:38
+Yeah. And the simulation case, it seems pretty straightforward.
+01:17:42
+Yeah.
+01:17:42
+So that's the key point, is the methodological assumption you need to make to get the simulation argument to where it wants to go is much weaker and less problematic than the methodological assumption you to make to get the doomsday argument to its conclusion. Maybe the doomsday argument is sound or unsound, but you need to make a much stronger and more controversial assumption to make it go through.
+01:18:09
+In the case of the doomsday argument, as our simulation argument, I guess one maybe way intuition to support this bland principle of indifference is to consider a sequence of different cases where the fraction of people who are assimilated to non simulated approaches one. So in the limiting case where everybody is simulated, obviously can deduce with certainty that you are simulated. If everybody with your experience is assimilated and you know you're got to be one of those, you don't need a probability at all.
+01:18:49
+You just kind of logically conclude it. Right?
+01:18:52
+Right. So then as we move from a case where, say, 90 percent of everybody simulated 99 percent, ninety nine point nine percent, it would seem plausible that the probability you assign should sort of approach one certainty as the fraction approaches the case where everybody is in a simulation. Yeah, it's exactly like you wouldn't, like, expect that to be a discrete well, if there's one non simulated person, then it's 50/50. But if we move that and it's 100 percent like it should kind of there are other arguments as well one can use to support this blunt principle of indifference, but that might be nice to.
+01:19:36
+But in general, when you start from time equals zero and go into the future, the fraction assimilated. If it's possible to create two worlds, the fractions in the world will go to one. Well, I mean, it's one that involves obvious kind of golf all the way to one in in reality that there would be some racial or maybe a technological mature civilization could run a lot of.
+01:20:03
+Simulations using a small portion of its resources, it probably wouldn't be able to run infinite the.
+01:20:10
+I mean, if we take, say, the observed the physics in the observed universe, if we assume that that's also the physics at the level of the simulators, that would be limits to the amount of information processing that any one civilization could perform in its future trajectory.
+01:20:31
+Right.
+01:20:33
+Well, first of all, there's a limited amount of matter you can get your hands off because with a positive cosmological constant, the universe is accelerating. There is like a finite sphere of stuff, even if it travels with the speed of light that you could ever reach to have a finite amount of stuff. And then if you think there, it's like a lower limit to the amount of loss you get when you perform an erasure of a computation, or if you think, for example, just a matter of gradually over cosmological time scales decay and maybe protons decay, other things and you radiate gravitational waves like there's all kinds of seemingly unavoidable losses that occur.
+01:21:13
+So eventually we'll have something like like a heat death of the universe or cause death or whatever.
+01:21:21
+But it's finite. But of course, we don't know which if if there's many ancestral civil simulations, we don't know which level we are.
+01:21:30
+So there could be could never be like an arbitrary number of simulation that's spawned ours and those had more resources.
+01:21:40
+There's a physical universe to work with.
+01:21:44
+So what do you mean that that could be sort of OK, so if simulation spawn.
+01:21:52
+Other simulations, it seems like each new spawn has fewer resources to work with now.
+01:22:01
+But we don't know at which level, at which step along the way we are at, any one observer doesn't know whether we're in level 42 or 100 or one or is that not a matter for the resources?
+01:22:18
+I mean I mean, it's true that they would that would be uncertainty as you could have stacked simulations. Yes.
+01:22:25
+And. That could be uncertainty as to which level we are at. As you remarked also. All the computations performed. In a simulation within the simulation also have to be expanded at the level of the simulation so that the computer in basement reality where all these simulations with the simulations, with the simulations are taking place like that. That computer, ultimately it's its CPU or whatever it is like that has to power this whole tower. Right. So if there is a finite compute power in basement reality, that would impose a limit to how tall this tower can be.
+01:23:05
+And if if if each level kind of imposes a large extra overhead, you might think maybe the tower would not be very tall, that most people would be lower down in the tower.
+01:23:18
+I love the term based on reality.
+01:23:20
+Let me ask one of the popularizers.
+01:23:23
+You said there's many when you look at sort of the last few years of the simulation hypothesis, just like you said, it comes up every once in a while, some new discoveries and so on. But I would say one of the biggest popularities of this idea is Elon Musk. Do you have any kind of intuition about what Elon thinks about when you think about simulation? Why is this of such interest? Is it all the things we've talked about or is there some special kind of intuition about simulation that he has?
+01:23:53
+I mean, you might have about I think I mean, why it's of interest. I think it's like seems fairly obvious why it to the extent that don't think the argument is credible, why it would be of interest. It would if it's correct. Tell us something very important about the world in a one way or the other, whichever of the three alternatives for a simulation that seems like arguably one of the most fundamental discoveries right now. Interestingly, in the case of someone like Elon said, there is like the standard arguments for why you might want to take the simulation hypothesis seriously.
+01:24:22
+The simulation argument right. In the case, if you're actually Elon Musk, let's say there's a kind of an additional reason in that. What are the chances you would be Elon Musk like? It seems like maybe there would be more interest in simulating the lives of very unusual and remarkable people. So if you consider not just a simulation where all of human history or the whole of human civilization are simulated, but also other kinds of simulations, which only include some subset of people, like in the in the in those simulations that don't include a subset, it might be more likely that they would include subsets of people with unusual, interesting or consequential life.
+01:25:06
+Elon Musk, you've got to wonder more like the Martian if you're Donald Trump or if you are Bill Gates or you're like some particularly, like, distinctive character, you might think that that I mean, if you just think of yourself into the shoes, right. It's got to be like an extra reason to think that's kind of so interesting.
+01:25:29
+So on a scale of, like farmer in Peru to Elon Musk, the more you get towards the Elon Musk, the higher the probability.
+01:25:38
+And that would be some extra boost from that. There's an extra boost. So he also asked the question of what he would ask and Ajai saying the question being, what's outside the simulation, do you think about the answer to this question? If we are living a simulation, what is outside the simulation?
+01:25:58
+So the programmer of the simulation? Um, yeah.
+01:26:03
+I mean, I think it connects to the question of what's inside the simulation in that, uh, if you had views about the creators of the simulation, it might help you make predictions about what kind of simulation it is, what might what might happen, what, you know, happens after the simulation, if there is some after, but also the kind of setup.
+01:26:23
+So these these two questions would be quite closely intertwined.
+01:26:29
+But do you think it would be very surprising to like is the stuff inside the simulation, is it possible for it to be fundamentally different than the stuff outside?
+01:26:39
+Yeah, like like another way to put it, can the creatures inside the simulation be smart enough to even understand or have the cognitive capabilities or any kind of information processing capabilities, enough to understand the mechanism that created them that might understand some aspects of it?
+01:27:01
+I mean, it's a level of it's kind of there are a levels of explanation like degrees to which you can understand. So does your dog understand what it is to be human while it's got some idea, like humans are these physical objects that move around and do things and a normal human would have a deeper understanding of what it is to be a human and maybe some very experienced psychologist or great novelist might understand a little bit more about what it is to be human and and maybe superintelligence could see right through your soul.
+01:27:36
+So similarly, I do think. That that we are quite limited in our ability to understand all of the relevant aspects of the larger context that we exist in, but that might be for.
+01:27:50
+I think we understand some aspects of it. But, you know, how much good is that? If there's like one key aspect that changes the significance of all the other aspects. So we understand maybe seven out of 10 key insights that you need. But but the answer actually like varies completely depending on what like number eight, nine and 10 inciters. It's like whether you want to suppose that the big task were to guess whether a certain number was odd or even like attended a number.
+01:28:29
+And if it if it's even the best thing for you to do in life is to go north. And if it's odd, the best thing is to go south. Now, we are in a situation where maybe through our science and philosophy, we figured out what the first seven digits are. So we have a lot of information, like most of it we figured out, but we are clueless about what the last three digits are. So we are still completely clueless about whether the numbers are driven and therefore whether we should go north or go south.
+01:28:58
+I feel that's that's an analogy, but I feel we're somewhat in that predicament. We know a lot about the universe. We've come maybe more than half of the way there to kind of fully understanding it. But the parts we're missing are possibly ones that could completely change the overall upshot of the thing and including change our overall view about what the scheme of priorities should be or which strategic direction would make sense to pursue.
+01:29:25
+Yeah, I think the analogy of us being the dog trying to understand human beings is the entertaining one and probably correct the closer the understanding tends from the dog's viewpoint to US human psychology, you viewpoint the steps along the way there will have completely transformative ideas of what it means to be human. So the dog has a very shallow understanding. It's interesting to think that to analogize that a dog's understanding of a human being is the same as our current understanding of the fundamental laws of physics and universe.
+01:30:04
+Man. OK, we spent an hour and 40 minutes talking about the simulation. I like it.
+01:30:10
+Let's talk about superintelligence, at least for a little bit, and let's start with the basics. What to you is intelligence?
+01:30:18
+Yeah, I tend not to get too stuck with the definitional question. I mean, I know common sense understanding, like the ability to solve complex problems, to learn from experience, to plan to reason some combination of things like that. It's got mixed up into that or no. Is consciousness mixed up into that as well?
+01:30:40
+I don't think I think it could be fairly intelligent, at least without. Being conscious, probably. And so then what is super intelligence? So that would be like something that was much more of that, much more general cognitive capacity than we humans have. So if we talk about general superintelligence, it would be much faster learner be able to reason much better plans that are more effective at achieving its goals.
+01:31:10
+So in a wide range of complex challenging environments, in terms of as we turn our eye to the idea of sort of existential threats from superintelligence, do you think superintelligence has to exist in the physical world or can it be digital? Only sort of. We think of our general intelligence as us humans, as an intelligence, as associated with a body that's able to interact with the world, that's able to affect the world directly with physically.
+01:31:41
+I mean, digital all is perfectly fine, I think. I mean, it's physical in the sense that obviously the computers and the memories are physical, but it's capability to affect the world sort of could be very strong, even if it has a limited set of actuators, if it can type text on the screen or something like that, that would be, I think, ample.
+01:32:03
+So in terms of the concerns of existential threat of AI, how can any system that's in the digital world have existential risk? Sort of. What what are the attack vectors for digital system?
+01:32:19
+Well, I mean, I guess maybe to take one step back, I should emphasize that I also think there is this huge positive potential from machine intelligence, including superintelligence. And I want to stress that because, like some of my writing has focused on what can go wrong. And when I wrote the book Superintelligence, at that point, I felt that there was a kind of neglect of what would happen if I succeeded, and in particular, a need to get a more granular understanding of where the pitfalls are so we can avoid them.
+01:32:56
+I think that since since the book came out in twenty fourteen, there has been a much wider recognition of that. And a number of research groups are now actually working on developing, say, alignment's techniques and so on and so forth. So that's I'd like yeah.
+01:33:12
+I think now it's important to. And make sure we bring back onto the table the upside as well, and there's a little bit of a neglect now on the upside, which is I mean, if you look at something different, if you look at the amount of information is available or people talking of people being excited about the positive possibilities of general intelligence, that's not it's far outnumbered by the negative possibilities in terms of our public discourse.
+01:33:42
+Possibly. I mean, it's hard to measure.
+01:33:45
+But what are can you linger on that for a little bit? What are some to you possible big positive impacts of general intelligence superintelligence super.
+01:33:56
+I get because I tend to also want to distinguish these two different contexts of thinking about I impacts that kind of near-term and long term, if you want, both of which I think are legitimate things to think about. And people should, you know, discuss both of them. But they are different and they often get mixed up. And then then I get you get confusion. I think it gets simultaneously. I've never been overhyping of the near term and under hyping of the long term.
+01:34:27
+And so I think as long as we keep them apart, we can have like two good conversations, but or we can mix them together and have one bad conversation.
+01:34:35
+Can you clarify just the two things we were talking about, the near term and the long term, and what are the distinction?
+01:34:41
+Well, it's a it's a blurry distinction. But say the things I wrote about in this book, Superintelligent. Long term things people are worrying about today with, I don't know, algorithmic discrimination or even things, self-driving cars and drones and stuff more near term.
+01:35:04
+And then, of course, you could imagine some medium term where that kind of overlap and the one evolves into the other. But I think both the dishes look kind of somewhat different, depending on which of these contexts.
+01:35:18
+So I think I think it would be nice if we can talk about the long term and think about a positive impact or a better world because of the existence of the long term superintelligent.
+01:35:35
+Do you have views of such a war? Yeah.
+01:35:36
+I mean, I guess it's a little hard to articulate because it seems obvious that the world has a lot of problems as it currently stands.
+01:35:46
+And it's hard to think of any one of those which it wouldn't be useful to have like a friendly, aligned superintelligence working on.
+01:35:57
+So from health to the economic system, to be able to sort of improve the investment and trade and foreign policy decisions, all that kind of stuff, all that kind of stuff and a lot more.
+01:36:13
+I mean, what's the killer app? Well, I don't think there is one I think I especially artificial general intelligence is really the ultimate general purpose technology. So it's not that that is just one problem, just one area where it will have a big impact. But if and when it succeeds, it will really apply across the board in all fields where human creativity and intelligence and problem-solving is useful, which is pretty much all fields. Right. The thing that it would do is give us a lot more control over nature.
+01:36:48
+It wouldn't automatically solve the problems that arise from conflict between humans. Fundamentally political problem. Some subset of those might go away if we just had more resources and tech. But some subset would require coordination that is not automatically achieved just by having more technological capability.
+01:37:10
+But but anything that's not of that sort, I think you'd just get like an enormous boost with this kind of cognitive technology once it goes all the way again.
+01:37:20
+Again, that doesn't mean I'm like thinking, oh.
+01:37:25
+People don't recognize what's possible with current technology, and sometimes things get overhyped, but I mean, those are perfectly consistent views to hold the ultimate potential being enormous.
+01:37:37
+And then it's a very different question of how far are we from that or what can we do with near-term technology. So what's your intuition about the idea of intelligent explosion? So there's this. You know, when you start to think about that leap from the near term to the long term, the natural inclination like for me, sort of building machine learning systems today, it seems like it's a lot of work to get the general intelligence, but there's some intuition of exponential growth, of exponential improvement of intelligence explosion.
+01:38:08
+Can you maybe. Try to elucidate to try to talk about what's your intuition about the possibility of an intelligence explosion, they won't be this gradual, slow process that might be a phase shift.
+01:38:26
+Yeah, I think it's we don't know how explosive it will be, I think for for what it's worth, I seems fairly likely to me that at some point there will be some intelligence explosion, like some period of time where progress in AI becomes extremely rapid, roughly, roughly in the area where you might say it's kind of human ish equivalent in core cognitive faculties, that the concept of human equivalent starts to break down when you look closely at it.
+01:38:59
+But and just how explosive does something have to be for it to be called an intelligence exposure?
+01:39:06
+Like, does it have to be like overnight literally or a few years or so?
+01:39:11
+But but overall, I guess if you had if you plotted the opinions of different people in the world, I guess I would be somewhat more probability towards the intelligence explosion scenario than probably the average. You know, I researcher.
+01:39:26
+I guess so. And then the other part of the intelligence explosion or just forget explosion is progress is once you achieved that gray area of human level intelligence, is it obvious to you that we should be able to proceed beyond it to get to super intelligence?
+01:39:44
+Yeah, I mean, as much as any of these things can be obvious, given we've never had one, people have different views.
+01:39:53
+More people of different views is like is like some some some degree of uncertainty that always remains for any big futuristic philosophical grand question that just we realize humans are fallible, especially about these things. But it does seem, as far as I'm judging things based on my own impressions, that it seems very unlikely that that would be a ceiling at or near human cognitive capacity. And there's such a I don't know, there's such a special moment and it's both terrifying and exciting to create a system that's beyond our intelligence.
+01:40:32
+So maybe you can step back and and say, like, how does that possibly make you feel that we can create something? It feels like there's a line beyond which it steps. You'll be able to outsmart you. And therefore it feels like a step where we lose control.
+01:40:52
+Well, I don't think the latter follows that, as you could imagine.
+01:40:59
+And in fact, this is what a number of people are working towards, making sure that we could ultimately project higher levels of problem solving ability while still making sure that they are aligned like they are in the service of human values.
+01:41:16
+I mean, so so it was in control, I think is not a given that that that would happen. I asked how it makes me feel.
+01:41:25
+I mean, to some extent, I've lived with this for so long since as since as long as I can remember being being an adult or even a teenager, it seemed to me obvious that at some point I will succeed.
+01:41:37
+And so I actually misspoke. I didn't mean control. I meant because the control problem is an interesting thing. And I think the hope is at least we should be able to maintain control over systems that are smarter than us.
+01:41:52
+But they're the we do lose our specialness. It's sort of we lose our place as the smartest, coolest thing on Earth. And there's an ego involved that the humans are very good at dealing with. I mean, I value my intelligence as a human being. It seems like a big transformative step to realize there's something out there that's more intelligent. I mean, you don't see that as such a fundamental, I think.
+01:42:27
+Yes, a lot really small. I mean, I think there are already a lot of things out there that are I mean, certainly if you think the universe is big, that's going to be other civilizations that already have super intelligences or that just naturally have brains the size of beach balls and the like, completely leaving us in the dust. And we haven't some face to face.
+01:42:50
+We have a face to face. But I mean, that's an open question. What what would happen in a kind of posthuman world?
+01:42:59
+Like how much day today would these superintelligence is be involved in the lives of ordinary? I mean, I, I you could imagine some scenario where it would be more like a background thing that would help protect against some things.
+01:43:13
+But you wouldn't like that there wouldn't be this intrusive kind of like making you feel bad by like making clever jokes on your butt, like there's like all sorts of things that maybe the human. I would feel awkward about that. You wouldn't want to be the dumbest kid in your class, everybody picks it like a lot of those things. Maybe you need to abstract away from it.
+01:43:35
+You're thinking about this context where we have infrastructure that is in some sense beyond any or all humans. I mean, it's a little bit like, say, the scientific community as a whole. If you think of that as a mind, it's a little bit of metaphor.
+01:43:50
+But I mean, obviously, it's going to be like way more capacious than any individual. So in some sense, there is this mind like thing already out there that's just vastly more intelligent than any individuals.
+01:44:06
+And we think, OK, that's you just accept that that's a fact. That's the basic fabric of our existence is super intelligent. Yeah. You get used to a lot of I mean, there's already Google and Twitter and Facebook, these recommender systems that are the basic fabric of our idea.
+01:44:27
+And I could see them becoming I mean, do you think of the collective intelligence of these systems as a perhaps reaching superintelligence level?
+01:44:37
+Well, I mean, here it comes to the concept of intelligence and the scale and what human level means and the kind of vagueness and indeterminacy of those concepts starts to dominate how you would answer that question.
+01:44:56
+So I think the Google search engine has a very high capacity of a certain kind, like retrieving, remembering and retrieving information, particularly like text or images that are you have a kind of string, a word string key, obviously superhuman at that, but, um, a vast set of other things it can't even do at all, not just not do well, but so so you have these current they are systems that are superhuman in some limited domain and then like radically subhuman in all other domains.
+01:45:36
+Same way just like are just a simple computer that can multiply really large numbers. Right. It's going to have this like one spike of superintelligence and then kind of a zero level of capability across all other cognitive fields.
+01:45:49
+And yeah, I don't necessarily think the journalists I mean, I'm not so attached to that, but I sort of it's a it's a gray area and it's a feeling.
+01:45:57
+But to me, sort of Alpha zero is somehow much more intelligent, much, much more intelligent than deep blue. Mm hmm.
+01:46:08
+And to say which you could say, well, these are both chess board game. They're both just able to play board games. Who cares if they're going to do better or not.
+01:46:16
+But there is something about the learning, the soft play learning that makes it crosses over into that land of intelligence that doesn't necessarily need to be Jerell. In the same way, Google is much closer, DeBlois currently in terms of its search engine now than it is to sort of the alpha zero in the moment it becomes and the moment these recommender systems really become more like Alpha zero, but being able to learn a lot without the constraints of being heavily constrained by human interaction, that seems like a special moment in time.
+01:46:52
+And certainly learning ability seems to be an important facet of general intelligence that you can take some new domain that you haven't seen before and you weren't specifically pre-programmed for and then figure out what's going on there and eventually become really good at it. So that's something Alpha Zero now has much more often than Deep Blue had.
+01:47:17
+And in fact, I mean, systems like Alpha Zero can learn, not just go, but other in fact, probably be deep blue in chess and so forth.
+01:47:26
+Right. So you say this is just general and it matches the intuition. We feel it's more intelligent and it also has more of this general purpose, learning ability.
+01:47:37
+And if we get systems that have even more general purpose, learning ability, it might also trigger an even stronger intuition that they are actually starting to get smart.
+01:47:45
+So if you were to pick a future, what do you think a utopia looks like with ajai systems? Sort of. Is it the neural link brain computer interface world, or are we kind of really closely interlinked with A.I. systems? Is it possibly were ajai systems replace us completely while maintaining the values in the consciousness? Is it something like it's a completely invisible fabric, like you mentioned, a society where just AIDS in a lot of stuff that we do, like curing diseases and so on?
+01:48:19
+What is utopia if you get to pick?
+01:48:21
+Yeah, I mean, it is a good question and. Difficult one, I'm quite interested in it, I don't have all the answers yet, but I might never have. But I think there are some different observations I can make one. One is if this if this scenario actually did come to pass, it would open up this vast space of possible modes of being on one hand. Material and resource constraints would just be like expanded dramatically. So that would be a lot of a big pie, let's say, but also it would enable us to to do things to including ourselves are not like that.
+01:49:08
+It would just open up this much larger design space and option space than we have ever had access to in human history. So I think two things follow from that. One is that we probably would need to make a fairly fundamental rethink of what ultimately we value, like think things through more from first principles.
+01:49:29
+And the context would be so different from the familiar that we could have just take what we've always been doing and then like, oh, well, we have this cleaning robot that, like, cleans the dishes in the sink and a few other small things, like I think we would have to go back to first principles. And so from even from the individual level, go back to the first principles of what is the meaning of life, what is happiness, what is fulfillment.
+01:49:52
+And then also connected to this large space of of resources is that it would be possible. And I think something we should aim for is to do well by the lights of more than one value system, that is.
+01:50:16
+We wouldn't have to choose only one value criteria, and so we're going to do something that scores really high on the metric of, say, heathenism and then is like a zero by other criteria, like kind of wire headed brains in a VAT. And it's like a lot of pleasure. That's good.
+01:50:40
+But then, like, no beauty, no achievement, like I or pick it up, I think, to some significant, not unlimited sales, but a significant sense, it would be possible to do very well by many criteria, like maybe you could get like ninety eight percent of the best, according to several criteria.
+01:51:00
+At the same time, given this, this is a great expansion of the options space and so, so have competing value systems, competing criteria as a sort of forever, just like our Democrat versus Republican.
+01:51:17
+There seems to be this always multiple parties that are useful for our progress in society, even though it might seem dysfunctional inside the moment.
+01:51:25
+But having the multiple value systems seems to be beneficial for, I guess, a balance of power.
+01:51:33
+So that's not exactly what I have in mind that well, although we are maybe in an indirect way it is, but that if you had the chance to do something that scored well on several different metrics, our first instinct should be to do that rather than immediately leap to the that thing. Which one of these value systems are we going to screw over like our first and let's first try to do very well by all of them, then it might be that you can't get 100 percent of all and you would have to then like have the hard conversation about which one will only get 97 percent.
+01:52:09
+There's my cynicism that all of existence is always a trade off. When you say maybe it's not such a bad trade off as first strike. Well, this would be a distinctive context in which at least some of the constraints would be removed, probably still be trade offs in the end.
+01:52:27
+It's just that we should first make sure we at least take advantage of this abundance. So in terms of thinking about this, like, yeah, I should think.
+01:52:38
+I think in this kind of frame of mind, of generosity and inclusiveness of different value systems and see how far one can get there first.
+01:52:52
+And I think I could do something that that would be very good according to many different criteria. We kind of talked about ajai fundamentally transforming the.
+01:53:05
+The value system of our existence, the meaning, the meaning of life, but today, what do you think is the meaning of life? What are you, the Soyuz? Or perhaps the biggest question? What's the meaning of life? What's the meaning of existence? What makes what gives your life fulfillment, purpose, happiness, meaning?
+01:53:26
+Yeah, I think these are like, I guess a bunch of different related questions in there that one can ask.
+01:53:34
+Happiness meaning? Yeah. I mean, like you could imagine somebody getting a lot of happiness from something that they didn't think was meaningful.
+01:53:44
+Like, my mind was like watching reruns of some television series by eating junk food, like maybe some people that give pleasure, but they wouldn't think it had a lot of meaning, whereas conversely, something that might be quite loaded with meaning might not be very fun, always like some difficult achievement that really helps a lot of people, maybe requires self-sacrifice and hard work.
+01:54:05
+And so so these things can, I think, come apart, which is something to bear in mind also when if you are thinking about these utopia questions that you might actually start to do some constructive thinking about, that you might have to isolate and distinguish these different kinds of things that might be valuable in different ways. Make sure you can sort of clearly perceive each one of them, and then you can think about how you can combine them.
+01:54:39
+And just as you said, hopefully come up with a way to maximize all of them together and maximize or get like a very high score on on a wide range of them, even if not literally all. You can always come up with values that are exactly opposed to one another. Right. But I think for many values, they are kind of a post with if you place them within a certain dimensionality of your space, like there are shapes that are kind of that you can't untangle, like in in a given dimensionality.
+01:55:12
+But if you start adding dimensions done, it might in many cases just be that they are easy to pull apart. And you could so we'll see how much space there is for that. But I think that that could be a lot in this context of radical abundance. If ever we get to that, I don't think there's a better way to end it.
+01:55:32
+Nick, you've influenced a huge number of people to work on what could very well be the most important problems of our time. So it's a huge honor. And thank you so much for talking. Thank you for coming by. Flagstones fun.
+01:55:43
+Thank you. Thanks for listening to this conversation with Nick Bostrom and thank you to a presenting sponsor, Kashyap. Please consider supporting the podcast by downloading Kashyap and using Code Leks podcast if you enjoy this podcast. Subscribe on YouTube. Reviewal with five stars, up a podcast, support on Patrón or simply connect with me on Twitter. Allex Friedemann. And now let me leave you with some words from Nick Bostrom. Our approach to existential risks cannot be one of trial and error.
+01:56:17
+There's no opportunity to learn from errors, the reactive approach. See what happens, limit damages and learn from experience is unworkable. Rather, we must take a proactive approach. This requires foresight to anticipate new types of threats and a willingness to take decisive preventative action and to bear the costs, moral and economic, of such actions. Thank you for listening and hope to see you next time.

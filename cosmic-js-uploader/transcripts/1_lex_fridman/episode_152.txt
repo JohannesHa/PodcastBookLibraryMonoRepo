@@ -1,0 +1,1070 @@
+00:00:00
+The following is a conversation with Dmitry Dolgov, the CTO of WAMMO, which is an autonomous driving company that started as Google's self-driving car project in 2009 and became Wimoweh in 2016. Dimitri was there all along when I was currently leading in the fully autonomous vehicle space and that they actually have an at scale deployment of publicly accessible autonomous vehicles driving passengers around with no safety driver with nobody in the driver's seat. This, to me, is an incredible accomplishment of engineering and one of the most difficult and exciting artificial intelligence challenges of the 21st century.
+00:00:43
+Quick mention of a sponsor, followed by some thoughts related to the episode. Thank you. To Trial Labs, a company that helps businesses apply machine learning to solve real world problems. Blankest and nap I use for reading through summaries of books. Better help online therapy with a licensed professional and cash app. The app I use to send money to friends. Please check out the sponsors in the description to get a discount at the support this podcast. As a side note, let me say that autonomous and semi-autonomous driving was the focus of my work at MIT and as a problem space that I find fascinating and full of open questions from both robotics and human psychology perspective.
+00:01:26
+There's quite a bit that I could say here about my experiences in academia on this topic that reveal to me, let's say, the less admirable size of human beings. But I choose to focus on the positive solutions and brilliant engineers like Demitri and the team at WAMMO who work tirelessly to innovate and to build amazing technology that will define our future because of Dmitri and others like him. I'm excited for this future. And who knows, perhaps I too will help contribute something of value to it.
+00:02:01
+If you enjoy this thing, subscribe on YouTube, review it with five stars and up a podcast. Follow on Spotify, support our patron or connect with me on Twitter. Allex Friedemann, as usual. I'll do a few minutes of ads now and no ads in the middle. I try to make these interesting, but I give you timestamp. So if you skip, please still check out the sponsors by clicking on the links in the description. It is in fact the best way to support this podcast.
+00:02:27
+This episode is brought to you by Trial Labs, a new sponsor and amazing company. They help build eBay Solutions for businesses of all sizes. I love these guys, especially after talking to them on the phone and checking out a bunch of their demos and blog posts.
+00:02:45
+If you are a business or just curious about machine learning, check them out at trial labs dot com flex. They've worked on price optimization, early detection of machine failures and all kinds of applications of computer vision, including face detection on lions'. Yes, lions' in support of conservation effort in Africa.
+00:03:07
+There are work on price automation and optimization is probably their most impressive in terms of helping businesses make money. Also, as a side note, they do release open source code on GitHub on occasion, like a computer vision tracker, for example, tracking and just the general problem of occlusion very much remains unsolved.
+00:03:28
+But there's been a lot of exciting progress made over the past five years anyway. All that to say is that Trial Labs is legit. Great engineers. If you own a business and want to see how I can help you, do check them out at trial labs, dot com slash flags. That's trial labs, dot com slash. Lex, this episode is also supported by Blankest, my favorite app for learning new things. Linkous takes the key ideas from thousands of nonfiction books and condenses them down into just fifteen minutes that you can read or listen to.
+00:04:02
+I'm a big believer in reading at least an hour every day. As part of that, I use Blankest almost every day to try out book I may otherwise never have a chance to read. And in general, it's a great way to broaden your view of the ideal landscape out there and find books that you may want to read more deeply with blinkers. You get unlimited access to read or listen to a massive library of condensed nonfiction books. I also use blankest shortcuts to quickly catch up on podcast episodes I've missed right now.
+00:04:34
+Blink. Is this a special offer just for the listeners of this podcast and probably every other podcast they sponsor. But who's counting? Go to Blink.
+00:04:44
+Is that caused last legs to start your free seven day trial and get twenty five percent off of a blankest premium membership as blankest spelled Belin k estie blink is dot com slash likes to get twenty. Five percent off and a seven day free trial. They're really making me say this over and over, aren't they? That's Blink is dotcom slash likes, this episode is also sponsored by Better Help spelled H LP Help, they figure out what you need, match you with a licensed professional therapist and under 48 hours I chat with the person on there and enjoy it.
+00:05:24
+Of course, I also have been talking to Mr. David Gorgons over the past few months, who is definitely not a licensed professional therapist, but he does help me meet his and my demons and become comfortable to exist in their presence. Everyone is different, but for me, I think suffering is essential for creation. But you can suffer beautifully in a way that doesn't destroy you. Therapy can help in whatever way the therapy takes. So I think better help is an option worth trying.
+00:05:56
+There is a private, affordable, available worldwide. You can communicate by text any time and schedule weekly audio and video sessions. You didn't ask me, but my two favorite psychiatrist is Sigmund Freud and Carl Jung. Their work was important to my intellectual development as a teenager. Anyway, check out better health outcomes. Slash leks that's better help dotcom neglects. Finally, the shows presented by Kashyap, the number one finance app in the App Store. When you get it, you Scolex podcast catch up, lets you send money to friends, buy bitcoin and invest in the stock market with as little as one dollar.
+00:06:36
+I'm thinking of doing more conversations with folks who work in and around the cryptocurrency space. Similar to I. There are a lot of charlatans in the space, but there are also a lot of free thinkers and technical geniuses that are worth exploring ideas with in depth and with care. As an example of that, Vitale's Budarin will definitely be back in the podcast. She listen to the first one. He'll be back on probably many more times. I see that guy accomplishing a huge amount of things in his life and I love talking to him.
+00:07:06
+All right. If you get cash out from the App Store or Google Play, you Scolex podcast, you get ten dollars in cash. I will also donate ten dollars. The first, an organization that is helping to advance robotics stem education for young people around the world. And now here's my conversation with Demetri Dolgov. When did you first fall in love with robotics or even computer science or in general computer science first at a fairly young age and robotics happened much later?
+00:07:57
+I, I think my first interesting introduction to computers was in the late 80s when we got our first computer, I think it was, and an IBM.
+00:08:12
+I think I might like to remember those things that had like a button in the front or the radio precedent, you know, make the thing go faster.
+00:08:20
+Did you have floppy disks? Yeah, yeah, yeah. I like the five point four inch ones.
+00:08:26
+I think there was a bigger inch. So good when something than five inches in three inches.
+00:08:31
+Yeah, I think that was the five. I don't know, maybe that was before that was the giant plates then. I didn't get that, but it was definitely not the not the three inch ones anyway.
+00:08:40
+So that that we got that computer, I spent the first few months just, you know, playing video games as you would expect. I got bored of that.
+00:08:51
+So I started messing around and trying to figure out how to make the thing do other stuff, got into exploring the programming.
+00:09:01
+And a couple of years later, it got to a point where I actually wrote a game, a little game, and a game developer, a Japanese gittin developer, actually offered to buy it for me for, you know, a few hundred bucks.
+00:09:15
+But for for a kid in Russia, the big deal, it's a big deal. Yeah, I did not take the deal. Wow.
+00:09:22
+Integrity. Yeah, I studied bit.
+00:09:25
+Yes. That was not the most acute financial move that I made my life.
+00:09:29
+You know, looking back at it now, I instead put it, well, you know, I the reason I put it online, it was what you call it back in the day. It was a freeware thing, right. It was not open source, but you could upload the binaries, you would put the game online. And the idea was that, you know, people like it and then they, you know, contribute and they send you a little donations.
+00:09:46
+Right.
+00:09:46
+So I did my quick math of, like, know, of course, you know, thousands and millions of people are going to play my game, send me a couple of bucks apiece. You know, definitely do that.
+00:09:54
+As I said, not not the best fighter Verde's playing, but business models that they only remember what language was programming.
+00:10:01
+That was a skill which Pascal Pascal and the graphical component. So I didn't text based. Yeah, yeah.
+00:10:08
+It was like I think 320 by two hundred, whatever it was. I think the kind of that's a resolution. Right. And I actually think the reason why this company wanted to buy it, it's not like the fancy graphics or the implementation. That was maybe the idea of actual game, the idea of the game.
+00:10:27
+Well, one of the things it's so funny, I used to play a game called Golden X and. The simplicity of the graphics and something about the simplicity of the music, like it still haunts me. I don't know if there's a childhood thing. I don't know if that's the same thing for Call of Duty these days for young kids. But I still think that the some one of the games are simple, that simple purity makes for like allows your imagination to take over and thereby creating a more magical experience.
+00:11:00
+Like now with better and better graphics, it feels like your imagination doesn't get to create worlds, which is kind of interesting. It could be just an old man on a porch like way waving at kids these days that have no respect. But I still think that graphics almost get in the way of the experience.
+00:11:20
+I don't know. Flip a bird.
+00:11:22
+Yeah, well, I don't know if the man gets close. I don't yet. But that that's more about games that I like. That's more like Tetris World where they optimally, masterfully like create a fun short term doping experience versus I'm more referring to like roleplaying games where there's like a story. You can live in it for months or years. Like there's an Elder Scrolls series, which is probably my favorite set of games, that was a magical experience and that the graphics are terrible, the characters were all randomly generated, but I don't know that it pulls you in.
+00:12:04
+There's a story. It's like an interactive version of an Elder Scrolls Tolkien world. And you get to live in a I don't know, I miss it. It's one of the things that sucks about being an adult is there's no you have to live in the real world as opposed to the Elder Scrolls world. You know, whatever brings you joy, right, Minecraft, right, Minecraft is a great example, you create like it's not the fancy graphics, but it's the creation of your own world.
+00:12:32
+Yeah, that one is crazy.
+00:12:33
+You know, one of the pitches for being a parent that people tell me is that you can use the excuse of parenting to to go back into the video game world and like that like that's like, you know, father son, father, father, daughter time. But really, you just get to play video games with your kids. So anyway, at that time, did you have any ridiculously ambitious dreams of where as a creator you might go as an engineer?
+00:13:00
+Did you what did you think of yourself as as an engineer, as a tinker, or did you want to be like an astronaut or something like that?
+00:13:07
+You know, I'm tempted to make something up about robots engineering or, you know, mysteries of the universe.
+00:13:14
+But that's not the actual memory that pops into my mind when you when you ask me about childhood dreams.
+00:13:19
+So actually share the real thing. When I was maybe four or five years old, I might as well all do. I thought about, you know, what I wanted to do when I grow up.
+00:13:31
+And I had this dream of. Being a traffic control cop, you know, they don't have those two days, I think, but back in the 80s and, you know, in Russia, you probably are familiar with that.
+00:13:45
+Like they had these, you know, police officers that would stand in the middle of intersection all day and they would have their likes, tribecca, black and white batons that they would use to control the flow of traffic.
+00:13:55
+And for whatever reason, I was strangely infatuated with this whole process.
+00:14:00
+And like that, that was my dream. That's what I wanted to do.
+00:14:03
+And I grew up and, you know, my parents, both physics, by the way, I think were, you know, a little concerned with that level of ambition coming from their child at that age.
+00:14:17
+Well, it's an interesting I don't know if you can relate, but I very much love that idea. I have OCD nature that I think lends itself very close to the engineering mindset, which is you want to kind of. Optimize, you know, solve a problem by creating an automated solution like the set of rules, that set of rules you can follow and then thereby make it ultra efficient. I don't know if that it was of that nature. I certainly have that.
+00:14:48
+There's like fact, like SIM City and factory building games, all those kinds of things kind of speak to that engineering mindset. Or did you just like the uniform?
+00:14:57
+I think it was more of the latter. I think, you know, the the strike button that made cars go right directions that drove it.
+00:15:07
+But I guess, you know, it is I did end up, I guess, you know, working on the transportation industry one way or another uniform.
+00:15:14
+But that's right. Is the time.
+00:15:16
+Maybe maybe it was my, you know, deep inner infatuation with the, you know, traffic control buttons that led to this career.
+00:15:25
+OK, what when did you when was the leap from programming to robotics? That happened later.
+00:15:31
+That was after grad school, after. And actually the self-driving cars was, I think, my first real hands on introduction to robotics. But I never really had that much Hands-On experience in school and training. I, you know, worked on applied math and physics then and college.
+00:15:49
+I did more abstract computer science. And it was after grad school that I really got involved in robotics. I was actually self-driving cars and that was a big bit flip. What will grad school.
+00:16:04
+So I to grad school in Michigan and then I did a postdoc at Stanford, which is that was the postdoc where I got to play with self-driving cars.
+00:16:12
+Yeah. So we'll return there. But let's go back to to Moscow. So, you know, for episode one hundred, I talked to my dad and also I grew up with my dad, I guess.
+00:16:25
+So I had to put up with them for many years.
+00:16:27
+And he he went to the future or my party. It's weird to say in English, because I've heard all of this in Russian Moscow Institute of Physics and Technology. And to me, that was like. I met some super interesting as a child, them as some super interesting characters. It felt to me like the greatest university in the world, the most elite university in the world. And just the people that I met that came out of there were like.
+00:16:59
+Not only brilliant, but also special humans, it seems like that place really tested the soul, both in terms of technically and spiritually. So that could be just the romanticization of that place. I'm not sure, but maybe you can speak to it. But is it correct to say that you spent some time there? Yeah, that's right.
+00:17:21
+Six years. I got my bachelor's and master's and physics and math there.
+00:17:25
+And that's interesting because my my dad and I, both my parents went there.
+00:17:30
+And I think all the stories that I heard, like just like you growing up about the place and how interesting and special and magical was, I think that was a significant maybe the main reason I wanted to go there for college enough so that I actually went back to Russia from the U.S. I graduated high school in the US. And you went back there?
+00:17:54
+I went back there, yeah. But wow, exactly the reaction most of my peers in college had, but perhaps a little bit stronger.
+00:18:01
+That pointed me out as this crazy kid when your parents supportive of that. Yeah. Yeah. My name is your previous question.
+00:18:07
+They they supported me and letting me pursue my passions and the things that I. That's a bold move.
+00:18:15
+What was it like there?
+00:18:16
+It was interesting, you know, definitely fairly hardcore on the fundamentals of math and physics and, you know, lots of good memories from. Yeah. From those times.
+00:18:26
+So, OK, so Stanford, how did you get into autonomous vehicles?
+00:18:30
+I had the great fortune and great honor to join Stanford's DARPA Urban Challenge team and twenty six third. This was a third in the sequence of the DAPO challenges to grand challenges prior to that. And then in twenty seven they held the urban challenge.
+00:18:50
+So, you know, I was doing on my postdoc, I had I joined the team and we worked on motion planning for, you know, that that competition.
+00:19:01
+So for people who might not know, I know from certain autonomous vehicles is a funny world in the certain circle. People everybody knows everything. And then in certain circles, nobody knows anything in terms of general public. So it's interesting. It's it's a good question of what to talk about. But I do think that the urban challenge is worth revisiting. It's a fun little challenge, one that first sparked so much so many incredible minds to focus on one of the hardest problems of our time in artificial intelligence.
+00:19:37
+So that's that's a success from a perspective of a single little challenge. But can you talk about like what did the challenge involve? So were there pedestrians, were there other cars? What was the goal? Who was on the team? How long did it take any fun, fun sort of specs? So the way the challenge was constructed and just a little bit of background, as I mentioned, this was the third competition in that series. The first two were the grand challenge called the Grand Challenge.
+00:20:08
+The goal there was to just drive in a completely static environment. You had to drive in a desert that was very successful. So then ARPA followed with what they called the urban challenge, where the goal was to have, you know, build vehicles that could operate in more dynamic environments and share them with other vehicles. There were no pedestrians there. But what DARPA did is they took over an abandoned Air Force base and it was kind of like a little fake city that they built out there.
+00:20:38
+And they had a bunch of robots know cars that autonomous in there all at the same time mixed in with other vehicles driven by professional drivers.
+00:20:50
+And each car had a mission. And so there's a crude map that they received beginning and they had a mission to go here and then there and over here. And they kind of all were sharing this environment the same time they interact to interact with each other. They had to interact with the human drivers. There's this very first very rudimentary version of a self-driving car that could operate on and on in an environment shared with other dynamic actors that, as you said, you know, really in many ways, you know, kickstarted this whole industry.
+00:21:26
+OK, so who was on the team and how'd you do? I forget we came in second. Perhaps I was my contribution to the team.
+00:21:36
+I think the Stanford team came in first and the DAPO challenge. But then I joined the team and, you know, you were the one with the bug in the code. I mean, do you have sort of memories of some particularly challenging things or. You know, one of the cool things, it's not a you know, this is a product, this isn't a thing that, you know, if you have a little bit more freedom to experiment so you can take risks and there's so you can make mistakes.
+00:22:02
+They're interesting mistakes. It's an interesting challenges that stand out to some. They taught you a good technical lesson or good philosophical lesson from that time. Yeah, definitely.
+00:22:15
+Definitely. Very memorable time.
+00:22:17
+Not really a challenge, but like one of the most vivid memories that I have from the time.
+00:22:23
+And I think that was actually one of the days that really got me hooked on this whole field, was the first time I got to run my software on the car. And I was working on a part of our planning algorithm that had to navigate in parking lots. So it was something that called free space emotion planning. So the very first version of that was we tried on the car.
+00:22:50
+I was on Stanford's campus in the middle of the night and I had this little, you know, of course, constructed with cones in the middle of a parking lots over there like 3:00 a.m.. You know, by the time I got the code to compile and turn over and, you know, it drove, I could actually do something quite reasonable.
+00:23:07
+And I was, of course, very buggy at the time and had all kinds of problems, but it was pretty darn magical. I remember going back and late at night and try to fall asleep and just being unable to fall asleep for the rest of the night.
+00:23:26
+Just my mind was blown. And that that's what I've been doing ever since.
+00:23:31
+For more than a decade in terms of challenges and, you know, interesting memories, like on the day of the competition, it was pretty nerve racking. I remember standing there with my mom, Tomala, who was the software.
+00:23:44
+She wrote most of the code.
+00:23:45
+I did one little part of the plan or my, you know, incredibly that pretty much the rest of it was a bunch of other incredible people. But I remember standing on the day of the competition, you know, watching the car with Mike and the cars are completely empty right there.
+00:24:02
+All they're lined up in the beginning of the race. And then, you know, Dapo them, you know, on their mission, one by one, something leave. And you just they had these sirens wailing around.
+00:24:11
+They all had their different silent silence. Each siren had its own personality, if you will. So, you know, off the go and you don't see them just kind of.
+00:24:18
+And then every once in a while, they come a little bit closer to where the audience is. And you can kind of hear, you know, the sound of your car and, you know, it seems to be moving along. So that gives you hope. And then, you know, it goes away and you can hear it for too long.
+00:24:31
+You start getting anxious, right? Just a little bit like, you know, sending your kids to college and like, you know, kind of you invested in them. You hope you you you you build it properly, but it's still anxiety inducing.
+00:24:41
+So that was an incredibly fun few days in terms of, you know, bugs, as you mentioned them.
+00:24:48
+One, that there was my bug that caused us the loss of the first place is still a debate that I occasionally have with people in the CMU team. You came first.
+00:24:57
+I should mention that you haven't heard of them. Yeah, it's a small school, so it's not really a glitch that they haven't to it's something robotics related.
+00:25:07
+Very scenic, though. So most people go there for the scenery. Yeah. It's a beautiful campus.
+00:25:15
+I like Stanford.
+00:25:16
+So for people that's just like Stanford. For people who don't see me as one of the great robotics and sort of artificial intelligence universities in the world, CMU, Carnegie Mellon University. OK, sorry. Go ahead.
+00:25:29
+So in the part that I contributed to, which was navigating and parking lots and the way you know, that part of the mission work is you in a parking lot, you would get from DARPA an outline of the mapping piece. You could get this giant polygon that defined the perimeter of the parking lot and there would be an entrance and maybe multiple entrances or access to it. And then you would get a goal within that open space X Y heading where the car had to park.
+00:26:02
+It had no information about the obstacles, obstacles that the car might encounter there. So it had to navigate a completely free space from the entrance to the parking lot into that parking space. And then once you're parked there, it had to exit the parking lot while, of course, in accounting and reasoning about all the obstacles that it encounters in real time.
+00:26:24
+So, uh. Our interpretation, or at least my interpretation of the rules, was that you had to reverse out of the parking spot and that's what our cars did. Even if there's no obstacle in front, that's not what Seamless Car did. And it just kind of drove right through. So there's still a debate. And of course, once you stop and reverse out and go the different way, that cost you some time. And so there's still a debate whether, you know, it was my poor implementation that cost us extra time or whether it was Qumu violating the important rule of the competition.
+00:26:57
+And, you know, I have my own opinion here in terms of other bugs. And like, I have to apologize to my customers for sharing this on air. But it is actually one of the more memorable ones.
+00:27:08
+And it's something that's kind of become a bit of a metaphor in the industry since then.
+00:27:15
+I think at least in some circles, it's called the victory circle or a victory lap.
+00:27:19
+And our cars did that.
+00:27:23
+So and one of the missions in the urban challenge and one of the courses there was this big oval right by the start and finish of the race. Up ahead, a lot of the missions would finish in that same location. And it was pretty cool because you could see the cars come by, kind finish that part of the trip with that leg of the mission and then go on and, you know, finish the rest of it.
+00:27:47
+And other vehicles would come hit their way point and exit the oval and off that would go our car in the hand, which hit the checkpoint, and then it would do an extra lap around the oval and only then, you know, leave and go on its merry way. So over the course of the full day, it accumulated some extra time.
+00:28:06
+And the problem was that we had a bug where it wouldn't, you know, start reasoning about the next waypoint and plan a route to get to that next point until it hit a previous one.
+00:28:13
+And in that particular case, by the time you hit the that that one, it was too late for us to consider the next one and make a lane change so that every time we would do like an extra lap. So know that's the the Stanford victory lap. I feel like there's something philosophically profound in there somehow.
+00:28:31
+But I mean, ultimately, everybody is a winner in that kind of competition. And it led to sort of famously to the creation of Google's self-driving car project and now wammo, so can we give an overview of how is way more born? How is the Google self-driving car project born was what is the mission? What is the hope? What is it? Is the engineering kind of set of milestones that it seeks to accomplish. There's a lot of questions in there.
+00:29:06
+Yeah, you're right. It kind of the urban challenge and the previous double grand challenges led, I think, to a very large degree to that next step. You know, Larry and Sergey, Larry Page and Sergey Brin, Google Gordon, I saw that competition and believed in the technology. So the Google self-driving car project was born, you know, at that time.
+00:29:30
+And we started in 2009. It was a pretty small group of us. About a dozen people came together to to work on this project at Google.
+00:29:40
+At that time, we saw an incredible early result in the urban challenge.
+00:29:49
+I think we're all incredibly excited about where we got to and we believed in the future of the technology, but we still had a very rudimentary understanding of the problem space.
+00:30:01
+So the first goal of this project in 2009 was to really better understand what we're up against. And, you know, with that goal in mind, when we started the project, we created a few milestones for ourselves that maximized learning will.
+00:30:19
+The two milestones were one was to drive one hundred thousand miles, an autonomous mode, which was at that time, you know, orders of magnitude that more than anybody has ever done.
+00:30:30
+And the second milestone was to drive 10 routes. Each one was one hundred miles long.
+00:30:38
+And there were specifically chosen to be kind of extra spicy, extra complicatedness and sample the full complexity of the that that the domain.
+00:30:49
+And you had to drive each one from beginning to end with no intervention, no human intervention. So you get to the beginning of the course. You press the button that would engage in autonomy and you had to, you know, go for a hundred miles, you know, beginning to end with no interruptions. And it sampled, again, the full complexity of driving conditions.
+00:31:10
+Some were on freeways. We had one route that went all through all the freeways and all the bridges in the Bay Area. You know, we had some that went around Lake Tahoe and kind of mountainous roads.
+00:31:22
+We had some that drove through dense urban environments like in downtown Palo Alto and through San Francisco.
+00:31:29
+So it was incredibly interesting to work on. And it took us just under two years, just about a year and a half or more to finish both of these milestones.
+00:31:44
+And in that process, it was an incredible amount of fun, probably the most fun I had in my professional career. And just learning so much. You are you know, the goal here is to learn and prototype. You're not yet starting to build a production system. So you just you were you know, this is when you were kind of, you know, working 24/7 and, you know, hacking things together.
+00:32:04
+And you also don't know how hard this is. I mean, that's the point. Like so I mean, that's an ambitious if I put myself in that mindset, even still, that's a really ambitious set of goals like just those two picking it, picking ten different. Difficult, spicy challenges and then having zero interventions, so like nothing gradually will go into, like, you know, over a period of 10 years, we're going to have a bunch of roots and gradually reduce the number of interventions that literally says, like by or as soon as possible, want to have zero and hard roads.
+00:32:48
+So it's like to me, if I was facing that, it's unclear whether that takes two years or whether that takes 20 years. I mean, I guess that that speaks to a really big difference between doing something once and having a prototype where you are going after, you know, learning about the problem versus how you go about engineering a product that where you look at you to properly do evaluation.
+00:33:16
+You look at metrics, you drive and you're confident that you can do that.
+00:33:20
+And I guess that's why I took a dozen people, you know, 16 months or a little bit more than that back in 2009 and 2010 with a technology of, you know, the more than a decade ago, that amount of time to achieve that milestone of 10 routes, one hundred miles each, and no interventions and no.
+00:33:45
+Took us a little bit longer to get to a full travellers' product customers, yes, that's another really important moment. Is this some. Memories of technical lessons are just one like what did you learn about the problem of driving from that experience? I mean, we can now talk about like what you learn from modern day Winmar, but I feel like you may have learned some profound things in those early days. Even more so because it feels like what we most now is to trying to, you know, how to do scale, how to make sure you create a product, how to make sure it's safe safety, you know, those things, which is all fascinating challenges.
+00:34:26
+But like you were facing the more fundamental philosophical problem of driving in those early days, like what the hell is driving as an autonomous?
+00:34:37
+Maybe I'm again romanticizing it. But is it is there is there some valuable lessons you picked up over there at those two years?
+00:34:49
+A tunnel? The most important one is probably that we believe that it's doable and we've gotten far enough into the problem that we we had a I think only a glimpse of the true complexity of the domain.
+00:35:07
+You know, it's a little bit like climbing a mountain where you kind of see the next peak and you think that's kind of the summit. But then you get to that and you kind of see that, that this is just the start of the journey.
+00:35:17
+But we've tried we've sampled enough of the problem space and we've made enough rapid success, even with technology of 2009, 2010, that it gave us confidence to pursue this as a real product.
+00:35:34
+So, OK, so the next step, you mentioned the milestones that you had in in those two years. What are the next milestones that then led to the creation of WEMA and beyond?
+00:35:46
+It was a really interesting journey. And Wimoweh came a little bit later than we completed those milestones in 2010. That was the pivot when we decided to focus on actually building a product using this technology. The initial couple of years after that, we were focused on a freeway and what you would call a driver assist maybe on an all three driver assist program.
+00:36:14
+Then around 2013, we've learned enough about the space and have thought more deeply about the product that we wanted to build, that we pivoted, we pivoted towards of this vision of, you know, building a driver and deploying it fully, driverless vehicles without a person.
+00:36:34
+And that that's the path that we've been on since then and very goes exactly the right decision for us.
+00:36:40
+So there was a moment where you also consider like, what is the right trajectory here? What is the role of automation in the task of driving? There was still it wasn't from the early days, obviously want to go fully autonomous from the early days.
+00:36:54
+Will not I think it was in 2010, around 2013 maybe that we if that became very clear and we made that pivot and also became very clear and that it's the way you go building a driver assistance system is fundamentally different from how you go building a fully driverless vehicle.
+00:37:13
+So, you know, we pivoted towards the latter and that's what we've been working on ever since.
+00:37:20
+And so that was around 2013.
+00:37:22
+Then there's a sequence of really meaningful for us, really important defining milestones since then.
+00:37:30
+And the twenty fifteen we had our first and actually the world's first fully driverless ride on public roads.
+00:37:45
+It was in a custom built vehicle that we had seen those we call them the firefly, the, you know, funny looking marshmallow looking thing.
+00:37:52
+And we put.
+00:37:56
+A passenger, his name was Steve Man, a great friend of our project from the early days, the man happens to be blind. So we put him in that vehicle. The car had no steering wheel, no pedals.
+00:38:08
+It was an uncontrolled environment, no, you know, lead or chase cars, no police escorts. And no, you know, we did that trip a few times in Austin, Texas.
+00:38:18
+So that was a really big milestone because I was in Austin.
+00:38:20
+Yeah. And, you know, we only but at that time were only it took a tremendous amount of engineering.
+00:38:27
+It took a tremendous amount of validation to get to that point. But, you know, we only did it a few times.
+00:38:33
+Not only did that was a fixed route, it was not kind of a controlled environment, but it was a fixed route. And we only did a few times.
+00:38:40
+Then in 2016, end of 2016, beginning 12, 17 is when we founded the company.
+00:38:50
+That's when we thought was the next phase of the project where we believed in kind of the commercial vision of this technology. And it made sense to create an independent entity, you know, within that alphabet umbrella to pursue this product at scale.
+00:39:09
+Beyond that, in twenty seventeen, later in twenty seventeen was another really huge step for us, a really big milestone where we started and it was October of twenty seventeen where when we started a regular driverless operations on public roads, that first day of operations we drove in one day and that first day one hundred miles in driverless fashion.
+00:39:36
+And then we've the most the most important thing about that milestone was not that one hundred miles in one day, but that it was the start of kind of regular ongoing driverless operations.
+00:39:45
+And we say driverless, it means no driver. That's exactly right. So on that first day, we actually had a mix and up in some we didn't want to be on YouTube and Twitter that same day.
+00:39:57
+So in many of the rides, we had somebody in the driver's seat, but they could not disengage like the car disengaged.
+00:40:05
+This is actually on that first day, some of the miles were driven and just completely empty driver's seat.
+00:40:12
+And this is the key distinction that I think people don't realize, you know, that oftentimes we talk about autonomous vehicles.
+00:40:22
+You're there's often a driver in the seat that's ready to to take over what's called the safety driver, and then all is really one of the only companies that I'm aware of, or at least as boldly and carefully. And all that is actually has cases. And now we'll talk about more and more where there's literally no driver. So that's another interesting case of where the driver is not supposed to disengage. That's a nice middle ground. They're still there, but they're not supposed to disengage.
+00:40:56
+But really, there's the case when there's no OK, there's something magical about there being nobody in the driver's seat.
+00:41:06
+Like just like to me, you mentioned the first time you wrote some code for free speech navigation of the parking lot, that was like a magical moment to me, just sort of as an observer of robots, the first magical moment is seeing an autonomous vehicle turn like make a left turn like apply sufficient talk to the steering wheel to wear it. Like there's a lot of rotation. And for some reason and there's nobody in the driver's seat for some reason that that communicates that here's a being with power that makes a decision.
+00:41:47
+There's something about like the steering wheel, because we perhaps romanticize the notion of the steering wheel. It's so essential to our conception, our 20th century conception of a car and it turning the steering wheel with nobody in the driver's seat. That to me, I think maybe to others it's really powerful. Like this thing is in control. And then there's this leap of trust that you give back. I'm going to put my life in the hands of this thing that's in control.
+00:42:14
+So in that sense, when there's no no driver in the driver's seat, that's a magical moment for robots. So I, um, I've gotten a chance to last year to take a ride in and we will vehicle. And that that was the magical moment. There's like nobody in the driver's seat. It's like the little details you would think. It doesn't matter whether there's a driver or not, but like if there's no driver and the steering wheel is turning on its own, I don't know.
+00:42:42
+That's magical.
+00:42:45
+It's absolutely magical. I take as many of these rides and the completely empty car. No human in the car pulls up, know you call it on your cell phone, it pulls up, you get in, it takes you this way. There's nobody in the car. But you write about something called fully driverless power rider only mode of operation.
+00:43:06
+Yeah, it it is magical. It is transformative. This is what we hear from our writers. It really changes your experience. Not like that. That really is what unlocks the real potential of this technology.
+00:43:23
+But, you know, coming back to our journey, you know, that was twenty seventeen when we started, you know, truly driverless operations.
+00:43:30
+Then in twenty eighteen, we've launched our public commercial service and we called WEMA one in Phoenix. In twenty nineteen, we started offering truly driverless rider only rights to our early rider population of users.
+00:43:51
+And then, you know, twenty twenty has also been a pretty interesting year, one of the first ones about technology, but more about the maturing and the growth of more.
+00:44:02
+As a company.
+00:44:03
+We raised our first round of external financing this year and you were part of Alphabet's. So obviously we have access to significant resources. But as kind of on the journey of way more maturing as a company, it made sense for us to partially go externally and this round.
+00:44:21
+So we're raised about three point two billion dollars worth from that round.
+00:44:28
+We've also started putting our fifth generation of our driver, our hardware that is on the new vehicle.
+00:44:37
+But it's also a qualitatively different set of self-driving hardware. That's how that is now on the JLR pace. So that was a very important step for us.
+00:44:49
+The hardware specs, first generation. I think it'd be fun to maybe apologize for interrupting, but maybe talk about maybe the generations with a focus on what we're talking about in the fifth generation in terms of hardware aspects like what's on this car.
+00:45:07
+Sure. So we separate out the actual car that we are driving from the subtyping hardware we put on it right now. We have so this is, as I mentioned, the fifth generation we've gone through.
+00:45:19
+We started building our own hardware, you know, many, many years ago.
+00:45:24
+And that Firefly vehicle also had the hardware suite that was mostly designed, engineered and built in.
+00:45:33
+House leaders are of one of the more important components that we design and build from the ground up on the fifth generation of our drivers, of our software and hardware that we're switching to right now.
+00:45:50
+We have, as with previous generations in terms of sensing we have lights, cameras and radars, and we have a pretty beefy computer that processes all that information and makes decisions in real time on on board the car.
+00:46:05
+So.
+00:46:05
+In all of the and it's really a qualitative jump forward in terms of the capabilities and the various parameters and the specs of the hardware compared to what we had before and compared to what you can kind of get off the off the shelf in the market today, meaning from fifth to fourth or fifth to first, from first to fifth, but also from the world that was questioned definitely, definitely from fourth or fifth as well as this last episode is a big step forward.
+00:46:37
+So everything's in-house. So like gliders built in-house and and cameras are built in-house, you know, different.
+00:46:46
+You know, we work with partners and there's some components that we get from our manufacturing and supply chain partners. What exactly is in-house is a bit different, if you like. We do a lot of custom design on all of our sliders, radars, cameras, you know.
+00:47:06
+Exactly. There's lighters are almost exclusively in-house. And some of the technologies that we have, some of the fundamental technologies there are completely unique to WEMA.
+00:47:18
+That is also largely that's true about radars and cameras. It's a little bit more of a mix in terms of what we do ourselves versus what we get from partners.
+00:47:27
+Is there something super sexy about the computer that you can mention that's not top secret? Like for people who enjoy computers for I mean, there's there's a lot of machine learning involved, but there's a lot of just basic computers. You have to probably do a lot of signal processing on all the different sensors you have to integrate. Everything has to be in real time. There's probably some kind of redundancy type of situation. Is there something interesting you can say about the computer?
+00:47:58
+For the people who love hardware?
+00:48:00
+It does have all of the characteristics, all the properties that you just mentioned, redundancy, very beefy compute for general processing as well as, you know, inference and animal models.
+00:48:13
+It is some of the more sensitive stuff that I don't want to get into for IP reasons, but it can be shared a little bit in terms of the specs of the sensors that we have on the car. You know, we actually shared some videos of what our Lider sees lighter's see in the world. We have twenty light cameras, we have five lighters, we have six radars on these vehicles. And you can kind of get a feel for the amount of data that they're producing.
+00:48:41
+That oil has to be processed in real time to do perception, to do complex reasoning. That kind of gives you some idea of how beefy those computers are. But I don't want to get into specifics of exactly how we build them.
+00:48:52
+I'm going to try some more questions that you can't get into the specifics of like GPU was is that something you can get into? You know, I know the Google works that with tips and so on. I mean, for machine learning folks, it's kind of interesting. Or is there. No.
+00:49:08
+How do I ask it? I've been talking to people in the government about UFOs and they don't answer any questions. So this is this is how I feel right now asking about. But is there something interesting they could reveal or is it just, you know, or leave it up to our imagination, some of some of the computers there, I guess. Is there any fun trickery? Like I talked to Chris Laettner for a second time and Yuzuki key person about CPU's.
+00:49:37
+And there's a lot of fun stuff going on.
+00:49:39
+Google in terms of hardware that optimizes for machine learning.
+00:49:45
+Is there something you can reveal in terms of how much you mentioned customization, how much customization there is for hardware, for machine learning purposes?
+00:49:55
+I'm going to be like the government. You know, you got personal audio phones, but I, I guess I will say that it's really computers are really important. We have very data hungry and computer hungry animal models all over our stack. And this is where.
+00:50:18
+Both being part of Alphabeat as well as designing our own sensors and the entire hardware suite together, where on one hand you get access to like really rich raw sensor data that you can pipe from your sensors into your computer platform and build like build the whole pipe from sensor raw sensor data to the big computers and then have the massive compute to process all the data.
+00:50:44
+And this is where we're finding that having a lot of control of that that hardware part of the stack is really advantageous.
+00:50:52
+One of the fascinating, magical places to me, again, might not be able to speak to the details, but is the it is the other compute, which is like, you know, we're just talking about a single car. But the you know, the driving experience is a source of a lot of fascinating data. And you have a huge amount of data coming in on the on the car and, you know, the infrastructure of storing some of that data to then train or to analyze or so on.
+00:51:21
+That's a fascinating like piece of it, that that I understand a single car. I don't understand how you pull it all together in this way. Is that something that you could speak to in terms of the challenges of of seeing the network of cars and then bringing the data back and analyzing things that weren't like like edge cases of driving people to learn on them, to improve the system, to to see where things went wrong with where things went right and analyze all that kind of stuff.
+00:51:51
+Is there is something interesting there in from an engineering perspective?
+00:51:55
+Oh, there's an incredible amount of really interesting work that's happening there, both in the, you know, the real time operation of the fleet of cars and the information that they exchanged with each other in real time to make better decisions, as well as the kind of the awkward component where you have to deal with massive amounts of data for training Grimmel models, evaluating them, all models for simulating the entire system and for, you know, evaluating your entire system.
+00:52:27
+And this is where being part of Alphabeat has once again been tremendously advantageous. And we consume an incredible amount of compute for Amelle infrastructure. If we build a lot of custom frameworks to get good at data mining, finding the interesting edge cases for training and for evaluation of the system, for both training and evaluating some components and sub parts of the system and various animal models, as well as the evaluating the entire system and simulation.
+00:53:01
+That first piece you mentioned that is communicating to each other essentially, I mean, through perhaps through a centralized point. But what that's fascinating to how much does that help you? Like if you imagine, you know, right now the number of women vehicles is whatever X I don't know if you can talk to what that number, but it's not in the hundreds of millions yet.
+00:53:23
+And imagine if the whole world is way more vehicles like that changes potentially the power of connectivity, like the more cars you have.
+00:53:34
+I guess actually if you look at Phoenix because there's enough vehicles, there's enough when there's like some level of density, you can start to probably do some really interesting stuff with the fact that cars can negotiate, can be can communicate with each other and thereby make decisions. Is there something interesting there that you can talk to about like how does that help with the driving problem from as compared to just a single car solving the driving problem by itself? Yes, it's a spectrum I first and say that it's it helps and it helps in various ways, but it's not required right now.
+00:54:15
+The way we build our system, like each cars can operate independently. They can operate with no connectivity. So I think it is important that you have a fully autonomous, fully capable driver, that computerized driver that each car has. Then, you know, they do share information and they share information real time. And it really, really helps.
+00:54:37
+So the way we do this today is, you know, whenever one car encounters something interesting in the world, whether it might be an accident or a new construction zone, that information immediately gets uploaded over there and it's propagated to the rest of the fleet. So and that's kind of how we think about maps as Prior's in terms of the knowledge of our drivers, of our fleet of drivers that is distributed across the fleet and it's updated in real time. So that's one case you can imagine as the you know, the the density of these vehicles go up, that they can exchange more information in terms of what they're planning to do and start influencing how they interact with each other, as well as potentially sharing some observations to help.
+00:55:30
+If you have enough density of these vehicles where, you know, one car might be seeing something that another is relevant to another car, that is very dynamic. You know, it's not part of your updating, your static prior of the map of the world, but it's more of a dynamic information that could be relevant to the decisions that other cars make in real time. So you can see them exchanging that information and you can build on that. But again, I see that as an advantage, but it's not a requirement.
+00:55:54
+So what about the human in the loop?
+00:55:57
+So when I got a chance to drive with a ride in a limo, you know, there's customer service.
+00:56:08
+So like there is somebody that's able to dynamically, like, tune in and help you out. What what role does the human play in that picture? That's a fascinating like, you know, the idea of tele operation be able to remotely control a vehicle. So here what we're talking about is like. Like frictionless, like a human being able to in a in a frictionless way, sort of help you out. I don't know if they're able to actually control the vehicle.
+00:56:40
+There's something you could talk to.
+00:56:42
+Yes. OK. To be clear, we don't do teleportation. I don't believe in teleportation for a reason. That's not what we have in our cars. We do, as you mentioned, have, you know, version of customer support. We call it life health. In fact, we find it that it's very important for our right experience, especially if it's your first trip. You've never been in a fully driverless right or only when a vehicle you get in, there's nobody there.
+00:57:07
+So you can imagine having all kinds of questions in your head like how this thing works.
+00:57:11
+So we've put a lot of thought into kind of guiding our our writers, our customers through that experience, especially for the first time.
+00:57:18
+They get some information on the phone if the fully driverless vehicle is used to service their trip. When you get into the car, we have an in-car screen and audio that kind of guides them and explains what to expect.
+00:57:34
+They also have a button that they can push that will connect them to a real life human being that they can talk to right. About this whole process.
+00:57:43
+So that's one aspect of it. There is I should mention that there is another function that humans provide to our cars, but it's not tell operation. You can't think of it a little bit more like, you know, fleet assistance, kind of like, you know, traffic control that you have where our cars, again, there are responsible on their own for making all of the decisions, all of the driving decisions that don't require connectivity.
+00:58:09
+They, you know, anything that a safety or latency critical is done, you know, purely autonomously by onboard our own onboard system. But there are situations where, you know, if connectivity is available and a car encounters a particularly challenging situation, you can imagine like a superhero scene of an accident, the cars will do their best. They will recognize that it's an off nominal situation.
+00:58:32
+They will do their best to come up with the right interpretation, the best course of action in that scenario.
+00:58:38
+But if connectivity is available, they can ask for confirmation from, you know, remote human assistance to kind of confirm those actions and perhaps provide a little bit of kind of contextual information and guidance.
+00:58:52
+So October 8th was when you're talking about the was way more launched, the the the fully of the public version of its fully driverless. That's right. Term I think service in Phoenix is activate this right now with the introduction of fully driverless.
+00:59:13
+Right. Our only vehicles into our public one service.
+00:59:16
+OK, so that's that's amazing. So it's like anybody can get into a limo in Phoenix.
+00:59:22
+So we previously had early people in our Early Rider program taking fully driverless rides in Phoenix. And just this a little while ago, we opened on October 8th. We opened that mode of operation to the public so I can download the app. And, you know, going in right. There is a lot more demand right now for the service and then we have capacity.
+00:59:47
+So we're kind of managing that. But that's exactly the way you describe it. Yeah, it was interesting.
+00:59:52
+So there's more demand than you can you can handle what what has been the reception so far? Like what?
+01:00:00
+I mean, OK, so, you know, this is a product, right? That's a whole nother discussion of like how compelling of a product it is. Great. But it's also like one of the most kind of transformational technologies of the 21st century. So it's also like a tourist attraction. I think it's fun to be a part of it. So it'd be interesting to see, like, what do people say? What do people what have been the feedback so far?
+01:00:28
+You know, still early days, but so far the feedback has been incredible, incredibly positive. They you know, we asked them for feedback during the ride. We asked them for feedback after the ride as part of their trip. You know, we asked him some questions. We asked them to rate the performance of our driver. Most by far, most of our drivers give us five stars in our app, which is absolutely great to see.
+01:00:53
+And that's and they're also giving us feedback on things we can improve. And that's one of the main reasons we're doing this is Phoenix. And, you know, over the last couple of years and every day today, we are just learning a tremendous amount of new stuff from our users. There's no substitute for actually doing the real thing, actually having a fully driverless product out there in the field with users that are actually, you know, paying us money to get from point A to point B.
+01:01:19
+So this is a legitimate like a paid service fee.
+01:01:24
+And the idea is you use the app to go from point A to point B and then what what are the. What are the what's the freedom of the of the starting and ending places? It's an area of geography where that services enabled. It's a decent size of geography of territory. It's actually larger than the size of San Francisco. And within that, you have full freedom of, you know, selecting where you want to go. You know, of course, there are some.
+01:01:52
+And on your app, you get a map, you tell the car where you want to be picked up and where you want the car to pull over and pick you up. And then you tell it where you want to be dropped off. And of course, there are some exclusions, right? You want to be where in terms of where the car is allowed to pull over so that you can do.
+01:02:11
+But besides that, it's amazing. It's not like a fixed theory, I guess. I don't know. Maybe that's what's the question behind your question. But it's not a set of I.
+01:02:20
+So within the geographic constraints that within the area, anywhere it can be, you can be picked up and dropped off anywhere. That's right.
+01:02:27
+And, you know, people use them on like all kinds of trips. They we have and we have an incredible spectrum of writers. I think the youngest actually have car seats them and we have, you know, people taking their kids and rides.
+01:02:37
+I think the youngest riders, we don't have cars or one or two years old, you know, and the full spectrum of use cases, people, you can take them to schools to go grocery shopping, to restaurants, to bars, you know, run errands, you know, go shopping, et cetera, et cetera.
+01:02:53
+You can go to your office. Right. Like the full spectrum of use cases. And people use them in their daily lives to get around.
+01:03:03
+And we see all kinds of really interesting use cases. And that that that that's providing us incredibly valuable experience that we then use to improve our product.
+01:03:14
+So as somebody who's been done a few long Arantes with Joe Rogan and others about the toxicity of the Internet and the comments and the negativity in the comments, I'm fascinated by feedback.
+01:03:27
+I, I believe that most people are good and kind and intelligent and can provide, like even in disagreement, really fascinating ideas. So on a product side, it's fascinating to me, like, how do you get the richest possible user feedback, like to improve what's what are the channels that you use to measure? Because like you're you're no longer. This is one of the magical things about autonomous vehicles. It's not like it's frictionless interaction with the human.
+01:04:02
+So, like, you don't get to you know, it's just giving a ride. So how do you get feedback from people in order to improve?
+01:04:10
+Oh, yeah, great question. Various mechanisms.
+01:04:13
+So as part of the normal flow, we ask people for feedback. They as the car is driving around, we have on the phone and in the car and we have a touch screen in the car, you can actually click some buttons and provide Real-Time feedback on how the car is doing and how the car is handling a particular situation know both positive and negative. So that's one channel we have, as we discussed, customer support or life help, where if a customer wants to has a question or he has some sort of concern, they can talk to a person in real time.
+01:04:44
+So that that is another mechanism that gives us feedback at the end of the trip.
+01:04:50
+We also ask them how things went. They give us comments and start rating our efforts. We also ask them to explain one one well and what could be improved. And we we have our writers are providing a feedback there. What a large fraction is very passionate and very excited about the technology. So we get really good feedback.
+01:05:16
+We also run UKCS, our studies specific that are kind of more, you know, go more in depth and we run both kind of lateral and longitudinal studies where we have deeper engagement with our customers. We have our user experience research team tracking over time.
+01:05:35
+And that's when symbologist, you know, it's cool. And that's that's exactly right. And that's another really valuable feedback source of feedback.
+01:05:42
+And we're discovering a tremendous amount.
+01:05:44
+Right. People go grocery shopping and they like want to load 20 bags of groceries in our cars and like that.
+01:05:51
+That's one workflow that you maybe don't think about getting just right when you're building the driverless product.
+01:06:00
+I have people who bike as part of their trip, so they bike somewhere.
+01:06:06
+Then they get on our cars, they take apart their bike to load onto our vehicle, then go. And then that's how they know where we want to pull over and how that get in and get out. Process Works provides very useful feedback in terms of what makes a good pick up and drop off location.
+01:06:24
+We get really valuable feedback. And in fact, we had to do some really interesting work with high definition maps and thinking about walking directions. And if you imagine you're in a store and some space and then you want to be picked up somewhere, if you just drop a pin and a current location, which is maybe in the middle of a shopping mall, like what's the best location for the car to come pick you up? And you can have some sticks where you just kind of take your, you know, Euclidean distance and find the nearest spot where the car can pull over.
+01:06:57
+That's closest to you. But oftentimes that's not the most convenient one. You have many anecdotes where the car breaks in horrible ways.
+01:07:02
+I think one example that I often mentioned is somebody wanted to be, you know, dropped off and Phoenix and, you know, car picked location that was close, the closest to their where the pin was dropped on the map in terms of latitude and longitude.
+01:07:23
+But it happened to be on the other side of a parking lot that had this row of cacti and poor person had to, like, walk all around the parking lot to get to where they wanted to be in one hundred and ten degree heat. So that were suboptimal.
+01:07:35
+So then, you know, we took all take all of these all the feedback from our users and incorporated into our system and improve it.
+01:07:43
+Yeah, I feel like that's like requires ajai to solve the problem of like when you're which is a very common case. When you're in a big space of some kind like apartment building, it doesn't matter. It's some large space. And then you called it like a wimoweh from there. Right. And whatever doesn't matter. Right. Your vehicle and like, where's the pin supposed to drop? I feel like that's.
+01:08:10
+You don't think. I think that requires ajai. I'm going to have to. OK, the alternative, which I think the Google search engine has taught is like there's something really valuable about the perhaps slightly dumb answer, but a really powerful one, which is like what was done in the past by others, like what was the choice made by others. That seems to be like in terms of Google search when you have like billions of searches that you could you could see, which like when they recommend what you might possibly mean, they suggest based on not some machine learning thing, which they also do, but like on what was successful for others in the past and finding a thing that they were happy with is that.
+01:08:55
+Rated at all the way more like what would Pick-Ups worked for others? I think you're exactly right. So there's real it's an interesting problem. Naïf solutions have an interesting failure modes. So there's definitely lots of things that can be done to improve. And both learning from what works, what doesn't work, an actual heal from getting richer data and getting more information about the environment and, you know, richer maps. But you're absolutely right that there's something I think there's some properties of solutions that in terms of the effect they have on users so much, much, much, much better than others.
+01:09:40
+Right. And predictability and understandability is important. So you can have maybe something that is not quite as optimal, but is very natural and predictable to the user. And it kind of works the same way all the time. And that matters. That matters a lot for the user experience.
+01:09:55
+And but to get to the basics, the pretty fundamental property is that the car actually arrives where you told it to. Right. Like, you can always change, see it on the map and you can move it around if you don't like it.
+01:10:09
+And but like that property that the car actually shows that reliability is critical, which is where compared to some of the human driven.
+01:10:20
+Yes.
+01:10:20
+Analogs, I think, you know, you can have more predictability.
+01:10:24
+It's actually the fact if I do a little bit of a detour here, I think the fact that it's your phone and the car's computers talking to each other can lead to some really interesting things we can do in terms of the user interfaces, both in terms of function, like the car actually shows up exactly where you told it you want it to be, but also some really interesting things on the user interface and think the car is driving, as you call it, and it's on the way to come pick you up.
+01:10:51
+And of course, you get the position of the car and the route on the map. But and they actually follow that route, of course. But it can also share some really interesting information about what is doing.
+01:11:00
+So our cars, as they are coming to pick you up, if it's come if a car is coming up to a stop sign, it will actually show you that like it's there sitting because it's a stop sign or traffic light to show you that it's sitting on a red light.
+01:11:13
+So, you know the little things. Right. But it's I find those little touch touches really interesting, really magical.
+01:11:23
+And it's just little things like that that you can do to kind of delight your users.
+01:11:28
+You know, this makes me think of. There's some products that I just love, like there's a there's a company called Rev Rev Dotcom where I like for this podcast, for example, I can drag and drop a video and then they do all the captioning. But it's humans doing the captioning, but they connect to the AMA, automate everything of connecting to the humans, and they do the captioning transcription. It's all effortless. And like I remember when I first started using them, it was like, life is good, like because it was so painful to figure that out earlier.
+01:12:08
+The same thing with something called Isotope Harrex. This company used for cleaning up audio like the sound clean up. They do. It's a drag and drop and it just cleans everything up very nicely. Another experience like that ad with Amazon, one click purchase, first time. I mean, other places do that now, but just the effortlessness of purchasing, making it frictionless, it kind of communicates to me like I'm a fan of design. I'm a fan of products that you can just create a really pleasant experience.
+01:12:41
+The simplicity of it, the elegance just makes you fall in love with it. So on the do you think about this kind of stuff?
+01:12:48
+I mean, it's exactly what we've been talking about. It's like the little details that somehow make you fall in love with the product is that we went from like Urban Challenge days where love was not part of the conversation probably.
+01:13:03
+And to this point where there's a where there's human beings and you want them to fall in love with the experience because that's something you're trying to optimize for trying to think about, like how do you create experience that people love?
+01:13:18
+Oh, absolutely. I think that's the vision is removing any friction or complexity from getting our users, our writers to where they want to go and making that as simple as possible.
+01:13:36
+And then beyond that, not just transportation, making things and goods get to their destination as seamlessly as possible and talked about, you know, a drag and drop experience where I kind of express your intent and then, you know, it just magically happens. And for our writers, that's what we're trying to get to. As you download an app and you click and car shows up, it's the same car. It's very predictable. It's a safe and high quality experience.
+01:14:04
+And then it gets you in a very reliable, very convenient. Frictionless way to where you want to be and along the journey, I think we also want to do a little things to delight our our users, like the ridesharing companies, because they don't control the experience.
+01:14:26
+I think they can't make people fall in love necessarily with the experience or maybe they haven't put in the effort. But I think if I were to speak to the ride sharing experience I currently have, it's just very it's just very convenient. But there's a lot of room for, like, falling in love with it. Like we can speak to sort of car companies. Car companies do this well.
+01:14:50
+You can fall in love with the car and be like a loyal car person, like whatever. Like I like bad as far as like a 69 Corvette. And at this point, you know, you can't really cars are so only a car is so 20th century man. But is there something about the way more experience where you hope that people will fall in love with the concept? Is that part of it or is it part or is it just about making a convenient ride, not ride sharing?
+01:15:21
+I know the right term is, but just a convenient way to be autonomous transport or like do you want them to fall in love with Wimoweh or maybe elaborate a little bit? I mean, almost like from a business perspective, I'm curious, like, how do you want to be in the background invisible or do you want to be like a source of joy that's very much in the foreground? I want to provide the best, most enjoyable transportation solution, and that means building and building our product and building our service in a way that people do and used in a very seamless, frictionless way and our in their day to day lives.
+01:16:16
+And I think that does mean, you know, in some way falling in love in that product just kind of becomes part of your routine. I it comes down my mind to safety, predictability of the experience and privacy thing, aspects of it.
+01:16:35
+Right. Our cars get the same car. You get very predictable behavior and that that is important. And if you're going to use it in your daily life privacy, and when you're in a car, you can do other things. You're spending a bunch. It's just another space where you're spending significant part of your life and not having to share it with other people who you don't want to share it with, I think is a very nice property.
+01:17:02
+Maybe you take a phone call or do something else in the vehicle and, you know, safety on the quality of the driving as well as the physical safety of not having, you know, to share that ride is, you know, important to a lot of people.
+01:17:19
+What about the idea that when there's somebody like a human driving and they do a rolling stop on a stop sign, like sometimes like, you know, you get a Newborough lift or whatever, like human driver and, you know, they can be a little bit aggressive as drivers.
+01:17:38
+It feels like there is not all aggression is bad. Now, that may be wrong.
+01:17:45
+Again, 20th century conception of driving. Maybe it's possible to create a driving experience, like if you're in the back, busy doing something. Maybe aggression is not a good thing. It's a very different kind of experience, perhaps, but it feels like in order to navigate this world, you need to. How do I phrase this kind of bend the rules a little bit or at least test the rules?
+01:18:11
+I don't know what language politicians use to discuss this, but whatever language they use, you, like, flirt with the rules, I don't know.
+01:18:19
+But like you, you sort of have a bit of an aggressive way of driving that asserts your presence in this world, thereby making other vehicles and people respect your presence and thereby allowing you to sort of navigate the intersections in a timely fashion. I don't know of any of that made sense. But like, how does that fit into the experience of driving autonomously? Is that makes a lot of sense. This is you're hitting on a very important point of a number of behavioral components and parameters that make your driving feel assertive and natural and comfortable, predictable.
+01:19:06
+Our cars will follow rules.
+01:19:08
+They will do the safest thing possible in all situations. You be clear on that.
+01:19:11
+But if you think of really, really good drivers, just think about, you know, professional limo drivers, right. They will follow the rules. They're very, very smooth. And yet they're very efficient and they're sort of comfortable for the people in the vehicle.
+01:19:30
+They're predictable for the other people outside the vehicle that they share the environment with. And that's that's the kind of driver that we want to build. And I think if maybe there's a sport analogy there, you can do in very many sports, the true professionals are very efficient in their movements. They don't do like, you know, hectic, flailing right there, you know, smooth and precise. And they get the best results. So that's the kind of driver that we want to build in terms of aggressiveness, you know, growth or the stop signs you can do crazy lane changes typically doesn't get you to your destination faster.
+01:20:08
+Typically not the safest or most predictable, most comfortable thing to do.
+01:20:14
+And but there is a way to do both.
+01:20:17
+And that that that that's what we're trying and trying to build the driver that is safe, comfortable, smooth and predictable.
+01:20:27
+Yeah, that's a really interesting distinction. I think in the early days of autonomous vehicles, the vehicles felt cautious as opposed to efficient and and still probably. But when I rode in the limo, I mean, there was it was it was quite assertive.
+01:20:45
+It moved pretty quickly like that. And he's one of the surprising feelings was that it actually went fast and it didn't feel like awkwardly cautious, that autonomous vehicle like. So I've also programmed autonomous vehicles and everything I've ever built was felt awkwardly, either overly aggressive, OK, especially when it was my code for, like, awkwardly cautious is the way I would put it and the way most vehicle felt like assertive.
+01:21:22
+And I think efficient is like the right terminology here. There wasn't. And I also like the professional limo driver because we often think like, you know, an Uber driver or a bus driver or a taxi.
+01:21:37
+This is the finding that people think they track. Taxi drivers are professionals. They I mean, it's like that. That's like saying I'm a professional walker just because I've been walking all my life. I think there's an art to it. Right. And if you take it seriously as an art form, then there's a certain way that mastery looks like. It's interesting to think about what is mascotry look like and driving and perhaps what we associate with, like aggressiveness is unnecessary.
+01:22:12
+Like it's not part of the experience of driving.
+01:22:16
+It's like unnecessary fluff. That efficiency you can be. You can create a good driving experience within the rules. That's when you're the first person to tell me this is kind of interesting and to think about this, but that's exactly what it felt like with Wilma. I kind of had this intuition. Maybe it's the Russian thing. I don't know that you have to break the rules in life to get anywhere, but maybe maybe it's possible that that's not the case in driving.
+01:22:51
+I have to think about that. But it certainly felt that way on the streets of Phoenix when I was there. And we know that that that that was a very pleasant experience. And it wasn't frustrating in that, like, come on, move already kind of feeling it was that wasn't there.
+01:23:05
+Yeah. I mean, that's what that's what we're going after. I don't think you have to pick one. I think truly good driving and gives you both efficiency, assertiveness, but also comfort and predictability and safety. And that's what fundamental improvements in the core capabilities truly unlock. And you can kind of think of it as precision and recall trade off.
+01:23:31
+You have certain capabilities, your model. And then it's very easy when you know you have some curve of precision recall. You can move things around and can choose your operating point and your training of precision versus recall. False positives versus false negatives.
+01:23:41
+Right. But then and you can tune things on that curve and be kind of more cautious or more aggressive, but then aggressive as bad or, you know, cautious is bad, but true capabilities come from actually moving the whole curve up.
+01:23:53
+And then you are on a very different plane of those trade offs.
+01:23:59
+And that's what we're trying to do here, is to move the whole curve up.
+01:24:03
+Before I forget, let's talk about trucks a little bit. So I also got a chance to check out some of the way more trucks.
+01:24:11
+I'm not sure if we want to go too much into that space, but it's a fascinating one. So maybe you can mention, at least briefly, you know, Wimoweh is also now doing autonomous trucking and how different like philosophically and technically is that whole space of problems? It's one of our two big. Products and commercial applications of our driver, right, hailing and delivery, we have way more one and we will be moving people and moving goods.
+01:24:44
+Trucking is an example of moving goods.
+01:24:48
+We've been working on trucking since twenty seventeen. It is.
+01:24:57
+A very interesting space and your question, I mean, how different is that it has this really nice property that the first order challenges the science, the hard engineering, whether it's hardware onboard software or off board software, all of the systems that you build for, you know, training or animal models for evaluating wrought-iron system like those fundamentals carry over the true challenges of driving perception, semantic understanding, prediction, decision making and planning, evaluation, the simulator and mal infrastructure.
+01:25:36
+Those carry over I the data and the application and kind of the domains might be different, but the most difficult problems, all of that carries over between the domains.
+01:25:47
+So that that that's very nice. So that's how we approach it. We're kind of built investing in the core, the technical core. And then there's specialization of and of that analogy to different product lines, to different commercial applications. So on just to tease that apart a little bit on trucks.
+01:26:07
+So starting with the hardware, the configuration of the sensors is different and different and physically dramatically different vehicles.
+01:26:17
+So, for example, we have two of our main laser on the trucks on both sides so that we have, you know, have the blind spots. Whereas on the JLR space, we have, you know, one of it sitting at the very top.
+01:26:30
+But the actual sensors are almost the same hour, largely the same.
+01:26:35
+So all of the investment that over the years we've put into building our custom liner's custom radar radars, pulling the whole system together, that carries over very nicely on the perception side, the like the fundamental challenges of seeing understanding the world, whether it's, you know, object detection, classification tracking, semantic understanding of the carries over. Now, yes, there some specialization when you're driving on freeways, you know, range becomes more important that I mean, it's a little bit different.
+01:27:04
+But again, the fundamentals carry over very, very nicely. Same. And as you get into prediction or decision making and the fundamentals of what it takes to predict what other people are going to do to find the long tail to improve your system in that long tail of behavior prediction and response that carries over.
+01:27:25
+Right. And so on, so on. So, I mean, that's pretty exciting. By the way, just when will we include using the the smaller vehicles for transportation of goods? That's an interesting distinction. So I would say there's three interesting modes of operation. So one is moving humans. One is moving goods and one is like moving nothing. Zero occupancy, meaning like you're going to the destination, your empty vehicle.
+01:27:55
+I mean, it's the third is the lottery. If that's the entirety of it, it's the less exciting from the commercial perspective.
+01:28:03
+Well, I mean, in terms of like if you think about what's inside a vehicle as it's moving, because it does, you know, some significant fraction of the vehicles movement has to be empty. I mean, it's kind of fascinating. Maybe just on that small point is, is there different control and like policies that are applied for zero occupancy vehicle, so vehicle with nothing in it?
+01:28:33
+Or is it just move as if there is a person inside? Well, it was with some subtle differences as a first approximation. There are no differences. And if you think about safety and comfort, quality of driving, only part of it, it has to do with, you know, the people or the goods inside of the vehicle.
+01:28:58
+But you don't want to be you know, you want to drive smoothly, as we discussed, not for the purely for the benefit of whatever you have inside the car. Right. It's also for the benefit of the people outside kind of feeling fitting naturally and predictably into the whole environment. So, yes, there are some second-order things you can do is can you change your route and, you know, optimize maybe if you are fleet things that the fleet scale and you will take into account whether some of your cars are actually serving a useful trip, whether with people or with goods, whereas other cars are driving completely empty to that next valuable trip that they're going to provide, but that those are mostly second order effects.
+01:29:41
+OK, cool. So Phoenix is is an incredible place. And you've announced in Phoenix is it's kind of amazing. But, you know, that's just like one city. How do you take over the world? I mean, I'm asking for a friend once, one step at a time.
+01:30:05
+The cartoon pinky and the brain. OK, but gradually is a transfer.
+01:30:12
+So I think the heart of your question is what? Can you ask a better question, then ask a question and answer that one. I'm just going to phrase it in the terms that I want to answer for. Exactly right. Brilliant, please.
+01:30:30
+Now, where are we today and what happens next and what does it take to go beyond Phoenix? And what does it take to get this technology to more places and more people around the world?
+01:30:45
+So our next big area of focus is exactly that larger scale commercialization and scaling up.
+01:31:01
+I think about. And the main and the Phoenix gives us that platform and gives us that foundation of upon which we can build. And it's. There are few really challenging aspects of this whole problem that you have to pull together in order to build a technology and deploy it into the field to go from driverless car to a fleet of cars that are providing a service and then all the way to commercialization. So and this is what we have in Phoenix.
+01:31:45
+We've taken the technology from a proof point to an actual deployment and have taken our driver from one cart to a fleet that can provide a service.
+01:31:57
+Beyond that, if I think about what it will take to scale up and deploy in more places with more customers. I tend to think about three main dimensions, three main axes of a scale. One is the core technology, the hardware and software core capabilities of our driver. The second dimension is evaluation and deployment, and the third one is the product, commercial and operational excellence.
+01:32:35
+So you can talk a bit about where we are along each one of those three dimensions where we are today and what has what will happen next on the core technology.
+01:32:48
+The hardware and software together comprise a driver. We obviously have that foundation that is providing fully driverless trips to our customers as we speak, in fact.
+01:33:03
+And we've learned a tremendous amount from that.
+01:33:08
+So now what we're doing is we are incorporating all those lessons into some pretty fundamental improvements in our core technology, both on the hardware side and on the software side, to build a more general, more robust solution that then will enable us to massively scale beyond Phoenix.
+01:33:26
+On the hardware side, all of those lessons are now incorporated into this generation hardware platform that is being deployed right now.
+01:33:40
+And that's the platform, the fourth generation, the thing that we have right now driving in Phoenix, it's good enough to operate fully driverless, you know, night and day, know various speeds and various conditions. But the fifth generation is the platform upon which we want to go to massive scale. We in turn, we've really made qualitative improvements in terms of the capability of the system, the simplicity of the architecture, the reliability of the redundancy, it is designed to be manufacturable at very large scale and provides the right unit economics.
+01:34:13
+So that's that's the next big step for us on the hardware side of that that's already there for scale the version five.
+01:34:20
+That's right. And is it coincidence or should we look into a conspiracy theory that it's the same version as the pixel phone? Is that what's the higher they neither confirm or deny looks. All right. Cool. So sorry. So that's the that's that what else.
+01:34:37
+So similarly, the hardware is a very discrete jump, but similar to that, to how we're making that change from the fourth generation hardware to the fifth, we're making similar improvements on the software side to make it more robust and more general and allow us to quickly scale beyond Phoenix.
+01:34:54
+So that's the first dimension, of course, in the second dimension is evaluation and deployment.
+01:34:58
+How do you measure your system? How do you evaluate it?
+01:35:04
+How do you build the release and deployment process where you with confidence you can regularly release new versions of your driver into a fleet?
+01:35:15
+How do you get good at it so that it is not a huge tax on your researchers and engineers? So you can kind of how do you build all these processes, the frameworks, the simulation, the evaluation, the data science, the validation, so that, you know, people can focus on improving the system and kind of the releases just go out the door and get deployed across the fleet. So we've gotten really good at that in Phoenix. That's been a tremendously difficult problem.
+01:35:42
+But that's what we have in Phoenix right now that gives us that foundation. And now we're working on kind of incorporating all the lessons that we've learned to make it more efficient, to go to new places, you know, and scale up and just kind of, you know, stamp things out.
+01:35:54
+So that's the second dimension of evaluation and deployment. And the third dimension is product, commercial and operational excellence. And again, Phoenix there is providing an incredibly valuable platform.
+01:36:10
+That's why we're doing things untuned in Phoenix. We're learning, as we discussed a little earlier today, a tremendous amount of really valuable lessons from our users getting really incredible feedback.
+01:36:21
+And we'll continue to iterate on that and incorporate all those those lessons into making our product, you know, even better and more convenient for our users.
+01:36:31
+So you're converting this whole process of Phoenix in Phoenix into something that could be copied and pasted elsewhere.
+01:36:39
+So, like, perhaps you didn't think of it that way when you were doing the experimentation in Phoenix, but. So how long did. Basically, you can correct me, but you I mean, it's still early days, but he's taken the full journey in Phoenix, right, as you were saying, of what it takes to basically Otomi. I mean, it's not the entirety of Phoenix. Right. But I imagine it can encompass the entirety of Phoenix that some some near-term date.
+01:37:10
+But that's not even perhaps important as long as it's a large enough geographic area.
+01:37:14
+So what how copy paste the book is the process currently and how like you know, like when you copy and paste in in Google Docs, I think in or in word you can apply source formatting or apply destination formatting. So when you copy and paste the Phoenix into like, say, Boston, how do you apply the destination formatting. Like how much of the core of the entire process of bringing an actual public.
+01:37:58
+Transportation Autonomous Transportation Service to a city is there in Phoenix that you understand enough to copy and paste into Boston or wherever.
+01:38:09
+So we're not quite there yet.
+01:38:10
+We're not at a point where we're kind of massively coppen pasting all over the place.
+01:38:15
+But Phoenix, what we did in Phoenix, and we very intentionally have chosen Phoenix as our first full deployment area, you know, exactly for that a reason to kind of tease the problem apart, look at each dimension and focus on the fundamentals of complexity and risking those dimensions and then bringing the entire thing together to get all the way to force ourselves to learn all those hard lessons on technology, hardware and software, on the evaluation deployment, on operating a service, operating a business, using actually, you know, serving our customers all the way so that we're fully informed by the most difficult, most important challenges to get us to that next step of massive copy and pasting, as as you said.
+01:39:04
+And that's what we're doing right now. We're incorporating all those things that we've learned into that next system that then will allow us to kind of copy and paste all over the place and to massively scale to more users and more locations. And we just talked a little bit about what does that mean along those different dimensions. So on the hardware side, for example, again, it's that switch from the fourth to the fifth generation and the fifth generation is designed to kind of have that property.
+01:39:32
+Can you say what other cities you're thinking about? Like I'm thinking about sorry, or in San Francisco? No, I thought I want to move to San Francisco, but I'm thinking about moving to Austin. I don't know why people are not being very nice about San Francisco currently. Maybe it's a small it's a maybe it's in vogue right now. But Austin seems I visited there and it was I was in a Wal-Mart.
+01:39:59
+It's one of these moments like turn your life. There's this very nice woman with kind eyes, just, like, stopped. And said he looks so handsome in that tie, honey, to me, this is never happening to me in my life, but just the sweetness of this woman is something I've never experienced, certainly on the streets of Boston. But even in San Francisco, where people wouldn't that's just not how they speak or think. I don't know.
+01:40:27
+There's a warmth to Austin that I love. And since way more does have a little bit of a history there, is that a possibility?
+01:40:36
+Is this your version of asking the question of like, you know, I know you can't share your commercial and deployment roadmap, but I'm thinking about moving to should I let this go?
+01:40:44
+Austin, like in a blink twice, if you think I should move to.
+01:40:48
+That's true. That's true. You got me. You know, we've been testing in all over the place. I think we've been testing more than twenty five cities. We drive in San Francisco, we drive and, you know, Michigan for snow.
+01:41:01
+We are doing a significant amount of testing in the Bay Area, including San Francisco, which is not like because we're talking about the very different thing, which is like a full on large geographic area public service you can't share.
+01:41:16
+OK, what about Moscow?
+01:41:22
+When's that happening? Take on Yandex not paying attention to those folks. They're doing. You know, there's there's a lot of fun. I mean, maybe as a wave of question. You didn't speak to sort of like policy or like, is there tricky things with government and so on?
+01:41:46
+Like, is there other friction that you've encountered except sort of technological friction of solving this very difficult problem? Is there other stuff that you have to overcome when when deploying a public service in a city?
+01:42:04
+That's interesting.
+01:42:06
+It's very important, so we we put significant effort in creating those partnerships and those relationships with governments at all levels, local governments, municipalities, state level, federal level. We've been engaged in very deep conversations from the earliest days of our projects when I worked at all of these levels.
+01:42:29
+You know, whenever we go to test or operate in your area, you know, we always lead with a conversation with the local officials. And but the result of that that investment is that, no, it's not challenges. We have to overcome it. But it is a very important that we continue to have this conversation. Um, yeah, our politicians do. OK.
+01:42:52
+So Mr. Elon Musk said that Lydda is a crutch. What are your thoughts? I wouldn't characterize it exactly that way. I know I think Lamplighter is very important. It is a key sensor that we use, just like other modalities. And as we discussed, our cars use cameras, lighters and radars. They are all very important.
+01:43:20
+They are at kind of the physical level. They are very different. They have very different physical characteristics.
+01:43:30
+Cameras are passive gliders and radars are active and use different wavelengths. So that means they complement each other very nicely and they together combined, they can be used to build a much safer and much more capable system.
+01:43:50
+So to me, it's more of a question, you know, why the heck would you handicap yourself and not use one or more of those sensing modalities when they, you know, undoubtedly just make your system more capable and safer. Now. It you know, what might make sense for one product or one business might not make sense for another one. So if you're talking about driver assist technologies, you make certain design decisions and you make certain tradeoffs and make different ones.
+01:44:24
+If you are building a driver that deploy and fully driverless vehicles and you know, and lighter specifically when this question comes up, I typically the criticisms that I hear or, you know, the kind of points that cost and aesthetics. And I don't find either of those honestly very compelling. So on the cost side, there's nothing fundamentally prohibitive about the cost of fighters. Radars used to be very expensive before people start, you know, before people made certain advances in technology and started to manufacture them.
+01:45:05
+Massive scale and deployment of vehicles right now, similar with lighters. And this is where the lighters that we have on our cars, especially the fifth generation, you know, we've been able to make some pretty qualitative discontinuous jumps in terms of the fundamental technology that allow us to manufacture those things at very significant scale and at a fraction of the cost of both our previous generation, as well as a fraction of the cost of what might be available on the market off the shelf right now.
+01:45:36
+And you know, that improvement will continue. So I think, you know, cost is not a real issue.
+01:45:41
+Second one is aesthetics. You know, I don't think that's a real issue either.
+01:45:48
+Obvious in the eye of the beholder to make you can make light or sexy again. I think you're right.
+01:45:53
+I think it is. I honestly, I think form a function. Well, you know, I was actually somebody brought this up to me.
+01:46:00
+I mean, all forms of light are even even like the ones that are like big. You can make look, I mean, you make look beautiful. There's no sense in which you can't integrate it into design, make there's all kinds of awesome designs. I don't think small and humble is is beautiful.
+01:46:20
+It could be like, you know, brutalism or like it could be Karsch Kornet. I mean, like I said, like hotrods like I don't like I don't necessarily like like, oh man, I'm going to start so much controversy with this. I don't like Portia's. OK, the push that 9/11 the everyone says no.
+01:46:39
+The most beautiful. No, no, no. It's like a baby car. It doesn't make any sense. But everyone its beauty is in the eye of the beholder.
+01:46:48
+You're already looking at me like a kid talking about you're happy to talk about you're digging your own hole of form and function. And my take on the beauty of the hardware that we put on our vehicles. You know, I will not comment on the porch monologue.
+01:47:04
+OK, all right. So but aesthetics, fine. But there's an underlying philosophical question behind the kind of lighter question is like how much of the problem can be solved with computer vision, with machine learning. So. I think without sort of disagreements and so on.
+01:47:28
+It's nice to put it on the spectrum because when I was doing a lot of machine learning as well, it's interesting to think how much of driving if you look at five years, ten years, fifty years down the road, what can be learned almost more and more and more. And to end way, if you look at what Tesla is doing with as a machine learning problem, they're doing a multitask learning thing or it's just they break up driving into a bunch of learning tasks and they have one single neural network and they're just collecting huge amounts of data.
+01:48:00
+The training that I've recently hung out with George Hotz and you know, George, I love him so much. He's just an entertaining human being. We were off Mike talking about Hunter S. Thompson. He's he's the Hunter S. Thompson of autonomous driving.
+01:48:16
+OK, so he I didn't realize this would come out, but they're like really trying to end. And they're the machine, like, looking at the machine learning problem. They're really not doing multitask learning, but it's it's computing the driveable area as a machine learning task and hoping that, like, down the line this level to system, this driver assistance will eventually lead to allowing you to have a fully autonomous vehicle.
+01:48:47
+OK, there's an underlying deep philosophical question, the technical question of how much of driving can be learned. So lighter's an effective tool today for actually deploying a successful service in Phoenix. Right. That's safe, that's reliable, etc., etc..
+01:49:05
+But the question and I'm not saying you can't do machine learning and later but the question is that, like, how much of driving can be learned eventually? Can we do fully autonomous? That's learned now? You know, learning is all over the place and plays a key role in every part of our system.
+01:49:26
+I as you said, I would decouple the sensing modalities from the Amelle and the software parts of it. Lider radar cameras.
+01:49:37
+It's all machine learning of the object detection classification, of course, like that. That's what these modern deep nuts and nuts are very good at. You feed them raw data, massive amounts of raw data, and that's actually what our custom build ladders and raiders are really good at. And Raiders, they don't just give you a point estimates of, you know, objects in space. They give you raw, like physical observations. And then you take all of that raw information.
+01:50:01
+There's colors of the pixels, whether it's lighters, returns and some other information. It's not just distance. Right. And angle and distance is much richer information that you get from those returns, plus really rich information from the Raiders. You fuse it all together and you feed it into those massive animal models that then lead to the best results in terms of object detection, classification, status, the mission.
+01:50:25
+So there's a certain drug, but there is a fusion. I mean, that's something that people didn't do for a very long time, which is like at the sensor fusion level, I guess, like early on fusing the information together with her so that the the sensory information that the vehicle receives from the different modalities or even from different cameras is combined before it is fed into the machine learning models. Yeah.
+01:50:49
+So I think this is one of the trends you're seeing more of that you mentioned N10. There's different interpretation of intent.
+01:50:54
+There is kind of the viewer's interpretation of I'm going to like have one model that goes from raw sensor data to like, you know, steering, torque and, you know, gas brakes. You know, that's too much. I don't think that's the right way to do it. There's more smaller versions of content where you're kind of doing more into unlearning or core training or deep propagation of kind of signals back and forth across the different stages of your system.
+01:51:20
+There's no really good ways it gets into some fairly complex design choices where on one hand you want modularity and the compass ability, the possibility of your system. But on the other hand, you don't want to create interfaces that are too narrow or too brittle to engineered, where you're giving up on the journey of a solution or you're unable to properly propagate signal, you know, reach signal forward and losses and back so you can optimize the whole system jointly.
+01:51:47
+So I would decouple. And I guess what you're seeing in terms of the fusion of the sensing data from different modalities, as well as kind of fusion at the temporal level, going more from, you know, frame by frame where, you know, you would have one that that would do frame by frame detection camera. And then, you know, something that does frame by frame and lighter and then radar and then you use it in a weaker engineered way later.
+01:52:09
+The field over the last decade has been evolving in more kind of joint fusion, more internal models that are solving some of these tasks, you know, jointly. And there's tremendous power in that. And you know that that's that's that that's the progression that you kind of our technology. Our stock has been on as well, now it's Europe, you know, so I would decouple the Sansing and how that information is used from the role of Amelle and the entire stock.
+01:52:31
+And, you know, I guess it's I there's trade offs and, you know, modularity. And how do you inject inductive bias into your system? Right. This is there's tremendous power in being able to do that. So, you know, we have there's no.
+01:52:49
+Part of our system that is not heavily that does not heavily leverage your data driven development or state of the art technology, but it's mapping, there's a simulator or there's perception, you know, object level, you know, perception whether it's semantic understanding, prediction, decision making.
+01:53:07
+So for this one.
+01:53:11
+It's and, of course, object detection and classification, like finding pedestrians and cars and cyclists and colon's and signs and vegetation and being very good at estimating detection, classification, astate state estimation, there's just table stakes like like dustups, zero of this whole stack. You can be incredibly good at that, whether you use cameras or light as a reader. But that's just, you know, this table stakes, that's just step zero. Beyond that, you get into the really interesting challenges of semantic understanding, the perception level.
+01:53:37
+You get into some level of reasoning. You get into very deep problems that have to do with prediction and joint prediction and aarakshan social interaction between all of the actors in the environment, pedestrians, cyclists, other cars, and get into decision making. Right. So how do you build a systems?
+01:53:52
+So we leverage Amelle very heavily in all of these components. I do believe that the best results you achieve by kind of using a hybrid approach and having different types of Amelle, having different models with different degrees of inductive bias that you can have, and combining kind of model free approaches with some model based approaches and some rule based physics based systems. So, you know, one example I can give you is traffic lights. There's problem of the detection of traffic lights.
+01:54:29
+And obviously that's a great problem for, you know, computer vision, confidence. That's their bread and butter and that's how you build it. But then the interpretation of all the traffic light that you're going to need to learn that you don't need to build some, you know, complex animal model that, you know, infers with some, you know, precision. And recall that red means stop. It was a it's a very clear engineered signal with very clear semantics.
+01:54:57
+Yeah.
+01:54:57
+So you want to induce that bias, like how you induce that bias and that whether, you know it's a constraint or a cost function in your stack, but it is important to be able to inject that clear semantic signal into your stack. And, you know, that's what we do. And but then the question of like and that's when you apply it to yourself, when you are making decisions, whether you want to stop for a red light or not.
+01:55:24
+But if you think about how other people treat traffic lights, we're back to them.
+01:55:28
+A version of that, as you know, they're supposed to stop for a red light, but that doesn't mean the will.
+01:55:32
+So then you are back in the like, very heavy Amelle domain where you're picking up on, like, very subtle cues about what they have to do with the behaviour of objects and pedestrians, cyclists, cars and the whole entire configuration of the scene that allow you to make accurate predictions on whether they will, in fact, stop or run a red light.
+01:55:53
+So it sounds like you're ready for Wimoweh. Like machine learning is a huge part of the stack. So it's a huge part of like and not just so obviously the first level zero or whatever he said, which is like just the object detection of the things that know the machine learning can do, but also starting to to do prediction behaviour and so on to model the what are the or the other parties in the scene and to in this, you know, going to do so.
+01:56:21
+Machine learning is more and more playing a role in that as well, of course.
+01:56:26
+Oh, absolutely. I think we've been and going back to the earliest days like or even the Grand Challenge and team was leveraging, you know, machine learning.
+01:56:36
+I was like pre, you know, image nutmegs, very different type of Amelle. But and I think actually was it was before my time. But the Stanford team on during the Grand Challenge had a very interesting machine learning system that would, you know, use lighter and camera when driving in the desert. And it we had build the model where it would kind of extend the range of free space reasoning. We get a clear signal from Lider. And then it had a model that, hey, like this stuff on camera kind of sort of looks like this stuff and lighter.
+01:57:05
+And I know the stuff that I've seen in lighter. I'm very confident this free space. So let me extend that free space zone into the camera range that would allow the vehicle to drive faster. And then we've been building on top of that and kind of staying and pushing the state of the art animal in all kinds of different Amelle over the years.
+01:57:21
+And in fact, from the earlier this, you know, 2010, that's probably the year where Google maybe 2011 probably got pretty heavily involved in machine learning kind of deepness.
+01:57:36
+And at that time was probably the only company that was very heavily investing in state of the art Emelle and self-driving cars. And they they they they go hand in hand. And we've been on that journey ever since. We're doing pushing a lot of these areas in terms of research at way more.
+01:57:53
+And we're collaborate very heavily with the researchers in Alphabet and all kinds of Amelle supervise them all on supervised all, you know, publish some interesting research papers in the space, and especially recently, it's just a super, super active learning.
+01:58:11
+So super, super active and of course, there is, you know, kind of the more mature stuff like, you know, confidence for, you know, object detection, but there's some really interesting, really active work that's happening and more and bigger models and models that have more structure to them, you know, not just large, but maps and reasonable temporal sequences.
+01:58:36
+And some of the interesting breakthroughs that, you know, we've seen in language models, in Transformers, you know, GBG three and friends. There's some really interesting applications of some of the core breakthroughs to those problems of, you know, behavior prediction as well as, you know, decision making and planning. I do think about it kind of the behavior, how, you know, the path, the trajectories, the how people drive. They have kind of share a lot of the fundamental structure.
+01:59:04
+You know, this problem there's, you know, sequential nature. There's a lot of structure in this representation. There is a strong vocality, kind of like in sentences, you know, words that follow each other that are strongly connected. But they're also kind of larger context that doesn't have that locality. And you also see that in driving. Right. What is happening in the scene as a whole has very strong implications on, you know, the kind of the next step in that sequence where whether you're, you know, predicting what other people are going to do, whether you're making your own decisions or whether in a simulator, you're building generative models of, you know, humans walking, cyclist riding the cars driving.
+01:59:41
+Oh, that's all really fascinating. How it's fascinating to think that transforming models and all the all the breakthroughs in language and then help that might be applicable to like driving at the higher level of the behavioral level.
+01:59:53
+That's kind of fascinating. Let me ask about pesky little creatures called pedestrians and cyclists.
+02:00:00
+They seem so humans are a problem. We can get rid of them. I would, uh, but unfortunately, they're also a source of joy and love and beauty.
+02:00:08
+So let's keep them around. They're also our customers for your perspective. Yes. Yes, for sure. There's lots of money. Very good. Um, but I don't even know where I was going.
+02:00:21
+Oh, yes. Pedestrians and cyclists.
+02:00:25
+I you know, they're a fascinating injection into the system of uncertainty of.
+02:00:33
+Kind of like a game theoretic dance of what to do, and also they have perceptions of their own and they can tweet about your product so you don't want to run them over from that perspective. I mean, I don't know.
+02:00:49
+I'm joking a lot, but I think in seriousness, like, you know, pedestrians are complicated computer vision problems, complicated behavioral problem. Is there something interesting you could say about what you've learned from a machine learning perspective from also an autonomous vehicle and a product perspective about just interacting with the humans in this world?
+02:01:12
+Yeah, just to state on record, we care deeply about the safety of pedestrians, you know, even the ones that don't have Twitter accounts.
+02:01:21
+All right. But you know, not me.
+02:01:24
+But yes, I'm glad I'm glad somebody does OK.
+02:01:27
+But, you know, in all seriousness, it safety of vulnerable road users, pedestrians or cyclists is one of our highest priorities.
+02:01:38
+We do a tremendous amount of testing and validation and put a very significant emphasis on, you know, the capabilities of our systems that have to do with safety around those unprotected, vulnerable road users.
+02:01:54
+Cars just discussed earlier in Phoenix, we have completely empty cars, completely driverless cars driving in this very large area, and some people use them to go to school. So that will drive through school zones. So kids are kind of the very special class of those vulnerable user road users. Right. And you want to be super, super safe and super, super cautious around those. So we take it very, very seriously.
+02:02:17
+And, you know, what does it take to be good at it? An incredible amount of performance across your whole stack, you know, starts with hardware and again, you want to use all sensing abilities available to you.
+02:02:37
+Imagine driving on a residential road at night and kind of making a turn and you don't have headlights covering some part of the space. And like, you know, a kid might run out. And lighters are amazing at that. They see just as well in complete darkness as they do during the day. Right.
+02:02:53
+So, again, it gives you that extra margin in terms of capability and performance and safety and quality. And in fact, we oftentimes in these kinds of situations, we have our system detects something, in some cases even earlier than our train operators in the car might do, especially, you know, conditions like, you know, very dark nights.
+02:03:16
+So it starts with something then, you know, perception has to be incredibly good and you have to be very, very good at detecting pedestrians and all kinds of situations and all kinds of environments, including people in weird poses, people kind of running around and, you know, being partially occluded. So, you know, that that stuff, number one, and then you have to have in very high accuracy and very low latency in terms of your reactions to, you know, what these actors might do.
+02:03:55
+And we've put a tremendous amount of engineering, a tremendous amount of validation into make sure our system performs properly. And oftentimes it does require a very strong reaction to do the same thing.
+02:04:07
+And, you know, we actually see a lot of cases like that, the the long tail of really rare, you know, really crazy events that contribute to the safety around pedestrians.
+02:04:19
+One example that comes to mind that we actually happened in Phoenix where we were driving along, and I think it was a forty five mile per hour road.
+02:04:29
+So, you know, pretty high speed traffic and there was a sidewalk not next to it. And there was a cyclist on the sidewalk. And as we were in the right lane right next to us, because a multi lane road. So as we got close to the cyclist on the sidewalk, it was a woman. She tripped and fell, just fell right into the path of our vehicle and our car.
+02:04:54
+This was actually with a test driver. Our test drivers did exactly the right thing. They kind of reacted and came to stop. It requires both very strong steering and, you know, strong application of the brake. And then we simulated what our system would have done in that situation. And it did exactly the same thing. It and that that speaks to all of those components of really good state estimation and tracking. And I can imagine, you know, a person on a bike and they're falling over and they're doing that right in front of you.
+02:05:21
+Right. They have to be real. Things are changing. The appearance of that whole thing is changing. Right. And a person goes one way. They're falling on the road. They're, you know, being flat on the ground in front of you. You know, the bike goes flying the other direction, like the two objects that used to be one. They're now are splitting apart. And the car has to, like, detect all of that, like, milliseconds matter.
+02:05:40
+And it doesn't you know, it's not good enough to just break. You have to, like, steer and break and there's traffic around you. So it all has to come together. And it was really great to see in this case and other cases like that that we're actually seeing in the wild that our system is, you know, performing exactly the way that we would have liked and is able to avoid collisions like this.
+02:06:00
+It's such an exciting space for robotics, like in that split second to make decisions of life and death. I don't know. The stakes are high in the sense, but it's also beautiful that I'm for somebody who loves artificial intelligence, the possibility that A.I. system might be able to save a human life, that's kind of exciting. And there's a problem like to wake up.
+02:06:23
+It's terrifying probably for me, for an engineer to wake up and to think about. But it's also exciting because it's like it's it's in your hands. Let me try to ask a question that's often brought up about autonomous vehicles. And it might be fun to see if you have anything interesting to say, which is about the trolley problem.
+02:06:44
+So the trolley problem is an interesting philosophical construct of that highlights. And there's many others like it of the difficult ethical decisions that we humans have before us in this complicated world. So the specifically is the choice between if you were forced to choose to kill a group of people versus a good way of people like one person, if you didn't if you did nothing, you would kill one person.
+02:07:16
+But if you kill five people and if you decide to swerve out of the way, you would only kill one person. Do you do nothing? Or you choose to do something and you can construct all kinds of sort of ethical experiments of this kind, that of I think, at least on a positive note, inspire you to think about like introspect what are the the physics of our morality? And there's usually not good answers there. I think people love it because it's just an exciting thing to think about.
+02:07:51
+I think people who build autonomous vehicles usually roll their eyes because this is not this one as constructed. This like literally never comes up. In reality, you never have to choose between killing one or like one of two groups of people.
+02:08:11
+But I wonder if you can speak to is there some something interesting to you as an engineer of autonomous vehicles that's within the trolley problem or maybe more generally, are there difficult ethical decisions that you find that algorithm must make? On the specific version of the trolley problem, which one would you do? If you're driving. The question itself is a profound question, because we humans ourselves cannot answer, and that's the very point, I would kill both humans.
+02:08:49
+I think you're exactly right and that humans are not particularly good. I think that kind of phrased like what would a computer do? But humans are not very good. And actually, oftentimes I think that, you know, freezing and kind of not doing anything because you've taken a few extra milliseconds to just process and then you end up doing the worst of the possible outcomes.
+02:09:07
+Right. So I do think that, as you've pointed out, it can be a bit of a distraction and it can be a bit of a kind of a red herring. I think it's an interesting discussion in the realm of philosophy. Right. But in terms of what you know, how that affects the actual engineering and deployment of self-driving vehicles, I mean, it's not how you go about building a system, right? You have talked about how you engineer a system, how you go about evaluating the different components and, you know, the safety of the entire thing.
+02:09:39
+How do you kind of inject the various model based, safety based ideas and the like? Yes. Your reason that parts of the system, you know, your reason about the probability of a collision, the severity of that collision. Right. And that is incorporated.
+02:09:55
+And there's you have to properly reason about the uncertainty of the flows through the system. Right.
+02:09:59
+So, you know, those factors definitely play a role in how the cars then behave, but they tend to be more of like them version behavior. And what you see, like, you're absolutely right that these, you know, clear theoretical problems that they you know, you don't a car that system. And really kind of back to our previous discussion of like what what, what, what, you know, which one do you choose?
+02:10:21
+Well, you know, oftentimes, like, you made a mistake earlier, like it shouldn't be in that situation in the first place. And in reality, the system comes up. If you build a very good, safe and capable driver, you have enough clues in the environment that you drive defensively. So you don't put yourself in that situation. Right. And again, you know, if you go back to that analogy of, you know, precision recall, like, OK, you can make a very hard trade off, but like, neither answer is really good.
+02:10:49
+But what instead you focus on is kind of moving the whole curve up and then you focus on building the right capability on the right defensive driving so that you don't put yourself in a situation like this. I don't know if you have a good answer for this, but people love it when I ask this question about books, are there books in in your life that you've enjoyed, philosophical, fiction, technical, that had a big impact on you as an engineer or as a human being?
+02:11:18
+You know, everything from science fiction to a favorite textbook is there are three books that stand out that you can think of. Three books. So I would you know, that impacted me, I would say this one, as you probably know it well, but and not generally well known, I think, in the US are kind of internationally the master and margarita. And it's one of actually my favorite books.
+02:11:49
+It is Russian. It's a novel by Russian author Bulgakov. And it's just it's a great book. And it's one of those books that you can reread your entire life.
+02:11:59
+And it's just very accessible. You can read it as a kid. And like, you know, the plot is interesting. It's, you know, the devil, you know, visiting the Soviet Union.
+02:12:07
+And but it's like you read it, reread it at different stages of your life and you enjoy it for different, very different reasons. And you keep finding like deeper and deeper meaning and kind of affected. Had definitely had an imprint on me, mostly from the probably kind of the cultural stylistic aspect.
+02:12:29
+Like it makes you one of those books that is good and makes you think but also feels like this really, you know, silly, quirky, dark sense of humor is the Russian.
+02:12:38
+So that's more than perhaps many other books. And that the slight note just out of curiosity, one of the saddest things is I've read that book in English. Did you by chance read it in English or in Russian?
+02:12:52
+In Russian? Only in Russian.
+02:12:53
+And I actually thought that is a question I had posed to myself every once in a while.
+02:12:59
+And I wonder how well it translates, if it translates at all. And there's the language aspect of it and then there's the cultural aspects. I actually I'm not sure if, you know, either of those would work well in English.
+02:13:10
+Now I forget their names, but so when the covid looks a little bit, I'm traveling to Paris for for several reasons. One, it's just I've never been to Paris. I want to go to Paris. But there's the most famous translators of the CSK Tolstoy of most of the Russian literature live there. There's a couple. They're famous, a man and a woman. And I'm going to sort of have a series of conversations with them. And in preparation for that, I'm starting to read in Russian.
+02:13:37
+So I'm really embarrassed to say that I've read everything. I've read Russian literature of like serious depth has been in English, even though I can also read I mean, obviously in Russian, but for some reason. It seemed. In the optimization of life, it seemed the improper decision to do it, to read in Russian like, you know, like I don't need to I need to think in English, no Russian. But now I'm changing my mind on that.
+02:14:08
+And so the question of how will it translate is a really fundamental one to get even with Dostoyevsky. So for what I understand is this can translate easier than others don't as much. Obviously, the poetry doesn't translate as well.
+02:14:22
+I'm also the music of big fan of Vladimir was so scared he doesn't obviously translate well.
+02:14:29
+People have tried, but I don't know. I don't know about that one. I just know that in English you was fun. Fun as hell in English. So. So but it's a curious question and I want to study it rigorously from both the machine learning aspect and also because I want to do a couple of interviews in Russia that I'm still unsure of how to properly conduct an interview across the language barrier.
+02:14:58
+It's a fascinating question that ultimately communicates to an American audience. There's a few Russian people that I think are truly special human beings, and I feel like I sometimes encounter this with some incredible scientists.
+02:15:15
+And maybe you encounter this as well at some point in your life that it feels like because of the language barrier, their ideas are lost to history. It's a sad thing I think about like Chinese scientists or even authors that like that we don't in English speaking world don't get to appreciate some like the depth of the culture because it's lost in translation. And I feel like I would love to show that to the world, like I'm just some idiot. But because I have this, like, at least some semblance of skill in speaking Russian, I feel like and I know how to record stuff on a video camera.
+02:15:54
+I feel like I want to catch like Grigori Perelman, who's a mathematician. I'm not sure if you're familiar with him. I want to talk to him. He's a fascinating mind and to bring him to a wider audience in English speaking. It'll be fascinating, but that requires to be rigorous about this question of how well Bulgakov translates.
+02:16:13
+I mean, I know it's a it's a silly concept, but it's a fundamental one because how do you translate? And that's that's the thing that Google Translate is also facing. Yeah. As as a more machine learning problem. But I wonder is a more bigger problem for AI.
+02:16:31
+How do we capture the magic that's there in the language? I think that's really interesting, really challenging problem if you do read a master and margarita in English. So in Russian, I'd be curious to get your opinion. And I think that part of it is language, but part of it just, you know, centuries of culture, that the cultures are different. So it's hard to connect that one.
+02:16:58
+OK, so that was my first one, right? You had to go to war. The second one, I would probably pick the science fiction by the Strugatsky brothers.
+02:17:07
+You know, it's up there with Isaac Asimov and Ray Bradbury and company the Strugatsky Brothers kind of appealed more to me.
+02:17:16
+I think more it made more of an impression on me growing up.
+02:17:20
+I apologize if I'm showing my complete ignorance. I'm so weak on sci fi. What do they write?
+02:17:27
+Oh, roadside picnic.
+02:17:31
+Um, hard to be a God beetle in an anthill. Monday starts on Saturday.
+02:17:43
+It's not just science fiction. It's also has very interesting interpersonal and societal questions.
+02:17:49
+And some of the language is just completely colorize up.
+02:17:55
+One thing that unites us both, that's the one that's all interesting. Monday starts on Saturday, so I need to read, OK? Oh, boy. You put that in the category of science fiction.
+02:18:06
+That one is I mean, this was more of a silly, you know, humorous work. I mean, there is a song to write the science fiction writers about this this research institute.
+02:18:17
+And like it, it has deep parallels to like serious research.
+02:18:21
+But the setting, of course, is that they're working on magic. Right.
+02:18:25
+And there's a lot of so I thought that's their style. Right. And they go and other books are very different. You know, hard to be a God, right. It's about kind of this higher society being injected into this primitive world and how they operate. They're like some of the very deep ethical questions. They're right. And like they've got the full spectrum, some, you know, more about kind of more adventure stuff.
+02:18:48
+But like, I enjoy all of their books, there are probably a couple, actually. One, I think that they consider their most important work, I think is the snail on a on a on a hill.
+02:18:58
+I don't know exactly sure how it translates. I try reading a couple of times. I still don't get it. But everything else I fully enjoyed. Yeah.
+02:19:04
+And like for one of my birth this is a kid I got like their entire collection, like occupy a giant shelf in my room and they're all over the holidays. I just like my parents couldn't drag me out of the room and I read the whole thing cover to cover and it I really enjoyed it.
+02:19:19
+And that's the one more for the third one. I you know, maybe a little bit darker, but, you know, comes to mind is Orwell's 1984.
+02:19:29
+And, you know, you asked what made an impression on me and the books that people should read. That one, I think falls in the category of both. You know, definitely it's one of those books that you read and you just kind of, you know, put it down and you stare in space for a while.
+02:19:43
+And you know that that's the kind of work I think there's, you know, lessons there people should not ignore. And, you know, nowadays with everything that's happening in the world I like can help it. But, you know, have my mind jump to some parallels with what Orwell described like this, this whole, you know, concept of doublethink and ignoring logic and, you know, holding completely contradictory opinions in your mind. And to have that not bother, you know, sticking to the party line at all costs, like, you know, there's something there, if anything.
+02:20:18
+Twenty twenty is taught me. And I'm a huge fan of Animal Farm, which is a kind of friendly as a friend of nineteen eighty four.
+02:20:26
+Well, it's kind of another thought experiment of how our society may go in directions that we wouldn't like it to go. But if anything, that's been kind of heartbreaking to an optimist about twenty twenty. Is that. That society is kind of fragile, like we have this this is a special little experiment we have going on and not it's not unbreakable, like we should be careful to, like, preserve whatever special thing we have going on. I mean, I think 1984 and these books, Brave New World, they they're hopeful and thinking like stuff can go wrong in non obvious ways.
+02:21:15
+And it's like it's up to us to preserve it. And it's like it's a responsibility.
+02:21:19
+It's been weighing heavy on me because like for some reason, like more than my mom follows me on Twitter and I feel like I have I have like now somehow a responsibility to. To this world, and it dawned on me that like me and millions of others, I'd like the little ants that maintain this little colony, right. So we have a responsibility not to be I don't know what the right analogy is, but I'll put a flamethrower to the place.
+02:21:52
+We want to not do that. And there's interesting, complicated ways of doing that as 1984 shows. It can be through bureaucracy, could be through incompetence, it can be through misinformation. It could be through division and toxicity. I'm a huge believer in that. Love will be the somehow the solution. So, uh, loving robots.
+02:22:15
+Loving robots. Yeah, I think exactly right. Unfortunately, I think it's less of a flame thrower type. When I said I think it's more of a in many cases can be more of a slow boil and that that's the danger.
+02:22:26
+Let me ask it's a fun thing to make a world class roboticist, engineer and leader uncomfortable with the ridiculous question about life. What is the meaning of life to Maytree from robotics and a human perspective? You only have a couple of minutes or one minute to answer, so that makes it more difficult or easier.
+02:22:51
+Yes, very tempted to. Quote, One of the stories, stories by Isaac Asimov, actually actually titled appropriately titled The Last Question, Short Story, where, you know, the plot is that, you know, humans build a supercomputer, you know, this A.I. intelligence.
+02:23:14
+And once you get power gets powerful enough, they pose this question to, you know, how can the entropy in the universe be reduced so that your computer replies as of yet insufficient information to give a meaningful answer.
+02:23:27
+Right. And then thousands of years go by and they keep posing the same question and computer gets more and more powerful and keeps giving the same answer as of yet insufficient information to give them an answer or something along those lines.
+02:23:39
+Right. And then you keep, you know, happening and happening. You fast forward like millions of years into the future and, you know, billions of years. And like at some point, it's just the only entity in the universe. It's like absorbed all humanity and all knowledge in the universe and then keeps posing the same question to itself.
+02:23:55
+And finally, it gets to the point where it is able to answer that question. But, of course, at that point, you know, there's, you know, the heat death of the universe has occurred and that's the only entity and there's nobody else to provide that answer to. So the only thing it can do is to, you know, answered by demonstration. So, like, you know, recreates the big bang. Right. And resets the clock, right?
+02:24:15
+Yes. But I can try to give kind of a different version of the answer, you know, maybe not on the behalf of all humanity. I think that there might be a little presumptuous for me to speak about the meaning of life on behalf of all humans. But at least, you know, personally, it changes.
+02:24:34
+I think if you think about kind of what gives you and your life meaning and purpose and kind of what drives you, it seems to change over time.
+02:24:49
+But the lifespan of your existence, you know, just when you just enter this world.
+02:24:56
+Right.
+02:24:56
+It's all about kind of new experiences and you get like new smells, new sounds, new emotions. Right.
+02:25:02
+And like that's what's driving you. Right. You're experiencing new amazing things. Right. And that's magical. Right. That that's pretty, pretty, pretty awesome. Right. That gives you meaning. Then you can get a little bit older. You start more intentionally learning about things, I guess actually before you start intentionally learning.
+02:25:21
+Probably fun. Fun is a thing that gives you kind of meaning and purpose and purpose and the things you optimize for. Right. And fun is good. Then you get to start learning.
+02:25:30
+And I guess that's the joy of comprehension. And discovery is another thing that gives you meaning and purpose and drives you right. Then, you know, you learn enough stuff and it you want to give some of the back. Right.
+02:25:46
+And so the impact and contributions back to technology or society, people, you know, local or more globally is becomes a new thing that drives a lot of your behavior and something that gives you purpose and that you derive, you know, positive feedback from right now. Then you go and so on and so forth. You go through various stages of life. I mean, if you have you know, if you have kids like that definitely changes your perspective on things.
+02:26:15
+You know, I have three that definitely flips some bits in your head in terms of kind of what you care about and what you optimize for and what matters. What doesn't matter.
+02:26:24
+Right. So, you know, and so on and so forth. Right. And I it seems to me that, you know, it's all of those things and that's kind of you go through life, you know, you want these to be additive. Right. New experiences, fun, learning. In fact, like you want you want to, you know, be accumulating all I want to, you know, stop having fun or experiencing new things.
+02:26:47
+And I think it's important that, you know, just kind of becomes additive as opposed to a replacement or subtraction.
+02:26:53
+But, you know, those few as far as I got. But, you know, ask me in a few years, I might have one or two more to add to the list.
+02:26:59
+And before you know it, time is up just like it is for this conversation. But hopefully it was a fun ride. It was a huge honor meeting. As I as you know, I've been a fan of yours and fan of Google's self-driving car and way more for a long time. I can't wait. I mean, it's one of the most exciting. If we look back in the twenty first century, I truly believe it will be one of the most exciting things we descendants of apes have created on this earth.
+02:27:25
+So I'm a huge fan and I can't wait to see what you do next. Thanks so much for talking. Thanks. Thanks for having me. And it's also a huge fan to work on a snack and I really enjoyed it.
+02:27:38
+Thank you. Thanks for listening to this conversation, Demetri Dolgov. And thank you to our sponsors, Trial Labs, a company that helps businesses apply machine learning to solve real world problems. Blankest, an app I use for reading through summaries of books, better help online therapy with a licensed professional and cash app. The app I used to send money to friends. We check out these sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube review starting up a podcast, follow on Spotify, support our patron or connect with me on Twitter, Àlex Friedman.
+02:28:16
+And now let me leave you with some words from Isaac Asimov. Science can amuse and fascinate us all, but it is engineering that changes the world. Thank you for listening and hope to see you next time.

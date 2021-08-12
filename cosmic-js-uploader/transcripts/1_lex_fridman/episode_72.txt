@@ -1,0 +1,512 @@
+00:00:00
+The following is a conversation with Scott Aaronson, a professor at UT Austin, director of its Quantum Information Center and previously a professor at MIT. His research interests center around the capabilities and limits of quantum computers and computational complexity theory more generally. He is an excellent writer and one of my favorite communicators of computer science in the world. We only had about an hour and a half of this conversation, so I decided to focus on quantum computing. But I can see us talking again in the future on this podcast at some point about computational complexity theory and all the complexity classes that Scott Catalog's and his amazing complexity wiki.
+00:00:42
+As a quick aside, based on questions and comments I've received, my goal with these conversations is to try to be in the background without ego and do three things. One, let the guests shine and try to discover together the most beautiful insights in their work and in their mind to try to play devil's advocate just enough to provide a creative tension in exploring ideas to conversation. And three, to ask very basic questions about terminology, about concepts, about ideas.
+00:01:16
+Many of the topics we talk about in the podcast I've been studying for years as a grad student, as a researcher and generally as a curious human who loves to read. But frankly, I see myself in these conversations as the main character for one of my favorite novels. But that's the Yassky called The Idiot. I enjoy playing dumb. Clearly it comes naturally. But the basic questions don't come from my ignorance of the subject, but from an instinct that the fundamentals are simple.
+00:01:45
+And if we linger on them from almost a naive perspective, we can draw an insightful thread from computer science to neuroscience to physics to philosophy and to artificial intelligence. This is the artificial intelligence podcast, we enjoy it, subscribe on YouTube. Good five stars, an Apple podcast, supporter and patron are simply connected me on Twitter. Àlex Friedman spelled F.R. I.D. man as usual. I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation.
+00:02:20
+I hope that works for you and doesn't hurt the listening experience.
+00:02:24
+Quick summary of the ads to supporters today. First, get cash up and use the Code Lux podcast. Second, listen to the Techmeme Ride Home podcast for Tech News Search Ride Home. Two words in your podcast app. This show is presented by Kashyap, the number one finance app in the App Store, when you get it, you Scolex podcast cash app lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar.
+00:02:55
+Brokerage services are provided by cash up and vesting a subsidiary of Square, a member SIPC since cash abdus fractional share trading. Let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is an algorithmic marvel. So big props to the Kashef engineers for solving a hard problem that in the end provides an easy interface that takes a step up to the next layer of abstraction over the stock market, making trading more accessible for new investors and diversification much easier.
+00:03:31
+So, again, if you get cash out from the App Store or Google Play and use the code podcast, you'll get ten dollars in cash. I will also donate ten dollars, the first one of my favorite organizations that is helping to advance robotics and stem education for young people around the world. This episode is also supported by the Techmeme Ride Home podcast. It's a technology podcast I've been listening to for a while and really enjoying it goes straight to the point, gives you the tech news you need to know and provides minimal but essential context.
+00:04:07
+It's released every day by five p.m. Eastern and there's only about 15 to 20 minutes long. For fun, I like building apps on smartphones, mostly on Android, so I'm always a little curious about new flagship phones that come out. I saw that Samsung announced the new Galaxy as 20. And of course, right away, Techmeme Right Home has a new episode that summarizes all that I needed to know about this new device. They've also started to do a weekend bonus episodes of interviews of people like AOL founder Steve Case and Investing and Gary Marcus and I, who I've also interviewed on this podcast.
+00:04:48
+You can find the Techmeme Ride Home podcast if you search your podcast app for a ride home. Two words, then subscribe, enjoy and keep up to date with the latest tech news. And now here's my conversation with Scott Aaronson. I sometimes get criticism from a listener here and there that while having a conversation with a world class mathematician, physicist, neurobiologist, aerospace engineer or theoretical computer scientists like yourself, I waste time by asking philosophical questions about free will, consciousness, mortality, love, nature of truth, superintelligence, whether time travel is possible, whether space time is emergent, fundamental, even the crazy questions like whether aliens exist, what their language might look like, what their math might look like, whether math is inventor discovered and of course, whether we live in a simulation or not.
+00:06:05
+So I checked it out with it.
+00:06:08
+I try to dance back and forth from the deep technical to the philosophical. So I've done that quite a bit.
+00:06:16
+So you're a world class computer scientist, and yet you've written about this very point.
+00:06:21
+The philosophy is important for experts in any technical discipline. Do they somehow seem to avoid this? So I thought it'd be really interesting to talk to you about this point. Why should we computer scientists, mathematicians, physicists care about philosophy, do you think?
+00:06:37
+Well, I would reframe the question a little bit.
+00:06:40
+I mean, philosophy, almost by definition, is the subject that's concerned with the biggest questions that you could possibly ask. Right. So, you know, the ones you mentioned, right. Are are we living in a simulation or are we alone in the universe? How should we even think about such questions? Know is the future. Determine then what you know, what do you mean by being determined? Why are we alive at the time we are and not at some other time, you know?
+00:07:10
+And, you know, when you when you sort of contemplate the enormity of those questions, I think, you know, you could ask, well, then why why be concerned with anything else? Right. Why why not spend your whole life on those questions? You know, I think I think in some sense that is the right way to phrase the question. And, you know, and actually, you know what what we learned, you know, I mean, throughout history, but really starting with the scientific revolution, with Galileo and so on, is that there is a good reason to, you know, focus on narrower questions, you know, more technical, you know, mathematical or empirical questions.
+00:07:50
+And that is that you can actually make progress on them. Right. And you can actually often answer them. And sometimes they actually tell you something about the philosophical questions that sort of, you know, maybe motivated your curiosity as a child. Right. You know, they don't necessarily resolve the philosophical questions, but sometimes they reframe your whole understanding of them. Right. And so for me, philosophy is just the thing that you have in the background from the very beginning that you want to you know you know, these are these are sort of the reasons why you went into intellectual life in the first place, at least the reasons why I did.
+00:08:27
+Right. But, you know, math and science are tools that we have for, you know, actually making progress and, you know, hopefully even, you know, changing our understanding of these philosophical questions, sometimes even more than philosophy itself does. What do you think computer scientists avoid these questions? We run away from them a little bit, at least in technical scientific discourse. Well, I'm not I'm not sure if they do so more than any other scientist, though.
+00:08:56
+I mean. I mean. I mean. I mean. I mean, Alan Turing was famously, you know, interested and, you know, his his most famous one of his two most famous papers was in a philosophy journal, mind. You know, it was the one where he proposed the Turing test. He took a Wittgenstein's course at Cambridge, you know, argued with them.
+00:09:18
+I just recently learned that the little bit and it's actually fascinating. And I was I was trying to look for resources in trying to understand where the sources of disagreement and debate between Wittgenstein and touring were. That's interesting that these two minds have somehow met in the arc of history. Yeah, well, the transcript of their the course, which was in 1939. Right. Is one of the more fascinating documents that I've ever read because, you know, of Wittgenstein is trying to say, well, all of these these formal systems that are just a complete irrelevancy is right.
+00:09:58
+If a formal system is irrelevant, who cares? You know, why does that matter in real life? Right. And Turing saying, well, look, you know, if you use an inconsistent formal system to design a bridge, you know, the bridge may make collapse. Right. And, you know, touring in some senses, thinking decades ahead. You know, I think of where Wittgenstein is, the where the formal systems are actually going to be used, you know, in computers.
+00:10:23
+To actually do things in the world, you know, and it's interesting that touring actually dropped the course halfway through. Why? Because he had to go to Bletchley Park and, you know, work on something of more immediate importance. That's fascinating. Take a step from philosophy to actually like the biggest possible step to actual engineering with actual real impact. Yeah. And I would say more generally, a, you know, a lot of scientists are, you know, interested in philosophy, but they're also busy.
+00:10:53
+Right. And they have, you know, a lot on their plate and there are a lot of sort of very concrete questions that are already, you know, not answered, but, you know, look like they might be answerable. Right. And so then you could say, well, then why, you know, break your brain over these, you know, metaphysically unanswerable questions when there are all of these answerable ones instead.
+00:11:16
+So I think, you know, A for me, I enjoy talking about philosophy. I even go to philosophy conferences sometimes, such as the, you know, QSI conferences. I enjoy interacting with philosophers. I would not want to be a professional philosopher because I like being in a field where I feel like, you know, you know, if I get too confused about the sort of eternal questions, then I can actually make progress on something.
+00:11:47
+Can you maybe linger on that for just a little longer?
+00:11:49
+Yeah. What do you think is the difference? Like the corollary of the criticism that I mentioned previously there. Why ask the philosophical questions of the mathematician is if you want to ask yourself questions than invite a real philosopher on and ask them. So what's the difference between the way a computer scientist and mathematician ponders a philosophical question and a philosopher ponders the philosophical question?
+00:12:14
+Well, I mean I mean, a lot of it just depends on the individual right. It's hard to make generalizations about entire fields, but. You know, I think I think if we if we if we tried to we tried to stereotype, you know, we would say that, you know, a scientist very often will be less careful in their use of words. You know, I mean, philosophers are really experts in sort of, you know, like when when I talk to them, they will just pounce if, you know, use the wrong phrase for something.
+00:12:48
+This is a very nice word.
+00:12:49
+You could say cyclers or CIA or, you know, they will they will sort of interrogate my word choices, let's say, to a much greater extent than scientists would write. And and scientists, you know, will often if you ask them about a philosophical problem like the hard problem of consciousness or freewill or whatever, they will try to relate it back to, you know, recent research, you know, research about about a neurobiology or, you know.
+00:13:18
+But, you know, the best of all was research that they personally are involved with. Right. Right. And you know and, you know, of course, they will want to talk about that, you know, and it is what they will think of, you know. And of course, you could have an argument that maybe, you know, it's all interesting as it goes, but maybe none of it touches the philosophical question. Right.
+00:13:37
+But, you know, but maybe, you know, a science, you know, at least it it as I said, it does tell us concrete things. And, you know, even if, like, a deep dive into neurobiology will not answer the hard problem of consciousness, you know, maybe it it can take us about as far as we can get toward, you know, expanding our minds about it, you know, toward thinking about it in a different way.
+00:14:05
+Well, I mean, I think neurobiology can do that. But, you know, with these profound philosophical questions, I mean, also art and literature do that right there, all different ways of trying to approach these questions that, you know, we don't for which we don't even know really what an answer would look like. But and yet somehow we can't help but keep returning to the questions.
+00:14:24
+And you have a kind of mathematical, beautiful mathematical way of discussing this with the idea of Q Prime.
+00:14:29
+Oh, right. You're right.
+00:14:31
+That usually the only way to make progress on the big questions, like the the philosophical questions we're talking about now is to pick off smaller sub questions, ideally sub questions you can attack using math, empirical observation or both. You define the idea of a Q Prime. So given an unanswerable philosophical riddle.
+00:14:52
+Q Replace it with a Mirali in quotes, scientific or mathematical question. Q Prime which captures part of what people have wanted to know when they first asked. Q Yes. Then with like one source. Q Prime till you describe some examples of such. Q Prime sub questions in your long essay titled Why Philosophers Should Care About Computational Complexity. So you catalogued the various Q primes, which you think theoretical computer science has made progress. Can you mention a few favorites, if any, if any pop to mind or.
+00:15:30
+Oh yeah.
+00:15:30
+So, so I mean I would say some of the most famous examples in history of that sort of replacement were, you know, I mean, I mean to go back to Alan Turing. Right. What he did in his computing machinery and intelligence paper was exactly you know, he explicitly started with the question, can machines think? Yeah. And then he said, sorry. I think that question is too meaningless. But here's a different question. You know, could you program a computer so that you couldn't tell the difference between it and a human right and, you know.
+00:16:02
+Yes. So in the very first two sentences, he, in fact, just minutes the Q prime precise, he does precisely that. Or, you know, we could look at girdle right. Where, you know, you had these philosophers arguing for centuries about the limits of mathematical reasoning to the limits of formal systems. And then by the early 20th century logicians, you know, starting with, you know, Guy Russell and then, you know, most spectacularly girdle, you know, managed to reframe those questions as, look, we have these formal systems, they have these definite rules.
+00:16:38
+Are there questions that we can phrase within the rules of these systems that are not provable within the rules of the systems? And can we prove that fact? Right.
+00:16:47
+And so that would be another example.
+00:16:51
+You know, I had this essay called The Ghost in the Quantum Turing Machine. That was, you know, one of the crazier things I've written. But I I tried to do something or, you know, to to advocate doing something similar there for free will where, you know, instead of talking about is free will, you know, real where we get hung up on the meaning of, you know, what exactly do we mean by freedom and can you have can you be you know or do we mean compatible with free will.
+00:17:19
+Libertarian free will. What do these things mean? You know, I. Suggest just asking the question how well, in principle, consistently with the laws of physics, could a person's behavior be predicted, you know, without so, let's say, destroying the person's brain, you know, taking it apart in the process of trying to predict them. And, you know, and that actually asking that question gets you into all sorts of meaty and interesting issues, you know, issues of what is the computational substrate of the brain, you know, or can you understand the brain, you know, just at the sort of level of the neurons, you know, at sort of the abstraction of a neural network?
+00:17:59
+Or do you need to go deeper to the molecular level to ultimately even to the quantum level? Right. And of course, that would put limits on predictability if you did.
+00:18:09
+So, you need to reduce you need to reduce the mind to a computational device like formalize it so then you can make predictions about, you know, whether you could predict the beginning.
+00:18:20
+If you were trying to predict a person, then presumably you would need some model of their brain. Right. And now the question becomes one of how accurate can such a model become? Can you make a model that will be accurate enough to really seriously threaten people's sense of free will, you know, not just metaphysically, but like really I've written in this envelope. What you were going to say next is exactly the right term here.
+00:18:46
+So it's also a level of abstraction has to be right.
+00:18:49
+So if you're if you're accurate at the somehow at the quantum level, that may not be convincing to us at the human level. Well, that's right.
+00:19:00
+But but the question is, what accuracy at the sort of level of the underlying mechanisms do you need in order to predict the behavior? At the end of the day, the test is just can you foresee what the person is going to do? Right. I am. You know, and you know, and in discussions of free will, you know, it seems like both sides want to, you know, very quickly dismiss that question as irrelevant. Well, to me, it's totally relevant, OK, because, you know, if someone says, oh, well, you know, a plus demon that knew the complete state of the universe, you know, could predict everything you're going to do, therefore, you don't have free will.
+00:19:41
+You know, it doesn't trouble me that much because. Well, you know, I've never met such a demon. I you know, you know, and we you know, we even have some reasons to think, you know, maybe, you know, it could not exist as part of our world. You know, it was only an abstraction, a thought experiment. On the other hand, if someone said, well, you know, I have this brain scanning machine, you know, you step into it and then, you know, every paper that you will ever write, it will write, you know, every thought that you will have, you know, even right now about the machine itself, it will say, you know, well, if you can actually demonstrate that, then I think you know that you know that that sort of threatens my internal sense of having free will in a much more visceral way, you know, but now you notice that we're asking in a much more empirical question we're asking, is such a machine possible or isn't it?
+00:20:31
+We're asking if it's not possible, then what in the laws of physics or what about the behaviour of the brain, you know, prevents it from existence.
+00:20:40
+So if you could philosophize a little bit within this empirical question at where do you think would enter the by which mechanism would enter the possibility that we can't predict the outcome. So there would be something that would be akin to a free will?
+00:20:55
+Yeah, well, you could say the sort of obvious possibility which was, you know, recognised by Eddington and many others about as soon as quantum mechanics was discovered in the 1920s, was that if, you know, let's say a sodium ion channel, you know, in the in the in the brain, you know, its behaviour is chaotic, right? It sort of it's governed by these hard Hidary huckstering equations in neuroscience. Right. Which are differential equations that have a stochastic component right now.
+00:21:32
+Where does you know and this ultimately governs, let's say, whether in neuron will fire or not.
+00:21:36
+That's the basic chemical process or electrical process by which signals are sent in the brain.
+00:21:41
+Exactly. Exactly. And and, you know, and so you could ask, well, well, where does the randomness in the process, you know, that that neuroscientist or what neuroscientists would would would treat as randomness, where does it come from? You know, ultimately it's thermal noise right where it is thermal noise come from. But ultimately, you know, there are some quantum mechanical events at the molecular level that are getting sort of chaotically amplified by, you know, a sort of butterfly effect.
+00:22:10
+And so, you know, even if you knew the complete quantum state of someone's brain, you know, at best you could predict the probabilities that they would do one thing or do another thing. Right. I think that part is actually relatively uncontroversial, right? The controversial question is whether any of it matters for the sort of philosophical questions that we care about, because you could say if all it's doing is just injecting some randomness into an otherwise completely mechanistic process, well, then who cares?
+00:22:41
+Right.
+00:22:42
+And more concretely, if you could build a machine that you could just calculate even just the probabilities of all of the possible things that you would do.
+00:22:52
+Right.
+00:22:53
+And, you know you know, of all the things that said you had a 10 percent chance of doing, you did exactly a tenth of them, you know, and so that's somehow also takes away the feeling of freedom.
+00:23:05
+Exactly. I mean I mean, to me, it seems essentially just as bad as if the machine deterministically predicted you. It seems, you know, hardly different from that. So so so then but a more a more subtle question is, could you even learn enough about someone's brain to do that? OK, because, you know, another central fact about quantum mechanics is that making a measurement on a quantum state is an inherently destructive operation. OK, so, you know, if I want to measure the position of a particle, right.
+00:23:40
+It was well before I measured it had a superposition over many different positions. As soon as I measure, I localize it. Right. So now I know the position, but I've also fundamentally changed the state. And so so you could say, well, maybe in trying to build a model of someone's brain that was accurate enough to actually, you know, make, let's say, even even well calibrated probabilistic predictions of their future behavior, maybe you would have to make measurements that were just so accurate that you would just fundamentally alter their brain.
+00:24:12
+OK, or maybe not.
+00:24:15
+Maybe you only, you know, it would suffice to just make some nano robots that just measured some sort of much larger scale, you know, macroscopic behavior like, you know, is, you know, what is this neuron doing? What is that neuron doing? Maybe that would be enough. See? But now, you know, I got what I claim is that we're now asking a question, you know, in which, you know, it is it is it is possible to envision what progress on it would look like.
+00:24:41
+Yeah, but just as you said, that question may be slightly detached from the philosophical question in the sense if consciousness somehow has a role to the experience of free will, because ultimately what we're talking about free will. We're also talking about not just the predictability of our actions, but somehow the experience of the predictability.
+00:25:03
+Yeah, well, I mean, a lot of philosophical questions ultimately like feedback to the hard problem of consciousness, you know, and as much as you can try to sort of talk around it or not write and, you know, and then and there is a reason why people try to talk around it, which is that, you know, Democritus talked about the hard problem of consciousness, you know, in 400 B.C. in terms that would be totally recognisable to us today.
+00:25:30
+Right. And it's really not clear if there's been progress since or what progress could possibly consist of. Is there a Q prime type of subquestion that could help us get a consciousness at something about consciousness? Well, I mean well, I mean, there is the whole question of, you know, of I right. Of, you know, can you build a human level or super human level AI and, you know, can it can it work in a completely different substrate from the brain?
+00:25:57
+I mean, you know, and of course, that was Alan Turing's point. And, you know, and even if that was done, it's you know, maybe people would still argue about the hard problem of consciousness. And yet, you know, my my my claim is a little different. My claim is that in a world where, you know, there were, you know, human level eyes where we'd been even overtaken by such eyes, the entire discussion of the hard problem of consciousness would have a different character.
+00:26:24
+Right. It would take place in different terms in such a world, even if we hadn't answered the question. And my claim about free will would be similar. Right. That if there if this prediction machine that I was talking about could actually be built. Well, now the entire discussion of, you know, free will is sort of transformed by that, you know, even if in some sense the metaphysical question hasn't been answered. Yeah, exactly, transforms it fundamentally because, see, that machine does tell you that it can predict perfectly, and yet there is this deep experience of free will and then that changes the question completely.
+00:27:00
+And it starts actually getting to the question of the the ajai the Turing questions, the demonstration of free will, the demonstration of intelligence, the demonstration of consciousness. Does that equal consciousness, intelligence and free will? But the ALLEX, if every time I was contemplating a decision, you know, this machine had printed out an envelope, you know, where I could open it and see that it knew my decision, I think that actually would change my subjective experience of making decisions.
+00:27:34
+You might I mean, does knowledge change your subjective experience? Well, you know, I mean I mean, the knowledge that this machine had predicted everything I would do, I mean, it might drive me completely insane. Right. But at any rate, it would change my experience to, you know, to not just discuss such a machine as a thought experiment, but to actually see it. Yeah, I mean I mean, you know, you could say at that point, you know, you could say, you know, why not simply call this machine a second instantiation of me and be done with it?
+00:28:05
+Right. What what why even privilege the original me over this perfect duplicate that that exists in the machine?
+00:28:14
+Or there could be a religious experience with a. Kind of what God throughout the generations is supposed to have that God kind of represents that perfect machine is able to I guess, actually.
+00:28:27
+Well, I don't even know what what are the religious interpretations of free will does, so if God knows perfectly everything in religion and the various religions, where does free will fit into that? You know, that has been one of the big things that theologians have argued about for thousands of years.
+00:28:50
+You know, I am not a theologian, so maybe I shouldn't go there. There's not a clear answer in a book like I mean I mean, this is, you know, the Calvinists debated this. You know, this has been, you know, I mean, different religious movements have taken different positions on that question, but that is how they think about it. You know, meanwhile, you know, a large part of sort of what what animates, you know, theoretical computer science is, you know, we are asking sort of what are the ultimate limits of, you know, what you can know or, you know, calculate or figure out by, you know, entities that you can actually build in the physical world.
+00:29:26
+Right. And if I were trying to explain it to a theologian, maybe I would say, you know, we are studying, you know, to what extent, you know, gods can be made manifest in the physical world. I'm not sure my colleagues would like that.
+00:29:40
+So let's talk about quantum computers. Yeah, sure. Sure.
+00:29:44
+As you said, quantum computing, at least in the 1990s, was a profound story at the intersection of computer science, physics, engineering, math and philosophy. So there's this broad and deep aspect to quantum computing that represents more than just the quantum computer. But can we start at the very basics? What is quantum computing?
+00:30:04
+Yeah, so it's a proposal for a new type of computation or let's say a new way to harness nature to do computation that is based on the principles of quantum mechanics. Now, the principles of quantum mechanics have been in place since 1926.
+00:30:23
+You know, they haven't changed. You know what's new is, you know how we want to use them. OK, so what does quantum mechanics say about the world?
+00:30:32
+You know, the the physicists, I think over the generations, you know, convinced people that that is an unbelievably complicated question. And you just give up on trying to understand that I can let you not not being a physicist, I can let you in on a secret, which is that it becomes a lot simpler if you do what we do in quantum information theory and sort of take the physics out of it. So the way that we think about quantum mechanics is sort of as a generalisation of the rules of probability of themselves.
+00:31:02
+So, you know, you might say there's a you know, there was a 30 percent chance that it was going to snow today or something. You would never say that there was a negative 30 percent chance. Right. That would be nonsense, much less. Would you say that there was a 20 percent chance, you know, a square root of minus one percent chance?
+00:31:21
+Now, the central discovery that sort of quantum mechanics made is that fundamentally the world is described by these sort of, let's say, the possibilities for for, you know, what a system could be doing are described using numbers called amplitudes, which are like probabilities in some ways, but they are not probabilities. They can be positive. For one thing, they can be positive or negative. In fact, they can even be complex numbers. And if you've heard of a quantum superposition, this just means that some state of affairs where you assign an amplitude, one of these complex numbers to every possible configuration that you could see a system in on measuring it.
+00:32:10
+So, for example, you might say that an electron has some amplitude for being here and some other amplitude for being there right now. If you look to see where it is, you will localize it, right? You will sort of force the amplitude to be converted into probabilities.
+00:32:29
+That happens by taking their square to absolute value.
+00:32:32
+OK, and and then, you know, you can say either the electron will be here or it will be there. You know, knowing the amplitude, you can predict at least the probabilities that it will that you'll see each possible outcome. But while the system is isolated from the whole rest of the universe, the rest of its environment, the amplitudes can change in time by rules that are different from the normal rules of probability and that are alien to our everyday experience.
+00:33:04
+So any time anyone ever tells you anything about the weirdness of the quantum world, we're assuming that they're not lying to you, right? They are telling you, you know, and yet another consequence of nature being described by these amplitudes. So most famously, what amplitudes can do is that they can interfere with each other. So in the famous double. Slit experiment. What happens is that you shoot a particle like an electron, let's say, at a screen with two slits in it, and you find that there are on a second screen.
+00:33:38
+Now, there are certain places where that electron will never end up, you know, after it passes through the first screen. And yet if I close off one of the threats, then the electron can appear in that place. OK, so by so by decreasing the number of paths that the electron could take to get somewhere, you can increase the chance that it gets there. OK, now how is that possible? Well, it's because we you know, as we would say now the electron has a superposition state.
+00:34:09
+It has some amplitude for reaching this point by going through the first slit. It has some other amplitude for reaching it by going through the second slit. But now, if one amplitude is positive and the other one is negative, then I have to add them all up. Right. I have to add the amplitudes for every path that the electron could have taken to reach this point. And those amplitudes, if they're pointing in different directions, they can cancel each other out.
+00:34:36
+That would mean the total amplitude is zero and the thing never happens at all. I close off one of the possibilities, then the amplitude is positive or negative and now the thing can happen. So that is sort of the one trick of quantum mechanics. And now I can tell you what a quantum computer is. A quantum computer is a a computer that tries to exploit, you know, these. Exactly. These phenomena superposition amplitudes and interference in order to solve certain problems much faster than we know how to solve them otherwise.
+00:35:11
+So is the basic building block of a quantum computer is what we call a quantum bit or a cubit. That just means a bit. That has some amplitude for being zero and some other amplitude for being what? So it's a superposition of zero in one state's. Right.
+00:35:26
+But now the key point is that if I've got, let's say, a thousand cubits, the rules of quantum mechanics are completely unequivocal that I do not just need one input.
+00:35:37
+You know, I don't just need amplitudes for each cube separately in general, I need an amplitude for every possible setting of all thousand of those bits. OK, so that what that means is two to the one thousand power amplitudes. OK, if I if I had to write those down, let's let's say in the memory of a conventional computer, if I had to write down two to the 1000 complex numbers, that would not fit within the entire observable universe.
+00:36:04
+OK, and yet, you know, quantum mechanics is unequivocal that if these Kubicki don't interact with each other and in some sense I need two do the 1000 parameters amplitudes to describe what is going on now.
+00:36:20
+Now I can tell you where all the popular articles you know about quantum computing go off the rails is that they say, you know, they they sort of sort of say what I just said. And then they say, oh, so the way a quantum computer works is just by trying every possible answer in parallel. Well, you know you know that that sounds too good to be true. And unfortunately, it kind of is too good to be true.
+00:36:42
+The problem is I could make a superposition over every possible answer to my problem, even if there were two to the one thousand of them. Right. I can I can easily do that. The trouble is, for a computer to be useful, you've got at some point you've got to look at it and see and see an output. And if I just measure a superposition over every possible answer, then the rules of quantum mechanics tell me that all I'll see will be a random answer.
+00:37:08
+You know, if I just wanted a random answer, well, I could have picked one myself with a lot less trouble. Right.
+00:37:13
+So the entire trick with quantum computing, with every algorithm for a quantum computer is that you try to choreograph a pattern of interference of amplitudes and you try to do it so that for each wrong answer, some of the paths leading to that wrong answer have positive amplitudes and others have negative amplitudes. So on the whole, they cancel each other out. OK, whereas all the paths leading to the right answer should reinforce each other, you should have amplitudes pointing the same direction.
+00:37:45
+So the design of algorithms in the space is the choreography of the interference. Precisely. That's precisely what it would take.
+00:37:52
+A brief step back. And you mentioned information. Yes. So in which part of this beautiful picture that you've painted is information contained?
+00:38:03
+Oh, well, information is that the core of everything that we've been talking about, right. I mean, the bit is, you know, the basic unit of information since, you know, Claude Shannons paper in 1948, you know you know, of course, you know, people had the concept even before that he popularized the name. Right.
+00:38:22
+But I mean, for a bit it's zero or one. That's right. That's right. And. We would say is that the basic unit of quantum information is the Cupitt is the object, any object that can be maintained then manipulated in a superposition of zero in one states. Now, you know, sometimes people ask, well, but, but what is a cubit physically? Right. And there are all these different, you know, proposals that are being pursued in parallel for how you implement cubits.
+00:38:54
+There is superconducting quantum computing that was in the news recently because of Google's quantum supremacy experiment. Right, where you would have some little coils, where a current can flow through them in two different energy states, one representing a zero, another representing a one. And if you call these coils to just slightly above absolute zero, like one hundredth of a degree, then they superconductor and then the current can actually be in a superposition of the two different states.
+00:39:27
+So that's one kind of cubitt. Another kind would be, you know, just an individual atomic nucleus. It has a spin. It could be spinning clockwise, it could be spinning counterclockwise, or it could be in a superposition of the two spin states.
+00:39:43
+That is another cubitt. But just like in the classical world, you could be a virtuoso programmer without having any idea of what a transistor is. Right. Or how the bits are physically represented inside the machine, even that the machine uses electricity. Right. You just care about the logic. It's sort of the same with quantum computing. Right. Cubits could be realized by many, many different quantum systems. And yet all of those systems will lead to the same logic, you know, the logic of cubits and and how you know, how you measure them, how you change them over time.
+00:40:18
+And so, you know the subject of, you know, how cubits behave and what you can do with Kupets, that is quantum information.
+00:40:26
+So just to linger on that short, so does the physical design. Implementation of a cubit does not does not interfere with the that next level of abstraction that you can program over it. So the truth is, the idea of it is the is it OK? Well, to be honest with you today, they do interfere with each other that because all the quantum computers we can build today are very noisy. Right. And so sort of the the you know, the cubits are very far from from perfect.
+00:40:58
+And so the lower level sort of does affect the higher levels. And we sort of have to think about all of them at what's OK. But eventually where we hope to get is to what are called error corrected quantum computers, where the cubits really do behave like perfect abstract cubits for as long as we want them to. And in that future, you know, which, you know, a future that we can already sort of prove theorems about or think about today.
+00:41:23
+But in that future, the logic of it really does become decoupled from the hardware.
+00:41:29
+So if noise is currently the biggest problem for quantum computing and then the dream is er correcting quantum computers, can you just maybe describe what does it mean for there to be noise in the system. Absolutely.
+00:41:46
+So yes, the problem is even a little more specific than noise. So the fundamental problem, if you're trying to actually build a quantum computer, you know, of any appreciable size is something called decoherence. And this was recognised from the very beginning, you know, when people first started thinking about this in the 1990s. Now, what decoherence means is sort of unwanted interaction between, you know, your cubists, you know, the state of your quantum computer and the external environment.
+00:42:18
+OK, and why is that such a problem? Well, I talked before about how, you know, when you measure a quantum system. So let's say if I measure a cubit that's in a superposition of zero in one state to ask it, you know, are you zero or are you one? Well, now I force it to make up its mind. Right. And now, probabilistically, it chooses one or the other. And now, you know, it's no longer a superposition.
+00:42:40
+There's no longer amplitudes. There's just there's some probability that I get a zero and there's something that I get a what now? The the the the trouble is that it doesn't have to be me who's looking guy. In fact, it doesn't have to be any conscious entity, any kind of interaction with the external world that leaks out. The information about whether this cubit was a zero or a one of that causes the zero ness or the oneness of the cubitt to be recorded in the radiation, in the room, in the molecules of the air, in the wires that are connected to my device.
+00:43:21
+Any of that, uh, as soon as the information leaks out, it is as if that. It has been measured. OK, it is you know, the the the state has now collapsed. You know, another way to say it is that it's become entangled with its environment. OK, but, you know, from the perspective of someone who's just looking at this Cubitt, it is as though it has lost its quantum state.
+00:43:43
+And so what this means is that if I want to do a quantum computation, I have to keep the Kupets sort of fanatically, well, isolated from their environment. But then at the same time, they can't be perfectly isolated because I need to tell them what to do. I need to make them interact with each other. For one thing, and not only that, but in a precisely choreographed way. OK, and you know, that is such a staggering problem, right?
+00:44:10
+How do I isolate these cubits from the whole universe, but then also tell them exactly what to do? I mean, you know, there were distinguished physicists and computer scientists in the 90s who said this is fundamentally impossible. You know, the laws of physics will just never let you control cubits to the degree of accuracy that you're talking about.
+00:44:31
+Now, what changed the views of most of us was a profound discovery in the mid to late 90s, which was called the theory of quantum error correction and quantum fault tolerance. And the upshot of that theory is that if I want to build a reliable quantum computer and scale it up to, you know, an arbitrary number of as many cubits as I want and doing as much on them as I want, I do not actually have to get the Kupets perfectly isolated from their environment.
+00:45:03
+It is enough to get them really, really, really well isolated.
+00:45:06
+OK, and. Even if every cubit is sort of leaking, you know, it's straight into the environment at some rate, as long as that rate is low enough. I can sort of encode the information that I care about in very clever ways across the collective states of multiple cubits in such a way that even if a small percentage of my cubits leak, well, I'm constantly monitoring them to see if that leak happened. I can detect it and I can correct it.
+00:45:38
+I can recover the information I care about from the remaining cubits. OK, and so, you know, you can build a reliable quantum computer, even out of unreliable parts. Right now, the the in some sense, you know, that discovery is what set the engineering agenda for quantum computing research from the 1990s until the present.
+00:46:00
+The goal has been to engineer cubits that are not perfectly reliable, but reliable enough that you can then use these error correcting codes to have them simulate tubists that are even more reliable than they are right to. The error correction becomes a net win rather than a net loss. Right. And then once you reach that sort of crossover point, then your simulated cubits could in turn simulate cubits that are even more reliable and so on until you've just, you know, effectively you have arbitrarily reliable Cubans.
+00:46:34
+So long story short, we are not at that break even point yet where a hell of a lot closer than we were when people started doing this in the 90s, like orders of magnitude closer.
+00:46:43
+But the key ingredient there is the more cubists, the better, because, well, the more cubits, the larger the computation you can do.
+00:46:51
+Right? I mean I mean, a cubits are what constitute the memory of the quantum computer, but also for the sorry for the error correcting mechanism.
+00:47:00
+Yes.
+00:47:01
+So so so the way I would say it is that error correction imposes an overhead in the number of cubits, and that is actually one of the biggest practical problems with building a scalable quantum computer. If you look at the error, correcting codes, at least the ones that we know about today and you look at, you know, what would it take to actually use a quantum computer to, uh, you know, um, hack your credit card number?
+00:47:26
+You know, I you know, the most famous application people talk about, right. Let's say do factor huge numbers and thereby break the RSA crypto system. Well, what that would take would be thousands of several thousand logical cubits. But now with the known error correcting codes, each of those logical cubits would need to be encoded itself using thousands of physical qubits. So at that point, you're talking about millions of physical cubists and some sense that is the reason why quantum computers are not breaking cryptography already.
+00:47:58
+It's because of these immense overheads involved so that overhead is additive or multiple multiplicative.
+00:48:04
+I mean, it's like you take the number of logical cubits that you need in your abstract quantum circuit. You multiply it by a thousand or so. So, you know, there's a lot of work on, you know, inventing better, trying to invent better error, correcting codes. OK, that is the situation right now. In the meantime, we are now in what the physicist John Prescott called the noise, the intermediate scale Quantum or Nisko era.
+00:48:30
+And this is the era. You can think of it as sort of like the vacuum. You know, we're now entering the very early vacuum tube era of quantum computers. The quantum computer analogue of the transistor has not been invented yet. Right. That would be like true error correction, right. Where, you know, we are not or or something else that would achieve the same effect. Right. We are not there yet. And but but but where we are now, let's say as of a few months ago, you know, as of Google's announcement of quantum supremacy, you know, we are now finally at the point where even with a non error corrected quantum computer with, you know, these noisy devices, we can do something that is hard for classical computers to simulate.
+00:49:13
+OK, so we can eke out some advantage. Now, will we in this noisy era be able to do something beyond what a classical computer can do that is also useful to someone that we still don't know? People are going to be racing over the next decade to try to do that. By people, I mean, Google, IBM, you know, a bunch of start up companies and researchers and research labs and governments and yeah, you just mentioned a million things.
+00:49:41
+I'll backtrack for a second. Yeah, sure. Sure. So when these vacuum. Two days. Yes. Just entering and just entering. Wow.
+00:49:50
+OK, so yeah. How do we escape the vacuum. So how do we get to. How do we get to where we are now with the CPU, is this a fundamental engineering challenge? Is there is there breakthroughs on the physics side that are needed on the computer science side? What is there? And is it a financial issue or much larger? Just sheer investment and excitement is needed. So, you know, those are excellent questions. I guess one that I'll make my, my, my, my, my guess would be all of the above.
+00:50:26
+Yeah. I mean, my my guess, you know, I mean I mean, you know, you say fundamentally it is an engineering issue. Right. The theory has been in place since the 90s. You know, at least you know you know, this is what, you know, error correction. You would look like. You know, we we do not have the hardware that is at that level, but at the same time, you know, so you could just, you know, try to power through, you know, maybe even like, you know, if someone spent a trillion dollars on some Quantum Computing Manhattan Project.
+00:50:56
+Right. Then conceivably they could just, you know, build a a an error corrected quantum computer as it was envisioned back in the 90s. Right. I think the more plausible thing to happen is that there will be further theoretical breakthroughs and there will be further insights that will cut down the cost of doing this. So let's take a brief to the philosophical I just saw recently, talked to Jim Keller, who's is sort of like the famed architect and in the microprocessor world.
+00:51:29
+And he's been told for decades, every year that the Moore's Law is going to die this year.
+00:51:37
+And he tries to argue that the Moore's Law is still alive and well and he'll be alive for quite a long time to come along. How well?
+00:51:47
+Well, the main point is it's still alive, but he thinks there's still a thousand X improvement just on shrinking the transistors possible, whatever.
+00:51:58
+The point is that the exponential growth we see, it is actually a huge number of these curves, just constant breakthroughs at the philosophical level.
+00:52:10
+Why do you think we as descendants of apes were able to just keep coming up with these new breakthroughs on the CPU side? Is this something unique to this particular endeavor or will it be possible to replicate in the quantum computer space?
+00:52:28
+OK, all right. There was a lot there to try to break off something. I mean, I think we are in an extremely special period of human history. Right? I mean, it's it is, uh, you could say obviously special, you know, in many ways right there, you know, way more people alive than than than there have been. And, you know, the you know, the whole, you know, future of the planet as it is in is in question in a way that it it it hasn't been for for the rest of human history.
+00:53:03
+But but, you know, in particular, you know, we are in the era where, you know, we we finally figured out how to build, you know, universal machines, you know, the things that we call computers, you know, machines that you programmed to simulate the behavior of whatever machine you want. And, you know, and once you sort of cross this threshold of universality, you know, you've built you could say Turing, you've instantiated Turing machines in the physical world.
+00:53:38
+Well, then the main questions are ones of numbers. They are, you know, ones of how many how much memory can you access, how fast does it run, how many parallel processors? You know, at least until quantum computing. Quantum computing is the one thing that changes what I just said.
+00:53:55
+Right. But, you know, in as well, as long as it's classical computing, then it's all questions of numbers. And, you know, you could say at a theoretical level, the computers that we have today are the same as the ones in the 50s. They're just millions of times faster with millions of times more memory. And, you know, I mean, I think there's been an immense economic pressure to get more and more transistors, you know, get them smaller and smaller.
+00:54:24
+You add more and more cores. And, you know, and in some sense, like a huge fraction of sort of all of the technological progress that there is in all of civilization has gotten concentrated just more narrowly and just those problems. Right. And so, you know, it has been. One of the biggest success stories in the history of technology, right, there's you know, I mean, it is I am as amazed by it as as anyone else is.
+00:54:53
+Right. But at the same time, you know, we also know that it you know, and I, uh, I really do mean we know that it cannot continue indefinitely because you will reach fundamental limits on how small you can possibly make a processor. And, you know, if you want a real proof, you know, that would justify my use of the word. You know, we know that Moore's Law has to end. I mean, ultimately, you will reach the limits imposed by quantum gravity.
+00:55:25
+You know, you know, if you were doing if you tried to build a computer that operated at ten to the forty three hertz, so did ten to the forty three operations per second. That computer would use so much energy that it would simply collapse to a black hole.
+00:55:40
+OK, so you know that I know, you know, in reality we're going to reach the limits long before that. But you know, that is a sufficient proof that there is a limit.
+00:55:50
+Yes. Yes.
+00:55:53
+But it would be interesting to try to understand the mechanism, the economic pressure. These, just like the Cold War, was a pressure on getting us, getting us because both my US as both the Soviet Union and the United States. Yeah. Getting us the two countries to get to hurry up to get the space to the moon. There seems to be that same kind of economic pressure that somehow created a chain of engineering breakthroughs that resulted in the Moore's Law.
+00:56:23
+Yeah, it would be nice to replicate.
+00:56:24
+Yeah. I mean I mean, some people are sort of get depressed about the fact that technological progress, you know, may seem to have slowed down in many, many realms outside of computing. Right. And there was this whole thing of, you know, we wanted flying cars and we only got Twitter instead. Right.
+00:56:41
+And yeah. And good old Peter Thiel. Yeah, yeah, yeah, yeah.
+00:56:45
+Right, right. So then jumping to another really interesting topic that you mentioned.
+00:56:49
+So Google announced with their work in the paper in Nature with quantum supremacy. Yes. Can you describe again back to the basic what is perhaps not so basic? What is quantum supremacy? Absolutely. So quantum supremacy is a term that was coined by, again, by John Prescott in 2012. Not not everyone likes the name, you know, but, uh, you know, it sort of stuck. You know, we don't we sort of haven't found a better alternative to quantum computational.
+00:57:27
+Yeah, that's right. That's right. And but but the basic idea is actually one that goes all the way back to the beginnings of quantum computing. When Richard Feynman and David Deutsch, people like that were talking about it in the early 80s. And and quantum supremacy just refers to sort of the point in history when you can first use a quantum computer to do some well defined task, much faster than any known algorithm running on any of the classical computers that are available.
+00:57:58
+OK, so you noticed that? I did not say a useful task. You know, it could be something completely artificial, but it's important that the task be well defined. So in other words, you know, there is it is something that has right and wrong answers, you know, and that are knowable independently of this device. Right. And we can then run the device, see if it gets the right answer or not. Can you clarify a small point?
+00:58:23
+You said much faster than the classical implementation.
+00:58:26
+What about what about the space with whether there is. No, there's not. It doesn't even exist a classical algorithm to.
+00:58:34
+So, so, so so maybe I should clarify everything that a quantum computer can do. A classical computer can also eventually do OK. And the reason why we know that is that a classical computer could always you know, if it had no limits of time in memory, it could always just store the entire quantum state. You know, of your you know, of the quantum store, a list of all the amplitudes, you know, in the state of the quantum computer and then just, you know, do some linear algebra to just update that state.
+00:59:09
+Right. And so so anything that quantum computers can do can also be done by classical computers, albeit exponentially slower.
+00:59:17
+So quantum computers don't go into some magical place outside of Alan Turing's definition of computation. Precisely.
+00:59:24
+They do not solve the whole thing problem. They cannot solve anything that is uncomparable in Alan Turing sense. What they what we think they do change is what is efficiently computable. OK, and, you know, since the 1960s, you know, the word efficiently, you know as well, has been a central word in computer science. But it's sort of a code word for something technical, which is basically with polynomial. You know that as you get to larger and larger inputs, you would like an algorithm that uses an amount of time that scales only like the size of the input raised to some power and not exponentially with the size of the input.
+01:00:03
+Right.
+01:00:04
+So I do hope we get to talk again, because one of the many topics that this probably several hours was a conversation on is complexity, which probably won't even get a chance to touch today. But you briefly mentioned it. But let's let's maybe try to continue. He said the definition of quantum supremacy is basically design is achieving a place where much faster on a formal quantum computer is much faster on a formal, well defined problem. Yes, that is or isn't useful.
+01:00:38
+Yeah, yeah. Yeah, right. Right. And I would say that we really want three things right. We want, first of all, the quantum computer to be much faster just in the literal sense of like number of seconds, you know, just solving this, you know, well-defined problem. Secondly, we want it to be sort of, you know, for a problem where we really believe that a quantum computer has better scaling behavior. Right.
+01:01:03
+So it's not just an incidental, you know, matter of hardware, but it's that, you know, as you went to larger and larger inputs, you know, the classical scaling would be exponential and the scaling for the quantum algorithm would only be polynomial. And then thirdly, we want the first thing, the actual observed speed up to only be explainable in terms of the scaling behavior. Right. So, you know, I want I want, you know, a real world, you know, a real problem to get solved, let's say, by a quantum computer with 50 cubits or so.
+01:01:37
+And for no one to be able to explain that in any way other than. Well, you know, to this this computer involved a quantum state with two to the 50 power amplitudes and, you know, a classical simulation, at least any that we know today would require keeping track of two to the fiftieth numbers. And this is the reason why it was faster. So the intuition is that then if you demonstrate on 50 cubits, then once you get to 100 cubits, then it'll be even much more faster.
+01:02:07
+Precisely. Precisely. Yeah. And, you know, and quantum supremacy does not require error correction. Right? We don't you know, we don't have a true scalability yet or true, you know, error correction yet. But you could say quantum supremacy is already enough by itself to refute the skeptics who said a quantum computer will never outperform a classical computer for anything but one.
+01:02:34
+How do you demonstrate quantum? Yeah, supremacy and to what? So would these new news articles I'm reading that Google did so. Yeah.
+01:02:43
+All right. Well, they actually do.
+01:02:45
+Great questions, because now you get into actually, you know, a lot of the work that I, you know, I and my students have been doing for the last decade, which was precisely about how do you demonstrate quantum supremacy using technologies that we thought would be available in the near future. And so one of the main things that we realized around 2011, and this was me and my student, Alex, aka Puff at MIT at the time, and independently of some others, including Bremner, Josa and Shapard.
+01:03:23
+OK, and the realization that we came to was that if you just want to prove that a quantum computer is faster, you know, and not do something useful with it, then there are huge advantages to sort of switching your attention from problems like factoring numbers that have a single right answer to what we call sampling problems. So these are problems where the goal is just to output a sample from some probability distribution, let's say, over strings of 50 bits.
+01:03:55
+Right. So there are many, many, many possible valid outputs. You know, your computer will probably never even produce the same output twice. You know, if it's running as as, uh, even assuming it's running perfectly. OK, but but the key is that some outputs are supposed to be likelier than other ones. So so to clarify, is there a set of outputs that are valid and set? They're not. Or is it more that the distribution of a particular kind of output is more is the specific distribution of particular?
+01:04:32
+There's a specific distribution that you're trying to hit, right. Or you know, that you're trying to sample from now. There are a lot of questions about this. You know, how do you do that right now? Now, how you how. How you. Do it, you know, it turns out that with a quantum computer, even with the noisy quantum computers that we have now that we have today, what you can do is basically just apply a randomly chosen sequence of operations.
+01:04:57
+Right. So we you know, we in some of you know, we you know, that part is almost trivial, right? We just sort of get the cubits to interact in some random way, although was sort of precisely specified random way. So we can repeat the exact same random sequence of interactions again and get another sample from that same distribution. And what this does is it basically? Well, it creates a lot of garbage, but, you know, very specific garbage.
+01:05:23
+Right. So, you know, of all of the so we're going to talk about Google's device that were 53 cubits there. OK, and so there are two to the fifty three power possible outputs now for some of those outputs. You know, there are there was a little bit more destructive interference in their amplitude. So their amplitude is a little bit smaller. And for others there was a little more constructive interference. You know, the amplitudes were a little bit more aligned with each other.
+01:05:52
+And so those those that were a little bit likelier, OK, all of the outputs are exponentially unlikely, but some are, let's say, two times or three times, you know, unlikelier than others. OK, and so so you can define the sequence of operations that gives rise to this probability distribution. OK, now the next question would be, well, how do you you know, even if you're sampling from. And how do you verify that?
+01:06:19
+Right. How do you how do you know?
+01:06:21
+And so my students and I and also the people at Google, we're doing the experiment came up with statistical tests that you can apply to the outputs in order to try to verify what is, you know, that that at least that some hard problem is being solved. The test that Google ended up using was something that they called the linear across entropy benchmark. And it's basically, you know, so the drawback of this test is that it requires like it requires you to do a two to the fifty three time calculation with your classical computer.
+01:07:02
+So so it's very expensive to do the test on a classical computer. The good news, I think, of a number is two to it's about nine quadrillion.
+01:07:10
+OK, it doesn't help. Well, you know, it's you want something like scientific notation on. Know what I mean is it is it is it is impossible to run on.
+01:07:20
+Yes. So we will come back to that. It is just barely possible to run, we think, on the largest supercomputer that currently exists on Earth, which is called Summit at Oak Ridge National Lab.
+01:07:31
+OK, great. This is exciting. That's the that's the short answer. So so ironically, for this type of experiment, we don't want a hundred cubits, OK? Because with 100 cubits, even if it works, we don't know how to verify the results. OK, so we want, you know, a number of cubits. That is enough that, you know, the biggest classical computers on earth will have to sweat, you know, and we'll just barely, you know, be able to keep up with with the quantum computer.
+01:07:59
+You know, you're using much more time, but they will still be able to do it in order that we can verify that it was just one were the 53 comes from for the day.
+01:08:08
+Well, I mean. I mean. I mean. I mean. I mean, that's also that sort of, you know, the I mean, that's that's that's sort of where they are now in terms of scaling, you know, and then, you know, soon, you know, that point will be passed. And then when you get to larger numbers of cubits, then, you know, these these types of sampling experiments will no longer be so interesting because we won't even be able to verify the results and we'll have to switch to other types of computation.
+01:08:34
+So with it, with the sampling thing, you know, so so the tests that Google applied were this linear across entropy benchmark was basically just take the samples that were generated, which are, you know, a very small subset of all the possible samples that there are.
+01:08:50
+But for those you calculate with your classical computer, the probabilities that they should have been output and you see are those probability is like larger than the mean. So is the quantum computer bias toward outputting the strings that it's, you know, that you want it to be biased toward? OK, and then finally, we come to a very crucial question, which is supposing that it does that well, how do we know that a classical computer could not have quickly done the same thing?
+01:09:17
+Right. How do we know that this couldn't have been spoofed by a classical computer? Right. And so. Well, the first answer is we don't know for sure because, you know, this takes us into questions of complexity theory. You know, you know, I mean, questions on the of the magnitude of the P versus NP question and things think that. Right. We you know, we don't know how to rule out definitively that there could be fast classical algorithms.
+01:09:43
+For even simulating quantum mechanics and for, you know, simulating experiments like these, but we can give some evidence against that possibility and that was sort of the, you know, the main thrust of a lot of the work that my colleagues and I did, you know, over the last decade, which is then sort of in around 20, 15 or so.
+01:10:04
+What led to Google deciding to do this experiment?
+01:10:07
+So is the kind of evidence you, first of all, the hard because then problem that you mentioned and the kind of evidence that you're were looking at? Is that something you come to on a sheet of paper or is this something or these empirical experiments?
+01:10:24
+It's math for the most part. I mean, you know, it's also, you know you know, we have a bunch of methods that are known for simulating quantum circuits or quantum computations with classical computers. And so we have to try them all out and make sure that they don't work, you know, make sure that they have exponential scaling on these problems and and not just theoretically, but with the actual range of parameters that are actually, you know, arising in Google's experiment.
+01:10:57
+OK, so so there is an empirical component to it. Right. But now on on the theoretical side, you know what? Basically what we know how to do in theoretical computer science and computational complexity is, you know, we don't know how to prove that most of the problems we care about are hard, but we know how to pass the blame to someone else that we know to say, well, look, you know, I can't prove that this problem is hard, but if it is easy, then all these other things that, you know, you know, you probably were much more confident or we're hard than those would be easy as well.
+01:11:33
+OK, so so we can give what are called reductions. And this has been the basic strategy in A.P. completeness, right. In all of theoretical computer science and cryptography since the 1970s, really. And so we were able to give some reduction evidence for the hardness of simulating these sampling experiments, the sampling based quantum supremacy experiments, the reduction evidence is not as satisfactory as it should be. One of the biggest open problems in this area is to make it better.
+01:12:08
+But, you know, we can do something. You know, certainly we can say that, you know, if there is a fast classical algorithm to spoof these experiments, then it has to be very, very unlike any of the algorithms that we know.
+01:12:24
+Which is kind of in the same kind of space of reasoning that people say P not equals and P yeah, it's in the same spirit.
+01:12:32
+Yeah, in the same spirit.
+01:12:33
+OK, so Andrew Yang, a very intelligent and a presidential candidate with a lot of interesting ideas in all kinds of technological fields, tweeted that because of quantum computing, no code is uncrackable.
+01:12:53
+Is he wrong or right?
+01:12:55
+He was premature, let's say so. Well, wrong.
+01:13:02
+Look, I you know, I'm actually I'm you know, I'm a fan of Andrew Yang. I like his cat. You know, I like his ideas. I like his candidacy. I think that, you know, he you know, he may be ahead of his time with, you know, the universal basic income and, you know, and so forth. And he may also be ahead of his time in that tweet that you referenced. So regarding regarding using quantum computers to break cryptography.
+01:13:28
+So the situation is this. OK, so the famous discovery of Peter Shaw, you know, twenty six years ago that really started quantum computing, you know, as as an autonomous field was that if you built a full scale quantum computer, then you could use it to efficiently find the prime factors of of huge numbers and calculate discrete logarithms and solve a few other problems that are very, very special and character. Right. They're not into complete problems.
+01:14:02
+We're pretty sure they're not OK. But it so happens that most of the public key cryptography that we currently use to protect the Internet is based on the belief that these problems are hard. What Shaw showed is that once you get scalable quantum computers, then that's no longer true. OK, but now you know you know, before people panic, there are two important points to understand here, OK? The first is that quantum supremacy, the milestone that Google just achieved, is very, very far from the kind of scalable quantum computer that would be needed to actually threaten public key cryptography.
+01:14:40
+OK, so, you know, we touched on this earlier break, but Google's device has 53 physical kupets, right? You threaten cryptography. You're talking, you know, with any of the known error correction methods. You're talking millions of physical cubits because interaction would be required. Yes, yes, yes. Yes, it's it certainly would. Right. And you know how much you know how great. Well, the overhead be from the error correction that we don't know yet.
+01:15:12
+But with the known codes, you're talking millions of physical cubits and of a much higher quality than any that we have now. OK, so, you know, I don't I don't think that that is, you know, coming soon, although people who have secrets that, you know, need to stay secret for 20 years are already worried about this. You know, for for the good reason that know, we presume that intelligence agencies are already scooping up data, you know, in the hope that eventually they'll be able to decode it once quantum computers become available.
+01:15:47
+OK, so so there is so, so, so so this brings me to the second point I wanted to make, which is that there are other public key crypto systems that are known that we don't know how to break even with quantum computers. OK, and so there's a whole field devoted to this now, which is called post quantum cryptography. And so there is already so so we have some good candidates. Now, the best known being what are called lattice based crypto systems.
+01:16:17
+And there is already some push to try to migrate to these crypto systems.
+01:16:22
+So next year in the US is holding a competition to create standards for post quantum cryptography, which will be the first step in trying to get every Web browser and every router to upgrade, you know, and use something like SSL that is would be based on on what we think is quantum secure cryptography. But, you know, this will this will be a long process. But, you know, it it is something that people are already starting to do.
+01:16:53
+And so so I'm Shor's algorithm is sort of a dramatic discovery. You know, it could be a big deal for whatever intelligence agency first gets a scalable quantum computer if. No, at least certainly if no one else knows that they have it right.
+01:17:10
+But eventually we think that we could migrate the Internet to the post quantum cryptography, then we'd be more or less back where we started. OK, so this is sort of not the. Application of quantum computing, I think that's really going to change the world in a sustainable way, right?
+01:17:28
+The the big by the way, the biggest practical application of quantum computing that we know about by far, I think is simply the simulation of quantum mechanics itself in order to, you know, learn about chemical reactions, you know, design, maybe new chemical processes, new materials, new drugs, new solar cells, new superconductors, all kinds of things like that.
+01:17:52
+What's the size of a quantum computer that would be able to simulate the quantum mechanical systems themselves? That would be impactful for the real world, for the kind of chemical reactions and that kind of work. What scale are we talking about now? Now you're asking a very, very current question, a very big question. People are going to be racing over the next decade to try to do useful quantum simulations, even with, you know, 100 or 200 cubic quantum computers of the sort that we expect to be able to build over the next decade.
+01:18:30
+OK, so that might be, you know, the first application of quantum computing that we're able to realize, you know, or maybe it will prove to be too difficult and maybe even that will require fault tolerance or, you know, will require error correction.
+01:18:45
+So that's an aggressive race to come up with the one case study, kind of like the computer. Sure. With a with an idea that would just capture the world's imagination of, look, we can actually do something very.
+01:18:58
+Yeah, right. But I think, you know, within the next decade, the best shot we have is certainly not, you know, using Shor's algorithm to break cryptography.
+01:19:08
+You know, it just just because it requires, you know, too much in the way of error correction. The best shot we have is to do some quantum simulation that tells the material scientists or chemists or nuclear physicists, you know, something that is useful to them and that they didn't already know, you know, and you might only need one or two successes in order to change them, you know, billion dollar industries. Right. Like, you know, the way that people make fertilizer right now is still based on the Hopper Basche process from a century ago.
+01:19:39
+And it is some many body quantum mechanics problem that no one really understands. Right. If you could design a better way to make fertilizer. Right. That's, you know, billions of dollars right there. So so those are sort of the applications that people are going to be aggressively racing toward over the next decade. Now, I don't know if they're going to realize that or not, but, you know, it is you know, there's there's they certainly at least have a shot.
+01:20:03
+So it's going to be a very, very interesting next decade.
+01:20:06
+But just to clarify, what's your intuition is if a breakthrough like that comes with, is it possible for that breakthrough to be on 50 to 100 cubits or is scale a fundamental thing like five hundred thousand plus cubits?
+01:20:21
+Yeah. So I can tell you what the current study is. There's a saying, you know, I think probably better to rely on that, that my intuition. But, you know, there there was a group at Microsoft had a study a few years ago that said even with only about one hundred cubits, you know, you could already learn something new about this, the chemical reaction that makes fertilizer, for example. The trouble is, they're talking about a hundred cubits and about a million layers of quantum gates.
+01:20:56
+So they're so basically they're talking about 100 nearly perfect cubits. So the logical cubers, as you mentioned. Yes, exactly. One hundred logical cubits. And now, you know, the hard part for the next decade is going to be, well, what can we do with 100 to 200 noisy kupets?
+01:21:13
+Yeah. Yeah. Is there error, correction, breakthrough's that might come without the need to do thousands or millions of. Yeah, yeah.
+01:21:22
+So people are going to be pushing simultaneously on a bunch of different directions. One direction, of course, is just making the cubits better. Right. And, you know, there's there is tremendous progress there. I mean, you know, the Fidelities like the the the accuracy of the cubits has improved by several orders of magnitude, you know, in the know in the last decade or two. The second thing is designing better er you know, let's say lower overhead error, correcting codes and even short of doing the full recursive error correction, you know, there were these error mitigation strategies that you can use, you know, that may, you know, allow you to eke out a useful speed up in the near term.
+01:22:09
+And then the third thing is just taking the quantum algorithms for simulating quantum chemistry or materials and making them more efficient. You know, and those algorithms are already dramatic. More efficient than they were, let's say, five years ago, and so when I quoted these estimates like, you know, circuit depth of one million. And so, you know, I hope that because people will care enough that these numbers are going to come down.
+01:22:35
+So you're one of the the world class researchers in this space. There's a few groups that you mentioned, Google and IBM working at this. There's there's other research labs. But you put also you have you have an amazing blog.
+01:22:53
+You just you put it kind.
+01:22:54
+You put a you paid me to say it. I hope you put a lot a lot of effort into communicating the science of this and communicating exposing some of the B.S. and the sort of the the natural just like in the A.I. space, the natural charlatanism, if that's the word in this in quantum mechanics in general, but quantum computers and so on.
+01:23:20
+Can you give some notes about people or ideas that people like me or listeners in general from outside the field should be cautious of when they're taking in news headings that Google achieved quantum supremacy? So what should we look out for? Where's the chances in the space? Where is the best?
+01:23:41
+Yeah, so good question. Unfortunately, quantum computing is a little bit like cryptocurrency or deep learning, like there is a core of something that is genuinely revolutionary and exciting. And because of that core, it attracts this sort of vast penumbra of, you know, people making, you know, just utterly ridiculous claims. And so with with quantum computing, I mean, I would say that the main way that people go astray is by, you know, not focusing on sort of the question of, you know, are you getting a speed up over a classical computer or not?
+01:24:21
+Right. And so so, you know, people have, like, dismissed quantum supremacy because it's not useful. Right. Or, you know, it's not itself, let's say, obviously useful for anything. OK, but, you know, ironically, these are some of the same people who will go and say, well, what we care about useful applications, we care about solving traffic, routing and optimum, you know, and financial optimization and all these things.
+01:24:47
+And that sounds really good, you know, but, you know, their their entire spiel is sort of counting on nobody asking the question. Yes, but how well could a classical computer do the same thing? Yes, right. You know, I really mean the entire thing is, you know, it you know, they say, well, a quantum computer can do this. A quantum computer can do that. Right. And they just avoid the question, are you getting a speed up over a classical computer or not?
+01:25:15
+And, you know, if you know how how do you know have you really thought carefully about classical algorithms to, you know, to solve the same problem? Right.
+01:25:24
+And a lot of the application areas that, you know, the, you know, companies and investors are most excited about that the popular press is most excited about, you know, for quantum computers have been things like machine learning, A.I. optimization. OK, and the problem with that is that since the very beginning, you know, even if you have a perfect fault, tolerant, you know, quantum scalable quantum computer, you know.
+01:25:57
+We have known of only modest speed ups that you can get for these problems. OK, so so there is a famous quantum algorithm called Grovers Algorithm. And what it can do is it can solve many, many of the problems that arise in a machine learning optimization, including NP, complete problems. OK, but it can solve them in about the square root of the number of steps that a classical computer would need for the same problems. OK, now a square root speed up is important.
+01:26:28
+It's impressive. It is not an exponential speed up. OK, so it is not the kind of game changer that lets say Shor's algorithm for factoring is, or for that matter, that simulation of quantum mechanics. It's OK. It is a more modest speed up. And let's say, you know, roughly, you know, in theory it could roughly double the size of the optimization problems that you could handle. Right. And so, you know, because people found that, I guess too too boring or too unimpressive, you know, they've gone on to to, like, invent all of these juristic algorithms where, you know, because no one really understands them, you can just project your hopes onto them.
+01:27:09
+Right. That, well, maybe it gets an exponential speed up. You can't prove that it doesn't. You know, and the burden is on you to prove that it doesn't get to speed up. Right. And, you know, so they've done an immense amount of that kind of thing. And a really worrying amount of the case for building a quantum computer has come to rest on this stuff that those of us in this field know perfectly well is on extremely shaky foundations.
+01:27:34
+So the fundamental question is, yeah, yeah.
+01:27:37
+Show that there's a speed up. Yes, absolutely. And in the space that you're referring to, which is actually interesting, the area that a lot of people are excited about is machine learning. Yeah. So your sense is, do you think it will? So I know that there's a lot of smoke currently. Yeah. But do you think they're actually eventually might be breakthroughs when you do get exponential speed ups in the machine learning space? Absolutely.
+01:28:04
+There might be. I mean, I think we know of modest speed ups that you can get for these problems. I think, you know, whether you can get bigger speed ups is one of the the biggest questions for quantum computing theory, you know, for people like me to be thinking about now. You know, we had actually recently a really, you know, a super exciting candidate for an exponential quantum speed up for a machine learning problem that people really care about.
+01:28:33
+This is basically the Netflix problem, the problem of recommending products to users, given some sparse data about their preferences, clarinetists and Prokosch in 2016 had an algorithm for sampling recommendations that was exponentially faster than any known classical algorithm. Right. And so, you know, a lot of people were excited. I was excited about it. I had an 18 year old undergrad by the name of Evelyn Tang, and she was you know, she was obviously brilliant.
+01:29:04
+She was looking for a project I gave her as a project. Can you prove that this speed up is real? Can you prove that, you know, any classical algorithm would need to access exponentially more data? Right. And you know, this this was a case where if that was true, this was not like a P versus NP type of question. Right. This this might well have been provable, but she worked on it for a year. She couldn't do it.
+01:29:27
+Eventually she figured out why she couldn't do it. And the reason was that that was false. There is a classical algorithm with a similar performance to the quantum algorithm, so even succeeded in de quantize thing, that machine learning algorithm. And then in the last couple of years, building on E wins breakthrough. A bunch of the other quantum machine learning algorithms that were proposed have now also been quantized. Yeah, OK. And so I would say the important backward step.
+01:29:57
+Yes. Like a yes or a forward step for science, but.
+01:30:00
+Well, yeah. Step for machine learning. Yeah.
+01:30:04
+That that precedes the big next four steps. Right. Right, right. Now if it's all right. Now, now, now, now, now some people will say, well you know, there's a silver lining in this cloud. They say, well, thinking about quantum computing has led to the discovery of potentially useful new classical algorithms. That's right. And so, you know, so you get these spin off applications, but if you want a quantum speed up, you really have to think carefully about that.
+01:30:28
+You know, even's work was a perfect illustration of why. Right. And I think that, you know, the the the challenge, you know, the the field is now open. Right. Find a better example. Find, you know, where quantum computers are going to deliver big gains for machine learning. You know, I am you know, not only do I ardently support people thinking about that, I'm trying to think about it myself and have my students and postdocs.
+01:30:56
+Think about it, but we should not pretend that those speed ups are already established and the problem comes when so many of the companies, you know, and journalists in this space are pretending that. Like all good things like life itself, this conversation must soon come to an end. Let me ask the most absurdly philosophical last question. What is the meaning of life? What gives your life fulfillment, purpose, happiness? And yeah, meaning I would say, you know, no one trying to discover new things about the world and and share them and, you know, communicate and learn what other people have discovered.
+01:31:46
+You know, number two, you know, my my my friends, my family, my kids, um, my students, um, you know, just the people around me. Number three, you know, trying, you know, when I can to, you know, make the world better in some small ways. And, you know, it's depressing that I can't do more and that, you know, the world is, you know, in, you know, facing crises over, you know, the climate and over, you know, sort of resurgent authoritarianism and all these other things.
+01:32:22
+But, you know, trying to stand against the things that I find horrible when I can. Let me ask you one more absurd question. Yeah. What makes you smile? Well, I guess your question just that I don't know.
+01:32:40
+I thought I'd try that absurd one on you.
+01:32:42
+Well, is a huge honor to talk to you. We'll probably talk to you for many more hours. God, thank you so much. Well, thank you.
+01:32:49
+Thank you. It was great. Thank you for listening to this conversation with Scott Aaronson and thank you to our presenting sponsor cash app, download it, use Legs podcast, you'll get ten dollars. Ten dollars will go to First, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. Enjoy this podcast. Subscribe on YouTube. Give it five stars, an Apple podcast, support and patron. Or simply connect with me on Twitter.
+01:33:16
+Àlex Friedemann. Now, let me leave you some words from a funny and insightful blog post Scott wrote over 10 years ago on the ever present Malthusian ASMs in our daily lives. Quote, Again and again, I've undergone the humbling experience of first lamenting how badly something sucks. Then only much later, having a crucial insight that it's not sucking wouldn't have been a Nash equilibrium. Thank you for listening. I hope to see you next time.

@@ -1,0 +1,648 @@
+00:00:00
+The following is a conversation with Richard Karpe, a professor at Berkeley and one of the most important figures in the history of theoretical computer science in 1985. He received the Turing Award for his research in the theory of algorithms, including the development of the admin's karpe algorithm for solving the max flow problem on networks. Hopcroft carped algorithm for finding maximum cardinality, matching and bipartite graphs, and his landmark paper and complexity theory called reduced ability among combinatorial problems in which he proved to want problems to be enpi complete.
+00:00:39
+This paper was probably the most important catalyst in the explosion of interest in the study. Vampy completeness and the P versus N. P problem in general. Quick summary of the ads to sponsors a mattress and Kashyap. Please consider supporting this podcast by going to a sleep dotcom slash leks and downloading cash app and using Scolex podcast. Click the links, buy the stuff. It really is the best way to support this podcast. If you enjoy this thing, subscribe on YouTube.
+00:01:10
+Review it with five stars on our podcast support page patron or connect with me on Twitter. Àlex Friedemann.
+00:01:16
+As usual, I do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. This show is sponsored by a sleep and it's part pro mattress that you can check out at a sleep dot com slash leks to get two hundred dollars off. It controls temperature with an app you can cool down to as low as 55 degrees and each side of the bed separately. Research shows that temperature has a big impact on the quality of our sleep.
+00:01:44
+Anecdotally, it's been a game changer for me. I love it. It's been a couple of weeks now.
+00:01:50
+I just been really enjoying it both and the fact that I'm getting better sleep and then it's a smart mattress. Essentially, I kind of imagine this being the early days of artificial intelligence being a part of every aspect of our lives and certainly infusing A.I. in one of the most important aspects of life, which is sleep, I think has a lot of potential for being beneficial. The approach is packed with sensors that track heart rate, heart rate variability and respiratory rate, showing it all in their app.
+00:02:21
+The apps health metrics are amazing, but the cooling alone is honestly worth the money. I don't know sleep, but when I do, I choose the A3 paper mattress. Check it out at eight sleep.
+00:02:33
+Dotcom likes to get two hundred dollars off. I remember just visiting the site and considering the purchase helps convince the folks that I sleep that this silly old podcast is worth sponsoring in the future. This show is also presented by the great and powerful Kashyap, the number one finance app in the App Store. When you get it, use Scolex podcast cash ability to send money to friends by Bitcoin and invest in the stock market with as little as one dollar. It's one of the best design interfaces of an app that I've ever used to me.
+00:03:08
+Good design is when everything is easy and natural. That design is when the app gets in the way. Is it because it's buggy or because it tries too hard to be helpful?
+00:03:19
+I'm looking at you, Clippy from Microsoft, even though I love you anyway. There's a big part of my brain heart that loves to design things and also to appreciate great design by others. So again, if you get cash out from the App Store or Google Play and use the Kollek podcast, you get ten dollars in cash. I will also donate ten dollars to first, an organization that is helping to advance robotics and stem education for young people around the world.
+00:03:45
+And now here's my conversation with Richard Karp. You wrote that at the age of 13, you were first exposed to plain geometry and was wonderstruck by the power and elegance of formal proofs, are there problems, proves properties, ideas and geometry that from that time that you remember being mesmerized by or just enjoying to go through to prove various aspects?
+00:04:30
+So Michael Raybon told me the story. About an experience he had when he was a young student who was tossed out of his classroom for bad behavior and was wandering through the corridors of his school and came upon two older students. Who were studying the problem of finding the shortest distance between two non overlapping circles. And Michael thought about it and said. You take the straight line between the two centers and the segment between the two circles is the shortest because a straight line is the shortest distance between the two centers in the other line, connecting the circles would be one on a longer line.
+00:05:24
+And I thought and he thought and I agreed that this was just the elegance, the pure reasoning could come up with such a result.
+00:05:34
+Certainly the the shortest distance from the two centers of the circles is a straight line. Could you once again say what's the next step in that process?
+00:05:46
+Well, any any segment joining me, there's the two circles. If you extend it by taking the radius on each side, you get a segment with a path with three edges which connects the two centers. And this has to be at least as long as the shortest path, which is the straight line. The straight line. Yeah.
+00:06:11
+Wow. Yeah, that is that's quite, quite simple. So what what is it about that elegance that you just find compelling.
+00:06:21
+Well, just that you could establish a fact about geometry. Beyond dispute, by pure reasoning, I I also enjoy the challenge of solving puzzles in plain geometry, it was much more fun than the earlier mathematics courses, which were mostly about arithmetic operations and manipulating them.
+00:06:49
+Was was there something about geometry itself, the slightly visual component of it? Yes, absolutely. Although I lacked a three dimensional vision I wasn't very good at. Three dimensional vision, you mean being able to visualize three dimensional object in three dimensional objects or surfaces, hyper planes and so on, so so they're there? I didn't have an intuition, but. For example, the fact that the sum of the angles of a triangle is 180 degrees is proved convincingly and it comes as a surprise that that can be done.
+00:07:38
+Why is that surprising that the well. Well, it is a surprising, surprising idea, I suppose. Why is that proved difficult? It's not.
+00:07:50
+That's the point. It's so easy and yet it's so convincing.
+00:07:54
+Do you remember what is the proof that it's a success as to why you started a corner and draw a line? Parallel to the opposite side. And that line sort of transects the angle between the other two sides. And you get a I have a plane which has to add up to 180 degrees, and it consists in the angles by by the quality of alternate angles. What's it called? You get a correspondence between the angles created by the side along the side of the triangle and the three angles of the triangle.
+00:08:51
+Has geometry had an impact on when you look at to the future of your work with combinatorial algorithms, has it had some kind of impact in terms of. Yeah, being able the puzzles, the visual aspects that were first so compelling to you?
+00:09:08
+Not Euclidean geometry particularly. I think I use tools like linear programming and integer programming a lot. And but those require high dimensional visualization. And so I tend to go by the algebraic properties. Right.
+00:09:30
+You go by the algebra dile algebra and not by the visualization.
+00:09:36
+Well, the interpretation in terms of. For example, finding the highest point on how Hedren has in linear programming is motivating. But again, I don't have the high dimensional intuition that would particularly inform me. So I sort of lean on the algebra. Still linger on that point, what kind of visualization do you do you do when you're trying to think about we'll get to combinatorial algorithms, but just algorithms in general.
+00:10:14
+Yeah. What kind of what's inside your mind when you're thinking about designing algorithms? Or or even just tackling a mathematical problem. Well, I think that usually an algorithm is involves a repetition of some inner loop and and so I can sort of visualize the the distance from the desired solution as. Iteratively reducing until you finally hit the exact solution and try to take steps that get you closer to the try to take steps to get closer and having the certainty of converging.
+00:10:58
+So it's it's very it's basically the the mechanics of the algorithm is often very simple, but especially when you're trying something out on the computer. So, for example, I did some work on the traveling salesman problem and I could see there was a particular function that had to be minimized. And it was fascinating to see the success of approaches to the minimum, to the optimum. You mean so first of all, traveling salesman problem is where you have to visit every city without ever the only ones.
+00:11:38
+Yeah, that's right. Find the shortest path through what sort of cities?
+00:11:42
+Yeah. Which is sort of a canonical standard. A really nice problem. That's really hard, right? Exactly. Yes.
+00:11:49
+So can you say again what was nice about the objective of being able to think about the objective function there and maximizing it or minimizing it?
+00:11:58
+Well, just that that the as the algorithm proceeded, it was you were making progress, continual progress and and eventually getting to the optimal point.
+00:12:10
+So there's two two parts maybe maybe you can correct me.
+00:12:15
+But first, it's like getting an intuition about what the solution would look like and or even maybe coming up with a solution.
+00:12:22
+And two is proving that this thing is actually going to be pretty good. Oh, what part is harder for you? Where is the magic happen? Is it in the first sets of intuitions or is it in the detail, the messy details of actually showing that it is going to get to the exact solution and it's going to run at this at a certain complexity?
+00:12:49
+Well, the magic is just the fact that it is that the gap from the optimum decrease is monotonically and you can see it happening and various metrics of what's going on are improving all along until finally hit the optimum. Perhaps later we'll talk about the assignment problem.
+00:13:13
+And I can illustrate illustrate a little better.
+00:13:16
+Yeah. Now, zooming out again, as you write, Don Knuth has called attention to a breed of people who derive great aesthetic pleasure from contemplating the structure of computational processes.
+00:13:30
+So Don calls these folks geeks. And you write that you remember the moment you realized you were such a person, you were shown the Hungarian algorithm to solve the assignment problem.
+00:13:42
+Right.
+00:13:42
+So perhaps you can explain what the assignment problem is and what the Hungarian algorithm is. So in the assignment problem you have in boys and girls and you are given the desirability of or the cost of matching. Lifebuoy with the jth girl, for all I enjoy, you're given a matrix of numbers. And you want to find the one two, one matching of the boys with the girls such that the some of the associated costs will be minimized. So the the the best way to match the boys with the girls or men with jobs or any two sets, not an impossible matching is possible.
+00:14:37
+Or as you know, all one to one correspondences are permissible if there is a connection that is not allowed. Then you can think of it as having intercourse.
+00:14:49
+Yeah. So what you do is. To depend on the observation that the identity of the optimal. Assignment's. Or as we call it, the optimal permutation is not changed if you subtract. A constant from any row or column of The Matrix, you can see that the comparison between the different assignments is not changed by that. Because you're penalized if you decrease a particular row, all the elements of a row by some constant all solutions decrease by the cost of that by an amount equal to that constant.
+00:15:42
+So the idea of the algorithm is to start with a matrix of non negative numbers and. Keep subtracting from rows of our entire columns in such a way that you subtract the same constant from all the elements of that Rohwer column while maintaining the property that. All the elements are not negative. Simple, yeah, and so and so. What you have to do is, is find. Small moves which will decrease the total cost while subtracting constants from rows or columns, and there's a particular way of doing that by computing the kind of shortest path through the elements in the Matrix.
+00:16:42
+And you just keep going in this way until you finally get a full permutation of zeros while the matrix is non-negative. And then you know that that has to be the cheapest.
+00:16:55
+Is that as simple as it sounds? So the shortest path is the matrix part?
+00:17:02
+Yeah, the simplicity lies in how you find the oversimplified slightly what you you will end up subtracting a constant from some rows or columns and adding the same constant back to other rows and columns so as not to not to reduce any of the zero elements, let you leave them unchanged, but. Each individual step modifies us several rows and columns by the same amounts, but overall decreases the cost. So there's something about that elegance that made you go, aha, this is a beautiful like it's it's it's amazing that something like this, something so simple, can solve a problem like this.
+00:17:54
+Yes, it's really cool.
+00:17:56
+If I had mechanical ability, I would probably like to do woodworking or other activities where you sort of shape something into something beautiful and orderly and there's something about the orderly, systematic nature of that iterative algorithm that is pleasing to me.
+00:18:22
+So what do you think about this idea of geeks as Duncan it calls them? What do you think? Is there something specific to a mindset that allows you to discover the elegance and computational processes, or is this all of us or can all of us discover this beauty or were you born this way?
+00:18:45
+I think so.
+00:18:46
+I always like to play with numbers I. I used to amuse myself by multiplying four digit decimal numbers in my head and putting myself to sleep by starting with one and doubling the number as long as I could go, and testing my memory, my ability to retain the information.
+00:19:09
+And I also read somewhere that you you wrote that you enjoyed showing off to your friends by, I believe, multiplying four digit numbers. Right. A couple of four digit numbers.
+00:19:23
+Yeah, I had a summer job at a beach resort outside of Boston and the other and I was the barker at a ski ball game.
+00:19:37
+Yeah, I used to I used to sit at a microphone microphone saying, come one, come all come in and play skee ball, five cents to play a nickel to win and so on.
+00:19:47
+That's what I was going to say. I wasn't sure if I should know.
+00:19:50
+But Barker, that's the you're the the charming, outgoing person is getting people to come in.
+00:19:58
+Yeah, well, I wasn't particularly charming, but I could be very repetitious and loud and the other employees were.
+00:20:08
+Sort of juvenile delinquents who had no academic bent, but somehow I found that I could impress them by by performing the mental Molterer of mental arithmetic.
+00:20:23
+You know, there's something to that that, you know, what are some of the most popular videos on the Internet is that there's a YouTube channel called No File that shows off different mathematical ideas.
+00:20:37
+I think there's still something really profoundly interesting to people about math, the beauty of it, something even if they don't understand the basic concept of even being discussed, there's something compelling to it. What do you think that is? Any lessons you draw from the your early teen years when you were showing off to your friends of the numbers?
+00:21:02
+I guess what is it that attracts us to the beauty of mathematics?
+00:21:06
+Do you think? The general population, not just the computer scientists and mathematicians, I think that you can do amazing things. You can test whether large numbers are prime. You can. You can solve little puzzles about cannibals and missionaries. Yeah, and that's the kind of achievement it's puzzle solving and at a higher level, the fact that you can you can do this reasoning that you can prove in an absolutely ironclad way that the sum of the angles of a triangle is 180 degrees.
+00:21:49
+Yeah, it's a nice escape from the messiness of the real world where nothing can be proved. So and we'll talk about it. But sometimes the ability to map the real world into such problems where you can't prove it is this is a powerful step.
+00:22:03
+Yeah, it's amazing that we can do this.
+00:22:05
+Another attribute of geeks is they are not necessarily endowed with emotional intelligence so they can live in a world of abstractions without having to master the complexities of dealing with people.
+00:22:24
+Just to linger in the historical note, as a student in 1955, you joined the computational lab at Harvard, or Howard Aikin had built a mock one in the market for computers just to take a step back into that history.
+00:22:38
+What were those computers like? The Mark four filled a large room, much, much bigger than this large office that we're talking in now, and you could walk around inside it. There were there were rows of relays. You could just walk around the interior and the machine would sometimes fail because of bugs, which literally meant flying creatures landing on the switches. So I never I never used that machine for any practical purpose. The lab eventually acquired a one of one of the earlier commercial computers.
+00:23:31
+This is already in the 60s, though. In the mid 50s and late 50s. There was already commercial computers in there. Yeah, we had a UNIVAC of 2000 UNIVAC with 2000 words of storage. And so you had to work hard to allocate the memory properly to also the excess time from one word to another depended on the number of the particular words. And so you there was an art to sort of arranging the storage allocation to make fetching data rapid.
+00:24:07
+Were you attracted to this actual physical world, implementation of mathematics, such a mathematical machine that's actually doing the math physically?
+00:24:20
+No, not at all. I think I was I was attracted to the underlying algorithms. But did you draw any inspiration so could you have imagined? Like, what did you imagine was the future of these giant computers, could you imagine the 60 years later would have billions of these computers all over the world?
+00:24:42
+I couldn't imagine that. But there was a sense in the laboratory that this was the wave of the future. In fact, my mother influenced me. She she told me that data processing was going to be really big and I should get into it.
+00:25:02
+Yeah. Smart woman. Yeah, she was a smart woman. And there was just a feeling that this was going to change the world. But I didn't think of it in terms of personal computing and had no.
+00:25:16
+Anticipation that we would be walking around with computers in our pockets or anything like that, did you see computers as tools, as mathematical mechanisms to analyze sort of the theoretical computer science or the A.I. folks, which is an entire other community of dreamers? Yeah, that's something that could one day have human level intelligence.
+00:25:43
+Well, I wasn't very much on my radar. I did read Turing's paper about the the the the Turing test. Computing and intelligence. Yeah, the Turing test. What do you think about that paper?
+00:25:58
+Was that just like science fiction? I thought that it wasn't a very good test because it was too subjective, so I didn't feel that I didn't feel that the Turing test was really the right way to calibrate how intelligent an algorithm could be to linger on that.
+00:26:18
+Do you think it's because you've come up with some incredible tests later on tests on algorithms, right. That are like strong, reliable, robust across the bunch of different classes of algorithms, but returning to this emotional mess that is intelligence, you think it's possible to come up with the test that's as ironclad as some of the computational complexity work. Well, I think the greater question is whether it's possible to achieve human level level intelligence. Right, so that's so first of all, let me add the philosophical.
+00:26:59
+Do you think it's possible to create algorithms that reason and would seem to us to have the same kind of intelligence as human beings?
+00:27:12
+It's an open question. It seems to me that. Most of the achievements have. A choir operates within a very limited set of ground rules and for a very limited, precise task, which is a quite different situation from the processes that go on in the minds of humans, which is where they have to sort of function in changing environments. They have emotions. They have physical attributes for a choir, for exploring their environment.
+00:27:56
+They have intuition. They have desires, emotions. And I don't see anything in the current achievements of what's called eye that come close to that capability. I don't think there's any. Computer program, which surpasses a six month old child in terms of comprehension of the world. Do you think this complexity of human intelligence, all the cognitive abilities we have, all the emotion.
+00:28:36
+Do you think that could be reduced one day or just fundamentally, can it be reduced to a set of algorithms or an algorithm?
+00:28:44
+So can the Turing machine achieve human level intelligence? I am doubtful about that. I guess the argument in favor of it is that the human brain seems to achieve. What we call intelligence, cognitive abilities of different kinds, and if you buy the premise that the human brain is just an enormous, intricate, interconnected set of switches, so to speak, then in principle you should be able to diagnose what that interconnection structure is like, characterize the individual switches and build a simulation outside.
+00:29:31
+But. Why that may be true in principle, that cannot be the way we're eventually going to tackle this problem. It's no ignoring that. That does not seem like a feasible way to go about it. So there is, however, an existence proof that if you believe that the brain is is just a network of neurons operating by rules, I guess you could say that that's an existence, proof of the ability to build the capabilities of the mechanism.
+00:30:09
+But it would be almost impossible to acquire the information unless we got enough insight into the operation of the brain.
+00:30:19
+But there's so much mystery there. Do you think or what do you make of consciousness? For example, there's something as an example of something we completely have no clue about the fact that we have this subjective experience. Right. Is it possible that this network of the circuit of switches is able to create something like consciousness to know its own identity?
+00:30:43
+Yeah, to know to know the argument and to know itself.
+00:30:47
+To know itself. I think if you try to define that rigorously, you'd have a lot of trouble.
+00:30:56
+So I know that there are many who.
+00:31:02
+I believe that general intelligence can be achieved and there are even some who are feel certain that the singularity will come and we will be surpassed by the machines, which will then learn more and more about themselves and reduce humans to an inferior breed. I am doubtful that this will ever be achieved just for the fun of it. Could you linger on why?
+00:31:34
+What's your intuition? Why you're doubtful?
+00:31:36
+So there are quite a few people that are extremely worried about this existential threat of artificial intelligence of us being left behind by the superintelligent new species. What's your intuition? Why?
+00:31:50
+That's not quite likely. Just because none of the achievements in speech or robotics or natural language processing or creation of flexible computer assistance or any of that comes anywhere near close to that level of cognition.
+00:32:17
+What do you think about ideas of sort of if we look at Moore's Law and the exponential improvement to allow us, that would surprise us. Sort of our intuition falls apart with exponential improvement because, I mean, we're not able to kind of we kind of think in linear improvement. Yeah. We're not able to imagine a world that goes from the Mark one computer to iPhone ten. Yeah.
+00:32:44
+So do you think it would be really surprised by the exponential growth or or on the flip side, is it possible that also intelligence is actually way, way, way, way harder, even with exponential improvement, to be able to crack?
+00:33:03
+I don't think any constant factor of improvement could could change things given given our current comprehension of how the rule of of what cognition requires.
+00:33:21
+It seems to me that multiplying the speed of the switches by a factor of a thousand or a million will not be useful until we really understand the organizational principle behind the network of switches. Well, let's jump in to the network of switches and talk about combinatorial algorithms, if we could. Let's step back for the very basics, what are combinatorial algorithms and what are some major examples of problems they aim to solve? Combinatorial algorithm is is one which deals with a a system of discrete objects that can occupy various states or take on various values from a discrete set of values and need to be arranged or or selected in such a way as to achieve something, to minimize some cost function or to prove or to prove the existence of some combinatorial configuration.
+00:34:36
+So an example would be coloring the vertices of the graph. What's the graph?
+00:34:44
+That's the back. So what? And it's fun to to ask one of the greatest computer scientists of all time, the most basic questions in the beginning of most books. But for people who might not know, but in general, how you think about it, what what is a graph?
+00:35:01
+A graph that's less simple? It's a set of points. Certain pairs of which are joined by lines called issues, and they sort of represent the in different applications, represent the interconnections between discrete objects, so they could be the interactions, interconnections between switches in a digital circuit or interconnections indicating the communication patterns of a human community. And they could be directed or directed.
+00:35:38
+And as you've mentioned before, might have costs.
+00:35:42
+Right, that can be directed or undirected. It can be. You can think of them as if if if you think if a graph were representing a communication network, then the edge could be undirected, meaning that information could flow along in both directions, or it could be directed with only one way communication. A road system is another example of a graph with weights on the edges.
+00:36:09
+And then a lot of problems of optimizing the efficiency of such networks or learning about the performance of such networks are the object of combinatorial algorithm. So it could be scheduling classes at a school where the the vertices, the nodes of the network are the individual classes and the edges indicate the constraints which say that certain classes cannot take place at the same time, or certain teachers are available only for certain classes, etc..
+00:36:55
+Or I talked earlier about the assignment problem of matching the boys with the girls where you have the graph with an edge from each boy to each girl with a way to indicating the cost or in logical design of computers. You might want to find a set of so-called gaits switches that perform logical functions which can be interconnected to realize some function. So you you might ask, how many gates do you need in order to for it, for a circuit to give a yes output, if at least a given number of its inputs are ones and know if if you are present.
+00:37:59
+My favorite is probably all the all the work with network flows. So any time you have that, I don't know why it's so compelling, but there's something just beautiful about it. It seems like there's so many applications and communication networks and traffic right. Flow that you can map into these and then you could think of pipes and water going through pipes and you could optimize in different ways. There's something always visually and intellectually compelling to me about it.
+00:38:29
+And of course, you've done work there. Yeah. Yeah. So so there the edges represent channels along which some commodity can flow.
+00:38:41
+It might be gas, it might be water, it might be information, maybe supply chain as well, like products being products flowing from one operation to another. Yeah. And the edges have a capacity which is the rate at which the commodity can flow.
+00:39:00
+And a central problem is to determine given a network of these channels, in this case, the edges of communication channels, the the challenge is to find the maximum rate at which the information can flow along these channels to get from a source to a destination. And that's that's a fundamental combinatorial problem that I've worked on jointly with the scientist Jack Edmands.
+00:39:36
+We I think we're the first to give a formal proof that this maximum flow problem through a network can be solved in polynomial time, which I remember the first time I learned that just learning that in maybe even grad school, I don't think it was even undergrad. No algorithm. Yeah. Denef never close get taught in in basic algorithms core. Yes, probably. OK, so I have I remember being very surprised that Max Flow as a polynomial time algorithm.
+00:40:13
+Yeah. That there's a nice fast algorithm that solves max flow.
+00:40:17
+But so there is an algorithm named after you and that means they have an algorithm for max flow.
+00:40:25
+So what was it like tackling that problem and trying to arrive at a polynomial time solution? And maybe you can describe the algorithm, maybe you can describe what's the running time complexity they showed?
+00:40:37
+Yeah, well, first of all, what is a polynomial time algorithm? Yeah, perhaps we could discuss that.
+00:40:45
+So yeah, let's, let's actually just even. Yeah. That's what is algorithm. Algorithm the complexity. What are the major classes of algorithm complexity.
+00:40:55
+So we in a problem like the assignment problem or scheduling schools or any of these applications, you have a set of input data which might for example, be a set of vertices connected by edges with it given for each edge the capacity of the edge. And you have algorithms which are, I think, of them as computer programs with operations such as addition, subtraction, multiplication, division, comparison of numbers and so on. And you're trying to construct an algorithm.
+00:41:46
+Based on those operations, which will determine in a minimum number of computational steps the answer to the problem in this case, the computational step is one of those operations. And the answer to the problem is, let's say the the configuration of the network that carries the maximum amount of flow.
+00:42:11
+And an algorithm is said to run in polynomial time. As a function of the size of the input, the number of vertices, the number of edges and so on, the number of basic computational steps grows only as some fixed power of that size. A linear algorithm would. Execute a number of steps literally proportional to the size quadratic algorithm would be steps proportional to the square of the size and so on. And algorithms that who's running time is bounded by some fixed power of the size are called polynomial algorithms.
+00:42:56
+And that's supposed to be relatively fast class of algorithms. That's right.
+00:43:02
+We theoreticians take that to be. The definition of an algorithm being efficient and Urrutia and we're interested in which problems can be solved by such efficient algorithms, one can argue whether that's the right definition of efficient because you could have an algorithm who's running time is the 10000. The power of the size of the input in that wouldn't be really efficient.
+00:43:32
+And in practice, it's oftentimes reducing from an end squared algorithm to an analogue and or linear time is practically the jump that you want to make to allow a real world system to solve a problem.
+00:43:48
+Yeah, that's also true because especially as we get very large networks, the size can be in the millions and and then anything above. And again, we're in is the size would be too much for a practical solution.
+00:44:06
+OK, so that's polynomial time algorithms. What other classes of algorithms are there? What's so that usually they they designate polynomials, a letter P, yeah, it's also ENPI and P complete and B hard. Yeah.
+00:44:24
+So can you try to disentangle those points by trying to define them simply? Right.
+00:44:31
+So a polynomial time algorithm is one which was running. Time is bounded by a polynomial and the size of the input there's then there's the class of such algorithms is called P in the worst case by the way should say.
+00:44:48
+Right. So for every problem and that's very important that in this theory, when we measure the complexity of an algorithm, we really measure the number of step, the growth of the number of steps in the worst case. So you may have an algorithm that runs very rapidly in most cases, but if there's any case where it gets into a very long computation, that would increase the computational complexity by this measure. And that's a very important issue because there are, as we may discuss later, there are some very important algorithms which don't have a good standing from the point of view of their worst case performance and yet are very effective.
+00:45:37
+So so theoreticians are interested in the classic problem solvable in polynomial time. Then there's ENPI, which is the class of problems. Which may be hard to solve, but where the bear where when confronted with a solution, you can check it in polynomial time. Let me give you an example there. So if we look at the assignment problem, so you have and boys you have girls, you have the number of numbers that you need to write down to specify the problem.
+00:46:17
+Instances in squared. And the question is. How many steps are needed to solve it? And Jack Edmans and I were the first to show that it could be done in time and cubed earlier algorithms required into the fourth. So as a polynomial function of the size of the input, this is a fast algorithm. Now, to illustrate the class ENPI, the question is how long would it take to verify that a solution is optimal? So, for example, if if the input was a graph, we might want to find the largest Cleek in the graph or a clique is a set of vertices such that any vertex, each vertex in the set is adjacent.
+00:47:19
+To each of the others, so clique is a complete sub graph, yes, so its Facebook social network, everybody's is friends with everybody else.
+00:47:31
+Close click.
+00:47:32
+That would be what's called a complete graph. It would be. No, I mean, within that clique.
+00:47:37
+Within that clique. Yeah.
+00:47:38
+Yeah, they're all friends. Complete graph is when everybody is friendly as everybody is friends with everybody. Yeah.
+00:47:48
+So the problem might be to determine whether in a given graph there exists a clique of a certain size. Well, that turns out to be a very hard problem, but how but if somebody hands you a clique and asked you to check whether it is a hands you a set of vertices and ask you to check whether it's a clique, you could do that simply by exhaustively looking at all of the edges between the vertices in the cleek and verifying that they're all there.
+00:48:24
+And that's a polynomial time algorithm. So the very fact they're the problem of finding the Cleek. Appears to be extremely hard, but the problem of verifying a clique to see if it reaches the target number of vertices is easy. This is easy to verify. So finding the clique is hard, checking it is easy. Problems of that nature are called non-deterministic polynomial time algorithms, and that's the class map.
+00:49:02
+And what about MPLX? Complete and empowered. OK, let's talk about problems where you're getting a yes no, a yes or no answer rather than a numerical value. So either there is a perfect matching of the of the boys with the girls or there isn't. It's clear that every problem in P is also in NP. If you can solve the problem. Exactly. Then you can certainly verify. The solution, on the other hand, there are problems in the class enpi.
+00:49:40
+This is the class of problems that are easy to check, although they may be hard to solve. It's not at all clear that problems in ENPI lie in P. So, for example, if we're looking at scheduling classes at a school, the fact that you can verify when handed a schedule for the school, whether it meets all the requirements, that doesn't mean that you can find the schedule rapidly. So intuitively, enpi non-deterministic polynomial checking rather than finding is going to be harder than.
+00:50:20
+It's going to include is easier, checking is easier, and therefore the classic problems that can be checked appears to be much larger than the classic problems that can be solved.
+00:50:31
+And then you keep adding appears to and sort of these additional words that designate that we don't know for sure yet.
+00:50:40
+We don't know for sure. So the theoretical question, which is considered to be the most central problem in theoretical computer science or at least computational complexity theory, combinatorial algorithm theory question is whether P is equal to ENPI. If he were equal to ENPI, it would be amazing. It would mean that every. Problem where a solution can be rapidly checked. Can actually be solved in polynomial time. We don't really believe that's true if you're scheduling classes at a school.
+00:51:24
+It's we expect that if somebody hands you a satisfying schedule, you can verify that it works. That doesn't mean that you should be able to find such a schedule. So intuitively, ENPI encompasses a lot more problems than.
+00:51:41
+So can we take a small tangent and break apart that intuition? So do you, first of all, think that the biggest sort of open problem in computer science may be mathematics is whether P equals NP? Do you think P equals ENPI or do you think P is not equal time?
+00:52:02
+P If you had to bet all your money on it, I would bet that P is unequal to ENPI simply because there are problems that have been around for centuries and have been studied intensively in mathematics and even more so in the last 50 years since the P versus NP was stated and no polynomial time algorithms have been found for these easy to check problems.
+00:52:30
+So one example is a problem that goes back to the mathematician Gauss, who is interested in factoring large numbers so we know what the number is prime.
+00:52:44
+If it doesn't, if it cannot be written as the product of two or more numbers, unequal, equal to one. So if we can factor a number like ninety one, that's seven times 13. But if I give you.
+00:53:04
+20 digit or 30 digit numbers here probably going to be at a loss to have any idea whether they can be factored so that the problem of factoring very large numbers is. Does not appear to have an efficient solution, but once you have found the factors, express the number as a product to. Smaller numbers, you can quickly verify that they are factors of the number and your intuition is a lot of people finding, you know, there's a lot of brilliant people tried to find out this one particular problem.
+00:53:43
+There's many others like it that are really well studied. And it will be great to find an efficient algorithm for. Right.
+00:53:51
+And in fact, we have some results that I was instrumental in obtaining, following up on work by the mathematician Steven Cook to show that within the class enpi of easy to check problems, there's a huge number that are equivalent in the sense that either all of them or none of them like in P, and this happens only if P is equal to ENPI.
+00:54:23
+So if he is unequal to ENPI, we would also know that virtually all the standard combinatorial problems, he appears unequal to ENPI. None of them can be solved in polynomial time.
+00:54:42
+Can you explain how that's possible to tie together so many problems and a nice bunch that if one is proven to be efficient, then all are the first and most important stage of progress was the result by Steven Cook.
+00:55:03
+Who showed that a certain problem called the satisfied ability problem of propositional logic is as hard as any problem in the clasp. So the propositional logic problem is expressed in terms of expressions involving the logical operations and or and not proper in operating operating on variables that can be the true or false. So an instance of the problem would be some formula involving Indore and not in the question would be whether there is an assignment of truth values to the variables in the problem that would make the formula true.
+00:55:54
+So, for example, if I take the formula A or B and A or not B and not A or B and not A or not B, and take the conjunction of all four of those so-called expressions, you can determine that no assignment of truth values to the variables, A and B will allow that conjunction of what are called clauses to be true. So that's an example of a formula in propositional logic involving expressions based on the operations and or not.
+00:56:40
+That's an example of a problem which which is not satisfied, but there is no solution that satisfies all of those constraints.
+00:56:48
+And that's like one of the cleanest and fundamental problems in computer science. That's second, they statement of a really hard problem.
+00:56:54
+It's a nice statement, a really hard problem. And and what Cook showed is that every problem in ENPI. Is can be expressed as an instance of dissatisfy ability problem, so to do that, he used the observation that a very simple abstract machine called the Turing Machine can be used to describe any algorithm.
+00:57:31
+An algorithm for any realistic computer can be translated into an equivalent algorithm on one of these Turing machines, which are extremely simple to a machine.
+00:57:45
+There's a tape and you can yeah, you have to walk along the data on a tape and you have basic instructions, a finite list of instructions which say which say if you're reading a particular symbol on the tape and you're in a particular state, then you can move to a different state and change the state of the number of the the element that you are looking at, the cell of the tape that you were looking at.
+00:58:12
+And that was like a metaphor and a mathematical construct that Turing put together to represent all possible computation, all possible computation.
+00:58:20
+Not one of these so-called Turing machines is too simple to be useful in practice, but for theoretical purposes, we can depend on the fact that an algorithm for any computer can be translated into one that would run on a machine. And then using that fact, he could sort of describe any possible non-deterministic polynomial time algorithm, any any algorithm for a problem. ENPI could be expressed as a sequence of.
+00:59:00
+Moves of the Turing machine described in terms of reading a symbol on the tape while you're in a given state and moving to a new state and leaving behind a new set, new symbol, and given that the fact that any nondeterministic polynomial time algorithm can be described by a list of such instructions, you could translate the problem into the language of the satisfy ability problem.
+00:59:36
+They're amazing to you, by the way. If you take yourself back when you're first thinking about the space problems, is that how amazing is that?
+00:59:43
+It's astonishing. When you look at Cook's proof, it's not too difficult to sort of figure out why. This is why this is so. But the implications are staggering. It tells us that this of all the problems enpi all the problems where solutions are easy to check, they can they can all be rewritten in terms of the satisfy ability problem. Yes, in adding so much more weight to that P equals NP question, because all it takes is to show that one.
+01:00:26
+That's right, some algorithm in this class of the P versus M p can be re expressed is simply asking whether the satisfied ability problem of propositional logic is solvable in polynomial time. But there's more I encountered Cooke's paper when he published it at a conference in 1971. Yeah, so when I saw Hooke's paper and saw this reduction of all of each of the problems in ENPI by a uniform method to to the satisfy ability problem of propositional logic. That meant that dissatisfy ability problem was a universal combinatorial problem.
+01:01:16
+And. It occurred to me through experience I had had in trying to solve other combinatorial problems, that there were many other problems which seemed to have that universal structure. And so I began looking for. Reductions from the satisfied ability to other problems. One of the other problems would be the so-called integer programming problem of solving a determining whether there's a solution to a a set of linear inequalities involving integer variables, just like linear programming.
+01:02:06
+But there's a constraint that the variables must remain.
+01:02:09
+Integers, integers, in fact, must be zero or one could they could only take on those values.
+01:02:15
+And that makes the problem much harder. Yes, that makes the problem much harder. And it was not difficult to show that the satisfied ability problem can be restated as an integer programming problem.
+01:02:30
+So can pause on that. Was that one of the first mappings to try to do and how hard is that map? And he said it wasn't hard to show. But, you know, that's, uh, that's a big leap.
+01:02:44
+It is a big leap. Yeah. Well, let me let me give you another example. Another problem in ENPI is whether a graph contains a click of a given size. And now. The question is. Can we reduce the propositional logic problem to the problem of whether there's a click of a certain size?
+01:03:15
+Well, if you look at the proposition, a logic problem, it can be expressed as a number of clauses, each of which is a. Of the form. A or B or C, where A is either one of the variables in the problem or the negation of one of the variables. And. The an instance of the propositional logic problem can be rewritten using operations of boolean logic. Can be read, be written as the conjunction of a set of clauses, the end of a set of Auris, where each clause is a disjunction on the order of variables are negated variables.
+01:04:10
+So the question of the. In the saddest liability problem is whether those clauses can be simultaneously satisfied. Now, to satisfy all those clauses, you have to find one of the terms in each clause which is going to be given that. Which is going to be true in your truth assignment, but you can't make the same variable, both true and false, so if you have the variable A. and one clause and you want to satisfy that clause by making a true.
+01:04:51
+You can't also make. The compliment to be true in some other clothes, and so the goal is to make every single clause true, if it's possible to satisfy this and the way you make it choice at least. One term in the claws must be it must be true. Got it. So so now we to convert this problem to something called the independent set problem, where you're just sort of asking for a set of vertices in a graph such that No.
+01:05:24
+Two of the marriage and sort of the opposite of the clique problem.
+01:05:31
+So we've seen that we can now express that as. Finding a. Set of terms, one in each clause without picking. Both the variable and the negation of that variable, because the variable is the sign of the truth value, the negated variable has to have the opposite of value. Right. And so we can construct the graph. Where the vertices are the. Terms in all of the clauses, and you have an edge between two. Terms if.
+01:06:28
+If an edge between two occurrences of terms, either if they're both in the same clause because you're only picking one element from each clause and also an edge between them, if they represent opposite values of the same variable, because you can't make a variable both true and false. And so you get a graph where you have all of these occurrences of variables. You have edges which which mean that you're not allowed to choose both ends of the edge, either because they're in the same clause or their congregations of one another.
+01:07:07
+Right.
+01:07:07
+That's a facade sort of to zoom out. That's a really powerful idea that you can take a graph and connect it to a logic equation.
+01:07:19
+Right somehow and do the mapping for all possible formulations of a particular problem on a graph. Yeah, I mean that. That still is hard for me to believe that that's possible, that that they're like, what do you make of that, that there's such a union of there's such a friendship among all of these problems, the cross that somehow I akin to combinatorial algorithms that they're all somehow related? Yeah, I know it can be proven. Yeah. But what do you make of it that that that's true.
+01:07:59
+Well that they just have the same expressive power. You couldn't take any one of them and translate it into the terms of the other.
+01:08:09
+You know, the fact that they have the same expressive power also somehow means that they can be translatable. Right.
+01:08:17
+And what I did in the 1971 paper was to take 21 fundamental problems, commonly occurring problems of packaging, covering, matching and so forth, or lying in the class enpi and show that the satisfied ability problem can be expressed as any of those that any of those have the same expressive problem, expressive power.
+01:08:46
+So and that was like throwing down the gauntlet of saying there's probably many more problems like this. Right. But this is saying that, look, that they're all the same.
+01:08:56
+They're all the same, but not exactly, you know, they're all the same in terms of whether they are. Rich enough to express any of the others, but that doesn't mean that they have the same computational complexity.
+01:09:14
+But what we can say is that either all of these problems or none of them are solvable in polynomial time as the word is ENPI completeness and hard classes.
+01:09:28
+Oh, that's just a small technicality. So when we're talking about decision problems, that means that the answer is just yes or no. There there is a clique of size 15 or there's not a clique of size 15. On the other hand, an optimization problem. Who would be asking find the largest? Klecko The answer would not be yes or no. It would be 15.
+01:09:54
+So. So when you asking for the. When you're putting a valuation on the different solutions and you're asking for the one with the highest valuation, that's an optimization problem. And there's a very close affinity between the two kinds of problems. But the counterpart of being the hardest decision problem, the hardest. Yes, no problem. The counterpart of that is, is to minimize or maximize an objective function. And so a problem that's hardest in the class when viewed in terms of optimization, those are called inspired rather than complete and empty completist for decision and P completers for decision problems.
+01:10:46
+So if somebody shows that P equals and P, what do you think that proof will look like if you were to put on yourself, if it's possible to show that as a proof or to demonstrate an algorithm?
+01:11:05
+All I can say is that it will involve concepts that we do not now have and approaches that we don't have.
+01:11:13
+Do you think those concepts out there in terms of inside complexity theory, inside of computational analysis of algorithms, do you think those concepts are totally outside of the box level considered yet?
+01:11:26
+I think that if there is a proof that P is equal to ENPI or that P is not equal to ENPI, it'll depend on concepts that are now outside the box. Now, if that's shown either way, Poppy, because I'm Poppy not well, actually, p e goes on p what impact? You kind of mentioned a little bit.
+01:11:49
+But can you can you linger on what kind of impact would it have on theoretical computer science and perhaps software?
+01:11:57
+Well, these systems in general, well, I think it will have enormous impact on the on the world.
+01:12:03
+And in either way, a case, if P is unequal to ENPI, which is what we expect, then we know that we're in that for the great majority of the combinatorial problems that come up, since they're known to be enpi complete, we're not going to be able to solve them by efficient algorithms. However, there's a little bit of hope in that it may be that we can solve most instances. All we know is that if a problem is not in P, then it can't be solved efficiently on all instances.
+01:12:42
+But basically, it will. It will if we find that he is unequal to ENPI, it will mean that we can't expect always to get the optimal solutions to these problems and we have to depend on heuristics that perhaps work most of the time or give us good approximate solutions, but not so.
+01:13:05
+So we would turn our eye towards the heuristics we would with a little bit more acceptance and comfort in our hearts.
+01:13:13
+Exactly.
+01:13:14
+OK, so let me ask romanticised question. What to you is one of the most or the most beautiful combinatorial algorithm in your own life or just in general in the field that you've ever come across or have developed yourself?
+01:13:31
+Oh, I like the stable matching problem of a stable marriage problem. Very much.
+01:13:39
+What's the stable matching problem? Yeah, imagine that you want to marry off in boys with and girls. And each boy has an ordered list of his preferences among the girls, his first choice, his second choice to her and choice and.
+01:14:08
+Each girl also has a unwatering of the boy's first choice, second choice and so on, and we'll say and we will say that a matching one to one matching of the boys with the girls is stable if there are. No two couples in the matching such that the boy in the first couple prefers the girl in the second couple to her mate and she prefers the boy to her current mate. In other words, if there is the matching is stable, if there is no pair who want to run away with each other, leaving their partners behind.
+01:14:55
+Gotcha.
+01:14:59
+Uh, yeah, actually, this is relevant to matching residents with hospitals and some other real life problems, although not quite in the form that I described.
+01:15:13
+So it turns out that there is the state for any set of preferences. Stable matching exists. And moreover, it can be computed by a simple algorithm in which each boy starts making proposals to girls. And if the girl receives the proposal, she accepts it tentatively, but she can. Drop it if she can, and she can drop it later, if she gets a better proposal from her point of view and the boys start going down their lists, proposing to their first, second or third choices until, you know, stopping when a proposal is accepted.
+01:16:07
+But the girls, meanwhile, are watching the proposals that are coming into them and the girl will drop her current partner. If she gets a better proposal and the boys never go back to they never go back.
+01:16:24
+Yeah, so once they've been denied, they don't try again.
+01:16:29
+They don't. They don't. They don't try again because the girls are always improving their status as they get more, as they receive better and better proposals. The boys are going down their list, starting with their top preferences and.
+01:16:48
+One can prove that. That the process will come to an end where everybody will get matched with somebody and you'll you won't have any peers that want to abscond from each other.
+01:17:07
+Do you find the proof for the algorithm itself beautiful, or is it the fact that with the simplicity of just the two marching, I mean, given the simplicity of the underlying rule of the algorithm, is that the beautiful part? Both, I would say, and you also have the observation that you might ask who is better off the boys who are doing the proposing or the girls who are reacting to proposals? And it turns out that it's the boys who are doing the doing the best.
+01:17:39
+That is, each boy is doing at least as well as he could do in any other state matching. So it is a sort of lesson for the boys that you should go out and be proactive and make those proposals go for broke and had I don't know if this is directly map of what philosophically to our society, but certainly seems like a compelling notion.
+01:18:05
+And like you said, there's probably a lot of actual real world problems that this could be map to.
+01:18:11
+Yeah, well, you get you get complications. For example, what happens when a husband and wife want to be assigned to the same hospital? So you you have to take those constraints into account and then the problem becomes inspired.
+01:18:30
+Or why is that a problem for the husband and wife to be assigned to the same hospital? No, it's desirable, so desirable. Or at least go to the same city.
+01:18:41
+So you can't if you I think if you're assigning residents to hospitals and then you have some preferences for the husband and wife or for the hospitals, the residents have their own preferences, references residents, both male and female, have their own preferences.
+01:19:01
+The hospitals have their preferences. But if. If. Residents say the boy is going to Philadelphia, then you'd like his wife, how bad also to be assigned to a hospital in Philadelphia.
+01:19:21
+So which makes it A and B hard problem, the mention of the fact that you have this additional constraint, that it's not just the preferences of individuals, but the fact that the two partners to a marriage have to go to have to be assigned to the same place.
+01:19:39
+I'm being a little dense, though, was sort of the perfect matching.
+01:19:47
+No, not a stable matching, as we refer to. That's when two partners are trying to.
+01:19:53
+OK, what's confusing you is that in the first interpretation of the problem, I had boys matching with girls. Yes. In the second interpretation, you have humans matching with institutionalists.
+01:20:07
+I know there's a coupling between within the Gocha, within the humans at any added little constraint will make it a PR problem.
+01:20:17
+Well, yeah. OK, by the way, the argument you mentioned wasn't was one of yours. No, no, that was due to Gail and Shapleigh and my friend David Gill passed away before he could get part of the Nobel Prize, but his partner, Shapleigh, shared a Nobel Prize with somebody else for economics, for him, for economics, for ideas stemming from this table matching idea.
+01:20:49
+So you've also developed yourself some elegant, beautiful algorithms, again, picking your children. So the the Robin Kabalan with a string searching pattern matching Abakar algorithm from Expo's we mentioned hopcroft, carbofuran, the firefighting Maximov cardinality matching bipartite grass. Is there ones that stand out use ones you're most proud of, or just whether it's beauty, elegance or just being the right discovery development in your life that you're especially proud of? I like the Raybon Karpe algorithm because it illustrates the power of randomisation.
+01:21:34
+So the the problem there is to. Is to decide whether a given long string of symbols from some alphabet contains a given word, whether a particular word occurs within some very much longer word. And so the the idea of the. Algorithm. Is to associate with the word that we're looking for a fingerprint, some some number or some combinatorial object that. Describes that word and then to look for an occurrence of that same fingerprint as you slide along the longer word.
+01:22:35
+And what we do is we associate with each word a number, so we first of all, we think of the letters that are kind of occur in a word, as the digits of, let's say, decimal or whatever. Base here. Whatever a number of different symbols there are, that's the base of the of the numbers. Yeah, right. So every word can then be thought of as a number with the letters being the digits of that number.
+01:23:10
+And then we pick a random prime number and a certain range and we take that word viewed as a number and take the remainder on dividing, dividing that number by the prime.
+01:23:29
+So coming up with a nice hash function, it's a it's a kind of hash function. Yeah. It gives you a little shortcut for for that particular word.
+01:23:39
+Yeah.
+01:23:40
+So that's the that's the it's very different than the other algorithms of its kind that we're trying to do. Search string matching. Yeah.
+01:23:52
+Which usually are combinatorial and don't involve the idea of taking a random fingerprint. Yes. And doing the fingerprinting has two advantages. One is that as we slide along the long word, digit by digit, we can we keep a window of a certain size, the size of the word we're looking for. And we we compute the fingerprint of every single stretch of that length. And it turns out that just a couple of arithmetic operations will take you from the fingerprint of one part to what you get when you slide over by one position.
+01:24:36
+So the computation of all the fingerprints is simple and set. And secondly, it's unlikely if the prime is chosen randomly from a certain range that you will get two of the segments in question having the same fingerprint. And so there's a small probability of error which can be checked after the fact and also the ease of doing the computation because you're working with these fingerprints, which are remainders modulo some big crime.
+01:25:12
+So that's the magical thing about randomized algorithms, is that if you add a little bit of randomness, it somehow allows you to take a pretty naive approach, a simple looking approach, and allow it to run extremely well.
+01:25:27
+So can you maybe take a step back and say, like, what is the randomise algorithm, this category of algorithms?
+01:25:35
+Well, it's just the ability to draw a random number from such. From some range are to to associate a random number with some object or to draw at random from some set. So another example is very simple.
+01:25:58
+If we're conducting a presidential election and we would like to pick the winner, in principle, we could draw a random sample of all of the voters in the country. And if it was a site of substantial size, say a few thousand, then the most popular candidate in that group would be very likely to be the correct choice that would come out of counting all the millions of votes. Now, of course, we can't do this because, first of all, everybody has to feel that his or her vote counted.
+01:26:38
+And secondly, we can't really do a purely random sample from that population. And I guess, thirdly, there could be a tie, in which case we wouldn't have a significant difference between two candidates.
+01:26:53
+But those things aside, if you didn't have all that messiness of human beings, you could prove that that kind of random picking would be just random picking would would be would solve the problem with very with a very low probability of error.
+01:27:08
+Another example is testing whether a number is prime. So if I want to test whether 17 is prime. I could pick any number between one of the 17. And raise it to the 16th power modulo 17 then, and you should get back the original number. That's a famous formula due to fair amount about it's called Faramarz Little Theorem that if you take any a any number A in the range of zero through N minus one and raise it to the end minus one paper power modulo N you'll get back the number A the number if A is prime.
+01:28:00
+Yeah. So if you don't get back the number eight, that's a proof that a number is not prime. And you can show that suitably define them in the. The probability that you will get. Value I'm an equal, you will get a violation of semis, result is very high, and so this gives you a way of rapidly proving that a number is not prime. It's a little more complicated than that because there are certain values in where something a little more elaborate has to be done.
+01:28:45
+But that's the basic idea, is taking an identity that holds four primes and therefore, if it ever fails on any instance for an unprime unit, you know, the number is not prime. It's a quick choice of a fast choice, fast proof that a number is not prime.
+01:29:05
+Can you maybe elaborate a little bit more? What's your intuition, why randomness works so well and results in such simple algorithms? Well, the example of conducting an election where you could take in theory, you could take a sample and depend on the validity of the sample to really represent the whole just the basic fact of statistics, which gives a lot of opportunities. And I actually exploited that sort of random random sampling idea in designing an algorithm for counting the number of solutions that satisfy a particular formula and propositional calculus, prepositional logic in particular.
+01:29:55
+So some some some version of the city's viability problem or a version of this that has viability problem.
+01:30:04
+Is there some interesting is that they want to elaborate on what some aspect of that algorithm that might be? Useful to describe, so you have a a collection of. Formulas. And you want to count the. Number of. Solutions that satisfy at least one of the formulas. And you can count the number of solutions that satisfy any particular one of the formulas, but you have to account for the fact that that. Solution might be counted many times if it solves.
+01:30:53
+More than one of the formulas. And so what you do is you. Sample from the formulas, according to the number of solutions that satisfy each individual, one, in that way you draw a random solution, but then you correct by looking at the number of formulas that satisfy that random solution. And and don't double count. So if you can think of it this way, you have a a matrix of zeros and ones and you want to know how many columns of that matrix contain at least one one.
+01:31:39
+And you can count in each row how many ones there are. So what you can do is draw from the rows, according to the number of ones, if a row has more ones, it gets drawn more frequently. But then if you draw from that row. You have to go up the column and looking at where that same one is repeated in different rows. And only counted as a success or a hit if it's the earliest road that contains the one right.
+01:32:12
+And that gives you a robust statistical estimate of the total number of columns that contain at least one of the ones. So that that is an example of the same principle that was used in studying random sampling. Another viewpoint is that if you have a phenomenon that occurs almost all the time, then if you sample one of the occasions where it occurs, you're most likely dead and you're looking for an occurrence, a random occurrence is likely to work. So that comes up in solving identities, solving algebraic identities.
+01:32:59
+You get to formulas that may look very different. You want to know if they're really identical. What you can what you can do is just pick a random value and evaluate the formulas that those two at that value and see if they see if they agree. And you depend on the fact that if the formulas are distinct, then they're going to disagree a lot. And so therefore a random choice will exhibit the disagreement. If there are many ways for the two to disagree and you only need to find one disagreement, then random choice is likely to yield it.
+01:33:39
+And in general, so we've just talked about randomized outcomes, but we can look at the probabilistic analysis of algorithms and that gives us an opportunity to step back. And as I said, everything we've been talking about is worst case analysis. Right.
+01:33:54
+Could you maybe comment on the usefulness and the power of worst case analysis versus best case analysis, average case probabilistic? How do we think about the future of theoretical computer science? Computer science? In the kind of analysis we do of algorithms, does worst case analysis still have a place, an important place, or do we want to try to move forward towards kind of average case analysis?
+01:34:23
+Yeah, and what are the challenges there?
+01:34:26
+So if worst case analysis shows that an algorithm is always good, that's fine. If worst case analysis. Is used to show that the problem that the solution is not always good, then you have to step back and do something else to ask how often will you get a good solution?
+01:34:52
+It just depends on that for a second that that's so beautifully put, because I think we tend to judge algorithms. We throw them in the trash the moment they're their worst cases shown to be bad.
+01:35:05
+Right. And that's unfortunate. I think we use a good example is going back to the satisfy ability problem. There are very powerful programs called set solvers, which in practice fairly reliably solve instances with many millions of variables that arise in digital design or in proving programs.
+01:35:32
+Correct.
+01:35:33
+And other applications. And so in in many application areas, even though satisfy ability, as we've already discussed, is not complete, the set solvers will work so well that the people in that discipline tend to think of status ability as an easy problem. So in other words, just for some reason that we don't entirely understand the instances that people formulate in designing digital circuits or other applications are such that. Satisfy ability is not hard to check. And even searching for a satisfying solution can be done efficiently in practice, and there are many examples, for example, we talked about the traveling salesman problem.
+01:36:35
+So just to refresh our memories, the problem is you've got a set of cities. You have pairwise distances between cities, and you want to find a tour through all the cities that minimizes the total the total cost of all the edges traversed, all the all the trips between cities. The problem is inspired, but people using integer programming codes to together with some other mathematical tricks, can solve. Geometric instances of the problem where the cities are, let's say, points in the plane and get optimal solutions to problems with tens of thousands of cities, actually it'll take a few computer months to solve a problem of that size.
+01:37:27
+But for problems of size a thousand or two, it'll rapidly get optimal solutions, provably optimal solutions, even though, again, we know that it's unlikely that the traveling salesman problem can be solved in polynomial time.
+01:37:45
+Are there methodologies like regular systematic methodologies for. You said in practice, in practice, this album was pretty good. Are there systematic ways of saying in practice this is pretty good? So in other words, average case analysis or you've also mentioned that average case kind of requires to understand what the typical cases, typical instances, and that might be really difficult. That's very difficult. So after I did my original work on getting. Showing all these problems three and complete.
+01:38:23
+I looked around for a way to get some shed some positive light on combinatorial algorithms, and what I tried to do was to study problems, behavior on the average with high probability. But I had to make some assumptions about what what's the probability space was the sample space? What are they what do we mean by typical problems? That's very hard to say. So I took the easy way out and made some very simplistic assumptions. So I assumed, for example, that if we were generating a graph with a certain number of vertices and edges, then we would generate the graph by simply choosing one image at a time, at random, at random, until we got the right number of veges.
+01:39:13
+That's that's a particular model of random graphs that has been studied mathematically a lot. And within that model, I could prove all kinds of wonderful things. I and others who also worked on this so we could show that we know exactly how many edges there have to be in order for there be a so-called Hamiltonian circuit.
+01:39:41
+That's a cycle that visits each vertex exactly once. We know that if the number of edges is a little bit more than in log in where and is the number of vertices then where such a cycle is very likely to exist and we can give a heuristic that will find it with a high probability. And we got the community in which I was working, got a lot of results along these lines, but. The field tended to be rather lukewarm about accepting these results as meaningful because we were making such a simplistic assumption about the kinds of graphs that we would be dealing with so we could show all kinds of wonderful things.
+01:40:33
+It was a great playground. I enjoyed doing it. But after a while, I. Concluded that. That it didn't have a lot of bite in terms of the practical application of the.
+01:40:49
+OK, so there's too much into the world of toy problems.
+01:40:52
+Yeah, that's OK. But. All right, but is there a way to find a nice representative, real world impact? For instance, there's a problem on which demonstrate that an algorithm is good. So this is kind of like the machine learning world. That's kind of what they, at his best tries to do, is find a data set from like the real world and show the performance.
+01:41:16
+All the all the conferences are all focused on beating the performance of on that real world data set. Is there an equivalent in complexity analysis?
+01:41:28
+Not really. Don Knuth started to collect examples of graphs coming from various places so he could have a whole zoo of different graphs that he could choose from, and he could study the performance of algorithms on different types of graphs.
+01:41:49
+And but it's really important and compelling to be able to define a class of graphs so that the actual act of defining a class of graphs that you're interested in, it seems to be a non-trivial step if we're talking about instances that we should care about in the real world.
+01:42:08
+Yeah, it's there's nothing available there that would be analogous to the training set for supervised learning, you know, where you sort of assume that the world has given you a bunch of examples to work with. We don't really have that for. Problems for combinatorial problems on graphs and networks. You know, there's been a huge growth, a big growth of data sets available. Do you think some aspect of theoretical computer science might be contradicting my own question while saying it?
+01:42:47
+But will there be some aspect and empirical aspect of theoretical science which will allow the fact that these days there's a huge will start using them for analysis?
+01:43:01
+Sort of, you know, if you want to say something about a graph algorithm, you might take a network and a social network like Facebook and looking at subgroups of that and prove something about the Facebook graph and be respected and at the same time be respected in the theoretical computer science community.
+01:43:20
+That hasn't been achieved yet, I'm afraid.
+01:43:23
+Is that is that is that P goes is that impossible? Is is it impossible to publish a successful paper in the theoretical computer science community that shows some.
+01:43:37
+Some performance on a real world data set, or is that really just those are two different worlds. They haven't really come together. I would say that there is a field of experimental algorithmics where people sometimes they're given some family of examples. Sometimes they just generate them at random and they report on performance. But there's no convincing. Evidence that the sample is representative of anything at all.
+01:44:14
+So let me ask, in terms of breakthroughs and open problems, what are the most compelling open problems to you and what possible breakthroughs do you see in the near term in terms of theoretical computer science?
+01:44:30
+Well, there were all kinds of relationships among complexity classes that can be studied, just to mention one thing, I wrote a paper with Richard Lipton in 1979 where we asked the following question. If you take a problem, a combinatorial problem in ENPI, let's say. And you. Choose and you pick the the size of the problem, I say the traveling salesman problem, but of size 52 and you ask it, could you get an efficient a small booleans circuit tailored for that size 52?
+01:45:26
+Where you could feed the edges of the graph and in as boolean inputs and get as an output the question of whether or not there's a tour of a certain length, and that would in other words, briefly, what you would say in that case is that the problem has small circuits, polynomial size circuits. Now, we know that if P is equal to ENPI, then in fact these problems will have small circuits. But what about the converse? Could a problem have small circuits, meaning that it's that an algorithm tailored to any particular size could work well?
+01:46:06
+And yet not be a polynomial time algorithm, that is, you couldn't write it as a single uniform algorithm, good for all sizes, just to clarify, small circuits for problem of particular size or even further constraint, small circuit for particular for.
+01:46:24
+No, for all the inputs of that of that size.
+01:46:27
+Is that a trivial problem for a particular instance of. So coming up, an automated way of coming up with a circuit?
+01:46:34
+I guess that would be that would be that would be hard. Yeah. Yeah. But, you know, but there's the existential question. Everybody talks nowadays, whatever. Existential questions. Existential challenges. Yeah. You could ask the question. Does the Hamiltonian circuit problem have a small circuit for every size, for each size, a different small circuit? In other words, could you tailor solutions? Depending on the size and get polynomial size, even if it's not equal to ENPI, right and.
+01:47:23
+That would be fascinating, if that's true. Yeah, what we proved is that if that were possible, then something strange would happen.
+01:47:33
+And complexity theory, some high level. Class, which I could briefly describe, something strange, would happen, so I'll take a stab at describing what I mean. Let's go there. So we have to define this hierarchy in which the first level of the hierarchy is P and the second level is ENPI. And what is ENPI? ENPI involves statements of the form. There exists something such that something holds. So for example, there exists the colourings such that a graph can be colored with only that number of colors, or there exists a Hamiltonian circuit.
+01:48:26
+There's a statement about this graph. Yeah. So. So the ENPI.
+01:48:37
+And he deals with statements of that kind that there exists a solution. Now you could imagine a more complicated expression which which says for all X there exists the why such that. Some. Proposition holds involving both X and Y, so that would say, for example, in game theory, for all strategies for the first player, there exists a strategy for the second player such that the first player wins. That would be that would be at the second level of the hierarchy.
+01:49:20
+The third level would be their existing ace, such that for all B there exists to see that something holds. And you can imagine going higher and higher in the hierarchy. And you'd expect that the class, the complexity class, the classes that correspond to those different cases would get bigger and bigger or they were even bigger and sorry, sorry that they'd get harder and harder and harder and harder and harder and harder to solve and lifted. And I showed was that if NP had small circuits, then this hierarchy would collapse down to the second level.
+01:50:03
+In other words, you wouldn't get any more mileage by complicating your expressions with three quantifiers or four quantifiers or any number.
+01:50:12
+I'm not sure what to make of that. Exactly. Well, I think it would be evidence that an MP doesn't have small circuits because something's because something so bizarre would happen. But again, it's only evidence, not proof yet.
+01:50:27
+It's not that's not even evidence because you're saying he's not equal time because something bizarre has to happen. I mean, that's that's proved by the lack of bizarreness in our science. But it seems like, um, it seems like just the very notion of P equals and P will be bizarre.
+01:50:50
+So any way you drive it, there's no way you have to fight the dragon at some point. Yeah, OK. Well, for whatever it's worth, that's what we proved.
+01:51:00
+Awesome. So. So that's a potential space of interesting problems. Yeah, let me ask you about this other world, that of machine learning, of deep learning. What's your thoughts on the history and the current progress of machine learning field that's often progressed sort of separately as a space of ideas and space of people, then the theoretical computer science or just even computer science?
+01:51:29
+Well, yeah, it's really very different from a theoretical computer science world because, you know, the results about it. Algorithmic performance tend to be empirical. It's more akin to the world of SAT solvers where we observe that for formulas and arising in practice, the solver does well. So it's of that type. It's we're moving into the empirical evaluation of algorithms. Now, it's clear that there have been huge successes in image processing, robotics, natural language processing, a little less so.
+01:52:12
+But across the spectrum of the game, playing is another one. There have been great successes. And one of those effects is that it's not too hard to become a millionaire if you can get a reputation in machine learning and there'll be all kinds of companies that will be willing to offer you the moon because they they think that if they have. Ehi at their disposal and they can solve all kinds of problems, but there are limitations. One is that the solutions that you get buy from two supervised learning problems through convolutional neural networks seem to perform the amazingly well, even for inputs that are outside the training set.
+01:53:20
+But we don't have any theoretical understanding of why that's true. Secondly, the solutions, the networks that you get. Very hard to understand and so very little insight comes out. So, yeah, yeah, they may seem to work on your training set and you may be able to discover whether your photos occur in a different sample of inputs or not. But we don't really know what's going on.
+01:53:54
+We don't know the the features that distinguish the photographs or the objects are are not easy to characterize.
+01:54:06
+Well, it's interesting because you mentioned coming up with a small circuit. Yeah. To solve a particular size problem. Yeah. It seems that neural networks are kind of small circuits in a way. Yeah. But they're not programs. Sort of like the things you design, your algorithms, programs, write algorithms. Neural networks aren't able to develop algorithms to solve a problem as well.
+01:54:31
+They are of a function. They are algorithms. It's just that they're. But sort of, yes, it could be a semantic question, but there's not a Algorithmics style manipulation of the input.
+01:54:50
+Perhaps you could argue there is. Yeah, well, it feels a lot more like a function of the input. It's a yeah, it's a function. It's a computable function. It's you. And that's you have the network. You can simulate it on a given input and figure out the output. But what you you know, if you're if you're trying to recognize images, then you don't know what features of the image are really. Being. Determinant of what the circuit is doing, the circuit is sort of a very intricate and it's not clear that the you know, the simple characteristics that you're looking for, the the edges of the objects or whatever they may be, they're not emerging from the structure of the circuit or it's not clear to us humans, but it's clear to the circuit.
+01:55:49
+Yeah, well, right.
+01:55:51
+I mean, uh, it's not clear to sort of the.
+01:55:58
+The elephant, how the human brain works, but it's clear to us humans we can explain to each other our reasoning, and that's why the cognitive science, the psychology field exists. Maybe maybe the whole thing of being explainable to humans is a little bit overrated.
+01:56:14
+Oh, maybe. Yeah, I guess, you know, you can say the same thing about our brain, that when we perform acts of cognition, we have no idea how we do it, really. We do, though. I mean, we for at least for the visual system, the auditory system and so on, we do get some understanding of the principles that they operate under. But for many deeper cognitive tasks, we don't have that. That's right.
+01:56:43
+Let me ask. Yeah. You've also been doing work on bioinformatics. Does it amaze you that the fundamental building blocks so if you take a step back and look at us humans, the building blocks used by evolution to build us intelligent human beings is all contained there in our DNA.
+01:57:05
+It's amazing. And what's really amazing is that we have are beginning to learn how to edit. DNA, which tree, which is very, very, very fascinating, was.
+01:57:26
+This ability to take a sequence, find it in the genome and do something to it, I mean, that's really taking our biological systems towards the world.
+01:57:38
+The algorithm of algorithms.
+01:57:41
+Yeah, but it raises a lot of questions. You have to distinguish between doing it on an individual or doing it on somebody's germline, which means that all of their descendants will be affected. So that's like an ethical.
+01:57:59
+Yeah. So it raises very severe ethical questions and. And even doing it on individuals is it's. There's a lot of hubris involved that you can assume that knocking out a particular gene is going to be beneficial because you don't know what the side effects are going to be. So we have this wonderful. New world of gene editing, which is, you know, very, very impressive, and it could be used in agriculture, it could be used in medicine in various ways, but very serious ethical problems arise.
+01:58:53
+But what are to you the most interesting places where algorithms, sort of the ethical side is an exceptionally challenging thing that I think we're going to have to tackle with all of genetic engineering.
+01:59:08
+But on the algorithmic side, there's a lot of benefit that's possible.
+01:59:12
+So is there a areas where you see exciting possibilities for algorithms to help model optimize studied biological systems? Yeah, I mean, we we can certainly analyze genomic data to figure out which genes are operative in the cell and under what conditions and which proteins affect one another, which proteins, which proteins physically interact. We can sequence proteins and modify them.
+01:59:49
+Is there some aspect of that that's a computer science problem or is that still fundamentally a biology problem?
+01:59:56
+Well, it's a big data. It's a statistical big data problem for sure. So, you know, the biological data sets are increasing our ability to. Study our ancestry by to study the tendencies towards disease, to personalize treatment according to what's in our genomes and what tendencies for disease, we have to be able to predict what troubles might come upon us in the future and anticipate them to to understand. Whether you.
+02:00:41
+For a woman, whether her proclivity for breast cancer is strong enough that you would want to take action to avoid it, you dedicate your 1985 Turing Award lecture to the memory of your father.
+02:01:01
+What's your fondest memory of your dad? Seeing him standing in front of a class at the blackboard, drawing perfect circles. By hand. And showing his his ability to attract the interest of the motley collection of eighth grade students that he was teaching.
+02:01:36
+When when did you get a chance to see him draw the perfect circles, on rare occasions, I would get a chance to sneak into his classroom and observe. Observant, and I think he was at his best in the classroom, I think he really came to life. And had fun not only teaching, but but, you know, engaging in chit chat with the students and, you know, ingratiating himself with the students and what I inherited from that is the great desire to be a teacher.
+02:02:18
+I retired recently, and a lot of my former students came students who with whom I had done research or who had read my papers or who I'd been in my classes. And when they talked about. About me, they talked not about my. 1979 paper or my 1992 paper, but about what they what came away in my classes and not just the details, but just the approach and the the manner of teaching. And so I sort of take pride in the at least in my early years as a faculty member at Berkeley, I was exemplary in preparing my lectures.
+02:03:08
+And I always came in prepared to the teeth and able therefore to deviate according to what happened in the class and to really. Really provide a model for the students. So is there advice you can give out? For others and how to be a good teacher, so preparation is one thing you've mentioned being exceptionally well prepared, but there are other things, pieces of advice that you can impart.
+02:03:41
+Well, the top three would be preparation, preparation and preparation.
+02:03:46
+Wise preparation. So important, I guess, is it's because it gives you the ease to deal with any situation that comes up in the in the classroom. And, you know, if you're if you discover that you're not getting through one way, you can do it another way. If the students have questions, you can handle the questions.
+02:04:05
+Ultimately, you're also feeling the. The crowd, the students of what they're struggling with, what they're picking up, just looking at them through the questions, but even just through their eyes. Yeah, and because of the preparation, you can you can dance.
+02:04:22
+You can dance, you can you can say it another way or give another angle.
+02:04:28
+Are there any particular ideas and algorithms of computer science that you find were big aha moments for students where they for some reason, once they got it, it clicked for them and they fell in love with computer science? Or is it individual? Is it different for everybody.
+02:04:46
+It's different for everybody. Have to work differently with students. Some of them just don't need much influence. You you know, they're just running with what they're doing and they just need an ear now and then. Others need a little prodding. Others need to be persuaded to collaborate among themselves rather than working alone. They have their personal ups and downs. So, you know, you have to have have to deal with each student as a human being and bring out the best.
+02:05:23
+Humans are complicated. Yeah, perhaps a silly question.
+02:05:28
+If you could relive a moment in your life outside of family because it made you truly happy or perhaps because it changed the direction of your life in a profound way, what moment would you pick?
+02:05:41
+I was kind of a lazy student as an undergraduate and even in my first year in graduate school. And I think it was when I started doing research, I had a couple of summer jobs where I was able to contribute and I had an idea. And then there was one particular course on mathematical methods and operations research where I just gobbled up the material and I scored 20 points higher than anybody else in the class, then came to the attention of the faculty.
+02:06:17
+And it made me realize that I had some ability, some ability that it was going somewhere. You realize you're pretty good at this thing. I don't think there's a better way to end it, which was a huge honor. Thank you for decades of incredible work. Thank you for talking. Thank you. It's been a great pleasure. You're a superb interviewer.
+02:06:42
+Stop. Thanks for listening to this conversation with Richard Carp and thank you to our sponsors asleep and catch up. Please consider supporting this podcast by going to sleep dot com slash leks to check out their awesome mattress and downloading cash app and using Culex podcast. Click the links, buy the stuff, even just visiting the site, but also considering the purchase helps them know that this podcast is worth supporting in the future. It really is the best way to support this journey.
+02:07:15
+I'm on if you enjoy this thing. Subscribe on YouTube, review with five stars and have a podcast support on your own. Connect with me on Twitter, Elex Friedemann, if you can figure out how to spell that. And now let me leave you with some words from Isaac Asimov. I do not fear computers, I fear lack of them. Thank you for listening and hope to see you next time.

@@ -1,0 +1,880 @@
+00:00:00
+The following is a conversation with Manala's Keli's his second time in the podcast. He's a professor at RMIT and head of the MIT Computational Biology Group. He's one of the most brilliant, productive and kind people I've had the fortune of talking to. A lot of my colleagues at MIT and former MIT faculty and students wrote to me after our first conversation with some version of monos is awesome, isn't he? I'm glad you guys are our friends. I am, too, and I'm happy that he makes time in his insanely busy schedule to sit down and have a chat with me.
+00:00:36
+Quick summary of the sponsors, public goods, Magic Spoon and Express VPN, please check out these sponsors in the description to get a discount and to support this podcast. As a side note, let me say that I just got back from talking to Joe Rogan on his podcast my first time on there. I also got a chance to record a separate conversation with Joe on this podcast we talked to on both quite a bit about his journey and his advice for mine.
+00:01:04
+One of the things that I think made it so special is that he just had fun and made choices that didn't get in the way of him having fun and loving life. I'm learning to do just that. It's tough since I'm naturally full of self-doubt and anxiety, but I'm learning to let go and have fun, even if my monotone robotic voice sometimes sounds otherwise for Joe that involved talking to his friends, comedians, especially ones that brought out the best in him.
+00:01:34
+Duncan Trussell and the five hour first episode on Spotify comes to mind is an example of that. Duncan has been a guest probably close to, if not more than 50 times. And just podcast. My hope with amazing people like Manala's is to find mine. Duncan Trussell, my Joey Diaz and yes, even my Eddie Bravo. Obviously, Joe and I are very different people, but ultimately both love life when we can interact often with people we love and who inspire us, make us smile, make us think and make us have fun.
+00:02:08
+When we get behind the mic of a podcast whether anyone is listening or not. If you enjoy this thing, subscribe on YouTube review starting up a podcast, follow on Spotify, support on page your own or connect with me on Twitter. Elex Friedemann. I also this time put a link in the description to a survey for this podcast on how I can improve and also an option if you like. I don't know why you would like to, but if you like to join in a circle of people that help guide the direction of this podcast via email or occasional video chats, if you have a few minutes, please fill it out.
+00:02:44
+As usual, although a few minutes of hours now and no ads in the middle, I try to make these interesting, but I give you time stamps so you can skip. But still, please do check out the sponsors by clicking the links in the description. It's the best way, honestly, to support this podcast. This show is sponsored by Public Goods, an online store for basic health and household stuff, the products have a minimalist black and white design that I find to be just clean, elegant and beautiful.
+00:03:12
+It goes nicely. Yes, I think so. With the design of Crew Dragon and the recent SpaceX NASA mission that sent two humans into space. To me, very few things are as inspiring as us humans reaching out into the unknown. The harsh challenges of space colonizing Mars may not have obvious near-term benefits, but I believe it will challenge our scientists and our engineers to create technologies whose impact will be immeasurable for us humans here on Earth or those of us who choose to stay here on Earth.
+00:03:44
+Personally, I'm kind of a long time big fan of this planet anyway. Visit public goods, dot com slash legs and news collects a checkout to get 15 bucks off your first order. This episode is also supported by magic spoon, low carb, keto friendly cereal, you might have heard on other videos that I Iquito mostly these days. So Magic Spoon is a delicious, healthy treat and a hard work all day that fits into that crazy diet. Also there a sponsor of Episode 100 with my dad and got my dad to buy the cereal and he now loves it honestly just loves it.
+00:04:27
+It's kind of funny, actually. The deep, heartfelt nature of that conversation and the silliness of the cereal captures my dad perfectly much of the hardship in his life he dealt with using wit and humor. His favorite flavor happens to be cocoa. Mine is to. He hasn't bought a sleep mattress yet, though my mom wants to, but is all about this magic spoon cereal, I think it's is actually favorite sponsor of this podcast, probably because they chose to sponsor the episode he's on.
+00:04:58
+Anyway, click the magic spoon dotcom slash Lex link in the description and use collects at checkout for free shipping to let them know I sent you and also indirectly to make my dad happy. This show is also sponsored by Express EPN. Get it and express your podcast pod. They gave me a suggested opening line of using the Internet without express. VPN is like going to the bathroom and not closing the door.
+00:05:26
+This is like three suggesting to me how to be more human like and I'll honestly take all the help I can get by way of life advice. Let me tell you that you need a VPN to protect you from Russians like me.
+00:05:40
+In fact, this podcast is a kind of hack of your biological network where I use my monotone, low energy voice to convince you to buy kind of expensive cereal as a way to influence the stability of the U.S. economy. I use Express VPN on both Windows and Linux to protect myself. If I ever do shady things on the Internet, which of course I never do and never will. So secure your online activity by going to express that Councillor Selexipag to get an extra three months free and to support this podcast.
+00:06:15
+And now here's my conversation with Manlius Calice. What is beautiful about the human epigenome, don't get me started. So, first of all, as an engineering feat, the human epigenome manages the most compact, the most incredible compaction you could imagine. So every single one of your cells contains two meters worth of DNA. And this is compacted in a radius which is one thousandth of a millimeter. That's six orders of magnitude to give you a sense of scale.
+00:07:09
+It's as if a string as tall as the Burj Khalifa. Which is about a kilometer tall, was compacted into tiny little ball the size of a millimeter. And if you put it all together, if you stretch the trillions of cells that we have have about 30 trillion cells in your body, if you stretch the DNA, the two meters worth of DNA in every one of your trillion cells. You would basically reach all the way to Jupiter. A hundred times.
+00:07:43
+Yeah, it's all curled up in there. It's 30 trillion cells, 30 trillion cells, human body, every one of them two meters worth of DNA.
+00:07:51
+So all of that is compacted through the epigenome.
+00:07:55
+The epigenome basically has the ability to compact this massive amount of DNA from here to Jupiter 10 times into one human body, into just the nuclei of one human body. And the vast majority of human bodies not even need these nuclei. And that's sort of the structural part. So that's the boring part, that's the structural part. The functional part is way more interesting. So functionally, what the human epigenome allows you to do is basically control the activity patterns of thousands of genes.
+00:08:28
+So 20000 genes in your human body, every one of your cells only needs a few thousand of those, but a different few thousand of those. And the way that your cells remember what their identity is, is basically driven by the epigenome. So the epigenomics, both structural and sort of making this dramatic compaction. And it's also functional in being able to actually control the activity patterns of all your cells.
+00:08:53
+Now, can we draw a definition distinction between the genome and the epigenome?
+00:09:00
+Again, being Greek, eppy means on top of. So the genome is the DNA and the epigenome is anything on top of the DNA. And there are three types of things on top of the Denay, the first, these chemical modifications on the DNA itself. So we like to think of four bases of the DNA. A C has a methyl form, which is sometimes referred to as the fifth base. So methyl C takes a different meaning. So in the same way that you have annotations in orchestra score that basically say whether you should play something softly or loudly or space it out or, you know, interpret basically the score, the human epigenome allows you to modify that primary score.
+00:09:47
+So a modified C basically says, play this one softly. It's basically a sign of repression in a regulatory region. I love how you talk about the function that emerges from the epigenome as a as a musical score.
+00:10:05
+It is in many ways, and every single cell plays a different part of that score. It's like having all of human knowledge in 23 volumes, like 23 giant books, which are your chromosomes. And every single cell has a different profession, a different role. Some cells play the piano and they're looking at Chapter seven from chromosome 23 and chapters four from chromosome two and so on, so forth.
+00:10:28
+And each of those pieces are all encoded in the same DNA.
+00:10:34
+But what the epigenome allows you to do is effectively conduct the orchestra and sort of coordinate the pieces so that every instrument plays only the things that it needs to play.
+00:10:45
+One thing that kind of blows my mind, maybe you can tell me your thoughts about it is the way evolution works with natural selection is based on the final sort of the entirety of the orchestra musical performance. Right. And then but there's these incredibly rich structural things, like each one of them doing their own little job that somehow work together, like the evolution selects based on the final result. And yet all the individual pieces are doing like infinitely miniscule specific things.
+00:11:22
+How the heck does that work?
+00:11:24
+I give very good insight and you can even go beyond that and basically say evolution doesn't select at the level of an organism. It actually selects at a level of all environments, whole ecosystems. So let me break this down, so you basically have at the very bottom every single nucleotide being selected, but then that nucleotides function is selected at the level of each gene and every note, even each gene, each gene regulatory control element. And then those control elements are basically converging onto the function of the gene.
+00:11:59
+And many genes are converging onto a function of one cell and many cells are converting to the function of one tissue or organ. And all of these organs are converging onto the level of an organism. But now that organism is not in isolation. So if you basically think about why is altruism, for example, a thing, why are people being nice to each other? It was probably selected and it was probably selected because those species that were just nasty to each other didn't survive as a species.
+00:12:32
+And now if you think about. Symbiosis of, you know, there's plants, for example, that love CO2 and there's humans that love Otha and we're sort of, you know, trading different types of gases to each other.
+00:12:51
+If you look at ecosystems where one organism, which is really nasty, that organism actually died because everyone they were being nasty to was killed off and then that kind of, you know. Universe of life is gone. So basically what emerges is selection at so many different layers of benefit. Including, you know, all of these nucleotides within a body interacting for the emergent functions at the body level.
+00:13:26
+I wonder I wonder if it's possible to break it down into levels that's selection even beyond humans, like you said, environment. But there's environments at all different levels to right at the miniscule at the organ level, the tissue level, like you said, maybe at the microscopic level would be fascinating if, like, there's a kind of selection going on, like both the quantum level and like the the galaxy level.
+00:13:52
+Yeah. Yeah. Right. So so all the forms. Yeah. Look, again, sort of break down these different layers. So basically, if you think about the environment in which a gene operates that gene, of course the first definition of environment that we think of is pollution or sunlight or heat or cold and so on, so forth. That's the external environment. But every gene also operates at the level of the internal cellular environment that it's in.
+00:14:16
+If I take a gene from, say, an African individual and I put it in a European context.
+00:14:22
+Will it perform the same way? Probably not, because there's a cellular context of thousands of other genes that Gene has coevolved with.
+00:14:32
+You know, in the Out of Africa event and, you know, all of this sort of human history of evolution, so basically if you look at Neanderthal genes, for example, which again happened long after that out of Africa, then there's incompatibilities between Neanderthal genes and modern human genes that can lead to diseases.
+00:14:54
+So in the context of the Neanderthal genome, that gene version that ALIL was fine, but in the context of the modern human genome, that Neanderthal gene version is actually detrimental.
+00:15:05
+So, you know that cellular environment constitutes the genetics of that gene, but also, of course, all of the epigenomics of that gene as fascinating that the gene has a history.
+00:15:17
+I mean, we talked about this a little bit last time, but just and then some of your research goes into that. But the genes, as there are today, have have a story from the beginning of time. And then some sometimes their story was like their path was useful for survival for the particular organisms and sometimes not as fascinating. Let me ask a tangent. We kind of started talking offline about Neanderthals was something interesting genetically, biologically in terms of differences between Neanderthal and the different branches of human evolution that you find fascinating.
+00:15:59
+Neanderthals are only one of about five branches that we are pretty confident about, which is of of out of Africa events. So basically, there's Neanderthals, there's Dennis Evans. What is the evidence for the difference? One tiny little fragment of one pinky from one cave in Siberia recent relatively recently discovered less than 10 years ago.
+00:16:26
+Yeah. And so, like Little Fox, right?
+00:16:28
+I would say no, no, no, no. That's yet another one. The Homo floresiensis. It had a little fox instead of Indonesia. But then the Netherlands are basically another branch that we only know about genetically from that one bone. And eventually we realized that it's one of the three major branches, along with Neanderthal, modern, human and the Nirvan. And then that one branch has now resurfaced in many different areas. And we kind of know about the gene flow that happened in between them.
+00:16:55
+So when I was reading my Greek mythology, he was talking about the age of the heroes, these eras of human like, you know, precursors that were wiped out by zoos or by all kinds of wars and so on, so forth, like the Titans.
+00:17:09
+And, you know, it's it's ridiculous to sort of read these stories as a kid because you're like, yeah, whatever. And then you're growing up and you're like, whoa, layers and layers of human like ancestors. And who knows if those stories were inspired by bones that they found that kind of looked human like. But we're not quite human. Like who knows if stories of dragons were inspired by bones of dinosaurs, that basically this archaeological evidence has been there and has probably entered the folk imagination, migrated into their stories.
+00:17:42
+But it's not that far removed from what actually happened of massive wars, of wiping out Neanderthals as humans are modern humans are populating, you know, Europe.
+00:17:53
+Do you think do you think what killed the Neanderthals and all those other branches is human conflict or is it genetic conflict? So is it us humans being the opposite of altruistic towards each other or is it some other competition at some other level like we're discussing? Yeah.
+00:18:15
+So if you look at a lot of human traits today, they're probably not that far removed from the human traits that got us where we are now.
+00:18:22
+So, you know, this whole tribalism, you know, you're my sports team or you're my political party or you're my, you know, tiny little village.
+00:18:33
+And therefore, you know, if you're from that other village, I hate you. But as soon as we're both in the major city, I can't believe we're from the same region, my friend.
+00:18:43
+Yeah. And like two neighboring countries fighting. And as soon as they're off in another country, you're like, oh, I can't believe that. So it's it's kind of funny like this. Tribalism is nonsensical in many ways. It's like cognitive incongruent that basically we like kin and selection for for sort of liking kin is hugely advantageous genetically, probably across all kinds of organs.
+00:19:07
+All across all kinds, of course. Yeah. So so basically if you now transport that to the sort of humans arriving in Europe and Neanderthals are everywhere, what are you going to do? You're going to kill them off. You know, there's this battle for territory and this battle for they're not like us. We have to get rid of them. So basically, there's a, um, you know, very interesting mix there. But and. Yeah.
+00:19:31
+And yet when you look at the genetics, there's tons of gene flow between them, so basically, you know, love romance between tribes, but love spans the gap between the different tribes.
+00:19:47
+It's somebody, Juliet, the cross species boundaries away from the village before even before the out of Africa.
+00:19:55
+There's, you know, within Africa selection, which was probably massive battles of larger and larger tribes, selecting for our social networking and savageness and, you know, probably all our conspiracy theory genes or, you know, dating back from then.
+00:20:14
+And, you know, so there's a lot of these mischievousness in the history of human evolution that unfortunately still present in many ugly forms day, but probably contributed to our success as a species in wiping out other species.
+00:20:31
+It just sucks that we don't have neighboring species that are, you know, intelligent like us that but yet very different than us. So we have, like, you know, dogs or wolves, I guess coevolved.
+00:20:47
+They they figured out how to neighbor up with humans in a friendly way and collaborate and develop.
+00:20:56
+And you're describing this as if the wolves made a choice. It's possible that there was never had to say that basically humans were just so overpowering that they had captive wolves and then at every generation killed off eight of the nine pups and only kept the one that was milder human. And it only takes a few generations to then sort of have pups that are really mild.
+00:21:19
+And so the Neanderthals weren't useful in the same way that I don't know if it's a question of useful, they were probably super useful.
+00:21:27
+My thinking is that they were scary. That basically something that almost resembles you. Yeah. Is something that you try to eliminate first. It's too close. Yeah. And speaking of, you know, species that are intelligent and sort of what's left of evolution, it is a shame, exactly like you say, that so many different amazing lifeforms were extinct and the kind of boring ones remained.
+00:21:57
+So if you look at dinosaurs, I mean, the diversity that they had, if you look at some, you know, like there's just so many different lineages of life that were just abruptly killed.
+00:22:11
+And yet out of that death emerged, you know, many new kinds of really awesome lineages.
+00:22:17
+Do you think there was in the history of life on earth, species that may be still alive today that are more intelligent than humans? And we just don't know there's something made for dolphins.
+00:22:28
+Like if you look at their brains, if you look at the way that they play, if you look at the way that they learn, you know, I mean, they don't have a possible thumbs and we do. So, you know, that probably made a big difference.
+00:22:39
+It's terrifying to think that, like, not. I don't know how to feel about it, that there aren't more intelligent than us like speechmakers. Guys. I know. But how do you define intelligence?
+00:22:49
+Basically, like I was saying last time, you know, stupid is stupid does and smart is smart.
+00:22:54
+So if the dolphins are basically super smart, figured out the meaning of life and just go around playing with water all day, which probably the meaning of life, then we wouldn't know because all they're doing is keeping water just like sharks are in.
+00:23:09
+Sharks are probably pretty stupid. So. So basically, it's very difficult to sort of judge a species intelligence unless they kind of go out of their way to demonstrate it.
+00:23:19
+Yeah, and that's destructive for our understanding of any kind of life form.
+00:23:26
+You know, I recently talked to Sara Seager looking for life out there on other planets.
+00:23:31
+It'd be fascinating to think if we discover habitable planet, you know, outside of Earth and one day, maybe many centuries away, or be able to travel with, like a robot there, how do we actually know that this species will probably be able to detect that it's a living being, but how do we know if it's an intelligent being?
+00:23:55
+I mean, it's both exciting and terrifying to sort of come face to face with a life form that's of another world, like something that clearly is moving in a how would you say like a deliberate way and to then like ask, well, how do I ask that thing with it, whether it's intelligent.
+00:24:19
+But the question that you're asking is applicable to every species on on the Earth man on Earth now. Yeah. So basically, you know, dolphins are a great example. We know that they're, you know, clearly capable hardware wise and behavior wise of intelligence.
+00:24:35
+You know, how do we communicate?
+00:24:37
+So basically, if your question is about crossing species boundaries, communication, um, the way that I want to put it is that humans have achieved a level of sophistication in our behaviors, in our communication or language, in our ways of expressing ourselves, that I have no doubt that if we encountered a human like form of intelligence, we'd figure out their language in a few weeks, like it'd be just fine as long as, you know, of course, they're both trusting each other, not annihilating each other and not sort of fearing each other and attacking each other.
+00:25:14
+What about the message, just out of curiosity into science fiction and a little bit? If so, clearly one of the top scientists in the world. So if we were to discover an alien life form, you would be brought in to study its genetics.
+00:25:32
+Do you think the epigenome that we talked about, the genome, the code, the digital code that underlies that alien life form would be similar to ours, like the in in fundamental ways, maybe not exactly, but in fundamental ways.
+00:25:48
+How is structured.
+00:25:49
+Yeah. So so you're getting to the very definition of life. You're getting to the very definition of what what makes life life. And how do we decode that life.
+00:25:58
+And it's so easy to think that every life form would basically have to, you know, like oxygen, how we have to like heat from the sun and rely on sort of being the habitable zone of, you know, its solar system and so on, so forth.
+00:26:15
+But I think we have to sort of go beyond these sort of all life on another planet must be exactly like life is on Earth, because, of course, life on earth happens to rely on the proximity to the sun and benefit from that amount of energy.
+00:26:30
+But we're talking about timescales of human life where we kind of live, I don't know, in between.
+00:26:39
+And I'm going to be super white here. We'll live between six Earth months and, you know, two hundred Earth months or two hundred Earth years.
+00:26:48
+So basically, if you look at the timescale that we inhabit on Earth, it is very much dictated by the amount of energy that we receive from the sun.
+00:26:57
+If you look at, I don't know, ropa.
+00:27:00
+You know, the smallest the fourth smallest moon of Jupiter, the smallest of the Galilean moons and also the smallest in its distance from Jupiter.
+00:27:11
+It has an iron core, it has a rock exterior, it has ice all around it, and it has probably massive liquid oceans underneath and the gravitational pull, the additional pool of Jupiter is probably creating all kinds of movement under that ice. How did life evolve on Earth? Yes, your life now, most of life that we are above the surface look at has to do with exploiting the solar energy for, you know, our daily behavior.
+00:27:49
+But that's not the case everywhere on the planet.
+00:27:51
+If you look at the bottom of the ocean, there are hydrothermal vents.
+00:27:55
+There's both black smokers and white smokers, and they are near these volcanic ducts that basically emanate a massive amount of energy from the core of our planet. What does life need? It needs energy. Does it need energy from the sun? We couldn't care less.
+00:28:15
+Does it need energy from the earth itself?
+00:28:19
+Possibly it could use that. And if you look at how did life evolve on, you know, on Earth, there are many theories.
+00:28:27
+I mean, kind of silly theory is that it came from outer space, that basically there's a meteorite out there that sort of landed on Earth and brought with it DNA material.
+00:28:36
+I think it's a little silly because it kind of pushes the back down the road. Basically.
+00:28:39
+The next question is, how did it roll over there? Yeah, whereas our planet has basically all of the right ingredients. Why wouldn't it evolve here? So basically, let's kind of ignore that one.
+00:28:48
+And now that the two other competing hypotheses are from the outside in or from the inside out or from the outside in, from the surface to the bottom of the ocean, from the inside out means from the bottom of the ocean to the surface. So life on the surface is pretty brutal. Life obviously evolved in the water and then there was an out of water event. But basically before it exited. It was clearly in the water, which is a much nicer and shielded environment, so just to be clear on the surface, are you referring to the the surface of the sea or the bottom of the sea versus the bottom of the sea?
+00:29:32
+And you're saying life on the surface is as harsh outside the life outside the water is horrible.
+00:29:41
+It takes huge amounts of evolutionary innovations to sustain living outside the water. It is so interesting why is that so it's easier to life is easier in the water.
+00:29:53
+Maybe see, I'm telling you, we are 70 percent water. No dolphins went back into the water. Really? Dolphins, ma'am? Of course. Yeah, interesting. But again, that might be smarter. They went back. Screw this.
+00:30:06
+So. So if you if you basically think about the fact that we are 70 percent water. We're basically transporting the sea with us outside the sea, you know, if we if we don't have water for about a 24 hours and we're dry.
+00:30:23
+Yeah. And if you look at life under the sea, I mean, I don't know if you're a diver, but when you go diving, your brain explodes again.
+00:30:32
+When I say the light, the boring life forms is what we see all the time. Like tetrapods. I mean, what a stupid, boring body plan.
+00:30:39
+Seriously, like just go diving and you'll see that a tiny little minority of the stuff under the sea, under the surface of the sea is actually tetrapods.
+00:30:49
+It's like, you know, nails with all kinds of crazy appendages and colors and, you know, round things and five asymmetric things and, you know, asymmetric things that all kinds of crazy body plans and only the tetrapod fish managed to get out.
+00:31:05
+And then they gave rise to all the boring things we kind of see today of basically, you know, humans with four limbs, birds with four limbs, lizards with four limbs.
+00:31:15
+And, you know. All right, it's kind of boring.
+00:31:18
+If you look at my comparison, life under is teeming with diversity. So now let's roll back the clock and basically say, where did life in the ocean come from, the threat from the surface or from the bottom of those two? Exactly.
+00:31:33
+So basically, life on the surface is one option. And then the idea there is that there's tides with the moon and the sun sort of causing all this movement. And this movement is basically causing nutrients to sort of, you know, coalesce and bounce around, etc.. That's one option.
+00:31:50
+The second option, massive amount of energy under, you know, from from from our the core of our planet basically exploited, leading to these basic ingredients of life forms. And what is the basic ingredient, metabolism, being able to take energy from the environment and put it as part of yourself.
+00:32:13
+Metabolism, it basically means transformation again in the Greek. It basically means taking stuff from, you know, like nutrients or energy source or anything and then making your own. The second one is compartmentalisation.
+00:32:29
+If there's no notion of self, there can't be evolution.
+00:32:33
+You have to know where your own boundaries end and where the non self boundaries begin.
+00:32:38
+And that's basically the lipid bilayer nowadays, which is extremely simple to to form.
+00:32:43
+It's basically just a bunch of lipids and then they eventually just self organize into a membrane. So that's a very natural way of forming a self. And then the third component is replication. Replication doesn't need to be self replication, it could be a helps make more of B, B helps make more of C and C helps make more of A. Any kind of self reinforcement is what you need to ignite the process of evolution after you've ignited that process. You know, I don't want say all hell breaks loose, but all paradise breaks loose.
+00:33:19
+So basically you then boom, you have life going. And the moment you have ABC, some kind of thing looping back on the air, you can make modifications and you can improve and then you let natural selection work. Is there some element of that that's like like like some state representation that stores information like maybe I should say information? Absolutely.
+00:33:44
+That's the part we like to think of life as the information propagation, which is DNA, the messenger, which is RNA, and then the action, which is protein. So basically DNA, we think, is an essential part of life.
+00:34:03
+That's where the storage is and therefore that early life forms must have had some kind of storage medium DNA, if you look at how life actually evolved, DNA was invented much later.
+00:34:16
+Proteins were invented later and RNA was fine by itself. Thank you very much in an RNA world. So the early version of life, as we know today, was in fact, RNA molecules performing all of the functions. The RNA molecule itself was the protein actuator. By creating three dimensional folds through self hybridization, what self hybridization? So basically the same way that DNA molecules can hybridise with themselves and basically form this double helix. The single stranded RNA molecule can form partial double helix in various places, creating structure as if you had a long string with complementary parts, and you could then sort of design kind of like origami, like structures that will fold onto themselves.
+00:35:09
+And then you can make any shape from that. That early RNA world eventually got to replication. Where enzymes encoded in RNA would replicate RNA itself. And then that process basically kicked off evolution. In that process of evolution then led to major innovations, the first innovation was translation. So you start with an RNA molecule and you translate it into another kind of form. And that's the first kind of encoding. You're like, well, do you need some kind of code?
+00:35:46
+Yeah, but the code was in fact one thing. It was conflated with the actuators. The actual orders were separated from the code only later on. So you first had the self replicating code, which was also the actuator, and then you kind of have a functional ization partitioning of the a sub functional ization of the proteins that are now going to be the workhorse of life. But they're not self replicating the code remains the RNA.
+00:36:15
+So the most beautiful and most complex RNA machine known to man is the ribosome.
+00:36:22
+The ribosome is this massive factory that is able to translate RNA into protein. The ribosome, if you if you want, I don't know, divine intervention in the history of life, the ribosome, is it? That's one of the great inventions in the history of life. Yeah, but again, you can't think of great inventions as one time steps. They're basically, you know, the culmination of probably many competing software infrastructures for life preservation, that one out.
+00:36:53
+And then when the ribosome was so efficient at making proteins, all the other ones basically died out. And then the life forms that we're using, the modern ribosome, where basically the more successful ones, because it can make proteins. And now those proteins are much more versatile because RNA only has four basis proteins, eventually have 20 amino acids, not initially, but eventually. And then they can form in much more complex shapes and they can create all kinds of additional machines, one of which is reverse transcriptase.
+00:37:28
+So you basically now have RNA again, which we like to think of transcription as the normal reverse transcription as the oddball, well, RNA preceded DNA, so reverse transcription actually was the first invention before transcription itself. So basically, RNA invents proteins, RNA and proteins together invent DNA. So you now have a more stable medium and more stable backbone with two helixes instead of one. Two strands instead of one, the double helix and RNA basically says, listen, I'm tired, I'm going to delegate all information stores to DNA and I'm going to delegate most actuation to proteins, proteins.
+00:38:13
+But that's to you is not like a that's just an efficiency thing. It's not a fundamentally new innovation. That's why when you're asking is a separate information storage medium and definition of life make no any kind of self preservation, self reinforcement. And it didn't need to be RNA based initially. It didn't need to be self replication initially. You just need to have enough RNA molecules randomly arising that reinforce each other that ultimately lead to the, you know, the closing of that loop and the ignition of the evolutionary process.
+00:38:51
+Can we just find a little bit like if you were to bet all your money on the two options in terms of where life started? Probably the bottom at the bottom. I don't know if this is answerable, but how hard is the first step or if there's something interesting you can say about that first leap? Yeah, yeah, yeah.
+00:39:11
+Apart from not from that life to life.
+00:39:14
+Yeah, I think it's inevitable on Earth or just in the universe.
+00:39:20
+I think it's inevitable if you look at a ropa. You know, going back to the moon of Jupiter, it's also a really nice song by Santamaría, Europa basically has all the ingredients.
+00:39:33
+It has, you know, the core that can emit energy and it has the shielding through the ice sheet, protecting it just like an atmosphere would. It even has a layer of oxygen probably sufficiently dense to sustain life. So my guess is that there's probably a independently areason life form already teeming in Europa because as soon as today. That exciting or terrifying to you, it's I mean, as a scientist, I can't wait to see no DNA based life forms.
+00:40:14
+I can't wait because we are so born in, you know, sort of born, as I would say in French.
+00:40:24
+But basically we're sort of you know, we we are so narrow minded in our thinking of what life should look like that I can't wait for all that to just be blown away by the discovery of life elsewhere.
+00:40:38
+Let me bring you into another science fiction scenario. So on that point, if we discover life on Europa and you were brought in, you seem very excited. But how would you start looking at that life in a way that's useful to you as a scientist, but also not going to kill all of us?
+00:41:04
+So to me, it's a little bit scary because not not because it's a malevolent life, like it's a dictator petting like a cat. It's evil. But just the way life is, it seems to be very good at conquering other life.
+00:41:21
+So there's a lot of science fiction movies based on that principle. And that's sort of what causes the public to be so scared. But if you think about sort of. Would a ropa life be scared of humans coming over and taking over?
+00:41:34
+Chances are no, not even like Earth bacteria, because her bacteria would be wiped out in an instant in its foreign world because they don't know how to metabolize energy. That doesn't come from the types of energy sources that are here.
+00:41:49
+The levels of acidity may just kill us all off.
+00:41:52
+And at the same way, in this in the converse way, if you bring life from Europe on Earth, it'll die instantly because it's too hot or because it doesn't need to know how to cope with the sun's radiation so close to these completely inhabitable zone by their standards, so that what we call the habitable zone might actually be the inhabitable habitable for them.
+00:42:14
+So the difference, if the environments are sufficiently different, you think we'll just not be able to even attack each other.
+00:42:21
+And the basic it'll take massive amounts of engineering to create machines that will go there and sample the oceans, basically drill through the layers of ice to basically sample and see what life is like there. And detecting it will probably be trivial. It definitely won't be DNA based. It's not like we're going to send a sequencer, but it'll be, you know, some other kind of combination of chemicals that will look non-random.
+00:42:53
+So if you had to bet, if I took that life form, we find Europa and put it on a sandwich that you're eating and like, eat that sandwich, it'll taste just fine. And you well know that anyone is fine.
+00:43:09
+That's interesting. So the other question is, do we have taste receptors for that? So where does our taste come from? And we'll see adaptations to chemical molecules that we are used to seeing so we don't like for things we don't even know about. So we won't we won't be able to know that this chemical taste funny.
+00:43:26
+But you think it won't be it's likely not to be dangerous. It won't know how to even interact.
+00:43:33
+Do you think our immune system will will even detect that something weird is probably and will be very easy to detect because it'll be very different from very weird, but it won't be able to sort of attack I mean, the scene from, I don't know, Independence Day where, like, they're communicating with the alien computer that I am in.
+00:43:51
+I mean, it's hilarious because, like, Max and PCs have trouble communicating. I mean, let alone an alien technology or even alien DNA.
+00:44:00
+So, OK, now, was talking about you being a scientist on Earth, but say you're a scientist there, were shipped over to Europa to investigate. If there's life, what would you look for in terms of signs of life? Life is unmistakable.
+00:44:16
+I would say the way that life transforms a planet surrounding it is not the kind of thing that you would expect from the physical laws alone.
+00:44:26
+So it's I would say that as soon as life arises, it creates this compartmentalization. It starts pushing things away. It starts sort of keeping things inside that herself. And there's a whole signature that you can see from that. So when I was organizing my Meaning of Life symposium, my my my friend, who's an astrophysicist, basically we're deciding on what would be the themes for the for the symposium.
+00:44:56
+And then I said, well, we're going to have biology and have physics.
+00:44:59
+And she's like, come on, biology. Just a small part of physics.
+00:45:05
+Everything's a small part of physics.
+00:45:07
+And I mean, in many ways it is. But my immediate answer was no, no, no, wait.
+00:45:13
+Life challenges physics. It supersedes physics. It sort of fight against physics. And that's what I would look for in Europe. I would basically look for this fight against physics, for anything that sort of signatures of not just entropy at work, not just things diffusing away, not just gravitational pulls, but.
+00:45:34
+Clear signatures of you remember when I was talking earlier about this whole selection for environment selection, for biospheres, for eco systems, for these multi organism form of life, and I think that's sort of the first thing that you can look for, you know, chemical signatures that are not simply predicted from the reactions you would get randomly.
+00:45:55
+Such a beautiful way to look at life. So you basically leveraging some energy source to enable you to resist the physics of the universe, fighting against physics.
+00:46:06
+But that's the first transformation.
+00:46:08
+If you look at humans, we're way past that. What do you mean by transformation? So so basically, there's there's layers.
+00:46:14
+I sort of see life, you know, when when we talk about the meaning of life, life can be construed at many levels. We talked about life in the simplest form of sort of the ignition of evolution. And that's sort of the basic definition that you can check off. Yes, it's alive.
+00:46:33
+But when Alexander the Great was asked, to whom do you owe your life to your teachers or to your parents? And Alexander the Great answered, I owe to my parents, the Zeine, the life itself and I owe to my teachers the f zeine like euphony f means good, the opposite of cacophony, which means, you know, bad. So F Zeine, in his words, was basically living a human life, a proper life.
+00:47:10
+So basically we can go from the Zeine to the Ephesian and that transformation has taken several additional leaps. So basically, you know, life on Europa I'm pretty sure has gotten to the stage of A makes B make C makes A again. But getting to the Ephesian is a whole other level and that level requires cooperation. That level requires altruism. That level requires specialization. Remember how we were talking about the RNA specialising in the DNA for storage proteins and then compartmentalisation?
+00:47:51
+And if you look at prokaryotic life, there's no nucleus. It's all one soup of things intermingling. If you look at.
+00:48:00
+Eukaryotic life, again, you for true good, you know, so a eukaryote basically has a nucleus, and that's where you compartmentalize further the organization of the information storage from all of the daily activities. If you look at a human body plan or any animal, you have a compartmentalization of the germ line. You basically have one lineage that will basically be saved for the future generations. And everything outside that lineage is almost superfluous. If you think about it, the rest of your body, all he does is ensure that that lineage will make it to the next generation, that these germ lines will make to the next generation of the rest is packaging.
+00:48:42
+Sorry to be so blunt. Yeah. And if you look at nutrition, you know, we're ditter systems. What is the system in Dutrow means second. Where this is the second mouth, the first mouth is actually down here, the esophagus, so ditter stones have evolved, a second layer of eating, kind of like alien with the two mounts.
+00:49:01
+Yeah, you can think of us as alien with the first mouth is up here and then the second mouth is down.
+00:49:07
+There is, of course, is the first Mars, just the physical manipulation of the food to correct.
+00:49:14
+And basically, again, you know, you look at if you look at a worm, it's an extremely simple life form.
+00:49:19
+Basically has a mouth, it has an illness and it has just some organs in between the consumer, the food and just spit spit out.
+00:49:26
+Yeah, humans are basically a fancy form of that. So you basically have the mouth, you have the digestive track, and then you have limbs to get better at getting food, you have eyesight, hearing, et cetera, to get better getting food. And then you have, of course, the germ line and all of this food part. It's just auxiliary to the germline. So you basically have layers of addition of commercialization, of specialisation on top of these zeine to get all the way to the Ephesian.
+00:49:56
+Yeah. So like the worms, like Windows. Ninety five, very few features, very basic.
+00:50:01
+And us humans are like Windows Vista, Windows 10, whatever it is, a few innovations beyond that matter where I don't know where Windows is. So that's such a fascinating way to look at life as a set of transformations. Exactly. So like is there some interesting transformations through our history here on Earth?
+00:50:24
+But like appeal to you? Of course. So what are the most brilliant innovations in transformation?
+00:50:29
+Yeah, yeah, yeah.
+00:50:30
+I mean, this is such a fascinating question. Of course, like, you know, we're talking about basic basic life forms and we're talking about eukaryotic life forms.
+00:50:37
+And then the next big transformation is multicellular life forms, where the specialization separates the germ line from everything else that accompanies it and sort of karazin. And then that specialization then sort of has this massive new innovation, like above the second mouse, which is this massive brain and these massive brain is basically something that arises much, much later on, basically, you know, towards like having the first spinal cord, this whole concept that along with these very simple layers, you basically now have a coordinating agent and these coordination agent is starting to make decisions.
+00:51:17
+And remember, when we're talking about free will, I mean, you know, as a worm, he's hunting for food. Oh, it has plenty of free will. It can choose to, you know, follow Kimmo taxes to the left for taxes to the right. And maybe that's free will because it's unpredictable beyond a certain level. So you basically now have more and more decision making and coordination of all of these different body parts in organs by a central operating system, a central machine that basically will control the rest of the body.
+00:51:51
+And the other thing that I love talking about is the different timescales at which things happen. You know, we're talking about the human genome before the human genome is basically able to find. What genes should be expressed in response to environmental stimuli in the order of minutes and basically receive a stimulus, transfer all that data through these humongous long string of searching and then sort of find what genes to turn on and then create all that? All of that is happening in the timescale of minutes, basically, you know, three minutes to a half an hour.
+00:52:27
+That's the expression response.
+00:52:29
+But our daily life doesn't happen on the order of three minutes to an hour to half an hour.
+00:52:32
+It happened on the order of milliseconds, like a throw a ball at you. You catch it right away. No gene expression changes there. You just don't have time to do that.
+00:52:40
+So you basically have a layer of control built on a hardware that supports it. But that hardware itself lives in a different time scale than the controlling machine on top of that.
+00:52:53
+Is that an accident, by the way? Is that like a feature? Is it was it possible for life to have evolved? Where the are the daily life of the organism as it interacts with its environment was on time scale similar to the the way our internals work.
+00:53:10
+If you look at trees, they look kind of boring and stupid. You're like looking at a tree.
+00:53:16
+If you speed up the movie of a tree from spring until October, you'll be like, oh my God, it's intelligent. And the reason for that is that at that timescale, the trees basically saying, oh, I'm looking for, you know, thing to catch onto. Oh, I just got onto that. I'm going to grow more here. I'm going to spoil there, etc.. Like, I can see the trees in my gardens is growing and sort of looping around.
+00:53:39
+And, um, it's all a matter of time scale.
+00:53:44
+And if you look at the human timescale, remember, we were talking about Neoteny the last time around, the whole fact that our young are pretty useless until maybe a few months of age, if not a few years of age, if not, I don't know, getting out of college.
+00:53:59
+And then we we basically hold them, enabling their brain to continue being malleable and infusing it with knowledge and, you know, thoughts, as you know, that period of neoteny increases and expands.
+00:54:15
+If you fast forward, I don't know, another million years. So humans have only been around different from apes for about that long jump, another unit of that, another human chimp divergence. What could happen? From an evolutionary timescale, a lot one of the things that's happening already is expansion of human lifespan. We have longer and longer periods before we mature and we have longer and longer periods because before we have babies, so intergenerational distance is, you know, grown from, I don't know, 16 years to 40 years.
+00:54:53
+You're saying that's in the genetics like, no, no, not necessarily, but but it's sort of an environmental tendency that's happening. But as we medically expand human lifespan. The generations might actually be pushed instead of 40 years to 60 years to one hundred years, if we look at the long arc of the evolutionary history.
+00:55:17
+Exactly. So as we start thinking about intergalactic travel now.
+00:55:23
+So that's a heck of a transition. Yeah. So let's talk about it.
+00:55:29
+No, no, no, no, no. As as we as a species start thinking about it. I'm talking about these transitions that are happening right now and so continue along these transitions. What does the future hold in the next million years? So the concept of us going to another planet and that's taking three human lifetimes might be a joke. If the human lifetime starts being four hundred years or eight hundred years. So imagine this time. Scale it all timescale, just different timescales.
+00:55:57
+Yeah. You ask me offline whether I would like to live forever. I mean, my answer is absolutely. And there's many different types of forevers. One forever is do I want to live today forever? Kind of like Groundhog Day. And the answer is absolutely. The stuff that I want to learn today will probably take a lifetime just to learn, you know, basically to clear my to do list for the day.
+00:56:22
+You mean like relive the day, relive the day and then and then pick up different things from the richness of the experience.
+00:56:28
+And today, there's just so much happening in the world every single day, so much knowledge that has happened already that just to catch up on that will probably take me around forever.
+00:56:37
+And that at that point, I just I would just love to see you in the Groundhog movie just because you're so naturally as a scientist, but just the way your mind works beautifully, just all the richness of the experiences that you pick up from that. A beautiful visual, but you try to live each day as if it was Groundhog Day.
+00:56:57
+And I'm basically every single day waking up and saying, all right, how would you get out of that one? You know what?
+00:57:03
+And on a funny tangent, like I got a chance to go to a NewLink demonstration event. I'm not usually familiar. Like and I talk to Elon for a while. And one of the funny things he said, and this Groundhog Day thing is, you know, it's a beautiful dream to eventually be able to replay our memories. So we're kind of these recording machines. Our brain is kind of maybe a noisy recording machine of memories. And it would be beautiful if we can someday in the future, maybe far into the future, be able to like in the Groundhog Day situation, replay that.
+00:57:46
+And the funny comment that stuck with me is he said that maybe this is our conversation now is a replay of a member of a previous memory. And that's stuck with me because it will probably be my replay. You know, who the hell am I am just some idiot guy. But like Elon Musk is, you know, probably because of SpaceX and so on, is probably going to be remembered as a special person, one of our special apes in history.
+00:58:14
+So if I wanted to replay a memory, probably be the one, you know, talking to you on for a while.
+00:58:20
+That's an interesting possibility from if we think about time scales, if we think about the richness of the experience through time that we humans take and be able to replay some aspects of that of that biology, that's super interesting.
+00:58:39
+But anyway, sorry, sorry for the tangent. Let's you were talking about timescales and the expansion of the human lifetime and the issue of intergalactic travel.
+00:58:52
+Yeah, but you're laughing about this for sure. That is your future about this. You're talking about exploring alien worlds and going to other planets. I mean, you know, when Sarah was here, she was talking about sort of going to other planets.
+00:59:04
+When we find this life, I mean, I'm just very naturally, given the topics that we've approached, talking about the timescale at which this will happen and eventually we will human or life, life will expand out into the universe.
+00:59:20
+To the point that I'm trying to make is that in intergalactic species, we'll probably find ways to engineer its biology in order to expand the way that we experience time, expand the time that we experience. And going back to this whole concept of, you know, would I like to live forever? Yes, I'd like to live forever. Even if it was even if it was stuck on the same day. I'd love to live forever because I would finally have time to do all these things that I want to do.
+00:59:49
+But if living forever actually comes with a perk of watching the whole world evolve forever, I mean, that's a huge work. And I know just it'll never get boring, just an ever changing world.
+01:00:02
+And then the mind, you know, sort of expanding. That I want you to to do is to also ask, what if I wanted to live forever one day at a time, every year or one day at a time, every decade, would you choose that where you would wake up and the world would be 10 years later? Every single day you wake up? It's the opposite of Groundhog Day where basically you always wake up and it's always 10 years later.
+01:00:28
+So you're saying that's such a powerful, interesting concept that life is more interesting if you're of all the life forms on Earth, that you're the slowest one? Exactly. Like trees have it right.
+01:00:43
+You have it right. Olive trees, like, you know, they've been there since the Minoan civilization. And, you know, that takes us back to the question you asked about sort of the transformations that have happened in humanity. The Minoan civilization is one of them.
+01:00:57
+You know, there's this paper that was published just a couple of years ago by one of my friends that basically looked at the genetic makeup of the Minoans and the Michiganians in ancient Greek in ancient Greece and how they relate to modern Greeks. And they found that indeed there was very little gene flow.
+01:01:17
+From the outside and, you know, it's it's fantastic to sort of think about these amazing civilizations that transform the way that human thought happens, that basically looked for rules in nature, that looked for principles, that looked for the standard of beauty, not human beauty, but beauty in the natural world. This whole concept that the world must be elegant and there must be deeper ways of understanding that world. To me, that's a massive transformation of our species.
+01:01:53
+Similar to, you know, the earlier transformation that we were talking about, of even involving a brain of, you know, learning how to communicate language or the evolution of eyesight. If you look at sort of you know, we're talking about these worms crawling around and then sensing which direction are the chemicals more abundant, you know, more taxes. So eventually they grow and knows, eventually they grow. I mean, when I say no, I mean ways of sensing chemicals.
+01:02:21
+That's probably one of the early senses. You know, we always talk about how deep rooted is in your brain. That's one of the early senses. If you look at hearing that much later sense, if you look at eyesight, that's an intermediate sense where you're basically sensing where the light direction comes from. That's probably something that life didn't mean until he got, you know, into the surface and so and so forth. So there's a lot of, you know, milestones.
+01:02:45
+And I was talking about the latest milestone, which is like the last time of being able to detect gravitational waves and sort of being able to sort of have a sense that humans haven't had it before. So you see that as yet another transformation gives us a little. And now if you go back to this history of ancient Greece, I mean, this this transformation that happened, I mean, of course, the Egyptians had this incredible, you know, civilization for thousands of years.
+01:03:12
+But what happened in Greece was this whole concept of let's break things down and understand the natural world. Let's break things down and understand physics. Let's basically build rules around architecture, about our own elegance, around, you know, statues and tragedy.
+01:03:28
+I mean, another question that you asked me in passing was this whole concept of embracing the good and the bad, embracing the full range of human emotions.
+01:03:38
+And if you look at Greek tragedy, it's the definition of that. It's I mean, drama.
+01:03:45
+I mean, again, it's a Greek word. But but the whole concept of some problems that are just so vast and large that dying is the easy way out, the death, that's the easy solution.
+01:04:01
+You know, so so I want to touch a little bit on that point and and sort of talk about this concept that life supersedes physics. And that the brain supersedes life. That basically we have a brain that can decide to not follow evolution's path. We can decide to not have children. We can decide to not eat. We can decide to suicide. We can decide to sort of abolish communication with the outside world. I mean, all the things that make us human, we can basically decide not to do that.
+01:04:41
+And that that is basically when the brain itself is basically superseding what evolution problem is for.
+01:04:50
+Oh, so OK. So one of it's OK.
+01:04:55
+My mind was already blown at the beautiful formulation of the idea that life is is a system that resists physics. Yeah. And our brain or perhaps the content of it or however it may be functionally our brain is a thing that resists life. Yes. Yes. You're so you're so brilliant. But but but but but I want you to see all of that as a continuum.
+01:05:28
+Basically, you're sort of talking about the sort of individual transformations, but it's a path that that humanity has of transformation. It's a path of transformation. And then I want us to think about what it really means to become human, like the Ephesian. And you asked me about what motivated my meaning of life imposing and what motivated it in part.
+01:05:50
+I mean, of course, it was an inside joke of turning forty two. But what motivated in part was actually a midlife crisis. So the joke that I always like to say is this is Papadimitriou famous Greek professor who was brutally admitted at Harvard or Stanford or Berkeley everywhere. Brilliant, brilliant person, actually, because thesis advisor. Advisor.
+01:06:11
+So so Christopher Hitchens really likes to say that when you're an undergrad, you work like a rat to get into grad school and we're regressing. You work a carrot to get your teeth and where your postdoc, you work like a rat to get your assistant professor Qajar. And we're in this profession. You work like a rat to become a full professor. And then when you're full, Professor, well, by then you're basically a rat.
+01:06:36
+So basically what happened to me is that I arrived at the end of the rat race. Yeah. You know, the life is a rat race. You constantly have hurdles to jump over. You constantly have tunnels and secret pathways. And I figured it all out.
+01:06:49
+And eventually, as I was turning 42, I looked back and I was like. Wow, that was an awesome rat race. But I'm not a rat. I basically got out of the labyrinth and I was like, I'm not I'm not a rat, turns out, is that the first moment we saw? That is that you were in a rat race. No, no, no, I've known that I'm in a rat race for a long time.
+01:07:12
+It's so easy to be in a rat race. It's so easy to be an underground. You have problems. And, you know, we're all smart people.
+01:07:19
+We promise that it has a solution. Somebody made it for you. You can solve it. Everything was made as a test and you keep passing the test and test and test and test and you have tasks that are well-defined. The food is a little different because it's more open ended. But yet you have an adviser who's guiding you and then you become a professor. And tenure is a well defined set of tasks and you do all that. And at 42, I basically had bought a house, three kids, beautiful wife tenure.
+01:07:51
+Yeah, awesome students. Tons of Grant's life was basically laid out for me. And that's when I had my midlife crisis.
+01:08:00
+That's when people usually buy a Harley Davidson and they basically say, I need something, you need something different and to be young myself, etc..
+01:08:08
+But basically that was my realization that it's not a rat race, that there's no rat race. It's over that. I have to basically think, how do I fully instantiate myself, how do I complete my transformation into an actual human being? Because it's very easy to sort of forget all the intangibles of life. It's very hard to just sort of think about the next race in the next, and it's all metrics and, you know, what is the number of years I have?
+01:08:35
+What is a number of publications I have? What is the number of citations, the number of talks, the number of grants? It's very easy to quantify everything. And then at some point you're like, this is real life. It's not a test anymore. And that's something that I told my wife early on. I was like, no, no, no, our life is not going to be let's put the kids through college. And that, you know, maybe that's when I escape the rat race.
+01:08:57
+Maybe it continued being a rat race. Maybe the next step would have been all right. How do I make sure that my kid is first in class? How do I make sure that they're, you know, into the greatest college and then, you know, they're into college and then you're like 60. So how do you how do you escape?
+01:09:14
+What is the, uh, is is there a light at the end of the tunnel of a midlife crisis?
+01:09:20
+So so you should watch that symposium because the videos were transformative to me and to many others. So basically, the advice that I received from all of my friends was so meaningful. This know, there's some some advice that basically says you have to constantly maintain.
+01:09:42
+Unachievable goals. Goes that you can make progress towards, but you can never be fully done with, and I think that's almost playing into the sort of rat race thing, like basically make sure that there's more obstacles for your little rat persona to jump through. So that's one possibility.
+01:09:59
+So first of all, watch, is it available? So it's on YouTube.
+01:10:03
+Just Google GOOG really life and should have known that she told me this like this is awesome. OK, yes, this is great.
+01:10:10
+But and also, like, you know, seeing rat race is, um, you know, full of ratatouille. I mean, that's a beautiful.
+01:10:22
+That's a beautiful thing of of challenges and overcoming child that could be fundamentally the meaning of life is.
+01:10:32
+To see life as a set of challenges and to fully engage in the overcoming of those challenges, I would say that that embracing the rat race of life, it's also a joke that we like to have with my wife all the time is we basically say we pretend that we're in this all inclusive resort, that we've basically hired all these people to go on the Esplanade and play games because we enjoy watching people playing on the Esplanade and we enjoy sort of laying and looking at life and all the people biking and rollerblading and all of that.
+01:11:04
+And then we feed all these people in this all inclusive resort that we live in.
+01:11:08
+And then what are we going to do today? I'm like, oh, I've signed up for professor activities.
+01:11:13
+It's going to be awesome. They lined up a bunch of supersmart to my these for me to meet with. I'm going to have a grant writing meeting afterwards is going to be awesome. And then she signed up for a bunch of consulting activities is going to be great. And then in the evening we just get back together and say, hey, how is your consulting today?
+01:11:29
+So in a way, that's another view of life of basically wait a minute, if I was a gazillion er what would I choose to do.
+01:11:37
+I would probably pay an awesome university to give me an office there and just pay a bunch of super smart people to work with me even though they don't really want to, etc. etc. etc..
+01:11:48
+In fact I would have exactly the life that I have now working my butt off every single day because it's so freaking fulfilling.
+01:11:58
+That's so let's clarify. This is a beautiful way. It's almost like a video game view of life that is a set of I mean, again, game is not perhaps a positive term, but it's a it's a it is a beautiful term. So do you or do you not like the rat race view of life? No, because it is fulfilling in some round about the goal.
+01:12:23
+My view of life is about the path. So, again, quoting Greece, those folks have come up with some good stuff. So this obviously is basically wrote this beautiful poem about sort of going through life, saying as you go through your journey impersonating Ulysses of his voyage, he says, I wish that the path is long and arduous. Because when you get to Ithica. You might realize that it was all about the path, not the destination. And so the rat review of life makes it all about a destination.
+01:13:06
+Like, how do I get through the maze to get there? But the all inclusive resort view of life is about the path.
+01:13:16
+It's about, wow, today I couldn't wish for a better set of activities, all programmed for me to enjoy having my brain, having my body, having my senses and, you know, the life that I have a very different kind of view. It it's focused on the journey, not the destination.
+01:13:35
+So you mentioned kind of the ups and downs of life and the midlife crisis. And right now, you said focusing kind of on the journey, but what the journey involves is ups and downs. Is there? Advice or any kind of thoughts you can elucidate about the downs in your life, the hard parts of your life and how you got out, or maybe not, or is there they. How do you see the dark parts of life?
+01:14:11
+So I am so glad you're asking this question, because it's something that our society does a terrible job at preparing us for. Every Hollywood movie has to have a happy ending. It is ridiculous. You can count on your ten fingers the number of bad ending movies that you've ever watched and you probably wouldn't need all 10 fingers. Yeah, we strive to tell everyone, yes, you can succeed. Yes, you're a millionaire, just temporarily disabled.
+01:14:43
+And yes, you know, the prince will eventually figure out his princes and they will have a happily ever after ending. And yes, the hero will be beaten and beaten and beaten. But you know that at the end of the movie, the good guys will win. We need more movies where the bad guys win. We need more movies where just everybody dies.
+01:15:04
+We're just you know, McGyver doesn't figure out how to disable the bomb and just explodes.
+01:15:09
+You just you just need more movies that are more realistic about the fact that life kind of sucks sometimes and it's OK. So, again, growing up in Greece, I have been exposed to songs that are not just sad, but they're miserable, miserable.
+01:15:30
+So.
+01:15:30
+So one of them, one of them comes to mind and and it's it's basically talking about this woman who's lamenting in the early morning about losing the joyful kid, the joyful young man who basically died in the civil war in the arms of our own fellow citizens. And she's like, if only she had died fighting the foreign forces.
+01:16:00
+If only she had died at the sides of the, you know, general, if only he had died with honor, how would be proud to have lost the joyful kid?
+01:16:13
+I mean, it's devastating, right? It's like he didn't just die. She died without honor. And and I my friend who was with me was listening to this song.
+01:16:24
+And she's like, this is depressing who you have to do another one. It's not a sad.
+01:16:29
+And she's like, what? This one died with honor. So so that's one example.
+01:16:34
+It's a kind of celebration of misery and.
+01:16:37
+No, no, no, no, no, no, no. So let me give you a couple more examples and then I'll answer that question. So another example is I picked up this book that I had from my childhood and I started reading stories to my kids. And the first story is about these two children. One is really poor living on the street and the other one is really rich living in the house and the bright light above and the poor one is wishing look into the window and wishing that he could have that house and the other one is at the window, wishing that he was free, that he wasn't sick all the time, that you could escape outside.
+01:17:08
+It's only four pages long. At the end, both children die. One of them dies from cold, the other one dies from illness. And you're like, how is that even a children's story? The next story, I'm like, OK, that's fine.
+01:17:21
+Let's keep this one. Let's say I read this to my kids and then I read the next one. And the next one is about this.
+01:17:26
+This woman whose brother is at war against the Turks and he is going to die and she praised the Virgin. Please don't let him die. And the Virgin appears and she like, no problem. Tell me who to kill instead. And she like anyone, anyone? No, no, no, no. She's one. How about these, Terk? This one has two kids, a beautiful family waiting for him at home.
+01:17:56
+It's no, not this one. She's another one. And then she goes through all the life stories of the other instances like, no, not to take anyone, it's like I can't do that.
+01:18:04
+I can you can choose to bring your brother back and he will be depressed for the rest of his life because he didn't fight at war, because he didn't go to that battle. And he will live without I'm like and in the end, the woman decides to have her brother killed instead because he dies with her.
+01:18:20
+I mean, this is saying so.
+01:18:23
+So why am I giving you these examples? It's not a glorification of misery.
+01:18:27
+It's it's expanding your emotional range.
+01:18:31
+It's teaching you that, and when I read these stories, I'm not I'm not a jerk, I'm crying out loud, I have tears and I like my face becomes read from the the the pain that I'm experiencing through these stories.
+01:18:48
+It's just so deeply touching to embrace the suffering, not because of an accident, but because of a choice.
+01:19:01
+The sacrifice to embrace the fact that not everything is cute and rosy and always ending well, and I think that we don't do a good enough job of teaching our kids that just life sucks and life is unfair sometimes. And that's and that's OK. And sometimes I read a story to my kids. I read a story every night, and sometimes the story is horrible and sometimes the story is good and sort of friendly and happy. And my kids always ask, what's the moral of the story?
+01:19:31
+And sometimes those are moral.
+01:19:32
+And it's like, oh, you should be good or should you be nice, you should be helping each other, etc.. And sometimes there's just no moral.
+01:19:39
+And I tell my kids, you know what? Sometimes just life doesn't make sense and it's OK and you can't comprehend everything. And I think this concept of how do you deal with a bad days comes from the fact that we're taught we're brainwashed into thinking that every day should be a happy day. And we're not ready to cope with misery. And the other thing that crying through these stories teaches you. Is that you don't have it nearly half as bad as you think.
+01:20:11
+Do you mean basically it it tells you that I mean, my momma would always tell me about how she was transformed as a teenager when she volunteered in the hospital and she saw all these people at the brink of death clinging for life and helping them out to where she could and crying her heart out when they were dying and sort of how that taught her the appreciation for what we have every day.
+01:20:40
+Waking up every morning and saying. My life doesn't suck. My life is not nearly half as bad as it could be. And and sort of embracing the joy that we have of living where we live in the moment we live. And I'm going to go further if you look at the arc of human.
+01:21:05
+Life, you know, human existence through the centuries, there's no better way to be alive than now.
+01:21:11
+I mean, we're complaining about every single little thing, but life expectancy is at an all time high sickness all time low. Poorness, misery, All-Time Low. There's no better time to be alive globally across all of human existence. Number one. Number two, here in Boston, there's no better place to be alive. If you think about the amalgamation of science, engineering, technology, the ridiculously awesome people you're bringing every week to your podcast, I mean, this is the ancient Greece of modern society, but the weather still sucks because.
+01:21:50
+No, let me put it this way. The weather gives us a range of emotion. The full range, the scenic weather patterns, the such a fascinating thing about human psychology of I often reread this book. I'm not sure if you're familiar with the man's search for meaning by Viktor Frankl.
+01:22:08
+And he talks about, you know, his living through the Holocaust in the concentration camps and even there where there's like human misery is at its highest.
+01:22:26
+Even there, he discovers these moments by observing the suffering, by accepting the suffering.
+01:22:35
+He he observes moments of true joy, of how great his life is relative to others at the camp who have it worse.
+01:22:48
+Yeah, so so it's a dangerous, slippery slope to think that way because it's basically being better than Joneses. And if, you know, if the house next door has a giant car, then you want to get a bigger car or something like that.
+01:23:00
+It's not comparative misery.
+01:23:02
+I think the way that I see it is slightly different. It's and it's not even thinking about all the worst possible outcomes that could have happened but didn't.
+01:23:15
+The the example, as you were talking about, the concentration camps, the most horrible I mean, one of the most horrible moments of human existence, I was thinking about pictures that I was seeing of kids in Syria in war torn zones. And you're looking at these kids. And again, I cried out loud imagining my own son in the van.
+01:23:38
+After a bomb explosion, watching his father die or his siblings die or losing his friends, it's something that we are not capable of fathoming.
+01:23:51
+But if you actually put a seven year old in that situation, the look that I saw in these kids eyes basically said it is what it is. It was. It was.
+01:24:02
+And I've experienced that with my own kid.
+01:24:05
+When he gets like my my my three year old lasts like two years ago, who's now my five year old, um, she was burned really badly with, like, hot chocolate and coffee that just peeled off her skin so you could actually see just her fragile skin had just peeled off.
+01:24:21
+And she was the happiest little kid. She was just going along with the punches.
+01:24:28
+It is what it is. It is what she accepted it.
+01:24:31
+So so it's it's quite dramatic to sort of realize that children don't say, oh, I could have it better. They they sort of embrace the moment, not embrace, but sort of accept the moment.
+01:24:49
+And then they can have moments of pure joy in a horrendous war torn country. And, you know, like so many people from, you know, these war torn countries basically say, oh, you think you Americans are going to just come and just send us a bunch of aid and food, etc.?
+01:25:09
+Yeah, sure, that's helpful. But what do we dream of? What do we struggle for? We struggle for love. We struggle for meaning. We struggle for, you know, emotions and friendships. We struggle for the same things you guys struggle for.
+01:25:24
+We're not just like every day waking up and saying, oh, I wish I had more food. Oh, that's just a given. I just don't have enough food. But what we struggle with are basically everything else. And that sort of gives you some perspective on life. It basically says, you know, and another story that my mom told me when I was a kid is this story about sort of this man who is basically, you know, he sees the Christ appear in front of him and he says, oh, Christ, I'm carrying all these problems.
+01:25:52
+I'm carrying this big bag.
+01:25:54
+Can you please take it from me? And he's like, sure, let me just give you any other back.
+01:26:00
+And basically and the person in the end accepts his own bag. So acceptance that ultimately you recommend acceptance, every single other bag is probably worse. It's the evil you don't know versus the evil. You know, like we all struggle with our own problems. But if you look at the bigger picture.
+01:26:21
+It's just your path through life, and if you embrace it, the good and the bad every single day. It's just Joy. Elysha. Sadness, misery, if you don't have both, you're not a complete human being. You know, you can't I mean, the last example I'm going to give is the movie, um, Inside Out by Pixar. Beautiful. Which one is that, the one with a little characters controlling or the emotional gravity? So you basically have joy and sadness and fear and disgust and terror and the moral of the story.
+01:27:01
+If you remember the movie, the moral of the story is that in the end, Joy is basically trying to fix everything, to make everything happy. And she's failing miserably. And everything else is like crumbling and falling apart. And the little girl basically becomes emotionless because all she knows how to do is fake happiness. And I think the very good analogy for our everyday society, where we're always saying, are you happy? Are you happy? My mom calls me and she's like, what else?
+01:27:26
+Are you happy? I'm like, Mom, stop asking me.
+01:27:28
+Stupid question. No, I'm not happy. What you should be asking is if I'm fulfilled. Yeah. And that's a very different thing. I don't go around being happy.
+01:27:36
+I go. If your mom called and said, Menos, are you suffering beautifully? Exactly right.
+01:27:44
+That's what she should be asking.
+01:27:46
+Are you are you struggling to achieve something great? That's the question that mom should be asking. Not here.
+01:27:52
+That mom call me about the suffering that about how good, how good are you doing?
+01:27:56
+So what I tell her is that life is not about maximizing happiness. Life is about accomplishing something meaningful. And accomplishing that meaningful thing cannot come from a series of joyful moments. He comes from a series of struggles, of successes and failures, of people being nasty to you and people being nice to you and embracing the full thing. And if you supercede that constant need for gratification, if you supersede the cost of need for kindness, you suddenly know who you are.
+01:28:33
+And what I like to say to my kid and my son the other day was tell me, oh, so and so called me such and such, and why are you such and such? He's like, no, I'm like, ha ha.
+01:28:40
+See, they were wrong.
+01:28:42
+And what I tell him is if you know who you are, what other people say about you only teaches you about them. Yeah, so it has no influence on your self-esteem, if you know where you stand, you embrace the good, but you also embrace the bad. I have plenty of bad and I'm embracing it. I'm a procrastinator. How do I deal with that? I trick myself into procrastinating about mindless, stupid little day to day things and in that procrastination time, doing important things for the future.
+01:29:20
+So accepting who you are, accepting your flaws, accepting the whole of it, accepting the struggle, accepting the sleeplessness, accepting the fact that the journey is what matters, hoping that your path to Ithaka is full of troubles because those troubles are the life you will lead.
+01:29:39
+Accepting that life will not start after the next milestone, that life has already started a long time ago. And what you're experiencing now is the life, this is it, it's not some kind of future thing that you worked yourself hard to get to, and then after that, you live happily ever after. To me, the happily ever after. That's the end of the story. Nothing happens after that. They struggled in the struggle and the struggle is much more interesting story.
+01:30:08
+Then they lived happily ever after.
+01:30:11
+So I think we have to embrace that as a as a society, that it's not just about the happy ending that our kids are brainwashed into expecting that things will be happy and rosy and it's OK if they're not. And they should keep struggling because struggle is the journey and the journey is the meaning of life. It's not the end, it's the journey. What about accepting one of the hardest things we talked a little bit about immortality, what about accepting that life ends?
+01:30:43
+So do you Manlius think about your own mortality. How we talked about accepting that there's ups and downs to life. What about the ultimate doll, which is the finality of it? Do you think about that? Do you fear it?
+01:30:59
+You also ask me if I'm afraid of getting older.
+01:31:05
+Yes. And that's on the path to mortality. So let me talk about that first step and then the last step.
+01:31:14
+So getting older, what does that mean? When I was 18, when I was 20, my brain I felt was at my maximum. I was like, nothing is impossible. I can solve anything. I could take any math puzzle, any logic puzzle, any programming puzzle into solving milliseconds. I just saw the answer through problems. I was like feeling invincible. I would show up at lecture with my newspaper, lift up my head every now and then, point to errors.
+01:31:42
+Just Bratt's complete brat would raise my hand and correct my professor from the whole classroom that I have some of those in my class now. And it's awesome.
+01:31:50
+It's like very I used to be a teacher. You humility. Yeah. So, so, so. So I felt invincible. And I was like, this is it. This is awesome. I'm living the life. Ten years later, my brain didn't work the same way. I wasn't as good at the tiny little particles. But it worked in different ways, and right now, 20 years later, it works in yet different ways and oh gosh, I love the journey.
+01:32:19
+Can you maybe give some hints of the interesting different ways that your brain works as it aged?
+01:32:27
+Yeah, I went from the phase of sheer speed and hardcore quantitative thinking to sort of stepping back, being able to sort of make more connections, being able to sort of say, yeah, but let's use that thing.
+01:32:42
+Sort of a huge new creativity being unleashed.
+01:32:46
+Basically, when you're young, you're sort of thinking about that one problem. You can sort of reconfigure all the variables combinatorial in your head and just wipe it all out when you're you know, it's the little older, you start getting more creative. You start bringing in things from different fields in different contexts and sort of stepping outside the box. Basically, it's like being in the rat race and saying there's a ceiling. Why we're trying to get through that.
+01:33:09
+So it's sort of, you know, thinking outside the box ending at 40. What I'm going through now is this whole sort of embracing the path of life. And when I say life has started already, it's not a test anymore. This is basically embracing the finality. Embracing that the journey is what it's at. So what I like to say is live every day as if it's your last one and make plans as if you'll never die. I always have the long term that I'm, you know, sort of planning out for that will eventually become the short term and I always have the sort of short term.
+01:33:51
+And I think this ability to sort of look at life in the back in the past and look at life in the future jointly and sort of embrace the continuity both of life in the universe and on our planet, as well as life as a human being from the beginning to the end, just as a path, as a journey and just embracing every aspect of that.
+01:34:12
+I mean, I was talking about parenthood the other day and how amazingly fulfilling it is to sort of relive childhood through the eyes of my kid with the perspective of a parent. So the the sheer, you know. Arrogance of youth. Yeah, watching this in my kid, I can see myself when I was 18 correcting my professor, I felt so proud. Yeah, little did I know that my professor was working on so much more interesting things than the three little things he was putting on the board that day.
+01:34:47
+And I was like, I'm invincible. But in fact, now just the little brat. And basically right now I sort of can see the sort of cherney with a little more humility. I can sort of look at my own students with their unbelievable abilities, being able to do things that I'm no longer able to do better than I probably was ever able to do, but yet being able to guide them and shape their thinking and blow their minds with new ideas and new directions.
+01:35:20
+Through my perspective, and I know when something is solvable because I've been there, but I'm not going to even bother, it's not that I can't do it. I'm sure I could if I tried. I just I'm not interested in that anymore. So what I'm embracing this journey of aging is how my brain is changing and how I'm constantly trying to figure out the niches that evolutionary niches that I'm best adapted for. Yeah, for the tasks that I'm best at while hiring and recruiting.
+01:35:52
+Both assistance and research scientists and students and postdocs, and, you know, that will be the best at those tasks so that someone still has to see the big picture. And I love being in that role.
+01:36:05
+So you're at the at the time scale of a human lifespan. You're doing the same thing that the worm did at the evolutionary time scale of growing arms, of the specialization, the compartmentalization ethos.
+01:36:20
+Well, I mean, it's fascinating to think of what 80 year old Manala's would look back at the at the man that's sitting here today and and laugh at the silliness, at the arrogance of something like no little thing.
+01:36:37
+You didn't figure out anything.
+01:36:38
+I mean, ultimately, it seems that if you're introspective about life at all, it leads to a kind of acceptance, a deeper and deeper acceptance of the whole of it.
+01:36:51
+Again, I want to be cautious about acceptance because it almost says that you can't change it. It's a sort of embracing the struggle and embracing the journey is the way that I would put it.
+01:37:02
+So you ultimately feel the journey isn't just something that happens to you.
+01:37:05
+It asks if you shape it, you shape it. Remember how I was saying that Boston is the best place in the best time to live in right now in the history of humanity?
+01:37:14
+I'm exaggerating a little bit, but the way that I think about this is that if you look at the whole cosmos, where would you rather be if you're just a bunch of molecules, roughly your, you know, biomass, where would you rather be? Would you rather be a rock on Mars? Probably not. Would you rather be in a black hole? Probably not. Would you rather be an exploding supernova? Maybe that might be interesting, but being on Earth is an awesome solar system, not a planetary system, an awesome place to be in across all of space time.
+01:37:48
+It's a pretty good place to be in as a bunch of molecules. If you are a bunch of molecules on Earth today, being an animal with, you know, some kind of awareness of the stuff around you is wonderful.
+01:38:01
+Being a human among all animals is amazing because you have all this introspection and being a human who's young, fit, athletic, smart, etc.. I mean, you know, you have so much to be happy for.
+01:38:17
+Beyond that, being surrounded by a bunch of awesome people that you interact with all the time, I mean, I feel blessed to interact with the people I know, the friends I have, the dinners that I have, all of these students that I interact with. I'm so blessed. And the last little little blip in this awesomeness of local maximum, the last little blip comes from being kind. Being grateful and being kind, I don't know if you remember that little prayer that I described last time of thank you for all the good you've given me and give me strength to give unto others with the same love that you've given to me.
+01:38:55
+And the whole point of that is being grateful and being kind. What does that do? From a purely Agrestic perspective, it makes the people around you happier and it takes that little maximum a little bit further because you'll be surrounded by happy people by being kind. That's the purely Agrestic view and the purely altruistic view. Or maybe it's Agrestic as well as that. It's good to give. It feels good to give, like basically watching somebody who's touched by what you said, watching somebody who's, like, appreciating a rapid response or a generous offer or just random acts of kindness is so fulfilling.
+01:39:38
+So evolutionarily we were selected for that. They're just such a good feeling that comes from that. You know, it's fascinating to think you said Boston is the best place and talking about kindness, that the very thought that Boston is the best place in the universe is almost.
+01:39:59
+It's a kind of a gravitational field that your thought and your very life in itself is a kind of field that makes that real. So the self-fulfilling prophecy.
+01:40:12
+Yeah. And layby by claiming it's the best and thinking is the best. It becomes the best.
+01:40:17
+And you make others it's a four. It's not a force that just applies to your own cognition. It applies to the others around you.
+01:40:26
+And then suddenly you live in an even better place. Yeah. And because it creates the reality, the actual reality that the the social reality, then it molds the environment.
+01:40:37
+I was one of the coolest things about you, I think. Is.
+01:40:44
+You represent the best of I might like the spirit of a mighty there is so I'm so glad that I'm fortunate enough to be able to talk to you because, you know, there's a kind of cynicism about academia in parts that I think is undeserved in that that there's a, you know, Mittie, of course, but academic institutions is a sacred place where ideas can flourish. And just in the same very way that you're talking about is both kindness and curiosity and that like that weird thing that happens when a bunch of curious descendants of apes get together and just like get excited and there's this ripple effect that happens.
+01:41:38
+I mean, that's the most beautiful aspect of it. People might think like competition and grants and like position, like you said, the rat race. But like underneath it all is, is these curious human beings inspiring younger human beings.
+01:41:56
+And there's this ripple effect that happens. And I'm so glad that I mean, I'm glad that I get a chance to record this because it inspires so many other students and so many other people to do the same, to embrace the inner curious creature. It's not about the race. So let's talk about the negatives.
+01:42:16
+Let's talk about. No, no, no, I'm serious. I'm serious. You know, you have to embrace the good and the bad. So let's talk about the negative as the group comes out. Let's address it.
+01:42:24
+Um, so why do people want positions of power? Why do people want, you know, more money, more power, more things, more that remember the part where we're saying if you know who you are, what other people think about you? It makes no difference to you. It teaches you about them. Many people feel. Define themselves, the feel instantiated through the eyes of others. So being in a position of power makes them feel better about themselves.
+01:42:58
+Who knows what other kind of struggles they might have that creates that need to feel better about themselves, but they have a bunch of struggles and everybody has a bunch of struggles. And every time I see somebody behaving poorly, I'm basically thinking, well, they're in a tough spot right now and it's OK. You know, I can I can kind of see how I would behave badly in other circumstances as well. So I think if you take away that sort of having to prove yourself in the eyes of others.
+01:43:32
+Life becomes so much easier, so when I first became a professor in my team. I started wearing adult clothes. I was I had my like, you know, I mean, before I became a serious person. I basically had you know, I would I would always, like, go around on my rollerblades and my shorts and a T-shirt.
+01:43:49
+And eventually I was a professional, like I bought all these khaki pants and, you know, these nice, like, you know, shirts with like, you know, what are they call the patterns. And I was like, you know, dressing with my nice belt every day, showing up. And then a few months later I was like, I can't stand it. And I just went back to my rollerblades and my T-shirt and my shirt.
+01:44:12
+And it was this truckload of sort of not feeling that I fit in. I was so intimidated by all of my colleagues, like just watching their incredible achievements like person next to me and the person, you know, the floor below me, I was like, oh, my God. Like, they clearly made a mistake.
+01:44:30
+What the heck am I doing here?
+01:44:32
+How will I ever live up to these people's standards?
+01:44:38
+And eventually you grow up to realize that the way that I grew up, to realize that the way that other people perceived my work was very similar to the way that I perceived other people's work as flawless. I knew all of the flaws in my work. I knew the limitations. I knew what I hadn't managed to achieve. And what I saw was maybe a third of the way of what I was trying to achieve. And I saw everything as flawed.
+01:45:08
+What they saw, what is what I had achieved, they didn't see what I hadn't achieved. They only saw the one third down, which was pretty good in the eyes. So they all respected me. And I was feeling miserable about myself, I was like, I'm not worthy, and I think that this is a cognitive problem that we have.
+01:45:28
+We kind of, um, it's kind of like when we're talking about artificial intelligence, ajai of sort of we kind of have this definition that anything that machines can do is not intelligent and anything that they can't do is intelligent. Therefore, we narrow, narrow, narrow, narrow the field of what intelligence really means and sense machines. Steve them is not intelligent. I feel like I was doing the same thing with myself as soon as I could solve something.
+01:45:51
+It was the kind of thing that a kid like me could solve and therefore it was kind of easy. But to the others, it seemed hard, yeah. But to me, it seemed easy. So it was this kind of thing that everything that my colleagues were doing seemed impossible to me. But everything that I was doing seemed impossible to them, so it was that realization that sort of made me mature into sort of a not more confident but more comfortable human being can actually linger on that a little bit.
+01:46:19
+You mentioned Minsky. Remember, he said something in an interview where he said the secret to his, like the way he approached life, was to never be happy with anything he did. So there's something powerful as a motivator to to do exactly what you're saying, which is everything you've achieved to see that as easy and unimpressive. What do you do with that, because clearly that's a I think the useful thing, I think I've kind of matured past that.
+01:46:53
+And I think the maturity past that is to sort of accept what it is and accept that it has helped others build onto it. And therefore advance human knowledge, so it's very easy to sort of fall into the trap of, oh, everything I've done is crap.
+01:47:12
+What I told you last time is that I always told my students that our best work is ahead of us. And I think that's more of my mindset. That's a beautiful way to put it. Exactly. What we've done is it's great. It's great for the time and it will become obsolete in 30 years.
+01:47:29
+Yeah, not we can't we are doing even better. We're doing exactly. So basically our next work will just strive. And again, you can't you can't let the perfect be the enemy of the good. At some point you have to wrap. I was having a meeting with my student yesterday and he was like, listen, we know this is not perfect. But it's way better than anything that's ever been done before. You know how to improve it, but if you try to, your paper is never going to get published.
+01:47:59
+So so it's you know, there's this balance of we're already at the top of the field. Get it out and then you work on the next improvement, and in my experience, this has never happened, we've never actually worked on the next improvement, and that's OK. It did make a difference because you're basically putting a new stepping stone that others will be able to step on and surpass you.
+01:48:24
+My adviser in grad school would basically tell me when I let others write the second paper in that field, just write the first one. Move on. Move on to the next field. You don't want to be writing the second and the third in the fourth and fifth paper in the same field just in it's very. Shocking to a student to hear that, because I was like I was at the top of my game, I was owning that field and I published the first paper, I'm like, I'm ready for two and three and four hits like Move On, Just Let It Be.
+01:48:56
+It was like, oh, and it's so liberating to sort of not have to surpass everyone, but just just put your little stepping stone out there and others will step on it and put their own stones further and eventually cross a bigger river than if you tried to sort of make a giant leap all at once. So you need both beautifully put, so the funny thing is I've believe I closed the previous episode with the Darwin quote about the power of poetry and music and life.
+01:49:28
+I think your quote and again, I only heard once was Darwin basically saying if I were to live life again next time, I would read more poetry and something about art every week or something like that. Yeah, yeah.
+01:49:43
+It's so interesting for somebody who studied life at a very cold, I would say genetic level to say that, yeah, the the highest form of living is, is the art.
+01:49:55
+But that and that which made me realize that you write poetry and I forced you or maybe convinced you somehow to to maybe share if it's possible, if it's OK, some of the poetry you've written yourself in your life.
+01:50:14
+So again, being Greek, a lot of my poems have been pretty miserable.
+01:50:20
+And I always like to say that it's very hard for me to write a poem or that when I'm happy and I just have to be in a state of deep despair in order to write poems.
+01:50:30
+But the first poem overwrote was in English class. I was Greek. I grew up in Greece, but it was in a French high school and I was taking English as a foreign language. So the English teacher basically asked us to write a poem in English. So this is basically what what I'm going to embarrass myself and read from my 16 year old self for many, many years ago.
+01:50:53
+Can you give a little bit more context about who you were in this moment?
+01:50:56
+So, like, just so so here's what's really interesting in terms of growing up.
+01:51:02
+How do we grow up? Um. It's very difficult to grow up if you're in the same school, going from one class to the other and all your friends know you inside out. It's very difficult to change. It's very difficult to to grow up because they have a certain set of expectations for who you are and for how you're going to behave. So in many ways, we kind of tend to get set in our ways and not change very much.
+01:51:26
+I think something that helped me grow up is that when I was 11 years old, I was a kid in Greece in primary school when I was 12 years old. I was a kid in Greece in a, you know, first year of high school. When I was 13, I was in France. So basically moved countries and schools. The next year, I moved schools again because it was a transition in the French educational system from one school to the next the next year.
+01:51:54
+After that, my family moved to New York in a French high school there. And the next year after that, I'm moving to a city. So basically between 11 and 19 every single year, I actually had the opportunity to grow. I was not held by people who knew me. And I could reinvent myself or reshape myself or reshape my, you know, sort of personality, my emotions, my you know, as I was growing up, especially in such a transformative time of a kid's life from 11 to 17, first of all, so powerfully.
+01:52:27
+Think of it that way. Did you think of it that way at the moment? Because it's kind of a source you see an opportunity to grow this kind of suffering.
+01:52:35
+I mean, you're being torn away from the thing. You know, it's a thing you don't know.
+01:52:39
+So when we moved from South France to New York, I was pissed. Yeah, I was taking this long bike rides in the countryside, jumping in French swimming pools. And I had all these wonderful friendships going downtown and just staying by the fountains in the dimly lit streets of explosions in the south of France. It was magical.
+01:53:04
+And suddenly I moved to New York City, a city of cement of ugliness like trash in the streets and every corner.
+01:53:12
+It's horrible snow everywhere. Having never seen snow like real snow in my life, I moved from Athens to south France to southern New York. So I was pissed. But whether I saw it as an opportunity for growth, I don't think so. I don't think that I was that self reflective. It was just only now I see it this way.
+01:53:32
+I saw it like that probably pretty early on, but not during those transitions. So basically during this transition, as I was just a kid being a kid, you know, and maybe the time that I started seeing that way was maybe when I decided to stay at MIT as a professor after having been there as a student. And I kind of saw the struggle of getting professors to not see you as a kid when they're your peers. And I was very flattered when one of my friends basically told me, oh, I remember you in recitation when you first ask me a question, I said, wow, this kid, I'll pay attention and they'll be a peer.
+01:54:17
+So it's you know, certainly my perception was that many of them could not see me as anything but a kid. But it turns out that some of them saw me as something different than a kid even before I was actually their colleague. So it's it's kind of an interesting place, because what I like to say about it is that people treat you as equal no matter what stage, and they respect you for what you say, not for who you are when you're saying it.
+01:54:43
+And if I'm wrong, my students will tell me they will have no reservation. To just be bluntly, you know, sorry, I don't agree with that. Yeah.
+01:54:54
+The beautiful thing about you is sorry to to put it this way is, you know, maybe people who weren't familiar with your work beforehand might think like might not realize that you're a world class scientist with a large group and so on, because there's a youthful nature to you that it's I mean, you talk like a like a first like an undergrad, you know, with the excitement and the fresh eyes and the sort of excitement about the world.
+01:55:24
+And that's, first of all, super contagious and beautiful. You know, it's easy to sort of fall into behaving seriously because then people kind of start putting you on a pedestal more into a position of power.
+01:55:41
+You want to sort of act like you're in a position of power as opposed to allowing yourself to be lost in the just the curiosity, the the childish view of the world, which is just as open, I'd love of knowledge. And that was the transition that I was describing when I decided to go back to my rollerblades and T-shirt and baseball cap.
+01:56:02
+Basically, you know, when when when I made my first postdoc, it was basically, you know, he was interviewing for postdocs anything. He already had several first author papers to his name in top journals. And my friend Julia basically introduced me to to to Alex Stark, who basically was interviewing at the time with Rick Young and with Eric Lander, just like these massive names in the field. And I was just a first year faculty person with, you know, zero credibility.
+01:56:31
+And she basically says, oh, there's this friend of mine, Alex was visiting. He's also German. You know, he wanted to meet you make all sounds great. I'd love to talk science. I show up.
+01:56:40
+We said at the amphitheatre in Stata, you know, I basically arrive in my rollerblades, you know, jump a few steps, sit down wearing my blades.
+01:56:50
+We're having these awesome conversation about science and about gene regulation and how the whole thing works and sort of, you know, my perspective and his perspective. We're just passing ideas for 30 minutes and then I just dash off to my next meeting and he basically emails me afterwards.
+01:57:04
+And I was giving him advice about how to interview with Eric Lander, how to interview with Rick Young and how to sort of get a position with them. And then I. After a while, he emailed me saying I would love to become a postdoc in your group, like, what? Are you kidding me?
+01:57:20
+So so he basically didn't care that I wear rollerblades and T-shirt. All he cared about was my ideas and sort of embracing the ME with the childhood excitement about science was basically what attracted him.
+01:57:38
+He wasn't the wow, this guy runs a big lab or this and that. It was just like I like his ideas, I want to work with him.
+01:57:45
+That, by the way, folks, is the best of art. That's what it stands for. So that's a that's a beautiful story. But take me back to the poem.
+01:57:53
+And where did this come from? Now, where is your mindset? So who is the 17, 16 year old kid?
+01:58:00
+So, again, I've just seen snow for the first time and I'm seeing this in New York. So I'm you know, maybe that's where the sadness in the poem comes from. But anyway, we're asked in class to write an assignment. This is my third language. I'm not very good at it. So pardon me, but here's what I wrote. Children dance now all in a row. Children laughing at the snow, but in times, endless flow.
+01:58:26
+Children sooner or later grow. Men are immortal. We go by. If we know it, we may cry. But I thought of love. So sweet. Was immortal, was so deep there. I told you, darling, sweet, that forever love would keep blossoms. Spring and summer shined. Then blue autumn winter died. One year passed. But the clouds still remember all our vows never faked and never lied. All we did was there and smile all alone, sitting down to the snow.
+01:59:01
+We made our vow. But you told me you were right. Birds who love our birds who cry. Now, with laughter of children playing, yet the sky is so gray, even if the snow seems bright without, you have lost their light. Son that sang in Moon that smiled. All the stars have ceased to shine. All of nature druids. Grace found its light within your face. Now you're gone and won't return. Let us know in my heart.
+01:59:34
+For as a Greek, as beautiful, as beautiful, by the way. And the rhyming, the musicality. There's a there's both a simplicity and musicality to the language.
+01:59:48
+No, no, no. But like. So I really enjoyed Robert Frost poems. I don't mean simplicity. What a bad word. In a negative way. Again, it's very weird to analyze your own poem, but I think it captures the simplicity of youth and the way that he kind of start with children. That's Lionello. It basically any kind of shows that snow can be interpreted first in the first verse as a happy thing that are snow. And then in the end, you know.
+02:00:13
+Now, with laughter, children playing, like now I've grown, basically, it's it's this transformation that we're actually talking about, this whole men are mortal. We go by. I'm sort of you know, you're saying are you comfortable with growing old? And like I was. I was since I was 16.
+02:00:26
+Yeah. And what's really interesting is that, you know, again, when I was 12 years old in our summer house in Greece, I remember sort of telling my sister my outlook that I would have as a father for how to bring up my own kids. So it's very weird that I've always sort of seen the full path. From, you know, when you were young. Yeah, I don't know if you like this Joni Mitchell song, I've looked at clouds from both sides now from up and down.
+02:00:53
+And still somehow it's no illusions. I recall clouds, illusions. I recall. I really don't know clouds at all. So it's it's really beautiful. So so I think that Joni Mitchell song, which again, I heard for the first time much, much after this, and I wouldn't even compare this to that. But what Joni Mitchell sang that song is that you can see life from two perspectives.
+02:01:15
+You can see the good or the bad in both, you know, and everything you see, and I think that's the allegory of snow right now. You can see snow as these bright white wonderful thing, or you can see snow as this miserable, you know, gray thing.
+02:01:31
+So that's sort of and what I like about the last verse now with laughter children play is that it's a recall to the first one where I was the kid enjoying careless life and eventually was making promises that something would be forever.
+02:01:45
+And I think part of that is also the loss of my friendships in France, of being in New York now and sort of everything's great. And, you know, even though the snow seems bright without, you have lost their light sound that sang and that smile. So it's this. This concept that if you lose your love. If the same thing can be perceived in a very different way, let me ask you this, because somebody wrote me this long email.
+02:02:14
+And I think you're the perfect person to ask, though. Um. You mentioned love. From a genetic perspective. What what's what is it what what do you make of love, why why we why do we humans fall in love in your own life? Why did you fall in love? You know, the email that was written to me was you always talk about mortality and fear of mortality, but you don't ask about love some. I don't know if there's some thoughts you could give about the role of love in your own life.
+02:02:58
+Or the role of life, the role of love in human life in general?
+02:03:04
+I think love in many ways defines my life. It's basically I like to say that I'm a human first and a professor second. And I think this passion for life, this passion for, you know, everything around us, I mean, the only way to describe that is love. It's basically, you know, embracing your, you know, emotional self, embracing the, you know, the. The non brainiac in you embracing the sort of intangible, the not very well defined and even my own my own research, and I'm just very passionate about everything I do.
+02:03:52
+And, you know, there's a certain passion that comes with and what I'm sorry, again, being Greek, the etymology of the word passion, what was passion?
+02:03:59
+Passion is suffering the etymology young. When we talk about the Passion of the Christ, it's the suffering. And in the Greek version of that word, pathos like pathology, pathos is deep suffering. It's the concept. And someone who's sympathetic, sympathetic means suffering together, experiencing emotions together.
+02:04:24
+So it's funny that you ask me about love and I respond with passion, passion for life, passion for research, passion for my family, for my children, for, you know, so there's there's a certain passion that defines me and everything else follows rather than the other way around. I'm not first thinking with my brain what is the most impactful people we could write. And then going after that, I'm thinking with my heart, what am I passionate about?
+02:04:52
+What drives me nuts, just like, you know, makes me tick.
+02:04:56
+And that's a beautiful way to live. But I love it how the Greek part of you just kind of connected to the suffering. So if you could remove the suffering.
+02:05:04
+No, no, no, no, no, no. When I see suffering, I don't mean suffering as in being miserable. I mean suffering as in being emotionally invested in something. I mean, again, if you if you look at this point, what is it saying? Saying birds who love our birds who cry.
+02:05:24
+Right. Yeah, that's the very definition of love, exposing a fragility if you're not afraid of suffering, you don't fall in love. As soon as you hold back, you protect, you shield your heart.
+02:05:39
+No love can enter. So there's this, uh, Simon and Garfunkel song, I am a rock, I am an island, and a rock feels no pain and an island never cries. So again, there's some aspect of that into this poem. The you know, the fact that, um. You know, but you told me, you know, there I told you, darling, sweet, that forever I would keep is this intermediating? And then there's a recall that you told me you were right.
+02:06:09
+Virtually every person would cry. So it basically says that love is the fragility that you're willing to give to another person. It's opening up your. Vulnerable spots. It's sort of accepting that. There's no safety net, you're just giving yourself fully and you're ready to be hurt, so you've already been way too kind with your time. But I'm going to force you to stay here just a few minutes longer as we're talking about goodbyes. You have a really nice other poem here about goodbyes.
+02:06:45
+Can I force you to read it as well?
+02:06:48
+Oh, twist my arm. Twist my arm. So the next poem was written specifically for our high school yearbook. So another poem written on demand. The rest of them are just so miserable, written by pure, you know, sadness and melancholy. But this one was also written on demand and it was basically saying goodbye, as is appropriate right now to my friends and sort of again, reflecting this whole journey and transformation through life and also, I think, showing a little bit of introspection about how we kind of had it easy in high school and we're about to go into rougher waters.
+02:07:27
+So the title is actually The Tide Waters, and it's an analogy on that.
+02:07:31
+So here goes all this was another lake where some rest we sailors take. Water's calm and full of fish. We'll find there what we wish some sick fruit and others feast. Some of us just look for peace. Some find friendships, other love, some sick both.
+02:07:52
+And neither have we were different. When we came to each his own story and fame. Different people. Had we been different cultures, have we seen different nature, different face, each? Unlike all in this place, we had face success, defeat, then in one lake came to meet there.
+02:08:13
+The orders that we followed and the pride that we followed made us one, but not the same. Joined us strangers who there came. Sooner or later groups were made tribes where differences will fade, some attatched more or less others fought and made a mess.
+02:08:34
+But again, we have to go.
+02:08:35
+What for? Where to? We don't know until we know it. We will try there to rush to fleet fly. There will be some who wish to stay but will carry on away. We'll continue on our journey as we came here. Strong yet lonely from the lake. A river flows from the river. Many goals on that river we will raise it will try to find his peace in that scene. The sailor's face, their first fear, defeat, disgrace here and there comes out of face that the waters soon embrace.
+02:09:12
+Some get lucky find their way. Others sink beneath the waves. In this race we will part. Some will settle near the start. Some set goals beyond the stars because the river carries far. You should know in what we've done. The hard part is still to come. So I'll have to say goodbye, don't you worry, I won't cry, neither will they, those who try till the end to keep their pride.
+02:09:43
+But please know dearest friends who are always there to mend. I will always need your hand. I will miss you till the end. I don't think there's a better way to end it, Manala's like I said last time, you're one of the most special people at MIT, one of the most special people in Boston, and whatever mental force field that you're applying in saying that Boston is the best city in the world and MIT, the best university in the world, you're actually making it happen.
+02:10:14
+So thank you so much for talking to his huge honor. Thank you so much. It's been a pleasure. Thanks for listening to this conversation, cosmonaut's, tell us and thank you to our sponsors, Public Goods, Magic Spoon and Express VPN. Please check out these sponsors in the description to get a discount and the sports podcast. Enjoy this thing. Subscribe on YouTube, review the five stars in our podcast. Follow on Spotify, support on Patrón or connect with me on Twitter, Allex Friedman.
+02:10:43
+And now let me leave you with some words from another well-known Greek, Alexander, the third of Macedonia, commonly known as Alexander the Great. There is nothing impossible to him who will try. Thank you for listening and hope to see you next time.

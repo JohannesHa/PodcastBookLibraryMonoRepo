@@ -1,0 +1,586 @@
+00:00:00
+The following is a conversation with Dan Zakharov, VP of engineering at Reverify, which is by many metrics, the best speech to text an engine in the world. Rêve, in general, is a company that does captioning and transcription of audio by humans and by A.I.. I've been using their services for a couple of years now and am planning to use Rêve to have both captions and transcripts to some of the previous and future episodes of this podcast to make it easier for people to read through the conversation or reference various parts of the episode.
+00:00:36
+Since that's something that quite a few people requested. I'll probably do a separate video on that with links on the podcast website so people can provide suggestions improvements there. Quick mention of our sponsors, Athleta, Greens, All in one nutrition drink blankest app that summarizes books, business, sports podcast and cash app. So the choice is health, wisdom or money. Choose wisely, my friends, and if you wish, click the sponsor links below to get a discount and to support this podcast.
+00:01:10
+As a side note, let me say that I reached out to Dan and the Red Team for conversation because I've been using and genuinely loving their service and really curious about how it works.
+00:01:22
+I previously talked to the head of Adobe Research for the same reason. For me, there's a bunch of products, usually software that comes along and just makes my life way easier. Examples are Adobe premiere for video editing as a top barracks for cleaning up audio out of Hokkien Windows for automated keyboard mouse tasks. Emax is an ID for everything, including the universe itself. I can keep on going, but you get the idea.
+00:01:50
+I just like talking to people who create things I'm a big fan of. That said, after doing this conversation, the folks that read that I offered to sponsor this podcast in the coming months. This conversation is not sponsored by the guest. It probably goes without saying, but I should say it anyway, that you can now buy your way onto this podcast.
+00:02:13
+I don't know why you would want to. I wanted to bring this up to make a specific point that no sponsor will ever influence what I do on this podcast or to the best of my ability, influence what I think. I wasn't really thinking about this. For example, when I interviewed Jack Dorsey, who was the CEO of Square, that happens to be sponsoring this podcast. But I should really make it explicit. I will never take money for bringing in a guest on every guest on this podcast is someone I genuinely am curious to talk to or just genuinely loves, something they've created, as I sometimes get criticized for.
+00:02:50
+I'm just a fan of people and that's why I talk to as I also talk about way too much money is really never a consideration. In general, no amount of money can buy my integrity. That's true for this podcast and that's true for anything else I do. If you enjoy this thing, subscribe on YouTube, review an Apple podcast, follow on Spotify supporter Ampatuan, or connect with me on Twitter, Elex Friedemann, as usual. I do a few minutes of ads now and no ads in the middle.
+00:03:21
+I try to make this interesting, but I give you time stamps. So if you skip please to check out the sponsors by clicking on the links in the description, it is the best way to support this podcast.
+00:03:33
+This show is sponsored by who's quickly becoming my favorite sponsor, Athletic Greens that all in one daily drink to support better health and performance. I just in fact, actually finished drinking it. It replaced the multivitamin for me and went far beyond that was 75 vitamins and minerals. I do intermittent fasting of 16 to 24 hours every day and I always break my fast with athletic greens. I can't say enough good things, can't stop raving about these guys. It helps me not worry whether I'm getting the nutrients I need.
+00:04:07
+One of the many reasons I'm a fan is that they keep iterating on the formula to keep improving it like all good engineers and scientists always should be. Life is not about reaching perfection. It's about constantly striving for it and making sure each iteration is a positive delta. The other thing I've taken for a long time outside of athletic greens is fish oil. So I'm especially excited now that they're selling fish oil and are offering listeners of this very podcast free one month supply of wild caught omega three fish oil.
+00:04:41
+When you go to green dot com slash likes to claim the special offer. By the way, if the link doesn't seem to work for you for whatever reason, sometimes it doesn't if you have an ad blocker enabled. So try to turn off your ad block for this one particular case. But they're also trying to fix it. So they're on top of it. Click the athletic Greenstar Counselor Slack's link in the description to get the fish oil and all in one supplement I rely on for the nutritional foundation of my physical and mental performance.
+00:05:11
+This episode is supported by Blankest, my favorite app for Learning New Things. Blankest takes the key ideas from thousands of nonfiction books and condense them down into just fifteen minutes that you can read or listen to. I'm a big believer in reading at least an hour every day. As part of that, I use Blankest to try out a book I may otherwise never have a chance to read. And in general, it's a great way to broaden your view of the idea landscape out there and find books that you may want to read more deeply with Blankest.
+00:05:46
+You get unlimited access to read or listen to a massive library of condensed nonfiction books. I also use blankest short casts. That's a lot of essays to quickly catch up on a podcast episode I've missed right now. Linkous has a special offer just for the listeners of this podcast. Let me take a sip of this drink first.
+00:06:08
+If you're listening to this idea to try to guess which drink I'm drinking, go to blinkers that Cognex to start your free seven day trial, get twenty five percent off a blink is premium membership as Blink Blinco spelled Belin t blink is Dakar's that looks to get twenty five percent off and a seven day free trial blink. Is that Congress flex. This episode is also brought to you by Business Wars podcast. Tech entrepreneurs are in all out race to cash in on our collective addiction social media.
+00:06:45
+Her sentence was way harder to pronounce than I thought when I first started saying it.
+00:06:51
+In the new season of Wonder is business wars tick tock versus Instagram. They tracked the war between two social media giants as spoken about possibly entering the space by helping build a new social network. This is something I struggle with quite a bit because it feels like standing on the edge of a cliff hoping to fly. I want to keep my mind and heart open, fragile, but it seems that the world can too easily destroy such a mind.
+00:07:17
+So I wonder if I'm able to face such challenges. Perhaps the choices are mine to make. Perhaps that's already been made. Anyway, this podcast season looks at just one heated competition in the space where the game, in my view, is not one that makes for a better world.
+00:07:39
+Listen to the latest season of business wars, Tic-Tac versus Instagram, an Apple podcast, Spotify or listen, ad free by joining Wanderer Plus in the wandering app.
+00:07:49
+I just just in general, I highly recommend wondering there's a lot of good podcasts on there. Finally, the shows presented by App, the number one finance app and the App Store, when you get it, is called Legs Podcast. Cash app lets you send money to friends, buy bitcoin and invest in the stock market with as little as one dollar. I'm thinking of doing some conversation with folks who work in and around the cryptocurrency space similar to artificial intelligence.
+00:08:18
+There are a lot of charlatans in the space, but there's a lot of free thinkers as well, technical geniuses that are worth exploring ideas with in depth and with care. And I think it's pretty clear that cryptocurrency is here to stay.
+00:08:32
+Bitcoin just hit thirty two thousand dollars anyway.
+00:08:38
+If you get cash from the App Store or Google Play and Use Code Leks podcast, you get ten dollars in cash. Also donate ten dollars. The first an organization that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Dan Kocot of. You mentioned science fiction on the phone, so let's go with the ridiculous first, what's the greatest sci fi novel of all time, in your view?
+00:09:26
+And maybe what ideas do you find philosophically fascinating about it?
+00:09:32
+The greatest sci fi novel of all time is Dune, and the second greatest is the children of Dune and Raiders. There's the God emperor of doing so. I'm a huge fan of the whole series. I mean, it's just an incredible world that he created. And I don't know if you've read the book or not.
+00:09:49
+No, I have not. It's one of my biggest regrets, especially because the new movie is coming out. Right. And everyone's super excited about it. It's ridiculous to say I'm sorry to interrupt is that I used to play the video game. You should be doing this. I guess you would call that real time strategy, right?
+00:10:08
+Right. I think I remember that game. Yeah. It's kind of awesome Niños or something.
+00:10:12
+I think I played it actually when I was in Russia.
+00:10:14
+I definitely remember it. I was not in Russia anymore. I think at the time that I used to live in Russia, I think video games were about like the first year of Pong. I think Pong was pretty much like the greatest game I ever got to play in Russia, which was still a privilege right in that age.
+00:10:30
+So you didn't get color, you didn't get like. So I left Russia in nineteen ninety one. Right. Thank you. So I was one of the few like a kid because my mom was a programmer. So I would go to her work. Right. I would take the the metro, I got our work and play like on I guess the equivalent of like a two eighty six PC, you know, nice with floppy disks. Yes. So okay.
+00:10:51
+But back to you wouldn't get back to doing. And by the way, the new movie I'm pretty interested in but. They were skeptical. I'm a little skeptical, skeptical. I saw the trailer. I don't know. So there's a David Lynch movie, Dune, as you may know. How huge David Lynch fan, by the way. So the movie is somewhat controversial, but. It's a little confusing, but it captures kind of the mood of the book better than, I would say, almost any adaptation.
+00:11:19
+And like doing so much about kind of mood in the world. Right. But back to the philosophical point. So in the fourth book, God Emperor of Doom, there's a sort of setting where Lieto, one of the characters has become this weird sort of God emperor is turned into a gigantic worm, and you're going to have to read the book to understand what that means. So the worms are involved. Worms are involved.
+00:11:41
+You probably saw the worms in the trailer, right. And in the video. So kind of like merges with the Sorum and becomes a tyrant of the world and oppresses the people for a long time. Right. But he has a purpose. And the purpose is to kind of break through kind of a stagnation period in civilization. Right. But people have gotten too comfortable. Right. And so he kind of. Oppresses them so that they explode and like go on to colonize New World and kind of renew the forward momentum of humanity.
+00:12:11
+Right. And so to me, it's kind of fascinating. I do need a little bit of pressure and suffering, right. To kind of like make progress, not not not get too comfortable.
+00:12:23
+That's a bit of a philosophy to take away.
+00:12:27
+But there seems to be the case, unfortunately. Obviously, I'm a huge fan of suffering.
+00:12:34
+So one of the reasons we're talking today is that a bunch of people requested that I do transcripts for this podcast and do captioning. They used to make all kinds of YouTube videos.
+00:12:48
+And I would go on. Up work, I think I would hire folks to do transcription, and it was always a pain in the ass, I'm being honest and then I don't know how I discovered Rêve, but when I did, it was this feeling of like, holy shit, somebody figured out how to do it just really easily. I I'm, I'm such a fan of just.
+00:13:17
+When people take a problem and they just make it easy, you know, they just there's so many there's so many things in life that you might not even be aware of that are painful, then you just like give the audio, give the video. You can actually give a YouTube link. And then it comes back like a day later or two days later, whatever the hell it is with the captions in all understand as format. As I don't know, it was it was it was it was truly a joy, so I thought I had, you know, just for the hell of it, talk to you that one other product made my soul feel good.
+00:14:02
+One of the products they've used like that is for people who might be familiar is called isotope R. X is for audio editing and like it. That's another one where it was like you just drop it. I dropped the audio and it just cleans everything up really nicely. All the stupid like the mouth sounds and sometimes the background like sounds due to the malfunction in the equipment.
+00:14:33
+You can clean that stuff up. It has a general voice. The noise has like automation capabilities where you can do batch processing and you can put a bunch of effects. I mean, it just I don't know, everything else sucked for like voice based cleanup that I've ever used. They've used addition Adobe Audition with all kinds of other things. With plug ins. You have to kind of figure it all out. You do it manually here. Just it just worked.
+00:15:01
+So that's another one in this whole pipeline that just brought joy to my to my heart. Anyway, all that to say is Rêve put a smile to my face. So give me you maybe take a step back and say, what is Rav and how does it work. And Reverend Dotcom rather have that kind of same thing.
+00:15:23
+I guess though we do ever have that I know as well, which we can talk about later.
+00:15:28
+It's like do you have the actual domain or is it just the actual domain?
+00:15:32
+But we also use it kind of a as a subbrand. So we use that I to denote our as our services. Right. And that comes kind of our more human and to the end user services, just like WordPress, dot com and WordPress dot org, they actually have separate brands that like I don't know if you're familiar with what those are. Yeah. They provide almost like a separate branch of a lot.
+00:15:55
+But I think with that it's like a WordPress that are just kind of their open source rather than WordPress. Dot com is sort of their host. The commercial offering. Yes, that's the differentiator is all the different, but maybe a similar idea. Yeah. OK, so what is before I launch into what is the Rev, I was going to say, you know, like you're talking about like Revel's music to your your spiel with music. To my ears.
+00:16:17
+Yeah, to us. The founders of rap, because Revel's kind of founded to improve on the model of Upworthy that was kind of the original part of their original impetus. Like our CEO, Jason was an early employee of Uptalk, so he's very familiar with their work. The company approached the company and so he was very familiar with that model. And he wanted to make the whole experience better because he knew like when you go at that time, I was primarily programmer.
+00:16:46
+So the main thing they offered us, if you want to hire, you know, someone to help you cut a little site. Right. You could go up work like browse through a list of freelancers, pick a programmer if you have a contract with them and have them do some work. But it's kind of a difficult experience because for the for you, you would kind of have to browse through all these people writing. You have to decide, OK, like, well, it's this guy Goodis.
+00:17:13
+Or somebody else better and naturally, you know, you're going to operate because you're not an expert, right? You're an expert, you probably wouldn't be like getting a programmer from my work. So. So how can you really tell? And so it's kind of like a lot of potential regret. What if I choose the person they like to be late on the work? It's going to be painful experience. And for the freelancer, it was also painful because, you know, half the time they spent not on actually doing the work, but kind of figuring out how can I make my profile most attractive to the buyer.
+00:17:42
+Right. They're not an expert on that either. So like Ross idea was, let's remove the barrier. Right. Like, let's make it simple. We're a little pick a few verticals that are fairly standardized. Now, we actually started with translation and then we added audio transcription of it later. And we'll just make it a website. You go give us your files. We'll give you back the results as soon as possible. You know, originally maybe about 48 hours.
+00:18:09
+Then we made it shorter and shorter and shorter. Yeah, there's a rush processing, too, as our processing now. And we'll hide all the details from you, right? Yeah. And like, that's kind of exactly what you're experiencing, right. You don't need to worry about the details of how the sausage is made. That's really cool.
+00:18:27
+So you picked like a vertical by vertical you mean basically a service service category.
+00:18:33
+Why? Translation is Rêve thinking of potentially going into other verticals in the future, or is this like the focus now is translation transcription like language and the focus now is language or speech services generally speech the text language services you can kind of grow from however you want.
+00:18:53
+So but we originally the categorization was work from home and so work that was done by people on a computer, you know, we weren't trying to get into, you know, TaskRabbit type of things and something that could be relatively standard, not a lot of options. So we could kind of present a simplified interface. Right. As the programming wasn't like a good fit, because each programming project is kind of unique and we're looking for something that transcriptionists you know, you have five hours of ideas, five hours of audio.
+00:19:25
+Translation is somewhat similar in that you can have a five page document, you know, and then you just compress it by that and then you pick the language you want. And that that's mostly all the rest of it. So those are a few criteria. We started with translation because we saw the need and.
+00:19:45
+We picked up kind of a specialty of translation where we would translate things like birth certificates as documents and things like that, and so they were fairly even more well defined. So these are the kind of stuff we did a good job.
+00:20:02
+You can literally charge for that type of document. Was that was was that the. So what is it now? Is it a word or something like that? Like how do you like how do you measure the effort involved in a particular thing.
+00:20:15
+So now looks for audio transcription rights for them or that that.
+00:20:20
+Yes, for a translation we don't really actually focus in on anymore. But, you know, in fact when I was still a mean business of Revit was per page right or forward, depending on the kind of because you can also do translation now on the audio.
+00:20:33
+Right. It's not like subtitles. So it would be both transcription and translation. That's right. I wanted to test the system to see how good it is to see how the world is Russian supported. Thanks, so, yeah, it'd be interesting to try it out. I mean, one of the it's all in the one direction, right? So you start with the English and then you can have subtitles in Russian. You're not really not really the other way.
+00:20:57
+Got it.
+00:20:57
+Because I'm deeply curious about this one. covid opens up a little bit on the economy when the world opens up a little bit to build your brand in Russia.
+00:21:06
+No, I don't.
+00:21:08
+First of all, I'm allergic to the word brand, so I'm definitely not building any brands in Russia. But I'm going to Paris to talk to translators of Dostoyevsky and Tolstoy. There's this famous couple that does translation and more and more thinking. Of how is it possible to have a conversation with the Russian speaker because there are just some number of famous Russian speakers interested in talking to me and my Russian is not strong enough to be witty and funny. I'm already an idiot in English.
+00:21:46
+I'm an extra level of, like, awkward idiot in Russian. But I can understand it. And I also like to wonder, how can I create a compelling English Russian experience for an English speaker? Like if I there's a guy named Grigori Perelman, who's a mathematician who obviously doesn't speak any English. So I would probably incorporate like a Russian translator into the picture and then would be like a not to use a weird term, but like a three like a three three person thing with like a dance of I understand it one way.
+00:22:27
+They don't understand the other way. But I'll be asking questions in English. I don't know. I don't know. Very complicated. It's complicated, but I feel like it's worth the effort for certain kinds of people.
+00:22:39
+One of whom I'm confident is Vladimir Putin. I'm for sure talking to I really want to make it happen because I think I could do a good job.
+00:22:46
+But the the right, you know, understanding the fundamentals of translation is something I'm really interested in. So that's why I'm starting with the actual translators of like Russian literature, because they understand the nuance and the beauty of the language and how goes back and forth. But I also want to see, like in speech, how can we do it in real time? So that's that's a little bit of a baby project that I hope to push forward. But anyway, it's a challenging thing.
+00:23:15
+So just to share, my dad actually does translation not not professionally. He's a he writes poetry that was kind of always his. Not a hobby, but he's had a job like a day job, but his passion was always writing poetry. And now I go to America like I started also translating feistiest, translating English poetry to Russia. Now, he also goes the other the other way. You kind of gain some small fame in that world anyways, because recently the spotlight, like Lewis Clark had enough, you know, some American poet.
+00:23:53
+She was awarded the Nobel Prize for literature. And my dad had translated one of her books of poetry into Russian. He was like one of the few. So he kind of like they asked them and gave an interview to reduce the border, if you know, that is. And you kind of talked about some of the intricacies of translating poetry. That's like an extra level of difficulty because translating poetry is even more challenging than. Yes. Letting just, you know, it's obvious.
+00:24:19
+Do you remember any any experiences and challenges to having to do the translation that this got to like something he's talked about?
+00:24:28
+I mean, a lot of it, I think, is word choice. By the way, Russian is structured as all quite different than where English is structured. Right. Just there is inflections in Russian and genders and they don't exist in English. One of the reasons actually why machine translation is quite difficult for English to Russian and Russian to English, because they're such different languages other than English has like a huge number of words, many more than Russian. Actually, I think, though, it's often difficult to find the right word to convey the same emotional meaning.
+00:24:58
+Yeah, Russian language, they play with words much more. So you're mentioning that Rove was kind of born out of trying to take a vertical line up work and then standardize it.
+00:25:11
+So I just kind of make the the freelancer marketplace idea better, write better for both customers and better for the freelancers themselves.
+00:25:22
+Is there something else to the story of finding love? Like what did it take to bring it actually to life? Was there any pain points? Plenty of plenty of pain points. I mean, as often the case that's with scaling it up. Right. And in this case, you know, the scaling is kind of scaling the the marketplace, so to speak. Right above is essentially a two sided marketplace. Right. Because you know, the customers.
+00:25:48
+And then there is the reverse if there is not enough reverence than what we call our freelancers. So if there's not enough reverence, then customers have a bad experience. Right. You know, takes longer to get your work done and things like that. You know, there's too many done. The rebels have a bad experience because they might log on to see what work is available. And there's not very much work. Right, for kind of keeping that balance is quite challenging problem.
+00:26:14
+And that's that's like a problem we've been working on for many years. We're still refining our methods. Right.
+00:26:20
+If you can kind of talk to this gig economy idea, I did a bunch of different psychology experiments and Mechanical Turk, for example, Avast do different kinds of very tricky computer vision, annotation and Mechanical Turk. It's connecting, connecting people in a more systematized way. I would say, you know, between tasks and what would you call that worker is what Mechanical Turk calls it. What do you think about this world of gig economy is of there being a service that connects customers to workers in a way that's like massively distributed and potentially scaling to it could be can be scaled to like tens of thousands of people, right?
+00:27:07
+Mm hmm. Is there something interesting about that world you can speak to?
+00:27:12
+Yeah, well, we don't think of it as kind of gig economy, like to some degree. I don't like the word gig that much because to some degree it diminishes the work being done. Right. That sounds kind of like almost amateurish. Well, maybe like music and stuff like gig. It's a standard term, but in work it kind of sounds like it's it's frivolous to us. It's. Improving the nature of working from home on your own time and on your own terms, right.
+00:27:42
+And kind of. Taking away geographical limitations and time limitations, right? So, you know, many of our freelancers are maybe work from home moms, right. And, you know, they don't want the traditional nine to five job, but they want to make some income and kind of like allows them to do that and decide, like, exactly how much to work and went to work. Or by the same token, maybe someone else, you know, someone wants to live the mountaintop, you know, life right in a cabin in the woods.
+00:28:14
+But they still want to make some money.
+00:28:16
+And like, generally that wouldn't be compatible before before this new world kind of had to choose. But like with Rêve, like you feel like you don't have to choose who you speak to. Like, what's the demographics like distribution, like where two rivers live from all over the world. Like what is it.
+00:28:37
+Do you have a sense of what's out over the world. Most of them are in the US. That's the majority because most of our work is audio transcription. And so you have to speak pretty good English. Yes. So the majority of them are from the US, although we have people in some other of the English speaking countries. And as far as like us, that's really all over the place, you know? For some years now, we've been doing these little meetings where the management team will go to some place and we'll try to meet everything, you know, pretty much wherever we go, it's pretty easy to find, you know, a large number of rivers.
+00:29:13
+You know, the most recent one we did is in Utah.
+00:29:16
+And. But but anyway, really, are they from all walks of life, are these young folks, older folks? Yeah, all walks of life, really. Like I said, you know, one one category, you know, the work from home on students who want to make some extra income. There are some people who maybe, you know, maybe there are perhaps some social anxiety.
+00:29:36
+So I don't want to be in the office. Right. And this is one way for them to make a living. So it's it's really pretty, pretty wide variety. But like on the flip side, for example, one river we were talking to was a person who had a fairly high powered career before and was kind of like taking a break and just one. She was almost doing this just to explore and learn about, you know, the gig economy, quote, unquote.
+00:29:56
+Right. So it really is a pretty wide variety of folks.
+00:30:00
+Yeah. It's kind of interesting through the captioning process for me to learn about the the the rivers, because, like, some are clearly, like, weirdly knowledgeable about technical concepts, like you can tell by how good they are at capitalizing stuff like the technical terms of machine learning and deep learning.
+00:30:25
+Like I've used to annotate to caption the deep learning lectures or machine learning lectures I did at MIT.
+00:30:34
+And it's funny, like a large number of them were like, I don't know if they looked it up or were already knowledgeable, but they do a really good job like that.
+00:30:44
+They invest time into these things. They will do the research, they will Google things, you know, kind of make sure they get it right. But some of them, it's like it's actually part of the enjoyment of the work. Like they'll tell us, you know, I love doing this because I get paid to watch a documentary on something and I learn something while I'm transcribing. Right.
+00:31:04
+Pretty cool. Yeah. So what's that captioning transcription process look like for the river? He may be speaking there to give people a sense like how much is automated, how much is manual, what's the actual interface look like or that kind of stuff.
+00:31:20
+Yeah. So, you know, we've invested a pretty good amount of time to give like the best tools possible. So typical there forever they might plug into their workspace. They'll see a list of ideas that need to be transcribed and we try to give them tools to pick specifically the ones they want to do. You know, so maybe some people like to do longer ideas or shorter ideas and people have their preferences. Some people like to do ideas in a particular subject or from a particular country.
+00:31:50
+So we try to give people the tools to control things like that. And then when they pick, what they want to do will launch a specialized of and that will build to make transcription as efficient as possible. They'll start with a speech draft. So, you know, we have our machine learning model for automated speech recognition. They'll start with that and then our tools are optimized to help them correct that. So is basically a process of correction. Um, yeah, it depends on, you know, I would say the audio.
+00:32:23
+If the idea itself is pretty good, like probably like our podcast right now would be quite good. So, yes, I would do a fairly good job. But if you imagine someone recorded a lecture, you know, in the back of a auditorium right where the speaker is really far away and there's maybe a lot of cross talk and things like that, then maybe they wouldn't do a good job.
+00:32:46
+So the person might say, you know what, I'm just gonna do it from scratch. The kind of really depends.
+00:32:51
+What would you say is the speed they can possibly get, like what's the fastest can get? Is it possible to get real time or. No, as you like listening, can you write as fast as real time would be?
+00:33:04
+It's actually a pretty it's not an easy job. You know, we actually encourage everyone at the company to try to be a transcriber for their discussions where they and it's way harder than you might think it is. Right, because people talk fast and people have accents and all this kind of stuff. So real time is pretty difficult.
+00:33:25
+Is it possible, like there's somebody we're probably going to use to caption this?
+00:33:31
+They're listening to this right now. What's what's what do you think is the fastest you could possibly get on this right now?
+00:33:39
+I think on a good idea, maybe two to three X, I would say, uh, real time, meaning it takes two to three times longer than the actual audio of the other podcasts.
+00:33:49
+This is this is something that I could just imagine the reverse working on this right now.
+00:33:53
+I'm way wrong. You're wrong. It takes way longer. But yeah, you doubted me. I could do real thing. Yeah.
+00:34:02
+OK, so you mentioned Asare. Can you speak to what is is our automatic speech recognition?
+00:34:09
+How much like what is the gap between perfect human performance and perfect. Pretty damn good ASSAR. Yeah. So that's our automatic speech recognition. It's a machine learning problem, right. To take, you know, speech like we talking and transform it into a sequence of words, essentially audio of people talking audio, audio towards, um. And, you know, there's a variety of different approaches and techniques which we could talk about later if you want. Uh.
+00:34:42
+So we think we have pretty much the world's best days are for this kind of speech, right. So there different kinds of domains, right. For us are like one domain might be voice assistance. Right. So Siri am very different than what we're doing. Advocacy, fairly limited vocabulary. You know, you might ask her to play a song or order a pizza or whatever, and it's very good at doing that. Very different from when we're talking in a very unstructured way and cereal also, general, like adapt to your voice and stuff like this.
+00:35:15
+So for this kind of idea, we think we have the best and our accuracy. Right now, it's I think it's maybe 14 percent what I read on on our test test where they were generally used to measure the word error rate, is like one way to measure accuracy for. Right. It was 14 percent or 14 percent across this test suite of a variety of different ideas. It would be it would get in some way 14 percent of the words wrong, 14 percent of the words wrong.
+00:35:51
+Yeah. So. The way you kind of calculate it is you might add up insertions, deletions and substitutions, right? So insurgences like extra words, deletions are words that we thought but weren't in the transcript. Right. Substitutions, as you said, Apple. But I said but I thought it was able something like this, um, human accuracy. Most people think realistically, it's like three percent, two percent word error rate would be like the Permax achievable, huh?
+00:36:23
+So there are still quite a gap, right?
+00:36:25
+Would you say that? So you do when upload videos often generates automatic captions. Are you sort of from a company perspective, from a tech perspective, are you trying to beat YouTube, Google to hell of a Google image?
+00:36:41
+I don't know how seriously they take this task, but I imagine it's quite serious. And they you know, Google is probably up there in terms of their teams on.
+00:36:54
+On Asara, just an natural language processing different technologies, so do you think you can be Google on this kind of stuff?
+00:37:01
+Yeah, we think so. Google just woke up and I thought, this is hilarious. OK, now Google is listening, sending it back to headquarters or these rough people. But that's the goal.
+00:37:14
+Yeah, I mean, we measure ourselves against like Google, Amazon, Microsoft, you know, some of the some smaller competitors. And we use like our internal tests where we try to compose it, of a pretty representative set of ideas. Maybe it's some podcasts, some videos, some interviews, some interviews, some lecturer's, things like that. Right.
+00:37:33
+And we beat them in our own testing and actually offers automated like you can actually just do the automated captioning. So, like, I guess it's like way cheaper or whatever it is, whatever the rates are. Yeah. Yeah. So it's a by the way, it used to be a dollar per minute for captioning and transcription, things like a dollar fifteen or something like that. Dollar twenty five. Dollar twenty five. Dollar twenty five. Yeah it's pretty cool.
+00:38:03
+That was the other thing that was surprising to me is actually like the cheapest thing you could. One of I mean I don't remember it being cheaper, you could end up or get cheaper, but it was clear to me that that's going to be really shitty. Yeah. So like you're also competing on price. I think there were services that you can get like similar to Rav kind of feel to it, but it wasn't as automated, like the drag and drop the entirety of the interface.
+00:38:32
+It's like the thing we're talking about. I'm such a huge fan of Frictionless like Amazon's single buy button, whatever.
+00:38:41
+Yeah. That one click. The one click. That's genius right there like that is so important for services now that simplicity and I mean Reva's is almost there. I mean, there's like some trying to think. So I I've think of I stopped using this pipeline, but offers I like it, but it was causing me some issues on my side, which is you can connect it to like Dropbox and it generates the files and Dropbox.
+00:39:17
+So it closes the loop to where I don't want to go to at all and I can download it so I don't have to go to it all and to download the files, I could just like automatically copy them.
+00:39:30
+So you're putting a drop like some, you know, and a day later or maybe a few hours later, it just shows up. Yeah, yeah. I was trying to do programmatically too. Is there an API interface you can. I was trying to through like through Python to download stuff automatically, but then I realized this is the programmer and me like dude you don't need to automate everything in life like flawlessly because I wasn't doing enough captions to justify to myself the time investment into automating everything perfectly.
+00:40:02
+I would say if you're doing so many interviews that your biggest roadblock is looking on the download. But without a doubt now you're talking about Elon Musk levels of business. But for sure, we have like a variety of ways to make it easy.
+00:40:16
+You know, the integration you mentioned, I think, is through a company called Saper, which kind of can connect Dropbox through even vice versa. We have an API if you want to really, like, customize it. You know, if you want to create the likes, Friedman, you know, uh, Kommissar or whatever for this whole thing.
+00:40:35
+OK, so can you speak to the asare a little bit more like what is it what does it take like approach wise, machine learning wise?
+00:40:47
+How hard is this problem? How do you get to the three percent error rate, I guess your vision of all of this?
+00:40:53
+Yeah, well, the three percent error rate is definitely that's that's the grand vision and we'll see what it takes to get there. Um. But we believe in Assad, the biggest thing is the data, right, like this true of like a lot of machine learning problems today. Right. The more data you have and high quality the data, the better labeled data. Yeah, that's how you got good results. And we had to have kind of like the best data, like we have year literally.
+00:41:25
+You're literally model is annotating the data. Our business model is being paid to annotate data.
+00:41:33
+So it's kind of like a pretty magical flywheel. Yeah. And so we've kind of like written this flywheel to get to this point. And we think we're still kind of in the early stages of figuring out all the parts of the flywheel to use. You know, because we have the final transcripts and we have the the ideas and we trained on that. But we in principle also have all the edits that the rebels make. Right? Oh, that's interesting.
+00:42:02
+I can use that as it was. That's that's something for us to figure out in the future. But, you know, we feel like we're only in the early stages. Right.
+00:42:10
+So the data but the data is there that be interesting, like almost like a recurrent neural net for fixing for fixing transcripts. I'll always remember we did segmentation annotation for for driving data.
+00:42:24
+So segmenting the scene like visual data and you can get all those drunk people driving polygons around, different objects and so on. And it feels like it always felt like there was a lot of information in the clicking, the sequence of clicking that people do the kind of fixing of the polygons that they do. Now, there's a few papers written about how to draw polygons, like with recurring nets to try to learn from the human clicking. But it was just like experimental, you know, was one of those like CDPR type papers that people do like a really tiny dataset.
+00:43:03
+It didn't feel like people really tried to do it seriously. And I wonder I wonder if there's information in the fixing that's hot that that provides a deeper set of signal than just like the raw data of intuition.
+00:43:19
+That's for sure. There must be right.
+00:43:21
+And and all kinds of signals and how long it took to make that edit and stuff like that. And it's going can be like up to us that that's why I quit the next couple of years, just like super exciting for us. Right.
+00:43:32
+So that's what the focus is now. You mentioned that. That's where you want to.
+00:43:37
+Yeah. Some of that is kind of. Our way of bringing this aissata, you know, the rest of the world, right? So when we started, we were human only, you know, then we kind of created this Tammy service. I think you might have used that, which was kind of bizarre for the consumer. Right. So if you don't want to pay a dollar twenty five but you want to pay it now, it's twenty five cents a minute, I think.
+00:44:02
+And you gather the transcript, the machine generate a transcript. You've got an editor and you can kind of fix it up yourself. Right. Then we started using their software on human transcriptionists and then the kind of as the final step of the journey, which is, you know, we have this amazing engine. What can people build with it and what kind of new applications could be enabled if you have a track that's that accurate?
+00:44:30
+Do you have ideas for this or is it just providing a service and seeing what people come up with? It's providing it as a service and seeing what people come up with and kind of learning from what people do with it. And we have ideas of our own as well, of course. But it's a little bit like, you know, when A.W. has provided the building blocks. Right. And they saw what people built with and then try to make it easier to build those things.
+00:44:50
+Right.
+00:44:51
+And we kind of hope to do the same thing, although it was kind of does a shitty job of like I'm continually surprised that Mechanical Turk, for example, how shitty the interface is we're talking about, like making me feel good. Like when I first discovered Mechanical Turk, the initial idea of it was like it made me feel like we're after. But then the interface is like, come on.
+00:45:16
+Yeah, it's horrible. Why why is it so painful?
+00:45:21
+There's nobody at Amazon want to seriously invest. And it felt like you could make so much money if you took this effort seriously. And it feels like they have a committee of like two people just sitting back like like a meeting. They meet once a month. Like, what are we going to do with Mechanical Turk if it's like two websites make me feel like this, that and Craigslist dot org, whatever the hell it is, it feels like it's designed in the 90s.
+00:45:50
+Well, Craigslist basically hasn't been updated pretty much since.
+00:45:54
+I seriously think there's a team like how big is the team working on Mechanical Turk? I don't know. There's something right.
+00:46:01
+I feel like there is a I'm skeptical.
+00:46:03
+Yeah, well, if it's possible they benefit from, you know, the other teams like moving things forward in a small way. But I know you mean the do we use Mechanical Turk for a couple of things as well, and that's good for you, but yet it works.
+00:46:19
+So I think most people the thing is, most people don't really use the UI. Right. Like so like for example, we use through the API. Right. So yeah. But even the API documentation and so on, like this super outdated like yeah. It's, I don't, I don't even know what the I mean the same, same criticism, as long as we're renting the same criticism, goes to the episode of most of these companies like Google, for example, the API for the different services.
+00:46:49
+It's just the documentation is so shitty, like it's not so shady. I should I should actually be I should exhibit some gratitude. OK, let's practice some gratitude. The the you know, the documentation is pretty good. Like most of the things that the API makes available is pretty good. It's just that in the sense that it's accurate, sometimes outdated, but like the degree of explanation's with examples is only covering, I would say like fifty percent of what's possible.
+00:47:28
+And it just feels a little bit like there's a lot of natural questions that people want to ask that doesn't doesn't get covered.
+00:47:35
+And it feels like it's almost there, like it's such a magical thing, like the Maps API, YouTube API, I there's not much I got to imagine.
+00:47:46
+It's like there's probably some team at Google. Right. Responsible for writing this documentation. It's probably not the engineers. Right. And although this team is not, you know, where you want to be, it's a it's a weird thing.
+00:48:00
+I sometimes think about this for somebody who wants to also build the company.
+00:48:06
+I think about this a lot. You know, YouTube, the you know, the service is one of the most magical like I'm so grateful that YouTube exists. And yet they seem to be quite clueless and so many things like that. Everybody's screaming them at like it feels like whatever the mechanism that you used to listen to your quote unquote customers, which is like the creators, is not very good. I'm like, there's literally. People that are like screaming why, like the new YouTube studio, for example, does like features that they would like, begged for for a really long time, like being able to upload multiple videos at the same time that was missing for a really, really long time now.
+00:48:58
+Like, there's probably things that I don't know, which is maybe for that kind of huge infrastructure is actually very difficult to build some of these features. But the fact that that wasn't communicated and it felt like you're not being heard, I remember this experience for me and it's not a pleasant experience and it feels like the company doesn't give a damn about you. And that's something to think about. I'm not sure what that is. That might have to do with just like small groups working on these small features and these specific features.
+00:49:30
+And there's no overarching, like, dictator type of human that as like, why the hell are we neglecting, like Steve Jobs type of characters, like the people that we need to we need to speak to the people that want to love our product.
+00:49:44
+And they don't let's say at some point you just get so fixated on the numbers. Right. And it's like, well, the numbers are pretty great. It's like people are watching. You know, it doesn't seem to be a problem right then.
+00:49:56
+And you're not like the person that built this thing. Right? I really care about it. You know, you just there you came in as a product manager. You got hired some time later. Your mandate is like increase the number, like, you know, 10 percent. Right.
+00:50:09
+And you just brilliantly put like if you this is OK, if there's a lesson in this is don't reduce your company into a metric of like how much like you said, how much how much people watching the videos and so on, and and they convince yourself that everything is working just because the numbers are going up. There's something you have to have a vision. You have to you have to want people to love your stuff because love is ultimately the beginning of like a successful long term company is the oh, should love with your product.
+00:50:45
+You have to be like a creator and have that like creator is love for your own thing. Yeah. It's like in you paint by, you know, this common thread and probably like Apple. I think they're generally like really. Well, you know, they're, they're well known for kind of keeping teams small even when they were big. Great. And, you know, he was an engineer like that book, creative selection. I don't know if you read it by an Apple engineer named Kencho Sander.
+00:51:11
+It's kind of a great book, actually, because unlike most of these business books where it's, you know, here is how Steve Jobs ran the company. It's more like here's how life was like for me, you know, an engineer here, the projects I worked on and hear what it was like to pitch Steve Jobs, you know, on like, you know, I think it was in charge of, like the keyboard and the auto correction.
+00:51:30
+Right. And an apple like Steve Jobs reviewed everything. And so he was like, that's what it was like to show my demos to Steve Jobs and, you know, them change them because like Steve Jobs didn't like how, you know, the shape of the little key was off because the rounding of the corner was like, not quite right or something like this. But he was famously a stickler for this kind of stuff. But because the teams were small early on the stuff, he really cared.
+00:51:52
+Yeah, Islamize does a similar kind of thing with Tesla, which is really interesting. There's another lesson in leadership and that is to be obsessed with the details and like he talks to like the lowest level engineers.
+00:52:05
+OK, so we're talking about ESR. And so this is basically saying we're going to take this like ultra seriously. And then what's the mission to try to keep pushing towards a three percent? Yeah, kind of tried to try to build this platform where all of your ideas, all of your meetings, you know, they're as easily accessible as your notes, right? Like so like imagine all the meetings the company might have. Right. You know, I'm now that I'm, like, no longer a programmer.
+00:52:40
+Right. Another, quote unquote manager. That's just like my is in meetings. Right. Yeah. And, you know, pretty often I want to see what what was said. Right. Who said it, you know, what's the context. But it's generally not really something they can easily retrieve. Right. I can imagine if all of those meetings were indexed, archived. You know, you could go back, you could share a clip like really easily.
+00:53:01
+Right. So that might change completely. Everything that's said convert it to text might change completely the dynamics of what we do in this world, especially now with remote work. Right? Exactly. Exactly what was Zoom and so on. That's fascinating to think about. I mean, for me, I care about podcasts. Right. And. One of the things that was, you know, I'm torn, I know a lot of the engineers at Spotify, so I love them very much because the they dream big in terms of like they want to empower creators.
+00:53:37
+So one of my hopes was with Spotify that they would use the technology like rubber or something like that to to start converting everything into into text and make it indexable like one of the things that that sucks. The podcast is like it's hard to find stuff like the model is basically subscription, like you find it's similar.
+00:54:02
+It's similar to what YouTube used to be like, which is you basically find a creator that you enjoy and you subscribe to them. And like you just yeah, you just kind of follow what they're doing. But the search and discovery wasn't a big part of YouTube back in the early days. But and that's what currently with podcasts like is the search and discovery is like nonexistent. You're basically searching for like the dumbest possible thing, which is like keywords in the titles of episodes, even aside from searching with kind of like all the time.
+00:54:36
+So I was like a number of podcasts and there's something said. And I want to like, go back to that later because I was trying and I'm trying to remember what do you say? Like maybe like recommend some cool product that I want to try out and like, it's basically impossible. Maybe like some people have pretty good shell notes, so maybe you'll get lucky and you can find that. Right. But mean if everyone had transcripts and it was all searchable, it was a game changer because so much better.
+00:54:59
+I mean, that's one of the things that I wanted to I mean, one of the reasons we're talking today is I wanted to take this quite seriously. The thing has been lazy. So because I'm very fortunate that a lot of people support this podcast, that there's enough money now to do a transcription.
+00:55:18
+So on it, it seemed clear to me, especially like CEOs and sort of like PhDs, like people write to me or like graduate students in computer science or graduate students or whatever the heck field.
+00:55:35
+It's clear that their mind, like they enjoy podcast when they're doing laundry or whatever, but they want to revisit the conversation in a much more rigorous way.
+00:55:44
+And they really want a transcript. Like, it's clear that they want to, like, analyze conversations. Like so many people wrote to me about a transcript for your Shagbark conversation, just a bunch of conversations. And then on the Elon Musk's side, like reporters want like they want to write a blog post about your conversation. So they want to be able to pull stuff. And it's like they're essentially doing on your conversation transcription privately. They're doing it for themselves and then starting to pick.
+00:56:16
+But it's so much easier when you can actually do it as a reporter.
+00:56:19
+Just look at the transcript and you can, like, embed a little thing, you know, like into your article. Right. Here's what they said. You can go listen to this clip from the section I'm actually trying before trying to figure out probably on the website create like a place where the transcript goes like as a Web page so that people can reference it, like reporters can reference and so on. I mean, most of the reporters probably want to right click bait articles that are complete falsified, which I'm fine with.
+00:56:49
+It's the way of journalism. I don't care. Like I've had this conversation with a friend of mine and mixed martial artist, the Ryan Hall.
+00:56:59
+And we we talked about, you know, as I've been reading, the rise and fall of the Third Reich and a bunch of books on Hitler. And we brought up Hitler and he made some kind of comment where, like, we should be able to forgive Hitler.
+00:57:14
+And, you know, like we were talking about forgiveness and we're bringing that up as like the worst case possible.
+00:57:20
+Things like even, you know, for people who are Holocaust survivors, one of the ways to let go of the suffering they've been through is to is to forgive. And he brought up like Hitler is somebody that would potentially be the hardest thing to possibly forgive, but it might be a worthwhile pursuit psychologically. So on both. But it doesn't matter. It was very eloquent, very powerful words. I think people should go back and listen to it. It's powerful.
+00:57:47
+And then all these journalists, there's all these articles written about like Amami Fight Urofsky. If I'm if I don't love Hitler. No. Like one. No, they didn't. They were somewhat accurate. They didn't say, like lot of Hitler. They said everybody thinks that if Hitler came back to life, we should forgive him. Like they kind of it's kind of accurate ish. But it it the headline makes it sound a lot worse than than than it was.
+00:58:21
+But I'm fine with it. That's the way that's with the world I want to I want to almost make it easier for those journalists and make it easier for people who actually care about the conversation to go and look and see for themselves, for themselves, if they feel like they can go.
+00:58:35
+There's something about podcasting, the audio that makes it difficult to to go to jump to a spot and to look for that for their particular information. I think some of it, you know, I'm interested in creating like myself, experimenting with stuff like taking rather than creating a transcript and people can go to it. I do dream that, like, I'm not in the loop anymore, that like, you know, Spotify does it automatically for everybody because ultimately that one click purchase needs to be there, like, you know, like it kind of wants support from the entire ecosystem, like from the toolmakers and the podcast creators, even clients.
+00:59:22
+Right. I mean, imagine if, like most podcast apps, you know, if it was a standard. Right. Here's how to include a transcript and a podcast read like it's just an RSS feed ultimately. And actually, just yesterday I saw this company called Busse proud. I think so. So they're trying to do this. They proposed a spec, an extension to their RSS format to reference podcasts, reference transcripts in a standard way. Yeah.
+00:59:52
+And they're talking about like there's one client dimension that will support it, but I imagine, like, more client support it. Right. So any podcast you could go and see the transcripts. Right. In your, like, normal podcast. Yeah. I mean somebody so I have somebody who works with me, works and helps with the advertising with advertising. Met this awesome guy he mentioned both prior to me. But he says it's really annoying because they want exclusive.
+01:00:19
+They want to host the podcast. Right. This is the problem with Spotify, too. This is where I'd like to say, like EFF Spotify, there's a magic to RSS with podcasts is it can be made available to everyone. And then there's all there's this ecosystem of different podcast players that emerge and they compete freely. And that's a that's a beautiful thing that that's why I got an exclusive like Joe Rogan, one exclusive. I'm not sure if I'm familiar with.
+01:00:49
+He went to Spotify. It's a huge fan of John Rogan. I've been kind of nervous about the whole thing, but let's see, I hope this part of us steps up.
+01:00:59
+They've added video, which is very surprising that meaning you can subscribe to the RSS feed anymore. It's all in Spotify for now.
+01:01:08
+You can until December 1st and December 1st. It all everything disappears in Spotify.
+01:01:13
+Only I, you know, and Spotify gave him one hundred million dollars for that. So it's it's an interesting deal. But I you know, I did some soul searching and. I'm glad he's doing it, but if Spotify came to me with one hundred million dollars. I wouldn't do it, I wouldn't. Well, I have a very different relationship with money. I hate money, but I just think I believe in the pirate radio aspect of podcasting the media and that there's something about the spirit, the open source spirit.
+01:01:47
+It just doesn't seem right. Doesn't feel right. That said, you know, because so many people care about your organs program, they're going to hold Spotify feet to the fire.
+01:01:57
+Like one of the cool things Wojo told me is the reason he likes working with Spotify is that.
+01:02:06
+They they're like ride or die together, right? So they they want him to succeed, so that's why they're not actually telling him what to do. But what people think they they don't they don't give them any more than anything. They want him to succeed. And that's the cool thing about exclusivity with a platform is like you kind of want each other to succeed. And that process can actually be very fruitful. At YouTube, it goes back to my criticism.
+01:02:38
+YouTube, generally, no matter how big the creator it may be for you to buy something like that, they want you to succeed. But for the most part, from all the big creators I spoke with very Tarsem, all those folks, you know, they get some basic assistance, but it's not like. YouTube doesn't care if you succeed or not, they have 100 other data, they don't care, so and especially with somebody like Joe Rogan, who YouTube sees Joe Rogan not as a person who might revolutionize the nature of news and idea space and nuanced conversations.
+01:03:18
+They see him as a potential person who who has racist geston or like, you know, they see him as like a headache potentially. So, you know, a lot of people talk talk about this.
+01:03:32
+It's a hard place to be for you to actually is figuring out with the search and discovery process of how do you filter out conspiracy theories and which conspiracy theories represent dangerous untruths and which conspiracy theories are like vanilla untruths. And then even when you start having meetings and discussions about what is true or not, it starts getting weird. Yeah, that's difficult these days, right? I worry more about the other side. Right. Of too much, you know, too much.
+01:04:07
+Maybe censorship is the right word. I mean, censorship is usually government censorship, but still. Yeah.
+01:04:14
+Putting yourself in a position of arbiter for these kinds of things. It's very difficult. And people think it's so easy. Right. Because like, well, you know, Nazis. Right. What a simple principle. But, you know. Yes, I mean, no one likes Nazis. Yeah. But there's like many shades of grey, like very soon after that.
+01:04:31
+And then, of course, everybody, you know, there's some people that call our current president a Nazi. And then there's like you start getting a Sam Harris. I don't know if you know that is wasted, in my opinion. His conversation with Jack Dorsey, I was I spoke with Jack before on this podcast and we'll talk again.
+01:04:49
+But Sam brought up Sam Harris does not like Donald Trump.
+01:04:55
+I do listen to you, but I'm familiar with his views on the matter. And he he has Jack Dorsey is like, how can you not ban Donald Trump from Twitter? So, you know, there's a lot that you have that conversation. You have a conversation where some number, some significant number of people think that the current president of the United States should not be on your platform. And it's like, OK, so that's even on the table as a conversation.
+01:05:23
+Then everything's on the table for conversation. And, yeah, it's it's tough. I'm not sure where I land on it. I'm with you. I think that censorship is bad.
+01:05:33
+But I also think that ultimately I just also think, you know, if you're the kind of person that's going to be convinced, you know, by some YouTube video, you know, that I don't know. Our government's been taken over by aliens. It's unlikely that, like, you know, you'll be returned to sanity simply because, you know, that video is not available on YouTube, right? Yeah, I'm with you.
+01:05:56
+I tend to believe in the intelligence of people, and we should we should trust them. But I also do think it's the responsibility of platforms to encourage more love in the world, more kindness to each other. And I don't always think that they're great at doing that particular thing. So that that there's a nice balance there. And I think philosophically, I think about that a lot.
+01:06:22
+Where is the balance between free speech and like encouraging people, even though they have the freedom of speech to not be an asshole? Yeah, right. That's not a constitutional like. So you have the right to free speech, but like, just don't be an asshole. Like, you can't really put that in the Constitution that the Supreme Court can't be like just don't be a dick. But I feel like platforms have a role to be like just be nicer, maybe do the carrot, like, encourage people to be nicer as opposed to the stick of censorship.
+01:07:01
+But I think it's an interesting machine learning problem. Spinosa Machine machine learning for niceness. It is. I mean, it's possible. I mean, it is it is a thing for sure. Jack Dorsey kind of talks about it as a vision for Twitter is how do we increase the health of conversations? I don't know how seriously they're actually trying to do that, though, which is one of the reasons I am in part, considering entering that space a little bit difficult for them.
+01:07:32
+Right. Because it's kind of like well known that, you know, people are kind of driven by, you know, rage and, you know, outrage maybe is a better word. Right. Outrage drives engagement. And, well, these companies are judged by engagement rates in the short term. But this goes to the metrics thing that we're talking about earlier.
+01:07:53
+I do believe they have a fundamental belief that if you have a metric of long term happiness of your users, like not short term engagement, but long term happiness and growth and both like intellectual emotional health of your users, you're going to make a lot more money. You're going to have long term like you should be able to optimize for that. You don't need to necessarily optimize for engagement and they'll be good for society, too.
+01:08:20
+And I mean, I generally agree with you, but that requires a patient person with trust from Wall Street to be able to carry out such a strategy.
+01:08:30
+This is what I believe the Steve Jobs character and Elon Musk character is like. You basically have to be so good at your job, right?
+01:08:39
+You get a pass for anything that you can hold the board and all the investors hostage by saying, like, either we do it my way or I leave and everyone is too afraid of you to leave because they believe in your vision.
+01:08:54
+So that but that requires being really good at really good at what you do requires being Steve Jobs in the Mascoma.
+01:09:00
+There's kind of a reason why I like a third name. Doesn't come immediately to mind.
+01:09:04
+Right. Like there is maybe a handful of other people, but it's not them and it's not many.
+01:09:08
+I mean, people say like why? Like people say that I'm like a fan of your musk. I'm not I'm a fan of anybody who's like Steve Jobs and Elon Musk.
+01:09:17
+And there's not many of those folks is the guy that made us believe that, like we can get to Mars in ten years. Right? I mean, that's kind of awesome.
+01:09:26
+And it's kind of making it happen, which is like it's it's great. It's gone like that kind of like spirit. Right? Like from a lot of our society. Right. You know, like we can get to the moon in 10 years and like, we did it, right. Yeah.
+01:09:40
+Especially in this time of year. So much kind of existential dread that people are going through because of covid like having rockets that just keep going out there now with humans. I don't know that. It's just like you said, I mean, it gives you a reason to wake up in the morning and dream for us engineers to it.
+01:10:05
+This is inspiring excitement. I would let me ask you this, the worst possible question, which is so you're like at the core, you're a programmer, you're an engineer, but now you made the unfortunate choice or maybe that's the way life goes of basically moving away from the low level work and becoming a manager, becoming an executive, having meetings is what's what's that transition been like? It's been interesting. It's been a journey.
+01:10:39
+Maybe a couple of things to say about that. I mean, I got into this, right, because, uh, as a. Kid, I just remember this incredible amazement at being able to write a program, right, and something comes to life that kind of didn't exist before. I don't think you have that in like many other fields, like. And you have that with some other kinds of engineering, but maybe a little bit more limited with what you can do right.
+01:11:04
+But with a computer, you can literally imagine any kind of program. Right. So it's a little bit godlike what you do like when you create it. And so that's why I got into it.
+01:11:15
+Do you remember the first program you wrote or maybe the first program that, like, made you fall in love with with computer science?
+01:11:22
+Uh, I don't know. Was the first program. It's probably like trying to write one of those games and basic, you know, like emulate the state game or whatever. I don't remember, to be honest, but I enjoyed like that. So I always loved about you. Being a program is just the creation process and it's a little bit different when you're not the one doing the creating. And, you know, another aspect to it, I would say, is, you know, when you're a programmer, when you're an individual contributor, it's kind of very easy to know when you're doing a good job, when you're not doing a good job, when you're being productive, when you're not being productive.
+01:11:54
+You can kind of see it like trying to make something. And it's like slowly coming together. Right. And when you're a manager, you know, it's more diffuse. Right? Like what you hope, you know, you're motivating your team and making them more productive and inspiring them. Right. But it's not like you got some kind of like dopamine signal because you, like, completed X lines of code. You know, today it's kind of like you miss that dopamine rush a little bit, uh, when you first become but then slowly you kind of see, yes, your teams are doing amazing work.
+01:12:26
+Right. And you can take pride in that.
+01:12:28
+You can get like what is it like a ripple effect of somebody else?
+01:12:35
+Yeah. Yeah. I think you live off other people's dopamine.
+01:12:41
+So is their pain points and challenges yet overcome from becoming from going to a programmer to becoming a programmer of humans program or of humans? I don't know that humans are difficult to understand, you know.
+01:12:56
+Yeah, it's like one of those things, like trying to understand other people's motivations and what really drives them, thinking maybe you never really know. Right.
+01:13:05
+Do you find that people are different? Yeah. Like I one of the things. I got a group at MIT that, you know, I found that like some people, like I could like scream at and criticize like hard, and that made them do, like, much better work and really push them to the limit.
+01:13:30
+And there's some people that I had to nonstop compliment because, like, there's so already self-critical, like about everything they do that I have to be constantly like like I cannot criticize them at all because they're already criticizing themselves. And you have to kind of encourage and like celebrate the little victories. And it's kind of fascinating that the complete difference in people, definitely people who respond to different motivations and different modes of feedback and you kind of have to figure it out.
+01:14:05
+It's like a pretty good book, which is not the name escapes me about management. First break all the rules, first break all the rules, break all the rules. It's a book that we tend to like ask a lot of first time managers to read rough and like one of the kind of philosophies manage by exception. Right. Which is, you know, don't like have some standard template, like, you know, here's how I tell this person to do this.
+01:14:32
+Or the other thing here is how I get feedback like manage by exception. Right. Every person. So the different you have to try to understand what drives them and tailor it to them.
+01:14:41
+Since you mentioned books, I don't know if you can answer this question, but people love it when I ask it, which is, are their books technical fiction or philosophical that you enjoyed or had an impact in your life you would recommend? You already mentioned Dune like all the all of the doing, all of the doing.
+01:14:59
+The second one was probably the weakest.
+01:15:01
+But anyway, I thought, yeah, all of the doonas could I mean, can you just slow a little tangent on that is how many books are there. Like do you recommend people start with the first one. If you if there was. Yeah. You've got to have to read them all.
+01:15:15
+I mean it is a complete story. Right. So you start with the first one.
+01:15:19
+You've got to read all of them, just like a tree like that, like a creation of like the universe. You should go in sequence and consequence. Yeah, it's it's kind of a chronological storyline. There are six books in all, and then there is like many kind of books that were written by Frank Robertson, but those are not as good. So you don't have to bother with those shots fired. Shots fired. OK, but the main sequence is good.
+01:15:50
+So what are some other books? And there's a few. So I don't know that, like I would say, there is a book that kind of, I don't know, turned my life around or anything like that. But here's a couple that I really love. So one is Brave New World by Aldous Huxley. And it's kind of incredible how. President, he was about like. What what a brave new world might be like, right? You know, you kind of see a genetic sorting in this book, right, where there's like this Alfa's and Epsilon's and.
+01:16:27
+From like the Alstyle society, they're sort of like you can kind of see it in a slightly similar way today where. Well, one of the problems with society is people are kind of genetically sorting a little bit, right? Like there is much less like most marriages between people of similar kind of intellectual level or socioeconomic status, more so these days than in the past. And you kind of see some effects of it in stratifying society. And kind of he illustrated what that could be like in the extreme different versions of it on social media as well.
+01:17:02
+It's not just like marriages and so on, like it's genetic sorting in terms of what Dawkins called memes is ideas being put into these bins of these little echo chambers and so on.
+01:17:14
+And I said, that's the book that's, I think, a worthwhile read for everyone in 1984, as good, of course, as well. Like if you're talking about, you know, dystopian novels of the future. Yes. A slightly different view of the future. But I kind of like identify with one world that more. Uh, yeah. Speaking of, uh, not a book, but my favorite kind of, uh, dystopian science fiction is a movie called Brazil, which I don't know if you've heard of.
+01:17:38
+I've heard of.
+01:17:39
+And I know I need to watch it, but yeah. Because it's in is it in English, you know, it's an English movie and it's the sort of like dystopian movie of authoritarian incompetence. Right. And it's like nothing really works very well. You know, the system is creaky, you know, but no one it's kind of like willing to challenge it, you know, just things kind of amble along and kind of strikes me as like a very plausible future of, like, you know, what authoritarianism might look like.
+01:18:11
+It's not like this, you know, superefficient, evil dictatorship of 1984. It's just kind of like this badly functioning, you know, but.
+01:18:22
+It's status quo. So it just goes on. Yeah, that's one funny thing that stands out to me is in one of this authoritarian dystopian stuff or just basic, like, you know, if you look at the movie Contagion, it seems that in movies, government is almost always exceptionally competent, like it's used as a storytelling tool of like extreme competence. Like, you know, you use it whether it's good or evil, but it's competent. It's very interesting to think about.
+01:18:56
+We're much more realistically is it's incompetence and that incompetence is itself has consequences that are difficult to to predict, like bureaucracy as a very boring way of being evil, of just you know, if you look at the show, HBO show Chernobyl, it's a really good story of how bureaucracy, you know, leads to catastrophic events, but not through any kind of evil in any one particular place, but more just like the it's just the system kind of system distorting information as it travels up the chain that people are unwilling to take responsibility for things.
+01:19:40
+And just kind of like this laziness resulting in evil. There's a comedic version of this.
+01:19:46
+And if you've seen this movie called The Death of Stalin. Yeah, I like that. I wish it wasn't. So there's a movie called Inglourious Basterds about, you know, Hitler and so on.
+01:20:02
+For some reason, those movies pissed me off.
+01:20:03
+I know a lot of people love them, but like, I just feel like there's not enough good movies even about Hitler. There's good movies about the Holocaust. But even Hitler, there's a movie called Downfall that people should watch. I think it's the last few days of Hitler that's a good movie.
+01:20:21
+Turning into a meme was good, but under Stalin, I feel like I may be wrong on this, but at least in the English speaking world is not good movies about the evil of Stalin.
+01:20:33
+That's true. That's true. I could say that I agree with you on Inglourious Basterds.
+01:20:37
+I didn't love the movie because I felt like kind of that the stylizing of it. Right. The whole like Tarantino kind of Tarantino ism, if you will, kind of detracted from it and made it seem like I'm serious a little bit. But DataStore and I felt differently.
+01:20:56
+Maybe it's because of the comedy to begin with. This is like I'm expecting, you know, seriousness, but. It kind of depicted. The absurdity of the whole situation, in a way, right? I mean, it was. So maybe it does make light of it, but the subject was probably like this, right? Like a bunch of kind of people. They're like, oh, shit. Right. Like, you're right.
+01:21:17
+But like the thing is, it was so close to like what probably was reality there was caricaturing reality to where I think an observer might think that this is not like they might think it's a comedy when in reality this is that's the absurdity of how people act with dictators.
+01:21:43
+I mean, that's I guess, was too close to reality for me, the kind of banality of like what were eventually, like, fairly evil acts. Right.
+01:21:53
+But like out there, they're just a bunch of people trying to survive and like they because I think there's a good I haven't watched yet the good movie and the movie and Churchill, um, with Gary Oldman, I think is Gary Oldman. I may be making that up, but I think he won like he was nominated for an Oscar or something. So like, I love these movies about these humans. And Stalin, like Chernobyl made me realize the HBO show that there's not enough movies about Russia that capture.
+01:22:25
+That spirit, I'm sure it might be in Russian, there is, but the fact that some British dude that like did come, I feel like he didn't like Hangover or some shit like that. I don't know if you're familiar with the person who created Chernobyl, but he was just like some guy that doesn't know anything about Russia and he just went in and just studied it. They did a good job of creating and then got it so accurate, like poetically and the fact that you need to get accurate.
+01:22:53
+He got accurate, just the spirit of it down to the balls that pets use, just the whole feel of it is as good as other theories.
+01:23:01
+Yeah, it's incredible to me.
+01:23:03
+Me, me, me wish that somebody like 1930s, like starvation or Stalin, like leading up to World War Two and in World War Two itself, like Stalingrad and so on, like.
+01:23:19
+I feel like that story needs to be told, millions of people died in it's to me, it's so much more fascinating that Hitler because Hitler is like a caricature of evil almost, that it's so especially with the Holocaust. It's so difficult to imagine that something like that is possible ever again. Stalin, to me, represents something that is possible like this. So interesting, like the bureaucracy of it.
+01:23:50
+It's so fascinating that it potentially might be happening in the world now, like they were not aware of, like North Korea, another one that like there should be a good film on, like the possible things that could be happening in China with overreach of government.
+01:24:07
+I don't know if there's a lot of possibilities there, I suppose.
+01:24:10
+Yeah. I wonder how much you know, I guess the archives should be maybe more open nowadays, right? I mean, for a long time, they just would have no right and no one in the West knew for sure. Well, there's a lot of you know, there's a guy named Stephen Kotkin. He's a historian of Stalin. I spoke to on this podcast. I'll speak to him again. The guy knows this shit. And Stalin, he, like, read everything.
+01:24:35
+And it's so it's so fascinating to me to talk to somebody like he knows Stalin better than Stalin himself. It's crazy like you have. I think he's at Princeton. He is basically his whole life is still Stalin. Yeah, it's great.
+01:24:55
+And in that context, he also talks about and writes about Putin a little bit. I've also read at this point, I think every biography of Putin, English or English biography of Putin need to read. Some Russians obviously are mentally preparing for possible conversation with Putin. So what is your first question to Putin when you have him on your on the podcast?
+01:25:16
+I think it's interesting you bring that up.
+01:25:20
+First of all, I wouldn't tell you, but I can it away now, but I actually haven't even thought about that. So my current approach and I do this with interviews often, but obviously that's a special one. But I try not to think about questions until the last minute. I'm trying to sort of get into the mindset, and that's why I'm soaking in a lot of stuff, not thinking about questions, just learning about the man. But in terms of like human to human, it's I would say it's I don't know if you're a fan of mob movies, but like the Mafia, which I am a Goodfellas and so on, he's much closer to like mob morality, which is like, well, maybe I could see that.
+01:26:08
+But I like your approach anyway of this the extreme empathy. I have a little bit like, you know, Hannibal. Right. Like if you ever watch the show, Hannibal, right. They have the guy. Um, well, you know, Hannibal, of course, like. Yeah, yeah. Sounds of the Lambs. But those three shows, well, they're focused on this guy. Well, Durand was a character like Extreme Campath. Right.
+01:26:30
+So in the way he like catches all these killers, he pretty much, uh.
+01:26:35
+You can empathize with them, right, like you can understand why they're doing things they're doing, right? Yes, it's a pretty excruciating thing, right, because you're pretty much like spending half your time in the head of evil people. Right.
+01:26:47
+But, I mean, I definitely try to do that with weather. So you should do that in moderation. But I think it's a pretty safe place, a safe place to be. One of the cool things with this podcast and I don't know, you didn't sign up to hear me listen to this bullshit. But that was interesting, I.
+01:27:07
+And what's his name, Chris Latinum was a Google. Oh, he's not Google anymore. So far he's legit. He's one of the most legit engineers I talk with. I talk to them again on this podcast. And when he gives me private advice a lot. And he said for this podcast, I should like interview like I should widen the range of people because that gives you much more freedom to do stuff like.
+01:27:33
+So his idea, which I think I agree with Chris, is that you go to the extremes. You just say cover every extreme base, and then it gives you freedom to then go to the more nuanced conversations. It's kind of I think there's a safe place for that. There's certainly a hunger for that nuanced conversation. I think amongst people were like on social media, you get canceled for anything slightly tense, that there's a hunger to go full. You go so far to the opposite side and it's like demystifies it a little bit, right?
+01:28:04
+Yeah. That there is a person behind all of these things.
+01:28:09
+And that's the cool thing about podcasting, like three, four hour conversations that that it's very different than it could be journalism. Think the opposite. That there's a hunger for that. There's a willingness for that, especially now. I mean, how many people do you even see face to face anymore? Right. Like this? You know, it's like not that many people, like in my day to day side from my own family, but like I said across it, it's sad, but also beautiful.
+01:28:35
+Like I've gotten the chance to like like our conversation. Now there's somebody I guarantee you there's somebody in Russia listening to this now, like jogging and there's somebody who is just smokes. And we sit back and a couch and just like enjoying life. I guarantee you that will write in the comments right now that, yes, I'm in St. Petersburg, I'm in Moscow, whatever, and we're in their head and they have a friendship with us. And I'm the same way.
+01:29:05
+I'm a huge fan of podcasting is a beautiful thing. I mean, it's a it's a weird one way human connection. Like before I went to Joe Rogan and still I'm just a huge fan of his. So it was like we had I've been friends with Joe Rogan for ten years.
+01:29:21
+But one way from this way, from the St. Petersburg Way, there's the same principle and it's a real friendship. I mean, now it's like to way but it's still surreal. Yeah. And that's the magic of podcasting. I'm not sure what to make of it. That voice. It's not even the video part. It's the audio that's magical that I don't know what to do with it. But it's people listen to three, four hours. Yeah.
+01:29:47
+We evolved over millions of years.
+01:29:51
+Right. To be very fine tuned. Things like that. Right. Yeah. Um, no expressions as well of course. Right. But you know, back back in the day on the you know, on the savannah, you have to be very tuned to, you know, whether you had a good relationship with the with the rest of your tribe or very bad relationship. Right. Because, you know, if you had a very bad relationship, you're probably going to be left behind and eaten by the lions.
+01:30:12
+Yeah, but it's weird that the tribe is different now. Like, you could have a connection one way connection with Joe Rogan as opposed to the tribe of your physical vicinity. But that's OK.
+01:30:25
+But that's why I like you know, it works with the podcasting, but it's the opposite of what happens on Twitter, right. Because all those nuances are removed. Right. You're not connecting with the person. Yeah. Because you don't hear the voice you are connecting with, like an abstraction. Right. It's like some some stream of tweets. Right. And it's very easy to assign to them. And you're kind of like evil intent, you know, or dehumanize them, which you it's much harder to do when it's a real voice.
+01:30:53
+Right. Because you realize it's the real person behind the voice. Let me try this out on you, I sometimes ask about the meaning of life, do you your your father now I an engineer, you're building up a company d'hiver, zoom out and think like, what the hell is this whole thing for? Like, why why are we descendants of apes even on this planet? What's what's the meaning of it all?
+01:31:20
+That's a pretty big question. I think. I don't allow myself to think about it too often or maybe like life doesn't allow me to think about it too often. But in some ways, I guess the meaning of life is kind of, uh, contributing to this kind of weird thing we call humanity. Right. Like, it's in a way, I can think of humanity as like a living, an evolving organism. Right. That like we all contribute in a way, but just by existing by having our own unique set of desires and drives.
+01:31:51
+Right. Um, and maybe that means like creating something great and it's bringing up kids who, you know, are unique and different and seeing like, you know, taking joy in what they do. But I mean, to me, that's pretty much it. I mean, if you're not a religious person. Right. Which I guess I'm not, that's that's the meaning of life. It's in the living and then the in creation and the creation.
+01:32:15
+Yeah. There's something magical about that engine of creation, like you said, programming, I would say. I mean, it's even just actually what you said would even just programs. I don't care if it's like some JavaScript thing and a button on the website. It's like magical. You brought that to life.
+01:32:33
+I don't know what that is in there, but that seems that's probably some version of recreation of like reproduction and sex, whatever that's in evolution.
+01:32:44
+But like creating that humor button has has echoes of that feeling. And it's magical. Right.
+01:32:53
+I mean, if you're a religious person, maybe you could even say like we were were created in God's image. Right? I mean, I guess part of that is the drive to create something ourselves. Right? I mean, that's that's that's part of it.
+01:33:06
+Yeah. That Estima button is the creation and God's. So maybe hopefully it'll be something a little more dynamic, maybe bigger. Something if. Yeah. Maybe some uh some JavaScript, some react uh and so on. But no I mean I think. That's what differentiates us from the apes, so to speak. Yeah, we did a pretty good job then. It was an honor to talk to you. Thank you so much for being part of creating one of my favorite services and products.
+01:33:36
+This is actually a little bit of an experiment. Allow me to sort of fanboy with some of the things I love. So thanks for wasting your time with me today.
+01:33:47
+Thanks for having me on and giving me a chance to try this out. Awesome. Thanks for listening to this conversation with Daniel Kotov and thank you to our sponsors, Athletic Greens, Only one nutrition drink blankest app that summarizes books, business, sports podcast and cash app. So the choice is health, wisdom or money. Choose wisely, my friends, and if you wish, click the sponsor links below to get this call and to support this podcast. And now let me leave you some words from Ludwig Wittgenstein.
+01:34:24
+The limits of my language means the limits of my world. Thank you for listening and hope to see you next time.

@@ -1,0 +1,756 @@
+00:00:00
+The following is a conversation with Melanie Mitchell. She's a professor of computer science at Portland State University and an external professor at Santa Fe Institute. She has worked on and written about artificial intelligence from fascinating perspectives, including adaptive, complex systems, genetic algorithms, and the copycat cognitive architecture, which places the process of analogy making at the core of human cognition. From her doctoral work with her advisers, Douglas Hofstadter and John Holland to today, she has contributed a lot of important ideas to the field of AI, including her recent book simply called Artificial Intelligence A Guide for Thinking Humans.
+00:00:42
+This is the Artificial Intelligence Podcast. If you enjoy, subscribe on YouTube, give it five stars, an Apple podcast supported on Patrón or simply connect with me on Twitter. Àlex Friedman spelled Afridi's man. I recently started doing ads at the end of the introduction. I'll do one or two minutes after introducing the episode and never any ads in the middle. They can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience.
+00:01:12
+I provide timestamps for the start of the conversation, but it helps if you listen to the ad and support this podcast by trying out the product or service being advertised. This show was presented by Kashyap, the number one finance app in the App Store. I personally use cash to send money to friends, but you can also use it to buy, sell and deposit Bitcoin in just seconds. Kashyap also has a new investing feature. You can buy a fraction of a stock, say, one dollars worth, no matter what the stock price is.
+00:01:43
+Broker's services are provided by cash up investing, a subsidiary of Square and member SIPC. I'm excited to be working with cash out to support one of my favorite organizations called First Best known for their first robotics and Lego competitions. They educate and inspire hundreds of thousands of students and over 110 countries and have a perfect rating. And Charity Navigator, which means that donated money is used to maximum effectiveness. When you get cash app from the App Store or Google Play and use Leks podcast, you'll get ten dollars in cash.
+00:02:18
+I will also donate ten dollars. The first, which again is an organization that I've personally seen, inspire girls and boys to dream of engineering a better world. And now here's my conversation with Melanie Mitchell. The name of your new book is Artificial Intelligence subtitle A Guide for Thinking Humans, the name of this podcast is Artificial Intelligence. So let me take a step back and ask the old Shakespeare question about roses.
+00:03:04
+And what do you think of the term artificial intelligence for our big and complicated and interesting field? I'm not crazy about the term.
+00:03:15
+I think it has a few problems because it means so many different things to different people. And intelligence is one of those words that isn't very clearly defined either. There's so many different kinds of intelligence, degrees of intelligence, approaches to intelligence. John McCarthy was the one who came up with the term artificial intelligence.
+00:03:40
+And from what I read, he called it that to differentiate it from cybernetics, which was another. Related movement at the time, and he later regretted calling it artificial intelligence.
+00:03:56
+Herbert Simon was pushing for calling it complex information processing, which got nixed.
+00:04:04
+But, you know, probably is equally vague, I guess.
+00:04:09
+Is it the intelligence or the artificial in terms of words that I think most problematic, would you say?
+00:04:15
+Yeah, I think it's a little of both, but, you know, it has some good size because I personally was attracted to the field because I was interested in Fanaa phenomenon of intelligence.
+00:04:28
+And if it was called complex information processing, maybe I'd be doing something wholly different now.
+00:04:33
+What do you think of I've heard the term used cognitive systems, for example.
+00:04:37
+So using cognitive. Yeah, I mean, cognitive has certain associations with it and people like to separate things like cognition and perception, which I don't actually think are separate. But often people talk about cognition as being different from sort of other aspects of of intelligence. It's sort of higher level.
+00:04:59
+So to cognition is this broad, beautiful ness of things that encompasses the whole thing.
+00:05:05
+Memory? Yeah, I think it's hard to draw lines like that. When I was coming out of grad school in the night in 1990, which is when I graduated, that was during one of the EHI Winters, and I was advised to not put A.I. artificial intelligence on my CV, but instead call it intelligent systems.
+00:05:27
+So that was kind of a euphemism.
+00:05:30
+Yes. What about the stick briefly and in terms and words, the idea of artificial general intelligence or or like John Rikoon prefers human level intelligence sort of starting to talk about ideas that. That achieve higher and higher levels of intelligence and somehow artificial intelligence seems to be a term used more for the narrow, very specific applications of AI and sort of the worst set of terms. Appeal to you to describe the thing that perhaps we strive to create. People have been struggling with this for the whole history of the field.
+00:06:17
+And defining exactly what it is that we're talking about, you know, John Searle had this distinction between strong A.I. and weaker and weaker Heyy could be generally, but his his idea was strong. A.I. was the view that a machine is actually thinking. That as opposed to. Simulating thinking or. Carrying out. Intelligence processes that we would call intelligent. At a high level, if you look at the founding of the field, McCarthy, Searle and so on.
+00:06:56
+Are we closer to having a better sense of that line between narrow, weak eye and strong and. Yes, I think we're closer to having a better. Idea of what that line is early on, for example, a lot of people thought that playing chess would be. You couldn't play chess if you didn't have sort of general human level intelligence, and of course, once computers were able to play chess better than humans, that revised that view and people said, OK, well, maybe now we have to revise what we think of intelligence as.
+00:07:42
+And so that's kind of been a.
+00:07:45
+Theme throughout the history of the field is that once a machine can do some task, we then have to look back and say, oh, well, that changes my understanding of what intelligence is, because I don't think that machine is intelligent. At least that's not what I want to call intelligence.
+00:08:03
+Do you think that line moves forever or will we eventually really feel as a civilization like we've crossed the line if it's possible?
+00:08:11
+It's hard to predict, but I don't see any reason why we couldn't in principle. Create something that we would consider intelligent. I don't know how we will know for sure. Maybe our own view of what intelligence is will be refined more and more until we finally figure out what we mean when we talk about it.
+00:08:34
+But I I think eventually we will create machines in a sense that have intelligence, they may not be the kinds of machines we have now. And one of the things that that's going to produce is making us sort of understand our own machine like qualities that we, in a sense. Our mechanical in the sense that like cells, cells are kind of mechanical, they they have algorithms, they process information by and somehow out of this massive cells, we get this emergent property that we call intelligence.
+00:09:18
+But underlying it is. Really just cellular processing and lots and lots and lots of it. Do you think we'll be able to do you think it's possible to create intelligence without understanding our own mind? He said sort of in that process will understand more and more. But do you think it's possible to sort of create without really fully understanding from a mechanistic perspective, sort of from a functional perspective, how our mysterious mind works? If I had to bet on it, I would say, no, we we do have to understand our own minds, at least to some significant extent, but I think that's a really big open question.
+00:10:04
+I've been very surprised at how far kind of brute force approaches based on, say, big data and huge networks can can take us. I wouldn't have expected that. And they have nothing to do with the way our minds work. So that's been surprising to me.
+00:10:22
+So it could be wrong to explore the psychological and the philosophical. Do you think we're OK as a species with something that's more intelligent than us? Do you think perhaps the reason we're pushing that line further and further is we're afraid of acknowledging that there is something stronger, better, smarter than us humans?
+00:10:46
+Well, I'm not sure we can define intelligence that way because, you know, smarter than is with with respect to what what you know, computers are already smarter than us.
+00:10:59
+In some areas. They can multiply much better than we can.
+00:11:02
+They they can figure out driving routes to take much faster and better than we can. They have a lot more information to draw than they know about traffic conditions and all that stuff.
+00:11:14
+So for any given particular task, sometimes computers are much better than we are and we're totally happy with that. Right? I'm totally happy with that. I don't bother me at all. I guess the question is, you know what? Which things about our intelligence would we? Feel very sad or upset that machines had been able to recreate so in the book, I talk about my former adviser, Douglas Hofstetter, who encountered a music generation program, and that was really the line for him, that if a machine could create beautiful music, that would be.
+00:11:59
+Terrifying for him, because that is something he feels is really at the core of what it is to be human, creating beautiful music, art, literature, I, I don't think. He doesn't like the fact that. Machines can.
+00:12:18
+Recognize spoken language really well, like he doesn't he personally doesn't like using speech recognition, but I don't think it bothers him to his core because it's like, OK, that's not at the core of humanity, but it may be different for every person. What what really? They feel would usurp their humanity, and I think maybe it's a generational thing also, maybe our children or our children's children will be adapted, that they'll adapt to these new devices that can do all these tasks and say, yes, this thing is smarter than me in all these areas.
+00:12:58
+But, uh, that's great because it helps me.
+00:13:04
+Looking at the broad history of our species, what do you think so many humans have dreamed of creating artificial life and artificial intelligence throughout the history of our civilization. So not just this century or the 20th century, but really many throughout many centuries that preceded it.
+00:13:23
+That's a really good question, and I have wondered about that. Because I I myself was driven by curiosity about my own thought processes and thought it would be fantastic to be able to get a computer to mimic some of my thought processes. I'm not sure why we're so driven, I think. We want to. Understand ourselves better. And we also want machines to do things for us, but I don't know, there's something more to it because it's so deep in the kind of mythology or the ethos of our our species.
+00:14:10
+And I don't think other species have this drive.
+00:14:13
+So I don't know if you were to sort of psychoanalyze yourself in your in your own interest. And I, I you.
+00:14:22
+What excites you about creating intelligence? You said understanding our own cells. Yeah, I think that's what drives me, particularly I'm. Really interested in human intelligence. But I'm I'm also interested in the sort of the phenomenon of intelligence more generally, and I don't think humans are the only thing with intelligence, you know, and or even animals. But I think intelligence. Is a concept that encompasses a lot of complex systems, and if you think of things like insect colonies or cellular processes or the immune system or all kinds of different biological or even societal processes have as an emergent property some aspects of what we would call intelligence.
+00:15:19
+You know, they have memory, they do process information, they have goals, they accomplish their goals, etc. And to me, that the question of what is this thing we're talking about here was really fascinating to me. And exploring it, using computers seem to be a good way to approach the question.
+00:15:41
+So do you think kind of intelligence do you think of our universe as a kind of hierarchy of complex systems and then intelligence is just the property of any you can look at any level and every level has some aspect of intelligence. So we're just like one little speck in that giant hierarchy of complex systems. I don't know if I would say any system like that has intelligence, but I guess what I want to I don't have a good enough definition of intelligence to say that.
+00:16:14
+So let me let me do sort of multiple-choice, I guess, though, you said and colonies. So are in colonies intelligent. Are the bacteria in our body intelligent? And then look going to the the physics world molecules and the behavior at the quantum level of of electrons and so on, are those kinds of systems, do they possess intelligence like war?
+00:16:40
+Where is a line that feels compelling to you?
+00:16:44
+I don't know. I mean, I think intelligence is a continuum and I think that the ability to in some sense have intention, have a goal, have have some kind of self awareness is part of it. So I'm not sure if, you know, it's hard to know where to draw that line.
+00:17:07
+I think that's kind of a mystery. But I wouldn't say that say that, you know, this the planets orbiting the Sun are is an intelligent system. I mean, I would find that maybe not the right term to describe that.
+00:17:23
+And this is you know, there's all this debate in the field of like what's what's the right way to define intelligence? What's the right way to model intelligence? Should we think about computation? Should we think about dynamics? And should we think about, you know, free energy and all that stuff? And I think that it's it's a fantastic time to be in the field because there's so many questions and so much we don't understand. There's so much work to do.
+00:17:51
+So are we are we the most special kind of intelligence in this kind of. You said there's a bunch of different elements and characteristics of intelligence systems and colonies, as it are, his human intelligence. The thing in our brain is that the most interesting kind of intelligence in this continuum?
+00:18:14
+Well, it's interesting to us because because it is us.
+00:18:18
+I mean, interesting to me. Yes. And because I'm part of, you know, human.
+00:18:24
+But to understanding the fundamentals of intelligence, what I'm doing is studying the human is sort of if everything we've talked about, we talk about in your book, what just the AI field, this notion.
+00:18:35
+Yes, it's hard to define, but it's usually talking about something that's very akin to human intelligence.
+00:18:41
+Yeah, to me, it is the most interesting because it's the most complex.
+00:18:46
+I think it's the most self-aware. It's the only system, at least that I know of that reflects on its own intelligence.
+00:18:55
+And you talk about the history of AI and us in terms of creating artificial intelligence, being terrible at predicting the future with AI, with tech in general. So. Why do you think we're so bad at predicting the future, are we hopelessly bad so no matter what? Well, there's this decade or the next two decades, every time we make a prediction, there's just no way of doing it well or as the field matures, will be better and better at it.
+00:19:28
+I believe as the field matures, we will be better. And I think the reason that we've had so much trouble is that we have so little understanding of our own intelligence. So there's the famous story about. Marvin Minsky. Assigning computer vision as a summer project to his undergrad students, and I believe that's actually true story.
+00:19:53
+Yeah, there's a there's a write up that everyone should read. It's like a I think it's like a proposal that describes everything that should be done in that project is hilarious because it I mean, you can explain. But my sort of recollection, it describes basically all the fundamental problems of computer vision, many of which still haven't been solved. Yeah.
+00:20:15
+And I don't know how far they really expect it to get, but I think that and they're really, you know, Marvin Minsky, super smart guy and very sophisticated thinker.
+00:20:26
+But I think that no one really understands or understood still doesn't understand how complicated, how complex. The things that we do are because they're so invisible to us, you know, to us vision, being able to look out at the world and describe what we see, that's just immediate.
+00:20:48
+It feels like it's no work at all. So it didn't seem like it would be that hard. But there's so much going on unconsciously, sort of invisible to us that. I think we overestimate how. Easy, it will be to get computers to do it and sort of for me to ask an unfair question. You've done research. You have thought about many different branches of AI through this book, widespread looking at where it has been and where it is today.
+00:21:23
+If you were to make a prediction, how many years from now would we as a society create something that you would say achieved human level intelligence? Or superhuman level intelligence. That is an unfair question. A prediction that will most likely be wrong, so but it's just your notion because. OK, I'll say. I'll say more than one hundred years, more than one hundred years, and there I quoted somebody in my book who said that human level intelligence is 100 Nobel Prizes away, which I like because it's a it's a nice way to to sort of it's a nice unit for prediction.
+00:22:09
+And it's like that many.
+00:22:11
+Fantastic discoveries have to be made and of course, there's no Nobel Prize in. I right.
+00:22:18
+Not yet, look at the one hundred years your sense is really the journey to intelligence has to go through something, something more complicated that's akin to our own cognitive systems, understanding them, being able to create them in in artificial systems, as opposed to sort of taking the machine learning approach approaches of today and really scaling them and scaling them and scaling them exponentially with both computer and hardware and and data.
+00:22:55
+That would be my that would be my guess. You know, I think that in in the sort of going along the narrow A.I. that these current the current approaches will get better. You know, I think there's some fundamental limits to how far they're going to get. I might be wrong, but that's what I think. And there's some fundamental weaknesses that they have that I talk about in the book that just comes from this approach of of supervised learning. We're requiring sort of feed forward networks and so on.
+00:23:44
+It's just I don't think it's a sustainable approach to understanding the world.
+00:23:52
+I'm personally torn on it, sort of ViiV everything you read about in the book and sort of we're talking about now. I agree. I agree with you, but I am more and more depending on the day. First of all, I'm deeply surprised by the success of machine learning and deep learning in general from the very beginning when I was it's really been my focus of work.
+00:24:14
+I'm just surprised how far it gets. And I also think we're really early on in these efforts of these narrow. So I think there will be a lot of surprises of how far it gets, I think will be extremely impressed. Like I my sense is everything I've seen so far and we'll talk about autonomous driving and so on, I think we can get really far. But I also have a sense that we will discover, just like you said, is that even though we'll get really far to in order to create something like our own intelligence is actually much farther than we realize.
+00:24:51
+Right. I think these methods are a lot more powerful than people give them credit for, actually. So then, of course, there's the media hype. But I think there's a lot of researchers in the community, especially like not undergrads. Right. But like people who have been and I they're skeptical about how far you can get. And I'm more and more thinking that it can actually get farther than them realize. It's certainly possible. One thing that surprised me when I was writing the book is how far apart different people are in the field are using their opinion of how how far the field has come and what is accomplished and what's what's going to happen next.
+00:25:28
+What's your sense of the different who are the different people, groups, mindsets, thoughts in the community about where I is today?
+00:25:39
+Yeah, they're all over the place, so there's there's kind of the the Singularity Transhumanism Group, I don't know exactly how to characterize that approach, which says, well, yeah, the sort of exponential, exponential progress we're on, the sort of almost at the the hugely accelerating part of the exponential.
+00:26:02
+And by in the next 30 years, we're going to see Superintelligent, A.I and all that and we'll be able to upload our brains and that.
+00:26:14
+So there's that kind of extreme view that most I think most people who work in I don't have.
+00:26:21
+They disagree with that.
+00:26:23
+But there are people who who are. Maybe, you know, singularity people, but but they're they do think that the current approach of deep learning is going to scale and is going to kind of go all the way basically and take us to true A.I. or human level AI or whatever you want to call it. And there's quite a few of them. And a lot of them. Like a lot of the people I met who work at. Big tech companies in aid groups kind of have this view that we're really not that far, you know, just to linger on that point, sort of give and take as an example, Giannakou, I don't know if you know about his work and viewpoints on this.
+00:27:11
+I do. He believes that there's a bunch of breakthroughs like fundamental like Nobel Prizes. Yeah, it's still right. But I think he thinks those breakthroughs will be built on top of deep learning. Right.
+00:27:23
+And then there's some people who think we need to kind of put deep learning to the side a little bit as just one module that's helpful in the bigger cognitive framework.
+00:27:35
+Right. So so so I think from what I understand, John McCain is. Rightly seen supervised learning is not sustainable, we have to figure out how to do unsupervised learning, but that's going to be the key and. You know, I think that's probably true, I think unsupervised learning is going to be harder than people think.
+00:28:01
+I mean, the way that we humans do it, then there's the opposing view. You know, there's the the Gary Marcus kind of hybrid view where where deep learning is one part.
+00:28:15
+But we need to bring back kind of these symbolic approaches and combine them.
+00:28:20
+Of course, no one knows how to do that very well, which is the more important part, right. To emphasize and how do they how do they fit together? What's what's the foundation? What's the thing that's on top of the cake was the icing. Right?
+00:28:36
+Then there's people pushing different different things. There's the people, the causality people who say, you know, deep learning as it's formulated today completely lacks any notion of causality and that's dooms it.
+00:28:52
+And therefore, we have to somehow give it some kind of notion of causality. There's. A lot of. Push from the more cognitive science crowd saying. We have to look at developmental learning. We have to look at how babies learn. We have to look at intuitive physics. All these things we know about physics and somebody kind of quipped, we also have to teach machines intuitive metaphysics, which means like objects exist, the causality exists.
+00:29:34
+You know, these things that maybe we're born with, I don't know that that they don't have the machines don't have any of that. You know, they look at a group of pixels and they maybe they get. Ten million examples, but they. They can't necessarily learn that there are objects in the world. So there's just a lot of pieces of the puzzle that people are promoting and with different opinions of like how, how, how important they are and how close we are to being able to put them all together to create general intelligence.
+00:30:11
+Looking at this broad field. What do you take away from it? Who is the most impressive is that the cognitive folks, the Gary Marcus camp, the John camp unsupervised and the supervised, there's the supervisor and then there's the engineers who are actually building systems.
+00:30:28
+You have sort of the Andre Carpathia Tesla building actual you know, it's not philosophise real systems that operate in the real world.
+00:30:38
+What what do you take away from all of this?
+00:30:40
+I mean, I don't know if, you know, these these different views are not necessarily mutually exclusive. And I think people like John McCain. Agrees with the developmental psychology of causality, intuitive physics, etc., but he still thinks that it's learning like and and learning is the way to go. We'll take us perhaps all the way. Yeah. And that we don't need. There's no sort of innate stuff that has to get built in.
+00:31:14
+This is you know, it's because it's a hard problem. I personally, you know, I'm very sympathetic to the cognitive science side because that's kind of where I came in to the field. I've become more and more sort of an embodiment, adherent to say that without having a body, it's going to be very hard to learn what we need to learn about the world.
+00:31:41
+There's something I'd love to talk about in a little bit to step into the cognitive world then, if you don't mind, because you've done so many interesting things.
+00:31:51
+If we look to copycat taking a couple of decades, step back. You, Douglas Hofstadter and others have created and developed copycat more than 30 years ago.
+00:32:05
+Oh, that's painful. There the what is it what is or what is copycat? It's a program that makes analogies in an idealized domain, idealized world of letter strings.
+00:32:20
+So as you say, 30 years ago. Wow. So I started working on it when I started grad school in 1984. Wow dates me, and it's based on Doug Hofstadter's ideas that about that analogy is really a core aspect of thinking.
+00:32:47
+I remember he has a really nice quote in the book by by himself and Emmanuel Sanders called Surfaces and Essence's I don't know if you've seen that book, but it's about analogy.
+00:32:59
+And he says without concepts, there can be no thought and without analogies, there can be no concepts.
+00:33:08
+So the view is that analogy is not just this kind of reasoning technique where we go, you know, shoe is to foot as glove is to what you know, these kinds of things that we have on IQ tests or whatever that but that it's much deeper.
+00:33:23
+It's much more pervasive in every thing we do, in every our language, our our thinking, our perception.
+00:33:32
+So we so he had a view that was a very active perception idea. So the idea was that instead of having kind of a passive network in which you have input that's being processed through these friede forward layers and then there's an output at the end, that perception is really a dynamic process. You know, we're like our eyes are moving around and they're getting information and that information is feeding back to what we look at next influences, what we look at next and how we look at it.
+00:34:10
+And so copycat was trying to do that, kind of simulate that kind of idea where you have these.
+00:34:18
+Agents was kind of an agent based system, and you have these agents that are picking things to look at and deciding whether they were interesting or not, whether they should be looked at more and that would influence other agents.
+00:34:33
+Now, how do they interact? So they interacted through this global kind of what we call the workspace.
+00:34:39
+So it was actually inspired by the old Blackbaud Systems where you would have agents that post information on a blackboard, a common blackboard.
+00:34:48
+This is like all very old fashioned asset that we're talking about, like in physical spaces as a computer programs or programs or agents posting concepts on a blackboard.
+00:34:59
+Yeah, we called it a workspace. And it it's the workspace is a data structure. The agents are little pieces of code that you can think of them as detect little detectors or little filters that say, I'm going to pick this place to look and I'm going to look for certain things.
+00:35:16
+This is the thing I I think is important is that they're so it's almost like, you know, the convolution in a way, except a little bit more general and saying and then highlighting it on the on the in the workspace.
+00:35:30
+What's it once it's in the workspace, how do the things that are highlighted relate to each other?
+00:35:36
+So there's different kinds of agents that can build connections between different things. So so just to give you a concrete example, what copycat did was it it made analogies between strings of letters. So here's an example. ABC changes to Abdeh. What does it change to? And the program had some prior knowledge about the alphabet, knew the sequence of the alphabet. It had a concept of letter, successor of letter.
+00:36:06
+It had concepts of sameness. So it had some innate. Things programmed in, but then it could do things like. They discover that ABC is a group of letters in succession and then an agent can mark that. So the idea that there could be. A sequence of letters, is that a new concept that's formed or that's a concept, that's a concept that's innate sort of can you form new concepts or those?
+00:36:42
+And so in this program, all the concepts of the program were innate. So because because we weren't I mean, obviously that limits set quite a quite a bit. But what we were trying to do is say, suppose you have some innate concepts.
+00:36:57
+How do you flexibly apply them to new situations and how do you make analogies? Let's step back for a second. I really like that quote that you said. Without concepts, there can be no thought, without analogies. That can be no concepts. In a in a Santa Fe presentation, you said that it should be one of the mantras of AA. Yes. And that you also yourself said how to form and fluidly use concepts as the most important open problem.
+00:37:25
+And I.
+00:37:27
+Yes. How to form and fluidly use concepts is the most important open problem, and so that's what is a concept and what is an analogy, a concept is in some sense a fundamental unit of thought.
+00:37:45
+So say we have a. Concept of. A dog, OK? And a concept is embedded in a whole space of concepts so that there's certain concepts that are closer to it or farther away from it.
+00:38:07
+Are these concepts, are they really like fundamental, like you mentioned? And they look almost like axiomatically, very basic. And then there's other stuff built on top of it which include everything is are the complicated.
+00:38:20
+Like, you can certainly have formed new concepts, right? I guess that's the question. Yeah. Can you form new concepts that are commonly complex combinations of other kinds? Yes, absolutely.
+00:38:33
+And that's kind of what we we do in learning.
+00:38:37
+And then what's the role of analogies in that? So analogy is when you recognize that one situation. Is essentially the same as another situation and essentially is kind of the keyword there, because it's not the same. So if I say. Last week, I did a podcast interview in actually like three days ago in Washington, D.C., and that situation was very similar to this situation, although it wasn't exactly the same. You know, it was a different person sitting across from me.
+00:39:18
+We had different kinds of microphones. The questions were different. The building was different. There's all kinds of different things.
+00:39:24
+But really, it was analogous or I can say so.
+00:39:29
+So doing a podcast interview, that's kind of a constant it's a new concept. You know, I never had that concept before.
+00:39:38
+So essentially, I mean and I can make an analogy with it, like being interviewed for a news article in a newspaper. And I can say, well, you kind of play the same role that the the newspaper, the reporter played.
+00:39:57
+It's not exactly the same because maybe they actually emailed me some written questions rather than talking and the writing.
+00:40:05
+The written questions, you know, are analogous to your spoken questions.
+00:40:10
+And, you know, there's just all kinds of things somehow probably connects to conversations you have over Thanksgiving dinner and just general conversations. There's like a thread you can probably take that just stretches out in all aspects of life that connect to this podcast. I mean, sure. Conversations between humans. Sure.
+00:40:29
+And if I go and tell a friend of mine about this podcast interview, my friend might say, oh, the same thing happened to me. You know, let's say, you know, you ask me some really hard question and I have trouble answering it.
+00:40:46
+My friend could say the same thing happened to me, but it was like it wasn't a podcast interview.
+00:40:51
+It wasn't a it was a completely different situation. And yet my friend is seeing essentially the same thing. You know, we say that very fluidly.
+00:41:03
+The same thing happened to me, essentially the same thing. We don't even say that. Right. You're just imply.
+00:41:09
+Yes. Yeah.
+00:41:10
+And the view that kind of what went into, say, copycat, that that whole thing is that that that that act of saying the same thing happened to me is making an analogy.
+00:41:22
+And in some sense, that's what underlies all of our concepts.
+00:41:27
+Why do you think analogy making that you're describing is so fundamental to cognition? Like it seems like it's the main element action of what we think of as cognition. Yeah, so it can be argued that all of this. Generalization, we do have concepts. And recognizing concepts in different situations. Is done by analogy. That that's. Every time I'm recognizing that, say. You're a person.
+00:42:09
+That's by analogy because I have this concept of what person is and I'm applying it to you, and every time I recognize a new situation, like one of the things I talked about it in the book was that the concept of walking a dog, that that's actually making an analogy because all of the you know, the details are very different.
+00:42:32
+So so the reasoning could be reduced down to essentially analogy making to all the things we think of as like, yeah, like you said, perception.
+00:42:44
+So perception is taking raw sensory input and it's somehow integrating into our our understanding of the world, updating the understanding and all of that has just this giant mess of analogies that are being made.
+00:42:57
+I think so, yeah. If you just linger on it a little bit. Like what? What do you think it takes to engineer a process like that for us in our artificial systems?
+00:43:09
+We need to understand better, I think how. How we do it, how humans do it. And it comes down to internal models. I think, you know, people talk a lot about mental models that concepts or mental models that I can. In my head, I can do a simulation of a situation like walking a dog and that there's some work in psychology that. Promotes this idea that all of concepts are really mental simulations, that whenever you encounter a concept or situation in the world or you read about it or whatever, you do some kind of mental stimulation that allows you to predict what's going to happen to to develop expectations of what's going to happen.
+00:44:05
+So that's the kind of structure I think we need, is that kind of mental model that and in our brain, somehow these mental models are very much inter connected again.
+00:44:18
+So stuff we're talking about are essentially open problems. Right. So if I ask a question, I don't mean that you would know the answer. I'm really just hypothesizing.
+00:44:28
+But how big do you think is the the network graph data structure of concepts that's in our head? Like if we're trying to build that ourselves, like it's we take it.
+00:44:45
+That's one of the things we take for granted, we think. I mean, that's why we take common sense for granted with common sense.
+00:44:50
+It's trivial, but how big of a thing of concepts is that underlies what we think of as common sense, for example? Yeah, I don't know, and I'm not I don't even know what units to measure it in. And you say how big is the roof we put right with?
+00:45:10
+But, you know, we have you know, it's really hard to know. We have a.
+00:45:15
+What, 100 billion neurons or something, I don't know. And they're connected via trillions of synapses and there's all this chemical processing going on.
+00:45:27
+There's just a lot of capacity for stuff. And their information is encoded in different ways in the brain.
+00:45:34
+It's encoded in chemical interactions, is encoded in electric, like firing and firing rates.
+00:45:41
+And and nobody really knows how it's encoded. But it just seems like there's a huge amount of capacity. So I think it's it's huge. It's just enormous. And it's amazing how much stuff we know. Yeah.
+00:45:55
+And but we know and not just know like facts, but it's all integrated into this thing that we can make analogies with. Yes. There's a dream of semantic web and there's there's a lot of dreams from exper systems of building giant knowledge bases.
+00:46:13
+Do you see a hope for these kinds of approaches of building, of converting Wikipedia into something that could be used in analogy, making sure and I think people have made some progress along those lines.
+00:46:27
+I mean, people have been working on this for a long time.
+00:46:30
+But the problem is and this, I think is the problem of common sense, like people have been trying to get these common sense networks here at MIT. There's this concept net project. Right.
+00:46:42
+But the problem is that, as I said, most of the. Knowledge that we have is invisible to us, it's not in Wikipedia. It's very basic things about. You know, intuitive physics, intuitive psychology. Intuitive of metaphysics, all that stuff, if you were to create a website that described intuitive physics into the psychology, would it be bigger or smaller than Wikipedia? What do you think? I guess describe to whom. I'm sorry, but that's that's really good, you know.
+00:47:23
+Yeah, that's a hard question because, you know, how do you represent that knowledge is the question. Right. I can certainly write down F equals M and O Newton's laws. And a lot of physics can be deduced from that. But that's probably not the best representation of that knowledge for for doing the kinds of reasoning we want a machine to do so. So I don't know.
+00:47:55
+It's it's impossible to say now. And people you know, the projects like there's a famous the famous psych project.
+00:48:03
+Right, that Doug Douglas Ollivant did that was trying, still going, I think is still going. And if the idea was to try and encode all of common sense knowledge, including all this invisible knowledge in some kind of logical representation, and it just never.
+00:48:23
+I think I could do any of the things that he was hoping it could do, because that's just the wrong approach, of course, that's what they always say, you know, and then the history books will say, well, the psych project finally found a breakthrough in 2058 or something.
+00:48:41
+And it you know, we're so much progress has been made in just a few decades that knows what the next breakthroughs will be. It could be it's certainly a compelling notion what the psych project stands for.
+00:48:54
+I think it was one of the earliest people to say common sense is what we need and that's what we need.
+00:49:02
+All this like expert system stuff that is not going to get you to A.I. You need common sense.
+00:49:07
+And he basically gave up his whole. Academic career to to go pursue that, and I totally admire that, but I think that the approach itself. Will not in twenty, twenty, twenty four. What do you think is wrong with the approach? What kind of approach would might be successful? Well, again, that he knows the answer. I knew that, you know, one of my talks, one of the people in the audience was a public lecture.
+00:49:39
+One of the people in the audience said, what A.I. companies are you investing in, like investment advice? I'm a college professor for one thing, so I don't have a lot of extra funds to invest.
+00:49:52
+But also, like, no one knows what's going to work in Haiti. Right. That's the problem.
+00:49:58
+Let me ask another impossible question in case you have a sense in terms of data structures that will store this kind of information, do you think they have been invented yet, both in hardware and software? Or something else needs to be are we told, you know, I think something else has to be invented. I that's my guess, is the breakthrough's the most promising, would that be in hardware and software? Do you think we can get far with the current computers or do we need to do something that is saying.
+00:50:33
+I don't know if turning computation is going to be sufficient, probably, I would guess it will.
+00:50:39
+I don't see any reason why we need anything else.
+00:50:42
+But so so in that sense, we have invented the hardware we need, but we just need to make it faster and bigger and we need to figure out the right algorithms and the right sort of architecture.
+00:50:56
+TURING That the very mathematical notion when we have to build intelligence is now an engineering notion where you throw all that stuff.
+00:51:05
+Well, I guess I guess it is a it is a question. The people have brought up this question, you know, and when you asked about is our current hardware. Will our current hardware work well, turn computation says that, like our current hardware. He is in principle, a Turing machine, right? So all we have to do is make it faster and bigger. But there have been people like Roger Penrose, if you might remember that he said Turing machines cannot produce intelligence because intelligence requires continuous valued numbers.
+00:51:47
+I mean, that was sort of my reading of his argument and quantum mechanics and what else?
+00:51:54
+Whatever, you know, but I don't see any evidence for that, that we need new computation paradigms. But I don't know if we're you know, I don't think we're going to be able to scale up our current approaches to programming these computers.
+00:52:15
+What is your hope for approaches like copycat or other cognitive architectures? I've talked to the creator of SOAR, for example. I've used that car myself. I don't know if you're familiar with. Yeah, yeah.
+00:52:25
+What do you think is what's your hope of approaches like that in helping develop systems of greater and greater intelligence in the coming decades? Well, that's what I'm working on now, is trying to take some of those ideas and extending it, so I think. There are some really promising approaches that are going on now that have to do with more active generative models. So this is the idea of this simulation in your head of a concept when you. If you want to when you're perceiving the new situation, you have some simulations in your head, those are generative models are generating your expectations or generating predictions.
+00:53:13
+So that's part of a perception. You have a mental model that generates a prediction and then you compare it with. Yeah. And then the difference.
+00:53:20
+And you also that that generative model is telling you where to look and what to look at and what to pay attention to. And I think it affects your perception. It's not that just you compare it with your perception.
+00:53:33
+It it becomes your perception in a way. It is kind of a mixture of of the bottom up. Information coming from the world and your top down model being imposed on the world is what becomes your perception.
+00:53:53
+So your hope is something like that can improve perception systems and that they can understand things better. Yes. Yes.
+00:54:01
+What's the what's the step? Was the analogy making stuff there?
+00:54:06
+Well, there the idea is that you have this pretty complicated conceptual space.
+00:54:14
+You know, you can talk about a semantic network or something like that with these different kinds of concept models in your brain that are connected. So so let's let's take the example of walking a dog.
+00:54:28
+We were talking about that. OK, let's say I see someone out in the street walking a cat. Some people walk their cats. I guess this seems like a bad idea, but yeah.
+00:54:38
+So my model of my you know, there's connections between my model of a dog and model of a cat.
+00:54:46
+And I can immediately see the analogy of a.
+00:54:52
+That those are analogous situations, but I can also see the differences and that tells me what to expect. So also, you know, I have a new situation.
+00:55:05
+So another example with the walking the dog thing is sometimes people I see people riding their bikes with a leash, holding a leash and the dogs running alongside.
+00:55:14
+OK, so I know that the I recognize that as kind of a dog walking situation, even though the person's not walking right in. The dog's not walking because I, I have these models that say, OK, riding a bike is sort of similar to walking or it's connected, it's a means of transportation. But I because they have their dog there, I assume they're not going to work, but they're going out for exercise. And, you know, these analogies help me to figure out kind of what's going on, what's likely.
+00:55:50
+But sort of these analogies are very human interpretable. Mm hmm. So that's the kind of space. And then you look at something like the current deep learning approaches that kind of help you to take raw sensory information and to sort of automatically build up hierarchies of of of what you call them, concepts. They're just not human interpretive concepts.
+00:56:13
+What's your what's the link here, do you hope? It's sort of the hybrid system question, how do you think that you can start to meet each other with the value of learning in this systems, the forming of analogy, making the goal of, you know, the original goal of deep learning in at least visual perception was that you would get the system to learn to extract features that at these different levels of complexity.
+00:56:47
+So maybe edge detection and that would lead into learning simple combinations of edges and then more complex shapes and then whole objects or faces and. This was based on the ideas of the neuroscientist's Hubel and Wiesel, who had seen laid out this kind of structure and brain. And I think that is that's right to some extent, of course, people have found that the whole story is a little more complex than that in the brain, of course, always is. And there's a lot of feedback.
+00:57:27
+And so I see that. As as absolutely a. A good brain inspired approach to some aspects of perception, but one thing that it's lacking. For example, is all of that feedback? Which is extremely important.
+00:57:50
+The interactive element you mentioned, the the expectation, the conceptual level going back and forth with the the the expectation, the perception and yes, going back and forth.
+00:58:01
+So. Right. So that is extremely important. And, you know, one thing about deep neural networks is that in a given situation, like, you know, they're trained, right?
+00:58:13
+They get these weights and everything.
+00:58:15
+But then now I give them a new a new image, let's say. Yes, they. Treat every part of the image in the same way. You know, they apply the same filters at each layer to all parts of the image. There's no feedback to say like, oh, this part of the image is irrelevant, right?
+00:58:38
+I shouldn't care about this part of the image or this part of the image is the most important part. And that's kind of what we humans are able to do because we have these conceptual expectations. So there's, by the way, a little bit work in that. There's certainly a lot more in what's under the convention in natural language processing nowadays. It's it's a and that's exceptionally powerful. And it's a very just as you say, is a really powerful idea.
+00:59:07
+But again, in sort of machine learning, it all kind of operates in an automated way. That's not human.
+00:59:13
+It's not. It's not also. OK, so you're right, it's not dynamic. I mean, in the sense that as a perception of a new example is being.
+00:59:23
+Processed. Those are tensions, weights don't change, right? So, I mean, there's a. This kind of notion that there's not a memory, so you're not aggregating the idea of this mental model?
+00:59:42
+Yes, yeah, that seems to be a fundamental idea. There's not a really powerful I mean, there's some stuff with memory, but there's not a powerful way to represent the world in some sort of way.
+00:59:56
+That's deeper than I mean, it's so difficult because, you know, neural networks do represent the world.
+01:00:04
+They do have a mental model. Right. But it just seems to be shallow. It's it's hard to it's hard to criticize them at the fundamental level.
+01:00:17
+To me, at least, it's easy to it's it's easy to criticize and will look like. Exactly. You're saying mental models, sort of almost from a psycho, put a psychology head on, say, look, these networks are clearly not able to achieve what we humans do with forming mental models, but the analogy making so on. But that doesn't mean that they fundamentally cannot do that. It's very difficult to say that I mean this to me. Do you have a notion that the learning approaches really?
+01:00:47
+I mean, they're going to not not only are they limited today, but they will forever be limited in being able to construct such mental models.
+01:00:59
+I think the idea of the dynamic. Perception is key here, the idea that. Moving your eyes around and getting feedback, and that's something that, you know, there's been some models like that, there's certainly recurrent neural networks that operate over several times steps.
+01:01:22
+And but the problem is that the actual the recurrence. Is. You know, basically the the feedback is to the next time step is the entire hidden state of the network, which which is it turns out that that's. That doesn't work very well, but see, here's the thing I'm saying is mathematically speaking, it has the information in that recurrence to capture everything. It just doesn't seem to work. Yeah. So, you know, it's like it's the same Turing machine question, right?
+01:02:06
+Yeah. Maybe theoretically a computer is anything that's during a university machine can can be intelligent, but practically the architecture might be have be very specific kind of architecture to be able to create it.
+01:02:23
+So just I guess it's sort of ask almost the same question again is how big of a role do you think deep learning needs will play or needs to play in this in perception?
+01:02:38
+I think deep learning as it's currently. As it currently exists, you know, we'll play that kind of thing, we'll play some role. And, uh, but I think that there is a lot more going on in perception, but who knows, you know, the definition of deep learning. I mean, it's pretty broad. It's kind of an umbrella for it. So what I mean is purely sort of neural networks. Yeah. And a feed forward neural networks, essentially.
+01:03:06
+Or there could be a recurrence. But yeah, sometimes it feels like for us I talk to Gary Marcus. It feels like the criticism of deep learning is kind of like us birds criticizing airplanes for not flying well or that they're not really flying.
+01:03:25
+Do you think deep learning, do you think it could go all the way like little things?
+01:03:32
+Do you think that, yeah, the brute force learning approach can go all the way?
+01:03:39
+I don't think so, no. I mean, I think it's an open question, but I tend to be on the neatness side that there has, that there's some things that. We've been evolved to be able to learn and that learning just can't happen without them.
+01:04:02
+So so one example here's here's an example I had in the book that that I think is useful to me, at least in thinking about this, so that this has to do with the deep mind Atari game playing program.
+01:04:15
+OK, and learn to play these Atari video games just by getting input from the pixels of the screen. And it learned to play the game, break out a thousand percent better than humans. OK, that was one of the results and it was great. And it learned this thing where it tunneled through the side of the of the bricks in the breakout game and the ball could bounce off the ceiling and then just wipe out bricks.
+01:04:47
+OK, so. There was a group who did an experiment where they took the paddle, you know, that you move with the joystick and moved it up to pixels or something like that.
+01:05:02
+And then they they looked at a deep cue learning system that had been trained on breakout and said, could it now transfer? It's learning to this new version of the game. Of course, a human could that and it could maybe that's not surprising.
+01:05:17
+But I guess the point is it hadn't learned the concept of a paddle. It hadn't learned that it hadn't learned the concept of a ball or the concept of tunneling. It was learning something. We caught we looking at it kind of.
+01:05:32
+Anthropomorphized it and said, oh, here's what it's doing and the way we describe it, but it actually didn't learn those concepts. And so because it didn't learn those concepts, it couldn't make this transfer. Yes.
+01:05:44
+So that's a beautiful statement. But at the same time, by moving the paddle, we also anthropomorphize flaws to inject into the system that will then flip out. How impressed we are by what I mean by that is to me, the Atari games were to me deeply impressive that that was possible at all.
+01:06:06
+So the first pause on that and people should look at that just like the game of go, which is fundamentally different to me then than what JetBlue did. Even though there's still magic, there's still three search. It's just everything deep mine is done in terms of learning, however limited, it is still deeply surprising to me. Yeah, I'm not I'm not trying to say that what they did wasn't impressive.
+01:06:33
+I think it was incredibly impressive to me. It's interesting is moving the board just another level. Another thing that needs to be learned. So like we've been able to maybe maybe been able to, through the criminal networks, learn very basic concepts that are not enough to do this general reasoning and maybe with more data.
+01:06:55
+I mean, the did the you know, the interesting thing about the examples that you talk about and beautifully is that it's often flaws of the data.
+01:07:06
+Well, that's the question. I mean, I think that is the key question is whether it's a flaw of the data or not or the metrics, because we've always the reason I brought up this example was because you were asking, do I think that, you know, learning from data could go all the way?
+01:07:19
+Yes. And this was why I brought up the example, because I think and this is not at all to. To take away from the impressive work that they did, but it's to say that when we look at what these systems learn. Do they learn the human, the things that we humans consider to be the relevant concepts and in that example, it didn't? Yes, sure.
+01:07:47
+If you train it on a movie, the paddle being in different places, maybe it could deal with maybe it would learn that concept, I'm not totally sure. But the question is scaling that up to more complicated worlds. To what extent could a machine that only gets this very raw data learn to divide up the world into relevant concepts? And I don't know the answer, but I would bet that that that without some innate notion that it can't do it.
+01:08:28
+Yeah. Ten years ago, I 100 percent agree with you as the most espersen system. But now I have a one like I have a glimmer of hope.
+01:08:37
+OK, that's fair enough. And I think I think that's a deep learning in the community is I still if I had to bet all my money one hundred percent deep learning will not take us all away, but there's still other still.
+01:08:49
+I was so personally sort of surprised by the targets, by go by the by the power of self play, of just game playing that I was like many other times just humbled of how little I know about what's possible. And I think fair enough. Self play is amazingly powerful. And, you know, that's that goes way back to Arthur Samuel, right.
+01:09:16
+With his checker plane program and that which was brilliant and surprising that it did so well.
+01:09:24
+So just for fun, let me ask you, on the topic of autonomous vehicles, it's the area that that I work, at least these days most closely on. And it's also an area that I think is a good example that you use as sort of an example of things. We as humans don't always realize how hard it is to do, like the concentration or the different problems that we think are easy when we first try them and then we realize how hard it is.
+01:09:53
+OK, so why you've talked about this autonomous driving being a difficult problem, more difficult than we realize humans give it credit for. Why is it so difficult? What are the most difficult parts in your view? I think it's difficult because of the world is so Open-Ended, as to what kinds of things can happen, so.
+01:10:19
+You have sort of what normally happens, which is as you drive along and nothing, nothing surprising happens and autonomous vehicles can do, the ones we have now evidently can do really well on most normal situations, as long as long as, you know, the weather is reasonably good and everything.
+01:10:42
+But if some we have this notion of educate or, you know, things in the tail of the distribution, you'd call it the long tail problem, which says that there's so many possible things that can happen that was not in the training data of the machine that. It won't be able to handle it because it doesn't have common sense, right? It's still the paddle moved. Yeah, it's the paddle moved from the right. And so my understanding and you probably are more of an expert than I am on this, is that.
+01:11:22
+Current self-driving car vision systems have problems with obstacles, meaning that they don't know which obstacles, which quote unquote obstacles they should stop for and which ones they shouldn't stop for. And so a lot of times I read that they tend to slam on the brakes quite a bit. And the most common accident with self-driving cars are people rear ending them because they were surprised they weren't expecting the machine, the car to stop. Yeah.
+01:11:53
+So there's there's a lot of interesting questions there whether. Because you measure kind of two things, so one is the problem of perception, of understanding, of interpreting the objects that are detected correctly, and the other one is more like the policy, the action that you take or how you respond to it. So a lot of the cars breaking is a kind of notion of to clarify, there's a lot of different kind of things that are people calling autonomous vehicles.
+01:12:25
+But a lot of the L for vehicles with a safety driver are the ones like Wimoweh and crews and those companies, they tend to be very conservative and cautious.
+01:12:35
+So they tend to be very, very afraid of hurting anything or anyone and getting in any kind of accidents.
+01:12:42
+So their policy is very kind of that that results in being exceptionally responsive to anything that could possibly be an obstacle.
+01:12:50
+Right. Which which which the human drivers around it. It's unpredictable, it behaves unpredictably, that's not a very human thing to do caution, that's the thing we're good at, especially in driving. We're in a hurry, often angry and etc., especially in Boston.
+01:13:08
+So and then there's sort of another and a lot of times that's machine learning is not a huge part of that.
+01:13:15
+It's becoming more and more unclear to me how much, you know, sort of speaking to public information, because a lot of companies say they're doing deep learning and machine learning just attract good candidates. The reality is, in many cases, it's still not a huge part of the of the perception. There's light and there's other sensors that are much more reliable for optical detection. And then there's Tesla approach, which is vision only. And there's a few companies doing that test the most sort of famously pushing that forward.
+01:13:50
+And that's because the light is too expensive, right? Well, I mean. Yes, but I would say if you were to for free give to every test vehicle, I mean, Elon Musk fundamentally believes that Leider is a crutch, right? Fantasy. Said that. That. If you want to solve the problem of machine learning, Lydda is not should not be the primary sensor is the belief, OK, the camera contains a lot more information.
+01:14:21
+Mm hmm. So if you want to learn, you want that information. But if you want not hit obstacles, you want like sort of it's this weird trade off because. Yeah, so what does the vehicles have a lot of, which is really the thing.
+01:14:41
+The the the fall-back the primary fallback sensor is radar, which is a very crude version of Lider. It's a good detector of obstacles, except when those things are standing right. The stopped vehicle. Right. That's why it had problems with crashing into to stop fire trucks, stop fire trucks.
+01:15:02
+So the hope there is that the vision sensor would somehow catch that. And for there's a lot of problems with perception.
+01:15:09
+I think they are doing actually some incredible stuff in the. Almost like an active learning space where it's constantly taking edge cases and pulling back in, there's a data pipeline, another aspect. That is really important that people are studying now is called multitask learning, which is sort of breaking apart this problem, whatever the problem is in this case, driving into dozens or hundreds of little problems that you can turn into learning problems. So this giant pipeline that, you know, it's kind of interesting.
+01:15:47
+I've I've been skeptical from the very beginning, but become less and less skeptical over time. How much of driving we learned. I still think it's much farther than than the CEO of that particular company thinks it will be. But it is surprising that through good engineering and data collection and active selection of data, how you can attack that long tail. It's an interesting open question that you're absolutely right. There's a much longer tail, all these cases that we don't think about.
+01:16:21
+But it's this is a fascinating question that applies to natural language in all spaces. How big how how big is the long tail?
+01:16:29
+Right.
+01:16:30
+And I mean, not to linger on the point, but what's your sense in driving? In these practical problems of the human experience, can it be learned so the current what are your thoughts of sort of Elon Musk thought, let's forget the thing that he says will be solved in a year, but can it be solved in? In a reasonable timeline or two, fundamentally, other matters need to be invented. So I don't I think that. Ultimately driving, so is the trade off in a way, you know, being able to drive and deal with any situation that comes up does require kind of full human intelligence.
+01:17:17
+And even in humans aren't intelligent enough to do it because humans I mean, most human accidents are because the human wasn't paying attention or the humans drunk or whatever, and not because they weren't intelligent and not because they weren't intelligent enough.
+01:17:33
+Right. Whereas the accidents with autonomous vehicles is because they weren't intelligent enough. They're always paying attention.
+01:17:43
+They're always paying attention. So so it's a trade off, you know. And I think that it's a very fair thing to say that autonomous vehicles will be ultimately safer than humans because humans are very unsafe.
+01:17:58
+It's kind of a low bar.
+01:18:00
+But just like you said that, I think he has got a bad rap. Right, because we're really good at the common sense thing.
+01:18:08
+Yeah, we're great at the common sense thing.
+01:18:09
+We're bad at the paying attention thing, paying attention to things, especially more, you know, driving is kind of boring and we have these phones to play with and everything.
+01:18:17
+But I think. What what's going to happen is that for many reasons, not just EHI reasons, but also like legal and other reasons, that.
+01:18:32
+The definition of self driving is going to change autonomous, it's going to change, it's not going to be just.
+01:18:41
+I'm going to go to sleep in the back, and you just drive me anywhere. It's going to be more.
+01:18:47
+Certain areas are going to be instrumented to have the sensors and the mapping and all the stuff you need for that, that the autonomous cars won't have to have for common sense and they'll do just fine in those areas as long as pedestrians don't mess with them too much. That's another question.
+01:19:10
+But. I don't think we will have. Fully autonomous self driving in the way that, like most, the average person thinks of it for very long time.
+01:19:22
+And just to reiterate, this is the interesting open question that I think I agree with you on, is to solve fully autonomous driving. You have to be able to engineer in common sense.
+01:19:34
+Yes, I think that's an important thing to hear and think about. I hope that's wrong.
+01:19:42
+But I currently agree with you that unfortunately, you do have to have to be more specific, sort of these deep understandings of physics and yeah, of of the way this world works and also the human dynamics that you mentioned, pedestrians and cyclists, actually, that's whatever that nonverbal communication is, some people call it, there's that dynamic that is also part of this common sense. Right.
+01:20:09
+And we're pretty we humans are pretty good at predicting what other humans are going to do and how our actions impact the behaviors of so weird game theoretic dance that we're good at somehow.
+01:20:22
+And the funny thing is, because I've watched countless hours of pedestrian video and talk to people, we humans are also really bad at articulating the knowledge we have. Right. Which has been the huge challenge. Yes. So you've mentioned embodied intelligence. What do you think it takes to build a system of human level intelligence? Does it need to have a body?
+01:20:47
+I'm not sure, but I'm coming around to that more and more.
+01:20:53
+And what does it mean to be I don't mean to keep bringing up Yallock.
+01:20:57
+And he looms very large.
+01:21:01
+Well, he certainly has a large personality. Yes. He thinks that the system needs to be grounded, meaning it needs to sort of be able to interact with reality, but doesn't think it necessarily needs to have a body.
+01:21:14
+So when you think of what's the difference, I guess I want to ask, when you mean body, do you mean you have to be able to play with the world? Or do you also mean like there's a body that you that you have to preserve? That's a good question. I haven't really thought about that, but I think both, I would guess because. I think you.
+01:21:38
+I think intelligence, it's so hard to to separate it from our self, our desire for self-preservation, our emotions are all that non rational stuff that kind of gets in the way of logical thinking because we.
+01:22:02
+The way. You know, we're talking about human intelligence or human level intelligence, whatever that means, a huge part of it is social.
+01:22:13
+That, you know, we were evolved to be social and to deal with other people, and that's just so ingrained in us that it's hard to separate intelligence from that. I I think, you know, I for the last 70 years or however long it's been around, it has largely been separate. There's this idea that there's like this kind of very well Cartesian.
+01:22:41
+There's this, you know, thinking thing that we're trying to create, but we don't care about all this other stuff.
+01:22:48
+And I think the other stuff is very fundamental.
+01:22:52
+So there's a idea that things like emotion get in the way of intelligence as opposed to being an integral part, integral part of it.
+01:23:00
+So, I mean, I'm Russian, so romanticized the notions of emotion and suffering and all that kind of, uh, fear of mortality, those kinds of things.
+01:23:09
+So I especially sort of by the way, did you see that there is this recent thing going around the Internet of this? Some I think he's a Russian or some Slavic that had written this thing sort of anti the idea of superintelligence. I forgot maybe he's Polish anyway. So it all these arguments and when one was the argument from Slavic pessimism, my favorite.
+01:23:37
+Do you remember what the argument is? Just it's like nothing ever works.
+01:23:41
+Think exactly.
+01:23:45
+So what do you think is the role like?
+01:23:47
+That's such a fascinating idea that the what we perceive as sort of the limits of human of the human mind, which is emotion and fear and all those kinds of things are integral to intelligence. Could could you elaborate on that?
+01:24:05
+Like what? Why is that important, do you think? For human level intelligence. At least the way the humans work, it's a big part of how it affects how we perceive the world, it affects how we make decisions about the world, it affects how we interact with other people. It affects our understanding of other people, you know. For me to understand your. What you are going what you're likely to do, I need to have kind of a theory of mind, and that's.
+01:24:41
+Very much a theory of emotion and motivations and goals and and to understand that I.
+01:24:53
+You know, we have this whole system of mirror neurons.
+01:24:58
+We you know, I sort of understand your motivations through sort of simulating it myself.
+01:25:06
+So, you know, it's not something that I can prove. That's necessary, but it seems very likely so, OK, you've written the op ed in The New York Times titled We Shouldn't Be Scared by Superintelligent A.I, and it criticized a little bit, too, Russell Nick Bostrom. Can you try to summarize that article's key ideas? So it was spurred by an earlier New York Times op ed by Stewart Russell, which was summarizing his book called Human Compatable.
+01:25:46
+And the article was saying, you know, if we if we have superintelligent A.I, we need to have its values aligned with our values and it has to learn about what we really want. And he gave this example. What if we have a super intelligent A.I. and we give it the problem of solving climate change and it decides that the best way to lower the carbon in the atmosphere is to kill all the humans. OK, so to me, that just made no sense at all because a super intelligent A.I., first of all, thinking, trying to figure out what what superintelligence means.
+01:26:31
+And it doesn't. It seems that.
+01:26:34
+It's something that superintelligent. Can't just be intelligent along this one dimension of, OK, we're going to figure out all the steps, the best optimal path to solving climate change and not be intelligent enough to figure out that humans don't want to be killed, that you could get to one without having the other.
+01:26:57
+And, you know, Bostrom in his book talks about the orthogonality hypothesis where he says he thinks that a systems.
+01:27:09
+I can't remember exactly what it is, but like a systems goals and its values don't have to be aligned. There's some orthogonality there which didn't make any sense to me.
+01:27:19
+So you're saying that in any system that's sufficiently, not even superintelligent, but as a greater good intelligence, there's a holistic nature that will sort of attention that will naturally emerge that prevents it from sort of any one dimension running away? Yeah.
+01:27:36
+Yeah, exactly. So. So. You know, Ostrum had this example of the the superintelligent A.I that that makes that turns the world into paper clips because its job is to make paper clips or something, and that just as a thought experiment, didn't make any sense to me.
+01:27:55
+Well, as a thought experiment or as a thing that could possibly be realized either.
+01:28:02
+So so I think that, you know, what my op ed was trying to do was say that that intelligence is more complex than these people are presenting it, that it's not like it's not so separable, the rationality.
+01:28:19
+The values, the emotions, the all of that, that it's the view that you could separate all these dimensions and build the machine that has one of these dimensions, and it's superintelligent in one dimension, but it doesn't have any of the other dimensions. That's what I was trying to criticize, that that that I don't believe that. So can I read a few sentences from your Shobanjo, who is always super eloquent.
+01:28:53
+So he writes. I have the same impression as Melanie that our cognitive biases are linked with our ability to learn to solve many problems, they may also be a limiting factor for a. However, this is a may in quotes, things may also turn out differently and there's a lot of uncertainty about the capabilities of future machines. But more importantly for me, the value alignment problem is a problem. Well, before we reach some hypothetical superintelligence, it is already posing a problem in the form of super powerful companies.
+01:29:31
+Whose objective function may not be sufficiently aligned with humanity, general well-being, creating all kinds of harmful side effects, that he goes on to argue that at the orthogonality in those kinds of the concerns of just aligning values with the capabilities of the system is something that might come long before we reach anything like superintelligent. So your criticism is kind of really nice to saying this idea of superintelligent systems seem to be dismissing fundamental parts of what intelligence would take. And then Yoshio kind of says, yes, but.
+01:30:12
+If we look at systems that are much less intelligent, there might be these same kinds of problems that emerge. Sure.
+01:30:21
+But I guess the example that he gives there of these corporations, that's people, right? Those are people's values. I mean, we're talking about people. The corporations are. Their values are the values of the people who run those corporations, but the idea is the algorithm. That's right. So the fundamental person, the fundamental element of what does the bad things, a human being. Yeah, but the the algorithm kind of controls the behavior of this mass of human beings.
+01:30:56
+Which algorithm would prefer for a company. That's the so for example, if it's advertisement driven company that recommends certain things and encourages engagement. So it sort of gets money by encouraging engagement and therefore the company more and more the cycle that builds an algorithm that enforces more engagement and made perhaps more division in the culture and so on and so on.
+01:31:24
+Again, I guess the question here is sort of who has the agency?
+01:31:30
+So so you might say, for instance, we don't want our algorithms to be racist.
+01:31:36
+And facial recognition, some people have criticized some facial recognition systems as being racist because they're not as good on darker skin and lighter skin.
+01:31:47
+That's right. OK, but the agency there, the the actual facial recognition algorithm isn't what has the agency. It's it's not the racist thing. Right. It's it's the the I don't know, the the combination of the training data, the cameras being used or whatever.
+01:32:09
+But my understanding of and I say I totally agree with Bengoa there, that he you know, I think there are these value issues with our use of algorithms, but.
+01:32:22
+My understanding of what Russell's argument was is more that the algorithm, the machine itself has the agency now. It's the thing that's making the decisions and it's the thing that has what we would call values.
+01:32:39
+Yes.
+01:32:39
+So whether that's just a matter of degree, you know, it's hard it's hard to say. Right. Because but I would say that's sort of qualitatively different than a face recognition neural network.
+01:32:52
+And to broadly linger on that point, if you look at Elon Musk, Chrystia Russell or Bostrom, people who are worried about existential risks of AI, however far into the future, their argument goes as it eventually happens. We don't know how far, but that eventually happens. Do you share any of those concerns and what kind of concerns in general you have about that approach, anything like existential threat to humanity? So I would say, yes, it's possible, but I think there's a lot more.
+01:33:31
+Closer in existential threats, you had, as you said, like one hundred years for your time. For more than one hundred years, more than a hundred years.
+01:33:38
+And so maybe even more than 500 years. I don't I don't know.
+01:33:42
+I mean, it's so the existential threats are so far out that the future is there will be a million different technologies that we can even predict now that will fundamentally change the nature of our behavior, a reality society and so on before then.
+01:33:57
+I think so. I think so. And we have so many other. Pressing existential threats going on, nuclear weapons, even nuclear weapons, climate problems, you know. Poverty, possible pandemics. You can go on and on and I think, though, you know, worrying about existential.
+01:34:21
+Threat from A.I. is. It is not the first priority for what we should be worried about that that's kind of my view because we're so far away. But, you know, I'm not. I'm not necessarily criticizing Russell or Bostrom or whoever for worrying about that, and I think it's some some people should be worried about it.
+01:34:47
+It's it's certainly fine.
+01:34:48
+But I I was more sort of getting at there their view of intelligent intelligences. So it's more focusing on, like their view of superintelligence than a.
+01:35:05
+Just the fact of them worrying and the title of the article was written by The New York Times editors, I wouldn't have called it that we shouldn't be scared by superintelligent.
+01:35:16
+No. If you wrote maybe like we should redefine what you mean by superior.
+01:35:20
+I actually said, you know, something like superintelligence is not this is not a. Sort of coherent idea that doesn't that's not like something New York Times would put in and the follow up argument that your show makes also not argument, but a statement.
+01:35:42
+And I've heard him say before, and I think I agree, he kind of has a very friendly way of phrasing it as it's good for a lot of people to believe different things such as this guy.
+01:35:54
+Yeah, but it's also, practically speaking, like we shouldn't be like while your article stands like still Russell does amazing work. Bostrom does amazing work. You do amazing work. And even when you disagree about the definition of super intelligence or the usefulness of even the term, it's still useful to have people that like use that term. Right. And then argue it's. I absolutely agree with you there. And I think it's great that, you know, and it's great The New York Times will publish all this stuff.
+01:36:28
+So it's an exciting time to be here.
+01:36:31
+What what do you think is a good test of intelligence? Is is natural language ultimately a test that you find the most compelling, like the original or the what? You know, the higher levels of the Turing test? Kind of.
+01:36:46
+Yeah, yeah, I. I still think the original idea of the Turing test is a good test for intelligence. I mean, I can't think of anything better. You know, the Turing test, the way that it's been carried out so far, has been a very impoverished, if you will. But I think a real Turing test that really goes into depth, like the one that I mentioned I talk about in the book.
+01:37:12
+I talk about Ray Kurzweil and Mitchell Corpore have this bet right.
+01:37:17
+That that, uh, twenty twenty nine, I think is the date their machine will pass the Turing test and Terrance's. And they have a very specific like how many hours expert judges and all of that. And you know, Kurzweil says yes, Skipper says no, we can. We only have like nine more years to go to see.
+01:37:39
+But I, I you know, if something a machine could pass that. I would be willing to call it intelligent, and of course, nobody will they will say that's just the language model. If it does to, you would be comfortable as a language. A long conversation that. Well, yeah, you're I mean, you're right, because I think probably to carry out that long conversation, you would literally need to have deep, commonsense understanding of the world.
+01:38:10
+I think so. And conversations enough to reveal that.
+01:38:14
+I think it is another super fun topic of complexity that you have worked on, written about. Let me ask the basic question. What is complexity? So complexity is another one of those terms like intelligence.
+01:38:35
+It's perhaps overused, but my book about complexity. Was about this wide area of complex systems, studying different systems in nature, in technology and society in which you have emergence. Kind of like I was talking about with intelligence. You know, we have the brain, which has billions of neurons, and each neuron individually could be said to be not very complex compared to the system as a whole.
+01:39:10
+But the system, the the interactions of those neurons and the dynamics creates these phenomena that we call we call intelligence or consciousness, you know, that are we consider to be very complex. So the field of complexity is trying to find general principles that underlie all these systems that have these kinds of emergent properties. And the emergence occurs from like underlying the complex system is usually simple, fundamental interactions. Yes. And the the emergence happens when there's just a lot of these things interacting.
+01:39:52
+Yes. Sort of what? And then most of the science to date, can you talk about what is reductionism? Well, reductionism is when you try and take a system and divided up into its elements. Whether those be cells or atoms or. Subatomic particles, whatever your field is, and then try and understand those elements and then try and build up an understanding of the whole system by looking at sort of the sum of all the elements.
+01:40:31
+So what's your sense whether we were talking about intelligence or these kinds of interesting, complex systems? Is it possible to understand them in a reductionist way, which is probably the approach of most of science today? Right. I don't think it's always possible to understand the things we want to understand the most, so I don't think it's possible to look at single neurons. And. Understand what we call intelligence, you know, to look at sort of summing up in the sort of the summing up is the the issue here that were you know, the one example is that the human genome.
+01:41:15
+Right. So there was a lot of work on excitement about sequencing the human genome, because the idea would be that we'd be able to find genes that underlie diseases. But it turns out that. And I was very reductionist idea, you know, we figure out what all the the parts are, and then we would be able to figure out which parts cause which things.
+01:41:40
+But it turns out that the parts don't cause the things that we're interested in. It's like the interactions, the networks of these parts. And so that kind of reductionist approach didn't yield the the explanation that we wanted. What do you what use the most beautiful, complex system that you've encountered, the most beautiful that you've been captivated by? Is it sort of. I mean, for me, that is the simplest to be celebrated. Oh, yeah.
+01:42:13
+So I was very captivated by cellular automata and worked on cellular automata for several years.
+01:42:19
+Do you find it amazing or is it surprising that such simple systems, such simple rules and cellular timbre can create sort of seemingly unlimited complexity? Yeah, that was very surprising to me.
+01:42:34
+How do you make sense of it? How does that make you feel? Is it just ultimately humbling or is there a hope to somehow leverage this into a deeper understanding and even be able to engineer things like intelligence?
+01:42:47
+It's definitely humbling. How humbling in that. I also kind of awe inspiring that.
+01:42:57
+It's that are inspiring, like part of mathematics, that these incredibly simple rules can produce this very beautiful, complex, hard to understand behavior, and that that's it's mysterious and surprising still, but exciting because it does give you kind of the hope that you might be able to engineer complexity just from from something from the beginning.
+01:43:27
+Can you briefly say what is the Santa Fe Institute, its history, its culture, its ideas, its future? Sort of. I've never I mentioned to you I've never been, but it's always been this in my mind, this mystical place where brilliant people study the edge of chaos.
+01:43:42
+Yeah, exactly.
+01:43:45
+So the Santa Fe Institute was started in 1984 and it was created by a group of scientists, a lot of them from Los Alamos National Lab, which is. About 40 minute drive from Serbia, Stewart. They were mostly physicists and chemists, but they were frustrated in their field because they felt so that their field wasn't approaching kind of big interdisciplinary questions like the kinds we've been talking about. And they wanted to have a place where people from different disciplines could work on these big questions without sort of being siloed into physics, chemistry, biology, whatever.
+01:44:35
+So they started this institute and this was people like George Cowan, who is a chemist in the Manhattan Project, and Nicholas Metropolis, who mathematician, physicist, Murray Gell-Mann, physicist. And so some really big names here, Carneiro and economist, Nobel Prize winning economist.
+01:45:00
+And they started having these workshops and this whole enterprise kind of grew into this cancer research institute. That's.
+01:45:13
+Itself has been kind of on the edge of chaos its whole life, because it doesn't have any it doesn't have a significant endowment, has just been kind of living on whatever funding it can raise through donations and grants and. However, it can, you know, business, business associates and so on, but it's a great place, it's a really fun place to go think about ideas from that you wouldn't normally encounter.
+01:45:46
+So Sean Carroll is a physicist in the external faculty, and you mentioned that.
+01:45:53
+So there's some external faculty in this, people that a very small group of faculty, maybe, maybe about 10, who are there for five year terms that can sometimes get renewed. And then they have some postdocs and then they have this much larger on the order of one hundred external faculty or people like me who come and visit for various periods of time.
+01:46:17
+So what do you think is the future of the Santa Fe Institute? Like what if people are interested, like what was there in terms of the public interaction or students or so on, that that could be a possible interaction with the Santa Fe Institute or its ideas?
+01:46:32
+Yeah, so there's a there's a few different things they do.
+01:46:35
+They have a. Complex systems, summer school for graduate students and postdocs and sometimes faculty attend, too, and that's a four week, very intensive residential program where you go and you listen to lectures and you do projects and people, people really like that.
+01:46:53
+I mean, it's a lot of fun. They also have some specialty. Summer schools, there's one on computational social science, there's one on. Climate and sustainability, I think it's called. There's a few and then they have short courses where just a few days on different topics. They also have an online. Education platform that offers a lot of different courses and tutorials from SFI faculty. Including an introduction to complexity, of course, that I talk about awesome and there's a bunch of talks to an online from the guest speakers and so on, the host, a lot of yeah, they have sort of technical seminars, colloquia.
+01:47:42
+They and they have a community lecture series like Public Lectures, and they put everything on their YouTube channel.
+01:47:49
+So you can see it all. Watch it. Douglas Hofstadter, author of Gettle Mashaba, was your adviser. He mentioned a couple of times and collaborator. Do you have any favorite lessons or memories from your time working with him that continues to this day?
+01:48:06
+Yeah, but just even looking back throughout your time working with him.
+01:48:12
+So one of the things he taught me was that when you're looking at.
+01:48:18
+The complex problem, too, to idealize it as much as possible to try and figure out what are really what is the essence of this problem, and this is how like the copycat program came into being was by taking analogy making and saying how can we make this as idealised as possible with still retain really the important things we want to study. And that's really, you know, been a core theme of my research, I think. And I continue to try and do that.
+01:48:53
+And it's really very much kind of physics inspired.
+01:48:57
+Hofstetter was a Ph.D. in physics that was his background, like first principles kind of thing, like you're reduced to the most fundamental aspect of the problem. Yeah. The you can focus on solving that problem.
+01:49:09
+Yeah. And I you know, that was people used to work in these micro worlds. Right.
+01:49:14
+Like the block's world was very early, important area in A.I. and then that got criticized because they said, oh, you know, you can't scale that to the real world. And so people started working on much like more real world like problems. But now there's been kind of a return even to the block's world itself.
+01:49:36
+You know, we've seen a lot of people who are trying to work on more of these very idealized problems or things like natural language and common sense. So that's an interesting evolution of those ideas.
+01:49:49
+So the perhaps the blocks world represents the fundamental challenges of the problem of intelligence more than people realize it might.
+01:49:56
+Yeah. Is there sort of when you look back at your body of work in your life, you've worked on so many different fields, is there something that you're just really proud of in terms of ideas that you've gotten a chance to explore, create yourself? So I am really proud of my work on the copycat project, I think it's really different from what? Almost everyone has done, and I think there's a lot of ideas there to be explored and I guess one of the happiest days of my life.
+01:50:32
+You know, aside from like the births of my children was the birth of copycat, what it actually started to be able to make really interesting analogies.
+01:50:42
+And I remember that very clearly. That was very exciting time where you kind of gave life.
+01:50:50
+Yes. Artificial. So. That's right.
+01:50:52
+What in terms of what people can interact. So there's like a I think it's called Medicare, Medicaid, Medicare, and there's a Python three implementation.
+01:51:02
+If people actually want to play around with it and actually get into a study and maybe integrate into whether it's with deep learning or any other kind of work they're doing, what what would you suggest they do to learn more about it and to take it forward in different kinds of directions?
+01:51:18
+Yeah, so that there's Douglas Hofstadter's book called Fluid Concepts and Creative Analogies talks in great detail about copycat.
+01:51:27
+I have a book called Analogy Making as Perception, which is a version of my PhD thesis on it. There's also code that's available. You can get it to run. I have some links on my Web page to where people can get the code for it. And I think that that would really be the best way I get into it. And yeah, I'll play with it. Well, Molineux, an honor talking to you. I really enjoyed it.
+01:51:52
+Thank you so much for your time today.
+01:51:53
+Thanks. It's been really great. Thanks for listening to this conversation with Melanie Mitchell and thank you to our presenting sponsor cash app Download. It is called Lux podcast. You'll get ten dollars and ten dollars will go to First, a STEM education nonprofit that inspires hundreds of thousands of young minds to learn and to dream of engineering our future. Enjoy this podcast. Subscribe on YouTube. Give it five stars, an Apple podcast supported on Patrón or connect with me on Twitter.
+01:52:23
+And now let me give you some words of wisdom from Douglas Hofstadter and Melanie Mitchell. With our concepts that can be no thought and without analogies, there can be no concepts. And Melody adds, how to form and fluidly use concepts is the most important open problem in A.I.. Thank you for listening and hope to see you next time.

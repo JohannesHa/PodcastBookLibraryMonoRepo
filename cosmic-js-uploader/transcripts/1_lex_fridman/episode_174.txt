@@ -1,0 +1,608 @@
+00:00:00
+The following is a conversation with Sylvia McColley, a computer scientist at MIT, winner of the Turing Award, and one of the leading minds in the fields of cryptography, information security, game theory and most recently, cryptocurrency, and the theoretical foundations of a fully decentralized, secure and scalable block chain. And our Garand, a company of cryptographers, engineers and mathematicians that he founded in 2017. Quick mention of our sponsors. A third of Greens Nutrition Drink the Information in depth tech journalism website for stigmatic mushroom coffee and better help online therapy.
+00:00:42
+Click the sponsor links to get a discount to support this podcast. As a side note, let me say that I will be having many conversations this year on the topic of cryptocurrency. I'm reading and thinking a lot on this topic. I just recently finished reading the Bitcoin Standard, a book I highly recommend. As always, with this podcast. I'm approaching it with an open mind, with compassion, with as little ego as possible and yes, with love.
+00:01:11
+I hope you go along with me on this journey and don't judge me too harshly and any likely missteps. As usual, I will play devil's advocate. I will on purpose sometimes ask simple, even dumb questions, all to try and explore the space of ideas here with as much grace as I can muster, I have no financial interests here. I only have a simple curiosity and a love for knowledge, especially about a set of technologies that may very well transform the fabric of human civilization.
+00:01:44
+If you enjoy this thing, subscribe on YouTube, review an Apple podcast, follow on Spotify supporter and patron, or connect with me on Twitter. Àlex Friedman, as usual, although a few minutes of ads now there's time stamps so you can skip. But if you skip, please do still check out the sponsors, click the links by the stuff, whatever you have to do.
+00:02:05
+It really is the best way to support this podcast. This show is sponsored by Athletic Greens, the only one daily drink to support better health and peak performance. It replaced the multivitamin for me. I went far beyond that was seventy five vitamins and minerals. The first thing I drink every day. It's funny, I had a conversation with Jonathan from my dear friend of mine who I just discovered was an ultra marathon runner, and he talked about one of the mistakes he made is he really didn't ramp up slowly enough, so he had to pay for the cost there.
+00:02:40
+And I made this comment that, you know, life. Involves taking risks like that, you know, when you're not actually fully prepared, but taken on the task anyway and sometimes it's worth it. But given that it does seem nutritionally and physically in terms of like muscle, it's worthwhile to have like a base, like a balanced base of health based on which you can do some, like, crazy stuff. So I think it's good to see life as always, trying to maintain a healthy base that enables you to, in a somewhat healthy way, take on crazy activities.
+00:03:18
+And, you know, a lot of greens is undernutrition side is that's how I see them, is they give me the basic nutrition that I need, even if I mess up with the diet, even if I mess up with whatever sleep and whatever crazy stuff I do. Anyway, they also have fish oil and they're giving you one month's supply free when you sign up for the fight against that legs flex. Flood athletic Greenstar Councilor's works for the drink and the fish oil.
+00:03:44
+Trust me, it's awesome that one of my favorite sponsors, some of these trees, by the way, might go long, but you have timestamps you can skip. You don't have to listen to this. But I'm trying to do my best. I'm trying to do some interesting stuff that's actually worthwhile listening to. So hopefully it's fun and I'm trying to improvise more and more and just have fun with this thing. Life is short. I'm going to have fun with everything.
+00:04:05
+Even sponsor this show sponsored by the information. It's a website and a media company, I guess you can call it. They do in-depth, data driven investigative journalism in the world of technology. I first came across their work a few years ago and I remember being surprised that it was kind of expensive to sign up to. But I kept reading the stories and it pulled me in the the care the depth of the reporting made me realize, OK, this is what money can buy.
+00:04:36
+So I think there are some stuff that I didn't always agree with, but I always felt like it was the kind of journalism that was missing from the click bait world of tech reporting. So I signed up, even though I couldn't really afford it at the time and has been truly worth it.
+00:04:52
+In fact, the information is one of the places that made me think that there's hope for journalism.
+00:04:58
+In some sense, it feels like the engagement mechanisms that are driven by social media is driving our journalistic integrity into the ground. And so the financial model that the information operates under, it feels like it's the savior. There's also perhaps a side comment or perhaps it's actually one of the main qualities of the information is because of the quality of the reporting and the writing, the kind of people that read it. So like the some of the most successful CEOs I'm aware of read it so brings a lot of influential people together.
+00:05:32
+So then indirectly, the information becomes one of the places you go to to understand what sort of influential minds in the world of tech are thinking about. Anyway, you can get seventy five percent off your first month if you sign up at the information slash Lex. That's the information dotcom slash lacks. Besides anything else I see just as a good way of supporting in-depth journalism, I hope you do as well.
+00:05:58
+This show is also sponsored by Force Magmatic, the maker of delicious mushroom coffee plant based protein. I know what you're asking. Does the coffee tastes like mushrooms? No, in fact, it does not. There's a bunch of healthy benefits they keep telling me about. You can researcher yourself on the website, but all I know is it tastes good. It makes me feel good.
+00:06:18
+And I'm a huge fan of coffee also, even though mentioning mushrooms, unfortunately or fortunately, there is no psychedelic properties to this coffee.
+00:06:28
+That said, I'll be having a lot of conversations with psychedelics researchers on this podcast. I think it's in terms of the next couple of decades one of the most exciting areas of research in the space of neuroscience, biology, in the space of psychology, cognitive science and even just philosophy. So and even just medicine for overcoming addiction and all those kinds of things.
+00:06:51
+But back to the coffee. Get up to 40 percent off and free shipping and mushroom coffee bundles. If you go to for stigmatic dot com slash legs, that's for stigmatic dot com slash. Lex, this episode is also sponsored by Better Hope. They want municipal help. I refuse to spell help. It starts with an H and the P and the rest.
+00:07:12
+Please try to figure out they help you figure out what you need to match with the licensed professional therapist in under 48 hours.
+00:07:21
+I'm not triggered by the number 48 because it happens to be related to the challenge that I recently completed.
+00:07:27
+The four by four by forty eight challenge from David Goggins. Speaking of which, that man is not a licensed professional therapist, but he in fact is one of the kind of philosophical mentors, philosophical guides for me. In exploring my own mind, the limits of my own mind, the madness of my mind, the temporary ups and downs and the anger and how to use it successfully and how to avoid it and all those kinds of things, he truly is one of the most fascinating people I know and dare I say, almost like a kindred spirit to me in terms of the madness.
+00:08:02
+So I very much look forward to doing a podcast with him. We postpone the one we're supposed to do for the four by four by 48 because I hurt my foot and couldn't really push myself to the limit as I wanted to. So we decided to wait until everything is healed and I can really do some crazy stuff together with them and combine a podcast on top of that.
+00:08:22
+Anyway, better help is easy, private, affordable, available, worldwide. Check them out of better health outcomes. Flex has better health outcomes, Lex. And now here's my conversation with Sylvia McColley. Let's start with the big and the basic question, what is a block chain and why is it interesting? Why is a fascinating why is it powerful? All right, so a block chain.
+00:09:06
+Think of it. This is really a common database distributed. Think about is a ledger in which everybody can write an entry in a page. You can write, I can write and everybody can read. And you have a guarantee that everybody has the same copy of the ledger that is in front of you. So whatever you see on page seven, anyone else is on page seven. So what is extraordinary about this is this common knowledge thing that I think it is a really a first for humanity.
+00:09:42
+I mean, if you look at communication, like right now, you can communicate very quickly images of all sorts of photos. But do you ever have a certainty? Whatever you have received has been received by everybody else and not really.
+00:09:58
+And so there's a commonality of knowledge and the certainty that everybody can write. Nobody has been prevented from writing whatever they want. Nobody can erase. Nobody can tear a page of a ledger. Nobody can swap page. Nobody can change anything. And that is immutable. Common record is extremely powerful. And there's something fundamental that is decentralized about it. So at least in spirit, some degree against maybe a resistance to centralization. Absolutely. If it is not decentralized, how can it be common knowledge if only one person or a few people have a ledger?
+00:10:39
+The only you don't ever have to ask, you know, what is on page seven and how do you know that whatever that value is on page seven, they tell us anything to anybody else. And so this component is extremely powerful.
+00:10:55
+Just to just to give you an example, assuming that you do an auction, OK, you have to work very hard to build a building and now you want to auction off. Makes sense because you want to auction the world. Why the better yet? You want to organize the building and sell it in all parcels.
+00:11:16
+Now everybody sees the bids and you know, everybody sees the bids. You and I see the same agents as everybody else. So, you know, with a fair price has reached and you know, who owns what and who has paid how much. And if you do it, instead of advising on a centralized system, I put a bid, say, oh, congratulations, you won and your prize is twelve thousand five hundred seventy dollars. So if instead of that common knowledge is a very powerful tool for humanity, so we return to from a bunch of different perspectives, including like a technical perspective.
+00:11:57
+But you often talk about blog change and some of these concepts of decentralization and scalability, security, all those kinds of things. But one of the most maybe impactful, exciting things that leverage the block chain. This kind of larger idea of common knowledge is cryptocurrency, so the in the financial space, so it is there, can you say, in the same kind of basic way, what is cryptocurrency in the context of this common knowledge and context of the block chain?
+00:12:33
+Great cryptocurrency, that is, is a currency that is on such a ledger. So imagine that on the ledger initially, you know, with some I'll say you and I are only honoring each one. Let's give it an hour ourselves, a billion, each of whatever this unit.
+00:12:53
+Then I start writing on the ledger. I give 100 of his units to my sister. You give them like I give a lecture to my aunt. And then. And then now because it's written on the ledger and everybody can see my sister, I can give 57 of the units that she received from me to somebody else. And so and that is money and is money, because you can see that somebody who owes you a payment as really the money there, you don't have any more of a doubt when you want to sell an item.
+00:13:26
+If I write you a check, is the check covered if I had to or do I have the money at the moment of the transaction? You really see because of the ledger is always updated. What you see is what I see and what the merchant sees. You know that the money so is the most powerful and the money system of it is that because it is totally transparent. And so, you know that you have been paid and and you know that the money's there, you have not to second guess anything else.
+00:13:55
+So the the common knowledge applied there is you're basically mimicking the same kind of thing you would get in the physical space, which is if you give one hundred bucks or one hundred of that thing, whatever of that cryptocurrency to your sister, the actual transfer is as real as you giving like a basket of apples to your sister because that so in the case in the physical space, the the common knowledge is in the physics right. Of the atoms. And then it's digital space.
+00:14:30
+The common knowledge is in this ledger.
+00:14:33
+And so that transfer holds the same kind of power. But now it's operating in the digital space. Correct. Again, I apologize for a sort of ridiculous questions, but you mentioned cryptocurrency is a money. What is money? Why do we have money?
+00:14:55
+Do you think about this kind of from this high philosophical level at times of this tool, this idea that we humans have all kind of came up with and seem to be using effectively to do stuff, and that money is a social construct?
+00:15:14
+OK, in my opinion, and this has been somehow people always felt that somehow money is a way to allow us to transact, even though we wanted different things.
+00:15:27
+So I have two sheep and then you have a one cow and I wanted a cow, but you are looking for blankets instead, you know, to have money. It's really simplifies this. But at the end of its way, a bit was invented. And you started with gold. You started when the carnage of when you started with a check. But at the end of the day, money is essentially a social construct that because you know that what you receive, you can actually spend with somebody else.
+00:15:58
+And so there is a kind of a social impact and social belief that that you have at the end of the day, even a barter is a requires and beliefs that other people are going to accept the quote unquote currency you are offering them. Because if I'm a mason and you ask me to build a wall in your field and I did. And, you know, in exchange you give me a thousand sheep, what am I going to do? Eat them all know to feed them.
+00:16:32
+And if I don't feed them, they die in a livelihood zero. So in receiving visa livestock, I must believe that somebody else will accept them in return for something else. So is this a social belief, social shared belief system that makes people transact?
+00:16:52
+That's fascinating. I didn't even think about that. You're actually you have a deep, like network of beliefs about how society operates. So the value is assigned even to sheep. Based on that, everyone will continue operating because they were previously operating. Somebody will feed the sheep. So I didn't even I didn't even think about it. That's that's fascinating. So that directly transfers to to the space of money and anticipation of digital money. Cryptocurrency, OK, does it bother you?
+00:17:27
+Sort of intellectually, when this money that is a social construct is not directly tied to physical goods like gold, for example, none at all, because after all, gold as some.
+00:17:42
+Industrial value, nobody denies it. This is a metal, it doesn't oxalate, has some good things about it, but does this industrial value really represent the value which is now is trade not? So gold is another way to express our belief. I give you an ounce of gold, you treat all alike or somebody else will want to less for doing something else. So it is a really this notion of manizha a mental construct is really and these are shared.
+00:18:13
+This is a social construct that I believe. And so some people feel that it is physical. So therefore gold exist.
+00:18:20
+And then, as you know now we countries, the most sophisticated country I know, they print their own money and you believe of it. We are not going to exaggerate it with inflation. Not everybody believes it. But I'm saying there is at least the not we are not going to exaggerate the blatantly and and verify you receive it because you know that somebody else will accept it, will have a faith in the currency and so on, so forth. But the weather is gold, whatever is livestock or whatever, whatever it is, money is really a shared belief.
+00:18:56
+So there is something, you know, and I've been reading more and more about different crypto currencies.
+00:19:03
+There is a kind of belief that the scarcity of a particular resource like Bitcoin has a limited amount and it's tied to physical, you know, to to to perform work so tied to physical reality in terms of how much you can mine effectively and so on, that that's an important feature of money. Do you think that's an important feature to be part of? Whatever the money is?
+00:19:32
+That is certainly a very useful part. So am at some point in time and I assume of ethanol money, something that all of a sudden we say desis our money over currency, then, you know, I offer you ten days is in payment of whatever goods and services you want to provide.
+00:19:50
+At the end of the day, if you know that you can cultivate that and generate them at will, then perhaps and all you should not accept the payment then here is on a bouquet of daisies. So you need some kind of asgharzadeh inability to create a suddenly out of nothing is is is an important end and it's not an intrinsic necessity. But it's much easier to accept once you know that there is a fixed number of units or whatever currency there is.
+00:20:25
+And therefore you can mentally understand I'm getting this much of a piece of the pie and therefore I consider myself paid. I understand what I was receiving.
+00:20:37
+You described the goals of a block chain. You have a nice presentation on this as scalability, security and decentralization, and you challenge the block chain trilemma that claims you can only have two of the three.
+00:20:52
+So let's talk about each what is scalability in the context of blocking and cryptocurrency Wintersgill. But I mean, so I remember we said that the block chain is a ledger and each page receives that gets some transaction and everybody can write invis in the pages of the ledger. Nobody can be stopped for writing and everybody can read them. OK, scalability means how fast can you write? Just imagine that you can write an entry with spatial shared ledger once every hour.
+00:21:25
+Well, you know, what are you going to do if you have an all one transaction or power in the world that doesn't go around? So you need to have scalability means the better. You can somehow write a lot or transaction and then you can read them and everybody can validate them. And that is of speed and vice and the number of transactions per second and the fact that they are shared. So you want to have a vis a vis the speed, the not only in writing but in sharing and and an inspection for validity basis, scalability.
+00:22:02
+The world is big. The world wants to interact with people wanting to interact with each other. And you better be prepared to a ledger in which you can write lots and lots and lots of transactions in a special way very, very, very quickly.
+00:22:15
+So maybe from a more mathematical perspective, or can we say something about how much scalability is needed for a world that is big?
+00:22:25
+Well, it really depends how many transactions you want. But remember Vietnam, I think, and on mind right now yet to go into at least the thousands of transactions per second, even if you look at an arm and credit cards. Right. And. We are going to go from an average of 16 to peaks over 20000 of our 40000, something like this. But but remember is not only a question of of the transaction, per say, but the value.
+00:22:57
+Is that the transaction? He's actually been shared and visible to everybody, and the certainty that that is the case, I cannot print on my own print are way more transactions, but nobody has ever been to see or to inspect. That doesn't count. Right. So you want scalability, advice, common knowledge level, and that is the challenge.
+00:23:20
+I also meant from a perspective of like like a complexity analysis. So does the you know, when you get more and more people involved, does it need to scale and some kind of way that I do. Do you like to see certain kind of properties in order to say something is scalable?
+00:23:39
+Oh, absolutely. I took a little bit implicitly with the people transacting are actually very different. So if it is a people who can do thousands of each other, this is not so interesting. What we really need is to save billions of people. And at any point in time, you know, thousands and thousands of them want to transact with each other and you want to support that.
+00:24:02
+So grand it solves so that the company, the team of cryptographers and mathematicians, engineers or so on, they challenge the blockade trilemma. So let's break it down in terms of achieving scalability. How do we achieve scalability in the space of lockshin in the space of cryptocurrency? OK, so scalability, security, remember? And that decentralization. So that's what we want. What's the best way to approach? Can we break it down the style of scalability and think about how do we achieve it?
+00:24:37
+Well, to achieve it one at a time is obsolete. Even security, if nobody transacts, nobody loses money. So that is secure, but it's not scalable.
+00:24:50
+So let me tell you, I'm a cryptographer. So I try to fight the bad guys.
+00:24:55
+And what they what you want is better ledger. But we discussed before, it cannot be tampered with. So you must think of it. Oleta is a special Hlinka that nobody can erase when it has to be and everybody should be able to read and not to alter the pages or the content of the pages. That's OK. But you know what? That is actually easy, cryptographically. Easy cryptographically means you can use tools invented 50 years ago, which in cryptographic time is prehistoric.
+00:25:31
+OK, we are cavemen working around and solving a problem in cryptography land. But know but there is a really a fundamental problem which is really almost a social seems a political problem is to say. Who the hell? Chooses a publishers', then next page on ledger. I mean, that is really the challenge, Mr. Ledger. You can always add the page because more and more transactions to be written on there and somebody has to assemble with this transaction, put them on a page and onto the next page.
+00:26:06
+Who is there? Somebody who chooses the page and that who can be trusted to do exactly.
+00:26:12
+Assume it is me for my time being. Right. Not that I want to volunteer for the job, but then I would have a more power than any absolute monarchy in history because I would have a tremendous power to say these are transactions that the entire world should see. And whatever I don't write, this transaction will never see the light of day. I mean, no one and any such a power in history. So it's very important tool to do that.
+00:26:39
+And that is the quintessential problem in a block chain. And people have thought about it to say he's not me, he's not you. But for instance, in powerful work, what people say is I say, OK, it's not me, is not do you know what it is? We make a very difficult to invent and a cryptographic puzzle very hard to solve. The first one to solve that as a right to add one page to the ledger on behalf of everybody else.
+00:27:09
+That now, seems OK because, you know, sometimes I solve a puzzle before you do, sometimes you solve, before I do or before somebody else, somebody else solves it. It's OK.
+00:27:19
+And presumably the effort you put in is somehow correlated with how much trust you should be given to add to the ledger. Yeah.
+00:27:30
+So somehow you want to make sure of it and all you need to work because you want to prevent you want to make sure of it, unless you get to one solution every 10 minutes to say like a particular example of bitcoin. So that is very rare, that two pages are added at the same time, because if I solve a puzzle at the same time, you do a good up and that if it happens once or twice, we can survive it.
+00:27:56
+But if this happens, then all every other page in all is a double page, then which of the two is a very old page? It becomes a problem. So that's why in Bitcoin it is important to have a substantial amount of work so that no many how many people try on Earth to solve a puzzle. You have one solution out of how many people are trying every 10 minutes so that you have you distanciate with pages and you have the time to propagate for the network solution and the page attached to it.
+00:28:28
+And therefore there is a one page at a time that is added and then you say, well, why don't we do that, we have a solution. Well first of all, a page every 10 minutes is not fast enough. It's a question of scalability.
+00:28:44
+And second of all, to ensure that no matter how many people try, you get to one page anyway, the minutes, one solution to the riddle every 10 minutes. This means a vet very well becomes a very, very hard and a tool to have a chance to solve it within ten minutes. You must have such an expensive apparatus in terms of specialized computers, not one, not two, but thousands and thousands of them. And we produce a ton of heat ok is dissipated like a maniac and you need to refrigerate them at all until then.
+00:29:19
+And now we have air conditioning galore to add to living. It becomes so expensive that fewer and fewer and fewer people can actually compete in order to add to the page. And then the problem becomes a source.
+00:29:34
+So some crucial that in in in Bitcoin, depending on which day of the week look at it, you are going to have two or three mining pools are really the ones capable of controlling the chain.
+00:29:52
+So you're saying that's that's almost like leads to centralization, right?
+00:29:58
+It started being the centralized. And but the expenses are becoming higher and higher and higher when the cost becomes higher and higher, fewer and fewer people can afford them. And then, you know, it becomes an defacto centralized, right? Yeah. And and a different type of approach is instead of, for instance, a delegated proof of stake, which is also very easy to explain, essentially boils down to to say, well, look at these. Twenty one people say, OK, and don't they look honest?
+00:30:33
+They yes, they do. In fact, I believe if they're going to remain honest for the foreseeable future. So why don't we do ourselves a favor. Let's entrust them to add to the page on behalf of all of us to the ledger, OK? OK, but now we are going to say, is this centralized or decentralized? Well, 21 is a bit of and want to say is very little. So if you look at when people rebelled to centralized power, I don't know the French revolutions, OK?
+00:31:03
+There was a monarch and the nobles. Yes. When they were 21, nobles know there were thousands of them. There were millions and millions of disempowered citizens. So one is centralized. Twenty one is also centralized. That's delegated proof of stake. Delegated. Kind of like a representative democracy, I guess. Yes.
+00:31:24
+Which is good looking great. Right? It's doing great.
+00:31:28
+Well, it's better when the monarch and but there's there's problems.
+00:31:36
+Bigger problems. Yeah. And and so we were looking for a different - when thinking about Algoran for a different approach. And so we have an approaching which is a really, really decentralized, because essentially I am a man who works as follows. You have a bunch of tokens, right? These are veterans and that the equal power and you have a say, 10 billions of tokens are distributed to the entire world and the owners each tokens has a chance to add to the ledger equal probably like everybody else.
+00:32:19
+In fact, actually, if you want, here is how it works. So think about it all by some magic cryptographic process, which is not magic, it's mathematics, but think of it like magic. Assume that you select a thousand tokens. And so sometimes a random OK and you have a guarantee that was elected and then the owners of this one, thousand tokens, somehow agree on the next page, they'll sign it. And that is the next page.
+00:32:52
+OK, so it is clear, that in all, nobody has the power button all at once in a while, one of your targets is selected and you are in charge of this committee to select the next page. But this goes around very quickly. So and if you look at this, the question really is of it is not really centralized. And because of what for for agreeing on the same page, it is important to the one fast I'm talking to you randomly selected are honest and the majority of them.
+00:33:28
+So which if the majority of the organs are in honest ends. That is essentially true because the majority of the organs are in honest hands. If you select the, say 90 percent of the people are 90 percent of that organs are in honest hands. So can you randomly select a thousand in these files and you'll find the 501 tokens in bad hands? That's very, very improbable.
+00:33:54
+So basically, when a large fraction of people are honest and you can use randomness as a powerful tool to get decentralization, what does honesty mean? And now we're into the social side of things, which is how do we know that, like the fraction that a large fraction of people or participating parties are honest? That is an excellent question.
+00:34:24
+So, by the way, first of all, we should realize that the same thing is for a very nervous system. When you look at before work, you realize that the majority of the mining power is in honest hands. Yes. When you look at the delegates at stake, you realize that the majority of twenty one people are honest. What is the difference? The difference is that in resolver other systems, you to say the whole economy is secure.
+00:34:53
+Even a majority of this a small piece of the economy. Honest, and that is a big question, but instead, what is now golden hour, shall we say? The old economy secure even a majority of the economy is honest. In other words, who can subvert? Olgun is not a majority of a small group, but is a majority of Autogen holders to conspire with each other in order to think of a very economy for which they own the majority of.
+00:35:24
+Yes, I think it is a bit harder to reconcile the destructive majority, essentially. And you're also making me realize that basically every system that we have in the world today assumes that the majority of participants is honest. Yes, the only difference is a majority of whom, and in some cases the majority of a club and in our case is a majority of the old system, the whole the whole system.
+00:35:51
+OK, so that's that's. So through that kind of random sampling, you can achieve decentralization. You can achieve so the scalability, I understand, and then the security that you're referring to, basically the security comes from the fact that the sample selected would likely include honest people.
+00:36:17
+So it's very difficult to. By the way, the security has, as you mentioned, that you're referring to, is basically security against dishonesty. Right, or manipulation or whatever. Yes, yes. So essentially what they going to do is the following. You say, well, Silvio, I understood what you're saying, but somebody has to randomly selected and then I believe you. So then who does this random selection in that in in anger? And we do something a little bit unorthodox, essentially, is the token choose themselves at random.
+00:36:54
+And you say if you think about it, that seems to be a terrible idea, because if you want to say choose yourself at random and whoever chooses himself is for some people committee, you choose for page four, but for the rest of us.
+00:37:08
+And because if I'm a bad person, I can go to select myself over and over again because I want to be part of the committee every single time. But that not so fast. So what do we do in our what does it mean that I selected myself with each one of us in the privacy of our own computer, a laptop? What you do is wait. You execute your own individual lottery and think about whether you pull a lever of a slot machine.
+00:37:38
+You can only pull the lever once, not until you win.
+00:37:41
+Nothing until you win.
+00:37:43
+And when you pull the lever case one, either you win. In such a case, you have a winning ticket. Or you lose, you don't get any winning ticket, so if you don't have a winning ticket, you can say anything you want about the next page. And Vilija, nobody pays attention. But if you have a winning ticket, people say, oh, wow, is this one of a 1000 winning tickets, we better pay attention to what he or she says and that's how he works.
+00:38:11
+And the lottery is a cryptographic lottery, which means that even if I am an entire nation extremely powerful, with incredible computing powers, I don't have the ability to improve even minimally my probability of one, my winning the lottery. And that's how it happens. So everybody, well over there, 1000 random winners say, oh, here is my winning ticket and here is my opinion up or down about the block. These are the ones that count. And if you think about it, while this is distributed, because there is the case of Olgun, there is a 10 billion taggants and you selected a thousand of them or distributed unless you cannot get.
+00:38:57
+And then why is Vestine all scalable? Because what you have to do is to do the lottery, how long it takes. It takes actually one microsecond. Whether you have one token or two organs or a billion tokens is always one microsecond a compensation, which is very fast. We don't hit the planet one microsecond of computation and finally is very secure because even if I were a very evil and very, very powerful individual, I'm so powerful that I can corrupt anybody I want instantaneously in the world.
+00:39:36
+Whom would I want to corrupt the people in the committee so that I can choose the page of the ledger. But I do have a problem. I do not know whom I should corrupt. Should I go optimist's the lady in Shanghai, this other guy in Paris? Because I don't know, the winners are random, so I don't know whom I should corrupt. But once I have a winner come forward and say here is my winning ticket and you propagate your winning ticket across the network together with your opinion about the block.
+00:40:08
+Now, I know they are for sure. I can corrupt all thousand of them given to my incredible powers, but so what? Whatever they said, they already said. And they're winning tickets and their opinions are virally propagated across the network. And I do not have the power no more than the US government or any government has the power to put back in the bottle a message largely propagated by WikiLeaks. So everything you just described is kind of fascinating, a set of ideas and, you know, online, I've been reading quite a bit and people are really excited about a set of ideas.
+00:40:47
+Nevertheless, it is not the dominating technology today. So Bitcoin in terms of cryptocurrency is the most popular cryptocurrency in the theory and so on.
+00:41:02
+So it's useful to kind of comment we already talked about before work a little bit. But what in your sense does Bitcoin get right and where is it lacking?
+00:41:13
+OK, so the first thing that Bitcoin got right is to understand that there was the need of a cryptocurrency and that might be enough with the server, all of us success because they say that the time is ripe for this idea because very often it's not enough to be right there, to be right at the right time and somebody's got it right there. So hats off to Bitcoin for that. And and so what do they got? The right is the way it is, if it is hard.
+00:41:45
+To subvert and change law, to cancel the transaction, it's not impossible, that is very hard. What did they did not get right is somehow that is a great store of value currency wise. But money is not only a question that you store it and you put under the mattress. Money was to be transacted and the transaction in bitcoins are very little. So if you want to store value, everybody is a store value. Might as well use a bitcoin.
+00:42:16
+I mean, it's a brand. But if you are on the don't look at that for a moment at least is a great store of value and everybody needs a store of value. But most of the time we want to transact, we want intact. We don't put the money under the mattress. So we want to try and bet they didn't get it right. That is too slow to transact to too few transactions, scalability, scalability.
+00:42:41
+Is it possible to build stuff on top of Bitcoin that sort of fixes the scalability? I mean, this is a thing you look at. There's a bunch of technologies that kind of. Hit the right need at the right time, and they have flaws, but we kind of build infrastructures on top of them over time to fix it as opposed to getting it right from the beginning, or is it difficult to do?
+00:43:11
+Well, that is difficult to do. So you are talking to somebody that when I decided to throw my hat into the arena and I decided, first of all, I as I said before, I much admire my predecessors. I mean, they got it right a lot of things. And I and I really admire for that. But, you know, I had a choice to make every eyepatch something with the assholes all over the place or I start from scratch.
+00:43:37
+I decided to start from scratch because sometimes it's is a better way.
+00:43:39
+So what about Ethereum, which looks at a stake in a lot of different innovative ideas that kind of improve or seek to improve on some of the flaws of Bitcoin Ethereum?
+00:43:52
+And another great idea, so they figure it out of it, was that money and payments are important as they are. They are only the first level. The first stepping stone to the next level are smart controls. And they were added to the vision to say the people will need smart contracts, which allow me and you to somehow to transact securely without being shopped around by a trusted third party, by a mediator, by the way, because the mediator also had to find.
+00:44:23
+And in fact, maybe even impossible to find if you live in Thailand and I live in a home in New Zealand.
+00:44:29
+Maybe we don't have a common person that we know and trust. And even if we find them, guess what? They want to be paid so much so with six percent of the world GDP is it goes into financial fiction, which is essentially third party. So they headed right to the world, needed that. But again, the scalability. Is not there and the system. Is is not going to say that there is a slow and expensive and and I believe it is not enough to satisfy the appetite and the need we have before smart controls.
+00:45:10
+Well, what do you make of just as a small sort of aside in human history, perhaps is the big one? Is NAFTA the non fungible tokens? Do you find those interesting technically or is it more interesting on the social side of things?
+00:45:24
+Well, both. I think I think it's an FDA, actually. Great. So you have a voice. You are an artist to create a song. Or you could be a a piece of art. And he has a unique representation of a unique piece or whether it is an artifact of something dreamed up by you and and as unique representation of a no you can trade and allow in. The important fact is that now you have a voice, not only the lefties themselves, but their ability to trade them quickly, fast, securely, knowing that who owns or which rights and gives a totally new opportunity for content creators to be remunerated for what they do.
+00:46:17
+So but ultimately, you still have to have the scalability, security and decentralization to to make it, you know, to make you work for a bigger and bigger implications, correct? Yeah. Yeah. I still wonder what kind of applications are yet to be, like, enabled by it, because so much the interesting thing about NAFTA is. You know, if you look outside of art. Is just like money, you can start playing with different social.
+00:46:49
+Constructs is you can start playing with the ideas. You can start playing with. With even like investing, somebody was talking about almost creating an economy out of, like creative people or influencers, like if you start a YouTube channel or something like that, you can invest in that person and you can start trading their creations and then almost like create a market out of people's ideas, out of people's creations, out of the people themselves that generate those creations.
+00:47:27
+And there's a lot of interesting possibilities of where you can do with that. I mean, it seems ridiculous, but you're basically creating a hierarchy of value, maybe artificial in the digital world, and they're trading that, but in so doing are inspiring people to create. So maybe as a sort of our economy gets better and better and better where actual work in the physical space becomes less and less in terms of its importance, maybe will completely be operating in the digital space where or where these kinds of economies have more and more power.
+00:48:07
+And then you have to have this kind of block change to the scalability, security and decentralization. And decentralization is, of course, the tricky one because people in power start to get nervous. Absolutely.
+00:48:24
+Once in power, you always never will be supplanted by somebody else. But this is your job. So you got the job, the top job, but now everybody wants it.
+00:48:33
+Well, what is your sense about our time and the future? Hope about the decentralization of power? Do you think that's something that we can actually achieve? Given that power corrupts and absolute power corrupts absolutely and it's so wonderful to be absolutely powerful.
+00:48:56
+Well, good question. So go first of all, I believe it, by the way, but he's up and it's a complex questions. I am.
+00:49:05
+And like all the rest of your questions, I'm so very sorry. It's OK. I am enjoying it so much. So there are two things. First of all, power has been centralized. The firefighter reasons when you want to get it, is easier for somebody, even a single person, to grab power. But there is also some kind of a technology. Lack of better justified eating power, because in a way, in a society in which even communication never mind block chain, which is common knowledge, but even simple unilateral communication is hard.
+00:49:46
+It is much easier to say you do as I say, because the alternative is. But as so there is a little bit of a technology barrier. But I think of it. And now to get to this common knowledge of it is a totally different story. Now we have finally the technology for doing this. So but is one part, but I really believe of it and not by having a distributor system. Not only you don't have it, you have actually much more stable and durable system because not only for corruption, but even for things that go astray and give it a long enough time by strange version of Murphy's Law, whatever goes wrong goes wrong.
+00:50:28
+And so and if the power is diffused, you actually are much more stable. If you look at any any leaving complex, a living being is distributed.
+00:50:41
+I mean, I don't have somebody is OK, tell Siliciano now it's time to eat.
+00:50:47
+You have millions of cells in your body of billions of bacteria. Exactly. I mean, they got something going on. We are in a supermarket somehow that keeps us alive as it is is and it's strange enough, however, when we design systems, we designed them centralized.
+00:51:04
+We are are distributed beings. And when we plan to say, OK, I want to create an architecture, how about I make a pyramid, I put this on the top end of the power flows down end. And so again, it's a little bit perhaps of a technology boom, but now the technology is there. So that is a big challenge to rethink how do we want to organize the power in very large system and and and distribute a system, in my opinion, a much more resilient let's put it this way.
+00:51:38
+That was the line of my my Italian compatriots. Right. And Machiavelli who oh, look at all the time. There was a big there was a bunch of a small state, a democratic republic of Florence, of Venice. And the other thing, in fact, was the Ottoman Empire, but at the time was an empire at the IRS and was very centralized. And he made the political observation that goes roughly to say, whenever you have such a central, I think it's very hard to overtake.
+00:52:08
+But the form a government is centralized. But if you get it is so easy to keep the population one instead.
+00:52:16
+The other with other things are much more resilient when the power is distributed is much more is going to be lasting for much longer time.
+00:52:27
+And ultimately, maybe the human spirit wants that kind of resilience once that kind of system is just that. We didn't have technology throughout history. Machiavelli didn't have the computer, the Internet.
+00:52:37
+And certainly part of the reason. Yes, you've written an interesting blog post. If we take a step out of the realm of bits and into this the realm of governance, you wrote a blog post about making Ahlgren governance decentralized. Can you explain what that means, the philosophy behind that? You know, how you decentralized basically all aspects of this kind of system when the philosophy and.
+00:53:09
+Well, let's start with a philosophy. So I really believe very top. Nothing fixed the last very long. And and so I really believe that life is about intelligent adaptation. Things change and we have to be nimble and adjust to change and that.
+00:53:29
+And when I when I see a lot of of a man keep the project actually very proud to say he's fixed in stone and writing a code, this law law is called I for the code that will never change it to go. Wow. I don't think this is a recipe to me of disaster. Not immediately. Soon. Just imagine you take an ocean liner and you want to go, I don't know, from Lisbon Lisbona to New York and you set the course iceberg.
+00:54:03
+No iceberg tempesta not tempesta and it doesn't matter. But it's not really. You need the article. You need to correct, you need to adjust.
+00:54:14
+And, and so by the way, with design, I'll go around with the idea that the code was evolving as the needs. And of course however is a system in which each and every time there is an adjustment you must have essentially a vote with. I now is because I have a 90 percent of a stake and they say, OK, we are ready, we agree on the next version and we pick up the first version. So we are able to evolve without losing.
+00:54:43
+Too many components are left and right. But I think we are not evolving. Any system essentially become a svitak and that is going to shrivel and die sooner or later. And and so it is is needed.
+00:54:56
+And what do you want to do on the block? Change of a perfect platform in which you can log. Your wishes, your votes, your thing, so that you have a guarantee that whatever vote you express is actually seen by everybody else, so everybody sees really the outcome of a referendum of a change.
+00:55:18
+And that is, in my opinion, a system that wants to live long as to adapt. There is an interesting question about leaders, I've talked to the telecommuter, and I'll probably talk to them again soon. He's one of the leaders, maybe one of the faces of the Syrian project. And it's interesting, you have us Satoshi Nakamoto, who's the face of Bitcoin, I guess, but he's faceless hishe they. It does seem like in our whatever it is, maybe it's 20th century, maybe it's Machiavellian thinking, but we seek leaders.
+00:55:58
+Leaders have value. Linus Torvalds, the leader of of Linux and open source development a lot. I mean, there's no it's not it's not that the leadership is sort of dogmatic, but it's inspiring. And it's also powerful in that through leaders, we propagate the vision. The vision of the project is more stable, maybe not the details, but the vision. And so do you think there's value to because there's a tension between decentralization and leadership like visionary.
+00:56:35
+Yes. What do you make of that tension?
+00:56:38
+OK, so I really believe that if it's a good question, I think of it then all I really believe in the power of emotions. I think the emotion I have a creative impulse of everybody else and very, very far is very easy for a leader to be a physical person or real being.
+00:56:57
+And that interprets our emotions. And by the way, this emotion has to resonate. And what is good is that the more intimate our emotions are of a more universal, we are paradoxically more personal, the more everybody else.
+00:57:13
+Yes. Somehow magically agrees and feels a bit of the same. And so and is very important to have a leader in the initial phase that generates out of nothing something that is important leadership. But then the true test of leadership is to disappear after your leader of the community. So in my opinion, the quintessential leader in my in my in according to my vision is George Washington. He served for one term. He served for another term. And then all of a sudden he retired and became a private citizen and 209 and change years later, we still are with some effects.
+00:57:54
+But we have done a lot of things right. And we have been able to do that to me is success and leadership when instead you contrast our experiment with a lot of experiments. I've done so much so well that I want another four years and the shouldn't and be only a four and I have another eight. Why should be another eight. Give me six if you solve your problem. And then he's the type in my opinion, of failed leadership.
+00:58:20
+Leadership ought to be really lead, ignite and disappear.
+00:58:25
+And if you don't disappear, the system is going to die with you and it's not a good idea for everybody else, is there?
+00:58:32
+So we've been talking a little bit about cryptocurrency, but is there spaces where this kind of block chain ideas that you're describing, which I find fascinating? Do you think they can revolutionize some other aspects of our world?
+00:58:47
+That's not just money.
+00:58:49
+A lot of things are going to be revolutionized. This is independent of finance, by the way. I really believe that finances are an incredible form of freedom.
+00:59:03
+I mean, if I free to do anything I want to, but I don't have the means to do anything, that's a bad idea. So I feel think a financial freedom is a very, very important. But, you know, but just to conceive it against in all censorship, you're right. Something of a change. And now nobody can take it, can't take it out. That is a very important way to express it all. And our view and and then the transparency that that you gave it, because everybody can see what's happening on the block chain.
+00:59:35
+So it transparency. It's not money. But I believe the transparency actually is a very important ingredient also of finance. Let's put it this way. As much as I'm enthusiastic about the block chain and decentralized finance and and we have actually our expression, we are we creating with the future five is as much as we want to do. We must agree that the first guarantee of financial growth and prosperity are really the legal system, the courts, because we may not think about them and say, well, the courts are like a bunch of boring lawyers, but without them, I'd say there is no certainty.
+01:00:18
+There is no amm notion of equality. There is no notion that you can resolve your disputes. I think that's what drives the commerce and things. And so what I believe I believe that the block chain actually makes a lot of mistrust, essentially automatic, but make it impossible to cheat in very way. You don't even need to go to court if nobody can change a villager. So essentially as a way of you cannot solve. The legal system uses to block chain, but what I'm saying, a big chunk of it can actually be guaranteed and there is no reason why technology should be antagonistic to legal scholarship.
+01:01:01
+It could be actually coexisting and one should start to doing the interest things that technology alone cannot do. And when you go from there. But about I think of it is essentially is blocked and can affect all kinds of our of our behavior.
+01:01:20
+So in some sense, the transparency, the required transparency, ensures honesty, prevents corruption. There's a lot of systems that could use that in the legal system. As one of them.
+01:01:31
+There's a little bit of attention that I wonder if you can speak to where this kind of transparency, there's a tension with privacy. Is it possible to achieve privacy, if wanted on unblushing? Do you have do you have ideas about different technologies that can do that? People playing with different ideas?
+01:01:54
+So absolutely. The answer is yes.
+01:01:57
+And and by the way, I'm a cryptographer. Right.
+01:02:01
+OK, so I really believe in privacy and I believe in and I have devoted it all, my mom, a big chunk of my life to guarantee privacy, even when it seems almost impossible to have it.
+01:02:15
+In the end, it is possible to everything else in the block chain, too. And however, I believe in timing as well, and I believe of it, the people have a right to understand. The system we live in and right now and people can understand the block chain to be something that is not and cannot be altered and is transparent, and that is good enough. And right now, any way to end there is a pseudo privacy for the fact that who knows if this case belongs publicly, belongs to me or to you.
+01:02:57
+Right. And I can when they want to change my mind from one public, I split it to our public is going to figure out which one is. All of them. Silvio. Only one Silvio. Whoknows. So you get some vanilla privacy, not one. And I think is good enough because then it's important for now that we absorb this stage because the next stage we must understand the privacy to cover and taking on fief. When the public starts say I believe in the scientist and whatever they say, I swear by them.
+01:03:27
+And therefore for done with this private and nobody understands it very well, we need a much more educated about the tools we are using. And so I look forward to deploying more and more privacy on the block chain. But we are not. I will not rush to it until the people understand and I'm behind whatever we have right now. She built privacy on top of the power of the blogs. And you have to first understand the power of the blog.
+01:03:58
+Yes, yes. So Ahlgren is like one of the most exciting, technically, at least from my perspective, technologies, ideas in this whole space. What's the future to look like? Is it possible for it to dominate the world? Let's put it this way.
+01:04:15
+I certainly working very hard with a great team to give the best blog chain that one can demand and enjoy. And let's say I really believe Avatar very is going to be it's not a winner takes them all. So it's going to be a few block chains and each one is going to have its own brand and it's going to be great at something. And sometimes is a scalability. Sometimes these are your views, sometimes these things. And it's important to have a dialog between these things.
+01:04:53
+And I'm sure and I'm working very hard to make sure that this is one of them, but I don't believe of ethanol is even desirable to have you all a winner takes all because we need to express different things. But the important thing is going to have enough interoperability of our systems so that you can transfer your assets where you have the best tool to service them, whatever your needs are at the time.
+01:05:22
+So there's an idea, I don't know, they call themselves Bitcoin maximalists, which is essentially the bet that the philosophy that Bitcoin will eat the world.
+01:05:35
+So you're talking about it's good to have variety. Their claim is it's good to have the best technology dominate the the medium of exchange, the medium of a store of value, the money, the you know, the the digital currency space. What's your sense of the positives and the negatives of that? So I think people are smart and it's going to be very hard for anybody and to win, going to win, and because people want more and more things and there is an Italian saying that the Gonçalves translates, well, I think it goes up.
+01:06:17
+An appetite goes while eating. OK.
+01:06:20
+I think you understand what you mean. Yes, I say I'm not hungry. OK, food, let me tell you this.
+01:06:27
+So we want more and more and more. And when you find something like Bitcoin, which are already very good things to say, but it does something very well. But is a static I mean store of value. Yes, I think it's a great vulgarized you know, it would be a sad world if the world in which we are so hunkering down, so defensive that we want to store value and hide it under the mattress. I long for a world in which is people want to transact, interact with joy.
+01:06:59
+And therefore when you want to store value one perhaps to one chain where you want to have to transact maybe is another. I'm not saying that not one channel cannot be store value of everything, but I really believe I believe in the ingenuity of people and inve in innovation that is intrinsic to human nature. We want all the different things. So how can it be something invented, whatever it is that decades ago is going to fulfill the needs of our future generations?
+01:07:30
+I am not going to fulfill my needs a off my kids or their kids. I used their we are going to have a different world and fingers that will evolve.
+01:07:43
+So you believe. Yeah. So you believe that life, intelligent life is ultimately about adaptability and evolving. So static is static loses in the end. Yes. Let me ask the. Well, first, the ridiculous question, do you have any clue who's who Satoshi Nakamoto is? Is that even a interesting question? Well, is that your question, by the way? Very interesting. So and I think I so I would say, first of all, it's not me and I can prove it because, you know, if I was like a model, I would have not found it a totally different principles to to approach to the system.
+01:08:28
+But the other thing was that, you know what the right answer is? It's not him or she or them. Satoshi Nakamoto. Is Bitcoin, because to me is such a coherent proof of work, but at the end, the creator and the creation identify themselves, so you say, OK, I understand the Michelangelo in the Sistine Chapel, fine. Indeed, the way some Peter's dome, fine. It is the way the most of the time that you're fine.
+01:08:59
+But besides this, who was Michelangelo? The first question is his own work. That is Michelangelo.
+01:09:06
+So I think that when you look at the Bitcoin is a piece of work that I see defects. Yes. Like anything human. But he was captivated. The imaginations of millions of people are subverted the status quo. And I'm saying, you know, whoever this person or people are, he's leaving in this piece of work that needs Bitcoin. That led to my idea. The work is yes, is bigger. We forget that sometimes it's something about our biology.
+01:09:41
+One likes to see a face and attach a face to that idea when really the idea is the thing we love. The idea is the thing that impact ideas, the thing that ultimately, you know, Steve Jobs or something like that, we associate with the Mac or the iPhone with just everything he did at Apple. Apple, actually, the company is Steve Jobs. Steve Jobs, the man is is is a pales in comparison to the creation and the sense of esthetics of it as brought to the daily lives.
+01:10:11
+And very often not an esthetic wins in the long battle and the long game. And these are very elegant design product. And when you say, oh, elegance are very few people care about it, apparently. Millions and millions and millions and millions of people do, because we talked about beauty and these are beautifully designed products and and and, you know, and they've in addition to whatever the technological aspect of everything. And I think, yes, that is yeah.
+01:10:45
+As the Thirsk said, beauty will save the world. So I'm with you on that one. You're right.
+01:10:51
+It currently seems like cryptocurrency. All these different technologies are gathering a lot of excitement, not just in our discourse, but in there like scale financial impact. A lot of companies are starting to invest in Bitcoin. Do you think that the main method of store value and exchange of value, basically money will soon or at some point in this century will become cryptocurrency? Yes, so mind you, as I said that to the notion of cryptocurrency, like any other fundamental human notion, has to evolve.
+01:11:34
+But yes, so I think of it as a lot of momentum behind it and is not only static as of this programable money, as I think smart consciousness is, it allows a peer to peer interaction among people who don't even know each other. Right. And they don't even viega for it cannot even trust each other just because they never saw each other. So I think it's so powerful it is going to do this. Said again. A particular cryptocurrency should develop and cryptocurrency, they will all develop.
+01:12:15
+But the answer is yes, we are going towards a much more unless we have a society, a sudden crisis for different reasons, which nobody hopes.
+01:12:26
+There's always an asteroid. There's always something nuclear war and all the existential crisis that we kind of think about, including artificial intelligence.
+01:12:37
+OK, it's funny you mention that.
+01:12:42
+Miguel Angel and Steve Jobs, you know, set of ideas represents the person's work. So we talked about Algren, which is super interesting set of technologies.
+01:12:51
+But, you know, he did also win the talking or you have a bunch of you have a bunch of ideas that are, you know, seminal ideas. So can we talk about cryptography for a little bit? What is the most beautiful idea in cryptography or computer science or mathematics in general?
+01:13:14
+Asking somebody who has explored the depths of all what a few contenders and either your work or what other words.
+01:13:30
+And let's leave my work aside and and somebody one one powerful.
+01:13:38
+Idea and is both an old idea in some sense and a very, very modern one, and in my opinion, is this idea of a one way function? So afunction that easy to evaluate. So given X, you can compute Aflex easily, but given a four, X is very hard to go battleaxe. OK, think like. Breaking a glass easy. They got stuck to the glass after. Frying an egg. Easy fried egg to go back to the original egg hide.
+01:14:17
+If you want to be extreme killings, a living being, unfortunately, easy the other way around, very hard. And so the fact that the notion of a function which you have a recipe that is in front of your eyes to transform an X into F of X and then from F for this, even though you see the rest of it to transform it, you cannot go back to X. That, in my opinion, is one of the most elegant and momentous notions that they are and is a computational notion because of the difficulties in a computational sense and is a mathematical notion because we are talking about function.
+01:14:58
+And that is so fruitful because it is actually the foundation of all the cryptography. And let me tell you, is an old notion. Because very often in any mythology that we think of, the most powerful gods and goddesses are the ones of X and the opposite of X, the gods of love and death. And when you take opposites, they don't just, you know, erase one another. You create something way more powerful. And this is a one way function is extremely powerful because essentially becomes something that is easy for the good guys and bad for the bad, hard for the bad guys.
+01:15:43
+So, for instance, in Sudan, the no generation, the easy part of the function corresponds. You want to generate beats very quickly. And Art is predicting what the next Betties says of jail. It doesn't look the same. One is X and going from X, like still excited about collecting beats by a magic of reductions and mathematical apparatus. This simple function morphs itself into sort of random a generation versus simple functional morphs and sales in digital signature scheme in which digitally signing should be easy and forging should be hard again.
+01:16:22
+A digital signature is not going for Mexico flex, but the magic and the richness of its notion is made of it. It is so powerful, it morphs in all kinds of incredible constructs. And in both these two opposites coexist.
+01:16:40
+Vaisey in the heart and in my opinion is very, very elegant.
+01:16:43
+Notions of that simple notion ties together cryptography and like I said, pseudo random number generation. You have work on pseudo random functions. What are those? What was the difference in those? And the generators or a random number? Generators. OK, let's are they work.
+01:17:07
+Let's up let's go back to sort of random number generation. Yes. First of all, people think of the maturation that generates a random number. Not true because they don't believe, Avita, from nothing that can get you. You can get something, something nothing for nothing but randomness you cannot create out of nothing. But what you could do is that can be expanded. So in other words, if you give me some 300 random bits, truly random bits, then I can give you three hundred thousand four hundred million of a trillion, 300 quadrillion, as many as you want.
+01:17:46
+Random bits solve it, even though I tell you of a recipe by which I produce these bits, but I don't tell you the initial 300 random numbers.
+01:17:56
+I kept them secret. And you see all the bits I produce so far. If I if you were to bet, given all the bits produced so far, what is the next bit in my sequence? Better than 50/50, of course, 50/50. Anybody can guess. Right. But to be inferring something to be a bit better, then the effort to to do this extra bit is so enormous. That is de facto random. So that is sort of random generator of these expanders of secret randomness, which goes extremely fast.
+01:18:32
+OK, this set of secret randomness, beautifully put. OK, so every time every time somebody who if you're a programmer, is using a function that's not considered random, it's called random. Usually, you know, these programing languages and it's generating different, that's essentially expanding the secret randomness.
+01:18:53
+But they should. And in the past, actually, most of the library, they use that. Something pretty modern, cryptography, unfortunately, will be better served to make 300 real seed the random number and and then expand them properly, as we know now.
+01:19:14
+But MIT has been a very old idea. In fact, one of the best philosophers have debated whether the world was deterministic or probabilistic. Yes, very big questions. Right. Does God play dice? Exactly. Einstein says it does. It doesn't. But in fact, now we have a language of it. Even at the Alberta time was not around what it was of its complexity and modern complexity based cryptography.
+01:19:43
+And now we know that in the universe as 300 random bits where there is random or probabilistic or deterministic, it doesn't matter because you can expand his initial seed randomness forever in which all the experiments you can do, all the inferences you could do, all the things you could do, they you are not be able to distinguish them from truly random. So if you are not able to distinguish truly random from this super duper pseudo randomness. A very different things I say to become a philosophical site for things to be different, but I don't ever in my lifetime, in my lifetime of the universe, any method to set them aside where they should be intellectually honest to say, well.
+01:20:33
+Pseudo random, invisible Foxton is as good as random. Do you think true randomness is possible and what does that mean? So practically speaking, exactly as you said, if you're being honest that the pseudo random House approaches to randomness pretty quickly, but is is it maybe this is a philosophical question.
+01:20:59
+Is there such a thing as true randomness? Well, the answer is actually maybe, but if it existed. Most probably expensive to get and and and in any case, if I give you one of mine, you wouldn't be able to tell them apart.
+01:21:19
+Yes, I know any other shape, no matter how much you work on it. So in some sense, if it exists or not, it really is a, quote, philosophical sense in the colloquial way to save it that we cannot somehow pin it down.
+01:21:34
+Do you ever again just stay on Theosophical for a bit for a brief moment? Do you ever think about free will and whether that exists? Because ultimately free will sort of is this experience that we have. Like we're making choices, even though it appears that, you know, the world is deterministic at the core. I mean, that's against the debate. But if it is, in fact, deterministic at the lowest possible level at the physics level. How do you make if it is deterministic, how do you make?
+01:22:14
+How do you make sense of the difference between the experience of us feeling like we're making a choice and the whole thing being deterministic?
+01:22:21
+So first of all, let me give you a gut reaction to my question. And my gut reaction is that. It is important that we believe that there exist free will. And second of all, almost. By weird logic, if we believe it exists, then it does exist.
+01:22:42
+OK, so it's a very important for our social apparatus, for our sense of order of ourselves that it exists and the moment in which we so want to be almost all we conjured up in existence. But again, I really feel that if you look at some point and the space of a will seems to shrink. We realize now more and more how much of our, say, genetic apparatus dictates who we are and why we prefer certain things than others.
+01:23:14
+Right, and why we react to noises of music. We prefer poetry and everything else.
+01:23:20
+We may explain even all of us, but but at the end of the day, whether it exists in a philosophical sense or not, it's like a randomness, if you can. A pseudo random is as good as random vis a vis the left lifetime of the universe expands when it doesn't really matter. Yeah.
+01:23:39
+So, you know, we're talking about randomness. I wonder if I can weave in quantum mechanics for a brief moment. There's a... You know, a lot of advancements in quantum computing side, so leveraging, quantum mechanics to perform a new kind of computation, and there's concern of that being a threat to a lot of the basic assumptions that underlie cryptography. What do you think, do you think quantum computing will challenge a lot of cryptography? Will cryptography be able to defend all those kinds of things?
+01:24:18
+OK, so first of all, I feel very good because I think it matters about the importance of the trigger when people continue to contend that. Quantum mechanics exist, but has nothing to do with computing is not going to accelerated, and at least in all, a very basic and all of the computation, but there's a belief that you cannot take it out. I'm a little bit more agnostic about it, but I truly believe going back to whatever I said about the way the one way function, so one way function, what is it that is a cryptography.
+01:24:57
+So does quantum computing challenge the one function? Essentially, you can boil it down to does one the computing for one way function, what is one function is in one direction and then the other. OK, but if quantum computing exist, when you define what it is, easy is not by easy by a classical computer and by a classical computer, but easy for a quantum computer, that's a bad idea. But once the easy means. It should be easy for a quantum and hard for also quantum, then you can see that you are yes is a challenge, but you have a hope because you can absorb if one computer really realizes and becomes available, amanah according to the promises, then you can use them also for the easy part.
+01:25:45
+Mm hmm. And once you use it for the easy part, the choices that you have, a one way function will multiply. So, OK, so this particular candidates, a one way function may not be one way anymore, but quantum one way function may continue to exist.
+01:26:04
+And so I really believe of honor, uh, for life to be meaningful with the one we function had to exist because just imagine that anything that is it becomes easy to to do.
+01:26:23
+I mean, what kind of a life is it? I mean, so you need the. And if something is but it's so hard to generate, you'll never find something which is hard for you you want. There is abundance if it is easy to produce hard problem.
+01:26:39
+But someone your opinion is the way life is interesting because pop up really relative to speed. So in some sense, I almost think of it. I do hope they exist if they don't exist somehow. Life is the way less interesting than it actually is.
+01:26:55
+Yeah, it does. That that's funny. It does seem like the one way function is fundamental to all of life, which is the emergence of the complexity that we see around us seemed to require the one way function. I don't know if you, uh, play with cellular automata. That's just another formulation of. I know, but it's very simple. It's almost a very simple illustration of starting out with simple rules and one way being able to generate incredible amounts of complexity.
+01:27:29
+But then you ask the question, can I reverse that? Then it is just it's just surprising how difficult it is to reverse that. It's surprising even in constrained situations, it's very difficult to prove anything that is almost I mean, the sad thing about it.
+01:27:52
+I don't know if it's sad, but it seems like we don't even have the mathematical tools to reverse engineer stuff. I don't know if they exist or not, but in the space of solving automata where you start with something simple and you create something incredibly complex, can you take something, a small picture of that complex and reverse engineer? That's kind of what we're doing as scientists here. You're seeing the result of the complexity and you're trying to come up with some universal law that generate all of this.
+01:28:21
+What is the, you know, the theory of everything? What are the basic physics laws that generate this whole thing? And there's a hope that you should be able to do that. But it gets is difficult.
+01:28:32
+But there is also some portrait of the fact that is difficult.
+01:28:35
+Right, because it gives us some mystery to life without which I mean, it's not so fun. I like that. It's fun.
+01:28:45
+Can we talk about interactive proofs a little bit and your knowledge proofs? What are those? OK, how do they work?
+01:28:51
+So interactive actually is is is a modern realization and conceptualization of something that we knew was still within all that is easy to go to lecture. In fact, it's my motivation. We invented schools to go to lecture. I went, don't say, oh, I'm the minister of education. I published this book. You read it? Yeah. And this is a book for this year, this book for this year. We spend a lot of our treasury in educating our kids and in person educating got to class with interactivity on the blackboard and chalk on my time.
+01:29:31
+Now we have no whiteboard and presumably are going to have actually these magic pens and a display instead. But there that the idea is that the interactivity, you can convey truth much more efficiently. And we knew this psychologically is better to your legislation than just to belabor some paper, the same thing. So interactive poufs is a way to to do a following rather than doing in some complicated, very long papers and possibly infinitely long proofs, exponentially long proofs.
+01:30:06
+You say the following. If this film is true, there is a game that is associated with Hürrem. And if the film is true, this game. I have a winning strategy that I can win half of of all the time, no matter what you do. OK, so then you say, well, is few of them to you, believe me? And why should I believe you? OK, let's play. So any fight pool that I have a strategy that and I win the first time and I win the second time, then I lose a third time, but I win.
+01:30:37
+If I may say I'm a more than enough of a time or I win to say all the time, if the program is true and at least at the most off of a time, if a film is false, you statistically get convinced you can verify this quickly and and therefore is much when they get in the game, it typically is extremely fast. So you generate a miniature game in which a film is true. I win all the time in the film is false.
+01:31:05
+I can win at most half of the time and if I win, win, win, win, win, win, win, win.
+01:31:09
+You can produce even if it is true, which most probably is not speak or. I've been very, very unlucky because he's like if I had the 100 coin toss ups and I got 100 heads, very improbable I Salvatore's away. And so this transformation from the formal statement of a poof into a game that can be quickly played and you can draw statistics how many times you win and is is one of a big conquest of modern complexity theory and in fact, actually has highlighted the notion of of a pool.
+01:31:51
+Really give us a new insight to what to be true means and what what trophy's and what the proofs are.
+01:31:57
+So these are legitimately proofs. So, yes. What kind of mysteries can allow us to unlock and prove he said truth? So what does it allow us? What kind of truth does not allow us to arrive at?
+01:32:16
+So it enlarges the realm of what is provable because in some sense of the classical way of pulling things was extremely. Inefficient from the verifier point of view. Yes, right. So and and so very for very so much proofer you can take. And but in this way, you can actually very quickly minutes verify something which is the correctness of an assertion that overweigh sort of taking a lifetime to believe or and check all of the passages of a very, very long poof.
+01:32:54
+And you better check all of them, because if you don't check one line, an error can be in that line. And so you have to go linearly through all this stuff rather than bypass it. So you unload a tremendous amount, whatever Puffy's. And in addition, once you have the idea that essentially a poof system is something that. Allows me to convince you of a true statement. But does not allow me to convince you of a false statement.
+01:33:27
+And better at the NSA, surveillance of proof, proof can be beautiful, should be should be elegant, but at the end, this is true or false. She wants to be able to differentiate. It is possible to prove the truth, and it should be impossible or statistically extremely hard to prove something false. And if you do this, you can prove way, way more once you understand this.
+01:33:48
+And on top of it, we got some insight like Envisat zero knowledge of proofs that is in. Something which you took for granted were the same knowledge and verification. Actually separate concepts so you can verify that an assertion is correct without having any idea why this is so and so, people fail to to say, if you want to verify something. Yeah. To to have a proof. Once you have a proof, you know, why do you have the proof itself?
+01:34:21
+And so somehow you can totally differentiate knowledge. And and and verification validity, so totally you can decide if something is true and still have no idea.
+01:34:34
+That's a good example in your mind. Oh, actually, you know, at the beginning we labored to find the first knowledge zero knowledge, but then we found a second when we found the third. And then a few years later, actually we proved a theorem which essentially says Avory theorem, no matter what about can be explained in at zero knowledge. We. OK, so is not a class of but all theorems and is a very powerful thing, so we were really for thousands of years bought this identity between knowledge and verification to be hand in hand together and for no reason at all.
+01:35:18
+I mean, we had to develop a of technology. As you know, I'm very big on technology because it makes us more human and and make us understand more things than before. And and I think of it is a that is a that's a good thing.
+01:35:34
+So this interactive process, there's power and games. And you've recently gotten into recently, I'm not sure you can correct me. Mechanism design. Yeah. It's just it's I mean, first of all, maybe you can explain what mechanism design is and the the fascinating space of playing with games and designing games.
+01:35:59
+Mechanism design is whether you want to you want a certain behavior to arise. Right. If you want to organize in a societal structure or something, you want to have some orderly behavior to arise. I think it is important for your goals, but. But you know that people, they don't care what my goals are, they cares about maximizing their utility. So I've put the cozily making money. The more money, the better, so to speak. I'm exaggerating self-interest and self-interest in whatever way then.
+01:36:35
+So what do you want to do is ideally what you want to do is to design a game so that while people played sought to maximize their self-interest, they achieve the social goal and behavior that I want.
+01:36:55
+That is really the best type of thing.
+01:36:58
+And it is a very. Yard signs and art to design with games, and it challenges us to.
+01:37:13
+Actually come up with a solution concept for way to analyzing why games that need to be broader and I think of a normal game theory as a developer, there are a bunch of very compelling. Way to analyze the game with the game as a prop., you can have a pretty good guarantee that is going to be played in a given way. But as it turns out and not surprisingly. These tools have a range of action, like anything else, all this so-called the technical solution concept, the way to analyze of a game like dominant strategy, equilibrium with something come to mind would be very meaningful.
+01:37:54
+But as a limited power, in some sense, the so that they can be a Dimmit, such a way to be analyzed is a very specific kind of games.
+01:38:03
+And the rules are set, the constraints are set, the utility controls. So I can say if you want a reason, if there is a way, say that you can always restrict the class of games this way, but most games and all don't fall into the class, then what do I do when you need to and large a way what a rational player can do?
+01:38:29
+So, for instance, in my opinion of the least, in some of my I played the investor for a few years and I was doing some esoteric things, I'm sure, in the space that that was, but not exactly mainstream. And then I changed my interest and I would block change. Well, what I think for a while I was doing so I think that to me is a way in which I design the game. And the union is the best move for you.
+01:38:59
+The best movies. The movie is best for you no matter what the other players are doing. Sometimes a game doesn't have that too much to ask, but I can design the game, much of it. Given the option in front of you say, oh, these are really stupid for me, taking them aside, but these bits are not stupid. So if you designed the game, solve it in any combination of non stupid things that the public could do.
+01:39:25
+I achieve what I want. I'm done. I don't care to find the unique equilibrium. I don't give a damn. I want to say, well, as long as you don't do stupid things and nobody else does stupid things, good social things, outcome, guys, I should be equally happy. And so I really believe it. And this type of analysis and all is possible and as a bigger radius.
+01:39:54
+So it reaches more games and more classes of games and and after that we have to enlarge it again.
+01:40:02
+And and it is going to be we're going to have fun because human behavior can be conceptualized in many ways. And this is a long game, devised a long game today of favorite games that you're looking at now.
+01:40:15
+I mean, I suppose your work with Blockin algorithm is a kind of game that you're you you're basically mechanism design, design the games such that it's scalable, secure and decentralized, right? Yes, yes.
+01:40:30
+And very often it to say inventive. And you must also design so that the incentives are are and and then you have to offer whatever little I learned from my venture in mechanism design is that incentives are very hard to design because people are very complex creatures. And so and so somehow the way we design ALGUIEN is a totally different way, essentially with no incentives, essentially. And then and then and but technically speaking, there is a notion that it's actually believable.
+01:41:09
+Right. That's all that to say. And people want to maximize their utility. Yes. Up to a point. Let me let them assume that. If you are honest. You make hundred bucks. Mm hmm. But if you are dishonest, no matter how dishonest you are, you can only make hundred bucks and one cent. What are you going to be? I'm saying, you know what? Technically speaking, even that one, nobody bothers to say how much am I going to make you understand if I am devious and if I'm a criminal, 100 bucks in one sense, you know, I might as well be honest.
+01:41:45
+OK, so that essentially called Daniel. Epsilon utility equilibrium. I think is good and and and that's what we the essentially means of ethanol, Verizon having no incentives is actually a good thing because to prevent people from reasoning or else I'm going to game the system. But why can we achieve in Oregon to have no incentives and in Bitcoin instead yet to pay the miners because of a tremendous amount of work? Because if you have to. Do a lot of work, then you demand to be paid accordingly because you but if I going to say you two are the two and two equal to for how much you want to pay for this, if you don't give me advice, I don't add two and two.
+01:42:32
+I'm looking at 22 in your sleep. You don't need to be paid to 20. So the idea is that if we make of a system so efficient so that generating the next block is so damn simple, it doesn't hit to the universe, let alone my computer, let alone the next microsecond of computation. I might as well not being received incentives for doing that and try to incentivize some other part of the system, but not to the main consensus, which is a mechanism for generating and adding block to the chain.
+01:43:05
+Since you're Italian, Sicilian, I also heard rumors that you are a connoisseur of food.
+01:43:14
+Uh, well, you know, if I said today is the last day you get to be alive, I'm rushed.
+01:43:20
+You shouldn't have trusted me. You never know whether you're going to make it out or not.
+01:43:25
+Well, if you had one last meal, you can travel somewhere in the world. Either you make it or somebody else makes it. Was that going to look like. All right, this one last meal, I must say, A, you know, you have covid and I have not been able to see my mom and and my mom was a fantastic chef, OK? And had a very traditional food. As you know, the very traditional food are great for a reason because they survived hundreds of years of culinary innovation.
+01:44:01
+So inveighs one very laborious thing, which is and you had a name which is of a parmigiana.
+01:44:11
+But to do it is a piece of art requires so many hours with only my mom. I could do it if I have one last meal on top of me, John.
+01:44:18
+Okay. What is what's what's the laborious process?
+01:44:22
+Is that the ingredients is that the actual process is that the the atmosphere in the humans involved and Villedieu, a venky didn't like it in any other Italian cuisine, believes in the very few ingredients. If you take, say, quintessential Italian, look as if everybody knows spaghetti, OK, pesto is olive oil. Very good.
+01:44:53
+Extra virgin olive oil and lime and basil. Pine nuts pepper. A clove of garlic, not too much otherwise used, you know, the flour, everything, and then to through even two schools of thought to Parmesan or pecorino or a mix of it. Yeah, I mentioned six ingredients. Yes, that is typical Italian.
+01:45:16
+But I understand that there are other cuisines, for instance, of French cuisine, which is extremely sophisticated and extremely combinatorial, or some Chinese cuisine, which has a lot of many more ingredients in place. And yet the art is to put them together. A lot of things in Italy is really striving for simplicity yet to find few ingredients, but the right ingredients to create something so important John. The ingredients are eggplant, tomatoes, well, basil, but how to put them together and the process.
+01:45:51
+He's a he's an act of love. OK, labor and love is what you're going to spend the entire day when you're getting by the entire morning for sure to do it properly.
+01:46:06
+Yeah. The Japanese goes into this is a mastery to the simplicity with the sushi and as you see, Georgian's of sushi. But there's a mastery to that that's propagated through the generations. It's fascinating. You know, people love it when I ask about books. I don't know if books, whether fiction, nonfiction, technical or completely non-technical, had an impact in your life throughout. If there's anything you would recommend or even just mentioned is something that gave you an insight or moved you in some way.
+01:46:37
+So, OK, so I don't know, man, because in some sense that you almost have to be Italian or to be such a scholar.
+01:46:45
+But being Italian, one thing that really impressed me tremendously is the way Divine Comedy. It is a medieval poem, a very long poem, divided in three parts Hell, Purgatory and paradise. OK, and that is the non-trivial story of. A middle man man gets into a crisis. Personal crisis and then out of this crisis, he. Purifies means a catastrophe to purify himself more and more and more until he's is become capable of actually meeting God, OK?
+01:47:28
+And if it is actually a complex story, so had to get some very sophisticated language, maybe larding at that point that we were talking about 12 hundreds in Italy and in Florence. And this guy instead they chose. Is on dialect, not spoken outside his own immediate circle, right? A Florentine Donnette actually eat Danti really made Italian Italian.
+01:47:55
+Well, it's hard to say how can you express such a sophisticated things in Italy? And then the point is that the wise words of it, nobody actually knew because they were essentially dialect and plus a bunch of very intricate the rhymes in which of it to rhyme with the things and turns out a bit.
+01:48:17
+By getting meaningful things that rhyme, you essentially guess what the word means and you invent Italian and you communicate by almost osmosis, what you want is a miracle of communication in a dialect of very poor language, a very unsophisticated to express a very sophisticated situation.
+01:48:37
+I love it. People love it. And Italians are not Italian. But but what I got out of it is that know very often. Limitations on our strength, because if you limit yourself at a very poor language, somehow you get out of it and you achieve even better form of communication with using a hyper sophisticated and literal language of lots of resonance from your books so that you can actually instantaneously quote it couldn't quote anything because nothing was written before him.
+01:49:10
+So I really felt that limitations are our strength. And I think that rather than complaining about the limitations, we should embrace them, because if we embrace our limitation limit as we are, we find very creative solutions with people with less limitation. We have we will not even think about it now.
+01:49:35
+The limitations of kind of superpower, if you choose to see it that way, is there since you speak both languages. Is there something that's lost in translation to you? Is there something you can express in Italian that you can't in English and vice versa maybe? Is there something you can say to the musicality of the language? I mean, I from I've been to Italy a few times and I'm not sure if it's the actual words, but the people are certainly very there's body language, too.
+01:50:06
+There's just the whole being a language. So I don't know if you miss some of that when you're speaking English in this country. Yes. In fact, actually, I certainly am. I miss it. And somehow it was a sacrifice that I made consciously by the time and I knew that this I was not going to express myself at a better level. And and it was actually a sacrifice, because given that you have also your mother tongue is Russian.
+01:50:41
+So you know that you can be very expressive in your mother tongue and not very expressive as a new day and new language. And then what people think of you in the new language because of when the process of expression, of things it generates and all it shows and elegance, order shows and all of my knowledge or resources of a census or resources, caste or education, whatever it is. So all of a sudden I find myself on the bottom.
+01:51:10
+Yeah.
+01:51:11
+So I had to fight my way back up and up, but I think I got last thing right where limitations are actually our strength in fact is a trick to limit yourself.
+01:51:23
+To exceed and, you know, there are examples in history. If you think about an all or nothing contest goes to invade Mexico, he has, what, a few hundred people with him and he has 100000 people in arms on the other side, first thing he does.
+01:51:42
+Elements himself, he thinks is on ship. There is no return. OK. And at that point, he actually managed. That's really clever. I actually first of all, that's inspiring to me. I feel like I have quite a few limitations. But more practically on the Russian side, I'm going to try to do a couple of really big and really tough interviews in Russian ones. covid lifts a little bit and traveling to Russia. And I'll keep your advice in mind that the limitations as a kind of superpower, we should use it to our advantage because you do feel less like you're not able to convey your wisdom in the Russian language, because I moved here at 13.
+01:52:30
+So you don't you know, the parts of life you live under certain language are the parts of life you are able to communicate.
+01:52:37
+You know, I became I became a thoughtful, deeply thoughtful human in English as. But the pain from World War Two, that's the music of the people that was instilled in me in Russian. So I can carry both of those. And there's limitations in both. I can't say philosophically profound stuff in Russian, but I can't in English express like that melancholy feeling of like the people.
+01:53:07
+And so combining those two are somehow beautifully said. Thanks for sharing. This is great. Yes, I totally understand you. Yes, you've accomplished some incredible things in this space of science, in a space of technology, space of theory and engineering. Do you have advice for somebody young, an undergraduate student, somebody in high school, or anyone who just feels young about life or about career, about making their way in this world?
+01:53:40
+So I was thinking before, but I believe in emotion and I think it's to be true to your own emotion. And that I think of it, if you do that, you're doing well because it is a life well spent and you are going never tire because you want to solve all of these emotional. Not so that always intrigued you from the beginning, and I really believe of eternal to truly live meaningfully, creatively, and you have to leave your emotional life.
+01:54:14
+So I really believe of it whether you are a scientist or an artist even more but a scientist, I think of them as artists as well. If you are a human being. So you are really to live full of your emotions and to the extent possible, sometimes emotions can be overbearing and my devices try to express them with more and more confident. Sometimes is hard, but you are going to be much more fulfilled than by suppressing them. What about love?
+01:54:43
+One of the big ones? What role does that play? Have it?
+01:54:46
+That's a bigger part of emotions of it is it's a scary thing. Heightism has a lot of vulnerability that comes with a love. But there is also so emotional and energy and power and and and love in all senses and in the traditional sense, but also in the sense of a broader sense of for for humanity. This feeling this and our compassion of it all makes us one with other people and the suffering of a people.
+01:55:20
+I mean, all of this is is a very scary stuff, but is really the very, very fabric of life or the the sad thing is it really hurts to lose it.
+01:55:34
+Yes. That's why the vulnerability that comes with it. Yes. That's the thing about emotion is still up and down and the down seems to come always with up. So but the apple only comes with the down. So, yeah. Let me ask you about the ultimate down, which is unfortunately we humans are mortal or appear to be for the most part. Do you think about your own mortality? Do you do you fear death? I hope so, and because I mean, we definitely isn't the life, it's on the list.
+01:56:13
+There is no meaning for life and therefore is actually in some sense our ultimate motivator to live a beautiful and meaningful life. I myself, I failed as a young man avatar unless I got something that I wanted to do. I don't know why I got this idea was I had something to say if I were able to say I would suicide. So maybe it was a way to motivate myself. But you don't need to motivate it because in some sense, unfortunately, death is there.
+01:56:41
+So you better get up and do your thing. And because that is the best motivation to try to live a fully well, what do you think?
+01:56:53
+What do you hope your legacy is? You know, I imagine you have two kids. Yes, and all I really feel of it in all ways, on one side, these are my biological legacy and that is my two kids, right. And and their kids fully young. And that is one fine. And the other thing is this common enterprise, which is society. And I really feel that my legacy would be better by providing security and privacy.
+01:57:38
+Actually, for me, our metaphorical to say I want to give you the ability to interact, Morgan, take more risks and and reach out to more far more people, as difficult and dangerous as it may seem. But the male model doesn't EFIC work is about to to guarantee privacy and and give you the security of interaction. And not only not transactional like it, would it be a block change transaction, but that that is really one of the hard core of my emotional problems.
+01:58:11
+And I think of it and all these other problems I want to tackle.
+01:58:16
+And ultimately, privacy and security is freedom. Yes, freedom is at the core of this. It's dangerous, just like the emotion. But ultimately, that's how we create all the beautiful things around us. Do you think there's meaning to it all this life except the urgency that death provides? And as anxious beings create cool stuff along the way, is there a deeper meaning? And if it is, what is it? Well, living your life actually got three meanings of life great, that's a great one to seek to, to seek and free, to seek, to seek what you know, I have no answer to that.
+01:59:01
+Has no answer to that. I really think of it that the journey's more and more important than the destination, whatever had to be. And I think that is a journey and is in my opinion, at the end of a day, I must admit to meaningful in itself and we must admit to it maybe whatever your destination might be at the hand, get it all. We may never get there, but the hell was a great ride.
+01:59:34
+Well, I don't think there's a better way to end, Sylvia.
+01:59:37
+Thank you for joining me. Thank you for wasting your extremely valuable time with me today. Joining on this journey of seeking something together, we found nothing, but it was very fun.
+01:59:49
+I really enjoyed it. Thank you so much. Thank you. Next was something that really special for me to be interviewed by you. Thank you for listening to this conversation with Sylvia McColley and thank you to our sponsors, a the Greens Nutrition Drink the Information in depth tech journalism website for Stigmatic Mushroom Coffee and better help online therapy. Click the sponsored links to get a discount to support this podcast. And now let me leave you with some words from Henry David Thoreau.
+02:00:21
+Wealth is the ability to fully experience life. Thank you for listening and hope to see you next time.

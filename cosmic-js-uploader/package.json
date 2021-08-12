@@ -1,0 +1,18 @@
+{
+  "name": "cosmicjsupload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cosmicjs": "^4.1.2",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "request": "^2.88.2"
+  }
+}

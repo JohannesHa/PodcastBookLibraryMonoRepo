@@ -1,0 +1,532 @@
+00:00:00
+The following is a conversation with Retallack Budarin, cocreator of and author of the white paper that launched Etherial and Ether, which is a cryptocurrency that is currently the second largest digital currency after Bitcoin. Ethereum has a lot of interesting technical ideas that are defining the future of blogging technology. And the topic is one of the most brilliant people innovating in the space today. Unlike Satoshi Nakamoto, the unknown person or group that created Bitcoin, Retallack is very well known and at a young age is thrust into the limelight as one of the main faces of the technology that may redefine the nature of money and all forms of digital transactions in the 21st century.
+00:00:50
+This is the artificial intelligence podcast, if you enjoy it, subscribe on YouTube, review it with five stars, an Apple podcast supported on Patrón or simply connect with me on Twitter. Elex Friedman spelled F.R. Idi Amin. As usual, I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. Quick summary of the ads to sponsors Master Class and Express VPN.
+00:01:24
+Please consider supporting the podcast by signing up to master class and master class dot com slash leks and getting express VPN and express VPN dot com slash leks pod. The show is sponsored by Master Class Sign up at master class dot com slash likes to get a discount to support this podcast. When I first heard about master class, I honestly thought it was too good to be true for one hundred and eighty dollars a year, you get an all access pass to watch courses from experts at the top of their field to list some of my favorites.
+00:02:02
+Chris Hadfield on space exploration, Neil deGrasse Tyson on scientific thinking and communication will write the creator of SIM City and Sims on game design. I love that game. Jane Goodall and Conservation. Carlos Santana, one of my favorite guitarists on guitar. Garry Kasparov on chess. Obviously I'm Russian. I love Gary Dannehy on the ground on poker.
+00:02:28
+One of my favorite poker players. Also Phil Ivey is gives a course as well and many, many more.
+00:02:35
+Chris Hadfield explaining how rockets work and the experience of being launched into space alone is worth the money. By way of advice. For me, the key is not to be overwhelmed by the abundance of choice. Pick three courses you want to complete. Watch each all the way through from start to finish. It's not that long, but it's an experience that will stick with you for a long time. I promise. It's easily worth the money you can watch.
+00:03:00
+And basically any device once again sign up and master class dotcom likes to get a discount and to support this podcast. This show sponsored by Express VPN Download Express Dotcom Slash Lex Pod to get a discount to support this podcast. I've been using Express for many years. I honestly love it, it's easy to use press the big power on button and you privacy's protected and if you like, you can make it look like your locations anywhere else in the world.
+00:03:35
+I might be in Boston now, but I can make it look like I'm in New York, London, Paris or anywhere else. This has a large number of obvious benefits, for example, certainly it allows you to access international versions of streaming websites like the Japanese version of Netflix or the U.K. version of Hulu. As you probably know, I was born in the Soviet Union. So sadly, given my roots and appreciation of Russian history and culture, my website and the website for this podcast is blocked in Russia.
+00:04:08
+So this is another example of where you can use Express VPN to access sites like the podcast that are not accessible in your country. Express VPN works on any device you can imagine, I use a Linux shout out Dubon to Windows Android. It's available everywhere else to once again download it and express VPN Dotcom's Lux pod to get a discount and to support this podcast. And now here's my conversation with the topic Budarin. So before we talk about the fundamental ideas behind a theory of the currency, perhaps it'd be nice to to talk about the the origin story of Bitcoin and the mystery of Satoshi Nakamoto.
+00:05:15
+You gave a talk that started with sort of asking the question, what did Satoshi Nakamoto actually invent? Maybe you could say, who is Satoshi Nakamoto and what did he invent? Sure. So Satoshi Nakamoto is the name by which we know the person who originally came up with Bitcoin. So the reason why I say the name by which we know is that this is the anonymous fellow who has shown himself to us only over the Internet, just by first publishing the white paper for Bitcoin, then releasing the original source code for Bitcoin, and then talking to the very early Bitcoin community on Bitcoin forums and and interacting with that, but helping the project blog for a couple of years.
+00:06:06
+And then at some point in late 2010, early 2011, he disappeared. So Bitcoin is a fairly unique project and how it has this kind of. Mythical kind of quasi godlike founder who is just kind of popped in and did the thing and then disappeared and we've somehow just never heard from him again. So in 2008 was the white paper was the first do you know the white paper was the first time the name will actually appear Satoshi Nakamoto?
+00:06:39
+If so, so how is it possible that the creator of such impactful project remains anonymous?
+00:06:48
+That's a tough question and there's no similarity to it in the history of technology, as far as I'm aware. Yeah. So one possibility is that it's Delphine because Delphine was also active in the Bitcoin community and as how Affinia in those two beginning years and how is how thin he may be, he is one of the people at the end of early cypherpunk community. He was a computer scientist, computer scientists, cryptographers, people interested in technology, Internet freedom, those kinds of topics.
+00:07:32
+Was it correct that there that he seemed to have been involved in either the earliest or the first transaction of Bitcoin?
+00:07:38
+Yes, the first transaction of Bitcoin was between Satoshi and Delphine. Do you think he knew who Satoshi was if he wasn't Satoshi, you probably know how is it possible to work so closely with people and nevertheless not know anything about their fundamental identity?
+00:07:56
+Is this like a natural sort of characteristic of the Internet? I like to think about it because you and I just met now there's a there's a depth of knowledge that we now have about each other that's like physical like my vision system is able to recognize you. I can also verify your identity of uniqueness. Like, yeah, this like it's very hard to fake you being you.
+00:08:22
+Yeah. So the Internet, the Internet has a fundamentally different quality to it, which is just fascinating.
+00:08:30
+Definitely interesting, as I definitely just know a lot of people just by their Internet handles. And to me when I think of them, like I see their Internet handles and one of them has a profile picture is the same kind of face that's kind of not quite human with a bunch of psychedelic colors. And what I visualize have to just visualize that that's not an actual face.
+00:08:56
+Yeah, you are the creator of the second. Well, he's currently the second most popular cryptocurrency Ethereum. So on this topic for just the Constitution to come over for a little bit longer, you may be the most qualified person to speak to the psychology of this anonymity that we're talking about, like your identity is known, like I've just verified it.
+00:09:20
+But from your perspective, what are the benefits in creating a cryptocurrency and then remaining anonymous like a fucking psychoanalyse, Satoshi Nakamoto? Is there something interesting there or is that just a peculiar quirk of him?
+00:09:37
+It definitely helps create this kind of image of this sort of neutral thing that doesn't belong to anyone. And then you've created a project and because you're anonymous and because you also have disappear or as unfortunately happened to health, any of that is him. He ended up dying of Gehrig's disease and he is in a cryogenic freezer now. But if you pop in and you and you created an in your God and all that's remaining of that whole process is the thing itself, then no one can go and try to interpret any of your other behavior and try to understand, like, oh, the this person wrote this thing in some essay idea at age 16 where he expressed particular opinions about democracy.
+00:10:33
+And so because of that, this project is like is a state that's trying to do this specific thing. Instead, it creates this environment where the thing is what you make of it and it doesn't have the right or the burden of your other ideas, political thought and so on. So so now we're sitting with you. Do you feel the burden of being kind of the face of a theory?
+00:11:01
+I mean, there's a very large community of developers, but nevertheless, you know, is there like a burden associated with that?
+00:11:09
+There definitely is. This is definitely a big reason why I've been trying to kind of push for the Ethereum ecosystem to become more decentralized in many ways, just encouraging a lot of and, of course, theory and work to happen outside of the theory of foundation and of expanding the number of people that are making different kinds of decisions, having kind of multiple software limitations instead of one and all of these things. There's a lot of things that have tried to do it to and remove myself as a single points of failure, because that is something that a lot of people criticize, criticize me for.
+00:11:48
+So if you look at, like, the most fundamentally successful open source projects, it seems that it's a sad reality.
+00:11:57
+When I think about it is it seems to be that one person is a crucial contributor. Often you feel Galina's from from for for Linux, for the kernel that is possible.
+00:12:09
+And I'm definitely not planning to disappear.
+00:12:12
+And that's the interesting tension that projects that this kind of desire a single entity, and yet they're fundamentally distributed.
+00:12:25
+I don't know if there's something interesting to say about that kind of structure and thinking about the future of cryptocurrency. Does there need to be a leader?
+00:12:34
+There's different kinds of leaders, you know, there's there's dictators who control all the money, there's people who control organizations, there's a kind of high priests that just have themselves have their Twitter followers. What kind of leader are you, would you say?
+00:12:49
+You know, in these days, actually a bit more of the high in the high priest direction than before? Yeah, like. I definitely actually don't do all that much of kind of going around and ordering theory foundation people to do things, because I think those things are important. If there's something that I do think it's important that I do, just usually I kind of say it publicly or just sort of say it to people. And quite often projects just sort of start doing it.
+00:13:22
+So let's ask the high philosophical question about money. Yeah. What at the highest level is money? What is money?
+00:13:32
+It's a kind of game and it's a game where you have points. And if you have points, there is this one move where you can reduce your points by a number and increase someone else's points by the same number. And these sorts of fair game, hopefully.
+00:13:47
+Well, it's one kind of fair game. Like, for example, you know, you can have other kinds of fair games, like you're going to have a game where if I give someone a points and you give someone a points, then instead of that person getting two points, that person gets four points. And that's also fair is the but no money is easy to set up for.
+00:14:06
+And it serves a lot of useful functions. And so it kind of just survives in society as a meme for thousands of years.
+00:14:14
+It's useful for the storage of wealth, it's useful for the exchange of value, and it's also useful for denominating future payments to account as a unit of account.
+00:14:28
+So what if you look at the history of money in human civilization?
+00:14:32
+What just if you're a student of history, like how has its role or just the mechanisms of money changed over time, in your view? Even if we just look at the 20th century before and then leading up to cryptocurrency, that's something you think about. Yeah, and I think I think the big thing in the 20th century is that if we saw a lot more intermediation and yes, I think in the first part is kind of the move from being adding more of different kinds of banking.
+00:15:05
+And then we saw the move from that of dollars being backed by gold to dollars being backed by gold. That's only redeemable by certain people. The dollar is not being backed by anything, too.
+00:15:20
+And it's just this system where you have a bunch of free floating currencies and then people like getting rid of bank accounts and then those things becoming electronic, people getting accounts with payment processors that have bank accounts. So. So what do you make of that?
+00:15:39
+That's a fascinating philosophical idea, that money might not be backed by anything.
+00:15:46
+What is that like confessing to you that money can exist without being backed by something physical?
+00:15:52
+It definitely is. What do you make of that fact? How is that possible? Is that stable? If you look at the future of human civilization, is it possible to have money at the large scale, at such a hugely productive and rich societies, be able to operate successfully without money being backed by anything physical? Feel like? The interesting thing about the 21st century especially, is that a lot of the important valuable things are not backed by anything.
+00:16:21
+Like if you look at the tech companies, for example, something like Twitter, and you could theoretically imagine that if all of the employees wanted to, they could kind of come together, they would quit and start working on Twitter 2.0 and then. The value of and just kind of build the the the exact same products or possibly build a better product and then just kind of continue on from there. And the original the original Twitter would just not have people left anymore.
+00:16:55
+Right. Like the there is theoretically kind of code and like IP that's owned by the company. But in reality, like good programmers could probably read up, rewrite all that stuff in three months.
+00:17:05
+So the like the reason why the thing has value is just kind of network effects and coordination. Problems like these employees in reality are going to switch all at once. And also the users aren't all going to switch at once because it's just difficult for them to switch at once. And so there is this kind of metastable and if equilibrium in interactions between thousands and millions of people that are just actually quite sticky, even though if you try to kind of assume that every once a perfectly rational and kind of perfectly slippery spherical cow, they don't seem to exist at all that stickiness.
+00:17:46
+Do you have a sense, a grasp of the sort of the fundamental dynamic, like the physics of that stickiness? It seems to work, but and I think some of the cryptocurrency ideas kind of rely in it working.
+00:18:00
+And it's you know, it's the sort of thing that's definitely been economically model a lot like one the kind of analogy of something similar that you often see in textbooks as like what is the government like if for like 80 percent of people in a country just like tomorrow, suddenly had the idea that the laws that are currently the laws and the government that currently is the government are just people. And some other thing is the government and they just kind of start acting like it then that we're kind of become the new reality.
+00:18:36
+And then the question is, well, what happens if and if between zero and 80 people or an 80 percent of people start believing that like what is the thing? You all you see is that if there is one of these kind of switches happening is kind of revolution, then if you're the first person to join, then you probably don't have the incentive to do that.
+00:19:01
+But then if you're the 50 fifth percentile person to join, then suddenly becomes quite safe, too. And so it's definitely is the sort of thing that you can kind of try to analyze that understands mathematically. But one of the kind of results is that the sort of like when the switch happens definitely can be chaotic sometimes. Yeah. But still like to me, the idea that the network effects that the fact that human beings at a scale like millions or billions can share even the idea of currency like.
+00:19:38
+Yeah, all agree. That's just I know economic model. I'm a skeptic on economics and it's like some my my favorite sort of field, maybe recreationally. Psychology is trying to change human behavior. And I think sometimes people just kind of pretend that they can have a grasp on human behavior, even though we it's such a messy space that all the models that psychology or economics, those different perspectives on human behavior can have or are difficult.
+00:20:08
+It's difficult to know how much that's wishful thinking and how much it is actually getting to the core of understanding human behavior.
+00:20:15
+But on that idea, what do you think is the role of money in human motivation?
+00:20:23
+So do you think money from an economics perspective, from a psychology perspective, is core to like human desires?
+00:20:35
+Money is definitely very far from the only motivator. It is a big motivator. And that's one of the closest things you have to a universal motivator, I think, because ultimately, in almost any person in the world, if you ask them to do something, they'll be more inclined to do it. If you also offer some offer the money.
+00:20:57
+And that's like there's definitely many cases where people will do things other than things that maximize how much money they have. And that happens all the time. But like the a lot of those other things are kind of much more specific to and if that person is and of what their situation is, the relationship between the motive in the action and these other things. What do you think is the interplay of the other motivator, like Neetu prospectives, power?
+00:21:25
+Do you think money equals power or do you think those are conflicting ideas? Do you think I mean, that's one of the ideas that decentralized currency, decentralized applications are looking at, is who holds the power?
+00:21:37
+Yeah, money is there. Only a kind of power, and there's definitely people who want money because it gives them power, and then even if my money doesn't seem to explicitly be about money, a lot of things that people spend money on are ultimately about social status of some kind. So I definitely view those two things as of Interplaying. And then there's also money as just a way of like measuring how successful you are. I guess the scoreboard right to this kind of gets back to the game, really.
+00:22:16
+Like if you have four billion dollars, then the main benefit you get from going out, one of the big benefits you get from going up to six billion dollars is that now instead of being below the guy who has five year above, the guy who has five.
+00:22:30
+So you think money could be kind of in the game of life? It's also a measure of self-worth is Zarqawi.
+00:22:38
+It's definitely how how a lot of people perceive it. Define ourselves in the hierarchy of. Yeah, and I'm not not saying it's sign of a healthy thing that people define their self-worth as money because it's definitely far from a perfect indicator of how much you value you provide to society or anything like this. But I definitely think that as a matter of kind of current practice, a bunch of people do feel that way. So what does utopia from an economic perspective look like to you?
+00:23:14
+What is a perfect world look like?
+00:23:17
+I guess segue to the economist's utopia would be one where kind of. Everything is incentive airlines in the in the sense that there are kind of conflicts between what satisfies your goals and of what is good for everyone in the world, in the world as a whole, would you think that would look like?
+00:23:43
+Does that mean they're still poor people and rich people? There's still income inequality. Do you think sort of Marxist ideas are strong?
+00:23:52
+Do you think sort of ideas of objectivism are like where the market rules is strong? Like what? Is there a different economic philosophies that just seem to be reflective of utopia would be? No, I definitely think the existing economic philosophy is do end up kind of systematically deviating from the utopia. And a lot of ways, like one of the big things I talk about, for example, is public goods and public goods are especially important on the Internet has like the idea is what kind of money has this game where I was a few coin, a few coins and you gave the same number of coins, that this usually happens in a trade where I wish some money.
+00:24:40
+You gain some money, you lose a sandwich and I get a sandwich. And this kind of model works really well when the thing that we're using money to incentivize the sort of private goods. Right. Things that you provide to one person to really benefit comes to one person. But the like on the Internet especially, but also many, many contacts. And if off the Internet there's actions that of individuals or groups can take where instead of the benefit going to one person, the benefit just goes to many people at the same time.
+00:25:16
+And you can't control where the benefit goes to. Right. So, for example, this podcast know we publish it and when it's published, you don't have any fine grained control over like, oh, these thirty eight thousand people could watch it and then like these other twenty nine thousand people can't. It's like once the number goes high enough then people just copy it. And then when I write articles on a blog that they're just free for everyone and that stuff's even harder to prevent anyone from copying.
+00:25:45
+So aside from that, things like, you know, scientific research, for example, and even taking more pedestrian examples like climate change mitigation would be a big one. So there's a lot of things in the world where you have these kind of individual actions which have concentrated costs and distributed benefits and money as a point system does not do a good job of encouraging these things. And one of the other things, even tangentially connected to crypto, but kind of theoretically outside of it that I work on is the sort of mechanism called quadratics funding.
+00:26:26
+And the way to think about it is kind of imagine a point system where if if one person gives coins and gives coins to one other person, then it works the same way as money. But if multiple people give coins to one person and they do so anonymously, so it's kind of not in consideration for a specific service to that person themselves, then the number of coins the received by that person is of greater than just the sum of the number of coins that have given by those different people.
+00:27:02
+So the actual formula is you take the square root of the amount that each person gave, then you add all the square roots and then you have to square the subscript. Yeah. Then give that. And the idea here would basically be that if let's say, for example, you just started going off kind of planting a lot of trees and there's a bunch of people that are really happy that you're planting trees. So they go an all kind of throw a coin your way.
+00:27:29
+Then the there is like basically the fact that kind of you get more than the Sobhi, you get this kind of square of some of these of a square root, some of these tiny amounts is that this actually kind of compensates for the tragedy of the commons redness. There is even this kind of mathematical proof that it's sort of optimally compensates for it. What is the tragedy of the Commons? This is just this idea that if there is this situation where there is some public good that lots of people benefit from, then no individual person wants to contribute to it, because if they contribute, they only get a small part of the benefit from their contribution.
+00:28:09
+But they pay the full cost of their contribution.
+00:28:11
+In which context is this?
+00:28:13
+So what does the term quadratic quadratic funding like?
+00:28:18
+What's in which context does this mechanism use for so obvious?
+00:28:24
+You said. To combat the tragedy of the Commons, but in which context you see it as useful if you practice this. Yes, theoretically public goods in general. Right. So like like services, like what do we what are we talking about?
+00:28:36
+What the public does within the ethereal ecosystem, for example, like we've actually tried using this mechanism. I wrote a couple of articles about the sort of on Vitello dossier where I go through some of the most recent rounds. And it's been really interesting. Some of the top ones that people supported, there were things like just online user interfaces that make it easier for people to interact with a theory.
+00:29:05
+There was no documentation, there are podcasts, there were no software and of clients the kind of implementations of the theory and protocol of privacy tools, just like lots of things that are useful to lots of people. There weren't a lot of people are contributing like funding a particular particular entity. That's really that's really interesting. Is there something special about the quadratic, the the the sum of the square roots? And.
+00:29:38
+Yeah, so another way to think about it is like, imagine if any people each give a dollar, then the person gets and squared. Right. And and so each individual person's contribution gets multiplied by an and because they have nine people. And so that kind of perfectly compensates for the kind of end one tragedy of the commons. I just wonder if the squared part is fundamental though.
+00:30:02
+It is. And I'd recommend you go to the overtalk Nazia. I have this article called A Quadratic Payments, a Primer and highly recommended. It's kind of at least my attempt so far of exploiting the intuition behind this intuition. So if we could, can we go to the the very basics?
+00:30:24
+What is the block chain?
+00:30:27
+Or perhaps we might even start at the the Byzantine generals problem in presenting fault tolerance in general, that I Bitcoin was taking steps to providing a solution for them.
+00:30:42
+So the Byzantine generals problem, it's this paper that Leslie Lamport published in nineteen eighty two where he has to start experiments where if you have two generals that are kind of camped out on opposite sides of a city and they're planning when to attack the city, then the question is then of how could those generals coordinate with each other and they could send messengers between each other. But those messengers kind of could get sniped by the enemy on the road road. Some of those messages could end up being traitors, that if things could end up happening and with just the two best generals, it turns out that there's kind of no solution and a finite number of rounds.
+00:31:32
+That guarantee is that they will be able to kind of coordinate on the same answer. But then in the case where you have more than two generals to then once we analyze this case as like, ah, the messenger message is kind of just all messages are the messages kind of signed messages. So I could give you a solid message and you can pass along that side the message. And the third party could still verify that. I originally made that message.
+00:31:58
+And depending on those different cases, there is kind of different bounds. I'd like given how many generals that how many traitors among those generals and like under what conditions, you actually can't agree what to launch an attack. So it's actually a big misconception that the Byzantine generals problem was unsolved. So ultimately the reports solved it. The thing that was unsolved, though, is that all of these solutions assume that you have already agreed on a fixed list of who the generals are.
+00:32:30
+And these generals have to be kind of semi trusted to some extent. They can't just be anonymous people because if they're anonymous, then, like the enemy could just be ninety nine percent of the generals. And so. Right. The, um, in the 1980s, in the nineteen nineties, head of the general use case for distributed system stuff was more kind of enterprise, the stuff where you could kind of assume that you know who the nodes are that are running these kind of computer networks.
+00:33:03
+So if you wants to have some kind of decentralized computer network that pretends to be a single computer that you can kind of do and have operations on, then it's made out of the sort of fifty and specific computers. And we know kind of cool and where they are. And so we have a good reason to believe that, say, at least 11 of them would be fine and it could also be within a six.
+00:33:24
+Legal system. Exactly. Almost a network of devices, sensors go on like an airplanes and I think like flight systems in general still use these kinds of ideas. Yep. Yep. So that's the 80s. That's the 80s and 90s. Now, the cypherpunks had a different use case in mind, which is that they wanted to create a fully decentralized global position with currency. And the problem here is that they didn't want any authorities and they didn't even want any kind of privilege, the list of people.
+00:33:55
+And so now the question is, well, how do you use these techniques to create consensus when you have no way of kind of measuring identity is right. You have no way of determining whether or not some 99 percent of participants aren't actually all the same guy. And so the clever solution that Satoshi had, this is kind of going back to that presentation I made at Def Con a few months ago where I said that the things that she invented was crypto economics.
+00:34:25
+Is this really neat idea that you can use economic resources to kind of limit identify how many identities you can get and the if there isn't any existing decentralized digital currency, that the only way to do this is with proof of work. Right. So with proof of work, the solution is just. You publish a solution to a hard mathematical puzzle that takes some kind of clearly calculable amount of computational power to solve, you get an identity and then you solve five of those puzzles, you get five identities.
+00:35:04
+And then these are the identities that we run the kids and the cell growth of between.
+00:35:09
+So the proof of work mechanism you just described is like the fundamental idea proposed in man in the white paper defines bitcoin. What's the idea of consensus that we wish to reach worldwide consensus important here? What is consensus?
+00:35:29
+So the goal here is just simple technical terms is to basically kind of wired together a set of a large number of computers in such a way that the kind of pretends to the outside world to be a single computer where that single user keeps working, even if a large portion of the kind of constituents computers that make it up, break it kind of break in arbitrary ways, like they could shut off, they could try to actively break a system, they could do lots of things.
+00:36:00
+So the reason why the cypherpunks wanted to do this is because they wanted to run one particular program on this virtual computer. And the one particular program that they wanted to run is just a currency system. Right? It's a system that just processes a series of transactions. And for every transaction, it verifies that the sender has enough coins to pay for the transaction and verifies that the digital signature is correct. And if the checks pass, then it subtracts the coins from one account to announce the coins to the other account to roughly.
+00:36:34
+So first of all, the the the proof of work idea has kind of I mean, at least to me, seems pretty fascinating. It is. I mean, that's a kind of revolutionary idea. Is it is it obvious to come up with that? You can use you can exchange basically computational resources for for identity.
+00:36:55
+So it's it actually has a pretty long history. It was first proposed in a paper by Cynthia Work and the DNA or in nineteen ninety four, I believe, and the original use case was combating email spam. So the idea is that if you send an email, you have to send it with the work attached and like this makes it reasonably cheap to send emails to your friends, but it makes it really expensive to send spam to a billion people.
+00:37:22
+Yeah, that's a simple, brilliant idea. So maybe also taking a step back. So what is the role of block chain in this?
+00:37:31
+What is the block chain? Sure.
+00:37:33
+So the blocking my way of thinking about it is that it is this kind of system where you have this kind of one virtual computer created by a bunch of these nodes in the network. And the reason why the term block chain is used is because the data structure that these systems used, at least so far, is one where they have different nodes in the network periodically publish blocks and a block is a kind of list of transactions together with a pointer, like a hash of a a previous block that it builds on top of.
+00:38:13
+And so you have a series of blocks that that nodes in the network create for each bullet points to the previous block.
+00:38:21
+And so you have this chain of them is fault tolerance mechanism built into the idea of block chain or a lot of possibilities of different ways to make sure there's no funny stuff going on.
+00:38:33
+There are indeed a lot of possibilities. So any kind of just simple architecture, as I just described, the way the fault tolerance happens is like this, right? So you have a bunch of nodes and they're just happily of occasionally creating blocks, building on top of each other's blocks. And let's say you have kind of one block, we'll call it kind of block one and then someone else builds another block, honestly, or called block two. Then we have an attacker.
+00:39:01
+And what the attacker tries to do is the attacker tries to revert back to the way they revert back to is instead of doing the thing they're supposed to do, which is build a block on top of block two or they're going to build another block on top of block one. Um, so you have block one, which has two children, block to block to prime. Now, this might sometimes even happen by random chance if two nodes in the network just happen to create blocks at the same time and they don't hear about each other things before they create their own.
+00:39:30
+But this also could happen because of an attack. Now, if this happens, you have an attack then the no. In the Bitcoin system, the nodes follow the longest chain. So if this attack had happened and when the original channel had more than two blocks on it, so if it was trying to kind of revert more than more than two blocks, then everyone would just I would just ignore it and everyone would just keep following the regular chain.
+00:40:00
+But here, you know, we have block two and we have block two prime. And so that you were kind of either and then whatever block the next block is created on top of. Soucy Block three is now created on top of block two prime. Then everyone agrees that Block three is the new head and block two prime is just kind of forgotten. And then everyone just kind of peacefully builds on top of block three and then continues.
+00:40:25
+So how difficult is it to mess the system? I know.
+00:40:29
+So how if we look at the general problem, like how many what fraction of people who participate in the system have to be bad players in order to mess with actually.
+00:40:42
+OK, what's there is there is there a good number theory as well, depending on what your model of the participants is and what kind of attack we're talking about, it's anywhere between twenty three point two and fifty percent. Of what? Of all of the computing power of the network, sorry. So twenty to twenty three point between twenty three point two and fifty percent and 50 percent can be compromised.
+00:41:11
+So, like, once your once your purse, your portion of the total computing power of the network goes above the twenty three point to level, that there's a lot of things that you could mean, things that you can potentially do. And as your percentage of the network kind of keeps going up, then the your abilities as you mean things kind of goes higher than if you have above 50 percent, then you can just break everything. So how hard is it to achieve that level?
+00:41:37
+It seems that. So far, historically speaking, it's been exceptionally difficult. So this is a challenging question. So the economic cost of acquiring that level of stuff from scratch is fairly high. I think it's somewhere in the low billions of dollars. And when you say that stuff, you mean computational resources?
+00:41:59
+Yeah. So specifically specialized hardware and of ASX that people use to solve these puzzles just to do the mining is not a small tangent. So obviously I work a lot and deep learning with GPS and asks for that application. And I tangentially kind of hear that so many of these cities and views are sold out because of this other application.
+00:42:24
+I would do if you can comment, I don't know if you're familiar or interested in the space, what kind of a6 what kind of hardware is generally used these days for to do the actual computation for the proof of work. Sure. So in the case of Bitcoin and Ethereum are a bit different. So in the case of Bitcoin, there is an algorithm called the shots. Fifty six. That's just a hash function. And so the puzzle is just coming up with a number, with the hash over the numbers below some threshold.
+00:42:52
+And so because the hashes are designed to be random, you just have to keep on trying different numbers until one works. And the Aztecs are just like specialized circuits that contain additive circuits for evaluating this hash over and over again.
+00:43:08
+And you have like millions or billions of these hash evaluators and just stacked on top of each other inside of a box. And you just keep on running the box 24/7.
+00:43:17
+And there there's literally specialized hardware designed for this. Yes, this is we live in an amazing world. Another tangent and I'll come back to the basics. But does quantum computing throw a wrench into any of this?
+00:43:31
+Very good question.
+00:43:32
+So quantum computers have two main and to families of algorithms that are relevant to cryptography. One is Shor's algorithm ensures the algorithm is one that kind of completely breaks the hardness of some specific kinds of mathematical problems. So the one that you've probably heard of is it makes it very easy to factor in numbers. So figure out kind of what prime factors are, the kind of that you need to multiply together to get some number, even if that number is extremely big.
+00:44:03
+Shor's algorithm can also be used to break elliptic curve cryptography. It can break any kind of hit in order groups. The big breaks, a lot of kind of cryptographic nice things that we're used to. But the good news is that for every kind of major use of things that Shor's algorithm breaks, we already know of quantum proof alternative's. Right now, we don't use these Quisenberry alternatives yet because in many cases they're five to 10 times less efficient.
+00:44:32
+But and the crypto industry in general, ahead of those of this is coming eventually and sort of ready to take the hit and switch to that stuff when we when we have to. The second algorithm that is the relevance of cryptography is Grovers algorithm and engravers algorithm might even be a bit more familiar to people that's basically usually described as solving search problems. But the idea here is that if you have a problem over the form, finds a number that satisfies some property, then if with a classical computer you need to try and have end times before before you find the number, then with the quantum computer, you only need to do a square root of N computations.
+00:45:21
+And Grovers could potentially be used for mining. But there's two possibilities here. One is that Grovers could be used for mining and whoever creates the first working quantum computer that could do Grovers will just mind way faster than everyone else. And we'll see another round of what we saw when ASX came out, which is that's kind of the new hardware, just kind of dominated the old stuff.
+00:45:46
+And then eventually it switched to a new equilibrium, by the way, way faster, not exponentially faster, quite dramatically faster, radically faster, which is not sort of it's not game changing.
+00:46:00
+I would say it's like ASX like you said it would be.
+00:46:02
+Exactly. Yeah. So it would not necessarily break proof of work. That's right. Yeah.
+00:46:07
+Now, the other kind of possible world, right, is that quantum computers have a lot of overhead. There is a lot of complexity involved in maintaining quantum states. And there's also, as we've been realising recently, making quantum computers actually work requires that of quantum error correction, which requires kind of a thousand real cubits per logical garbage. And so there the very real possibility that the overhead of running a quantum computer will be higher than the speed up you get with Grovers, which would.
+00:46:38
+Kind of sad, but which would also mean the proof of work will just keep working fine, so beautifully put, so, so proof of work is the core idea of Bitcoin is there are other core ideas before we kind of take a step towards the origin story and ideas of Ethereum. Is there other stuff that were key to the white paper of Bitcoin?
+00:46:59
+There is proof of work and that there is just the cryptography is just kind of public keys and signatures that are used to verify transactions, those two really big things.
+00:47:08
+So then what is the origin story? Maybe the human side, but also the technical side of a theory, I'm sure.
+00:47:16
+So I joins the Bitcoin community in 2011, and they started by just writing. I first wrote for this sort of online thing called Bitcoin Weekly. Then I started writing for Bitcoin magazine and sorry to interrupt.
+00:47:33
+You have this funny kind of story, true or not, is that you were disillusioned by the downsides of centralized control from your experience with, Wow, World of Warcraft.
+00:47:45
+Is this true or you're just being witty? I mean, the event is true of the fact that that's the reason I do decentralization is what you maybe just a small tangent.
+00:47:56
+Have you always had a skepticism of centralized control? Is that some degree?
+00:48:03
+Has that feeling evolved over time or is that just always been a core feeling that decentralized control is the future of human society?
+00:48:12
+It's definitely been something that felt very attractive to me ever since I could have heard that such a thing is possible. Possible even. Yeah. So great. So you're enjoying the Bitcoin community in 2011.
+00:48:23
+You say you began writing. So what's next?
+00:48:27
+I started writing, moved from high school to university. Halfway in between that, I spent a year in the university. Then at the end of that year, I dropped out to do Bitcoin things full time. And this was a combination of continuing to write Bitcoin magazine, but also increasingly to work on software projects. And I traveled around the world for about six months and just going to different Bitcoin communities like I went to first in New Hampshire, then Spain, other European places, Israel and then San Francisco and along the way.
+00:49:04
+And I've met a lot of other people that are working on different Bitcoin projects. And when I was in Israel, there were some very smart teams there that were working on ideas that people were starting to have called Bitcoin 2.0. So one of these was colored coins, which is basically saying that, hey, let's not just use the bullshit for Bitcoin, but it's also a kind of issue, other kinds of assets on it. And then there was a protocol called Master Quired that supported issuing assets, but also supported many other things, like financial contracts, like domain name registration and a lot of different things together.
+00:49:40
+And I spent some time working with these teams and I quickly realized that this masticating protocol could be improved by a kind of generalising it more right. So the best the analogy I use is that the MasterCard protocol was like the Swiss Army knife. You have twenty five different transaction types for twenty five different applications.
+00:50:03
+But what I realized is that you could replace a bunch of them with things that are more general-purpose. So one of them was that you could replace like three transaction types for three types of financial contracts with a generic transaction type for a financial contract. Just once you specify a mathematical formula for kind of how much money each side gets.
+00:50:26
+By the way, it's a small pause once you see a financial contract, just the terminology, what is the contract? What's a financial contract?
+00:50:35
+So this is just generally an agreement where kind of either one or two parties kind of put collateral or kind of end and then they, depending on if certain conditions like this could involve prices of assets that could involve the actions of the two parties, could involve other things, but they kind of get have different amounts of kind of assets out that just depend on things that happened. So a contract is really a financial contract is at the core. It's it's the core interactive element of a financial system.
+00:51:10
+Yeah. There's there's many different kinds of financial contract. There's things like options where you kind of give someone the right to buy a thing that you have for some specific price for some period of time. There's contracts for difference where you basically are kind of making a bet that says, like for every dollar this thing goes up, I'll give you seven dollars, or for every dollar the thing goes down, you give me seven dollars or something like that. And but the main idea that.
+00:51:38
+These contracts have to be enforced and trust them. Yes, exactly. You have to trust that they will work out in a system where nobody can be trusted.
+00:51:46
+Yes. This is such a beautiful, complicated system.
+00:51:51
+OK, so so you are seeking to kind of generalize this basic framework of contracts. Mm hmm. So what does that entail? So what technically are the steps to creating a theory?
+00:52:05
+I'm sure so I guess just kind of continue a bit with this master coin story. So started by giving ideas for how to generalize the thing. And eventually this turned into a much more kind of fully fledged proposal that just says, hey, how about you scrap all your future is and instead you just put in this programming language. And I gave this idea to them and their response was something like, hey, this is great, but this seems complicated and it seems like something that we're not going to be able to put onto our roadmap for a while.
+00:52:37
+And my response to this was like, we do not realize how revolutionary this is. We'll just go do it myself.
+00:52:43
+And then I was the name of the programming, which I just called it ultimate scripting. So then I kind of went through a couple more rounds of iteration and then the idea for a theory of itself started to form. And the idea here is that you just have a block chain where the core unit of the thing is what we call contracts as these accounts that can hold assets and they have their own internal memory but that are controlled by a piece of code.
+00:53:19
+And so if I send some ether to a contract, the only thing that can determine where that either the currency inside a theory goes after that is the code of that contract itself. And so basically, you're kind of sending assets to computer programs becomes this sort of paradigm for creating these sort of a self executing agreements, self executing as so-called. The code is sort of part of this contract. So that that's what's meant by smart contracts. Yeah. So how hard was it to build this kind of thing?
+00:53:57
+Harder than expected. Originally, I actually thought that this would be a thing that I would kind of casually work on for a couple of months, publish and then go back to university. Then I released it and a bunch of people or I released a white paper, white paper that was there. The idea, the white paper, a whole bunch of people came in offering to help a huge number of people and have expressed interest. And this was something that was totally not expecting.
+00:54:25
+And then I realized that this would be something this kind of much bigger than I had ever thought that it would be. And then we started on this kind of much longer development slog of making something that lives up to this sort of much higher level of expectations. What are some of the is it fundamentally like software engineering challenges? It was social. OK, so there's no social.
+00:54:54
+So so what are the biggest interesting challenges that you've learned about human civilization and in software engineering through this process?
+00:55:04
+So I guess one of the challenges for me is that I'm one of the kind of apparently unusual geeks who was sort of never treated with anything but kindness in school. And so when I got into crypto, I never expected everyone would just kind of be the same kind of altruistic and nice in that same way. But the job of the algorithm that I used for finding co-founders for this thing was not very good. It was sort of literally what computer scientists called the greedy algorithm.
+00:55:37
+It's sort of the first 50 people who applied back offering to help kind of are the co-founders.
+00:55:42
+I mean, like literally the people that form formed to be the founders, co-founders of the community, the algorithm. I like how you call it the algorithm. Yeah. And so what happened was that these especially as the project got really big, like there started to be a lot of this kind of infighting and there were a lot of like I wanted the thing to be a nonprofit and some of them wanted to be a for profit. And then there started to be people who were just kind of totally unable to work with each other.
+00:56:16
+There were people that were kind of trying to get an advantage for themselves and a lot of different ways. And this just about six months later led to this big governance crisis. And then we got a reshuffled leadership, a bid, and then the project kept on going. Then nine months later, there was another governance crisis and an. There was the third governance crisis. So is there a way to if you're looking at the human side of things, is there a way to optimize this aspect of the cryptocurrency world?
+00:56:49
+It seems that there is. From my perspective, there's a lot of different characters and personalities and egos. And like you said, I don't know if.
+00:57:00
+You know, I also like to think that most of the world, most of the people in the world are well-intentioned, but the way those intentions are realized may perhaps come off, as you know, as negative.
+00:57:13
+What is there is there a hopeful message here about creating a governance structure for cryptocurrency that where everyone gets along and after about four rounds of reshuffle, I think we've actually come up with something that seems to be pretty stable and happy and think I mean, I definitely do think that most people are well intentioned.
+00:57:40
+I just think that one of the reasons why I like decentralization is just because there is like this thing about power where power attracts people with egos. And so that just allows those very small percentage of people to just to ruin so many things.
+00:57:54
+You think ego as you think ego has a use like is ego always bad?
+00:58:01
+It seems like sometimes does. But then the theory research team, I feel like we've found also a lot of a lot of very good people that are just. Primarily, you're just interested in things for the technology and things seem to just generally be going quite well.
+00:58:23
+Yeah, when you're when the focus and the passion is in the tech, so on. So that's the human side of things with the technology side. What have you learned? What have been the biggest challenges of bringing a theory to life? On the technology side, so I think, first of all, just. There are others, like the first law of software development, which is that when someone gives you a timetable of a switch, the unit of times, the next largest unit of time and one, we basically fell victim to that.
+00:58:55
+And so instead of taking that like three months, that ended up taking 20 months to watch the thing.
+00:59:05
+And that was just, I think, underestimating the sheer technical complexity of the thing.
+00:59:10
+There were research challenges like so for example, one of the things that we've been saying from the start that we would do one is a switch from a proof of work to proof of stake, more proof of stake as to this alternative consensus mechanism where instead of having to waste a lot of computing power on solving these mathematical puzzles that don't mean anything, you kind of prove that you have access to coins inside of the system and this that it gives you some level of participation and the consensus.
+00:59:40
+Can you maybe elaborate on that a little bit? I understand the idea of before work. I know that a lot of people say that the idea of proof of steak is really appealing. Maybe linger a longer explain what it is.
+00:59:52
+Sure. So basically, the idea is like if I kind of walk up a hundred coins, then I turn that into a kind of, quote, virtual binder and the system itself kind of automatically, sort of randomly assigns that in a virtual binder is a right to create blocks that particular travels. And then if someone else has 200 coins and then a walk on the walk, there's 200 coins, then they get a kind of twice as big a virtual binder.
+01:00:22
+They'll be able to create their blocks twice as often. So it tries to kind of do similar things to proof of work, except instead of the thing kind of limiting your participation to being your ability to crank out solutions to kind of hash challenges. The thing that really makes your participation is kind of how much coins you're walking into this mechanism.
+01:00:46
+OK, so interesting so that that limited participation doesn't require you to run a lot of compute. Does that mean that the richer you are, so rich people are more like their identities, more right. And the stable. Yeah, four or five or whatever, whatever the right terminology is, right, and this is definitely a covid critique, I think my usual answer to this is that like proof of work is even more of that kind of system. Exactly.
+01:01:20
+Yeah, because I didn't mean it. And that that as a criticism, I think you're exactly right. That's equivalent to proof of war because the same kind of thing.
+01:01:28
+But the before work, you have to also use physical resources. Yes.
+01:01:33
+And broken computers and burn trees and all of that stuff. Is there a way to mess with the system of the proof of proof stake?
+01:01:42
+There is. But you will once again need to have a very large portion of all the coins that are locked in the system to do anything bad. Got it.
+01:01:50
+Yeah, and just that maybe take a small change in one of the criticisms of cryptocurrency is the fact that it gets for the proof of work mechanism if to use so much energy in the world. Yes. Is one of the motivations of proof of stake is to move away from this. Definitely. What's your sense of that? Maybe I'm just under informed. Is there like legitimately environmental impact from this?
+01:02:15
+Yeah. So the latest thing was that Bitcoin consumed as much energy as the country of Austria or something like that. Yeah. And then Ethereum as of right now, maybe only like half an order of magnitude smaller than Bitcoin. I've heard you talk about a Ethereum 2.0. So what's the what's the dream of Ethereum 2.0? What's what's the status of proof of state? Because the mechanism that Ethereum moves towards and also how do you move to a different mechanism of consensus within a cryptocurrency?
+01:02:48
+So Ethereum 2.0 is a collection of major upgrades that we've wanted to do to Ethereum for quite some time. The two big ones, one is proof of stake and the other is that we call sharding. Sharding solves another problem with big chains, which is a scalability. And what Sharding does is it basically says instead of every participant in the network having to personally download and verify every transaction, every participant in the network only downloads and verifies a small portion of transactions.
+01:03:19
+And then you kind of randomly distribute who gets how much work. And because of how the distribution is random, it still has the property that you need a large portion of the entire network to corrupt what's going on inside of any Shahd. But the system is still at a very redundance and very secure as brilliant.
+01:03:40
+How hard is that to implement and how hard is proof of stake to implement? Like on the technical level?
+01:03:47
+Yeah, software level, proof of stake and sharding are both challenging. I'd say sharding is a bit more challenging. The reason is that proof of stake is kind of just a change to the core. The consensus layer works. Sharding does both that, but it's also a change to the networking layer. The reason is that sharding is kind of pointless if at the networking layer you still do what you do today, which is you kind of gossip everything, which means that if someone publishes something, every other node in the client hears it from on the networking layer.
+01:04:18
+And so instead we have to have enough sub networks and the ability to quickly switch between sub networks and other sub networks talk to each other. And this is all doable. But it's a more complex architecture and it's definitely the sort of thing that has not yet been done in cryptocurrency. So most most of the networking layer in cryptocurrency is you're shouting broadcast messages and this is more like ad hoc networks, like you're shouting within smaller groups, smaller group, but you have like a bunch of subnet like executive and you have to switch to, oh, man, I'd love to see the as it it's a beautiful idea.
+01:04:55
+So from a graph, theoretical perspective, but just the software and who's responsible is Ethereum project like the people involved, would they be implementing like what's the actual you know, this is like legit software engineering who like how does that work?
+01:05:12
+How do people collaborate, build that kind of project? Is this like almost like is there a software engineering lead?
+01:05:20
+Is there is a legit almost like large scale open source project is. Yeah. So we have someone named Danny Ryan on our team who has just been brilliant and regrade all around. And he is a kind of de facto kind of development coordinator. I guess it's like you have to invent job titles for this stuff. And the reason is that, look, we also have this unique kind of organizational structure where the Ethereum Foundation itself and it does research in-house, but then the actual implementation is done by independent teams that are separate companies and they're located all around the world and fun places like Australia.
+01:06:01
+And so you can kind of just need a bunch of sort of almost non. Cat herding to just keep getting these people to talk to each other and kind of implement this back, make sure that everyone agrees on what's going on and kind of how to interpret different things. So how far into the future are we from these two mechanisms and a theorem to point out like, what's your sense of the timeline, keeping in mind the previous comment you made about the sort of general Kurzem software projects?
+01:06:36
+So Ethereum 2.0 is split into three phases. So Phase Zero just creates a bit of stake network. And it's actually separate from kind of proof of the proven work network at the beginning just to kind of give it time to grow and improve itself. The people get to choose. Sorry to interrupt.
+01:06:54
+If people get to choose, I guess we can think as they choose to move over if they want to, then phase one adds sharding, but it only adds sharding of active data storage and not sharding of computation. And then after that, there is that of the merger phase, which is where the and the accounts are kind of smart contracts like all of the activity on the existing etha, one system just kind of gets cut and pasted into two and the word change gets forgotten and then and things all the things that were living there before and just kind of continue living inside of the system.
+01:07:30
+So for timeline's phase zero has been kind of almost fully implemented and now it's just a matter of a whole bunch of security auditing and testing. My own experience is that right now it feels like right about a phase comparable to when we were doing the original Ethereum launch, when we were maybe about four months away from launch. But that's just a hunch and that's just a hunch.
+01:08:02
+Yeah. So how you know, it took it took over a decade for people to move from Python to Python three. How do you see the move from, like this phase of zero of four four different concepts?
+01:08:17
+The mechanism do you see there being a drastic phase shift in people just kind of jumping to this better mechanism?
+01:08:25
+So in phase zero, don't expect too many people to do much because in phase zero, in phase one, the new chain of deliberately, it doesn't have too much functionality or none. It's there just like if you want to be a proof of stake validator, you can get things started. If you want to store data for other botulin applications, you can get started. But existing applications will largely keep living on E one. And then when the merger happens, then the merger is the operation that happens all at once.
+01:08:57
+So that's sort of one of the benefits of such a system. Like on the one hand, you have to coordinate the upgrade, but on the other hand, the upgrade can be coordinated.
+01:09:06
+So what's Kasparov FFG, by the way, Kasparov G is the consensus algorithm that we are using for the of stake.
+01:09:14
+Is there something interesting specific about Kasparov of like some beautiful aspect of it that there is so Kasparov Evgenia combines together kind of two different schools of, say, algorithm design.
+01:09:29
+So the general two different schools of the of the design are right. One is at a 50 percent fault tolerant but dependent on network security. So 50 percent volks, holer fault tolerant, but it gets all read up to 50 percent of fault's, but not more. But it depends on an assumption that all of the nodes can talk, talk to each other within some of a limited period of time. Like if I send the message, you'll receive it within a few seconds.
+01:09:57
+And the second school is thirty three percent fault tolerant but safe under a synchrony, which means that if we agree on something, then nothing is finalized. And even if the network goes horribly wonky the second after that thing is finalized, there's no way to revert that thing. And that's fascinating how you would make that happen. It's definitely quite clever. I'd recommend the Kasparov of paper if you just search like archive. I said like er XIV Kasper FFG.
+01:10:29
+It's the papers and archive. Yeah. Who are the authors. Myself and Virgil Griffith. That's awesome. I take a small tangent. This idea of just putting out white papers and papers and putting them on archives is putting them publicly.
+01:10:46
+Is it, is that at the core. Is that a necessary component of currencies that the tradition started with and Satoshi Nakamoto is what we make of it? What do you make of the future of that kind of sharing of ideas?
+01:11:00
+I guess so, yeah. And it's definitely something that's kind of mandatory for crypto because, like, crypto is all about making systems where you don't have to trust the operators to trust that the thing works. And so if anything behind our system works is closed, source to that kind of kills the point. And so there is the kind of a sense in which the fundamental properties of the category of the thing we're trying to build just kind of forces openness, but also openness just has proven to be a really great way to collaborate.
+01:11:36
+And there's actually a lot of sort of innovation and academic collaboration that's just kind of happened ad hoc in the crypto space the last few years. So like, for example, we have this forum called Ethe Research that's like ETG or NCAR, the dots. And there we publish kind of just ideas in a form that's kind of how formal like it's halfway in between. Like it's it's a kind of a text right up and you can have math in it, but it's often sort of much shorter than a paper.
+01:12:09
+And it turns out that the great majority of new ideas, like they're just kind of fairly small nuggets that you can explain in like five to 10 lines that they don't really need the whole format of the paper.
+01:12:22
+Exactly. They don't require the kind of like 10 pages of filler. And so introduction conclusion is not needed. Yeah. So instead you just kind of publish the idea that people will your comments on it. Yeah. This has been so great for us. I think I interrupted you. Was there something else on Caspar FFG that's just Casper FFG is just kind of combines together these two schools. And so basically it creates this system where if you have more than 50 percent that are honest then and you have network synchrony, then the thing kind of goes has a chain.
+01:13:02
+But then if Network Sacranie fails, then kind of the last few blocks of the chain might get replaced. But anything that was finalized by this set of more asynchronous process gets like can't be reverted. And so you essentially get a kind of best of both worlds between those two models.
+01:13:21
+OK, so I know what I'm doing to you reading the Gettysburg Paper. I apologize for the romanticized question, but what to you are some or the most beautiful idea in the world of a theorem? Just something surprising, something beautiful, something powerful.
+01:13:40
+Yeah. I mean, I think the fact that money can just emerge out of a database if enough people believe in it, I think is definitely one of those things that's up there. I think one of the things that I really love about a theorem is also this concept of possibility. So this is the idea that if I build an application on top of a theory, then you can build an application that talks to my application and you don't even need my permission.
+01:14:07
+You don't even need to talk to me. But so one really fun example of this, as there was this sort of game on a theory called Crypto Kiddie's, the just involvement of breeding digital cats. And someone else created a game called Crypto Dragons, where the way you play Crypto Dragons is you have a dragon and you have to foetid crypto kitties. And they just created the whole thing, just like as an ethereal contract that you would send these these tokens that are defined by this other Ethereum contract.
+01:14:41
+And for the interoperability to happen, like the projects that don't really need to look, the teams don't really need to talk to each other. You just kind of interface with the existing program arbitrarily, composable in this kind of way. You have different groups that could be working. And so you could see it scaling to just outside of dragons and kiddie's. It could be built like entire ecosystems of software.
+01:15:06
+Yeah, it's kind of like I mean, especially in the decentralized finance space that's been popping up in the last two years. There has been a huge amount of of really interesting things happen as a result of this is a particular kind of like financial applications kind of thing. Yeah.
+01:15:23
+I mean, there's like stable coins. So this is kind of tokens that retain value equal to one dollar, but they're kind of backed by a cryptocurrency that there's decentralized exchanges. So as far as decentralized exchanges goes up, there's this really interesting construction that has existed for about one one and a half years now called. So what you swipe is that's a smart contract that holds the balances of two tokens we'll call token, and so it can be and it maintains that invariants that the balance of talking a multiplied by the balance of token, B has to equal the same value.
+01:16:04
+And so the way that you trade against the thing is basically like you have this kind of curve, you know, like X times Y equals K, and before you trade it at some points on the curve, after you trade, you just like picks up any any other points on the curve. And then whatever the Delta X is that's stimulative because you provide whatever the Delta Y is, that's the amount of detail that you get or vice versa. And that's just and then kind of the slope at the current points on the curve is the price.
+01:16:33
+And so that just is the whole thing. And that just allows you to have this exchange for tokens. And even if there's very few participants and the whole thing is just like so simple and it's just very easy to set out, very easy to participate in, and it just provides so much value to people. And the the fundamental the the distributed application infrastructure allows that somehow. Yes.
+01:17:07
+So this is a smart contract meeting.
+01:17:09
+This is all a computer program that's just running through some smart contracts who are just fascinating. They are. OK, do you think cryptocurrency may become the main currency in the world one day?
+01:17:22
+So where do you think we're headed in terms of the role of currency, the structure type of currency in the world?
+01:17:29
+I definitely expect some fiat currencies to continue to exist and continue to be strong. And I definitely expect fiat currencies to also digitize, have their own way over the next couple of decades. What's fiat currency, by the way? Oh, just like things like US dollars, like dollars and euros and yet these other things. And they're sort of backed by governments. Yes.
+01:17:51
+But I also expect a sort of cryptocurrency to play this kind of important role in just making sure that people always have an alternative if fiat currencies start breaking.
+01:18:03
+So if or if you're in some kind of very high inflation place like Venezuela, for example, or if your country just kind of gets cut off, cut off from other financial systems because of something the banks do a gift for any kind of if there is even some major trade disruption or something worse happens, then like cryptocurrency. These are the sort of thing that just because of the kind of global neutrality, they're just always there and you can keep using them.
+01:18:39
+It's interesting that you're quite humble about the possibilities of the future of cryptocurrency. You don't think there's a possible future where it becomes the main sort of currency because it feels like fear.
+01:18:52
+It feels like the centralized control by governments of currency is limiting somehow. Maybe my naive utopian view of the world.
+01:19:03
+It's and it's definitely very possible, I think, for cryptocurrency as being the main form of value to work. Well, like, you do need to have some much more price stability than they have today. And there are no stable coins and there are kind of crypto cryptocurrency is to try to be more stable than existing things like Bitcoin and ether. But that just is to me, the kind of the main challenge. Do you think or do you think that's a characteristic of just just being the early days is such a young concept.
+01:19:42
+Ten years is nothing in the history of money. And I think it's a combination of two things. One is it's it's still early days, but the other is a kind of more durable, any kind of economic problem, which is that the demand for currency is volatile. Right, because of like recessions, booms, changes to technology, lots of things. And if people's demand for how much currency they want to hold changes and if you have a currency that has a fixed supply, then the change in demand has to be entirely expressed as a change in value of the currency.
+01:20:17
+And so what that means is that kind of the volatility of demand becomes entirely translated into volatility and head of prices of things that are updated in that currency. But if you have a currency where instead the supply can change and so the supply can go up when there's more demand, then you have the supply ahead of absorbing more of that volatility. And so the price of the currency would absorb whatever the volatility on that topic. So Bitcoin does have a limited supply of specific fixed supply.
+01:20:46
+Yes. What? Was the idea and a theorem doesn't, but can you clarify just in the comments you just made, is a theory qualify to the kind of currency that you're talking about and being flexible in the supply?
+01:21:01
+And it's a bit more flexible. But the thing that you would really want is something that's kind of specifically flexible in response to how valuable the currency is in. And I'd recommend you to look at stable coins as well. SELEK things like die, for example.
+01:21:20
+It's like baseball that day and with stable coins.
+01:21:26
+Is that a type of cryptocurrency? It is the type of cryptocurrency. It's a type of cryptocurrency that's issued by a smart contract. One of these Ethereum computer programs that where the smart contract holds a bunch of ether and then it is basically like that people deposit and then it issues die. And the reason why people deposit is because they want to kind of go high leverage on their ether. And so it kind of pairs these two sets of users, one that wants stability and one that kind of wants extra risk together with each other.
+01:21:57
+And it basically creates or gives one set of participants a guarantee that they'll be that they have this asset that can that can be later converted back into the ether, but specifically at the end of the one dollar rate. And it has some kind of stabilizing network effects.
+01:22:18
+Yeah, yeah. It has many kinds of stabilizing mechanisms in it.
+01:22:23
+That's fascinating. OK, this world is awesome. Technically, just from a scientific perspective, it's an awesome world that I often don't see from an outsider's perspective. What I often see is kind of maybe hype and a little bit, if I may say so, like charlatanism. Mm hmm. And you don't often see, at least from an outsider's perspective, the beautiful science of it and the engineering of it maybe.
+01:22:48
+Is there a comment you can make of who to follow, how to learn about this world without being interrupted by the charlatans and the hype people in this space?
+01:23:04
+I think you do need to just know the specific just people to follow. Like, there's you know, there's all the kind of the cryptographers and the researchers. There's just like even just the theory research crew like myself and grad Danny Just and the other people were. And then the academic cryptographers before this today was at Stanford. And Stanford has the center for watching the research and of anybody that's really famous and great cryptographer is running it. And there's a lot of other people there.
+01:23:43
+And there's people working on zero knowledge proofs, for example, and Zucco from the caches of one other person that I respect. So I think if you follow the technical, you crawl along that.
+01:23:59
+Yeah, you just start with your and group and and look at academics day by day and so on, and then just cautiously expand the network of people who follow. Yeah, exactly. And like, if someone seems to to self promotional, then just like remove them because they're books that are. So there's these white papers and we just discussed about, about ideas being condense into really small parts is there are books that are emerging that are kind of good introductory material, so prefer historical ones.
+01:24:30
+Then there's like Nathaniel Popper's Digital Gold, which is just about the history of Bitcoin. There's one thing Matthew Lysenko doubts that there's one about the history of Ethereum for technical ones and there's a sense of Nobelists mastering Ethereum.
+01:24:46
+Great. So let me ask you, sort of sorry to pull back to the. The idea of governments and decentralized currency, you know, there's a tension between decentralization of currency and the power of nations, the power of governments, you what's your sense about that tension? Can. Is there some rule for regulation of currency?
+01:25:13
+You. Yeah.
+01:25:14
+Is there like is the government the enemy of digital currency of distributed currency or can they be like cautious friends?
+01:25:27
+I mean, I think the one thing that people forget is that it's clearly not entirely an enemy because they think if. There had been so much government regulation on the hand of centralized, issuing centralized digital currencies that we'd be seeing things that people like Google and Facebook and Twitter just kind of issuing them left and right. And then if that was the case, then decentralized currencies would still appeal to some people, but they definitely would appeal to less people than today.
+01:25:59
+So even in that sense, I think it's clearly been sort of more of a just kind of set the stage for the end of the existence of the sector in some ways. But also and I think some of both, there's definitely things that governments can do in some cases have done to hurt the spread of and of growth of a of by chance. There is things that they've done to help. And there have been, in some cases, definitely done a good job of going after fraudulent projects and going after some of the projects that have some of the craziest and most misleading marketing.
+01:26:45
+There is also the possibility that governments will end up using Billikens for a lot of different things like governments than they do a lot more than just regulating. There is also the they have the kind of. Identity records say they have a property registry is even their own currency is secure. Lots of different things that they're operating and there's even watching applications in a lot of those.
+01:27:17
+And they can you know, they can leverage technology to do a lot of good for our society.
+01:27:23
+It is a little unfortunate that governments often lag behind in terms of their acceptance of leverage of technology. If you look at the autonomous vehicle space, I in general, there there are a few years behind. It'd be nice to help them catch up. That's a that's always ongoing problem.
+01:27:44
+You met Vladimir Putin to discuss the centralised currency or you're born and where we were in Colombia.
+01:27:53
+It's a city about 150 kilometers south of Moscow.
+01:27:56
+In Russia, yes. Yeah. I grew up in Moscow. I mean, it's Vladimir Putin is the central figure in this part of the world. So what was that like, meeting or meeting him?
+01:28:10
+What was that experience like? He's taller and photos than in person. Yeah, he's. Yeah, that's right. He's five seven I think. Five eight maybe. Yeah, it's the. Unfortunately, we didn't actually have too much of a chance to talk to him, like I managed to see him for about one minute at the end of this meeting. And I did get a chance to see of some of the other end of government ministers. And he recommended some and some of them are are actually interested in trying to use some fortunes to look for various government use cases of corruption and other things.
+01:28:51
+And I have it's hard to tell from one conversation kind of what things are genuine and what things are just like gold watch. It is cool that you watch it.
+01:29:00
+But, you know, when I when I listen to, like, Barack Obama talk about artificial intelligence, there's certain things I hear were OK.
+01:29:11
+So he may not be an expert in AI, but he knows he actually studied it carefully enough to think about it like he can, like even if he's just reading a Wikipedia page, like he really thought about what this technology means.
+01:29:26
+Did you get a sense that Putin or some of the ministers like thought about block chain, thought about the fundamentals of technology, like understand it intuitively, or are they too old school to try to grasp it somewhere, old school somewhere or a new school?
+01:29:43
+It depends. It's it's definitely depends on who you talk to.
+01:29:47
+I mean, that's an open question for me with Putin, because Putin has said, I don't know, I've only talked to him for about one minutes, but sometimes you can pick up sort of insights as a quick comment. They're there about maybe you can correct me on this, but there are three thousand cryptocurrency is being actively traded.
+01:30:07
+Yes.
+01:30:08
+And Ethereum is one of a lot of people believe that there will be the main cryptocurrency. I think Bitcoin is currently still the main cryptocurrency, but Ethereum very likely might become that the main one.
+01:30:21
+Is this kind of diversity good in the world? This is sticking around. Should there should there be a winner? Like should there be some consensus globally around Bitcoin or around a theory? I'm like, what's your what's your sense?
+01:30:34
+I definitely think the diversity is good. And I definitely think also that there's probably too many people trying to make separate fortunes. And of right now, the numbers should definitely be greater than one and probably greater than two or even five.
+01:30:48
+Not three thousand, not three thousand. And also not even like forty high quality platforms to try to do the same thing. There's definitely this range from just like one person who just like wrongly thinks that you can create a cryptocurrency in like twelve hours and doesn't even think about kind of the community aspects of maintaining it, going to people actually trying, but only creating a really tiny one or two like scammer's to people making something that's actually successful. And then there's a lot of different categories of watching the project in terms of what it's trying to do and what applications it's for.
+01:31:33
+And I think the experimentation is definitely healthy.
+01:31:37
+If you look at the two worlds, that might be a little bit disjointed, but the distributed applications, cryptocurrency and in the world of artificial intelligence, do you see there's some overlap between these worlds that both worry about centralized control? Is there is some overlap. That's interesting that you think about do you think about A.I. much?
+01:31:57
+Yeah, and I think definitely and have thought about things like in like the ahead of control problems that a lot of the problems and all of those things you worry about the potential threat of A.I. It's definitely one of the things I worry about is they think but there's a lot of kind of common challenges because in both cases, what you're ultimately trying to do is you're trying to kind of get a simple system to direct a more complex system, like in the case of these strong eyes, the idea would be that the simple systems people and the complex system as well, whatever thing the people, the people end up unleashing on the universe, that will hopefully be a great thing in in the case of block change, the end of the complex.
+01:32:48
+Well, the simple thing is the algorithm, which is a piece of static and fully open source code. And the more complex thing is just the all of the different possible. And if human actors, the end of the strategy is that they might choose to participate in the network, do you think about your own mortality, like what you hope to accomplish in your life?
+01:33:11
+You know, I definitely I definitely think about ending my own mortality.
+01:33:15
+So that's if I gave you the option to live forever, would you? Depends a lot on what the find does the.
+01:33:23
+And if it's one of those things where I'm going to be a kind of like floating through empty space for ten to the seventy five years to know if it's forever worth of having, you know, of fulfilling life with meaning with with friends, to just spend the time with what's going to be meaningful challenges to explore an individual. Interesting things to be working on then I think absolutely.
+01:33:54
+It's beautifully put live forever but you'd have to check the fine print. I think there's no better way to end the talk. Thank you so much for talking to us. So exciting to follow your work distance and thank you for creating a revolutionary idea and sticking with it and building it out, doing some incredible engineering work. And thanks for talking today.
+01:34:16
+Thank you. Thanks for listening to this conversation with Vrdolyak Budarin and thank you to our sponsors Express, VPN and Masterclass. Please consider supporting the podcast by signing up to master class at master class dot com slash Lex and getting Express VPN and Express VPN. Dotcom neglects pod. If you enjoy this podcast, subscribe on YouTube. Review it with five stars and Apple podcast supported on Patron or simply connect with me on Twitter. Allex Friedman. And now let me leave you with some words from Retallack Budarin.
+01:34:53
+The thing that I often ask startups on top of a theorem is can you please tell me why using a theory and block chain is better than using Excel? And if they can come up with a good answer, that's when you know you got something really interesting. Thank you for listening and hope to see you next time.

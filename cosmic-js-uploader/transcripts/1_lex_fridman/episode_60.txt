@@ -1,0 +1,598 @@
+00:00:00
+The following is a conversation with James Gates Jr. He's a theoretical physicist and Professor Brown University working on supersymmetry, super gravity, a super string theory. He served on former President Obama's Council of Advisors on Science Technology. And he's now the co-author of a new book titled Proving Einstein Right about the scientists who set out to prove Einstein's theory of relativity.
+00:00:26
+You may have noticed that I've been speaking with not just computer scientists, but philosophers, mathematicians, physicists, economists, and soon much more to me, eyes much bigger than deep learning, bigger than computing. It is our civilization's journey into understanding the human mind and creating echoes of it in the machine. That journey includes, of course, the world of theoretical physics and its practice of first principles, mathematical thinking and exploring the fundamental nature of our reality. This is the artificial intelligence podcast.
+00:01:00
+Enjoy it, subscribe, I need to give it five stars, an Apple podcast, follow on Spotify, support on Patrón or simply connect with me on Twitter. Allex Friedman spelled Frid man. If you leave a review, an Apple podcast or YouTube or Twitter, consider mashing ideas people topics you find interesting. It helps guide the future of this podcast. But in general, I just love comics that are full of kindness and thoughtfulness in them. This podcast is a side project for me, but I still put a lot of effort into it.
+00:01:32
+So the positive words of support from an amazing community from you really help. I recently started doing ads at the end of the introduction. I'll do one or two minutes after introducing the episode and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. I provide timestamps for the start of the conversations you may have noticed that you can skip to, but it helps if you listen to the ad and support this podcast by trying out the product or service being advertised.
+00:02:05
+This show is presented by Kashyap, the number one finance app in the App Store. I personally use cash. I have so many friends, but you can also use it to buy, sell and deposit Bitcoin. Just seconds. Kashyap also has a new investing feature. You can buy fractions of a stock, say, one dollars worth, no matter what the stock prices. Brokerage services are provided by Cash Up Investing, a subsidiary of square member SIPC.
+00:02:31
+I'm excited to be working with cash out to support one of my favorite organizations called First Best known for their first robotics competitions. They educate and inspire hundreds of thousands of students in over one hundred and ten countries and have a perfect rating on Charity Navigator, which means the donated money is used to maximum effectiveness. When you get cash up from the App Store or Google Play and Use Code Leks podcast, you'll get ten dollars in cash. Apple also today, ten dollars.
+00:02:59
+The first, which again is an organization that I've personally seen, inspire girls and boys to dream of engineering a better world. And now here's my conversation with S. James Gates, Jr.. You tell a story when you were eight, you had a profound realization that the stars in the sky are actually places that we could travel to one day. Do you think human beings will ever venture outside our solar system? Wow, the question of whether humanity gets outside of the solar system, it's going to be a challenge.
+00:03:49
+And as long as the laws of physics that we have today are accurate and valid, it's going to be extraordinarily difficult. I'm a science fiction fan, as you probably know. So I love to dream of starships and traveling to other solar systems.
+00:04:05
+But the barriers are just formidable if we just kind of venture a little bit into science fiction.
+00:04:12
+Do you think the spaceships, if we are successful, that take us outside the solar system will look like the ones we have today or do fundamental breakthroughs?
+00:04:22
+Are fundamental breakthroughs necessary in order to have genuine starships, probably some really radical views about the way the universe works is are going to have to take place in our science. We could, with our current technology, think about constructing multigenerational starships where the people who get on them are not the people who get off at the other end. But even if we do that, the formal problems, actually our bodies, which doesn't seem to be conscious for a lot of people, even getting to Mars is going to present this challenge because we live in this wonderful home, has a protective magnetic magnetosphere around it, and so we're shielded from cosmic radiation.
+00:05:11
+Once you leave the shield, there are some estimates that, for example, if you sent someone to Mars with that technology, probably about two years out there without the shield, they're going to be bombarded. That means radiation probably means cancer. So that's one of the most formidable challenge, even if we could get over the technology.
+00:05:33
+Do you think Mars is a harsh place? You are Musk, SpaceX and other folks, NASA are really pushing to put a human being on Mars. Do you think again, let's forgive me for lingering in science fiction land for a little bit. Do you think one day we may be able to colonize Mars first? Do you think we'll put a human on Mars and then do you think we'll put many humans on Mars?
+00:05:58
+So first of all, we're not I am extraordinarily convinced we will not put a human on Mars by 2030, which is a date that you often hear in the public debate. What's the challenge there? Well, you think so? There are a couple of ways that I could slices, but the one that I think is simplest for people to understand involves money.
+00:06:18
+So you look at how we got to the moon in the 1960s. What about 10 year duration between the challenge that President Kennedy laid out and are successfully landing a moon? I was actually here to MIT when that first moon landing occurred, so I remember watching it on TV. But how do we get there? Well, we had this extraordinarily technical agency of the United States government, NASA. It consumed about five percent of the country's economic output. And so you say five percent of the economic output over about a 10 year period gets us 250000 miles of space.
+00:06:57
+Mars is about 100 times farther. So you have at least 100 times a challenge. And we're spending about one tenth of the funds that we spent then as a government. So my claim is that it's at least a thousand times harder for me to imagine us getting to Mars by 2030.
+00:07:15
+And he had that part they mentioned in the speech that I just have to throw in there of JFK, of we do these things not because they're easy, but because they're hard.
+00:07:24
+And it's such a beautiful line that I would love to hear a modern president say about a scientific endeavor.
+00:07:31
+Well, one day we live in hope that such a president will arise for our nation. But even if, like I said, even if you you fix the technical problems, the biological engineering that I worry most about, however, I'm going to go out on a limb here.
+00:07:49
+I think that by 2000, 90 or so or 2000. When I say 120, I suspect we're going to have a human on Mars bar, so you think that many years out first a few tangents. He said bioengineering is as a challenge. Well, what's what's the challenge there?
+00:08:09
+So, as I said, the the the real problem with interstellar travel, aside from the technology challenges, the real problem is radiation. And how do you engineer either an environment or a body? Because we see rapid advances going on in bioengineering. How do you engineer either a ship or body so that something some person that's recognizably human will survive the rigors of interplanetary space travel? It's much more difficult than most people seem to take into account.
+00:08:46
+So if we can linger on the twenty nine point twenty one hundred twenty one twenty sort of thinking of that kind of, you know, and let's linger on money. OK, so Elon Musk and Jeff Bezos are pushing the cost, trying to push the cost down.
+00:09:08
+I mean, this is so do you have hope as this actually a sort of brilliant big picture scientist, do you think?
+00:09:15
+A business entrepreneur can take science and make it cheaper and get it out there faster, so bending the cost curve. You'll notice that has been an anchor. This is the simplest way for me to discuss this with people about what the challenges. So, yes, bending the cost curve is certainly critical if we're going to be successful. Now, you ask about the endeavors that are out there now sponsored by two very prominent American citizens, Jeff Bezos and Elon Musk.
+00:09:45
+I'm disappointed, actually, in what I see in terms of the routes that are being pursued.
+00:09:52
+So let me give you one example there. And this one is going to be a little bit more technical. So if you look at the kinds of rockets that both these organizations are creating, yes, it's wonderful reusable technology to see a rocket go up and land on its fins, just like it did in science fiction movies when I was a kid. That's astounding.
+00:10:11
+But the real problem is those rockets, the technology that we're doing now, is not really that different than what was used to go to the moon. And there are alternatives. It turns out there's an engine called a flare engine, which so a traditional rocket, if you look at the engine, looks like a bell. Right. And then the flame comes out the bottom. But there is a kind of engine called a flare engine, which is essentially when you look at it, it looks like.
+00:10:39
+An exhaust pipe, unlike a fancy car that's, you know, long and elongated, and it's a type of rocket engine that we know, we know it's there have been preliminary testing. We know it works. And it also is actually much more economical because what it does is allow you to vary the amount of thrust as you go up in a way that you cannot do with one of these bell shaped engines.
+00:11:01
+So you would think that an entrepreneur might try to have the breakthrough to use their nozzles, as they're called, as a way to bend the cost curve, because as we keep coming back, that's going to be a big factor. But that's not happening. In fact, what we see is what I think of as incremental change in terms of our technology. So I'm not really very encouraged by what I personally see to incremental change.
+00:11:28
+Won't bend the cost curve. I don't see it just linger on the sci fi for one more question.
+00:11:34
+Sure. Do you think we're alone in the universe? Are we the only intelligent form of life?
+00:11:41
+So there is a quote by Carl Sagan, which I really love when I hear this question and I recall the quote and it goes something like, if we're the only conscious life in the universe, it's a terrible waste of space because the universe is an incredibly big place. And when Carl made that statement, we didn't know about the profusion of planets that are out there.
+00:12:09
+In the last decade, we've discovered over 1000 planets and a substantial number of those planets are Earth like in terms of being in the Goldilocks zone, as it's called. So it's unknown in my mind is practically inconceivable that we're the only conscious form of life in the universe. But that doesn't mean they've come to visit us.
+00:12:33
+Do you think they would look, do you think will recognize alien life if we saw it? Do you think it'll look anything like the carbon based, the biological system we have on Earth today?
+00:12:44
+It would depend on that life's native environment in which it arose if that environment was sufficiently like our environment. There's a principle in biology, in nature called convergence, which is that even if you have two biological systems that are totally separated from each other, if they face similar conditions, they tend to nature, tend to converge on solutions. And so there might be similarities if this alien life form was born in a place that's kind of like this place.
+00:13:15
+Physics appears to be quite similar, the laws of physics across the entirety of the universe.
+00:13:21
+Do you think weirder things than we see on Earth can spring up out of the same kinds of laws of physics from the laws of physics?
+00:13:28
+I would say yes. First of all, if you look at carbon based life, why are we carbon based? Well, it turns out it's because of the way that carbon interacts with elements, which in fact is also a reflection on the electronic structure of the carbon nucleus. So you can look down the table of elements and say, well, gee, do we see similar elements? The answer is yes. And one that one often hears about in science fiction is silicon.
+00:13:53
+So maybe there's a silicon based life form out there if the conditions are right. But I think it's presumptuous of us to think that we are the template by which all life has to appear. Before we dive into beautiful details, let me ask a big question what to you is the most beautiful idea, maybe the most surprising, mysterious idea in physics?
+00:14:19
+The most surprising idea to me is that we can actually do physics. The universe did not have to be constructed in such a way that our with our limited intellectual capacity that is actually put together in such a way and that we are put together in such a way that we can with our minds. I delve incredibly deeply into the structure of the universe. That, to me is pretty close to a miracle.
+00:14:48
+So there are simple equations, relatively simple, that can describe things. You know, the fundamental functions, I think, describe everything about our reality. That's not. Can you imagine universes where everything is a lot more complicated? Do you think there's something inherent about universe that, well, simple laws are?
+00:15:15
+Well, first of all, let me say this is a question that I encounter in a number of guises. A lot of people will raise the question about whether mathematics is the language of the universe. And my response is mathematics is the language that we humans are capable of using in describing universe. It may have little to do with the universe, but in terms of our capacity, it's the microscope. It's the telescope through which we it's the lens through which we are able to view the universe with the precision that no other human language allows.
+00:15:48
+So could there be other universes? Well, I don't even know if this one looks like I think it does.
+00:15:54
+But the beautiful, surprising thing is that. Physics, there are laws of physics, very few laws of physics that can effectively compress down the functioning of the universe.
+00:16:07
+Yes, that's an extraordinarily surprising. I like to use the analogy with computers and information technology if you worry about transmitting large bundles of data. One of the things that computer scientists do for us is they allow for processes that are called compression, where you take big packets of data and you press them down into much smaller packets and then you transmit those and then unpack them at the other end. And so it looks a little bit to me like the universe is kind of done us a favor.
+00:16:35
+It's constructed our minds in such a way that we have this thing called mathematics, which then as we look at the universe, teaches us how to carry out the compression process.
+00:16:47
+A quick question about compression. Do you think the human mind can be compressed, the the the biology can be compressed?
+00:16:55
+We talked about space travel to be able to compress the information that captures some large percent of what it means to be me or you and then be able to send that at the speed of light.
+00:17:09
+Wow, that's a big question. And let me try to take it apart, unpack it into several pieces. I don't believe that wetware biology, such as we are, has an exclusive patent on an intellectual consciousness. I suspect that other structures in the universe are perfectly capable of producing the data streams that we use to process, first of all, our observations of the universe and and an awareness of ourselves. I can imagine other structures can do that also.
+00:17:40
+So that's part of what you were talking about, which I would have some disagreement with consciousness.
+00:17:49
+What's the most interesting part of consciousness of us humans is consciousness is the thing.
+00:17:55
+I think that's the most interesting thing about you. And then you're saying that there is other entities throughout the universe.
+00:18:02
+I could imagine I can well imagine that the architecture that supports our consciousness, again, has no pattern on consciousness.
+00:18:11
+Just in case you have an interesting thought here, there's folks perhaps in philosophy called parts like us that believe consciousness underlies everything. It is one of the fundamental laws of the universe. Do you have a sense that that could possibly fit into.
+00:18:27
+I don't know the answer to that question. One part of that belief system is here, which is that there's a kind of conscious life force about our planet. And, you know, I've encountered these things before. I don't quite know what to make of them.
+00:18:41
+I my own life experience and I'm I'll be 69 about two months. And I have spent all my adulthood thinking about the way that mathematics interacts with nature and with us to try to understand nature. And all I can tell you from all of my integrated experience is that there is something extraordinarily mysterious to me about our universe. This is something that Einstein said from his life experience as a scientist. And this mysteriousness almost feels like the universe is our parent. It's a very strange thing, perhaps, to hear science say, scientists say.
+00:19:24
+But there are just so many strange coincidences that you just get a sense that something is going on.
+00:19:32
+Well, I interrupted you in terms of compressing what we're down to. We it at the speed of light.
+00:19:39
+Yes. So so the first thing is, I would argue that it's probably very likely that artificial intelligence ultimately will develop something like consciousness, something that for us will probably be indistinguishable from consciousness. So that's what I meant by our biological processing equipment that we carry up here. Probably does not hold a pattern on consciousness because it's really about the data streams. I mean, that's as far as I can tell, that's what we are. We are self actuating self learning data streams that to me, the most accurate way I can tell you what I have seen in my lifetime about what humans are at the level of consciousness.
+00:20:18
+So if that's the case, then you just need to have an architecture that supports that information processing.
+00:20:23
+So let's assume that that's true, that that, in fact, what we call consciousness is really about a very peculiar kind of data stream.
+00:20:34
+If that's the case, then if you can export that to a piece of hardware, something metal, electronic, what have you, then you certainly will. Ultimately, that kind of consciousness could get to Mars very quickly. It doesn't have our problems. You can engineer that. But as I said, it's a ship or about you engineer one or both.
+00:20:58
+Cindy, the speed of light. Well, that one is a more difficult one because that now goes beyond just a matter of having a data stream. Now the preservation of the information in the data stream. And so unless you can build something that's like a super, super, super version of the way the Internet works, because most people aren't aware that the Internet itself is actually a miracle. It's based on a technology called message packaging. So if you could exponentiation message packaging in some way to preserve the information that's in the data stream, that maybe your dream comes true.
+00:21:32
+Actually, you mentioned with artificial intelligence, sort of us human beings not having a monopoly on consciousness.
+00:21:41
+Does the idea of. Artificial intelligence systems. Computational systems, being able to basically replacing us humans, scare you, excite you.
+00:21:56
+What do you think about. I'm going to tell you about a conversation I once had with Eric Schmidt. I was sitting at a meeting with him and he was a few feet away and he turned to me and he said something like, you know, Jim, and maybe a decade or so we're going to have computers that do what you do. And my response was not unless they can dream because there's something about the human, the way that we humans actually generate creativity.
+00:22:19
+It's somehow I get this sense of my lived experience and watching creative people that are somehow connected to the irrational parts of what goes on in our head and dreaming as part of that irrational. So unless you can build a piece of artificial intelligence that dreams, that was strong suspicion that you will not get something that will fully be conscious by a definition that I would accept.
+00:22:42
+For example, you mentioned dreaming. You've played around some out there, fascinating ideas. How do you think and we'll start diving into the world of the very small ideas of supersymmetry and all that in terms of visualization, in terms of how do you think about it? How do you dream of it? And you come up with ideas in that fascinating, mysterious space.
+00:23:08
+So in my workspace, which is basically where I am charged with coming up and coming up on a mathematical palette with new ideas that will help me understand the structure of nature and hopefully help all of us understand structure of nature. I've observed several different ways in which my creativity expresses itself. There's one mode which looks pretty normal, which I sort of think of as the Chinese water torture method.
+00:23:35
+Just drop, drop, drop. You get more and more information and suddenly it all congeals and you get a clear picture. And so that's a kind of a standard way of working. And I think that's how most people think about the way technical people solve problems, that it's kind of you accumulate this body of information at a certain point, you synthesize it and then, boom, there's something new. But I've also observed in myself and other scientists that there are other ways that we are creative, creative, and these other ways to me are actually far more powerful.
+00:24:08
+I first personally experience this when I was a freshman at MIT over in Baker House, right across the campus, and I was in a calculus course, no one is called at MIT and calculus comes in two different flavors. One of them is called differential calculus. The other is called integral calculus. Differential calculus is the calculus that Newton invented to describe motion in terms of integral calculus was probably invented about 17 years earlier by Archimedes, but we didn't know that when I was a freshman.
+00:24:39
+But so that's what you study as a student. And the differential calculus part of the course was to me, I went, how do I say this? It was something that that by the drip, drip, drip method, you could sort of figure it out.
+00:24:53
+Now, the integral part of calculus, I could memorize the formula that was not the formula.
+00:24:58
+That was not the problem. The problem was why in my own mind, why do these formulae work? And because of that, when I was in the part of the calculus course where we had to do multiple substitutions to solve integrals, I had a lot of difficulty. I was emotionally involved in my education because this is where I think the passion emotion comes to, and it caused an emotional crisis that I was having difficulties understanding the integral part of calculus, the why, the why I thought right.
+00:25:31
+The why of it, not the rote memorization of fact, but the why of it. Why does this work? And so one night I was over in my dormitory room in Baker House. I was trying to do a calculus problems that I was getting nowhere. I got a terrific headache, I went to sleep and had this very strange dream, and when I woke up, awakened. I could do three and four substitutions and gross with relative ease. Now this to me was an astounding experience because I had never before in my life understood that one subconscious is actually capable of being harnessed to do mathematics.
+00:26:12
+I experienced this and I've experienced this more than once, so this was just the first time why I remember it so so that's why when it comes to like really wickedly tough problems, I think that the kind of creativity that you need to solve them is probably the second variety which comes somehow from dreaming.
+00:26:33
+Do you think again, I told you I'm Russian, so we romanticize suffering, but do you think part of that equation is the suffering leading up to that dreaming?
+00:26:44
+So the suffering? I am convinced that this kind of creative sick the second mode of creativity is I like to call it. I'm convinced that this second mode of creativity is, in fact, that suffering is a kind of crucible that triggers it, because the mind, I think, is struggling to get out of this and the only the only way to actually solve the problem. And even though you're not consciously solving problems, something is going on. And I've talked about a few other people that I've heard are the similar stories.
+00:27:18
+And so either way, I guess what I think about it is it's a little bit by like the way that thermonuclear weapons work and if you know how they work. But thermonuclear weapon is actually two bombs. It's an atomic bomb, which sort of does compression. And then you have a fusion bomb that goes off. And somehow that emotional pressure, I think, acts like the first stage of a thermonuclear weapon. That's when we get really big.
+00:27:41
+That's the analogy between thermonuclear weapons and the subconscious. The connection there is, at least visually, it's kind of interesting.
+00:27:53
+Well, I there may be Freud would have a few things to say.
+00:27:58
+Well, part of it is probably based on my own trajectory through life. My father was in the Army for or for the U.S. Army for 27 years. And so I started my life out on military bases. And so a lot of probably the things that wander around in my subconscious are connected to the experience.
+00:28:14
+I apologize for all the tensions, but.
+00:28:17
+Well, you're doing it, but you're encouraged by answering the stupid questions.
+00:28:25
+They're not stupid. You know, your father was in the army. What do you think about?
+00:28:34
+Another Grasse Tyson recently wrote a book on interlinking the the progress of science to sort of the aspirations of our military endeavors and DARPA funding and so on.
+00:28:51
+What do you think about war in general?
+00:28:53
+Do you think we'll always have war? Do you think we'll always have conflict in the world?
+00:28:59
+I'm not sure that we're going to be able to afford to have war always, because it's strictly financially speaking.
+00:29:06
+No, not in terms of finance, but in terms of consequences. So if you look at technology today, you can have non-state actors acquire technology, for example, bioterrorism, which whose impact is, roughly speaking, equivalent to what it used to take nations to impart on a population. I think the cost of war is ultimately it's going to be I think it's going to work a little bit like the Cold War.
+00:29:34
+You know, we survived 50, 60 years as a species with these weapons that are so terrible that they could have actually ended our form of life on this planet, but it didn't. Why didn't it? Well, it's a very bizarre and interesting thing, but it was called mutually assured destruction. And so the cost was so great that people eventually figured out that you can't really use these things, which is kind of interesting, because if you read the history about the development of nuclear weapons, this is actually realizes pretty quickly.
+00:30:04
+I think it was maybe Schrodinger who said that these things are not really weapons. They're political implements. They're not weapons because the cost is so high. And if you take that example and spread it out to the kind of technological development we're seeing now outside of nuclear physics, but I picked the example of biology, I could well imagine that there would be material science sort of equivalent that across a broad front of technology, you take that experience from nuclear weapons.
+00:30:34
+And the picture that I see is that it would be so it would be possible to develop technologies that are so terrible. But you couldn't use them because the costs are too high and that might cure us.
+00:30:46
+And many people have argued that actually it prevented nuclear weapons, have prevented more military conflict, and it certainly froze the conflict domain.
+00:30:58
+It's interesting that nowadays it was with the removal of the threat of mutually assured destruction that other forces took over.
+00:31:07
+And our geopolitics give worries that of existential threats of nuclear weapons or other technologies like artificial intelligence. Do you think we humans will tend to figure out how to not blow ourselves up?
+00:31:24
+I don't know, quite frankly. This is something I thought about and I'm not I mean, so I'm a spectator in the sense that as a scientist I. Collect and collect data. So I've been doing that all my life and looking at my species and it's not clear to me that we are going to avoid a catastrophic, self-induced ending.
+00:31:51
+Are you optimistic? As a not as a scientist, but as a spy, I would say I would say I wouldn't bet against us. Beautifully put.
+00:32:04
+Let's dive into the world of very small, if we could first that what are the basic particles either experimentally observed or hypothesized by physicists?
+00:32:16
+So as we physicists look at the universe, you can first of all, there are two big buckets of particles. That is the smallest objects that we are able to currently mathematically conceive and then experimentally verify that these ideas have in a sense of accuracy to them. So one of those buckets we call matter, these are things like electrons, things that are like quarks, which are particles that exist inside of protons. And there's a whole family of these things.
+00:32:48
+There are, in fact, 18 quarks and apparently six electron like objects that we call leptons. So that's one bucket. The other bucket that we see both in our mathematics as well as in our experiment to equiptment are what our set of particles that you can call force carriers. The most familiar force carrier is the photon. The particle of light that allows you to see me, in fact, is the same object that carries electric repulsion between like charges from science fiction.
+00:33:16
+We have the object called The Graviton, which is talked about a lot in science fiction and Star Trek. But the graviton is also a mathematical object that we physicists have known about. Essentially since I wrote his theory of general relativity.
+00:33:30
+There are four forces in nature, the fundamental forces. There is the gravitational force. Its carrier is the graviton. There are three other forces of nature, the electromagnetic force, the strong nuclear force and the weak nuclear force. And each one of these forces has one or more carriers. The photons, the carry of the electromagnetic force, the strong nuclear force actually has eight carriers. They're called gluons. And then the weak nuclear force has three carriers. They're called the W plus, W minus and zeppos ons.
+00:34:01
+So those are the things that both in mathematics and in experiments the most. By the way, the most precise experiments were ever as a species able to conduct is about measuring the accuracy of these ideas. And we know that at least in one part, in a billion, these ideas are right.
+00:34:16
+So first of all, you've made it sound both elegant and simple. But is it crazy to you that there is force carriers? Like is that supposed to be a trivial idea to think about? If you think about photons, gluons, that there's four fundamental forces of physics and then those forces they express, there's carriers of those forces, I think is that a kind of trivial thing?
+00:34:46
+It's not a trivial thing at all. In fact, it was a puzzle for Sir Isaac Newton because he's the first person to give us basically physics before Isaac Newton, physics didn't exist or did exist was called natural philosophy. So discussions about using the methods of classical philosophy to understand nature, natural philosophy. So the Greeks, we call them scientists, but they were natural philosophers. Physics doesn't get born until Newton writes the kippie. One of the things that puzzled him was how gravity works, because if you read very carefully what he writes, he basically says, and I'm paraphrasing badly, but he basically says that someone who thinks deeply about this subject would find it inconceivable that one object in one place, place or location can magically reach out and affect another object with nothing intervening.
+00:35:38
+And so it puzzled him.
+00:35:40
+Does it puzzle you?
+00:35:41
+Well, that kind of distance, I mean, not as it would it would it would accept that I am a physicist and we have long ago resolve this issue.
+00:35:49
+And the resolution came about through a second great physicist. Most people I've heard of Newton, most people have heard of Einstein. But between the two of them, there was another extraordinarily great physicist, a man named James Clark, Maxwell and Maxwell between these two other giants taught us about electric and magnetic forces. And it's from his equations that one can figure out that there's a carrier called the photon. So this was resolved for physicists around 1860 or so.
+00:36:21
+So what are bosons and fermions and hadrons? Sure. Elementary and composites. Sure. So earlier I said, Jovanka, you have got two buckets. If you want to try to build a universe, you got to start off with things on these two buckets. So you have things that matter. And then you have to have other objects that act on them to cause those things to cohere, to fix finite patterns, because you need those fixed finite patterns as building blocks.
+00:36:48
+So that's the way our universe looks to people like me. Now the building blocks do. Different things. So let's go back to these two buckets again. Let me start with a bucket containing the particle fly. Let me imagine I'm in a dusty room with two flashlights and I have one flashlight, which I direct directly in front of me. And then I have you stand over to my left and then we both take our flashlights and turn them on and make sure the beams go right through each other and the beams do just that.
+00:37:15
+They go right through each other. They don't bounce off of each other. The reason the room has to be dusty is because we want to see the light, because the dust wasn't there. We wouldn't actually see the light until it got to the wall. Right. So you see the beam because it's dust in the air. But the beams actually pass right through each other. They literally pass right through. They don't affect each other at all. When acts like that, it's not their things.
+00:37:36
+There are the particle of light is the simplest example that shows that behavior. That's a boson. Now, let's imagine that I have to wear in the same dusty room. And this time you have a bucket of balls and I have a bucket of balls.
+00:37:50
+And we try to throw them so that they pass so that we get something like a beam, throwing them fast. Right. If they collide, they don't just pass to each other, they bounce off of each other. Now, that's mostly because they have electric charge and electric charges like charges repel. But mathematically, I know how to turn off the electric charge. If you do that, you'll find they still repel. And it's because they are these things.
+00:38:12
+We call it fermions. So this is how you distinguish the things that are in the two buckets. They are either bosons or fermions.
+00:38:21
+Which of them?
+00:38:22
+And maybe you can mention the most popular of the boson, the most recently discovered. She's it's like, yeah, it's like when I was in high school and there was a really popular majorette.
+00:38:35
+Her name is her name is the Higgs particle these days.
+00:38:38
+So can you describe which of which which are the bosons and fermions have been discovered, hypothesized which have been experimentally valid. She still out there? Right.
+00:38:49
+So the two buckets that I've actually described to you have all been first hypothesized and then verified by observation with the Higgs boson being the most recent one of these things, we haven't actually verified the graviton. Interestingly enough, we mathematically we have an expectation that gravity was like this, but we've not performed an experiment to show that this is an accurate idea that nature uses.
+00:39:17
+So something has to be a carrier for the force of gravity.
+00:39:20
+Exactly, because it may be something way more mysterious than we saw.
+00:39:25
+When you say the graviton, is it would it be like the other particles, force carriers or.
+00:39:32
+In some ways, yes, but in other ways, no. It turns out that the graviton is also if you look at Einstein's theory, he taught us about this thing he called spacetime, which is if you try to imagine that, you can sort of think of it as kind of a rubber surface. That's one popular depiction of space time. It's not an accurate depiction because the only accuracy is actually in the calculus that he uses. But that's close enough.
+00:39:58
+So if you have a sheet of rubber can wave it, you can actually form a wave on it. Spacetime is enough like that so that when spacetime oscillates, you create these waves, these waves carry energy. We expect them to carry energy and quanta. That's what a graviton is. It's a wave in spacetime. And so the fact that we have seen the waves with Lego over the course of the last three years and we've recently used gravitational wave observatories to watch colliding black holes and neutron stars and all sorts of really cool stuff out there.
+00:40:29
+So we know the waves exist, but in order to know that gravity waves exist, you have to prove that these waves carry energy in energy packets. And that's what we don't have the technology to do yet.
+00:40:42
+And perhaps briefly, jumping to a philosophical question, does it make sense to you that gravity is so much weaker than the other forces?
+00:40:50
+No. There's no question that you see now you've touched on a very deep mystery about physics. There are a lot of such questions of physics about why things are as they are.
+00:41:04
+And as someone who believes that there are some things that certainly are coincidences, like you could ask the same question about, well, why are the planets at the orbits that they are around the sun? It turns out there is no good reason. It's just an accident. So there are things in nature that have that character and perhaps the strength of the other various forces is like that. On the other hand, we don't know that that's the case. And there may be some deep reasons about why the forces are ordered as they are where the weakest force is gravity.
+00:41:34
+The next week, US forces the weak interaction, the weak nuclear force. Then there's electromagnetism, this strong force. We don't really have a good understanding of why this is the ordering of the forces.
+00:41:45
+Some of the fascinating work you've done is in the space of supersymmetry, symmetry in general. Can you describe, first of all, what is supersymmetry?
+00:41:56
+Oh, yes. So you remember the two buckets I told you about perhaps earlier. So there are two buckets in our universe. So now I want you to think about drawing a a pie that has four quadrants.
+00:42:10
+So I want you to cut the piece of pie and fourths. So one quadrant I'm going to put all the buckets that we talked about like that are like the electronic quarks in a different quadrant. I'm going to put all the force carriers. The other two quadrants are empty. Now, if you I showed you a picture of that, you'd see a circle. There would be a bunch of stuff in one upper quadrant and stuff and others. And then I would ask you a question.
+00:42:33
+Does that look symmetrical to you?
+00:42:36
+No, no.
+00:42:37
+And that's exactly right, because we humans actually have a very deeply programmed sense of symmetry. It's something that is part of that mystery of the universe. So how would you make it symmetrical? One way you could just by saying those two empty quadrants had things in them and also and if you do that, that supersymmetry. So that's what I understood when I was a graduate student here at MIT in 1975, when the when the mathematics of this was first being born.
+00:43:09
+Supersymmetry was actually born in the Ukraine in the late 60s. But we have this thing called the Iron Curtain. So we Westerners didn't know about it. But by the early 70s, independently, there were scientists in the West who had rediscovered supersymmetry, symmetry, Brunos Amino and Julius Vess with their names. So this was around 71 or 72 when this happened. I started graduate school in 73, so around 74 for 75. I was trying to figure out how to write a thesis so that I could become a physicist the rest of my life.
+00:43:40
+I did a lot of great adviser Professor James Young, who had taught me a number of things about electrons and weak forces and those sorts of things. But I decided that if I was going to. Have a really offered an opportunity to maximize my. Chances of being successful, I should strike it in a direction that other people were not studying. And so as a consequence, I surveyed ideas that were going that were being developed and I came across the idea of supersymmetry.
+00:44:14
+And it was so the mathematics was so remarkable that I just it bowled me over. I actually have two undergraduate degrees. My first undergraduate degree is actually mathematics and my second is physics. Even though I always wanted to be a physicist, plan A which involve getting good grades with mathematics.
+00:44:34
+I was a mathematics major thinking about graduate school, but my heart was in physics. If we could take a small digression, what's to you, the most beautiful idea in mathematics that you've encountered in this interplay between math and physics?
+00:44:50
+It's the idea of symmetry, the fact that our innate sense of symmetry, what winds up aligning with just incredible mathematics to me is the most beautiful thing. It's very strange, but true that if symmetries were perfect, we would not exist. And so even though we have these very powerful ideas about balance in the universe, in some sense it's only when you break those balances that you get creatures like humans and objects like planets and stars. So although they are a scaffold for reality, they cannot be the entirety of reality.
+00:45:26
+So I I'm kind of naturally attracted to parts of science and technology where symmetry plays a dominant role.
+00:45:38
+And I just, I guess, symmetry, as you said. But the magic happens when you break the symmetry.
+00:45:44
+The magic happens when you break the symmetry. Oxidising way back in. You mentioned four quadrants. Yes. Two are filled with stuff we can we can make. Yep. And then there's crazy mathematical things, ideas for filling the other the other two. Well what are those things so early? The way I describe these two buckets is I gave you a story that started out by putting us in a dusty room with two flashlights. And I said, turn on your flashlight, I'll turn on mine.
+00:46:12
+The beans will go through each other and the beams are composed of force carriers called photons. They carry the electromagnetic force and they pass right through each other. So imagine looking at the mathematics of such an object, which you don't imagine. People like me do that. So you take that mathematics and then you ask yourself a question. You see, mathematics is a palette. It's just like a musical musical composer is able to construct to construct variations on a theme.
+00:46:41
+Well, a piece of mathematics in the hand of a physicist, something that we can construct variations on. So even though the mathematics that Maxwell gave us about light, we know how to construct variations on that. And one of the variations you can construct is to say, suppose you have a force carrier for electromagnetism that behaves like an electron in that it would bounce off of another one. So that's changing a mathematical equation.
+00:47:10
+So if you did that, you would have a force carrier. So you would say, first of all, on this force going bucket, but it's got this property of bouncing up like electrons. So you say, well, gee, wait, no, that's not the right bucket. So you're forced to actually put it in one of these empty quadrants. So those sorts of things, we basically we give them. So the photon mathematically can be accompanied by a 14.
+00:47:33
+It's the thing that carries a force but has the rule of bouncing off in a similar manner.
+00:47:39
+You could start with an electron. And you say, OK, so right now, the mathematical electron I know to do that, a physicist named Dirac first told us how to do that back in the 19 late 20s, early 30s. So take that mathematics and then you say, let's let me look at that mathematics and find out what are the mathematics courses to electrons to bounce off of each other, even if I turn off the electrical charge so I could do that.
+00:48:02
+And now let me change that mathematical term. So now I have something that carries electrical charge. But if you take two of them, I'm sure if you turn their charges off, they'll pass through each other. So that puts things in the other quadrant. And those things we we tend to call. We put the S in front of their name, so in the lower quadrant here, we have Electron's and this now newly filled quadrant, we have Solectron and the quadrant over here, we had Cork's over here, we have squawks.
+00:48:31
+So now we've got this balanced pie. And that's basically what I understood as a graduate student in 1975 about this idea of supersymmetry, that it was going to fill up these two quadrants of the pie in a way that no one had ever thought about before. So I was amazed that no one else at MIT found this an interesting idea. So that's it led to my becoming the first person in MIT to really study supersymmetry. This is 1975, 76, 77 and 77.
+00:49:00
+I wrote the first thesis in the physics department on this idea because I just I was drawn to the balance, drawn to the symmetry.
+00:49:08
+So what exactly what does that first of all, is this fundamentally a mathematical idea? So how much experimental? And we'll have this theme. It's a really interesting one when you explore the world of the small and in your new book talking about proving Einstein right.
+00:49:30
+That we'll also talk about, there's this theme of kind of starting it, exploring crazy ideas, first in the mathematics and then seeking for ways to experimentally validate where do you put supersymmetry in that? It's closer than string theory.
+00:49:45
+It is not yet been validated in some sense, as you mentioned, Einstein. So let's go there for a moment in our book Proving Einstein. Right. We actually do talk about the fact that Albert Einstein in 1915 wrote a set of equations which were very different from Newton's equations in describing gravity. These equations made some predictions that were different from Newton's predictions, and it actually made three different predictions. One of them was not actually a prediction, but a post fiction because it was known that Mercury was not orbiting the sun in the way that Newton would have told you.
+00:50:18
+And so ISIS theory actually describes a mercury orbiting in the way that it was observed, as opposed to what Newton would have told you, that one prediction, the second prediction that came out of the theory of general relativity, which Einstein wrote in 1915, was that if you. If so, let me describe an experiment and come back to it, spells out a glass of water and I filled it, filled the glass up, and then I move the glass slowly back and forth between our two faces.
+00:50:52
+It would appear to me like your face was moving even though you weren't moving. I mean, it's actually and what's causing it is because the light gets bent through the glass as it passes from your face to my eye. So Einstein and his 1915 theory of general relativity found out that gravity has the same effect on light as that glass of water. It would cause beams of light to bend. Now, Newton also knew this, but Einstein's prediction was that Lightwood been twice as much.
+00:51:23
+And so here's a mathematical idea. Now, how do you actually prove it? Well, you've got to watch. Yes, just a quick pause on that.
+00:51:31
+Just the language you're using. He found out. I can say he did a calculation.
+00:51:36
+It's a really interesting notion that one of the most one of the beautiful things about this universe is you can do a calculation and and combine with some of that magical intuition that physicists have actually predict what would be what's possible to experiment, to validate.
+00:51:54
+That's correct. So he found out in the sense that there seems to be something here and mathematically it should bend gravity. You've been like this amount. And so so therefore that's something that could be potentially and then come up with an experiment that can be validated. Right.
+00:52:11
+And that's the way that actually modern physics, deeply fundamental, modern physics is how it works. Earlier we spoke about the Higgs boson.
+00:52:21
+So why do we go looking for it? The answer is that back in the late 60s and early 70s, some people wrote some equations and the equations predicted this.
+00:52:33
+So then we went looking for the unknown supersymmetry for a second. There's these things called adinkra symbols.
+00:52:43
+Strange, a little grass. Yes. You referred to them as revealing something like binary code. Yes. Underlying reality. Yes.
+00:52:51
+So can you describe this? What are they what what what are these beautiful little strange graphs?
+00:52:58
+Well, first of all, adinkra are an invention of mine. Together with a colleague named Michael Fox in 2005, we were looking at equations where the stories a little bit more complicated and it take too long to explain all the details. But the Reader's Digest version is that we were looking at these equations and we figured out that all the data in a certain class of equations could be put in pictures and the pictures. What do they look like? Whether they're just they're just little balls.
+00:53:26
+You have black balls and white balls. Those stand for those two buckets, by the way, that we talk about. In reality, the white balls are things that are like particles of light. The black balls are like electrons.
+00:53:38
+And then they you can draw lines connecting these balls. And these lines are deeply mathematical objects. And there's no way for me to I have no physical model for telling you what the lines are.
+00:53:51
+But as a matter, if you were a mathematician with your technical phrase saying this is the orbit of the representation of the action of the symmetry generators, mathematicians will understand it. Nobody else in their right mind would. So let's not go there.
+00:54:04
+So we but we figured out that the data that was in the equations was in these funny pictures that we could draw. And so that was stunning. But it also was encouraging because there are problems with the equations which I had first learned about in 1979 when I was down at Harvard and I went out to Caltech for the first time and working with a a great scientist by the name of John Schwartz. There are problems in the equations. We don't know the song.
+00:54:33
+And so one of the things about solving problems that you don't know how to solve is that beating your head against a brick wall is probably not a good philosophy about how to solve it. So what do you need to do? You need to change your sense of reference, your frame of reference, your perspective. So when I saw these funny pictures, I thought, gee, that might be a way to solve these problems with the equations that we don't know how to do.
+00:54:59
+So that was for me, one of the first attractions is that I now had an alternative language to try to attack a set of mathematical problems.
+00:55:08
+But I quickly realized that a this mathematical language was not known by mathematicians, which makes it pretty interesting because now you have to actually teach mathematicians about a piece of mathematics because that's how they make their living. And the great thing about working with mathematicians, of course, is the rigor with which they examine ideas. So they make your ideas better than they start out. So I start working with a group of mathematicians and is in that collaboration that we figured out that these funny pictures had error correcting codes buried in.
+00:55:40
+So can you talk about what our error correcting code offshore, so the simplest way to talk about error correcting codes is, first of all, to talk about digital information.
+00:55:54
+Digital information is basically strings of ones and zeros. They're called bits. So now let's imagine that. I want to send you some bits. Well, maybe I could show you pictures, but maybe it's a rainy day or maybe the windows in your house or foggy. So sometimes when I show you a zero, you might interpret it as a one or other times when I show you one, you might interpret it as a zero. So if that's the case, that means when I try to send you this data, it comes to you in corrupted form.
+00:56:28
+And so the challenge is how do you get it to be uncorrupted? In the 1940s, a computer scientist named Heming addressed the problem how do you reliably transmit digital information? And when he came up with was a brilliant idea. The way to solve it is that you take the data that you want to send them once in the strings of one zero, your favorite screen, and then you dump more ones and zeros in, but you dump them in in a particular pattern.
+00:56:58
+In this particular pattern is what a human code is all about. So it's an error correcting code, because if you the person at the other end knows what the pattern is supposed to be, they can figure out when once that changes zeros, they've got this one. So it turned out that our strange little objects that came from looking at the equations that we couldn't solve, it turns out that when you look at them deeply enough, you find out they are they that they have ones and zeros back buried in them.
+00:57:24
+But even more astoundingly, the ones and zeros are not there randomly. They are in the pattern of error, correcting codes. So this was an astounding thing that when we first got this result and tried to publish it, it took us three years to convince other physicists that we weren't crazy. Eventually we were able to publish it and this collaboration of mathematicians and other physicists. And so ever since then, I have actually been looking at the mathematics of these objects, trying to still understand properties of the equations.
+00:57:56
+And I want to understand the properties equation because I want to be able to try things like electrons. So as you can see, it's just like a two step removed process of trying to get back to reality.
+00:58:05
+So what would you say is the most beautiful property of these adinkra glass objects?
+00:58:13
+What do you think, by the way? The word symbols. What do you think of them? These simple graphs are the objects are there.
+00:58:22
+How should we think about work with mathematics like me? Are mathematical concepts are we often refer to them as objects because they feel like real things, even though you can't see them or touch them. There's so much part of your interior life that it is as if you could. So we often refer to these things as objects, even though there's nothing objective about them.
+00:58:45
+And what is a single graph represent. And so, OK, so the simplest of these graphs has to have one white ball and one black ball. That's not balance that we talked about earlier. Remember, we want to balance out the quadrants. Well, you can't do unless you have a black ball, the white ball. So the simplest of these objects looks like two little balls, one black, one white connected by a single line. And what it's talking about is, as I said, a deep mathematical property related to symmetry.
+00:59:11
+You've mentioned the error correcting codes, but is there a particular beautiful property that stands out to you about these objects? They just find they're very yes. Very early on in the development.
+00:59:21
+Yes. There is the craziest thing about these to me. Is that when you look at physics and try to write equations where information gets transmitted reliably? If you're in one of these supersymmetric systems with this extra cemetery, that doesn't happen, this is an error correcting code. So it's as if the universe says you don't really transmit information unless there's something about it. Error. Correct. And go this to me is the craziest thing that I've ever personally encountered in my research.
+00:59:55
+And it's actually got me to wondering how this could come about, because the only place in nature that we know about error, correcting coaches', genetics and genetics, we think it was evolution that causes error, correcting codes to be in genomes. And so does that mean that there was some kind of form of evolution acting on the mathematical laws of the physics of our universe? This is a very bizarre and strange idea and something I've wondered about from time to time since making these discoveries.
+01:00:22
+Do you think such an idea could be fundamental or is it emergent throughout all the different kinds of systems?
+01:00:29
+I don't know whether it's fundamental. I probably will not live to find out. This is going to be the work of probably some future either mathematician A, to figure out what these things actually mean, we have to talk a bit about the magic or the mysterious string theory, super string theory.
+01:00:48
+Sure. There's still maybe this aspect of it which is there still for me from an outsider's perspective, this fascinating heated debate on the status of string theory.
+01:01:02
+Can you clarify this debate, perhaps articulating the various views and say where you land on it?
+01:01:08
+So, first of all, I doubt that I will be able to say anything to clarify clarify the debate around string theory for. For a general audience, part of the reason is because string theory is a has done something I've never seen theoretical physics do, it has broken out into the consciousness of the general public before we're finished. You see, string theory doesn't actually exist because when we use the word theory within a particular set of attributes in particular, it means that you have an overarching paradigm that explains what it is that you're doing.
+01:01:43
+No such overarching paradigm exists for string theory. What string theory is currently is an enormously large, mutually reinforcing collection of mathematical facts in which we can find no contradictions. We don't know why it's there, but we can certainly say that without challenge. Now, just because you find a piece of mathematics doesn't mean that it applies to nature. And in fact. There has been a very heated debate about whether string theory is some sort of hysteria among the community of theoretical physicists or whether it has something fundamental to say about our universe.
+01:02:21
+We don't yet know the answer to that question. What those of us who study string theory will tell you are things like string theory has been extraordinarily productive in getting us to think more deeply even about mathematics. That's not string theory, but the kind of mathematics that we've used to describe elementary particles. There have been spinoffs from string theory and this has been going on now for two decades almost, that have allowed us, for example, to more accurately calculate the force between electrons with the presence of quantum mechanics.
+01:02:53
+This is not something you hear about in the public. There are other similar things. The kind of that kind of property I just told you about is what we call weak, strong duality. And it comes directly from string theory. There are other things, such as a property called holography, which allows one to to take equations and look at them on the boundary of a space and then to know information about inside of space without actually doing calculations there.
+01:03:23
+This has come directly from string theory. So there are a number of direct mathematical effects that we learn as string theory. But we take these ideas and look at math that we already know and we find suddenly we're more powerful. This is a pretty good indication.
+01:03:38
+There's something interesting going on with string theory itself since the early days of a powerful mathematical framework. That's what we have right now.
+01:03:44
+What are the big first of all, those for most people?
+01:03:48
+Probably that which, as you said, most general public would know actually with string theory is which is at the highest level, which is a fascinating fact.
+01:03:58
+Well, string theory is what they do on the Big Bang Theory, right.
+01:04:03
+One can maybe describe what is string theory and to what are the open challenges.
+01:04:13
+So what is string theory? Well, the simplest explanation I can provide is to go back and ask. What particles, which is the question you first ask me? What's the smallest thing? Yeah, what's the smallest thing, so. Particle's. One way I try to describe particles to people, Astar, I want you to imagine a little ball. And I want you to let the size of that ball shrink into it has no extent whatsoever, but it still has the mass of the ball.
+01:04:50
+That's actually what Newton was working with when he first invented physics. He's the real inventor of the massive particle, which is this idea that underlies all of physics. So that's where we start. It's a mathematical construct that you get by taking a limit of things that you know. So what's a string? Well, in the same analogy, I would say now I want to start with a piece of spaghetti so we all know what that looks like. And now what you need to let the thickness of the spaghetti shrink until it has no thickness.
+01:05:23
+Mathematically, I mean, worse. This makes no sense. Mathematically, this actually works. And you get this mathematical object out. It has properties that are like spaghetti. It can wiggle and jiggle, but it can also move collectively like a piece of spaghetti.
+01:05:39
+It's the mathematics of those sorts of objects that constitute string theory and does the multidimensional, 11 dimensional, however many dimensions of more than four dimensions.
+01:05:54
+Is that a crazy idea to you? Is that is that the stranger aspect of string theory to you?
+01:06:00
+Not really. And also partly because of my own research. So earlier we talked about adding these strange symbols that we've discovered inside the equations. It turns out that to a very large extent, a Dinkas don't really care about the number of dimensions. They kind of have an internal mathematical consistency that allows them to be manifest in many different dimensions. Since supersymmetry is a part of string theory, then the same property you would expect to be inherited by string theory.
+01:06:28
+However, another little known fact, which is not in the public debate, is that there are actually strings that are only four dimensional. This is something that was discovered at the end of the 80s by three different groups of physicists working independently. I and my friend Warren Siegel, who were at the University of Maryland at the time, were able to prove that there's mathematics. It looks totally four dimensional, and yet it's a string. There was a group in Germany that used slightly different mathematics, but they found the same result.
+01:06:59
+And then there was a group at Cornell who, using yet a third piece of mathematics, found the same was also the the fact that extra dimensions are so widely talked about in the public is partly a function of how the public has come to understand string theory and how the story has been told to them. But there are alternatives you don't know about.
+01:07:19
+If we could talk about maybe experimental validation and you you're the co-author of a recently published book Proving Einstein, right. The human story of it to the daring expeditions that changed how we look at the universe, do you see echoes of the early days of general relativity in the 1910s to the more stretched out to string theory?
+01:07:47
+I do. I do. And that's one reason why I was happy to focus on on the story of how Einstein became a global superstar. Earlier in our discussion. We went over the history where in 1915, he came up this piece of mathematics. Used it to do some calculations and then made a prediction. Yes, but making a prediction is not enough. Someone's got to go out and measure. And so string theory is in that in-between zone. Now, for Einstein, it was from 1915 to 1919, 1950.
+01:08:28
+He makes the makes the correct prediction. By the way, he made an incorrect prediction about the same thing in 1911, but he corrected himself in 1950. And by 1919, the first pieces of experimental observational data became available to say, yes, he's not wrong. And by 1922, the argument that based on observation was overwhelming, that he was not wrong.
+01:08:55
+He described what special general relativity, just briefly. Sure.
+01:09:00
+And what prediction Einstein made and maybe maybe some or memorable moment from the human journey of trying to prove this thing right here was incredible.
+01:09:15
+Right. So I'm very fortunate to have worked with a talented novelist who wanted to write a book that coincided with the book.
+01:09:26
+I wanted to write about how science kind of feels if you're a person, because it's actually people who do science, even though that may not be obvious to everyone. So for me, I wanted to write this book for a couple of reasons. I wanted young people to understand that the seeming alien giants that lived before them were just as human as they are.
+01:09:51
+They get married, they get divorced, they get married, they get divorced. They do terrible things. They do great things. They're people. They're just people like you. And so that part of telling the story allowed me to get that out there for both young people interested in the sciences as well as the public. But the other part of the story is I wanted to open up sort of what what it was like. Now I'm a scientist and so I will not pretend to be a great writer.
+01:10:19
+I understand a lot about mathematics and I've even created my own mathematics that. You know, it's kind of a weird thing to be able to do, but in order to tell the story, you really have to have an incredible master of the narrative. And that was my co-author, Cathy Pelletiere, who is a novelist. We so we formed this conjoined brain. I used to call us. She used to call us Professor Higgins and Eliza Doolittle, my special forces, that we were a conjoined brain to tell this story and it allowed.
+01:10:53
+So what are some magical moments? To me, the first magical moment in telling the story, I was looking at Albert Einstein in his struggle because all the we regard him as a genius. As I said, in 1911, he actually made an incorrect prediction about spinning starlight. And that's actually what set the astronomers off. In 1914, there was an eclipse. And by various accidents of war and weather and all sorts of things that we talk about in the book, no one was able to make the measurement.
+01:11:30
+If they had made the measurement. It would have disagreed with his 1911 prediction.
+01:11:38
+Because nature only has one answer, and so you then you see how fortunate he was that wars in bad weather and accidents in transporting equipment stopped any measurements from being made. So he correct himself in 1915. And but the astronomers are already out there trying to make the measurement. So now he gives them a different number. And it turns out that's the number that nature agrees with. So it gives you a sense of this is a person struggling with something deeply.
+01:12:09
+And it although his deep insight led him to this, it is the circumstance of time place an accident, but through which we view him. And it could the story could have turned out very differently, where first he makes a prediction. The measurements are made in 1914. They disagree with his prediction. And so what would the world view him as well? He's this professor who made this prediction that didn't get it right. Yes. So the fragility.
+01:12:42
+Of human history is illustrated by that story, and this is one of my favorite things, you also learn things like in our book, How Eclipses and Watching Eclipses was a driver of the development of science in our nation when it was very young. In fact, even before we were a nation, it turns out they were citizens of citizens of this would be country that were going out trying to measure eclipses.
+01:13:08
+So some fortune, some misfortune affects the progress of science, especially with ideas as to me, at least if I put myself back in those days as radical as general relativity is.
+01:13:25
+First, can you describe, if it's OK, briefly, what general relativity is and yeah, could you just take a moment if you put yourself in the shoes in the in academic researchers, scientists of that time? And what is this theory? What is it trying to describe about our world? It's trying to answer. The thing that left Isaac Newton puzzled. Isaac Newton says gravity magically goes from one place to another. He doesn't believe it, by the way.
+01:14:00
+He knows that's not right. But the mathematics is so good that you have to say, well, I'll throw my qualms away because I'll use it. That's all we use to get a man from the earth to the moon.
+01:14:12
+Was that mathematics? So. I'm one of those scientists and I've seen this, and if I thought deeply about it, maybe I know that Newton himself wasn't comfortable. And so the first thing I would hope that I would feel is, gee, this this young kid out there who has an idea to fill in this hole that was left with us by Sir Isaac Newton, that would, I hope would be my reaction. I have a suspicion. I'm I'm kind of a mathematical creature.
+01:14:46
+I was four years old when I first decided the science was what I wanted to do with my life. And so if my personality back then was like it is now, I think it's probably likely I would want to wanted to have studied his mathematics, what was a piece of mathematics that he was using to make this prediction because he didn't actually create that mathematics, that mathematics was created of roughly 50 years before he lived. He's the person who harnessed it in order to make a prediction.
+01:15:14
+In fact, he had to be taught this mathematics, my friend. So this is in our book. So putting myself in that time, I would want to like I think I would feel excitement, I would want to know what the mathematics is, and then I would want to do the calculations myself, because one thing that physics is all about is that you don't take anybody's word for anything. It's you can do it yourself.
+01:15:38
+It does seem that mathematics is a little bit more tolerant of radical ideas or mathematicians and people who find beauty in mathematics. Why?
+01:15:49
+All the white questions have no good answer. Let me ask, why do you think Einstein never got the Nobel Prize for general relativity?
+01:15:55
+He got it for the full electric effect.
+01:15:57
+That is correct. Well, first of all, that's something that is misunderstood about the Nobel Prize in physics.
+01:16:03
+The Nobel Prize in physics is never given for purely giving, for purely proposing an idea. It is always given for proposing an idea that has observational support. So he could not get the Nobel Prize for either special relativity nor general relativity, because the provisions that Alfred Nobel left for the award prevent that.
+01:16:28
+But after it's been validated, can he not get it then or now?
+01:16:33
+Yes, but remember, the validation doesn't really come until the 1920s.
+01:16:39
+That's why they invented the second Nobel Prize. I mean, a great, great you can get in second Nobel Prize for one of the greatest so, so theories in physics.
+01:16:48
+So let me let's be clear on this. The theory of general relativity. Had its critics. Even up until the 50s. So if you had if we had if the committee had wanted to give the prize for general relativity. There were vociferous critics of general relativity up until the 50s, Einstein died in 1955.
+01:17:17
+What lessons do you draw from from the storytelling, the book, from general relativity, from the radical nature of the theory to looking at the future of string theory?
+01:17:30
+Well, I think that the string theorists are probably going to retrace its path, but it's going to be far longer and more tortuous, in my opinion. String theory is such a broad and deep development that in my opinion, when it becomes acceptable, it's going to be because of a confluence of observation. It's not going to be a single observation, and I have to tell you that. So I gave a seminar here yesterday to MIT, and it's it's an idea I have about how string theory can leave signatures in the cosmic microwave background, which is an astro physical structure.
+01:18:14
+And so if those kinds of observations are borne out, if perhaps other things related to the idea of supersymmetry point out, those are going to be the first powerful, observationally based pieces of evidence that will begin to do what the Edington expedition did in 1919, but who that may take several decades. Do you think there will be Nobel Prizes given for string theory?
+01:18:43
+No, because I think the better it'll be it'll be I think it will exceed normal human lifetimes. But there are other prizes that are given. I mean, there is something called the Breakthrough Prize. There's a Russian emigre Russian American immigrant named Yuri Milner. I believe his name started this wonderful prize called the Breakthrough Prize. It's three times as much money as the Nobel Prize and it gets awarded every year. And so something like one of those prizes is likely to be garnered at some point far earlier than a Nobel award.
+01:19:24
+Jumping on a few topics while you were at Caltech. You've gotten to interact, I believe, with Richard Feynman. I have to ask.
+01:19:33
+Yes, Richard, why indeed? Do you have any stories that stand out in your memory of that?
+01:19:38
+I have a fair number of stories, but I'm not prepared to tell them they're not all politically correct. But let me just say I'll say the following. Richard Feynman, if you've ever read some of the books about him in particular, there's a book called Surely You're Joking, Mr. Feynman. There's a series of books that starts with surely you're joking, Mr. Feynman. And I think the second maybe something like, what do you care what they say or something?
+01:20:03
+I mean, the titles are all there. Three of them. When I read those books, I was amazed at how accurately those books portray the man that I interacted with. He was irreverent. He was fun. He was deeply intelligent. He was deeply human. And those books tell that story very effectively. Even just those moments, how do they affect you as a physicist? Well, one of them well, it's funny because one of the things that.
+01:20:36
+I didn't hear Fineman's say this, but one of the things that is repu we reported that, he said. If you're in a bar stool. As a physicist. And you can explain to the guy on the barstool next to you what you're doing, you don't understand what you're doing, and there's a lot of that that I think is correct, that. That when you truly understand something as complicated as string theory, when it's in, it's fully formed final development, it should be something you could tell to the person on the barstool next to you and I.
+01:21:17
+That's something that affects the way I do science, quite frankly. It also affects the way I talk to the public about science. I it's one of the sort of my mantras that I keep deeply and try to keep deeply before me when I appear in public fora speaking about physics in particular and science in general.
+01:21:38
+It's also something that Einstein said in a different way. He he said he had these two different formulations. One of them is when the answer simple is God speaking. And the other thing that he said was that what he did, what he did in his work, was simply the distillation of common sense that you distill down to something. And he also said you make things as simple as possible, but no simpler. So all of those things and certainly this attitude for me, first sort of seeing this was exemplified by being around Richard Feynman.
+01:22:12
+So in all your work, you're always kind of searching for the simplicity for that.
+01:22:16
+Clearly and ultimately I am.
+01:22:19
+You served on President Barack Obama's Council of Advisors and Science and Technology for seven years. Yes, for seven years with Eric Schmidt and several other brilliant people.
+01:22:30
+Met Eric for the first time in 90 in 2009 when the council was called together.
+01:22:37
+Yeah, I've seen pictures of you in that room. I mean, there's a bunch of brilliant people. It kind of looks amazing. What was that experience like being called upon that kind of service?
+01:22:46
+So let me go back to my father.
+01:22:48
+First of all, I earlier mentioned that my father served 27 years in the U.S. Army, starting in World War Two. He went off in 1942 43 to fight against the fascist. He was part of the supply corps that supplied General Patton as the tanks rolled across Western Europe, pushing back the forces of Naziism to meet up with our Russian comrades who were pushing the Russian, you know, pushing the Nazis starting at Stalingrad. And, you know, this, you know, thinking, well, war is actually a very interesting piece of history to know from both sides here in America.
+01:23:26
+We typically don't. But I've actually studied history as an adult. So I, you know, sort of the whole story.
+01:23:31
+And on the Russian side, we don't know the Americans. We weren't taught them the mindset. I know. I know. I have many, many Russian friends and we've had this conversation on many occasions. It's fascinating. But, you know, like General Zhukov, for example, is something that you would know about, but you might not know about Patton, but you're right. So. Duaringa, Zuckoff or Kosowski, I mean, there's a whole list of names that I've learned in the last 15 or 20 years looking at the Second World War.
+01:23:58
+So if this was in the midst of that, probably one of the greatest war wars in the history of our species. And so the idea of service comes to me, especially from that example. So in 2009, when I first got a call from. From a Nobel laureate, actually, in my in biology, Harold Varmus was on my way to India and I got this email message and he said it needed to talk to me. And I said, OK, fine, we can talk.
+01:24:35
+Got back to states. I didn't hear from him. We went through several cycles of this, sending me messages. I want to talk to you and then never contact. And finally, I was on my way to give a physics presentation at the University of Florida, Gainesville, and just I stepped off a plane. And my mobile phone off, and it was Harold, as I said, Harold, why do you keep sending you messages that you want to talk but you never call?
+01:25:00
+And he said, well, I'm sorry, things have been hectic and that I did that. And then he said. If you were offered the opportunity to serve on the U.S. president's Council of Advisers on Science and Technology, what would be your answer?
+01:25:16
+I was amused that the formulation of the question, because it's clear that there's a purpose of why the question is asked that way.
+01:25:24
+But then he made it clear to me he wasn't joking. And literally one of the few times in my life, my knees went weak and I had to hold myself up against a wall so that I didn't fall over.
+01:25:40
+I doubt if most of us who have been the beneficiaries of the benefits of this country when given that kind of opportunity could say no. And I know I certainly couldn't say no.
+01:25:55
+I was frightened out of my wits because I had never although I have my my career in terms of. Policy recommendations is actually quite long, it goes back to the 80s, but I had never been called upon. To serve. As an adviser to a president of the United States, and it was very scary, but I did not feel that I could say no because I wouldn't be able to sleep with myself at night saying, you know, that I chickened out or whatever.
+01:26:36
+And so I took the plunge and we had a pretty good run. There are things that I did in those seven years, that of which I'm extraordinarily proud. One of the ways I tell people is if you've ever seen that television cartoon called Schoolhouse Rock, is this one story about how a bill becomes law. And I've kind of lived that there are things that I did that have now been codified in U.S. law. Not everybody gets a chance to do things like that in life.
+01:27:07
+What do you think is the, you know, science and technology, especially in American politics? Know, we haven't had a president who's an engineer or a scientist. What do you think is the role of a president like President Obama in understanding the latest ideas in science and tech? What was that experience like?
+01:27:26
+Well, first of all, I've met other presidents besides President Obama.
+01:27:30
+He is the most extraordinary person that I've ever encountered, despite the fact that he went to Harvard. When I think about President Obama.
+01:27:41
+He is a deep mystery to me in the same way, perhaps, that the universe is a mystery. I don't really understand how that constellation of personalities could personality traits could come to fit within a single individual. But I saw them for seven years, so I'm convinced that I wasn't seeing fake news. I was seeing real data. He was just an extraordinary man. And one of the things that was completely clear. Was that he was not afraid? And not intimidated to be in a room of really smart people.
+01:28:18
+I mean, really smart people, that he was completely comfortable. In asking some of the world's greatest experts, what do I do about this problem, and it wasn't that he was going to just take their answer, but he would listen to the advice.
+01:28:35
+And that, to me, was extraordinary, as I said, I've been around other executives and I've never seen one quite like him. He's an extraordinary learner, is what I observed, and not just about science. He has a way of internalizing information in real time that I've never seen in a politician before, even an extraordinarily complicated situations, even scientific ideas, scientific or non-scientific, complicated ideas don't have to be scientific ideas. But I have like I say, I've seen him in real time process, complicated ideas with a speed that was stunning.
+01:29:11
+In fact, he's shocked the entire council. I mean, we were all stunned at his capacity to be presented with complicated ideas. And then to wrestle with him and internalize them and then come back more, interestingly enough, come back with really good questions to ask.
+01:29:31
+I've noticed this in the area that I understand more of artificial intelligence. I've seen him integrate information about artificial intelligence and then come out with these kind of Richard Feynman like insights.
+01:29:44
+That's exactly right. And that's that, as I said, those of us who have been in that position, it is stunning to see it happen because you don't expect it.
+01:29:53
+Yeah, it takes a lot for a lot of sort of graduate who takes like four years in a particular topic. And he just does it in a few minutes.
+01:30:01
+I like it naturally.
+01:30:03
+You've mentioned that you would love to see experimental validation of superstring theory before you before you shuffle off this mortal coil, which the poetry of that reference made me smile when I saw, you know, people who actually misunderstand it because it's not what it doesn't mean what we generally take it to mean colloquially.
+01:30:24
+But it's such a beautiful expression.
+01:30:25
+Yeah, it is. That's from the hamlet to be or not to be a speech, which I still don't understand what that's about.
+01:30:33
+But so interpretation anyway, the what are the most exciting problems in physics that are just within our reach of understanding and maybe solve the next few decades that you may be able to see.
+01:30:46
+So in physics, you limited to physics, physics, mathematics, this kind of space of problems that fascinate.
+01:30:56
+Well, the one that looks on the immediate horizon like we're going to get to is quantum computing. And that's going to if we actually get there, that's going to be extraordinarily interesting. Do you think that's a fundamentally a problem of theory or is it now in the space of engineering?
+01:31:13
+It's in the space of engineering. I was at a Q station. As you may know, Microsoft has this research facility in Santa Barbara. I was out there a couple of months in my capacity as vice president, American physical society. And I got to you know, I had some things that were like lectures and they were telling me what they were doing. And it sure sounded like they knew what they were doing and that they were close to major breakthroughs.
+01:31:41
+Yeah, that's a really exciting possibility there.
+01:31:44
+But the back to Hamlett, do you ponder mortality, your own mortality?
+01:31:50
+No, my mother died when I was 11 years old, and so I immediately knew what the end of the story was for all of us. As a consequence, I've never, never spent a lot of time thinking about death. It'll come in its own good time. And sort of to me, the job of every human is to make the best and the most of the time that's given to us in order not for our own selfish gain, but to try to make this place a better place for someone else.
+01:32:26
+And on the why of life, why do you think we are? I have no idea and I never even worried about it. For me, I have an answer, a local answer.
+01:32:38
+The apparent why for me was because I'm supposed to do physics.
+01:32:42
+But it's funny because there's so many other quantum mechanical speaking possibilities in your life, such as being an astronaut, for example. You know that. I see.
+01:32:56
+Well, like like Einstein and the vicissitudes that prevented the 1914 measurement of starlight bending. The universe is constructed in such a way that I didn't become an astronaut, which would have for me, I would have faced the worst choice in my life, whether. Whether I would try to become an astronaut or whether I would try to do theoretical physics, both of these dreams were born when I was four years old simultaneously. And so I can't imagine how difficult that decision would have been.
+01:33:34
+The universe helped you out on that one, not only on that one, but in many ones.
+01:33:39
+It helped me out by allowing me to pick the right bed.
+01:33:42
+Is there a day in your life you could relive because it made you truly happy?
+01:33:47
+What day would that be if you could look back at being a theoretical physicist, like having Christmas every day?
+01:33:56
+I have lots of joy in my life. The the moments of invention, the moments of ideas, revelation, yes, the only thing I see them are some family experiences, like when my kids were born and that kind of stuff. But they're pretty high up there. Well, I don't see a better way to end it, Jim. Thank you so much, Janet talking today. This worked out better than I thought.
+01:34:24
+Glad to hear it. Thanks for listening to this conversation with James Gates Jr. and thank you to our presenting sponsor cash app, download it and use Code Legs podcast. You'll get ten dollars and ten dollars will go to First, a STEM education nonprofit that inspires hundreds of thousands of young minds to learn and to dream of engineering our future. Enjoy this podcast. Subscribe on YouTube. Five stars in Apple podcast. Support on Patron or connect with me on Twitter.
+01:34:52
+And now let me leave you with some words of wisdom from the great Albert Einstein. For the rebels among us, unthinking respect for authority is the greatest enemy of truth. Thank you for listening and hope to see you next time.

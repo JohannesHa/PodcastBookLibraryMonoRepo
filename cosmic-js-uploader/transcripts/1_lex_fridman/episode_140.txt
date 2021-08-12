@@ -1,0 +1,928 @@
+00:00:00
+The following is a conversation with Charles Isbel, dean of the College of Computing at Georgia Tech, a researcher and educator in the field of artificial intelligence, and someone who deeply thinks about what exactly is the field of computing and how do we teach it. He also has a fascinatingly varied set of interests, including music, books, movies, sports and history. They make him especially fun to talk with. When I first saw him speak, his charisma immediately took over the room and I had a super excited smile on my face and I knew I had to eventually talk to him on this podcast.
+00:00:39
+Quick mention of his sponsor, followed by some thoughts related to the episode. First is Neuro, the maker of functional sugar free gum and mints that I used to give my brain a quick caffeine boost. Second is the Coating Digital, a podcast on tech and entrepreneurship I listen to and enjoy. Third is master class online courses that I watch from some of the most amazing humans in history and finally catch up the app. I used to send money to friends for food and drinks.
+00:01:10
+Please check out the sponsors in the description to get a discount and to support this podcast. As a side note, let me say that I'm trying to make it so that the conversations with Charles, Eric Weinstein and Dan Carlin will be published before Americans vote for president on November 3rd. There's nothing explicitly political in these conversations, but they do touch on something in human nature that I hope can bring context to our difficult time and maybe for a moment allow us to empathize with people we disagree with.
+00:01:43
+With Eric. We talk about the nature of evil with Charles besides I and music. We talk a bit about race in America and how we can bring more love and empathy to our online communication. And Dan Carlin. Well, we talk about Alexander the Great, Genghis Khan, Hitler, Stalin and all the complicated parts of human history in between with a hopeful eye toward a brighter future for our humble little civilization here on Earth. The conversation with Dan will hopefully be posted tomorrow on Monday, November 2nd.
+00:02:20
+If you enjoy this thing, subscribe on YouTube review first starting up a podcast. Follow on Spotify support on page on Connect Me on Twitter. Allex Friedemann, as usual. I'll do a few minutes of ads now and no ads in the middle. I try to make this interesting, but I do give you time stamps. So if you skip, please still check out the sponsors by clicking the links in the description. It's the best way to support this podcast.
+00:02:45
+This show sponsored by Neuro, a company that makes functional gum and mints that supercharge your mind with a sugar free blend of caffeine. Athenian and B6 B twelve vitamins. It's loved by Olympians and engineers alike. I personally love the mint gum. It helps me focus during times when I can use a boost. My favorite use case is in the morning at the start of a deep work session. For me, it's really important to get that first ten to twenty minutes off to a great start.
+00:03:15
+That's when the desire to think about and check on the stresses of the previous day's strongest, but also when it's most important to calm the mind and focus on the task at hand.
+00:03:27
+Anyway, two pieces of neural gum has one cup of coffee worth of caffeine. Neuro is offering 50 percent off when you use collects at checkout. So go to get neuro Dockum and use code leks. This show is sponsored by Decoding Digital Podcast that is hosted by App Direct Co CEO Dan Sachs. It's a relatively new show I started listening to, or every episode is an interview with an entrepreneur expert on a particular topic in the tech space. I like the recent interview with Michelle Zetlin of CloudFlare about security.
+00:04:08
+I've been progressively getting more interested in hacking culture, both on the attack and the defense side. So this conversation was a fun, educational 45 minutes to listen to. I think this podcast has a nice balance between tech and business that many of you might enjoy, especially if you're thinking of starting a business yourself or working at a startup. I'm to get through this process myself, trying to find the balance between careful planning and throwing caution to the wind.
+00:04:37
+Just going with it anyway. Check out the coding digital on Apple podcast or wherever you get your podcasts. Please give them all the love in the world and encouragement to help keep it going and help the podcast grow. The show is also sponsored by Master Class one hundred eighty dollars a year for an all access pass to. Watch courses from literally the best people in the world and a bunch of different topics. Let me list some I've enjoyed watching in part or in whole, Chris Hadfield on space exploration, Neil deGrasse Tyson on scientific thinking and communication with the right creator of SIM City and Sims on game design.
+00:05:18
+Carlos Santana on guitar, Garry Kasparov on chess, Daniel on the Ground Poker. Neil Gaiman on storytelling. Martin Scorsese, one of my favorite directors on film making. Tony Hawk on, you guessed, skateboarding, Jane Goodall and conservation.
+00:05:36
+Many, many more. By the way, you can watch it on basically any device. Sign up a master class. Dotcom's looks to get 15 percent off the first year of an annual subscription. That's master class dot com slash Lex. Finally, this shows presented by Kashyap, the number one finance app in the App Store, when you get it, it collects podcast catch up. But you said my friends buy Bitcoin and invest in the stock market with as little as one dollar.
+00:06:04
+I'm thinking of doing more conversations with folks who work in and around the cryptocurrency space, similar to I, unfortunately, but even more so. I think there's a lot of charlatans in the space, but there's also a lot of free thinkers and technical geniuses that are worth exploring in depth and with care. If I make mistakes in guest selection and details and conversation, I'll keep trying to prove correct where I can and also keep following my curiosity wherever it takes me.
+00:06:36
+So again, if you get cash from the App Store or Google Play and Use Code Leks podcast, you get ten dollars in cash. Apple also donate ten dollars. The first, an organization that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Charles Isbel. You've mentioned that you love movies and TV shows. Let's ask an easy question, but you have to be definitively, objectively conclusive. What's your top three movies of all time?
+00:07:30
+So you're asking me to be definitive and to be conclusive. That's a little hard. I'm going to tell you why. It's very simple. It's because movies is too broad of a category. I had to pick subgenres, but I will tell you that of those genres, I'll pick one or two from Perimeter's and I'll get us the three that I'm going to cheat. So my favorite comedy of all time, which probably my favorite movie of all time is His Girl Friday.
+00:07:54
+Which is probably a movie that you've not ever heard of, but it's based on a play called The Front Page from out of the early 1980s, and the movie is a fantastic film. What's the story? What's the independent film known? What are we talking about? This is one this is one of the movies that would have been very popular, screwball comedy. You ever see Moonlighting, the TV show? You know, I'm talking about. So you've seen these shows where there's a man and a woman and they clearly are in love with one another and they're constantly fighting and always talking over each other.
+00:08:23
+Banter, batter, batter, batter, batter. This was the movie that started all that. As far as I'm concerned, it's very much of its time. So it's I don't know, must have come out sometime between 1934 or 1939. I'm not sure exactly when the movie itself came out. It's black and white. It's it's just a fantastic film is hilarious. Just most conversation. Not entirely, but mostly.
+00:08:46
+Mostly just a lot of back and forth. There's a story there. Someone's on death row and they're they're newspapermen, including her. They're all newspapermen. They were divorced. The editor, the publisher, I guess, and the reporter, they were divorced. But, you know, they clearly he's thinking trying to get back together. And there's this whole other thing that's going on. But none of that matters. The plot doesn't matter now. It's just that it's play in conversation.
+00:09:12
+It's fantastic. And I just love everything about the conversation, because at the end of the day, sort of narrative and conversation, the sort of things that drive me. And so I really I really like that movie for that reason. Similarly, I'm now going to cheat and I'll give you two movies as one. And they're Crouching Tiger, Hidden Dragon and John Wick, both relatively modern. John Wick, of course, one, two or three one.
+00:09:34
+It gets increasingly I love them all for different reasons and increasingly more ridiculous, kind of like loving alien and aliens, despite the fact they're two completely different movies. But the reason I put Crouching Crouching Tiger, Hidden Dragon and John Wick together is because I actually think they're the same movie or what I like about them. Yeah, the same movie, which is both of them create a world that you're coming in the middle of and they don't explain it to you.
+00:09:58
+But the story has done so well that you pick it up. So anyone has seen John Wick, you know, you have these little coins and they're headed out and there are these rules. And apparently every single person in New York City is an assassin. There's like two people who come through who are, but otherwise they are. But this is complicated world and everyone knows each other. They don't sit down, explain it to you, but you figure it out.
+00:10:16
+Crouching Tiger. Hidden Dragon is a lot like that. You get the feeling that this is Chapter nine of a ten part story and you've missed the first eight chapters and they're not going to explain it to you. But there's a sort of ritual behind you. You get pulled in anyway like him, you get pulled in anyway. So it's just excellent storytelling in both cases and very, very different. I'll see like the outfit, I assume that John Wick outfit.
+00:10:35
+Oh, yes, of course.
+00:10:36
+Of course. Yes, I think it's all right. And so that's that's number two. And then but aside to pause on the martial arts, you have a long list of hobbies like it goes off the page. But I didn't see martial arts is one of them. I do not do martial arts, but I certainly Washington, so. Oh, I appreciate it very much. Oh, we could talk about every Jackie Chan movie ever made. And I would be I would be on board with that shower too.
+00:10:57
+Like that kind of the comedy of it. Yes. Yes. By the way, my favorite Jackie Chan movie would be Drunken Master to no new states, usually as Legend of the Drunken Master, actually drunken master. The first one is the first kung fu movie I ever saw. But I did not know that the first Jackie Chan movie, the first one ever that I saw. I remember, but I had no idea what that's what it was. I didn't know that was Jackie Chan.
+00:11:22
+It was like his first major movie. Yeah, I was a kid done in the 70s. I only later rediscovered that, that it was actually and he creates his own martial art by by drinking. Was he actually drinking or was or was he play drinking. You mean as an actor or.
+00:11:40
+No, I'm sure as an actor, you know, it was seven years or whatever. He was definitely drinking. And he in the end, he drinks industrial grade alcohol. Uh, yeah. Yeah. And has a one of the most fantastic fights ever in that subgenre. Anyway, that's my favorite one of his movies. But I'll tell you, the last movie is actually a movie called Nothing But a Man, which is the 1960s start, Ivan Dixon, who you'll know from Hogan's Heroes and Abbey Lincoln.
+00:12:12
+It's just a really small little drama. It's a beautiful story. But my favorite scenes, I'm cheating. My favorite one of my favorite movies just for the ending is The Godfather. I think the last scene of that is just fantastic. It's the whole movie all summarized in just eight nine second Godfather. Part one, part one. How does it end? I don't think you can. You need to worry about spoilers. If you haven't seen The Godfather, spoiler alert the it ends with the wife coming to Michael and he says just this once, I'll let you ask me my business.
+00:12:44
+And she asked him if if he did this terrible thing and he looks her in the eye and he lies and he says no. And she says, thank you. And she she walks out the door and. You see you see him as she's going, you see him. You see her going out the door and all these people are coming in and they're kissing Michael's hands and the Godfather. And then the camera switches perspective. So instead of looking at him, you're looking at her.
+00:13:09
+And the door closes in her face, and that's the end of the movie and that it's the whole movie right there.
+00:13:15
+Do you see parallels between that and your position as Dean at Georgia Tech crowd?
+00:13:19
+That's a great question.
+00:13:22
+Sometimes the door gets closed. OK, that was a rhetorical question. You've also mentioned that you, I think, enjoy all kinds of experiments, including on yourself.
+00:13:34
+But I saw a video. We said he did an experiment where you tracked all kinds of information by yourself and a few others sort of wiring up your home. And this this little idea that you mentioned in that video, which is kind of interesting, that you thought that two days worth of data is enough to capture a majority of the behavior of the human being. Mm hmm. First, can you describe what the heck you did to collect all the data?
+00:14:04
+Because it's fascinating, just like little details of how you collect that data and also what your intuition behind the two days is.
+00:14:11
+So first of it has to be the right two days. But I was I was thinking of a very specific experiment. There's actually a suite of them that I've been a part of and other people have done this. Of course, I just sort of dabbled in that part of the world. But to be very clear, the specific thing that I was talking about had to do with recording all the AI are going on in my infrared, going on in my my house.
+00:14:29
+So this is a long time ago. So this is everything's being called by by pressing buttons on remote controls as opposed to speaking to Alexa or Syria or something like that. And I was just trying to figure out if you could get enough data on people to figure out what they were going to do with their TVs or their lights. My house was completely wired up at the time.
+00:14:47
+But you know what? I'm about to look at a movie. I'm about to turn on the TV or whatever and just see what I could predict from it. It was kind of surprising. It shouldn't have been. But that's all very easy to do, by the way. Just capturing all the little stuff. I mean, it's a bunch of computer systems. It's really easy to capture data. You know what you're looking for at Georgia Tech. Long before I got there, we had this thing called the aware home where everything was wired up and you thought you captured everything that was going on.
+00:15:10
+Nothing even difficult, not with video or anything like that, just the way the system was, just capturing everything.
+00:15:16
+So it turns out that. And I did this with myself and then I had students and they worked with many other people, and it turns out at the end of the day, people do the same things over and over and over again. So it has to be the right two days, like a weekend. But it turns out not only can you predict what someone's going to do next at the level of what, but they're going to press next on a remote control.
+00:15:38
+But you can do it with something really, really simple. Like you don't even need a hidden Markov model. It's like a mark. Just simply I press this. This is my prediction. And the next thing it turns out, you can hit 93 percent accuracy just by doing something very simple and stupid and just counting counting statistics. But was actually more interesting is that you could use that information. This comes up again and again in my work.
+00:15:59
+If you try to represent people or objects by the things they do, the things you can measure about them that have to do with action in the world.
+00:16:08
+So a distribution over actions and you try to represent them by the distribution of actions that are done on them, then you do a pretty good job of sort of understanding how people are and they cluster remarkably well, in fact, irritatingly so and so by clustering people this way, you can maybe, you know, I got the 93 percent accuracy of what's the next button you're going to press.
+00:16:31
+But I can get 99 percent accuracy or somewhere there's about on the collections of things you might press. And it turns out the things that you might press are all related to number to each other and exactly way you would expect. So, for example, all the key, all the numbers on the keypad, it turns out all have the same behavior with respect to you as a human being.
+00:16:49
+And so you would naturally cluster them together and you discover that numbers are all or related to one another in some way and all these other things. And then and here's the part that I think is important. I mean, you can see this in all kinds of things. Every individual is different, but any given individual is remarkably predictable because you keep doing the same things over and over again. And the two things that I've learned in the long time that I've been thinking about this is people are easily predictable and people hate when you tell them that they're easily predictable, but they are.
+00:17:21
+And there you go. And what about let me play devil's advocate. And philosophically speaking, is it possible to say that what defines humans is the outlier?
+00:17:32
+So even though 90 some large percentage of our behaviors, whatever the signal we measure, is the same and it would cluster nicely, but maybe it's the special moments of when we break out of the routine is the definitive things. And the way we break out of that routine for each one of us might be different.
+00:17:49
+It's possible, I would say that I would say it a little differently. I think I would make two things. One is a I'm going to disagree with the premise, I think.
+00:17:57
+But that's fine. I think the way I would put it is. There are people who are very different from lots of other people, but they're not zero percent, they're closer to 10 percent. Right. So, in fact, even if you do this kind of clustering of people that will turn out to be the small number of people, they all behave like each other, even if they individually behave very differently from from from everyone else. So I think that's kind of important.
+00:18:19
+But what you're really asking, I think and I think this is really a question is, you know, what do you do when you're faced with the situation you've never seen before? What do you do when you're faced with an extraordinary situation? Maybe you've seen others do and you're actually forced to do something and you react to that very differently. And that is the thing that makes you human.
+00:18:34
+I would agree with that, at least at a philosophical level, that it's the the times when you are faced with something difficult, a decision that you have to make where the answer isn't easy, even if you know what the right answer is, that's sort of what defines you as the individual. And I think what defines people, people broadly, it's the hard problem. It's not the easy problem. It's the thing that's going to hurt you. It's not the thing.
+00:18:56
+It's not even that it's difficult. It's just that, you know, that the outcome is going to be highly suboptimal for you. And I do think that that's a reasonable place to start for the question of what makes us human. So before we talk about sort of exploring different ideas, underlying interactive artificial intelligence, which are working on. Let me just go along this thread, skip to kind of our world of social media, which is something that at least on the artificial intelligence side you think about, there is a popular narrative.
+00:19:27
+I don't know if it's true, but that we have these silos in social media and we have these clustering, as you kind of mentioning. And the idea is that, you know, along that narrative is that. You know, we want to we want to break each other out. Of those silos, so we can be empathetic to other people to if you're a Democrat, you empathetic to the Republican, if you're a Republican, empathetic Democrat, those are just too silly bins that we seem to be very excited about.
+00:20:01
+But there's other buildings that we can think about. Is there from an artificial intelligence perspective, because you're just saying we cluster along the data, but an interactive artificial intelligence is is referring to throwing agents into that mix, A.I. systems, dynamics, helping us, interacting with us humans and maybe getting us out of those silos. Is that something that you think is possible? Do you see a hopeful possibility for artificial intelligence systems in these large networks of people to get us outside of our habits in at least the idea space to where we can sort of be empathetic to other people's lived experiences, other people's points of view, you know, all that kind of stuff?
+00:20:52
+Yes. And I actually don't think it's that hard. Well, it's not hard in the sense. So imagine that you can say let's just let's make life simple for a minute.
+00:21:01
+Let's assume that you can do a kind of partial ordering over ideas or clustering of behavior. It doesn't even matter what I mean here, so long as there's some way that this is a cluster, this is a cluster, there's some edge between them as kind of they don't quite touch even or maybe they come very close. If you can imagine that conceptually, then the way you get from here to here is not by going from here to here. That we get from here to here is you find the edge and you move slowly together.
+00:21:24
+Right. And I think that machines are actually very good at that sort of thing. Once we can kind of define the problem, either in terms of behavior or ideas or words or whatever. So it's easy in the sense that if you already have the network and you know the relationships, you know the edges and sort of the strings on them, and you kind of have some semantic meaning for them, the machine doesn't have to. You do as a designer, then?
+00:21:44
+Yeah, I think you can kind of move people along and sort of expand them, but it's harder than that.
+00:21:48
+And the reason it's harder than that or sort of coming up with the network structure itself is hard is because I can tell you a story that someone else told me and I don't I may get some of the details a little bit wrong, but it's roughly it roughly goes like this. You take two sets of people from the same backgrounds and you want them to solve a problem. So you separate them. We do all the time. I know. You know, we're going to break out in break out groups are going to go over there and talk about this, are going go over there and talk about it.
+00:22:15
+And then you have them sort of in this big room, but far apart from one another.
+00:22:19
+And you have them sort of interact with one another when they come back to talk about what they learn. You want to merge what they've done together. It can be extremely hard because they don't they basically don't speak the same language anymore. Like when you create these problems and you dive into them, you create your own language. So the example this one person gave me, which I found kind of interesting because we were in the middle of that at the time, was there sitting over there.
+00:22:41
+And they're talking about these rooms that you can see, but you're seeing them from different vantage points outside the room. You're. They can see a clock very easily, and so they start referring to the room as the one with the clock. This group over here looking at the same room, they can see the clock, but it's, you know, not in their line of sight or whatever. So they end up referring to it by some other way.
+00:23:03
+When they get back together and they're talking about things, they're referring to the same room and they don't even realize that referring to the same room, in fact, this group doesn't even see that there's a clock there in this group, doesn't see what the clock on the wall is, the thing that stuck with me. So if you create these different silos, the problem isn't that the ideologies disagree. It's that you're using the same words and they mean radically different things.
+00:23:23
+The hard part is just getting them to agree on the well, maybe we'd say the axioms in our world. Right. But, you know, just get them to agree on some basic definitions, because right now they talk they're talking past each other, just completely talking past each other. That's the hard part. Getting them to meet, getting them to interact. That may not be that difficult, getting them to see where their language is, leading them to be past one another.
+00:23:46
+That's that's the hard part.
+00:23:48
+It's a really interesting question to me. It could be on the layer of language, but it feels like there's multiple layers to this. Like it could be world view. It could be. I mean, all boils down to empathy, being able to put yourself in the shoes of the other person, to learn the language, to learn like visually how they see the world to learn. Like the I mean, I experience this now with Troll's the degree of humor in that world.
+00:24:14
+For example, I talk about love a lot. I'm very like I'm really lucky to have this amazing community of loving people.
+00:24:21
+But whenever I encounter trolls, they always roll their eyes at the idea of love because it's so quote unquote cringe.
+00:24:28
+Yeah. So so they they show love by, like, derision, I would say. And I think about and the human level. That's a whole nother discussion.
+00:24:39
+That's psychology. That's sociology. So on. But I wonder if A.I. systems can help somehow and bridge the gap of what is this person's life like. Encourage me to just ask that question, to put myself in their shoes, to experience the agitations, the fears, the hopes they have, the experience, you know, even just to think about what was their upbringing like, like having a single parent home or a shitty education or all those kinds of things just to put myself in that mindspace.
+00:25:19
+It feels like that's really important for us to bring those classes together to find that similar language. But it's unclear how I can help that because it seems like our systems need to understand both parties first. So, you know the word I understand there's doing a lot of work, right? Yes. So, yes. Do you have to understand it or do you just simply have to note that there is something similar and there's a point to touch? Right.
+00:25:44
+So, you know, use the word empathy. And I like that word for a lot of reasons. I think you're right in the way that you're using it, the way that you're describing. But let's separate it from sympathy.
+00:25:53
+Right. So. You know, sympathy is feeling sort of for someone, empathy is kind of understanding where they're coming from and how they how they feel. Right. And for most people, those things go hand in hand. For some people, some are very good at empathy and very, very bad. It's empathy. Some people cannot express it. Well, my observation would be I'm not a psychologist. My observation would be that some people seem incapable of feeling sympathy unless they feel empathy.
+00:26:17
+First, you can understand someone, understand where they're coming from and still think, no, I can't support that.
+00:26:24
+Right. It doesn't mean that the only way, because if that if that isn't the case, then what it requires is that you you must the only way that you can to understand someone means you must agree with everything that they do. Which is right, right, and and if the only way I can feel for someone is to completely understand them and make them like me in some way, well, then we're lost, right? Because we're not all exactly like each other and have to understand everything that you've gone through.
+00:26:52
+It helps clearly. But they're separable ideas, right? Even though they get clearly, clearly tangled up in one another. So I think I could help you do actually, is if and, you know, I'm being quite fanciful, as it were. But if you if you think of these as kind of I understand how you interact, the words that you use, the you know, the actions you take, I have some way of doing this.
+00:27:10
+Let's not worry about what that is. But I can see you as a kind of distribution of experiences and actions taken upon you, things you've done and so on. And I can do this with someone else and I can find the places where there's some kind of commonality, a mapping, as it were. Even if it's not total. You know, if I think of it as distribution, right. Then, you know, I can take the cosine of the angle between you.
+00:27:31
+And if it's if it's zero, you've got nothing in common. If it's one, you're completely the same person. Well, you know, you're probably not one. You're almost certainly not zero. I can find the place where there's the overlap. Then I might be able to introduce you on that basis or connect you in that connection in that way and make it easier for you to take that step of that step of empathy.
+00:27:51
+It's not it's not impossible to do. Although I wonder. If it requires that everyone involved is at least interested in asking the question, so maybe the hard part is just getting them interested in asking the question if in fact, maybe if you can get them to ask the question, how are we more alike than we are different, they'll solve it themselves. Maybe that's the problem that I should be working on, not telling you how you're similar or different, but just getting you to decide that it's worthwhile asking the question.
+00:28:16
+So now I feel like an economist answer, actually.
+00:28:19
+Well, people first of all, people like you would disagree. So let me disagree slightly, which is I think everything you said is brilliant. But I tend to believe, philosophically speaking, that people are interested underneath it all. And I would say that I. The the possibility of an A.I. system would show the commonality is incredible. That's a really good starting point, I would say, if you if on social media.
+00:28:47
+I could discover the common things deep or shallow, between me and a person who there's tension with, I think that my basic human nature would take off from there and I think enjoy that commonality. And like, there's something sticky about that that my mind will linger on. And that person in my mind would become like warmer and warmer and like I'll start to feel more and more compassionate towards them. I think for the majority of the population, that's true.
+00:29:18
+But that might be that's a hypothesis. Yeah. I mean, it's an empirical question, right? You have to figure it out. I mean, I want to believe you're right. And so I'm going to say that I think you're right. Of course, some people come to those things for the purpose of trolling. Right. And it doesn't matter.
+00:29:33
+They're playing a different game. Yeah, but I don't know.
+00:29:36
+You know, my experience is it requires two things. It requires in fact, maybe this is really at the end what you're saying. And I and I do agree with this for sure. So. You it's hard. To hold on to that kind of anger or to hold on to just the desire to humiliate someone for that long, it's just difficult to do. It takes it takes a toll on you. But more importantly, we know this both from people having done studies on it, but also from our own experiences, that it is much easier to be dismissive of a person if they're not in front of you, if they're not real.
+00:30:09
+Right. So much of the history of the world is about making people other right. So if you're in social media, if you're on the web, if you're doing whatever and the Internet, being forced to deal with someone as a person, some equivalent to being in the same room makes a huge difference, because in your one, you're forced to deal with their humanity because it's in front of you. The other is, of course, that, you know, they might punch you in the face if you go too far.
+00:30:34
+So, you know, both of those things kind of work together, I think, to the to the right. And so I think bringing people together. Is really a kind of substitute for forcing them to see the humanity in another person and to not be able to treat them as bits. It's hard to troll someone when you're looking them in the eye. This is very difficult to do. Agreed, your broad set of research interests fall under interactive I, as I mentioned, which is a fascinating set of ideas, and you have some concrete things that you're particularly interested in.
+00:31:06
+But maybe could you talk about how you think about the field of interactive artificial intelligence? Sure.
+00:31:13
+So let me say that if you look at certainly my early work, but even if you look at most of it, I'm a machine learning guy. I do machine learning first paper ever published was a Nips back then it was Nips now to NRPs. The long story there anyway, that's nothing but so.
+00:31:29
+So I'm a machine learning to believe in data. I believe in statistics and all those kind of. Yes. And the reason I'm bringing that up is even though I'm a newfangled statistical machine learning I know and have been for a very long time, the problem I really care about is how I. Yeah, and I care about artificial intelligence. I care about building some kind of intelligent artefact. However that gets expressed. That would be. Intel, at least as intelligent as humans and as interesting as humans, perhaps on their and there is sort of in their own way.
+00:31:57
+So that's the deep underlying love and dream is the bigger, bigger, I guess, the big whatever the heck that is.
+00:32:03
+Yeah. The machine learning in some ways is a means to the end. It is not the end. And I don't understand how one could be intelligent without learning. So therefore I got to figure out how to do that. Right. So it's important. But machine learning, by the way, is also a tool. I said statistical because that's what most people think of themselves, machine learning people. That's how they think it's a pet language might disagree, or at least 1980s paddling.
+00:32:23
+We might disagree with what it takes to do to do machine learning. But I care about the A.I. problem, which is why it's interactive and not just interactive Emelle. I think it's important to to understand that there's a long term goal here, which I will probably never live to see, but I would love to have been a part of which is building something truly intelligent outside of outside of ourselves.
+00:32:43
+Can we take a tiny tangent or am I interrupting? Which is is there something you can say concrete about the mysterious gap between the subset Amelle and the bigger AI? What's missing? What's what do you think? I mean, obviously, it's totally unknown, not totally, but in part unknown at this time. But is it something like what, Pat Lang or is it knowledge like expert system reasoning type of kind of thing?
+00:33:10
+So A.I. is bigger than normal, but Emelle is bigger than I. This is kind of the real the real problem here is that they're really overlapping things that are really interested in slightly different problems. I tend to think of them and there are many people out there are going to be very upset at me about this. But I tend to think of them as being much more concerned with the engineering of solving a problem and AI about the sort of more philosophical goal of of true intelligence.
+00:33:30
+And that's the thing that motivates me, even if I end up finding myself living in this kind of engineering space I've now made made Michael Jordan. But, you know, it's it's it's to me, they just feel very different. You're just measuring them differently. You're you're you're you're sort of goals of where you're trying to be are somewhat different. Yeah.
+00:33:48
+But to me, A.I. is about trying to build that intelligent thing and typically but not always for the purpose of understanding ourselves a little bit better. Machine learning is, I think, trying to solve the problem, whatever that problem is. Now, that's my take on. Others, of course, would disagree.
+00:34:04
+So on that note, so with the interactive A.I., do you tend to, in your mind, visualize AI as a singular system, or is it as a collective, huge amount of systems interacting with each other like this is the social interaction of us humans and VR systems, the fundamental fundamental to intelligence, I think.
+00:34:23
+Well, certainly fundamental to our kind of intelligence. Right. And I, I actually think it matters quite a bit. So the reason the interactive AI part matters to me is because I don't this is going to sound simple, but I don't care whether it makes a sound when it falls and there's no one around because I don't think it matters. Right. If there's no observer in some sense. And I think what's interesting about the way that we're intelligent is we are intelligent with other people.
+00:34:51
+Right. Or other things anyway. And we go out of our way to make other things intelligent. We're we're hardwired to, like, find intention, even whether there is no anticipatory anthropomorphize everything. We I think we we I think the interactive part is being intelligent in and of myself and then in isolation is a meaningless act in some sense. The correct answer is you have to be intelligent in the way that you interact others. It's also efficient because it allows you to learn faster, because you can import from, you know, past history.
+00:35:20
+It also allows you to be efficient in the transmission of that.
+00:35:23
+So we ask ourselves about me, am I intelligent? Clearly, I think so, but I'm also intelligent as a part of a larger species and group of people, and we're trying to move the species forward as well. And so I think that notion of being intelligent with others is kind of the key thing, because otherwise you you come and you go and then it it doesn't matter. And so that's why I care about that aspect of it. And it has lots of other implications.
+00:35:48
+One is not just, you know, building something intelligent with others, but understanding that you can't always communicate with those others. They have been in a room where there's a clock on the wall that you haven't seen, which means you have to spend an enormous amount of time communicating with one another constantly in order to figure out what the other what each other wants. Right. So, I mean, this is why people project right. You project your own intentions and your own reasons for doing things on the others as a way of understanding them so that you know, you know how to behave.
+00:36:13
+But by the way, you completely predictable person, I don't know how you're predictable. I don't know you well enough, but you probably need the same five things over and over again or whatever it is that you do it. I know I do. If I'm going to add new Chinese restaurant, I will get, you know, girls chicken because that's the thing that's easier. I will get hot and sour soup. You know, people do the things that they do, but other people get the chicken and broccoli that can push this analogy way too far.
+00:36:36
+The chicken and broccoli. I know what's wrong with those people. I don't know what's wrong with them either. They go, we have all had our drama. So they get the chicken and broccoli and their egg drop super whatever we got to communicate. And it's going to change. Right. So it's. Not interactive is not just about learning to solve a problem or task. It's about having to adapt that over time, over a very long period of time and interacting with other people who will themselves change.
+00:37:01
+This is what we mean about things like adaptable models, right? That you have to have a model. That model is going to change. And by the way, it's not just the case that you're different from that person, but you're different from the person you were 15 minutes ago or certainly 15 years ago. And I have to assume that you're at least going to drift hopefully not too many discontinuities, but you're going to you're going to drift over time.
+00:37:18
+And and I have to have some mechanism for adapting to that as you and an individual over time and across individuals over time.
+00:37:26
+On the topic of adaptive modeling and you talk about lifelong learning, which is a I think a topic that's understudied or maybe because nobody to do with.
+00:37:40
+But like, you know, if you look at Aleksa or most of our artificial intelligence systems that are primarily machine learning based systems or dialogue systems, all those kinds of things, they know very little about you in the sense of the lifelong learning sense that we learn as humans.
+00:38:00
+We learn a lot about each other, not in the quantity of facts, but like the temporally rich side of information that seems to like pick up the crumbs along the way that somehow seems to capture a person pretty well.
+00:38:17
+Do you have any idea how to how to do lifelong learning?
+00:38:22
+Because it seems like most of the machine learning community does not know a lot about the knowledge the machine learning community not not spend a lot of time on lifelong learning. I don't think there's been a lot of time on learning period in the sense that they tend to be very task focused. Everybody is overfitting to whatever problem is. They happen to have their overengineering, their solutions to the task, even the people. And I think these people, too, are trying to solve a hard problem of transfer learning.
+00:38:46
+Right. I'm going to learn on one task or another to you still end up creating the task. You know, it's like looking for your keys where the light is, because that's where the light is, right? It's not because the keys have to be there. I mean, one could argue that we tend to do this in general. We tend to kind of do it as a group. We tend to hill climb and get stuck in local optima.
+00:39:04
+And I think we do this in the smaller, the small as well. I think it's very hard to do because so look, here's the hard thing about it.
+00:39:12
+I write the hard thing about it is it keeps changing on us. Right. You know what is I as the you know, the art and science of making computers act the way they do in the movies. Right. That's what it is.
+00:39:21
+And but beyond that, they keep coming up with new movies. Yes. And they just it. Right, exactly.
+00:39:27
+We are driven by this kind of need to sort of ineffable quality of who we are, which means that the moment you understand something is no longer I. Well, I we understand this.
+00:39:38
+That's just you take the derivative and you divide by two and then you you average it out over time in the window. So therefore that's no longer. Yeah. So the problem is unsolvable because it keeps kind of going away. This creates a kind of illusion which I don't think is an entire illusion of either. There's a very simple task based things you can do very well in overengineer. There's all of Ehi and there's like nothing in the middle, like it's very hard to get from here to here and it's very hard to see how to get from here to here.
+00:40:02
+And I don't think that we've done a very good job of it because we get stuck trying to solve the small problem that's in front of it, myself included. I'm not going to pretend that I'm better at this than anyone else. And of course, all the incentives in academia and in industry are set to make that very hard because you you have to get the next paper out. You have to get the next product out. You have to solve this problem.
+00:40:22
+And it's very sort of naturally incremental. And none of the the incentives are set up to allow you to take a huge risk unless you're already so well established. You can take that big risk. And if you're that well established that you can take that big risk, then you've probably spent much of your career taking these little risks, relatively speaking. And so you have got a lifetime of experience telling you not to take that particular big risk. Right.
+00:40:45
+So the whole system set up to make progress very slow. That's fine just the way it is. But it does make this gap seem really big, which is my long way of saying I don't have a great answer to it, except that stop doing it equals one.
+00:40:58
+At least try to get an equal to and maybe an equal seven so that you can say I'm going or maybe TI is a better variable here. I'm going to not just solve this problem to solve this problem. And another problem I'm not going to learn just on you. I'm going to keep living out there in the world and just seeing what happens and that we'll learn something as designers and our machine learning algorithms and our algorithms can learn as well.
+00:41:17
+But unless you're willing to build a system which you're going to have live for months at a time in an environment that is messy and chaotic you cannot control, then you're never going to make progress in that direction. So I guess my answer to you is yes. My idea is that you should. It's not no, it's yes, you should be deploying these things and making them live for months at a time and be OK with the fact it's going to take you five years to do this, not rerunning the same experiment over and over again and refining the machine.
+00:41:46
+So it's slightly better at whatever, but actually having it out there and living in the chaos of the world and seeing what it's learning algorithm so can learn what data structure can build and how it can go from there. Without that, you're going to be stuck.
+00:41:59
+Ultimately, what do you think about the possibility of unequals?
+00:42:03
+One growing it probably crude approximation, but growing like if you look at language models like Jupiter three, if you just make it big enough, it'll swallow the world, meaning like it'll solve all your T to infinity by just growing in size of this, taking the small overengineer solution and just pumping it full of steroids in terms of compute, in terms of size of training data and the giannakou and style of supervised or open I saw supervised.
+00:42:34
+Just throw all of YouTube at it and it will learn how to reason, how to paint, how to create music, how to love all that by watching YouTube videos.
+00:42:46
+I mean, I can't think of a more terrifying world to live in than a world that is placed on YouTube videos.
+00:42:51
+But yeah, I think I think the answer that I just kind of don't think that'll quite well, it won't work that easily. All right, you will get somewhere and you will learn something, which means it's probably worth it, but you won't get there. You won't solve the you know, here's the thing.
+00:43:08
+We build these things and we say we want them to learn, but what actually happens is let's say they do learn. I mean, certainly every paper I've gotten published, the things learn out of anyone else, but they actually change us.
+00:43:20
+Right? We react to it differently. Right. So we keep redefining what it means to be successful both in the negative in the case, but also in the positive in it. Oh, well, this is this is a this is an accomplishment.
+00:43:31
+I'll give you an example, which is like the one you just described. Let's let's get completely out of machine. Well, not completely, but mostly out of machine learning. Think about Google. People were trying to solve information retrieval to ad hoc information, a problem for ever, I mean, first major book I ever read about. It was what Seventy-one, I think was when it came out. Anyway, it's, you know, military, everything is a vector and will do these vector space models or whatever.
+00:43:55
+And and that was all great. And we made very little progress and we made some progress. And then Google comes and makes the ad hoc problem seem pretty easy. I mean, it's not there's lots of computers and databases involved, but, you know, and there's some brilliant algorithmic stuff behind it, too, and some systems building. But the problem changed. I right. If you've got a world that's that connected so that you have you know, there are 10 million answers quite literally to the question that you're asking, then the problem wasn't give me the things that are relevant.
+00:44:30
+The problem is, don't give me anything that's irrelevant, at least in the first page, because nothing else matters. So Google is not solving the information retrieval problem, at least not on its Web page. Google is minimizing false positives, which is not the same thing as getting an answer. It turns out it's good enough for what it is we want to use Google for, but it also changes what the problem was we thought we were trying to solve in the first place.
+00:44:56
+You thought you were trying to find an answer, but you're not where to try to find the answer. But it turns out you're just trying to find an answer now. Yes, it is true. Is also very good at finding you exactly. That Web page. Of course, you trained yourself to figure out what the keywords were to get you that Web page.
+00:45:09
+But in the end, by having that much data, you've just changed the problem into something else.
+00:45:14
+You haven't actually learned what you set out to learn. Now, the counter to that would be maybe we're not doing that either. We just think we are because, you know, we're in our own heads. Maybe we're we're we're learning the wrong problem in the first place. But I don't think that matters. I think the point is, is that Google has not solved information retrieval. Google has done amazing service. I have nothing bad to say about what they've done.
+00:45:33
+Lord knows my entire life is better because Google exists in front of Google Maps.
+00:45:37
+Anything I've ever found this place or is this like 95? I see one hundred and ten and I see. But where we're caught ninety five go, you know. So I'm very I'm very grateful for Google, but, you know, they just have to make certain the first five things are right. Yeah. And everything after that is wrong. Look, you know, we're going off in a totally different perspective here. But but. Think about the way we hire faculty.
+00:46:00
+It's exactly the same thing, getting controversial, getting controversial.
+00:46:05
+It's exactly the same problem, right? It's minimizing false positives. We say things like we want to find the best person to be an assistant professor at MIT. Yes. In the new College of Computing, which I will point out was founded 30 years after the College of Computing.
+00:46:23
+I'm a part of both of my alma mater are fighting words.
+00:46:28
+I'm just saying I appreciate all that they did and all that they're doing anyway. So we're going to we're going to try to we're going to try to hire the best professor. That's what we say, the best person for this job. But that's not what we do at all.
+00:46:42
+Right. Do you know what percentage of faculty in the top four earn their PhDs from the top four, say, in twenty seventeen. For which we have which is the most recent year for which I've dated maybe a large percentage, about 60 percent, 60, 60 percent of the faculty. The top four are in their 80s and top. This is computer science for which there is no top five. There's only a top four. Right. Because they're all tied for one.
+00:47:04
+For people who don't know. By the way, that would be MIT. Stanford, Berkeley, simu.
+00:47:07
+Yepp. Georgia Tech is number eight, number eight keeping track. Oh, yes, it's a large part of my job. Number five is Illinois. Number six is a tie with Yudof and Cornell and Princeton and Georgia Tech are tied for eight and UT Austin is number 10. Michigan's number 11, by the way, so if you look at the top 10, you know, what percentage of faculty in the top 10 are in their position in the top 10?
+00:47:34
+Sixty five, roughly 65 percent. If you look at the top 55 ranked departments, 50 percent of the faculty earn their PhDs from the top 10. There's no universe in which. All the best faculty, even just for R-1 universities, the majority of them come from 10 places, there's no way that's true, especially when you consider how small some of those universities are in terms of the number of fees they produce. Yeah. Now, that's not a negative.
+00:48:02
+I mean, it is a negative.
+00:48:03
+It also has a habit of entrenching certain historical inequities and accents, but. What it tells you is, well, ask yourself the question, why is it like that? Well, because it's easier if we go all the way back to the 1980s, you know, there was a saying that, you know, nobody ever lost his job buying a computer from IBM. And it was true. And nobody ever lost their job hiring a Ph.D. from MIT. Right.
+00:48:32
+If the person turned out to be terrible, well, you know, they came from MIT. What did you expect me to know? However, that same person coming from pick, whichever is your least favorite place that produces a Ph.D. and say computer science? Well, you took a risk, right. So all the incentives, particularly because you're only going to hire one this year. Well, now we're hiring 10. But, you know, you're only going to have one or two or three this year.
+00:48:53
+And by the way, when they come in, you're stuck with them for at least seven years in most places because that's before, you know, where they're getting tenure not. And if they get ten years stuck with them for a good 30 years unless they decide to leave, that means the pressure to get this right is very high. So what are you going to do?
+00:49:05
+You're going to minimize false positives. You don't care about saying no inappropriately. You only care about saying yes inappropriately. So all the pressure drives you into that particular direction.
+00:49:16
+Google. Not to put too fine a point on, it was in exactly the same situation with their search. It turns out you just don't want to give people the wrong page in the first three or four pages. And if there's 10 million right answers and 100 bazillion wrong answers, just make certain the wrong answers. Don't get up there. And who cares if you the right answer was actually the 13th page. A right answer. A satisfying answer is no.
+00:49:39
+One, two, three or four. So who cares? Or an answer that will make you discover something beautiful, profound to your question. Well, that's a different problem. But isn't that the problem? Can we linger on this topic without sort of walking with grace? How do we get for fat, for hiring faculty? How do we get that 13th page with the with a truly special person? Like, there's I mean, it depends on the department.
+00:50:08
+Computer science probably has those departments that those kinds of people like you have the Russian guy who Grigori Perelman and like just this awkward, strange minds that don't know how to play the little game of etiquette that that faculty of all agreed somehow converged over the decades how to play with each other. And also is not, you know, on top of that is not from the top four top whatever numbers the schools and and maybe actually just says a few every once in a while to the, uh, to the traditions of old within the computer science community, maybe talks trash about machine learning is a total waste of time, and that's there on the resume.
+00:50:54
+So how do you allow the system to give those folks a chance?
+00:51:00
+Well, you have to be willing to take a certain kind of without taking a particular position on any particular person. You'd have to take you have to be willing to take risk. Right. A small amount of I mean, if we were treating this as a well as a machine learning problem. Right. There's a search problem, which is what it is. It's a search problem. If we were treating it that way, you would say, oh, well, the main thing is you, you know, got a prior data because I'm Bayesian.
+00:51:20
+If you want to do it that way, we'll just inject some randomness in and it'll be OK. The problem is that feels very, very hard to do with people. All the incentives are wrong there. But it turns out and let's say let's say that's the right answer. Let's just give for the sake of argument that, you know, injecting randomness into the system at that level for who you hire is just not not worth doing because the price is too high, the cost is too high.
+00:51:45
+We had infinite resources here, but we don't. And also, you've got to teach people so, you know, you're ruining other people's lives if you get it too wrong.
+00:51:52
+But we've taken that principle, even if I grant it and pushed it all the way back.
+00:51:57
+Right. So we could have a better pool than we have a people we look at and give an opportunity to. If we do that, then we have a better chance of finding that. Of course, that just pushes the problem back a back another level. But let me tell you something else. You know, I did a sort of study. I call it a study. I cultivated my friends and asked them for all of their data for graduate admissions.
+00:52:18
+But then someone else followed up and did an actual study. And it turns out that I can tell you how everybody gets into grad school.
+00:52:25
+More or less. More or less. You basically admit everyone from places higher ranked than you, you met most people from places ranked around you, and you mean almost no one from places ranked below you, with the exception of the small liberal arts colleges that aren't ranked at all like Harvey Mudd because they know they're disappearing. This is also.
+00:52:41
+Yes, which means the decision, whether, you know, you become a professor at Cornell was determined when you were 17. Right. But where what? You knew to go to undergrad, to do it everyday. So if we can push these things back a little bit and just make the pull a little bit bigger, at least you raise the probability that you will be able to see someone interesting and and take the risk. The other answer to that question, by the way, which you could argue is the same as you either adjust the pool so the probabilities go up.
+00:53:13
+That's the way of injecting a little bit of uniform uniform noise in the system, as it were, is you change your loss function.
+00:53:20
+You just let yourself be measured by something other than whatever it is that we're measuring ourselves by now. I mean, U.S. News and World Report, every time they change their formula for determining rankings, moved entire universities to behave differently because rankings matter.
+00:53:37
+Can you talk trash about those rankings for a second? Not I'm joking about talking trash. I actually it's so funny how from my perspective, from very sharp perspective, how dogmatic like how much I trust those rankings. They're they're almost ingrained in my head. I mean, at MIT, everybody kind of it's a it's a propagated, mutually agreed upon like idea that those rankings matter.
+00:54:05
+And I don't think anyone knows what they're like. Most people don't know what they're based on and what are they exactly based on and what are the flaws in that?
+00:54:15
+Well, so it depends which rankings you're talking about. Do you want to talk about computer science? We talk about university computer science.
+00:54:21
+U.S. News is not the main one. The only one that matters is U.S. News. Nothing matters. Sorry, these rankings better work, but nothing else matters. But but U.S. News.
+00:54:30
+So U.S. News has formula that it uses for many things, but not for computer science, because computer science is considered a science, which is absurd. So the rankings for computer science. Yeah. Is 100 percent reputation. So two people. At each department, it's not really department, but each department basically rank everybody slightly more complicated than that. But whatever, they rank everyone and then those things are put together somehow. So that means how do you improve reputation?
+00:55:02
+How do you move up and down the space of reputation?
+00:55:06
+Yes, that's exactly the Twitter. It can help. I can tell you Georgia Tech did it or at least how I think Georgia Tech because because Georgia Tech is actually the case to look at not just because I'm a Georgia Tech, but because Georgia Tech is the only computing unit that was not in the top 20 that has made it into the top 10.
+00:55:23
+It's also the only one in the last two decades, I think I'm that moved up in the top 10. As opposed to having someone else move down, so we used to be number 10 and then we became number nine because UT Austin went down slightly and now we were tied for ninth because that's our rankings work and we moved from nine to eight because our raw score moved up a point.
+00:55:47
+So, George, something something something about Georgia Tech redesign or computing anyway?
+00:55:53
+I think it's because we have shown leadership at every crisis level. Right. So we created college first public universities to do it. Second college, second university, do it after Team USA's number one. I also think it's no accident that CMU is the largest and we're depending upon how you count and depending on exactly where MIT ends up with its final college of computing, second or third largest. I don't think that's an accident. We've been doing this for a long time.
+00:56:15
+But in the 2000s, when there was a crisis about undergraduate education, Georgia Tech took a big risk and succeeded at rethinking undergrad education and computing. I think we we created these schools at a time when most public universities, in a way were afraid to do it.
+00:56:30
+We did the online masters and that mattered because people were trying to figure out what to do with Moogs and so on. I think it's about being observed by your peers at having an impact. So, I mean, that is what reputation is, right? So the way you move up in the reputation rankings is by doing something that makes people turn and look at you and say, that's good.
+00:56:52
+They're better than I thought. Yeah. Beyond that, it's just inertia and huge historicist in the system.
+00:56:57
+Like I mean, there was this I can't remember this is maybe apocryphal, but the you know, there were there's a a major or department that like MIT was ranked number one in and they didn't have it.
+00:57:07
+It's just about what you I don't know if that's true, but someone said that to me anyway. But it's it's a it's a it's a thing. Right. It's all about reputation. Of course, at MIT is great because it is great. It's always been great, by the way, because it is great. The best students come. Which keeps it being great. I mean, it's just a positive feedback loop, but not it's not surprising. I don't think that's wrong.
+00:57:27
+Yeah, but it's almost like a narrative, like it doesn't actually have to be backed by reality and it's, you know, not the same environment, but I like it. It does feel like we're playing in the space of narratives, not the space of some something grounded. And like one of the surprising things when I showed up at MIT and just all the students I've worked with and all the research I've done, is it like they're the same people as I've met other places?
+00:57:59
+I mean, what Amity is going for my life is many things going for one thing, it has going for it is a nice logo, a nice logo. It's a lot better than it was when I was here. Uh, nice colors, too. Terrible, terrible name for a mascot. But the the thing that MIT has going for is it really does get the best students. It just doesn't get all of the best students. There are many more best students out there.
+00:58:21
+Right. And the best students want to be here because it's the best place to be or one of the best place to be. And it just kind of it's a sort of positive feedback. But you said something earlier. Which I think is worth examining for a moment, right? You said it's I forget the words you used, he said we're living in the space of narrative as opposed to something objective. Narrative is objective. I mean, one could argue that the only thing that we do as humans is narrative.
+00:58:45
+We just build stories to explain why we found someone once asked me, but wait, there's nothing objective. No, it's completely an objective measure. It's an objective measure of the opinions of everybody else. Now, is that physics? I don't know, but you know what I mean.
+00:59:03
+Tell me something you think is actually objective and measurable in a way that makes sense, like Kamras. They don't you know that I mean, you're getting me off on something. But do you know that? Cameras, which are just reflecting light and putting them on film like did not work for dark skinned people until like the 1970s. You know why? Because you were building cameras for the people who are going to buy cameras who all, at least in the United States and Western Europe, were relatively light skinned, turned out to terrible pictures of people who look like me that got fixed with better film and whole processes.
+00:59:39
+Do you know why? Because furniture manufacturers wanted to be able to take pictures of mahogany furniture. Right.
+00:59:47
+Because candy manufacturers wanted to be able to take pictures of chocolate. Now, the reason I bring that up is because you might think that cameras are objective. They're they're just capturing like, oh, they're made they are doing the things that they are doing based upon decisions by real human beings to privilege, if I may use that word, some physics over others, because it's an engineering problem. They're tradeoffs. Right. So I can either worry about this part of the spectrum or this part of the spectrum.
+01:00:16
+This costs more. That cost less. This cost the same. But I have more people paying money over here. Right. And it turns out that, you know, if a giant, you know, conglomerate wants you, demands that you do something different and it's going to involve all kinds of money for you, suddenly the tradeoffs change. Right. And so there you go.
+01:00:31
+I actually know how I ended up there. Oh, it's because this notion of objectiveness. Right. So so even the objective isn't objective because at the end you've got to tell a story. You've got to make decisions. You've got to make trade off or else it's engineering other than that.
+01:00:42
+So I think that the rankings capture something. They just don't necessarily capture what people assume they capture.
+01:00:51
+You know, just to linger on this this idea. Why is there not more? People who just they play with whatever that narrative is, have fun with it, have like excite the world, whether it's in the Carl Sagan style of like that calm, sexy voice of explaining the stars and all the romantic stuff or or the Elon Musk, dare I even say Donald Trump, whether you're like trolling and shaking up the system and just saying controversial things that like I talked to Lisa Feldman Barrett, who's a neuroscientist who just enjoys playing the controversy, things like like finds the counterintuitive ideas in the particular science and throws them out there and sees how they play in the public discourse.
+01:01:38
+Like, why don't we see more of that? And what is in academia track and Elon Musk type?
+01:01:44
+Well, tenure is a powerful thing that allows you to do whatever you want. But getting tenure typically requires you to be relatively narrow. Right, because people are judging you. Well, I think the answer is we we have told ourselves a story, a narrative that that is vulgar, which we just described as vulgar. It's certainly unscientific and. It is easy to convince yourself that in some ways you're the mathematician, right? The fewer there are in your major.
+01:02:18
+The more that proves your purity, right? Yeah. So once you tell yourself that story, then it is beneath you to do that kind of thing, right? I think that's wrong.
+01:02:31
+I think that and by the way, everyone doesn't have to do is everyone's not get it. And everyone, even if they would be good at would enjoy it. Yeah. So it's fine. But I do think you need some diversity in the way that people choose to relate to the world as academics, because I think the great universities are ones that engage with the rest of the world. It is a home for public intellectuals. Yes. And in 2020, being a public intellectual probably means being on Twitter, whereas of course, that wasn't true 20 years ago because Twitter wasn't around 20 years ago.
+01:03:05
+And if it was wasn't around in a meaningful way, I don't actually know how long it would have been around. As I get older, I find that my my social time has gotten worse and worse, like Google really has been around the block.
+01:03:15
+Anyway, the point is that I think that I think that we sometimes forget that a part of our job is to impact the people who aren't in the world that we're in and that that's the point of being in a great place and being a great person. Frankly, there's an interesting force in terms of public intellectuals. You know, forget Twitter. You could look at just online courses that are public facing in some part, like there is a kind of.
+01:03:43
+Force that pulls you back, I would let me just call it off, because I don't give a damn at this point, there's a little bit of all of us have this, but certainly faculty have this, which is jealousy. Hmm. It's whoever is popular at being a good communicator, exciting the world with their science. And of course, when you excite the world with the science, it's not peer reviewed clean. It's it's it all sounds like bullshit.
+01:04:14
+It's like a TED talk. And people roll their eyes and they they hate that a TED talk gets millions of views or something like that, and then everybody pulls each other back. There's this force that just kind of it's hard to stand out unless you win a Nobel Prize or whatever. Like it's only when you get senior enough, we just stop giving a damn. But just like you said, even we get tenure. That was always the surprising thing to me.
+01:04:40
+I have many colleagues and friends who have gotten tenure, but there's not a switch.
+01:04:47
+Uh, you know, there's not f you money switch or you're like, you know what? Now I'm going to be more bold. It doesn't I don't see it.
+01:04:57
+Well, there's a reason for that. Tenure isn't a test. It's a training process. It teaches you to behave in a certain way, to think in a certain way, to accept certain values and to react accordingly, and the better you are that the more likely you are to earn tenure. And by the way, this is not a bad thing. Most things are like that. And I think most of my colleagues are interested in doing great work and they're just having impact in the way that they want to have impact.
+01:05:22
+I do think that as a field, not just as a field, as a profession, we have a habit of. Belittling those who are popular, as it were, as if the word itself is a kind of scarlet, a right, I think. It's easy to convince yourself and no one is immune to this, that the people who are better known are better known for bad reasons, the people who are out there dumbing it down are not being pure or to whatever the values and ethos is for your field.
+01:06:01
+And it's just very easy to do.
+01:06:03
+Now, having said that, I think that ultimately people who are able to be popular and out there and are touching the world and making a difference, you know, our colleagues do, in fact, appreciate that in the long run, it's just, you know, you have to be very good at it or you have to be very interested in pursuing it. And once you get past a certain level, I think people people accept that for who it is.
+01:06:25
+I mean, I don't know. I'd be really interested in how Rod Brooks felt about how people were interacting with him when he did fast, cheap and out of control way, way, way back when he was fast, cheap and out of it was a documentary that involved four people. I remember nothing about it other than Rod Brooks was in it.
+01:06:42
+And something about naked mole rats can't remember what the other two things were.
+01:06:47
+It was robots, naked mole rats and then two other. By the way, our books used to be the head of the Artificial Intelligence Laboratory at MIT and then the launched I think I robot and then think robotics rethink robotics. Yes or yes, I think is in the word and and also is a little bit of a rock star personality in the world, a very opinionated, very intelligent anyway. Sorry, Mallrats and naked naked mole rat. Also he was one of my true advisors for my.
+01:07:17
+So this explains a lot. I love it, but I also love my other advisor, Paul.
+01:07:24
+Paul, if you're listening, I love you too. Both very, very popular, Paul. Both very interesting people, very different in many ways. But I don't know what Rod would say to you about how what the reaction was. I know that for the students at the time I was a student at the time. It was amazing, right? This guy was on in a movie being very much himself. Actually, the movie version of him is a little bit more rod than Rod.
+01:07:50
+I mean, I think they they edited it appropriately for him, but it was very much Rod. And he did all this while doing great work to me. He was running an ad lab at that point and I don't know. But he was running the AI lab would be soon. He's a giant in the field. He did amazing things, made a lot of his bones by doing the kind of counterintuitive science. Right. And saying, no, you're doing this all wrong.
+01:08:10
+Representation is crazy. The world is your own representation. You just react. I mean, these amazing things and continues to do those those sorts of things as he's as he's moved on. I have I think he might tell you I don't know if he would tell you what's good or bad, but I know that for everyone else out there in the world, it was a good thing. And certainly he continued to be respected. So it's not as if it destroyed his career by being popular.
+01:08:32
+All right, let's go into a topic where I'm on thin ice, because I grew up in the Soviet Union, Russia, my my knowledge of music, this American thing you guys do is quite foreign.
+01:08:47
+So your research group is called, as we've talked about, the lab for interactive artificial intelligence. But also there's just a bunch of mystery around this. My research fails me also called P Funk. P stands for probabilistic. Mm hmm. And what does Funk stand for?
+01:09:08
+So a lot of my life is about making acronyms. So if I have one quirk is that people will say words and I see if they make acronyms and if they do, then I'm happy. And then if they don't, I try to change it so that they make acronyms. It's just a thing that I do. So P Funk is an acronym. It has three or four different meanings. But finally I decided that the P stands for probabilistic because at the end of the day it's machine learning and it's randomness and it's uncertainty, which is the important thing here.
+01:09:34
+And the fun can be lots of different things. But I decided I should leave it up to the individual to figure out exactly what it is.
+01:09:41
+But I will tell you that when my students graduate, when they get out, as we say at Tech, I hand them, they put on a hat and start glasses and a medallion from the P Funk era. And we take a picture and I hand them a pair of fuzzy dice, which they get to keep.
+01:10:02
+So there's a sense to which is not an acronym like literally funk. There is. You have a dark, mysterious past.
+01:10:11
+Mm hmm. Oh, it's not dark.
+01:10:14
+It's just fun as in hip hop and funk. So can you educate Soviet born Russian about this thing called hip hop?
+01:10:26
+Like if you were to give me, like, you know, went on a journey together and you were trying to educate me about especially the, you know, the past couple of decades in the 90s about hip hop or funk, what records or artists would you would you introduce me to?
+01:10:45
+Would you. Would you tell me about. Or maybe what influenced you in your journey or you just love like when when when the family's gone, you just sit back and just blast some stuff these days?
+01:11:00
+What do you listen to? Well, so I listen to a lot, but I will tell you. Well, first of all, great music was made when I was 14. And that statement is true for all people, no matter how old they are or where they lived. But for me, the first thing that's worth pointing out is that hit hip hop and rap aren't the same thing. So depending on who you talk to about this and there are people who feel.
+01:11:17
+Very strongly about this much stronger. You're offending everybody in this conversation. This is great. Let's get going. Pop culture. Yeah, it's a whole set of things of which rap is a part. So tagging is a part of hip hop. I don't know why that's true, but people tell me it's true and I'm willing to go along with it because they get very angry about it. But hip hop is like graffiti, tagging is like graffiti.
+01:11:36
+And there's all these, including the popping in the locking and all the dancing and all those things. That's all a part of hip hop. It's a way of life, which I think is true.
+01:11:43
+And then there's rap, which is this particular. It's the music part. Yes. You're a music producer. Yeah. I mean, you wouldn't call the stuff that deejays do, the scratching. That's not rap. Right. But it's a part of hip hop. Right. So given that we understand that hip hop is this whole thing, what are the rap albums that best touch that for me? Well, if I were going to educate you, I would try to figure out what you liked and then I would work you there.
+01:12:05
+Kinnaird Oh, my God.
+01:12:07
+Well, yeah, I would probably start with Led Zeppelin. There's a fascinating Zoids, OK?
+01:12:15
+There's a fascinating exercise one can do by watching old episodes of I love the 70s. I love the 80s. I love the 90s with a bunch of friends and just see where people come in and out of pop culture. So if you're talking about. Those people than I would actually start you with where I would hope to start with anyway, which is Public Enemy particularly, it takes a nation of millions to hold us back, which is clearly the best album ever produced and certainly the best hip hop album ever produced, in part because it was so much of what was great about the time.
+01:12:50
+Fantastic lyrics to me. It's all about the lyrics. Amazing music that was coming from Rick Rubin was the was the producer of that. And he did a lot of very kind of heavy metal ish, at least in the 80s sense at the time. And it was focused on politics in the 1980s, which was what made hip hop so great that I would start you there, then I would move you up through things that are been happening more recently.
+01:13:13
+I probably get you something like a Mos Def I I'll give you a history lesson. Basically, Mos Def, he hosted a poetry jam thing on HBO or something like that. Probably. I don't think I've seen it. I wouldn't be surprised. Spoken poetry. Yes, he's amazing. He's amazing. And then I would have to. I got you there. I'd walk you back to EPMD and eventually I would take you back to the last poet in particularly the first album, The Last Poets, which was 1970, to give you a sense of history, and that it actually has been building up over a very, very long time.
+01:13:45
+So we would start there because that's where your music aligns. And then we would cycle out and I'd move you to the present and then I take you back to the past. And because I think a large part of people who are kind of confused about any kind of music, you know, the truth is this is the same thing we've always been talking about, right? It's about narrative and being a part of something and being immersed in something.
+01:14:03
+So you understand that great jazz, which I also like, is one of the things cool about jazz, is that you come and you meet someone who's talking to you about jazz and you have no idea what they're talking about.
+01:14:14
+And then one day it all clicks and you've been so immersed in it, you go, Oh yeah, that's a Charlie Parker. Did you start using words that nobody else understands? Right. And it becomes part of hip hop the same way. Everything is the same way there are cultural artifacts. But I would help you to see that there's a history of it and how it connects to other genres of music that you might like to bring you in so that you could kind of see how it connects to what you already like, including some of the good work that's been done with fusions of hip hop and bluegrass.
+01:14:43
+Oh, no. Yes, some of it's even good. Not all of it, but some of it is good. But I'd start you with it takes a nation of millions of dollars back.
+01:14:53
+There's an interesting tradition and like more modern hip hop of integrating almost like classic rock songs or whatever, like integrating into the into their music, into the beat, into whatever. It's kind of interesting.
+01:15:07
+It gives a whole new and not just classic rock, but what is it, a kind of gold digger, the full time be taken in pulling old RB right in.
+01:15:18
+Well, that's been true since the beginning.
+01:15:20
+I mean, in fact, that's in some ways that's why the deejay used to get top billing because it was the deejay that brought all the records together and made it worth so that people could dance. If, you know, you go back you go back to those days, mostly in New York, though not exclusively, but mostly in New York, where it sort of came out of, you know, the deejay that brought all the music together in the beats and show that basically music is itself an instrument, very meta.
+01:15:43
+And you can bring it together and you sort of wrap over it and so on. And it sort of it moved that way.
+01:15:47
+So that's going way, way back now in the period of time where I grew up, when I became really into it, which was most of the 80s, it was more funk was the back for a lot of the stuff Public Enemy at that time notwithstanding. And so which is very nice because it tied into what my parents listen to and what I vaguely remember listening to when I was very small. So and by the way, complete revival of George Clinton and Parliament Funkadelic and all of those things to bring it sort of back into the 80s and into the 90s.
+01:16:17
+And as we go on, you're going to see, you know, the last decade and the decade before that being brought in. And when you don't think that you're hearing something you've heard, it's probably because it's being sampled by someone who. Referring to something they remembered when they were young, perhaps from somewhere else altogether together, and you just didn't realize what it was because it wasn't a popular song where you happen to grow up. So this stuff has been going on for a long time.
+01:16:42
+It's one of the things that I think is beautiful. Run DMC, Jam Master Jay used to play. He played piano. He would record himself playing piano and then sample that to make it a part of what was going on rather than play the piano.
+01:16:55
+That's how his mind can think. Well, it's pieces. You're putting pieces together. You put in pieces of music together to create new music. Right now, that doesn't mean that the route I mean, the roots are doing their own thing. Yeah, right. Those those are that's a whole. Yeah. But still it's the right attitude that you know. And what else is jazz.
+01:17:12
+Right. Jazz is about putting pieces together and then putting your own spin on it. It's all the same. It's all the same thing. All the same.
+01:17:17
+You know, because you mentioned lyrics. It does make me sad. Again, this is me talking trash about modern hip hop. I haven't, you know, investigate. I'm sure people correct me that there's a lot of great artists. That's part of the reason I'm saying it is don't leave it in the comments that you should listen to this person is the lyrics went away from talking about maybe not just politics, but life and so on.
+01:17:41
+Like you, you know, the kind of like protest songs, even if you look like a Bob Marley or he's a public enemy or Rage Against the Machine. More on the rock side.
+01:17:50
+There's the that's the place where we go to those lyrics like classic rock is all about like my woman left me or or I'm really happy that she's still with me.
+01:18:02
+Or the flip side is like love songs of different kinds.
+01:18:05
+It's all love, but it's less political, like less interesting, I would say, in terms of like deep, profound knowledge. And it seems like rap is the place where you would find that. And it's sad that for the most part, what I see, like you look like mumble, rap or whatever, they're moving away from lyrics and more towards the beat and the musicality of it. I've always been a fan of the lyrics. In fact, if you go back and you read my reviews, which I recently was reading, man, it's I wrote my last review the month I graduated, I got my poetry, which says something about something.
+01:18:39
+I'm not sure what, though I always wanted always, but often to start with, it's all about the lyrics. For me, it's all it's about the lyrics.
+01:18:47
+Someone has already written in the comments before I've even finished having this conversation that, you know, neither of us knows what we're talking about and it's all in the underground hip hop. And here's who you should go listen to. And that is true. Every time I despair for popular rap, someone points me to or I discover some underground hip hop song. And I'm I made happy and whole again. So I know it's out there. I don't listen to as much as I used to because I'm listening to podcasts and old music from the 1980s.
+01:19:15
+But it's a kind of no, no, beat it off. But, you know, there's a little bit of sampling here and there.
+01:19:21
+By the way, James Brown is functional. Yes. And so is Junior Wells, by the way, was that how Junior Wells, Chicago blues. He was James Brown before James Brown was? It's hard to imagine somebody being James Brown.
+01:19:33
+Go look up, demand blues, junior wells and just listen to snatch it back and hold it.
+01:19:41
+And you'll see it. They were contemporaries, where do you put, like Little Richard or all that kind of stuff like Ray Charles, like when they get, like, hit the road, Jack, and don't you come back. It's not like there's a funkiness in it. It's definitely a fucking the. I mean, it's all. I mean, it's all it's all alike. I mean, it's all there's all a line that carries it all together.
+01:20:01
+You know, it's I guess I have to answer your question, Pennyfather. I'm thinking about it in twenty twenty or I'm thinking about it in 1960. I probably give a different answer. I'm just thinking in terms of, you know, that was rock. But when you look back on it it's it was funky. Yeah. But we didn't use those words or maybe we did, I wasn't around. But you know, I don't think we use the word 1960 funk.
+01:20:21
+Certainly not the way we used it in the 70s, in the 80s. Do you reject disco? I do not reject disco. I appreciate all the mistakes that we have made to out there. And actually, some of the disco is actually really, really good.
+01:20:31
+John Travolta. Oh, boy, he regrets it. Probably not. Well, it's the mystery thing. Yes. And it got him to where he's going, where he is.
+01:20:41
+Oh, well, thank you for taking that detour. You've you've talked about competing. We've already talked about computing a little bit. But can you try to describe how you think about the world of computing where it fits into the set of different disciplines? We mentioned College of Computing. What what should people how should they think about computing, especially from an educational perspective of like what is the perfect curriculum? That defines for a young mind what computing is, so I don't know about a perfect curriculum, although that's an important question, because at the end of the day, without the curriculum, you don't get anywhere.
+01:21:19
+Curriculum to me is the fundamental data structure. It's not even the classroom instruction. It's a. I mean, the world is right.
+01:21:25
+I, I. So I think the Krikalev is where I like to play. So I spent a lot of time thinking about this. But I will tell you, I'll answer your question by answering a slightly different question first and getting back to this, which is, you know, you talked about discipline and what does it mean to to be a discipline? The truth is what we really educate people in from the beginning, but certainly through college sort of failed.
+01:21:46
+If you don't think about it this way, I think is the world. People often think about tools and tool sets. And when you're really trying to be good, you think about skills and skill sets. But disciplines are about mindsets right there, about fundamental ways of thinking, not just the the hammer that you pick up, whatever that is to hit the nail, not just the skill of learning how to hammer well or whatever. It's the mindset of like what's the fundamental way to think about how to think about the world.
+01:22:16
+Right.
+01:22:16
+And disciplines, different disciplines give you a different mindset to give you different ways of sort of thinking through. So with that in mind, I think that computing even ask the question, why is this one that you have to decide? Does it have a mindset? Does it have a way of thinking about the world that is different from, you know, the scientist who is doing discovery and using the scientific method as a way of doing it, or the mathematician who builds abstractions and tries to find sort of steady state truths about the abstractions that may be artificial, but whatever?
+01:22:44
+Or is it the engineer who's all about, you know, building demonstrably superior technology with respect to some notion of tradeoffs, whatever that means? Right. That's sort of the world that the world that you live in. What is computing? You know, how is computing different? I've thought about this for a long time, and I've come to a view about what computing actually is, what the mindset is. And and it's you know, it's a little abstract, but that would be appropriate for computing.
+01:23:07
+I think that what distinguishes the computational list from others is that he or she understands that models, languages and machines are equivalent. They're the same thing. And because it's not just a model, but it's a machine that is an executable thing that can be described as a language that means that it's dynamic. So it's not them, it is mathematical in some sense, in the kind of sense of abstraction, but it is fundamentally dynamic and executable with a mathematician is not necessarily worried about either the dynamic part.
+01:23:42
+In fact, whenever I tried to write something for mathematicians, they invariably demand that I make it static. And that's not a bad thing. It's just it's a way of viewing the world that truth is a thing, right? It's not a process that continually runs right. So that dynamic thing matters, that self reflection of the system itself matters. And that is what computing that is what computing brought us. So it is a science because it funds the models fundamentally represent truths in the world.
+01:24:08
+Information is a scientific thing to discover, right. Not just a mathematical conceit that that gets created, but of course, it's engineering because you're actually dealing with constraints in the world and trying to execute machines that that actually run. But it's also math because you're actually worrying about these languages to describe the describe describe what happening. But the fact that.
+01:24:31
+That regular expressions and finite state of time are one of which feels like a machine or at least an abstraction machine. The other is the language that they're actually the equivalent. I mean, that is not a small thing and it permeates everything that we do, even when we're just trying to figure out how to how to do debugging. So that idea, I think, is fundamental and we would do better if we made that more explicit.
+01:24:52
+How my life has changed in my thinking about this in the 10 or 15 years it's been since I tried to put that to paper with some colleagues is the realization which comes to a question you you you actually asked me earlier, which has to do with trees falling down and whether it matters is this sort of triangle of equality. It only matters because there's a person inside the triangle, right, that what's changed about computing, computer science, whatever you want to call it, is we now have so much data and so much computational power, we're able to do really, really interesting, promising things.
+01:25:33
+But the interesting and the promising kind of only matters with respect to human beings and their relationship to it. So the triangle exists that is fundamentally computing what makes it worthwhile and interesting and potentially world species changing is that there are human beings inside of it and intelligence that has to interact with it to change the date of the information that makes sense and gives meaning to the models, the languages in the machines. So if the curriculum can. Convey that while conveying the tools and the skills that you need in order to succeed, then it is a big win.
+01:26:09
+That's what I think you have to do. Do you pull psychology like these human things into that, into the idea, into this framework of computing people in psychology, neuroscience like parts of psychology, parts of neuroscience, parts of sociology. What about philosophy, like studies of human nature from different perspectives? Absolutely.
+01:26:30
+And by the way, it works both ways. So let's take biology for a moment. It turns out a cell is basically a bunch if then statements, if you look at it the right way, which is nice because I understand if then statements. I never really enjoyed biology, but I do understand if then statements and if you tell the biologist that and they begin to understand that, it actually helps them to to think about a bunch of really cool things.
+01:26:50
+They'll still be biology involved. But whatever. On the other hand, the fact of biology is in fact about the cell is a bunch of if then statements or whatever allows the computations to think differently about the language in the way that we. Well, certainly the way we would do our machine learning. But there's just even the way that we think about we think about computation. So the important thing to me is, as you know, my engineering colleagues who are not in computer science worry about computer science, eating up engineering colleges where computer science is trapped.
+01:27:19
+It's not a worry, you shouldn't worry about that at all. Computing is computer science, computing, it's not. It's central, but it's not the most important thing in the world. It's not more important. It is just key to helping others do other cool things they're going to do. You're not going to be a historian in 2030. You're going to go down in history without understanding some data science and computing, because the way you're going to get history done in part and I say done the way, going to get it done is you're going to look at data and you're going to let you're going to have a system that's going to help you to analyze things, to help you to think about a better way to describe history and to understand what's going on and what it tells us about where we might be going.
+01:27:54
+The same is true for psychology. Thank you for all of these things. The reason I brought that up is because the philosopher has a lot to say about computing. The psychologist has a lot to say about the way humans interact with computing. Right.
+01:28:05
+And certainly a lot about intelligence, which for me ultimately is kind of the goal of building these computational devices is to build something intelligent.
+01:28:14
+Did you think computing will eat everything in some sort of sense, almost like disappear? Because it's part of everything. It's so funny you say this. I want to say it's going to metastasize, but there's kind of two ways that fields destroy themselves. One is they become super narrow. And I think we can think of fields that might be that way, they become pure and we have that instinct, we have that impulse.
+01:28:37
+I'm sure you can think of several people who want computer science to be this pure thing the other way as you become everywhere and you become everything and nothing. And so everyone says, you know, I'm going to teach Fortran for engineers or whatever, I'm going to do this.
+01:28:52
+And then you lose the thing that makes it worth studying in and of itself. The thing about computing and this is not unique to computing, though, at this point in time, it is distinctive about computing. Where we happen to be in 2020 is we are both a thriving major.
+01:29:07
+In fact, the thriving nature, almost every place, and we are a service unit because people need to know the things we need to know and our job, much as the mathematician's job is to help, you know, this person over here to think like a mathematician, much the way the point is the point of view. Taking chemistry as a freshman is not to learn chemistry. It's to learn to think like a scientist. Right. Our job is to help them, to think think like a computational.
+01:29:32
+And we have to take both of those things very seriously. And I'm not sure that as a field, we have historically certainly taken the second thing that our job is to help them to think a certain way people are going to be. I don't think we've taken that very seriously at all.
+01:29:46
+I don't know if you know who Dan Carlin is. He has this podcast called Hardcore History. Yes, I just did it. Amazing for our conversation with him mostly about Hitler.
+01:29:56
+But I bring him up because he talks about this idea that it's possible that history as a field will become like currently, most people study history a little bit, kind of our aware of it. We have a conversation about it, different parts of it. I mean, there's a lot of criticism to say that some parts of history are being ignored and so on. But most people are able to have a curiosity and able to learn it. The his thought is it's possible, given the way social media works, the current way we communicate their history becomes a niche field where literally most people just ignore because everything is happening so fast that the history starts losing its meaning and then it starts being a thing that only, you know, like the theoretical computer science part of computer science, it becomes a niche thing that only like the rare holders of the the World Wars and, you know, all the history, the founding of the United States, all those kinds of things, the civil wars, and as a kind of profound thing, to think about how these how we can lose track, how can lose these fields when they're bust, like in the case of history, is best for that to be a pervasive thing that everybody learns and thinks about and so on.
+01:31:21
+Now, say computing is quite obviously similar to history in the sense that it seems like it should be a part of everybody's life to some degree, especially like as we move into the later parts of the 21st century. And it's not obvious that that's the way it'll go. It might be in the hands of the few still like it, depending if it's machine learning. You know, it's it's unclear that computing will win out. It's currently very successful, but it's not.
+01:31:51
+I would say that's something. I mean, you're at the leadership level of this. You're defining the future. So it's in your hands. No pressure. But like it feels like there's multiple ways this can go. And there's this kind of conversation of everybody should learn to code, write the changing nature of jobs and so on. Do you have a sense of. What your role? In education of competing is here like what's the hopeful path forward?
+01:32:23
+There's a lot there.
+01:32:24
+I will I will say that well, first off, it would be an absolute shame if no one studied history. On the other hand, as he approaches infinity, the amount of history presumably also growing, at least literally. And so it's you have to forget more and more of history, but history needs to always be there. I mean, I can imagine a world where, you know, if you think of your brains as being, you know, outside of your head, that you can kind of learn the history.
+01:32:48
+You need to know when you need to know it. That seems fanciful, but it's a it's a kind of way of, you know, is there a sufficient statistic of history? No. And there certainly but there may be for the particular thing you have to care about. But you know those who are our objective camera discussion, right? Yeah. And, you know, we've already lost lots of history. And, of course, you have your own history that some of which will be it's even lost to you.
+01:33:10
+Right. You don't even remember whatever it was you were doing 17 years ago. All the ex-girlfriends.
+01:33:15
+Yeah, they're gone. Exactly. So, you know, history is being lost anyway. But the big lessons of history shouldn't be.
+01:33:22
+And I think, you know, to take it to the question of computing and sort of education, the point is you have to get across those lessons. You have to get across the way of thinking, and you have to be able to go back and, you know, you don't want to lose the data even if, you know, you don't necessarily have the information at your fingertips with computing. I think it's somewhat different. Everyone doesn't have to learn how to code, but everyone needs to learn how to think in the way that you can be precise and I mean precise in the sense of repeatable, not just, you know, in the sense of not resolution, in the sense of get the right number of bits in saying what it is you want the machine to do and being able to describe a problem in such a way that it is executable, which we are not.
+01:34:06
+Human beings are not very good at that.
+01:34:08
+In fact, I think we spend much of our time talking back and forth just to kind of vaguely understand what the other person means and hope we get a good enough that we can we can act accordingly. You can't do that with machines, at least not yet. And so, you know, having to think that precisely about things is quite important, and that's somewhat different from coding. Coding is a crude means to an end.
+01:34:31
+On the other hand, the idea of coding, what that means, that it's a programming language and it has these sort of things that you fiddle with in these ways that you express, that is an incredibly important point. In fact, I would argue that one of the big holes in machine learning right now and an A.I. is that we forget that we are basically doing software engineering. We forget that we are doing we are using programming language, using languages to express what we're doing.
+01:34:56
+We get just all caught up in the deep network or we get all caught up in whatever that we forget that, you know, we're making decisions based upon a set of parameters that we made up. And if we did slightly different parameters, we'd have completely different different outcomes. And so the lesson of computer and computer science education is to be able to think like that and to be aware of it when you're doing it. Basically, it's, you know, day.
+01:35:18
+It's a way of surfacing your assumptions. I mean, we call them parameters or, you know, we call them if then statements or whatever, but you're forced to surface those those assumptions. That's the key. The key thing that you should get out of a computing education data and that the models, the languages of the machines are equivalent. But it actually follows from that, that you have to be explicit about about what it is you're trying to do because the model you're building is something you will one day run.
+01:35:45
+So you better get it right or at least understand it and be able to express roughly what you want to express.
+01:35:50
+So I think it is key that we figure out how to educate everyone to think that way, because at the end it would not only make them better at whatever it is that they are doing and I emphasize doing it will also make them better citizens and help them to understand what others are doing to them so that they can react accordingly. Because you're not going to solve the problem of social media insofar as you think of social media as a problem by just making slightly better code.
+01:36:24
+Right. It only works if people react to it appropriately and know what's happening and therefore take control over what they're doing. I mean, that's that's my take on. OK, let me try to proceed awkwardly into the topic of race. OK, one is because it's a fascinating part of your story and you're just eloquent and fun about it. And then the second is because we're living through a pretty tense time in terms of race tensions and discussions and ideas in this time in America.
+01:36:59
+You grew up in Atlanta, not born in Atlanta, it is some southern state, somewhere in Tennessee, somewhere nice.
+01:37:06
+OK, but early on you moved you basically you identify as an Atlanta native. Yeah. And you've mentioned that you grew up in a predominantly black neighborhood, by the way, black African-American person of color because of black, black with a capital, B with capital.
+01:37:30
+The other letters are the rest of them outside the capital.
+01:37:35
+OK, so the predominantly black neighborhood. And so you didn't almost see race. Maybe you can correct me on that. And then went just in the video you talked about when you showed up to Georgia Tech for your undergrad, you're one of the only black folks there. And that was like, oh, that was a new experience. Can you take to take me from just a human perspective, but also from a race perspective, your journey growing up in Atlanta and then showing up at Georgia Tech.
+01:38:06
+And by the way, that story continues through MIT as well. In fact, it was quite a bit more stark at MIT in Boston.
+01:38:13
+So maybe just a quick pause. Georgia Tech was undergrad at MIT, was a graduate school.
+01:38:18
+Mm hmm. And I went directly to grad school for undergrad. So I had no I had no distractions in between my bachelor's and master's and getting going on backpacking trip in Europe didn't do any of that. In fact, I literally went to IBM for three months, got in a car and drove straight to Boston with my mother.
+01:38:35
+Or Cambridge.
+01:38:36
+Yeah, moved into an apartment I never seen over the royal east.
+01:38:41
+Anyway, that's another story. So let me tell you a little bit about you, Mr. Mitty.
+01:38:45
+Oh, I love Dimity. I don't miss Boston at all, but I love them.
+01:38:49
+I teach them is fighting words. So let's back up to this, though. As you said, I was born in Chattanooga, Tennessee. My earliest memory is arriving in Atlanta and a moving truck at the age of three and a half. So I think of myself as being from a very distinct memory of that. So I grew up in Atlanta and the only place I ever knew was a kid. I loved it. Like much of the country and certainly much of Atlanta in the 70s and 80s, it was deeply, highly segregated, though not in a way that I think was obvious to you unless you were looking at it or were old enough to have noticed it.
+01:39:20
+But you could divide up Atlanta. And Atlanta is hardly unique in this way by highway, and you could get race and class that way. So I grew up not only in a predominately black area, to say the very least. I grew up on the poor side of that.
+01:39:35
+But I was very much aware of race for a bunch of reasons. One, that people made certain that I was my family did, but also that it would come up. So in first grade, I had a girlfriend. I say I had a girlfriend and have a girlfriend. I wasn't even entirely sure what girls were in the first grade.
+01:39:52
+But I do remember she decided that with her girlfriends, the white girl named Heather, and we had a long discussion about how it was OK for us to be boyfriend and girlfriend, despite the fact that she was white and I was black between the two of.
+01:40:04
+You mean between the two about this? Yes. But being a girlfriend and boyfriend in first grade just basically meant that you spent slightly more time together during recess. And it had no I mean, I think we Eskimo kissed once. Yeah, that doesn't mean it didn't mean anything. It was at the time it felt very scandalous because everyone was watching. I was like, oh, my life is now. My life has changed. In first grade, no one told me elementary school would be like, did you write poetry or not in first grade?
+01:40:29
+That would come later. Okay. I would come during puberty when I wrote lots and lots of poetry anyway. So so I was aware of it. I didn't think too much about it, but I was aware of it. But I was surrounded. It wasn't that I wasn't aware of race is that I wasn't aware that I was a minority. It's different, and it's because I wasn't as far as my world was concerned. I mean, I'm six years old, five years old in first grade.
+01:40:53
+The world is the seven people I see every day. I mean, you know, so so it didn't feel that way at all. And by the way, this being Atlanta home, the civil rights movement and all the rest, it meant that when I looked at TV, which back then one did, because there were only three, four or five channels. Right. And I saw the news, which my mother might make me watch.
+01:41:10
+You know, the Monica Kaufman was was on TV telling me news and they were all black and the mayor was black and always been black.
+01:41:18
+And so it just never occurred to me when I went to Georgia Tech, I remember the first day walking across campus from West Campus to his campus and realizing along the way that of the hundreds and hundreds and hundreds and hundreds of students that I was seeing, I was the only black one that was enlightening and very off-putting because it occurred to me. And then, of course, it continued that way for well, for the rest of my life, for much of the rest of my career.
+01:41:45
+Georgia Tech, of course, I found lots of other students and I met people because in Atlanta, you're either black or white. There was nothing else. So I began to meet students of Asian descent and I met students who we would call Hispanic and so on and so forth. And, you know, so my world, which is what college is supposed to do, right? It's supposed to open you up to people. And it did. But it was a very strange thing to be in the minority when I came to Boston.
+01:42:11
+I will tell you a story. I, I applied to one place as an undergrad, Georgia Tech, because I was stupid. I didn't know any better. I really didn't know any better. Right. No one told me. When I went to grad school, I applied to three places, Georgia Tech, because that's where it was, MIT and CMU. When I got in, Dimity, I. I got in to see him, you know, but I had a friend who went to see him, and so I asked him what he thought about it.
+01:42:40
+He spent his time explaining to me about Pittsburgh, much less about CMU, but more about Pittsburgh, which I developed a strong opinion based upon his strong opinion, something about the sun coming up two days out of the year. And I couldn't get a chance to go there because the timing was wrong. I think it's because the timing was wrong. And Amity, I asked 20 people I knew either when I visited or I had already known for a variety of reasons, whether they liked Boston and 10 of them loved it and 10 of them hated it.
+01:43:10
+The 10 who loved it were all white. The 10 who hated it were all black. And they explained to me very much why that was the case. Both deaths told me why this and the stories were remarkably the same for the two clusters. And I came up here and I could see it immediately why people would love it and why people would not.
+01:43:28
+And people tell you about the nice coffee shops and coffee shops. It was seedy. You see these places. But yeah, it was that kind of a thing. Nice shops. Oh, there's all these students here. Harvard Square is beautiful. You can do all these things and you can walk in something about the outdoors, which I wasn't the slightest bit interested in. The outdoors is for the bugs, not for humans. And the that should be a T-shirt.
+01:43:50
+I mean, it's the way I feel about the and the black folk told me a completely different story about which part of town you did not want to be caught in after dark. And and I heard all, but that was nothing new. So I decided that Mittie was a great place to be as a university, and I believed it then. I believe it now. And that whatever it is I wanted to do, I thought I knew what I wanted to do.
+01:44:13
+But what if I was wrong? Someone there would know how to do it, of course. Then I would pick the one topic that nobody was working on at the time.
+01:44:20
+But that's OK. It was great. And so I thought that I would be fine and not only be there for like four or five years, I told myself, which turned out not to be true at all. But I enjoyed my time. I enjoyed my time there. But I did see a lot of. I ran across a lot of things that were driven by what I look like while I was here, I got asked a lot of questions.
+01:44:41
+I ran into a lot of cops. I did a I saw a lot about the city. But at the time, I mean, I've been here a long time. These are the things that I remember. So this is 1990. There is not a single. Black radio station now this is 1990, there are I don't know if there are any radio stations anymore. I'm sure there are. But, you know, I don't listen to the radio anymore and almost no one does, at least if you're under a certain age.
+01:45:07
+But the idea is you could be in a major metropolitan area and there wasn't a single black radio station by which I mean a radio station to play in what we would call black music, that was absurd, but somehow captured kind of everything about about the city.
+01:45:20
+I grew up in Atlanta. And, you know, you've heard me tell you about Atlanta. Boston had no economically viable or socially cohesive black middle class insofar as it existed, it was uniformly distributed throughout large parts of not all parts, but large parts of the city. And we had concentrated concentrations of black Bostonians. They tended to be poor. It was very different from where I grew up. I grew up on the poor side of town. Sure.
+01:45:48
+But then in high school, well, in ninth grade, we didn't have middle school. I went through an eighth grade school where there was a lot of let's just say we had a riot. The year that I was there, there was at least one major fight every week. It was it was it was a it was an amazing it was an amazing experience. But when I went to ninth grade, I went to the Academy in math and Math and Science Academy.
+01:46:10
+Many was a public school, was a magnet school. That's why I was able to go there. It was the first school, high school, I think, in the state of Georgia to sweep the state math and science fairs. It was great.
+01:46:21
+It had. Three hundred and eighty five students, all but four of them were black. I went to school with the daughter of the former mayor of Atlanta, Michael Jackson's cousin. I mean, you know, there was it was an upper middle class name. You know, I just drop names occasionally, you know, drop the microphone names just to let you know, I used to hang out with Michael Jackson's cousin. Well, cousin nine times removed.
+01:46:46
+I don't know if the point is that we had a parking problem because the kids are cars did not come from a place where where you had cars. I had my first car when I came to my actually.
+01:46:55
+So it was a it was just a it was just a very, very, very difficult experience for me. But I'd been to places where whether you were rich or whether you were poor, you know, you could be black and rich or black or poor. And it was there and there were places and there were segregated. My class, as well as my race, but that existed here, at least when I was here, didn't feel that way at all, and it felt like a bunch of a really interesting contradiction.
+01:47:22
+It felt like it was the interracial dating capital of the country. Yeah, you really felt that way, but it also felt like the first place I have respected it. You know, you couldn't go up the orange line at that time. I mean, you can that was 30 years ago. I don't know what it's like now, but there were places you couldn't go and you knew it. Everybody knew it and there were places you couldn't live and everybody knew that.
+01:47:50
+And that was just the greater Boston area in 1992. Subtle racism or explicit racism, both in terms of within the institutions.
+01:47:59
+Did you feel. Was it was there a levels in which you were empowered to be first or one of the first? Black people in a particular discipline in some of these great institutions that you were part of, you know, Georgia Tech and MIT and was their part, where was he felt limiting? I always felt empowered.
+01:48:22
+Some of that was my own delusion, I think. But it worked out so I never felt was, in fact, quite the opposite. Not only did it not feel as if no one was trying to stop me, I had the distinct impression that people wanted me to succeed my people. I met the people in power, not my fellow students, not they didn't want me to succeed, but I felt supported or at least that people were happy to see me succeed at least as much as anyone else.
+01:48:52
+But, you know, 1990, you're dealing with a different set of problems, which you're you're very early, at least in computer science. You're very early in the sort of Jackie Robinson period. You know, there's this thing called the Jackie Robinson syndrome, which is that you you have to you know, the first one has to be perfect or has to be sure to succeed, because if that person fails, no one else comes after for a long time.
+01:49:13
+So, you know, it was kind of in everyone's best interest, but I think it came from a sincere place. I'm completely sure that people went out of their way to try to make certain that the environment would be good, not just for me, but for the other people who, of course, were around then. I was hardly the I was the only person in the lab that I wasn't the only the only person in committee by a long shot, on the other hand, or what at that point we would have been, what, less than 20 years away from the first black D to graduate from MIT, Shirley Jackson.
+01:49:44
+Right. 1971, something like that somewhere around then. So we weren't that far away from the first first and we were still another eight years away from the first black experience. Right. So we were in it was it was sort of interesting time, but I did not feel as if the institutions of the university were. Against any of that, and furthermore, I felt as if there was enough of a critical mass across the institute from students and probably faculty that I didn't know them, who wanted to make certain that the right thing happened.
+01:50:19
+That's very different from the institutions of the rest of the city, which I think were designed in such a way that they felt no need to be supported.
+01:50:28
+Let me ask a touchy question. And that so. You kind of said that you didn't feel. You felt empowered. Is there some lesson advice in the sense that no matter what, you should feel empowered, you should you said you used the word, I think, illusion or delusion?
+01:50:51
+Mm hmm.
+01:50:52
+Is there a sense from the individual perspective where you should always kind of ignore, you know, the the.
+01:51:07
+Ignore your own eyes, ignore the the the little forces that you are able to observe around you, they're like trying to mess with you of whether it's jealousy, whether it's hatred in its pure form, whether it's just hatred and it's like diluted form, all that kind of stuff, and just kind of see yourself as empowered and confident, all those kinds of things.
+01:51:30
+I mean, it certainly helps, but it's there's a tradeoff, right? You have to be deluded enough to think that you can succeed. I mean, you can't get a Ph.D. unless you're crazy enough to think you can invent something that no one else has come up with. I mean, that kind of massive delusion is that you have to be deluded enough to believe that you can succeed despite whatever odds you see in front of you. But you can't be so deluded that you don't think that you need to step out of the way of the oncoming train.
+01:51:51
+Right. So it's all a tradeoff, right? You have to kind of believe in yourself. It helps to have a support group around you in some way or another. I was able to find that I've been able to find that wherever I've gone, even if it wasn't necessarily on the floor that I was in, I had lots of friends when I was here. Many of them still live here and I've kept up with many of them. So I felt supported.
+01:52:11
+And certainly I had my mother in my family and those people back home. I always I can always lean back on, even if it were a long distance call that cost money, which, you know, not something that any of the kids didn't even know what I'm talking about. But, you know, back then it mattered. Calling my mom was an expensive proposition. But, you know, you have that and it's fine. I think it helps.
+01:52:29
+But you cannot be so deluded that you miss the obvious because it makes things slower and it makes you think you're doing better than you are and it will hurt you in the long run. You mention cops, you tell a story of being pulled over, perhaps it happened more than once, more than once. Officer one Could you tell that story? And in general, can you give me a sense of what the world looks like when the when the law doesn't always look at you with.
+01:53:04
+The blank slate. What, like with a. With objective eyes, I don't know how to say it more poetically. Well, I guess the I don't either. I guess the the answer is it looks exactly the way it looks now, because this is the world that we happen to live in. Right. It's people clustering and doing the things that they do and making decisions based on and, you know, one or two bits of information they find relevant, which, by the way, are positive feedback loops, which makes it easier for you to believe what you believed before because you'd behave in a certain way that makes it true.
+01:53:40
+And it goes on in circles and cycles and cycles in the cycle.
+01:53:43
+So it's just about being on edge. I do not, despite having made it over 50 now. My graduation is my card. I have a few gray hairs here and there, he did pretty good. I think, you know, I don't imagine I will ever see a police officer and I get very, very tense. Now, everyone gets a little tense because that probably means you're being pulled over for speeding or something where you're going to get a ticket or whatever.
+01:54:14
+Right. I mean, the interesting thing about the law in general is that most human beings experience of it is fundamentally negative. Right. You're only dealing with a lawyer if you're in trouble, except in a few very small circumstances. Right. But so that's just that's an annoying reality.
+01:54:30
+Now, imagine that that's also at the hands of the police officer. I remember at the time when I was when when I got pulled over that time halfway between Boston and Wellesley, actually, I remember thinking.
+01:54:45
+As when he pulled his gun on me, that if he shot me right now, he'd get away with it. That was the worst thing that I felt about that particular moment, is that if he shoots me now, he will get away with it. It would be years later when I realized actually much worse than that is that he'd get away with it. And if anyone if it became a thing that other people knew about, work would be, of course, that it wouldn't.
+01:55:13
+But if it became a thing that other people knew about, if I was living in today's world as opposed to the world 30 years ago, that not only to get away with it, but that I would be painted a villain has probably big and scary, and I probably move too fast. And from I had done what he said and that I did not at all, which is somehow worse. Right. You you know, that hurts not just you, your dad, but your family and the way people look at you and look at your legacy or your history, that's terrible.
+01:55:41
+And it would work. I absolutely believe it would have worked had he done it. He didn't. I don't think he wanted to shoot me. The killing anybody did not go out that night expecting to do that or planning on doing it. And I wouldn't be surprised if he never, ever did that or ever even pulled his gun again. Know the man's name? I remember anything about him. I do remember the gun. Guns are very big when they're in your face.
+01:56:00
+I can tell you this much, much larger than they think. But and you're basically like speeding or something like that. He said, I ran a light. I ran a light. I don't think I ran a light. But, you know, in fact, I may not have even gotten a ticket. I may have just gotten a warning. I think he was a little. But he pulled a gun. Yeah. Apparently I moved too fast or something.
+01:56:18
+Rolled my window down before I shoot it. It's unclear. I think he thought I was going to do something, or at least that's how he behaved.
+01:56:25
+So how if we can take a little walk around your brain. How do you feel about that guy and how do you feel about cops? Well, I don't have that experience. Well, I don't remember that guy, but my views on police officers is the same view I have about lots of things. Fire is an important and necessary thing in the world. But you must respect fire because it will burn you. Fire is a necessary evil in the sense that it can burn you necessary in the sense that, you know, heat and all the other things that we use fire for.
+01:57:03
+So when I see a cop, I see a giant ball of flame. And I just try to avoid it and then some people might see a nice place, a nice thing to roast marshmallows with a family over, which is fine, but I don't roast marshmallows.
+01:57:21
+Okay, so me go a little dark. And I just talked to Dan Carlin about four hours.
+01:57:25
+So if I sorry if I go dark here a little bit but. Is it easy for that, this experience of just being careful with the fire and avoiding it to turn to hatred? Yeah, of course.
+01:57:40
+And one might even argue that it is a a logical conclusion. Right on the other end, you've got to live in the world and. I don't think it's helpful, hate is something one should hate, hate is something that takes a lot of energy, so one should reserve it for when it is useful and not carry it around with you all the time.
+01:58:04
+Again, there's a big difference between the happy delusion that convinces you that you can actually get out of bed and make it to work today without getting hit by a car. And the sad delusion that means you can not worry about this car that is barreling toward you. Right? So we all have to be a little deluded because otherwise we're paralyzed. Right. But one should not be ridiculous. We go all the way back to something you said earlier about empathy.
+01:58:32
+I think what I would ask other people to get out of this one of many, many, many stories is to recognize that it is real. People would ask me to empathize with the police officer. I would call back statistics saying that, you know, being a police officer, a police officer, isn't even in the top 10 most dangerous jobs in the United States. You're much more likely to get killed in a taxicab. Half of police officers are actually killed in by suicide, but that means their lives are something something's going on there with them.
+01:59:08
+And I would be more than happy to be empathetic about what it is they go through and how they they see the world. I think, though, that if we step back from what I feel, if we step back from what an individual police officer feels, you step up a level and all this because all things tie back into interactive. They are. The real problem here is that we've built a narrative. We built a big structure that has made it easy for people to put themselves into different parts in the different clusters and to.
+01:59:38
+Basically, forget that the people in the other clusters are ultimately like them, it is useful exercise to ask yourself sometimes. I think that if I had grown up in a completely different house and a completely different household is a completely different person, if I had been a woman, would I see the world differently? What I believe with that crazy person over their believes and the answer is probably yes, because after all, they believe it and fundamentally they're the same as you.
+02:00:05
+So then what can you possibly do to fix it? How do you fix Twitter if you think Twitter needs to be broken or Facebook if you think Facebook is broken, how do you fix racism? How do you fix any of these things? That's all structural, right?
+02:00:19
+It's not. I mean, individual conversations matter a lot, but you have to create structures that allow people to have those individual conversations all the time in a way that is relatively safe and that allows them to understand that other people have had different experiences. But that ultimately were the same, which sounds very I don't even know what the right word is. I'm trying to avoid words like saccharine. But, you know, it's it feels very optimistic. But I think that's OK.
+02:00:49
+I think that's a part of the delusion is you want to be a little optimistic and then recognize that the hard problem is actually setting up the structures in the first place because no one's it's in almost no one's interest to change the infrastructure right now.
+02:01:01
+I tend to believe that leaders have a big role to that of selling that optimistic delusion to everybody and that eventually leads to the building of the structures. But that requires a leader that unites sort of unites everybody and a vision as opposed to divides and a vision, which is this particular moment in history feels. Like, there's a non-zero probability if we go to the P of something akin to a violent or a nonviolent civil war. This is one of the most divisive periods of American history in recent years, you can speak to this from a perhaps a more knowledgeable and deeper perspective than me.
+02:01:45
+But from my naive perspective, this seems like a very strange time. There's a lot of anger. Mm hmm.
+02:01:52
+And it has to do with people, I mean, for many reasons. One thing that's not spoken about, I think much is the quiet economic pain of millions. That's a growing because of covid, because of closed businesses, because of like laws, dreams. So that's building whatever that tension is as building the others. There is seems to be an elevated level of emotion. I'm not sure if you can psychoanalyze where that's coming from, but this sort of from which the protests and so on percolate, it's like, why now?
+02:02:29
+Why this particular moment in history? Oh, because time enough time has passed. I mean, you know, the very first race riots were Boston not to draw anything, really. One oh, this is before going way. I mean like the seventeen hundreds or whatever. I mean there was a mass at York. I mean I'm talking way, way, way back where. So Boston used to be the hotbed of riots.
+02:02:48
+It's just what Boston was all about or so I'm told from history. Class is an interesting one in New York. I remember when that was.
+02:02:56
+Anyway, the point is. You know, basically, you got to get another generation old enough to be angry, but not so old to remember what happened the last time, right?
+02:03:08
+Yeah, and that's sort of what happens. But, you know, you guys you said like to completely you said two things there that I think are worth unpacking. One has to do with this sort of moment in time. And you know, why, why is this sort of uphill and the other has to do with a kind of you sort of the economic reality of it, I'm actually able to separate those things because, for example, you know.
+02:03:33
+This happened before covid happened, right? So let's separate these two things from. Now, let me preface this by saying that although I am interested in history, one of my three miners is an undergrad with history, specifically history of the 1960s.
+02:03:50
+Interesting. The other was Spanish. And that's a mistake. And I love my country and history of Spanish and Spanish history, actually. But Spanish and the other was what we would now call cognitive science at the time. That's fascinating. Interesting, I might add, in Coxie here for grad school. That was really. That was really fascinating. It was a very different experience from all the computer science classes I've been taking. Even the Coxie classes I was taking it taking at an undergrad.
+02:04:18
+Anyway, I'm not I am a I'm interested in history, but I'm hardly a historian. So, you know, forgive my myself. I will ask the audience to forgive my my simplification, but. I think the question that's always worth asking, as opposed to it's the same question, but a little different not why now, but why not before. Right. So why the 1950s, 60s civil rights movement as opposed to the 1930s, 1940s? Well, first off, there was a civil rights movement, the 30s and 40s.
+02:04:54
+It just wasn't of the same character or quite as well-known post-World War Two. Lots of interesting things were happening. It's not as if a switch was turned on and Brown versus the Board of Education or the Montgomery bus boycott. And that's been happening. These things have been building up forever and can go all the way back, all the way back in, all the way back. And, you know, Harriet Tubman was not born in 1950. Right.
+02:05:15
+So, you know, we can take these things. They could have easily happened after right after World War two.
+02:05:19
+Yes, I think. And again, I'm not a scholar. I think that the big difference was TV. These things are visible. People can see them there. It's hard to avoid right there. You know, why not? James Farmer, why Martin Luther King? Because one was born 20 years after the other. Whatever I think. It turns out that, you know, King's biggest failure was in the early days was in Georgia, you know, they were doing some doing the usual thing, trying to trying to integrate.
+02:05:56
+And I forget the guy's name, but you can look this up. But he he copied.
+02:06:02
+The sheriff made a deal with the whole state of Georgia. We're going to take people and we are going to nonviolently put them in trucks and then we are going to take them and put them in jail is very far away from here. We're going to do that. And we're not going to there'll be no reason for the press to hang around. And he did that and it worked. And the press left and nothing changed. So next I went to Birmingham, Alabama, and Bull Connor and you got to see on TV little boys and girls being hit with fire hoses and being knocked down.
+02:06:34
+And there was outrage and things changed. Right. Part of the delusion is pretending that nothing bad is happening that might force you to do something big you don't want to do, but sometimes it gets put in your face and then you kind of can't ignore it. And a large part, in my view of what happened right, was that it was too public to ignore how we created other ways of ignoring it. Lots of change happened in the South, but part of that delusion was that it was going to affect the rest of the Northeast.
+02:07:00
+Of course it did. And that caused its own set of problems, which went into the late 60s and the 70s and, you know, some ways of living with that legacy now and so on.
+02:07:08
+So why not what's happening now? Why didn't happen 10 years ago? I think it's people have more voices. There's not just more TV. There's social media. It's very easy for these things to kind of build on themselves. And things are just quite visible.
+02:07:25
+And there's demographic change. I mean, the world is changing rapidly. Right. And so it's very difficult. You're now seeing people you could have avoided seeing most of your life growing up in a particular time. And it's happening. It's dispersing at a speed that is fast enough to cause concern for some people, but not so fast to cause massive negative reaction. So that's that, on the other hand.
+02:07:47
+And again, that's a massive oversimplification, but I think there's something there anyway, at least something worth exploring. I'm happy to be yelled at by a real historian.
+02:07:54
+So, yeah, I mean, there is just the obvious thing. I mean, I guess you're implying but not saying is I mean, it seems to have percolated the most was just a single video, for example, the George Floyd. I think the difference makes makes it as fascinating to think that that whatever the mechanisms that put injustice in front of our face, not like the like directly in front of our face, those mechanisms are the mechanisms of change.
+02:08:23
+On the other hand, Rodney King. So no one remembers this. I seem to be the only person who remembers this. But sometime before the Rodney King incident, there was a guy who was a police officer who was saying that things were really bad in Southern California and he was going to prove it by having some news. Some camera people follow him around and he says, I'm going to go into these towns and just follow me for a week and you will see that I get harassed.
+02:08:47
+And like the first night he goes out there and he crosses into the city, some cops pull him over and he's a police officer. Remember, they don't know that. Of course, they, like, shove his face through a glass window. This is on the news. Like, I distinctly remember watching this as a kid, actually, because I wasn't a kid.
+02:09:03
+I was I was in college at 2000 grad school all the time.
+02:09:05
+So it's not enough. Like, just just just well, it disappeared like a day. Like it didn't go viral. Whatever that is, whatever that magic thing and whatever was in 92 is harder to go viral in 92 or 91 actually must have been 1991, but that happened in like two days later. It's like it never happened.
+02:09:23
+Like nobody again. Nobody remembers this. Like the only person that I think I must have dreamed it anyway. Rodney King happens.
+02:09:29
+It goes viral or the moral equivalent thereof at the time. And eventually we get April 29. Right. And I don't know what the difference was between the two things other than the one thing called on. One thing that maybe what's happening now is two things are feeding on one another. One is more people are willing to believe and the other is there's easier and easier ways to give evidence. Yeah, Cameron's body cams, but we're still finding ourselves telling the same stories, the same thing all over again, I would invite you to go back and read the op ed from what people were saying about the violence is not the right answer.
+02:10:07
+After Rodney King and then go back to 1980 and the big riots that were happening around then and read the same OP, it's the same words over and over and over again. I mean, there's your remembering history right there. I mean, like literally the same words, like you could have just kind of I'm surprised no one got flack for plagiarism. It's interesting if you have an opinion on the question of violence and the popular perhaps caricature of Malcolm X versus which is King, Martin Luther King, you know, Malcolm X was older than Martin Luther King.
+02:10:36
+People kind of have it in their head that he's younger. Well, he he he died sooner. Right. But only by a few years. Right. People think of him as the older statesman and they think of Malcolm X as the young, angry, whatever. But that's more of a narrative device. It's not true at all.
+02:10:54
+I don't I just I reject that choice as I think it's a false choice.
+02:11:00
+I think they're just things that happen. You just do as I said, hatred is not it takes a lot of energy. But, you know, everyone's going to have to fight. One thing I will say, without taking a moral position. Which I will not take on this matter, um. Violence has worked. Yeah, that's the annoying thing, that's the only thing it seems like over-the-top anger works, outrage works. So you can you can say I like being calm and rational and just talking it out is going to lead to progress.
+02:11:37
+But it seems like if you just look through history, being irrationally upset is the way you make progress.
+02:11:47
+Well, it's certainly the way that you get someone to notice you. Yeah, and that's it. And if they don't notice you, I mean, what's the difference between that? And again, without taking a moral position on this, I'm just trying to observe history here. If you maybe if television didn't exist, the civil rights movement doesn't happen or takes longer or it takes a very different form, maybe if social media doesn't exist, a whole host of things.
+02:12:08
+Yeah, positive and negative don't happen. Right. So and what do any of those things do other than. Expose things to people. Yeah, violence is a way of shouting, I mean, many people far more talented and thoughtful than I have. I have said this in one form or another. I hope that, you know, violence is the voice of the unheard, right. I mean, it's it's it's a thing that people do when they feel as if they have no other option.
+02:12:36
+And sometimes we agree and sometimes we disagree. Sometimes we think they're justified. Sometimes we think they are not. But regardless, it is a way of shouting. And when you shout, people tend to hear you, even if they don't necessarily hear the words that you're saying, they hear that you you were shouting. I see. No way.
+02:12:55
+So another way of putting it, which I think is less let us just say provocative that I think is true, is that. All change, particularly change, that impacts power, requires struggle. The struggle doesn't have to be violent. You know, but it's a struggle nonetheless. The powerful don't give up power easily. I mean, why should the. But even so, he still has to be. And by the way, this isn't just about, you know, violent political or whatever, a non-violent political change is true for understanding calculus, right?
+02:13:32
+I mean, everything requires a struggle. Back to talking about faculty hiring at the end of the day. In the end today, it all comes down to faculty Harry Potter theme. All metaphore faculty argue the metaphor for all of life.
+02:13:44
+Let me ask you a strange question. Do you have a do you think everything is going to be OK in the next year? Do you ever hope for. Do you ever hope that we're going to be OK?
+02:13:57
+I tend to think that everything's going to be OK because I just tend to think that everything's going to be OK. My mother says something to me a lot and always has. And and I find it quite comforting, which is this too shall pass and this too shall pass. Now this too shall pass. It's not just a there's bad things going away. Everything passes. I mean, I have a 16 year old daughter who's going to go to college probably about 15 minutes, given how fast she seems to be growing up.
+02:14:25
+And, you know, I get to hang out with her now, but one day I won't. She'll ignore me just as much as I ignored my parents when I was in college and went to grad school. This, too, shall pass. But I think that, you know, one day we're all lucky.
+02:14:36
+We live long enough to look back on something that happened a while ago, even if it was painful. And mostly it's a memory. So, yes, I think I think it'll be OK. What about humans? Do you think we'll. We'll live into the 21st century is the only hope, so are you worried about. Are you worried that we might destroy ourselves with nuclear weapons, with a guy with engineer?
+02:15:00
+I'm not worried about Ajai doing it, but I am worried. I mean, at any given moment. Right. But, you know, at any given moment, a comic I mean, you know, whatever. I didn't think that outside of things completely beyond our control. We have a better chance than not of making it. You know, I talked to Alex Topinka from from Berkeley. He was talking about comments and then they can come out of nowhere.
+02:15:24
+And that was the realization to me, wow, where we're just watching this darkness and they can just enter and then we have less than a month.
+02:15:34
+And yet you make it from day to day that one shall not.
+02:15:40
+Well, maybe for Earth will pass, but not for humans. But I'm just I'm just choosing to believe. Yeah. That it's going to be OK and we're not going to get hit by an asteroid, at least not while I'm around. And if we are. Well, there's very little I can do about it, so I might as well assume it's not going to happen.
+02:15:56
+It makes food taste better. It makes food taste better. So you out of the millions of things you've done in your life, you've also began the This Week in Black History calendar affects.
+02:16:10
+There's just like a million questions you can ask here. You said you're not a historian, but is there?
+02:16:18
+Let's start at the big history question of is there somebody in in history, in black history that you draw a lot of? Philosophical or personal inspiration from or you just find interesting or a moment in history you find interesting?
+02:16:35
+Well, I find the the entirety of the 40s to the 60s and the civil rights movement that didn't happen and did happen at the same time during then. Quite inspirational. I mean, I've I've I've read quite a bit of the time period I did in my younger days when I had more time to read as many things as I wanted to. What was quirky about this week in my history when I started in the 80s was how focused it was.
+02:17:03
+It was because of the sources I was dealing from and I was very much stealing from like I think calendared anything I could find. Google didn't exist, right. And I just pulled as much as I could and just put it together in one place for other people. What ended up being quirky about it? And I started getting people sending me information when I was the inventors, people who, you know, cared more to Benjamin Banneker, people who were inventing things.
+02:17:30
+At a time when. How in the world did they mention anything like all these other things were happening, the necessity? Right, all these other things are happening. And, you know, there were so many terrible things happening around them and, you know, they went to the wrong state at the wrong time. They may never, never come back, but they were inventing things we use. Right. And it was always inspiring to me that people would still create even under those circumstances.
+02:17:55
+I got a lot out of that. I also learned a few lessons. I think, you know, the trials were tragedies of the world. You know, you. You you create things that impact people, you don't necessarily get credit for them, and that's not right, but it's also OK, you're OK with that up to a point now. I mean, look, in our world, are we really have this credit?
+02:18:20
+I was always bothered by how much value credit is given, but the only thing you got I mean, if you're an academic in some sense, no, it isn't the only thing you've got, but it feels that way sometimes.
+02:18:30
+But you got the actual we're all going to be dead soon. You got the joy of having created the, you know, the credit region, going to talk to your instrument, whoever write the Turing Award given to three people for deep learning.
+02:18:48
+And you could say that a lot of other people should be on that list. It's the Nobel Prize question. Yeah, it's sad. It's sad. And people like talking about it, but I feel like. In the long arc of history, the only person who will be remembered is Einstein. Hitler may be all Musk and the rest of us are just like, well, you know, someone asked me about immortality once and I said, and I stole this from somebody else.
+02:19:13
+I don't remember who. But it was you know, I asked him, what's your great grandfather's name? Any of. Of course, they don't know most of us do not know, I mean, I'm not entirely sure I know my grandparents, all my grandparents names. I know what I called them. Right. I don't know their middle names, for example. Then within living memory, I could find out actually, my grandfather didn't know when he was born at night how old he was.
+02:19:39
+Right, but I definitely don't know any of my great grandparents are. So in some sense, immortality is doing something preferably positive so that your great grandchildren know who you are. Right. And that's kind of what you can hope for. Which is very depressing in some ways, you could I could turn it into something uplifting if you need me to. But can you do the work here? Yeah, it's it's it's simple, right? It doesn't matter.
+02:20:02
+I don't have to know. My great grandfather was to know that I wouldn't be here without him. Yeah. And I don't know who my great grandchildren are. Certainly my great great grandchildren are. Probably never meet them, although I would very much like to. But hopefully I'll set the world in motion in such a way that their lives will be better than they would have been if I hadn't done that. Well, certainly they wouldn't have existed if I hadn't done the things that I did.
+02:20:25
+So I think that's a good, positive thing. You live on through other people. Are you afraid of death? I don't know if I'm afraid of death, but I don't like it either.
+02:20:39
+I mean, do you ponder it? Do you think about the the inevitability of oblivion?
+02:20:45
+Yes, I do. Occasionally. This feels like a very rushing conversation, actually. Yeah. I will tell you a story. Very something happened to me.
+02:20:53
+I if you look very carefully, you'll see I have a scar. Yes. Which, by the way, is an interesting story of its own about why people have half of their thyroid taken out. Some people get scars and some don't.
+02:21:04
+But anyway, I, uh, I had half my thought were taken out.
+02:21:08
+The way I got there, by the way, is its own interesting story, but I won't go into it. Just suffice it to say, I did what I keep telling people should never do, which is never go to the doctor unless you have to, because there's nothing good that's ever going to come out of a doctor's visit. Right. So I went to the doctor to do look at one thing. It's a little bump I had on the side that I thought my might be something bad because my mother made me and I went there and he's like, oh, it's nothing.
+02:21:27
+But by the way, your thyroid is huge. Can you breathe? Yes, I can breathe. You sure? Because it's pushing on your windpipe. You should be dead. Right.
+02:21:33
+So I end up going there and to get my to look at my thyroid, it was growing. I was called a goiter and he said, we're going to take it out at some point. When sometime before you. Eighty five probably. But way to your eighty five. That'll be really bad because you don't want to have surgery when you're eighty five years old if you can help, but certainly not that kind of surgery it takes to take out your, your thyroid.
+02:21:56
+So I went there and we decided I would decide I'd put it off until December 19th because my birthday's December 18th and I want to be able to say I made it to forty nine or whatever. So I said I'll wait till after my birthday.
+02:22:10
+In the intervening in the first six months of that, nothing changed. Apparently in the next three months it had grown. I had noticed this at all.
+02:22:22
+I had surgery. They took out half of it. The other half is still there and working fine. By the way, I don't have to take a pill or anything like that. It's great. I'm in the hospital room and the doctor comes in. I've got these things on my arm. They're going to they're going to do whatever they're talking to me. And the anesthesiologist says, huh, your blood pressure's through the roof. Are you do you have high blood pressure?
+02:22:44
+I said no, but I'm terrified if that helps you at all. And the anaesthetist who's the nurse who supports the anesthesiologist, I got that right. I said, oh, don't worry about I've just put some put some stuff in your I.V. You're gonna be feeling pretty good in a couple of minutes. And I remember turning and saying, well, I'm going to feel pretty good in a couple of minutes. Next thing I know, there's this guy and he's moving my bed and I have this and he's talking to me.
+02:23:08
+And I have this distinct impression that I've met this guy and I shouldn't know what he's talking about, but I kind of like just don't remember what just happened.
+02:23:18
+And I look up and I see the tiles going by and I'm like, oh, it's just like in the movies where you see the tiles go by and then. I have this brief thought that I'm in an infinitely long warehouse and there's someone sitting next to me and I remember thinking, oh, she's not talking to me.
+02:23:35
+And then I'm back in the hospital bed. And in between the time where the towels were going by and I got in the hospital bed, something like five hours had passed.
+02:23:46
+Apparently it had grown so much that it was a four and a half hour procedure instead of an hour long procedure I lost. Next year and a half is pretty big, apparently is as big as my heart. Why am I telling you this? I'm telling you this because it's a hell of a story already.
+02:24:02
+We tilles going by and me waking up in my hospital bed. No time passed. There was no sensation of time passing when I go to sleep. But I wake up in the morning. I have this feeling that time has passed and this feeling that something has physically changed about me, nothing happened between the time they put the magic juice in me and the time that I woke up. Nothing, by the way, my wife was there with me talking.
+02:24:29
+Apparently, I was also talking. I don't remember any of this, but luckily I didn't say anything. I would normally say my memory of it is I would talk to her and she would teleport around the room. Hmm. And then I accused her of witchcraft and that was the end of that. But she her point of view is I would start talking and then I would fall asleep and then I would wake up and leave off where I was before.
+02:24:50
+I had no notion of any time passing.
+02:24:53
+I kind of imagine that that's death. Yeah, is the lack of sensation and time passing and on the one hand I am. I don't know, soothed by the idea that I won't notice, on the other hand, I'm very unhappy at the idea that I won't notice. So I don't know if I'm afraid of death, but I am completely sure that I don't like it and that I particularly would prefer to discover on my own whether immortality sucks and be able to make a decision about it.
+02:25:25
+That's what I would prefer, like to have a choice in the matter. I would like to have a choice in the matter.
+02:25:30
+Well, again, on the Russian thing, I think the finiteness of it is the thing that gives it a little flavor, a little spice.
+02:25:37
+So well, in terms of the learning, we believe that's why we have this cofactors. Otherwise, it doesn't matter what you do, Yamen.
+02:25:44
+Well, let me one last question. Sticking up on the Russian theme.
+02:25:49
+You talked about your great grandparents not remember their name. What do you think is the. In this kind of Markov chain that is life waiting is the meaning of it all, what's the meaning of life?
+02:26:09
+Well, in a world where eventually you won't know who your great grand you won't know your great grandchildren are, I'm reminded of something I heard once and I read I read once that I, I really like, which is. It is well worth remembering. That the entire universe, save for one trifling exception, is composed entirely of others. I think that's the meaning of life.
+02:26:41
+Charles, this is one of the best conversations I've ever had, and I get to see you tomorrow again to hang out with a with a with who who looks to be one of the most, how should I say, interesting personalities that I'll ever get to meet with Michael Lippman. So I can't wait. I'm excited to have had this opportunity. Thank you for traveling all the way here. It was it was amazing. I'm excited. I always love Georgia Tech.
+02:27:07
+I'm excited to see with you being involved there what the future holds. So thank you for talking today. Thank you for having me. Enjoyed every minute of it. Thanks for listening to this conversation with Charles Isbel and thank you to our sponsors Neuro, the maker of functional sugar free governments that I used to give my brain a quick caffeine boost, decoding digital, a podcast on tech and entrepreneurship. I listen to and enjoy master class online courses that I watch from some of the most amazing humans in history and cash up the app.
+02:27:40
+I used to send money to friends for food and drinks. Please check out these sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube review starting up a podcast. Follow on Spotify, support on Pichon or connect with me on Twitter, Allex Friedman. And now let me leave you with some poetic words from Martin Luther King Jr.. There comes a time when people get tired of being pushed out of the glittering sunlight of.
+02:28:11
+July and left standing amid the piercing chill of an Alpine November. Thank you for listening and hope to see you next time.

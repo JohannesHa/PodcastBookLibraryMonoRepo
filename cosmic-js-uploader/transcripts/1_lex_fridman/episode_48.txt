@@ -1,0 +1,602 @@
+00:00:00
+The following is a conversation with Behance Karlstrom. He's the creator of C++ programming language that after 40 years is still one of the most popular and powerful languages in the world. Its focus and fast, stable, robust code underlies many of the biggest systems in the world that we have come to rely on as a society. If you're watching this on YouTube, for example, many of the critical backend components of YouTube are written in C++. Singles goes for Google, Facebook, Amazon, Twitter, most Microsoft applications, Dobi applications, most database systems and most physical systems that operate in the real world, like cars, robots, rockets that launches into space and one day will land us on Mars.
+00:00:46
+C++ also happens to be the language that I use more than any other in my life. I've written several hundred thousand lines of C++ source code. Of course, lines of source code don't mean much, but they do give hints of my personal journey through the world of software. I've enjoyed watching the development of C++ as a programming language leading up to the big update in a standard in 2011 and those that followed in 14 17 and told the new C++ 20 standard hopefully coming out next year.
+00:01:21
+This is the Artificial Intelligence Podcast. If you enjoy it, subscribe. I knew to give it five stars on iTunes supported on Patrón or simply connect me on Twitter. Allex Friedman spelled F.R. Idi Amin. And now here's my conversation with Bjorn Sarastro. What was the first program you've ever written? Do you remember it was my second year in university, first year of computer science and it was now 60, I calculated the shape of lips and then connect the points on the on the perimeter, creating star patterns.
+00:02:22
+It was with with a wedding on paper printer.
+00:02:28
+And that was in college. University. Yeah. Yeah. I learned to program the second year in university. What was the first programming language, if I may ask it this way, that you fell in love with?
+00:02:43
+I think I'll call 60. And after that I remember. I am the snowball I remember Fortran didn't fall in love with that, I remember Pasko didn't fall in love with that. It always got in the way of me.
+00:03:03
+And then I just covered assembler and that was much more fun. And from there I went to Micro Micro coach.
+00:03:11
+So you were drawn to the you found the low level stuff. Beautiful.
+00:03:18
+I went through a lot of languages and then I spent significant time in a simpler and microscope that was sort of the first really profitable things I paid for my master's actually.
+00:03:32
+And then I discovered Simular, which was absolutely great. Simular. Simular was the extension of Al Gore, 60, done primarily for simulation, but basically they invented object oriented programming and inheritance and runtime polymorphism when they were while they were doing it. And the that was the language that taught me that you could have the sort of the problems of a program grow with the size of the program overall and with the square of the size of the program.
+00:04:10
+That is, you can actually modularize very nicely. And that that that was a surprise to me. It was also a surprise to me that a stricter type system than Pascals was helpful, whereas Pascale's type system got in my way all the time. So you need a strong type system to organize your code well, which has to be extensible and flexible. Let's get into the details a little bit. If you remember what kind of type system DePasquale have, what type system type system did ALGOL 60 have?
+00:04:47
+Basically, Pesco was sort of the simplest language that Nicklaus' we could define that served the needs of Nickless we had at the time.
+00:04:59
+And it has a sort of a highly moral tone to it.
+00:05:05
+That is, if you can say it in Pasko, it's good. And if you can't, it's not so good, whereas. Simular Larches, basically to build your own type system, so instead of trying to fit yourself into Nicklaus' versus world new goals, language and only one dance language allowed you to build your own. So it's sort of close to the original idea of how you build a domain specific language.
+00:05:41
+As a matter of fact, what you build is a set of types and relations among types that allows you to express something that's suitable for an application. So when you say type's stuff, you're saying has echoes of object oriented programming.
+00:05:59
+Yes, they invented it. Every language that uses the word class for type is a descendant of simular. Directly or indirectly? Clasen, you go on, all you hand down were mathematician's and they didn't think in terms of types, they, um, but they understood sets and classes of elements and so they caught that type classes. And basically in C++ as in similar classes, they use a different type. So can you try the impossible task and give a brief history of programming languages from your perspective?
+00:06:43
+So we started with Al Gore, 60 simular Eskow, but that's just the 60s and 70s.
+00:06:50
+I can I can try.
+00:06:53
+The most sort of interesting and major improvement of programming languages was for the first Fortran, because before that all code was written for a specific machine and each specific machine had a language, assembly, language or cross or some extension of that idea. What you are writing for a specific machine in the term in the language of that machine and.
+00:07:26
+Backus and his team at IBM built a language that would allow you to to write what you really wanted.
+00:07:34
+That is, you can write it in a language that's natural for people. Now, these people happen to be engineers and physicists. So the language that came out was somewhat unusual for the rest of the world.
+00:07:47
+But basically, they said formula translation because they wanted to have the mathematical formulas translated into the machine.
+00:07:55
+And as a side effect, they got portability because now they are writing in the terms that the humans used and the way humans thought. And then they had a program that translated it into the machines needs. And that was new and that was great.
+00:08:16
+And it's something to to remember. We want to raise the language to the human level, but we don't want to lose the efficiency. So and that was the first step towards the human. That was the first step. And of course, they were very particular kind of humans, business people, much different. So they got COBOL and Statens, et cetera, et cetera. And Simular came out and no, let's not go to simulate yet. Let's go to Al Gore.
+00:08:47
+Fortran didn't have at the time the notions of not a precise notion of type, not a precise notion of scope, not a set of translation faces. That was what we have today, lexical syntax, semantics.
+00:09:08
+It was sort of a bit of a model in the early days. But, hey, they're just on the big breakthrough in the history of programming, right? So you can't criticize them for not having gotten all the technical details right. So we got alchol that was very pretty.
+00:09:26
+And most people in commerce and science considered it useless because it was not flexible enough and it wasn't efficient enough and et cetera, et cetera. But that was a breakthrough from a technical point of view. And then Simular came along to make that idea more flexible and you could define your own types.
+00:09:51
+And that's where where I got very interested in go the main idea man behind simular.
+00:10:00
+That was late 60s.
+00:10:02
+This was late 60s, was a visiting professor in Ole's. And so I learned object oriented programming by sitting around and well, in theory, discussing with, uh, what with a new goal.
+00:10:19
+But then once you get started in full flow is very hard to get a word in edgewise where you're just listen. So it was great. I learned it from there. Not to romanticize the notion, but it seems like a big leap to think about object oriented programming.
+00:10:38
+It's really a leap of abstraction. It's yes. And was that as big and beautiful of a leap as it seems from now in retrospect, or was it an obvious one at the time? It was not obvious. And many people have tried to do something like that. And most people didn't come up with something as wonderful as simular. Lots of people got their PhDs and made their careers out of forgetting about C.M.A or never knowing it. For me, the key idea was basically I could get my own tapes.
+00:11:20
+And that's the idea that goes further into C++, where I can get better types and more flexible types and more efficient types. But it's still the fundamental idea. When I want to write a program, I want to write it with my types that is appropriate to my problem and under the constraints that I'm under with hardware, software, environment, etc.. And that's that's the key idea.
+00:11:49
+People picked up on the class hierarchies and the virtual functions and the inherent sense.
+00:11:56
+And that was only part of it. It was an interesting and major part and still a major part in a lot of graphic stuff. But it was not the most fundamental. It it was when you wanted to relate one type to another. You don't want them all to be independent. The classic example is that you don't actually want to write a single. And with the vehicles where you say, well, if it's a buy signal to write the code for turning a bicycle to the left, if it's a normal car, turn right a normal car way.
+00:12:36
+If it's a fire engine and right. The fire engine way to narrow down about you get these big case statements, punches or if statements such and that you tell the the the base class that that's the vehicle. I'm saying turn, turn left the way you want to.
+00:12:56
+And this is actually a real example. They used it to simulate and optimize the emergency, the emergency services for somewhere.
+00:13:08
+No way back in the 60s. Wow. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set off of vehicles in a manageable way. And you can't just rewrite your code each time a new kind of vehicle comes along.
+00:13:36
+Yeah, it's a beautiful, powerful idea. And of course, it stretches through your work through C++, as we'll talk about. But I think you structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way?
+00:13:56
+Obviously, I'm better telling the part of the history that that is the path I'm on, as opposed to on the path that you skip the hippie John McCarthy and Lisp, one of my favorite languages, but also what?
+00:14:10
+Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting. Lots of people write code in it and then they rewrite it into C C++ when they want to go to production. Yes, it's in the world I'm at which are constrained by performance, reliability issues, deployability, cost of hardware.
+00:14:38
+Um, I don't like things to be too dynamic. It is really hard to write a piece of code that's perfect and flexible that you can also deploy on a small computer and that you can also put in, say, a telephone switch in Bogota. What's the chance if you get an error and you find yourself in the debugger that the telephone switch in Bogota on late Sunday night has a program are around, right. The chance is zero. And so a lot of things I think most about can't afford that flexibility.
+00:15:18
+I'm quite aware that maybe 70, 80 percent of all code are not under the kind of constraints I'm interested in.
+00:15:29
+But somebody has to do the job I'm doing because you have to get from these high level flexible languages to the hardware.
+00:15:39
+The stuff that lasts for 10, 20, 30 years is robust, operates under very constrained conditions. Yes, absolutely. That's right. And it's fascinating and beautiful in its own way. It's C++ as one of my favorite languages and so lisp. So I can I can embody two for different reasons.
+00:16:00
+As as a programmer, I understand why this is popular and I can see the beauty of the ideas. And similarly with the small talk, it's just all relative.
+00:16:17
+It it's not as relevant in my world. And by the way, I distinguish between those and the functional languages where I go to things like email and Haskell ask different different kind of languages. They have a different kind of Pugin. They're very interesting. And I actually try to learn from more of the languages I encounter to see what is there that would make.
+00:16:46
+Working on the kind of problems I'm interested in, with the kind of constraints that that I'm interested in, what can actually be done better, because we can surely do better than we do today. You've you've said that is good for any professional programmer to know at least five languages, speaking about a variety of languages that you've taken inspiration from and you've listed yours as being, at least at the time, C++, obviously Java, Python, Ruby and JavaScript.
+00:17:25
+Can you first of all, update that list, modify it if you don't have to be constrained to just five. But can you describe what you picked up also from each of these languages, how you see them as inspirations for you when you're working with C++?
+00:17:42
+This is a very hard question to answer. So about languages, you should know languages. I, I reckon I you about twenty five or thereabouts when I did C++, it was easier in those days because the languages were smaller and you didn't have to learn a whole programming environment and such to do as you could learn the language quite easily. And it's good to learn so many languages. And I imagine just like with natural language for communication, there's different paradigms that emerge in all of them.
+00:18:22
+Yeah. That there's commonalities and so on.
+00:18:25
+So I picked five out of a hat, five out of a hat off. Obviously, very important thing that the number is not one.
+00:18:34
+That's right.
+00:18:36
+It's like I don't like I mean, if you're monagle, but you are likely to think that your own culture is the only ones. Everybody else is a good learning of a foreign language and a foreign country is important. It helps you think and be a better person with programming languages. You become a better programmer, better designer with the second language. Now, once you got to the age of five is not that long. It's the second one that's most important.
+00:19:07
+And then when I had to pick five, I sort of thinking, what kinds of languages are there?
+00:19:16
+Well, there's a really low level stuff. It's good. It's actually good to know machine code, even though so even today, even today, the C++ optimizers. Right. That a machine called the node. Yes. But I don't think I could appreciate them if I actually didn't understand machine code and machine architecture, at least in my position.
+00:19:41
+I have to understand a bit of it because you mess up the cash in your off in performance by a factor of 100, right.
+00:19:51
+It shouldn't be that if you are interested in the performance or the size of the computer, you have to deploy. So. So I would go this is simpler. I used to mention C, but these days going low level is not actually what gives you the performance. It is to express your ideas so cleanly that you can think about it and the optimizer can understand what you're up to.
+00:20:18
+My favorite way of optimizing these days is to throw out the clever bits and see if it still runs fast and sometimes it runs faster. So I need the abstraction mechanisms or something like C++ to write Compact High-Performance Code.
+00:20:37
+That was a beautiful keynote by Jason Turner at the CP on a couple of years ago where he decided he was going to program Pong on, um, Motorola.
+00:20:50
+Sixty eight hundred, I think it was.
+00:20:54
+And he says, well this is relevant because it looks like a microcontroller.
+00:20:59
+It has specialized hardware, it has not very much memory and it's relatively slow. And so he shows in real time how he writes Pong, starting with a fairly straightforward, low level stuff, improving his abstractions. And what he's doing is writing C++. And it translates into. Into eighty six assembler, which you can do with playing and you can see it in real time, it's the compiler explorer which you can use on the Web. And then he wrote a little program that translated eighty six assembler into.
+00:21:40
+Motorola assembler, and so he types and you can see this thing in real time, well, you can see it in real time and even if you can't read the assembly code, you can just see it. His code gets better. The code, the simpler gets smaller. He increases the abstraction level, uses C++ 11 as it work better.
+00:22:03
+This code gets cleaner, it gets easier, maintain the code shrinks and it keeps shrinking.
+00:22:09
+And I could not in any reasonable amount of time write that a simple as good as the compiler generated from really quite nice modern C++. And I'll go as far as to say the thing that looked like C was significantly uglier and and smaller when it became more and larger when it became machine code.
+00:22:39
+So what the the abstractions that can be optimized are important.
+00:22:44
+I would love to see that kind of visualization and larger code bases. Yeah, there might be, but you can't show a larger code base in a one hour talk and have it fit on screen.
+00:22:54
+Right. So that's C and if you so my two languages would be machine code and C++ and then I think you can learn a lot from the functional languages.
+00:23:05
+So pick Haskell by email. I don't care which I think actually you do.
+00:23:11
+You learn the same lessons of expressing especially mathematical notions really clearly and having the type system that's really strict.
+00:23:24
+And then you should probably have a language for sort of quickly churning out something. You could pick JavaScript, you could pick Python, you could pick Ruby. Would you make of JavaScript in general.
+00:23:39
+So you kind of you're talking in the platonic sense about languages, about what they're good at, what their philosophy of design is. But there's also a large user base behind each of these languages and they use it in the way sometimes maybe it wasn't really designed for what's right. JavaScript is used way beyond that, probably what it was designed for. Let me say it this way.
+00:24:02
+When you build a tool, you do not know how it's going to be used. You try to improve the tool by looking at how it's being used and when people cut their fingers off and try and stop that from happening.
+00:24:15
+But really, you have no control over how something is used. So I'm very happy and proud of some of the things C++ being used that and some of the things I wish people wouldn't do. Bitcoin mining being my favorite example, uses as much energy as Switzerland and mostly serves criminals. Yeah, but back to back to the languages. I actually think that having JavaScript run in the browser was was an enabling thing for a lot of things.
+00:24:49
+Yes, you could have done it better, but people were trying to do it better and they were using sort of more principles, language designs, but they just couldn't do it right.
+00:25:01
+And the non-professional programmers that write lots of that code just couldn't understand them, so.
+00:25:10
+It did a. An amazing job for for what it was, it's not the prettiest language, and I don't think it ever will be the prettiest language, but let's not be bigots here.
+00:25:24
+So what was the origin story of C++? You basically gave a few perspectives of your inspiration of object oriented programming. That's you had a connection with C in performance. Efficiency was an important thing. You were drawn to efficiency and reliability, reliability. You have to get both what what's reliability?
+00:25:51
+I really want my telephone calls to get through and I want the quality of what I am talking.
+00:25:59
+Coming out of the other end at the other end might be in London or wherever. So and you don't want the system to be crashing. You're doing a bank. You must mustn't crash. That might be your, uh, your bank account that is in trouble.
+00:26:19
+There's different constraints. I can games. It doesn't matter too much if there's a crash. Nobody dies and nobody gets ruined. But I'm interested in the combination of performance, partly because of sort of the speed of things being done, part of being able to do things that is necessary to try to have reliable energy of larger systems. If you spend all your time interpreting a simple function called, you are not going to have enough time to do proper signal processing to get the telephone calls to sound right, either that or you have to have ten times as many computers and you can't afford your phone anymore.
+00:27:05
+It's a ridiculous idea in the modern world because we've solved all of those problems.
+00:27:12
+I mean, they keep popping up in different ways because we tackle bigger and bigger problems. The efficiency remains always an important aspect. But you have to think about efficiency not just as speed, but as an enabler to important things. And one of the things it enables is, is reliability is dependability. You when I press the pedal, the brake pedal of a car, it is not actually connected directly to. So anything but a computer, that computer better work.
+00:27:48
+Let's talk about reliability just a little bit so modern cars have to use millions of lines of code today. So this is certainly especially true of autonomous vehicles where some of the aspects of the control or driver assistance systems that steer the car to keep it in the lanes one. So how do you think? You know, I talked to regulators, people in government who are very nervous about testing the safety of these systems of software, ultimately software that makes decisions that could lead to fatalities.
+00:28:24
+So how do you how do we test software systems like these? First of all, safety like performance and like security is a systems property. People tend to look at one part of the system at a time and saying something like this is secure. That's all right. I don't need to do that. Yeah, that piece of code is secure.
+00:28:52
+I'll buy you operator. Right. If you want to have reliability, if you want to have performance, if you want to have security, you have to look at the whole system.
+00:29:03
+I did not expect you to say that, but that's very true. Yes, I'm dealing with one part of the system and I want my part to be really good.
+00:29:12
+But I know it's not the whole system.
+00:29:14
+Furthermore, if making an individual part perfect may actually not be the best way of getting the highest degree of reliability and performance and such as C++ Type C, not type safe, you can break it. Sure, I can break anything that runs on a computer. I may not go through your type system. If I wanted to break into your computer, I'll probably try a school injection. And it's very true. If you think about safety or even reliability, it's system level, especially when a human being is involved.
+00:29:55
+It's becoming hopeless pretty quickly in terms of proving that something is safe at a certain level because there's so many variables. It's so complex. Well, let's get back to something we can talk about and and actually make some progress on.
+00:30:14
+If we can look at C++ programs and we can try and make sure they crash this often, the way you do that is largely by simplification.
+00:30:30
+It is not the first step is to simplify the code, have less code, have code that are less likely to go wrong.
+00:30:38
+It's not by runtime testing everything. It is not by the test frameworks that you're using. Yes, we do that also. But the first step is actually to make sure that when you want to express something, you can express it directly in code rather than going through endless loops and convolutions in your head before it gets down the code that if if the way you are thinking about a problem is not in the code, there is a missing piece that's just in your head and the code you can see what it does, but it cannot see what you thought about it unless you have expressed things directly.
+00:31:24
+When you express things directly, you can maintain it. It's easier to find errors, it's easier to make modifications. It's actually easier to test it. And lo and behold, it runs faster. And therefore, you can use a smaller number of computers, which means there's less hardware that can possibly break up.
+00:31:47
+So I think the key here is simplification, but it has to be, um, to use the Einstein quote, as simple as possible and no simpler, not simpler, but other areas within the constraint where you can be simpler than you can be in C++.
+00:32:03
+But in the domain I'm dealing with, that's the simplification HapMap. So how do you inspire or ensure that the Einstein level simplification is reached? So can you do code review? Can you look at code?
+00:32:24
+Is there if I gave you the code for the Ford F 150 and said here, is this a mess or is this OK, is it possible to tell, is it possible to regulate an experienced developer can do that code and see if it smells in a mixed metaphor was deliberately. Yes. Uh, the the point is that. It is hard to generate something that is really obviously clean and can be appreciated, but you can usually recognize when you have reached that point.
+00:33:10
+And so if I have never looked at the F 150 code, so I wouldn't know.
+00:33:20
+But but I know what I could be looking for there. I'll be looking for some tricks that correlate with bugs and elsewhere.
+00:33:27
+And I have tried to formulate rules for what what good code looks like. And the current version of that is called the C++ code guidelines.
+00:33:44
+One thing people should remember is there's what you can do in a language and what you should do in a language.
+00:33:53
+You have lots of things that is necessary in some context, but not in others as things that exist just because as a 30 year old code out there and you can't get rid of it, but you can't have rules that says when you create it, try and follow these rules.
+00:34:11
+This does not create good programmers by themselves, but it limits the damage and often mistakes. It limits the possibilities of the mistakes.
+00:34:23
+And basically, we are trying to say, what is it that a good programmer does at a fairly simple level of where you use the language and how you use it.
+00:34:34
+Now, I can put all the rules for chiselling in my marble.
+00:34:40
+It doesn't mean that somebody who follows all of those rules can do a masterpiece by Michelangelo.
+00:34:48
+That is, there's something else to write, a good program just is there something else to create important work of art that is some kind of inspiration, understanding gift.
+00:35:05
+But we can approach the sort of technical the craftsmanship level of it.
+00:35:16
+The famous painters, the famous sculptures was, among other things, superb craftsmen, they could express their ideas using their tools very well. And so these days, I think what I'm doing, what a lot of people are doing, we are still trying to figure out how it is to use our tools very well.
+00:35:41
+For a really good piece of code.
+00:35:45
+You need a spark of inspiration and you can't, I think, regulate that. You cannot say that.
+00:35:53
+I I'll take a picture only I'll buy your picture only if you're at least Van Gogh.
+00:36:02
+There are other things you can regulate, but not the inspiration. I think that's quite beautifully put. It is true that there is an experienced programmer. When you see code that's inspired, that's like Michelangelo, you know it when you see it. And the opposite of that is code that is messy, code that smells, you know, when you see it. And I'm not sure you can describe it in words except vaguely through guidelines and so on.
+00:36:37
+Yes, it's easier to recognize ugly than to recognize beauty in code.
+00:36:44
+And for the reason is that sometimes beauty comes from something that's innovative and unusual.
+00:36:50
+And you have to sometimes think reasonably hard to appreciate that.
+00:36:55
+On the other hand, the messes have things in common and you can you can have static checkers and dynamic checkers that finds a large number of the most common mistakes you can catch.
+00:37:16
+A lot of sloppiness mechanically. I'm a great fan of static analysis in particular because you can check for not just the language rules, but for the usage of language rules.
+00:37:30
+And I think we will see much more static analysis in the coming decade. Can you describe what static analysis you represent, piece of code so that you can write a program that goes over that representation and look for things that are right and not right. So, for instance, you can analyze a program to see if resources are linked.
+00:38:05
+That's one of my favorite problems.
+00:38:08
+It's not actually all that hard and modern C++, but you can do it. If you were writing in the sea level, you have to have a and free and they have to match. If you have them in a single function, you can usually do it very easily. If there's a Malakia here, there should be a free there.
+00:38:31
+On the other hand, in between can be sure and complete code and then it becomes impossible. Yeah, if you past that point to the memory out of a function and then want to make sure that the free is done somewhere else, now, it gets really difficult. And so for static analysis, you can run through a program and you can try and figure out if there's any leaks. And what you will probably find is that you will find some leaks and you will find quite a few places where your analysis can't be complete.
+00:39:10
+It might depend on runtime.
+00:39:12
+It might depend on the cleverness of your analyzer, and it might take a long time. Some of these programs run for a long time. But if you combine such analysis with a set of rules such as how people could use it, you can actually see why the rules are violated and that stops you from getting into the impossible complexities. You don't want to solve the whole problem.
+00:39:45
+So static analysis is looking at the code without running the code. Yes, and thereby it's almost. Not in production code, but it's almost like an education tool of how the language should be used. It's guys, you like it at his best, right? It would guide you in how you write future code as well. And you learn together.
+00:40:09
+Yes. So basically, you need a set of rules for how you use the language. Then you need a static analysis that catches your mistakes when you violate the rules or when your code ends up doing things that it shouldn't despite the rules, because that is the language rules can go further.
+00:40:30
+And again, it's back to my idea that I would much rather find errors before I start running the code, if nothing else. Once the code runs, if it catches an error at runtime, I have to have an error handler. And one of the hardest things to write in code is error handling code because, you know, something went wrong. Do you know really exactly what went wrong? Usually not.
+00:40:57
+How can you recover when you don't know what the problem was? You can't be 100 percent sure what the problem was in many, many cases. And this is this is part of it. So, yes, we need good languages. We could type systems. We need rules for how to use them. We need static analysis. And the ultimate static analysis is, of course, program proof, but that still doesn't scale. So the kind of systems we deploy, then we start needing testing and the rest of the stuff.
+00:41:32
+So C++ is an object oriented programming language that creates, especially with newer versions, we'll talk about higher and higher levels of abstraction.
+00:41:43
+So how do you design let's even go back to the original C++. How do you design something with so much abstraction that's still efficient and is still something that you can manage to do static analysis on? You can have constraints on, they can be reliable. All those things we've talked about the create the to me slightly, there's a slight tension between high level abstraction and efficiency. That's a good question. I could probably have a year's course just trying to answer it.
+00:42:25
+Yes, there's a tension between efficiency and abstraction, but you also get the interesting situation that you get the best efficiency out of the best abstraction.
+00:42:36
+And my main tool for efficiency, for performance, actually is abstraction.
+00:42:45
+So let's go back to how C++ got there.
+00:42:48
+You said it was object oriented programming language, I actually never said that it's always quoted, but I never did. I said C++ supports object oriented programming, but it's not and other techniques.
+00:43:03
+And that's important because I think that the best solution to most complex, interesting problems require ideas and techniques from things that has been called object oriented data, abstraction, function or traditional or C style code, all of the above.
+00:43:30
+And so when I was designing C++, I soon realized I couldn't just add features.
+00:43:40
+If you just add what looks pretty or what people ask for or what you think is good one by one, you're not going to get a coherent whole. What you need is a set of guidelines that that that that guide your decisions. Should this feature be in should this feature be out, how should a feature be modified before it can go in and such? And there's a scene in the book I wrote about that design evolution of C++ as a whole bunch of rules like that.
+00:44:13
+Most of them are not language technical.
+00:44:16
+They they they they are things like don't violate static type system, because I like static type system for the obvious reason that I like.
+00:44:27
+Things to be reliable on reasonable amounts of hardware. But one of these rules is Cicero had principle that was kind of put a zero Ohad principle, it basically says that if you have an abstraction, it should not cost anything compared to. Right. The equivalent code at a lower level.
+00:44:56
+So if I have, say, a matrix multiply, it should be written in such a way that you could not drop to the level of abstraction and use arrays and pointers and such and run faster.
+00:45:14
+And so people have written such a matrix multiplications and have actually gotten code that ran faster than Fortran, because once you had the right abstraction, you can eliminate you can eliminate temporaries and you can do a loop fusion and other good stuff like that. That's quite hard to do by hand and in a low level language. And there's some really nice examples of that.
+00:45:42
+And the key here is that that matrix multiplication, the matrix abstraction allows you to write code that simple and easy. You can do that in any language. But with C++, it has the features that you can also have this thing run faster than if you hand coded it. Now, people have given that lecture many times, I and others. And a very common on question after the talk where you have demonstrated that you can outperform Fortran for tenths matrix multiplication, people come up and says, yeah, but are C++.
+00:46:18
+If I rewrote your code and see how much faster would run, the answer is much slower. This happened the first time actually back in the eighties with the friend of mine called Doug McElroy, who demonstrated exactly this effect. And, um, so the principle is you should give programmers the tools so that the abstractions can follow the zero principle.
+00:46:47
+Furthermore, when you put in a language feature on C++ or a standard library feature, you try to meet this. It doesn't mean it's absolutely optimal, but it means if you hand coded with the usual facilities in the language in C++, in C, you should not be able to better it. Usually you can do better if you use embedded a simpler four machine code for for some of the details to utilize part of a computer that the compiler doesn't know about.
+00:47:21
+What you should get to that point before your beat to the abstraction. So that's a beautiful ideal to reach for. And we meet it quite often. Quite often. So where is the magic of that coming from? There's some of it is the compilation process of the implementation of C++. Some of it is the design of the feature itself, the guidelines. So I've recently and often talked to Chris Leidner.
+00:47:50
+So clang what just out of curiosity, is your relationship in general with the different implementations? C++, as you think about you and committee and other people supposed to think about the design of new features or design of previous features in in trying to reach the ideal of zero overhead?
+00:48:16
+What does the magic come from the design, the guidelines or from the implementations and and not all you you, you, you go for programming, technique, programming, language features and implementation techniques. You need all three. And how can you think about all three at the same time?
+00:48:40
+It takes some experience, takes some practice, and sometimes you get it wrong. But after a while you sort of get it right. I don't write compilers anymore, but.
+00:48:53
+Brian Cronin pointed out that one of the reasons C++ succeeded was some of the craftmanship I put into the early compilers, and of course, I did the language aside.
+00:49:09
+And of course, I wrote a fair amount of code using this kind of stuff. And I think most of the successes involves progress in all three areas together. A small group of people can do that. Two or three people can can work together to do something like that. It's ideal if it's one person that has all the skills necessary, but nobody has all the skills necessary in all the fields where C++ is used. So if you want to approach my ideal in C concurrent programming, you need to know about algorithms for current programming.
+00:49:47
+You need to know the trigger of lock free programming. You need to know something about the compiler techniques and then you have to know some of the program error, the sorry, the application areas where this is, um, like some forms of graphics or some forms of, um, what you call the web server kind of stuff.
+00:50:12
+And that's very hard to get into a single head, but small groups can do it, too.
+00:50:18
+So is there differences in your view, not saying which is better or so on, but different than the different implementations of C++? Why are there several sort of maybe naive questions for me? I'm just see, so this is a very reasonable question when I design C++. Most languages have multiple implementations because if you want IPM, if you run on the sun, if you want a Motorola, those just many, many companies and they each have their own compilation structure, the old compilers, it was just fairly common that those many of them and I wrote front, assuming that other people would write compilers for C++ if successful and furthermore wanted to utilize all the backend infrastructures that were available.
+00:51:22
+I soon realized that my users were using twenty five different linkers. I couldn't write my own Hlinka.
+00:51:29
+Yes, I could, but I couldn't write twenty five linkers and also get any work done on the language. And so it came from a world where there was many linkers, many optimises, many compiler front ends not to not to start, but over at many operating systems.
+00:51:51
+The whole world was not an eighty six and Linux box or something. Whatever is the standard today. In the old days they said a set of X. So basically I assumed there would be lots of compilers. It was not a decision that there should be many compilers. It was just a fact. That's the way the world is. And yes, many compilers emerged and today there's at least four front end Klank, Microsoft and EDG. It is the same group.
+00:52:32
+They they supply a lot of the independent.
+00:52:35
+Organizations and the embedded systems industry, and there's lots and lots of objections, we have to think about how many dozen beckons there are because different machines of different things, especially in the embedded world of the machines, are very different. The architectures are very different. And so having a single implementation was never an option.
+00:53:05
+Now, I also happen to dislike monocultures, monocultures. They are dangerous because whoever owns the monoculture can go stale and there's no competition and there's no incentive to innovate. There's a lot of incentive to put barriers in the way of change because, hey, we own the world and it's a very comfortable world for us and who you to mess with that. So I really am very happy that this four front ends for C++ clanks great. But GCSE was great, but then it got somewhat stale.
+00:53:49
+Plane came along and is much better now. Competition. Why Microsoft is much better now. So l'eau at least a low number of front end puts a lot of pressure on. Standards, compliance, and also on performance and error messages and compile time, speed, all this good stuff that we want.
+00:54:18
+Do you think crazy question there might come along?
+00:54:22
+You hope that might come along. Implementation of C++ written, given all its history written from scratch. So written today from scratch. Well, flying and LVM is more or less written by from scratch.
+00:54:41
+But there's been C++ 11, 14, 17, 20.
+00:54:46
+You know, there's been a lot sooner or later somebody is going to try again. There has been attempts to write new C++ compilers and some of them has been used and some of them have been absorbed into others and such. Yeah, it'll happen. So what are the key features of C++? And let's use that as a way to sort of talk about the evolution of C++, the new feature.
+00:55:14
+So at the highest level, what are the features that were there in the beginning and what features got added?
+00:55:21
+Let's first get a principle on AIM in place. C++ is for people who want to use hardware really well and then manage the complexity of doing that through abstraction.
+00:55:38
+And so the first facility you have is a way of manipulating the machines at a fairly low level. That looks very much like C.. It has loops, it has variables, it has pointers for like machine addresses. It can access memory directly. It can allocate stuff in the absolute minimum of space needed on the machine. There's a machine facing part of C++, which is roughly equivalent to see. I said C++ could Betsie. And it can doesn't mean it is like C, if I disliked C, I wouldn't have.
+00:56:22
+Built on it, furthermore, after the initial Ritchie, I'm probably the major contributor to modern C and well, I had lunch with Dennis most days for 16 years, and we never had a harsh word between us.
+00:56:41
+So DC versus C++ fights are for people who don't quite understand what's going on, then the other part is the abstraction. And there the key is the class, which is the user defined type. And my idea for the class is that you should be able to build a type that's just like the built in types in the way you use them, in the way you declare them, in the way you get the memory and you can do just as well.
+00:57:12
+So in Cyprus, processing each agency, you should be able to build an abstraction, a class which we can call capital that you could use exactly like an integer and run just as fast as an integer. The idea right there and of course, you probably don't want to use the INT itself, but it has happened. People have wanted integers that were range checked. So you couldn't overflow in such a very safety critical applications like the fuel injection for a marine diesel engine for the largest ships.
+00:57:54
+This is a real example, by the way. This has been done. They built themselves an integer that was just like integer, except that couldn't overflow. If there was an overflow, you went into the error handling and then you built more interesting types. You can build a matrix which you need to do graphics or you could build a gnome for for a video game.
+00:58:21
+And all of these are classes and they appear just like the built in types except in terms of efficiency and so on. So what else is there and flexibility. So I don't know. For people who are not familiar with object oriented programming, there's inheritance. There's a hierarchy of classes. You can just, like you said, create a generic vehicle that can turn left.
+00:58:45
+So what people found was that you don't actually. No, how do I say this? A lot of types are related. That is the vehicles, all vehicles are related bicycle's cars, fire engines, tanks, they have some things in common and some things that differ. And you would like to have the common things common and having the differences specific. And when you didn't want to know about the differences, like just turn left, you don't have to worry about it.
+00:59:28
+That's how you get the traditional object oriented programming coming out of simular adopted by Smalltalk and C++ and all the other languages. The other kind of obvious similarity between types comes when you have something like a vector. 4Chan gave us the vector called array of double's, but the minute you have a vector of doubles, you want a vector of double precision doubles and for short doubles for graphics. And why should you not have a vector of integers while you are added or a vector vectors vector vectors of chess pieces.
+01:00:12
+Now you have a board, right? So this is you express the commonality as the idea of a vector and the variations come through prioritization.
+01:00:27
+And so here we get the two fundamental ways of abstracting, of having similarities of. Types in C++, that's the inheritance, and there's a parameterization, that's the object oriented programming and this the generic programming with the templates for the generic programming. So you you've presented it very nicely, but now you have to make all that happen and make it efficient. So generic programming with templates, there's all kinds of magic going on, especially recently that you can help catch up on.
+01:01:06
+But it feels to me like you can do way more than what you just said with templates. You can start doing this kind of metaprogramming, this kind of you can do metaprogramming.
+01:01:16
+Also, I didn't go there. And in that explanation, we're trying to be very basics, but go back on to the implementation implementation.
+01:01:25
+If you couldn't implement this efficiently, if you couldn't use it so that it became efficient, it has no place in C++ because it violates the zero principle.
+01:01:37
+So when I had to get. Object oriented programming inheritance, I took the idea of virtual functions from Simular. Virtual functions is a similar term, class is a similar term, if you ever use those words, say think to question Google and all you and Don.
+01:02:00
+And I did the simplest implementation I knew of, which was basically a jump table, so you get the virtual function table. The function goes in two dozen indirection through a table and get the right function. That's how you pick the right thing there. And I thought that was trivial. It's close to optimal. And it was obvious. It turned out the simular had a more complicated way of doing it and therefore slower. And it turns out that most languages have something that's a little bit more complicated, sometimes more flexible, but you pay for it.
+01:02:39
+And one of the strengths of C++ was that you could actually do this object oriented stuff and your overhead compared to your ordinary functions, personal interactions, sort of in five, ten, twenty five percent of just the core. It's down there. It's not too. And that means you can afford to use it. Furthermore, in C++, you have the distinction between virtual functional and virtual function. If you don't want any overhead, if you don't need the interaction that gives you the flexibility and object oriented programming, just don't ask for it.
+01:03:19
+So the idea is that you only use virtual functions if you actually need the flexibility. So it's not zero overhead with zero overhead compared to any other way of achieving the flexibility now or to parameterization. Basically, the compiler looks at at the template, say the vector, and it looks at the parameter and then combines the two and generates a piece of code that is exactly as if you've written a vector of that specific type. Yes. So that's that's the minimal overhead.
+01:04:04
+If you have many template parameters, you can actually combine code that the compiler couldn't usually see at the same time and therefore get code that is faster than if you had handwritten stuff, unless you are very, very clever.
+01:04:21
+So the thing is parametrized code, the compiler fills stuff in during the compilation process, not during runtime.
+01:04:31
+That's right. And so and furthermore, it gives all the information it's gotten, which is the template, the parameter and the context of use. It combines the three and generates good code. Yeah, but it can generate. Now it's a little outside of what I'm even comfortable thinking about, but it can generate a lot of code.
+01:04:57
+Yes. And how do you I remember being both amazed at the power of that idea and how ugly the debugging looks. Yes, debugging can be truly hard.
+01:05:13
+Come back to this because I have a solution anyway.
+01:05:17
+The debugging was actually the code generated by C++ has always been ugly because there's these inherent optimizations and modern C++ compiler has front end Midland and back end optimizations. Even seafront back in eighty three had front end and back end optimizations. I actually took the code, generated an internal representation munged that implements a representation to generate good code so people is not a compiler generate see it reason generated. C was the one that uses code generated as a really good or backend optimizations.
+01:06:01
+But I need a front end optimizations and therefore the sea I generated was optimized.
+01:06:07
+See the way a really good, handcrafted, optimized human could could generate it. And it was not meant for humans. It was the output of a program and it's much worse today. And with templates it gets much worse still. So it's hard to it's hard to combine simple debugging with a simple with the optimal code, because the idea is to drag in information from different parts of the code to generate good code, a machine code, and that's not readable.
+01:06:46
+So what people often do for debugging is they turn the optimizer off.
+01:06:54
+And so you get code that when you when when something in your source code looks like a function call, it is a function called when the optimizer is turned on, it may disappear.
+01:07:07
+The function call it may in line. And so one of the things you can do is you can actually get code that is smaller than the function call because you eliminate the function pre-embryo and return. And that's just the operation there. One of the key things when I did templates was I wanted to make sure that if you have, say, a sort algorithm and you give it a sorting criteria, if that sorting criteria is simply comparing things to lessen the code generator should be the less then not an indirect function call to a compression object, which is what it is and the source code.
+01:08:01
+But we really want down to the single instruction and but anyway, turn off the optimizer and and you can you can debug the first level of debugging can be done. And I always do without the optimization because then I can see what's going on. And then there's this idea of concepts that puts some. Now I've never even the I don't know if it was ever available in any form, but it puts some constraints on the stuff you can parametrized essentially. Let me try and explain.
+01:08:38
+Yes. So, yes, it wasn't there 10 years ago, we have had versions of it that actually work.
+01:08:49
+For the last four or five years, it was designed by does raise Dru Sjodin and me, we were professors and postdocs in Texas at the time and the implementation by Andersen has been available for that time, and it is part of C++ twenty and the standard library that uses it.
+01:09:19
+So this is becoming really very real.
+01:09:23
+It's available in Clanging and DDC Jesus for a couple of years and I believe Microsoft is soon going to do it. We expect all of C++ 20 to be available to in all the major compilers in 20. But this kind of stuff is available now. I'm just saying that because otherwise people might think I was talking about science fiction. And so what I'm going to say is real concrete. You can write today. And this production uses of it, so the basic idea is that when you have a a generic component, like a sort function, the sword function will require at least two parameters, one at data structure with a give and type and compassion criteria.
+01:10:21
+And these things are related. But obviously you can't compare things if you don't know what the type of things you compare. And so you want to be able to say, I'm going to sort something and it is so we sort of what does it mean to be sort of when you look it up in the standard? It has to have it has to be a sequence with a beginning and end. There has to be random access to that sequence. And there has to be the element types has to be comparable.
+01:10:56
+Operator, can I do. Yes. Some logical operator cannot basically. What concepts are the compile time predicates the predicate. You can ask, are you a sequence. Yes I have begin and end.
+01:11:10
+Are you a random exit sequence. Yes I have some scripting. And plus is your element type something that has a list then. Yes, I have a lesson. It's and so basically that's the system. And so instead of saying I will take a parameter of any type, it'll say I'll take something that's horrible and it's well defined.
+01:11:35
+And so we say, OK, you can sort of less than I don't want less then I want greater than or something I invent. So you have two parameters.
+01:11:44
+The sortable thing and the compassion criteria and the compassion criteria will say, well, I can you can write in saying it should operate on the element type and it has the compassion operations.
+01:12:02
+So that's just simply the fundamental thing. It's compile time predicates. Do you have the properties? I each. So it specifies the requirements of the code on the parameters that gets. It's very similar to types actually, but operating in the space of concepts, concepts.
+01:12:25
+The word concept was used by Alex Stefanov, who is sort of the father of generic programming in the context of C++. You know, there's other places that use that word, but the way we call genetic programming is Alix's, and he called them concepts because he said they're they're the sort of the fundamental concepts of an area. So they should be called concepts. And we've had concepts all the time.
+01:12:53
+If you look at the corner book, but see, she has arithmetic types and it has integral types. It says so in the book and then it lists what they are and they have certain properties. The difference today is that we can actually write a concept that will ask a type are you an integral type?
+01:13:18
+Do you have the properties necessary to be an integral type? Do you have plus minus divide and such?
+01:13:25
+So maybe the story of concepts, because I thought it might be part of C++ 11, so I c, c, c, o, x or whatever it was at the time. What was the Y? I didn't like what. We'll talk a little bit about this fascinating process of standards because I think it's really interesting for people. It's interesting for me. But why did it take so long? What shapes the idea of concepts take? What were the challenges back in eighty seven or thereabouts.
+01:14:04
+Twenty seven. Wow. Nineteen eighty seven or thereabouts. When I was designing templates, obviously I wanted to express the notion of what is required by a template of its documents. And so I looked at this and basically for four templates I wanted three properties. I wanted to be very flexible. It had to be able to express things I couldn't imagine because I know I can't imagine everything. And I've been suffering from languages to try to constrain you, to only do what the designer thought.
+01:14:42
+Good didn't want to do that. Certainly it had to run faster as fast or faster than hand written code. So basically, if I have a picture of T and I take a vector of char, it should run as fast as you build a vector yourself without parameterization. And second and thirdly, I wanted to be able to express the constraints of. The documents have prototypes of the interfaces, and neither I nor anybody else at the time knew how to get all three, and I thought for C++, I must have the tool first.
+01:15:28
+Otherwise it's not C++.
+01:15:31
+And it bothered me for a couple of decades that I couldn't solve the third one. I mean, I was the one that put function document type checking to see. I know the value of good interfaces. I didn't invent. That idea is very common, but I did it and I wanted to do the same for templates, of course, and I couldn't. So it bothered me. Then we tried again. Two thousand of two 2003 computers raised and I started analyzing the problem, explained possible solutions.
+01:16:08
+It was not a complete design. A group in University of Indiana. An old friend of mine started a project at Indiana and.
+01:16:25
+We thought we could get a good system of concepts in another two or three years that would have made C++ 11 to C++ 06 07.
+01:16:42
+Well, it turns out that I think we got a lot of the fundamental ideas wrong. They were too conventional. They didn't quite fit. C++, in my opinion, didn't serve implicit conversions very well. It didn't serve mixed, mixed type arithmetic type computation computations very well. A lot of stuff came out of the functional. Community and it that community didn't deal with multiple types in the same way as C++ does, had more constraints on on what you could express and didn't have the draconian performance requirements.
+01:17:32
+And basically we tried we tried very hard. We had some successes.
+01:17:38
+But it just in the end, wasn't didn't compile fast enough, was too hard to use and didn't run fast enough unless you had optimizers that was beyond the state of the art. They still are. So we had to do something else. Basically, it was the idea that a set of parameters has defined a set of operations and you go through an interaction table just like for virtual functions, and then you try to optimize the interaction a way to get performance.
+01:18:19
+And we just couldn't do all of that. But get back to the standardization. We are standardizing C++ on the ISO rules, which are very open process. People come in, there's no requirements for education experience. So you start to develop C++ and there is hope. What was the first standard established? What is that like, the ISO standard? Is there a committee that you're referring to as a group of people? What was that like? How often do you meet or what's the discussion?
+01:18:56
+I'll try and explain that. So sometime in early 1980s, nine two people, one from IBM, one from HP, turned up in my office and told me I would like to standardize C++. This was a new idea to me, and I pointed out that it wasn't finished yet and it wasn't ready for formal standardisation and such, and they say, no, Bianna, you haven't gotten it. You really want to do this? Our organizations depend on C++.
+01:19:36
+We cannot depend on something that's owned by another corporation that might be a competitor. Of course, we could rely on you, but you might get run over by a bus.
+01:19:49
+Right. But we really need to get this out new. It has to be standardized under former rules. And we are going to standardize it on ISO rules. And you really want to be part of it because basically otherwise we will do it ourselves and we know you can do it better. So through a combination of arm twisting and flattery, let's take it slow in late. In late 89, there was a meeting in D.C. at the time. Actually, no, it was not.
+01:20:33
+So then it was ency, the American national standard doing. We met there. We were lectured on the rules of how to do an NC standard. There was about 25 of us there, which apparently was a new record for that kind of meeting.
+01:20:52
+And some of the old guys that have been standard, I think she was there.
+01:20:57
+So we got some expertise in. So the way this works is that it's an open process. Anybody can can sign up because they pay the minimum fee, which is just about a thousand dollars or less than just a little bit more now.
+01:21:12
+And I think it's one hundred and eighty dollars. It's not it's not going to kill you. And we have three meetings a year. This is fairly standard. We try to meetings a year for a couple of years. That didn't work too well.
+01:21:30
+So three, three, one week meetings a year and you meet and you have to meet technical discussions and then you bring proposals forward for votes.
+01:21:45
+The votes are done one person per one vote per organization. So you can't have, say, IBM come in with ten people and dominate things.
+01:21:58
+That's not allowed in these organizations that extensively use C++. Yes, because it's all individuals or individuals. I mean, it's a it's a bunch of people in the room deciding the design of a language based on which a lot of the world's systems run.
+01:22:17
+Right?
+01:22:18
+Well, I think most people would agree it's better than if I decided it or better than if a single organization like AT&T decided.
+01:22:28
+I don't know if everyone agrees to that. By the way, bureaucracies have their critics, too. Yes, they took standardization is not pleasant. It's horrifying. It's like democracy. But we exactly as Churchill said, democracy is the worst way except for the others. Right. And it's I would say the same with form of standardization. But anyway, so we meet and we we have these votes and that determines what the standard is. A couple of years later, we extended this, so it became worldwide.
+01:23:08
+We have standards for organizations that are active in currently 15 to 20 countries and another.
+01:23:20
+15 to 20 are sort of looking and voting. Based on the rest of the work on it, and we meet three times a year next week, I'll be in Cologne, Germany, spending a week doing standardization and we will vote out the committee draft of C++ 20, which goes to the National Standards Committees for comments and requests for changes and improvements. Then we do that and there's a second set of votes where hopefully everybody votes in favor. This has happened several times.
+01:24:00
+The first time we finished we started in the first technical meeting was in 1990. The last was in 98. We voted it out. That was the standard that people used till 11 or a little bit past 11 and was an international standards. All the countries voted in favor. It took longer with 11 mentioned. Why what? All the nations voted in favor. And we work on the basis of consensus. That is, we do not want something that passes 60 40 because then we're going to get dialects and opponents and people complain too much and they all complain too much.
+01:24:48
+But basically it has no real effect. The standards has been obeyed. They have been working to make it easier to use many compilers, many computers and all of that kind of stuff. And so the first is traditional with ISO standards to take 10 years. We did the first one in eight. Brilliant. And we thought we are going to do the next one and six because now we are good at it.
+01:25:17
+Right? It took 13.
+01:25:21
+Yeah, it was named O X. It was named Oiks, hoping that you would at least get it within the single within not the single day I thought we would get to I thought would get six, seven or eight. The confidence of youth. Yeah, that's right.
+01:25:37
+Well the point is that this was sort of like a second system effect. That is, we now knew how to do it. And so we were going to do it much better and we got more ambitious, ambitious, and it took longer.
+01:25:49
+Furthermore, there is this tendency because it's a ten year cycle or age doesn't matter just before you're about to ship, somebody has a bright idea.
+01:26:06
+Yeah. And so we really, really must. Get that in. We did that successfully with the steel, we got the standardly or the steel stuff that that I basically I think it saved C++.
+01:26:24
+It was beautiful. Yes. And then people tried it with other things and it didn't work so well. They got things in, but it wasn't as dramatic and it took longer and longer and longer.
+01:26:37
+So after C++ 11, which was a huge improvement and what basically what most people are using today. We decided ever again, and so how do you avoid those slips? And the answer is that you ship more often so that if you if you if you have a slip on a 10 year cycle, by the time you know it's a slip, there's 11 years to get it. Yeah. Now, with a three year cycle, there's about three, four years till you get it back.
+01:27:15
+The delay between feature freeze and shipping. So you always get one or two years more. And so we shipped 14 on time. We shipped 17 on time. And we ship we will ship 20 on time. It'll happen. And furthermore, this allow this gives a predictability that allows the implementers, the compiler implementers, the library implementers, they have a target and they deliver on it. 11 took two years for most compilers for good enough, 14 most compilers actually getting pretty good.
+01:27:58
+And 14, 17, everybody shipped in 17. Well, we are going to have at least almost everybody ship almost everything in 20.
+01:28:10
+And I know this because they're shipping in 19 predictively, which is good delivery on time is good. And so, yeah, that's great. That's how it works.
+01:28:22
+There's a lot of features that came in in C++ 11. There's a lot of features at the birth of C++ that were amazing and ideas with concepts in twenty twenty. What to you is the most just just to you personally, beautiful or just you sit back and think, wow, that's just nice and clean feature of C++.
+01:28:53
+I have written two papers for the History of Programming Languages conference, which basically ask me such questions, and I'm writing a third one, which I will deliver at the History of Programming Languages Conference in London next year. So I've been thinking about that and there is one clear answer constructors and distracters. The way a constructor can establish the environment for the use of the of a tape for an object and that structure that cleans up any messes at the end of it, that is key to C++.
+01:29:31
+That's why we don't have to use garbage collection. That's how we can get predictable performance. That's how you can get the minimal overhead in many, many cases and kept really clean types. It's the idea of constructive, destructive appears. Sometimes it comes out under the name our I resource acquisition is initialization, which is the idea that you grab resources and the constructor and release them. And Destructo, it's also the best example of why I shouldn't be in advertising.
+01:30:09
+I get the best idea and I call it resource acquisition is initialization, not the greatest name I've ever heard.
+01:30:21
+So it's types, abstraction of types. You said I want to create my own types. So types is an essential part of C++ and making them efficient is the is the key part. And to you, the this is almost getting philosophical, but the construction and the destruction, the creation of an instance of a type and the freeing of resources from that instance of a type is what defines the object, is that like birth and death is what defines human life.
+01:31:03
+Yeah, that's right. By the way, philosophy is important. You can't do good language design without philosophy because what you are determining is what people can express and how this is very important.
+01:31:18
+By the way, constructor's distracters came into C++ in seventy nine in about the second week of my work with what was then called C the classes. It is a fundamental idea. Next comes the fact that you need to control copying because once you control as you birth and death, you have to control taking copyists, which is another way of creating an object. And finally, you have to be able to move things around so you get to move operations and that's the set of key operations you can define on a C++ type, is that to you?
+01:32:00
+Those things are just a beautiful part of C++ that is at the core of it all. Yes.
+01:32:09
+You mentioned that you hope there will be one unified set of guidelines in the future for how to construct the programming language. So perhaps not one programming language, but. A unification of how we build programming languages, if you remember the statements, I have some trouble remembering it, but I know the origin of that idea.
+01:32:31
+So maybe you can talk about sort of C++ has been improving. There's been a lot of programming language. Do you where does the arc of history taking us? Do you hope that there is a unification about the languages with which we communicate in the digital space? Well, I think that languages should be designed not by clobbering language features together and doing slightly different versions of somebody else's ideas, but through the creation of a set of principles, rules of thumb or whatever you call them.
+01:33:14
+I made them for C++ and we're trying to teach people in the Standards Committee about these rules because a lot of people come in and say, I've got a great idea, let's put it in the language, and then you have to ask, why does it fit in the language?
+01:33:30
+Where does it fit in this language? It may fit in another language and not here, or it may fit here, not the other language. So you have to work from a set of principles and you have to develop that set of principles and.
+01:33:47
+One example that that I sometimes remember is I was sitting down with some of the designers of Common Lisp and we are talking about languages and language features, and obviously we didn't agree about anything because, well, this was not C++ and vice versa to me, parentheses.
+01:34:11
+But suddenly we started making progress. I said I had this problem and I developed it according to these ideas.
+01:34:23
+And this is why we had that problem, different problem. And we developed the same kind of principles. And so we worked through large chunks of C++ and large chunks of common lisp and figured out we actually had similar sets of principles of how to do it. But the constraints on our designs were very different and the aims for the usage was very different. But there was commonality in the way you reasoned about language features and the fundamental principles you were trying to do.
+01:35:03
+So do you think that's possible? Or so there, just like there is perhaps a unified theory of physics, of the fundamental forces of physics, that I'm sure there is commonalities among the languages, but there's also people involved, you know, that help drive the development of these languages.
+01:35:24
+Do you have a hope or an optimism that there will be a unification? If you think about physics and Einstein towards a simplified language, do you think that's possible? Let's remember sort of modern physics, I think, started with Galileo in the thirteen hundred. So they have had seven hundred years to get going. Modern computing started in about forty nine.
+01:35:57
+We've got, what is it, 70 years.
+01:36:00
+They have 10, 10 times. Yeah.
+01:36:03
+And furthermore, they're not as bothered with people using physics.
+01:36:08
+The way we are worried about programming is done by humans.
+01:36:14
+So each have problems and constraints. The others have. But we are very immature compared to physics.
+01:36:24
+So I would look at sort of the philosophical level and look for fundamental principles like you don't like resources, you shouldn't you don't take errors at runtime that you don't need to. You don't violate some kind of type system.
+01:36:47
+There's many kind of type systems, but when you have one, you don't break it, et cetera, et cetera. There will be quite a few and it will not be the same for all languages. But I think if we step back at some kind of philosophical level, we can we would be able to agree on sets of principles that applied to to two sets of problem areas and within. An area of use by C++, this case, what used to be called systems programming, the area between the hardware and the the fluffier parts of the system, you might very well see a convergence.
+01:37:34
+So these days, you see Russia having a adopted area and some time accuses me for having borrowed it 20 years before they discovered it. But it's we're seeing some kind of conversion convergence here. Instead of relying on garbage collection all the time, the garbage collection languages are doing things like the disposal patterns and such. That imitates some of the construction destruction stuff. And they're trying not to use the garbage collection all the time and things like that. So there's that conversion.
+01:38:14
+But I think we have to step back to the philosophical level, agree on principles, and then we'll see some conversions, convergences, and it will be application domain specific. So a crazy question, but I work a lot with machine learning, with deep learning. I'm not sure if you touch that world that much, but you could think of programming as the thing that takes some input. A programming is the task of creating a program, and the program takes some input and produces some output.
+01:38:48
+So machine learning systems train on data in order to be able to take an input and produce output. But they're messy, fuzzy things, much like we as children grow up, you know, we take some input, make some output, but we're noisy. We mess up a lot. We're definitely not reliable biological system or giant mess. So there's a sense in which machine learning is a kind of way of programming. But just fuzzy.
+01:39:22
+It's very, very, very different than C++ because C++ is like it's just like you said, it's extremely reliable. It's efficient. It's you know, you can you can measure you could test in a bunch of different ways with biological systems or machine learning systems. You can't say much except sort of empirically saying that ninety nine point eight percent of the time it seems to work. What do you think about this fuzzy kind of programming? Indeed, you even see it as programming.
+01:39:56
+Is it solid and totally another kind of world?
+01:40:00
+I think it's a different kind of world and it is fosi. And in my domain, I don't like fussiness.
+01:40:08
+That is, people say things like they want everybody to be able to program what I don't want everybody to program my, my, my, my, my airplane controllers or the car controls.
+01:40:25
+I want that to be done by engineers. I want that to be done with people that are specifically educated and trained for doing, uh, building things. And it is not for everybody. Similarly, a language like C++ is not for everybody.
+01:40:42
+It is generated to be a sharp and effective tool for professionals, basically, and definitely for people who aim at some kind of precision.
+01:40:57
+You don't have people doing calculations without understanding math. Right. Counting on your fingers. Not going to cut it if you want to fly to the moon.
+01:41:08
+And so there are areas where and 84 percent accuracy rate. Sixteen percent false positive rate is perfectly acceptable and where people will probably get no more than 70. You said 98 percent. I what I have seen is more like 84 and by by really a lot of blood, sweat and tears. You can get up to the ninety two and a half.
+01:41:38
+Right. So this is fine if it is say prescreening stuff before the human look at it, it is not good enough for for life threatening situations. And so there's lots of areas where, where the fuzziness is is perfectly acceptable and good and better than humans, people and humans. But it's not the kind of engineering stuff I'm mostly interested in.
+01:42:09
+I worry a bit about machine learning in the context of cars, you know, much more. About this, and I do I worry, too, but I'm I'm sort of an amateur here.
+01:42:21
+I've read some of the papers, but I've not ever done it. And the idea scares me the most is the one I have heard.
+01:42:32
+And I don't know how common it is that. You have this A.I. system, machine learning, all of these trained neural nets, and when there's something is too complicated, they ask the human for help.
+01:42:54
+But Human is reading a book or sleep, and he has 30 seconds or three seconds to figure out what the problem was that the A.I. system couldn't handle and do the right thing.
+01:43:08
+This is scary. I mean, how do you do the cost of war between the machine and the human?
+01:43:15
+It's very, very difficult. And for the designer of one of the most reliable, efficient and powerful programming languages, C++, I can understand why that world is actually unappealing. It is for most engineers. To me, it's extremely appealing because we don't know how to get that interaction right. But I think it's possible. But it's very, very hard. It is.
+01:43:43
+And it's stating a problem. Not that it's impossible. I mean, I would much rather never rely on the human. If you're driving a nuclear reactor, if you're or an autonomous vehicle, it would it's much better to design systems written in C++ that never ask a human for help.
+01:44:01
+Let's just get one fact in.
+01:44:04
+Yeah, all of this stuff is on top of us.
+01:44:10
+So so that's one reason I have to keep a weather eye out on what's going on in that field. But I will never become an expert in that area. But it's a good example of how you separate different areas of applications and you have to have different tools, different principles, and then they interact. No major system today is written in one language and there are good reasons for that.
+01:44:37
+When you look back at your life work, what is what is a moment what is the event creation that you're really proud of? They say, damn, I did pretty good there. Is it as obvious as the creation of C++? And so obviously I've spent a lot of time with C++ and then it's a combination of a few good ideas, a lot of hard work and a bit of luck.
+01:45:08
+And I've tried to get away from it a few times, but I get tracked in again, partly because I'm most effective in this area and partly because what I do has much more impact if I do it in the context of C++. So I have four and a half million people that pick it up tomorrow. If I get something right, if I did it in another field, I would have to start learning. Then I have to build it and then we'll see if anybody wants to use it.
+01:45:39
+One of the things that has kept me going for all of these years is, one, the good things that people do with it and the interesting things they do with it.
+01:45:51
+And also I get to see a lot of interesting stuff and talk to a lot of interesting people.
+01:46:00
+I mean, if it has just been statements on paper, on the screen, I don't think I could have kept going. But I get to see the telescopes up on Monarch here, and I actually went and see how Ford built cars. And I got to JPL and see how they do the the the Mars rovers. There's so much cool stuff going on and most of the cool stuff is done by pretty nice people and sometimes in very nice places. Cambridge, Sophia, Antipolice, Silicon Valley.
+01:46:38
+Yeah. It's, uh, there's more to it than just cold, but cold is central and top of the coat or the people in very nice places.
+01:46:49
+Well, I think I speak for millions of people we are in and saying thank you for creating this language that so many systems are built on top of that that make a better world. So thank you and thank you for talking today. Yeah, thanks. And will make it even better. Good.

@@ -1,0 +1,688 @@
+00:00:00
+The following is a conversation with Michael Jordan, a professor at Berkeley and one of the most influential people in the history of machine learning statistics and artificial intelligence. He has been cited over one hundred and seventy thousand times, and he has mentored many of the world class researchers defining the field of AI today, including Andrew NG, Zubin Ghahramani, Ben Tasker and your Shobanjo. All this, to me, is as impressive as the over 32000 points in the six NBA championships of the Michael J.
+00:00:35
+Jordan of basketball fame. There's a non-zero probability that I talked to the other Michael Jordan, given my connection to and love the Chicago Bulls of the 90s. But if I had to pick one, I'm going with the Michael Jordan of Statistics and Computer Science, or Delacombe calls him the Miles Davis of Machine Learning. In his blog post titled Artificial Intelligence, The Revolution Hasn't Happened Yet, Michael argues for broadening the scope or the artificial intelligence field. In many ways, the underlying spirit of this podcast is the same to see artificial intelligence as deeply human endeavor to not only engineer algorithms and robots, but to understand and empower human beings at all levels of abstraction from the individual to our civilization as a whole.
+00:01:26
+This is the artificial intelligence podcast, if you enjoy it, subscribe on YouTube. Good for starting up a podcast supported on page one or simply connected me on Twitter at Lex Friedman spelled F.R. Idi Amin. As usual, I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show was presented by Kashyap, the number one finance app in the App Store, when you get it, is called Lux podcast.
+00:02:01
+Kashyap lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar. SketchUp does fractional share trading. Let me mention that the order execution algorithm that works behind the scenes to create the abstraction of the fractional orders is to me an algorithmic marvel. So big props for the Kashyap engineers for solving a hard problem that in the end provides an easy interface that takes a step up to the next layer of abstraction over the stock market, making trading more accessible for new investors and diversification much easier.
+00:02:38
+So once again, if you get cash up from the App Store or Google Play and use the Scolex podcast, you'll get ten dollars in cash. That will also donate ten dollars. The first one of my favorite organizations that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Michael I, Jordan. Given that you're one of the greats in the field of AI, machine learning, computer science and so on, you're trivially called the Michael Jordan of Machine Learning, although, as you know, you were born first.
+00:03:32
+So technically, MJ is the Michael Jordan of basketball. But anyway, my favorite is John Laku and calling you the Miles Davis of Machine Learning, because, as he says, you reinvent yourself periodically and sometimes leave fans scratching their heads after you change direction.
+00:03:49
+So can you put. First, your historian hat on and give a history of computer science, and I, as you saw it, as you experienced it, including the four generations of our successes that I've seen you talk about.
+00:04:05
+Sure, yeah, first of all, I'd much prefer Yon's metaphore, Miles Davis is was a real explorer in jazz and he had a coherent story. So I think I have one. And but it's not just the one you lift. It's the one you think about later, what a good historian does as they look back and they revisit. I think what's happening right now is not EHI and that was an intellectual aspiration that's still alive today is an aspiration.
+00:04:35
+But I think this is akin to the development of chemical engineering from chemistry or electrical engineering from electromagnetism. So if you go back to the 30s or 40s, there wasn't yet chemical engineering, there was chemistry, there was fluid flow, there was mechanics and so on. But people particularly viewed interesting goals, try to build factories that, you know, make chemical products and do it viably, safely, make good ones, do it at scale. So people started to try to do that, of course, and some factories worked, some didn't, you know, some are not viable, some exploded, but in parallel developed a whole field called chemical engineering.
+00:05:15
+Chemical engineering in the field. It's no no bones about it. It has theoretical aspects to it. It has practical aspects. It's not just engineering, quote unquote. It's the real thing. Real concepts are needed. Same thing with electrical engineering. You know, there was Maxwell's equations, which in some sense were everything you know about electromagnetism, but you needed to figure out how to build circuits, how to build modules, how to put them together, how to bring electricity from one point to another safely and so on, so forth.
+00:05:40
+So a whole field developed called electrical engineering. All right. I think that's what's happening right now, is that we have we have a Proteau field, which statistics computer more of the theoretical side of algorithmic side of computer science. That was enough to start to build things. But what things? Systems that bring value to human beings and use human data and mix in human decisions. The engineering side of that is all ad hoc. That's what's emerging. In fact, if you want to call machine learning a field, I think that's what it is, that the proto form of engineering based on statistical and computational ideas of previous generations.
+00:06:13
+But do you think there's something deeper about A.I. in his dreams and aspirations as compared to chemical engineering and electrical engineering?
+00:06:21
+Well, the dreams and aspirations may be, but those are those are five hundred years from now. I think that that's like the Greeks sitting there and saying it would be neat to get to the moon someday. Right. I think we have no clue how the brain does computation. We just are clueless. We're like we're even worse than the Greeks on most anything interesting scientifically of our era.
+00:06:40
+Can you linger on that just for a moment? Because you stand not completely unique, but a little bit unique in that in the clarity of that. Can you elaborate your intuition of why we like where we stand in our understanding of the human brain? And a lot of people say neuroscientists say we're not very far in understanding human brain, but you're like you're saying we're in the dark here?
+00:07:01
+Well, I know I'm not unique. I don't even think in the clarity. But if you talk to real neuroscientists that really study real synapses or real neurons, they agree. They agree it's a hundred hundreds of your task and they're building it up slowly but surely. What the signal is there is not clear. We think we have all of our metaphors. We think it's electrical, maybe it's chemical, it's it's a whole soup. It's ions and proteins and it's a cell.
+00:07:26
+And that's even around like a single synapse. If you look at an electron micrograph of a single synapse, it's a it's a city of its own. And that's one little thing on a digital tree, which is extremely complicated, you know, electrochemical thing. And it's doing these spikes and voltage that have been flying around. And then proteins are taking that and taking it down into the DNA and who knows what. So it is the problem of the next few centuries.
+00:07:49
+It is fantastic. But we have our metaphors about it. Is it an economic device? Is it like the immune system or is it like a layer, you know, set of, you know, arithmetic computations, what we've all these metaphors and they're fun, but that's not real science per say. There is neuroscience. That's not neuroscience. All right. That's that's like the Greeks speculating about how to get to the moon fun. Right. And I think that I like to say this fairly strongly because I think a lot of young people think we're on the verge because a lot of people who don't talk about it clearly and let it be understood that, yes, we kind of this is brain inspired.
+00:08:23
+We're kind of close. You know, breakthroughs are on the horizon. And unscrupulous people sometimes who need money for their labs, as I say, unscrupulous, but people will oversell. I need money from a lab. I'm going to I'm studying, you know, computational neuroscience. I'm going to oversell it. And so there's been too much of that.
+00:08:42
+So I'll step into the slight the gray area between metaphor and engineering with I'm not sure if you're familiar with brain computer interfaces.
+00:08:52
+So a company like Elon Musk has neural link that's working on putting electrodes into the brain and trying to be able to read, both read and send electrical signals.
+00:09:03
+Just as you said, even the basic mechanism of communication in the brain is not something we understand. But do you hope without understanding the fundamental principles of how the brain works, we'll be able to do something interesting at that gray area of metaphor?
+00:09:23
+It's not my area. So I hope in the sense, like anybody else hopes for some interesting things to happen from research, I would expect more. Something like Alzheimer's will get figured out from modern neuroscience that, you know, a lot of there's a lot of human suffering based on brain disease. And we throw things like lithium at the brain. It kind of works. No one has a clue why that's not quite true. But, you know, mostly we don't know.
+00:09:45
+And that's even just about the biochemistry of the brain and how it leads to mood swings and so on. How thought emerges from that. We just we were really, really completely dim so that you might want to hook up electrodes and try to do some signal processing on that and try to find patterns, find, you know, by all means, go for it. It's just not scientific. It's. This point, it's just it's so it's like kind of sitting on a satellite and watching the emissions from a city and trying to affirm things about the micro economy, even though you don't have macroeconomic concepts, I mean, it's really that kind of thing.
+00:10:16
+And so, yes, can you find some signals that do something interesting or useful? Can you control a cursor or a mouse with your brain? Yeah, absolutely. You know, and I can imagine business models based on that and even, you know, medical applications of that. But from there to understanding the algorithms that allow us to really tie in deeply to from the brain to the computer, you know, I just know I don't agree with Elon Musk.
+00:10:39
+I don't think that's even that's not for our generation, not even for the century.
+00:10:43
+So just in the hopes of getting you to dream, you've mentioned Komarov and Turing, my pop up.
+00:10:53
+Do you think that there might be breakthroughs that will get you to sit back in five, ten years and say, wow?
+00:11:01
+Oh, I'm sure there will be, but I don't think that they'll be demos that impressed me. I don't think that having a computer call a restaurant and pretend to be a human is a breakthrough. And people, you know, some people present it as such. It's imitating human intelligence. It's even putting cuffs in the thing to make a bit of a PR stunt and so fine that the world runs on those things, too. And I don't want to diminish all the hard work and engineering that goes behind things like that and the ultimate value to the human race.
+00:11:34
+But that's not scientific understanding. And I know the people that work on these things, they are after scientific understanding. And, you know, in the meantime, they've got to kind of the the has got to run and they got mouths to feed and they got things to do. And there's nothing wrong with all that. I would call that, though, just engineering. And I want to distinguish that profession. An engineering field like Electrolyzer and Calingiri, that original that originally emerged that had real principles.
+00:11:56
+And you really know what you're doing. And you had a little scientific understanding, maybe not even complete. So it became more predictable and it was really gave value to human life because it was understood. And so we have to and we don't want to meddle too much these waters of, you know, what we're able to do versus what we really can't do in a way that's going to press the next. So I don't I don't need to be wild, but I think that someone comes along in 20 years, a younger person who's absorbed all the technology.
+00:12:23
+And for them to be wild, I think they have to be more deeply impressed. A young Komaroff would not be wowed by some of the stunts that you see right now coming from the big companies, the demos.
+00:12:31
+But do you think the breakthroughs from Colgrove would be and give this question a chance, do you think they'll be in the scientific fundamental principles arena, or do you think it's possible to have fundamental breakthroughs in engineering, meaning?
+00:12:46
+You know, I would say some of the things that mosque is working with Space X and then others sort of trying to revolutionize the fundamentals of engineering, of manufacturing, of of saying here's a problem we know how to do a demo of and actually taking it to scale.
+00:13:01
+Yeah. So so there's going to be all kinds of breakthroughs. I just don't like that terminology. I'm a scientist and I work on things day in and day out and things move along and eventually say, well, something happened. But I don't like that language very much. Also, I don't like to prize theoretical breakthroughs over practical ones. I tend to be more of a theoretician and I think there's lots to do in that arena right now. And so I wouldn't point to the homegirls, I might point to the Edisons of the era and maybe Maskell's a bit more like that.
+00:13:28
+But, you know, must God bless him also, we'll say things about either he knows very little about and he didn't know what he is. You know, it leads people astray when he talks about things he doesn't know anything about, trying to program a computer, to understand natural language, to be involved in a dialogue. We're like we're having right now, that it happen in our lifetime. You could fake it. You can mimic sort of old sentences that humans use and retread them.
+00:13:53
+But the deep understanding of language, no, it's not going to happen. And so from that, you know, I hope you can perceive that deeper yet deeper kind of aspects and intelligence are not going to happen. Now, will there be breakthroughs? You know, I think that Google was a breakthrough. I think Amazon's breakthrough, you know, I think Goober's a breakthrough, you know, bring value to human beings at scale and new brand new ways based on data flows and so on.
+00:14:14
+A lot of these things are slightly broken because there's not a kind of an engineering field that takes economic value in context of data and and that, you know, planetary scale and worries about all the externalities, the privacy. You know, we don't have that field, so we don't think these things through free will. But I see that is emerging and that will be that will, you know, looking back for 100 years, that will be considered a breakthrough in this era.
+00:14:36
+Just like electrical engineer was a breakthrough in the early part of the last century and chemical engineer was a breakthrough.
+00:14:41
+So the scale of the markets that you talk about and we'll get to will be seen as sort of breakthrough. And we're in very early days of really doing interesting stuff there.
+00:14:51
+And we'll get to that. But it's just taking a quick step back. Can you give me kind of throw off the historian hat? I mean, you briefly said that in the history of. Mimics the history of chemical engineering, but I keep seeing machine learning, you keep want to say I just let you know I don't you know, I resist that. I don't think this is about I really was John McCarthy as almost a philosopher saying, wouldn't it be cool if we could put thought in a computer, if we could make the human capability, think or put intelligence and in some sense into a computer?
+00:15:26
+That's an interesting philosophical question. And he wanted to make it more than philosophy. He wanted to actually write down a logical formula and algorithms that would do that. And that is a perfectly valid, reasonable thing to do. That's not what's happening in this era.
+00:15:39
+So so the reason I keep saying I actually and I'd love to hear what you think about it. Machine learning has. Has a very particular set of methods and tools, maybe your version of it is that mine does. No, it doesn't. Very, very open. It does optimization. It does sampling. It does so systems that learn what machine learning is, systems that learn and make decisions and make decisions. So the pattern recognition and, you know, finding patterns is all about making decisions in real worlds and having close feedback loops.
+00:16:09
+So something like symbology, expert systems, reasoning systems, knowledge based representation, all of those kinds of things search.
+00:16:17
+Does that Nabor, fit into what you think of as machine learning? So I don't even like the word. But, you know, I think that with a field you're talking about is all about making large collections of decisions under uncertainty by large collections of entities. Yes. Right. And there are principles for that at that scale. You don't have to say the principles are for a single entity that make a decision, a single agent or a single human.
+00:16:37
+It really immediately goes to the network of decisions. It's a good word for that or no, there's no good words for any of this. That's kind of part of the problem. So we can continue the conversation to use A.I. for all that. I just want to kind of raise our flag here that this is not about we don't know what intelligence is and real intelligence. We don't know much about abstraction and reasoning at the level of humans. We don't have a clue.
+00:16:58
+We're not trying to build that because we don't have a clue. Eventually it may emerge, though. I don't know if they'll be breakthroughs, but eventually we'll start to see glimmers of that. It's not what's happening there right now. We're taking data and we're trying to make good decisions based on that. We're trying to escape. We're trying to economically viable. We're trying to build markets. We're trying to create value at that scale. And aspect of this will look intelligent.
+00:17:20
+It will look computers were so dumb before they will see more intelligent. We will use that buzzword of intelligence so we can use it in that sense. But, you know, so machine learning you can scope it narrowly is just learning from data and pattern recognition. But whatever when I talk about these topics, maybe data science is another word you could throw in the mix. It really is important that the decisions are as part of it. It's consequential decisions in the real world are I have a medical operation.
+00:17:48
+I got to drive down the street, you know, things that were there, scarcity, things that impact other human beings or other, you know, the environments and so on. How do I do that based on data? How do I do that exactly? How do I use computers to help those kind of things go forward, whatever you want to call that. So let's call it let's agree to call it A.I. But it's let's not say that what the goal of that is, is intelligence.
+00:18:10
+The goal of that is really good working systems at planetary scale we've never seen before.
+00:18:13
+So reclaim the word A.I. from the Dartmouth conference from many decades ago of the dream of I don't want to reclaim, but I want a new word.
+00:18:20
+I think it was a bad choice. I mean, I think if you read one of my little things, the history was basically that McCarthy needed a new name to cybernetics, already existed. And he didn't like, you know, no one really like no. Viña was kind of an island to himself. And he felt that he had encompassed all of this. And in some sense, he did. You look at the language of cybernetics. It was everything we're talking about.
+00:18:41
+It was control theory and signal processing and some notions of intelligence and close feedback loops and data. It was all there. It's just not a word that lived on partly because of the maybe the personalities. But McCarthy needed a new word to say, I'm different from you. I'm not part of your show. I got my own invented this word. And again, as a kind of a thinking forward about the movies that would be made about it, it was a great choice.
+00:19:05
+But thinking forward about creating a sober academic and world world discipline, it was a terrible choice because it led to promises that are not true, that we understand we understand artificial perhaps, but we don't understand intelligence.
+00:19:16
+There's a small tangent because you're one of the great personalities of machine learning, whatever the heck you call the field.
+00:19:22
+The do you think science progresses by personalities or by the fundamental principles and theories and research that's outside of personality?
+00:19:32
+Both. And I wouldn't say there should be one kind of personality. I have mine and I have my preferences and I have a kind of network around me that feeds me. And some of them agree with me on some I disagree. But, you know, all kinds of personalities are needed right now.
+00:19:46
+I think the personality that it's a little too exuberant, a little bit too ready to promise the moon is a little bit too much in ascendance. And I do I do think that that's there's some good to that. It certainly attracts lots of young people to our field. But a lot of people come in with strong misconceptions and they have to then unlearn those and then find something, you know, to do. And so I think there's just got to be some, you know, multiple voices.
+00:20:08
+And I didn't I wasn't hearing enough of the more sober voice.
+00:20:12
+So as a continuation of a fun tangent and speaking of vibrant personalities, what would you say is the most interesting disagreement you have with John Larkin?
+00:20:24
+So John's an old friend, and I just say that I don't think we disagree about very much, really. He and I both kind of have a let's build that kind of mentality and does it work kind of mentality and kind of concrete. We both speak French, we speak French, we're together.
+00:20:40
+And we have we have a lot a lot in common. And so, you know, if we wanted to highlight a disagreement, it's not really a fundamental one. I think it's just kind of what we're emphasizing. John has emphasized pattern recognition and has emphasized prediction. All right. So, you know, and it's interesting to try to take that as far as you can. If you could do perfect prediction, what would that give you kind of as a thought experiment?
+00:21:07
+And I think that's way too limited. We cannot do perfect prediction. We will never have the data sets. Allow me to figure out what you're about ready to do, what question you're going to ask next. I have no clue. I will never know such things. Moreover, most of us find ourselves during the day in all kinds of situations. We had no anticipation of that are kind of very, very novel in various ways. And in that moment, we want to think through what we want.
+00:21:33
+And also there's going to be market forces that in us I'd like to go down that street, but now it's full because there's a crane in the street. I got it. I got to think about that. I got to think about what I might really want here. And I got to sort of think about how much it costs me to do this action versus this action. I got to think about the risks involved. You know, a lot of our current pattern recognition and prediction systems don't do any risk evaluations.
+00:21:54
+They have no error bars. Right. I got to think about other people's decisions around me. I have to think about a collection of my decisions, even just thinking about like a medical treatment. You know, I'm not going to take the prediction of a neural net about my health, about something consequential. Am I going to have a heart attack because some number is over? Point seven, even if you had all the data in the world ever been collected about heart attacks?
+00:22:16
+Better than any doctor I ever had, I'm not going to trust the output of that neural net to predict my heart attack. I'm going to want to ask what if questions around that. I'm going to want to look at some other other possible date. I didn't have causal things. I'm going to have a dialogue with a doctor about things we didn't think about. We gather the data. You know, I could go on and on. I hope you can see.
+00:22:34
+And I don't I think that if you say predictions, everything that that that you're missing all of this stuff. And so prediction plus decision making is everything, but both of them are equally important. And so the field has emphasized prediction, John, rightly so, is seeing how powerful that is. But at the cost of people not being aware, the decision making is where the rubber hits the road, where human lives are at stake, where risks are being taken, where you got to gather more data.
+00:22:59
+You got to think about the error bars. You got to think about the consequences of your decisions and others about the economy around your decisions, blah, blah, blah, blah. I'm not the only one working on those, but we're a smaller tribe. And right now we're not the one that people talk about the most. But, you know, if you go out into the real world and industry, you know, at Amazon, I'd say half the people there are working on decision making and the other half are doing, you know, the pattern recognition.
+00:23:22
+It's important.
+00:23:22
+And the words of pattern recognition and prediction. I think the distinction, they're not to linger and words, but the distinction. There's more a constraint sort of in the lab. Data set versus decision making is talking about consequential decisions in the real world under the messiness and the uncertainty of the real world and just the whole of the whole mess of it that actually touches human beings and scale and market forces. That's the that's the distinction. Yeah.
+00:23:48
+It helps add those that perspective, that broader perspective. You're right. I totally agree. On the other hand, if you're a real prediction person, course you want it to be in the real world. You want to predict real world events. I'm just saying that's not possible with just data sets, that it has to be in the context of, you know, strategic things, that someone is doing data. They might gather things. They could have gathered the reasoning process around data.
+00:24:07
+It's not just taking data and making predictions based on the data.
+00:24:10
+So one of the the things that you're working on, I'm sure there's others working on it, but I don't hear often it talked about, especially in the clarity that you talk about it and I think is both the most exciting and the most concerning area of AI in terms of decision making. So you've talked about systems that help make decisions that scale in a distributed way, millions, billions decisions as sort of markets of decisions. Can you as a starting point, sort of give an example of a system that you think about when you're thinking about these kinds of systems?
+00:24:44
+Yeah, so first of all, you're absolutely getting into some territory, which I will be beyond my expertise. And there are lots of things that are going to be very not obvious to think about, just like just go. I like to think about history a little bit, but think about put yourself back in the 60s, there was kind of a banking system that wasn't computerized really. There was there there was database theory emerging and database people had to think about how do I actually not just moved data around, but actual money and have it be, you know, valid and have transactions that ATMs happen that are actually, you know, all valid and so and so forth.
+00:25:15
+So that's the kind of issues you get into when you start to get serious about sort of things like this. I like to think about as kind of almost a thought experiment to help me think. Something simpler, which is music market, and because there is the first order, there is no music market in the world right now and in our country for sure, there are something called things called record companies, and they make money and they prop up a few really good musicians and make them superstars.
+00:25:45
+And they all make huge amounts of money. But there's a long tail of huge numbers of people that make lots and lots of really good music that is actually listened to by more people than the famous people. And they are not in a market. They can have a career. They do not make money, the creators, the creators, the so-called influencers or whatever, that diminishes who they are. Right. So there are people who make extremely good music, especially in the hip hop or Latin word world these days.
+00:26:12
+They do it on their laptop. That's what they do on the weekend. And they have another job during the week. They put it up on SoundCloud or other sites. Eventually it gets streamed down, gets turned into bits. It's not economically valuable. The information is lost. It gets put up there, people stream it. You walk around in a big city, you see people with headphones. All, you know, especially young kids listen to music all the time.
+00:26:34
+If you leave the data, none of them, very little of the music they're listen to is the famous people's music. And none of it's old music. It's all the latest stuff. But the people who made that latest stuff are like some 16 year old somewhere who will never make a career out of this, who will never make money. Of course, there will be a few counterexamples. The record companies incentivized to pick out a few and highlight them.
+00:26:52
+Long story short, there's a missing market there. There is not a consumer producer relationship at the level of the actual creative acts. The pipelines and Spotify is of the world that take this stuff and stream it along. They make money off of subscriptions or advertising in those things. They're making the money all right. And then they will offer bits and pieces of it to a few people again to highlight that, you know, they're the simulator market anyway.
+00:27:16
+Real market would be, if you're a creator of music, that you actually are somebody who's good enough that people want to listen to you. You should have the data available to you. There should be a dashboard showing a map of the United States. So in last week, here's all the places your songs were listened to. It should be transparent vegetable so that if someone in town in Providence sees that you're being listened to 10000 times in Providence, that they know that's real data.
+00:27:41
+You know, it's real data. They will have you come give a show down there. They will broadcast to the people who've been listening to you that you're coming. If you do this right, you could you could, you know, go down there, make twenty thousand dollars. You do that three times year. You start up a career. So in this sense, EHI creates jobs. It's not about taking away human rights. It's creating new jobs because it creates a new market.
+00:28:00
+Once you've created a market, you've now connected up producers and consumers. You know, the person is making the music and say to someone who comes to their shows a lot, hey, I'll play your daughter's wedding for ten thousand dollars. You'll say eight thousand. They'll say nine thousand. Then you again, you you can now get an income up to one hundred thousand dollars. You're not going to be a millionaire. All right. And now even think about really the value of music is in these personal connections, even so much so that a young kid wants to wear a T-shirt with their favorite musicians signature on it.
+00:28:31
+Right. So if they listen to the music on the Internet, the Internet should be able to provide them with a button that they push and the merchandise arrives the next day. We can do that right now. Why should we do that? Well, because the kid who bought the shirt will be happy, but more the person who made the music will get the money. There's no advertising needed. Right. So you can create marketing and consumers take five percent cut.
+00:28:53
+Your company will be perfectly sound. It'll go forward in the future and it will create new markets and that raises human happiness. Now, this seems like it was easy. Just create this dashboard, kind of create some connections and all that. But, you know, if you think about Uber or whatever you think about the challenges in the real world of doing things like this, and there are actually new principles going to be needed. You're trying to create a new kind of two way market at a different scale that's never been done before.
+00:29:17
+There's going to be, you know, unwanted aspects of the market. They'll be bad people. They'll be you know, the date will get used in the wrong ways. You know, it'll fail in some ways. It won't deliver value. You have to think that through just like anyone who, like, ran a big auction or, you know, around a big matching service and economics will think these things through. And so that maybe didn't get it.
+00:29:37
+All the huge issues that can arise, we start to create markets, but it starts for at least for me, solidify my thoughts and allow me to move forward in my own thinking. Yeah.
+00:29:45
+So I talked to had a research Spotify, actually, I think their long term goal, they've said, is to have at least one million creators make a make a comfortable living putting out Spotify. So in and I think you articulate a really nice vision of the world in the digital in the cyberspace of markets.
+00:30:10
+What what do you think companies like Spotify or YouTube or Netflix can do to create such markets?
+00:30:21
+Is it an eye problem? Is an interface? Problems with interface design, is it some other kind of is an economics problem? Who should they hire to solve these problems? Well, part of it's not just top down. So the Silicon Valley has its attitude that they know how to do it. They will create the system, just like Google did with the search box. That will be so good that they'll just everyone adopt that. Right. It's not it's everything you said, but really, I think missing the kind of culture.
+00:30:48
+All right. So it's literally that 16 year old who was able to create the songs. You don't create that as a Silicon Valley entity. You don't hire them, say, right. You have to create an ecosystem in which they are wanted and that they're blong. Right. And so you have to have some cultural credibility to do things like this. You know, Netflix, to their credit, wanted some of that sort of credibility they created shows the content.
+00:31:10
+They call it content. It's such a terrible word, but it's called its culture. Yeah, right.
+00:31:13
+And so with movies, you can kind of go give large sum of money to somebody graduate for the USC film school. It's a whole thing of its own, but it's kind of like rich white people's thing to do, you know? And, you know, American culture has not been so much about rich white people.
+00:31:28
+It's been about all the immigrants, all the all the Africans who came and brought that culture and those rhythms and that to this world and created this whole new thing, you know, American culture. And so companies can't artificially create that. They can't just say, hey, we're here, we're going to buy it up. You got partner, right? And so anyway, you know, not to denigrate these companies are all trying and they should. And they they I'm sure they're asking these questions and some of them are even making an effort.
+00:31:57
+But it is partly a respect the culture as you are to as a technology person.
+00:32:01
+You've got to blend your technology with cultural, with cultural, you know, meaning how much of a role do you think the algorithm, the machine learning has in connecting the consumer to the creator, sort of the recommender system aspect of this?
+00:32:16
+Yeah, it's a great question. I think pretty high recommend. You know, there's no magic in the algorithms, but a good recommender system is way better than a bad recommender system. And recommender systems is a billion dollar industry back even, you know, 10, 20 years ago. And it continues to be extremely important going forward.
+00:32:34
+What's your favorite recommender system just so we can put something?
+00:32:37
+Well, just historically, I was one of the you know, when I first went to Amazon, you know, I first didn't like Amazon because they put the book People Out of Business, the library, you know, the local booksellers went out of business. I've come to accept that there you know, there probably are more books being sold now and more people reading them than ever before. And then a local book stores are coming back. So, you know, that's how economics sometimes work.
+00:32:58
+You go up and you go down. But anyway, when I finally started going there and I bought a few books, I was really pleased to see another few books being recommended to me that I never would've thought of. And I bought a bunch of them. So they obviously had a good business model. But I learned things and I still to this day kind of browse using that service. And I think lots of people get a lot, you know, about.
+00:33:21
+That is a good aspect of a recommendation system. I'm learning from my peers in an indirect way, and their algorithms are not meant to have them impose what we what we learn. It really is trying to find out what's in the data. It doesn't work so well for other kind of entities, but that's just the complexity of human life like Schertz. You know, I'm not going to get recommendations on shirts and but that's that's that's interesting. If you try to recommend restaurants, it's it's it's it's it's hard.
+00:33:49
+It's hard to do it at scale and but a blend of recommendation systems with other economic ideas, machines and so on is really, really still very open research wise. And there's new companies could emerge that do that.
+00:34:04
+Well, what what do you think is going to the messy, difficult land of, say, politics and things like that, the YouTube and Twitter have to deal with in terms of recommendation systems being able to suggest I think Facebook just launched Facebook news. So they're having to recommend the kind of news that are most likely for you to be interesting using this is a solvable, again, whatever term want to use. Do you think it's a solvable problem for machines or is it a deeply human problem that's unsolvable?
+00:34:35
+So I don't even think about at that level. I think that what's broken with some of these companies, it's all monetization by advertising. They're not at least Facebook. Let's I want to critique them. But they didn't really try to connect a producer and a consumer in an economic way. Right. No one wants to pay for anything. And so they all, you know, starting with Google and Facebook, they went back to the playbook of, you know, the television companies back in the day.
+00:34:58
+No one wanted to pay for this signal. They will pay for the TV box, but not for the signal leaks back in the day. And so advertising kind of fill that gap and advertise. It was new and interesting and it somehow didn't take over our lives. Quite right. Fast forward, Google provides a service that people don't want to pay for. And so, somewhat surprisingly, 90s, they may end up making huge amounts. They can't do the advertising market.
+00:35:22
+It didn't seem like that was. Going to have, at least to me, these little things on the right hand side of the screen just not seem all that economically interesting, but that companies had maybe no other choice. The TV market was going away and billboards and so on. So they got it. And I think that sadly, that Google just how it was doing so well with that and make it so right. They didn't think much more about how.
+00:35:43
+Wait a minute, is there a producer consumer relationship to be set up here, not just between us and the advertisers market to be created? Is there an actual market between the producer consumer there? The producer is the person who created that video clip, the person that made that website, the person who could make more such things, the person who could adjust it as a function of demand, the person on the other side who's asking for a different kinds of things, you know, so you see glimmers of that.
+00:36:05
+Now there's influencers and there's kind of a little glimmering of a market. But it should have been done 20 years ago, should have thought about it, should have been created in parallel with the advertising ecosystem. And then Facebook inherited that. And I think they also didn't think very much about that. So fast forward and now they are making huge amounts of money off of advertising. And the news thing and all these clicks is just is feeding the advertising and it's all connected up to the advertiser.
+00:36:30
+So you want more people to click on certain things because that money flows to you. Facebook, you're very much incentivized to do that. And when you start to find it's breaking, it's people were telling you, well, we're getting some troubles. You try to adjust it with your smart A.I. algorithms. Right. And figure out what are bad clicks, though, maybe. Shouldn't we click through rate issues? I find that pretty much hopeless. It does get into all the complexity in life and you can try to fix it.
+00:36:54
+You should, but you could also fix the whole business model and the business model. Is that really what are there are some human producers and consumers out there is there are some economic value to be liberated by connecting them directly. Is it such that it's so valuable that people are willing to pay for it? All right.
+00:37:10
+And when my payments like small micro, but even have to be micro. So I like the example. Suppose I'm going next week. I'm going to India. Never been to India before. Right. I have a couple of days in Mumbai. I have no idea what to do there. Right. And I could go on the web right now and search. It's going to be kind of hopeless. I'm not going to find you know, I have lots of advertisers in my face.
+00:37:31
+Right. What I really want to do is broadcast to the world that I am going to Mumbai and have someone on the other side of a market look at me and and there's a recommendation system there. So not looking at all possible people coming to Mumbai, they're looking at the people who are relevant to them. So someone my age group, someone who kind of knows me at some level, I give up a little privacy by that. But I'm happy because what I'm going to get back is this person can make a little video for me.
+00:37:54
+Are they going to write a little two page paper on? Here's the cool things that you want to do in Mumbai this week, especially. Right? I'm going to look at that. I'm not going to pay a micropayment. I'm going to pay, you know, one hundred dollars or whatever for that. It's real value. It's like journalism as an art subscription. It's that I'm going to pay that person in that moment. Companies is going to take five percent of that.
+00:38:13
+And that person is now got it. It's a gig economy, if you will. But, you know, done for, you know, thinking about a little bit behind YouTube, there was actually people who could make more of those things. If they were connected in a market, they would make more of those things independently. You'd have to tell them what to do. You don't have to incentivize them any other way. And so, yeah, these companies, I don't think, have thought long, long and hard about that.
+00:38:32
+So I do distinguish on Facebook on the one side who just not thought about these things at all. I think thinking that I will fix everything and Amazon and thinks about them all the time because they were already out in the real world. They were delivering packages, people's doors. They were they were worried about a market. They were worried about sellers. And, you know, they worry. And some things they do are great, some things maybe not so great.
+00:38:50
+But, you know, they're in that business model. And then I'd say Google sort of hovers somewhere between I don't I don't think for a long, long time they got it. I think they probably see that YouTube is more pregnant with possibility than than than they might have thought and that they're probably heading that direction. But, you know, Silicon Valley has been dominated by the Google Facebook kind of mentality and the subscription and advertising. And that is that's the core problem.
+00:39:15
+Right. The fake news actually rides on top of that because it means that you're monetizing with click through rate. And that is the core problem. You've got to remove that.
+00:39:24
+So advertisement, you're going to linger on that. I mean, that's an interesting thesis. I don't know if everyone really deeply thinks about that. So you're right.
+00:39:33
+The thought is the advertising model is the only thing we have, the only thing we'll ever have.
+00:39:38
+So have to fix we have to build algorithms that despite that business model, we, you know, find the better angels of our nature and do good by society and by the individual.
+00:39:51
+But you think we can slowly you think, first of all, there's a difference between should and could see. You're saying we should slowly move away from the advertising model and have a direct connection between the consumer and the creator.
+00:40:07
+The question I also have is, can we? Because the advertising model so successful now in terms of just making a huge amount of money and therefore being able to build a big company that provides has really smart people working that create a good service. Do you think it's possible and just a clever. I think we should move away. Well, I think we should, yeah, but we as the economy society. Yeah, well, the companies I mean, so first of all, full disclosure, I'm doing a day, a week at Amazon because I kind of want to learn more about how they do things.
+00:40:36
+So, you know, I'm not speaking for Amazon in any way. But, you know, I did go there because I actually believe they get a little bit of this are trying to create these markets and they don't really use advertising is not a crucial part of it.
+00:40:46
+That's a good question. So it has become not crucial, but it's become more and more present. If you go to Amazon website and, you know, without revealing too many secrets about Amazon, I can tell you that, you know, a lot of people a company question this and there's a huge questioning going on. You do not want a world where there are zero advertising that actually is a bad world. OK, so here's a way to think about it.
+00:41:06
+You're a company that, like Amazon, is trying to bring products to customers. Right. And the customer, you want to buy a vacuum cleaner, say you want to know what's available for me. And, you know, it's not really that obvious. You have to a little bit of work at it. The recommendation system will sort of help. Right. But now suppose this other person over here has just made the world you know, they spent a huge amount of energy.
+00:41:26
+They had a great idea. They made a great vacuum cleaner. They know they really did it. They nailed it. It's an MIT whiz kid that made a great new vacuum cleaner. Right. It's not going to be in the recommendation system.
+00:41:35
+No one will know about it. The algorithms will not find it. And I will not fix that at all. Right. How do you allow that vacuum cleaner to start to get in front of people, be sold? Well, advertising and hear what advertising is. It's a signal that you're you believe in your product enough that you're willing to pay some real money for it. And to me, as a consumer, I look at that signal. I say, well, first of all, I know these are not just cheap little ads because we have now right now, I know that, you know, these are super cheap, you know, pennies.
+00:42:04
+If I see an ad where it's actually I know the company is only doing a few of these and they're making real money is kind of flowing. And I see an ad I may pay more attention to it. I actually might want that because I say, hey, that guy spent money on his vacuum cleaner or maybe there's something good there. So I will look at it. And so that's part of the overall information flow in a good market. So advertising has a role, but the problem is, of course, that that signal is now completely gone because it just, you know, dominated by these tiny little things that add up to big money for the company, you know?
+00:42:34
+So I think it will just I think it will change because societies just don't, you know, stick with things that annoy a lot of people. And advertising currently annoys people more than it provides information. And I think that I Google probably is smart enough to figure out that this is a dead this is a bad model, even though it's a huge, huge amount of money. And they'll have to figure out how to pull it away from it slowly.
+00:42:55
+And I'm sure the CEO there will figure it out, but they need to do it and they need it. So if you reduce advertising not to zero, but you reduce it at the same time, you bring up producer, consumer, actual, real value being delivered. So real money is being paid and they take a five percent cut. That five percent can start to get big enough to cancel out the lost revenue from the kind of the poor kind of advertising.
+00:43:17
+And I think that a good company will do that, will realize that. And there are ads on Facebook, you know, again, God bless them. They bring, you know, grandmothers, you know, they bring children's pictures into grandmothers lives. It's fantastic. But they need to think of a new business model. And they that's that's the core problem there. Until they start to connect producer consumer, I think they will just just continue to make money and then buy the next social network company in the by the next one.
+00:43:47
+And the innovation level will not be high and the health the health issues will not go away.
+00:43:52
+So I apologize that we kind of return to words. I don't think the exact terms matter.
+00:43:58
+But in sort of defensive advertisement, don't you think the kind of direct connection between consumer and creator producer is the best like the is what advertising strives to do?
+00:44:17
+Right. So that is best advertisement is literally now Facebook is listening to our conversation and heard that you're going to India and will be able to actually start automatically for you making these connections and started giving this offer. So, like, I apologize if it's just a matter of terms, but just to draw a distinction, is it possible to make advertising which is better and better and better algorithmically to where it actually becomes a connection on what to do?
+00:44:43
+That's a good question. So let's put it on that push. First of all, what we just talked about, I was defending advertising, OK? So I was defending it as a way to get signals into a market that don't come any other way, especially algorithmically. It's a sign that someone spent money on it as a sign they think it's valuable. And if I think that if other think someone else thinks it's valuable and if I trust other people, I might be willing to listen.
+00:45:04
+I don't trust that Facebook, though it was an intermediary between this. I don't think they care about me, OK? I don't think they do. And I find it creepy that they know I'm going to India next week because of our conversation.
+00:45:18
+Why do you think that is? So what, you just put your head on?
+00:45:24
+Why do you think you find Facebook creepy and not trust them, as do the majority of the population, so they're out of the Silicon Valley companies I saw like not approval rate, but there's this ranking of how much people trust companies. And Facebook is in the gutter, in the gutter, including people inside of Facebook.
+00:45:42
+So what what do you attribute that to?
+00:45:45
+Because when you don't find it creepy that right now we're talking that I might walk out on the street right now, that some unknown person who I don't know kind of comes up to me, says, I hear you're going to India. I mean, that's not even Facebook. That's just it. I want transparency in human society. I want to have if you know something about me, there's actually some reason, you know something about me. That's something that if I look at it later and audit it, kind of I prove, you know, something about me because you care in some way.
+00:46:11
+There's a caring relationship even or an economic one or something. Not just that you're someone who could exploit it in ways I don't know about or care about or I'm troubled by or whatever and know right now where that happens way too much and that Facebook knows things about a lot of people and could exploit it and does exploited at times. I think most people do find that creepy. It's not for them. It's not it's not that Facebook does not do it because they care about them.
+00:46:38
+Right. In any real sense. And they shouldn't they should not be a big brother caring about us. That is not the role of a company like that.
+00:46:46
+Why not? Not the Big Brother part, but sharing the trust thing. I mean, don't those companies just to Lingala, because a lot of companies have a lot of information about us. I would argue that there's companies like Microsoft that has more information about us than Facebook does, and yet we trust Microsoft more.
+00:47:03
+Well, Microsoft is pivoting. Microsoft, you know, under Satya Nadella has decided this is really important. We don't want to do creepy things, really want people to trust us to actually only use information in ways that they really would approve of that we don't decide. Right. And I'm just kind of adding that health, the health of a market is that when I connect to someone who produces consumer, not just a random producer consumer, it's people who see each other.
+00:47:27
+They don't like each other, but they sense that if they transact, some happiness will go up on both sides. If a company helps me to do that and moments that I choose of my choosing, then fine. So and also think about the difference between, you know, browsing versus buying. Right. There are moments in my life I just want to buy, you know, a gadget or something. I need something for that moment. I need some Omonia for my house or something because I got a problem with this bill.
+00:47:54
+I want to just go in. I don't want to be advertised at that moment. I don't want to be led down. You know, that's annoying. I want to just go and have it be extremely easy to do what I want. Other moments I might say.
+00:48:07
+No, I'm it's like today I'm going to the shopping mall. I want to walk around and see things and see people and be exposed to stuff. So I want control over that, though. I don't want the company's algorithms to decide for me. Right. I think that's a thing that's a total loss of control. If Facebook thinks they should take the control from us of deciding when we want to have certain kinds of information, when we don't want information, that is how much it relates to what they know about us that we didn't really want them to know about us.
+00:48:30
+They're not I don't want them to be helping me in that way. I don't want them to be helping them. But they decide they have control over what I want.
+00:48:39
+And when I totally agree to Facebook, by the way, I have this optimistic thing where I think Facebook has the kind of personal information about us that could create a beautiful thing. So I I'm really optimistic of what Facebook could do.
+00:48:53
+It's not what it's doing, but what it could do.
+00:48:55
+So I don't see that. I think that optimism was misplaced because there's not a you have to have a business model behind these things. You create a beautiful thing is really let's be let's be clear. It's about something people would value. And I don't think they have that business model and I don't think they will suddenly discover it. What you know, I have a long, hot shower. I disagree.
+00:49:16
+I disagree in terms of you can discover a lot of amazing things in a shower.
+00:49:21
+So I didn't say that. I said they won't they won't do it. But in the shower, I think a lot of other people will discover it. I think that I saw I should also full disclosure, there's a company called United Masters, which I'm on their board, and they play this music market. And over one hundred thousand artists now signed on and they've done things like gone to the NBA and the NBA. The music, the fine behind NBA clips right now is their music.
+00:49:43
+Right. That's a company that had the right business model in mind from the get go. Right. Execute it on that. And from day one, there was value brought to. So here and here you have a kid who made some songs who suddenly their songs are on the NBA website.
+00:49:56
+Right. That that's real economic value to people.
+00:50:00
+And so, you know, so you and I differ on the optimism of being able to sort of change the direction of the Titanic.
+00:50:10
+Right. So, yeah, I'm older than you, Socrates. Titanic crash.
+00:50:17
+I got it. But just elaborate because I totally agree with you and I just want to know how. Do you think this problem is of so for example, I I want to read some news and I would there's a lot of times in the day where something makes me either smile or think in a way where I consciously think this really gave me value. Like I sometimes listen to the daily podcast in The New York Times, way better than The New York Times themselves.
+00:50:44
+By the way, for people listening, that's like real journalism is happening for some reason. And the podcast basically doesn't make sense to me.
+00:50:50
+But often I listen to it 20 minutes and I would be willing to pay for that like five dollars, ten dollars for that experience.
+00:50:58
+And how difficult that's kind of what you're getting at is that little transaction. How difficult is it to create a frictionless system like Uber has, for example, for other things?
+00:51:10
+What's your intuition there? So first of all, I pay a little bit of money to you know, there's something called quartz that does financial things. I like medium as a side. I don't pay there, but I. Would you add a great post on medium?
+00:51:23
+I would have loved to pay you a dollar, but I wouldn't I wouldn't have wanted it per say, because there should be also sites where that's not actually the goal. The goal is to actually have a broadcast channel that I monetize in some other way if I chose to. I mean, I could. Now people know about it. I could. I'm not doing it, but that's fine with me. There are also the musicians who are making all this music.
+00:51:45
+I don't think the right model is that you pay a little subscription fee to them. All right. Because because people can copy the bits too easily. And it's just not that's not where the value is. The value is that a connection was made between real human beings.
+00:51:56
+Then you can follow up on that. Right. And create yet more value. So, no, I think there's a lot of open questions here, hot open questions. But also, I do want good recommendation systems that recommend cool stuff to me. But it's pretty hard, right? I don't like them to recommend stuff just based on my browsing history. I don't like the do based on stuff they know about me. Concord What's unknown about me is the most interesting.
+00:52:18
+So this is this is the really interesting question. We may disagree. Maybe not. I think that I love recommender systems and I want to give them everything about me in a way that I trust.
+00:52:31
+But you don't because so, for example, this morning I clicked on, you know, I was pretty sleepy this morning. I clicked on a story about the queen of England. Yes, right. I do not give a damn about the queen of England. I really do not. But it was click bait. It kind of looked funny.
+00:52:47
+And I had to say, what the heck are they talking about? I don't want to have my life, you know, heading that direction. Now, that's in my browsing history. The system and any reasonable system will think that browsing history.
+00:52:57
+Right. But but you're saying all the trace, all the digital exhaust or whatever, that's been kind of the models. If you collect all this stuff, you're going to figure all of us out. Well, if you're talking feltlike kind of one person like Trumper, so maybe you could figure him out. But if you're trying to figure out, you know, 500 million people, you know, no way.
+00:53:14
+No way.
+00:53:15
+Do you think so? No, I think so. I think we are humans are just amazingly rich and complicated. Every one of us has our little quirks. Every one of us has our little things that could intrigue us that we don't even know. It will intrigue us. And there's no sign of it in our past. But by God, there it comes. And, you know, you fall in love with it. And I don't want a company trying to figure that out for me and anticipate that.
+00:53:33
+OK, well, I want them to provide a forum, a market, a place that I kind of go and by hook or by crook, this happens. You know, I'm walking down the street and I hear some Chilean music being played and I never knew I like Chile music. Wow. So there is that side. And I want them to provide a limited but, you know, interesting place to go. Right. And so don't try to use your eye to kind of, you know, figure me out and then put me in a world where you figured me out, you know, no create spaces for human beings, where our creativity and our style will be enriched and come forward.
+00:54:06
+And it'll be a lot of more transparency. I won't have people randomly, anonymously putting comments up and I'll special based on stuff they know about me, facts that, you know, we are so broken right now, if you know, especially if you're a celebrity, but you know about anybody that anonymous people are hurting lots and lots of people right now. And that's part of this thing that Silicon Valley is thinking that, you know, just collect all this information and use it in a great way.
+00:54:29
+So, you know, I'm I'm not I'm not a pessimist, but I'm very much an optimist by nature. But I think that's just been the wrong path for the whole technology to take. The more limited create, let humans rise up. Don't don't try to replace them. That's the mantra. Don't try to anticipate them. Don't try to predict them because you're not going to you're not going to be do those little things are going make things worse.
+00:54:51
+OK, so right now, just give this a chance. Right now, the recommender systems are the creepy people in the shadow watching your every move. So they're looking at traces of you. They're not directly interacting with you, sort of your close friends and family. The way they know you is by having conversation, by actually having interactions back and forth. Do you think there's a place for recommender systems? Sort of, because you just emphasize the value of human a human connection.
+00:55:21
+But, yeah, let's give a chance.
+00:55:23
+By human connection, is there a role for an assistant to have conversations with you in terms of to try to figure out what kind of music you like now, not just watching what you listen, but actually having a conversation, natural language or otherwise?
+00:55:36
+Yeah, no, I'm I'm so I'm not against it, so I just want to push back against that. Maybe you're saying you have to sort of Facebook's like that I think is misplaced.
+00:55:43
+But but I think that I think Facebook is so good for you of go for it. It's a hard spot to get human interaction like on our daily. The context around me in my own home is something that I don't want some big company to know about it all.
+00:55:58
+But I would be more than happy to have technology help me with it. Which kind of technology?
+00:56:02
+Well, you know, just Alexa. Well, a good Alexa is done, right? I think Alexa is a research platform right now more than anything else.
+00:56:09
+But Alexa done right. You know, could do things like I leave the water running in my garden and I say, hey, Alexa, the waters are in my garden. And even have Alexa figured out that that means when my wife comes home that she should be told about that. That's a little bit of a reason I would call that I am by any kind of stretch is a little bit of reasoning, and it actually kind of make my life a little easier and better.
+00:56:28
+And, you know, I wouldn't call it a wow moment, but I kind of think that overall raices human happiness up to have that kind of thing.
+00:56:35
+But not when you're lonely. Alexa, knowing loneliness. No, no, no. I don't want to let that be. I feel intrusive. And and I don't want just the designer of the system to kind of work all this out. I really want to have a lot of control and I want transparency in control. And if the company can stand up and give me that in the context of technology, I think they're good first of be way more successful than our current generation.
+00:56:57
+And like I said, I was at Microsoft and I really think they're pivoting to kind of be the trusted old uncle. But, you know, I think that they get that this is a way to go, that if you let people find technology, empowers them to have more control and have and have control, not just over privacy, but over this rich set of interactions, that that people go like that a lot more. And that's that's the right business model going forward.
+00:57:17
+What is control over privacy? What do you think you should be able to just view all the data that.
+00:57:22
+No, it's much more than that. I mean, first of all, it should be an individual decision. Some people don't want privacy. They want their whole life out there. Other people's want it. Privacy is not a zero one. It's not a legal thing. It's not just about which data is available, which is not. I like to recall to people that, you know, a couple hundred years ago, everyone there was not really big cities.
+00:57:43
+Everyone lives on the countryside and villages and in villages. Everybody knew everything about you. You didn't have any privacy. Is that bad or are we better off now? Well, arguably, no, because what did you get for that loss of certain kinds of privacy? Well, people helped each other. If they because they know everything about you, they know something bad's happening. They will help you with that. Right. And now you live in a big city.
+00:58:04
+No one knows about that. You get no help. So it kind of depends the answer. I want certain people who I trust and there should be relationships. I should kind of manage all those. But who knows? What about me? I should have some agency there. It shouldn't I shouldn't be adrift in a sea of technology where I know that I don't want good reading things and checking boxes. So I don't know how to do. I'm not a privacy researcher.
+00:58:28
+I just I recognize the vast complexity of this. It's not just technology. It's not just legal scholars meeting technologists. There's got to be kind of a whole layers around it. And so what I allude to, this emerging engineering field, this is a big part of it, like in electrical engineering come game. I'm not waiting around in the time. But you just didn't plug electricity into walls and all kind of worked. You don't need to have, like, underwriter's laboratory that reassures you that that plug is not going to burn up your house and that that machine will do this and that and everything.
+00:58:59
+They'll be whole people who can install things. They'll be people who can watch the installers. There be a whole layers, you know, an onion of these kind of things. And four things as deeply interesting as privacy, which is, is essentially the electricity that could take decades to kind of work out. But it's going require a lot of new structures that we don't have right now. So it's kind of hard to talk about it.
+00:59:19
+And you're saying there's a lot of money to be made if you get it right. So absolutely sure. Look, a lot of money to be made in all these things that provide human services and people recognize them as useful parts of their lives. So, yeah. So, yeah, the dialogue sometimes goes from the exuberant technologists to the know. Technology is good kind of. And that's, you know, in our public discourse, you know, as you see too much of this kind of thing and and the sober discussions in the middle, which are the challenge he wants to have or where we need to be having our conversations and, you know, is not actually there's not many forum for or for those.
+00:59:53
+You know, there's that's that's kind of what I would look for. Maybe I could go and I could read a comment section of something that I would actually be this kind of dialogue going back and forth.
+01:00:01
+You don't see much of this. Right, which is why actually there's a resurgence of podcasts out of all because good bye. Really hungry for conversation. Yeah, there's technology is not helping much comment sections of anything, including YouTube.
+01:00:15
+Yeah. Is not hurting, hurting and not hurting. Yeah. And you think technically speaking. It's possible to help. I don't know the answers, but it's the less anonymity, a little more locality, you know, world that you kind of enter and you trust the people there in those worlds so that when you start having a discussion, you know, not only that people aren't going to hurt you, but it's going to be a total waste of your time because there's a lot of wasting of time that, you know, a lot of us I pulled out of Facebook on because it was clearly going to waste a lot of my time, even though there was some value.
+01:00:48
+And so, yeah, worlds that are somehow you interact and you know what you're getting and it's kind of appeals to you and you might new things might happen, but you kind of have some some trust in that world.
+01:00:57
+And there's some deep, interesting, complex psychological aspects around anonymity, how that changes human behavior and quite dark and quite dark.
+01:01:07
+Yeah, I think a lot of us, especially those of us who really loved the advent of technology, I love social networks. When I came out, I was just I didn't see any negatives there at all. But then I started seeing comments sections. I think it was maybe, you know, CNN or something. And I sort of thought, wow, this this darkness I just did not know about. And and our technology is now amplifying it.
+01:01:29
+So sorry for the big philosophical question, but on that topic, do you think human beings, because you've also, out of all things, had a foot in psychology to the do you think human beings are fundamentally good, like all of us have good intent that could be mined?
+01:01:45
+Or is it depending on context and environment, everybody could be evil.
+01:01:52
+So my answer is fundamentally good, but fun limited. All of us have very, you know, blinkers on. We don't see the other person's pain that easily. We don't see the other person's point of view that easily. We're very much in our own head, in our own world. And on my good days, I think that technology could open us up to more perspectives and more less blinkered and more understanding. You know, a lot of wars in human history happen because of just ignorance.
+01:02:17
+They didn't they they thought the other person was doing this other person wasn't doing this. And we have a huge amount of that.
+01:02:22
+But in my lifetime, I've not seen technology really help in that way yet. And I do. I do. I do believe in that. But, you know, no, I think fundamentally humans are good. People suffer. People have grievances, people have grudges. And those things cause them to do things they probably wouldn't want. They regret it often. So, no, I think it's you know, part of the progress of technology is to indeed allow it to be a little easier to be the real good person you actually are.
+01:02:48
+Well, but do you think individual human life or society can be modeled as an optimization problem?
+01:02:59
+Not the way I think typically.
+01:03:00
+I mean, that's one of the most complex phenomena in the whole, you know, of individual human life for society as a whole. Both. Both. I mean, individual human life is amazingly complex. And so, you know, optimization is kind of just one branch of mathematics that talks about certain kinds of things. And it just feels way too limited for the complexity of such things.
+01:03:21
+What properties of optimization problem do you think? So do you think most interesting problems that can be solved through optimization?
+01:03:29
+What kind of properties does that service have? And then convexity, convexity linearity, all those kinds of things? Satyal points.
+01:03:37
+Well, so optimization is just one piece of mathematics. You know, there's like just even in our era, we're aware that, say, sampling is coming up.
+01:03:45
+Examples of something come up with a distribution.
+01:03:48
+What sampling? Well, you can if you're a kind of a certain kind of math, you can try to blend them and make them seem to be sort of the same thing. But optimisations, roughly speaking, trying to find a point that a single point that is the optimum of a criterion, function of some kind and sampling is trying to, from that same surface, treat that as a distribution or density and find points that have high density. So I want the entire distribution and a sampling paradigm.
+01:04:18
+And I want the you know, the single point. That's the best point in that in the sample, in the optimization paradigm. Now, if you were optimizing in the space of probability measures, the output of that could be a whole probability distribution. So you can start to make these things the same. But in mathematics, if you go to high up that kind of abstraction area, you start to lose the, you know, the ability to do the interesting theorems.
+01:04:40
+So you kind of don't try that. You don't try to overlay over abstract.
+01:04:44
+So as a small tangent, what kind of world view do you find more appealing, one that is deterministic or stochastic? Well, that's easy. I mean, I'm a statistician. You know, the world is highly stochastic. I don't know what's going to happen in the next five minutes. What you're going to ask, what we're going to do due to the uncertainty, due to the massive uncertainty, you know, massive uncertainty.
+01:05:06
+And so the best I can do is have a rough sense or probabilities based on things and somehow use that in my reasoning about what to do now.
+01:05:15
+So how does the distributed at scale when you have multi agent systems?
+01:05:23
+Look like so optimization can optimize sort of it makes a lot more sense, sort of at least from my from a robotics perspective, for a single robot, for a single agent trying to optimize some objective function.
+01:05:37
+Well, when you start to enter the real world, this game theoretical answer starts popping up and that the how do you see optimization in this?
+01:05:47
+Because you've talked about markets in a scale. What does that look like? Do you see it as optimization? Do you see it as a sampling? Do you see how she makes this all blend together?
+01:05:56
+And a system designer thinking about how to build an incentivized system or have a blend of all these things? So, you know, a particle in a potential well is optimized in a functional called a Lagrangian particle. Doesn't know that there's no algorithm running that does that. It just happens it. So it's a description mathematically of something that helps us understand as analyst what's happening. Right. And so the same will happen when we talk about, you know, mixtures of humans and computers and markets and so on, so forth.
+01:06:23
+They'll be certain principles that allow us to understand what's happening. Whether or not the actual algorithms are being used by any sense is not clear. Now, at some point, I may have set up a multi agent or market kind of system, and I'm thinking about an individual agent in that system and they're asked to do some task and they're incentivized in some way. They get certain signals and they they have some utility. Whether what they will do at that point is they just won't know the answer.
+01:06:48
+They may have to optimize to find an answer. So an artist could be embedded inside of an overall market. You know, and game theory is is very, very broad. It is often studied very narrowly for certain kinds of problems. But it's roughly speaking, there's just the I don't know what you're going to do. So I kind of anticipate that a little bit. And you anticipate what I'm going anticipating. And we kind of go back and forth in our own minds.
+01:07:10
+We run kind of thought experiments.
+01:07:12
+You talk about this interesting point in terms of game theory. You know, most optimization problems really hate Satyal points. Maybe you can discover subtle points are.
+01:07:21
+But I have heard you kind of mentioned that there's there's a branch of optimization.
+01:07:26
+You could try to explicitly look for Satyal points as a good thing.
+01:07:32
+Oh, not optimization. That's just game theory that. So there's all kinds of different equilibria in game theory and some of them are highly explanatory behavior. They're not attempting to be algorithmic. They're just trying to say if you happen to be at this equilibrium, you would see certain kind of behavior. And we see that in real life. That's what an economist wants to do, especially a behavioral economist and continuous a differential game theory. You're on a continuous basis, a some of the simplest equilibria, Arsala points.
+01:08:01
+A Nash equilibrium is a saddle point. It's a special kind of saddle point. So classically in game theory, you were trying to find Nash Equilibrium and algorithmic game theory to try to find algorithms that would find them. And so you're trying to find saddle points. I mean, so that's literally what you're trying to do. But, you know, any economist knows that Nash equilibria have their limitations. They are definitely not that explanatory in many situations. They're not what you really want.
+01:08:27
+There's other kind of equilibrium and there's names associated with these because they came from history with certain people working on them. But there will be new ones emerging. So, you know, one example is a Stalberg equilibrium. So, you know, Nash, you and I are both playing this game against each other or for each other. Maybe it's cooperative and we're both going to think it through.
+01:08:45
+Then we're going to decide we're going to do our thing simultaneously, you know, on a stock. UHLBERG No, I'm going to be the first mover. I'm going to make a move. You're going to look at my move and then you're going to make yours. Now, since I know you're going to look at my move, I anticipate what you're going to do. And so I don't do something stupid. But but then I know that you were also anticipating me.
+01:09:04
+So we're kind of going back and forth for a while. But there is then a first mover thing and so there are different equilibria. All right. And so just mathematically, yeah, these things have certain topologies, certain shapes that are like Salpeter that algorithmically or dynamically. How do you move towards them? How do you move away from things? You know? So some of these questions have answers. They've been studied, others do not. And especially if it becomes stochastic, especially if there's large numbers of decentralized things, there's just, you know, young people getting in this field who kind of think it's all done because we have denser flow.
+01:09:36
+Well, no, these are all open problems and they're really important and interesting. And it's about strategic settings. How do I collect data, I suppose? I don't know what you're going to do because I don't know you very well. Right. Well, I got to collect data about you, so maybe I want to push you in a part of the space where I don't know much about using your data because and then later I'll realize that you'll never you'll never go there because of the way the game is set up.
+01:09:57
+But, you know, that's part of the overall, you know, data analysis context is there.
+01:10:01
+Even the game of poker is fascinating. Well, whenever there's any uncertainty or lack of information, this is a super exciting space. Yeah. Just to linger on optimization for a second serve, we look at deep learning. It's essentially minimization of a complicated, lost function. So is there something insightful or hopeful for the see?
+01:10:22
+In the kinds of function surface that lost functions, the deep learning and in the real world is trying to optimize over, is there something interesting, as is just the usual kind of problems of optimization?
+01:10:37
+I think from an optimization point of view, that surface first of all, it's pretty smooth. And secondly, if there's over if it's over parameters, there's kind of lots of paths down to reasonable, optimum. And so kind of the getting downhill to the AI to an optimum is viewed as not as hard as you might have expected in high dimensions. The fact that some optima tend to be really good ones and others not so good and you tend to sometimes you find the good ones is sort of still needs explanation.
+01:11:06
+Yes, but the particular surface is coming from the particular generation of neural nets, I kind of suspect those will those will change in 10 years. It will not be exactly those surfaces. There'll be some others that are an optimization that will help contribute to why other surfaces are. Why other algorithms? Layers of arithmetic operations with a little bit of non-linearity, that's not that didn't come from neuroscience, say, I mean, maybe in the minds of some of the people working on it, that they were thinking about brains, but they were arithmetic circuits in all kinds of fields, you know, computer science, control theory and so on.
+01:11:37
+And that layers of these could transform things in certain ways and that if it's smooth, maybe you could, you know, find parameter values. You know, it's a big is a is a sort of big discovery that it's it's working, it's able to work at the scale.
+01:11:52
+But I don't think that what we're stuck with that and we're certainly not stuck with that because we're understanding the brain.
+01:11:59
+So in terms of on the algorithm side, sort of gradient descent, do you think we're stuck with gradient descent variants of it? What variants do you find interesting or do you think they'll be something else invented that is able to walk all over these optimization spaces in interesting ways?
+01:12:16
+So there's a design of the surface and they are the architecture and the algorithm. So if you just ask if we stay with the kind of architectures we have now, not just neural nets, but, you know, face retrieval architectures are completion architecture and so on, you know, I think we've kind of come to a place where a stochastic gradient algorithms are dominant and there are versions, you know, that are a little better than others. They, you know, have more guarantees, are more robust and so on.
+01:12:46
+And those ongoing research to kind of figure out which is the best time for each situation. But I think that that will start to coevolved that that'll put pressure on the actual architecture. And so we shouldn't do it in this particular way. We should do it in a different way, because this other albums now available, if you do it in a different way, so that that that I can really anticipate that coevolution process. But, you know, gradients are amazing mathematical objects.
+01:13:11
+They have a lot of people who sort of study them more deeply mathematically. I was kind of shocked about what they are and what they can do. I mean, think about this way. If suppose that I tell you a few movil on the X axis, you get you know, you go uphill in some objective by a, you know, three units, whereas if you move along the Y axis, you go uphill by seven units. Right now, I'm going to only allow you to move a certain unit distance.
+01:13:38
+Right. What are you going to do? Or the most? Not people will say, I'm going to go on the Y axis. I'm getting the biggest bang for my buck, you know, and my back is only one unit. So I'm going to put all of it in the Y axis. Right. And why should I even take any of my strength, my step size and put any of it in the X axis because I'm getting less bang for my buck?
+01:13:58
+That seems like a completely, you know, clear argument. And it's wrong because the gradient direction is not to go along the Y axis. It's to take a little bit of the x axis. And that d to understand that you have to you have to know the math. And so even, you know, trivial. So so-called operator like is not trivial. And so, you know, exploding its properties are still very important. Now we know that just creating to send has got all kinds of problems that get stuck in many ways.
+01:14:24
+And it had happened, you know, good mentioned dependence and so on. So my own line of work recently has been about what kinds of toxicity, how can we get dimensioned dependence? How do the theory of that and we've come up pretty favorable results with certain kinds of stochastic city, we have sufficient conditions generally. We know if you if you do this, we will give you a good guarantee.
+01:14:45
+We don't have necessary conditions that it must be done a certain way in general, just toxicity, how much randomness to inject into the into the walking along the greedy and what kind of randomness why is randomness good in this process? Why is this is good. Yeah.
+01:15:01
+So I give you simple answers, but in some sense, again, it's kind of amazing toxicity, just, you know, particular features of a surface that could have hurt you if you were doing one thing, you know, deterministically won't hurt you because, you know, by chance, you know, very little chance that you would get hurt. And, you know, so here Stochastic City, you know, it's just kind of saves you from some of the particular features of surfaces that, you know, in fact, if you think about, you know, surfaces that are discontinuous in the first revetted, like, you know, absolute value function, you will go down and hit that point where there's non defensibility.
+01:15:42
+Right. And if you're running at that point, you can really do something bad. Right, where the toxicity just means it's pretty unlikely that's going to happen. You're going to get you're going to hit that point. So, you know, it's it's not trivial to analyze, but and especially in higher dimensions also toxicity. Our intuition isn't very good about it, but it has properties that kind of are very appealing in high dimensions for quite a large number of reasons.
+01:16:06
+So it's all part of the mathematics. And that's what's fun to work in the field, is that you get to try to understand this mathematics. And but long story short, you know, partly empirically it was discovered stochastic gradient is very effective in theory, kind of followed, I'd say that. But I don't see that we're getting and clearly out of that. What's the most beautiful, mysterious and profound idea to you in optimization?
+01:16:32
+I don't know the most. I'm but let me just say that, you know, Nesterov work on Nesterov acceleration to me is pretty, pretty surprising and pretty deep. Can you elaborate? Well, Nesto, acceleration is just that, I suppose that we are going to use gradients to move around into space. For the reasons I've alluded to. There are nice directions to move.
+01:16:54
+And suppose that I tell you that you're only allowed to use gradients you're not going to be allowed to use your local person can only sense kind of the change in the surface. But I'm going to give you kind of a computer that's able to store all your previous gradients. And so you start to learn something about the surface. And I'm going to restrict you to maybe move in the direction of like a linear span of all the gradients. So you can't kind of just move in some arbitrary direction.
+01:17:19
+Right. So now we have a well-defined mathematical complexity model. There's a certain classes of algorithms that can do that and others that can't. And we can ask for certain kinds of surfaces. How fast can you get down to the optimum? So there's an answers to these. So for a, you know, a smooth, convex function, there's an answer, which is one over the number of steps squared you will be within a ball of that size after after K steps gradient descent in particular has a slower rate.
+01:17:48
+It's one of Riquet. OK, so you could ask, is gradient descent. Actually, even though we know it's a good algorithm, is it the best algorithm in that sense? And the answer is no. Well, well not clear yet because what one of our cases is a lower bound. That's that's probably the best you can do. What gradient is one work, but is there something better? And so I think as a surprise to most, the Nesterov discovered a new algorithm that is got two pieces to it.
+01:18:17
+It uses two gradients and puts those together in a certain kind of obscure way. And the thing doesn't even move downhill all the time.
+01:18:26
+It sometimes goes back uphill. And if you're a physics that kind of makes some sense, you're building up some momentum. And that is kind of the right intuition. But that that intuition is not enough to understand kind of how to do it and why it works. But it does. It achieves one of our K squared and it has a mathematical structure. And it's still kind of to this day, a lot of us are writing papers and trying to explore that and understand it.
+01:18:49
+So there are lots of cool ideas in optimization. But just kind of using gradients, I think is number one that goes back, you know, 150 years. And the Nesterov, I think, has made a major contribution with this idea.
+01:19:00
+So like you said, gradients themselves are in some sense mysterious. Yeah, they're not they're not as trivial is not as mathematical. And there's more of a trivial when you take one of the coordinates. That's how we think. That's how our human rights are.
+01:19:14
+Human rights think and gradients are not that easy for our human mind to grapple with.
+01:19:20
+An absurd question, but what is statistics?
+01:19:25
+So here it's a little bit it's somewhere between math and science and technology. It's somewhere in that context. Also, it's a set of principles that allow you to make inferences that have got some reason to be believed and also principle that allow you make decisions where you can have some reason to believe you're not going to make errors. So all that requires some assumptions about what do you mean by an error? What do you mean by, you know, the probabilities?
+01:19:47
+And but, you know, if you start making some assumptions, you're led to conclusions that, yes, I can guarantee that, you know, if you do this in this way, your probability of making error will be small. Your probability of continuing to not make errors over time will be small. And probability you found something that's real, will be small, will be high for decision making is a big part.
+01:20:11
+Certainly a big part, yeah. So the original statistics, you know, short history was that, you know, it's of goes back as far as a formal decision, you know, 250 years or so. It was called inverse probability because around that era the probability was developed sort of as especially to explain gambling situations, of course. And interesting. So you would say, well, given the state of nature is this there's a certain roulette or that has a certain mechanism, and what kind of outcomes do I expect to see?
+01:20:40
+And if I do things a long, long amount of time, what I see in the physics start to pay attention to this. And then people say, well, given that, let's turn the problem around, what if I saw certain outcomes could mean for what the underlying mechanism was? That's an inverse problem. And in fact, for quite a while, statistics was called inverse probability. That was the name of the field. And I believe that it was lipless who was working in Napoleon's government, who was who needed to do a census of France, learn about the people there so we wouldn't go out and gather data and analyse that data to determine policy and said, well, let's call this a field that does this kind of thing.
+01:21:21
+Statistics. Is that the word state is in there, in French, that's. But, you know, it's the study of data for the state. So anyway, that caught on and it's been called statistics ever since. But but by the time it got formalized, it was sort of in the 30s. And around that time, there was game theory and decision theory developed nearby. People in that area didn't think of themselves as either computer science or statistics or control or Econ.
+01:21:49
+. They were all they were all of the above. And so, you know, von Neumann is developing game theory, but also thinking about his decision theory. Wallers and econometricians develop in decision theory and then, you know, turn that into statistics. And so it's all about here's a here's not just data and you analyze it. Here's a lost function. Here's what you care about. Here's the question you're trying to ask. Here is a probability model and here is the risk you will face if you make certain decisions.
+01:22:16
+And to this day, in most advanced statistical curricula you teach, decision theory is the starting point. And then it branches out into the two branches of Bayesian or frequenters.
+01:22:25
+But that's that's all about decisions and statistics.
+01:22:30
+What is the most beautiful, mysterious, maybe surprising idea that you've come across?
+01:22:39
+Yeah, good question. I mean, there's a bunch of surprising ones, there's something it's way too cynical for this thing, but something called James Stijn estimation, which is kind of surprising and really takes time to wrap your head around.
+01:22:53
+Can you try to maybe. I think I don't want to even want to try. Let me just say, a colleague at a Steven Stigler University Chicago wrote a really beautiful paper on James Stone estimation, which helps to its viewers a paradox. It kind of defeats the mind's attempts to understand it. But you can and Steve has a nice perspective on that there.
+01:23:13
+So one of the troubles with statistics is that it's like in physics there are in quantum physics, you have multiple interpretations. There's a wave particle duality in physics and you get used to that over time. But it's still kind of haunts you that you don't really, you know, quite understand the relationship, the electrons away when electrons a particle.
+01:23:32
+Well, the same thing happens here. There's Bayesian ways of thinking and frequent. And they are different. They they are they sometimes become sort of the same in practice, but they are physically different. And then in some practice, they are not the same at all. They give you a rather different answers. And so it is very much like wave particle duality. And that is something that you have to kind of get used to in the field.
+01:23:53
+Can you define Bayesian? And frankly, decision theory you can make I have a like I have a video that people could see. It's called Are you a Bayesian or a frequent does tend kind of try to make it really clear it comes from decision theory. So, you know, decision theory, you're talking about loss functions, which are a function of data X and parameter theta as a function of two arguments. OK, neither one of those arguments is known.
+01:24:17
+You don't know the data apriori. It's random and the parameters unknown. All right. So you have this function of two things you don't know and you're trying to say, I want that function to be small. I want small loss. Right.
+01:24:27
+Well, what are you going to do? So you sort of say, well, I'm going to average over these quantities or maximize all of them or something so that, you know, I turn that uncertainty into something certain. So you could look at the first argument on average over it, or you could look at the second argument that's Bayesian frequenters. So the the frequenters says, I'm going to look at the X, the data and I'm going to take that as random and I'm going to average over the distribution.
+01:24:52
+So I take the expectational loss under X thetas held fixed. Right. That's called the risk. And so it's looking at other all the data that you could get. Right. And saying how well will a certain procedure do under all those data sets? That's called a frequenters guarantee. Right. So I think this is very appropriate when you're building a piece of software and you're shipping it out there and people are using all kinds of data sets, you want to have a stamp, a guarantee on it, that as people run it on many, many data sets that you never even thought about that 95 percent of the time it will do the right thing.
+01:25:24
+Perfectly reasonable.
+01:25:27
+The Bayesian perspective says, well, no, I'm going to look at the other argument of the last version of the theta part that's unknown. And I'm uncertain about it. So I could have my own personal probability for what it is. You know, how many tall people are there out there? I'm trying to infer the average height of the population will have an idea roughly what the height is. So I'm going to average over the the the theta. So now that lost function has only now again, one argument's gone now it's a function of X, and that's what a Bayesian does, is they say, well, let's just focus on a particular X.
+01:25:59
+We got the data set. We got we condition on that conditional on the X. I say something about my loss that's a Bayesian approach to things. And the Bayesian will argue that it's not relevant to look at all the other data sets. You could have gotten an average over them. The frequenters approach. It's really only the data that you got. Right. And I do agree with that, especially in situations where you're working with a scientist, you can learn a lot about the domain and you really only focus on certain kinds of data.
+01:26:26
+And you gathered your data and you make inferences. I don't agree with it, though, that, you know, in the sense that there are needs for frequenters guarantees. You're writing software people are using out there. You want to say something. So these two things have got to fight each other a little bit, but they have to blend. So long story short, there's a set of ideas that are right in the middle that are called empirical base.
+01:26:46
+And empirical base sort of starts with the Bayesian framework. It's it's kind of arguably philosophically more, you know, reasonable, unkosher, write down a bunch of the math that kind of flows from that and then realize there's a bunch of things you don't know because it's the real world and you don't know everything. So you're uncertain about certain quantities at that point. Ask is there a reasonable way to plug in an estimate for those things? OK, and in some cases there's quite a reasonable thing to do to plug in.
+01:27:17
+There's a natural thing you can observe in the world that you can plug in and then do a little bit more mathematics and assure yourself it's really good. So my math are based on human expertise. What's what are good.
+01:27:27
+They're both going in the Bayesian framework allows you to put a lot of human expertise in. Yeah, but the math kind of guides you along that path and then kind of reassures at the end you could put that stamp of approval. Under certain assumptions, this thing will work. So you ask a question was my favorite, you know, it was the most surprising, nice idea. So one that is more accessible is something called false discovery rate, which is, you know, you're making not just one hypothesis test or making one decision.
+01:27:52
+You're making a whole bag of them. And in that bag of decisions, you look at the ones where you made a discovery, you announced that something interesting that happened, that could be some subset of your big back in the ones you made a discovery. Which subset of those are bad? There are false false discoveries. You like the fraction of your false discoveries among your discoveries to be small. That's a different criterion than accuracy or precision or recall or sensitivity and specificity.
+01:28:20
+It's a different quantity. Those latter ones are almost all of them have more of a frequenters flavor. They say, given the truth is that the null hypothesis is true. Here's what accuracy I would get. Or given that the alternative is true, here's what I would get. So it's kind of going forward from the state of nature to the data. The Bayesian goes the other direction from the data back to the state of nature, and that's actually what false discovery rate is.
+01:28:45
+It says, given you made a discovery that's conditioned on your data, what's the probability of the hypothesis? It's going the other direction. And so the classical frequencies look at that. So I can't know that there's some priors needed in that. And the empirical Bayesian goes ahead and plows forward and starts writing down these formulas and realizes at some point some of those things can actually be estimated in a reasonable way. And so it's kind of it's a beautiful set of ideas.
+01:29:11
+So this kind of line of argument has come out. It's not certainly mine, but it sort of came out from Robbins' around 1960. Brad Effron has written beautifully about this in various papers and books and and the FDR, as you know, Benjamina in Israel, John, story did this Bayesian interpretation and so on. So I've just absorbed these things over the years and I find it a very healthy way to think about statistics.
+01:29:38
+Let me ask you about intelligence to jump slightly back out into philosophy.
+01:29:44
+Perhaps you said that maybe you can elaborate, but you said that defining just even the question of what is intelligence is or is is a very difficult question.
+01:29:56
+Is that a useful question, do you think?
+01:29:57
+Will one day understand the fundamentals of human intelligence and what it means, you know, have good benchmarks for general intelligence that we put before our machines?
+01:30:10
+So I don't work on these topics so much that you're really asking the question for a psychologist, really? And I studied some, but I don't consider myself an expert at this point. You know, a psychologist aims to understand human intelligence. Right. And I think the psychology I know are fairly humble about this. They might try and understand how a baby understands, you know, whether something a solid or a liquid or whether something is hidden or not.
+01:30:35
+And maybe the of your child starts to learn the meaning of certain words. What the verb, what's a noun? And also, you know, slowly but surely trying to figure out things. But human's ability to take a really complicated environment, reason about it, abstract about it, find the right abstractions, communicate about it, interact and so on, is just, you know, really staggeringly rich and complicated. And so, you know, I think in all humility, we don't think we're kind of aiming for that in the near future.
+01:31:09
+And certainly psychologist doing experiments with babies in the lab or with people talking is has a much more limited aspiration. And, you know, cognitive diversity would look at our reasoning patterns. And they're not deeply understanding, although how we do our reasoning. But they're sort of saying here's some here's some oddities about the reasoning and some things you think about it. But also, as I emphasized and things some things I've been writing about, you know, A.I., that revolution hasn't happened yet.
+01:31:32
+Yeah, great blog post. I've been emphasizing that, you know, if you step back and look at intelligent systems of any kind, whatever you mean by intelligence, it's not just the humans or the animals or, you know, the the plants or whatever, you know. So a market that brings goods into a city, you know, food to restaurants or something every day is a system. It's a decentralized that are decisions looking at it from far enough away.
+01:31:56
+It's just like a collection of neurons. Every one every neuron is making its own little decisions, presumably in some way. And if you step back enough, every little part of an economic system is making its all of its decisions. And just like with a brain, who knows what individual neuron doesn't know what the overall goal is. Right. But something happens at some aggregate level. Same thing with the economy. People eat in a city and it's robust.
+01:32:18
+It works at all scales, small villages to big cities.
+01:32:21
+It's been working for thousands of years. It works rain or shine, so it's adaptive. So all the kind of you know, those are genes. One tends to apply to intelligent systems, robust, adaptive. You know, you don't need to keep adjusting itself, self healing, whatever. Plus not. Perfect, you know, intelligence are never perfect and markets are not perfect, but I do not believe in this era that you can that you can say, well, our computers are humans are smart, but, you know, no, markets are not.
+01:32:48
+Markets are so they are intelligent. Now, we humans didn't evolve to be markets. We participate in them. Right. But we are not ourselves a market persay.
+01:33:00
+The neurons could be viewed as a market.
+01:33:02
+And there is economic neuroscience kind of perspective. That's interesting to pursue all that. The point, though, is, is that if you were to study humans and really be the world's best psychologists, study for thousands of years and come up with the theory of human intelligence, you might have never discovered principles of markets, you know, supply demand curves and, you know, matching and auctions and all that. Those are real principles. And they lead to a form of intelligence that's not maybe human intelligence.
+01:33:26
+It's arguably another kind of intelligence. There probably are third kinds of intelligence or fourth, that none of us are really thinking too much about right now. So if you really and all those are relevant to computer systems in the future, certainly the market one is relevant right now, whereas understand, human tolerance is not so clear that it's relevant right now. Probably not. So if you want general intelligence, whatever one means by that or, you know, understanding intelligence and a deep sense and all that, it is definitely has to be not just human intelligence, it's got to be this broader thing.
+01:33:56
+And that's not a mystery. Markets are intelligent. So, you know, it's not just a philosophical stance to say we've got to move beyond to intelligence. That sounds ridiculous.
+01:34:04
+Yeah, but it's not in that blockbuster to find different kinds of, like intelligent infrastructure. I, I really like has some of the concept you just been describing.
+01:34:15
+Do you see ourselves? We see earth, human civilization as a single organism. Do you think the intelligence of that organism, when you think from the perspective of markets and intelligence infrastructure is increasing, is it increasing linearly? Is it increasing exponentially? What do you think the future of that intelligence? I don't know.
+01:34:34
+I don't tend to think I don't tend to answer questions like that because you know, that science fiction is hoping to guard once again because you said it's so far in the future.
+01:34:45
+It's fun to ask.
+01:34:46
+And you'll probably, you know, like you said, predicting the future is really nearly impossible. But say, as an axiom, one day we create a human level of superhuman level intelligence, not the skill of markets, but the skill of an individual.
+01:35:04
+What do you think it is? What do you think it would take to do that?
+01:35:08
+Or maybe to ask another question is how would that system be different than the biological human beings that we see around us today?
+01:35:18
+Is it possible to say anything interesting to that question or is it just a stupid question?
+01:35:23
+It's a stupid question, but it's science fiction, science fiction. And so I'm totally happy to read science fiction and think about it from time. My own life I loved there was this brain in a VAT, kind of, you know, a little thing that people were talking about when I was a student. I remember, you know, imagine that, you know, between your brain and your body, there's, you know, a bunch of wires.
+01:35:42
+Right. And suppose that every one of them was replaced with a literal wire and then suppose that wire was turned. It actually a little wireless. You know, there's a receiver and sender. It's the brain has got all the senders and receiver, you know, on all of its exiting, you know, axons and all the dendrites down of the body are replaced with hundreds of receivers. Now, you could move the body off somewhere and put the brain in a VAT.
+01:36:06
+Right. And then you could do things like start killing off those centers of Sèvres one by one. And after you've killed off all of them, where is that person? You know, they thought they were out in the body walking around the world and they moved on. So those are science fiction things that are fun to think about. It's just intriguing about what what is thought, where is it and all that.
+01:36:22
+And I think every 18 year old, it's to take philosophy classes and think about these things. And I think that everyone should think about what could happen in society that's kind of bad and all that. But I really don't think that's the right thing for most of us that are my age group to be doing and thinking about.
+01:36:36
+I really think that we have so many more present, you know, first challenges and dangers and real things to build and all that, such that, you know, spending too much time on science fiction, at least in public fora like this, I think is not what we should be doing, maybe over beers in private.
+01:36:54
+That's right. And I'm well well, I'm not going to broadcast where I have beers because this is going to go on Facebook. A lot of people showing up there.
+01:37:02
+But, yeah, I'll, uh, I love Facebook, Twitter, Amazon, YouTube.
+01:37:08
+I have more optimistic and hopeful, but maybe maybe I don't have grounds for such optimism and hope.
+01:37:17
+Let me ask you, you've mentored some of the brightest, sort of some of the seminal figures in the field.
+01:37:25
+Can you give advice to people who are undergraduates today?
+01:37:31
+What does it take to take, you know, advice in their journey if they're interested in machine learning and they are in in. The ideas of markets from economics to psychology and all the kinds of things that you've exploring, what, what what steps they take on that journey?
+01:37:45
+Well, first of all, the doors open. And second, it's a journey. I like your language there. It is not that you're so brilliant and you have great, brilliant ideas. And therefore, that's that's just, you know, that's how you have success or that's how you enter into the field. It's that you apprenticed yourself. You you spend a lot of time. You work on hard things. You try and pull back and you be as bright as you can.
+01:38:08
+You talk a lot of people and it's like entering in any kind of a creative community. There's some years that are needed and human connections are critical to it. So, you know, I think about, you know, being a musician or being an artist or something, you don't just, you know, immediately from day one, you know, you're a genius and therefore you do it. Now, you, you know, practice really, really hard on basics and you be humble about where you are.
+01:38:36
+And then and you realize you'll never be an expert on everything. So you kind of pick and there's a lot of randomness and a lot of kind of luck. But luck just kind of picks out which branch of the tree you go down, you'll go down some branch. So, yeah, it's it's a community, sort of the graduate school is, I still think is one of the wonderful phenomena that we have in our in our world. It's very much about apprenticeship with an adviser.
+01:39:00
+It's very much about a group of people you belong to. It's a four or five year process. So it's plenty of time to start from kind of nothing to come up to something, you know, more expertise and then start to have your own creativity start to flower, even surprise in your own self. And it's a very cooperative endeavor. It's I think a lot of people think of science as highly competitive. And I think in some other fields it might be more so here.
+01:39:25
+It's way more cooperative than you might imagine. And people are always teaching each other something. And people are always more than happy to be clear that. So I feel I'm an expert on certain kind of things, but I'm very much not expert on lots of other things. And a lot of them are relevant and a lot of them or I should know, but it should in some sense, you know, you don't. So I'm always willing to reveal my ignorance to people around me so they can teach me things.
+01:39:49
+And I think a lot of us feel that way about our field. So it's very cooperative, I might add. It's also very international because it's so cooperative. We see no barriers. And so the nationalism that you see, especially in the current era where everything is just at odds with the way that most of us think about what we're doing here, where this is a human endeavor and we cooperate and are very much trying to do it together for the, you know, the benefit of everybody.
+01:40:13
+So last question, where and how and why did you learn French and which language is more beautiful, English or French?
+01:40:22
+Great question. So, first of all, I think Italian is actually more beautiful than French in English. And I also speak that. So I'm I'm married to an Italian and I have kids and we speak Italian. Anyway, all kidding aside, every language allows you to express things a bit differently. And that is one of the great fun things to do in life, is to explore those things. So, in fact, when I kids or teens or college kids ask me what they study, I say, well, you know, do what your heart where your heart is.
+01:40:53
+Certainly do a lot of math. Math is good for everybody, but do some poetry and do some history, do some language to, you know, throughout your life. You want to be a thinking person. You want to have done that for me. Yeah. French I learned when I was, I'd say, a late teen. I was living in the middle of the country in Kansas and not much was going on in Kansas, with all due respect to Kansas.
+01:41:17
+But and so my parents happened to have some French books on the shelf. And just in my boredom, I put them down and I found this is fun and I kind of learn the language by reading. And when I first heard it spoken, I had no idea what was being spoken. But I realized I somehow knew it from some previous life. And so I made the connection.
+01:41:35
+But then I traveled and just I love to go beyond my own barriers and my own comfort or whatever. And I found myself and, you know, on trains in France next to say older people who had, you know, lived a whole life of their own. And the ability to communicate with them was was was, you know, special and ability to also see myself in other people's shoes and have empathy and kind of work on that language as part of that.
+01:42:00
+So so after that kind of experience and also embedding myself in French culture, which is, you know, quite, quite amazing, the language languages are rich, not just because there is something inherently beautiful about it, but it's all the creativity that went into it. So I learned a lot of songs, read poems, read books. And then I was here actually at MIT, where we're doing the podcast today, and a young professor, you know, not yet married and, you know, not having a lot of friends in the area.
+01:42:29
+So I just didn't have was kind of a board person. I said I heard a lot of Italians around. There happened to be a lot of Italians at MIT professor for some reason here and. So I was kind of vaguely understanding what they were talking about, so, well, I should learn this language, too, so I did. And then later about my spouse and, you know, I'll tell you about him in my life. But but I go to China a lot these days.
+01:42:49
+I go to Asia, I go to Europe. And every time I go, I kind of am amazed by the richness of human experience. And the people don't have any idea if you haven't traveled kind of how, you know, amazingly rich. And I love the diversity. I it's not just a buzzword to me. It really means something. I love the, you know, being an embed myself with other people's experiences. And so, yeah, learning language is a big part of that.
+01:43:13
+I think I've said in some interview at some point that if I had, you know, millions of dollars and an infinite time or whatever, what would you really work on if you really wanted to do A.I.? And for me, that is natural language and really done right. You know, deep understanding of language. That's to me, amazingly interesting scientific challenge. And one we're very far away and one we're very far away. But good natural language people are kind of really invested that I think a lot of them see.
+01:43:37
+That's where the core of A.I. is, that if you understand that you really help human communication, you understand something about the human mind, the semantics that come out of the human mind. And I agree. I think that will be such a long time. So I didn't do that in my career just because I kind of I was behind in the early days. I didn't kind of know enough of that stuff. I didn't want to I didn't learn much language.
+01:43:57
+And it was too late at some point to kind of spend a whole career doing that. But I admire that field. And, um, and so in my little way, by learning language, you know, I'm kind of that part of my brain has been trained up. Yeah.
+01:44:11
+And was right. You truly are the Miles Davis and machine learning. I don't think there's is a better place than it was. Mike, as a huge and talking to you today. Mazibuko All right.
+01:44:20
+It's been my pleasure. Thank you. Thanks for listening to this conversation with Michael Jordan and thank you to our presenting sponsor cash app Download. It is called Leks Podcast. You'll get ten dollars and ten dollars will go to first, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. If you enjoy this podcast, subscribe on YouTube. Good five stars, an Apple podcast supported on Patrón or simply connect with me on Twitter.
+01:44:49
+Allex Friedemann. And now let me leave you with some words of wisdom from Michael Jordan, from his blog post titled Artificial Intelligence The Revolution Hasn't Happened Yet, calling for broadening the scope of the AI field. We should embrace the fact that what we are witnessing is the creation of a new branch of engineering, determined engineering is often invoked in a narrow sense in academia and beyond, with overtones of cold, affectless machinery and negative connotations of loss of control by humans.
+01:45:24
+But an engineering discipline can be what we wanted to be in the current era, where a real opportunity to conceive of something historically new, a human centric engineering discipline. I will resist giving this emerging discipline a name, but if the acronym EHI continues to be used, let's be aware of the very real limitations of this place holder.
+01:45:46
+Let's broaden our scope, toned down the hype and recognize the serious challenges ahead. Thank you for listening and hope to see you next time.

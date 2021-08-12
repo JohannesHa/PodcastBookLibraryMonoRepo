@@ -1,0 +1,8 @@
+services:
+  scraper:
+    build: .
+    ports:
+      - 4000:4000
+    privileged: true
+    volumes:
+      - /transcripts:/transcripts

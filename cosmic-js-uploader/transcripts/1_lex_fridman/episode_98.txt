@@ -1,0 +1,482 @@
+00:00:00
+The following is a conversation with certain Karmon, a professor at MIT, co-founder of the autonomous vehicle company Optimus Ride, and is one of the top roboticists in the world, including robots that drive and robots that fly to me personally. He has been a mentor, a colleague and a friend. He's one of the smartest, most generous people I know. So it was a pleasure and honor to finally sit down with him for this recorded conversation. This is the artificial intelligence podcast, if you enjoy it, subscribe on YouTube, review five stars and have a podcast support on Patrón or simply connect with me on Twitter.
+00:00:37
+And Lex Friedman spelled Fridmann as usual. I do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you. It doesn't hurt the listening experience. The show was presented by Kashyap, the number one finance app and the App Store, when you get it, use the code Lux podcast cash app lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar cash app allows you to send and receive money digitally.
+00:01:09
+Let me mention a surprising fact about physical money. It cost two point four cents to produce a single penny. In fact, I think it cost 85 million dollars annually to produce them. That's a crazy little fact about physical money. So, again, if you get cash from the App Store or Google Play and use the Collects podcast, you get ten dollars in cash. Apple also donate ten dollars to an organization that is helping to advance robotics and stem education for young people around the world.
+00:01:40
+And now here's my conversation with Satish Karmon.
+00:02:01
+Since you have worked extensively on both, what is the more difficult task at hand was flying or autonomous driving? That's a good question. I think that autonomous flying just kind of doing it for consumer drones and so on. The kinds of applications that we're looking at right now is probably easier. And so I think that that's maybe one of the reasons why it took off, like literally a little earlier than the autonomous cars. But I think if you look ahead, I would think that the real benefits of autonomous flying and reaching them in like transportation, logistics and so on, I think it's a lot harder and autonomous driving.
+00:02:36
+So I think my guess is that, you know, we've seen a few kind of machines fly here and there, but we really haven't yet seen any kind of, you know, machine like a massive scale, large scale being deployed and flown and so on. And I think that's going to be after we kind of resolve some of the large scale deployments of autonomous driving towards the hard part. What's your intuition behind why at scale on consumer facing, drones are tough?
+00:03:04
+So I think in general at scale is stuff like, for example, when you think about it, we have actually deployed a lot of robots in the, let's say, the past 50 years with academics or we business and we as humanity, humanity, a lot of people working on it.
+00:03:24
+So we humans deployed a lot of robots.
+00:03:26
+And I think that when you think about it, you know, robots, they're autonomous, they work and they work on their own. But they are either like in isolated environments or they are in sort of you know, they may be at scale, but they are really confined to a certain environment that they don't interact so much with humans. And so, you know, they work in, I don't know, factory floors, warehouses. They work on Mars.
+00:03:52
+You know, they are fully autonomous over there. But I think that the real challenge of our time is to take these vehicles and put them into places where humans are present. So now I know that there's a lot of like human robot interaction type of things that need to be done. And so that's that's one thing. But even just from the fundamental algorithms and systems and and the business cases or maybe the business models, even like architecture, planning, societal issues, legal legally, that's a whole bunch of pack of things that are related to us putting robotic vehicles into human present environments.
+00:04:29
+And as humans, you know, they will not potentially be even trained to interact with them. They may not even be using the services that are provided by these vehicles. They may not even know that they're autonomous. They're just doing their thing, living in environments that are designed for humans, not for robots. And that, I think, is one of the biggest challenges, I think, of our time to put vehicles there. And, you know, to go back to your question, I think doing that at scale, meaning, you know, you go out in a city and you have, you know, like thousands or tens of thousands of autonomous vehicles that are going around.
+00:05:05
+It is so dense to the point where if you see one of them, you look around, you see another one. It is that dense and that density. We've never done anything like that before. And I would I would bet that that kind of density will first happen with autonomous cars, because I think we can ban the environment a little bit. We can especially kind of making them safe is a lot easier when they're like on the ground, when they're in the air, it's a little bit more complicated.
+00:05:36
+But I don't see that there's going to be a big separation. I think that, you know, there will come a time that we're going to quickly see these things unfold.
+00:05:42
+Do you think there will be a time where there's tens of thousands of delivery drones that fill the sky?
+00:05:49
+You know, I think I think it's possible to be honest, delivery drones is one thing. But you can imagine for transportation like a like an important use cases that were in Boston, you want to go from Boston to New York and you want to do it from the top of this building to the top of another building in Manhattan. And you're going to do it in one and a half hours. And that's that's a big opportunity.
+00:06:09
+I think personal transports like you and your friend or almost like a like a like an Uber.
+00:06:15
+So like four people, six people, eight people in our working autonomous vehicles. I see that. So there's kind of like a bit of a need for one person transport, but also like like a few people. So you and I could take that trip together. We could have lunch, um, I think kind of sounds crazy, maybe even sounds a bit cheesy, but I think that those kinds of things are some of the real opportunities. And I think, you know, it's not like the typical airplane in the airport would disappear very quickly.
+00:06:43
+But I would think that, you know, many people would feel like they would spend an extra hundred dollars on doing that and cutting that for our travel down to one and a half hours.
+00:06:54
+So how feasible are flying cars has been the dream? That's like when people imagine the future for 50 plus years. They think flying cars, it's it's like all technologies, it's cheesy to think about now because it seems so far away, but overnight it can change. But just technically speaking, in your view, how feasible is it to make that happen?
+00:07:16
+I'll get to that question. But just one thing is that I think, you know, sometimes we think about what's going to happen in the next 50 years. It's just really hard to guess right. Next 50 years. I don't know. I mean, we could get what's going to happen in transportation in the next 50 years. We could get flying saucers. I could bet on that. I think there's a 50 50 chance that you you can build machines that can ionized the air around them and push it down with magnets and they would fly like a flying saucer.
+00:07:41
+That is possible. And it might happen in the next 50 years. So it's a bit hard to guess, like when you think about 50 years before.
+00:07:49
+But I would think that, you know, there's this this kind of notion where there's a certain type of air space that we call the agile air space. And there is there's a good amount of opportunities in that air space. So that would be the space that is kind of a little bit higher than the place where you can throw a stone, because that's a tough thing. When you think about it, you know, it takes a kid on a stone to take an aircraft down and then what happens?
+00:08:16
+But, you know, imagine the airspace that's high enough so that you cannot throw a stone. But it is low enough that you're not interacting with the with the very large aircraft that are flying several thousand feet above. And that airspace is underutilized or it's actually kind of not utilized at all. Yeah, that's right. So is you know, there's like recreational people kind of fly every now and then, but it's very few. Like if you look up in the sky, you may not see any of them at any given time ever.
+00:08:47
+And now you'll see one airplane utilizing that space and you'll be surprised. And the moment you're outside of an airport, a little bit like it's just kind of flies off and it goes out.
+00:08:56
+And I think utilizing that airspace, the technical challenges there is, you know, building autonomy and ensuring that that kind of autonomy is safe. Ultimately, I think it is going to be building in complex software are complicated so that it's maybe a few orders of magnitude more complicated than what we have on aircraft today and at the same time ensuring just like we insure on aircraft, ensuring that it's safe. And so that becomes like building that kind of complicated hardware and software becomes a challenge, especially when you build that hardware.
+00:09:36
+I mean, you build that software with data. And so, um, you know, it's of course, there's some rule-based software in there that kind of to a certain set of things.
+00:09:47
+But but then, you know, there's a lot of training that we think machine learning will be key to these close to delivering safe vehicles in the future, specifically, not maybe the safe part, but I think the intelligent part. I mean, there are certain things that we do it with machine learning. And it's just there's like right now Nodaway and I don't I don't know how else they could be done. And, you know, there's there's always this conundrum.
+00:10:13
+I mean, we could I could we like we could maybe gather billions of programmers are humans who programmed perception algorithms that detect things in the sky and whatever or, you know, we I don't know, we maybe even have robots like learning a simulation environment and transfer. And they might be learning a lot better in a simulation environment than a billion humans put their brains together and try to program humans pretty limited. So what was the role of simulations with drones, it done quite a bit of work there.
+00:10:49
+How promising? Just the very thing you said just now, how promising is the possibility of training and developing a safe flying robot and simulation and deploying it and having that work pretty well in the real world?
+00:11:05
+I think that, you know, a lot of people, when they hear a simulation, they will focus on training immediately. But I think one thing that you said, which was interesting, it's developing. I think simulation environments are actually could be key and great for development. And that's not new.
+00:11:20
+Like, for example, you know, there is people in the automotive industry have been using dynamic simulation for like decades now. And it's pretty standard that you would build and you would simulate if you want to build an embedded controller, you plug that kind of embedded computer into another computer that other computer would simulate and so on. But I think, you know, fast forward these things. You can create pretty crazy simulation environments like, for instance, one of the things that has happened recently and that we can do now is that we can simulate cameras a lot better than we used to simulate them.
+00:11:56
+We were able to simulate them before. And that's I think we just hit the elbow on that kind of improvement. I would imagine that with improvements in hardware especially and with improvements in machine learning, I think that we will get to a point where we can simulate cameras.
+00:12:12
+Very, very similar cameras means simulate how a real camera would see the real world. Therefore, you can explore the limitations of that. You can train perception algorithms on the simulation of that kind of stuff. Exactly.
+00:12:30
+So, you know, it's it's it has been easier to simulate what we would call interceptive sensors like internal sensors. So, for example, inertial sensing has been easier to simulate. It has also been easier to simulate dynamics like like physics that are governed by ordinary differential equations. I mean, like how a car goes around, maybe how it rolls on the road, how you interact with interacts with the road, or even an aircraft flying around like the dynamic, the physics of that.
+00:12:57
+What has been really hard has been to simulate extra set of sensors, sensors that kind of like look out from the vehicle. And that's a new thing that's coming like laser range finders that are a little bit easier. Cameras, radars are a little bit tougher. I think once we nail that down, the next challenge, I think, in simulation will be to simulate human behavior. That's also extremely hard. Even when you imagine, like, how a human driven car would act around even that is hard.
+00:13:29
+But imagine trying to simulate, you know, a model of a human just doing a bunch of gestures and so on. And, you know, it's actually simulated. It's not captured like motion capture, but it is similar. That's that's very in fact, today I get involved a lot with, like, sort of this kind of very high end rendering projects.
+00:13:48
+And I have like this test that I pass on to my friends or my mom and I send like two photos to kind of pictures and I say random, which one is random, which one is real? And it's pretty hard to distinguish, except I realized, except when we put humans in there, it's possible that our brains are trained in a way that we recognize humans extremely well.
+00:14:07
+But we don't so much recognize the built environments because built in time sort of came after they've evolved into sort of being humans. But but humans were always there. Same thing happens. For example, you look at like monkeys and you can't distinguish one from another, but they sort of do. And it's very possible that they look at humans. It's kind of pretty hard to distinguish one from another. But we do. And so our eyes are pretty well trained to look at humans and understand if something is off, we will get it.
+00:14:35
+We may not be able to pinpoint it. So in my typical frantastic test, what would happen is that we put like a human walking in in our in anything. And they they say, you know, this is not right. Something is off in this video. I don't know what, but I can tell you it's the human eye can take the human and I can show you, like inside of a building or like an apartment. And it will look like if we had time to render it, it will look great.
+00:14:59
+And this would be no surprise. A lot of movies that people are watching, it's all computer generated. You know, even nowadays when you watch a drama movie and like there's nothing going on action wise, but it turns out it's kind of like cheaper, I guess, to render the background. And so they would.
+00:15:14
+But how do we get there, how do we get a human that would pass the mom's boyfriend test a simulation of a human walking, do you think that's something you can creep up to by just doing kind of a comparison, learning where you have humans annotate what's more realistic and not just by watching.
+00:15:40
+It was the path, as it seems totally mysterious, how we simulate human behavior here.
+00:15:46
+It's it's hard because a lot of the other things that I mentioned to you, including simulating cameras. Right. It is, um, the thing there is that we know the physics. We know how it works, like in the real world. And we can write some rules and we can do that, like, for example, simulating cameras. There's this thing called retracing. I mean, you literally just kind of imagine it's very similar to it's not exactly the same, but it's very similar to tracing photon by photon.
+00:16:14
+They're going around bouncing on things and come into your eye, a human behavior, developing a dynamic like like a like a model of that that is mathematical so that you can put it into a processor that would go through that. That's going to be hard. And so so what else do you got? You can collect data. Right, and you can try to match the data or another thing that you can do is that you can show different tests.
+00:16:40
+You can say this or that and this or that. And that would be labeling anything that requires human labeling. Ultimately, we're limited by the number of humans that we have available at our disposal and the things that they can do. You know, they have to do a lot of other things than also labeling the data. So, um, so that modeling human behavior part is is, I think, going we're going to realize it's very tough. And I think that also affects our development of autonomous vehicles.
+00:17:07
+I see them self driving and small like you want to use. So you're building self-driving, you know. At the first time, like right after Urban Challenge, I think everybody focused on localization, mapping and localization slam algorithms came in. Google was just doing that. And so building these maps, basically, that's about knowing where you are. And then five years later, in 2012, 2013 came the kind of coding called A.I. Revolution, and that started telling us about everybody else's.
+00:17:36
+But we're still missing what everybody else is going to do next. And so you want to know where you are. You want to know what everybody else is. Hopefully, you know that what you're going to do next and then you want to predict what other people are going to do in that last bit has been a real, real challenge.
+00:17:52
+What do you think is the role your own of you, of your the ego vehicle, the robot, you, the the you, the robotic you in controlling and having some control of how the future and roles of what's going to happen in the future, that seems to be a little bit ignored in trying to predict the future, is how you yourself can affect that future by being either aggressive or less aggressive or signaling some kind of way. So this kind of game theoretic dance seems to be ignored for the moment.
+00:18:27
+It's yeah, it's totally ignored. I mean, it's quite interesting, actually, like how we, um, how we interact with things versus we interact with humans like.
+00:18:38
+So if if you see a vehicle that's completely empty and it's trying to do something, all of a sudden it becomes a thing. So interacted with like you interact with this table and so you can throw your backpack or you can kick your kick it, put your feet on it and things like that. But when it's a human, there's all kinds of ways of interacting with humans. So like you and I are face to face, we're very civil. You know, we talk part each other for the most part.
+00:19:05
+See, just just you never know what's going to happen.
+00:19:09
+But but the thing is that, like, for example, you and I might interact through YouTube comments and the conversation may go a totally different angle. And so I think people kind of abusing these autonomous vehicles is a real issue in some sense.
+00:19:25
+And so when you're an eco vehicle, you're trying to coordinate your way, make your way. It's actually kind of harder than being a human. You know, it's like it's you you not only need to be as smart as as kind of humans are, but you also you're a thing. So they're going to abuse you a little bit. So you need to make sure that you can get around and do something. So, um, I in general believe in that sort of game theoretic aspects.
+00:19:51
+I've actually personally have done quite a few papers, both on that kind of game theory and also like this, this kind of understanding people's social value orientation, for example. You know, some people are aggressive, some people not so much, and and, you know, like a robot could understand that by just looking at how people drive and as they kind of common approach, you can actually understand, like if someone is going to be aggressive or or not is a robot and you can make certain decisions.
+00:20:20
+Well, in terms of predicting what they're going to do, the hard question is you as a robot, should you be aggressive or not when faced with an aggressive robot?
+00:20:30
+Right now, it seems like aggressive is a very dangerous thing to do because it's costly from a societal perspective, how you're perceived. People are not very accepting of aggressive robots in modern society. I think that's accurate so that it really is. And so I'm not entirely sure like how to have to go about. But I know I know for a fact that how these robots interact with other people in there is going to be then interaction is always going to be there.
+00:20:59
+I mean, you could be interacting with other vehicles or other just people kind of like walking around. Um, and like I said, the moment, there's like nobody in the seat. It's like an empty thing just rolling off the street. It becomes like no different than like any other thing that's not human. And so so people and maybe abuse is the wrong word. But, you know, people, maybe rightfully even they feel like, you know, this is a human present environment designed for humans to be.
+00:21:27
+And they kind of they want to own it. And then the robots, they would they would need to understand it and they would need to respond in a certain way. And I think that, you know, this actually opens up like quite a few interesting societal questions for us as we deploy, like we talk robots at large scale. So what would happen when we try to deploy robots at large scale, I think, is that we can design systems in a way that they're very efficient.
+00:21:51
+Or we can decide then that they're very sustainable, but ultimately the sustainability efficiency tradeoffs, like they're going to be right in there and we're going to have to make some choices, like we're not going to be able to just kind of put it aside. So, for example, we can be very aggressive and we can reduce transportation delays, increase capacity of transportation or, you know, we can we can be a lot nicer and allow other people to kind of, quote unquote, own the environment and live in a nice place and then efficiency will drop.
+00:22:21
+So when you think about it, I think sustainability gets attached to energy consumption and the impact immediately. And those are those are there. But like livability is another sustainability impact. So you create an environment that people want to live in. And if robots are going around being aggressive and you don't want to live in that environment, maybe. However, you should note that if you're not being aggressive, then you're probably taking up some some delays in transportation and this and that.
+00:22:48
+So you're always balancing that. And I think this this choice has always been there in transportation. But I think the more autonomy comes in, the more explicit the choice becomes.
+00:23:01
+And when it becomes explicit, we can start to optimize it and then we'll get to ask the very difficult societal questions of what do we value more efficiency or sustainability? It's kind of interesting that will happen.
+00:23:13
+I think we're going to have to like I think that the interesting thing about like the whole autonomous vehicles question, I think is also kind of, um, I think a lot of times, you know, we have we are focused on technology development like. Hundreds of years and the products somehow followed and then we got to make these choices and things like that, but this is this is a good time that we even think about autonomous taxi type of deployments and the systems that would evolve from there.
+00:23:42
+And you realize the business models are different. The impact on architecture is different. Urban planning, you get into like regulations and then you get into like these issues that you didn't think about before, about like sustainability and ethics is like right in the middle of it. I mean, even testing autonomous vehicles like think about it, you're testing autonomous vehicles in human environments. I mean, the risk may be very small, but still, it's a it's it's it's a strictly greater than zero risk that you're putting people into.
+00:24:13
+And so then you have that innovation, you know, risk trade off that you're in that somewhere. And we understand that pretty now that pretty well now is that if we don't test the at least the the development will be slower. I mean, it doesn't mean that we're not going to be able to develop. I think it's going to be pretty hard, actually. Maybe we can. We don't. We don't. I don't know. But but the thing is that those kinds of trade offs we already are making and as these systems become more ubiquitous, I think those trade offs will just really hit.
+00:24:47
+So you are one of the founders of Optimists and Thomas Legal Company. We'll talk about it. Let me add that point. Ask may be good examples.
+00:24:59
+Keeping optimist right out of this question, sort of exemplars of different strategies on the spectrum of innovation and safety or caution, so the way more Google self-driving car, way more. Represents maybe a more cautious approach, and you have Tesla on the other side headed by Elon Musk, that represents some more, however, which adjective you want to use, aggressive, innovative, I don't know. But what what do you think about the difference in the two strategies, in your view?
+00:25:38
+What's more likely, what's needed and is more likely to succeed in the short term, in the long term? Definitely some sort of imbalances is kind of the right way to go, but I do think that the thing that is the most important is actually like an informed public. So I don't I don't mind.
+00:25:58
+You know, I personally like if I were in some place, I wouldn't mind so much like taking a certain amount of risk, some other people might. And so I think the key is for people to be informed and so that they can ideally they can make a choice. In some cases, that kind of choice making that unanimously is, of course, very hard, but I don't think it's actually that hard to inform people. Um, so I think in in one case, like, for example, even the Tesla approach, um, I don't know.
+00:26:34
+It's hard to judge how informed it is, but it is somewhat informed. I mean, you know, things kind of come out. I think people know what they're taking and things like that and so on.
+00:26:42
+But I think the underlying, um, I do think that these two companies are a little bit kind of representing like they of course, that, you know, one of them seems a bit safer, the other one or, you know, whatever the adjective for that is. And the other one seems more aggressive or whatever the adjective for that is. But but I think, you know, when you turn the tables are actually there are two or other orthogonal dimensions that these two are focusing on.
+00:27:07
+On the one hand, for them, I can see that they're I mean, they I think they are a little bit see it as research as well. So they kind of if they don't, I'm not sure if they're really interested in, like an immediate product. They talk about it sometimes, there's some pressure to talk about it, so they kind of go for it. But I think, um, I think that they're thinking, um, maybe in the back of their minds, maybe they don't put it this way.
+00:27:33
+But I think they realize that we're building like a new engine. It's kind of like call it the engine or whatever that is. And, you know, and autonomous vehicles is a very interesting embodiment of that engine that allows you to understand where the ego vehicle is. The ego thing is where everything else is, what everything else is going to do, and how do you react? How do you actually interact with humans the right way? How do you build these systems?
+00:27:57
+And I think they want to know that. They want to understand that. And so they keep going and doing that and so on. The other dimension, Tesla is doing something interesting. I mean, I think that they have a good product. People use it, think that, you know, like it's not for me, but I can totally see people, people like it. And people I think they have a good product outside of automation. But I was just referring to the the automation itself.
+00:28:19
+I mean, you know, like it kind of drives itself. You still have to be kind of you still have to pay attention to it. Right now, people seem to use it. So it works for something. And so people I think people are willing to pay for it. People are willing to buy it. I think it's one of the other reasons why people buy it. Has the car. Maybe one of those reasons is Elon Musk is the CEO.
+00:28:42
+And, you know, he seems like a visionary person. What people think it seems like a visionary person. So that adds like five K to the value of the car and then maybe another five is the autopilot. And then, you know, it's useful. I mean, it's, um. Useful in the sense that, like people are using it, and so I can see Teszler, sure, of course they want to be visionary, they want to kind of put out a certain approach and they may actually get there.
+00:29:06
+But I think that there's also a primary benefit of doing all these updates and rolling it out because people pay for it. And it's it's it's basic, you know, demand, supply, market and people like it. They're happy to pay another five K 10k for that novelty or whatever that is. Um, they and they use it. It's not like they get it and they try it a couple of times. It's a novelty, but they use it a lot of the time.
+00:29:33
+And so I think that's what Tesla is doing.
+00:29:34
+It's actually pretty different, like they are on pretty orthogonal dimensions of what kind of things that they're building. They are using the same engine. So it's very possible that they're both going to be sort of one day kind of using a similar almost like an internal internal combustion engine. It's a very bad metaphor, but similar internal combustion engine and maybe one of them is building like a car. The other one is building a truck or something. So ultimately, the use case is very different.
+00:30:02
+So you, like I said, are one of the founders of Autonomous rather. Let's take a step back. It's one of the success stories in that vehicle space. It's a great autonomous vehicle company. Let's go from the very beginning. What does it take to start a autonomous vehicle company? How do you go from idea to deploy vehicles like you are?
+00:30:22
+And if you a bunch of places, including New York, I would say that I think that, you know, what happened to us as it was, was the following. I think, um, we realized a lot of kind of talk in the autonomous vehicle industry back in like 2014, even when we wanted to kind of get started. Um, and and I don't know, like I kind of I would hear things like fully autonomous vehicles two years from now, three years from now.
+00:30:48
+I kind of never bought it. Um, I was a part of MIT's Urban Challenge entry. Um, it kind of like it has an interesting history. So I did in college and in high school, sort of a lot of mathematically oriented work. And I think I kind of you know, at some point it kind of hit me. I wanted to build something. And so I came to MIT's mechanical engineering program. And I now realize I think my advisor hired me because I could do, like, really good math.
+00:31:17
+But I told him that, no, no, I want to work on that urban challenge car. I want to build the autonomous car. And I think that was that was kind of like a process where we really learn, I mean, what the challenges are and what kind of limitations are we up against, you know, like having the limitations of computers or understanding human behavior. There's so many of these things, and I think it's just kind of didn't.
+00:31:40
+And so so we said, hey, you know, like, why don't we take a more like a market based approach? So we focus on a certain kind of market and we build a system for that. What we're building is not so much of like an autonomous vehicle only I would say. So we build full autonomy into the vehicles. But, you know, the way we kind of see it is that we think that the approach should actually involve humans operating them, not just just not sitting in the vehicle.
+00:32:09
+And I think today what we have is today we have one person operate one vehicle. No matter what that vehicle, it could be a forklift, it could be a truck, it could be a car, whatever that is. And we want to go from that to ten people operate fifty vehicles. How do we do that? You're referring to a world of maybe perhaps tele operation. So can you just say what it means for ten, maybe confusing for people listening?
+00:32:36
+What does it mean for ten people to control fifty vehicles?
+00:32:40
+That's a good point. So I think it's a very deliberately during a tail operation because people what people think then is that people think away from the vehicle sits a person sees like maybe puts on goggles or something VR and drives the car. So that's not at all what we mean. But we mean the kind of intelligence whereby humans are in control except in certain places the vehicles can execute on their own. And so I imagine like like a room where people can see what the other vehicles are doing and everything.
+00:33:13
+And there will be some people who are more like more like air traffic controllers, call them like a controllers. And so these controllers would actually see kind of like like a whole map and they would understand why vehicles are really confident and where they kind of need a little bit more help. And the help should not be for safety. Help should be for efficiency. Vehicles should be safe no matter what. If you had zero people, they could be very safe, but they'd be going five miles an hour.
+00:33:44
+And so if you want them to go around twenty five miles an hour, then you need people to come in and and for example, the vehicle come to an intersection and the vehicle can say. You know, I can wait, I can inch forward a little bit, show my intent, or I can turn left and right now it's clear I can't and I know that. But before you give me the go, I won't. And so that's one example.
+00:34:08
+This doesn't mean necessarily we're doing that.
+00:34:10
+Actually, I think I think if you go down all them, all that that much detail that every intersection, you're kind of expecting a person to press the button, then I don't think you'll get the efficiency benefits you want. You need to be able to kind of go around and be able to do these things.
+00:34:24
+But but I think you need people to be able to set high level behavior to vehicles.
+00:34:29
+That's the other thing that autonomous vehicles, you know, I think a lot of people kind of think about it as follows. I mean, this happens with technology a lot. You know, you think, all right. So I know about cars and I heard robots. So I think how this is going to work out is that I'm going to buy a car, press a button, and it's going to drive itself. And when is that going to happen?
+00:34:48
+You know, and people kind of tend to think about it that way. But when you think about what really happens is that something comes in in a way that you didn't even expect. If asked, you might have said, I don't think I need that or I don't think it should be that and so on. And then and then that that becomes the next big thing going on. And so I think that this kind of different ways of humans operating vehicles could be really powerful.
+00:35:12
+I think that sooner than than later we might open our eyes up to a world in which you go around, walk in a mall and there's a bunch of security robots there. Exactly. Operating this way. You go into a factory or a warehouse, there's a whole bunch of robots. Exactly.
+00:35:27
+In this way, you go to a you go to the Brooklyn Navy Yard, you see a whole bunch of autonomous vehicles UPTIMES ride, and they're operated maybe in this way.
+00:35:38
+But I think people kind of don't see that. I sincerely think that there's a possibility that we may almost see like like a whole mushrooming of this technology in all kinds of places that we didn't expect before. And that may be the real surprise. And then one day when your car actually drives itself, it may not be all that much of a surprise at all, because you see it all the time. You interact with them, you take the optimum ride.
+00:36:02
+Hopefully that's your choice. And then, you know, you hear a bunch of things. You go around, you interact with them. I don't know, like you have a little delivery vehicle that goes around the sidewalks and delivers you things and then you take it. It says, thank you and then you get used to that. And one day your car actually drives itself and the regulation goes by and, you know, you can hit the button sleep.
+00:36:24
+And it wouldn't be a surprise at all. I think that may be the real reality.
+00:36:27
+So there's going to be a bunch of applications that pop up around autonomous vehicles, some some of which maybe many of which we don't expect at all.
+00:36:37
+So if we look at optimize ride, what do you think? You know, the the viral application that the one that really works for people in mobility, what do you think Optimus. Right. Will connect with in the near future?
+00:36:52
+First, I think that the first places that that I like to target honestly is like these places where transportation is required within an environment like people typically call a geophones. So you can imagine like a roughly two mile by two mile, could be bigger, could be smaller type of environment. And there's a lot of these kinds of environments are typically transportation deprived. Are the Brooklyn Navy Yard that we're in today. We're in a few different places. But that's that was the one that was last publicized.
+00:37:22
+And it's a good example. So there's not a lot of transportation there. And you wouldn't expect, like, I don't know, I think maybe operating an Uber there ends up being sort of a little too expensive. Or when you compare it with operating Uber or elsewhere, that becomes the elsewhere becomes the priority. And these people, those places become totally transportation deprived. And then what happens is that people drive into these places and to go from point A to point B inside this place, within a day, they use their cars and so we end up building more parking.
+00:37:55
+For them to, for example, take their cars and go to a lunch place. And I think that one of the things that can be done is that you can put in efficient, safe, sustainable transportation systems into these types of places first.
+00:38:11
+And I think that you could deliver mobility in an affordable way, affordable, accessible, in a sustainable way. But I think what also enables is that this kind of effort, money area, land that we spend on parking, we could reclaim some of that. And that is on the order of like even for a small environment like to mile by two mile, it doesn't have to be smack in the middle of New York. I mean, anywhere else you're talking tens of millions of dollars.
+00:38:40
+If you're smack in the middle of New York, you're looking at billions of dollars of savings just by doing that. And that's the economic part of it. And there's a societal part, right? I mean, just look around. I mean, the places that we live are like built for cars. It didn't look like this just like a hundred years ago. Like today, no one walks in the middle of the street. It's for cars. We no one tells you that growing up.
+00:39:04
+But you grow into that reality. And so sometimes they close the road. It happens here, like the celebration. They closed roads. Still, people don't walk in the middle of the road, like just walk in and people don't. But I think it has so much impact that the car in the space that we have and and I think we talked about sustainability, livability. I mean, ultimately these kinds of places that parking spots at the very least could change into something more useful or maybe just like park areas recreational.
+00:39:33
+And so I think that's the first thing that that we're targeting.
+00:39:36
+And I think that we're getting like a really good response, both from an economic societal point of view, especially places that are a little bit forward looking and like, for example, Brooklyn, Navy Yard, they have tenants. There's distinct D'Errico like new lab. It's kind of like an innovation center. And there's a bunch of startups there.
+00:39:53
+And so, you know, you get those kinds of people and they're really interested in sort of making their environment more livable. And these kinds of solutions that Optimus Prime provides almost kind of comes in and becomes not.
+00:40:07
+And many of these places that are transportation deprived, you know, they have, um, they actually run shuttles. And so, you know, you can ask anybody the shuttle experiences like terrible people hate shuttles. And I can tell you why.
+00:40:23
+It's because, you know, like, the driver is very expensive in a shuttle business. So what makes sense is to attach 20 to 30 seats to a driver. And a lot of people have this misconception. They think that shuttles should be big. Sometimes we get a lot, Optimus, right. We tell them we're going to give you like four seater, six seaters. And we get asked, like, how about like 20 seaters? You know, you don't need any Cedar's.
+00:40:44
+You want to split up those seats so that they can travel faster and the transportation delays would go down. That's what you want. If you make it big, not only you will get delays in transportation, but you won't have an agile vehicle. It will take a long time to speed up, slow down and so on. It will you need to climb up to the thing.
+00:41:03
+So it's kind of like really hard to interact with and scheduling to perhaps when you have more smaller vehicles, because closer to Uber, where you can actually get a personal I mean, just the logistics of getting the vehicle to you is becomes easier when you have a shuttle.
+00:41:19
+There's fewer of them.
+00:41:21
+And it probably goes on a route, a specific route that is supposed to hit.
+00:41:25
+And when you go on a specific route and all seats travel together versus you have a whole bunch of them, you can imagine the route you can still have, but you can imagine you split up the seats and instead of them traveling like, I don't know, a mile apart, they could be like, you know, half a mile apart. If you split them into two, that basically would mean that your delays when you go out, you won't wait for them for a long time.
+00:41:51
+And that's one of the main reasons. Or you don't have to climb. But the other thing is that I think if you split them up in a nice way and if you can actually know where people are going to be, somehow you don't even need the app. A lot of people ask us the app. We say, why don't you just walk into the vehicle? How about you just walk into the vehicle? It recognizes who you are and it gives you a bunch of options of places that you go and you just kind of go there.
+00:42:14
+I mean, people kind of also internalize the apps everybody needs. And it's like you don't need an app, you just walk into the space, walk up. But I think I think one of the things that we really try to do is to take that shuttle experience that no one likes and tilt it into something that everybody loves. And so I think that's another important thing. I would like to say that carefully. Just like to have an operation like we don't do shuttles.
+00:42:38
+You know, we really kind of thinking of this as a system or a network that we're designing.
+00:42:43
+Um, but but ultimately, we go to places that would normally rent the shuttle service that people wouldn't like as much. And we want to tilt it into something that people love.
+00:42:54
+So you've mentioned this earlier, but how many? Astride vehicles, do you think, would be needed for any person in Boston or New York if they step outside? There will be. This is like a mathematical question. There will be two optimized vehicles within line of sight. Is that the right number two? Well, for example, that's that's the density, so meaning that if you see one vehicle, you look around, you see another one to imagine, like, um, you know, Tesla would tell you they collect a lot of data.
+00:43:28
+Do you see that with Tesla? Like, you just walk around and you look around, you see Tesla, probably not very specific areas of California.
+00:43:35
+Maybe maybe you're right.
+00:43:38
+Like there's a couple zip codes that, you know, just but I think but I think that's kind of important because like maybe the couple zip codes, the one thing that we kind of depend on and I'll get your question in a second. But now, like, we're taking a lot of tangents today.
+00:43:51
+And so so so I think that this is actually important.
+00:43:55
+People call this data density or data velocity. So it's very good to collect data in a way that, you know, you see the same place so many times, like you can drive ten thousand miles around the country or you drive ten thousand miles in a confined environment. You'll see the same intersection hundreds of times. And when it comes to predicting what people are going to do in that specific intersection, you become really good at it. Versus if you draw on like ten thousand miles around the country, you seen that only once.
+00:44:23
+And so trying to predict what people do becomes hard.
+00:44:27
+And I think that, you know, you said what is needed. It's tens of thousands of vehicles. You really need to be like a specific fractional vehicle, like, for example, in good times in Singapore, you can go and you can just grab a cab. And they are like 10 percent, 20 percent of traffic, those taxis. Ultimately, that's why you need to get to so that you get to a certain place where you really the benefits really kick off in like orders of magnitude type of a point.
+00:44:57
+But once you get there, you actually get the benefits and you can certainly carry people. I think that's one of the things people really don't like to wait for themselves. But for example, they can wait a lot more for the goods if they order something like they were sitting at home and you want to wait half an hour. That sounds great. People will say it's great. You want to you're going to take a cab. You're waiting half an hour.
+00:45:19
+Like, that's crazy. You don't want to wait that much. But I think you can, I think, really get to a point where the system at peak times really focuses on kind of transporting humans around. And then it's really it's a good fraction of the traffic to the point where, you know, you go you look around, there's something there and just kind of basically get in there and it's already waiting for you or something like that. And then you take it.
+00:45:45
+If you do it at that scale, like today, for instance, Uber, if you talk to a driver, I mean, Uber takes a certain cut, it's a small cut.
+00:45:56
+Or the drivers would argue that it's a large cut. But it's when you look at the grand scheme of things, most of that money that you pay Uber kind of goes through driver.
+00:46:07
+And if you talk to the driver, the driver will claim that most of it is their time. You know, they it's not spent on gas. They think it's not spent on the car per say as much. It's like their time. And if you didn't have a have a person driving or if you're in a scenario where, you know, like point one person is driving the car. A fraction of a person is kind of operating the car because, you know, you one operate several.
+00:46:34
+If you're in that situation, are you realize that the internal combustion engine type of cars are very inefficient. You know, we build them to go on highways, they pass crash tests. They're like really heavy. They really don't need to be like twenty five times the weight of its passengers or or, you know, like area wise and so on. And, um, but if you get through those inefficiencies and if you really build like urban cars and things like that, I think the economics really starts to check out, like to the point where I mean, I don't know, you may be able to get into a car and it may be less than a dollar to go from A to B as long as you don't change your destination, you just pay 99 cents and go that if you share it, if you take another stop somewhere, it becomes a lot better.
+00:47:17
+Um, you know, these kinds of things, at least four models, at least for mathematics in theory, they start to really check out.
+00:47:24
+So I think it's really exciting where Optimizer is doing in terms of it feels the most reachable, like they'll actually be here and have an impact.
+00:47:33
+Yeah, that is the idea. And if we contrast that again, we'll go back to our old friends own Tesla so way Mo seems to have sort of technically similar approaches as Optimus Ride, but a different they're not as interested as having impact today is if they have a longer term sort of investment. It's almost more of a research project still meaning they're trying to solve, as far as I understand. And maybe you can you can differentiate, but they seem to want to do more unrestricted movement, meaning move from A to B or A to B is all over the place versus autonomous.
+00:48:19
+Right. Is really nice offense and really sort of established mobility in a particular environment before you expand it. And then Tesla is like the complete opposite, which is, you know, the entirety of the world actually is going to be automated highway driving, urban driving, every kind of driving. You know, you kind of creep up to it by incrementally improving the capabilities of the autopilot system.
+00:48:50
+So when you contrast all of these and on top of that, let me throw a question that nobody likes.
+00:48:56
+But is timeline one, do you think each of these approaches, loosely speaking, nobody can predict the future, will see mass deployment? So you are Musk predicts the craziest approach is I think I've heard figures like at the end of this year. Right. So that's probably wildly inaccurate. But how wildly inaccurate is it?
+00:49:24
+I mean, first thing to lay out like everybody else, it's really it's really hard to guess. I mean, I don't know I don't know where where Tesla can look at or Elon Musk can look at and say, hey, you know, it's the end of this year. I mean, I don't know what you can look at. You know, even the data that, you know, I mean, if you look at the data, um.
+00:49:45
+Even kind of trying to extrapolate the end state without knowing what exactly is going to go on, especially for like a machine learning approach, I mean, it's just kind of very hard to predict. But I do think the following does happen. I think a lot of people, you know, what they do is that there's something that I called a couple of times, time dilation in technology prediction happens. Let me try to describe a little bit.
+00:50:10
+There's a lot of things that are so far ahead. People think they're close and there's a lot of things that are actually close. People think it's far ahead. People try to kind of look at a whole landscape of technology development. Admittedly, it's chaos. Anything can happen in any order at any time. And there's a whole bunch of things and that people take it, clamp it and put it into the next three years. And so then what happens is that there's some things that maybe can happen by the end of the year or next year and so on.
+00:50:40
+And they push that into like a few years ahead because it's just hard to explain. And there are things that are like we're looking at 20 years more, maybe, you know, hopefully in my lifetime type of things. And because, you know, we don't know. I mean, we don't know how hard it is, even like that's a problem. We don't know like if some of these problems are actually I complete like, we have no idea what's going on.
+00:51:04
+And, you know, we we take all of that and then we comp and then we say three years from now, um, and then some of us are more optimistic. So they're shooting at the at the end of the year. And some of us are more realistic. They say like five years. But we all I think it's just hard to know. And and I think, um, trying to predict like products ahead two or three years, it's hard to know in the following sense.
+00:51:31
+You know, like we typically say, OK, this is a technology company.
+00:51:34
+But sometimes sometimes really you're trying to build something where technology does like there's a technology gap, you know, like and Tesla had that with electric vehicles, you know, like when they first started, they would look at a chart, much like a moose law type of chart, and they would just kind of extrapolate that out and they'd say, we want to be here. What's the technology to get that? We don't know. It goes like this. So it's probably just going to, you know, keep going with a guy that goes into the cars.
+00:52:03
+We don't even have that. Like, we don't we can't. I mean, what can you quantify? Like, what kind of chart are you looking at? You know, um, but I think when there's that technology gap, it's just kind of really hard to predict. So now I realize I talk like five minutes and avoid your question.
+00:52:19
+I didn't tell you anything about that. It was very skillfully done as well. And I don't think I think you've actually argue there's no use even as you provide now is not that useful. It's going to be very hard.
+00:52:30
+There's one thing that I really believe in and and, you know, this is not my idea. And it's been discussed several times. But but this this this kind of like something like a startup or a kind of an innovative company, including definitely may want them Tesla, maybe even some of the other big companies that are kind of trying things. This kind of like iterated learning is is very important, the fact that we are over there and we're trying things and so on.
+00:52:58
+I think that's, um, that's important. We try to understand and and I think that, you know, the coding called Silicon Valley has done that with business models pretty well. And now I think we're trying to get to do it where there's a little technology gap. I mean, before, like we were trying to build I'm not trying to you know, I think these companies are building great technology to, for example, enable Internet search to do it so quickly.
+00:53:24
+And that kind of didn't wasn't there so much.
+00:53:27
+But at least like it was a kind of a technology that you could predict to some degree and so on. And now we're just kind of trying to build things that it's kind of hard to quantify. What kind of a metric are we looking at? So psychologically is a sort of as a leader of graduate students and optimists ride a bunch of brilliant engineers, just curiosity psychologically, do you think it's good to think? That, you know, whatever technology gap we're talking about can be closed by the end of the year, or do you know?
+00:54:02
+Because we don't know. So the way do you want to say that everything is going to improve exponentially to yourself and to others around you as a leader?
+00:54:14
+Or do you want to be more sort of maybe not cynical, but I don't want to use realistic because it's hard to predict, but maybe more cynical and pessimistic about the ability to close that gap?
+00:54:28
+Yeah, I think that going back, I think that iterated learning is like key that you're out there, you're running experiments to learn. And that doesn't mean sort of like, you know, like like you're optimist, right? You kind of doing something, but like in an environment. But like what Tesla is doing, I think is also kind of like this, this kind of notion. And and, you know, people can go around, say, like an know this year, next year or the other year and so on.
+00:54:52
+But but I think that the the nice thing about it is that they're out there pushing this technology in, I think what they should do more of. I think that kind of informed people about what kind of technology that they're providing, you know, the good and the bad. And then, you know, and not just sort of if it works very well. But I think and I'm not saying they're not doing bad on informing. I think they're kind of trying.
+00:55:14
+They you know, they put up certain things or at the very least YouTube videos comes out on on how does someone function works every now and then. And, you know, people get informed and so that that kind of cycle continues. But I you know, I admire it. I think they're kind of go out there and they do great things. They do their own kind of experiment. I think we do our own. And I think we're closing some similar technology gaps.
+00:55:37
+But some also some are orthogonal as well. You know, I think like like we talked about, you know, people being remote, like it's something or in the kind of environments that we're in or I think about a Tesla car, maybe maybe you can enable it one day, like there's low traffic, like you kind of the stop and go motion. You just hit the button and you can really or maybe there's another lane that you can pass to you go in there.
+00:55:59
+I think they can enable these kinds of I believe it. And so I think that that part that is really important and that is really key. And beyond that, I think, um, you know, when is it exactly going to happen and so on. I mean, it's like I said, it's very hard to predict. Um, and I would I would imagine that it would be good to do some sort of like a like a one or two year plan when it's a little bit more predictable that, you know, the technology gets you close and and the and the kind of, um, sort of product that would ensue.
+00:56:35
+So I know that from Optimist's. Right. Or, you know, other companies that are involved in I mean, at some point you find yourself in a situation where you're trying to build a product and and people are investing in that in that, you know, building effort.
+00:56:51
+And those investors that they do want to know as they compare the investments they want to make, they do want to know what happens in the next one or two years. And I think that's good to communicate that. But I think beyond that, it becomes it becomes a vision that we want to get to someday and saying five years, 10 years, I don't think it means anything.
+00:57:09
+But it really learning is key to do and learn. I think that is key. You know, I've got to sort of throw back right at your criticism in terms of, you know, like Tesla or somebody communicating, you know, how someone works and so on. I get a chance to visit Optimus Prime and you guys are doing some awesome stuff and yet the Internet doesn't know about it. So you should also communicate more, showing off, you know, showing off some of the awesome stuff, the stuff that works and stuff that doesn't work.
+00:57:40
+I mean, it's just the stuff I saw with the tracking of different objects and pedestrians. So, I mean, incredible stuff going on there. Just maybe it's just the nerd to me, but I think the world would love to see that kind of stuff.
+00:57:51
+Yeah, that's that's what I'll take. And I think, you know, I should say that it's not like, you know, we we we weren't able to I think we made a decision at some point. Um, that decision did involve me quite a bit on kind of, um, uh, sort of doing this in kind of coding called stealth mode for a bit. Um, but I think that, you know, we will open it up quite a lot more.
+00:58:13
+And I think that we are also at Optimus. Right. Kind of hitting a new era. Um, you know, we're big now. We're doing a lot of interesting things. And and I think, you know, some of the deployments that we kind of announced were some of the first bits, bits of information that we kind of put out into the world will also put out our technology. A lot of the things that we've been developing is really amazing.
+00:58:37
+And then we're going to we're going to start putting it out. Now. We're especially interested in sort of like being able to work with the best people. And I think and I think it's it's good to not just kind of show them and they come to our office for an interview, but just put it out there in terms of like, you know, get people excited about what we're doing. So an autonomous vehicle space to me ask one last question, so Elon Musk famously said that lighter as a crutch.
+00:59:04
+So I've talked to a bunch of people. Got to ask you, you use that crutch quite a bit in the diaper days.
+00:59:12
+So, you know, it is his idea in general, sort of, you know, more provocative and fun, I think, than a technical discussion.
+00:59:21
+But the idea is that camera based, primarily camera based systems is going to be what defines the future of autonomous vehicles.
+00:59:31
+So what do you think of this idea that as a crutch versus primarily a camera based systems?
+00:59:38
+First things first, I think, you know, I'm a big believer in just camera based autonomous vehicle systems. Like I think that you can put in a lot of autonomy and then you can do great things. And it's it's it's very possible that at the time scales, like I said, we can predict 20 years from now, like you may be able to do do things that we're doing today only with light. And then you may be able to do them just with cameras.
+01:00:04
+And I think that, you know, you can just, um, I think that I will put my name on a tool like there will be a time when you can only use cameras and you'll be fine. At that time, though, it's very possible that you find the light. Our system is another robust fire or it's so formidable that it's stupid not to, you know, just kind of put it there. And I think, um, and I think we may be looking at a future like that.
+01:00:37
+Do you think we're over relying on Ladar right now? Because we understand the better? It's more reliable in many ways in terms from a safety easier to build with.
+01:00:46
+That's the other that's the other thing, I think, to be very frank with you. I mean, um, you know, we've seen a lot of sort of autonomous vehicles, companies come and go. And the approach has been, you know, you slap a light on a car and it's kind of easy to build with when you have a light are, you know, just kind of coded up and and you hit the button and you do a demo.
+01:01:09
+So I think there's admittedly, there's a lot of people they focus on the lighter because it's easier to build with. That doesn't mean that, you know, without the cameras, just cameras, you can you cannot do what they're doing is just kind of a lot harder. And so you need to have certain kind of expertise to to exploit that. What we believe in. And you maybe seeing some of it is that, um, we believe in computer vision.
+01:01:31
+We certainly work on computer vision and optimize ride by a lot like, um, and we've been doing that from day one. And we also believe in sensor fusion. So, you know, we we do we have a relatively minimal use of light hours. But but we do use them. And I think, you know, in the future, I really believe that the following sequence of events may happen. First things first. Number one, there may be a future in which there's like cars with light and everything and the cameras, but, you know, is in this 50 year ahead future, they can just drive with cameras as well, especially in some isolated environments and cameras.
+01:02:07
+They go and they do the thing in the same future. It's very possible that daylight hours are so cheap and frankly, make the software maybe a little less computer intensive at the very least, or maybe less complicated so that they can be certified or or ensure their of their safety and things like that, that it's kind of stupid not to put the light are like, imagine this. You either put pay money for the lighter or you pay money for the computer.
+01:02:35
+And if you don't put the lighter, it's a more expensive system because you have to put in a lot of compute like this is another possibility.
+01:02:43
+I do think that a lot of the sort of initial deployments of self-driving vehicles, I think they will involve light hours and especially other long range or short either short range or low resolution light hours are actually not that hard to build in Solid-State. They're still scanning, but like meme's type of scanning, light hours and things like that. They're like they're actually not that hard. I think they may be kind of playing with the spectrum and the Fazer is that they're a little bit harder.
+01:03:10
+But but I think by putting Ms. Miller in there, that kind of scans the environment. It's not hard. The only thing is that, you know, you just like with a lot of the things that we do nowadays in developing technology, you hit fundamental limits of the universe and the speed of light becomes a problem when you're trying to scan the environment. So you don't get either good resolution or you don't get range. But but, you know, it's still it's something that you can put in that affordably.
+01:03:38
+So let me jump back to drones, you've. You have a role in the Lockheed Martin Alpha Pilot Innovation Challenge, where teams compete in drone racing and super cool, super intense, interesting application by. So can you tell me about the very basics of the challenge and where you fit in, where your thoughts are on this problem, and it's sort of echoes of the early DARPA challenge in the through of the desert that we're seeing now now with drone racing?
+01:04:11
+Yeah, I mean, one interesting thing about it is that, know, people, the drone racing exist as any sport. And so it's much like you're playing a game, but there's a real drone going in an environment.
+01:04:23
+A human being is controlling it with goggles on.
+01:04:25
+So there's no it is a robot, but there's no A.I. There's no way human being is controlling it.
+01:04:32
+And so that's already there. And and I've been interested in this problem for quite a while, actually, from a robotics point of view.
+01:04:40
+And that's what's happening in Alpha Pilot, which which problem of aggressive flight, of aggressive flight, fully autonomous, aggressive flight. The problem that I'm interested in, you asked about Alpha and I'll get there in a second. But the problem that I'm interested in, I'd love to build autonomous vehicles like like drones that can go far faster than any human possibly can. I think we should recognize that we as humans have limitations in how fast we can process information.
+01:05:09
+And those are some biological limitations. Like we think about this A.I. this way, too. I mean, this has been discussed a lot. And this is not sort of my idea per say. But a lot of people kind of think about human level AI and they think that AI is not a human level one. They will be human level and humans. And the they kind of interact versus. I think that the situation really is that humans are at a certain place and I keeps improving and at some point just crosses off and, you know, it gets smarter and smarter and smarter.
+01:05:38
+And so drone racing, the same issue. Humans play this game and, you know, you have to, like, react in milliseconds and there's really you see something with your eyes and then that information just flows through your brain, into your hands so that you can command it. And there's some also delays in getting information back and forth. But suppose those delays that don't exist, you just just a delay between your eye and your fingers. There is a delay that a robot doesn't have to have.
+01:06:08
+Um, so we end up building in my research group like systems that see things at a kilohertz like a human. I would barely hit one hundred hurt. So imagine things that see stuff in slow motion like Tenwick slow motion. It will be very useful, like we talked a lot about autonomous cars. So, you know, we don't get to see it. But a hundred lives are lost every day just in the United States on traffic accidents. And many of them are like known cases like the are you coming to like a like a ramp, going into a highway?
+01:06:43
+You hit somebody and you're off or, you know, like you kind of get confused. You try to, like, swerve into the next lane. You go off the road and you crash whatever. And I think if you had enough computer in a car and a very fast camera right at the time of an accident, you could use all compute you have like you could shut down infotainment system.
+01:07:05
+And use that kind of computing resources instead of rendering you use it for the kind of artificial intelligence that goes in the autonomy, and you can you can either take control of the car and bring it to a full stop, or even even if you can't do that, you can deliver what the human is trying to do, who is trying to change the lane but goes off the road, not being able to do that with motor skills and the eyes.
+01:07:27
+And, you know, you can get in there. And I was there's so many other things that you can enable with what I would call high throughput computing. You know, data is coming in extremely fast and in real time you have to process it.
+01:07:40
+And the current CPU's, however fast you clock it, are typically not enough. You need to build those computers from the ground up so that they can ingest all that data that I'm really interested in.
+01:07:53
+Just on that point, just really quick, is the currently what's the bottleneck? You mentioned the delays in humans. Is it the hardware to work along with Invidia hardware? Is it the hardware or is it the software?
+01:08:07
+I think it's both. I think it's both. In fact, they need to be code developed, I think in the future. I mean, that's a little bit one in video. That's sort of like they almost like build the hardware and then they build the neural networks and then they build the hardware back in the neural networks back and it goes back and forth. But it's that core design. And I think that, you know, like we try to lay back, we try to build a fast strong that could use a camera image to, like, track what's moving in order to find where it is in the world, this typical sort of visual inertial state estimation problems that we would solve.
+01:08:39
+And, you know, we just kind of realize that we're at the limit sometimes of doing simple tasks. We're at the limit of the camera frame rate because, you know, if you really want to track things, you want the camera image to be 90 percent kind of like or some somewhat the same from one frame to the next. Right. And why are we at the limit of the camera frame rate? It's because camera captures data. It puts into some serial connection.
+01:09:04
+It could be USB or like there's something called camera interface that we use a lot. It puts into some serial connection and copper wires can only transmit so much data. And you hit the channel limit on copper wires and you you hit yet another kind of universal limit that you can transfer the data. So you have to be much more intelligent on how you capture those pixels. You can take compute and put it right next to the pixels. People are going to do.
+01:09:34
+How hard is it to to to to get past the bottleneck of the copper wire?
+01:09:40
+Yeah, you need to you need to do a lot of parallel processing. As you can imagine, the same thing happens in the GPS. You know, like the data is transferred in parallel. Somehow it gets into some parallel processing.
+01:09:51
+I think that, you know, like now we're really kind of diverted off into so many different dimensions, but great.
+01:09:56
+So aggressively. How do we make drones seem many more frames a second in order to enable us? This is super interesting. Well, that's an interesting problem.
+01:10:06
+So but like, think about it. You have you have CPU's, you clocked them at several gigahertz. Um, we don't clock them faster, largely because, you know, we run into some heating issues and things like that. But another thing is that three gigahertz clock light travels kind of like on the order of a few inches or an inch. That's the size of a chip. And so you pass a clock cycle and as the clock signal is going around in the chip, you pass another one.
+01:10:36
+And so trying to coordinate that, the design of the complexity, the chip becomes so hard. I mean, we have hit the fundamental limits of the universe and so many things that we're designing. I don't know if I realize that it's great, but like we can make transistors smaller because like quantum effects, electrons start to tunnel around. We can't clock it faster. One of the reasons why is because, like, the information doesn't travel faster in the universe.
+01:11:01
+Yeah. And we're limited by that same thing with the laser scanner. But so then it becomes clear that, um, you know, the way you organize the chip into a CPU or even a GPU, you now need to look at how to redesign that if you're going to stick with silicon. Yes, you could go do other things, too.
+01:11:20
+I mean, there's that, too. But you really almost need to take those transistors, put them in a different way so that the information travels on those transistors in a different way, in a much more way that is specific to the high speed cameras coming in.
+01:11:34
+And so that's one of the things that we talk about quite a bit for drone racing, kind of really makes that embodies that. He embodies that. And that's why it's exciting.
+01:11:44
+It's exciting for people. You know, students like it. It embodies all those problems. But going back, we're building code in code, another engine and that engine, I hope one day will be just like how impactful seatbelts were in driving. I hope so. Or it could enable the next generation autonomous air taxis and things like that. I mean, it sounds crazy, but one day we may need to purchase these things. If you really want to go from Boston to New York and one and a half hours, you may want a fixed wing aircraft.
+01:12:17
+Most of these companies that are doing Concorde flying cars, they're focusing on that. But then how do you landed on top of a building? You may need to pull off like kind of fast maneuvers for a robot approach, landing, going to go put into a into a building if you want to do that, like you need these kinds of systems. And so drone racing, you know, it's being able to go way faster than any human can comprehend.
+01:12:43
+Take an aircraft. Forget the quadcopter, you take your fixed wing while you're at it, you might as well put some, like, rocket engines in the back and you just light it. You go through the gate and if anyone looks at it and just said, what just happened? Yeah. And they would say it's impossible for me to do that. And that's closing the same technology gap that would one day, um, steer cars out of accidents.
+01:13:06
+So but then let's get back to the practical, which is sort of just getting the thing to work in a race environment, which is kind of what the is another kind of exciting thing which drop a challenge to the desert that, you know, theoretically we had autonomous vehicles, but making them successfully finish a race, first of all, which nobody finished the first year and then the second year just to get, you know, to finish and go to a reasonable time is really difficult.
+01:13:35
+Engineering, practically speaking, challenge so that when we ask about the the the alpha pilot challenge, there's a, I guess, a big prize potentially associated with the balloon. You ask, reminiscent of the dark days predictions. Do you think anybody will finish?
+01:13:54
+Well, not not soon. I think that depends on how you set up the race course. And so if the race courses are still on course, I think people will kind of do it. But can you set up some course, like literally sunk or you get to design it as the algorithm developer? Can you set up some course so that you can beat the best human? When is that going to happen, like, that's not very easy, even just setting up some course, if you let the human that you're competing with set up the course, it becomes a lot a lot harder.
+01:14:26
+Mm hmm. So how many in the space of all possible courses are would humans win and what machines would question?
+01:14:36
+Let's get to that. I want to answer your other question, which is like the DAPO challenge days. Right. What was really hard, I think I think we understand we understood what we wanted to build, but still building things that experimentation, that iterated learning, that takes up a lot of time, actually.
+01:14:53
+And and so in my group, for example, in order for us to be able to develop fast, we build like VR environments.
+01:15:00
+We'll take an aircraft, we'll put it in a motion capture room, big, huge motion capture room and we'll fly it in real time, will render other images and beam it back to the drone.
+01:15:11
+That sounds kind of notionally simple, but it's actually hard because now you're trying to fit all that data through the air into the drone. And so you need to do a few crazy things to make that happen. But once you do that, then at least you can try things if you crash into something, you didn't actually crash. So it's like the whole drone is in VR. We can do augmented reality and so on.
+01:15:34
+And so I think at some point testing becomes very important. And one of the nice things about Alpha Pilot is that they build the drone and they build a lot of drones and it's OK to crash. In fact, I think maybe, you know, the viewers may kind of like to see things.
+01:15:50
+That's the most that potentially could be the most exciting part. It could be the exciting part. And I think, you know, as an engineer, it's a very different situation to be in, like in academia.
+01:16:01
+A lot of my colleagues who are actually in this race and are really great researchers, but I have seen them try and do similar things whereby they built this one drone and some somebody with like a face mask and gloves are going right behind. The drone is trying to hold it. If it falls down, I imagine you don't have to do that. I think that's one of the nice things about the pilot challenge, where we have these drones and we're going to design the courses in a way that will keep pushing people up until the crashes start to happen.
+01:16:31
+And, you know, we'll hopefully sort of I don't think you want to tell people crashing is OK. We want to be careful here, but because, you know, we want people to crash a lot. But certainly we want we want them to push it so that, you know, everybody crashes once or twice and, you know, they're really pushing it to their limits.
+01:16:49
+And that's where the learning comes in. Every crash is a lesson. Is a lesson. Exactly.
+01:16:54
+So in terms of the space of possible courses, how do you think about it in the in the war of human versus machines or the machines when we look at that quite a bit?
+01:17:06
+I mean, I think that you will see quickly that, like, you can design a course and, you know, in in certain courses, like in the middle somewhere, um, if you kind of run through the course, once, you know, the machine gets beaten pretty much consistently by slightly. But if you go through the course like 10 times, humans get beaten very slightly, but consistently. So humans at some point you get confused, you get tired and things like that versus this machine is just executing the same line of code tirelessly, just going back to the beginning and doing the same thing.
+01:17:42
+Exactly. Um, I think I think that kind of thing happens. And I realize sort of as humans there's that classical things, you know, that everybody has realized. Like if you put in some sort of like strategic thinking, that's a little bit harder for machines, I think sort of comprehend, um, precision is easier to do.
+01:18:03
+So that's what they excel in. And also sort of repeatability is easier to do. That's what they excel in. They can you can build machines that excel in strategy as well and beat humans that way, too.
+01:18:16
+But that's a lot harder to build. I have a million more questions, but in the interest of time, last question, yeah, what is the most beautiful idea you've come across in robotics? Well, there are simple equation, an experiment, a demo simulation, piece of software.
+01:18:32
+What just gives you pause? That's an interesting question. I have done a lot of work myself in decision making, so I've been interested in that area. So robotics, you have, um, somehow the field has split into like, you know, there's people who would work on, like, preception, how robots perceive the environment. Then how do you actually make decisions? And there's people also like how to interact. People interact with robots as a whole bunch of different fields.
+01:19:00
+And, you know, I have admittedly worked a lot on the more control and decision making than the others. Um, and I think that, you know, the one equation that has always kind of baffled me is bellman's equation. And so it's it's this person who have realized, like way back more than half a century ago on like, how do you actually sit down? And if you have several variables that you're kind of jointly trying to determine, how do you determine that?
+01:19:34
+And there is one beautiful equation that, you know, like today, people do reinforcement and we still use it. And and it's it's baffling to me because it both kind of tells you the simplicity, because it's a single equation that anyone can write down. You can teach it in the first course on decision making. At the same time, it tells you how computationally how hard the problem is. I feel like my like a lot of the things that I've done at MIT for research has been kind of just this fight against computational efficiency, things like how can we get it faster to the point where we now got to like, let's just redesign this chip.
+01:20:11
+Like, maybe that's the way.
+01:20:14
+But I think. It talks about how computationally hard certain problems can be by nowadays what people call curse of dimensionality, and so is the number of variables kind of grow. The number of decisions you can make grows rapidly. Like if you have a hundred variables, each one of them take 10 values. All possible assignments is more than the number of atoms in the universe. It's just crazy.
+01:20:43
+And that kind of thinking is just embodied in that one equation that I really like and the beautiful balance between it being theoretically optimal and somehow. Practically speaking, given the course of dimensionality, nevertheless in practice works. Among despite all those challenges, which is quite incredible, which is quite incredible, so, you know, I would say that it's kind of like quite baffling, actually, you know, in a lot of fields that we think about how little we know, you know, like.
+01:21:15
+And so I think here, too, we know that in the worst case, things are pretty hard. But, you know, in practice, generally things work. So it's just kind of it's kind of baffling decision making, how how little we know, just like how little we know about the beginning of time, how little we know about, you know, our own future. Like if you actually go into, like from Bellman's Equation all the way down, I mean, there's also how little we know about, like, mathematics.
+01:21:43
+I mean, we don't even know if the axioms are, like, consistent. It's just crazy. Yeah, I think a good lesson.
+01:21:49
+The lesson there, just as you said, we tend to focus on the worst case or the boundaries of everything we're studying. And then the average case seems to somehow work out. If you think about life in general, we mess it up a bunch. You know, we freak out about a bunch of the traumatic stuff. But in the end, it seems to work out OK.
+01:22:07
+Yeah, it seems like a good metaphor.
+01:22:10
+So, Tasha, thank you so much for being a friend and colleague and mentor. I really appreciate it on and talk to you. Likewise. Thank you, Alex. Thanks for listening to this conversation with certain Karmon and thank you to presenting sponsor Kashyap. Please consider supporting the podcast by downloading Cache App Usenko Lux podcast features podcast, subscribe on YouTube, review five stars and have a podcast supported on page one. Or simply connect with me on Twitter, Lex Friedman.
+01:22:40
+And now let me leave you with some words from HAL 9000 from the movie 2001 A Space Odyssey. I'm putting myself to the fullest possible use, which is all I think that any conscious entity can ever hope to do. Thank you for listening and hope to see you next time.

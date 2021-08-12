@@ -1,0 +1,612 @@
+00:00:00
+The following is a conversation with Francois Charlee, he's the creator of Keris, which is an open source deep learning library that is designed to enable fast, user friendly experimentation with deep neural networks. It serves as an interface to several deep learning libraries, most popular of which it tends to flow. And it was integrated into the four main code base a while ago. Meaning if you want to create, train and use neural networks, probably the easiest and most popular option is to use Keris inside to flow.
+00:00:34
+Aside from creating an exceptionally useful and popular library, François is also a World Class II researcher and software engineer Google. And he's definitely an outspoken, if not controversial personality in the Arab world, especially in the realm of ideas around the future of artificial intelligence. This is the artificial intelligence podcast. If you enjoy it, subscribe on YouTube. Give us five stars on iTunes, supported on Patrón or simply connect with me on Twitter. Allex Friedman spelled F.R. Idi Amin.
+00:01:09
+And now here's my conversation with Francois Sharlie. You're known for not sugarcoating your opinions, speak your mind about ideas and especially on Twitter. It's one of my favorite Twitter accounts, so what's one of the more controversial ideas you've expressed online and gotten some heat for?
+00:01:47
+How do you pick the AP? Yeah, no, I think you have if you go through the trouble of maintaining a Twitter account, you might as well speak your mind, you know, otherwise, what's even the point of Twitter accounts? Getting a nice car and just doing it in the garage? Yes.
+00:02:06
+So that's one thing for which I got. A lot of pushback, perhaps, you know, that time I wrote something about the IDF intelligence explosion and I was questioning the idea and the reasoning behind this idea and I guess to push back on that because of the flak for it. So, yes, some intelligence explosion. I'm sure you're familiar with the idea, but it's the idea that if you were to build General Ehi problems within Gaza. Well, the problem of building Duchesne I.
+00:02:44
+That itself is a problem that could be solved by and maybe it could be of better than that than what humans can do. So your eye could start tweaking in some regards and could that start being a better version of itself and so on, iteratively in a regulated fashion. And so you would end up with. And I with exponentially increasing intelligence, right, and. I was basically. Questioning this idea, first of all, because the notion of intelligence exclusion uses an implicit definition of intelligence, that doesn't sound quite right to me.
+00:03:22
+It considers intelligence as. A property of a brain that you can consider in isolation, like the height of a building, for instance. Right. But that's not really what intelligence is. Intelligence, uh, emerges from the interaction between a brain, a body like embodied intelligence and an environment. And if you're missing one of these pieces, then you can actually define intelligence. So just tweaking a brain to make it smaller and smaller doesn't actually make any sense to me.
+00:03:56
+So, first of all, you're crushing the dreams of many people, right? So there's a look at like Sam Harris, I feel a lot of physicist Max Tegmark, people who think, you know, the universe is an information processing system. Our brain is kind of an information processing system. So what's the theoretical limit like? It doesn't make sense that there should be some of it seems naive to think that our own brain is somehow the limit of the capabilities and this information.
+00:04:28
+I'm playing devil's advocate here, this information processing system. And then if you just scale it, if you're able to build something that's on part of the brain, you just the process that builds it just continues and it will improve exponentially. So that that's the logic that's used actually by almost everybody that is worried about super human intelligence.
+00:04:53
+Yeah.
+00:04:54
+So you're trying to make the most people who are skeptical of that are kind of like this.
+00:04:59
+Doesn't the thought process. This doesn't feel right. Like that's for me as well. So I'm more like it doesn't the whole thing is shrouded in mystery where you you can't really say anything concrete. But you could say this doesn't feel right. It doesn't feel like that's how the brain works. And you're trying to with your blog post and now making a little more explicit. So one idea is that the brain isn't the easiest alone. It exists within the environment.
+00:05:30
+So you can't exponentially you would have to somehow exponentially improve the environment and the brain together, almost in order to create something that's much smarter in some kind of way. Of course, we don't have a definition of intelligent. That's correct. That's correct. I don't think you should look at very smart people today, even humans not even talking about eyes. I don't think the brain and the toughness of their brain is the bottleneck to that, to the expressed intelligence, to the achievements.
+00:06:04
+You cannot just tweak one part of the system back of this brain body environment system and expect capabilities like what emerges out of this system to just, you know, explode exponentially, because any time you improve one part of a system with many interdependencies like this, there's a new bottleneck that arises. And I don't think even today for very smart people, their brain is not the bottleneck to the sort of problems they can solve. Right. In fact, many very smart people today, you know, they are not actually solving any big scientific problems.
+00:06:40
+They're not Einstein. They're like Einstein. But, you know, the patent crack days like Einstein became Einstein because this was a meeting of. A genius with a big problem at the right time, right? But maybe this meeting could have never happened. And the nice thing, that's just been a pattern. In fact, many people today are probably like.
+00:07:06
+Genius level smart, but you wouldn't know because the lottery expressing any of that was brilliant. So we can think of the world, earth, but also the universe as just as the space of problems. So all these problems and tasks are roaming at a various difficulty. And there's agents, creatures like ourselves and animals and so on, that are also roaming it. And then you get coupled with a problem and then you solve it. But without that coupling, you can't demonstrate your quote unquote intelligence.
+00:07:39
+How exactly intelligence is the meaning of great problem solving capabilities with a great problem. And if you don't have the problem, you don't express in intelligence. All your all you're left with is potential intelligence, like the performance of your brain. You know how high IQ is, which in itself is just a number.
+00:07:58
+Right. So you mentioned problem solving capacity. Yeah. What what do you think of as problem solving? What can you try to define? Intelligence.
+00:08:13
+Like, what does it mean to be more or less intelligent? Is it completely coupled to a particular problem or is there something a little bit more universal?
+00:08:22
+Yeah, I do believe all intelligence is specialized intelligence, even human intelligence as some degree of generality. Well, all intelligence systems have some degree of generality, but they're always specialized in in one category of problems so that the human intelligence is specialized in the human experience. And that shows at various levels. That shows in some prior knowledge. It's innate that we have at both. Knowledge, but things like agents, goal driven behavior, visual Pryors about what makes an object about time and so on, that was also in the way we learn.
+00:09:02
+For instance, it's very, very easy for us to pick up language. It's very, very easy for us to learn certain things because we are basically hardcoded to learn them and we are specialized in solving certain kinds of problem and we are quite useless when it comes to other kinds of problems.
+00:09:18
+For instance, we we are not really designed to handle very long term problems. We have no capability of seeing that the very long term we don't have. And a working memory, you know, so how do you think about long term, do you think, long term planning? We're talking about skill of years, millennia. What do you mean by long term? We're not very good. Well, human intelligence specializes in the human experience and human experience is very short, like one life time is short even within one lifetime.
+00:09:52
+We have a very hard time envisioning, you know, things on a set of ideas, like it's very difficult to project yourself to get a five year of 10 years and so on. We can solve only fairly narrowly problems. So when it comes to solving bigger problems, larger scale problems, we are not actually doing it on an individual level. So it's not actually our brain doing it.
+00:10:16
+We we have this thing called civilization. Right. Which is itself a sort of problem solving system, a sort of artificial intelligence system. And it's not running on one brain. It's on a network of brains. In fact, it's sitting on much more than a network of brains. It's running on a lot of infrastructure like books and computers and the Internet and human institutions and so on.
+00:10:42
+And that is capable of handling problems on the on a much greater scale than any individual human. If you look at some. Computer science, for instance, that's an institution that solves problems and it is super human, right? I took on a greater scale. It cancels against a much bigger problem than an individual human could in science itself. Science as a system, as an institution, is a kind of artificial intelligence, problem solving algorithm that is superhuman.
+00:11:16
+Yeah, it's the computer science is like a theorem improver at a scale of thousands, maybe hundreds of thousands of human beings at that scale.
+00:11:28
+What do you think is intelligent agent? So there's us humans at the individual level. There is millions, maybe billions of bacteria on our skin. There is that at the smaller scale, you can even go to the particle level as systems that behave. You can say intelligently in some ways, and then you can look at the Earth as a single organism. You can look at our galaxy and even the universe, small organism. Do you think how do you think about scale in defining intelligent systems?
+00:12:03
+And we'll here Google, there is millions of devices doing computation just in a distributed way. How do you think about intelligence or scale? You can always characterize anything as a system, right? I think people who.
+00:12:19
+Talk about things like intelligence explosion tend to focus on one agent is basically one brain, like one brain considered in isolation, like a brain, a draw that's controlling a body in a very like top to bottom kind of fashion. And that body is person goes into an environment. So it's a very hierarchical view. You have the brain at the top of the pyramid, then you have the body just plainly receiving orders and then the body is manipulating objects in the environment and so on.
+00:12:45
+So everything is subordinated to this. One thing is the epicenter, which is the brain. But in real life, intelligence agents don't really work like this. Right. There is no strong delimitation between the brain and the body. Just always you have to look not just to the brain, but to the nervous system, but then the nervous system and by the unnaturally two separate entities. So you have to look at an entire animal as one agent, but then you start realizing, as you observe an animal of any length of time that a lot of the intelligence of an animal is actually externalized.
+00:13:21
+That's especially true for humans. A lot of our intelligence is externalized. When you write down some notes, that is external intelligence. When you write a computer program, you are externalizing cognition. So it's externalizing books. It's externalized in in computers, the Internet, in other humans. It's externalising language and so on, so it's there is no like how the limitation of what makes an intelligent agent, it's all about context.
+00:13:51
+OK, but, uh, Alpha goes better at go than the best human player. You know, there's levels of skill here.
+00:14:02
+So do you think there's such a ability as such a concept as a intelligence explosion, a specific task?
+00:14:11
+And then why do you think it's possible to have a category of tasks on which you do have something like an exponential growth of ability to solve that particular problem?
+00:14:24
+I think if you consider specific vertical, it's probably possible to some extent.
+00:14:32
+I also don't think we have to speculate about it because. We have real world examples of regressivity, self improving intelligence systems, spine's and science. Is a problem solving system and knowledge generation system, like a system that experiences the world in some sense and then gradually understands it and can act on it. And that system is superhuman and it is clearly, recursively sort of improving because science feeds into technology. Technology can be used to build better tools, better computers, better instrumentation and so on, which in turn can make science faster.
+00:15:13
+Right. So science is probably the closest thing we have today to a regular civilian self improving superhuman A.I. And you can just observe, you know, is science is scientific progress through the exploding, which itself is an interesting question and can use that as a basis to try to understand what will happen with a super human A.I. that has science like behavior.
+00:15:38
+Let me linger on it a little bit more. What is your intuition? Why an intelligence explosion is not possible, like taking the scientific all the scientific revolution?
+00:15:51
+Why can't we slightly accelerate that process so you can absolutely accelerate any Problem-Solving process? So regressivity, recursive social improvement is absolutely a real thing. It's what happens with regressively severe brain system is typically not explosion because no system exists in isolation. And so tweaking one part of the system means that suddenly another part of a system becomes a bottleneck. And if you look at science, for instance, which is clearly a regulatory system proving clearly a problem solving system, scientific progress is not actually exploding.
+00:16:29
+If you look at science, what you see is the picture of a system that is consuming an exponentially increasing amount of resources, but it's having a linear outputs in terms of scientific progress. And maybe that that will seem like a very strong claim. Many people are actually saying that, you know, Santic promises exponential, but when they are claiming this, they're actually looking at indicators of resource consumptions, resource consumption by science, for instance, the number of papers being published.
+00:17:04
+The number of patents being filed and so on, which are just. Just completely correlated with how many people are working on, uh, on science today. Yeah, so it's actually an indicator of resource consumption. But what you should look at is the output is progress in terms of the knowledge that science generates, in terms of the scope and significance of the problems that we solve. And some people have actually been trying to measure that. Like Michael Nielsen, for instance, he had a very nice paper, I think that was last year about.
+00:17:42
+So is approach to measure of scientific progress was to look at the timeline of scientific discoveries over the past hundred, 150 years and for each major discovery, ask a panel of experts to rate the significance of the discovery. And if the output of science as an institution was exponential, you would expect the. Temporal density of significance to go up exponentially because there's a faster rate of discoveries, because the discoveries are, you know, increasingly more important.
+00:18:21
+And what actually happens if you plotted this temporal density of significance measured in this way is that you see very much a flat graph. You see a flat graph across all disciplines, across physics, biology, medicine and so on. And it actually makes a lot of sense if you think about it, because think about the progress of physics a hundred and ten years ago. Right. It was a time of crazy chance. Think about the of technology. You know, one hundred and sixty years ago when we started replacing horses with cars, when we started inexplicitly and so on, it was a time of incredible change.
+00:18:58
+And today is also a time of very fast change. But it would be an unfair characterization to say that today technology and science are moving way faster than they did 50 years ago, 100 years ago. And if you do try to.
+00:19:15
+Rigourously plots the temporal density of. The significance significance, if you do see very flat curves and can shake out the paper that Michael Nielsen had about this idea, and so the way I interpret it is as you make progress. You know, in a given field, on any given field of science, it becomes exponentially more difficult to make further progress, like the very first person to work on information theory.
+00:19:52
+If you enter a new field and it's still very early years. Yes, there's a lot of low hanging fruit you can pick. That's right. Yeah. But the next generation of researchers is going to have to dig much harder, actually, um, to make smaller discoveries and probably larger numbers, more discoveries and to achieve the same amount of impact, you're going to need a much greater headcount. And that's exactly the picture you're seeing with science, is that the number of scientists and engineers is in fact increasing exponentially.
+00:20:23
+The amount of computational resources that are available to science is increasing exponentially and so on. So the resource consumption of science is exponential, but the outputs in terms of progress, in terms of significance is linear. And the reason why is because and even though science is regressively self-improvement, meaning that scientific progress turns into technological progress, which in turn helps science, if you look at computers, for instance, our products of science and computers are tremendously useful in speeding up science, the Internet, same thing.
+00:20:59
+The Internet is a technology that's made possible by very recent scientific advances and itself because it enables scientists to to network, to communicate, to exchange papers and ideas much faster. It is a way to spin scientific progress. So even though you're looking at a recursive self improving system, it is consuming exponentially more resources to produce the same amount of problem-solving.
+00:21:26
+So there's the first thing anyway, and certainly that holds for the deep learning community. Right? If you look at the temporal, what did you call it, the temporal density of significant ideas. If you look at in deep learning, I think I'd have to think about that. But if you really look at significant ideas and deep learning, there may even be decreasing.
+00:21:49
+So I do believe the per per paper significance is decreasing.
+00:21:56
+The significance and the amount of papers is still today exponentially increasing. So I think if you look at an aggregate, my guess is that you would see linear progress if you were to sum to some the significance of all papers. You will see roughly in your progress, and in my opinion, it is not. A coincidence that you're seeing linear progress in science despite exponential results conception. I think the resource consumption is. Dynamically adjusting itself to maintaining your progress, because we as a community expect progress, meaning that if we start investing less and less progress, it means that suddenly there are some low hanging fruit that become available and someone's going to step in, step up and pick them.
+00:22:47
+Right. So it's very much. Like in markets for discoveries and ideas, but there's another fundamental part which you're highlighting, which is a hypothesis, a science or like the space of ideas, any one path you travel down, it gets exponentially more difficult to get new ID to develop new ideas.
+00:23:11
+Yes. And your sense is that that's going to hold across our mysterious universe.
+00:23:18
+Yes. When exponential progress triggers exponential friction so that if you tweak one part of a system, suddenly some other path becomes a bottleneck.
+00:23:27
+For instance. Let's say let's say you develop some device that measures its own acceleration and then it has some engine and it outputs even more acceleration in proportion of its own acceleration, and you drop it somewhere, it's not going to reach infinite speed because it exists in a certain context.
+00:23:46
+So the air around is going to generate friction and it's going to it is going to block it at some top speed. And even if you were to consider the broader context and lift bottleneck there, like the bottleneck of the friction, then some other part of the system would start stepping in and creating exponential friction, maybe the speed of light or whatever.
+00:24:06
+And it's definitely holds true when you look at the problem solving algorithm that is being run by science as an institution, science as a system. As you make more and more progress, despite having this recursive self improvement component, you are encountering exponential friction. Like the more researchers you have working on different ideas, the more overhead you have in terms of communication across researchers.
+00:24:35
+If you look at you were mentioning quantum mechanics, right? Well, if you want to start making significant discoveries today, significant progress in quantum mechanics, there is an amount of knowledge you have to ingest, which is huge. So there's a very large overhead to even start to contribute. There's a large amount of overhead to synchronize across researchers and so on. And, of course, the significant practical experiments.
+00:25:05
+Are going to require exponentially expensive equipment because the easier ones have already been run.
+00:25:13
+Right. So in your senses, there is no way escaping, there's no way of escaping this kind of friction with artificial intelligence systems?
+00:25:26
+Yeah, no, I think science is a very good way to model what would happen with a super human civilization proving in that instance. I mean, that's that's my intuition. It's not it's not like a mathematical proof of anything. That's not my point. Like, I'm not I'm not trying to prove anything. I'm just trying to make an argument to question the narrative of intelligence explosion, which is quite a dominant narrative. And you do get a lot of pushback if you go against it, because so many people.
+00:25:56
+Right, eEye is not just a field of computer science. It's more like a belief system. I just believe that. The world is headed towards an event, the singularity past, which, you know. I will become will go exponential very much, and the world will be transformed and humans will become obsolete. And if you if you go against this narrative because because it is not really a scientific argument, but more of a belief system, it is part of the identity of many people.
+00:26:29
+If you go against this narrative, it's like you're attacking the identity of people who believe in it. It's almost like saying God doesn't exist or something. Right. So you get a lot of pushback if you try to question ideas.
+00:26:42
+First of all, I believe most people, they might not be as eloquent or explicit as you're being, but most people in computer science and most people who actually have built anything that you could call a quote unquote would agree with you, they might not be describing in the same kind of way. It's more the pushback you're getting is from people who get attached to the narrative from not from a place of science, but from a place of imagination. That's correct.
+00:27:11
+That's correct. So why do you think that's so appealing? Because the usual dreams. That people have when you create a superintelligent system past the singularity that would people imagine is somehow always destructive. Do you have if you put on your psychology hat, what's why is it so appealing to imagine the ways that all of human civilization will be destroyed? I think it's a good story. You know, it's a good story. And very interestingly, it's mirrors.
+00:27:43
+Religious stories, riots, religious mythology. If you look at the mythology of most civilizations, it's about the world being headed towards some final events in which the world will be destroyed and some new world order will arise that will be mostly spiritual, like the apocalypse, followed by a paradox, probably, right?
+00:28:06
+Yeah, it's a very appealing story on a fundamental level. And we all need stories. We own stories to structure and the way we see the world, especially at times scales that are beyond our ability to make predictions. Right. So on a more serious note, an exponential explosion. Question do you think there will be a time when will create something like human level intelligence or intelligence systems that will make you sit back and be just surprised at how smart this thing is that doesn't require exponential growth and exponential improvement.
+00:28:49
+But what was your sense of the timeline and so on that were you'd be really surprised at certain capabilities and we'll talk about limitations on deploying. So what do you think?
+00:29:00
+In your lifetime, you'll be really surprised around twenty, thirteen, twenty, fourteen hours, many times surprised by the capabilities of the planning. Actually, that was before we had assessed exactly where Ziplining could do and could not do. And it felt like a time of immense potential. And then we started narrowing it down. But I was very surprised. So it's it's it's it's it has already happened.
+00:29:24
+Was there a moment there must have been a day in there where you're surprised. It was almost bordering on the belief of the narrative that we just discussed. Was there a moment because you've written quite eloquently about the limits of deep learning? Was there a moment that you thought that maybe deep learning is limitless? No, I don't think I've ever believed this, what was very shocking is that it worked, right?
+00:29:52
+It worked at all. Yeah, yeah.
+00:29:54
+But there's there's a big jump between being able to do a really good computer vision and human level intelligence. So I don't think at any points. I was under the impression that the results we got in computer vision meant that we were very close to human intelligence. I don't think we're very close to human error, but I do believe that there's no reason why we won't achieve it at some point. I also believe that, you know. It's the problem with talking about human level intelligence that implicitly you are considering like an axis of intelligence with different levels.
+00:30:31
+But that's not how intelligence works. Intelligence is very multidimensional and so does the question of our capabilities. But there's also the question of being human like and two very different things like you can be potentially very advanced intelligence agents that are not humanlike at all. And you can also build very humanlike agents. And these are two very different things. Right. All right.
+00:30:55
+Let's go from the philosophical to the practical. Give me a history of Carus and all the major deep learning frameworks that you kind of remember in relation to Carus and in general tends to follow the A. the old days. Can you give a brief overview, Wikipedia style history and your role in it before return to ajai discussions? Yeah, that's a broad topic. So I started working on CARAS. It was a name, Carus, at the time, I actually picked a name like just the day I was going to release it, so I started working on it in February twenty fifteen.
+00:31:31
+And so at the time, there weren't too many people working ziplining, maybe fewer than 10000. The software thing was not really developed. So the main ziplining library was Cafe, which was mostly C++, while a cafe was the main one, cafe was vastly more popular than, you know, in in late 2014, early 2015, cafe was the one library that everyone was using for computer vision.
+00:32:00
+And computer vision was the most popular problem. Absolutely. Covenant's was like the subfield everyone was working on. Right. So myself. So in late 2014, I was actually interested in finance on your networks, which was a very niche topic at the time. It relates to Katherine in 2016. And so I was looking for some good tools and I'd use Tostevin U.S.A., U.S.A., not in Kegan competitions, Madras Cafe. And there was no good solution for audience at the time, like there was no reuseable open source implementation of americium, for instance.
+00:32:47
+So I decided to build my own. And that first DePietro that was it was going to be mostly around elastomeric on your networks. It was going to be in Python. An important decision at the time that was kind of not obvious is that the models would be defined via Python code, which was kind of like going against the mainstream at the time because Cafe Palencia and so on, like all the big libraries were actually going with you approaching static configuration files in Yemen.
+00:33:21
+Did you find models? So some libraries were using code to define models like Dortch seven, obviously, but that was not Python. Lasan was like a channel based very early library that was, I think, developed. I don't remember exactly probably late 2014 Python as well as Python as where it was. It was like a..
+00:33:41
+And so I started working on something. In the end, the value proposition at the time was that not only did what I think was the first reusable open source implementation of arrest him. You could combine ordnance and covenants with the same laboratory, which is not possible before, like who was only doing common sense.
+00:34:07
+And it was kind of easy to use because some before I was using and I was actually using Secretan and I loved psychically and voice usability. So I drew a lot of inspiration from Secretan when I met Kara. It's almost like psychically and on your networks. Yeah, the fit function. Exactly. The fit function like reducing a complex string loop to a single function call. Right. And of course, some people will say this is hiding a lot of details.
+00:34:33
+But that's exactly the point. The magic is the point. So it's magical, but in a good way. It's magical in the sense that it's delightful. Yeah, yeah. I'm actually quite surprised. I didn't know that it was born out of desire to implement Arnon's in those terms. Well, that's fascinating that you were actually one of the first people to really try to attempt to get the major architecture together. And it's also interesting, I mean, we realized that that was a design decision that was defining the model in code.
+00:35:04
+Just I'm putting myself in your shoes. Whether the YAML, especially Kafe, was the most popular. It was the most popular by far. If I had time. If I were. Yeah, if I didn't like the Yamal thing. But it makes more sense that you put in a configuration file the definition of a model. That's an interesting, gutsy move to stick with defining it in code. Just if you look back at other libraries where we're doing it as well.
+00:35:30
+But it was definitely the more niche option. Yeah, OK, Carus. And then you're also rediscuss in March 2015 and it got users pretty much from the start. So the deepening community was diverse, one at the time. Lots of people were starting to be interested in racism. So it was kind of release at the right time because it was offering an easy to use it as team implementation. Exactly at a time where lots of you started to be intrigued by the capabilities of einen on one LP.
+00:35:59
+So it grew from there. Then I joined Google. About six months later, and that was actually completely unrelated to Carasso, actually joined a research team working on image classification, mostly like computer vision. So I was doing computer vision research at Google initially and immediately when I joined Google, I was exposed to. The early internal version of Tenso Floor and the way to appear to me at the time, and it was definitely the way it was at the time, is that this was.
+00:36:35
+An improved version of piano, so I immediately knew I had to report us to this new tents, everything, and I was actually very busy as as anuclear as a new bugler. So I had not time to work on that. But then in November, I think it was November twenty fifteen 10th of who got released. And it was kind of like my my wake up call that I had to actually go and make it happen. So in December I played carols to run on the offensive floor, which was not exactly what it was more like a refactoring where I was abstracting away all the backend functionality into one module.
+00:37:17
+So then the same code base could run on top of multiple backhands. So of flew off the handle. And for the next year. I know. You know, stayed as the default option, it was you know, it was easier to use somewhat less buggy. It was much faster, especially when it came to finance. But eventually, you know, it tends to flow over to get right in terms flow. The early test of a similar architectural decisions as the A.
+00:37:51
+is there was a natural as a natural transition. Yeah, absolutely. So what I mean, that's still carries is a side phone project, right?
+00:38:02
+Yeah. So it it was not my my job assignment was not I was doing it on the side that. So I'm and even though it's good to have, you know, uh, a lot of uses for gypping library at the time, like twenty sixteen. But I wasn't doing it as my main job. So things started changing in. I think it's mostly maybe. October twenty sixteen. So one year later, so Rajat, who has the lead intensive floor, basically showed up one day in our building where I was doing like I was doing research and things like.
+00:38:38
+So I do a lot of computer vision research. Also, collaborations with Christians are getting in the planning for things improving. It was a really interesting research topic.
+00:38:53
+Russia was saying, hey, um, we sell cars, we like it, we saw that you had Google, why don't you come over for like a quarter and and work with us?
+00:39:04
+And I was like, yeah, that sounds like a great opportunity. Let's do it. And so I started working on integrating the Caspian into tends to flow more tightly. Um. So what for that piece is sort of like temporary, uh, tense of only version of Carus that was in for that country for a while and finally moved to Dunstall core. And, you know, I've never actually gotten back to my old team doing research.
+00:39:34
+Well, it's kind of funny that somebody like you who dreams of or at least sees the power of A.I. systems a reason and they're improving we'll talk about has also created a system that makes the the most basic kind of Lego building that is deep learning, super accessible, super easy, so beautifully. So that's the funny irony that you're both you're responsible for both things. But so Twentyfold 2.0 is kind of there's a sprint. I don't know how long it'll take, but there's a sprint over the finish.
+00:40:14
+What do you look what are you working on these days? What are you excited about? What are you excited about in 2.0? Eager execution. There's so many things that just make it a lot easier to work.
+00:40:26
+What are you excited about?
+00:40:28
+And what's also really hard? What are the problems you have to kind of solve?
+00:40:32
+So I've spent the past year and a half working on for two.
+00:40:37
+It's been a long journey. I'm actually extremely excited about it. I think it's a great product. It's a delightful product compared to one. We've made huge progress. So on the other side, what I'm really excited about is that so, you know, previously Carus has been this very easy to use high level interface to do the planning. But if you wanted to.
+00:41:06
+You know, if you wanted another flexibility, the framework, you know, was probably not the optimal way to do things compared to just writing everything from scratch. So in some way, the framework was getting in the way and intensive to you don't have this at all.
+00:41:24
+Actually, you have the usability of the high level interface, but you have the flexibility of this lower level interface and you have the spectrum of workflows where you can get. More or less usability and flexibility and tradeoffs depending on your needs. You can write everything from scratch and you get a lot of help doing so by subclassing Miles. And writing some train loops using your execution. It's very flexible. It's very easy to do pegasi powerful.
+00:41:59
+But all of this integrates seamlessly with higher level features, up to, you know, the classic workflows which are very psychically and like and and, uh, you know, ideal for a data scientist machining engineer type of profile.
+00:42:15
+So now you can have the same framework offering the same set of APIs that enable a spectrum of workflows, more or less ruleville, more or less high level, that are suitable for profiles ranging from researchers to data scientist and everything in between. Yeah, so that's super exciting. I mean, it's not just that it's connected to all kinds of tooling. We can go on mobiling. It does feel like it can go in the cloud service and so on, and all is connected together.
+00:42:46
+Some of the best software written ever is often done by one person sometimes too. So with a Google, you're now seeing sort of Carus having to be integrated in terms of form. Sure has a ton of engineers working on. So and there's, I'm sure, a lot of tricky design decisions to be made. How is that process usually happen from your perspective? What are the what are the debates like?
+00:43:16
+What a is there a lot of thinking considering different options and so on?
+00:43:24
+Yes.
+00:43:25
+So a lot of the time. I spent and Google is actually discussing design discussions, right, writing design docs, participating in design review meetings and so on. This is as important as actually writing the cool, right. What's a lot of thought? There's a lot of thought and a lot of care that is. Taken in coming up with these decisions and take into account all of our users, because then software is extremely diverse user base, right? It's not it's not like just one user segment where everyone has the same needs.
+00:44:02
+We have small scale production uses, large scale production uses. We have a startups, we have researchers. You know, it's all over the place and we have to cater to all of their needs. If I just look at the standard debates of C++ or Python, there's some heated debates. Do you have those at Google? I mean, they're not heated in terms of emotionally, but there's probably multiple ways to do it. Right. So how do you arrive through those design meetings?
+00:44:31
+At the best way to do it, especially in deep learning where the field is evolving as you're doing it? Is there some magic to it? There's the magic to the process. I don't know, just magic to the process, but there definitely is a process. So making design decisions about satisfying a set of constraints, but also trying to do so in the simplest way possible, because this is what can be maintained is what can be expected in the future.
+00:45:02
+So you don't want to naively satisfy the constraints, budgets, you know, for each capability you need available variable, you're going to come up with one argument, new API and so on. You want to design APIs that are modular and hierarchical so that they have an API surface that is as small as possible. Right. And and you want this modular hierarchical architecture to reflect the way that domain experts think about the problem. Because as a domain expert, when you're reading about the new media, you're reading Doyel or some docs pages, you already have a way that you're thinking about the problem.
+00:45:45
+You already have, like, uh, certain concepts in mind and you're thinking about how they relate together. And when you're reading docs, you're trying to build as quickly as possible and mapping between the concepts.
+00:46:00
+Feature the new API and the concepts in your mind, you're trying to map your mental model as a domain expert to the way things work in the API, so you need an API and an underlying implementation that are reflecting the way people think about these things. So in minimizing the time it takes to do the mapping. Yes, minimizing the time the cognitive load there is in. Ingesting this new knowledge about your API and EPA should not be self-referential R.F., referring to implementation details, it should only be referring to domain specific concepts that people already need to understand.
+00:46:40
+Brilliant.
+00:46:41
+So what's the future of care centers look like? What does the 3.0 look like? So that's going to define the future for me to answer, especially since I'm not I'm not even the one making the decisions. OK. But so from my perspective, which is, you know, just one perspective among many different perspectives on the dance floor, Tim. I'm really excited by developing an even higher level at this higher level, and I'm really excited by hypothalamic attuning, by automated machining with thermal.
+00:47:18
+I think the future is not just defining a model like like you were assembling Lego blocks and then fit on it, it's more like. And the magical model that we just look at your data and optimize the objective you after. Right. So that's that's, uh, what I'm looking into. Yeah.
+00:47:40
+So you put the baby into a room with the problem and come back a few hours later with a fully solved problem. Exactly. It's not like a box of Legos. It's more like the combination of a kid that's very good at Legos blocks. The figures just building the thing. Very nice. So that's that's an exciting feature. And I think there's a huge amount of applications and revolutions to be had the under the constraints of the discussion we previously had.
+00:48:09
+But what do you think of the current limits of deep learning? If we look specifically at these functional approximations that try to generalize from data, they've you've talked about local versus extreme generalization you mentioned in your networks. Don't generalize. Well, humans do. So there's this gap.
+00:48:33
+So and you've also mentioned that generalization, extreme generalization requires something like reasoning to fill those gaps. So how can you start trying to build systems like that? Right. Yes. So this is this is by design, right. Ziplining models on a huge biometric models. Differentiable so continuous that go from an input space to knotweed space, and that train was Grandison, so that's pretty much point by point. They are learning a continuous geometric morphing from from an input vector space to not perfect of space.
+00:49:11
+All right. And. Because this is done point by point, a deep neural network can only make sense of points and expand space that are very close to things that it has already seen in stream data. At best, it can do interpellation across points.
+00:49:30
+But that means, you know, it means in order to train your network, you need a dense sampling of the inputs cross at which base almost a point by point sampling, which can be very expensive if you're dealing with complex real world problems like autonomous driving, for instance, or robotics. It's doable if you're looking at the subset of the visual space. But even then, it's still fairly expensive to send in millions of examples. And it's only going to be able to make sense of things that are very close to the scene before.
+00:50:03
+And in contrast to that. Well, of course you have human intelligence, but even if you're not looking at human intelligence, you can look at very simple rules, algorithms. If you have a symbolic role, it can actually apply to a very, very large set of inputs because it is abstract. It is not obtained by doing a point by point mapping. Right. For instance, if you try to learn assorting algorithm using a network where you you're very much limited to learning point by point.
+00:50:37
+What's the sort of representation of this specific list it's like but instead you could have a very simple sorting algorithm written in a few lines, maybe it's just, you know, two nested loops, um, and it can process any list at all because it is abstract, because it is a set of rules. So the planning is really like point by point. Geometric morphine's morphing was conditions. And meanwhile, abstract rules can generalize much better. And I think the future is to combine the two.
+00:51:13
+So how do you think combine the two?
+00:51:16
+How do we combine good point by point functions with programs, which is what the symbology type systems at which levels the combination happen. I mean, obviously we're jumping into the realm of where there's no good answers, it just kind of ideas and intuition and so on.
+00:51:37
+Well, if you look at the really successful A.I. systems today, I think they are already hybrid systems that are combining symbolic. I was planning, for instance, successful robotics systems already mostly model based, rule based things like planning algorithms and so on. At the same time, they're using deep learning as perception modules. Sometimes they're using deep learning as a way to inject a fuzzy intuition into a rule based process. If you look at a system like in a self-driving car, it's not just one big into a neural network.
+00:52:14
+You know, that wouldn't work at all precisely because, you know, to train that you would need a dense sampling of experience space when it comes to driving, which is completely unrealistic, obviously. Instead, the self-driving car is mostly. Symbolic, you know, is its software is programmed by hand, so it's mostly based on explicit models in this case, mostly 3D models of the of the environment around the car, but it's interfacing with the real world using deep learning modules.
+00:52:48
+So the deep learning there serves as a way to convert the raw sensory information to something usable by symbolic systems. OK, well, let's linger on that, a little more dense sampling from input output. You said it's obviously very difficult.
+00:53:05
+Is it possible in the case of still driving even, let's say, self-driving, self-driving? For me, for many people. But let's not even talk about self driving. Let's talk about steering. So staying inside the lane lanes following.
+00:53:22
+Yeah, it's definitely a problem you can solution into in the planning model, but that's like one small subset of nanoseconds. I don't know, like you're jumping from the extremes so easily because I disagree with you on that. I think.
+00:53:35
+Well, it's it's not obvious to me that you can solve Lane following. It's no, it's not. It's not obvious. I think it's doable. I think in general, you know, there is no hard limitations to what you can learn with a deep human network as long as. The search space is rich enough, is flexible enough, and as long as you have this dense sampling of the input across output space, the problem is that, you know, this dense sampling could mean anything from 10000 examples to like trillions and trillions.
+00:54:09
+So that's my question. So what's your intuition? And if you could just give it a chance and think what kind of problems can be solved by getting a huge amount of data and thereby creating a dense mapping? So let's think about natural language dialogue, the Turing test. Do you think the Turing test can be solved with a neural network alone?
+00:54:38
+Well, the Turing test is all about tricking people into believing they're talking to a human. And I don't think that's actually very difficult because it's more about exploiting. Human perception and not so much about intelligence, there's a big difference between mimicking intelligent behavior and actual intelligent behavior.
+00:54:59
+So, OK, let's look at maybe the ALLEX surprized and so on, the different formulations of the natural language conversation that are less about mimicking and more about maintaining a fun conversation that lasts for 20 minutes. Mm hmm. That's a little less about mimicking. That's more about I mean, it's still mimicking, but it's more about being able to carry forward a conversation with all the tangents that happen in dialogue and so on. Do you think that problem is learnable with this kind of within your network?
+00:55:29
+That does the point of point mapping.
+00:55:31
+So I think it would be very, very challenging to do this with deep learning. I don't think it's out of the question either. I wouldn't read that's the space. The problem is it can be solved with a large neural network. What's your sense about the space of those problems? So useful problems for us.
+00:55:49
+In theory, it's infinite of any problem in practice.
+00:55:55
+Well, ziplining is a great fit for perception problems in general in any.
+00:56:02
+Any problem which is not amenable to explicit and crafted rules are rules that you can generate by exhaustive search of some program space.
+00:56:13
+So perception, artificial intuition, as long as you have a sufficient strength, and that's the question.
+00:56:21
+I mean perception, there's interpretation and understanding of the scene, which seems to be outside the reach of current perceptual systems. So do you think larger networks will be able to start to understand the physics and the physics of the scene, the three dimensional structure and relationships of objects in the scene and so on? Or really, that's where some Bolgar has to step in? Well, it's always possible. To solve these problems. With deep learning is just extremely inefficient.
+00:56:55
+A model would be an explicit rule based abstract model would be a far, far better and more compressed representation of physics than learning just this mapping between in this situation. This thing happens if you change the situation slightly, then this other thing happens and so on. Do you think it's possible to automatically generate the programs that that would require the kind of reasoning? Or does it have to say the expert systems fail? There's so many facts about the world had to be encoded in the thing.
+00:57:26
+It's possible to learn those logical.
+00:57:30
+Statements that are true about the world and their relationships. Do you think I mean, that's kind of what they're improving at a basic level trying to do, right? Yeah, except it's much harder to formulate statements about the world compared to formulating mathematical statements. Statements about the world, you know, tend to be subjective.
+00:57:51
+So can you can you learn? Rule based models, yes. Yes, definitely, that's. This is a field of program synthesis. However, today we just don't really know how to do it. So it's very much a grass search or research problem. And so we are limited to, you know, just sort of a recession, grassroots algorithms that we have today. Personally, I think genetic algorithms are very promising, though, almost like genetic programming, genetic programming.
+00:58:22
+Can you discuss the field of program synthesis? Like what? How many people are working and thinking about it? What where we are in the history of programs that this is? And what are your hopes for it?
+00:58:37
+Well, if we are planning this is like the 90s, so meaning that what we do have, we already have existing solutions. We are starting to have some basic understanding of what this is about.
+00:58:52
+But it's still a field that is in its infancy. There are very few people working on it. There are very few real world applications. So the one real world application I'm aware of is. Flashily Nekesa. It's a way to automatically learn very simple programs to format cells in an Excel spreadsheet from from a few examples, for instance, it went from dates, things like that. Oh, that's fascinating. Yeah. You know, OK, that's this fascinating topic.
+00:59:23
+I always wonder when I provide a few samples to excel what it's able to figure out, like just giving it a few dates. Hmm. What are you able to figure out from the pattern I just gave you? It is a fascinating question and fascinating whether that's learnable the patterns. And you're saying they're working on that. Yeah. How big is the toolbox currently? Are we completely in the dark in terms of products?
+00:59:49
+So I would say so. Maybe 97 even too optimistic because by the 90s we already understood that. We always understood, you know, the engine of ziplining. Even Zuby could increase its potential quite today. I don't think we found that the engine of programs into this the we're in the winter before back.
+01:00:09
+Yeah, in a way, yes. So I do believe programs into this engine or this grid search of a root based models is going to be a cornerstone of our research in the next century. Right. And that doesn't mean are going to drop deep learning. Deep learning is immensely useful, like being able to learn is is is a very flexible, adaptable diametric model she's got in this. And that's actually immensely useful, like all it's doing is pattern recognition.
+01:00:40
+But being good at pattern recognition, given lots of data, is is just extremely powerful. So we are still going to be working on the planning and we're going to be working on programs and it's going to be combining the two increasingly automated ways.
+01:00:52
+Hmm. So let's talk a little bit about data.
+01:00:55
+You've tweeted about ten thousand deep learning papers have been written about hard coding. Prior's about a specific task and a neural network. Architecture works better than a lack of a prior basically summarizing all these efforts. They put a name to an architecture, but really what they're doing is hard coding some Pryors that improve the process. Yes, but which gets straight to the point is, that's probably true. So you say that you can always buy performance by, in quotes, performance by either training or more data, better data or by injecting task information to the architecture of the preprocessing.
+01:01:35
+However, this isn't informative about the generalization power of the techniques used, the fundamental ability to generalize.
+01:01:41
+Do you think we can go far by coming up with better methods for this kind of cheating, for better methods of large scale annotation of data? So building better if you if you would have made it.
+01:01:53
+It's not seeing anymore. Right? I'm talking about the cheating, but large scale.
+01:01:58
+So basically, I'm asking about something that hasn't for, from my perspective, been researched to too much. Is exponential improvement in annotation of data. Do you often think about I think it's actually been been researched quite a bit.
+01:02:17
+You just don't see publications about it because, you know, people who publish papers are going to publish, but no benchmarks sometimes that there is a new benchmark for people who actually have real world class problems.
+01:02:30
+They're going to spend a lot of resources into data annotation and good data and different pipelines. But you don't see any papers. That's interesting. So do you think the. Certainly resources. But do you think there's innovation happening?
+01:02:41
+Oh, yeah. Just to clarify. And the point is that with so much money in general is the science of generalization. You want to. Generate knowledge that can be reused across different datasets, across different tasks. And if instead you're looking at one data sets and then you are hard coding knowledge about this task into your architecture, this is no more useful than training a network and then saying, oh, I found these great values, I perform well.
+01:03:19
+So, David, I don't know if you know, David, you had the paper the other day about weight agnostic neural networks. And this is a very interesting paper because it really illustrates the fact that an architecture, even with it's not accurate, is knowledge about a task. It includes knowledge. And when it comes to architecture, sit down, crafted by researchers. In some cases, it is very, very clear that all they are doing is artificially re including the template that corresponds to the proper way to solve a task in any given dataset.
+01:04:02
+For instance, I and if you've looked at the baby dataset, which is about natural language question answering, it is generated by an algorithm. So this is a question and Zeppos generated algorithm delgrosso Mr. Angaston template. Turns out if you craft a network that literally includes this template, you can solve this dataset with nearly 100 percent accuracy. But that doesn't actually tell you anything about how to solve question answering in general, which is to point the question is just to linger on it, whether it's from the data side or from the size of the network.
+01:04:39
+I don't know if you've read the blog post by Richard Sutton, The Bitter Lesson, where he says the biggest lesson that we can read from 70 years of our research is that general methods that leveraged computation are ultimately the most effective. So as opposed to figuring out methods that can generalize effectively, do you think we can? Get pretty far by just having something that leverages competition and the improvement of competition. Yes, I think Rick is making a very good point, which is that a lot of these papers, which are actually all about manually hard coding, prior knowledge about the task into some system, doesn't have to be directly attributed to some system in these papers are not actually making an impact.
+01:05:29
+Instead, what's making the long term impact is. Very simple, very general systems that are really agnostic to all districts because districts do not generalize. And of course, the one. Jenolan, simple thing that you should focus on is that which leverages competition because competition and variability of competition has been increasing exponentially for months at all. So if your algorithm is all about exploiting this, then your algorithm is suddenly exponentially improving. So I think Richard is definitely right.
+01:06:09
+Hi there. You know, is the right about the past 70 years is like assessing the past 20 years. I am not sure that this assessment will still hold true for the next 70 years. Its its might to some extent. I suspect it will not, because the truth of his assessment is a function of the context in which in which this research took place. And the context is changing like at all might not be applicable anymore, for instance, in the future.
+01:06:40
+And I do believe that, you know, when you when you. We need to pick one aspect of a system when you exploit one aspect of the system, some other aspects of becoming the bottleneck. Let's say you have unlimited competition. Well, then data is the bottleneck. And I think we are already starting to be in a regime where our systems are so large in scale and so data and great data today and the quality of data and the scale of data is the bottleneck.
+01:07:10
+And in this environment. The bitter lesson from Richard, it's not going to be true anymore, right? All right.
+01:07:17
+So I think we are going to move from a focus on a scale of acquisitions to focus on their efficiency, their efficiency. So that's getting to the question symbolically. But to linger on the deep learning approaches, do you have hope for either unsupervised learning or reinforcement learning, which are ways of.
+01:07:43
+Being more data efficient in terms of the amount of data they need that required documentation, so unsupervised learning and reinforcement learning are frameworks for learning, but they're not like any specific technique.
+01:07:56
+So usually when people say reinforcement learning, but they really mean is deeper and deeper, which is like one approach, which is actually very questionable. The question I was asking was unsupervised learning with deep neural networks and deep reinforcement learning.
+01:08:11
+Well, these are not really data efficient because you're still leveraging this huge biometric model. And point by point, with gradient descent, it is more efficient in terms of the number of annotations, the density of annotations you need. So J.A.G. beings to to learn the space around which data is organized and then map the sparse annotations into it. And sure, I mean, that's that's clearly a very good idea. It's not really that big I would be working on, but it's a good idea, so it would get us to solve some problems, that it will get us to incremental improvements in common label data efficiency.
+01:08:55
+Do you have concerns about short term or long term threats from air, from artificial intelligence?
+01:09:04
+Yes, definitely, to some extent. And what's the shape of those concerns? This is actually something I've briefly written about, but. The capabilities of. Diplomatic technology can be used in many ways that are concerning from, you know, mass surveillance with things like facial recognition in general, you know, tracking lots of data about everyone and then being able to make sense of this data identification to do prediction.
+01:09:39
+That's concerning, that's something that's being very aggressively pursued by totalitarian states like China.
+01:09:48
+One thing I am I am very much concerned about is that. You know, our lives, uh, are increasingly online, are increasingly digital, made of information made of information consumption and information production on digital footprint.
+01:10:07
+I would say and if you absorb all of this data and and you are in control of where you consume information, you know, social networks and so on. Recommendation engines, then you can build a sort of reinforcement loop for human behavior, you can observe the state of your mind at time, T. You can predict how you would react to different pieces of content. How to get you to move your mind, you know, in a certain direction, and then you can feed you and feed you a specific piece of content that would move you in in a specific direction, and you can do this at scale.
+01:10:56
+You know, uh, at scale in terms of doing it continuously in your own time, you can also do it at scale in terms of getting this to many, many people, the entire populations. So potentially artificial intelligence, even in its current state, if you combine it with the Internet, with the fact that we have all of our lives are moving to digital devices and digital information consumption and creation, um, what you get is the possibility to do to achieve mass manipulation of behavior and mass mass psychological control.
+01:11:33
+And this is a very real possibility. Yeah. So you're talking about any kind of recommender system with look at the YouTube algorithm. Facebook, anything that recommends content, you should watch next.
+01:11:45
+Yes, and it's fascinating to think that there's some aspects of human behavior that you can, you know, say a problem of is this person hold Republican beliefs, the Democratic beliefs.
+01:12:02
+And this is trivial. That's an objective function. And you can optimize and you can measure and you can turn everybody into a Republican or everybody. Absolutely. Yeah. And I do believe it's wrong. So the human mind is very. If you look at the human mind as the kind of computer program, it is a very large explosive face, it has many, many different abilities exploring ways you can control it. For instance, when it comes to your political beliefs, it is very much tied to your identity.
+01:12:36
+So, for instance, if I'm in control of your news, feed on your favorite social media platforms, this is actually where you're getting your news from. And I can of course I can. I can choose to only show you news that will make you see the world in a specific way. But they can also, um, you know, create incentives for you to to to post about some political beliefs. And then when I when I get you to express a statement, if it's a statement, that's me as the as the controller, I want you I want to reinforce that.
+01:13:10
+I can just show it to people will agree and they will like it. And that will reinforce the statement in your mind, if it is a statement I want you to believe, I want you to abandon Akin, on the other hand, through it to openness. Right. Will attack you. And because they attack you at the very least, next time you will think twice about posting it, but maybe you will even, you know, start believing this because you got pushback.
+01:13:39
+Right.
+01:13:39
+So there are many ways in which social media platforms can potentially control your opinions and to the, uh, the so all of these things are already being controlled by Grissom's algorithms do not have any explicit political goal today. Well, potentially they could like, uh, if some totalitarian government takes over, you know, social media platforms and decides that, you know, now we are going to use this not just for mass surveillance, but also for mass opinion, cultural and behavior control, very bad things can happen.
+01:14:18
+Um, but what's really, uh, fascinating and actually quite concerning is that even without an explicit intent to manipulate, you're already seeing very dangerous dynamics in terms of how this contact recommendation algorithms behave. Because right now, the, um, the goal, the objective function of the algorithms is to maximize engagement.
+01:14:45
+Right. Which seems fairly innocuous at first. Right. However, it is not because concepts that will maximally engage people, you know, get people to to react in an emotional way and get people to click on something. It is very often content that, you know, is not healthy to the public discourse. For instance, um, fake news are far more likely to get you to click on them than real news simply because they are not constrained to reality.
+01:15:24
+So they can be as outrageous as a surprising as as good stories as you want. Because the artificial. Right. Yeah. To me that's an exciting world because so much good can come.
+01:15:36
+So there's an opportunity to educate people. You can, uh, balance people's worldview with other ideas. So there's so many objective functions. The space of objective functions that create better civilizations is large, arguably infinite.
+01:15:57
+But there's also a large space that creates division and and and destruction, civil war, a lot of bad stuff. And the worry is naturally probably that space is bigger, first of all.
+01:16:16
+And if we don't explicitly think about what kind of effects are going to be observed from different objective functions, then we can get into trouble.
+01:16:27
+But the question is, how do we how do we get into rooms and have discussions? So inside Google, inside Facebook, inside Twitter and think about, OK, how can we drive up engagement and at the same time create a good society? Is there is it even possible to have that kind of philosophical discussion? I think you can try. So from my perspective, I would feel rather uncomfortable with companies that are in control of these new algorithms with them making explicit decisions.
+01:17:04
+To manipulate people's opinions of various, even if the intent is good, because that's a very totalitarian mindset. So instead, what I would like to see is probably never going to happen because it's not realistic. But that's actually something I care about. I would like all these algorithms to present configuration settings to their users so that users can actually make the decision about how they want to be impacted by this information recommendation, content recommendation algorithms, for instance, as a as a user of something like YouTube or Twitter, maybe I want to maximize learning about a specific topic.
+01:17:46
+Right. So I want the algorithm to feed my curiosity. Right. Which is in itself a very interesting problem. So instead of maximizing my engagement, it will maximize how fast and how much I'm learning. And it will also take into account the accuracy, hopefully, of the information I'm learning.
+01:18:07
+So, yeah, the user should be able to determine exactly how algorithms are affecting their lives. I don't want actually any entity making decisions about in which direction. They're going to try to manipulate me, right? I want I want technology, so I these algorithms are increasingly going to be our interface to a world that is increasingly made of information. Right. And I want. I want everyone to be in control of this interface to interface with the world on their own terms, so if someone wants to use algorithms to serve, you know, their own personal growth goals, they should be able to confuse the algorithms in such a way.
+01:18:58
+Yeah, but so I know it's painful to have explicit decisions, but there is underlying explicit decisions, which is some of the most beautiful fundamental philosophy that that we have before us, which is personal growth.
+01:19:18
+If I want to watch videos from which I can learn, what does that mean?
+01:19:25
+So if I have a checkbox that wants to emphasize and learning, there's still an algorithm with explicit decisions in it that would promote learning. What does that mean for me? Like, for example, I've watched a documentary on Flat Earth theory.
+01:19:40
+I guess it was very like I learned a lot.
+01:19:45
+I am really glad I watched it. It was a friend recommended to me, not because I don't have such an allergic reaction to crazy people as my fellow colleagues do, but it was very it was very eye opening and for others it might not be from others.
+01:20:00
+They might just get turned off from the same with Republican and Democrat. And what it's a non-trivial problem when, first of all, if it's done well, I don't think it's something that wouldn't happen, that the YouTube wouldn't be promoting or Twitter wouldn't be. It's just a really difficult problem.
+01:20:19
+How to reduce, how to give people control where it's mostly an interface design problem. Right.
+01:20:25
+The way I see it, you want to create technology that's like a mentor or coach or an assistant so that it's not your boss.
+01:20:35
+Right. You are in control of it. You are telling it what to do for you, and if you feel like it's manipulating you, it's not actually it's not actually doing what you want.
+01:20:48
+You should be able to switch to a different algorithm, you know, so that fine tuned control and you kind of learn you're trusting the human collaboration. I mean, that's how I see autonomous vehicles, too, is giving as much information as possible. And you learn that dance yourself. Hmm.
+01:21:04
+Yeah. Adobe is Adobe products like Photoshop. Yeah. They are trying to see if they can inject YouTube into their interface, but basically allow you to show you all these videos that everybody's confused about what to do with features. So basically teach people by linking to in that way, it's an assistant that shows users videos is a basic element of information. OK, so what practically should people do to try to to try to fight against abuses of these algorithms or algorithms that manipulate us?
+01:21:44
+It's a very, very difficult problem because to start with, there is very little public awareness of these issues. Very few people would think there's anything wrong with the news feed algorithm, even though there is actually something wrong already, which is that it's trying to maximize engagement most of the time, which has a very negative side effects. Um, so ideally, it's the very first thing is to stop trying to purely maximize engagement, try to propagate content based on.
+01:22:21
+Popularity, right? Instead, take into account. The goals and the profiles of each user, so you will you will be one example is, for instance, when they look at. Topic recommendations on Twitter, it's like, you know, they have this news tab with recommendations, it's always the worst garbage because it's content that appeals to the. The smallest common denominator to all Twitter users, because they're trying to optimize a purely trying to generate popularity deputy, trying to optimize engagement, but that's not what they want.
+01:23:00
+So they should put me in control of some sitting so that I define what's the objective function and that Twitter is going to be following to to show me this current so and honestly.
+01:23:12
+So this is all about interface design. And we are not it's not realistic to give users control of a bunch of knobs that define the algorithm. Instead, we should purely put them in charge of defining the objective function, like let the user tell us what they want to achieve, how they want this algorithm to impact their lives. So do you think it is that or do they provide individual article by article reward structure where you give a signal? I'm glad I saw this and I'm glad I didn't.
+01:23:41
+So like a Spotify type feedback mechanism, it works to some extent. I'm kind of skeptical about it, because the only way the algorithm, the algorithm will attempt to relate, um, your choices was the choices of everyone else, which might you know, if you have an average profile that works fine. I'm sure Spotify recommendations work fine. If you just like mainstream stuff, if you use it, can be it. It's not optimal at all.
+01:24:10
+Actually. It'll be in an efficient search for the for the the part of the Spotify world that represents you. Oh, it's a tough problem.
+01:24:20
+But I do know is that even even a feedback system like Spotify has does not give me control over.
+01:24:29
+Why the algorithm is trying to optimize so well public awareness, which is what we're doing now, is a good place to start. Do you have concerns about long term existential threats of artificial intelligence?
+01:24:45
+Well, as I was saying, our world is increasingly made of information, egoism, so increasingly going to be our interface to this world of information. And somebody will be in control of these items. And that puts us in any kind of a bad situation, right? It has risks. It has risks coming from potentially large companies wanting to optimize their own goals, maybe profits, maybe something else also from governments, we might want to use these algorithms as a means of control of the population.
+01:25:21
+Do you think there's existential threat that could arise from that? So kind of existential threats.
+01:25:27
+So maybe you're referring to the singularity narrative where robots just take over?
+01:25:33
+Well, I don't know Terminator robots, and I don't believe it has to be a singularity.
+01:25:39
+We're just talking to, just like you said, the algorithm controlling masses of populations, the existential threat being hurt ourselves much like a nuclear war, would hurt ourselves. Hmm. That kind of thing. I don't think that requires a singularity that requires a loss of control over A.I. algorithms. Yes.
+01:26:01
+So I do agree they are concerning trends. Honestly, um, I wouldn't want to make any any any long term predictions. I don't I don't think today we have the capability to see what the dangerous stuff they are going to be in 50 years. In 100 years. I do see that we are already faced with a concrete and present dangers surrounding the negative side effects of content recognition systems of news with algorithms concerning algorithmic bias as well.
+01:26:36
+So we are getting more and more, uh, decision processes to algorithms. Some algorithms aren't crafted, some Arnon's from data. Um, but we we we are delegating control.
+01:26:50
+Sometimes it's a good thing, sometimes not so much. And there is in general very little supervision of this process. Right. So we are still in this period of very fast change, even chaos where society is is restructuring itself, uh, turning into an information society, which itself is turning into an increasingly automated information, passing society.
+01:27:15
+And, um, well, uh, yeah, I think the best we can do today is try to to raise awareness around some of these issues. And I think we are actually making good progress. If you look at algorithmic bias, for instance. Three years ago, even two years ago, very few people were talking about it and now all the big companies are talking about it. There are often not in a very serious way, but at least it is part of the public discourse.
+01:27:41
+You see people in Congress talking about it.
+01:27:43
+So and it all started. From raising awareness right to in terms of alignment problem, try to teach as we allow algorithms, just even recommender systems on Twitter. Encoding human values and morals decisions that touch on ethics, how hard do you think that problem is?
+01:28:09
+How do we have lost functions in neural networks that have some component, some fuzzy components of human morals?
+01:28:19
+Well, I think this is all about objective function engineering, which is probably going to be increasingly a topic of concern diffusion. For now, we are just using very and the loss functions because the hard part is not actually we're just trying to minimize it's everything else. But as the everything else is going to be increasingly automated, we are going to be. Focusing all human attention on increasingly high level components like what's actually driving the whole learning system, like the objective function, loss, function, engineering is going to be lost.
+01:28:54
+Function engine is probably going to be a job title in the future. And then the tooling you're creating with cars essentially takes care of all the details underneath and basically the human expertise needed for exactly that. The engineer crosses the interface between the data you're collecting and the business goals. And your job as an engineer is going to be to express your business goals and your understanding of your business or your product, your system as a kind of lost function or kind of set of constraints.
+01:29:28
+Does the possibility of creating an ecosystem excite you or scare you or bore you? So intelligence can never really be general at best, it can have some degree of generality like human intelligence, it's also always as some specialization in the same way that human intelligence is specialized in a certain kind of problems, especially in the human experience. And when people talk about Asia, I'm never quite sure what they're talking about. Very, very smart, I so smart that it's even modern humans or they're talking about human like intelligence because these are different things, let's say presumably I'm impressing you today with my humanness.
+01:30:11
+So imagine that I was, in fact, a robot. So what does that mean? Uh, I'm impressing you with natural language processing. Maybe if you weren't able to see me, maybe this is a phone call that I just so companion. So that's very much about building human like A.I. And you're asking me, you know, is this is this an exciting perspective?
+01:30:35
+Yes, I think so, yes. Not so much because of what artificial human like intelligence could do, but, you know, from an intellectual perspective, I think if you could build truly human like intelligence, that means you could actually understand human intelligence, which is fascinating, right? Yeah. You mean like intelligence is going to require emotions. It's going to require a consciousness which is not things that would normally be required by an intelligence system.
+01:31:06
+If you look at, you know, we were mentioning earlier in science as a superhuman problem solving agent system, it does not have consciousness and of emotions in general. So emotions I see consciousness as being on the same spectrum as emotions. It is, uh, a component of the subjective experience that is meant very much to guide, uh, be of your generation and to guide your behavior in, um, human intelligence and animal intelligence as evolved for the purpose of your generation.
+01:31:45
+Right. Including in a social context. So that's why we actually need emotions. That's why we need consciousness. An artificial intelligence system developed in a different context, may well never need them, they will never be conscious that science. Well, on that point, I would argue it's possible to imagine that there's echoes of consciousness in science when viewed as an organism, that science is consciousness.
+01:32:12
+So, I mean, how would you go about testing this hypothesis? How do you probe the subjective experience of an abstract system like science?
+01:32:24
+Well, the point of probing any subjective experience is impossible because I'm not science, I'm leks, so I can't probe in other entities the another. It's no more than bacteria on your legs. I can ask you questions about your subjective experience and you can answer me. And that's how I know you're conscious. Yes, but that's because we speak the same language, you perhaps we have to speak the language of science. I don't think consciousness, just like emotions of pain and pleasure, is not something that inevitably arises from any sort of sufficiently intelligent information processing.
+01:33:05
+It is a feature of the mind. And if you've not implemented it explicitly, it is not there. So you think it's a is an emergent feature of a particular architecture. So do you think it's a feature in The Simpsons sense? So again, the subject is all about guiding behavior. If you if if the problems you're trying to solve don't really involve and embedded agents, maybe in a social context, generating view and pursuing like this. And if you get past this, naturally, what's what's happening, even though it is it is a form of artificial A.I., artificial intelligence in the sense that it is solving problems, is accumulating knowledge, creating a solutions and so on.
+01:33:52
+So if you're not explicitly implementing a subjective experience, implementing certain emotions and implementing consciousness, it's not going to just spontaneously emerge.
+01:34:04
+Yeah, but so for a system like human like intelligence system that has consciousness now, do you think it needs to have a body? Yes, definitely. I mean, it doesn't have to be a physical body. All right. And there's not that much difference between a realistic simulation, the real world. So there has to be something you have to preserve kind of thing. Yes, but human intelligence can only arise in the human context, intelligence, other humans, in order for you to demonstrate that you have humanlike intelligence, essentially.
+01:34:36
+Yes.
+01:34:37
+So what kind of test and demonstration would be sufficient for you to demonstrate human like intelligence?
+01:34:48
+Yeah, just out of curiosity, you just talked about in terms of theorem improving and program synthesis, I think you've written about that. There's no good benchmarks for this. Yeah, that's one of the problems. So let's let's talk programs, program synthesis. So what do you imagine is the good I think it's related questions for human intelligence and for programs. This is what's a good benchmark for either.
+01:35:12
+Both, right. So, I mean, you're actually asking asking two questions.
+01:35:16
+Which one is about quantifying intelligence and comparing the intelligence of an artificial system to the intelligence for human? And the other is about a degree to which this intelligence is humanlike is actually two different questions.
+01:35:33
+So if you look you mentioned earlier the Turing test. Well, I actually don't like the Turing test because it's very lazy. It's it's sort of but completely bypassing the problem of defining and measuring intelligence and instead delegating to a human judge or panel of human judges.
+01:35:51
+So it's it's it's a total copout, right? If you want to to measure how human like a nation is, I think you have to make it interact with other humans. Maybe it's not necessarily a good idea to have. These other arguments, the judges, maybe you should just. Observed behavior and compares with the human we actually have done. When it comes to measuring how smart are clever engineers and comparing that to the two to the degree of human intelligence, so we're really talking about two things, right?
+01:36:30
+The degree I can reflect the magnitude, the magnitude of an intelligence and its direction. Right. Like the norm of the vector and its direction and the direction is like human likeness and magnitude. The norm is intelligence. You could call it intelligence. Right. So the direction you sense the the space of directions that are human, like is very narrow. Yeah. So the way you would measure.
+01:37:03
+The magnitude of intelligence in a system in a way that also enables you to compare its. To that of a human well, if you look at the different benchmarks for intelligence today, they're all too focused on skill at a given task. Let's call it playing chess skill at playing goes Schirach playing doodah.
+01:37:27
+And I think that's that's not the right way to go about it, because you can always be too human at one specific task. The reason why our skill at playing or juggling or anything is impressive is because we're expressing this skill within a certain set of constraints. If you remove the constraints, the constraints that we have one lifetime, that we have this body and so on, if you remove the context, if you have unlimited string data, if you cannot access to, you know, for instance, if you look at juggling act, if you have no restriction on the hardware, then achieving arbitrary levels of skill is not very interesting and says nothing about the amount of intelligence you've achieved.
+01:38:10
+So if you want to measure intelligence, you need to rigorously define what intelligence is, which in itself, you know, it's a very. At challenging problem and do you think that's possible to define intelligence? Yes, absolutely. I mean, you can provide many people have provided, you know, some definition. I have my own definition. Where does your definition begin if it doesn't end well?
+01:38:34
+I think intelligence is essentially the efficiency with which you turn experience into. Generalisable programs. So what that means is the efficiency with which you turn a sampling of expands base into the ability to process a larger a chunk of expand space. So measuring skill can be one proxy across many, many different tasks, can be one proxy for measure intelligence, but. If you want to only measure skill, you should control for two things you should control for. The amount of experience that your system has and the Prius that your system has, but if you if you control if you look at two agents and you give them the same Prius and you give them the same amount of experience, there is one of the agents that is going to learn programs, representation, something, a model that will perform well on the larger chunk of experience based than the other.
+01:39:46
+And that is the smaller agent. Yes. So if you have fixed the experience which generate better programs, better meaning more generalisable, that's really interesting. And that's a very nice, clean definition of. Oh, by the way, in this definition, it is already very obvious that intelligence has to be specialized because you are talking about experience space and you're talking about segments of expense space. You're talking about Prius and you're talking about experience. All of these things define the context in which intelligence emerges.
+01:40:21
+And you can never look at the totality of expense base, right? So intelligence has to be specialized and but it can be sufficiently large, the experience base, even though specializes at a certain point when the experienced base is large enough to where it might as well be general. It feels general. It looks general. So, I mean, it's very aggressive. Like, for instance, many people with human intelligence is general insane.
+01:40:47
+It is quite specialized. You know, we can definitely build systems that start from the same in priors as which humans have it, both because we already understand fairly well what the Prius we have as humans, like many people, have worked on this problem, most notably Elizabeth Belka from Harvard.
+01:41:08
+And if you know how to work that out and what she calls a core knowledge, and it is very much about trying to determine and describe what Prius we are born with, like language skills and so on, all that kind of stuff.
+01:41:21
+Exactly. So we we have some some pretty good understanding of what Prius we are born with, so we could so I've actually been working on the on the benchmark for the past couple years, and I hope to be able to release it at some point. The idea is to measure intelligence systems by controlling for Preus, controlling the amount of expense and by assuming the same price as which humans are born with so that you can actually compare these costs. Human intelligence, and you can actually have humans pass this test in in a way that's fair.
+01:42:00
+Yeah, and so importantly, such a benchmark should be such that. Any amount of practicing does not increase your score, so try to picture a game where no matter how much you play this game. That does not change your skill at the game. Can you picture that as a person who deeply appreciates practice? I cannot, actually.
+01:42:30
+So it is not I can I there's actually a very simple trick.
+01:42:35
+So in order to come up with a task, so the only thing you can measure is skill at the task. Yes. All tasks are going to involve Prior's.
+01:42:44
+Yes. The trick is to know what they are and to describe that. And then you make sure that this is the same sort of process which human stories. So you create a task that assumes this Prior's that exactly documents. So that's the process I made explicit and there are no other players involved. And then you generate a certain number of samples and expand space for this task. Right. And this for one task, assuming that the task is new for the agents.
+01:43:15
+Basnet, that's one. Test of this. Definition of intelligence and the tweet that we set up, and now you can scale up to many different tasks that all each task should be new to the Agent Basnet, so should be human to human interpretable indiscernible so that you can actually have a human as the same test and then you can compare this coiffure machine and your human, which could be a lot of they could even start a task like amnesty just as long as you start with the same setup.
+01:43:45
+So the problem is most humans are already trained to recognize digits. Right. And, uh, but.
+01:43:54
+Let's say let's say we're considering objects that not digits. Some completely arbitrary patterns. Well, humans already come with visual priors about how to process that. So in order to to make the game fair, you would have to. Isolate this Prius and describe them and then express them as competition rules, having worked a lot with vision science people, that's exceptionally difficult. A lot of progress has been made. There's been a lot of good tests and basically reducing all the human vision into some good Prius.
+01:44:26
+I would still probably far away from that perfectly. But as a start for a benchmark, that's an exciting possibility. Yeah, so it's the best Belka actually lists. Abjectness as one of the core knowledge buyers abjectness cool. Yeah, so we have a Prius about abjectness and I can about the visual space, but time about agents, about goal oriented behavior with many different Prius. But what's interesting is that, sure, we have this this pretty diverse and rich set of Prius, but it's also not that diverse.
+01:45:04
+Right. We are not born into this world with a ton of knowledge about the world, with only a small set of.
+01:45:15
+Chronologies right here. Do you have a sense of how it feels to us humans that that said is not that large, but just given the nature of time that we kind of integrate pretty effectively through all of our perception, all of our reasoning, maybe how, you know, do you have a sense of how easy it is to encode those priors?
+01:45:36
+Maybe it requires building a universe.
+01:45:40
+Mm hmm. And the human brain, in order to encode those priors, uh, would you ever hope that it can be listed like an and. I don't think so. So you have to keep in mind that any knowledge about the world that we are born with is something that. Has to have been encoded into our DNA by evolution at some point, right? And DNA is a very, very low bandwidth medium and it's extremely long and expensive to encode anything into DNA because first of all.
+01:46:11
+You need some sort of evolutionary pressure to guide this writing process and then. You know, the higher level information you're trying to write, the longer it's going to take. And, uh, the the thing in the environment that you're trying to encode knowledge about has to be stable over this, uh, this duration so you can only encode into DNA things that constitute an evolutionary advantage. So this is actually a very small subset of all possible knowledge about the one you can only encode things that are stable, that are true of a very, very long period of time, typically millions of years.
+01:46:52
+For instance, we might have some visual prior about the shape of snakes. Right. But on the what what makes a face? What's the difference between a face and on face? But consider. This interesting question, do we have any innate sense of the visual difference between a male face and a female face? What do you think for human?
+01:47:18
+I mean, I would have to look back into evolutionary history when the genders emerged. But, yeah, most I mean, the faces of humans are quite different than the faces of great apes.
+01:47:29
+Great apes, right? Yeah, I like to think.
+01:47:33
+But you couldn't say you couldn't tell, uh, the face of a female chimpanzee from the face of a sheep, and she probably could use humans of all of that.
+01:47:43
+So we do have innate knowledge of what makes a face. But it's actually impossible for us to have any DNA anchored in knowledge of the difference between a female human face and a male human face, because to them, that knowledge, that information came up into the world. Actually, very recently, if you look at the ad and the slowness of the process of encoding knowledge into DNA, yeah, so that's interesting.
+01:48:14
+That's a really powerful argument. DNA is a low bandwidth and it takes a long time to encode that naturally creates a very efficient encoding.
+01:48:22
+But one one important consequence of this is that so, yes, we are born into this world with a bunch of knowledge, sometimes a high level knowledge about the world, like the shape, the rough shape of the snake, of the rough shape of face. But importantly, because this knowledge takes so long to write. Almost all of this innate knowledge is shared with our cousins, with great apes, right?
+01:48:50
+So it is not actually just innate knowledge that makes us special, but to throw it right back at you from the earlier on in our discussion, it's that encoding might also include the entirety of the environment of Earth to some extent.
+01:49:08
+So it can it can include things that are important to survival protection, so that for which there is some evolutionary pressure and things that are stable, constant over very, very, very long time periods.
+01:49:21
+And honestly, it's not that much information. There's also besides the bandwidth constraint and.
+01:49:30
+Constraints of the writing process, there's also a memory constraints like DNA, the part of DNA that deals with the human brain, it's actually fairly small. It's like, you know, on the order of megabytes, right. It's not that much high level knowledge about the world you can encode.
+01:49:48
+That's quite brilliant and hopeful for a benchmark of that you're referring to of encoding priors actually look forward to. I'm skeptical that you can do it next couple of years, but hopefully I've been working.
+01:50:02
+So it's a very simple benchmark. And it's not like a big breakthrough or anything. It's more like a fun, a fun side project like this fun. So imagine that these fun side projects could launch entire groups of efforts towards towards creating reasoning systems and so on. And I think, yeah, that's the goal. It's trying to measure a strong generalization to measure the strength of abstraction in our minds, in our minds and in a in a artificially intelligent agent.
+01:50:34
+And if there's anything true about this science organism is its individual cells love competition. So in Benchmark's encourage competition. So that's that's an exciting possibility. If you are, do you think an AI winter's coming and how do we prevent it?
+01:50:52
+Not really. So an air winter is something that would occur when there's a big mismatch between how we are selling the capabilities of the AI and and the actual capabilities of the AI. And today's and ziplining is creating a lot of value as we keep creating a lot of value in the sense that. This is a model applicable to a very wide range of problems that are relevant today, and we are only just getting started with the crying's algorithms to every problem they could be solving.
+01:51:23
+So planning will keep creating a lot of value for the time being. What's concerning, however, is that. There's a lot of hype around ziplining in Iran, lots of people are overstating the capabilities of these systems, not just the capabilities, but also over selling them the fact that they might be more or less brain like.
+01:51:47
+Given that kind of a mystical aspect, these technologies and also overselling the pace of progress. Which, you know, it might look fast in the sense that we have this exponentially increasing number of papers, but again, this just. A simple consequence of the fact that we have even more people coming into the field doesn't mean the progress is isn't is actually exponentially fast. Let's say you're trying to raise money for your startup or your research lab. You might want to tell your stories to investors about how ziplining is just like the brain and hide and all these incredible problems like self-driving and robotics and so on.
+01:52:32
+And maybe you can tell them that the field is progressing so fast and we are going to die within 15 years, not even 10 years. And all none of this is true.
+01:52:43
+And every time you want to add things, these things and an investor or, you know, a decision maker believes them, well, this is like the equivalent of taking on credit card debt.
+01:52:57
+But for for trust. Right.
+01:53:00
+And, um, maybe this this will uh, uh, this is really what enables you to raise a lot of money. But ultimately, you are creating damage. You are damaging the field. That's the concern, is that that debt, that's what happens to the other area wonders as the concern is you actually tweet about this with the time of vehicles. Right. There's almost every single company now have promised that they will have full autonomous vehicles by 2021 22.
+01:53:28
+This is a good example of the consequences of overhyping the capabilities of A.I. and the pace of progress, though, because I work especially a lot recently in this area, I have a deep concern of what happens when all of these companies, after having invested billions, have a meeting and say how much do we actually first of all, do we have an autonomous vehicle? The answer will definitely be no. And second will be, wait a minute, we've invested one, two, three, four billion dollars into this and we made no profit.
+01:54:00
+And the reaction to that may be going very hard in the other direction.
+01:54:05
+That might impact you that if another industry and that's what we call in the winter is when there is backlash, where no one believes any of these promises anymore because they've turned that big lies the first time around. And this will definitely happen to some extent for autonomous vehicles, because the public and decision makers have been convinced that, you know, around around 2015, they've been convinced by these people who are trying to raise money for the startups and so on, that L5 driving, what's coming in maybe 2016, maybe 2017, maybe twenty eighteen.
+01:54:40
+Now in 2019, we're still waiting for it. And so I don't believe we are going to have a full on air winter because we have technologies that are producing a tremendous amount of real value, right? Yes. But there is also too much hype. So there will be some backlash, especially there will be backlash. So some celebs are trying to sell the dream of edgy, right, and the fact that guy is going to create infinite value packages like a free lunch bank, if you can if you can develop an AI system that passes a certain threshold of IQ or something, then suddenly you have infinite value or.
+01:55:23
+And well, there are actually lots of investors buying into this idea, and, you know, they will wait maybe, maybe 10, 15 years and nothing will happen. And and the next time around, well, maybe maybe there will be a new generation of investors. No one will care. You know, I can remember is fairly short after all.
+01:55:44
+I don't know about you, but because I've spoken about ajai sometimes poetically, like I get a lot of emails from people giving me they're usually like a large manifestoes of they they say to me that they have created an ecosystem or they know how to do it.
+01:56:04
+And there's a long write up of how to do, I guess, a lot of these events, you know, they're little bits feel like it's generated by the system, actually, but, uh, there's usually no recursively still emerging.
+01:56:18
+You have a transformer generating, uh, crank papers about to die.
+01:56:23
+So the question is about because you've been such a good you have a good radar for Grynch papers. How do we know they're not onto something? How do I.
+01:56:36
+So when you start to talk about Ajai or anything like the reasoning benchmark's and so on, this is something that doesn't have a benchmark. It's really difficult to know.
+01:56:46
+I mean, I talked to Jeff Hawkins, who's really looking at neuroscience approaches to how and there's some there's echoes of really interesting ideas in at least Jeff's case, which is showing how do you usually think about this in the preventing yourself from being too narrow minded and elitist about, you know, deep learning? It has to work on these particular benchmarks, otherwise it's trash?
+01:57:13
+Well, you know, the thing is, intelligence does not exist in the abstract. Intelligence is to be applied. So if you don't have a benchmark, an improvement and some benchmark, maybe it's a new benchmark. Right. Maybe it's not something we've been looking at before. But Eugene is a problem that you're trying. So you're not going to come up with a solution without a problem.
+01:57:38
+So you general intelligence, I mean, you've clearly highlighted generalization. If you want to claim that you have an intelligence system, it should come with the benchmarks. It should yes. It should display capabilities of some kind. It should it should show that it can create some form of value, even if it's a very artificial form of value. And that's also the reason why you don't actually need to care about learning which paper is actually submitting potential and which do not.
+01:58:10
+Because if. If there is a new technique, it's actually creating value. You know, this is going to be brought to light very quickly because it's actually making a difference. So it's the difference between something that is ineffectual and something that's, uh, is is actually useful. And ultimately, usefulness is our guide, not just in this field, but if you look at science in general, maybe there are many, many people over the years that have some really interesting theories of everything, but they were just completely useless.
+01:58:39
+And you don't actually need to tell the interesting theories from the useless theories. All you need is to see, you know, is this actually having an effect on something else? Is this actually use or is this making an impact on.
+01:58:53
+Not as we put. I mean, the same applies to quantum mechanics, to string theory, to the holographic principle. We are doing the planning because it works. You know, that's what it's like before I started working people. You know, I consider people working on your networks as as cranks very much. You know, no one was working on this anymore. And now it's working, which is what makes it valuable.
+01:59:16
+It's not about being right. Right.
+01:59:18
+It's about being effective. And nevertheless, the individual entities of the scientific mechanism, just like your Shobanjo on the coin, they while being called cranks stuck with it, right? Yeah. And so as individual agents, even if everyone's laughing at us, just stick with it, because if you believe you have something, you should stick with it and see through that beautiful, inspirational message to end on as well.
+01:59:43
+Thank you so much for talking. It was amazing.
+01:59:45
+Thank you.

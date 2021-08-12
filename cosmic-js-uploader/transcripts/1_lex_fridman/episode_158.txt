@@ -1,0 +1,882 @@
+00:00:00
+The following is a conversation with MindTree Korkin, his second time in the podcast. He's a professor of bioinformatics and computational biology at WPI, where he specializes in bioinformatics of complex disease, computational genomics systems, biology and biomedical data analytics. He loves biology. He loves computing. Plus, he is Russian and recite a poem in Russian at the end of the podcast. What else could you possibly ask for in this world?
+00:00:31
+Quick mention of our sponsors Brave Browsr Natsui Business Management Software, Magic Spoon, low carb cereal and sleep self-cleaning mattress. So the choices browsing privacy, business success, healthy diet or comfortable sleep. Choose wisely my friends and if you wish, click the sponsor links below to get a discount to support this podcast. As a side note, let me say that to me. The scientists that did the best apolitical, impactful, brilliant work of twenty twenty are the biologists who study viruses without an agenda, without much sleep.
+00:01:10
+To be honest, just the pure passion for scientific discovery and exploration of the mysteries within viruses. Viruses are both terrifying and beautiful, terrifying because they can threaten the fabric of human civilization, both biological and psychological. Beautiful because they give us insights into the nature of life on Earth and perhaps even extraterrestrial life of the not so intelligent variety that might meet us one day as we explore the habitable planets and moons in our universe. If you enjoy this things, subscribe on YouTube, review an Apple podcast, follow on Spotify, support on Patrón, or connect with me on Twitter.
+00:01:51
+Allex Friedman, as usual. I'll do a few minutes of ads now and no ads in the middle. I try to make this interesting, but I give you time stamps, so go ahead and skip if you must. But please still check out the sponsors by clicking the links and description. It is in fact the best way to support this podcast. This show is sponsored by Brave Afast Privacy Preserving Browser that feels like Google Chrome, but without ads or the various kinds of tracking that ads can do.
+00:02:20
+I love using it more than any other browser, including Chrome. If you like, you can import bookmarks and extensions from Chrome just as I did. The brave browser is free available on all platforms. It's actually used by over twenty million people.
+00:02:36
+Speed wise, it just feels more responsive and snappier than other browsers. So I can tell there's a lot of great engineering behind the scenes. It has a lot of privacy related features that doesn't have like. It includes options such as private window with Tor for those seeking advanced privacy and safety. The tech behind Tor, in fact, is pretty fascinating and I'm sure I will explore it on a future podcast. Get this awesome browser at brave dotcom slash legs and it might become your favorite browser as well.
+00:03:09
+That's brave dot com slash Lex. This show is also sponsored by NetSuite. This one's for the business owners, running a business is hard. If you own a business, don't like cookbooks and spreadsheets, make it even harder than it needs to.
+00:03:24
+You should consider upgrading to NetSuite. It allows you to manage financials, human resources, inventory, e-commerce and many more business related details all in one place. I dislike the bureaucracy the companies sometimes build up around this. NetSuite can probably help, but I'm sure bureaucracies can still flourish if you're not careful to me at least, efficiency and excellence are essential, NetSuite or not. Anyway, whether you're doing a million or hundreds of millions in revenue, save time and money.
+00:03:55
+Would Natsui 24000 companies use it? Let NetSuite show you how they'll benefit your business with a free product tour and Natsui Dotcom slash flex.
+00:04:07
+My reading engine is not functioning properly today it requires more coffee. If you own a business, try them out.
+00:04:16
+Schedule your free product tour right now in all caps and that's FT.com Flex right now because they want to create an artificial sense of urgency.
+00:04:26
+NetSuite Tucows last. Let's go there. This episode is also sponsored by Magic Spoon, low carb, keto friendly cereal. This is one of the more fun and colorful sponsors this podcast has. I've been on a mix of Kitto Carnivore diet for a long time now. That means very few carbs. I do, unfortunately, bingy cherries or apples. Sometimes I regret it later, but love it in the moment, just like I used to regret eating cereal because most have crazy amounts of sugar, which is terrible for you.
+00:04:57
+But Magic Spoon is a totally new thing. Zero sugar, eleven grams of protein and only three grams of carbs. I personally like to celebrate little accomplishments in productivity with a snack of magic spoon. It feels like a cheap meal, but it is not. It tastes delicious. It has many flavors, including cocoa, fruity, frosted and blueberry. I think they've been adding some new ones. To me they're all delicious. But if you know what's good for you, you'll go with cocoa.
+00:05:26
+My favorite flavor and the flavor of champions just now realizing that cocoa reminds me of Joey Coco Diaz, who perhaps might be fun to have on this podcast one day click the magic spoon dotcom slash Lex link in the description and use code. Lex, check out Free Shipping. Finally, this episode is also sponsored by a sleep and owl mattress, a product I enjoy every single day, sometimes in the afternoon as well. It controls temperature with an app. It's packed with sensors and can cool down to as low as 55 degrees on each side of the bed.
+00:06:02
+Separately, it's been a game changer for me. I just enjoy sleep and power naps way more. I feel like I fall asleep faster and get more. Russell sleep combinations of coalbed and warm blanket is amazing.
+00:06:15
+Now, if you love your current mattress but are still looking for temperature control, is the new pod cover adds dynamic cooling heating capabilities onto your current mattress.
+00:06:26
+This thing can cool down to as low as 55 degrees or heat up to 110 degrees.
+00:06:32
+The latter feature I do not use, but I know some of you probably will.
+00:06:36
+And you could do this kind of cooling and heating on each side of the bed separately.
+00:06:40
+Also contract a bunch of metrics like heart rate variability. But honestly, cooling alone is worth the money. Go to sleep, Counselor Selex. And when you buy stuff there, you get special savings as listeners of this podcast. Once again, that's a sitcom Slash Leks. And now here's my conversation with Demetri Korkin. It's often said that proteins and the amino acid residues that make them up are the building blocks of life. Do you think the proteins in this way as the basic building blocks of life?
+00:07:34
+Yes and no. So the proteins indeed is the basic unit, biological unit that carries out important functions of the cell. However, through studying the proteins and comparing the proteins across different species across different kingdoms. You realize that proteins are actually a much more complicated.
+00:07:59
+So they have so-called modular complexity. And so what I mean by that is an average protein consists of of several structural units. So we call them protein domains. And so you can imagine a protein as a string of beads where each bead is a protein domain. And, you know, in the past 20 years, scientists have been studying the nature of the protein domains because we realize that it's it's it's the unit, because if you look at the functions, right.
+00:08:45
+So so many proteins have more than one function and those protein functions are often carried out by those protein domains.
+00:08:54
+So we also see that in the evolution, those proteins, domains get shuffled. So so the act actually as as the unit also from the structural perspective. Right.
+00:09:08
+So some people think of a protein as a sort of a globular molecule, but as a matter of fact, is, is the globular part of this protein is a protein domain. So we often have this you know, again, the collection of this protein domain's align on a string as beads and of the protein domains are made up of amino acid residues.
+00:09:42
+So this is the basic. So you're saying the protein domain is the basic building block of the function that we think about proteins doing so? Of course, you can always talk about different building blocks. It's turtles all the way down. But there's a point where there is at the point of the hierarchy where it's the most the cleanest element. Block based on which you can put them together in different kinds of ways to form complex function, and you're saying protein.
+00:10:13
+Why is that not talked about as often in popular culture?
+00:10:18
+Well, you know, there are several perspectives on this. And one, of course, is the historical perspective. Right. So historically, scientists have been able to structurally resolved to obtain the 3D coordinates of a protein for, you know, for smaller proteins and smaller proteins tend to be a single dominant protein. So we have a protein equal to a protein domain. And so so because of that, the initial suspicion was that the the proteins are they have globular shapes.
+00:10:54
+And the more of smaller proteins you obtain structurally, the more you were you became convinced that that's that's the case.
+00:11:04
+And only later when we had we started having, you know, attractive approaches.
+00:11:12
+So, you know, the traditional or the traditional ones are X-ray crystallography and NMR spectroscopy. So this is sort of the the the two main techniques that give us the 3D coordinates. But nowadays, this huge breakthrough in electron microscopy. So the the more advanced methods that allow us to, you know, to get into the 3D shapes of much larger molecules, molecular complexes.
+00:11:46
+Just to give you one of the common examples for this year, it's also the first experimental structure of a source to protein was the Krayem structure of the ASP brought in.
+00:12:03
+So this spike brought in and so it was solved very quickly. And the reason for that is the advancement of the of this technology is is pretty spectacular. How many domains does the is it more than one domain? Oh, yes. I mean, it's a very complex structure.
+00:12:24
+And we you know, on top of the complexity of a single proton. Right. So this this structure is actually is a complex is a tramer. So it needs to form a tramer in order to function properly with a complex. So complex is agglomeration of multiple proteins. And so we can have the same protein copied in multiple, you know, made up multiple copies and forming something that we call a homo.
+00:12:58
+Algoma Homo means the same. Right. So so in this case.
+00:13:02
+So the spike protein is the is an example of a homothetic from Homo Tramer sorry, three copies of a thousand copies in order to exactly what have these three chains, the three molecular chains coupled together and performing the function.
+00:13:21
+That's when when you look at this protein from from the top you see a perfect triangle. Yeah. So but other, you know, other complexes are made up of, you know, different proteins.
+00:13:35
+Some of them are completely different, some of them are similar that the hemoglobin molecule. Right. So it's actually it's a protein complex. It's made of four basic subunits. Two of them are identical to each other, to other, identical to each other.
+00:13:53
+But they are also similar to each other, which sort of gives us some ideas about the evolution of this, you know, of this molecule. And perhaps one of the hypotheses that, you know, in the past, it was just a homo tetrameter.
+00:14:11
+I saw four identical copies and then it became, you know, sort of modify it became mutated over the time and became more specialized.
+00:14:23
+Can we linger on the spike protein for a little bit? Is there something interesting or beautiful you find about it?
+00:14:29
+I mean, first of all, it's an incredibly challenging protein. And so we, as a part of our sort of research to understand the structural basis of this virus, to sort of decode structure, decode every single protein in its Protium, which, you know, we've been working on this spike protein. And one of the main challenges was that the chromium data allows us to. Reconstruct or to obtain the 3D coordinates of roughly two thirds of the protein the rest of the once thought of this protein.
+00:15:15
+It's a part that is buried into the into the membrane of the virus and of the of the viral envelope. And it also has a lot of unstable structures around it, just chemically interacting somehow with whatever the is connected.
+00:15:33
+Yeah.
+00:15:33
+So people are still trying to understand also the nature of and the role of this of this one, because the top part were the primary function is to get attached to the, you know, AC2 receptor human receptor.
+00:15:52
+There is also beautiful mechanics of how this thing happens. Right. So because there are three different copies of this change or, you know, there are three different domains. Right. So we're talking about domain. So this is the receptor binding domains, RBD, that gets untangled and get ready to to to attach to get attached to to the receptor. And now they are not necessarily going in sync. Moult, as a matter of fact, they Synchronoss.
+00:16:29
+So, yes. So and this is this is where, you know, the another level of complexity comes into play, because right now what we see is we typically see just one of the arms going out and getting ready to to be attached to the to the e to receptors.
+00:16:50
+However, there was a recent mutation that people studied in that spike protein and a very recently a group from UMass Medical School, we happened to collaborate with a group. So this is a group of Jeremy Luban and a number of other faculty. They actually solved the the mutated structure of the spike.
+00:17:22
+And they showed that actually because of this mutation, you have more than one. Arms opening up. And so now so use saw the frequency of two arms going up in increase quite drastically.
+00:17:41
+Oh, is that does that change the dynamic somehow?
+00:17:45
+Potentially can change the dynamics of because now you have two possible opportunities to get attached to the EU receptor. It's a very complex molecular process, mechanistic process. But the first step of this process is the attachment of this spike protein of the Spike Tramer to the human aissatou receptor. So this is a molecule that sits on the surface of the human cell and that's essentially what initiates it, what it triggers the whole process of encapsulation.
+00:18:21
+If this was dating, this would be the first date. So this is the the way. Yes.
+00:18:28
+So is that is it possible that the spike protein just like floating about on its own or doesn't need that interactive ability with with the membrane?
+00:18:37
+Yeah. So it needs to be attached, at least as far as I know. But, you know, when you get this thing attach on the surface, right. There is also a lot of dynamics on where it's how it sits on the surface. Right.
+00:18:51
+So, for example, there was a recent work in, again, where people use the electron microscope to get the first glimpse of the overall structure. It's a very low risk, but you still get some interesting details about the surface, about what is happening inside, because we have literally no clue until recent work about how the the capsid is organized camps. So capsid is essentially is the inner core of the viral particle where the there is the irony of the virus and it's protected by another protein and protein that essentially acts as a shield.
+00:19:36
+But, you know, now we are learning more and more. So it's actually it's not just this shield that is potentially is used for the stability of the outer shell of the of the virus. So it's it's pretty complicated.
+00:19:50
+And so, I mean, understanding all of this is really useful for trying to figure out, like developing a vaccine or some kind of drug to attack any aspect of this. Right.
+00:19:59
+So, I mean, there are many different implications to that. First of all, you know, it's it's important to understand the virus itself. Right.
+00:20:07
+So, you know, in order to to understand how it acts, what is the overall mechanism of mechanistic process of this virus, replication of this virus proliferation to the cell? I so so that's one aspect. The data aspect is, you know, designing new treatments. So one of the possible treatments is, you know, designing nanoparticles and so on, nanoparticles that will resemble the viral shape that would have this spike integrated and essentially would act as a competitor to the real virus by blocking the ace to receptors and thus preventing the real virus entering the cell.
+00:20:55
+Now, there are also, you know, there is a very interesting direction in looking at the the membrane that the envelope portion of the protein and attacking its and protein. So so there are you know, to give you a brief overview, there are four structural proteins that these are the proteins that made up the structure of the virus. So spike as protein that acts as a tramer. So it needs three copies.
+00:21:30
+E and the protein that acts as it pantomimed, so it needs five cookies, that property M is A is the membrane protein as it forms dimmers and actually it forms beautiful lattice. And this is something that we've been studying and we are seeing it in simulations. It actually forms a very nice grid or, you know, threats, you know, of of different demerse attach next to each other. But you make copies of each other and they naturally, when you have a bunch of copies of each other, they form an interesting virus.
+00:22:03
+Exactly. And, you know, if you think about this. Right, so so the this complex, you know, the viral shape needs to be organized somehow, self organized somehow. Right. So it you know, if it was a completely random process, you know, you probably wouldn't have the the the envelope shell of the ellipsoid shape. You would have something, you know, pretty random. Right shape. So there is some, you know, regularity in how this you know, how this and dimmers get attached to each other in the very specific, directed way.
+00:22:43
+Is that understood or off?
+00:22:46
+It's not understood. We are now we've been working in the past six months since, you know, Wilmarth actually.
+00:22:53
+This is where where we started working on on trying to understand the overall structure of the envelope and the key components that made up this, you know, structure. Does the envelope also have the of structure?
+00:23:06
+And so the envelope is essentially is the outer shell of the viral particle. The n the nuclear capsid protein is something that is inside. But get that the M is likely to interact with M. Does it go M and E, like where's the E and also E those different proteins.
+00:23:28
+They occur in different copies on the viral particle. So, so e this phantom are complex. We only have two or three maybe per each particle, OK, we have a thousand or so of M dimmers that essentially made up that the makes up the entire, you know, outer shell. So most of the outer shell is the M and dimer and protein. When you say particle that's the wire on the wire. It's the individual. Single. Yes.
+00:24:04
+Single element of the virus. Single virus. Single virus. Right.
+00:24:08
+And we have about, you know, roughly 50 to 90 spike trimmers. Right. So so so when you you know, when you show her per virus particle or a virus particle.
+00:24:19
+So what did you say, 50 in 1950 to 90? So so this is how this thing is organized. And so now typically. Right. So you see this the the antibodies that target, you know, Spike brought in certain parts of the spike protein, but there could be some or also some treatments. Right. So so this you know, these are small molecules that bind strategic parts of these proteins, disrupting its function. So one of the promising directions, it's one of the new directions is actually targeting the dimer of the protein, targeting the proteins that make up this outer shell, because if you're able to destroy the outer shell, you're essentially destroying the the the viral particle itself.
+00:25:15
+So preventing it from from, you know, functioning at all.
+00:25:19
+So that's you think is from a sort of cybersecurity perspective via a security perspective. That's the best attack vector is or is.
+00:25:29
+That's a promising attack vectors, I would say. Yeah.
+00:25:32
+So I mean, it's just there's still tons of research needs to be, you know, to be done. But yes, I think, you know, so there's more attack surface, I guess, more attack surface.
+00:25:42
+But, you know, from from our analysis, from other evolution analysis, this protein is evolutionary, more stable compared to the say to the spike.
+00:25:53
+Protein and stable means a more static target. Well, yes.
+00:25:59
+So it doesn't change. It doesn't evolve from the evolutionary perspective so drastically as, for example, the spike protein.
+00:26:09
+There's a bunch of stuff in the news about mutations of the virus in the United Kingdom. I also saw in South Africa something maybe that was yesterday you just kind of mentioned about stability and so on. Which aspects of this are mutable and which aspects if mutated? Become more dangerous and maybe even zooming out. What are your thoughts and knowledge and ideas about the way it's mutated? All the news that we've been hearing, are you worried about it from a biological perspective or are you worried about it from a human perspective?
+00:26:44
+So, I mean, you know, mutations are sort of a general way for this virus to evolve. But it's also it's you know, it's essentially this is the way they evolved. This is the way they were able to jump from one species to another. We also see, you know, some recent jumps. There were some incidents of this virus jumping from human to dogs.
+00:27:14
+So, you know, there is some danger in in in in those jobs because every time it jumps, it also mutates. Right. So so it when it jumps to to the to the species and jumps back. Right. So it requires some mutations that are sort of. Driven by the environment of a new host. Yeah, right, and it's different from the human environment and so we don't know whether the mutations that are acquired in the new species are neutral with respect to the human host or maybe, you know, maybe damaging.
+00:27:55
+Yeah, change is always scary, but so are you worried about. I mean, it seems like because the spread is during winter now seems to be exceptionally high, and especially with a vaccine just around the corner already being actually deployed, is there's some worry that there is this puts evolutionary pressure, selective pressure on the virus if for to to meet, afraid to mutate. That is the worry.
+00:28:23
+Well, I mean, there is always this sort, you know, in in the scientists, my mind, you know, what happens, what will happen. Right. So I know there've been there've been discussions about sort of the arms race between the you know, the ability of of the of the, you know, humanity to, you know, to get vaccinated faster than the virus, you know, essentially becomes, you know, resistant to the vaccine.
+00:28:58
+I I mean, I don't worry. That much simply because, you know, there is not that much evidence to that to aggressive mutation around the vaccine.
+00:29:13
+Exactly. You know, obviously there are mutations around the vaccine. So the reason we get vaccinated every year against the seasonal mutation side.
+00:29:26
+But, you know, I think it's important to study it, no doubt. Right. So I think one of the you know, to me and again, I might be biased because, you know, we've been trying to to do that as well.
+00:29:43
+So but one of the critical directions in understanding the virus is to understand its evolution in order to sort of understand the mechanisms, the key mechanisms that lead the virus to jump, you know, the Nordic viruses to jump from species, from species to another, that the mechanisms that lead the virus to become resistant to vaccines, also to treatments. Right. And hopefully that knowledge was will enable us to sort of forecast the evolutionary traces, the future evolutionary traces of this virus.
+00:30:21
+I mean, what from a biological perspective, this might be a dumb question, but is there parts of the virus that, if souped up like through mutation, could make it more effective at doing his job?
+00:30:35
+We're talking about the specific coronavirus, like because we were talking about the different like the membrane down protein, the EP protein, the and and as the spike is there some 20 or so more in addition to that.
+00:30:53
+But is there is that a dumb way to look at it?
+00:30:55
+Like which of these, if mutated, could have the greatest impact, potentially damaging impact on the effectiveness of the virus?
+00:31:06
+So it's actually it's it's a very good question because and the short answer is we don't know yet. But, of course, there is capacity of this virus to to become more efficient. The reason for that is, you know, so if you look at the virus, I mean, it's a machine, right? So it's a machine that does a lot of different functions and are many of those functions are sort of nearly perfect, but they are not perfect.
+00:31:32
+And those mutations can make those functions more perfect. For example, the attachment to to receptor right. Of the spike. So, you know. Is that. Has this virus reached the efficiency in which the attachment is carried out or there are some mutations that that still to be discovered, right. That will make this attachment sort of stronger or, you know, something more in the way more efficient from the point of view of this virus functioning? That's that's sort of the obvious example.
+00:32:17
+But if you look at each of these proteins, I mean, it's there for a reason. It performs certain function.
+00:32:23
+And it could be that certain mutations will, you know, enhance this function. It could be that some mutations will make this function much less efficient. All right. So that's that's also the case.
+00:32:39
+Let's since we're talking about the evolutionary history of a virus, let's zoom back out and look at the evolution of proteins, a glance at this 2010 Nature paper on the, quote, ongoing expansion of the protein universe. And then, you know, it kind of implies and talks about that proteins started with a common ancestor, which is kind of interesting since anything about like even just like the first organic thing that started life on Earth. And from that, there's now, you know, what is it, three point five billion years later, there's not millions of proteins and they're still evolving.
+00:33:24
+And that's, you know, in part one of the things that you're researching. Is there something interesting to you about the evolution of proteins from this initial ancestor to today?
+00:33:37
+Is there something beautiful, insightful about this long story?
+00:33:41
+So I think, you know, if if I were to pick a single key word about protein evolution, I would think modularity, something that we talked about in the in the beginning. And that's the fact that the proteins are no longer considered, as you know, as the sequence of letters. There are hierarchical complexities in the way these proteins are organized. And this complexity is actually going beyond the protein sequence. It's actually going all the way back to the to the gene, to the nucleotide sequence.
+00:34:23
+And so, you know, again, this protein domains, they are not only functional building blocks, they are also evolutionary building blocks. And so what we see in the sort of in the later stages of evolution, I mean, once this stable structurally and functionally building blocks were discovered, they essentially they stay those domains stay as such.
+00:34:51
+So that's why if you start comparing different proteins, you will see that many of them will have similar fragments and those fragments will correspond to something that we call protein, the main families.
+00:35:05
+And so so they are still different because you you still have mutations and the you know, the you know, different mutations are attributed to to, you know, diversification of the function of this protein domain.
+00:35:22
+However, you don't you very rarely see, you know, the the evolutionary events that would split. This domain into fragments because and it's you know, once you have the the the the the mind split, you actually you you know, you can completely cancel out its function or at the very least, you can reduce it.
+00:35:49
+And that's not, you know, efficient from the point of view of the, you know, of the cell function. So so the the the protein the main level is a very important one. Now. On top of that, right, so if you look at the proteins, right, so you have this structural unions and they carried out the function, but then much less is known about things that connect this protein. It's something that we call linkers.
+00:36:19
+And those linkers are completely flexible in all parts of the protein that nevertheless carry out a lot of function. That's like little tails that are heads. So we do have tails.
+00:36:32
+So they called Terminix, see and charming.
+00:36:35
+So these are things right on the on on on one and another ends of the protein sequence. So they are also very important. So they they attribute it to very specific interactions between the proteins.
+00:36:50
+So what you're referring to the links between domains that connect the domains. And, you know, apart from the just the the simple perspective, if you have, you know, a very short domain, you have very short Linko, you have two domains next to each other. They are forced to be next to each other. If you have a very long one, you have the domains that are extremely flexible and they carry out a lot of sort of spatial reorganisation.
+00:37:19
+Right.
+00:37:19
+That's awesome. But on top of that.
+00:37:22
+Right, just this Linko itself, because it's so flexible, it actually can adapt to a lot of different shapes.
+00:37:30
+And therefore, it's a it's a very good interactor when it comes to interaction between this protein and other protein.
+00:37:38
+So these things also evolve, you know, and they, in a way, have different sort of laws of the driving laws that underlie the evolution because they no longer need to to preserve certain structure.
+00:37:59
+Right. Unlike protein domains. And so on top of that, you have something that is even less studied. And this is something that you attribute to to the concept of alternative splicing. So I started splicing. So it's a it's a very cool concept to something that we've been fascinated about for over a decade in my lap and trying to do research with that.
+00:38:28
+But so, you know, so it's typically a simplistic perspective is that one gene is equal, one protein product. So you have a gene, you know, you transcribe it and translate it and it becomes a protein.
+00:38:47
+In reality, when we talk about eukaryotes, especially sort of more recent eukaryotes that are very complex, the gene is now it's no longer equal to one protein.
+00:39:04
+It actually can produce multiple functionally active protein products. And each of them is, you know, is called an alternatively splice product.
+00:39:20
+The reason it happens is that if you look at the gene that actually has it has also blocks and blocks, some of which and it's essentially it goes like this.
+00:39:33
+So we have a blog that will later be translated. We call it Zone. Then we'll have a block that is not translated cut out. We called it the intron. So we have Exon, Interent, Exon, Enteron, etc., etc., etc. It's on some. Sometimes you can have, you know, dozens of this exons on intercoms. So what happens is during the process when the gene is converted to RNA, we have things that are cut out, the in-transit cut-out and exons that now get assembled together and sometimes we will throw out some of the exons.
+00:40:15
+And the remaining protein products will be comfortably the same. Oh, different, right? So so now you have fragments of the protein that no longer there. There were cut out was the entrance. Sometimes you will essentially take one example and replace it with another one. Right.
+00:40:32
+So there's some flexibility and then this process. So so that creates a whole new level of complexity because random though, is it?
+00:40:42
+It's not random. We and and this is where I think now the appearance of this modern single cell and before that tissue level sequencing, next generation sequencing techniques such as RNA sic allows us to see that this these are the events that often happen in response.
+00:41:04
+It's a it's a dynamic event that happens in response to the disease or in response to certain developmental stage oversell. And and this is an incredibly complex layer that also undergoes I mean, because it's at the gene level. Right. So it undergoes certain evolution. Right.
+00:41:28
+And now we have this interplay between what's happening and what is happening in the in the protein world and what is happening in the in the gene and RNA world. And, for example, you know, it's it's often that we see that the boundaries of this exons. Coincide with the boundaries of the protest domains rights. So there is this course interplay to that. It's not always I mean, otherwise it would be too simple. Right. But we do see the connection between those sort of machineries.
+00:42:08
+And obviously the evolution will pick up this complexity and, you know, select for whatever success or whatever.
+00:42:17
+Yeah, we see that complexity in play and makes this question, you know, more complex but more exciting as a small detour.
+00:42:26
+I don't know if you think about this into the world of computer science.
+00:42:30
+There's Douglas Hofstadter, I think came up with a name of Quine, which are I don't know if you're familiar with these things, but his computer programs that have, I guess, Exon and Tron and they copied the whole purpose of the program is to copy itself.
+00:42:49
+So it prints copies of itself, but can also carry information inside of it.
+00:42:54
+That's a very kind of crude fun exercise of can we sort of replicate these ideas from cells of can we have a computer program that when you run it, just print itself, you're not the entirety of itself and does it in different programming languages and so on.
+00:43:13
+I've been playing around and writing them. It's a kind of fun little exercise, you know, when I was a kid. So so, you know, it was essentially one of the of the sort of main stages in in informatics Olympiads that you have to reach in order to be any so good is you should be able to write a program that replicates itself. And so the tax then becomes even more complicated. So what is the shortest? What is the program?
+00:43:47
+And of course, it's you know, it's a function of a programming language.
+00:43:50
+But, yeah, I remember a long, long, long time ago when we tried to do to make it shorter and shorter.
+00:43:57
+And finally, the short cut is actually on stock exchange. There's an entire site called Code Golf, I think where the entire is just a competition. People just come up with whatever task. I don't know, like write code that reports the weather today and the competition is about whatever programming language, what is the shortest program. And it makes you actually people should check it out because it makes you realize there's some weird programming languages out there. But, you know, just to dig on that a little deeper.
+00:44:35
+Do you think. You know, in computer science, you don't often think about programs just like the machine learning world. Now. That's still kind of basic programs, and then there's humans that replicate themselves, right, and there's these mutations and so on. Do you think we'll ever have a world where there's programs that kind of. Have an evolutionary process, so I'm not talking about evolutionary algorithms, I'm talking about programs that kind of meet with each other and evolve and make on their own replicate themselves.
+00:45:12
+So this is kind of the idea here is, you know, that's how you can have a runaway thing.
+00:45:20
+So we think about machine learning as a system to get smarter and smarter and smarter and smarter. At least the machine learning systems of today are like it's it's a program that you can, like, turn off, as opposed to throwing a bunch of little programs out there and letting them, like, multiply and mate and evolve and replicate. Do you ever think about that kind of world?
+00:45:43
+You know, when we jump from the biological systems that you're looking at to to artificial ones, I mean, it's almost like you you take the the sort of the area of intelligent agents, which are essentially the independent sort of codes that run and interact and exchange the information. Right. So I don't see why not. I mean, you know, it could be sort of a natural evolution in the in this area of computer science.
+00:46:16
+I think it's kind of interesting possibilities, terrifying, too. But I think it's a really powerful tool like to have like agents that, you know, have social networks of millions of people and they interact. I think it's interesting to inject into that was already injected into that bots. Right. But those bots are pretty dumb. You know, they're they're probably pretty dumb algorithms. You know, it's interesting to think that there might be bots that evolve together with humans and there's the sea of humans and robots that are operating first in the digital space.
+00:46:49
+And you can also think I love the idea. Some people worked, I think at Harvard, at Penn, there's robotics labs that, you know, take as a fundamental task to build a robot. They're given extra resources, can build another copy of itself. Again, the physical space, which is super difficult to do, but super interesting. As I remember, there's like research on robots that can build a bridge. So they make a copy of themselves and they connect themselves and the sort of self building bridge based on building blocks you can imagine like a building that itself assembles.
+00:47:28
+It's basically self assembling structures from from robotic parts. But it's interesting to within that robot add the ability to mutate and and and do all the interesting, like, little things that you're referring to in evolution to go from a single origin protein building block to like, well, weird complex.
+00:47:52
+And if you think about this, I mean, you know, the bits and pieces are there, you know, so so you might revolutionize the algorithm, you know. So this is sort of.
+00:48:01
+And it may be sort of the goal is in a way different. Right. So the goal is to, you know, to essentially to to optimize your search. Right. So but sort of the ideas are there. So do people recognize that, you know, that the the real recombination events lead to global changes in the search trajectories? The mutations event is a more refined step in the search.
+00:48:33
+Then you have, you know, other sort of nature inspired algorithms. Right. So so one of the reasons that that they you know, I think it's one of the funnest one is the slime based algorithm. Right. So that it's a I think the first was introduced by the Japanese group, but where it was able to to solve some some pretty complex problems. So that's the end.
+00:49:01
+And then I think there are still a lot of things we've yet to to borrow from the nature. Right. So there are a lot of sort of ideas that nature. Know gets to offer us that, you know, it's up to us to grab it and to to, you know, get the best use of including your networks, you know, we have a very crude inspire inspiration from nature.
+00:49:30
+And, you know, maybe there's other inspirations to be discovered in the brain or other aspects of the various systems, even like the immune system, the way it interplays. I recently started to understand that, like the immune system has something to do with the way the brain operates, like there's multiple things going on in there which all of which are not modeled in artificial neural networks. And maybe if you throw a little bit of that biological spice in there, you'll come up with something, something cool.
+00:50:02
+I I'm not sure if you're familiar with the Drake Equation. That estimate did a video yesterday because I wanted to give my own estimate of it, it's it's an equation that combines a bunch of factors to estimate how many alien civilizations. Oh, yeah, I've heard about it. Yes. So one one of the interesting parameters, you know, it's like how many stars are born every year? How many planets are on average per star for this? How many habitable planets are there?
+00:50:37
+And then the one that starts being really interesting is the probability that life emerges on a habitable planet. So, like. I don't know if you think about it, certainly think a lot about evolution, but do you think about the thing which evolution doesn't describe, which is like the beginning of the origin of life? I think I put the probability of life developing a habitable planet at one percent.
+00:51:04
+This is very scientifically rigorous.
+00:51:07
+OK, well, first at a high level for the Drake Equation, what would you put that percent that on Earth? And in general, do you have something? Do you have thoughts about how life might have started? You know, the proteins being the first kind of one of the early jumping points?
+00:51:26
+Yes. So I think back in 2018, there was a very exciting paper published in Nature where they found one of the simplest amino acids, glycine in in a comet dust cell. So this is and I apologize if I don't pronounce it's a Russian named comet. I think to groom of America, this is the comet where and there was this mission to to get and get close to this comment and get the the stardust from from its tail. And when scientists analyze that, they actually found traces of, you know, of glycine, which, you know, makes up, you know, the what?
+00:52:22
+It's one of the basic one of the 20 basic amino acids that makes up proteins.
+00:52:29
+So so that was kind of exciting. Very exciting. Right. But, you know, it's the question is very interesting.
+00:52:37
+Right. So what you know what if there is some alien life. Is it going to be made of proteins? Right. There may be RNA. So we see that the RNA viruses are certainly, you know, very well established, sort of, you know, group of molecular machines. Right. So so, yes, it's it's it's a very interesting question. What what probability would you put? Like, how hard is this? Just like how unlikely just on earth do you think this whole thing is that we've got going?
+00:53:14
+Is we really lucky or is it inevitable?
+00:53:17
+Like what's your sense when you sit back and think about life on Earth? Is it higher or lower than one percent because one percent is pretty low, but still like that's a pretty good chance. Yes, it's a pretty good chance.
+00:53:29
+I mean, I would personally but again, you know, I'm, you know, probably not the best person to do such estimations. But I would you know, intuitively, I would probably put it lower.
+00:53:46
+But still, I mean, you know, we're really lucky here on Earth. Uh, I mean, or the conditions are really good. It's me that's I think that there was everything was right in the way. Right. So we still it's not the conditions were not like ideal. If you try to to look at what was, you know, several billion years ago when the life emerged.
+00:54:11
+So there is something called the rare earth hypothesis that, you know, in counter to the Drake Equation says that the you know, the conditions of Earth, if you actually were to describe Earth, it's quite a special place. So special you might be unique in our galaxy and potentially, you know, close, unique in the entire universe. So it's very difficult to reconstruct those same conditions. And what the rare earth hypothesis argues is all those different conditions are essential for life.
+00:54:46
+And so that's sort of the counter, you know, like all the things we know, thinking that Earth is pretty average. And I can't really I'm trying to remember to to go through all of them.
+00:54:58
+But just the fact that it is shielded from a lot of asteroids, the obviously the distance to the sun, but also the fact that it is like a perfect balance between the amount of water and land and all those kinds of things. And I don't know, there's a bunch of different factors that I remember. There's a long list, but it's fascinating to think about if if it if in order for something like proteins and DNA and RNA to to emerge, you need and basic living organisms, you need to be very close to an earth like planet, which will be sad or exciting.
+00:55:41
+I don't know which if you ask me, I you know, in the way I put the parallel between, you know.
+00:55:48
+In our own research and. I mean, from the. From the intuitive perspective, you know, you have those two extremes and the reality is never, very rarely falls into the extremes.
+00:56:05
+It's always the optimist, always reached somewhere in between. So so I would say so. And that's what they tend to think. I think that, you know, we're probably somewhere in between. So the one not unique, unique, but again, the chances are, you know, reasonably small.
+00:56:25
+The problem is we don't know. The other extreme is like I tend to think that we don't actually understand the basic mechanisms of like what this is all originated from.
+00:56:35
+Like, it seems like we think of life as this distinct thing. Maybe intelligence is a distinct thing. Maybe the physics that from which planets and suns are born is a distinct thing. But that could be a very it's like the civil war from things like the four simple rules and much greater and greater complexity. So, you know, I tend to believe that just life finds a way.
+00:56:58
+It we don't know the extreme of our common life is because it could be life is like everywhere, like, like so everywhere that it's almost like laughable like that we're such idiots to think like it's like ridiculous to even like think it's like ants thinking that they're a little colony is the unique thing and everything else doesn't exist. I mean, it's also very possible that that's that's the extreme.
+00:57:30
+And we're just not able to maybe comprehend the nature of that life just to stick on alien life for just a brief moment, because there is some signs of signs of life on Venus and gaseous form. There's hope for life on Mars, probably extinct.
+00:57:51
+We're not talking about intelligent life, although that has been in the news recently.
+00:57:56
+We're talking about basic, like, you know, bacteria, bacteria. And then also, I guess there's a couple moons there. Yeah, Europa, which is Jupiter's moon. I think there's another one. Are you. Is that exciting or is it terrifying to you that we might find life? Do you hope we find life?
+00:58:17
+I certainly do hope that we find life. I mean, it was very exciting to to hear about, you know, this news about the possible life on the Venus.
+00:58:32
+It'd be nice to have hard evidence of something with which is what the hope is for for Mars and and Europa. But do you think those organisms would be similar biologically or would they even be sort of carbon based? If we do find them?
+00:58:48
+I would say they there would be carbon based. How similar? It's a big question. Right. So it's it's at the moment we discover things outside Earth, right. Even if it's a tiny little single cell. I mean, there is so much this imagine that that would be.
+00:59:09
+So I think that that would be another turning point for the science. You know, and if especially if it's different in some very new way, that's exciting because that says that's a definitive statement, a definitive but a pretty strong statement that life is everywhere and in the in the universe to me, at least, that's that's really exciting. You brought up Joshua Lederberg in an offline conversation. I think I'd love to talk to you about Appleford. And this might be an interesting way to enter that conversation because so he won the 1958 Nobel Prize in physiology or medicine for discovering that bacteria can mate and exchange genes.
+00:59:52
+But he also did a ton of other stuff like like we mentioned, helping NASA find life on Mars and the ventral Daniel, the the chemical expert system, expert systems. Remember those. Do you what do you find interesting about this guy and his his ideas about artificial intelligence in general have a kind of personal a story to share.
+01:00:23
+So I started my Ph.D. in Canada back in 2000. And so essentially my my idea was so we were developing a new language for symbolic machine learning, so different from the future based machine learning. And one of the sort of cleanest applications of this, you know, of this approach of this formalism was to come informatics and computer aided drug design. It's also substantially war. You know, this is a part of my research.
+01:00:56
+I developed a system that essentially looked at chemical compounds of, say, the same therapeutic category, you know, male hormones.
+01:01:08
+Right. And try to figure out the structural fragments that are the structural building blocks that are important that define this glass versus structural building blocks that are there just because you know that to complete the structure. But they are not essentially the ones that make up the the chemical the key chemical properties of this therapeutic category.
+01:01:36
+And and, you know, for me, it was something new. I was I was trained as an applied mathematicians, you know, as was some machine learning background. But, you know, computer aided drug design was completely a completely new territory. So because of that, I often find myself asking lots of questions on one of. These sort of central forums back then, there were no no Facebook, so stuff like that, there was a forum at the forum.
+01:02:07
+It's essentially it's like a bulletin board.
+01:02:09
+Yeah. Why the Internet? Yeah.
+01:02:11
+So you essentially you have a bunch of people and you post the question and you get an answer from different people. And back then, this is one of the most popular forums was Cecille think computational chemistry, Lieberman, not library, but something like that. But Cecille, that that was the the forum. And there I you know, I asked a lot of dumb questions.
+01:02:37
+Yes.
+01:02:37
+I ask questions also share some some, you know, some information about our formulas and how we do and whether whatever we do makes sense.
+01:02:48
+And so, yeah, and I remember that one of these posts, I mean, I still remember well, you know, I, I would call it desperately looking for for a chemist advice, something like that.
+01:03:03
+Right. And so so I posed my question. I explained, you know, how how my our formalism is, what is what it does and what kind of applications I'm planning to to do. And, you know, and it was, you know, in the middle of the night. Then I went back to bed and and next morning I have a phone call from my adviser who also looked at this forum is like, you won't believe who replied to you.
+01:03:34
+And and it's like who said, well, you know, there is a message to from Joshua Lederberg. And my reaction was like, who's your advisor?
+01:03:48
+Hung up.
+01:03:50
+So and essentially, you know, Joshua wrote me that we had conceptually similar ideas in the DANTRELL project.
+01:03:59
+You might want to look it up.
+01:04:02
+And we should also say it's a sad comment, say that even though he he won the Nobel Prize at a really young age in 58.
+01:04:11
+But so he he was I think he was, what, 33?
+01:04:15
+Yeah, it's just crazy. Yeah. So anyway, so that's so hence in the 90s responding to young whippersnappers on the on the sixth form.
+01:04:25
+Okay. And so, so, so back then he was already very senior. I mean he unfortunately passed away back in 2008. But you know, back in 2001 he was I mean he he was a professor emeritus at Rockefeller University. And, you know, that was actually, believe it or not, one of the one of the of one of the reasons I decided to join, you know, as a postdoc, the group of ungracefully. Who was that?
+01:04:51
+Rockefeller University was the hope that, you know, that I could actually, you know, have a chance to meet Joshua in person. And I met him very briefly ride the wave just because he was walking. You know, there's a little bridge that connects the sort of the research campus with the was the sort of skyscrapers that the Rockefeller or the where, you know, both dogs and faculty and graduate students. And so so I met him, you know, and I had a very short conversation, you know, but so I started, you know, reading about Dendahl and I was amazed.
+01:05:34
+You know, it's we're talking about 1960. Yeah, right.
+01:05:39
+The ideas were so profound. Well, what's the fundamental ideas of the reason to make this is even crazier. So so so Lederberg wanted to make a system that would help him study the extraterrestrial molecules. Right.
+01:06:01
+So so the idea was that, you know, the way you studied the extraterrestrial molecules is you do the mass spec analysis. Right. And so the mass spec gives you sort of bits, numbers about essentially gives you the ideas about the possible fragments or, you know, atoms and, you know, and maybe a little fragments, pieces of this molecule that make up the molecule. Right.
+01:06:26
+So now you need to sort of to decompose this information and to figure out what was the hole before you became of fragments, bits and pieces.
+01:06:40
+Right. So so in order to make this, you know, to have this tool. The idea of lederberg was to connect chemistry. Computer science. And to design this so-called expert system that looks that takes into account takes as an input the mass spec data, the possible database of possible molecules, and essentially try to sort of induce the molecules that would correspond to this spectra or, you know, essentially what this project ended up being.
+01:07:24
+It was that, you know, it would provide a list of candidates that then a chemist would look at and make a final decision.
+01:07:35
+So but the original idea, I suppose, is to solve the entirety of this problem automatically. Yes.
+01:07:40
+So so so he you know, so so he back then, he says, yes, I believe that, you know, it's amazing and still blows my mind, you know, that it's that it's and this was essentially the the origin of the modern bioinformatics informatics, you know, back in the 60s.
+01:08:05
+Yeah.
+01:08:05
+So that's that's you know, so every time you you you you deal with with projects like this was the research like this, you just you know, so they did the power of of the of the intelligence of these people.
+01:08:22
+Is it just, you know, overwhelming?
+01:08:24
+Do you think about expert systems? Is there and why they kind of didn't. Become successful, especially in the space of bioinformatics, where it does seem like there is a lot of expertise and humans and, you know, it's it's possible to see that a system like this could be made very useful right now.
+01:08:47
+So it's actually it's a it's a great question. And this is something so, you know, so, you know, at my university, I teach artificial intelligence and, you know, we start my first two lectures are on the history of a year. And there we you know, we try to, you know.
+01:09:08
+Go through the main stages of day and so, you know, the question of why expert systems failed or became obsolete.
+01:09:20
+It's actually a very interesting one. And there are you know, if you try to read the you know, the historical perspectives, there are actually two lines of thoughts. One is that the they were essentially. Not up to the expectations, and so therefore they were replaced, you know, by by other things, right. The other one was that completely opposite one, that they were too good. And as a result, they essentially became sort of a household name and then essentially they got transformed.
+01:10:00
+I mean, the the in both cases, sort of the outcome was the same. They evolved into something. Yeah, right. And that's what I you know, if you if I look at this. Right. So the modern machine dawning. Right.
+01:10:13
+So there's echoes in the modern machine learning. And so I think so because, you know, if you think about this, you know, and how we design, you know, the more successful algorithms, including Alpha fault.
+01:10:26
+Right. You built in the knowledge about the domain that you study. Right. So so you built in your expertise.
+01:10:35
+So speaking of Alpha fold, the deep mines Alpha fold, too, recently was announced to have, quote unquote, solved protein folding. How exciting is this to you?
+01:10:47
+It seems to be one of the one of the exciting things that have happened in twenty twenty years. Incredible accomplishment from the looks of it. What part of it is amazing to you? What part would you say is overhyped or maybe misunderstood?
+01:11:02
+It's definitely a very exciting achievement to give you a little bit of perspective. Right. So so in bioinformatics, we have several competitions. And so the way, you know, you often hear how those competitions have been explained to sort of two nonbiased competitions is that they call it by informatics Olympic Games. And there are several disciplines. Right. So so that was the historical one of the first one was the discipline in predicting the protein structure, predicting this really accordionists of the proteins.
+01:11:35
+But there are some others. So the predicting protein functions, predicting effects of mutations on protein functions, then predicting protein protein interactions. So so the original one was CASPA or a critical assessment of of protein structure and.
+01:11:59
+The you know, typically what happens during these competitions is, you know, scientists, experimental scientists solve the structures, but don't put them into the protein databank, which is a centralized database that contains all these really coordinates. Instead, they hold it and release protein sequences. And now the challenge of the community is to predict the 3-D structures of this proteins and then use the experimental crystal structures to assess which one is the closest one. Right.
+01:12:39
+And this competition, by the way, is just a bunch of different tangents. And maybe you can also say what is protein folding in this competition? Casp, competition is sort of has become the gold standard. And that's what was used to say the protein folding was solved. So that out of a bunch. So if you can whenever you say stuff, maybe throw in some of the basics for the folks that might be outside of the field anyway, say, first of all.
+01:13:05
+So, yes.
+01:13:06
+And also the reason is it's you know, it's relevant to our understanding of protein folding is because, you know, we we've yet to learn how the folding mechanistically works.
+01:13:20
+Right. So there are different hypotheses what happens to this fall.
+01:13:25
+For example, there is a hypothesis that the folding happens by, you know, also in the modular fashion. Right. So that we have protein domains that get folded independently because their structures stable and then the whole protein structure gets formed. But, you know, within those domains, we also have so-called secondary structure, the small alpha heliothis beta. So these are earth elements that are structurally stable. And so and the question is, you know, when they when do they get formed?
+01:14:03
+Because some of the secondary structure elements, you have to have, you know, a fragment in the beginning and say the fragment in the middle. Right. So so you cannot potentially start having the full fall from the get go.
+01:14:19
+Right. So it's still you know, it's still a big enigma. What happens? We know that it's an extremely efficient and stable process. So there's this long sequence and the fall happens really quickly. Exactly. Well, that's really weird.
+01:14:34
+And it happens like the same way almost every time. Exactly. Exactly. And it's really weird. That's freaking weird. Yeah, that's that's why it is such an amazing thing. But most importantly. Right. So it's you know, so when when you see the you know, the translation process. Right. So when you don't have the the the whole protein translated. Right. Is still being translated, you know, getting out from the ribosome, you already see some structural, you know, fragmentation sorts of folding.
+01:15:11
+Starts happening before the whole protein gets produced. Right. And so this is this is obviously one of the biggest questions in in modern molecular biologists, not not like maybe what happens.
+01:15:27
+Like, that's not as bigger than the question of folding. That's the question of like like deeper fundamental idea of folding. Yes. Behind for. Exactly.
+01:15:37
+Exactly.
+01:15:37
+So, you know, so obviously, if we are able to predict the end product of protein folding, we are one step closer to understanding sort of the mechanisms of the protein folding because we can then potentially look and start probing what are the critical parts of this process and what are not so critical part of this so that we can start decomposing this. So, so, so in the way this protein structure prediction algorithm can be, can be used as a tool.
+01:16:16
+Right. So so you change the you know, you modify the protein, you get back to to the stool. It predicts, OK, it's completely it's completely unstable.
+01:16:28
+Which which aspects of the input will have a big impact on the output. Exactly. Exactly.
+01:16:34
+So so what happens is, you know, we typically have some sort of incremental advancement. You know, each stage of this competition you have groups was incremental advancement. And, you know, historically, the top performing groups were you know, they were not using machine learning.
+01:16:57
+They were using very advanced biophysics, combined with bioinformatics, combined with, you know, the data mining. And that was, you know, that would enable them to obtain protein structures of those proteins that don't have any structure itself, relatives, because, you know, if we have another protein, say the same protein, but coming from a different species. And we could potentially derive some ideas and that so-called homology or comparative modeling where we'll derive some ideas from the previously known structures, and that would help us tremendously in, you know, in reconstructing the 3D structure overall.
+01:17:48
+But what happens when we don't have this relatives? This is when it becomes really, really hard. Right? So that so-called Denovo, you know, the novel protein structure prediction and in this case, those methods were traditionally very good.
+01:18:06
+But what happened in the in the last year, the original alpha fault came into.
+01:18:13
+And all of a sudden, it's much better than everyone else. Twenty, eighteen, yeah. Oh, the competition is only every two years, I think.
+01:18:25
+And then so, you know, it was sort of kind of a shock wave to to to to the informatics community that we have like a state of the art machine learning system, the Daas structure prediction and essentially what it does.
+01:18:43
+You know, if you look at this, it actually predicts the contacts.
+01:18:49
+So, you know, sort of the process of reconstructing the 3D structure starts by predicting the the contacts between the different parts of the protein and the contacts, essentially the part of the proteins that are in the close proximity to each other.
+01:19:06
+So it's actually the machine learning part seems to be estimating. You can correct me if I'm wrong here, but it seems to be estimating the distance matrix, which is like the distance between the different parts.
+01:19:19
+Yeah. So so we call the contact map. Contact map. And so once you have the map, the reconstruction is becoming more straightforward. Yeah, right. But so the contact map is the key.
+01:19:29
+And so, so, you know, so that what happened and now we start seeing in this current state right where in the in the most recent one we started seeing the emergence of these ideas in other people works. Right. But yet here's, you know, Alpha Faltu.
+01:19:52
+Yeah. That again outperforms everyone else. And also by introducing yet another wave of of of the of the machine learning ideas.
+01:20:01
+Yeah, there does seem to be also incorporation. First of all, the paper is not out yet, but there's a bunch of ideas already out. There does seem to be an incorporation of this other thing. I don't know if it's something that you can speak to, which is like the incorporation of like other structures like evolutionary similar.
+01:20:23
+Yes. Structures that are used to kind of give you hints. Yes. So so evolutionary similarity is something that we can detect at different levels. Right. So we know, for example, that this structure of proteins is more conserved than the sequence. The sequence could be very different, but the structural shape is actually still very conserved. So that's that's sort of the intrinsic property that, you know, in a way related to protein folds, you know, to the evolution of the know of the protein of proteins and protein domains, et cetera.
+01:21:00
+But with all that, I mean, there have been multiple studies.
+01:21:04
+And, you know, ideally, if you have structures, you know, you should use that information. However, sometimes we don't have this information. Instead, we have a bunch of sequence of sequences. We have a lot. Right.
+01:21:17
+So so we we we have, you know, hundreds of thousands of different organisms sequenced. Right. And by taking this same protein. But in different organisms and aligning it, so making it you know, making the corresponding positions aligned, we can actually say a lot about sort of what this cancer, often this protein and therefore, you know, structurally more stable, what is diversed in these proteins. So on top of that, we could provide sort of the information about the sort of the secondary structure of this protein, etc.
+01:21:59
+, etc. So this information is extremely useful. And it's already there, so so while it's tempting to, you know, to do a complete. So you just have a protein sequence and nothing else. The reality is that we we are overwhelmed with this data, so why not use it? And so, yes, I am looking forward to reading this paper.
+01:22:24
+It does seem like they have in the previous version of Alpha four, they didn't for this their evolutionary similarity thing. They didn't use machine learning for that.
+01:22:36
+Or rather, they used that as like the input to the entirety of the neural net, like the features derived from the similarity, it seems like there is some kind of, quote unquote, iterative thing where it seems to be part of the part of the learning process is the incorporation of this evolutionary similarity.
+01:22:57
+Yeah, I don't think there is a biology paper. Right. There's no there's nothing just a blog post that's written by a marketing team, essentially. Yeah. Which, you know, it has some scientific similarity probably to the the actual methodology used.
+01:23:14
+But it could be it's like interpreting scripture. It could be it could be just poetic interpretations of the actual work as opposed to direct connection to the work.
+01:23:25
+So now speaking about protein folding stars, also, you know, in order to answer the question whether or not we have solved this right there. So we need to go back to the beginning of our conversation.
+01:23:36
+And with the realization that an average protein is that typical of what the cusp has been focusing on is, you know, this competition has been focusing on the single maybe to the main proteins that are still very compact. And even those ones are extremely challenging to to solve. Right. But now we talk about, you know, an average protein that has two, three protein domains. If you look at the proteins that that are in charge of the you know, of the process, you know, with the neural system.
+01:24:14
+Right.
+01:24:14
+Well, perhaps one of the of the most recently evolved sort of systems in the in the organism.
+01:24:26
+Right.
+01:24:27
+All of them. Well, the majority of them are highly multi Dumain proteins. So they are you know, some of them have five, six, seven, you know, and more domains. Right.
+01:24:39
+And, you know, we are very far away from understanding how these proteins are folded.
+01:24:45
+So the complexity of the protein matters here, the complexity, the complexity of the protein modules or the the protein domains.
+01:24:55
+So you're saying solved. So the definition of solved here is particularly the cast competition, achieving human level, not human level, achieving at the experimental level performance on these particular sets of proteins that have been used in these competitions.
+01:25:13
+Well, I mean, you know, I do think that, you know, especially with regards to the alpha fault, you know, it is able to, you know. To solve, you know, at the near experimental level, a pretty big majority of the of the more compact proteins like or protein domains, because, again, in order to understand how the overall protein, you know, multi-dwelling protein fault, we do need to understand the structure of its individual domains.
+01:25:51
+I mean, unlike if you look at Alpha zero zero, if you look at that work, you know, it's nice reinforcement learning. Self playing mechanisms are nice because it's all in simulation. So you can learn from just huge amounts.
+01:26:08
+Like you don't need data like the problem of proteins like the size. I forget how many 3D structures have been mapped. The training data is very small no matter what. It's like millions, maybe one or two million or something like that, but some very small number.
+01:26:26
+But like it doesn't seem like that's scalable. It has to be.
+01:26:32
+And I feel like you want to somehow 10x the data or 100 acts the data somehow.
+01:26:38
+Yes. But we also can take advantage of some of homology models. Right.
+01:26:46
+Sort of the models that are of very good quality because they are essentially obtained based on the evolutionary information.
+01:26:56
+So you can see there is a potential to enhance this information and, you know, use it again to to empower the the the training set.
+01:27:11
+And it's I think I am actually very optimistic. I think it's been one of these sort of. You know. Joining events where you have a system that is, you know, a machine learning system that is truly better than the sort of the more conventional by physics based methods, that's a huge leap.
+01:27:42
+This is one of those fun questions. But where would you put it in, in the ranking of the greatest breakthroughs in artificial intelligence history?
+01:27:54
+So, like, OK, so let's see who's in the running, maybe incorrectly.
+01:27:58
+So you got like Alpha Zero and Alpha go beating, you know, beating the world champion at the game of go thought to be impossible like 20 years ago, or at least the air community was highly skeptical.
+01:28:14
+Then you got like also DeBlois Original Kasparov. You have deep learning itself, like the maybe what would you say, the Alex Net image in that moment. So the first you know, now we're achieving human level performance super. Not that's not true. Achieving like a big leap in performance on the computer vision problem.
+01:28:37
+There is open A.I., the whole three, that whole space of transformer's and language models just achieving this incredible performance of application of neural networks to language models.
+01:28:54
+Boston Dynamics, pretty cool like robotics, even though people are like, there's no way I know there's no machine learning currently, but as much bigger than machine learning is so so that just the engineering aspect, I would say, is one of the greatest accomplishments in engineering side engineering, meaning like mechanical engineering of robotics ever.
+01:29:21
+Then, of course, autonomous vehicles, you can argue for wammo, which is like the Google self-driving car, or you can argue for Tesla, which is like actually being used by hundreds of thousands of people on the road today. Machine learning system.
+01:29:35
+Um, and I don't if you can what what what else is there?
+01:29:40
+But I think that's so. And then Alpha for many people are saying as up there potentially no.
+01:29:45
+One, would you put them on number one?
+01:29:47
+Well, in terms of the impact on on the science and on the society beyond, it's definitely, you know, to me would be one of the, you know, top three, which I mean, I'm I'm probably not the best person to answer that, you know.
+01:30:08
+But, you know, I you know, I do have I remember my you know, back in, I think 1997 when Deep Blue.
+01:30:19
+But Kasparov, it was. I mean, it was a shock, I mean, it was and I think for the for the, you know. Was a pretty substantial part of the world that especially people who have some, you know, some experience was chess, right.
+01:30:44
+And realizing how incredibly human this game, how, you know, how much of a brain power you need, you know, to to reach those, you know, those levels of grand masters right level. And so probably one of the first time and how good COSPAR was and again, yes. Was arguably one of the best ever. Right. And get a machine that beat him.
+01:31:10
+And I see it's enormous time machine probably beat a human at that scale of a thing, if anything. Yes. Yes.
+01:31:17
+So that was to me that was like, you know, one of the groundbreaking events in the history for you.
+01:31:23
+That's probably number one as probably like it's hard to remember. It's like Muhammad Ali versus I don't know any other Mike Tyson or something like that.
+01:31:32
+It's like you got to put Muhammad Ali at number one as saying we've seen with DeBlois, even though it's not machine learning based astill, it uses advanced search and search is the integral part of it.
+01:31:46
+Yeah, right. So it's not as you said, people don't think of it that way at this moment in vogue.
+01:31:51
+Currently, search is not seen as a as a fundamental aspect of intelligence, but it very well and very likely is in fact I mean, that's what neural networks are.
+01:32:02
+They're just performing search on the basic parameters.
+01:32:05
+And it's all search of all of intelligence is some form of search. And you just have to become clever and clever at that search problem.
+01:32:13
+And I also have another one that you didn't mention. That's that's that's one of my favorite ones is. So you've probably heard of this.
+01:32:22
+It's I think it's called Deep Rembrandt. It's the project where the the train I think there was a collaboration between the sort of the experts in in Rembrandt painting in Netherlands and a group, an artificial intelligence group, where they train an algorithm to replicate the style of the Rembrandt. And they actually printed a portrait that never existed before in the style of Rembrandt. They the I think they printed it on their own. They're sort of on the canvas that, you know, using pretty much the same types of paints and stuff.
+01:33:05
+At Dombey, it was mind blowing. Yeah, it's a nice piece of art.
+01:33:09
+That's interesting. There hasn't been said maybe that's that's it. But I, I think there hasn't been an image in that moment yet in this piece of art.
+01:33:19
+You haven't been able to achieve superhuman level performance in this piece of art, even though there was you know, there's a big famous thing where there was a piece of art was purchased, I guess, for a lot of money.
+01:33:31
+Yes. Yeah. But it's still, you know, people are like in this piece of music at least. That's you know, it's clear that human created pieces are much more popular, so there hasn't been a moment where it's like, oh, this is where now I was seeing this piece of music. What makes a lot of money? We're talking about serious money. It's music and movies, shows and so on and entertainment.
+01:33:59
+There hasn't been a moment where I created I was able to create a piece of music or a piece of cinema like Netflix show that is, you know, sufficiently popular to make a ton of money. Yeah.
+01:34:18
+And that moment would be very, very powerful because that's like that's in the system being used to make a lot of money and like direct, of course, A.I. tools like even premiere audio where all the editing everything I do edit this podcast, there's a lot of A.I. involved. And actually this is a program I want to talk to those folks just because I heard I was called isotope. I don't know if you're familiar with it.
+01:34:41
+They have a bunch of tools of audio processing and they have, I think their Boston base just it's so exciting to me to use it like on the audio here, because it's all machine learning.
+01:34:53
+It's not because most or most audio production stuff is like any kind of processing you do. It's very basic signal processing and you're tuning knobs and so on. They have all of that, of course, but they also have all of this machine learning stuff like where you actually give it training data, you select parts of the audio, you train on, you train on it and it figure stuff out.
+01:35:19
+It's great. It's able to detect the ability of it to be able to separate voice and music, for example, a voice and anything is incredible.
+01:35:30
+It just is clearly exceptionally good at, you know, applying these different neural networks models to to just separate the different kinds of signals and the audio that that OK, so that's really exciting Photoshop.
+01:35:46
+But there'll be people also use it, but to generate a piece of music that will sell millions a piece of art. Yeah, no, I agree.
+01:35:55
+And, you know, it's that's that's you know, as I mentioned, I offer my my AA class and an integral part of this is a project. Right. So it's my favorite, ultimate favorite part because typically we have this project presentation's the last two weeks of the class. It's right before the Christmas break and it sort of adds this cool excitement.
+01:36:23
+And every time I mean, I'm amazed, you know, with with some some projects that people, you know, come up with. And so and quite a few of them are actually, you know, they some have some link to to to arts. I mean, you know, I think last year we had a group who design and they are producing hawkish Japanese poems. Oh, so. And some of them so, you know, it got trained on the on the hikers, hikers writer.
+01:37:00
+So and some of them, you know, they get to present, like the top selection. They're all pretty good.
+01:37:08
+I mean, you know, I mean, of course, I'm not I'm not a specialist, but you read them and you.
+01:37:13
+It seems profound. Yes. Yeah, it's there is. So it's kind of cool.
+01:37:18
+We also had a couple of projects where people tried to to teach AA how to play like rock music, classical music, I think. And popular music. Yeah.
+01:37:33
+Interestingly enough, you know, classical music was among the most difficult ones, and, you know, of course, if you if you know, you know, if you look at the, you know, the like grand masters of music, like Bach.
+01:37:53
+Right. So there is a lot of there is a lot of almost math.
+01:37:58
+He's very mathematical. Exactly. So. So this is I would imagine that at least some style of this music could be picked up. But then you have this completely different spectrum of of classical composers.
+01:38:12
+And so, you know, and, you know, it's almost like, you know, you don't have to sort of look at the data.
+01:38:19
+You just listen to it and say that's that's that's not that not. Yes, no. Yeah. That's how I feel to this open as I think open music, something like that. The system is cool, but like it's not compelling for some for some reason, it could be a psychological reason to maybe we need to have a human being, a tortured soul behind the music. I don't know.
+01:38:43
+Yeah, no, that absolutely I completely agree. But yeah, whether or not we'll have a one day, we'll have, you know, a song written by a engine to be in the top charts. Yeah. Musical charts. I wouldn't be surprised.
+01:39:03
+I wouldn't be surprised. I wonder if we already have one and it just hasn't been announced. We would know how hard is the multi protein folding problem?
+01:39:17
+Is that kind of something you've already mentioned, which is baked into this idea of greater and greater complexity of proteins like multi domain proteins that basically become multi protein cell complexes?
+01:39:32
+Yes, you got it right. So so it's sort of. It has. The components of both of protein folding and protein protein interactions, because in order for these domains, I mean, many of these proteins actually, they never form a stable structure. You know, one of my favorite proteins and pretty much everyone who who works in there, I know who I am.
+01:40:02
+I know who works with proteins. They always have their favorite proteins.
+01:40:08
+So one of my favorite proteins are my favorite proteins. The one that they worked when I was a postdoc is a so-called synaptic density, 95 bisdee, 95 protein. So it's it's one of the key actors in in the majority of neurological processes at the molecular level. So it's a and it essentially it's a it's a key player. In the post synaptic density, so this is the crucial part of this synapse where a lot of this chemical processes are happening.
+01:40:45
+So it's it has five domains of life, protein dimensions to pretty large proteins. Think 600 something amino acids.
+01:40:58
+But, you know, the way it's organized itself, it's flexible. Right? So it acts as a scaffold. So it is used to bring in other proteins. So they start acting in the orchestrated manner. Right. So and the type of the shape of this protein, it's in the way there are some stable parts of this protein, but there are some flexible and this flexibility is built in into the plot in order to become sort of this multifunctional machine.
+01:41:36
+So do you think that kind of thing is also learnable through the alpha fold to kind of approach?
+01:41:42
+I mean, the time will tell. Is it another level of complexity? Is it is it like how big of a jump in complexity is the whole thing? To me, it's it's yet another level of complexity, because when we talk about protein protein interactions and there is actually a different challenge for this called Kapre. And so that is focused specifically on macro molecular interactions, protein, protein, DNA, etc..
+01:42:11
+So but it's you know. There are different mechanisms that govern mycar interactions and that need to be picked up by a machine learning algorithm, interestingly enough, we actually we participated for a few years in this competition. We typically don't participate in competitions.
+01:42:38
+I don't know. I don't have enough time, you know, because it's very intensive. It's it's a very intensive process.
+01:42:46
+But we participated back in, you know, about 10 years ago or so and the way we entered this competition.
+01:42:55
+So we design a scoring function. Right. So the function that evaluates whether or not your protein protein interaction is supposed to look like experimentally solved. Right. So the scoring function is very critical part of the of the model prediction.
+01:43:12
+So we design it to be a machine learning. And so it was one of the first machine learning based function used in Kapre.
+01:43:23
+And, you know, we essentially learned what should contribute.
+01:43:29
+What are the critical components contributing into the protein protein interaction?
+01:43:33
+So this could be converted into a learning problem and thereby could be. It could be learned?
+01:43:38
+I believe so, yes.
+01:43:40
+Do you think Alpha Falta or something similar to it from deep mined or somebody else will be will result in a Nobel Prize or multiple Nobel Prizes. So like the, you know, obvious and maybe not. So obviously you can't give a Nobel Prize to the computer program.
+01:44:01
+You, at least for now, give it to the designers of that program. But is do you see one or multiple Nobel Prizes where Alpha Fold two is like a large percentage of what that prize is given for? Would it lead to discoveries at the level of Nobel Prizes? I mean, I think we are definitely destined to see the Nobel Prize becoming sort of to be evolving with the evolution of science and the evolution of science is such that it now becomes like really multifaceted, right.
+01:44:41
+Where you you don't really have, like, a unique discipline. You have sort of the a lot of cross disciplinary talks in order to achieve sort of, you know, really big advancements, you know, so I think.
+01:44:59
+You know, the computational methods will be acknowledged in one way or another and in as a matter of fact, you know, they were first acknowledged back in 2013, right.
+01:45:13
+Where, you know, the first three people were, you know, awarded the Nobel Prize for the product for study of the protein folding. Right. The principle. And, you know, I think all three of them are computational by physicists. And so, you know, that I think is is in the voidable. You know, it will come with the time, the fact that. Alpha foaled. And similar approaches, because, again, it's a matter of time that people will embrace this principle and we'll see more and more such, you know, such thoughts coming into play.
+01:45:59
+But, you know, this matters will be critical in in a scientific discovery. No, no doubts about it. On the engineering side, maybe a dark question, but do you think it's possible to use these machine learning methods to start to engineer proteins? And the next question is something quite a few biologists are against. Some are for for study purposes is to engineer viruses. Do you think machine learning like something like Alpha could be used to engineer viruses?
+01:46:37
+So to answering the first question, you know, it has been, you know, a part of the research in the protein science.
+01:46:45
+The protein design is, you know, is a very prominent areas of research. Of course, you know, one of the pioneers is David Baker and the Rosetta algorithm that, you know, essentially was doing the Denovo design and was used to design new proteins and design of proteins means design a function. So like when you design a protein, you can control. I mean, the whole point of the protein with the protein structure comes a function like it's doing something right.
+01:47:17
+So you can design different things.
+01:47:19
+So you can. Yeah. So you can. Well, you can look at the proteins from the functional perspective. You can also look at the proteins from the structural perspective. Right. So the structural building blocks. So if you want to have a building block of a certain shape, you can try to achieve it. Yes. By introducing a new sequence and predicting, you know, how it will fold.
+01:47:40
+So so with that, I mean, it's a natural one of the natural applications of these algorithms now talking about engineering a virus with machine learning, with machine learning.
+01:47:59
+Right. So, so. Well, you know. So luckily for us, I mean, we don't have that much data right here.
+01:48:10
+We actually right now, one of the projects that we are going on in the lab is we're trying to develop a machine learning algorithm that determines the whether or not the current strain is pathogenic and the current strain of the coronavirus of the writing of the virus.
+01:48:29
+I mean, so there are applications to coronaviruses because we have strains of sars-cov-2, also sars-cov-2 murse that are pathogenic, but we also have strains of other coronaviruses that are not pathogenic in the common cold viruses and, you know, some other ones. Right.
+01:48:48
+So, so pathogenic meaning spreading pathogenic means actually inflicting damage. Correct. There are also some, you know, seasonal versus pandemic strain of influenza. Right. And to determining the what are the molecular determinant. Right. So that are built in into the protein sequence, into the gene sequence.
+01:49:13
+So and whether or not the machine learning can determine those those components.
+01:49:21
+Right. Oh, interesting. So like using machine learning, that's really interesting to to given the input is like what the sequence, the sequence and then determine if this thing is going to be able to do damage to to the biological system. Yeah. So, so good machine learning.
+01:49:40
+You're saying we don't have enough data for that.
+01:49:42
+We I mean for for this specific one. We do. We might actually have to back up on this because we still in the process. There was one work that appeared in Bierko by Eugene Koonin, who is one of these pioneers in in evolutionary genomics. And they tried to look at this. But, you know, the methods were sort of standard, you know, supervised learning methods. And now the question is, you know, can you, you know, advance it further by using, you know, not so standard methods, you know?
+01:50:21
+So there's obviously a lot of hope in in transfer learning where you can actually try to transfer the information that the machine and dance about the proper protein sequences.
+01:50:33
+Right.
+01:50:34
+And, um, you know, so so there is some promise in going this direction.
+01:50:40
+But if we have this, it would be extremely useful because then we could essentially forecast the potential mutations that would make the current strain more or less pathogenic, anticipate them from a vaccine development for the treatment, anti antiviral drug development, that that would be a very crucial task. But you could also use that system to then say how would we potentially modify this virus to make it more pathogenic? That's true.
+01:51:12
+That's true. I mean, you know. The again, the hope is, well, several things, right? So one is that, you know, it's even if you design a, you know, a sequence, right. So to carry out the actual experimental biology to ensure that all the common components are working, you know, is is a completely different mathematical process. Yes. Than, you know, we've seen in the past. The could be some regulation of the moment.
+01:51:50
+The scientific community recognizes that it's now becoming no longer a sort of a fun puzzle to, you know, for machine learning.
+01:51:59
+Could be a. Well, yes. So then there might be some regulation. So I think back in, what, 2015, there was there was the issue on regulating the research on on influenza strains. Right. That there were several groups, you know, used sort of the mutation analysis to to determine whether or not this strain will jump from one species to another. And I think there was like a half a year or more moratorium on on on the research on on the paper published until, you know, scientists, you know, analyzed it, then decided that it's actually safe.
+01:52:39
+I forgot what that's called. Something a function test and function is, again, a function. Yeah. Again, a function. Lots of function. That's right.
+01:52:47
+So it's it's like let's watch this thing mutate for a while to see like to see what kind of things we can observe. I guess I'm not so much worried about that kind of research that there's a lot of regulation and if it's done very well and with confidence and seriously, I am more worried about kind of this. You know, the the underlying aspect of this question is more like 50 years from now. Speaking to the Drake Equation, one of the parameters in the Drake equation is how long civilizations last, and that's that seems to be the most important value, actually, for calculating.
+01:53:27
+If there's other intelligent civilizations out there, that's where there's most variability. Assuming like if life if that percentage that life can emerge is like not zero, like if we're a super unique, then it's the how long we last is basically the most important thing, something from from a selfish perspective, but also from a Drake Equation perspective. I'm worried about our civilization. Last thing. And you kind of think about all the ways in which machine learning could be used to design greater weapons of destruction.
+01:54:07
+Right.
+01:54:08
+And I mean, one way to ask that, if you look sort of 50 years from now, 100 years from now, would you be more worried about natural pandemics or engineered pandemics? Like, who's who's the better designer of virus's nature or humans, if we look down the line, I think in my view I would still be worried about the natural pandemics simply because I mean the capacity.
+01:54:40
+Of the nature producing, yeah, it does a pretty good job, right? Yes, and the motivation for using virus engineering viruses for as a weapon is a weird one because maybe you can correct me on this, but very it seems very difficult to target a virus.
+01:54:58
+Right. The whole point of a weapon, the way a rocket works is if a starting point, you have an endpoint and you're trying to hit a target, to hit a target with a virus is very difficult. It's basically just right. It hits the target would be the human species.
+01:55:15
+And yeah, I have I have a hope in us. I'm forever optimistic that we will not there's no there's insufficient evil in the world to lead that to that kind of destruction.
+01:55:27
+Well, you know, I also hope that I mean, that's what we see. I mean, with the way we are getting connected, the world is getting connected. I think it is. Helps for the world to become more transparent. Yeah, so so the information spread is, you know, I think it's one of the key things for the for the society. To be calm, more balanced, yeah, and whether or not this is something that people disagree with me on, but I do think that the kind of secrecy that governments have.
+01:56:06
+So you're kind of speaking more to the other aspects, like research community being more open, companies are being more open.
+01:56:15
+Government is still like we're talking about like military secrets. Yeah, I think I think military secrets of the kind that could destroy the world will become also a thing of the 20th century and become more and more open. Yeah, I think nations will lose power in the 21st century. I lose sufficient power to secrecies. Transparency is more beneficial than secrecy. But of course, it's not obvious. Let's hope so. Let's hope so.
+01:56:46
+That that, you know, the the the governments will become more transparent. What so we last talked, I think, in March or April. What have you learned? How is your philosophical, psychological, biological worldview changed since then? Or you've been studying it nonstop from computational biology perspective, how is your understanding and thoughts about this virus changed over those months from the beginning to today? One thing that I was really amazed at, how efficient the scientific community was.
+01:57:26
+I mean, and, you know, even just judging on on this very narrow domain of protein structure, understanding the structural characterisation of this virus from the components point of view of the whole virus point of view.
+01:57:45
+You know, if you look at SARS, right, the the something that happened, you know, or less than 20, but close enough 20 years ago.
+01:57:58
+And you see what you know when it happened, you know, what was sort of the response by the scientific community? You see that the structure characterizations did the cure, but it took several years. Right now, the things that took several years, it's a matter of months. Right. So so we we see that, you know, the research pop up. We are at the unprecedented level in terms of the sequencing. Right.
+01:58:29
+Never before we had a single virus sequenced so many times, you know, so which allows us to actually to trace very precisely the sort of the evolutionary nature of this virus, what happens. And it's not just the you know, this virus independently of everything is, you know, it's the you know, the sequence of this virus linked Anker's to the specific geographic place to specific people, because, you know, our genotype influences also the evolution of this.
+01:59:11
+You know, it's always the host pathogen evolution that that, you know, cures it because we also had a lot more data about so that the spread of this virus, not maybe. Well, it'd be nice if we had it for like contact tracing purposes for this virus. But it would be also nice if we had it for the study, for future viruses to be able to respond and so on. But it's already nice that we have geographical data and the basic data from individual humans.
+01:59:41
+Yeah, exactly.
+01:59:42
+Right now I think contact tracing is is is obviously a key component in understanding the spread of this virus. There is also there is a number of challenges. Right. So XPrize is one of them.
+01:59:56
+We we you know, just recently the, you know, took a part of this competition. It's the prediction of the of the number of infections in different regions.
+02:00:12
+So, you know, obviously the data is the main topic in those predictions.
+02:00:19
+Yeah. But it's still the data. I mean, that's that's a competition. But the data is weak.
+02:00:27
+And the training, like it's great, it's much more than probably before, but like it would be nice if it was like really rich. I talked to Michael Mina from, uh, from Harvard. And he dreams that the community comes together with, like a weather map to where viruses. Right. Like really high resolution sensors on like how from person to person, the viruses that travel all the different kinds of viruses. Right. Because there's there's there's a ton of them.
+02:00:57
+And then you'll be able to tell the story that you've spoken about of the evolution of these viruses like day to day, you take actions that are occurring. I mean, that'll be fascinating just from perspective study and from the perspective of being able to respond to future pandemics. That's ultimately what I'm worried about.
+02:01:17
+Um, people love books. Is there is there some three or whatever number of books, technical fiction, philosophical, that that brought you joy in life, had an impact on your life and maybe some that you would recommend others.
+02:01:34
+So I'll give you three very different books. And I also have a special runnerup.
+02:01:39
+And the honorable mention is, yeah, I wouldn't I mean, it's it's an audio book and that's that's yeah. There's some specific reason behind it. So, you know, so the first book is something that sort of impacted my earliest stage of life and I probably am not going to be very original here.
+02:01:59
+It's Bulgakov Master and Margarita. So that's probably, you know, well, not for a Russian, maybe it's not super original, but it's you know, it's a really powerful book for even in English. So I read it in English. So it is incredibly powerful.
+02:02:14
+And I mean, it's the way it ends, right. So is I still have goosebumps when I read the very last sort of the it's called prologue where it's just so powerful. What impact did it have on you? What ideas? What insights did you get from it?
+02:02:32
+I was just taken by, you know, by the the fact that. You have those parallel lives apart from many centuries, right? And somehow they they got sort of intertwined into one story. And and that, to me, was fascinating and, you know, of course, the the romantic part of this book is like it's not just, you know, romance.
+02:03:04
+It's like the romance empowered by sort of magic. Right.
+02:03:08
+And that and maybe on top of that, you have some irony, which in The Voidable writes, because it was that, you know, the Soviet time was very is very deeply Russian. So that's the the with the humor, the pain, the love, all of that is one of the books that kind of captures something about Russian culture that people outside of Russia should probably read.
+02:03:36
+What's what's the success of?
+02:03:37
+So the second one is, again, another one that it happened. I read it later in my life. I think I read the first time when I was a a graduate student. And that's the Solzhenitsyn's cancer world, that is. Amazingly powerful book is what is it about? It's about I mean, essentially based on on, you know, Solzhenitsyn was diagnosed with cancer when he was reasonably young and he he made a full recovery. But, you know, so so this is about a person who was sentenced for life in one of these, you know, camps.
+02:04:23
+And he had some cancer. So he was, you know, transported back to one of this Soviet republics, I think, you know, South Asian republics.
+02:04:36
+And the the book is about. You know his experience. Being a prisoner, being a you know, a patient in the cancer clinic, in a cancer ward surrounded by people, many of which die. Right, but. In a way, you know, the way it reads, I mean, first of all, later on I read the accounts of the of the doctors who describe these the experiences, you know, in the book by the patient as as incredibly accurate.
+02:05:22
+I saw so know, I read that there was some doctors saying that, you know, every single doctor should read this book to understand what the patient feels. But, you know.
+02:05:35
+Again, as many of the soldiers need Solzhenitsyn's books, it has multiple levels of complexity and obviously the the you know, if you look above. The cancer and the patient, I mean, the the tumor that was growing and then disappeared in the in his, you know, in his body with some consequences.
+02:06:00
+I mean, this is, you know, allegorically the Soviet and, you know, and he actually he he you know, when he was asked, he said that this is what make him think about this, you know, how to combine this experience with him being a part of the, you know, of the Soviet regime also being a part of the of the you know, of someone sent to the to the gulag camp.
+02:06:30
+Right. And also someone who had cancer, who experienced cancer in his life. You know, the the Gulag Archipelago and this book, these are the works that actually made him, you know, a Nobel Prize.
+02:06:45
+But, you know, to me, I've you know, I've read other books by Solzhenitsyn.
+02:06:54
+This one is to me is the most powerful one.
+02:06:57
+And by the way, both this one and the previous one, you write in Russian. Yes. Yes. So now there is the third book is is an English book, and it's completely different.
+02:07:08
+So so, you know, we're switching gears completely. So this is the book, which it's not even a book.
+02:07:15
+It's a it's an essay by Jonathan Newman. I called The Computer and the Brain. And that was the first the book he was writing, knowing that he he was dying of cancer.
+02:07:30
+So so the book was released back. It's a very thin book. Right. But the the power, the intellectual power in this book, in this essay is incredible.
+02:07:44
+I mean, you probably know that for no one is considered to be one of the biggest thinkers to be the intellectual power was incredible. Right. And you can actually feel this power in this book where, you know, the person is writing knowing that he will be you know, he will die if the book actually got published only after his death back in 1958. He died in 1957.
+02:08:11
+And but so so he tried to put as many ideas that, you know, he still, you know, hadn't realized. And, you know, so so this book is very difficult to read because, you know, every single paragraph is just compact, you know, is filled with this ideas and, you know, the ideas.
+02:08:38
+Incredible, you know, nowadays, you know, so so he tried to put the parallels between the brain computing power, the neural system and the computers. You know, as they were last year.
+02:08:53
+He was working on like fifty seven, fifty seven. So that was right during his when he was diagnosed with cancer. And he was essentially.
+02:09:02
+Yeah, he's one of those there's a few people mentioned I think, and witness another that like everybody, everyone I meet them, they say he's just an intellectual powerhouse. Yes.
+02:09:15
+OK, so who's the honorable man? And this is I mean, the reason I put it sort of in a separate section, because this is a book that I reasonably listen recently listened to. So so it's an audio book. And this is the book called Lab Girl by Hope Jahren. So Hope Jane is she's a scientist.
+02:09:39
+She's a chemist that essentially studies the fossil plants. And so she uses the fossil and the chemical analysis to understand what was the climate. Back in, you know, in thousand years, hundreds of thousands of years ago, and so. Something that incredibly touched me by this book, it was narrated by the author. Yes. And it's incredibly personal story, incredibly so certain parts of the book, you could actually hear the author crying. And that to me, I mean, I never experienced anything like this, you know, reading the book, but it was like, you know, the the connection between you and the author.
+02:10:35
+And I think this is you know, this is really a must read.
+02:10:40
+But even better, I must listen to audio book for anyone who wants to learn about sort of, you know, accademia science research in general, because it's a very personal account about her becoming a scientist.
+02:11:01
+So we're just before New Year's. You know, we've talked a lot about some difficult topics of viruses and so on. Do you have some exciting things you're looking forward to in twenty, twenty one?
+02:11:17
+Some New Year's resolutions may be silly or fun, um, or something very important and fundamental to the world of science or something completely unimportant. Hmm.
+02:11:30
+Well well, I'm I'm definitely looking forward to towards, you know, things becoming normal.
+02:11:38
+Right. So, yes. So I really miss traveling.
+02:11:43
+Every summer I go to a international summer school is called the School for Molecular Theoretical Biology.
+02:11:53
+It's held in Europe and it's organized by very good friends of mine. And this is a school for gifted kids from all over the world. And they're incredibly bright. It's like every time I go there, it's like, you know, it's it's the highlight of the year.
+02:12:10
+And you couldn't make it this August. So we we did this school remotely, but it's different. It's awesome. I am definitely looking for it next August coming there.
+02:12:24
+I also mean, you know, one of the one of my personal resolutions, I realized that, you know, being in, you know, in the House and working from from home, you know, I realized that that actually.
+02:12:39
+I apparently missed a lot, you know, spending time with my family, believe it or not. So you typically, you know, with all the research and, you know, and teaching and everything related to the academic life, I mean, you get distracted.
+02:13:01
+And so so, you know, you don't feel that, you know, the fact that you are away from your family doesn't affect you because you are naturally distracted by other things. And, you know, this time I realized that, you know, that that's so important is to spend your time with the with the family, with your kids.
+02:13:24
+And so that that would be my New Year's resolution in actually trying to spend as much time as possible even when the world opens up.
+02:13:34
+Yeah, that's a that's a beautiful message. It's a beautiful reminder. I asked you if if there's a Russian poem you could read that I could force you to read. And he said, OK, fine, sure.
+02:13:47
+I do do my reading. And you're like you said that no paper needed. So no. So, yes, this poem was written by my namesake, another Dmitri, Dmitry Campbellfield, and is a you know, it's a recent poem and it's it's called Sorcerous Vidmar in Russian or actually Caldonia.
+02:14:16
+So that's sort of another sort of connotation of sorcerous, which and I really like it.
+02:14:22
+And it's one of just a handful of poems I actually can recall by heart. I also have a very strong association when they read this poem with M. Marguerita, the main female character, Marguerita.
+02:14:41
+And also it's you know, it's about you know, it's happening about the same time we're talking now. So around New Year, around Christmas. You mind reading it in Russian? I'll give it a try. We believe you, Billy Zeeb billion glia, not US participation grad off the resume, their little Unlimitedly Zakiyah at the University of. Pathogenic epigenome with Riscoe Viator, really no good news, Schary, you had last night, very severe called USQUE give you douchy, your crutching smeary.
+02:15:25
+Tactic with illegal as very Soulja Boy, Kamus Paschalis, blogger that will get off to gooseflesh, disagreed. Have a look at that. NAPO Gustave Serialist for a new NOIA redressal of Uraba will be gulps to be purchased with. Trejo is the Millionaire, The Canyon, the Cuba Stober.
+02:15:48
+Cordery is a comb area Bronk routine that usually Janah preservationist Emilia swingman that cut and similarly lethality vla vulgar Billy Zubia Bilinga. That's beautiful. I love how it captures a moment of longing.
+02:16:09
+And maybe love even yes, to me, it has a lot of meaning about, you know, this something that is happening, something that is far away but still very close to you.
+02:16:25
+And, yes, it's the winter. There was something magical about winter is a..
+02:16:31
+What is the one? I don't know. I don't know how to translate it, but a kiss in winter is interesting. Lips and winter and all that kind of stuff. As beautiful Russian as a way as a reason. Russian poetry just I'm a fan of poetry in both languages, but English doesn't capture some of the magic that Russian seems to. So thank you for doing that. That was awesome. Dmitri is great to talk to you again. Your arm is contagious.
+02:17:01
+How much you love what you do, how much you love life. So I really appreciate you taking the time to talk to them.
+02:17:07
+And thank you for having me. Thanks for listening to that conversation with Demetri Korkin and thank you to our sponsors Brave Browsr Natsui Business Management Software, Magic Spoon, low carb cereal and a sleep self cooling mattress. So the choices browsing privacy, business success, healthy diet, a comfortable sleep. Choose wisely my friends and if you wish click the sponsored links below to get a discount and to support this podcast. Now let me leave you with some words from Jeffrey Eugenides.
+02:17:42
+Biology gives your brain life, turns it into a mind. Thank you for listening and hope to see you next time.

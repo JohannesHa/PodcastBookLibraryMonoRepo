@@ -1,0 +1,926 @@
+00:00:00
+The following is a conversation with Brian Kernahan, a professor of computer science at Princeton University. He was a key figure in the computer science community in the early days, alongside Unix creators Ken Thompson and Dennis Ritchie. He co-authored the C programming language with Dennis Ritchie, the creator of C, and has written a lot of books on programming, computers and life, including the practice of programming, the go programming language and his latest Unix A History and a memoir.
+00:00:34
+He co created the text processing language used by Linux folks like myself. He co designed ample and algebraic modeling language that I personally love and have used a lot in my life for large scale optimization.
+00:00:49
+I think I can keep going for a long time with his creations and accomplishments, which is funny because given all that, he's one of the most humble and kind people I've spoken to on this podcast. Quick summary of the ads to new sponsors, the amazing self cooling ET Sleep Mattress and Rakan earbuds. Please consider supporting the podcast by going to a sleep dotcom slash leks and going to buy recontact leks click the links by the stuff. It really is the best way to support this podcast and the journey I'm on.
+00:01:29
+If you enjoy this thing, subscribe on YouTube. Review Five thousand app, a podcast supported on Patrón or connect with me on Twitter. Àlex Friedemann. As usual, I'll do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. This show is sponsored by a sleep and it's incredible pod pro mattress that you can check out at 8:00, sleep dot com slash legs to get two hundred dollars off the mattress, controls temperature with an app and can cool down to as low as 55 degrees.
+00:02:03
+Research shows the temperature has a big impact on the quality of our sleep. Anecdotally has been a game changer for me. I love it. The PaPeRo is packed with sensors that track heart rate, heart rate variability and respiratory rate, showing it all on their app once you wake up. Plus, if you have a partner, you can control the temperature of each side of the bed. I don't happen to have one, but the sleep app reminds me I should probably get on that.
+00:02:31
+So, ladies, if a temperature controlled mattress isn't a good reason to apply, I don't know what is the apps health metrics are amazing, but the cooling alone is honestly worth the money. As some of you know, I don't always sleep, but when I do, I choose for a sleep pod prone mattress. Check it out, a sleep dotcom flex to get two hundred dollars off. This show is also sponsored by Rakan Earbuds, Get them at by Rakan Dotcom's Leks.
+00:03:05
+They have quickly become a main method of listening to podcasts, audio books and music, when I run, do the push ups and pull ups that I've begun to hate at this point or just living life, in fact, I often listen to brown noise with these. When I'm thinking deeply about something, it helps me focus the mind. They're super comfortable pair easily great sound, great bass, six hours of play time in fact, for fun. I have one of the earbuds in now and I'm listening to Europa by Santana, probably one of my favorite guitar songs.
+00:03:39
+It kind of makes me feel like I'm in a music video, so they told me to say that a bunch of celebrities use these like Snoop Dogg, Melissa Etheridge and Khateeb. I don't even know Khateeb is. But her earbud game is on point to mention celebrities actually care about, I'm sure of Richard Feynman was still with us. He'd be listening to the Joe Rogan experience with Rick Ear Buds. Get them at Byrock on dotcom slash Lex, it's how they know I sent you and increases the chance they'll support this podcast in the future.
+00:04:14
+So for all of the sponsors, click all of the links. It really helps this podcast. And now here's my conversation with Brian again.
+00:04:42
+Eunuchs started being developed 50 years ago and more than 50 years ago. Can you tell the story like you describe in your book of how the universe was created?
+00:04:52
+Huh? If I can remember that far back, it was some while ago.
+00:04:57
+So I think the gist of it is that at Bell Labs in 1969, there were a group of people who had just finished working on the MultiChoice project, which was itself a follow on to success so we can go back sort of an infinite regress in time. But the success was a very, very, very nice time. Sharing system was very nice to use. I actually used it that summer. I spent in Cambridge in 1966. What was the hardware there?
+00:05:25
+So what's the operating system? Was the hardware there? What's the CTS look like?
+00:05:29
+So Seijas has looked like kind of like a standard timesharing system. Certainly at the time it was the only timesharing of no.
+00:05:36
+Let's go back to the basic what's the time for. OK, in the beginning was the word and the word and there was timesharing systems. Yeah.
+00:05:44
+If we go back into, let's call it the 1950s and early 1960s, most computing was done on very big computers, physically big, although not terribly powerful by today's standards that were maintained in very large rooms.
+00:05:59
+And you used things like punch cards to write programs on talk to them so you would take a deck of cards, write you program on it, send it over a counter, read it to an operator, and some while later back would come something that said, oh, you made a mistake and then you'd recycle. And so it's very, very slow. So the idea of time sharing was that you take basically that same computer, but connect to it with something that looked like an electric typewriter that could be a long distance away.
+00:06:28
+It could be close. But fundamentally, what the operating system did was to give each person who was connected to it and wanting to do something, a small slice of time on to do a particular job.
+00:06:42
+So I might be editing a file. So I would be typing. And every time I had a keystroke, the operating system would wake up and said, oh, he typed character, let me remember that.
+00:06:50
+Then he'd go back to doing something else would be going around and around a group of people who were trying to get something done, giving each a small slice of time and giving them each the illusion that they pretty much had the whole machine to themselves and hence time sharing that is, sharing the computing time resource of the computer among a number of people who are doing it without the individual people being aware that there's others.
+00:07:15
+In a sense, the illusion, the feeling is that the machine is your own.
+00:07:19
+Pretty much that was the idea. Yes. You had if it were well done and if it were fast enough and other people were doing too much, you did have the illusion that you had the whole machine to yourself and it was very much better than the punch card model. And so access the compatable timesharing system was, I think arguably the first of these it was done and I guess technically 64 or something like that. It ran an IBM 1794, slightly modified to have twice as much memory as the norm.
+00:07:49
+It had two banks of 32 words instead of one.
+00:07:54
+So two words each word was thirty six bits of call it about 150 kilobytes times two. So by today's standards, that's down in the noise. At the time that was a lot of memory and memory was expensive.
+00:08:10
+So ZZZZZ was just a wonderful environment to work on. It was done by people that Mittie, led by Fernando CAPATO Korby, who died just earlier this year, and a bunch of other folks.
+00:08:24
+So I spent the summer of 66 working on that, had a great time, meant a lot of really nice people.
+00:08:29
+And indirectly, I knew of people at Bell Labs who were also working on a follow on to success that was called MultiChoice.
+00:08:41
+The MultiChoice was meant to be the system that would do everything that access did, but do it better for a larger population, all the usual stuff.
+00:08:48
+Now, the actual time sharing, the scheduling, how much what's the algorithm that performs the scheduling? What's that look like? How much magic is there? What are the metrics? How does it all work in the beginning?
+00:09:01
+So the answer is, I don't have a clue. I think the basic idea is nothing more than who all wants to get something done. Suppose that things are very quiet in the middle of the night, then I get all the time that I want. Suppose that you and I are contending at high noon for something like that. Then probably the simplest algorithm is Round-Robin one that gives you a bit of time, gives me a bit of time and then we could adapt to that, like what are you trying to do?
+00:09:25
+Or you text editing or are you compiling or something? And we might adjust the schedule according to things like that.
+00:09:32
+Okay, so MultiChoice was trying to just do some of the cleaning it up a little bit.
+00:09:37
+What was it was meant to be much more than that. So MultiChoice was the multiplexed information and. Puting service, and it was meant to be a very large thing that would provide computing utility, something that where you could actually think of it as just a plug in the wall service, sort of like cloud computing today. Yeah, same idea, but 50 odd years earlier. And so what MultiChoice offered was a richer operating system, environment, piece of hardware that was better designed for doing the kind of sharing of resources and presumably lots of other things.
+00:10:13
+Do you think people at that time had the dream of what cloud computing is starting to become now, which is computing is everywhere that you can just plug in almost, you know, and you never know how the magic works. You just kind of plug in and your little computation needs to perform and it does it. Was that the dream?
+00:10:32
+I don't know whether that was the dream. I wasn't part of it at that point. Remember, I was an intern for summer.
+00:10:36
+But my sense is, given that it was over 50 years ago. Yeah. They had that idea that it was an information utility, that it was something where if you had a computing task to do, you could just go and do it. Now, I'm betting that they didn't have the same view of computing for the masses.
+00:10:55
+Let's call it the idea that, you know, your grandmother would be shopping on Amazon. I don't think that was part of it. But if your grandmother were a programmer, it might be very easy for her to go and use this kind of utility.
+00:11:08
+What was your dream of computers at that time? What did you see as the future of computers? Could you have predicted what computers are today, Essence?
+00:11:16
+Oh, short answer. Absolutely not. I have no clue. I'm not sure I had a dream. It was a dream job in the sense that I really enjoyed what I was doing. I was surrounded by really, really nice people. Cambridge, a very fine city, living in the summer, less so in the winter when it snows. But in the summer it was a delightful time. And so I really enjoyed all of that stuff. And I learned things.
+00:11:37
+And I think the good fortune of being there for summer led me then to get a summer job at Bell Labs the following summer.
+00:11:45
+And that was kind of useful for the future.
+00:11:48
+So there's Bell Labs is this magical, legendary place. So first of all, whereas Bell Labs and. Can you start talking about that journey towards Eunuch's and Bell Labs? Yeah, so Bell Labs is physically scattered around at the time, scattered around New Jersey. The primary location was in a town called Murray Hill, or a location called Murray Hill is actually that across the boundary between two small towns in New Jersey called New Providence and Berkeley Heights. Think of it as about 15, 20 miles straight west of New York City and therefore about an hour north of here in Princeton.
+00:12:28
+And at that time, it had a up a number three or four thousand people there, many of whom had PhDs and mostly doing physical sciences, chemistry, physics, materials, kinds of things, but very strong math. And it rapidly growing interest in computing as people realized you could do things with computers that you might not have been able to do before you could replace labs with computers that had worked on models of what was going on.
+00:12:58
+So that that was the essence of Bell Labs. And again, I wasn't a permanent employee there. I was that was another internship. I got lucky.
+00:13:05
+And internships, I mean, if you could just lingering a little bit, what was the what was in the air there? Because some of the the number of Nobel Prizes, the number of Turing Awards and just the legendary computer scientist that come from their inventions, including developments, including Unix, is just as unbelievable. So was there something special about that place?
+00:13:28
+Well, I think there was very definitely something special I mentioned.
+00:13:32
+The number of people is a very large number of people, very highly skilled and working in an environment where there was always something interesting to work on because the goal of Bell Labs, which was a small part of AT&T, which provided basically the country's phone service, the goal of AT&T was to provide service for everybody.
+00:13:50
+And the goal of Bell Labs was to try and make that service keep getting better. So improving service. And that meant doing research on a lot of different things, physical devices like the transistor or fiber optic cables or microwave systems, all of these things the labs worked on.
+00:14:10
+And it was kind of just the beginning of real boom times in computing as well as when I was there.
+00:14:16
+I went there first in 66. So computing was at that point fairly young. And so people were discovering that you could do lots of things with computers.
+00:14:25
+So how was Unix born? So MultiChoice, in spite of having an enormous number of really good ideas, lots of good people working on it, fundamentally didn't live up, at least in the short run. And I think ultimately really ever to its goal of being this information utility, it was too expensive. And certainly what was promised was delivered much too late.
+00:14:48
+And so in roughly the beginning of 1969, Bell Labs pulled out of the project.
+00:14:54
+The project at that point had included MIT Bell Labs and General Electric. General Electric made computers of General Electric was the hardware operation.
+00:15:05
+So Bell Labs realizing this wasn't going anywhere on a time scale they cared about, pulled out of the project. And this left several people with an acquired taste for really, really nice computing environments, but no computing environment.
+00:15:20
+And so they started thinking about what could you do if you were going to design a new operating system that would provide the same kind of comfortable computing access had, but also the facilities of something like MultiChoice sort of brought forward.
+00:15:36
+And so they did a lot of paper design stuff. And at the same time, Ken Thompson found what is characterized as a little used PDP seven, where he started to do experiments with filesystems. Just how do you store information on a computer? An efficient way. And then this famous story that his wife went away to California for three weeks, taking their one year old son and three weeks, and he sat down and wrote an operating system which ultimately became Unix.
+00:16:04
+So software productivity was good in those days as a PDP was the PDP seven cents a piece of hardware?
+00:16:10
+Yeah, it's a piece of hardware. It was one of the early machines made by Digital Equipment Corporation deck, and it was a mini computer so called it had I would have to look up the numbers.
+00:16:24
+Exactly, but it had a very small amount of memory, maybe sixteen k sixteen bit words or something like that.
+00:16:30
+Relatively slow, probably not super expensive. Maybe again making this up I'd have to look it up 100000 dollars or something like that, which is not super expensive enough.
+00:16:40
+That's right. It was expensive.
+00:16:42
+It was enough that you and I probably wouldn't be able to buy one, but a modest group of people could get together. But in any case, in it came out, if I recall, in 1964. So by 1969, it was getting a little obsolete and that's why it was little use. If you can sort of comment, what do you think it's like to write an operating system like that so that process that can run through in three weeks because you are I mean, you're part of that process.
+00:17:09
+You contributed a lot to this early development. So what do you think it takes to do that first step, that first kind of from design to reality and the PDB?
+00:17:22
+Well, let me correct one thing. I had nothing to do with it, so I did not write it. I have never written operating system code.
+00:17:30
+And so I don't know. No operating system is simply code. And this first one wasn't very big, but it's something that lets you run processes of some. But you execute some kind of code that has been written that lets you store information for periods of time so that it doesn't go away when you turn the power off or reboot or something like that.
+00:17:53
+And there's a kind of a core set of tools that are technically not part of an operating system, but you probably need them in this case. Ken wrote in an assembler for the PDP seven that worked. He did a text editor so that you could actually create text. He had the file system stuff that he had been working on.
+00:18:09
+And then the rest of it was just a way to load things, executable code from the file system into the memory, give it control and then recover control when it was finished or in some other way.
+00:18:21
+What was the code written in the primarily the programming language?
+00:18:25
+Was it in Assembly PDP seven assembly that Ken created?
+00:18:30
+These things were assembly language until probably the call it 1973 or 74, something like that.
+00:18:38
+Forgive me if it's a dumb question, but it feels like a daunting task to write any kind of complex system in assembly. Absolutely.
+00:18:48
+It feels like impossible to do any kind of what we think of as software engineering the assembly, because to work on a big picture, sort of. I think it's hard.
+00:18:58
+It's been a long time since I wrote assembly language. It is absolutely true that in some language, if you make a mistake, nobody tells you there are no training wheels whatsoever.
+00:19:06
+And so stuff doesn't work now and you're not ebookers. Well, there could be debuggers, but that's the same problem, right? How do you actually get something that will help you debug it? So part of it is, is an ability to see the big picture.
+00:19:22
+Now, these systems were not big in the sense of today's picture.
+00:19:25
+I see the big picture was in some sense more manageable. I mean, then realistically, there's an enormous variation in the capabilities of programmers. And Ken Thompson, who did that. First one is kind of the singularity, in my experience of programmers. With no disrespect to you or even to me, he's he's into now several leagues removed.
+00:19:48
+I know there's levels. Yes. It's a it's a fascinating thing that there are unique stars in particular in the programming space and in a particular time, you know, at the time, matters to the timing of when that person comes along and the a wife does have to leave. Like there's this weird timing that happens and then all of a sudden something beautiful is created. I mean, how does it make you feel that there's a system that was created in three weeks or maybe you can even say on a whim, but not really.
+00:20:19
+And of course, quickly, that is now you could think of most of the computers in the world run on a Unix like system, right?
+00:20:28
+What what how do you like if you kind of assume from the alien perspective, if you're just observing Earth, that also in these computers took over the world and they started from this little initial seed of Unix, how does that make you feel?
+00:20:43
+It's quite surprising. And you asked earlier about prediction. The answer's no. There's no way you could predict that kind of evolution. And I don't know whether it was inevitable or just a whole sequence of blind luck.
+00:20:56
+I suspect more of the latter.
+00:20:58
+And so I look at it and think, gee, that's kind of neat.
+00:21:04
+I think the real question is what they can think about that, because he's the guy arguably from whom it really came, you know, tremendous contributions from Dennis Ritchie and then others around in that Bell Labs environment. But, you know, if you had to pick a single person, that would be Ken.
+00:21:21
+You've written in your book, UNIX, The History and the memoir. Are there some memorable human stories, funny or profound from that on that just kind of stand out?
+00:21:31
+Oh, there's a lot of them, in a sense. And again, it's a question of can you resurrect them in this memory fails.
+00:21:38
+But I think part of it was that Bell Labs at the time was a very special kind of place to work because there were a lot of interesting people and the environment was very, very open and free was a very cooperative environment, very friendly environment. And so if you had an interesting problem, you go and talk to somebody and they might help you with the solution.
+00:21:57
+And and it was a kind of a fun environment to in which people did strange things and often tweaking the bureaucracy in one way or another, rebellious and put in some kinds of ways.
+00:22:12
+In some ways, yeah, absolutely. I think most people didn't take too kindly to the bureaucracy. And I'm sure the bureaucracy put up with an enormous amount that they didn't really want to.
+00:22:23
+So maybe to linger on that a little bit, do you have a sense of what the philosophy that characterizes Unix is the design, not just the initial, but just carried through the years, just being there, being around? What's the fundamental philosophy behind the system?
+00:22:40
+I think one aspect, the fundamental philosophy was to provide an environment that made it easy to write or easier, productive to write programs. So it was meant as a programmer environment.
+00:22:50
+It wasn't meant specifically as something to do some other kind of job. For example, it was used extensively for word processing, but it wasn't designed as a word processing system. It was used extensively for lab control, but it wasn't designed for that. It was used extensively as a front end for big other systems, big dumb systems. But it wasn't designed for that. It was meant to be an environment where it was really easy to write programs a which could be highly productive.
+00:23:17
+And part of that was to be a community. And there's some observation from Dennis Ritchie, I think, at the end of the book that says that that from his standpoint, the real goal was to create a community where people could work as programmers on a system.
+00:23:34
+And I think in that sense, certainly for many, many years, it succeeded quite well at that. And part of that is the technical aspects of because it made it really easy to write programs. People did write interesting programs. Those programs tended to be used by other programmers. And so it was kind of a virtuous circle are of more and more stuff coming up that was really good for programmers.
+00:23:56
+And you were part of that community of programmers. So what was it like writing programs in that early universe? It was a blast.
+00:24:03
+It really was like, you know, I like the program. I'm not a terribly good person. But it was a lot of fun to write code. And in the early days, there was an enormous amount of what you would today, I suppose, call low hanging fruit. People hadn't done things before. And this was this new environment and the the whole combination of nice tools and very responsive system and tremendous colleagues made it possible to write code. You could have an idea in the morning.
+00:24:33
+You could do it, you know, and experiment with it. You could have something limping along that night or the next day. And people would react to it and they would say, oh, that's wonderful, but you're really screwed up here.
+00:24:44
+And and the feedback loop was then very, very short and tight. And so a lot of things got developed fairly quickly that.
+00:24:54
+In many cases still exist today, and I think that was part of what made it fun because programming itself is fun, it's puzzle solving and a variety of ways. But I think it's even more fun when you do something that somebody else then uses, even if they whine about it not working. The fact that they used it is is part of the reward mechanism.
+00:25:15
+And what was the method of interaction, the communication with that feedback loop?
+00:25:20
+I mean, this is before the Internet, certainly before the Internet. It was mostly physical right there.
+00:25:28
+You know, somebody come into your office and say something. So these places are all closed, but like offices are nearby, really lively and interaction. Yeah.
+00:25:36
+Yeah, no, Bell Labs was fundamentally one giant building and most of the people were involved in this unique stuff in two or three quarters and there wasn't room. Oh.
+00:25:45
+How big was it.
+00:25:46
+Probably call it 50 feet by 50 feet, make up a number of that and which had some access to computers there as well as in offices. And people hung out there and had a coffee machine.
+00:26:00
+And so there was it was mostly very physical.
+00:26:03
+We did use email, of course, and but it was fundamentally all for a long time, all on one machine.
+00:26:11
+So there was no need for Internet. It's fascinating to think about what computing would be today with our Bell Labs. It seems so many people being in the vicinity of each other, it's sort of getting that quick feedback working together since so many brilliant people. I don't know where else that could have existed in the world. And given how that came together. Yeah. How does that make you feel that that's that little element of history?
+00:26:40
+Well, I think that's very nice, but in a sense, it's survivor bias. And if it hadn't happened at Bell Labs, there were other places that were doing really interesting work as well. Xerox PARC is perhaps the most obvious one. Xerox PARC contribute an enormous amount of good material. And many of the things we take for granted today in the same way came from Xerox PARC experience. I don't think they capitalized in the long run as much. Their parent company was perhaps not as lucky in capitalizing on this whoknows, but that would.
+00:27:10
+That's certainly another place where there was a tremendous amount of influence. There were a lot of good university activities and it was obviously no slouch in this kind of thing and others as well.
+00:27:24
+So Unix turned out to be open source because of the various ways that AT&T operated and sort of had to. It was the focus was on telephones. So I think that's a mischaracterization in the sense it absolutely was not open source.
+00:27:40
+It was very definitely proprietary licensed, but it was licensed freely to universities in source code form for many years. And because of that, generations of university students and their faculty people grew up knowing about Unix and that there was enough expertise in the community, that it then became possible for people to kind of go off in their own direction and build something that looked Unix like.
+00:28:08
+The Berkeley version of Unix started with that license code and gradually picked up enough of its own code contributions, notably from people like Bill Joy, that eventually it was able to become completely free of any AT&T code.
+00:28:27
+And there was an enormous amount of legal jockeying around this, that in the late, early to late 80s, early 90s, something like that.
+00:28:36
+And then not, I guess the open source movement might have started when Richard Stallman started to think about this in the late 80s.
+00:28:46
+And by 1991, when Torvalds decided he was going to do a Unix like operating system, there was enough expertise that in the community that first he had a target.
+00:28:59
+He could see what to do because the kind of Unix system call interface and the tools and so on were there.
+00:29:07
+And so he was able to build an operating system that at this point, when you say Unix, in many cases what you're really thinking is Linux.
+00:29:15
+Linux.
+00:29:15
+Yeah, but it's funny that from my distant perception, I felt that Unix was open source. Without actually knowing it, but what you're really saying, it was just freely licensed, so it's freely licensed, so it felt open source and because universities are not trying to make money. So there it felt open source in the sense that you can get access if you want it right.
+00:29:37
+And a very, very, very large number of universities had the license and they were able to talk to all the other universities who had the license.
+00:29:44
+And so technically not open, technically belonging to anti pragmatically pretty open.
+00:29:51
+And so there's a ripple effect that all the faculty and students can go up and they're the one throughout the world and permitting that kind of way. So what kind of features do you think makes for good operating system? If you take the lessons of Unix, you said, you know, make it easy for programmers like that seems to be an important one. But also Unix turned out to be exceptionally robust and efficient. Right. So is that an accident when you focus on the programmer or is that a natural outcome?
+00:30:31
+I think part of the reason for efficiency was that it began on extremely modest hardware, very, very, very tiny. And so you couldn't get carried away.
+00:30:41
+You couldn't do a lot of complicated things because you just didn't have the resources, i.e. the processor speed or memory.
+00:30:49
+And so that enforced a certain minimal of mechanisms and maybe a search for generalizations so that you would find one mechanism that served for a lot of different things rather than having lots of different special cases. I think the file system in Unix is a good example of that file system interface in its fundamental form is extremely straightforward, and that means that you can write code very, very effectively for the file system.
+00:31:16
+And then one of those ideas, one those generalisations, is that, gee, that file system interface works for all kinds of other things as well.
+00:31:23
+And so in particular, the idea of reading and writing to devices is the same as reading and writing to a disk that has a file system and then that gets carried further in other parts of the world, processes become.
+00:31:38
+In effect, files in a file system in the Plan nine operating system, which came along, I guess in the late 80s or something like that, took a lot of those ideas from the original Unix and tried to push the generalization even further so that in planning a lot of different resources or file systems, they all share that interface. So that would be one example where finding the right model of how to do something means that an awful lot of things become simpler.
+00:32:05
+And it means, therefore, that more people can do useful, interesting things with them without having to think as hard about it. So you said you're not a very good programmer. You're the most modest human being, OK, but you'll continue saying that I understand how this works, but you do radiate a sort of love for programming. So let me ask, do you think programming is more an art or science is a creativity or kind of rigour?
+00:32:33
+I think it's some of each. It's some combination of some of the art is figuring out what it is that you really want to do. What should that program be? What what would make a good program? And that's some understanding of what the task is, what the people who might use this program want.
+00:32:50
+And I think that's that's art in many respects. The science part is trying to figure out how to do it well.
+00:32:57
+And some of that is a real computer science stuff, like what algorithm should we use at some point? Mostly in the sense of being careful to use algorithms that will actually work properly or scale properly, avoiding quadratic algorithms when a linear algorithm should be the right thing.
+00:33:18
+That kind of more formal view of it.
+00:33:21
+Same thing for data structures, but also it's, I think, an engineering field as well. And engineering is not quite the same as science because engineering, you're working with constraints.
+00:33:32
+You have to figure out not only so what is a good algorithm for this kind of thing, but what's the most appropriate algorithm given the amount of time we have to compute, the amount of time we have to program, what's likely to happen in the future with maintenance? Who's going to pick this up in the future? All of those kind of things that if you're an engineer, you get to worry about, whereas if you think of yourself as a scientist, well, you can maybe push them over the horizon in a way.
+00:33:59
+And if you're an artist, what's that?
+00:34:02
+So just on your own personal level, what's your process like writing a program, say, a small and large sort of tinkering with stuff and you just start coding right away and just kind of evolve iteratively with a loose notion?
+00:34:20
+Or do you plan on a sheet of paper first and then kind of design in what they teach you in the kind of software engineering course as an undergrad or something like that? What's your process like?
+00:34:31
+It's certainly much more the informal incremental. First, I don't write big programs at this point. It's been a long time since I wrote a program that was more than I call it, a few hundred or more lines, something like that. Many of the programs are right are experiments for either something I'm curious about or often for something that I want to talk about in a class. And so those necessarily tend to be relatively small.
+00:34:56
+A lot of the kind of code I write these days tends to be for sort of exploratory data analysis where I've got some collection of data and I want to try and figure out what on earth is going on in it. And for that, those programs tend to be very small. Sometimes you're not even programming, you're just using existing tools like counting things, or sometimes you're writing OK scripts, because two or three lines will tell you something about a piece of data.
+00:35:21
+And then when it gets bigger, well, then I will probably write something in Python because that scales better up to call it a few hundred lines or something like that has been a long time since I wrote programs that were much more than that.
+00:35:35
+Speaking of data exploration and OK, first, what is OK, so AKA's a scripting language that was done by myself, El Eho and Peter Weinberger.
+00:35:47
+We did that originally in the late 70s was a language that was meant to make it really easy to do quick and dirty tasks like counting things or selecting interesting information from basically all text files, rearranging it in some way or summarizing it runs a command on each line of file.
+00:36:08
+And there's it's still exceptionally widely used today. Oh, absolutely. Yeah.
+00:36:13
+It's so simple and elegant, sort of the way to explore data. Turns out you can just write a script that does something seemingly trivial in a single line and that giving you that slice of the data somehow reveals something fundamental about the data. And that keeps that seems to work still.
+00:36:34
+Yeah, it's very good for that kind of thing. That's sort of what it was meant for. I think what we didn't appreciate was that the model was actually quite good for a lot of data processing kinds of tasks and that it's kept going as long as it has, because at this point it's over 40 years old and it's still, I think, a useful tool.
+00:36:53
+And well, this is paternal interest, I guess. But I think in terms of programming languages, you get the most bang for the buck by learning, OK?
+00:37:01
+And it doesn't scale the big programs, but it does pretty, pretty darn well on these little things where you just want to see all the somethings in something.
+00:37:11
+So, yeah, I find I probably write more than anything else at this point.
+00:37:15
+So what kind of stuff do you love about, OK, like is there if you can comment on sort of things that give you joy when you can in a simple program, reveal something about that, it is something that stands out particular features.
+00:37:31
+I think it's mostly the selection of default behaviors that you sort of hinted at it a moment ago.
+00:37:38
+What Arktos is to read through a set of files and then within each file it reads through a each of the lines and then on each of the lines. It has a set of patterns that it looks for. That's your program. And if one of the patterns matches there is a corresponding action that you might perform. And so it's kind of a quadruply nested loop or something like that.
+00:38:02
+And that's all completely automatic. You don't have to say anything about it. You just write the pattern in the action and then run the data by it. And so that paradigm for programming is very natural and effective one. And I think we captured that reasonably well.
+00:38:17
+And it does other things for free as well. It splits the data into fields so that on each line there's fields separated by white space or something. And so it does that for free. You don't have to say anything about it and it collects information as it goes along, like what line are we on? How many fields are there on this line?
+00:38:35
+So lots of things that just make it so that a program which in another language, let's say Python, would be five, 10, 20 lines in alkies, one or two lines.
+00:38:45
+And so because it's one or two lines, you can do it on the shell. You don't have to open up another whole thing. You can just do it right there. And the interaction with the is just directly. Yeah.
+00:38:56
+Is there other shell commands that you love? Over the years, like you really enjoy using oh, crap, that's the only one, yeah, grifter's everything. So grap is kind of what is that a simpler version of OK, I would say in some some sense. Yeah. Right. Because what is grap so grippe is it basically searches the input for particular patterns, regular expressions, technically a certain class and it has that same paradigm that Arktos.
+00:39:25
+It's a pattern action thing, it reads through all the files and then all the lines in each file, but it has a single pattern which is the regular expression you're looking for and a single action print it if it matches.
+00:39:37
+So it's in that sense it's a much simpler version.
+00:39:39
+And you could write crap in ORCA's as a one liner and I use grep probably more than anything else at this point just because it's so convenient and natural.
+00:39:52
+Why do you think it's such a powerful tool? Grap not. Why do you think operating systems like Windows, for example, don't.
+00:40:00
+Have it sort of you can, of course, I use, which is amazing, now there's Windows for Linux so like that which you could basically use all the fun stuff like I can grab inside of windows, but windows naturally, sort of as part of the graphical interface, the simplicity of grep, sort of searching through a bunch of files and just popping up naturally. Why don't you think that why you think that's unique to the Unix and Linux environment?
+00:40:28
+I don't know.
+00:40:29
+It's not strictly unique, but it's certainly focused there.
+00:40:33
+And I think some of it's the weight of history that Windows came from. Ms. Dos, Ms. Dos was a pretty pathetic operating system, although Kaminen and, you know, undoubtedly large number machines. But somewhere in roughly the 90s, Windows became a graphical system. And I think Microsoft spent a lot of their energy on making that graphical interface, what it is. And that's a different model of computing to model of computing that where you point and click and sort of experiment with menus.
+00:41:06
+It's a model.
+00:41:07
+Computing works right rather well for people who are not programmers, just want to get something done, whereas teaching something like the command line to non programmers turns out to sometimes be an uphill struggle.
+00:41:19
+And so I think Microsoft probably was right and what they did. Now, you mentioned whistle or whatever it's called.
+00:41:25
+The next question I wonder, what's is that? I've never actually pronounced the whistle. I like it. I have no idea.
+00:41:33
+But there have been things like that for a long cygwin, for example, which is a wonderful collection of take all your favorite tools from Unix and Linux and just make them work perfectly on Windows. And so that's something that's been going on for at least 20 years, if not longer.
+00:41:47
+And I use that on my one remaining Windows machine routinely because it's for if you're doing something that is batch computing command suitable for command line, that's the right way to do it, because the Windows equivalents are, if nothing else, not familiar to me.
+00:42:04
+But I should I would definitely recommend to people to if they don't use segment to try whistle. Yes. As a I've been so excited that I could use Barthélémy Bash write scripts quickly in windows. It's changed my life.
+00:42:20
+OK, what's your perfect programming setup. What computer. What operating system. What keyboard. What. Ed. Yeah, perfect is too strong a word.
+00:42:30
+It's way too strong a word of what I use by default. I have a at this point a 13 inch MacBook Air which I used because it's kind of a reasonable balance of the various things I need. I can carry it around. It's got enough computing horsepower screens, big enough keyboards, OK? And so I basically do most of my computing on that. I have a big iMac in my office that I use from time to time as well, especially when I need a big screen, but otherwise tends not to be used at much higher ed.
+00:43:05
+I use mostly Sam, which is an Ed that Rob Pich wrote long ago at Bell Labs and that sorry to interrupt.
+00:43:14
+Does that proceed? Why post it? Post dates both V.I. and Emacs. It is derived from Rob's experience with Eddie EnVie de. That's the original Eunuch's Ed. Oh, wow. Dated probably before you were born. So what's that actually what's the history of Ed? Can you briefly? Because I used Emax. I'm sorry to say so. Sorry to come up with that. But what's what's the kind of interplay there? So, yeah.
+00:43:52
+So in ancient ancient times, like call it the first time sharing systems, going back to what you're talking about, there were editors, there was an editor on this that I don't even remember what it was called.
+00:44:03
+It might have been edit where you could type text program text and it would do something or document text.
+00:44:10
+You would save the text, save it, you could edit it.
+00:44:13
+You know, the usual thing that you would get in an editor and Ken Thompson wrote an editor called QED, which was very, very powerful, but these were all totally a command based. They were not most or cursor based because it was before mice and even before cursors, because they were running on terminals that printed on paper.
+00:44:33
+OK, no, no CRT type displays, Lavonia LEDs.
+00:44:38
+And so then when Unix came along, Kinderhook took QED and stripped way, way, way down.
+00:44:45
+And that became an editor that he called it. And it was very simple, but it was a line oriented editor. And so you could load a file and then you could talk about the lines one through the last line and you could, you know, print ranges and lines. You could add text, you could delete text, you could change text, or you could do a substitute command that would change things within a line or within groups of lines.
+00:45:06
+They can work on a parts of a file.
+00:45:07
+Essentially, you could work on any part of it, the whole thing or whatever, but it was entirely command line based and it was entirely on paper.
+00:45:17
+My paper, and that meant that. Yeah, right, real paper. And so if you change the line, you had to print that line using up another line of paper to see what change caused.
+00:45:28
+OK, yeah. So, Wensing, when CRT displays came along. Yeah. Then you could start to use cursor control and you could sort of move where you where on the screen in without reprinting everything printing.
+00:45:44
+And one of there were a number of editors there, the one that I was most familiar with and still use is V.I., which was done by Bill Choi. And so that dates from probably the late 70s as a guess, and it took it full advantage of the cursor controls.
+00:46:02
+I suspected Emax was roughly at the same time, but I don't know. I've never internalized IMEX.
+00:46:08
+So so I use at this point I stopped using idealized can I use VI sometimes and I use Sam when I can.
+00:46:17
+And Sam is available on most systems. It was it is available. You have to download it yourself from typically the plan nine operating system distribution. It's been maintained by people there. And so I get home tonight.
+00:46:30
+I'll try it. It's the S. S fascinating, although my love is with Lisburn Emacs of went into that happy world of stuff.
+00:46:42
+I think it's of things.
+00:46:43
+What religion. Where you brought up. Yeah that's true.
+00:46:45
+That's right. Most of the actual programming I do is C, C++ and Python. But my weird sort of Yeah. My religious upbringing is inless.
+00:46:55
+So can you take on the impossible task and give a brief history of programming languages from your perspective.
+00:47:03
+So I guess you could say programming languages started probably in what, the late 40s or something like that. People used to program computers by basically putting in zeros and ones using something like switches on a console and then or maybe calls and paper tapes, something like that.
+00:47:22
+So extremely tedious, awful, whatever. And so I think the first programming languages were.
+00:47:29
+Relatively crude assembly languages where people would basically write a program that would convert mnemonics like add add into whatever the bit pattern was that corresponded to an ad instruction, and they would do the clerical work of figuring out where things were so you could put a name on a location in a program and the assembler would figure out where that corresponded to when the thing was all put together and dropped into memory.
+00:47:57
+And early on, and this would be the late 40s and very early 50s, there were assemblers written for the various machines that people used. You may have seen in the paper just a couple of days ago, Tony Birchard died. He did this thing in Manchester called the called auto code, a language which I knew only by name. But it sounds like it was a flavor of assembly language, sort of a little higher in some ways.
+00:48:23
+And it replaced a language that Alan Turing wrote, which you put in zeros and ones, but you put it in backwards order because that was hardware worked very hard.
+00:48:31
+That's right. Yeah, that's right. Backwards.
+00:48:35
+So assembly language is then let's call that the early 1950s. And so every different flavor of computer has its own assembly language. So the Ed Sacket, it's in a Manchester had it and the IBM whatever, 1790 or 704 or whatever hit it and so on.
+00:48:51
+So everybody had their own assembly line and assembly languages have a few commands, additions, traction, then branching of some kind if then type of situation. Right.
+00:49:00
+They have exactly in their simplest form at least one instruction per or one assembly language instruction per instruction in the machine's repertoire. And so you have to know the machine intimately to be able to write programs in it. And if you write an assembly language program for one kind of machine and then you say, gee, that's nice, I'd like a different machine, start over. OK, so very bad.
+00:49:23
+And so what happened in the late 50s was people realized you could play this game again and you could move up a level in writing or creating languages that were closer to the way the real people might think about how to write code.
+00:49:37
+And there were, I guess, arguably three or four at that time period. There was Fortran, which came from IBM, which was formula translation meant to make it easy to do scientific and engineering computation is to know that formula.
+00:49:51
+Translation That's what I stood for. I was COBOL, which is the common business oriented language that Grace Hopper and others worked on, which was aimed at business kinds of tasks.
+00:50:01
+There was ALGOL, which was mostly meant to describe algorithmic computations. I guess you could argue Basic was in there somewhere. I think it's just a little later.
+00:50:11
+And so all of those moved the level up.
+00:50:13
+And so they were closer to what you and I might think of as we were trying to write a program and they were focused on different domains, Fortran for formula, translation, engineering computations, let's say COBOL for business, that kind of thing.
+00:50:28
+I'm still used today as Fortran probably. Oh yeah, COBOL too. But the deal was that once you moved up that level, then you let's call it Faulknerian. You had a language that was not tied to a particular kind of hardware because different compiler would compile for different kind of hardware. And that meant two things. It meant you only had to write program once, which was very important. And it meant that you could in fact, if you were a random engineer, physicist, whatever, you could write that program yourself, you didn't have to hire a programmer to do it for you might not be as good as you'd get through a programmer, but it was pretty good.
+00:51:03
+And so it democratized and made much more broadly available the ability to write code.
+00:51:08
+So it puts the power of programming into the hands of people like you. Yeah, anybody who wants who is willing to invest some time in learning a programming language and is not then tied to a particular kind of computer.
+00:51:20
+And then in the 70s you get system programming languages of which C is the survivor and what what a system programming language learning programs that programming languages that would take on the kinds of things that were necessary to write so-called system programs, things like text editors or assemblers or compilers or operating systems themselves, those kinds of things.
+00:51:43
+And Fortran feature rich. They have to be able to do a lot of stuff, a lot of memory management, access processes and all that kind of stuff. They have a process and it's a different flavor.
+00:51:53
+What they're doing. They're much more in touch with the actual machine in it, but in a positive way. That is, you can talk about memory in a more controlled way. You can talk about the different data types that the machine supports in the way and more ways to structure, organize data. And so the system programming languages. There was a lot of effort in that in the call it the late 60s, early 70s iest.
+00:52:19
+I think the only real survivor of that.
+00:52:23
+And then what happens after that? You get things like object oriented programming like.
+00:52:28
+Just because as you write programs in a language like C at some point scale gets to you and it's too hard to keep track of the pieces and there's no guardrails or training wheels or something like that to prevent you from doing bad things. So C++ comes out of that tradition.
+00:52:45
+And so then it took off from there. I mean, there's also a parallel, slightly parallel track with a little bit of the functional stuff with Lisp and so on. But I guess from that point is just an explosion of languages. The Java story, there's the JavaScript, there is all the stuff that the cookies these days are doing with the rest and all that. Yeah. So what's to use here? You wrote a book C programming language. What in C is probably one of the most.
+00:53:12
+Important languages in the history of programming languages. If you kind of look at impact, what do you think is the most elegant or powerful part of see, why did it survive? What did it have such a long lasting impact? I think it found a sweet spot that in of expressiveness that you could rewrite things in a pretty natural way and efficiency, which was particularly important when computers were not nearly as powerful as they are today.
+00:53:42
+Put yourself back 50 years almost in terms of what computers could do. And that's, you know, roughly four or five generations to decades of Moore's Law. Right.
+00:53:54
+So expressiveness and efficiency and I don't know, perhaps the environment that it came with as well, which was Unix. So it meant if you wrote a program, it could be used on all those computers that ran Unix. And that was all of those computers because they were all written in C and that which was Unix, the operating system itself was portable, as were all the tools.
+00:54:15
+So it all worked together again in one of these things where things feed on each other in a positive cycle.
+00:54:23
+What did it take to write sort of a definitive book, probably the definitive book on all of programming, like it's more definitive to a particular language than any other book on any other language, and did two really powerful things, which is popularized the language.
+00:54:39
+And at least from my perspective, maybe you can correct me in second is create a standard. Of how, you know, the how this language is supposed to be used and applied. So what did it take? Did you have those kinds of ambitions in mind when working on that?
+00:54:55
+Is some kind of joke?
+00:54:58
+No, of course not. The next. It's an accident of of timing, skill and just luck.
+00:55:05
+A lot of it is clearly timing was good. Now, Dennis and I wrote the book in 1977 on this.
+00:55:11
+Yeah, right. And at that point, Unix was starting to spread. I don't know how many there were, but it would be dozens to hundreds of Unix systems.
+00:55:20
+And C was also available on other kinds of computers that had nothing to do with Unix.
+00:55:25
+And so the language had some potential and there were no other books on C and Bell Labs was really the only source for it.
+00:55:37
+And Dennis, of course, was authoritative because it was his language and he had written the reference manual, which is a marvelous example of how to write a reference manual reading. Very, very well done. So I twisted his arm until he agreed to write a book and then we wrote a book. And the virtue or advantage, at least I guess, of going first is that then other people have to follow you if they're going to do anything.
+00:56:01
+And I think it worked well because. Dennis was a superb writer, I mean, he really, really did, and the reference manual in that book is his period. I had nothing to do with that at all.
+00:56:15
+So just crystal clear prose. Very, very well expressed.
+00:56:19
+And then he and I wrote most of the expository material, and then he and I sort of did the usual ping ponging back and forth of, you know, refining it.
+00:56:30
+But I spent a lot of time trying to find examples that would sort of hang together and that would tell people what they might need to know. What about the right time that they should be thinking about needing it? And I'm not sure it completely succeeded, but it mostly worked out fairly well.
+00:56:45
+What do you think is the power of example?
+00:56:47
+I mean, you're you're the creator, at least one of the first people to do the Hello World Program, just like the example, if aliens discover our civilization hundreds of years from now, it'll probably be hello world programs just to have broken robot communicating with them with the world.
+00:57:07
+So what? And that's a representative examples of what what do you find powerful about examples?
+00:57:13
+I think a good example will tell you how to do something and it will be representative of you might not want to do exactly that, but you will want to do something that's at least in that same general vein.
+00:57:27
+And so a lot of the examples in the book were picked for these very, very simple, straightforward text processing problems that were typical of Unix. I want to read input and write it out again.
+00:57:40
+There's a copy command. I want to read input and do something to it and write it out again. There's a grip.
+00:57:46
+And so that kind of find things that are representative of what people want to do and spell those out so that they can then take those and see the the core parts and modify them to their taste.
+00:58:02
+And I think that a lot of programming books that I do, I don't look at programming books a tremendous amount these days. But when I do, a lot of don't do that.
+00:58:11
+They don't give you examples that are both realistic and something you might want to do. Some of them are pure syntax.
+00:58:20
+Here's how you add three numbers will come on. I could figure that out. Tell me how I would get those three numbers into the computer and how he would do something useful with them and then how I put them back out again.
+00:58:31
+Neatly formatted, and especially if you follow the example, there is something magical of doing something that feels useful. Yeah, right.
+00:58:38
+And I think it's the attempt is absolutely not perfect. But the attempt in all cases was to get something that was going to be either directly useful or would be very representative of useful things that a programmer might want to do. But within that vein of fundamentally text processing, reading text, doing something, writing text. So you've also written a book on goal language. That admits I worked at Google for a while and I've never used go well, you missed something.
+00:59:11
+Well, I know I've missed something for sure. I mean, so go and rush the two languages that I hear very spoken very highly of, and I wish I would like to try. Well, there's a lot of them. There's Julia. There's there's all these incredible modern languages. But if you can comment before or maybe comment on what do you find, where does go sit in in this broad spectrum of languages? And also how do you yourself feel about this wide range of powerful, interesting languages that you may never even get to try to explore now because of time?
+00:59:48
+So I think so.
+00:59:49
+Go, go first comes from that same Bell Labs tradition in part not exclusively, but two of the three creators, Ken Thompson and Rob Place. Literally the people. Yeah, the people.
+01:00:02
+And then with this very, very useful influence from the European school in particular, the close influence through Robert Greaseman, who was, I guess, the second generation down student at. And so that's an interesting combination of things.
+01:00:20
+And so some ways I go captures the good parts of C. It looks sort of like C. It's sometimes characterized as C for the 21st century.
+01:00:31
+On the surface, it looks very, very much like C. But at the same time, it has some interesting data structuring capabilities.
+01:00:38
+And then I think the part that I would say is particularly useful and again, I'm not a go expert in spite of coauthoring the book, about 90 percent of the work was done by Alan Donovan, my co-author, who is a go expert. But Go provides a very nice model of concurrency. It basically the cooperating, communicating sequential processes that Tony Hawk set forth.
+01:01:06
+Jeez, I don't know, 40 plus years ago.
+01:01:09
+And go routines are, to my mind, a very natural way to talk about parallel computation. And in the few experiments I've done with them, they're easy to write. And typically it's going to work and very efficient as well.
+01:01:24
+So I think that's one place where go stands out that that model of parallel computation is very, very easy and nice to work with.
+01:01:33
+Just to comment on that, do you think she foresaw or the early Unix days for sore threads and massively parallel computation?
+01:01:42
+I would guess not really. I mean, maybe it was seen, but not at the level where it was something you had to do anything about for a long time.
+01:01:52
+Processor's got faster and then processors stopped getting faster because of things like power consumption and heat generation.
+01:02:03
+And so what happened instead was that instead of processors just getting faster, there started to be more of them. And that's where that parallel thread stuff comes in.
+01:02:14
+So if you can comment on the all the other languages that break your heart, then you'll never get to explore them. Or how do you feel? A lot of the full variety?
+01:02:24
+It's not breaking my heart, but but I would love to be able to try more of these languages. The closest I've come is in class that I often teach in the spring here. It's a programming class and I often give I have one sort of small example that I will write in as many languages as I possibly can. I've got it in 20 languages at this point and and that.
+01:02:49
+So I do a minimal experiment with a language just to say, OK, I have this trivial task which I understand the task and it should.
+01:02:56
+It takes fifteen lines, an arc and not much more in a variety of other languages.
+01:03:01
+So how big is it, how fast does it run and what pain did I go through to learn how to do it?
+01:03:08
+And that's a it's like Antec data, right?
+01:03:12
+It's a very, very, very narrowly lead data. I like that. So, yeah, but it's still it's a little sample because you get the I think the hardest step of the programming language is probably the first step. Right. So there you're taking the first step. Yeah. And so my experience with some languages is very positive, like Lua, a scripting language I never used and I took my little program.
+01:03:36
+The program is a trivial format or it just takes in lines of text of varying lengths and it puts a mote in lines that have no more than 60 characters on each line. So I think it was just kind of the flow process in a browser or something. So it's very short program. And in Lua I downloaded Lewine in an hour.
+01:03:57
+I had it working, never having written, lured my life, just going with all my documentation. I did the same thing in Skalla, which you can think of as a. Flavor of Java, equally trivial. I did it in high school, it took me several weeks, but it did run like a turtle and and I did it in Fortran 90.
+01:04:21
+And it was painful, but it worked. And I tried it in Rust and it took me several days to get it working because the model of memory management was just a little unfamiliar to me. And the problem I had with Rust, and it's back to what we were just talking about, I couldn't find good consistent documentation on Rust.
+01:04:38
+Now, this was several years ago and I'm sure things have stabilized. But at the time, everything in the Restoril seemed to be changing rapidly. And so you would find what looked like a working example and it wouldn't work with the version of the language that I had.
+01:04:51
+So it took longer than it should have rushed is a language I would like to get back to, but probably won't. I think one of the issues you have to have something you want to do. And if you don't have something that is the right combination, I want to do it.
+01:05:05
+And yet I have enough disposable time, whatever to make it worth learning a new language at the same time.
+01:05:13
+It's never going to happen. So what do you think about another language of JavaScript that this. Well, let me just sort of comment on what I said when I was brought up, sort of JavaScript was seen as the probably like the ugliest language possible, and yet it's quite arguably quite possibly taking over not just the front and the back end of the Internet, but possibly in the future, taking over everything because they've now learned to make it very efficient.
+01:05:44
+Yeah. And so what do you think about this?
+01:05:46
+Yeah, well, I think you captured a lot of ways when it first came out. JavaScript was deemed to be fairly irregular in an ugly language and certainly in the academy. If you said you were working on JavaScript, people would ridicule you. It was just not fit for academics to work on.
+01:06:00
+I think a lot of that has evolved. Language itself has evolved, and certainly the technology of compiling it is fantastically better than it was. And so in that sense, it's absolutely a viable solution on backhands as well as the front end used.
+01:06:18
+Well, I think it's a pretty good language.
+01:06:20
+I've written a modest amount of it and I've played with JavaScript translators and things like that. I'm not a real expert and it's hard to keep up even there with the new things that come along with it.
+01:06:34
+So I don't know whether it will ever take over the world, I think not, but it it's certainly an important language and worth knowing more about. There's there's maybe to get your comment on something which JavaScript and actually most languages of Python, such a big part of the experience of programming with those languages includes libraries sort of using building on top of the code that other people have built. I think that's probably different from the experience that we just talked about from Unix and CCDs when you're building stuff from scratch.
+01:07:10
+What do you think about this world of essentially leveraging, building up libraries on top of each other and leveraging them?
+01:07:16
+Yeah, that's a very perceptive kind of question. And one of the reasons programming was fun in the old days was that you were really building it all yourself.
+01:07:26
+The number of libraries you had to deal with was quite small. Maybe it was print out for the standard library or something like that.
+01:07:33
+And that is not the case today.
+01:07:35
+And if you want to do something in you mentioned Python and JavaScript and those are the two fine examples, you have to typically download a boatload of other stuff and you have no idea what you're getting. Absolutely nothing. I've been doing some playing with machine learning over the last couple of days.
+01:07:52
+And gee, something doesn't work. Well, you pip install this and down comes another gazillion megabytes of something and you have no idea what it was.
+01:08:03
+And if you're lucky, it works. And if it doesn't work, you have no recourse. There's absolutely no way you could figure out which in these thousand different packages.
+01:08:12
+And I think it's worse in the NPM environment for JavaScript.
+01:08:17
+I think there's less discipline, less controller.
+01:08:20
+And there's aspects of not just not understanding how it works, but there are security issues as robustness issues. So you don't want to run a nuclear power plant using JavaScript?
+01:08:29
+Essentially, I probably not. So its speaking to the variety of languages. Do you think that variety is good or do you hope think that over time we should converge towards one, two or three programming languages that you mentioned to the bell days when people could sort of the community of it and the more languages you have, the more you separate the communities, the Ruby community, there's the Python community, there's C++ community. Do you hope that they'll unite one day to just one or two languages?
+01:09:04
+I certainly don't hope you're not sure that that's right, because I honestly don't think there is one language that will suffice for all the programming needs of the world. Are there too many at this point? Well, arguably.
+01:09:15
+But I think if you look at the sort of the distribution of how they are used, there's something called a dozen languages that probably account for 95 percent of all programming at this point.
+01:09:28
+And that doesn't seem unreasonable.
+01:09:30
+And then there's another well, two thousand languages that are still in use that nobody uses and or at least don't use in any quantity.
+01:09:40
+But I think new languages are a good idea in many respects because they're often a chance to explore an idea of how a language might help.
+01:09:50
+I think that's one of the positive things about functional languages. For example, they're a particularly good place where people have explored ideas that at the time didn't seem feasible, but ultimately have wound up as part of mainstream languages as well.
+01:10:07
+Let me just go back as early as recursion lisp and and follow forward functions as first class citizens and pattern based languages and I don't know, closures.
+01:10:19
+And just on and on and on lambdas. Interesting ideas that showed up first in, let's call it broadly the functional programming community and then find their way into mainstream languages.
+01:10:30
+Yeah, it's a it's a playground for rebels. Yeah, exactly.
+01:10:34
+And and so I think the languages in the playground themselves are probably not going to be the mainstream, at least for some while. But the ideas that come from there are invaluable.
+01:10:47
+So let's go to something that when I found out recently. So I know you've done a million things, but one of the things I wasn't aware of that you had a role in ample and before you interrupt me by minimizing your role in it, which you fabulous for minimizing functions.
+01:11:03
+Yeah. Minimizing functions.
+01:11:04
+Right, exactly. I can just say that the elegance in abstraction, power of example is incredible. When I first came to it about 10 years ago or so, can you describe what is the ample language. Sure.
+01:11:22
+So ample is a language for mathematical programming, technical term. Think of it as linear programming that is setting up systems of linear equations that are. Some sort of system of constraints so that you have a bunch of things that have to be less than this, greater than that or whatever, and you're trying to find a set of values for some decision, variables that will maximize or minimize some objective function. So it's a way of solving a particular kind of optimization problem, a very formal sort of optimization problem, but one that's exceptionally useful.
+01:11:59
+And it specifies that there's objective function constraints and variables that become separate from the data it operates on.
+01:12:07
+Right. So the that kind of separation allows you to, you know, put on different hats. One, put the hat of an optimization person and then put another hat of a data person and dance back and forth and and also separate the actual solvers, the optimization systems that do the solving. Then you can have other people come to the table and then build their solver, whether it's linear or nonlinear, convex, non convex, that kind of stuff.
+01:12:38
+So of what is the use?
+01:12:44
+Maybe he can comment how you got into that world and what is the beautiful or interesting idea to you from the world of optimization?
+01:12:52
+Sure. So I preface it by saying I'm absolutely not an expert on this.
+01:12:57
+And most of the important work in Apple comes from my two partners in crime on that, Bob Forer, who was a professor of in the Industrial Engineering and Management Science Department at Northwestern, and my colleague at Bell Labs, Dave Gay, who was a numerical analyst and optimization person. So the deal is linear programming. Preface this by saying, let's stay with linear programming. Linear program is the simplest example of this. So linear programming is taught in school is that you have a big matrix which is always called A and you say X is less than or equal to be so B as a set of constraints, X is the decision variables and as to how the decision very pulls are combined to set up the various constraints.
+01:13:41
+So as a Matrix and X and B your vectors and then there's an objective function which is just the sum of a bunch of X's and some coefficients on them. And that's the thing you want to optimize.
+01:13:54
+The problem is that in the real world, that Matrix A. has a very, very, very intricate, very large and very sparse matrix where the various components of the model are distributed among the coefficients in a way that is totally obvious to anybody.
+01:14:12
+And so what you need is some way to express the original model, which you and I would write.
+01:14:18
+You know, we'd write mathematics on the board. The sum of this is greater than the sum of that kind of thing.
+01:14:23
+So you need a language to write those kinds of constraints. And Bob, for for a long time had been interested in modeling languages, languages that made it possible to do this. There was a modeling language around called Gamze, the general algebraic modeling system, but it looked very much like Fortran was kind of clunky. And so Bob spent a sabbatical year at Bell Labs in 1984, and he and I was in the office across from me.
+01:14:49
+And it's always geography.
+01:14:52
+And he and Dave and I started talking about this kind of thing, and he wanted to design a language that would make it so that you could take these algebraic specifications, you know, some Asian signs over sets and that you would write on the board and convert them into basically this a matrix and then pass that off to a solver, which is an entirely separate thing.
+01:15:18
+And so we talked about the design of the language. I don't remember any of the details of this now, but it's kind of an obvious thing. You're just writing a mathematical expressions in a Fortran like an algebraic but textural like language. And I wrote the first version of this AMPOULES program, my first C++ program, and it's written in C++.
+01:15:45
+And so I did that fairly quickly. We wrote it was, you know, 3000 lines or something.
+01:15:50
+So it wasn't very big, but it sort of showed the feasibility of it that you could actually do something that was easy for people to specify models and convert it into something the solver could work with.
+01:16:01
+The same time, as you say, that model and the data are separate things. So one model would then work with all kinds of different data in the same way, lots of programs do the same thing, but with different data.
+01:16:11
+So one of the really nice things is the the specification of the models human just kind of like, as you say, human readable. Like I literally I'm urban stuff. I work. I, I would send it to colleagues that I'm pretty sure never programmed.
+01:16:26
+And they're like just just to understand what optimization problem is I think.
+01:16:33
+How hard is it to convert that you said there's a first prototype in C++ to convert that into something that could actually be used by the solver?
+01:16:41
+It's not too bad because most of the solvers have some mechanism that lets them import a model in a form. It might be as simple as the matrix itself and just some representation.
+01:16:52
+Or if you're doing things that are not linear programming, then there may be some mechanism that lets you provide things like functions to be called or other constraints on the model.
+01:17:04
+So so all Apple does is to generate that kind of thing. And then Solver deals with all the hard work. And then when the solver comes back with numbers, Apple converts those back into your original form.
+01:17:17
+So you know how much of each thing you should be buying or making or shipping or whatever.
+01:17:23
+So we did that in 84 and I haven't had a lot to do with it since, except that we wrote a couple of versions of a book on which is one of the greatest books ever written.
+01:17:33
+I love that book.
+01:17:35
+I don't know why it's an excellent book, but for most of it. And so it's really, really well done. It must be a dynamite teacher and typeset in latex. No, no, no.
+01:17:45
+Are you kidding? However, like in the typography. So I don't know. We did it with Dero. I don't even know what that is. Yeah, exactly. Yeah.
+01:17:55
+I think it's draft is as a predecessor to the tech family of things, it's a formatter that was done that believes in this same period of the very early 70s that predates tech and things like that by five to 10 years.
+01:18:12
+But it was nevertheless just I'm going by memories. It was I remember it being beautiful. Yeah, it was nicely moving outside of Unix Sea Org going.
+01:18:20
+All the things you talked about, all the amazing work you've done, you've also done working graph theory.
+01:18:29
+Let me ask this, this crazy out there question, if you had to make a bet and I had to force you to make a bet, do you think P equals on P?
+01:18:40
+The answer is no, although I'm told that somebody asked Jeff Dean if that was under what conditions be legal in P, and he said either P zero or in his one or vice versa, I've forgotten is a lot smarter than I.
+01:18:54
+Yeah.
+01:18:57
+So but your intuition is I have no I have no intuition, but I read a lot of colleagues who've got intuition that their betting is.
+01:19:04
+No, that's the popular that's the popular bet.
+01:19:08
+OK, so what is computational complexity theory and do you think these kinds of complexity classes, especially as you've taught in this modern world, are still useful way to understand the hardness of problems?
+01:19:23
+I don't do that stuff.
+01:19:24
+The last time I touched anything to do with that many years ago was before it was invented because it's literally true. I did my Ph.D. thesis on four big notation, you know, absolutely. Before I did this in 1968.
+01:19:41
+And I worked on graph partitioning, which is this question. You've got a graph that is nodes and edges kind of graph and the edges have weights and you just want to divide the nodes into two piles of equal size so that the number of edges that goes from one side to the other is as small as possible. And we developed.
+01:19:59
+So that problem is hard.
+01:20:03
+Well, as it turns out, I worked with Shamblin at Bell Labs on this and we were never able to come up with anything that was guaranteed to give the right answer.
+01:20:11
+We came up with heuristics that worked pretty darn well and I peeled off some special cases for my thesis, but it was just hard.
+01:20:19
+And that was just about the time that Steve Cook was showing that there were classes of problems that appeared to be really hard of witchcraft.
+01:20:25
+Partitioning was one.
+01:20:27
+But this my expertise, such as it was, totally predates that development.
+01:20:33
+I think. So the heuristic, which now carries the two years names for the traveling salesman problem for the graph partitioning, that was like how did you you weren't even thinking in terms of classes. You were just trying to find no such idea, a heuristic that kind of does the job pretty well.
+01:20:51
+You're trying to find eat something that did the job and there was no nothing that you would call that's a closed form or algorithmic thing that would give you a guaranteed right answer.
+01:21:01
+I mean, compare graph partitioning to Max Flamin Cut or something like that, because that's the same problem, except there's no constraint on the number of nodes on one side or the other of the cut. And that means it's an easy problem, at least as I understand it, whereas the constraint that says the two have to be constrained in size makes it a hard problem.
+01:21:22
+Yes, the Robert Frost has that poem. We had to choose two paths. So why did you.
+01:21:29
+Is there another alternate universe in which you pursued the Don Knuth path of, you know, algorithm designs and are not smart enough, smart enough or you're infinitely modest, but so you procedure kind of love of programming.
+01:21:48
+I mean, when you look back to those, I mean, just looking into that world, does that just seem like a distant world of of theoretical computer science then? Is it fundamentally different from the world of programming?
+01:22:01
+I don't know. I mean, certainly, in all seriousness, I just didn't have the talent for it. I when I got here as a grad student at Princeton and I started to think about research at the end of my first year or something like that, I worked briefly with John Hopcroft, who is absolutely you know, you mentioned Turing Award winner, etc., a great guy. And it became crystal clear I was not cut out for this stuff, period, OK?
+01:22:26
+And so I moved into things where I was more cut out for it.
+01:22:30
+And that tended to be things like writing programs and ultimately writing books.
+01:22:37
+You've said that in Toronto as an undergrad, you did a senior thesis or literature survey on artificial intelligence. This was 1964, correct.
+01:22:49
+What was the A.I. landscape ideas, dreams at that time?
+01:22:54
+I think that was one of the well, you've heard of A.I. Winters. This is whatever the opposite was, a summer or something.
+01:23:00
+It was one of these things where people thought that, boy, we could do anything with computers, that all these hard problems we could computers will solve them.
+01:23:09
+They will do machine translation.
+01:23:11
+They will play games like chess and they will do, you know, prove theorems and geometry.
+01:23:19
+There are all kinds of examples like that where people thought, boy, we could really do those sorts of things.
+01:23:26
+And, you know, I read the Koolaid in some sense, a wonderful collection of papers called computers and thought that was published in about that era. And people were very optimistic. And then, of course, it turned out that what people thought was just a few years down the pike, I was more than a few years down the pike.
+01:23:48
+And some parts of that are more or less now sort of under control. We finally do play games like Go and Chess and so on, better than than people do. But there are others on machine translation is a lot better than it used to be.
+01:24:02
+But that's, you know, 50 close to 60 years of progress and a lot of evolution in hardware and a tremendous amount more data upon which you can build systems that actually can learn from some of that.
+01:24:16
+And the the infrastructure to support developers working together like an open source move. The Internet period is also empowering. But what lessons do you draw from that? The opposite of winter, that optimism?
+01:24:31
+Well, I guess that the lesson is that in the short run, it's pretty easy to be too pessimistic or maybe too optimistic in the long run. You probably shouldn't be too pessimistic. I'm not saying that very well. It reminds me of this remark from Arthur Clarke, science fiction author, who says, you know, when some distinguishment elderly person says that something is erm is possible, he's probably right.
+01:24:58
+And if he says it's impossible, he's almost surely wrong. But you don't know what the timescale is. Timescales. All right.
+01:25:05
+So what are your thoughts on this new summer of A.I. now in the work with machine learning in your networks, you've kind of mentioned these studies to try to explore and look into this world that seems fundamentally different from the world of heuristics and algorithms like Search that it's now purely sort of trying to take huge amounts of data and learn learn from that day to write programs from the data.
+01:25:31
+Yeah, look, I think it's very interesting. I am incredibly far from an expert.
+01:25:36
+Most of what I know, I've learned from my students and they're probably disappointed in how little I've learned from them.
+01:25:43
+But I think it has tremendous potential for certain kinds of things.
+01:25:47
+I mean, games is one where it obviously has had an effect on some of the others as well.
+01:25:53
+I think there's and this is speaking from definitely not expertise. I think there are serious problems in certain kinds of machine learning, at least because what they're learning from is the data that we give them. And if the data we give them has something wrong with it, then what they learn from it is probably wrong. To the obvious thing is some kind of bias in the data that the data has stuff in it like, I don't know, women aren't as good at men as men.
+01:26:21
+It's something that's just flat wrong. But if it's in the data because of historical treatment, then that machine learning stuff will propagate that.
+01:26:32
+And that is a serious worry. And the positive part of that is what machine learning does is reveal the bias in the data and puts a mirror to our own society and in so doing, helps us remove the by.
+01:26:48
+Helps us work on ourselves. It puts a mirror to ourselves. Yeah, that's an optimistic point of view. And if it works that way, that would be absolutely great. And what I don't know is whether it does work that way or whether the, you know, the mechanisms of machine learning mechanisms reinforce and amplify things that have been wrong in the past. And I don't know. I but I think that's a serious thing that we have to be concerned about.
+01:27:15
+Let me ask you another question, OK? I know nobody knows, but what do you think it takes to build a system of human level intelligence? That's been the dream from the 60s. We talk about games about. Language about. About image recognition, but really the dream is to create a human level, a superhuman level intelligence. What do you think it takes to do that? And are we close?
+01:27:40
+I haven't a clue. And I don't know. Roughly speaking, I mean, this was trying to trick you into hypothesising I mean, Turing talked about this in his paper on machine intelligence back, and she's an early 50s or something like that.
+01:27:53
+And he had the idea of the Turing test.
+01:27:55
+And I don't know what the Turing test is. It's a good test of and I don't know, it's an interesting test. At least it's in some vague sense objective. Whether you can read anything into the conclusions is a different story.
+01:28:07
+Do you have worries, concerns, excitement about the future of artificial intelligence? There's a lot of people who are worried and you can speak broadly than just artificial intelligence is basically computing taking over the world in various forms. Are you excited by this future, this possibility of computing being everywhere, or are you worried?
+01:28:31
+It's some combination of those.
+01:28:33
+I think almost all technologies over the long run are for good, but there's plenty of examples where they haven't been good either over a long run for some people or over a short run.
+01:28:47
+And computing is is one of those. And A.I. within it is going to be one of those as well.
+01:28:53
+But computing broadly, I mean, for just a two day example, there's privacy that the use of things like social media and so on means that and the commercial surveillance means that there's an enormous amount more known about us by people, other, you know, businesses, government, whatever, than perhaps one ought to feel comfortable with.
+01:29:16
+So that's an example. That's an example of a possible negative negative effect of computing being everywhere. It's it's an interesting one because it could also be a positive coverage correctly. There's a big effort there.
+01:29:35
+So I, I you know, I've I have a deep interest in human psychology in humans. There seem to be very paranoid about this data thing.
+01:29:44
+I it but that varies depending on age group. Yes. It seems like the younger folks. So it's exciting to me to see what society looks like 50 years from now, that the concerns about privacy may be flipped on their head based purely on human psychology versus actual concerns or not.
+01:30:02
+Yeah. What do you think about Moore's Law? Well, you said a lot of stuff. We talked you talked about programming languages in their design and their ideas are coming from the constraints and the systems they operate in. Do you think Moore's Law, the the exponential improvement of systems will continue indefinitely?
+01:30:25
+There's there's a mix of opinions on that currently. Or do you think. Do you think there will be. Do you think there will be a plateau?
+01:30:36
+Well, the frivolous answer is no exponential can go on forever.
+01:30:41
+Run out of something, just as we said, time, scale, matters of if it goes on long enough, that might be all we need.
+01:30:48
+Right. Won't matter to us.
+01:30:50
+So I don't know. We've seen places where Moore's Law has changed. For example, I mentioned earlier processor processors don't get faster anymore, but you use that same growth of, you know, ability to put more things in a given area to grow them horizontally instead of vertically, as it were.
+01:31:08
+So you can get more and more processors or memory or whatever on the same chip.
+01:31:12
+Is that going to run into a limitation, presumably because, you know, at some point you get down to the individual atoms and so you've got to find some way around that.
+01:31:22
+Will we find some way around that?
+01:31:24
+I don't know. I just said that if I say it won't, I'll be wrong.
+01:31:27
+So perhaps we will.
+01:31:29
+So I just talked to Jim Keller and he says he actually describes he argues that the Moore's Law will continue for a long, long time because you mentioned the atom. We actually have, I think, a thousand fold increase still decrease and threaten Jazzercise. So possible. Before we get to the Quantum of Solace, there's still a lot of possibilities. He thinks he'll continue indefinitely, which is an interesting, optimistic, optimistic viewpoint. But how do you think the programming languages will change with this increase, whether we hit a wall or not?
+01:32:04
+What do you think? Do you think there'll be a fundamental change in the way programming languages are designed? I don't know.
+01:32:12
+But that I think what will happen is continuation of. What we see in some areas, at least, which is that more programming will be done by programs than by people and that more will be done by sort of declarative rather than procedural mechanisms where I say I want this to happen.
+01:32:34
+You figure out how and that is in many cases, this point domain of specialized languages for narrow domains.
+01:32:45
+But you can imagine that broadening out.
+01:32:48
+And so I don't have to say so much in so much detail.
+01:32:52
+Some collection of software, let's call it languages or reprograms programs or something, will figure out how to do what I want to do.
+01:33:02
+So increased levels of abstraction. Yeah. And one day, getting to the human level, maybe we can just use that would be possible. So you taught so teach a course computers in our world here at Princeton that introduces computing and programming to non Meijers. What just from that experience? What advice do you have for people who don't know anything about programming but are kind of curious about this world or programming seems to become more and more of a fundamental skill that people need to be at least aware of?
+01:33:35
+Yeah, well, I could recommend a good book. Was that the book I wrote for the court?
+01:33:41
+I think this is one of these questions of should everybody know how to program? And I think the answer is probably not. But I think everybody should at least understand sort of what it is so that if you say to somebody, I'm a programmer, they have a notion of what they might be. Or if you say this is a program or this was decided by a computer running a program, that they have some vague, intuitive understanding and accurate understanding of what that might imply.
+01:34:09
+So part of what I'm doing in this course, which is very definitely for non-technical people, I mean, typical person, and it is a history or English major, try and explain how computers work, how they do their thing, what programming is, how you write a program and how computers talk to each other and what they do when they're talking to each other.
+01:34:31
+And then I would say nobody very rarely does anybody in that course go on to become a real serious programmer.
+01:34:41
+But at least they've got a somewhat better idea of what all this stuff is about, not just the programming, but the technology behind computers and communications.
+01:34:49
+Do they write a do they try and write a program themselves? Oh, yeah. Yeah, very small amount.
+01:34:55
+I introduce them to how machines work at a level below high level language.
+01:35:00
+So we have a kind of a toy machine that has a very small repertoire.
+01:35:03
+It doesn't instructions and they write trivial assembly language programs that wow, that's just if you were to give a flavor of the people of the programming world, of the computing world, what are the examples? Should go with a little bit of assembly to to get a sense at the lowest level of what the program is really doing.
+01:35:25
+Yeah, I mean, in some sense there's no such thing as the lowest level because you can keep going down. But that's the place where I draw the line.
+01:35:32
+So the idea that computers have a fairly small repertoire of very simple instructions that they can do like add and subtract and and branch and so on, as you mentioned earlier, and that you can write code at that level and it will get things done.
+01:35:50
+And then you have the levels of abstraction that we get with higher level languages like Fortran or C or whatever, and that makes it easier to write the code and less dependent on particular architectures.
+01:36:03
+And then we talk about a lot of the different kinds of programs that they use all the time, that they don't probably realize our programs like they're running Mac OS on their computers or maybe Windows and they're downloading apps on their phones.
+01:36:18
+And all of those things are programs that are just what we just talked about except at a grand scale.
+01:36:25
+And it's easy to forget that they're actual programs that people program. There's engineers. I wrote about those things. Yeah, right.
+01:36:31
+And so in a way, I'm expecting them to make an enormous conceptual leap from their five or ten line toy assembly language thing that adds two or three numbers to, you know, something that is a browser on their phone or whatever.
+01:36:48
+But but it's really the same thing.
+01:36:51
+So if you look at the broad in broad strokes of history, what do you think the world like? How do you think the world changed because of computers? It's hard to sometimes see the big picture when you're in it. Yeah, but I guess I'm asking if there's something you've noticed over the years that, uh, like you mentioned, the students are more distracted looking at their now there's a device to look at. Right. Well, I think computing has changed a tremendous amount, obviously.
+01:37:19
+But I think one aspect of that is the way that people interact with each other, both locally and far away. And when I was, you know, the age of those kids making a phone call to somewhere was a big deal because it cost serious money. And this was in the 60s. Right.
+01:37:37
+And today, people don't make phone calls. They send text or something like that. So there's a up and down in what people do.
+01:37:46
+People think nothing of having correspondence, regular meetings, video or whatever with friends or family or whatever in any other part of the world.
+01:37:57
+And they don't think about that at all. And so that's just the communication aspect of it. And do you think that brings us closer together or does it make us to this, does it take us away from the closeness of human to human contact?
+01:38:16
+I think it depends a lot on all kinds of things. So I trade mail with my brother and sister in Canada much more often than I used to talk to them on the phone. So probably every two or three days I get something or send something to them.
+01:38:31
+Whereas 20 years ago I probably wouldn't have talked to them on the phone nearly as much.
+01:38:37
+So in that sense, I brought my brother and sister and I closer together. That's a good thing.
+01:38:42
+I watch the kids on campus and they're mostly walking around with their heads down, fooling with their phones to the point where I have to duck them.
+01:38:51
+Yeah, I don't know that that has brought them closer together. In some ways, there's sociological research that says people are, in fact, not as close together as they used to be.
+01:39:03
+I don't know whether that's really true, but but I can see potential downsides and kids where you think, come on, wake up and smell the coffee or whatever.
+01:39:13
+That's right. But if you look at again, nobody can predict the future. But are you excited? Kind of touched just a little bit. They are. But are you excited by the future in the next 10, 20 years that computing will bring.
+01:39:28
+You were there when there was no computers and now computers are everywhere, all over the world and Africa and Asia and just every every person, almost every person in the world has a device. So are you hopeful, optimistic about their future? I it's mixed if the truth be told.
+01:39:49
+I mean, I think there are some things about that that are good. I think there's the potential for people to improve their lives all over the place.
+01:39:56
+And that's obviously good.
+01:39:58
+And at the same time, at least in the short time, short run, you can see lots and lots bad as people become more tribalistic or parochial in their interests. And it's an enormous amount more of them. And people are using computers and all kinds of ways to mislead or misrepresent or flat out lie about what's going on. And that is affecting politics locally and I think everywhere in the world.
+01:40:22
+Yeah, the the long term effect on political systems and so on. So who knows. Knows indeed.
+01:40:30
+Uh, the the the people now have a voice, which is a powerful thing. People who are oppressed have a voice, but also everybody has a voice. And the chaos that emerges from that is fascinating to watch. Yeah. Yeah. It's kind of scary.
+01:40:47
+If you can go back and relive a moment in your life, one that made you truly happy outside of family or was profoundly transformative. Is there a moment or moments that jump out at you from memory?
+01:41:03
+I don't think specific moments. I think there were lots and lots and lots of good times at Bell Labs where you would build something and it worked hard at work.
+01:41:13
+So the moment the work used it. Yeah. And somebody used it and they said, gee, that's neat.
+01:41:18
+Those kinds of things happened quite often in that sort of golden era in the 70s when Unix was young and it was all this low hanging fruit and interesting things to work on a group of people who kind of we were all together in this.
+01:41:34
+And if you did something, they would try it out for you.
+01:41:37
+And I think that was in some sense a really, really good time.
+01:41:41
+And all. Was Bozak an example of that when you built that and people use that? Yeah, absolutely.
+01:41:47
+And now millions of people, his and all your stupid mistakes are right there for them to look at. So it's mixed. Yeah, it's terrifying. Vulnerable, but beautiful because it does have a positive impact. And so, so many people. So I think there's no better way to end it. Brian, thank you so much for talking. It was an honor, OK?
+01:42:07
+My pleasure. Good fun. Thank you for listening to this conversation with Brian Kern and thank you to our sponsors, a sleep mattress and Rickon earbuds. Please consider supporting this podcast by going to a sitcom, Lex and to buy Rakhat dotcom slash. Lex, click the links, buy the stuff. These both are amazing products. It really is the best way to support this podcast and the journey I'm on. It's how they know I sent you and increases the chance that they'll actually support this podcast in the future.
+01:42:44
+If you enjoy this thing, subscribe on YouTube, review it with five stars, an app, a podcast supported on Patrón or connect with me on Twitter. Àlex Friedman spelled somehow miraculously without the letter E, just F.R. ID man, because when we immigrated to this country we were not so good at spelling. And now let me leave you with some words from Brian Conaghan.
+01:43:10
+Don't comment. Bad code. Rewrite it. Thank you for listening and hope to see you next time.

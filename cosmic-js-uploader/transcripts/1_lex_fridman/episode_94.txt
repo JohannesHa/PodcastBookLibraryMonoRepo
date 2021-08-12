@@ -1,0 +1,458 @@
+00:00:00
+The following is a conversation with Daphne Koller, professor of computer science at Stanford University, a co-founder of Coursera with Andrew NG and founder and CEO of an Cedro, a company at the intersection of machine learning and biomedicine.
+00:00:15
+We're now in the exciting early days of using the data driven methods of machine learning to help discover and develop new drugs and treatments that scale. Daphne and in Cedro are leading the way on this with breakthroughs that may ripple through all fields of medicine, including one's most critical for helping with the current coronavirus pandemic. This conversation was recorded before the covid-19 outbreak. For everyone feeling the medical, psychological and financial burden of this crisis, I'm sending love your way. Stay strong.
+00:00:48
+We're in this together. Will beat this thing. This is the artificial intelligence podcast. If you enjoy it, subscribe. I need to review it with five stars, an app, a podcast supported on Patrón or simply connected me on Twitter. Allex Friedman spelled F.R. Idi Amin.
+00:01:05
+As usual, I'll do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show is presented by Kashyap, the number one finance app in the App Store when you get it, is called Lux podcast. Cash app lets you send money to friends by Bitcoin and invest in the stock market with as little as one dollar. SketchUp allows you to send and receive money digitally peer to peer and security in all digital transactions is very important.
+00:01:38
+And you mentioned that PCI data security standard the cash app is compliant with I'm a big fan of standards for safety and security. Besides US is a good example. There were a bunch of competitors got together and agreed that there needs to be a global standard around the security of transactions. Now we just need to do the same for autonomous vehicles and the systems in general.
+00:02:00
+So again, if you get cash out from the App Store or Google Play and use the Code Lux podcast, you get ten dollars in cash. Also donate ten dollars. The first, an organization that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Daphne Koller. So you co-founded Coursera, I made a huge impact in the global education of A.I. and after five years in August 2016, wrote a blog post saying that you're stepping away and wrote, quote, It is time for me to turn to another critical challenge, the development of machine learning and its applications to improving human health.
+00:02:58
+So let me ask too far out philosophical questions. One, do you think we will one day find cures for all major diseases known today?
+00:03:07
+And two, do you think we will one day figure out a way to extend the human lifespan, perhaps to the point of immortality?
+00:03:16
+So one day is a very long time and I don't like to make predictions of the type we will never be able to do X, because I think that's a you know, that's smacks of hubris, assumes that never in the entire eternity of human existence will we be able to solve a problem.
+00:03:36
+That being said, curing disease is very hard because oftentimes by the time you discover the disease, a lot of damage has already been done. And so to assume that we would be able to cure disease at that stage assumes that we would come up with ways of basically regenerating entire parts of the human body in a way that actually returns it to its original state. And that's a very challenging problem. We've cured very few diseases. We've been able to provide treatment for an increasingly large number.
+00:04:10
+But the number of things that you could actually define to be cured is actually not that large.
+00:04:16
+So I think that there's a lot of work that would need to happen before one could legitimately say that we have cured even a reasonable number of far less all diseases on a scale of zero to 100.
+00:04:30
+Where are we in understanding the fundamental mechanisms of all of major diseases?
+00:04:35
+What's your sense? So from the computer science perspective, that you've entered the world of health. How far along are we? I think it depends on which disease. I mean, there are ones where I would say we're maybe not quite at 100 because biology is really complicated and there's always new things that we uncover that people didn't even realize existed. So but I would say there is diseases where we might be in the 70s or 80s, and then there's diseases in which I would say probably the majority where we're really close to zero with Alzheimer's and schizophrenia and type two diabetes, far closer to zero or to the 80.
+00:05:21
+I think Alzheimer's is probably closer to zero than the 80. There are hypotheses, but I don't think those hypotheses have as of yet been sufficiently validated that we believe them to be true. And there is an increasing number of people who believe that the traditional hypotheses might not really explain what's going on.
+00:05:45
+I would also say that Alzheimer's and schizophrenia and in even Type two diabetes are not really one disease. They're almost certainly a heterogeneous collection of mechanisms that manifest in clinically similar ways. So in the same way that we now understand that breast cancer is really not one disease, it is a multitude of cellular mechanisms, all of which ultimately translate to uncontrolled proliferation. But it's not one disease. The same is almost undoubtedly true for those other diseases as well. And that understanding that needs to precede any understanding of the specific mechanisms of any of those other diseases.
+00:06:27
+Now, in schizophrenia, I would say we're almost certainly closer to zero than the anything else on type two diabetes is a bit of a mix.
+00:06:35
+There are clear mechanisms that are implicated that I think have been validated that have to do with insulin resistance and such. But there's almost certainly there as well many mechanisms that we have not yet understood that.
+00:06:48
+You've also thought and worked a little bit on the longevity side. Do you see the disease and longevity as overlapping completely, partially or not at all as efforts?
+00:07:02
+Those mechanisms are certainly overlapping. There's a well known phenomenon that says that for most diseases other than childhood diseases, the risk for getting for contracting that disease increases exponentially year on year every year from the time you're about 40.
+00:07:22
+So obviously there is a connection between those two things. That's not to say that they're identical.
+00:07:29
+There's clearly aging that happens that is not really associated with any specific disease. And there's also diseases and mechanisms of disease that are not specifically related to aging. So I think overlap is where we're at.
+00:07:46
+OK, it is a little unfortunate that we get older and it seems that there's some correlation with the fact the the occurrence of diseases or the fact that we get older.
+00:07:57
+And both are quite sad.
+00:08:00
+I mean, there's processes that happen as cells age that I think are contributing to disease. Some of those have to do with DNA damage that accumulates the cells, divide where the repair mechanisms don't fully correct. For those, there are accumulations of proteins that are misfolded and potentially aggregate and those to contribute to disease and contribute to inflammation. There is there's a multitude of mechanisms that have been uncovered that are sort of wear and tear at the cellular level that contribute to disease processes.
+00:08:38
+That and I'm sure there's many that we don't yet understand.
+00:08:42
+On a small tangent, perhaps philosophical.
+00:08:46
+Does the fact that things get older and the fact that things die is a very powerful feature for the growth of new things that, you know, it's a learning is a kind of learning mechanism.
+00:08:58
+So it is both tragic and beautiful. So do you do you do so in in trying to fight disease and trying to fight aging? Do you think about sort of the useful fact of our mortality, or would you like, if you were could be immortal, would you choose to be immortal? Again, I think immortal is a very long time, and I don't know that that would necessarily be something that I would want to aspire to, but I think all of us aspire to an increased health span, I would say, which is an increased amount of time where you're healthy and active and feel as you did when you were 20.
+00:09:51
+We're nowhere close to that. People deteriorate physically and mentally over time, and that is a very sad phenomenon.
+00:10:00
+So I think a wonderful aspiration would be if we could all live to, you know, the biblical hundred and twenty may be in perfect health and quality of life, high quality of life.
+00:10:13
+I think that would be an amazing goal for us to achieve as a society now as the right age 120 or 100 or a hundred and fifty. I think that's up for debate. But I think the increased health span is a really worthy goal.
+00:10:27
+And anyway, in a grand time of the age of the universe, it's all pretty short. So from the perspective, you've done obviously a lot of incredible work and machine learning. So what role do you think data and machine learning play in this in this goal of trying to understand diseases and trying to eradicate diseases?
+00:10:50
+Up until now, I don't think it's played very much of a significant role because largely the data sets that one really needed to enable a powerful machine learning methods.
+00:11:04
+Those data sets haven't really existed. There's been dribs and drabs and some interesting machine learning that has been applied. I would say machine learning, data science. But the last few years are starting to change that. So we now see an increase in some large data sets, but equally importantly, an increase in technologies that are able to produce data at scale. It's not typically the case that people have deliberately, proactively used those tools for the purpose of generating data for machine learning.
+00:11:41
+They are, to the extent of those techniques, have been used for data production that have been used for data production to drive scientific discovery. And the machine learning came as a sort of byproduct second stage of, oh, you know, now we have a data set to machine learning on that rather than a more simplistic data analysis method. But what we are doing it Insitro is actually flipping that around and saying here's this incredible repertoire of methods that bioengineers, cell biologists have come up with.
+00:12:11
+Let's see if we can put them together in brand new ways with the goal of creating datasets that machine learning can really be applied on productively to create powerful predictive models that can help us address fundamental problems in human health.
+00:12:26
+So really focus to get make data, the primary focus and the primary goal and find use the mechanisms of biology and chemistry to to to create the kinds of data set that could allow machine learning to benefit the most.
+00:12:42
+I wouldn't put it in those terms because that says that data is the end goal data is the means. So for us, the end goal is helping address challenges in human health. And the method that we've elected to do that is to apply machine learning, to build predictive models. And machine learning, in my opinion, can only be really successfully applied, especially the more powerful models if you give it data that is of sufficient scale, sufficient quality. So how do you create those data sets so as to drive?
+00:13:18
+The ability to generate predictive models which subsequently help improve human health. So before we dive into the details of that, it can take a step back and ask when and where was your interest in human health born?
+00:13:33
+Are there moments, events, perhaps, if I may ask, tragedies in your own life that catalyzes passion, or was it the broader desire to help humankind?
+00:13:43
+So I would say it's a bit of both. So on. I mean, my interest in human health actually dates back to the early 2000s when when a lot of my peers in machine learning and I were using data sets that frankly were not very inspiring. Some of us old timers still remember the quote unquote twenty newsgroups data set where this was literally a bunch of text from twenty newsgroups, a concept that doesn't really even exist anymore.
+00:14:16
+And the question was, can you classify which which newsgroup a particular bag of words came from? And it wasn't very interesting. The data says at the time on the biology side were much more interesting, both from a technical and also from an aspirational perspective. They were still pretty small, but they were better than 20 newsgroups. And so I started out, I think, just by just by wanting to do something that was more, I don't know, societally useful and technically interesting, and then over time became more and more interested in the biology and the and the human health aspects for themselves and began to work even sometimes on papers that were just in biology without having a significant machine learning component.
+00:15:05
+I think my interest in drug discovery is partly due to an incident I had with when my father sadly passed away about 12 years ago, he had an autoimmune disease that settled in his lungs and the doctors basically said, well, there's only one thing we could do, which is given prednisone at some point. I remember doctor even came and said, hey, let's do a lung biopsy to figure out which autoimmune disease he has. And I said, would that be helpful?
+00:15:40
+Would that change treatments? No, there's only prednisone. That's the only thing we can give him. And I have friends who are rheumatologist who said the FDA would never approve presses on today because the the ratio of side effects to benefit is probably not large enough.
+00:15:56
+Today, we're in a state where there's probably four or five, maybe even more.
+00:16:04
+Well, depends for which are immunity, but there are multiple drugs that can help people with autoimmune disease, many of which didn't exist 12 years ago. And I think we're at a golden time in some ways and drug discovery where there's the ability to create drugs that are much more safe and much more effective than we've ever been able to before. And what's lacking is enough understanding of biology and mechanism to know where to aim that we're taking that engine. And I think that's where machine learning can help.
+00:16:42
+So in twenty eighteen you started and I'll lead a company Insitro, which is, like you mentioned, perhaps the Focus's drug discovery and the utilization of machine learning for drug discovery. So you mentioned that, quote, We're really interested in creating what you might call a disease in a dish model, disease in a dish models, but is what is a complex where we really haven't had a good model system or typical animal models that have been used for years, including testing on mice, just aren't very effective.
+00:17:16
+So can you can you try to describe what is an animal model and what is a disease in a dish model? Sure.
+00:17:23
+So animal models for disease is where you create effectively. It's what it sounds like, it's it's a oftentimes a mouse where we have introduced some external perturbation that creates the disease and then we cure that disease. And the hope is that by doing that, we will cure a similar disease in humans.
+00:17:48
+The problem is, is that oftentimes the way in which we generate the disease and the animal has nothing to do with how that disease actually comes about in a human. It's what you might think of as a copy of the of the phenotype, a copy of the clinical outcome. But the mechanisms are quite different. And so curing the disease in the animal, which in most cases doesn't happen naturally. Mice don't get Alzheimer's, they don't get diabetes, they don't get atherosclerosis.
+00:18:15
+They don't get autism or schizophrenia.
+00:18:19
+Those cures don't translate over to what happens in the human. And that's where most drugs fails.
+00:18:28
+Just because the findings that we had in the mouse don't translate to a human disease in a dish bottles is a fairly new approach. It's been enabled by technologies that have not existed for more than five to 10 years. So, for instance, the ability for us to take a cell from any one of us, you or me, revert that Zeskind cell to what's called stem cell status, which is a what which was called a pluripotent cell that can then be differentiated into different types of cells.
+00:19:05
+So from that pluripotent cell, one can create a leks neuron or a leks cardiomyocytes or Allex hepatocyte that has your genetics, but that right cell type.
+00:19:17
+And so if there's a genetic burden of disease that would manifest in that particular cell type, you might be able to see it by looking at those cells and say, oh, that's what potentially sick cells look like versus healthy cells and understand how and then explore what kind of interventions might revert the unhealthy looking cells to healthy cells.
+00:19:42
+Now, of course, curing cells is not the same as scaring people. And so there's still potentially translate ability gap.
+00:19:50
+But at least four diseases that are driven, say, by human genetics and where the human genetics is what drives the cellular phenotype. There is some reason to hope that if we revert those cells in which the disease begins and where the disease is driven by genetics and we can revert that cell back to a healthy state, maybe that will help also reverse the more global clinical phenotype.
+00:20:18
+So that's really what we're hoping to do, that step, that backward step. I was reading about it. The Yamanaka factor. Yes. So that the reverse step back to stem cells. Yes. Seems like magic. It is.
+00:20:33
+Honestly, before that happened, I think very few people would have predicted that it would be possible.
+00:20:38
+It's amazing. How can you maybe elaborate? Is it actually possible? Like where? Like how state.
+00:20:44
+So this result was maybe like, I don't know how many years ago, maybe 10 years ago was first demonstrated, something like that. Is this how hard is this like how noise is this backward step? It seems quite incredible and cool.
+00:20:56
+It is. It is incredible and cool. It was much more, I think, finicky and bespoke at the early stages when the discovery was first made. But at this point it's become almost industrialized.
+00:21:11
+There are what's called contract research organizations, vendors that will take a sample from a human and reverted back to stem cells. That is that works a very good fraction of the time. Now, there are people who will ask, I think, good questions.
+00:21:29
+Is this really, truly a stem cell or does it remember certain aspects of what kind of changes that were made in the human beyond the genetics?
+00:21:39
+It's passed as a skin cell. Yeah, it's passed as a skin cell or it's passed in terms of exposures to different environmental factors and so on. So I think the consensus right now is that these are not always perfect and there is little bits and pieces of memory sometimes. But by and large, this actually pretty good.
+00:22:01
+So one of the key things or maybe maybe you can correct me, but one of the useful things for machine learning is size scale data, how easy it is to do these kinds of reversals to stem cells and then disease in a dish models at scale is this is a huge challenge or not.
+00:22:23
+So the reverse the reversal is not, as of this point, something that can be done. At the scale of tens of thousands or hundreds of thousands, I think total number of stem cells or IPS cells that are what's called induced pluripotent stem cells in the world, I think is somewhere between five and ten thousand. Last I looked. Now, again, that might not count things that exist in this or that academic center, and they may add up to a bit more, but that's about the range.
+00:22:57
+So it's not something that you could at this point generate IPS cells from a million people. But maybe you don't need to because maybe that background is enough, because it can also be now perturbed in different ways. And some people have done really interesting experiments in, for instance, taking cells from a healthy human and then introducing a mutation into it, using some of the using one of the other miracle technologies that's emerged in the last decade, which is CRISPR gene editing and introduced the mutation that is known to be pathogenic.
+00:23:36
+And so you can now look at the healthy cells and the unhealthy cells, the one with the mutation, and do a one on one comparison where everything else is held constant. And so you could really start to understand specifically what the mutation does at the cellular level. So the IPS cells are a great starting point and obviously more diversity is better because you also want to capture ethnic background and how that affects things. But maybe you don't need one from every single patient with every single type of disease because we have other tools at our disposal.
+00:24:07
+Well, how much difference is there between people? You mentioned ethnic background in terms of cells so. Well, like it seems like these magical cells that can do to create anything between different populations, different peoples. There are a lot of variability between stem cells.
+00:24:24
+Well, first of all, there is the variability that's driven simply by the fact that genetically we're different. So as stem cells derived from my genotype is going to be different from a staff stem cells derived from your genotype. There's also some differences that have more to do with for whatever reason, some people stem cells differentiate better than other people's stem cells. We don't entirely understand why. So there there's certainly some differences there as well.
+00:24:51
+But the fundamental difference in the one that we really care about and is positive is that the is the fact that the genetics are different and therefore recapitulate my disease burden versus your disease burden with the disease burden.
+00:25:06
+Well, disease burden is just if you think I mean, it's not a well-defined mathematical term, although there are mathematical formulations of it. If you think about the fact that some of us are more likely to get a certain disease than others because we have more variations in our genome that are causative of the disease may be fewer that are protective of the disease. People have quantified that using what are called polygenic risk scores, which look at all of the variations in an individual person's genome and add them all up in terms of how much risk they confer for a particular disease.
+00:25:45
+And then they've put people on a spectrum of their disease risk and for certain diseases where we've been sufficiently powered to really understand the connection between the many, many small variations that give rise to an increased disease risk. There is some pretty significant differences in terms of the risk between the people at the highest decile of this polygenic risk or in the people the lowest Dussel. Sometimes those differences are a factor of 10 or 12 higher.
+00:26:16
+So there is definitely a lot that our genetics contributes to disease risk, even if it's not by any stretch.
+00:26:25
+The full explanation from the machine learning perspective, there's a signal there.
+00:26:29
+There is definitely signal in the genetics and there's even more signal, we believe, in looking at the cells that are derived from those different genetics, because in principle, you could say all the signals there, the genetics level. So we don't need to look at the cells. But our understanding of the biology is so limited at this point than seeing what actually happens at the cellular level is a heck of a lot closer to the human clinical outcome than looking at the genetics directly and so we can learn a lot more from it than we could by looking at genetics alone.
+00:27:06
+So just to get a sense, I don't know if it's easy to do, but what kind of data is useful in this disease in a dish model of what what are what's what's the source of raw data information? And also, from my outsider's perspective, sort of biology and cells are squishy things and they are.
+00:27:26
+How do you connect literally what you think, how you connect? The computer to add to that sensory mechanisms, I guess so that's another one of those revolutions that have happened in the last 10 years in that our ability to measure cells very quantitatively has also dramatically increased. So back when I started doing biology in, you know, the late 90s, early 2000s, that was the initial era where we started to measure biology and really quantitative ways using things like microarrays, where you would measure in a single experiment the activity level, what's called expression level of multiple of every gene in the genome in that sample.
+00:28:14
+And that ability is what actually allowed us to even understand that there are molecular subtypes of diseases like cancer where up until that point is like, oh, you have breast cancer.
+00:28:26
+But then we looked we looked at the molecular data.
+00:28:30
+It was clear that there's different subtypes of breast cancer that at the level gene activity looked completely different to each other.
+00:28:38
+So that was the beginning of this process. Now we have the ability to measure individual cells in terms of their gene activity, using what's called single cell RNA sequencing, which basically sequences the RNA, which is that activity level of different genes for every gene in the genome. And you could do that a single cell level. So that's an incredibly powerful way of measuring cells. I mean, you literally count the number of transcripts of really turns that squishy thing in something that's digital.
+00:29:09
+Another tremendous data source that's emerged the last two years is microscopy and specifically even super resolution microscopy, where you could use digital reconstruction to look at some cellular structures, sometimes even things that are below the diffraction limit of light by doing sophisticated reconstruction. And again, that gives you a tremendous amount of information at the cellular level.
+00:29:35
+There's now more and more ways that amazing scientists out there are developing for getting new types of information from even single cells.
+00:29:47
+And so that is a way of turning those squishy things into digital data, into beautiful their cells.
+00:29:55
+But so that data set then with machine learning tools allows you to maybe understand the developmental like the mechanism of the of a particular disease. And if it's possible to sort of at a high level describe how does. How does that help? Lead to drug discovery that can help prevent reverse that mechanism. So I think there's different ways in which this data could potentially be used.
+00:30:27
+Some people use it for scientific discovery and say, oh, look, we see this phenotype at the cellular level, so let's try and work our way backwards and think which genes might be involved in pathways that give rise to that.
+00:30:44
+That's a very sort of analytical method to sort of work our way backwards using our understanding of known biology. Some people use it in a somewhat more, you know, sort of forward that way.
+00:31:02
+If that was backward, this would be forward, which is to say, OK, if I can perturb this gene, does it show a phenotype that is similar to what I see in disease patients? And so maybe that gene is actually cause the disease. That's a different way. And then there's what we do, which is basically to take that very large collection of data and use machine learning to uncover the patterns that emerge from it. So, for instance, what are those subtypes that might be similar at the human clinical outcome, but quite distinct when you look at the molecular data?
+00:31:39
+And then if we can identify such a subtype, are there interventions that if I apply it to cells that come from the subtype of the disease and you apply that intervention, it could be a drug or it could be a CRISPR gene intervention, does it revert the disease state to something that looks more like normal, happy, healthy cells?
+00:32:01
+And so hopefully, if you see that, that gives you a certain hope that that intervention will also have a meaningful clinical benefit to people. And there's obviously a bunch of things that you would want to do after that to validate that. But it's a very different and much less hypothesis driven way of uncovering new potential interventions and might give rise to things that are not the same things that everyone else is already looking at. That's a I don't know. I'd just like to psychoanalyze my own feeling about our discussion currently.
+00:32:35
+It's so exciting to talk about sort of fundamentally something that's been turned into a machine learning problem and that's can have so much real world impact. Kind of cool. That's kind of exciting because I'm so most of my days spent with data sets that I guess closer to the newsgroups. So this is a kind of it just feels good to talk about. In fact, I don't almost don't want to talk to you about machine learning. I want to talk about the fundamentals of the dataset, which is which is it's just an exciting place to be.
+00:33:07
+I agree with you.
+00:33:09
+It's what gets me up in the morning.
+00:33:11
+It's also what attracts a lot of the people who work at and central to and Cedro, because I think all of the certainly all of our machine learning people are outstanding and could go get a job, you know, selling ads online or doing e-commerce or even self-driving cars.
+00:33:29
+Yes, but but I think they would want they they come to us because what? Because they want to work on something that has more of an aspirational nature and can really benefit humanity. What with these with these approaches, what do you hope? What kind of diseases can be helped? You mentioned Alzheimer's, schizophrenia, type two diabetes. Can you just describe the various kinds of diseases that this approach can help? Well, we don't know.
+00:33:56
+And I try and be very cautious about making promises about something that, oh, we will cure X people make that promise. And I think it's I tried to first deliver and then promised as opposed to the other way around, there are characteristics of a disease that make it more likely that this type of approach can potentially be helpful. So, for instance, diseases have a very strong genetic basis are ones that are more likely to manifest in a stem cell derived model.
+00:34:31
+We would want the cellular models to be relatively reproducible and robust so that you could actually get a enough of those cells and in a way that isn't very highly variable and noisy, you would want the disease to be relatively contained in one or a small number of cell types that you could actually create in an in vitro, in a dish setting. Whereas if it's something that's really broadens the stomach and involves multiple cells that are in very distal parts of your body, putting that all in the dish is really challenging.
+00:35:08
+So we want to focus on the ones that are most likely to be successful today with the hope, I think. That really smart bioengineers out there are developing better and better systems all the time, so the diseases that might not be tractable today might be tractable in three years. So, for instance, five years ago, these stem cell derived models and really those people were doing most of the work in cancer cells and cancer cells are very, very poor models of most human biology because they're a they were cancer to begin with.
+00:35:43
+And B, as you passed them and they proliferate in a dish, they become because of the genomic instability, even less similar to human biology.
+00:35:53
+Now we have these stem cell derived models are we have the capability to reasonably robustly, not quite at the right scale yet, but close to derive what's called organoids, which are these tiny little sort of multicellular organ sort of models of an organ systems that are cerebral organoids and liver organoids and kidney organoids and brain organ organoid, possibly the coolest thing I've ever seen. That like the coolest thing.
+00:36:24
+Yeah. And then I think on the horizon, we're starting to see things like connecting these organoids to each other so that you could actually start. And there's some really cool papers that start to do that where you can actually start to say, OK, can we do multi organ system stuff?
+00:36:39
+There's many challenges that it's not easy by any stretch, but it might I'm sure people will figure it out.
+00:36:46
+And in three years or five years, there will be disease models that we could make for things that we can't make today.
+00:36:52
+Yeah, and this conversation would seem almost outdated with the kind of scale that could be achieved in like three years.
+00:36:58
+So that would be so cool that you've co-founded Coursera with. Interesting. And we're part of the whole milk revolution.
+00:37:08
+So to jump topics a little bit, can you maybe tell the origin story of the history, the origin story of Moakes, of Coursera and in general the you're teaching to huge audiences and very sort of impactful topic of our generation.
+00:37:29
+So I think the origin story of Moogs emanates from a number of efforts that occurred at Stanford University around, you know, the late 2000s where different individuals within Stanford, myself included, were getting really excited about the opportunities of using online technologies as a way of achieving both improved quality of teaching and also improved scale.
+00:37:58
+And so Andrew, for instance, led the the Stanford engineering everywhere, which was sort of an attempt to take 10 Stanford courses and put them online just as video lectures. I led an effort within Stanford to take some of the courses and really create a very different teaching model that broke those up into smaller units and had some of those embedded interactions and so on, which got a lot of support from university leaders because they felt like it was potentially a way of improving the quality of instruction at Stanford by moving to what's now called the flipped classroom model.
+00:38:40
+And so those efforts eventually sort of started to interplay with each other and created a tremendous sense of excitement and energy within the Stanford community about the potential of online teaching and led in the fall of 2011 to the launch of the first Stanford looks.
+00:38:59
+The by the way, Moakes is probably impossible that people don't know, but I guess massive open online courses, online courses.
+00:39:09
+So they did not come up with the acronym. I'm not particularly fond of the acronym, but it is what it is where it is.
+00:39:15
+Big Bang is not a great term for the start of the universe, but it is what it is.
+00:39:19
+Probably so.
+00:39:22
+So anyway, we saw those courses launched in in the fall of 2011 and there were within a matter of weeks with no real publicity campaign, just a New York Times article that went viral, about 100000 students or more in each of those courses.
+00:39:41
+And I remember this conversation that Andrew and I had was just like, wow, just there's this real need here.
+00:39:50
+And I think we both felt like, sure, we were accomplished academics and we could go back and, you know, go back to our labs, write more papers. But if we did that, then this wouldn't happen and it seemed too important not to happen. And so we spent a fair bit of time debating, do we want to do this as a Stanford efforts kind of building on what we'd started? Do we want to do this as a four?
+00:40:15
+Profit company to want to do this is a non profit, and we decided ultimately to do it as we did with Corsaro.
+00:40:22
+And so, you know, we started really operating as a company at the beginning of 2012.
+00:40:30
+The rest is history and the rest is history. But how did you. Was that really surprising to you?
+00:40:36
+How do you how did you at that time and at this time make sense of this need for sort of global education?
+00:40:44
+You mentioned that you felt that while the popularity indicates that there's a hunger for sort of globalization of learning, I think there is a hunger for learning that.
+00:41:01
+You know, globalization is part of it, but I think it's just a hunger for learning the world has changed in the last 50 years.
+00:41:08
+It used to be that you finished college, you got a job.
+00:41:13
+By and large, the skills that you learned in college were pretty much what got you through the rest of your job history. And, yeah, you learned some stuff, but it wasn't a dramatic change. Today, we're in a world where the skills that you need for a lot of jobs, they didn't even exist when you went to college. And the jobs and many of the jobs that existed when you went to college don't even exist today or dying.
+00:41:37
+So part of that is due to high. But not only and we need to find a way of keeping people, giving people access to the skills that they need today. And I think that's really what's driving a lot of this hunger.
+00:41:52
+So I think if we even take a step back, all for you, all the starting, trying to think of new ways to teach or to new ways to sort of organize the material and present the material in a way that would help the education process, the pedagogy.
+00:42:09
+So what have you learned about effective education from this process of playing, of experimenting with different ideas?
+00:42:18
+So we learned a number of things, some of which I think could translate back and have translated back effectively to how people teach on campus, and some of which I think are more specific to people who learn online, more sort of people who learn as part of their daily life.
+00:42:36
+So we learned, for instance, very quickly that short is better.
+00:42:40
+So people who are especially in the workforce, can do a 15 week, semester long course. They just can't fit that into their lives. Sure you can.
+00:42:50
+You can. You describe the shortness of what the the the entirety. So every aspects of the little lectures that the lecture short the course is short. Both we started out, you know, the first online education efforts were actually MIT Open Courseware initiatives, and that was, you know, recording of classroom lectures and, you know, hour and a half or something like that.
+00:43:15
+And that didn't really work very well.
+00:43:17
+I mean, some people benefit. I mean, of course they did. But it's not really very palatable experience for someone who has a job and, you know, three kids and they need to run errands and such. They can't fit 15 weeks into their life. And and the hour and a half is really hard.
+00:43:37
+So we learn very quickly.
+00:43:40
+I mean, we started out with short video modules and over time made them shorter because we realized that 15 minutes was still too long.
+00:43:48
+If you want to fit in when you're waiting in line for your kid's doctor's appointment, it's better if it's five to seven. We learned that 15 week courses don't work. And you really want to break this up into shorter units so that there is a natural completion point gives people a sense of they're really close to finishing something meaningful. They can always come back and take part two and part three. We also learn that compressing the content works really well because some people that pace works well.
+00:44:17
+For others, they can always rewind and watch again. And so people have the ability to then learn at their own pace. And so that flexibility, the brevity and the flexibility are both things that we found to be very important. We learned that engagement during the content is important, and the quicker you give people feedback, the more likely they are to be engaged. Hence the introduction of these, which actually was an intuition that I had going in and was then validated using data that introducing some of these sort of little micro quizzes into the lectures really helps.
+00:44:54
+Graded as automatically graded assessments really help, too, because it gives people feedback. There you are. So all of these are valuable.
+00:45:02
+And then we learn about some other things, too. We did some really interesting experiments, for instance, on the gender bias and how having a female role model as an instructor can change the balance of men to women in terms of especially in STEM courses. And you could do that online by doing a B testing in ways that would be really difficult to go on campus.
+00:45:25
+That's exciting. But so the shortness, the compression, I mean, if that's actually so, that that probably is true.
+00:45:32
+For all you know, good editing is always just compressing the content, making it shorter. So that puts a lot of burden on the creator of the instructor and the creator of the educational content. Probably most lectures that I might see or Stanford could be five times shorter if the preparation was put put enough.
+00:45:54
+So maybe people might disagree with that. But like the crispness, the clarity that. A lot of them, like Corsaro delivers, is how much effort does that take? So, first of all, let me say that it's not clear that that crispiness would work as effectively in a face to face setting because people need time to absorb the material. And so you need to at least pause and give people a chance to reflect and maybe practice. And that's what moves do, is that they give you these chunks of content and then ask you to practice with it.
+00:46:30
+And that's where I think some of the newer pedagogy that people are adopting and face to face teaching, they have to do with interactive learning and such can be really helpful.
+00:46:40
+But both those approaches, whether you're doing that type of methodology and online teaching or in that flipped classroom interactive teaching, what's so to pause?
+00:46:52
+What's the classroom flipped classroom is a way in which online content is used to supplement face to face teaching, where people watch the videos perhaps and do some of the exercises before coming to class. And then when they come to classes, actually to do much deeper problem solving, oftentimes in a group.
+00:47:13
+But any one of those different pedagogies that are beyond just standing there and droning on in front of the classroom for an hour and 15 minutes require a heck of a lot more preparation. And so it's one of the challenges, I think, that people have that we had when trying to convince instructors to teach on Coursera.
+00:47:33
+And it's part of the challenges that pedagogy experts on campus have in trying to get faculty to teach differently so that it's actually harder to teach that way than it is to stand there drawn.
+00:47:45
+Do you think Moakes will replace in-person education or become the majority of in-person of education of the way people learn in the future? And the future could be very far away. But where is the trend going, do you think?
+00:48:03
+So I think it's a nuanced and complicated answer. I don't think Mook's will replace.
+00:48:11
+Face to face teaching, I think learning is in many cases a social experience and even a Coursera, we had people who naturally formed study groups even when they didn't have to just come and talk to each other. And we found that that actually benefitted their learning in very important ways. So there was more success in among learners who had those study groups than among ones who didn't. So I don't think it's just going to oh, we're all going to just suddenly learn online with a computer and no one else in the same way that, you know, recorded music has not replaced life concerts.
+00:48:51
+But I do think that especially when you are thinking about continuing education, the stuff that people get when they're traditional, whatever high school college education is done, and they yet have to maintain their level of expertise and skills in a rapidly changing world, I think people will consume more and more educational content in this online format because going back to school for formal education is not an option for most people.
+00:49:21
+It briefly and it might be a difficult question to ask, but there's a lot of people fascinated by artificial intelligence, by machine learning. But deep learning is their recommendation for the next year or for a lifelong journey of somebody interested in this. How do they how do they begin?
+00:49:40
+How do they enter that learning journey?
+00:49:45
+I think the important thing is first to just get started. And there's plenty of online content that one can get for both the core foundations of mathematics and statistics and programming. And then from there to machine learning, I would encourage people not to skip too quickly past the foundations because I find that there is a lot of people who learn machine learning, whether it's online or on campus, without getting those foundations. And they basically just turn the crank on existing models in ways that they don't allow for.
+00:50:19
+A lot of innovation and an adjustment to the problem at hand, but also B, are sometimes just wrong. And they don't even realize that their application is wrong because there's artifacts that they haven't fully understood. So I think the foundations machine learning is an important step. And then and then actually start solving problems, try and find someone to solve them with, because especially at the beginning, it's useful to have someone to bounce ideas off and fix mistakes that you make and and you can fix mistakes that they make.
+00:50:53
+But but then just find practical problems, whether it's in your workplace or if you don't have that Kagle competitions are such a really great place to find interesting problems and just.
+00:51:06
+Practice, practice, perhaps a bit of a romanticised question, but what idea in deep learning do you find?
+00:51:16
+Have you found in your journey the most beautiful or surprising or interesting? Perhaps not just deep learning, but I in general statistics.
+00:51:32
+Good answer with two things, one would be the foundational concept of training, which is that you start from the raw data and you train something that is not like a single piece, but rather the towards the actual goal that you're looking to from the raw data to the outcome like a..
+00:51:58
+No, no details in between.
+00:52:00
+Well, not know details, but the fact that you I mean, you could certainly introduce building blocks that were trained towards other tasks than actually coming to that in my second half.
+00:52:10
+But it doesn't have to be like a single monolithic blob in the middle. Actually, I think that's not ideal, but rather the fact that at the end of the day, you can actually train something that goes all the way from the beginning to the end.
+00:52:24
+And the other one that I find really compelling is the notion of learning a representation that in its turn, even if it was trained to another task, can potentially be used as a much more rapid starting point to solving a different task. And that's, I think, reminiscent of what makes people successful learners. It's something that is relatively new in the machine learning space. I think it's underutilized even relative to today's capabilities. But more and more of how do we learn sort of reasonable representation.
+00:53:03
+So end to end and transfer learning, yeah. Is it surprising to you that neural networks are able to, in many cases, do these things? Is it maybe take him back to when you when you first would dive deep into neural networks or in general even today? Is it surprising that neural networks work at all and work? Wonderfully to do this kind of raw and learning and even transfer learning, I think I was surprised by how well.
+00:53:39
+When you have large enough amounts of data, it's possible to find a meaningful representation in what is an exceedingly high dimensional space. And so I find that to be really exciting. And people are still working on the math for that. There's more papers on that every year.
+00:54:00
+And I think it would be really cool if we figured that out.
+00:54:05
+But that to me was a surprise, because in the early days when I was starting my way in machine learning and the datasets were rather small, I think we. We believe that I believe that you needed to have a much more constrained and knowledge rich search space to really make to really get a meaningful answer, and I think it was true at the time.
+00:54:31
+What I think is is still a question is will a completely knowledge free approach where there's no prior knowledge going into the construction of the model, is that going to be the solution or not?
+00:54:48
+It's not actually the solution today in the sense that the architecture of a convolutional neural network that's used for images is actually quite different to the type of network that's used for language and yet different from the one that's used for speech or biology or any other application. There's still some.
+00:55:12
+Insight that goes into the structure of the network to get the feel the right performance. Will you be able to come with the Universal Learning Machine? I don't know.
+00:55:22
+I wonder if there's always has to be some insight injected somewhere or whether it can converge. So you've done a lot of interesting work with probably the graphical models in general vision, deep learning and so on. Can you maybe speak high level? How can learning systems deal with uncertainty?
+00:55:42
+One of the limitations, I think, of a lot of machine learning models is that they come up with an answer and you don't know how much you can believe that answer and. Oftentimes, the answer is actually quite poorly calibrated relative to its uncertainties, even if you look at where the you know, the confidence that comes out of the sale, the neural network at the end, and you ask how much more likely is an answer of zero point eight versus zero point nine?
+00:56:22
+It's not really in any way calibrated to the to the actual reliability of that network and how true it is. And the further away you move from the training data, the more not only the more wrong than that, work is often more wrong and more confident in its wrong answer.
+00:56:41
+And that is a serious issue in a lot of application areas.
+00:56:46
+So when you think, for instance, about medical diagnosis as being maybe an epitome of how problematic this can be, if you were training your network on a certain set of patients in a certain patient population and I have a patient that is an outlier and there is no human that looks at this and that patient is put into a neural network in your network, not only gives a completely incorrect diagnosis, but is supremely confident in its wrong answer. You could kill people.
+00:57:13
+So I think creating more of an understanding of how do you. Produced networks that are calibrated in their uncertainty and can also say, you know, I give up, I don't know what to say about this particular data instance because I've never seen something that's sufficiently like it before.
+00:57:35
+I think it's going to be really important in mission critical applications, especially ones where human life is at stake. And that includes medical applications. But it also includes, you know, automated driving because you want the network to be able to you know, I have no idea what this blob is that I'm seeing in the middle of the road. I'm just going to stop because I don't want to potentially run over a pedestrian that I don't recognize.
+00:57:59
+Is there good mechanisms, ideas of how to allow learning systems to provide that uncertainty, whatever, along with their predictions?
+00:58:11
+Certainly, people have come up with mechanisms that involve Bayesian deep learning, deep learning that involves Gaussian processes. I mean, there is a slew of different approaches that people have come up with. There's methods that use ensembles of networks with are trained with different subsets of data, different random starting points. Those are actually sometimes surprisingly good at creating sort of a set of how confident or not you are in your answer. It's very much an area of open research.
+00:58:47
+Let's cautiously venture back into the land of philosophy and speaking of assistance, providing uncertainty, somebody like Stuart Russell believes that as we create more and more intelligent systems, it's really important for them to be full of self-doubt because, you know, if they're given more and more power, we want them the way to maintain human control over our systems or human supervision, which is true, like you just mentioned, with autonomous vehicles.
+00:59:16
+It's really important to get human supervision when the car's not sure, because if it's really confident in cases when it can get in trouble is going to be really problematic. So we ask about sort of the questions of ajai and human level intelligence.
+00:59:32
+And we've talked about curing diseases now, which is sort of fundamental thing. We can have an impact today, but er people also dream of both understanding and creating intelligence. Is that something you think about? Is that something you dream about? Is that something you think is within our reach to be thinking about as computer scientists? Boy, let me tease apart different parts of that question. The worst question.
+01:00:05
+Yeah, it's a multipart question.
+01:00:08
+So let me start with the feasibility of ajai, then I'll talk about the timelines a little bit and then talk about, well, what controls does one need one protecting when thinking about protections and the.
+01:00:27
+I say so. You know, I think Ajai obviously is a longstanding dream that even our early pioneers in the space had the Turing test and so on, are the earliest discussions of that were obviously closer than we were 70 or so years ago.
+01:00:49
+But I think it's still very far away.
+01:00:54
+I think machine learning algorithms today are really exquisitely good pattern recognizers in very specific problem domains where they have seen enough training data to make good predictions.
+01:01:11
+You take a.
+01:01:13
+Machine learning algorithm and you move at least slightly different version of even that same problem, far less one that's different and it will just completely choke. So I think we're nowhere close to the versatility and flexibility of even a human toddler in terms of their ability to contact, switch and solve different problems using a single knowledgebase, single brain.
+01:01:41
+So am I desperately worried about the machines taking over the universe and starting to kill people because they want to have more power?
+01:01:54
+I don't think so. Well, sort to pause on that. So you kind of intuited that superintelligence is a very difficult thing to achieve that even intelligent, intelligent superintelligence.
+01:02:06
+We're not even close to intelligence, even just the greater abilities of generalization of our current systems, but. We haven't answered all the parts to getting to the second part, but maybe another tangent you can also pick up is can we get in trouble with much dumber systems?
+01:02:25
+Yes, and that is exactly where I was going. OK, so I. So just to wrap up on the threats of Aidi, I think that it seems to me a little early today to.
+01:02:41
+Figure out protections against a human level or super human level intelligence whose where we don't even see the skeleton of what that would look like. So it seems that it's very speculative on how how to protect against that.
+01:02:57
+But we can definitely and have gotten into trouble on much dumber systems.
+01:03:03
+And a lot of that has to do with the fact that the systems that we're building are increasingly complex, increasingly poorly understood, and there is ripple effects that are unpredictable in changing little things that can have dramatic consequences on the outcome.
+01:03:26
+And by the way, that's not unique to artificial intelligence. I think artificial intelligence exacerbates that brings it to a new level. But heck, our electric grid is really complicated. The software that runs our financial markets is really complicated. And we've seen those ripple effects translate to dramatic negative consequences, like, for instance, financial crashes that have to do with feedback loops that we didn't anticipate. So I think that's an issue that we need to be thoughtful about in many places.
+01:03:59
+Artificial intelligence being one of them. And we should.
+01:04:03
+And I think it's really important that people are thinking about ways in which we can have better interoperability of systems, better tests for, for instance, measuring the extent to which the machine learning system that was trained in one set of circumstances. How well does it actually work in a very different set of circumstances where you might say, for instance, well, I'm not going to be able to test my automated vehicle in every possible city village weather condition and so on.
+01:04:37
+But if you trained it on this set of conditions and then tested it on 50 or 100 others that were quite different from the ones that you trained that on then and it worked then that gives you confidence that the next 50 that you didn't test it on might also work so effectively testing for generalizability.
+01:04:56
+So I think there's ways that we should be constantly thinking about to validate the robustness of our systems.
+01:05:04
+I think it's very different from the let's make sure robots don't take over the world.
+01:05:10
+And then the other place where I think we have a threat, which is also important for us to think about, is the extent to which the analogy can be abused. So like any really powerful technology.
+01:05:24
+Machine learning can be very much used badly as well as to good, and that goes back to many other technologies that have come up with when people invented projectile missiles and it turns into guns and people invented nuclear power and it turned into nuclear bombs.
+01:05:44
+And I think honestly, I would say that to me, gene editing and CRISPR is at least as dangerous a technology if used badly then machine as machine learning, you could create really nasty viruses and such using gene editing that are, you know, you should be really careful about.
+01:06:09
+So anyway, that's something that we need to be really thoughtful about whenever we have any really powerful new technology.
+01:06:19
+Yeah, and the case of machine learning as a desirable machine, learning all the kinds of attacks like security threats, and there's a social engineering or machine learning algorithms and there's face recognition and Big Brother is watching you.
+01:06:33
+And there is the killer drones that can potentially go and targeted execution of people in a different country. I don't, you know, argue that bombs are not necessarily that much better. But but, you know, people want to kill someone. They'll find a way to do it.
+01:06:53
+So if you if in general, if you look at trends in the data, there's less wars, there's less violence, there's more human rights. So we've been doing overall quite good as a human species.
+01:07:05
+Are you are you optimistic?
+01:07:09
+Maybe another way to ask is, do you think most people are good and fundamentally we tend towards a better world, which is underlying the question? Well, machine learning with gene editing ultimately led us somewhere good.
+01:07:29
+Are you optimistic?
+01:07:33
+I think, by and large, I'm optimistic.
+01:07:36
+I think that most people mean well, that doesn't mean that most people are, you know, altruistic do gooders, but I think most people mean well. But I think it's also really important for us as a society to create social norms where doing good and being perceived well by our peers is are positively correlated.
+01:08:08
+I mean, it's very easy to create dysfunctional societies. There are certainly multiple psychological experiments as well as, sadly, real world events where people have devolved to a world where being perceived well by your peers is correlated with really atrocious, often genocidal behaviors.
+01:08:34
+So we really want to make sure that we maintain a set of social norms where people know that to be a successful member of society, you want to be doing good.
+01:08:44
+And one of the things that I sometimes worry about is that some societies don't seem to necessarily be moving in the forward direction in that regard, where it's not necessarily the case that doing that being a good person is what makes you be perceived well by your peers.
+01:09:04
+And I think that's a really important thing for us as a society to remember.
+01:09:08
+It's very easy to degenerate back into a universe where it's OK to do really bad stuff and still have your peers think you're amazing.
+01:09:21
+It's fun to ask a world class computer scientist and engineer a ridiculously philosophical question like what is the meaning of life? Let me ask what gives your life meaning? What are what is the source of fulfillment? Happiness, joy, purpose. When we were starting Coursera in the fall of 2011.
+01:09:50
+That was right around the time that Steve Jobs passed away, and so the media was full of various famous quotes he uttered and one of them that really stuck with me because it resonated with stuff that I'd been feeling for even years before that is that our goal in life should be to make a dent in the universe. So I think that to me, what gives my life meaning is that I would hope that when I am lying there on my deathbed and looking at what had done in my life, that I can point to ways in which I have left the world a better place than it was when I entered it.
+01:10:37
+This is something I tell my kids all the time, because I also think that the burden of that is much greater for those of us who were born to privilege. And in some ways I was I mean, I wasn't born super wealthy or anything like that, but I grew up in an educated family with parents who loved me and took care of me. And I had a chance at a great education and and so and I always had enough to eat.
+01:11:03
+So I was in many ways born to privilege more than the vast majority of humanity. And my kids, I think, are even more so born to privilege than I was fortunate enough to be.
+01:11:15
+And I think it's really important that for especially for those of us who have that opportunity, that we use our lives to make the world a better place.
+01:11:24
+I don't think there's a better way to end it. That is an honor to talk to you. Thank you so much for talking to. Thanks for listening to the conversation with Daphne Koller and thank you to our presenting sponsor cash app. Please consider supporting the podcast by downloading cash app and using Code Leks podcast. Enjoy this podcast. Subscribe. I need to review the Five Stars and Apple podcast support on Patrón. Simply connect with me on Twitter. Allex Friedman.
+01:11:53
+And now let me leave you some words from Epocrates, a physician from ancient Greece who's considered to be the father of medicine. Wherever the art of medicine is loved, there's also a love of humanity. Thank you for listening and hope to see you next time.

@@ -1,0 +1,1028 @@
+00:00:00
+The following is a conversation with Manala's Keli's. He's a professor at MIT and head of the MIT Computational Biology Group. He's interested in understanding the human genome from a computational, evolutionary, biological and other cross disciplinary perspective. He has more big, impactful papers and awards than I can list. But most importantly, he's a kind, curious, brilliant human being and just someone I really enjoy talking to. His passion for science and life in general is contagious. The hours I honestly flew by and I'm sure we'll talk again on this podcast soon.
+00:00:37
+Quick summary of the ads. Three sponsors, Blankest, eight sleep and master class. Please consider supporting this podcast by going to Blinco Steakhouse Flex eight sleep, Dotcom's last legs and signing up a masterclass dotcom slash scolex. Click the links by the staff. Get the discount. It's the best way to support this podcast. If you enjoy this thing, subscribe on YouTube review by starting up a podcast supported on page on Connect with me on Twitter. Àlex Friedemann, as usual.
+00:01:08
+I'll do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. This episode is supported by Blankest, my favorite app for learning new things. Get It A Blink is that Councillor Lex for seven day free trial and twenty five percent off. Afterwards, Linkous takes the key ideas from thousands of nonfiction books and connects them down into just fifteen minutes they can read or listen to.
+00:01:35
+I'm a big believer in reading at least an hour every day. As part of that I use Blankest every day to try out a book I might otherwise never have a chance to read. And in general, it's a great way to broaden your view of the idea landscape out there and find books that you may want to read more deeply with Blankest. You get unlimited access to read or listen to a massive library of condensed nonfiction books. Go to Linkous. Dotcom Slash likes to try it free for seven days and save twenty five percent off your new subscription.
+00:02:08
+That's blankies dot com slash Lex is spelled Belin k. I. S t. This show is also sponsored by Asleep, and it's part of a mattress you can check out as the complex to get two hundred dollars off, it controls temperature with a nap. It can cool down to as low as 55 degrees on each side of the bed. Separately, research shows that temperature has a big impact on the quality of our sleep. Anecdotally, that's been true for me.
+00:02:37
+It's truly been a game changer. I love it.
+00:02:40
+The pot is packed with sensors that track heart rate, heart rate variability and respiratory rate, showing it all in their app. The apps health metrics are amazing, but the cooling alone is honestly worth the money. Check it out. A sleep that councillor's looks to get two hundred dollars off the shows, also sponsored by Master Class Sign up a master class dot com slash likes to get a discount and to support this podcast. When I first heard about Master Class, I thought it was too good to be true.
+00:03:09
+For one hundred eighty bucks a year you get an all access pass to watch courses from the list. Some of my favorites. Chris Hadfield on space exploration. The other Garth Tyson scientific thinking and communication will write one of my favorite game designers, Carlos Santana, one of my favorite guitar players. Garry Kasparov, of course, the greatest chess player of all time. I'm not biased, Danny. On the ground on poker and many more.
+00:03:33
+Chris Hadfield explaining how rockets work and the experience of being launched into space alone is worth the money. By the way, you can watch it on basically any device. Once again, sign up a master class slash Lexx to get a discount and to support this podcast. And now here's my conversation with Manlius Keli's. What to you is the most beautiful aspect of the human genome? Don't get me started. So we've got time. The first answer is that the beauty of genomes transcends humanity.
+00:04:24
+So it's not just about the human genome. Genomes in general are amazingly beautiful. And again, I'm obviously biased. So in my view, the way that I like to introduce the human genome and the way that I'd like to introduce genomics to my class is by telling them, you know, we're not the inventors of the first digital computer. We are the descendants of the first digital computer. Basically, life is digital, and that's absolutely beautiful about life, the fact that at every replication step you don't lose any information because that information is digital.
+00:04:57
+If it was analog, it was just prodding concentrations, you'd lose it. After a few generations, it would just dissolve away. And that's what the ancients didn't understand about inheritance. The first person to understand digital inheritance was Mendel, of course, and his theory, in fact, stayed in a bookshelf for like 50 years while Darwin was getting famous about natural selection. But the missing component was the digital inheritance, the mechanism of evolution that Mendel had discovered.
+00:05:26
+So that aspect, in my view, is the most beautiful aspect, but it transcends all of life.
+00:05:31
+And can you elaborate maybe the inheritance part? What was the what was the key thing that the ancients didn't understand?
+00:05:39
+So the very theory of inheritance as discrete units, you know, throughout the life of Mendel and well, after his writing, people thought that his experiments were just a little fluke, that they were just, you know, a little exception that would normally not even apply to humans, that basically what they saw is this continuum of eye color, this continuum of skin color, this continuum of hair color, this continuum of height.
+00:06:09
+And all of these continuums did not fit with a discrete type of inheritance that Mendel was describing. But what's unique about genomics and what unique about the genome is really that there are two copies and that you get a combination of these.
+00:06:23
+But for every trait, there are dozens of contributing variables. And it was only Ronald Fisher in the 20th century that basically recognized that even five Mendelian traits would add up to a continuum like inheritance pattern. And he wrote a series of papers that still are very relevant today about sort of this Mendelian inheritance of continuum like traits. And I think that that was the missing step in inheritance so well before the discovery of the structure of DNA, which is, again, another amazingly beautiful aspect, the double helix.
+00:07:02
+What I like to call the most noble molecule of our time is, you know, holds within it the secret of that discrete inheritance. But the conceptualization of discreetness, you know, elements is something that precedes that.
+00:07:16
+So even though it's discrete, when it materializes itself into actual trace that we see, it can be continuous and basically arbitrarily rich and complex.
+00:07:27
+So if you have five genes that contribute to human height and there aren't five, there's a thousand. If there's only five genes and you inherit some combination of them and everyone makes you two inches taller or two inches shorter, it'll look like a continuum trait, a continuous trait. But instead of five, there are thousands and every one of them contributes to less than one millimeter. We change in height more during the day, then each of these genetic variants contribute to survive the evening, you're shorter than you were you woke up with.
+00:08:00
+It's not weird, then, that we're not more different than we are.
+00:08:05
+Why are we all so similar if there's so much possibility to be different?
+00:08:09
+Yeah, so. So there are selective advantages to being medium. If you're extremely tall or extremely short, you run into selective disadvantages. So you have trouble breathing, you have trouble running, you have trouble sitting.
+00:08:22
+If you're too tall, if you're too short, you might have other selective pressures are acting against that. If you look at natural history of human population, there's actually selection for height in Northern Europe and selection against height in southern Europe. So there might actually be advantages to actually being not not super tall.
+00:08:41
+And if you look across the entire human population, you know, for many, many traits, there's a lot of push towards the middle.
+00:08:49
+Balancing selection is, you know, the usual term for selection that sort of seeks to not be extreme and to sort of have a combination of illegals that sort of, you know, keep recombining. And if you look at, you know, mate selection, superduper, those people will not tend to sort of marry super, super tall people. Very often you see these couples that are kind of compensating for each other and the best predictor of the kid's age is very often just take the average of the two parents and then adjust for sex and boom, you get it.
+00:09:24
+It's extremely heritable.
+00:09:25
+Let me ask you kind of took a step back to the genome outside of just humans, but is there something that you find beautiful about the human genome specifically?
+00:09:35
+So I think the genome, if more people understood the beauty of the human genome, they would be so many fewer wars, so much less anger in the world. I mean, what's really beautiful about the human genome is really the variation that teaches us both about individuality and about similarity. So any two people on the planet are ninety nine point nine percent identical. How can you fight with someone who is ninety nine point nine percent identical to you? It's just counterintuitive.
+00:10:06
+And yet any two siblings of the same parents differ in millions of locations. So every one of them is basically two to the million unique from any pair of parents, let alone any two random parents on the planet.
+00:10:22
+So that's, I think, something that teaches us about sort of the nature of humanity in many ways, that every one of us is as unique as any star and way more unique.
+00:10:32
+And actually in many ways and yet we're all brothers and sisters and they're just like stars.
+00:10:40
+Most of it is just a fusion reaction.
+00:10:43
+Yeah, you only have a few parameters to describe stars, you know, Masais, initial size and, you know, stage of life, whereas for humans it's, you know, thousands of parameters scattered across their genome. So the other thing that makes humans unique. The other things that makes inheritance unique in humans is that most species inherit things vertically. Basically, instinct is a huge part of their behavior.
+00:11:11
+The way that, you know, I mean, with my kids, we've been watching this nest of birds with two little eggs, you know, outside our window for the last few months, for the last few weeks as they've been growing.
+00:11:24
+And there's so much behavior that's hard coded. Birds don't just learn as they grow. They don't you know, there's no culture like a bird that's born in Boston will be the same as a bird that's born in California. So there's not as much inheritance of ideas of customs. A lot of it is hard coded in their genome, which really beautiful about the human genome is that if you take a person from today and you place them back in ancient Egypt, or if you take a person from ancient Egypt and you place them here today, they will grow up to be completely normal.
+00:12:01
+That is not genetics. This is the other type of inheritance in humans. So on one hand, we have the genetic inheritance, which is vertical from your parents down.
+00:12:13
+On the other hand, we have horizontal inheritance, which is the ideas that are built up at every generation are horizontally transmitted and the huge amount of time that we spend in educating ourselves, a concept known as neoteny meal for newborn and then tenne for holding.
+00:12:32
+So if you look at humans, I mean the little birds that were, you know, eggs two weeks ago and now one of them has already flown off, the other ones ready to fly off in two weeks.
+00:12:42
+They're ready to just fend for themselves, humans. Six years, 18 years, 24, getting out of college. I'm still learning. So that's so fascinating.
+00:12:53
+This picture of a vertical and horizontal when you talk about the horizontal is in the realm of ideas.
+00:12:58
+Exactly. OK, so the actual social interactions. That's exactly right. That's exactly right.
+00:13:04
+So basically, the concept of neoteny is that you spend acquiring characteristics from your environment in an extremely malleable state of your brain and the wiring of your brain for a long period of your life compared to primates.
+00:13:19
+We are useless. You take any primate at seven weeks and inhuman at seven weeks. We lose the battle. But at 18 years, you know, all bets are off. Like we basically our brain continues to develop in an extremely malleable form until very late. And this is what allows education. This is what allows the person from Egypt to do extremely well now. And the reason for that is that. The wiring of our brain and the development of that wiring is actually delayed, so, you know, the longer you delay that, the more opportunity you have to pass on knowledge to pass on concepts, ideals, ideas from the parents through the child.
+00:14:03
+And was really absolutely beautiful about humans today is that that lateral transfer of ideas and culture is not just from uncles and aunts and teachers at school, but it's from Wikipedia and review articles on the Web and thousands of journals that are sort of putting out information for free and podcasts and video games and all of that stuff where you can basically learn about any topic, pretty much everything that would be in any super advanced textbook in a matter of days.
+00:14:36
+Instead of having to go to the Library of Alexandria and sail there to read three books and then sail for another few days to get to Athens and et cetera, et cetera.
+00:14:45
+So the democratization of knowledge and the spread, the speed of spread of knowledge is what defines, I think, the human inheritance pattern.
+00:14:55
+So you sound excited about it, about it. Are you also a little bit afraid or are you more excited by the power of this kind of distributed spread of information? So you put it very kindly that most people are kind of using the Internet in, you know, looking Wikipedia, reading articles, reading papers and so on.
+00:15:15
+But if we if we're honest, most people online, especially when they're younger, probably looking at five second clips on tick tock or whatever the new social network is, are you given this power of horizontal inheritance? Are you optimistic or a little bit pessimistic about the this new effect of the Internet and democratization of knowledge on our. And our what would you call this like, would you use the term genome, by the way, for this? Yeah, I think, you know, we use the genome to talk about DNA, but very often we say, you know, I mean, when I'm Greek, so people ask me, hey, what's in the Greek genome?
+00:15:57
+And I'm like, well, yeah, what's in the Greek genome is both our genes and also our ideas and our ideals and our culture.
+00:16:03
+So poetic meaning of the exact. Exactly. Exactly. Yeah, yeah.
+00:16:07
+So I think that there's a beauty to the democratization of knowledge, the fact that you can reach as many people as you know, any other person on the planet. And it's not who you are, it's really your ideas. That matter is a beautiful aspect of the Internet.
+00:16:26
+The I think there's, of course, a danger of my ignorance is as important as your expertise. The fact that with this democratization comes the abolishment of respecting expertise just because you've spent, you know, 10000 hours of your life studying, I don't know, the human brain circuitry. Why should I trust you? I'm just going to make up my own theories and they'll be just as good as yours is an attitude that that sort of counteracts the beauty of the democratization.
+00:16:59
+And I think that within our educational system and within the upbringing of our children, we have to not only teach them knowledge, but we have to teach them the means to get to knowledge.
+00:17:12
+And that, you know, it's very similar to sort of you fish, you catch a fish for a man for one day, you fed them for one day. You teach them how to fish. You fed them for the rest of their life. So instead of just gathering the knowledge they need for any one task, we can just tell them, all right, here's how you Google it. Here's how to figure out what's real and what's not. Here's how you check the sources.
+00:17:33
+Here's how you form a basic opinion for yourself. And I think that inquisitive nature is paramount to being able to sort through these huge wealth of knowledge. So you need a basic educational foundation based on which you can then add on the sort of domain specific knowledge. But that Basic Education Foundation should just just not just be knowledge, but it should also be epistemology, the way to acquire knowledge.
+00:18:04
+I'm not sure any of us know how to do that in this modern day. We're actually learning. One of the big surprising things to me about the coronavirus, for example, is that Twitter has been one of the best sources of information, basically like building your own network of experts of of, you know, as opposed to the traditional centralized expertise of the WTO and the CDC and the or or maybe any one particular respectable person at the top of a department is some kind of institution.
+00:18:38
+You instead look at a, you know, 10, 20 hundreds of people, some of whom are young kids with just that are incredibly good at aggregating data and plotting and visualizing that data. That's been really surprising to me. I don't know what to make of it. I don't know. I don't know how that matures into something stable.
+00:19:01
+I you know, I don't know if you have ideas like what if you were to try to explain to your kids of how where should you go to learn about the about coronavirus?
+00:19:12
+What would you say? It's such a beautiful example. And I think the current pandemic and the speed at which the scientific community has moved in the current pandemic, I think exemplifies this horizontal transfer and the speed of horizontal transfer of information and the fact that. You know, the genome was first sequenced in early January, the first sample was obtained December twenty nine, 2019, a week after the publication of the first genome sequence of Moderne one had already finalized its vaccine design and was moving to production.
+00:19:46
+I mean, this is phenomenal.
+00:19:48
+The fact that we go from not knowing what the heck is killing people in vision to wow, it's sars-cov-2. And here's the set of genes. Here's the genome. Here's the sequence here. The polymorphisms, etc. in the matter of weeks is phenomenal in that incredible pace of transfer of knowledge. There have been many mistakes. So, you know, some of those mistakes may have been politically motivated or other mistakes may have just been innocuous errors. Others may have been misleading the public for the greater good, such as don't wear masks because we don't want to mask the run out.
+00:20:24
+I mean, that was very silly in my view, and a very big mistake.
+00:20:28
+But the the spread of knowledge from the scientific community was phenomenal. And some people will point out to bogus articles that snuck in and made the front page. Yeah, they did. But within 24 hours they were debunked and went out of the front page.
+00:20:44
+And I think that's that's the beauty of science today. The fact that it's not all knowledge is fixed. It's the ability to embrace that nothing is permanent when it comes to knowledge that everything is the current best hypothesis and the current best model that best fits the current data and the willingness to be wrong, the expectation that we're going to be wrong, and the celebration of success based on how long was it not proven wrong for rather than wow, I was exactly right, because no one is going to be exactly right with partial knowledge.
+00:21:15
+But the. Arc towards perfection, I think so much more important than how far you are in your first step, and I think that's sort of the current pandemic has taught us the fact that, yeah, no, of course, we're going to make mistakes, but at least we're going to learn from those mistakes and become better and learn better and spread information better. So if I were to answer the question of where would you go to learn about coronavirus first textbook, it all starts with a textbook.
+00:21:46
+Just open up a chapter on virology and how coronaviruses work, then some basic epidemiology and sort of how pandemics have worked in the past. What are the basic principles surrounding these first wave, second wave? Why do they even exist then? Understanding about growth, understanding about the are not and are t at various time points and then understanding the means of spread how it spreads from person to person. Then how does it get into your cells from when it gets into the cells.
+00:22:18
+What are the paths that it takes. What are the cell types that express the particular ASUDA receptor? How is your immune system interacting with a virus? And once your immune system launches a defense, how is that helping or actually hurting your health? What about the cytokine storm? What are most people dying from? Why are the comorbidities and these risk factors even applying?
+00:22:40
+What makes obese people respond more or elderly people respond more to the virus while kids are completely, you know, very often not even aware that they're spreading it?
+00:22:53
+So the you know, I think there's some basic questions that you would start from and then I'm sorry to say, but Wikipedia is pretty awesome.
+00:23:02
+Yeah. Is pretty awesome. So used to be a time used to be a time, maybe five years ago.
+00:23:07
+I forget I forget one, but people kind of make fun of Wikipedia for being an unreliable source. I never quite understood a thought from the early days. It was pretty reliable or better than a lot of the alternatives. But at this point it's kind of like a solid, accessible survey paper on every subject ever.
+00:23:27
+The there's an ascertainment bias and a writing bias. So so I think this this is related to sort of people saying, oh, so many nature papers are wrong.
+00:23:37
+And they're like, why would you publish in nature so many nature papers are wrong, and my answer is no, no, no.
+00:23:43
+So many nature papers are scrutinized, and just because more of them are being proven wrong than in other articles is actually evidence that they're actually better, better papers overall because they're being scrutinized at a rate much higher than any other journal.
+00:23:58
+So if you basically judge Wikipedia by not the initial content by but by the number of revisions, then of course it's going to be the best source of knowledge eventually. It's still very superficial.
+00:24:14
+You then have to go into the review papers, etc, etc. But I mean, for most scientific project topics, it's extremely superficial, but it is quite authoritative because it is the place that everybody likes to criticize as being wrong.
+00:24:28
+You say they're superficial and a lot of topics that I've studied a lot of I find it I don't know if superficial is the right word. The superficial kind of implies that it's not correct. No, no, I don't mean any implication of it not being correct. It's just superficial. It's basically only scratching the surface for depth.
+00:24:53
+You don't go to Wikipedia and you go to the review articles, but it can be profound in the way that articles rarely one of the frustrating things to me about like certain computer science, like in the machine learning world articles, they don't as often take the the bigger picture view.
+00:25:11
+You know, there's a kind of data set and you show that it works and you kind of show that here's an architectural thing that creates an improvement and so on and so forth. But you don't say, well, like, what does this mean for the nature of intelligence, for future data we haven't even thought about? Or if you're trying to implement this, like if we took this data set of 100000 examples and scaled it to one hundred billion examples with this method, like like look at the bigger picture, which is what a Wikipedia article would actually try to do, which is like what does this mean in the context of computer, the broad field of computer vision or something like that?
+00:25:49
+Yeah, yeah.
+00:25:49
+And no, I agree with you completely, but it depends on the topic. I mean, for some topics there's been a huge amount of work for other topics is just a stub. So, you know, I got it.
+00:25:59
+Yeah. Well, yeah, actually the world which will talk on genomics was not. Yeah I agree.
+00:26:06
+Yeah. Yeah. It's not wrong. It's a his show. Yeah. Every time I criticize something I should feel partly responsible. Basically if more people from my community went there and edited it would not be shallow. It's just that there's different modes of communication in different fields and in some fields that experts have embraced Wikipedia. In other fields it's relegated and per perhaps the reason is that if it was any better to start with, people would invest more time.
+00:26:34
+But if it's not great to start with, then you need a few initial pioneers who will basically go in and say, enough, we're just going to fix that. And then I think it'll catch on much more. So if it's OK.
+00:26:46
+Before we go on to genomics, can we linger a little bit longer on the beauty of the human genome? You've given me a few notes. What else what else do you find beautiful about the human genome?
+00:26:58
+So the last aspect of what makes the human genome unique, in addition to the, um, you know, similarity and the differences and individuality is that.
+00:27:10
+So very early on, people would basically say, oh, you don't do that experiment in human, you have to learn about that in fly or you have to learn about that in years first or in Mao's first or in a private first.
+00:27:22
+And the human genome was, in fact, relegated to sort of all the last place that you're going to go to learn something new that has dramatically changed.
+00:27:31
+And the reason that changed is human genetics. We are the species in the planet that's the most studied right now. It's embarrassing to say that, but this was not the case a few years ago.
+00:27:45
+You used to be, you know, first viruses, then bacteria, then yeast, then the fruit fly in the worm, then the mouse. And eventually human was very fast.
+00:27:59
+So it's embarrassing that it took us this long to focus on it or the eating everything that the model organisms have been taken over because of the power of human genetics, that right now it's actually simpler to figure out the phenotype of something by mining this massive amount of human data than by going back to any of the other species. And the reason for that is that if you look at the natural variation that happens in a population of seven billion, you basically have a mutation in almost every nucleotide.
+00:28:30
+So every nucleotide you want to perturb, you can go find a living, breathing human being and go test the function of that nucleotide base, sort of searching the database and finding that person. Is that embarrassing? It's a beautiful data.
+00:28:43
+It's embarrassing for the for the model organism.
+00:28:46
+The flies. Yeah, exactly. I mean, do you feel on a small tangent, is there something of a value in in the genome of a fly and other these model organisms that you miss that we wish we would have would be looking at deeper so directed perturbation, of course.
+00:29:06
+So I think the place where the place where humans are still lagging is the fact that in an animal model, you can go and say, well, let me knock out this gene completely and let me knock out these three genes completely. And at the moment, you get into combinatorics. It's something you can do in the human because there just simply aren't enough humans on the planet. And again, let me be honest, we haven't sequenced all seven billion people.
+00:29:28
+It's not like we have every mutation, but we know that there's a carrier out there. So if you look at the trend with and the speed with which human genetics has progressed, we can now find thousands of genes involved in human cognition, in human psychology, in the emotions and the feelings that we used to think are uniquely learned.
+00:29:48
+It turns out there's a genetic basis to a lot of that.
+00:29:51
+So the you know, the the human genome has continued to elucidate through these studies of genetic variation, so many different processes that we previously thought were, you know.
+00:30:06
+Something that like free will, free will is a beautiful concept that humans have had for a long time, you know, in the end it's just a bunch of chemical reactions happen in your brain and the particular abundance of receptors that you have this day based on what you ate yesterday or that you have been wired with, based on, you know, your parents and your upbringing, et cetera, determines a lot of that, quote unquote, free will component to, you know, sort of narrower and narrower, you know, sort of slices so much on that point.
+00:30:40
+How much freedom do you think we have to escape the the constraints of our genome?
+00:30:47
+You're making it sound like more and more we're discovering that our genome is actually has a lot of the story already encoded into it. How much freedom do we have?
+00:30:56
+I think so. So let me let me describe what that freedom would look like. That freedom would be my thing.
+00:31:04
+Oh, I'm going to resist the urge to eat that apple because I choose not to. But there are chemical receptors that made me not resist the urge to prove my individuality in my free will by resisting the apple. So then the next question is, well, maybe now resist the urge to resist the apple and I'll go for the chocolate instead to prove my individuality.
+00:31:27
+But then what about those other receptors that, you know, that that might be all encoded in their instincts, kicking the bucket down the road and basically saying, well, your choice well, may have actually been driven by other things that you actually are not using. So that's why it's very hard to answer that question. Well, it's hard to know what to do with that. I mean, if if the genome has. If there's not much freedom, it's it's the butterfly effect, it's basically that in the short term, you can predict something extremely well by knowing the current state of the system.
+00:32:05
+But a few steps down, it's very hard to predict based on the current knowledge is that because the system is truly free, when I look at weather patterns, I can predict the next 10 days. Is it because the weather has a lot of freedom and after 10 days it chooses to do something else? Or is it because in fact the system is fully deterministic? And there's just a slightly different magnetic field of the earth, slightly more energy arriving from the sun, a slightly different spin of the gravitational pull of Jupiter that is now causing all kinds of tides and slight deviation of the moon, etc.
+00:32:37
+Maybe all of that can be fully modeled.
+00:32:39
+Maybe the fact that China is emitting a little more carbon today is actually going to affect the weather in Egypt in three weeks. And all of that could be for the model. In the same way, if you take a complete view of a human being now, you know, I model everything about you. The question is, can I predict your next step probably. But at how far and if it's a little further, is that because of toxicity and sort of chaos, properties of unpredictability, of beyond a certain level, or was that actually true free will?
+00:33:15
+Yeah, yeah.
+00:33:16
+So the number of variables might might be so you might need to build an entire universe to to simulate a human and then maybe that human will be fully relatable, but maybe aspects of free will will exist. And where's that free will coming from is still coming from the same neurons or maybe from a spirit inhabiting these neurons. But again, you know, it's very difficult empirically to sort of evaluate where it is free will begin and sort of chemical reactions and electric signals and, you know, and.
+00:33:43
+So on that on that topic, the mayor asked the most absurd question that most MIT faculty rolled their eyes on, but the what do you think about the simulation hypothesis and the idea that we live in a simulation? I think it's complete B.S..
+00:34:00
+OK, there's no empirical evidence. No, absolutely not.
+00:34:04
+Not not in terms of empirical evidence or not. But in terms of thought experiment, does it help you think about the universe? I mean, so if you look at the genome, it's encoding a lot of the information that is required to create some of the beautiful human complexity that we see around us. It's an interesting thought experiment. How much? You know, parameters do we need to have in order to model something, you know, this full human experience, like if we want to build a video game, how hard it would be to build a video game that's like convincing enough and fun enough.
+00:34:39
+And, you know, it has consistent laws of physics, all that stuff. It's not interesting to use a thought experiment.
+00:34:47
+I mean, it's cute, but, you know, it's Ockham's Razor. I mean, what's what's more realistic, the fact that you're actually a machine or that you're, you know, a person with, you know, the fact that all of my experiences exist inside the chemical molecules that I have or that somebody actually, you know, simulating all that I'm.
+00:35:06
+Well, you did refer to humans as a digital computer earlier, so. Of course. Of course. But that has not kind of a machine, right?
+00:35:12
+I know. I know. But I think. The probability of all that is nil and let the machines wake me up and just terminate me now, if it's not I challenge you machines, they're going to they're going to wait a little bit to see where you're going to do next. It's fun. It's fun to watch, especially the clever humans.
+00:35:34
+What's the difference to you between the way computer stores information and the human genome stores information? So you also have roots and your work.
+00:35:43
+Would you say you're when you introduce yourself at a bar and it depends who I'm talking to which you say it's computational biology. Do you reveal your. Expertise in computers. It depends who I'm talking to, truly. I mean, basically, if I meet someone who's in computers, I'll say, oh, I mean, professor of computer science, if I meet someone who's in engineering, I say computer science and electrical engineering. If I meet someone in biology, I'll say, hey, I work in genomics.
+00:36:14
+If I meet someone in medicine like, hey, I work on, you know, genetics, you're fun to meet at a bar.
+00:36:19
+I got you. But so.
+00:36:20
+No, no, but I'm going to try things that I don't I mean, there's no single attribute that I will define myself as, you know, there's a few things I know. There's a few things I study. There's a few of the things I have degrees on and few things that grant degrees in. And, you know, I publish papers across the whole gamut, you know, the whole spectrum of computation to biology, et cetera. I mean, I the complete answer is that I used computer science to understand biology.
+00:36:51
+Some you know, I developed methods in AI and machine learning statistics and algorithms, etc., but the ultimate goal of my career is to really understand biology if these things don't advance our understanding of biology.
+00:37:06
+I'm not as fascinated by them, although there are some beautiful computational problems by themselves.
+00:37:13
+I've sort of made it my mission to apply the power of computer science to truly understand the human genome, health, disease, you know, and the whole gamut of how our brain works, how our body works and all of that, which is so fascinating so that there's not an equivalent set of complementary dream of understanding human biology in order to create an artificial life or an artificial brain, artificial intelligence that supersedes the intelligence and the capabilities of us humans.
+00:37:47
+It's an interesting question, it's a fascinating question. So understanding the human brain is undoubtedly coupled to how do we make better AI because so much of A.I. has, in fact been inspired by the brain.
+00:38:04
+It may have taken 50 years since the early days of neural networks till we have all of these amazing progress that we've seen with, you know, deep belief networks and, you know, all of these advances in go in chess, in image synthesis and deep faith in you name it. And but but the underlying architecture is very much inspired by the human brain, which actually posits a very, very interesting question.
+00:38:39
+Why are neural networks performing so well? And they perform amazingly well, is it because they can simulate any possible function? And the answer is no, no, they simulate a very small number of functions, is it because they can simulate every possible function in the universe? And that's where it gets interesting? The answer is actually yes, a little closer to that. And here's where it gets really fun.
+00:39:03
+Uh, if you look at human brain and human cognition, it didn't evolve in a vacuum. It evolved in a world with physical constraints. Like the world that inhabits, it is the world that we inhabit.
+00:39:20
+And if you look at our census, what do they perceive they perceive different?
+00:39:26
+You know, part of the electromagnetic spectrum, you know, the hearing is just different movements in air, the torch, etc. I mean, all of these things we've built intuitions for the physical world that we inhabit and our brains and the brains of all animals evolved for that world.
+00:39:46
+And the A.I. systems that we have built happen to work well with images of the type that we encounter in the physical world that we inhabit. Whereas if you just make noise and you add random signal that doesn't match anything in our world, neural networks will not do as well.
+00:40:03
+And that actually basically has this whole loop around this, which is this was designed by studying our own brain, which was evolved for our own world. And they happen to do well in our own world and they happen to make the same types of mistakes that humans make many, many times.
+00:40:24
+And of course, you can engineer images by adding just the right amount of, you know, sort of pixel deviations to make a zebra look like a baboon and stuff like that or like a table.
+00:40:35
+But ultimately, the undoctored image is at least. Are very often mistaken, I don't know. Between muffins and dogs, for example, in the same way that humans make those mistakes.
+00:40:48
+So it's it's you know, there's no doubt in my view that the more we understand about the tricks that our human brain has evolved to understand the physical world around us, the more we will be able to bring new computational primitives in our A.I. systems to, again, better understand not just the world around us, but maybe even the world inside us and maybe even the computational problems that arise from new types of data that we haven't been exposed to but are yet inhabiting the same universe that we live in with a very tiny little subset of functions from all possible mathematical functions.
+00:41:25
+And that small subset of function is all that matters to us humans, really.
+00:41:28
+That's what makes it all that has mattered so far. And even within our scientific realm, it's all that seems to continue to matter. But I mean, I always like to think about our senses and how much of the physical world around us we perceive.
+00:41:46
+And if you look at the legal experiment over the last year and a half has been all over the news. What did like to do? It created a new sense for human beings, a sense that has never been sensed in the history of our planet. Gravitational waves have been traversing the earth. Since its creation a few billion years ago. Life has evolved senses to sense things that were never before sensed. Light was not perceived by early life. No one cared.
+00:42:25
+And eventually, photoreceptors evolved and the ability to sense colors by sort of catching different parts of that electromagnetic spectrum and hearing evolved and touch evolved, etc., but no organism evolved our way to sense neutrinos flowing through Earth or gravitational waves flowing through Earth, etc..
+00:42:48
+And I find it so beautiful in the history of not just humanity, but life on the planet that we are now able to capture additional signals from the physical world than we ever knew before. And accidents, for example, have been all over the news in the last few weeks. The concept that we can capture and perceive more of that physical world. Is as exciting as the fact that we are we were blind to it is traumatizing before, right.
+00:43:21
+Because that also tells us, you know, we're in 2020. Picture yourself in 30, 20 or 20, what new sensors might we discover? Is it you know, could it be that we're missing mine?
+00:43:37
+So it's like there's a lot of physics out there that we're just blind to, completely oblivious to it.
+00:43:44
+And yet they're permeating us all the time. Yes, it might be right in front of us. So. So when you're thinking about premonitions. Yeah, yeah. A lot of that is ascertainment bias.
+00:43:54
+Like, yeah, I you know, every now and then you're like, oh, I remember my friend. And then my friend doesn't appear and I'll forget that I remembered my friend. But every now and then my friend will actually appear.
+00:44:03
+I'm like, oh my God, I thought about you a minute ago. You just called me.
+00:44:06
+That's amazing. So, you know, some of that is this.
+00:44:09
+But some of that might be that there are within our brain sensors for waves that we emit that we're not even aware of. Mm hmm.
+00:44:20
+And this whole concept of when I hug my children, they're such an emotional transfer there that we don't comprehend. I mean, sure.
+00:44:29
+Yeah, of course. We're all, like, hard wired for all kinds of touchy feely things between parents and kids, beautiful, between partners and beautiful, etc..
+00:44:37
+But then there are intangible aspects of human communication that I don't think it's unfathomable that our brain has actually evolved ways and sensors for it, that we just don't capture. We don't understand the function of the vast majority of our neurons and maybe our brain is already sensing it. But even worse, maybe our brain is not sensing it at all.
+00:45:00
+And we're oblivious to this until we build a machine that's only able to sort of capture so much more of what's happening in the natural world that what you're saying is will go physics is going to discover a sensor for love for that.
+00:45:14
+And maybe maybe dogs are off scale for that.
+00:45:18
+And we've been you know, we've been oblivious to the whole time because we didn't have the right sensor.
+00:45:22
+And now you're going to have a little research that says, oh, my God, I feel all this love in the house, I, I sense a disturbance in the all around us and dogs and cats will have zero.
+00:45:32
+No, no, no.
+00:45:34
+It's just nothing else.
+00:45:37
+But let's take a step back to, unfortunately, one of the four hundred topics that we had actually planned for.
+00:45:46
+But our sad time in twenty when we only have just a few sensors and a very primitive early computers.
+00:45:54
+So in your you have a foot in computer science and biology in your sons. How do computers represent information differently than, like the genome or biological systems?
+00:46:09
+So first of all, let me let me correct that. No, we're in an amazing time in 2020.
+00:46:17
+Computer science is totally awesome and physics is totally awesome. And we have understood so much of the natural world than ever before.
+00:46:25
+So I am extremely grateful and feeling extremely lucky to be living in the time that we are. Because, you know, first of all, who knows when the asteroid will hit.
+00:46:38
+And second of all times in humanity, this is probably the best time to be a human being and this might actually be the best place to be a human being. So anyway, you know, for for anyone who loves science, this is this is it. This is awesome. It's a great time.
+00:46:53
+At the same time just to come, all I meant is that if you look several hundred years from now and we end up somehow not destroying ourselves, people will probably look back at this time and computer science and at your work of Minola that I might be as infantile and silly and how ignorant I was.
+00:47:16
+I like to joke very often with my students that, you know, we've written so many paper, we published so much, we've been sighted so much. And every single time I tell my students, you know, the best is ahead of us. What we're working on now is the most exciting thing I've I've ever worked on this. In a way, I do have this sense of.
+00:47:33
+Yeah, even the papers I wrote 10 years ago, they were awesome at the time. But I'm so much more excited about where we're heading now. And I don't mean to minimize any of the stuff we've done in the past.
+00:47:42
+But, you know, there's just this sense of excitement about what you're working on now that as soon as the paper is submitted, it's like, oh, it's old.
+00:47:52
+You know, I can't talk about that anymore. I'm at the same time, you're not you probably are not going to be able to predict what are the most impactful papers and ideas. When people look back 200 years from now, your work will be the most exciting papers. And it may very well be not the thing that you expected or.
+00:48:11
+Yeah, the things you've got to work for or you know, this might be true in some fields.
+00:48:16
+I don't know. I feel slightly differently about it in our field. I feel that I kind of know what what are the important ones. And there's a very big difference between what the press picks up on. And what's actually fundamentally important for the field and I think for the fundamentally important ones, we kind of have a pretty good idea what they are. And it's hard to sometimes get the press excited about the fundamental advances. But, you know, we take what we get and celebrate what we get.
+00:48:41
+And sometimes, you know, one of our papers, which was in a minor journal, made the front page of Reddit and suddenly had like hundreds of thousands of views, even though it was in a minor journal because, you know, somebody pitched it the right way, that it suddenly caught everybody's attention. Whereas other papers that are sort of truly fundamental, you know, we have a hard time getting the editors even excited about them when so many hundreds of people are already using the results and building upon them.
+00:49:07
+So I do I do appreciate that there's a discrepancy between the perception and the perceived success and the awards that you get for various papers. But I think that fundamentally, I know that, you know, some people I'm so so when you're a writer, that you're most proud.
+00:49:23
+You know, you just you trapped yourself. No, no, no, no. I mean, is there a line of work that you you have a sense is really powerful that you've done to date?
+00:49:34
+He's done so much work in so many directions, which is interesting. Is there something where you think is quite special?
+00:49:42
+I mean, it's like asking me to say which of my three children I love best.
+00:49:47
+I mean, exactly. So, I mean, it's such a gimme question that is so, so difficult not to brag about the awesome work that my team and my students have done. And I'll just mention a few off the top of my head. I mean, basically, there's a few landmark papers that I think have shaped my scientific path. And, you know, I like to somehow describe it as a linear continuation of one thing, led to another and led to another, led to another.
+00:50:22
+And, you know, it kind of all started with.
+00:50:28
+Skip, skip, skip. Skip. Skip, let me try to start somewhere in the middle. So my first paper was the first comparative analysis of multiple species, so multiple complete genomes.
+00:50:40
+So for the first time, we basically developed the concept of genome wide evolutionary signatures, the fact that you could look across the entire genome and understand how things evolve. And from these signatures of evolution, you could go back and study any one region and say that protein coding gene, that's an RNA gene, that's a regulatory motif, that's a binding site and so on, so forth.
+00:51:07
+So I say so comparing different different species, species of the same.
+00:51:11
+So so the human mouse, rat and dog, you know, they're all animals, they're all mammals, they're all performing similar functions with their heart, with their brain, with their lungs and terror, terror, terror. So there's many functional elements that make us uniquely mammalian and those mammalian elements are actually conserved. 99 percent of our genome does not code for protein. One percent goes for protein, the other 99 percent, we frankly didn't know what it does until we started doing this comparative genomic studies.
+00:51:45
+So basically this series of papers in my career have basically first developed that concept of evolutionary signatures and then apply them to yeast, apply them to flies, apply them to for mammals, apply them to 17 fungi, apply them to 12 or SoftLayer species, apply them to then twenty nine mammals and 200 mammals.
+00:52:03
+So the same. So can we study the evolutionary signatures? This seems like a fascinating idea and we're probably going to linger in your early PGD work for two hours.
+00:52:15
+But what is how can you reveal something interesting about the genome by looking at the multiple multiple species and looking at the evolutionary signatures?
+00:52:28
+Yeah, so. So you basically align the matching regions. So everything evolved from a common ancestor where we back and mammals evolved from a common ancestor about 60 million years back.
+00:52:44
+So after, you know, the meteor that killed off the dinosaurs landed a legend near Machu Picchu, we know the crater allegedly like that was the aliens.
+00:52:59
+OK, now just slightly north of Machu Picchu in the Gulf of Mexico, there's a giant hole that that meteor.
+00:53:05
+Otherwise, I'm sorry, is that definitive to have people conclusively figured out what killed the dinosaurs?
+00:53:15
+I think so. So it was a meteor?
+00:53:17
+Well, you know, volcanic activity, all kinds of other stuff is coinciding. But the meteor is pretty unique.
+00:53:26
+And we need to find out if we still have a lot of 20, 20 left of it. No, no.
+00:53:33
+But think about it this way. So the dinosaurs ruled the Earth for one hundred and seventy five million years. We humans have been around for what? Less than one million years. If you're super generous about what you call humans and you include chimps basically.
+00:53:52
+So so we are just getting warmed up.
+00:53:56
+And, you know, we've ruled the planet much more ruthlessly than Tyrannosaurus Rex, T. Rex had much less of an environmental impact than we did. And if you if you give us another hundred seventy four million years, you know, humans will look very different if we make it that far.
+00:54:15
+So I think dinosaurs basically are much more of life history on Earth and we are in all respects.
+00:54:23
+But look at the bright side. When they were killed off another life form emerged mammals, and that's their whole evolutionary branching that's happened.
+00:54:32
+So you kind of have we have these evolutionary signatures.
+00:54:36
+Is there a basically a map of how the genome changed?
+00:54:39
+Yeah, exactly right. So so now you can go back to these early mammal that was hiding in caves and you can basically ask what happened after the dinosaurs were wiped out?
+00:54:48
+A ton of evolutionary niches opened up and the mammals started populating all of these niches. And in that diversification, there was room for expansion of new types of functions, so some of them populated the air with bats flying a new evolution of light.
+00:55:10
+Some populated the oceans with dolphins and whales going after swim, etc. But we all are fundamentally mammals.
+00:55:18
+So you can take the genomes of all these species and align them on top of each other and basically create nucleotide resolution correspondences. What my beauty work showed is that when you do that, when you line up species on top of each other, you can see that within protein coding genes, there's a particular pattern of evolution that is dictated by the level at which evolutionary selection acts. If I'm coding for a protein and I change the third code on position of a triplet, that code for that amino acid, the same amino acid will be encoded.
+00:55:56
+So that basically means that any kind of mutation that preserves that translation. That is invariant to that ultimate functional assessment that evolution will give is tolerated, so for any function that you're trying to achieve, there's a set of sequences that encoded.
+00:56:15
+You can now look at the mapping, the, you know, graph isomerism, if you wish, between all of the possible DNA encodings of a particular function and that function. And instead of having just that exact sequence at the protein level, you can think of the set of protein sequences that also feel the same function. What evolution doing evolution has two components.
+00:56:38
+One component is random, blind and stupid mutation, and the other component is supersmart, ruthless selection.
+00:56:49
+That's my mom calling from Greece.
+00:56:52
+Yes, I might be a fully grown man, but I must say.
+00:56:57
+Did you just cancel the call? I know I'm in trouble and this is going to be calling the cops.
+00:57:02
+I mean, this is so so there's a lot of encoding for the same kind of functions. Yes.
+00:57:11
+So you now have this mapping between all of the set of functions that could all encode the same all of this set of sequences that a kononenko, the same function.
+00:57:21
+What evolutionary signatures does is that it basically looks at the shape of that distribution of sequences that all encode the same thing. And based on that shape, you can basically say, oh, proteins have a very different shape than RNA structures, then regulatory motifs, etc..
+00:57:38
+So just by scanning a sequence, ignoring the sequence and just looking at the patterns of change, I'm like, wow, this thing is evolving like a protein and that thing is evolving like a motif and that thing is evolving.
+00:57:50
+So that's exactly what we just did for covid.
+00:57:52
+So our paper that we posted on by archive about coronavirus basically took this concept of evolutionary signatures and applied it on the sars-cov-2 genome that is responsible for the covid-19 pandemic and comparing it to 244 circovirus species.
+00:58:09
+So this is the better word that you just use circovirus ceasars, SARS related beta coronavirus. It's a portmanteau so that one family of viruses. Yeah.
+00:58:20
+So is that family, whether we have 44 species that or four species in the virus is a clever but no, no, but there's just 44.
+00:58:29
+And again, we don't call them species in in viruses. We call them strange.
+00:58:33
+But anyway, there's 44 strains and that's a tiny little subset of, you know, maybe another 50 strains that are just far too distantly related. Most of those only infect bats as the host and a subset of only four or five have ever infected humans. And we basically took all of those. And we align them in the same exact way that we Philine mammals. And then we looked at what proteins are, you know, which of the currently hypothesized genes for the coronavirus genome are in fact evolving like proteins and which ones are not.
+00:59:07
+And what we found is that often the last little open reading frame, the last little gene in the genome is bogus. That's not a protein at all. What is it?
+00:59:16
+It's an RNA structure that doesn't have it doesn't get translated into amino acids and that so it's important to narrow down to basically discover what's useful and what's not.
+00:59:27
+Exactly.
+00:59:28
+Basically what what is even the set of genes.
+00:59:30
+The other thing that is evolutionary signature showed is that within two or three, a light a tiny little additional gene encoded within the other gene. So you can translate a DNA sequence in three different reading frames. If you start in the first one, it's Adyghe, etc. if you start on the second DGC, etc., and with there's a there's a gene within a gene.
+00:59:53
+So there's a whole other protein that we didn't know about that might be superimportant. So we don't even know the building blocks of sars-cov-2.
+01:00:02
+So if we want to understand coronavirus biology and eventually fired it successfully, we need to even have the set of genes and these evolutionary signatures that I developed in my page. Where are we just recently used?
+01:00:14
+You know, let's let's run with that tangent for a little bit. It's OK.
+01:00:18
+Is can we talk about the covid-19 a little bit more like how what's your sense about the the genome, the proteins, the functions that we understand about covid-19? Where do we stand in your sense? What are the big open problems? And also, you know, you kind of said it's important to understand what are the like the the important proteins and like, why is that important?
+01:00:51
+So what else does the comparison of these species tell us? What he tells us is how fast are things evolving? He tells us about at what level is the acceleration or deceleration pedal set for every one of these proteins. So the genome has, you know, 30 some genes, some genes evolve super, super fast.
+01:01:13
+Others evolve super, super slow. If you look at the polymerase gene that basically replicates the genome, that's a super slow evolving one. If you look at the nuclear capsid protein, that's also super slow evolving.
+01:01:26
+If you look at the spike one protein, this is the part of the spike protein that actually touches the H2 receptor and it enables the virus to attach to your cells.
+01:01:38
+That's the thing that gives it that that visual and the corona look based on the look.
+01:01:42
+Yeah. So basically this spike protein sticks out of the virus and there's a first part of the protein s one which basically attaches to the H2 receptor. And then S2 is the latch that sort of pushes and channels the fusion of the membranes and then the incorporation of the viral RNA inside ourselves, which then gets translated into all of these three proteins.
+01:02:07
+So the S1 protein is evolving ridiculously fast. So if you look at the stop potentials, gas pedal, the gas pedal all the way down. Or fate is also evolving super fast and or sex is evolving super fast, we have no idea what they do. We have some idea, but nowhere near what S1 is.
+01:02:29
+So what the terrifying that is, that means that's a really useful function.
+01:02:34
+If it's evolving fast, does that mean new strains could be created or does that means that it's searching for how to match, how to best match the host to basically anything in general in evolution?
+01:02:46
+If you look at genomes, anything that's contacting the environment is evolving much faster than anything that's internal. And the reason is that the environment changes. So if you look at the evolution of this of viruses, the one protein has evolved very rapidly because it's attaching to different hosts each time we think of them as bats. But there's thousands of species of bats. And to go from one species of bat to another species of bad, you have to job as one of the new EU receptor that you're going to be facing in that new species.
+01:03:15
+So quick tangent. Yeah.
+01:03:16
+Is it fascinating to you that viruses are doing this? I mean, it feels like this intelligent organism. I mean, is it. Like, does it give you pause how incredible it is that they're the evolutionary dynamics that you're describing is actually happening and they're freaking out, figuring out how to jump from bats to humans, all in this distributed fashion. And then most of us don't even say they're alive or intelligent or whatever. You know, intelligence is in the eye of the beholder.
+01:03:48
+You know, stupid is stupid. Does as far as God would say. Yes, and intelligent is as intelligent does. So basically, if the virus is finding solutions that we think of an intelligent, yeah, it's probably intelligent, but that's again, in the eye of the beholder.
+01:04:01
+Do you think viruses are intelligent? Of course not. Really.
+01:04:05
+No, because all incredibly remember I remember when I was talking about the two components of evolution. One is the stupid mutation, which is completely blind, and the other one is the super smart selection, which is ruthless. So it's not viruses who are smart. It's this component of evolution that's smart city evolution that that sort of appears smart. And how is that happening by huge parallel search across thousands of, you know, parallel infections throughout the world right now?
+01:04:38
+Yes, but to push back on that. So, yes. So then the the intelligence is in the mechanism. But then by that argument, viruses would be more intelligent because there's just more of them. So the search, the basically the the brute force search that's happening with viruses because there's so many more of them than humans, then they're taken as a whole are more intelligent.
+01:05:04
+I mean, so you don't think it's possible that I mean, who runs?
+01:05:09
+Would we even be here if viruses weren't? I mean, who runs this thing?
+01:05:15
+So. So the virus. So let me answer. Yeah. Let me answer your question. So. We would not be here if it wasn't for viruses.
+01:05:27
+Yes, and part of the reason is that if you look at mammalian evolution early on in this mammalian radiation that basically happened after the death of the dinosaurs, is that some of the viruses that we had in our genome spread throughout our genome and created binding sites for new classes of regulatory proteins.
+01:05:47
+And these binding sites that landed all over genome are now control elements that basically control our genes and sort of help the complex of the circuitry of mammalian genomes. So, you know, everything is coevolution and we're working together with.
+01:06:04
+And yet they wanted them. You know, I never said they're dumb.
+01:06:08
+They just don't care. They don't care another thing, oh, is a virus trying to kill it? No, it's not. The virus is not trying to kill you. It's not it's actually actively trying to not kill you. So when you get infected, if you die, Palmer, I kill him, is what the reaction of the virus will be. Why? Because that virus won't spread. Many people have a misconception of viruses are smart or viruses are mean, they don't care.
+01:06:35
+It's like you have to clean yourself of any kind of anthropomorphism out there, I don't know. Oh, yes. All right. So there's a there's a sense when taken as a whole that there is a. The age of the beholder, stupid is stupid, does intelligent, intelligent does so if you want to call them intelligent, that's fine then, because an end result is that they're finding amazing solutions. Right? I mean, I am.
+01:07:00
+But there are so dumb about it. They're just doing don't care. They're not dumb and they're not they're just they don't care. They care the care. What is really interesting, I mean, there is certainly an argument that they're conscious, they're just dividing.
+01:07:12
+They're not they're just dividing. They're just a little entity which happens to be dividing and spreading. It just doesn't want to kill us. In fact, it prefers not to kill us. It just wants to spread. And when I say once again, I'm anthropomorphizing, but it's just that if you have two versions of a virus, one acquires a mutation that spreads more, that's going to spread more. One acquires a mutation that's priceless. That's going to be lost.
+01:07:38
+Yes. One acquires a mutation that enters faster, that's going to be kept. One acquires mutation that kills you right away. It's going to be lost. So over evolutionary time, the viruses that spread super well, but don't kill the host are the ones that are going to survive. Yeah, but so is you brilliantly described the basic mechanisms of how it all happens, but when you zoom out and you see the.
+01:08:01
+You know, the entirety of Viracept, maybe across different strains of viruses, it seems like a living organism.
+01:08:09
+I am in awe of biology. I find biology amazingly beautiful. I find the design of the current coronavirus, however lethal. It is amazingly beautiful. The way that it is encoded, the way that it tracks your cells into making 30 proteins from a single RNA. Human cells don't do that. Human cells make one protein from each RNA molecule. They don't make two, they make one. We are hardwired to make only one protein from every RNA molecule, and yet this virus goes in, throws in a single messenger RNA.
+01:08:45
+Just like any messenger RNA, we have tens of thousands of messengers, RNA is in our cells in any one time and every one of our cells, it throws in one RNA and that RNA. Is so I'm going to use your word here, not my word, intelligent. Yeah. That it hijacks the entire machinery of your human cell. Yeah, it basically has at the beginning a giant open reading frame. That's a giant protein that gets translated.
+01:09:14
+Two thirds of that RNA make a single giant protein. That single protein is basically what a human cell would make like, oh, here's a start code and I'm going to start translating here. Human cells are kind of dumb. I'm sorry.
+01:09:26
+Again, this is not the word I would normally use, but the humans are basically saying, oh, this is an RNA, must be mine, let me translate. And it starts translating it and then you're in trouble. Why? Because that one protein, as it's growing, gets cleaved into about 20 different peptides. The first peptide and the second peptide start interacting and the third one of the fourth one and they shut off the ribosome.
+01:09:53
+Of the wholesale to not translate human Ariana's anymore, so the virus basically hijacks your cells and cuts it clèves every one of your human Ariana's to basically say to the ribosome, don't translate this one, just don't look at this junk. And it only spares its own Ariana's because they have a particular mark that it spares. Then all of the ribosomes that normally make protein in your human cells are now only able to translate viral RNA and make more and more and more and more of them.
+01:10:28
+That's the first 20 proteins. In fact, halfway down about protein 11, between 11 and 12.
+01:10:34
+You basically have a translational slippage where the ribosome skips reading frame and he translates from one reading frame to another reading frame.
+01:10:42
+That means that about half of them are going to be translated from one to 11 and the other half are going to be translated from 12 to 16.
+01:10:49
+Karger's and then. Then you're done, then that money will never translate elastin proteins, but Spike is the one right after that one. So had a spike even to translate this positive strand RNA virus has a reverse transcriptase, which is an RNA based reverse transcriptase. So from the RNA on the positive strand, it makes an RNA on the negative strand. And in between every single one of these genes, these open reading frames, there's a little signal, a GCA or something like that that basically loops over to the beginning of the RNA.
+01:11:26
+And basically, instead of sort of having a single full negative strand RNA, it basically has a partial negative trend RNA that ends right before the beginning of that gene and another one that ends right before the beginning of that gene. These negative Janani is now make a positive trend RNA that then look to the human wholesale just like any other human marinates. It's like, oh great I'm going to translate that one because it doesn't have the cleaving that the virus has now put on all your human genes.
+01:11:53
+And then you've lost the battle, that cell is now only making proteins for the virus that will then create the spike protein, the envelope protein, the membrane protein, that nuclear capsid protein that will package up the RNA and then sort of create new viral envelopes. And these will then be secreted out of that cell, a new little packages that will then, in fact, the researchers repeat the whole process.
+01:12:18
+Beautiful, right? It's mind not to anthropomorphize it, but it's still gorgeous.
+01:12:25
+So there is a beauty to it. Is there is is it terrifying to you? So this is something that has happened throughout history. Humans have been nearly wiped out over and over and over again and yet never fully wiped out. So, yeah, I'm not concerned about the human race. I'm not even concerned about, you know, the impact on sort of our our survival as a species.
+01:12:50
+This is absolutely something. I mean, you know, human life is so invaluable and every one of us is so valuable. But if you think of it as sort of is this the end of our species by by no means basically. So so let me explain.
+01:13:05
+The Black Death killed, what, 30 percent of Europe. That has left a tremendous imprint, you know, a huge hole, a horrendous hole in the genetic makeup of humans. There's been a series of wiping out of huge fractions of an entire species or just entire species altogether, and that has a consequence on the human immune repertoire. If you look at how Europe was shaped and how Africa was shaped by malaria, for example, all the individuals that carry a mutation that protect you from malaria were able to survive much more.
+01:13:50
+And if you look at the frequency of sickle cell disease and the frequency of malaria, the maps are actually showing the same pattern, the same imprint on Africa.
+01:13:59
+And that basically led people to hypothesize that the reason why sickle cell disease is so much more frequent in Americans of African descent is because there was selection in Africa against malaria. Leading to sickle cell, because when the cell cycle, malaria is not able to replicate inside your cells as well, and therefore you protect against that.
+01:14:20
+So if you look at human disease, all of the genetic associations that we do with human disease, you basically see the imprint of these waves of selection killing off gazillions of humans. And there's so many immune processes that are coming up as associated with so many different diseases. The reason for that is similar to what I was describing earlier, where the outward facing proteins evolved much more rapidly because the environment is always changing. But what's really interesting, the human genome is that we have co-opted many of these immune genes to carry out not immune functions.
+01:14:59
+For example, in our brain, we use immune cells to cleave off neuronal connections that don't get used to this whole use it or lose it. We know the mechanism. It's microglia the kleve of.
+01:15:12
+Neuronal synaptic connections that are just not utilized when you utilize them, you mark them in a particular way that basically when the microglia come tell it, don't kill this one, it's used now and then we will go off and kill it. Once you don't use this as an immune function, which is co-opted to do non-union things, if you look at our adipocytes, Anwan versus M-2, macrophages inside or fat will basically determine whether you're obese or not. And these are again, immune cells that are resident and living within these tissues.
+01:15:44
+So many disease association saying that we co-opt these kinds of things for incredibly complicated functions.
+01:15:53
+Exactly. Evolution works in so many different ways, which are all beautiful and mysterious, but not intelligent, intelligent.
+01:16:01
+It's in the eye of the beholder.
+01:16:04
+But but but the point that I'm trying to make is that if you look at the imprint that covid will have, hopefully it will not be back.
+01:16:13
+Hopefully the US will get its act together and stop the virus from spreading further. But if it doesn't, it's having an imprint on individuals who have particular genetic repertoires. So if you look at now the genetic associations of blood type and immune function cells, etc., there's actually associations, genetic variation that basically says how much more likely am I or you to die if we contact the virus? And it's it's through these rounds of shaping the human genome that humans have basically made it so far.
+01:16:44
+And selection is ruthless and it's brutal and it only comes with a lot of killing. But this is the way that viruses and environments have shaped the human genome. Basically, when you go through periods of famine, you select four particular genes and what's left is not necessarily better. It's just whatever survived. And it may have been the surviving one back then, not because it was better. Maybe the ones that ran slower survived.
+01:17:11
+I mean, you know, again, not necessarily better, but the surviving ones are basically the ones that then are shaped for any kind of subsequent evolutionary condition and environmental condition.
+01:17:24
+But if you look at, for example, obesity, obesity was selected for basically the genes that now predisposes to obesity. We're a two percent frequency in Africa. They rose to 44 percent frequency in Europe. That's fascinating because you basically went through the ice ages and there was a scarcity of food. So, you know, there was a selection to being able to store every single calorie you consume. Eventually, environment changes, so the better ALIL, which was the fat storing l'oeil, became the worse l'oeil because it's the fat storing l'oeil, it still has the same function.
+01:17:59
+So if you look at my genome, speaking of mom calling, Mom gave me a bad copy of that gene.
+01:18:05
+This video logger's basically has to do with obesity or obesity.
+01:18:10
+Yeah. Basically now have a bad copy from mom that makes me more likely to be obese. And I also have a bad copy from Dad that makes me more likely to be obese and homozygous and that the aleo is still a minor.
+01:18:24
+Aliabadi that at 44 percent frequency in East Asia. Forty two percent frequency in Europe, even though it's 32 percent. It was an awesome l'oeil to have one hundred years ago. Right now it's pretty terrible.
+01:18:36
+So the other concept is that diversity matters. If we had 100 million nuclear physicist living the earth right now, we'd be in trouble.
+01:18:47
+You need diversity. You need artists and you need musicians. And you need mathematicians. And you need politicians. Yes, even those.
+01:18:55
+And you need like, let's not get crazy, but because then if a virus comes along or whatever. Exactly.
+01:19:02
+Exactly. So so there's two reasons. Number one, you want diversity in the immune repertoire and we have built in diversity. So basically they are the most diverse.
+01:19:11
+Basically, if you look at our immune system, there's layers and layers of diversity, like the way that you create your cells generates diversity because of the selection for the Videgaray combination that basically eventually leads to a huge number of repertoires. But that's only one small component of diversity. The blood type is another one, the major histocompatibility complex. The labels are, you know, another source of diversity. So the immune system of humans is by nature incredibly diverse and that basically leads to resilience.
+01:19:43
+So basically what I'm saying that I don't worry for the human species because we are so diverse immunologically, we are likely to be very resilient against so many different attacks like this current virus.
+01:19:56
+So you're saying natural pandemics may not be something that you're really afraid of because of the diversity in our genetic makeup? What about engineered pandemics? Do you have fears of us messing with the make up of viruses or. Well, yeah, let's say with the make up of viruses to create something that we can't control and would be much more destructive, that would come about naturally.
+01:20:23
+Remember who we were talking about, how smart evolution is. Humans are much dumber. So, I mean, the human scientists, humans, humans, just lemurs overall.
+01:20:32
+Yeah, but I mean, even, you know, the sort of synthetic biologists, you know, basically.
+01:20:40
+If you were to create a, you know, virus like SARS that will kill a lot of people, you would probably start start with SARS. So whoever you know, would like to design such a thing would basically start with SARS tree or at least some relative of SARS, the source genome for the current virus was something completely different.
+01:21:05
+He was something that has never infected humans. No one in their right mind would have started there. But when you say sources like the nearest the nearest relative relative is in a whole other branch, no species of which has ever infected humans in that range. So, you know, let's put this to rest. This was not designed by someone to kill off the human race. You don't you don't believe it was engineered? The likely.
+01:21:30
+Yeah, the path to engineering a deadly virus would not come from this strain that got it that was used.
+01:21:38
+Moreover, there's been various claims of how hard this was mixed in match in the lab because the S1 protein has three different components, each of which has a different evolutionary tree.
+01:21:51
+So, you know, a lot of popular players basically said, aha, this came from pangolin and this came from all kinds of other species.
+01:21:59
+This is what has been happening throughout the coronavirus tree. So basically the one protein has been recombining across species all the time. Remember when I was talking about the positive strand, the negative strands of genomic RNA and these can actually recombine. And if you have two different viruses infecting the same cell, they can actually mix and match between the positive side and the negative trend and basically create a new hybrid virus with recombination that now has the S1 from one and the rest of the genome from another.
+01:22:25
+And this is something that happens a lot in S1, innervate, etc. And that's something that's true of the whole string for the whole family of viruses. So it's not like someone has been messing with this for millions of years and, you know, changing nature. That's, again, beautiful that that somehow happens, that they recombine for two different strands, can infect the body, then recombine. So all of this actually magic happens inside hosts like all like, yeah, yeah, that's why that's why classification wise virus is not thought to be alive, because it doesn't self replicate.
+01:22:58
+It's not autonomous. It's something that enters a living cell and then co-opt it to basically make it its own. But by itself, people ask me, how do we kill this bastard? I'm like, you stop it from replicating. It's not like bacterium that will just live in a, you know, puddle or something. It's a virus. Viruses don't live without their host and they only live with their host for very little time. So if you stop it from replicating, it'll stop from spreading.
+01:23:28
+I mean, it's not like HIV, which can stay dormant for a long time. Basically, coronaviruses just don't do that. They're not integrating genomes. There are any genomes. So if it's not expressed, integrate RNA degrades, it doesn't just stick around.
+01:23:40
+Well, let me ask also about the immune system. You mentioned a lot of people kind of ask, you know, how can we strengthen the immune system to respond to this particular virus?
+01:23:53
+But the viruses in general, do you have from a biological perspective, thoughts on what we can do as humans to if you look at our death rates across different countries, people with less vaccination have been dying more. If you look at North Italy, the vaccination rates are abysmal there. And a lot of people have been dying. Look at Greece, very good vaccination rates. Almost no one has been dying. So, yes, there is a policing component.
+01:24:20
+So Italy reacted very slowly. Greece reacted very fast.
+01:24:24
+So, yeah, many fewer people died in Greece, but there might actually be a component of genetic immune repertoire, basically. How did people die off, you know, in the history of the Greek population versus the Italian population, there's a that's interesting to think about.
+01:24:41
+And then there's a component of what vaccinations did you have as a kid and what are the off target effects of those vaccinations. So basically, a vaccination can have two components. One is training your your immune system against that specific insult. The second one is boosting up your immune system for all kinds of other things. If you look at allergies, northern Europe, super clean environments, tons of allergies, southern Europe, my kids grew up eating dirt, no allergies.
+01:25:14
+So growing up, I never had even heard of what allergies are like, really allergies.
+01:25:19
+And the reasons that I was playing the gardener was putting all kinds of stuff in my mouth from all kinds of dirt and stuff, tons of viruses. There are tons of bacteria there. You know, my immune system was built up.
+01:25:28
+So the more you protect your immune system from exposure, the less opportunity has to learn about non self repertoire in a way that prepares it for the next insult.
+01:25:41
+So horizontal thing, too, like the.
+01:25:43
+So throughout your lifetime, in the lifetime of the of the people that your ancestors. Yeah, I kind of think. Yeah.
+01:25:51
+What about so again it turns against free will on the freewill side of things. Is there something we could do to strengthen our immune system in twenty twenty. Is there, you know, exercise, diet, all that kind of stuff.
+01:26:07
+So it's kind of funny. There's a cartoon that basically shows two windows with a teller in each window. One has a humongous line and the other one has no one. The one that has no one above says health.
+01:26:21
+No, it says exercise and diet and the other one says pill and is a huge line for Bill.
+01:26:29
+So we're looking basically for magic bullets, for sort of ways that we can beat cancer and beat coronavirus and beat this and beat that. It turns out that the window with like just diet and exercise is the best way to boost every aspect of your health.
+01:26:43
+If you look at Alzheimer's, exercise and nutrition, I mean, you like really for my brain neurodegeneration. Absolutely.
+01:26:53
+If you look at cancer, exercise and nutrition, if you look at coronavirus exercise and nutrition, every single aspect of human health gets improved.
+01:27:04
+And one of the studies we're doing now is basically looking at what are the effects of diet and exercise, how similar are they to each other.
+01:27:12
+We basically take in diet intervention and exercise intervention in humans, in mice, and we're basically doing single cell profiling of a bunch of different tissues to basically understand how are the cells, both the stromal cells and the immune cells of each of these tissues responding to the effect of exercise. What are the communication networks between different cells where the muscle that exercises sends signals through the bloodstream, through the lymphatic system, through all kinds of other systems that.
+01:27:45
+Give signals to other cells that I have exercised and you should change in this particular way, which basically reconfigure those receptor cells with the effect of exercise is well understood as the those reconfigurations very little.
+01:28:01
+We're just starting now.
+01:28:02
+Basically, this is the hope there to understand the effect on. So, look, the effect on the immune system of the immune system, the effect on brain, the effect on your liver, on your digestive system, on your adipocytes adipose, you know, the most misunderstood organ, everybody thinks, oh, fat, terrible.
+01:28:22
+No, fat is awesome. Your fat cells is what's keeping you alive, because if you didn't have your fat cells, all those lipids and all those calories would be floating around in your blood and you'd be dead by now. You're Adipocytes or your best friend. They're basically storing all these excess calories so that they don't hurt all of the rest of the body. And they're also fat burning in many ways.
+01:28:45
+So, you know, again, when you don't have the homozygous version that I have, your cells are able to burn calories much more easily by sort of flipping and master metabolic switch that involves this your lockers that I mentioned earlier and its target genes are extreme in our life that basically switch your adipocytes during their three first days of differentiation as they're becoming maturity to basically become either fat burning or fat storing fat cells. And the fat burning fat cells are your best friend.
+01:29:16
+They're much closer to muscle than they are to white.
+01:29:19
+What else is there a lot of difference between people like that? You could give science could eventually give advice that is very generalizable or is our differences in our genetic makeup, like you mentioned, is there going to be basically something we have to be very specialized individuals? Any advice we give in terms of diet?
+01:29:42
+We were just talking, believe it or not, the most personalized advice that you give for nutrition don't have to do with your genome. You have to do with your gut microbiome, with the bacteria that live inside you. So most of the dejection is actually happening by species that are not human inside you. You have more known human cells and you have human cells. You're basically a giant bag of bacteria with a few human cells alone.
+01:30:06
+And so and those do not necessarily have to do with your genetic makeup.
+01:30:11
+They interact with your genetic makeup, the interacting genome. They interact with your nutrition, they interact with your environment. They're, you know, basically an additional source of variation. So when you're thinking about sort of personalized nutritional advice, part of that is actually how do you match your microbiome? And part of that is how do we match your genetics?
+01:30:34
+But again, this is a very diverse set of contributors and the effect sizes are not enormous. So I think the science for that is not fully developed yet.
+01:30:44
+Speaking of diets, because I've wrestled in combat sports with sports my whole life or weight matters, you have the cut and all that stuff. Yeah.
+01:30:52
+One thing I've learned a lot about my body, and it seems to be, I think, true about other people's bodies is that you can adjust to a lot of things.
+01:31:02
+That's the miraculous thing about this biological system is like a fast often I used to eat like five, six times a day and thought that was absolutely necessary. How could you not eat that often? And then when I started fasting your body, adjust to that and you learn how to not eat, you know, and it's it was if you just give it a chance for a few weeks, actually over a period of a few weeks, your body can adjust to anything.
+01:31:28
+And that's a miracle. That's such a beautiful thing.
+01:31:31
+So I'm a computer scientist and I've basically gone through periods of 24 hours without eating or stopping. And, you know, then I'm like, oh, you must eat and eat a ton. I used to order two pizzas just with my brother and, you know, like so I've gone through these extremes as well. And I've got the whole intermittent fasting thing. So I can sympathize with you both on the seven meals a day to the zero meals a day.
+01:31:54
+So I think when I say everything is moderation, I actually think your body responds interestingly to these different changes in diet. I think part of the reason why we lose weight with pretty much every kind of change in behavior is because our epigenome and the set of proteins and enzymes that are expressed and our microbiome are not well suited to that nutritional source, and therefore they will not be able to sort of catch everything that you give them. And then a lot of that will go on digestion.
+01:32:26
+And that basically means that your body can then, you know, lose weight in the short term, but very quickly will adjust to that new normal. And then we'll be able to sort of perhaps gain a lot of weight from the diet. So anyway, I mean, there's also studies in factories where basically people, you know, dim the lights and then suddenly everybody started working better. It was like, wow, that's amazing. Through Slater, they made the lights a little brighter.
+01:32:49
+Everybody started working better.
+01:32:52
+So any kind of intervention has a placebo effect of, wow, no, I'm healthier and I'm going to be running more often, etc. So it's very hard to uncouple the placebo effect of, wow, I'm doing something to intervene on my diet from the wow, this is actually the right thing for me. So, you know. Yeah. From the. Perspective from nutrition science, psychology, both things I'm interested in, especially psychology. It seems that it's extremely difficult to do good science because there's so many variables involved.
+01:33:21
+It's so difficult to control the variables, so difficult to do sufficiently. Large scale experiments are both sort of in terms of number of subjects and temporal like how long you do the study for that. It just seems like it's not even a real science for now, like nutrition science.
+01:33:39
+I want to jump into the whole placebo effect for a little bit here and basically talk about the implications of that.
+01:33:47
+If I give you a sugar pill and I tell you it's a sugar pill. You won't get any better, but if I tell you sugar and tell you and I tell you, wow, this is an amazing drug and it actually will stop your cancer, your cash will actually stop with much higher probability. What does that mean? That's amazing. That means that if I can trick your brain into thinking that I'm healing you, your brain will basically figure out a way to heal itself, to heal the body.
+01:34:13
+And that tells us that there's so much that we don't understand in the interplay between our cognition and our biology. That if we were able to better harvest the power of our brain to sort of impact the body through the placebo effect. We would be so much better in so many different things just by tricking yourself into thinking that you're doing better, you're actually doing better.
+01:34:38
+So there's something to be said about sort of positive thinking, about optimism, about sort of, you know, just getting your brain and your mind into the right mindset that helps your body and helps your entire biology.
+01:34:54
+Yeah, from a science perspective, that's just fascinating. And obviously, most things about the brain is a total mystery for now. But there's a fascinating interplay that the brain.
+01:35:04
+Yeah.
+01:35:05
+That the brain can reduce the brain can help cure cancer, as I don't even know what to do with that.
+01:35:13
+I mean, the way to think about that is the following. The Congress of the equation is something that we are much more comfortable with, like, oh, if you're stressed, then your heart rate might rise and all kinds of sort of toxins might be released and that can have a detrimental effect on your body, et cetera, et cetera. So maybe it's easier to understand your body healing from your mind by your mind's not killing your body, or at least it's killing it less.
+01:35:41
+So I think the you know, that aspect of the stress equation is a little easier for most of us to conceptualize. But then the healing part is perhaps the same pathways, perhaps different pathways. But again, something that is totally untapped scientifically.
+01:35:56
+I think we try to bring this question up a couple of times, but let's return to it again as what do you think is the difference between the way a computer represents information the human genome represents and stores information? And maybe broadly, what is the difference between how you think about computers and how you think about biological systems?
+01:36:17
+So I made a very provocative claim earlier that we are a digital computer that at the core lies a digital code. And that's true in many ways. But surrounding that digital core, there's a huge amount of analog. If you look at our brain, it's not really digital. If you look at our sort of RNA and all of that stuff inside our cell, it's not really digital. It's really analog in many ways.
+01:36:37
+But let's start with the code and then we'll expand to the rest.
+01:36:41
+So the code itself is digital. So there's genes. You can think of the genes as I don't know, the procedures, the functions inside your language, and then somehow you have to turn these functions on. How do you call a gene? How do you call that function?
+01:36:56
+The way that you would do it in old programming languages is go to address whatever in your memory and then you'd start running from there. And, you know, modern programming languages have encapsulated this into functions and objects and all of that. And it's nice and cute. But in the end, deep down, there's still an assembly code that says go to that instruction and it runs that instruction. If you look at the human genome and, you know, the genome of pretty much most species out there, it's there's no go to function.
+01:37:25
+You just don't start in transcribing in position thirteen hundred thirteen thousand five hundred twenty seven chromosome twelve. You instead have content based indexing. So at every location in the genome, in front of the genes that need to be turned on, I don't know.
+01:37:46
+When you drink coffee, there's a little coffee marker. In front of all of them, and whenever your cells that metabolize coffee need to metabolize coffee, they basically see coffee and they're like, oh, let's go turn on all the coffee marked genes. So there's basically these small motifs, these small sequences that we call regulatory motifs. They're like patterns of DNA. They're only eight characters, long or so like GCA, etc. And these motifs work in combinations.
+01:38:18
+And every one of them has some recruitment affinity for a different protein that will then come and bind it. And together, collections of these motifs create regions that we call regulatory regions that can be either promotors near the beginning of the gene.
+01:38:36
+And that basically tells you where the function actually starts, where you call it, and then enhancers that are looping around the DNA that basically bring the machinery that binds those enhancers and then bring it onto the promoter, which then recruits the right sort of the ribosome and the polymerase and all of that thing, which will first transcribe and then export and then eventually translating the cytoplasm, you know, whatever RNA molecule. So the.
+01:39:06
+Beauty of the way that the digital computer that's the genome works is that it's extremely fault tolerant. If I took your hard drive and I messed with 20 percent of the letters in it of the zeros and ones and I flip them, you'd be in trouble if I take the genome and I flip 20 percent of the letters. You probably won't even notice. And that resilience is fascinating, is a key design principle and again, anthropomorphizing here, but it's a key driving principle of how biological systems work, their first resilient and then anything else.
+01:39:45
+And when you look at these incredible beauty of life from the most, I don't know, beautiful, I don't know, human genome maybe of humanity and all of the ideals that come with it to the most terrifying genome, like, I don't know, covid-19, sars-cov-2 and the current pandemic.
+01:40:05
+You basically see this elegance as the epitome of clean design.
+01:40:12
+But it's dirty. It's a mess. It's the way to get there is hugely messy. And that's something that we as computer scientists don't embrace. We like to have clean code, you know, like in engineering. They teach you about compartmentalization, about sort of separating functions, about modularity, about hierarchical design. None of that applies in by testing.
+01:40:38
+Testing. Sure. Yeah. Biology, there's plenty of that, but I mean, through evolutionary exploration. But if you look at biological systems first, they are robust and then they specialize to become anything else.
+01:40:53
+And if you look at viruses, the reason why they're so elegant, when you look at the design of these, you know, genome, it seems so elegant. And the reason for that is that it's been stripped down from something much larger because of the pressure to keep it compact. So many compact genomes out there have ancestors that were much larger. You don't start small and become big. You go through a loop of add a bunch of stuff, increased complexity, and then, you know, slim it down.
+01:41:24
+And one of my early papers was, in fact on genome duplication. One of the things we found is that baker's yeast, which is the yeast that you use to make bread, but also the yeast that used to make wine, which is basically the dominant species. When you go into the field of Toscani and you say, you know, what's out there is basically saccharomyces cerevisiae or the way my Italian friends say Saccharomyces Teresia.
+01:41:47
+So so, um. Which means what? Oh, OK. I'm sorry. I'm Greek, so. Yeah. Zaccaro Mickeys. Zaccaro is sugar. Micki's is fungus. Yes. Cerevisiae cerveza, beer. So it means the sugar fungus of beer.
+01:42:04
+Yeah. You know let's let's, let's go down to the stuff. Yep.
+01:42:09
+Um so anyway saccharomyces cerevisiae basically the major baker's yeast out there is the descendant of a hodgen duplication. Why would a whole gentrification even happen when it happened? Is coinciding with about one hundred million years ago and the emergence of fruit bearing plants.
+01:42:31
+Why fruit bearing plants, because animals would eat the fruit, would walk around and poop huge amount of nutrients, along with a seed for the plants to spread before that plant were not spreading through animals. They were spreading through wind and all kinds of other ways. But basically, the moment you have fruit bearing plants, these plants are basically creating this abundance of sugar in the environment. So there's an evolutionary niche that gets created. And in that evolutionary niche, you basically have enough sugar that a Hodgeman application, which initialism very mass event allows you to then, you know, relieve some of that complexity, such pause.
+01:43:14
+What is genome duplication mean? That basically means that instead of having eight chromosomes, you can now have 16 chromosomes. So but the duplication at first, when you have when you go to 16, you're not using that.
+01:43:30
+Oh yeah. Yeah. So basically from one day to the next, you went from having eight chromosomes to having 16 chromosomes, probably a non disjunction event during a duplication, during a division. So you basically divide the cell instead of half the genome going this way and half the genome going the other way after duplication of the genome, you basically have all of it going to one cell and then there's a sufficient messiness there that you end up with slight differences that make most of these chromosomes be actually preserved.
+01:43:59
+It's a long story short to me.
+01:44:00
+So that's a big upgrade, right? So that's...
+01:44:02
+Not necessarily because what happens immediately thereafter is that you start massively losing tons of those duplicated genes. So 90 percent of those genes were actually lost very rapidly after Holstrom duplication. And the reason for that is that biology is not intelligent, it's just ruthless selection, random mutation. So the ruthless selection basically means that as soon as one of the random mutations hit one gene, ruthless selection just kills off that gene.
+01:44:30
+It's just, you know, you know, if you have a pressure to maintain a small, compact genome, you will very rapidly lose the second copy of most of your genes. And a small number, 10 percent were kept in two copies. And those had to do a lot with environment adaptation, with the speed of replication, with the speed of translation and with sugar processing. So I'm making a long story short to basically say that evolution is messy the only way.
+01:44:57
+So, you know, the example that I was giving of messing with 20 percent of your bits in your computer, totally bogus, duplicating all your functions and just throwing them out there in the same function, just totally bogus like this would never work in an engineer system. But biological systems, because of this content based indexing and because of these modularity, that comes from the fact that the gene is controlled by a series of tags. And now if you need these genes in another setting, you just add some more tags that will basically turn it on also in those settings.
+01:45:29
+So this gene is now pressured to to do two different functions, and it builds up complexity and duplication and duplication in general as a way to relieve that complexity.
+01:45:41
+So you have these gradual build up of complexity as a function get get get sort of added onto the existing genes and then, boom, you duplicate your your workforce and you now have two copies of this gene. One will probably specialise to do one and the other one will specialise to do the other or one will maintain the ancestral function. The other one will sort of be free to evolve and specialize while losing the ancestral function and so on, so forth.
+01:46:05
+So that's how genomes evolve. They're just messy things, but they're extremely fall tolerant and they're extremely able to deal with mutations because that's the very way that you generate new functions. So new specialization comes from the very thing that breaks it. So even in the current pandemic, many people are asking me which mutations matter the most. And what I tell them is, well, we can study the evolutionary dynamics of the current genome to then understand which mutations have previously happened or not.
+01:46:41
+And which mutations happen in genes that evolve rapidly or not? And one of the things we found, for example, is that the genes that evolved rapidly in the past are still evolving rapidly. Now, in the current pandemic, the genes that evolve slowly in the past are still evolving slowly, which means that they're useful, which means that they're under the same evolutionary pressures. But then the question is what happens in specific mutations? So if you look at the Desex 14 gene mutation that's been all over the news, so in position 614 indemnities can have a routine of the protein.
+01:47:17
+There's a D2 gene mutation that sort of has crept over the population.
+01:47:24
+That mutation we found out through my work disrupts a perfectly conserved nucleotide position that has never been changed in the history of millions of years of equivalent mammalian evolution of these viruses. That basically means that it's a completely new adaptation to human. And that mutation has now gone from one percent frequency to 90 percent frequency in almost all outbreaks.
+01:47:50
+So there's mutation. I you say to me the 416 was six and 14.
+01:47:57
+So 614 desex 13 gene.
+01:48:00
+So so literally. So what you're saying is that this is like a chess move. So it just mutated one letter to another. Exactly. And that hasn't happened before. Yeah. And and this somehow this mutation is really useful.
+01:48:15
+It's really useful in the current environment of the genome, which is moving from human to human. When it was moving from bat to bat, he couldn't care less for that mutation, but its environment specific. So now that it's moving from human to human, who it is moving way better, like by orders of magnitude, will you?
+01:48:33
+OK, so you're tracking this evolutionary dynamics, which is fascinating, but what do you do with that? So what does that mean? What does this mean? What do you make what do you make of this mutation in trying to anticipate?
+01:48:47
+I guess is the is one of the things you're trying to do is anticipate where how this unrolls into the future evolutionary dynamics.
+01:48:56
+Such a great question. So so there's there's two things I remember when I was saying earlier. Mutation is the path to new things, but also the path to break old things. So what we know is that this position was extremely preserved through gazillions of mutations. That mutation was never tolerated when it was moving from bass to bat. So that basically means that that that position is extremely important in the function of that protein. That's the first thing.
+01:49:23
+The second one is that that position was very well suited to bat transmission, but now is not well suited to human transmission. So we got rid of it and it now has a new version of that amino acid that basically makes it much easier to transmit from human to human.
+01:49:39
+So in terms of the evolutionary history teaching us about the future, it basically tells us here is the regions that are currently mutating. Here's the regions that are most likely to mutate going forward. As you're building a vaccine, here's what you should be focusing on in terms of the most stable regions that are the least likely to mutate. Or here's the newly evolved functions that are most likely to be important because they've overcome these local maximum that it had reached in the in the bat transmission.
+01:50:16
+So anyway, it's a tangent to basically say that evolution works in messy ways and the thing that you would break. Is the thing that actually allows you to first go through a lull and then reaching new local maximum, and I often like to say that if engineers had basically designed evolution, we would still be perfectly replicating bacteria. Because it's my making the bacterium worse, that you allow evolution to reach a new optimum, that's just a poison that's so profound.
+01:50:54
+That's so profound for the entirety of this scientific and engineering disciplines that exactly we as engineers need to embrace breaking things.
+01:51:05
+We as engineers need to embrace robustness as the first principle beyond perfection, because nothing is going to ever be perfect. And when you're sending a satellite to Mars, when something goes wrong, it'll break down as opposed to building systems that tolerate failure. And our resilience to that and in fact, get better through that. So the space X approach versus NASA for the for example.
+01:51:34
+Is there something we can learn about the incredible take lessons from the incredible biological systems in their resilience, in their in the mushiness, the messiness to our to our computing systems, to to our computers?
+01:51:48
+It would basically be starting from scratch in many ways. It would basically be building new paradigms that don't try to get the right answer all the time, but try to get the right answer most of the time or a lot of the time.
+01:52:04
+Do you see deep learning systems in the whole world of machine learning is kind of taking a step in that direction? Absolutely. Absolutely. Basically, by allowing these much more natural evolution of these parameters, you basically and if you look at sort of deep learning systems, again, they're not inspired by the genome aspect of biology. They're inspired by the brain aspect of biology. And again, I want you to pause for a second and realize the complexity of the entire human brain with trillions of connections within our neurons, with millions of cells talking to each other, is still encoded within the same genome.
+01:52:49
+That same genome encodes every single freaking cell type of the entire body, every single cell is encoded by the same code, and yet specialization allows you to have this single viral like genome that self replicates the single module modular automaton work with other copies of itself. It's mind boggling. Create complex organs through which blood flows and what is that blood, the same freaking genome, create organs that communicate with each other. And what are these organs? The exact same genome create a brain that is innovated by massive amount of blood pumping energy to it, 20 percent of our energetic needs.
+01:53:42
+To the brain. From the same genome and all of the neuronal connections, all of the auxiliary cells, all of the immune cells, the astrocytes oligodendrocytes, the neurons, the excitatory, the inhibitory neurons, all of the different classes of parasites, the blood brain barrier, all of that same genome.
+01:53:59
+One way to see that in a sad, because this one is beautiful.
+01:54:04
+The sad thing is thinking about the trillions of organisms that died to create that.
+01:54:12
+You mean on the evolutionary past and the evolutionary path to humans? It's crazy to descendants of apes just talking in a podcast.
+01:54:21
+OK, so mind boggling.
+01:54:25
+Just just to boggle our minds a little bit more. Yeah. I was talking to each other. We are basically generating a series of vocal utterances through our pulsating of vocal chords received through this, the people who listen to this are taking a completely different path to that information transfer yet through language. But imagine if we could connect these brains directly to each other. The amount of information that I'm condensing into a small number of words. Is a huge funnel, which then you receive and you expand into a huge number of thoughts from that small funnel.
+01:55:12
+In many ways, engineers would love to have the whole information transfer, just take the whole set of neurons and throw them away, I mean, throw them to the other person.
+01:55:22
+This might actually not be better because in your misinterpretation of every word that I'm saying, you are creating new interpretation that might actually be way better than what I meant in the first place. The ambiguity of language perhaps might be the secret to creativity. Every single time you work on a project by yourself. You only bounce ideas with one person and your neurons are basically fully cognizant of what these ideas are, but the moment you interact with another person, the mis interpretations that happen might be the most creative part of the process.
+01:56:00
+With my students, every time we have a research meeting, I very often pause and say, let me repeat what you just said in a different way, and I sort of go on and brainstorm with what they were saying. But by the third time, it's not what they were saying at all. And when they pick up what I'm saying right, like, oh, well, there are now they've sort of learned something very different from what I was saying.
+01:56:22
+And that is the same kind of messiness that I'm describing in the genome itself is sort of embracing the messiness.
+01:56:30
+And that's a feature, not a bug. Exactly.
+01:56:33
+And in the same way, when you're thinking about sort of these deep learning systems that will allow us to sort of be more creative, perhaps we learn better approximations of these complex functions again, tuned to the universe that we inhabit.
+01:56:47
+You have to embrace the breaking. You have to embrace the you know, how do we get out of these local optima?
+01:56:54
+And a lot of the design paradigms that have made deep learning so successful are ways to get away from their ways to get better training by sort of sending long range messages, these Alistar models and the, you know, sort of feed forward loops that, you know, sort of jump through layers of convolutional or network.
+01:57:17
+All of these things are basically. Ways to push you out of these local máxima. And that's sort of what evolution does that what language does that's what conversation brainstorming does. That's what our brain does. So, you know, this design paradigm is something that's pervasive and yet not taught in schools, not taught in engineering schools where everything's minutely modularized to make sure that we never deviate from, you know, whatever signal we're trying to omit as opposed to let all hell breaks loose, because that's the that's the part of our days.
+01:57:50
+The taxpayer. Yeah. I mean, it's difficult to know how to teach and what to do with it.
+01:57:56
+I mean, it's it's difficult to know how to build up a saint, the scientific method around messiness.
+01:58:05
+I mean, it's not all messiness we need we need some cleanness.
+01:58:08
+And going back to the example with Mars, that's probably the place where I want to sort of moderate error as much as possible and sort of control the environment as much as possible. But if you're trying to repopulate Mars, well, maybe messiness is a good thing then. And that you quickly, quickly mention this in terms of us using our vocal cords to speak on a podcast, so your mosque in NewLink are working on trying to. Plug as per our discussion with computers and biological systems to connect the two.
+01:58:42
+He's trying to connect our brain to a computer to create a brain computer interface where they can communicate back and forth. On this line of thinking, do you think this is possible to bridge the gap between our engineered computing systems and the messy biological systems? My answer would be absolutely. Well, you know, there's no doubt that we can understand more and more about what goes on in the brain and we can sort of train the brain. I don't know if you remember the Palm Pilot here, Palm Pilot, you remember this whole sort of alphabet that they had created.
+01:59:25
+I my thinking was the same thing.
+01:59:27
+It's basically you had you had a little pen and for every character you had a little scribble that was unique that the machine could understand, and that instead of trying the machine in trying to teach the machine to recognize human characters, you had basically they figured out that it's better and easier to train humans to create human life characters that the machine is better at recognizing.
+01:59:51
+So. In the same way, I think what will happen is that humans will be trained to be able to create the mind pattern that the machine will respond to before the machine truly comprehends our thoughts.
+02:00:04
+So the first human brain interfaces will be tricking humans to speak the machine language where with the right set of electrodes, I can sort of trick my brain into doing this. And this is the same way that many people teach. Like I learn to control artificial limbs.
+02:00:19
+You basically try a bunch of stuff and eventually you figure out how your limbs work. That might not be very different from how humans learn to use their natural limbs when they first grow up. Basically, you have these, you know, neoteny period of, you know, this puddle of soup inside your brain trying to figure out how to even make neural connections before you're born and then learning sounds in utero of, you know, all kinds of echoes and, you know, eventually getting out in the real world.
+02:00:52
+And I don't know if you've seen newborns, but they just stare around a lot. You know, one way to think about this as a machine learning person is, oh, they're just training their edge detectors and eventually they figure out how to train their detectors. They work through the second layer of the visual cortex and the third layer and so on, so forth.
+02:01:09
+And you basically have this learning how to control your limbs.
+02:01:16
+That probably comes at the same time. You're sort of throwing random things there and you realize that, oh, wow, when I do this thing, my limb moves. Let's do the following experiment, take a breath, what muscle did you flex? Now take another breath and think what muscles reflects. The first thing that you're thinking when you're taking a breath is the impact that he has on your lungs.
+02:01:39
+You're like, oh, I'm now going to increase my lungs or I'm not going to bring air in. But what you're actually doing is just changing your diaphragm.
+02:01:44
+Yeah. That's not conscious, of course, you never think of the diaphragm as a thing. Yeah, and why is that?
+02:01:53
+That's probably the same reason why I think of moving my finger when I actually move my finger. I think of the effect instead of actually thinking of whatever muscle is twitching that actually causes my finger to move.
+02:02:03
+So we basically, in our first years of life, build up this massive lookup table between whatever neuronal firing we do and whatever action happens in our body that we control. If you have a kid, grow up with a third limb. I'm sure they'll figure out how to control them, probably at the same rate as their natural limbs. And a lot of the work would be done by the so if a third room is a computer, you kind of have a lot of faith, but a thought that the brain might be able to figure out, like the plasticity would come from the brain.
+02:02:43
+Yeah, like the brain would be cleverer than the machine at first. When I talk about a third limb.
+02:02:47
+That's exactly what I'm saying, is an artificial limb that basically just controls your mouse while you're typing, you know, perfectly natural thing.
+02:02:53
+I mean, again, you know, in a few hundred years, maybe sooner than. But basically, there's as long as the machine is consistent in the way that he will respond to your brain impulses, you'll figure out how to control that. And you could play tennis with your third limb and let him go back to consistency. People who have dramatic accidents that basically take out a whole chunk of their brain can be taught to co-opt other parts of the brain, to then control that part.
+02:03:25
+You can basically build up that tissue again and eventually train your body how to walk again and how to read again and how to play again and think again, how to speak a language again, etc..
+02:03:35
+So there's a massive amount of malleability that happens, you know, naturally in our way of controlling our body or brain or thoughts or vocal cords or limbs, etc. and. Human machine interfaces are inevitable if we sort of figure out how to read these electric impulses, but the resolution at which we can understand human thought right now is nil is ridiculous.
+02:04:03
+So how are human thoughts encoded? It's basically combinations of neurons that call fire. And these create these things called engrams that eventually form memories and so on, so forth. We know nothing of all that stuff. So before we can actually read into your brain that you want to build a program that does have some that we need a lot of neuroscience.
+02:04:27
+Well, so to push back on that, do you think it's possible that without understanding the functionally about the brain or the from the neuroscience or the cognitive science psychology, whichever level of the brain we look at, do you think we just connect connect them, just like were your previous point?
+02:04:46
+If we just have a high enough resolution, which is connections in Wikipedia and your brain, the brain will just figure it out. That's understanding because that's one of the innovations of neural link, because they're increasing the number of connections to the brain to like several thousand, which before was, you know, in the dozens or whatever. You're still off by a few orders of magnitude.
+02:05:10
+That's right.
+02:05:11
+But the thing is, the hope is if you increase that number more and more and more, maybe you don't need to understand anything about the actual how human thought is represented in the brain.
+02:05:21
+You can just let it let it figure it out by cell cannery's waking up and saying, I know. Yeah, exactly.
+02:05:29
+Yeah, but so yeah, sure.
+02:05:31
+You don't have faith in the plasticity of the brain to that degree. It's not about brain plasticity.
+02:05:36
+It's about the input aspect. Basically, I think on the output aspect, being able to control the machine is something that you can probably train your neural impulses that you're sending out to sort of match whatever response you see in the environment. If this thing moved every single time, I thought a particular thought that I could figure out I could hack my way into moving this thing with just a series of thoughts, I could think guitar, piano, tennis ball, and then this thing would be moving.
+02:06:04
+And then, you know, I would just have the series of thoughts that would sort of result in the impulses that will move this thing the way that I wanted. And then eventually it'll become natural because I won't even think about it in the same way that we control our lives in a very natural way. But babies don't do that. Babies have to figure it out. And some of that is hard coded. But some of that and it actually learned based on whatever soup of neurons you ended up with, whatever connections you pruned them to, and eventually you were born with, you know, a lot of that is coded in the genome, but a huge chunk of that is stochastic instead of the way that you sort of create all these neurons to migrate to form connections, they sort of, you know, spread out.
+02:06:42
+They have particular branching patterns. But the connectivity itself unique in every single new person.
+02:06:48
+All these to say that on the output side, absolutely. I'm very, very, you know, hopeful that we can have machines that read thousands of these neuronal connections on the output side.
+02:06:59
+But on the input side, oh, boy, I don't expect any time in the near future we'll be able to sort of send a series of impulses that will tell me, oh, earth to some distance, seven point five million, Talulah, etc., like nowhere. I mean, I think language will still be the input way rather than sort of any kind of more complex.
+02:07:24
+It's a really interesting notion that the ambiguity of language is a feature. Yeah. And we evolved for millions of years to be able to take advantage of that ambiguity.
+02:07:36
+Exactly. And yet no one teaches us the subtle differences between words that are near cognates and yet evokes so much more than one from the other. And yet. You know, when you're choosing words from a list in a list of 20 synonyms, you know exactly the connotation of every single one of them. And that's something that, you know, is there. So. So, yes, there's ambiguity, but there's all kinds of connotations. And in the way that we select our words, we have so much baggage that we're sending along the way that we're emoting, the way that we're moving our hands every single time we speak, the you know, the pauses, the eye contact, etc.
+02:08:15
+. So much higher, Badreya, than just the vocal, you know, string of characters. Well, let me just take a small tangent on that, and we haven't done that yet.
+02:08:29
+We'll return to the origin of life at.
+02:08:33
+So, I mean, you're Greek, but I'm going on this personal journey, I'm going to Paris for the explicit purpose of talking to one of the most famous, a couple who's a famous translators of Russian literature, Dostoyevsky, Tolstoy.
+02:08:51
+And they go, that's their art is the translation.
+02:08:55
+And everything I've learned about the translation art, it makes me feel it's so profound in a way that's so much more profound than the natural language processing papers I read in the machine learning community that there's such depth to language that I don't know what to do with. I don't know if you've experienced that in your own life with knowing multiple languages. I don't know what I don't know how to make sense of it. But there's so much lost in translation between Russian and English and getting a sense of that.
+02:09:34
+Like, for example. There, like just taking a single sentence from Dostoyevsky, and it's like there's a lot of them, you could you could talk for hours about how to translate that sentence properly.
+02:09:47
+That captures the meaning, the the period, the culture, the humor, the with the suffering that was in the context of the time. All of that could be a single sentence. You could you could talk forever about what it takes to translate that correctly. I don't know what to do with that.
+02:10:05
+So being Greek, it's very hard for me to think of a sentence or even a word without going into the full etymology of that word, breaking up every single atom of that that sentence and every single atom of these words and rebuilding it back up.
+02:10:26
+I have three kids, and the way that I teach them Greek is the same way that, you know, the documentary I was mentioning earlier about sort of understanding the deep roots of all of these, you know, words and. It's very it's very interesting that every single time I hear a new word that I've never heard before, I go and figure out the etymology of that word because I will never appreciate that word without understanding how it was initially formed.
+02:10:57
+Interesting, but how does that help, because that's that's not the full picture. No, no, of course. Of course. But what I'm trying to say is that knowing the components teaches you about the context of the formation of that word and sort of the original usage of that word. And then, of course, the word takes new meaning as you created from its parts, and that meaning then gets augmented and two synonyms that that sort of have different roots will actually have implications that carry a lot of that baggage of the historical provenance of these words.
+02:11:31
+So before working on genome evolution, my passion was the evolution of language and sort of tracing cognates across different languages. Through their etymologies, and that's fascinating that there's parallels between I mean, of course, the idea that Ujamaa there's evolutionary dynamics to our language. Every single word that you utter parallels, parallels what parallels mean para means side by side alleles from illegals, which means identical twins parallel. I mean, name any word. And there's so much baggage, so much beauty in how that word came to be and how this word took a new meaning than the sum of its parts.
+02:12:20
+Yeah, and then and they're just they're just words they don't have any physical, sadly. And now you take a look and you weave them into a sentence.
+02:12:30
+The emotional invocations of that weaving are fathomless.
+02:12:36
+And there are all of those emotions all live in our in the brains of humans in the eye of the beholder.
+02:12:45
+No, seriously, you have to embrace this concept of the eye of the beholder.
+02:12:49
+It's it's the conceptualization that nothing takes meaning with one person creating it. Everything takes meaning in the receiving end. And the emergent properties of these communication networks where every single you know, if you look at the network of our cells and how they're communicating with each other, every cell has its own code. This code is modulated by the epigenome. This creates a bunch of different cell types. Each cell type now has its own identity, yet they all have the common root of the stem cells that sort of led to them.
+02:13:21
+Each of these identities is now communicating with each other. They take meaning in their interaction. There's an emergent property that comes from a bunch of cells being together that is not in any one of the parts. If you look at neurons communicating again, these anagrams don't exist in any one neuron. They exist in the connection, in the combination of neurons and the meaning of the words that I'm telling you. Is empty until it reaches you and it affects you in a very different way than it affects whoever is listening to this conversation now.
+02:13:55
+Because of the emotional baggage that I've grown up with, that you've grown up with and that they've grown up with. Yeah, and that's, I think, the magic of translation. If you start thinking of translation as just simply capturing that emotional set of reactions that you have that you evoke, you need a different set of words to evoke that same set of reactions to a French person than to a Russian person because of the baggage of the culture that we grew up in.
+02:14:25
+Yeah, I mean, is so, so so basically, you shouldn't find the best word. Sometimes it's a completely different sentence structure that you will need. Matched to the cultural context of the target audience that you have the I mean, you just I usually don't think about this, but right now there's this feeling is a reminder that it's just you and I talking. But there's several hundred thousand people will listen to this. There's some guy in Russia right now running.
+02:14:57
+Like in Moscow, listening to us and there is somebody in India, I guarantee you, there's somebody in China and South America, there's somebody in Texas, and and they all have different emotional baggage.
+02:15:10
+They probably got angry earlier on about the whole discussion about coronavirus and about some aspect of it. Uh, yeah, it's and there's that network effect. Yeah.
+02:15:22
+That's it's a beautiful thing. And these lateral transfer of information, that's what makes the collective, quote unquote, genome of humanity so unique from any other species. So you somehow miraculously wrapped it back to the very beginning of when we were talking about the human, the beauty of the human genome.
+02:15:46
+So I think this is the right time unless we want to go for a six to eight hour conversation, we're going to have to talk again. But I think for now to wrap it up, this is the right time to talk about the the biggest, most ridiculous question of all meaning of life OFF-MIKE. You mentioned to me that you. You had your 40 second birthday for the second being a very special, absurdly special number, and you had a kind of.
+02:16:18
+Get together with friends to discuss the meaning of life. Let me ask you, in your as a biologist, as a computer scientist and as a human, what is the meaning of life? I've been asking this question for a long time, ever since my 40 second birthday, but well before that, even planning the Meaning of Life symposium and symposium seemed together, Posti actually means to drink together. So the symposium is actually a drinking party.
+02:16:52
+So can you actually elaborate about this meeting of the symposium that you put together? It's genius. So 42 is obviously the answer to life, the universe and everything from The Hitchhiker's Guide to the Galaxy.
+02:17:04
+And as I was turning 40 to have had the theme for every one of my birthdays when I was turning 32. It's one zero zero zero zero zero in binary. So I celebrated my 100000 binary binary birthday and I had a theme of going back a thousand years. You know, let's dress something in the last hundred thousand years anyway. We've I've always had.
+02:17:26
+That's an interesting human being. OK, that's awesome.
+02:17:30
+I've always had these sort of sort of numerology related announcements for me, for my birthday party.
+02:17:38
+So what came out of that Meaning of Life symposium is that I basically asked for two of my colleagues, for the two, my friends, for each of my collaborators, to basically give seven million species on the meaning of life, each from their perspective. And I really encourage you to go there because it's mind boggling that every single person said a different answer. Every single person started with I don't know what the meaning of life is, but and then give us beautifully, eloquently answer, eloquent answer.
+02:18:12
+And they were all different, but they all were consistent with each other and mutually synergistic and together forming a beautiful view of what it means to be human in many ways.
+02:18:25
+Some people talked about the loss of their loved one, their life partner for many, many years, and how their life changed through that. Some people talked about the origin of life. Some people talked about the difference between purpose and meaning.
+02:18:41
+I'll, you know, maybe quote one of the answers, which is this linguistics professor friend of mine at Harvard who basically said.
+02:18:52
+That she was going to she's Greek as well, and she said, I will give a very Pythian answers if I was the oracle of Delphi, who would basically give these very cryptic answers very short, but interpretable in many different ways. There was this whole set of priests who were tasked with interpreting what Pythia had said. And very often you would not get a clean interpretation.
+02:19:13
+But she said, I will be like and give you a very short and multiple interpretable answer.
+02:19:19
+But unlike her, I will actually also give you three interpretations.
+02:19:23
+And she said the answer to the meaning of life is become one. And the first interpretation is like a child become one year old with the excitement of discovering everything about the world. Second interpretation in whatever you take on, become one, the first, the best excel. Drive yourself to perfection for every one of your tests and become one when people are separate, become one, come together, learn to understand each other.
+02:20:00
+Damn, that's an answer.
+02:20:02
+And one way to summarize this whole meaning of Life symposium is that the very symposium was illustrating the quest for meaning, which might itself be the meaning of life. This constant quest for something sublime, something human, something intangible, some aspect of what defines us as a species and as an individual, both the quest of me as a person through my own life. But the meaning of life could also be the meaning of all of life. What is the whole point of life?
+02:20:39
+Why life? Why life itself?
+02:20:41
+Because we've been talking about the history and evolution of life, but we haven't talked about why life in the first place. Is life inevitable? Is life part of physics? Does life transcend physics? But fighting by fighting against entropy, by compartmentalizing and increasing concentrations rather than diluting away? Is life a distinct entity in the universe? Beyond the traditional, very simple physical rules that govern gravity and electromagnetism and all of these forces, is life another force? Is there a life force?
+02:21:20
+Is there a unique kind of set of principles that emerge, of course, built on top of the hardware of physics?
+02:21:26
+But is it sort of a new layer of software or a new layer of a computer system?
+02:21:31
+So that's at the level of, you know, big questions.
+02:21:35
+There's another aspect of gratitude of basically what you know, what I like to say is during this pandemic, I've basically worked from six a.m. until 7:00 p.m. every single day nonstop, including Saturday and Sunday.
+02:21:51
+I've basically broken all boundaries of where life, personal life begins and work life, you know, and and that has been exhilarating for me, just just the intellectual pleasure that I get from a day of exhaustion where at the end of the day, my brain is hurting. I'm telling my wife, wow, I was useful today.
+02:22:17
+And there's a certain pleasure that comes from feeling useful. And this is a certain pleasure that comes from feeling grateful. So I've written this little sort of prayer for my kids to say at bedtime every night where they basically say, thank you, God, for all you have given me and give me the strength to give unto others with the same love that you have given unto me. We as a species are so special, the only ones who worry about the meaning of life.
+02:22:57
+And maybe that's what makes us human and what I like to say to my wife and to my students during this pandemic work extravaganza is every now and then they ask me, but how do you do this? And I'm like, I'm a workaholic. I love this.
+02:23:17
+This is me in the most unfiltered way, the ability to do something useful, to feel that my brain is being used to interact with smartest people on the planet. Day in, day out. And to help them discover aspects of the human genome, of the human brain, of human disease and the human condition that no one has seen before with data that we're capturing that has never been observed. And there's another aspect which is on the personal life. Many people say, oh, I'm not going to have kids.
+02:23:53
+Why bother? I can tell you as a father.
+02:23:58
+They're missing half the picture, if not the whole picture, teaching my kids about my view of the world and watching through their eyes the naivete with which they start and the sophistication with which they end up. The understanding that they have of not just the natural world around them, but of me to. The unfiltered criticism that you get from your own children. That knows no bounds of honesty. And I've grown components of my heart that I didn't know I had until you sensed that fragility, that vulnerability of the children.
+02:24:51
+That immense love and passion. The unfiltered egoism. That we as adults learn how to hide so much better. It's just this bag of emotions that tell me about the raw materials that make a human being and how these raw materials can be arranged with more sophistication that we learn through life.
+02:25:15
+To become truly human adults. But there's something so beautiful about seeing that progression between them, the complexity of the language growing as more neural connections are formed. To to to realize that the hardware is getting rearranged as their software is getting implemented on that hardware. That their frontal cortex continues to grow for another 10 years. There's neuronal connections are continuing to form new neurons that actually get replicated and formed, and it's just incredible that we have these not just you grow the hardware for 30 years and then you feed it.
+02:25:58
+All of the knowledge. No, no. The knowledge is fed throughout and is shaping these neural connections as they're forming. So seeing that transformation from either your own blood or from an adopted child is the most beautiful thing you can do as a human being. And complete completes you complete that path, a journey, the create life.
+02:26:19
+Oh, sure, that's at conception. That's easy, but create human life to add the human part that takes decades of compassion, of sharing, of love and of anger and of impatience and patience. And as a parent, I think I've become a very different kind of teacher. Because, again, I'm a professor. My first rule is to bring adult human beings into a more mature level of adulthood where they learn not just to do science, but they learn the process of discovery and the process of collaboration, the process of sharing, the process of conveying the knowledge of encapsulating something incredibly complex and sort of giving it up in sort of bite sized chunks that the rest of humanity can appreciate.
+02:27:11
+I told my students all the time, if you you know, like when an apple falls, when when when when a tree falls in the forest and no one's there to listen, has it really fallen the same way you do this awesome research if you write an impenetrable paper that no one will understand it as if you never did the awesome research.
+02:27:28
+So conveying of knowledge, conveying this lateral transfer that I was talking about at the very beginning of sort of human humanity and sort of the sharing of information, all of that has gotten so much more rich by seeing human beings grow in my own home.
+02:27:49
+Because that that makes me a better parent and that makes me a better teacher and a better mentor to the nurturing of my adult children, which are my research group. First of all, you put Conex. Beautifully to the vertical and the horizontal inheritance of ideas that we've talked about at the very beginning, I don't think there's a better way to end it on this poetic and powerful note.
+02:28:18
+Manaus. Thank you so much for talking us. A huge honor. We have to talk again about the origin of life, about epigenetics, epigenomics and some of the incredible research you're doing. Truly an honor. Thanks so much for talking to.
+02:28:32
+Thank you. Such a pleasure. It's such a pleasure. I mean, your questions are outstanding. I've had such a blast here. I can't wait to be back.
+02:28:38
+Awesome. Thanks for listening to this conversation with Benoit Keli's and thank you to our sponsors, Blankest ET Sleep and Masterclass. Please consider supporting this podcast by going to blink. Is that Councillor Lex Ainslee, Councillor Lex and Master Class Dotcom's Lex click the links by the staff get the discount is the best way to support this podcast. If you drive this thing, subscribe on YouTube review starting up a podcast supporter and patron or connect with me on Twitter. Àlex Friedemann.
+02:29:12
+And now let me leave you with some words from Charles Darwin that I think Manlius represents quite beautifully. If I had my life to live over again, I would have made a rule to read some poetry and listen to some music at least once every week. Thank you for listening and hope to see you next time.

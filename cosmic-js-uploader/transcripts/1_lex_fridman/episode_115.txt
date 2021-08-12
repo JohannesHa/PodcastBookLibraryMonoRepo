@@ -1,0 +1,1156 @@
+00:00:00
+The following is a conversation with Ross Todrick, a roboticist and professor at MIT and vice president of robotics research at Toyota Research Institute, or TRY. He works on control of robots in interesting, complicated under actuary's stochastic, difficult to model situations. He's a great teacher and a great person, one of my favorites at MIT. We get into a lot of topics in this conversation from his time leading at MIT Stopera Robotics Challenge team to the awesome fact that he often runs close to a marathon a day to and from work barefoot for world class roboticists interested in elegant, efficient control of undera actually dynamical systems like the human body.
+00:00:49
+This fact makes us one of the most fascinating people I know. Quick summary of the ads, three sponsors, Magic Spoons, Cereal, better help and express VPN. Please consider supporting this podcast by going to magic spoon dotcom slash Lex and using collects at checkout, going to better help Dotcom slash Lex and signing up at express dotcom slash Lex Pod. Click the links in the description, buy the stuff, get the discount. It really is the best way to support this podcast.
+00:01:21
+Enjoy this thing. Subscribe on YouTube, review it with five stars and up a podcast supported on page one. Connect with me on Twitter, Àlex Friedemann, as usual. I'll do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. This episode is supported by magic spoon, low carb, keto friendly cereal. I've been on a mix of Quito Carnivore diet for a very long time now. That means eating very little carbs.
+00:01:50
+I used to love cereal, obviously most of crazy amounts of sugar, which is terrible for you. So I quit years ago. But Magic Spoon is a totally new thing. Zero sugar, 11 grams of protein and only three net grams of carbs. It tastes delicious. It has a bunch of flavors. They're all good. But if you know what's good for you, you'll go with Coco, my favorite flavor and the flavor of champions. Click the magic spoon dot com slash Lex link in the description is called Let's check out to get the discount and to let them know I sent you to buy all of their cereal.
+00:02:26
+It's delicious and good for you. You won't regret it. The show is also sponsored by Better Help spelled h e LP, help check it out, a better help slash Lex. They figure out what you need and match you with the licensed professional therapist in under 48 hours. It's not a crisis line. It's not self-help. It is professional counseling done securely online. As you may know, I'm a bit from the David Goggins line of creatures and so have some demons to contend with, usually on long runs or all nighters full of self-doubt.
+00:03:01
+I think suffering is essential for creation, but you can suffer beautifully in a way that doesn't destroy you for most people. I think a good therapist can help in this, so it's the least worth a try. Check out the reviews. They're all good. It's easy, private, affordable, available, worldwide. You can communicate by text any time and schedule weekly audio and video sessions. Check it out. Better Health Outcomes neglects. The show is also sponsored by Express VPN.
+00:03:31
+Get it at expressly pandak councillor's lacks pod to get a discount and to support this podcast. Have you ever watched the office? If you have, you probably know it's based on a UK series also called The Office not to stir up trouble, but I personally think the British version is actually more brilliant than the American one. But both are amazing anyway. There are actually nine other countries with their own version of the office. You can get access to them with no job restriction.
+00:04:01
+When you use Express VPN, it lets you control where you want to think you're located. You can choose from nearly one hundred different countries giving you access to content that isn't available in your region. So again, get it on any device and express the council's looks bad to get an extra three months free and to support this podcast. And now here's my conversation with Ross Teja. What is the most beautiful emotion of an animal or robot that you've ever seen?
+00:04:53
+I think the most beautiful motion of a robot has to be the passive dynamic walkers. I think there's just something fundamentally beautiful, the ones in particular that Steve Collins built with Andy Ruina at Cornell, a three D walking machine.
+00:05:07
+So it was not confined to a boom or a plane that you put it on top of a small ramp, give it a little push. It's powered only by gravity, no controllers, no batteries whatsoever. It just falls down the ramp. And at the time, it looked more natural, more graceful, more humanlike than any robot we'd seen to date, powered only by gravity. How does it work? Well, OK, the simplest model is kind of like a slinky, it's like an elaborate slinky.
+00:05:38
+One of the simplest models we used to think about it is actually a rimless wheel. So imagine taking a bicycle wheel, but take the rim off. So it's now just got a bunch of spokes. You give that a push, it still wants to roll down the ramp, but every time its foot, its smoke comes around and hits the ground, it loses a little energy.
+00:05:58
+Every time it takes a step forward, he gains a little energy. Those things can come into perfect balance, and actually they they want to it's a stable phenomenon. If it's going to slow, it'll speed up. It's going too fast, it will slow down. And it comes into a stable, periodic motion. Now you can take that rimless wheel, which doesn't look very much like a human walking. Take all the extra spokes away, put a hinge in the middle.
+00:06:25
+Now it's two legs. That's it called our compass. Kate Walker that can still give it a little push, starts falling down a ramp, looks a little bit more like walking this. It's a biped. But what Steve and Andy and Ted McGeer started the whole exercise, but what Steve and Andy did was they took it to this beautiful conclusion. Where they built something that had knees, arms, a torso, the arms swung naturally, give it a little push and that looked like a stroll through the park.
+00:06:55
+How do you design something like that? I mean, is that art or science?
+00:06:59
+It's on the boundary. I think there's a science to getting close to the solution. I think there's certainly art in the way that they they made a beautiful robot. But but then the finesse because because this was working, they were working with a system that wasn't perfectly modeled, wasn't perfectly controlled.
+00:07:18
+There's all these little tricks that you have to tune the suction cups at the knees, for instance, so that they stick, but then they release at just the right time, or there's all these little tricks of the trade. Which really are art, but it was a point. I mean, it made the point and we were at that time the walking robot, the best walking robot in the world was Honda's Asimo, absolutely marvel of modern engineering.
+00:07:41
+It was Niños this was in 1911 when they first released it sort of announced Pitou and then went through. It was assembled by then in 2004.
+00:07:51
+And it looks like very cautious walking like you're walking on hot coals or something like that.
+00:07:59
+I think it gets a bad rap. Asimo is a beautiful machine. It does walk with its knees bent. Are Atlus walking had its knees bent, but actually Esma was pretty fantastic. But it wasn't energy efficient. Neither was Atlas when we worked on Atlus. None of our robots that have been that complicated have been very energy efficient. There was a there's a thing that happens when you do control, when you try to control the system of that complexity, you try to use your motors to basically counteract gravity.
+00:08:34
+Take whatever the world is doing to you and push back, erase the dynamics of the world and impose the dynamics you want because you can make them simple and analyzable, mathematically simple. And this was a very sort of beautiful example that you don't have to do that, you can just let go, let physics do most of the work. Right, and you just have to give it a little bit of energy, this one only walk down a ramp.
+00:09:00
+It would never walk on the flat to walk on the flat. You have to give a little energy at some point. But maybe instead of trying to take the forces imparted to you by the world and replacing them, what we should be doing is letting the world push us around and we go with the flow. Very Zen. Very Zen robot. Yeah, but OK.
+00:09:19
+So that sounds very Zen. But I can also imagine how many, like failed versions they had to go through. Like how many, like I would say is probably what would you say. It's in the thousands that have had to have the system fall down before they figure it out. I think I don't know if it's thousands, but it's a lot. It takes some patience. There's no question.
+00:09:42
+So in that sense, control might help a little bit.
+00:09:45
+Oh, the I think everybody even at the time said that the answer is to do with that, with control. But it was just pointing out that maybe the way we're doing control right now isn't the way we should be.
+00:09:58
+So what about on the animal side, the ones that figured out how to move efficiently? Is there anything you find inspiring or beautiful and the movement of any. I do have a favorite example.
+00:10:09
+OK, so it sort of goes with the passive walking idea. So is there, you know, how energy efficient are animals? OK, there's a great series of experiments by George Lawter at Harvard and MIT and a few of the MIT. They were studying fish swimming in a water tunnel, OK. And one of these the type of fish they were studying were these rainbow trout. Because there was a phenomenon well understood that rainbow trout, when they're swimming upstream at mating season, they kind of hang out behind the rocks and looks like I mean, that's tiring work swimming upstream.
+00:10:45
+They're hanging out behind the rocks. Maybe there's something energetically interesting there. So they tried to recreate that. They put in this water tunnel a rock, basically a cylinder that had the same sort of vortex street, the eddies coming off the back of the rock that you would see in a stream. And they put a real fish behind this and watched how it swims. And the amazing thing is that if you watch from above what the fish swims when it's not behind a rock, it has a particular gate.
+00:11:13
+You can identify the fish the same way you look at a human looking net walking down the street. You sort of have a sense of how a human walks. The fish has a characteristic gait.
+00:11:22
+You put that fish behind the rock, its gait changes, and what they saw was that it was actually resonating and kind of surfing between the vortices.
+00:11:32
+Yeah. Now. Here is the experiment that really was the clincher, because there was still it wasn't clear how much of that was mechanics of the fish, how much of that is control the brain. So the clincher experiment and maybe one of my favorites to date, although there are many good experiments they took. This was now a dead fish.
+00:11:55
+They took a dead fish, they put a string that went to tie the mouth of the fish to the rock so it couldn't go back and get caught in the grates. And then they asked, what would that dead fish do when I was hanging up behind the rock?
+00:12:08
+And so what you'd expect it sort of flopped around like a dead fish in the in the vortex wake until something sort of amazing happens. And this video is worth putting in.
+00:12:18
+Yeah, right. What happens to the dead fish basically start swimming upstream, right? It's completely dead. No brain, no motors, no control. But it's somehow the mechanics of the fish resonate with the vortex street and it starts swimming upstream. It's one of the best examples ever.
+00:12:37
+Who do you credit for that to? Is that just evolution? Constantly just figuring out by killing a lot of generations of animals, like the most efficient motion is that or maybe the physics of our world completely like evolution applied not only to animals, but just the entirety of it somehow drives to efficiency like nature likes efficiency. I don't know if that question even makes any sense. I understand the question that's I mean, do they coevolve?
+00:13:11
+Yes, somehow KOYA Like, I don't know if an environment can evolve, but I mean, there are experiments that people do, careful experiments that show that animals can adapt to unusual situations and recover efficiency. So there seems like at least in one direction, I think there is reason to believe that the animal's motor system and probably its mechanics adapt in order to be more efficient. But efficiency isn't the only goal, of course. Sometimes it's too easy to think about only efficiency, but we have to do a lot of other things first, not get eaten, and then all other things being equal.
+00:13:49
+Try to save energy. By the way, let's draw a distinction between control and mechanics.
+00:13:55
+Like how can you how would you define each.
+00:13:57
+Yeah, I mean, I think part of the point is that we shouldn't draw a line as as clearly as we tend to.
+00:14:04
+But the you know, on a robot, we have motors and we have the links of the robot. Let's say if the motors are turned off, the robot has some passive dynamics. OK, gravity does the work you can put springs, I would call that mechanics, right? If we have springs in dampers, which our muscles are springs and dampers and tendons, but then you have something that's doing active work, putting energy in your motors on the robot.
+00:14:30
+The controllers job is to send commands to the motor that add new energy into the system. Right. So the mechanics and control interplay somewhere the divide is around, you know, did you decide to send some commands to your motor or did you just leave the motors off, let them do their work?
+00:14:47
+So would you say is most of nature? And the dynamics side or the control side, so like if you look at biological systems of, you know, we're living in a pandemic now, do you think a virus is a do you think is a dynamic system or or is there a lot of control intelligence? I think it's both.
+00:15:11
+But I think we maybe have underestimated how important the dynamics are. Right. I mean, even our bodies, the mechanics of our bodies, certainly with exercise, they evolve. But so I actually I lost a finger in the early 20s and it's my fifth metacarpal. It turns out you use that a lot in ways you don't expect when you're opening jars. Even when I'm just walking around, if I bump it on something, there's a bone there that was used to taking contact.
+00:15:43
+My fourth metacarpal wasn't used to taking contact. It used to hurt. Still, there's a little bit, but actually my bone has remodeled right the over the left over a couple of years, the geometry, the mechanics of that bone change to address the new circumstances. So the idea that somehow it's only our brain that's adapting or evolving is not right. Maybe sticking an evolution for a bit because it's tended to create some interesting things, a bipedal walking.
+00:16:16
+Do you why the heck did evolution give us? I think we're. Are we the only mammals that walk on two feet?
+00:16:23
+No. I mean, there's a bunch of animals that do it a bit, but there's a I think we are the most successful.
+00:16:30
+I think some I think I read somewhere that the reason the, you know, evolution made us walk on two feet is because there's an advantage to being able to carry food back to the tribe or something like that.
+00:16:46
+It's like you can carry it's kind of this communal cooperative thing. So like to carry stuff back to to a place of shelter and so on to share with others. Do you understand at all the value of walking on two feet from both the robotics and a human perspective?
+00:17:06
+Yeah, there are some great books written about the evolution of walking evolution of the human body.
+00:17:13
+I think it's easy, though, to make. Bad evolutionary arguments, sure, and most of them are probably bad, but what else can we do?
+00:17:23
+I mean, I think a lot of what dominated our evolution probably was not. The things that worked well, sort of in the steady state and, you know, when things are when things are good, but but. For instance, people talk about what we should eat now because our ancestors were meat eaters or whatever.
+00:17:45
+I love that. Yeah, but probably, you know, the reason that one pre pre Homo sapiens species versus another survived was not because of whether they eat well when there was lots of food, but when the ice age came, you know, probably one of them happened to be in the wrong place.
+00:18:08
+One of them happened to forage a food that was OK, even even when the the glaciers came or something like that. I mean, there's a million variables that contributed.
+00:18:17
+And we can and are actually the amount of information we're working with in telling these stories, these evolutionary stories is very little. So, yeah, just like you said, it seems like if if you study history seems like history turns on like these little events that that otherwise would seem meaningless. But in a grant like when you, in retrospect, were turning points. Absolutely. And that's probably how somebody got hit in the head with a rock because somebody slept with the wrong person back in the days and somebody get angry.
+00:18:55
+And that turned you know, warring tribes can combine with the environment, all those millions of things and the meat eating, which I get a lot of criticism because I don't know.
+00:19:06
+I know your dietary processes are like, but these days I been eating only meat, which is a large community.
+00:19:15
+People who say, yeah, probably make evolutionary arguments and say, you do a great job. There's probably an even larger community of people, including my mom, who says it's a deeply unhealthy it's wrong, but I just feel good doing it. But you're right, these evolutionary arguments can be flawed. But is there anything interesting to pull out for?
+00:19:34
+There's a great book, by the way, book a series of books by Nicholas Taleb about food, by Randomness and Black Swan. I highly recommend them, but yeah, they make the point nicely that probably it was a few random events that, yes, maybe it was someone getting hit by a rock, as you say.
+00:19:56
+That said, do you think I don't know how to ask this question or how to talk about this, but there's something elegant and beautiful about moving on two feet. Obviously biased because I'm human. But from a robotics perspective too, you work with robots two feet. Is it is it all useful to build robots that are on TV as opposed to for something useful? But the most I mean, the reason I spent a long time working on what bipedal walking was because it was hard and it was it challenged control theory in ways that I thought were important.
+00:20:32
+I wouldn't have I ever tried to convince you that you should start a company around bipeds or something like this. There are people that make pretty compelling arguments, right? I think the most compelling one is that the world is built for the human form. And if you want the robot to work in the world we have today, then, you know, having a human form is a pretty good way to go.
+00:20:56
+And there are there are places that a biped can go that would be hard for other form factors to go, even natural places. But, you know, at some point in the long run, we'll be building our environments for our robots, probably. And so maybe that argument falls aside.
+00:21:13
+So you famously run barefoot. Do you still run barefoot? I still run barefoot. That's so awesome. Much to my wife's chagrin.
+00:21:24
+Do you want to make an evolutionary argument for why running barefoot is advantageous?
+00:21:30
+What have you learned about human and robot movement in general from running barefoot? Human or robot and or well, you know, it happened the other way, right? So I was studying walking robots and I was there's a great conference called the Dynamic Walking Conference, where it brings together both the biomechanics community and the walking robots community.
+00:21:56
+And so I have been going to this for years and hearing talks by people who study barefoot running and other the mechanics of running. So I did eventually read Born to Run. Most people born to run in the first year. Right. The other thing I had going for me is actually that I I wasn't I wasn't a runner before and I learned to run after I had learned about barefoot running or I mean started running longer distances. So I didn't have to unlearn.
+00:22:24
+And I'm definitely I'm a big fan of it for me, but I'm not going to I tend to not try to convince other people. There's people who run beautifully with shoes and that's good. But here's why it makes sense for me. It's all about the long term game, right? So I think it's just too easy to run 10 miles, feel pretty good, and then you get home at night and you realize my knees hurt. I did something wrong.
+00:22:52
+Right. If you take your shoes off, then if you hit hard with your foot at all, then it hurts, but you don't run 10 miles and then and then realize you've done something, some damage. You have immediate feedback telling you that you've done something that's that's maybe suboptimal and you change your gait. I mean, it's even subconscious. If I right now, having run many miles barefoot, if I put a shoe on my gait changes in a way that I think is not as good.
+00:23:22
+Um, so so it makes me land softer.
+00:23:26
+And I think my my goals for running are to do it for as long as I can into old age, not to win any races. And so for me this is a, you know, a way to protect myself. Yeah.
+00:23:40
+I think first of all, I've tried running barefoot for many, many years ago, probably the other way just just just reading Born to Run.
+00:23:51
+But just to understand, because I felt like I couldn't put in the miles that I wanted to. And it feels like running for me and I think for a lot of people was one of those activities that we do often and never really try to learn to do correctly. Like, it's funny, there's so many activities we do every day, like brushing our teeth. Right. I think a lot of us, at least me, probably never deeply studied how to properly brush my teeth or wash as now with a pandemic or how to properly wash our hands.
+00:24:27
+I do it every day, but we haven't really studied, like, am I doing this correctly? But running felt like one of those things. It was absurd not to study how to do correctly, because it's the source of so much pain and suffering. Like I hate running, but I do it. I do it because I hate it. But I feel good afterwards. But I think it feels like you need to learn how to do it properly.
+00:24:48
+So that's what Barefoot Running came in. And then I quickly realized that my gait was completely wrong. I was taking huge like steps and landing hard on the heel, all those elements. And so, yeah, from that I actually learned to take really small steps. Look, I already forgot the number, but I feel like it was one hundred and eighty a minute or something like that.
+00:25:12
+And I remember I was actually just took songs that are 180 beats per minute and then like tried to run at that beat and just to teach myself. It took a long time and I feel like after a while you learn to adjust it properly without going all the way to barefoot.
+00:25:33
+But I feel like barefoot is the legit way to do it. I mean, I think a lot of people would be really curious about it. Can you if they're interested in trying, what would you how would you recommend they start or try or explore slowly?
+00:25:49
+That's the biggest thing people do, is they are excellent runners and they're used to running long distances or running fast. And they take their shoes off and they hurt themselves instantly trying to do something that they were used to doing. I think I lucked out in the sense that I I couldn't run very far when I first started trying. And I run with minimal shoes, too. I mean, I will, you know, bring along a pair of actually like aqua socks or something like this.
+00:26:13
+I can just slip on or running sandals. I've tried all of them.
+00:26:17
+What's the difference between a minimal shoe and nothing at all? It's like feeling wise.
+00:26:22
+What does it feel like there? Is it I mean, I notice my game changing, right? So. I mean, you're your foot has as many muscles and sensors as your hand does, right? Sensors. Oh, OK. And we do amazing things with our hands and we stick her foot in a big, solid shoe. So there's I think, you know, when you're barefoot, you're you're just giving yourself more proprioception. And that's why you're more aware of some of the flaws and stuff like this.
+00:26:54
+Now you have less protection to throw rocks and stuff.
+00:26:59
+I mean. Yes. So I think people are who are afraid of barefoot running. They're worried about getting cuts or getting stepping on rocks. First of all, even if that was a concern, I think those are all like very short term. You know, if I get a scratch or something, it'll heal in a week. If I blow up my knees, I'm done running forever. So I will trade the short term for the long term any time.
+00:27:18
+But even then, you know this again, to my wife's chagrin, your feet get tough, right? And. Yeah, I can run over almost anything now.
+00:27:30
+I mean, what can you talk about? Is there 10 like is there tips or tricks that you have suggestions about, like if I wanted to try it. You know, there is a good book, actually.
+00:27:46
+There's probably more good books since I read them. But can Bob Barefoot Ken Bob Sexton? Mm hmm.
+00:27:54
+He's an interesting guy, but I think his book captures the right way to describe running barefoot, running to somebody better than any other I've seen. So you run pretty good distances and bike and is there you know, we talk about bucket list items, is there something crazy on your bucket list athletically that you hope to do one day?
+00:28:21
+I mean, my commute is already a little crazy.
+00:28:24
+What are we talking about here? What what distance are we talking about? Well, I live about 12 miles from M.I.T., but you can find lots of different ways to get there. So, I mean, I've run there for a long, many years. Bike there always. Yeah. But normally I would try to run in and then bike home, bike and run home.
+00:28:43
+But you have run there and back before you're barefoot. Yeah. Yeah. Or with minimal shoes or whatever that.
+00:28:49
+Well 12 times too. Yeah.
+00:28:51
+OK, it's became kind of a game of how can I get to work. I rollerbladed I've done all kinds of weird stuff, but my favorite one these days I've been taking the Charles River to work so I can put in the rowboat not too far from my house. But the Charles River takes a long way to get to MIT, so I could spend a long time getting there. And it's you know, it's not about I don't know. It's just about.
+00:29:18
+I've had people ask me, how can you justify taking that time? But for me, it's just a magical time to think, to compress, decompress, you know, especially wake up, do a lot of work in the morning. And then I kind of have to just let that settle before I say I'm ready for all my meetings.
+00:29:37
+And then and the way home, it's a great time to sort of let that settle.
+00:29:41
+You lead a like a a large group of people in your. Is there a days where you're like, oh, shit, I got to get to work in an hour, like I mean, is there is there a tension there?
+00:30:02
+Or and like if we look at the grand scheme of things, just like you said, long term, that meeting probably doesn't matter. Like you can always say, I'll just I'll run and let the meeting happen. How it happens. Like what? How do you. That Zen Haddo, what do you do with that tension between the real world saying urgently, you need to be there? This is important. Everything is melting down how we're going to fix this robot.
+00:30:28
+There's this critical meeting and then there's the Zen beauty of just running the simplicity of it. You along with nature. What do you do that I would say I'm not a fast runner, particularly probably my fastest splits ever was when I had to get to daycare on time because they were going to charge me, you know, some some dollars per minute that I was late. I've run some fast splits to daycare, but.
+00:30:55
+That those times are past now. I think work you can find a work life balance in that way.
+00:31:01
+I think you just have to I think I am better at work because I take time to think and the way in. So I plan my day around it. And I rarely feel that those are really at odds.
+00:31:17
+So what the bucket list item if we're talking 12 times to or approaching a marathon. What have you run an ultra marathon before you do races there? What's to win in that? I'm not going to, like, take a dinghy across the Atlantic or something, if that's what you want.
+00:31:41
+But but if someone does and wants to write a book, I would totally read it because I'm a sucker for that kind of thing. No, I do have some fun things that I will try. And I like to when I travel, I almost always bike to Logan Airport and fold up a little folding bike and then take it with me and bike to wherever I'm going and it's taken me or I'll take a stand of paddleboard these days on the airplane and then I'll try to paddle around where I'm going or whatever.
+00:32:04
+And I've done some crazy things, but.
+00:32:07
+But not for the. You know, I now talk I don't know if you know who David Gergen suspensions not well, but yeah, but I talk to him now every day. So he's the person who made me do this stupid challenge. So he's insane and he does things for the purpose in the best kind of way. He does things like for the explicit purpose of suffering, like he picks the thing that like whatever he thinks he can do, he does more.
+00:32:40
+So is that do you have that thing in you or you?
+00:32:44
+I think it's become the opposite.
+00:32:46
+It's easier like that dynamical system that the walker, the efficient. Yeah.
+00:32:51
+It's, uh, leave no pain. Right. You should end up feeling better than you started. OK, but it's mostly, I think and covid has tested this because I've lost my commute.
+00:33:04
+I think I'm perfectly happy walking around, uh, around town with my wife and kids if they could get them to go. And it's more about just getting outside and getting away from the keyboard for some time just to let things compress. Let's go into robotics a little bit.
+00:33:21
+What do you use the most beautiful idea in robotics? Whether we're talking about control. Whether we're talking about optimization in the math side of things or the engineering side of things or the philosophical side of things.
+00:33:35
+Mm hmm. I think I've been lucky to experience something that not so many roboticists have experienced, which is to. Hang out with some really amazing control theorists and. The clarity of thought that some of the more mathematical control theory can bring to even very complex, messy looking problems.
+00:34:06
+Is really it really had a big impact on me, and I had a day even just a couple of weeks ago where I had spent the day on a Zoome robotics conference, having great conversations with lots of people, felt really good about the ideas that were flowing and and the like.
+00:34:26
+And then I had, you know, a late afternoon meeting with one of my favorite control theorists and.
+00:34:35
+And we went from these from these abstract discussions about babies and what ifs and and what a great idea to these super precise.
+00:34:45
+Statements. About systems that aren't that much. More simple or abstract than the ones I care about deeply and the contrast of that is. I don't know if it really gets me, I think. People underestimate. Maybe the power of clear thinking, and so, for instance, deep learning is amazing. I use it heavily in our work, I think it's changed the world unquestionable. It makes it easy to get things to work without thinking as critically about it.
+00:35:27
+So I think one of the challenges as an educator is to think about how do we make sure people get a taste of the more rigorous thinking that I think goes along with some different approaches.
+00:35:42
+So that's really interesting. So understanding like the fundamentals, the first principles of the of the problem or in this case is mechanics like how thing moves, how things behaves like all the forces involved, like really getting a deep understanding of that. I mean, from physics, the first principle thing come from physics. And here it's literally physics. Yeah. And this applies in deep learning. This applies to not just I mean, apply so cleanly in robotics, but it also applies to just in any data set.
+00:36:20
+I find this true. I mean, driving as well. There's a lot of folks in it that work on autonomous vehicles that don't study driving. Like, deeply, and I might be coming a little bit from the psychology side, but I remember.
+00:36:42
+I spent a ridiculous number of hours at lunch at this like lawn chair, and I would sit somewhere, somewhere in Middle East campus's a few interesting intersections and just watch people cross.
+00:36:56
+So we're studying pedestrian behavior. And I felt like as you caught a lot of video to try. And then there's the computer vision extracts their movement, how they move their heads on. Like, every time I felt I didn't understand enough, I just I felt like I wasn't understanding what how are people signaling to each other? What are they thinking? How cognizant are they of their fear of death?
+00:37:24
+Like, what are we like? What's the game? What's the underlying game theory here? What are the incentives? And then I finally found a live stream of an intersection that's like high def that I just I would watch so I wouldn't have to sit out there. But it's interesting. So, like, I that's tough.
+00:37:41
+That's a tough example because, I mean, the learning humans are involved not just because human, but I think.
+00:37:48
+The learning mantra is that basically the statistics of the data will tell me things I need to know, right. And. You know, for example, you gave of all the nuances of, you know, eye contact or hand gestures or whatever that are happening for these subtle interactions between pedestrians and traffic. Maybe the data will tell the tale, tell that story, maybe even one level more matter then than what you're saying for a particular problem.
+00:38:19
+I think it might be the case that data should tell us the story. But I think there's a rigorous thinking that is just an essential skill for a mathematician or an engineer that. I just don't want to lose it. There are certainly super rigorous, rigorous control machine learning people.
+00:38:42
+I just think deep learning makes it so easy to do some things that our next generation, our. Not immediately rewarded for going through some of the more rigorous approaches, and then I wonder where that takes us? Well, I'm actually optimistic about it. I just want to. Do my part to try to steer. That rigorous thinking, so there's like two questions I want to ask Dave. Sort of a good example of rigorous thinking where it's easy to get lazy and not do the rigorous thinking.
+00:39:17
+And the other question I have is like, do you have advice? Of how to practice rigorous thinking and, you know, in all the computer science disciplines that we've mentioned. Yeah, I mean, there are times where problems that can be solved with well known mature methods could also be solved with with a deep learning approach and.
+00:39:50
+There's an argument that. You must use learning even for the parts we already think we know because of the human has touched it, then you've if you've biased the system and you've suddenly suddenly put a bottleneck in there, that is your own mental model.
+00:40:03
+But something like inverting a matrix, you know, I think we know how to do that pretty well, even if it's a pretty big matrix and we understand that pretty well. And you could train a deep network to do it, but you shouldn't probably so.
+00:40:14
+So in that sense, rigorous thinking is understanding the the scope and the limitations of the method of the methods that we have, like how to use the tools of mathematics properly.
+00:40:27
+Yeah, I think, you know, taking a class on analysis is all I'm sort of arguing is to take a chance to stop and and force yourself to think rigorously about even, you know, the rational numbers or something.
+00:40:42
+It doesn't have to be the end all problem.
+00:40:44
+But that exercise of clear thinking, I think goes a long way. And I just want to make sure we we keep preaching.
+00:40:52
+Don't lose it. Yeah. What do you think when you're doing, like, rigorous thinking or like maybe trying to write down equations or sort of explicitly like formally describe a system? Do you think we naturally simplify things too much, that danger you run into, like in order to be able to understand something about the system? Mathematically, we make it too much of a toy example.
+00:41:18
+But I think that's the good stuff. Right.
+00:41:21
+As I understand the fundamentals.
+00:41:24
+I think so, I think maybe even that's a key to intelligence or something, but I mean, OK, what if Newton and Galileo had deep learning and and they had done a bunch of experiments and they told the world, here's your ways of your neural network.
+00:41:39
+I've we've solved the problem. And, you know, where would we be today?
+00:41:42
+I don't I don't think we'd be as far as we as we are, there's something to be said about having the simplest explanation for a phenomenon. So I don't doubt that we can train neural networks to predict even physical, you know, ethical Zema type equations.
+00:42:03
+But I maybe. I want another Newton to come along, because I think there's more to do in terms of coming up with the simple models for more complicated tasks.
+00:42:16
+Yeah, let's not offend A.I. systems from 50 years from now that are listening to this that are probably better at might be better coming up with the efficacy and the equations themselves. So sorry.
+00:42:30
+I actually think learning is probably a route to achieving this, but the representation matters. Right? And I think having a function that takes my inputs to outputs that is arbitrarily complex may not be the end goal. I think there's still, you know, the most simple or parsimonious explanation for the data simply doesn't mean low dimensional.
+00:42:56
+That's one thing I think that we've a lesson that we've learned so well.
+00:42:59
+You know, a standard way to do model reduction or system identification and controls is the typical formulation is that you try to find the minimal state dimension realization of a system that hits some error bounds or something like that.
+00:43:14
+And that's maybe not. I think we're we're learning that that was the state dimension is not the right metric. Of complexity, of complexity, but for me, I think a lot about contact, the mechanics of contact with the robot hand is picking up an object or something.
+00:43:31
+And when I write down the equations of motion for that there, they look incredibly complex. Not because. Actually, not so much because of the dynamics of the hand when it's moving, but it's just the interactions and when they turn on and off, right. So having a high dimensional but simple description of what's happening out here is fine.
+00:43:53
+But when I actually start touching, if I write down a different dynamical system for every polygon on my robot hand and every polygon on the object, whether it's in contact or not, with all the combinatorics that explodes there, then that's too complex.
+00:44:11
+So I need to somehow summarize that with a more intuitive physics. Way of thinking, and I'm very optimistic that machine learning will get us there. First of all, I mean, I'll probably do it in the introduction, but you're one of the great robotics people that MIT professor at MIT. You teach him a lot of amazing courses. You run a large group and you have an important history for MIT, I think, as being a part of the Dorper Robotics Challenge.
+00:44:43
+Can you maybe first say what is the top robotics challenge and then tell your story around it, your journey with it?
+00:44:53
+Yes, sure. Um, so the robotics challenge, it came on the tails of the DARPA Grand Challenge and Dapo Urban Challenge, which were the challenges that brought us, um, put a spotlight on self-driving cars.
+00:45:12
+Gill Pratt was at DARPA and pitched a new challenge that involved disaster response. It didn't explicitly require humanoids, although humanoids came into the picture. It has happened shortly after the Fukushima disaster in Japan. And our challenge was motivated roughly by that because that was a case where if we had had robots that were ready to be sent in to the chance that we could have averted disaster.
+00:45:43
+And certainly after the in the disaster response, there were times where we would have loved to have sent robots in.
+00:45:51
+So in practice, what we ended up with was a grand challenge, a robotics challenge where Boston Dynamics was, was to make humanoid robots, people like me and the amazing team at MIT were competing first in a simulation challenge to try to be one of the ones that wins the right to work on one of the the Boston Dynamics humanoids in order to compete in the final challenge, which was a physical challenge. And at that point it was ready.
+00:46:27
+So it was decided as humanoid robots.
+00:46:30
+There were there were two tracks that you could enter as a hardware team where you brought your own robot, or you could enter through the virtual robotics challenge as a software team that would try to win the right to use one of the Boston Dynamics robots called Atlas Atlas Humanoid Robot.
+00:46:45
+Yeah, it was a 400 pound marvel, but a pretty big, scary looking robot. Expensive, too expensive the time, yeah. OK, so, I mean, how did you feel at the prospect of this kind of challenge?
+00:47:01
+I mean, it seems, you know, autonomous vehicles. Yeah, I guess that sounds hard, but not really from a robotics perspective. It's like didn't they do in the 80s the kind of feeling I would have? Like when you first look at the problem, it's on wheels, but like humanoid robots, that sounds really hard. So what like what are the psychologically speaking, what were you feeling? Excited. Scared. Why the heck did you get yourself involved in this kind of messy challenge?
+00:47:36
+We didn't really know for sure what we were signing up for in the sense that you could have something that, as it was described in the call for participation, that could have put a huge emphasis on the dynamics of walking and not falling down and walking over rough terrain or the same description because the robot had to go into this disaster area and turn valves and and pick up a drill, a hole through a wall.
+00:48:02
+Had to do some interesting things. The challenge could have really highlighted perception and autonomous planning, or it ended up that, you know, Lokomotiv, over a complex terrain, played a pretty big role in the competition. So and the degree of autonomy wasn't clear.
+00:48:25
+The degree of autonomy was always a central part of the discussion. So what wasn't clear was how we would be able to how far we would be able to get with it. So the idea was always that you want semi autonomy, that you want the robot to have enough compute that you can have a degraded network link to a human.
+00:48:44
+And so the same way you we had degraded networks and many natural disasters, you'd send your robot in, you'd be able to get a few bits back and forth, but you don't get to have enough potentially to fully operate the robot, every joint of the robot.
+00:49:01
+So and then the question was, and the gamesmanship of the organizers was to figure out what we're capable of, push us as far as we could so that it would differentiate the teams that put more autonomy on the robot and had a few clicks and just said, go there, do this, go there, do this, versus someone who's picking every footstep or something like that.
+00:49:22
+So what were some. Memories, painful, triumphant from the experience, like what was that journey, maybe if you can dig a little deeper, maybe even on the technical side, on the team side, that that whole process of from the early idea stages to actually competing the find. I mean, this was a defining experience for me.
+00:49:47
+I it was a came at the right time for me and my career. I had gotten tenured before I was due a sabbatical. And most people do something relaxing and restorative for a sabbatical.
+00:49:59
+So you got ten years before the before the. Yeah, yeah, yeah.
+00:50:03
+It was a good time for me. I had I had we had a bunch of algorithms that we were very happy with. We wanted to see how far we could push them. And this was a chance to really test our mettle to do more proper software engineering.
+00:50:15
+The team we all just worked our butts off. We were in that lab almost all the time. OK, so, I mean, there were some, of course, high highs and lows throughout that time, you're not sleeping and devoting your life to a 400 pound humanoid.
+00:50:35
+I remember actually one funny moment where we're all super tired.
+00:50:39
+And so Atlas had to walk across cinderblocks. That was one of the obstacles.
+00:50:43
+And I remember Atlas was powered down, hanging limp, you know, on on its harness. And the humans were there, like laying, you know, picking up and laying the brick down so that the robot could walk over it. And I thought, what is wrong with this?
+00:50:55
+You know, we've got a robot just watching us do all the manual labor so that it can take its little stroll across the street. But I mean, even the even the virtual robotics challenge was was super nerve racking and dramatic.
+00:51:11
+I remember so so we were using Zebo as a simulator on the cloud.
+00:51:19
+And there was all these interesting challenges. I think the investment that that was our FC, whatever they were called at the time, Brian Jerkies team at Opensource Robotics, they were pushing on the capabilities of Gazebo in order to scale it to the complexity of these challenges. So, you know, up to the virtual competition.
+00:51:41
+So the virtual competition was you will sign on at a certain time and we'll have a network connection to another machine on the cloud that is running the simulator of your robot. And your controller will run on this controller, this computer, and the physics will run on the other, and you have to connect.
+00:52:00
+Now, the physics, they wanted it to run at real time rates because there was an element of human interaction. And humans, if you do want to tally up, it works way better if it's a set frame rate.
+00:52:14
+But it was very hard to simulate these these complex scenes at real time.
+00:52:19
+Right. So right up to like days before the competition, the simulator wasn't quite at real time rate.
+00:52:28
+And that was great for me because my controller was solving a pretty big optimization problem and it wasn't quite at real time rate.
+00:52:34
+So I was fine. I was keeping up with the simulator. We were both running at about point seven.
+00:52:39
+And I remember getting this email. And by the way, the perception folks on our team hated that, that they knew that if Mike Troller was too slow, the robot was going to fall down.
+00:52:49
+And, you know, no matter how good their perception system was, if I can't make my controllers rest anyways, we get this email like three days before the virtual competition. You know, it's for all the marbles. We're going to either get a humanoid robot or not and we get an e-mail saying, good news. We made the robot does the simulator faster. It's now one point.
+00:53:07
+And we're I was just like, oh, man, what are we going to do here?
+00:53:11
+So that came in late at night for me a few days, had a few days ahead.
+00:53:18
+I went over there was it happened at Frank Pimenta, who's a very, very sharp he was a student at the time, working on optimization was he was still in lab. Frank, we need to make this quadratic programming solver faster, not like a little faster.
+00:53:35
+It's actually, you know, and we wrote a new solver for that cupie together that night.
+00:53:45
+And this is terrifying. So there's a really hard optimization problem that you're constantly solving. He didn't make the optimization problem simpler urine, sulfur, sulfur, so, I mean, your observation is almost spot on.
+00:53:59
+Well, what we did was what everybody I mean, people know how to do this, but we had not yet done this idea of warm starting. So we are solving a big optimization problem at every time step. But if you're running fast enough, the optimization problem you're solving and the last time step is pretty similar to the optimization you can solve at the next. We had course had told our commercial software to use worm starting, but even the interface to that commercial software was causing us these delays.
+00:54:26
+So what we did was we basically wrote we called it fast cupie at the time. We wrote a very lightweight, very fast layer, which would basically check if nearby solutions to the quadratic program were, which were very easily checked, could stabilize the robot. And if they couldn't, we would fall back to the solver. You couldn't really test this. All right.
+00:54:50
+All right. So we always knew that if we fell back, if we got to the point where if for some reason things slowed down and we fell back to the original software, the robot would actually literally fall down.
+00:55:03
+So it was it was a harrowing sort of edge ledge we were sort of on. But I mean, actually, like the 400 pound human could come crashing to the ground if you if you if you're solvers, not fast enough.
+00:55:15
+But, you know, we have lots of good experiences. So can I ask a weird question? I get about the idea of hard work, so.
+00:55:28
+Actually, people like students of yours that I've interacted with and just in robotics, people in general, but they they have moments at moments of work, harder than most people I know in terms of if you look at different disciplines of how hard people work, but they're also like the happiest. Like just like I don't know, it's the same thing with, like, running people that push themselves to like the limit. They also seem to be like the most like full of life somehow.
+00:56:03
+And I get often criticized, like you're not getting enough sleep, what are you doing to your body, blah, blah, blah, like this kind of stuff. And I usually just kind of respond like I'm doing what I love, I'm passionate about. I love it. I feel like it's it's invigorating. I actually think I don't think the lack of sleep is what hurts you. I think what hurts you is stress and lack of doing things that you're passionate about.
+00:56:30
+But in this world, I mean, can you comment about, uh. Why the heck robotics people are willing to push themselves to that degree, is there value in that? And why are they so happy? I think I think you got it right. I mean, I think the causality is not that we work hard and I think other disciplines work very hard, too, but it's I don't think it's that we work hard and therefore we are happy.
+00:57:00
+I think we found something that we're truly passionate about. It makes us very happy. And then we get a little involved with it and spend a lot of time on it.
+00:57:11
+What a luxury to have something that you want to spend all your time on. Right. We could talk about this for many hours, but maybe if we could pick is there something on the technical side on the approach you took that's interesting that turned out to be a terrible failure or a success that you carry into your work today about all the different ideas that were involved in making, whether in the in the simulation or in the in the real world, making the semi-autonomous system work.
+00:57:43
+I mean, it really did teach me something fundamental about what it's going to take to get robustness out of a system of this complexity.
+00:57:52
+I would say the diaper challenge really was foundational in my thinking. I think the autonomous driving community thinks about this. I think lots of people thinking about safety critical systems that might have machine learning in the loop are thinking about these questions. For me, the DARPA challenge was the moment where I realized. You know, we've spent every waking minute running this robot and again, for the physical competition days before the competition, we saw the robot fall down. In a way, it had never fallen down before, I thought.
+00:58:24
+You know, how could we have found that, you know, we only have one robot, it's running almost all the time, we just didn't have enough hours in the day to test that robot. Something has to change. Right.
+00:58:36
+And I think that I mean, I would say that the team that won was was from was the team that had two robots and was able to do not only incredible engineering, just absolutely top rate engineering, but also they were able to test at a rate and discipline that we can keep up with.
+00:58:56
+What is testing look like? What are we talking about here? Like what's what's a loop of tests like from start to finish? What is a loop of testing?
+00:59:05
+Yeah, I mean, I think there's a whole philosophy to testing. There's the unit tests and you can do that on a hardware. You can do that on a small piece of code. You write one function, you should write a test that that checks that function as input outputs.
+00:59:17
+You should also write an integration test at the other extreme of running the whole system together where that they try to turn on all of the different functions that you've you think are correct.
+00:59:28
+It's much harder to write the specifications for a system level test, especially if that system is as complicated as a humanoid robot. But the philosophy is sort of the same. And the real robot, it's no different. But on a real robot, it's impossible to run the same experiment twice. So if you if you see a failure, you hope you caught something in the logs that tell you what happened, but you'll probably never be able to run exactly that experiment again.
+00:59:56
+And. Right now, I think our philosophy is just basically Montecarlo estimation is just run as many experiments as we can, maybe try to set up the environment to to make the things we are worried about. Happen as often as possible, but really we're relying on somewhat random search in order to test.
+01:00:21
+Maybe that's all we'll ever be able to, but I think, you know, because there's an argument that the things that will get you are the things that are really nuanced in the world and would be very hard to, for instance, put back in a simulation.
+01:00:33
+Yeah. The I guess, the edge cases. What was the hardest thing, like you said, walking over rough terrain like that, just taking footsteps. I mean, people.
+01:00:46
+And it's so dramatic and painful in a certain kind of way to watch these videos from the DRC of robots falling. Yep, and just so heartbreaking, I don't know, maybe it's because for me at least, we anthropomorphize the robot. Of course, every one of those, for some reason, like humans falling is funny for I don't it's some dark reason. I'm not sure why it is so, but it's also like tragic and painful. And so speaking of which, I mean, what what made the robots fall and fail?
+01:01:20
+And in your view, so I can tell you exactly what happened, we I contributed one of those. Our team contributed to one of those spectacular falls.
+01:01:29
+Every one of those falls. The has a complicated story. I mean, one time the power effectively went out on the robot. Because it had been sitting at the door waiting for a green light to be able to proceed and its batteries, you know, and therefore it just fell backwards and specialists had to go out and it was hilarious. But it wasn't because of bad software. Right. But for hours.
+01:01:51
+So the hardest part of the challenge, the hardest task, in my view, was getting out of the Polaris. It was actually relatively easy to drive the Polaris.
+01:02:00
+We can't tell the story and did not know the story of the car. Well, as you watch this video, I mean, the thing you've come up with is just brilliant. But anyway. So what's that?
+01:02:13
+We kind of joke. We call it the big robot little car problem, because somehow the race organizers decided to give us a 400 pound humanoid. And they also provided the vehicle, which is a little Polaris. And the robot didn't really fit in the car. So you couldn't drive the car with your feet under the steering column.
+01:02:32
+We actually had to straddle the the main column of the car and have basically one foot in the passenger seat, one foot in the driver's seat, and then drive with our left hand.
+01:02:45
+But the hard part was we had to then park the car, get out of the car, it didn't have a door that was OK, but it's just getting up from crouched from sitting when you're in this very constrained environment.
+01:02:58
+First of all, I remember after watching those videos, I was much more cognizant of how hard is it it is for me to get in and out of the car and out of the car, especially like it's actually a really difficult control problem.
+01:03:11
+Yeah. And I'm very cognizant of it when I'm like injured for whatever is is really hard. Yeah.
+01:03:18
+Oh, so how did you how did you.
+01:03:20
+So we had you think of NASA's operations and they have these checklists, you know, prelaunch checklists and the like. We weren't far off from that.
+01:03:29
+We had this big checklist and on the first day of the competition, we were running down our checklist. And one of the things we had to do, we had to turn off the controller, the piece of software that was running that would drive the left foot of the robot in order to accelerate on the gas. And then we turned on our balancing controller and the nerves jitters of the first day of the competition. Someone forgot to check that box and turn that controller off.
+01:03:54
+So we used a lot of motion planning to figure out a sort of configuration of the robot that we could get up in and over. We relied heavily on our balancing controller. And and basically there was when the robot was in one of its most precarious, you know, sort of configurations trying to sneak its big leg out out of the side. The other controller that thought it was still driving told its left foot to go like this and and that wasn't good, but but it turned disastrous for us because what happened was a little bit of push here, actually.
+01:04:35
+We have videos of us running into the robot with a ten foot pole and it kind of will recover.
+01:04:41
+But this is a case where there's no space to recover. So a lot of our secondary balancing mechanisms about like take a step to recovery. They were all disabled because we were in the car and there's no place to step. So we were relying on our just the lowest level reflexes. And even then, I think just hitting the foot on the seat on the floor, we probably could have recovered from it.
+01:05:02
+But the thing that was bad that happened is when we did that and we jostled a little bit, the tailbone of our robot head was only a little off the seat. It hit the seat. And the other foot came off the ground just a little bit and nothing in our plans had ever told us what to do if your butts on the seat and your feet are in the air in there.
+01:05:23
+And then the thing is, once you get off the script, things can go very wrong because even our state estimation, our system that was trying to collect all the data from the sensors and understand what's happening with the robot, it didn't know about this situation, so it was predicting things that were just wrong. And then we did a violent shake and fell off in our face first on out of the robot, but like into the destination.
+01:05:49
+That's true. We fell in. We got our point of egress. But so is there any hope for. That's interesting. Is there any hope for Atlas to be able to do something when it's just on its butt and feet there? Absolutely.
+01:06:04
+So you can you know, so that's that is one of the big challenges. And I think it's still true, you know, Boston Dynamics and Animal and there's this incredible work on and legged robots happening around the world.
+01:06:21
+Most of them still are very good at the case where you're making contact with the world at your feet and they have typically point feet, relatively the balls on their feet, for instance, if that if those robots get in a situation where the elbow hits the wall or something like this, that's a pretty different situation.
+01:06:38
+Now, they have layers of mechanisms that will make I think the more mature solutions have have ways in which the controller won't do stupid things. But a human, for instance, is able to leverage incidental contact in order to accomplish the goal. In fact, I might if you push me, I might actually put my hand out and make a new brand new contact. The feet of the robot are doing this and quadrupeds, but we mostly in robotics are afraid of contact on the rest of our body.
+01:07:08
+Which is crazy. There's this whole field of motion planning, collision free motion planning, and we write very complex algorithms so that the robot can dance around and make sure it doesn't touch the world.
+01:07:22
+So people are just afraid of contact because contact is seen as a difficult, still a difficult control problem and sensing problem. Now, you're a serious person. I'm a little bit of an idiot, and I'm going to ask you some dumb questions. So I do I do martial arts. So like jujitsu, I wrestled my whole life. So let me let me ask the question. You know, like whenever people learn that I do any kind of I or like I mentioned, robots and things like that, they say, what am I going to have robots that, you know, they can win in a wrestling match or in a fight against a human.
+01:08:06
+So we just mentioned sitting in your butt in the air, that's a common position. Jujitsu, when you're on the ground, you're when you're down opponent.
+01:08:15
+Um, like what? How. Difficult, do you think, is the problem and when will we have a robot that can defeat a human in a wrestling match? And we're talking about a lot like I don't know if you're familiar with wrestling, but essentially not very. It's basically the art of contact. It's like it's because you're you're picking contact points and then using like leverage like to off balance to to trick people like you, make them feel like you're doing one thing and then they they change their balance and then you switch what you're doing and then the results throw or whatever.
+01:09:01
+It's like it's basically the art of multiple contacts. So awesome.
+01:09:06
+It's a nice description of it. So there's also an opponent in there. Right. So, so very dynamic. Right. If you are wrestling a human and, you know, game theoretic situation with a human, that that's still hard.
+01:09:23
+But just to speak to the quickly reasoning about contact, part of it, for instance, he may be even throwing the game theory out of it, almost like, yeah, almost like a non dynamic opponent. Right.
+01:09:35
+There's reasons to be optimistic, but I think our best understanding of those problems are still pretty hard.
+01:09:41
+I have been increasingly focused on manipulation, partly where that's a case where the contact has to be much more rich.
+01:09:52
+And there are some really impressive examples of deep learning policies, controllers that that can appear to do good things through contact. We've even got new examples of of deep learning models of predicting what's going to happen to objects as they go through contact.
+01:10:13
+But I think the challenge you just offered there still eludes us, the ability to make a decision based on those models quickly.
+01:10:24
+You know, I have to think, though, it's hard for humans to when you get that complicated, I think probably. You had maybe a slow motion version of where you learn the basic skills and you've probably gotten better at it and there's there's much more subtlety, but it might still be hard to actually, you know, really on the fly take a model of your humanoid and figure out how to how to plan the optimal sequence. That might be a problem we never solve or the repertoire.
+01:10:54
+The I mean, one of the most amazing things to me about the we can talk about martial arts. We could also talk about dancing doesn't really matter to human. Um, I think it's the most interesting study of contact is in the dynamic element of it. It's like when you get good at it, it's so effortless. Like I can just I'm very cognizant of the entirety of the learning process being essentially like learning how to move my body in a way that I could throw very large weights around effortlessly like.
+01:11:32
+And I can feel the learning like I'm a huge believer in drilling of techniques. And you can just, like, feel your you're not feeling, you're feeling. So you're learning it intellectually a little bit, but a lot of it is the body learning it somehow, like instinctually and whatever that learning is, that's really I'm not even sure if that's equivalent to like a deep learning, learning a controller. I think it's something more. It feels like there's a lot of distributed learning going on.
+01:12:08
+Yeah, I think there's hierarchy and composition. Yeah. Probably in the systems that we don't capture very well yet.
+01:12:17
+You have layers of control systems, you have reflexes at the bottom layer and you have a, you know, a system that's capable of planning a vacation to some distant country, which is probably you probably don't have a control or a policy for every possible destination you'll ever pick.
+01:12:35
+Right. Um, but there's something magical in the in between. And how do you go from these low level feedback loops to something that feels like a pretty complex set of outcomes? You know, my guess is I think I think there's evidence that you can plan at some of these levels, right. So Josh Tennenbaum just sort of talked the other day. He's got a game. He likes to talk about it.
+01:13:00
+I think he calls it the pick three game or something where he puts a bunch of clutter down in front of a person and he says he picked three objects and it might be a telephone or a shoe or a Kleenex box or whatever.
+01:13:16
+And apparently you pick three items and then you pick he says, OK, pick the first one up with your right hand, the second one up with your left hand. Now, using those objects, those as tools, pick up the third object. Right.
+01:13:28
+So that's down at the level of. Of physics and mechanics and contact mechanics that that I think we do learning, we do have policies for we do control for almost feedback, but somehow we're able to still I mean, I've never picked up a telephone with a shoe and a water bottle before.
+01:13:47
+And somehow and it takes me a little longer to do that the first time, but most of the time we can sort of figure that out.
+01:13:54
+So. You know, I think the amazing thing is this ability to be flexible with our models plan when we need to use our well oiled controllers, when we don't when we're in familiar territory and having models.
+01:14:11
+I think the other thing you just said was something about I think your awareness of what's happening is even changing as you as you get as you improve your expertise. Right. So maybe you have a very approximate model of the mechanics to begin with.
+01:14:23
+And as you gain expertise, you get a more refined version of that model you're aware of of muscles or balance components that you were just weren't even aware of before.
+01:14:36
+So how do you scaffold that?
+01:14:38
+Yeah, plus the fear of injury, the ambition of goals of excelling and fear of mortality. Let's see what else is in there as motivation's overinflated ego in the beginning, like and then a crash of confidence in the middle.
+01:14:59
+All of those seem to be essential for the learning process.
+01:15:03
+And and if all that's good, then you're probably optimizing energy efficiency. Yeah, right. So you have to get that right. So, you know, there was this idea that you would have robots play soccer better than human players by 2050.
+01:15:20
+That was the goal. World basically was the goal to beat the world champion team, to become a world, be like a World Cup level team. So are we going to see that first or a robot? If you're familiar, there's an organization called UFC for Mixed Martial Arts. Are we going to see a World Cup championship soccer team that are robots or a UFC champion? Mixed martial artists? That's a robot.
+01:15:50
+I mean, it's very hard to to say one thing is harder than some problems, harder than the other would probably matters is who who who started the organization that I mean, I think RoboCup has a pretty serious following.
+01:16:04
+And there is a history now of people playing that game, learning about that game, building robots to play that game, building increasingly more human robots. It's got momentum. And so if you want to have mixed martial arts compete, you better start your organization now. Right?
+01:16:22
+I think almost independent of which problem is technically harder because they're both hard and they're both different. That's a good point.
+01:16:29
+I mean, those videos are just hilarious that like especially the humanoid robots trying to. Trying to play soccer, I mean, they're kind of terrible right now. I mean, I guess there is Rogow sumo wrestling. There's like the robo won competitions where they do have these robots that go on the table and basically fight. So maybe I'm wrong.
+01:16:49
+Maybe first of all, they have a year in mind for RoboCup, just from a robotics perspective, seems like a super exciting possibility that. Like in the physical space, this is what's interesting, I think the world is captivated. I think it's really exciting. It's it inspires just a huge number of people when a machine beats a human at a game that humans are really damn good at. So you talking about chess and go. But that's in the in the world of digital.
+01:17:26
+I don't think machines have beat humans at a game in the physical space yet, but that will be just you have to make the rules very carefully.
+01:17:36
+Right.
+01:17:37
+I mean, if if Atlas kicked me in the shins, I'm down and, you know, and game over. So, you know, it's it's very subtle.
+01:17:47
+Yeah, I think it's fair. I think the fighting one is a weird one.
+01:17:50
+Yeah. Because you're talking about a machine that's much stronger than you. But yeah. In terms of soccer, basketball, all those kind of soccer.
+01:17:57
+Right. I mean as soon as there's contact or whatever and there's there are some things that the robot will do better I think. If you really set yourself up to try to see could robots win the game of soccer as the rules were written, the right thing for the robot to do is to play very differently than a human would play. You're not going to get, you know, the perfect soccer player robot. You're going to get something that exploits the rules, exploits its super actuators and super low bandwidth, you know, feedback loops or whatever.
+01:18:31
+And it's going to play the game differently than you want it to play.
+01:18:33
+Yeah. And I bet there's ways. I bet there's loopholes. Right.
+01:18:38
+We saw that in the in the diaper challenge that that it's very hard to write a set of rules that someone can't find a way to exploit.
+01:18:49
+Let me ask another ridiculous question. I think this might be the last ridiculous question, but I doubt it.
+01:18:58
+I aspire to ask as many ridiculous questions of of a brilliant MIT professor. OK, I don't know if you've seen the black mirror. It's funny, I never watched the episode. I know when it happened, though, because I gave a talk to some MIT faculty one day on an unassuming Monday or whatever, I was telling you about the state of robotics. And I showed some video from Boston Dynamics of the quadruped spot at the time was the early version of Spot, and there was a look of horror that went across the room.
+01:19:36
+I said, you know, I've I've shown videos like this a lot of times what happened?
+01:19:40
+And it turns out that this video had this Black Mirror episode had changed the way people watched.
+01:19:48
+The other videos I was putting out, the way they see these kinds of robots, so I talked to so many people who are just terrified because of that episode, probably of these kinds of robots. I almost want to say that it almost kind of like enjoy being terrified. I don't even know what it is about human psychology, that kind of imagine doomsday, the destruction of the universe or our society and kind of like enjoy being afraid.
+01:20:14
+I don't want to simplify it, but it feels like they talk about it so often. It almost there does seem to be an addictive quality to it. I talked to a guy, a guy named Joe Rogan, who's kind of the flag bearer for being terrified that these robots.
+01:20:32
+Do you have two questions. One, do you have an understanding of why people are afraid of robots? And the second question is in black mirror, just to tell you the episode, I don't even remember it that much anymore. But these robots, I think they can shoot like a pellet or something. They basically have is basically a spot with a gun.
+01:20:53
+And how far we away from having robots go rogue like that, you know, basically spot that goes rogue for some reason and somehow finds a gun.
+01:21:08
+Right.
+01:21:09
+So. I mean, I'm not a psychologist, I think I don't know exactly why. People react the way they do. I think I think we have to be careful about the way robots influence our society and the like, I think that's something that's a responsibility that roboticists need to embrace.
+01:21:32
+I don't think robots are going to come after me with a kitchen knife or a pellet gun right away. And I mean, if they were programmed in such a way but I used to joke with that was that all I had to do was run for five minutes and its battery would run out. But actually they've got a very big battery in there by the end. So it's over an hour.
+01:21:54
+I think the fear is a bit cultural, though, because, I mean, you notice that like I think in my age in the US, we grew up watching Terminator. Right? If I had grown up at the same time in Japan, I probably would have been watching Astro Boy. And there's a very different reaction to robots in different countries. Right.
+01:22:14
+So I don't know if it's a human innate fear of metal marvels or if it's something that we've done to ourselves with our sci fi and the stories we tell ourselves through through movies.
+01:22:29
+So just the popular media. But if I were to tell, you know, if you're my therapist and I said I'm really terrified that we're going to have these robots very soon, that will hurt us. Um, like how do you approach making me feel better? Um, like why should people be afraid? There there's a I think there's a video that went viral.
+01:23:01
+Recently, everything everything was spot and Bosavi was goes viral in general, but usually it's like really cool stuff, like they're doing flips and stuff or like sad stuff, Atlas being hit with a broomstick or something like that. But there's a video where I think one of the new productions bought robots, which are awesome. It was like patrolling somewhere and like in some country. And like people immediately were like saying like this is like the dystopian future, like the surveillance state for some reason, like you can just have a camera, like something about Spot being able to walk on four feet with, like, really terrified people.
+01:23:43
+So what? What do you say to those people? I think there is a legitimate fear there because so much of our future is uncertain. But at the same time, technically speaking, it seems like we're not there yet. So what do you say? I mean, I think technology is complicated, it can be used in many ways, I think there are purely software attacks that somebody could use to do great damage.
+01:24:16
+Maybe they have already.
+01:24:18
+You know, I think wheeled robots could be used in bad ways, too. And drones. Right. I don't think that. Let's see, I don't want to be building technology just because I'm compelled to build technology and I don't think about it, but I would consider myself a technological optimist, I guess, in the sense that. I think we should continue to create and evolve and our world will change, and if we will introduce new challenges, we'll screw something up.
+01:24:59
+Maybe, but I think I also will invent ourselves out of those challenges and life will go on.
+01:25:06
+So it's interesting because you didn't mention like this is technically too hard.
+01:25:11
+I don't think robots are. I think people attribute a robot that looks like an animal as maybe having a level of self-awareness or consciousness or something that they don't have yet. Right. So it's not I think our ability to anthropomorphize those robots is probably we're assuming that they have a level of intelligence that they don't yet have, and that might be part of the fear. So in that sense, it's too hard. But, um, you know, there are many scary things in the world.
+01:25:42
+Right. So I think. We're right to ask those questions were right to think about the implications of our work. Right in the in the short term, as we're working on it for sure. Is there something long term that scares you about our future with AI and robots? A lot of folks from Elon Musk to Sam Harris to a lot of folks talk about the existential threats about artificial intelligence. Oftentimes, robots kind of inspire that the most because of the atom bomb of have any fears.
+01:26:24
+It's an important question. I actually I think I like Rod Brooks answer maybe the best on this, I think, and it's not the only answer he's given over the years, but maybe one of my favorites is. He says it's not going to be he's got a book, Flesh Machines, I believe it's not going to be the robots versus the people.
+01:26:48
+We're all going to be robot people because, you know, we already have smartphones. Some of us have some serious technology implanted in our bodies already, whether we have a hearing aid or a pacemaker or anything like this. People with amputations might have prosthetics.
+01:27:10
+That's a trend, I think that is likely to continue.
+01:27:14
+I mean, this is now wild speculation, but I mean, when do we get to cognitive implants and the like? And, you know, with neuro link brain computer interfaces, that's interesting. So there's a there's a dance between humans and robots.
+01:27:29
+It's going to be it's going to be impossible to be scared of the other out there, the robot, because the robot will be part of us.
+01:27:42
+Essentially, he'd be so intricately sort of part of our society that it might not even be implanted part of us.
+01:27:50
+But just it's so much a part of our. Yeah. Our society.
+01:27:54
+So in that sense, the smartphone is already the robot we should be afraid of. Yeah. I mean, yeah. And all the usual fears arise of the misinformation and.
+01:28:07
+The manipulation of all those kinds of things that. That the problems are all the same there, they're human problems, essentially, it feels like yeah, I mean, I think the the way we interact with each other online is changing the value we put on, you know, personal interaction. And that's a crazy big change that's going to happen and rip through. Our system has already been ripping through our society. Right. And that has implications that are.
+01:28:34
+Massive, I don't know if they should be scared of it or go with the flow, but, um, I don't see, you know, some battle lines between humans and robots being. The first thing to worry about, I mean, I do want to just as a kind of comment, maybe you can comment about your just feelings about Boston Dynamics in general. But, you know, I love science. I love engineering. I think there's so many beautiful ideas in it.
+01:28:59
+And when I look at Boston Dynamics or legged robots in general, I think they inspire people. Curiosity and feelings in general, excitement about engineering more than almost anything else in popular culture, and I think that's such an exciting, like responsibility and possibility for robotics and Boston Dynamics is riding that wave pretty damn well. They found it. They've discovered that hunger and curiosity in the people and they're doing magic with it. I don't care if that I mean, I guess they're coming.
+01:29:36
+They have to make money. Right. But they're already doing incredible work and inspiring the world about technology. I mean, do you have any thoughts about Boston Dynamics and maybe others, your own work in robotics and inspiring the world in that way? I completely agree, I think my name is absolutely awesome. I think I show my kids those videos, you know, and the best thing that happens is sometimes they've already seen them, you know? Right.
+01:30:07
+I think I just think it's a pinnacle of success in robotics.
+01:30:13
+That is just one of the best things that's happened to act. Absolutely. I completely agree.
+01:30:19
+One of the heartbreaking things to me is how many of rob biotics companies fail, how hard it is to make money with the robotics company like I robot, like, went through hell just to arrive at a Roomba to figure out one product.
+01:30:36
+And then there's so many home robotics companies like Djibo and.
+01:30:44
+Anchee Anqi, the cutest toy. That's great robot, I thought I went down, I'm forgetting a bunch of them, but I want your robotics civil rights company to rethink robotics.
+01:30:58
+Um, like. Do you do you have anything helpful to say about the possibility of making money with robots?
+01:31:07
+Oh, I think. You can't just look at the failures, you cannot I mean, Boston is a success, there's lots of companies that are still doing amazingly good work in robotics.
+01:31:18
+I mean, this is the this is the capitalist ecology or something, right? I think you have many companies. You have many startups, and they push each other forward and many of them fail and some of them get through.
+01:31:29
+And that's sort of the natural way of things where those things. I don't know that. Is robotics really that much worse?
+01:31:37
+I feel the pain that you feel to every time I read one of these, I said sometimes it's friends and yeah, I definitely wish it went better with differently, but I think it's healthy and good to have bursts of ideas, bursts of activities, ideas.
+01:31:57
+If they are really aggressive, they should fail sometimes. Certainly that's the research mantra, right? If you're succeeding at every problem you attempt, then you're not choosing aggressively enough.
+01:32:10
+Is it exciting to you, the new spot? Oh, it's so good. When are you getting them as a pet? Uh, it yeah.
+01:32:17
+I mean, I have to dig up 75 people that there's a price tag. You can go in and actually buy it.
+01:32:25
+And I have a sadio R1. Uh, I love it. So, um, no I would, I would, I would absolutely be a customer.
+01:32:35
+I wonder what your kids would think about.
+01:32:37
+I actually Zach from Boston Dynamics would let my kid drive and one of their demos one time and that was just so good. So good I think, and forever be grateful for that. And there's something magical about the anthropomorphised version of that arm.
+01:32:55
+It adds another level of human connection.
+01:32:59
+I'm not sure we understand from a control aspect the value of anthropomorphism.
+01:33:06
+And, um, I think that's an understudied and under understood engineering problem has been a cycle. Psychologists have been studying it. I think it's part like manipulating our mind to believe things is a valuable engineering, like this is another degree of freedom that can be controlled. I like it. Yeah, I think that's right. I think. You know, there's something that humans seem to do or maybe my dangerous introspection is I think we are able to make very simple models that assume a lot about the world very quickly and then it takes us a lot more time.
+01:33:47
+Like you're wrestling.
+01:33:48
+You know, you probably thought you knew what you're doing with wrestling and you were fairly functional as a complete wrestler and then you slowly got more expertise. So maybe it's natural that our first.
+01:34:01
+First level of defense against seeing a new robot is to think of it in our existing models of how humans and animals behave, and it's just engineers who spend more time with it than you'll develop more sophisticated models that will appreciate the differences.
+01:34:17
+Exactly. Can you say what does it take to control a robot? Like, what is the control problem of a robot and in general, what is a robot, in your view, like how do you think of this system? What is a robot? What is a robot? I think a lot of ridiculous questions. No, no, it's good.
+01:34:38
+I mean, they're standard definitions of combining computation with some ability to do mechanical work. I think that gets us pretty close. But I think robotics has this problem that once things really work, we don't call them robots anymore. Like you're my dishwasher at home is pretty sophisticated. Beautiful mechanisms is actually a pretty good computer.
+01:35:04
+Probably a couple of chips in there doing amazing things. We don't think of that as a robot anymore, which isn't fair because then what roughly it means the robots robotics always has to solve the next problem and it doesn't get to celebrate its past successes.
+01:35:17
+I mean, even factory room floor robots are super successful. They're amazing. But that's not the ones. I mean, people think of them as robots, but they don't. If you ask what are the successes of robotics, somehow it doesn't come to your mind immediately.
+01:35:34
+So the definition of robot is a system with some level automation that fails frequently.
+01:35:40
+Something like it's it's the computation plus mechanical work and unsolved problem solved problem.
+01:35:48
+Yeah. So. So from a perspective of control and mechanics dynamics, what, what is a robot?
+01:35:57
+So there are many different types of robots, the control that you need for a robot, you know, some some robot that's sitting on your countertop and, and interacting with you, but not touching you, for instance, is very different than what you need for an autonomous car or an autonomous drone.
+01:36:16
+It's very different than what you need for a robot that's going to walk or pick things up with its hands.
+01:36:20
+Right. My passion has always been for them. Places where you're interacting more, you're doing more dynamic interactions with the world. So walking now, manipulation and the control problems there are are beautiful. I think contact is one thing that differentiates them from many of the control problems we've solved. Classically, right.
+01:36:46
+The modern control group, stabilizing fighter jets that were passively unstable. And there's like amazing success stories from control all over the place. Powergrid. I mean, there's all kinds of it's everywhere that we don't even realize, just like I now. Do you mention contact?
+01:37:05
+Like what's contact? So an airplane is an extremely complex system or a spacecraft landing or whatever, but at least it has the luxury of things change relatively continuously.
+01:37:20
+That's an oversimplification.
+01:37:22
+But if I make a small change in the command I send to my RATHER, then the path that the robot will take tends to take a change only by a small amount.
+01:37:33
+And as a feedback mechanism here, that mechanism and thinking about this as locally like a linear system, for instance, I can use more linear algebra tools to study systems like that. Generalisations of linear algebra two to these smooth systems. What is contacted the robot. Has something very discontinuous that happens when it makes or breaks when it starts touching the world and even the way it touches or the order of contacts can change the outcome in potentially unpredictable ways, not unpredictable, but complex ways.
+01:38:13
+I do think there's a little bit of. A lot of people will say that contact is hard and robotics even to simulate and I think there's a little bit of a there's truth to that, but but maybe a misunderstanding around that. So. What is limiting is that when we think about our robots and we write our simulators, we often make an assumption that that objects are rigid. And when it comes down, you know that they that their mass moves, you know, stays in a constant position relative to each other itself.
+01:38:54
+And that leads to some paradoxes when you go to try to talk about rigid body mechanics and contact. And so, for instance, if I have a three legged stool with just imagine it comes to a point at the at the legs. So it's only touching the world at a point.
+01:39:11
+If I draw my physics, my high school physics diagram of this system, then there's a couple of things that I'm given by my elementary physics. I know if the system if the table is at rest, if it's not moving velocities, that means that the normal forces, all the forces are in balance. So the the force of gravity is being countered by the forces that the ground is pushing on my table legs.
+01:39:38
+I also know, since it's not rotating, that the moments have to balance and sense it can in it's a three dimensional table, it could fall in any direction.
+01:39:48
+It actually tells me uniquely what those three normal forces have to be. If I have four legs at my table, four legged table, and they were perfectly machine to be exactly the right same height and they're sat down and the table's not moving, then the basic conservation laws don't tell me there are many solutions for the forces that the ground could be putting on my legs that would still result in the table not moving.
+01:40:17
+Now, the reason that seems fine, I could just pick one, but it gets funny now because if you think about friction, what we what we think about with friction is we are our standard model says the amount of force that you're that the table will push back.
+01:40:33
+If I were to now try to push my table sideways, I guess I have a table here is proportional to the normal force. So if I have if I'm barely touching and I push, I'll slide. But if I'm pushing more and I push, I will slide less. It's called Kulam. Friction is our standard model. Now, if you don't know what the normal forces on the four legs and you push the table, then you don't know what the friction forces are going to be.
+01:41:00
+Right. And so you can't actually tell the laws just don't aren't explicit yet about which way the table is going to go. It could veer off to the left, veer off to the right. It could go straight. So the rigid body assumption of contact leaves us with some paradoxes which are annoying for for writing simulator's and for writing comptrollers. We still do that sometimes because soft contact is potentially harder numerically or whatever, and the best simulators do both or do some combination of the two.
+01:41:34
+But but anyways, because of these kind of paradoxes, there's all kinds of paradoxes in contact, mostly due to these rigid body assumptions. It becomes very hard to, like, write the same kind of control laws that we've been able to be successful with for like fighter jets. We haven't been a successful writing those controllers for manipulation.
+01:41:54
+And so you don't know what's going to happen at the point of contact at the moment of contact.
+01:41:59
+There are situations absolutely where you where our laws don't tell us. So the standard approach, that's OK. I mean, instead of having a differential equation, you end up with a differential inclusion. It's called it's a set valued equation. It says that I'm in this configuration. I have these forces applied on me, and there's a set of things that could happen. Right. And and it goes on continuously.
+01:42:24
+I mean, what. So when you seen, like, non smooth. Yeah. They're not only not smooth, but this is just continuous.
+01:42:33
+The non smooth comes in when I make or break a new contact first or when I transition from stick to slip. So you typically have static friction and then you'll start sliding and that would be a discontinuous change. And then velocity, for instance, especially if you come to restaurants.
+01:42:49
+And that's so fascinating. OK, so so what do you do? Sorry I interrupted you. What's the hope under so much uncertainty about what's going to happen, what is supposed to mean? Control has an answer for this.
+01:43:05
+Robust control is one approach. But but roughly you can rate controllers which try to still perform the right task. Despite all the things that could possibly happen. The world might want the table to go this way in this way. But if I read a controller that pushes a little bit more and pushes a little bit, I can certainly make the table go in the direction I want. It just puts a little bit more of a burden on the control system.
+01:43:28
+Right. And there's discontinuities do change the control system because, um, the way we write it down right now. Every different control configuration, including sticking or sliding or parts of my body, they're in contact or not, looks like a different system.
+01:43:47
+And I think of them, I reasoned about them separately or differently and the combinatorics of that blow up.
+01:43:55
+So I just don't have enough time to compute all the possible content configurations of my humanoid. Mm hmm. Interestingly. I mean, I'm a humanoid, I have lots of degrees of freedom, lots of joints, I only I've only been around for a handful of years. It's getting up there, but I haven't had time in my life to visit all of the states in my system, certainly all the contact configurations. So if step one is to. Consider every possible contact configuration that I will ever be in.
+01:44:29
+That's probably it's probably not a problem I need to solve.
+01:44:34
+Just a small tangent was a contact configuration. Would like just so we can enumerate, what are we talking about? How many are there?
+01:44:44
+The simplest example maybe would be imagine a robot with a flat foot. And we think about the phases of gait where the heel strikes and then the for the front toe strikes and then you can heal up.
+01:44:58
+Toe off. Those are each different contact configurations, I only had two different contacts, but I ended up with four different contact configurations.
+01:45:08
+Now, of course, I might have my my robot might actually have bumps on it or other things. So it could be much more subtle than that. Right. But it's just even with one sort of box interacting with the ground already in the plane has that many.
+01:45:24
+Right. If I was just even a three foot, then it probably my left toe might touch just before my right toe and things get subtle. Now, if I'm a dexterous hand and I go to talk about just grabbing a water bottle, if every if I have to enumerate every possible order that my hand came into contact with the with the bottle.
+01:45:48
+Then I'm dead in the water and the approach that we were able to get away with that in walking. Because we mostly touch the ground within a small number of points, for instance, and we haven't been able to get dexterous hands that way. So you've mentioned that people think that contact is really hard and that that's the reason that robotic manipulation is a problem is really hard.
+01:46:17
+Is there any flaws in that thinking?
+01:46:23
+So I think simulating contact is one aspect. I know people often say that. We don't know that one of the reasons that we have a limit in robotics is because we do not simulate contact accurately in our simulators. And I think that is. The extent to which that's true is partly because our simulators, we haven't kept mature enough simulators. There are some things that are still hard, difficult that change. But but we actually we know what the governing equations are.
+01:46:58
+They have some foibles like this indeterminacy, but we should be able to simulate them accurately. We have incredible open source community and robotics, but it actually just takes a professional engineering team a lot of work to write a very good simulator like that.
+01:47:16
+My word is, I believe you've written Drak, there's a team of people I certainly spent a lot of hours on it myself, but what is Drake and what what does it take to to create a simulation environment for for the kind of difficult control problems we're talking about?
+01:47:37
+Right, so Drak is the simulator that that I've been working on. There are other good simulators out there. I don't like to think of Drake as just a simulator because because we write our controllers in Drake, we write our perception systems a little bit in Drake, but we write all of our, you know, low level control and even planning and. Optimization in optimization capability? Absolutely, yeah, I mean, Drak is three things, roughly, it's an optimization library which is sits on it provides a layer of abstraction in C++, in Python for commercial solvers.
+01:48:12
+You can write linear programs, quadratic programs, you know, so many different programs, some squarest programs, the ones we've used, mixed integer programs. And it will do the work to curate those and send them to whatever the right solver is, for instance. And it provides a level of abstraction. The second thing is, is a system modeling language a bit like LabView or Simulant, where you can make block diagrams out of complex systems, or it's like Ross in that sense, where you might have lots of Roths nodes that are each doing some part of your system.
+01:48:49
+But to contrast it with Ross, we try to write.
+01:48:53
+If you write a system, then you have to. It asks you to describe a little bit more about the system. If you have any state, for instance, in the system there, any variables that are going to persist, you have to declare them parameters can be declared in the like. But the advantage of doing that is that you can, if you like, run things all on one process. But you can also do control design against it.
+01:49:17
+You can do I mean, simple things like rewinding and playing back your your your simulations, for instance.
+01:49:24
+You know, these things you get some rewards for spending a little bit more up front cost and describing each system.
+01:49:30
+And I, I was inspired to do that because I think the complexity of Atlus, for instance, is just so great.
+01:49:39
+And I think although I mean, Ross has been incredible, absolutely huge fan of what it's done for the robotics community.
+01:49:47
+But it. The ability to rapidly put different pieces together and have a functioning thing is very good.
+01:49:56
+But I do think that it's hard to think clearly about a bag of disparate parts, Mr. Potato Head kind of software stack, and if you can, you know, ask a little bit more out of each of those parts, then you can understand the way they work better.
+01:50:13
+You can try to verify them and the like. You can do learning against them.
+01:50:19
+And then one of those systems, the last thing I said, the first two things.
+01:50:23
+The trick is but the last thing is that there is a set of multiparty equations, Bridgeboro equations, that is trying to provide a system that simulates physics and that we also have renderers and other things.
+01:50:37
+But I think the physics component of Drak is is special in the sense that we have done this excessive amount of engineering to make sure that we've written the equations correctly. Every possible tumbling satellite or spinning top or anything that we could possibly write as a test is tested.
+01:50:55
+We are making some, you know, I think fundamental improvements on the way you simulate contact.
+01:51:01
+What does it take to simulate contact? I mean, it just seems. I mean, there's something just beautiful, the way you like explaining contact and you're like tapping your fingers on the on the table while you're doing it just easily, right. Easily. Just like just not even like it was like helping you think.
+01:51:23
+I guess, um, what I you have this, like, awesome demo of loading or unloading a dishwasher, just picking up a plate.
+01:51:38
+Grasping it like for the first time, that's just seems like so difficult. What how do you see any of that? So so it was really interesting that what happened was that we started getting more professional about our software development during the Dapo Robotics Challenge.
+01:52:00
+I learned the value of software engineering and how these how to bridel complexity. I guess that's that's what I want. If somehow. Fight against and bring some of the clear thinking of controls into these complex systems we're building for robots, shortly after the DARPA Robotics Challenge, Toyota opened a research institute to try Toyota Research Institute.
+01:52:25
+They put one of their there's there's three locations.
+01:52:28
+One of them is just down the street from MIT. And yeah, and I helped ramp that up as a part of my the end of my sabbatical.
+01:52:37
+I guess so. So try is has given me the tri robotics effort, has made this investment in simulation in Drake and Michael Sherman leads a team there of just absolutely top notch dynamics experts that are trying to write those simulators that can pick up the dishes.
+01:52:58
+And there's also a team working on manipulation there that is taking problems like loading the dishwasher. And we're using that to study these really hard corner cases, kind of problems and manipulation. So for me, this is simulating the dishes. We could actually write a controller if we just cared about picking up dishes in the sink once we could write a controller without any simulation whatsoever and we could call it done. But we want to understand, like, what is the path you take to actually get to.
+01:53:33
+A robot that could perform that for any dish in anybody's kitchen with with enough confidence that it could be a commercial product. Right.
+01:53:43
+And it has deep learning perception in the loop. It has complex dynamics in the loop. It has controller. It has a planner.
+01:53:50
+And how do you take all of that complexity and put it through this engineering, discipline and verification and validation process to actually get enough confidence to deploy? I mean, the DARPA challenge.
+01:54:05
+Made me realize that that's not something you throw over the fence and hope that somebody will harden it for you, that they're really fundamental challenges in in closing that last gap during the validation and the testing.
+01:54:20
+I think it might even change the way we have to think about the way we write systems. What happens if you if you have the robot running lots of tests? It and it screws up, it breaks a dish, right? How do you capture that? I said you can't run the same simulation or the same experiment twice in in a real on a real robot.
+01:54:45
+Do we have to be able to bring that one off?
+01:54:48
+Failure back in the simulation in order to change our controllers, study it, make sure it won't happen again, do we? Is it enough to just try to add that to our distribution and understand that on average we're going to cover that situation again?
+01:55:03
+There's like really subtle questions at the corner cases that I think we don't yet have satisfying answers for.
+01:55:10
+How do you find the corner cases? That's one kind of is there. Do you think it's possible to create a systematized way of discovering corner cases efficiently? Yeah, in and whatever the problem is, yes.
+01:55:25
+I mean, I think we have to get better at that.
+01:55:27
+I mean, control theory has for four decades talked about an act of experiment design that so people call it curiosity these days. It's roughly this idea of trying to exploration or exploitation. But but in the active experiment, design is even is more specific. You could try to understand the uncertainty in your system, design the experiment that will provide the maximum information to reduce that uncertainty. If there's a parameter you want to learn about, what is the optimal trajectory I could execute to learn about that parameter.
+01:56:03
+For instance, scaling that up to something that has a deep network in the loop and planning in the loop is tough. We've done some work on, you know, with Metal Kelly and a Monsignore. We've worked on some falsification algorithms that are trying to do rare event simulation that try to just hammer on your simulator.
+01:56:25
+And if your simulator is good enough, you can you can spend a lot of time now or you can write good algorithms that try to spend most of their time in the corner cases.
+01:56:37
+So you basically imagine you're building an autonomous car and you want to put it in downtown New Delhi all the time.
+01:56:46
+An accelerated testing, if you can. Right. Sampling strategies which figure out where your controllers performing badly in simulation and start generating lots of examples around that. You know, it's just. The space of possible places where that can be, where things can go wrong is very big, so it's hard to write. Those algorithms are very rare.
+01:57:07
+Event simulation is just a really compelling notion.
+01:57:11
+If it's possible, we joke and we call it we call it the Black Swan generated Black Swan because you don't just want the rare events, you want the ones that are highly impactful.
+01:57:21
+That's the most those are the most sort of profound questions we ask of our world, like what's the what's the worst that can happen? But what we're really asking isn't some kind of like computer science worst case analysis. We're asking, like, what are the millions of ways this can go wrong? And that's like our curiosity. We humans, I think, are pretty bad that we just run into it, and I think there's a distributed sense because there's now like seven point five billion of us.
+01:57:58
+And so there's a lot of them. And then a lot of them write blog posts about the stupid things they've done. So we learn in a distributed way. There's there's some that's going to be important for robots to hear.
+01:58:10
+I mean, that's that's another massive theme at Toyota Research for robotics is this fleet learning concept is, you know, the idea that I as a humanoid don't have enough time to visit all of my states. Right. There's just a it's very hard for one robot to experience all the things, but that's not actually the problem we have to solve. Right.
+01:58:33
+We're going to have fleets of robots that can have very similar appendages and at some point, maybe collectively, they have enough data that they're computational processes should be set up differently than ours.
+01:58:47
+Right. It's a vision of just I mean, all these dishwasher unloading robots. I mean, that robot dropping a plate and a human looking at the robot probably pissed off. Yeah, but that's a special moment to record. I think one thing in terms of fleet learning, and I've seen that because I've talked to a lot of folks, just like Tesla users are Tesla drivers there and another company that's using this kind of fleet learning idea. And one hopeful thing I have about humans is they really enjoy when a system improves, learns, so they enjoy fleet learning.
+01:59:31
+And they're the reason is hopeful for me is they're willing to put up with something that's kind of dumb right now. And they're like, if it's improving, they almost like enjoy being part of the like teaching it almost like if you have kids, like you're teaching or something. Right. I think that's a beautiful thing because that gives me hope that we can put dumb robots out there as long. I mean, the problem with the Tesla side with cars, cars can kill you.
+02:00:02
+That's that makes the problem so much harder. Dishwasher unloading is a little safe. That's why home robotics is is really exciting. And just to clarify, I mean, for people who might not know, try to your research institute there of I mean, they're they're pretty well known for like autonomous vehicle research, but they're also interested in and in robotics.
+02:00:27
+Yeah, there's a big there's a big group working on multiple groups working on home robotics. It's a major part of the portfolio. There's also a couple other projects and advanced materials discovery using Yayi machine, learning to discover new materials for the car batteries and then the like, for instance. Yeah, and that's actually an incredibly successful team. There's new projects starting up, too.
+02:00:49
+So do you see a future of where like robots are in our home and like robots that have like actuators that look like arms in our home or like, you know, more like humanoid robots? Or is this we're going to we're going to do the same thing that you just mentioned, that, you know, the dishwasher is no longer a robot. We're going to just not even see them as robots. But I mean, what's your vision of the home of the future 10, 20 years from now, 50 years if you get crazy?
+02:01:23
+Yeah, I think we already have rumbas cruising around. We have, you know, Alexi's or Google homes under our kitchen counter.
+02:01:33
+It's only a matter of time till they bring arms and start doing something useful like that. So I do think it's coming. I think lots of people have lots of motivations for doing it. It's been super interesting, actually, learning about Toyota's vision for it, which is about helping people age in place. Because I think that's not necessarily the first entry, the most lucrative entry point, but it's the problem maybe that. We really need to solve no matter what, and so I think I think there's a real opportunity.
+02:02:11
+It's a delicate problem. How do you work with people to help people, keep them active, engaged, you know, but improve the quality of life and and and help them age in place, for instance?
+02:02:25
+It's interesting, because older folks are also I mean, there's a contrast there because they're not always the the folks who are the most comfortable with technology, for example. So there's a there's a division that interesting.
+02:02:42
+You can do so much good with a robot for for older folks. But there's a there's a gap, the feel of understanding. I mean, it's actually kind of beautiful. A robot is learning about the human and the human is kind of learning about this new robot thing. And it's also with at least with the like. When I talk to my parents about robots, there's a little bit of a blank slate there, too, like you can.
+02:03:14
+I mean, they don't know anything about robotics, so it's completely like wide open. They don't have that. They haven't my my parents haven't seen Blackmar. So, like, they they it's a blank slate. Here's a cool thing. Like what can you do for me. Yeah. So it's an exciting space.
+02:03:31
+I think it's a really important space.
+02:03:33
+I do feel like, you know, a few years ago, drones were successful enough in academia. They kind of broke out and started an industry and autonomous cars been happening. It does feel like manipulation in logistics, of course, first, but in the home shortly after seems like one of the next big things that's going to really pop.
+02:03:57
+So I don't think we talked about it. But now what soft robotics that we talked about. Like rigid bodies, like if we can just linger in this whole touch thing. Yeah, so what's soft robotics?
+02:04:11
+So I told you that I really dislike the fact that robots are afraid of touching the world all over the body. So there's a couple of reasons for that. If you look carefully at all the places that robots are actually do touch the world, they're almost always soft. They have some sort of pad on their fingers or a rubber soul on their foot. But if you look up and down the arm, we're just pure aluminum, so.
+02:04:42
+So that makes it hard, actually, in fact, hitting the table with your you know, your rigid arm, nearly rigid arm is a is a has some of the problems that we talked about in terms of simulation, I think it fundamentally changes the mechanics of contact when you're soft, right. You you turn point contacts into patch contacts, which can have torsional friction. You can have distributed load if I want to pick up an egg. Right. If I pick it up with two points, then in order to put enough force to sustain the weight of the egg, I might have to put a lot of force to break the egg.
+02:05:17
+If I envelop it with a with contact all around, then I can distribute my force across the shell of the egg and have a better chance of not breaking it. So soft robotics is for me a lot about changing the mechanics of contact.
+02:05:32
+Does it make the problem a lot harder?
+02:05:38
+Quite the opposite. It changes the computational problem, I think because of the I think our world and our mathematics has biased us towards rigid, but it really should make things better in some ways. It's a. I think the future is unwritten there. But the other thing I think ultimately sorry to interrupt, do you think ultimately it will make things simpler if we embrace the softness of the world?
+02:06:08
+It makes. Makes things smoother. So the the result of small actions is less. Just continuous, but it also means potentially less, you know, instantaneously bad, for instance, I won't necessarily contact something intended flying off.
+02:06:30
+The other aspect of it that just happens to dovetail really well is that if soft robotics tends to be a place where we can embed a lot of sensors, too. So if you change your your hardware and make it more soft and you can potentially have a tactile sensor which is measuring the deformation. So there's a team at a try that's working on soft hands and and you get so much more information if you you can put a camera behind the skin roughly and and get a fantastic tactile information, which is it's super important, like in manipulation.
+02:07:07
+One of the things that really is frustrating is if you work super hard on your head, mounted on your perception system for your head mounted cameras and then you've identified an object, you reach down to touch it in the first. The last thing that happens right away, the most important time you stick your hand in your occluding your head mounted sensors. Right. So in all the part that really matters, all of your off board sensors are, you know, are occluded.
+02:07:30
+And really, if you don't have tactile information, then you're you're blind in an important way. So it happens that soft robotics and tactile sensing tend to go hand in hand.
+02:07:42
+I think we've kind of talked about it. But you taught a course on under actuating robotics. I believe that was the name of it, actually. Can you talk about in that context what is under actuated robotics? Right. So underexploited robotics is my graduate course.
+02:08:01
+It's online mostly now.
+02:08:03
+I mean, in the sense that the lectures, evidence of it, I think.
+02:08:06
+Right. The YouTube really great. I recommend it highly.
+02:08:09
+Look on YouTube for the twenty twenty versions until March and then you have to go back to 2019.
+02:08:14
+Thanks to covid know I've poured my heart into that class and lecture one is basically explaining what the word underexploited means.
+02:08:25
+So people are very kind to to show up and then maybe have to learn what the title of the course means over the course of the first lecture that that first lecture is really good.
+02:08:34
+You should watch it.
+02:08:35
+I think it's a strange name, but I thought it captured the essence of what control was good at doing and what control was bad at doing.
+02:08:47
+So what do I mean by undersaturated? So a mechanical system. Has many degrees of freedom, for instance, I think of a joint as a degree of freedom and it has some number of waiters motors. So if you have a robot that's bolted to the table that has five degrees of freedom and five motors, then you have a fully activated robot. If you have if you take away one of those motors, then you have an under rated robot. Now, why on earth I have a good friend who who likes to tease me, said Russ, if you had more research funding, would you work on fully actuated robots?
+02:09:29
+Yeah, and the answer is no. The world gives us undereducated robots, whether we like it or not. I'm a human.
+02:09:37
+I'm an underexploited robot, even though I have more muscles than my big degrees of freedom because I have in some places multiple muscles attached to the same joint. But still, there's a really important degree of freedom that I have, which is the location of my center of mass in space, for instance.
+02:09:56
+All right, I can jump into the air and there's no motor that connects my center of mass to the ground in that case.
+02:10:04
+So I have to think about these, the implications of not having control over everything.
+02:10:10
+The passive dynamic walkers are the extreme view of that, where you are taking away all the motors and you have to let physics do the work. But it shows up in all the walking robots where you have to use some of them orders to push and pull even the degrees of freedom that you don't have an excavator on that's referring to walking.
+02:10:28
+If you're like falling forward, like there's no way to walk, that's fully actuated.
+02:10:33
+So it's a subtle point when you're when you're in contact and you have your feet on the ground, there are still limits to what you can do. Right?
+02:10:43
+Unless I have suction cups on my feet, I cannot accelerate my center of mass towards the ground faster than gravity because I can't get a force pushing me down the right. But I can still do most of the things that I want to so you can get away with basically thinking of the system as fully actuated unless you suddenly needed to accelerate down super fast. But as soon as I take a step, I get into the more nuanced territory and to get to really dynamic robots or airplanes or other things, I think you have to embrace the underexploited dynamics manipulation people think is manipulation.
+02:11:22
+Underexploited. Even if my arm is fully actuated, I have a motor.
+02:11:27
+If my goal is to control the position and orientation of this cup, then I don't have an excavator for that directly.
+02:11:36
+So I have to use my actuators over here to control this thing. Now it gets even worse. Like what if I have to button my shirt? OK. What are the degrees of freedom of my shirt, right? I suddenly that's a hard question to think about. It kind of makes me queasy as thinking about my state space control ideas.
+02:11:57
+But actually, those are the problems that make me so excited about manipulation right now, is that it breaks some of the it breaks a lot of the foundational control stuff that I've been thinking about.
+02:12:08
+Is there. What are some interesting insights you could say about trying to solve and under actuated control in an under actuated system?
+02:12:19
+So I think the philosophy there is let physics do more of the work. The technical approach has been optimization. So you typically formulate your Decision-Making for Control as an optimization problem and you use the language of optimal control and sometimes neumayr, often numerical optimal control in order to make those decisions and balance these complicated equations of and in order to control, you don't have to use optimal control to do under rated systems.
+02:12:51
+But that has been the technical approach that has borne the most fruit in our at least in our line of work. And as some so in under actually the systems when you say physically some of the work. So there's a kind of feedback feedback loop that observes the state that the physics brought you to say, like you've there's there's a perception there. This is there's a feedback, some how do you do? Do you ever loop in, like, complicated perceptual systems into this whole picture?
+02:13:23
+Right.
+02:13:24
+Right around the time of the challenge, we had a complicated perception system in the dorper challenge. We also started to embrace perception for our flying vehicles. At the time, we had a really good project on trying to make airplanes fly at high speeds through forests.
+02:13:41
+Sartaj Karaman was on that project and we had it was a really fun team to to work on. He's carried it further, much further forward since then. So using cameras for perception. So that was using cameras.
+02:13:54
+That was at the time we felt like lighter was too, too heavy into power, heavy to to be carried on and on a light up.
+02:14:04
+And we were using cameras and that was a big part of it was just how do you do even stereo matching at a fast enough rate with a small camera and a small onboard computer? Since then, we have now the so the deep learning revolution unquestionably changed what we can do with perception for robotics and control. So in manipulation, we can address we can use perception, know, I think, a much deeper way. And we get into not only I think the first use of it naturally would be to ask your deep learning system to look at the cameras and produce the state, which is like the pose of my thing, for instance.
+02:14:45
+But I think we've quickly found out that that's not always the right thing to do. Was that because what's the state of my shirt? Imagine I a very noisy.
+02:14:57
+I mean, it's as if the first step of me trying to button my shirt is estimate the full state of my shirt, including like what's happening in the back, you know, whatever, whatever.
+02:15:08
+That's just not the right specification. There are aspects of the state that are very important to the task. There are many that are unobservable and not not important to the task. So you really need it begs new questions about state representation. Another example that we've been playing with in the lab has been just the idea of chopping onions or carrots turns out to be better.
+02:15:37
+So onions stink up the lab and they're hard to see in a camera. But some details matter.
+02:15:45
+Yeah, details matter, you know, so.
+02:15:50
+Moving around a particular object, right then I think about it's got a position and orientation in space, that's the description I want now when I'm chopping an onion, OK, the first chop comes down.
+02:16:01
+I have now one hundred pieces of onion. It is my control system really need to understand the position and orientation and even the shape of the hundred pieces of onion in order to make a decision, probably not, you know, and if I keep going, I'm just getting more and more. Is my state space getting bigger as I cut it?
+02:16:21
+It it's not right as so.
+02:16:23
+So I think there's a richer idea of state. It's not the state that has given to us by Lagrangian mechanics. There is a there is a proper Lagrangian state of the system.
+02:16:38
+But the relevant state for this is some latent state is what we call it in machine learning. But, you know, there's some some different state representative, some compressed representation, some.
+02:16:52
+And that's what I worry about saying compressed because it doesn't I don't mind that it's low dimensional or not. But it has to be something that's easier to think about by us humans or by algorithms or the algorithms being like control optimal.
+02:17:10
+So, for instance, if the contact mechanics of all of those onion pieces and all the permutations of possible touches between those onion pieces, you know, you can give me a high dimensional state representation. I'm OK if it's linear.
+02:17:23
+But if I have to think about all the possible shattering combinatorics of that, then my robot's going to sit there thinking and the soup's going to get cold or something.
+02:17:34
+So since you taught the course of it kind of entered my mind. The idea of undersaturated is really compelling to see the to see the world in this kind of way. GEVER You know, we talk about onions or you talk about the world with people in it in general. Do you see the world as basically an under actuated system? Do you like often look at the world in this way, or is this overreach, um, underestimated as a way of life, man?
+02:18:06
+Exactly. I guess that's what I'm asking. I do think it's everywhere.
+02:18:12
+I think some in some places. We already have natural tools to deal with it, you know, it rears its head, I mean, in linear systems, it's not a problem. We just we just like an under X rated than your system is really not sufficiently distinct from a fully actuated linear system. It's it's a it's a subtle point about when that becomes a bottleneck and what we know how to do with control. It happens to be a bottleneck, although we've gotten incredibly good solutions now.
+02:18:39
+But for a long time that I felt that that was the key bottleneck in legged robots. And roughly now the underexploited course is, you know, me trying to tell people everything I can about how to make Atlus do a backflip. Right.
+02:18:55
+I have a second course now that I teach and the other semesters, which is on manipulation. And that's where we get into now more of the that's a newer class.
+02:19:04
+I'm hoping to put it online this fall completely. And that's going to have much more aspects about these perception problems and the state representation questions.
+02:19:14
+And then how do you do control and the. The thing that's a little bit sad is that for me at least, is there's a lot of manipulation tasks that people want to do and should want to do. They could start a company with it and very successful that don't actually require you to think that much about a or dynamics at all even. But certainly underexploited dynamics. Once I have if I if I reach out and grab something, if if I can sort of assume it's rigidly attached to my hand, then I can do a lot of interesting, meaningful things with it without really ever thinking about the dynamics of that object.
+02:19:49
+So they've built we've built systems that kind of.
+02:19:53
+Then reduce the need for that enveloping grasps and the like, but I think the really good problems and manipulation side manipulation, by the way, is more than just pick in place. That's like a lot of people think of that just grasping. I don't mean that. I mean buttoning my shirt. I mean tying shoelaces. How do you actually program a robot to tie shoelaces and not just one shoe, but every shoe? Right. That's a really good problem.
+02:20:23
+It's tempting to write down like the infinite dimensional state of the of the laces. That's probably not needed to write a good controller. I know we could hand design a controller that would do it, but I don't want that. I want to understand the principles that would allow me to solve another problem that's kind of like that. But I think if we can stay pure in our approach, then the challenge of tying anybody's shoes is a great challenge.
+02:20:53
+That's a great challenge. I mean, and the soft touch comes into play there. So the interesting and let me ask another ridiculous question on this topic. How important is touch? We don't talk much about humans, but I have this argument with my dad where, like, I think you can fall in love with the robot based on language alone. And he believes that touch is essential. I touch and smell, he says, but so. In terms of robots, you know, connecting with humans and we can go philosophical in terms of like a deep, meaningful connection like love, but even just like collaborating in an interesting way, how important is touch, like from an engineering perspective and the philosophical one?
+02:21:49
+I think it's super important. Let's even just in a practical sense, if we forget about the emotional part of it, but for robots to interact safely while they're doing meaningful mechanical work in the in the, you know, close contact with or vicinity of people that need help, I think we have to have them.
+02:22:12
+We have to build them differently. They have to be afraid, not afraid of touching the world. So I think Baymax is just awesome. That's just like the the the movie of Big Hero six and the concept of Baymax. That's just awesome.
+02:22:25
+I think we should and we have some folks at Toyota that are trying to Toyota research that are trying to build Macs roughly.
+02:22:33
+And I think it's just a fantastically good project. I think it will change the way people physically interact the same way.
+02:22:43
+I mean, you gave a couple of examples earlier, but but if I if the robot that was walking around my home looked more like a teddy bear and a little less like the Terminator, that could change completely the way people perceive it and interact with it.
+02:22:56
+And maybe they'll even want to teach it, like you said. Right.
+02:23:01
+You could not quite ramify it, but somehow instead of people judging it and looking at it as if it's not doing as well as a human, they're going to try to help out the cute teddy bear right now. Who knows? But I.
+02:23:16
+I think we're building robots wrong and being more soft and more contact is important, right? Yeah.
+02:23:25
+And like all the magical moments I can remember with robots. Well, first of all, just visiting your lab and seeing Alice, but also spot me when I first saw Spot many in person, I hung out with him her it I don't have trouble engendering robots. I feel robotics. People really say, oh, is it the kind of like the idea that it's a her or him is a magical moment.
+02:23:53
+But there's no touching. I guess the question I have have you ever been like have you had a human robot experience way, like a robot touched you? And like it was like, wait, like was there a moment that you've forgotten that a robot is a robot? And like the ANTHROPOMORPHISING stepped in and for a second you forgot there's no human. I mean, I think when you're in on the details, then we, of course, anthropomorphized our work with that list.
+02:24:29
+But in, you know, in verbal communication and the like, I think we were pretty aware of it as a machine that needed to be respected.
+02:24:39
+And I actually I worry more about the smaller robots that could still move quickly if programmed wrong. And we have to be careful actually about safety and the like right now.
+02:24:50
+And that if we build our robots correctly, I think then those a lot of those concerns could go away. And we're seeing that trend. We're seeing the lower cost, lighter weight arms. Now, that could be fundamentally safe.
+02:25:07
+I mean, I do think touches so fundamental, Ted Olson is is great, he's a perceptual scientist at MIT and he studied vision most of his life.
+02:25:18
+And he said, when I had kids, I expected to be fascinated by their perceptual development.
+02:25:26
+But what really what he noticed was felt more impressive, more dominant was the way that they would touch everything and lick everything and pick things up and stick it on their tongue and whatever.
+02:25:36
+And he said watching his daughter convinced him that actually he needed to study tactile sensing more.
+02:25:45
+So there's something very important.
+02:25:50
+I think it's a little bit also of the passive versus active part of the world, right? You can passively perceive the world. But it's fundamentally different if you can do an experiment right, and if you can change the world and you can learn a lot more than a passive observer.
+02:26:09
+So.
+02:26:11
+You can in dialogue, that was your initial example, you could have an active experiment exchange, but I think if you're just a camera watching YouTube, I think that's a very different problem than if you're a robot that can apply force and touch.
+02:26:29
+I, I, I think it's important. Yeah, I think it's just an exciting area of research. I think you're probably right that it hasn't been under researched. That's the. To me, as a person who was captivated by the idea of human robot interaction, it feels like. Such a rich opportunity to export touch, not even from a safety perspective, like you said, the emotional to I mean, safety comes first. But the next step is like.
+02:27:01
+You know, like a real human connection, even in the like even in the industrial setting, it just feels like it's nice for the robot. I don't know. You know, you might disagree with this, but. Because I think it's important to see robots as tools often, but I don't know. I think they're just always going to be more effective once you humanize them. Like it's convenient now to think of them as tools because we want to focus on the safety.
+02:27:33
+But I think ultimately to create like a good experience for the worker, for the person, there has to be a human element. I don't know. For me, I it feels like like an industrial robotic arm will be better off as a human element. I think, like, Rethink Robotics had that idea with the Baxter and having eyes and so on having I don't know. I'm a big believer in that.
+02:28:00
+I it's not my area, but I am also a big believer.
+02:28:06
+Do you have an emotional connection to Alice? Like, yeah, I mean, um. Yes, I I don't know if I more so than if I had a different science project that I worked on super hard right eye, but.
+02:28:27
+Yeah, I mean, the the the robot, we basically had to do heart surgery on the robot in the final competition because we melted the core and and yeah, there was something about watching that robot hanging there.
+02:28:40
+We know we had to compete with it in an hour and it was getting its guts ripped out.
+02:28:45
+And those are all historic moments. I think if you look back like a hundred years from now. And. Yeah, I think this is an important moments in robotics, I mean, these are the early days you look at like the early days of a lot of scientific disciplines. They look ridiculous, is full of failure, but it feels like robotics will be important in the coming hundred years. So and these are the early days. So.
+02:29:12
+So I think a lot of people are looking at a brilliant person such as yourself and are curious about the intellectual journey they've took. Is there maybe three books, technical fiction, philosophical, that had a big impact on your life that you would recommend perhaps others reading? Yeah, so, um, I actually didn't read that much as a kid, but I read fairly voraciously now. Um. There are some recent books that if you're interested in this kind of topic, like a superpower's by Caerphilly, is just a fantastic read.
+02:29:52
+You must read that you've all Harare. It's just I think that can open your mind. Sapiens, sapiens, as is the first one. Homo do the second.
+02:30:06
+Yeah, I thought we mentioned the Black Swan by Talib. I think that's a good sort of mind opener. I actually. So so there's maybe a more controversial recommendation I could give great. Well, I love such laws in some sense. It's so classic.
+02:30:27
+It might surprise you, but I actually recently read Mortimer Adler's how to read a book not so long.
+02:30:35
+It was a while ago. But some people hate that book.
+02:30:40
+I loved it. I think we're in this time right now. Where? Boy, we're just inundated with research papers that you could read on archive with. Limited peer review and just this wealth of information. I don't know, I think the.
+02:31:03
+Passion of what you can get out of a book, a really good book or a really good paper if you find it, the attitude, the realization that you're only going to find a few that really are worth all your time.
+02:31:17
+But then once you find them, you should just dig in and and and understand it very deeply. And it's worth, you know, marking it up and, you know, having the hard copy writing in the side notes, side margins.
+02:31:33
+I think that was really it. I read it at the right time where I was just feeling just overwhelmed with really low quality stuff, I guess.
+02:31:44
+And similarly. Uh, I'm just giving more than three now, I'm sorry if I've extended my mind, but on that topic just real quick is so basically finding a few companions to keep for the rest of your life in terms of papers and books and so on. And those are the ones like not doing. What is it for small fear of missing out, constantly trying to update yourself, but really deeply making a life journey of studying a particular paper, essentially set of papers?
+02:32:18
+Yeah, I think. When you really find something which a book that resonates with you might not be the same book that resonates with me, but when you really find one that resonates with you, I think the dialogue that happens and that's what I loved that Adler was saying.
+02:32:35
+You know, I think Socrates and Plato say the written word is never going to capture the beauty of dialogue. Right.
+02:32:45
+But Adler says, no, no, a really good book is a dialogue between you and the author, and it crosses time and space.
+02:32:54
+And I don't know, I think it's a very romantic.
+02:32:57
+There's a bunch of specific advice which you can just gloss over.
+02:33:01
+But the romantic view of how to read and really appreciate it is is is so good now and similarly teaching I. I thought a lot about teaching and and so Isaac Asimov, great science fiction writer, also actually spent a lot of his career writing non-fiction, right. His memoir is fantastic. He was passionate about explaining things.
+02:33:29
+He wrote all kinds of books on all kinds of topics and science.
+02:33:33
+He was known as the great explainer.
+02:33:34
+And, you know, I do really resonate with his style and and just his way of talking about, you know, by communicating and explaining to something is a really the way that you learn something.
+02:33:49
+I think I think about problems very differently because of the way I've been given the opportunity to teach them at MIT and have questions asked.
+02:34:00
+You know, the fear of the lecture, the experience of the lecture and the questions I get in the interactions just forces me to be rock solid on these ideas in a way that I didn't have that I don't know, I would be in a different intellectual space.
+02:34:15
+So videodisc area that your lectures are online and people like me and sweatpants can sit sipping coffee and watch you give lectures that I think it's great.
+02:34:27
+I do think that something's changed right now, which is, you know, right now we're giving lectures will resume, I mean, giving seminars, a resume and everything I'm trying to figure out. I think it's a new medium. Do you think it's trying to figure out how it is?
+02:34:45
+Yeah, I've been, um, I've been quite cynical about human a human connection over over that medium. But I think that's because it's hasn't been explored fully. And teaching is a different thing.
+02:35:02
+Every lecture's that is a story, every seminar, even I think every talk I give, I you know, there's an opportunity to to give that differently. I can I can deliver content directly into your browser. You have a Web Google engine right there. I could I can throw 3-D content into your browser while you're listening to me, right? Yeah. And I can assume that you have a, you know, at least a powerful enough laptop or something to watch Zoom while I'm doing that, while I'm giving a lecture that that's a that's a new communication tool that I didn't have last year.
+02:35:36
+Right.
+02:35:37
+And I think robotics can potentially benefit a lot from teaching that way. We'll see. It's going to be an experiment this fall, essentially thinking a lot about it. Yeah, and also like the the length of lectures or the length of like there's something like, I guarantee you, you know, like 80 percent of people who started listening to our conversation are still listening to now, which is crazy to me. But so there's a there's a patience and interest in long form content.
+02:36:09
+But at the same time, there's a magic to forcing yourself to condense an idea to the shortest possible. Shortest possible clip, it can be part of a longer thing, but like just a really beautifully condensed an idea, there's a lot of opportunity there that's easier to do in remote with. I don't know what editing to editing is an interesting thing, like what, you know, most professors don't get when they give a lecture. You don't get to go back and edit out parts like Chris, like Chris put up a little bit.
+02:36:48
+That's also it can do magic. Like if you remove like five to ten minutes from an hour lecture, it can it can actually it can make something special of a lecture. I've I've seen that in myself and in others too, because I edit other people's lectures to extract clips. I think there's certain tangents there like that lose. They're not interesting that they're mumbling. They're just not they're not clarifying. They're not helpful at all. And once you remove them, it's just I don't know, editing can be magic.
+02:37:21
+I think a lot of time it takes it depends like what is teaching. You have to ask them. Um, yeah, because I find the editing process is also beneficial. As for teaching, but also for your own learning, I don't know. Have you watched yourself or have you watched those videos?
+02:37:43
+It's all of the work. It could be it could be painful. Yeah. And to see like I had to improve. So do you find that I know you segment your your podcast. Do you think that helps people with the the attention span aspect of it or is a segment like sections like.
+02:38:01
+Yeah, we're talking about this topic, whatever. No, no.
+02:38:04
+That's just helps me. It's actually bad. So and you've been incredible.
+02:38:10
+So I'm, I'm learning like I'm afraid of conversation. This is even today. I'm terrified of talking to you. I mean, it's something I'm trying to remove for myself. I there's a guy I mean, I learn from a lot of people, but really it's been a few people who has been inspirational to me in terms of conversation. And whatever people think of him, Joe Rogan has been inspirational to me because comedians have been to being able to just have fun and enjoy themselves and lose themselves in conversation.
+02:38:42
+That requires you to be a great storyteller, to be able to pull a lot of different pieces of information together, but mostly just to enjoy yourself in conversations and trying to learn that these notes are you see me looking down. That's like a safety blanket that I'm trying to let go of more and more. Cool. So that's that people love just regular conversation that that's what the the structure is like. Whatever I would say. I would say maybe like 10 to so there's a bunch of you know, there's probably a couple of thousand students listening to this right now.
+02:39:22
+Right. And they might know what we're talking about. But there is somebody, I guarantee you right now. In Russia, some kid who's just like who's just smoked some weed is sitting back and just enjoying the hell out of this conversation, not really understanding kind of why some Boston Dynamics videos, he's just enjoying it. And I salute you, sir. No, but just like there's so much variety of people that just have curiosity about engineering, about sciences, about mathematics and and also, like I should I mean, enjoying it is one thing, but also often notice it inspires people to there's a lot of people who are like in their undergraduate studies trying to figure out what they're trying to figure out, what to pursue.
+02:40:14
+And these conversations can really spark the direction their of their life. And in terms of robotics, I hope it does, because I'm excited about the possibilities for robotics brings on that topic. Do you have advice? What advice would you give to a young person about life? A young person about life for a young person, about life in robotics, it could be in robotics, it could be in life in general, it could be career, it could be relationship advice.
+02:40:48
+It could be running advice just like there. That's one of the things I see like to talk to like 20 year olds. They're they're like, how do I how do I do this thing or what do I do if they come up to you or would you tell them?
+02:41:05
+I think it's an interesting time to be a kid these days. Everything points to this being sort of a winner take all economy and the like, I think the people that will really excel, in my opinion, are going to be the ones that can think deeply about problems.
+02:41:28
+You have to be able to ask questions agilely and use the Internet for everything it's good for and stuff like this, and I think a lot of people will develop those skills.
+02:41:36
+I think the leaders thought leaders, robotics leaders, whatever, are going to be the ones that can do more and they can think very deeply and critically. And that's a harder thing to learn.
+02:41:52
+I think one path to learning that is through mathematics, through engineering.
+02:41:58
+I would encourage people to start math early. I mean, I. Didn't really start I mean, I was always in the the better math classes that I could take, but I wasn't pursuing a super advanced mathematics or anything like that until I got to MIT. I think MIT let me up and.
+02:42:18
+Really started the life that I'm living now, but, yeah, I really want kids to to dig deep, really understand things, building things to, I mean, pull things apart, put them back together. Like, that's just such a good way to really understand things and expect it to be a long journey. Right. It's you don't have to know everything. You're never going to know everything. So think deeply and stick with it. Enjoy the ride, but just make sure you're not.
+02:42:54
+Yeah, just just make sure you're you're stopping to think about why things work as true, it's it's easy to lose yourself in the in the in the distractions of the world. We're overwhelmed with content right now, but. You have to stop and pick some of that and really understand. You have on the book point of Read Animal Farm by George Orwell. A ridiculous number of times for me, like that book. I don't know if it's a good book in general, but for me it connects deeply.
+02:43:28
+Somehow, it somehow connects. I was born in the Soviet Union, so it connects to me to the entirety of history of the Soviet Union and to World War Two and to the love and hatred and suffering that went on there and the. The corrupting nature of power and greed and just somehow I just hope that that book has taught me more about life than like anything else, even though it's just like a silly, like, child like book about.
+02:44:01
+Adam, pigs like I don't know why it just connects and inspires and the same, there's a few as a few technical books to and algorithms that just help you return to often. Right.
+02:44:15
+I'm I'm I'm with you. Uh. Yeah, there's I don't know, and I've been losing that because of the Internet, I've been like going on the I've been going on archive and blog posts and GitHub and and the new thing and all of you lose your ability to really master an idea, right?
+02:44:35
+Well, exactly right. What's the fun memory from childhood? When the baby was Tetrick, well, I guess I just said that. With my current life begins, began when I got there. If I had to go further than that, he always was there, left before my time.
+02:44:59
+Oh, absolutely. But but let me actually tell you what happened when I first got to MIT, because that I think might be relevant here. But I yeah. You know, I had taken a computer engineering degree at Michigan. I enjoyed it immensely. I learned a bunch of stuff. I liked computers. I liked her like programming. But when I did get to MIT and started working with Sebastian Seung, theoretical physicist, computational neuroscientist, um.
+02:45:31
+The culture here was just different. It demanded more of me, certainly mathematically, and the critical thinking and I remember the day that I.
+02:45:43
+Borrowed one of the books from my advisor's office and walked down to the Charles River and was like, I'm getting my butt kicked, you know?
+02:45:53
+And I think that's going to happen to everybody who's doing this kind of stuff, right, I think. Uh. I expected you to ask me the meaning of life, you know, I think that the somehow I think that's that's got to be part of it.
+02:46:08
+This doing hard things.
+02:46:12
+Yeah. Did you did you consider quitting at any point? Did you consider this isn't for me?
+02:46:16
+No, never. That I, I was I was still working hard, but I was loving it. There's I think there's this magical thing where you, uh, you know, I'm lucky to surround myself with people that basically almost every day I'll. I'll see something, I'll be told something or something that I realized, wow, I don't understand that. And if I could just understand that there's something else to learn, that if I could just learn that thing, I would connect another piece of the puzzle.
+02:46:47
+And and, you know, I think that is just such an important aspect and being willing to understand what you can and can't do and loving the journey of going and learning those other things, I think that's the best part.
+02:47:04
+I don't think there's a better way to end the rest of you've been an inspiration to me since I showed up at MIT. Your work has been an inspiration to the world. This conversation was amazing. I can't wait to see what you do next with robotics on robots, I. I hope to see you work in my home one day. So thanks so much for talking.
+02:47:24
+Today has been awesome. Thanks for listening to this conversation with Ross Dedrick and thank you to our sponsors, Magic Spoon Cereal, better help and express VPN. Please consider supporting this podcast by going to magic spoon dotcom slash Lex and using collects at checkout, going to better help dot com slash legs and signing up at express report.com such leks pod. Click the links, buy the stuff, get the discount. It really is the best way to support this podcast.
+02:47:56
+If you enjoy this thing, subscribe on YouTube, review five stars and up a podcast support on Patrón or connect with me on Twitter. Àlex Friedman spelled somehow without the E just fried man. And now let me leave you some words from Neil deGrasse Tyson talking about robots in space and the emphasis we humans put on human based space exploration. Robots are important. If I don my pure scientist hat, I would say just send robots. I'll stay down here and get the data.
+02:48:29
+But nobody's ever given a parade for a robot. Nobody's ever named a high school after a robot. So when I done my public educator hat, I have to recognize the elements of exploration that excite people. It's not only the discoveries and the beautiful photos that come down from the heavens, it's the vicarious participation in discovery itself. Thank you for listening and hope to see you next time.

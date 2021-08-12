@@ -1,0 +1,1316 @@
+00:00:00
+The following is a conversation with Jason Calacanis, who's an entrepreneur, investor, author of Angel How to Invest in Technology Startups. And as many people may know, he's a fun, brilliant, long time podcast, host of This Week in Startups and co-host of the Orlin podcast with Timothy Bertier, David Sacks and David Freedberg, who all happen to be poker buddies and self-proclaimed buddies. The result is always a great listen due to both the love and the heated disagreements.
+00:00:37
+Quick mention of our sponsors Brave Browser LYNARD Linux Virtual Machines for Stigmatic Mushroom Coffee and Rev Speci Text Service. Click the sponsored links to get a discount and to support this podcast. As a side note, let me say that I've been learning a lot about real world finance in the past few months. To give you a bit of context on the side, I've studied trading from an algorithmic trading perspective as a machine learning game theory problem off and on. For a few years in undergrad and grad school, I found the distributed complex system aspect of finance and economics in general fascinating.
+00:01:14
+But now I find even more fascinating the human side of the whole thing.
+00:01:18
+Ideas of greed, power, freedom and truth. Wall Street bets Robin Hood and the whole beautiful mess around this topic allows us to have great conversations about human nature and the systems that underlie the rise and fall of civilizations. Enjoy this thing. Subscribe on YouTube, review and Apple podcast. Follow on Spotify support on page one. Connect with me on Twitter. Elex Friedman, as usual. I'll do a few minutes of ads now and no ads in the middle.
+00:01:50
+I try to make this interesting, but I give you time stamps. So if you skip please to check out the sponsors by clicking on links in the description, it's the best way to support this podcast. The show is sponsored by Brave Afast Privacy Preserving Browser that feels like Google Chrome. But without ads with various kinds of tracking that ads can do. You should listen to my conversation. Brendan Eich, when we talk about Brave quite a bit anyway.
+00:02:15
+I love using Brave more than any other browser, including Chrome. If you like. You can import bookmarks and extensions from Chrome, as I did the brave browsers free available on all platforms. It's actively used by over twenty million people speedway's. It just feels more responsive and snappier than other browsers. So I can tell there's a lot of great engineering behind it. It has a lot of privacy related features that Chrome doesn't have. Like it includes options such as private window tours for those seeking advanced privacy and safety.
+00:02:49
+Get it at brave that can flex and it may become your favorite browser, too. That's brave Dotcom Lex. This episode is sponsored by LYNARD Linux Virtual Machines. It's an awesome computer infrastructure that lets you develop, deploy and scale the applications you build faster and easier. This is both for small personal projects and huge systems. I personally recommend you read there.
+00:03:16
+Why choose LYNARD over AWG article to see why you might want to go with them. At least for me it was a clarifying set of comparisons. Lower cost is a big reason, but more important to me is just the simplicity. And also a part of the great experience is just the high quality of customer service with real humans 24/7, 365 days a year and just a breath of fresh air for me. Lynard has data centers around the world with the same simple and consistent pricing, regardless of location.
+00:03:49
+If it runs on Linux and runs on the node, I like that line. Visit Lynda.com, slice legs and click on Create Free Account Button to get started with one hundred dollars and free credit. That's Lynda.com neglects. These guys are awesome. Trimmel. This show is also sponsored by forcing Mattick, the maker of delicious mushroom coffee and plant based protein. I enjoy both. The coffee has lion's mane, mushroom for productivity and Chagga mushroom for immune system support.
+00:04:22
+The plant based protein has immune support as well and tastes delicious. By the way, the coffee doesn't taste like mushroom. It's actually a really flavorful.
+00:04:33
+I don't know what's a better word to use. I'm terrible with adjectives that describe coffee, wine, beer and whiskey. I'm definitely not a coffee snob. I just know it taste good. And coffee is pretty much deeply ingrained in my psyche at this point. There is no escape. Ladies and gentlemen, of all the addictions you can have, coffee is one of the good ones. They give you up to 50 percent off. And money back guarantee, and now on top of that, we've worked out an exclusive additional 10 percent of all cell products, if you go to for stigmatic dot slash leks, this, I think is Valentine's Day slash week sale, I guess, as it ends on February twenty third.
+00:05:20
+So hurry up, go to four stigmatic dot com slash leks. This show is also sponsored by Rêve and rather EHI, which is by many metrics the best speech to text I engine in the world. Rêve in general is a company that does captioning and transcription of audio by humans and by I. I've been using their service for a couple of years and I'm planning to use Rêve to add more captions and transcripts to some of the previous and future episodes of this podcast.
+00:05:52
+I'm sorry, I've been really lazy on that. There's more transcripts, there's a lot more transcripts coming. I apologize for the delays. OK, they've processed over 16 billion minutes of audio and video to date. Reverify is the API part of Rêve that allows you to use speech to text programmatically as a service. You can check out how well Rezaei performs in a seven day free trial at Rev II. Slash Leks. That's an awesome YORO. That's Rev Slash likes to tap into the world's most accurate CJI.
+00:06:28
+And now here's my conversation with Jason Calacanis. I have a million things to talk to you about, but we do happen to be living through what I would think of as a historic event in terms of its impact, in terms of like almost philosophically thinking about the role of people and how they can fight power with this whole Wall Street buzz and GameStop situation. I was wondering, you've covered in your amazing online podcasts. You guys have been having fascinating battles over this whole situation.
+00:07:23
+I was wondering if you could tell maybe from your perspective as it's unrolling the saga of Wall Street best and GameStop, what are some interesting insights that you have about this whole set of events?
+00:07:37
+In full disclosure, I was an angel investor in Robinhood before they launched.
+00:07:41
+And when I met the founder, Vlad, and his partner, you know, they pitched me at a bar not too far from where we are right now in Palo Alto called Antonios Nut House.
+00:07:51
+And my friend Dale, it's a really good story. My friend of Deyo had asked me to speak at his Founder's Institute, which is kind of like an accelerator for people who are thinking about starting a company. And so I gave a talk and then he said, hey, let's go to Antonia's nut house and we'll meet Elon for a drink. And so Elon met us for a drink there.
+00:08:10
+And it's the divest of dive bars, like you'll take a beer or the image of all of this.
+00:08:16
+You know, Elon on the floor, every bar. Yeah. I mean, it is the worst bar in the peninsula, like just garbage on the floor and like cheap beer and warm beer. And, like, you pick up your Pinecrest lipstick on it.
+00:08:31
+It's brutal, classy. Not your lipstick. You understand somebody else's lipstick. Yes.
+00:08:36
+And so we're sitting there and Vlad walks out with his partner and he says here, Jason Calacanis. And I said, tell me about your startup. He said, How do you know I have a startup? I said, You recognize me? And I mean, that's the only way.
+00:08:51
+And, of course, is that Elon Musk? I said, Yes, Elon, come say hi. And he came over, said hi. I said, tell me what you do. He said, Well, I'm a quant. And I said, What's that?
+00:08:58
+And he said, quantitative analysis. And I was like, Oh, yeah, I know about that. That's like you guys make algorithms and then try to beat the market. Right? It's like I was like, so you going to pitch me out of startup? And you're going to sell your algorithm to other people, and if it was so good, why wouldn't you just use it yourself and print money? He's like, yeah, I don't know.
+00:09:15
+That's not our business, our businesses. We're going to create an app to get millennials to trade stocks. I said, hmm, you do realize there's no retail investors anymore, like the dotcom crash.
+00:09:25
+Plus the 2008 financial crisis eliminated any individual's belief in participating in the stock market.
+00:09:32
+And he said that's the opportunity. I said, OK, I like it. Tell me more. He said, well, we're going to get these millennials to trade.
+00:09:37
+I said the same ones who live in their mom's basements and take Uber and Lyft and are on their party have no money, got screwed and went 250 K into debt for school and now can't get a job.
+00:09:49
+Those people and he's like, yeah, I'm like, OK, they have no interest in their future, but they're going to trade stocks. He said, yeah, that's the opportunity.
+00:09:57
+Like how how are you going to make money? And he said, well, that's the best part. It's going to be free. And I said, so your idea is to get a group of people who have no interest in saving for their future to trade in your business model is free. And he said, yes, I said amen, because in almost all cases, the crazy, outlandish ideas that nobody believes in are the ones that have the greatest returns.
+00:10:18
+I mean, Uber, I introduced to about 25 investors and three of us said yes. So, you know, a full 12 percent of the community who saw that deal decided to do it.
+00:10:28
+So your sense about this idea being good had to do with the fact that this guy was just crazy and ambitious and bold thinking, or was it that there is something here in allowing a much larger magnitude of people to be able to be investors?
+00:10:43
+Yeah, the way to do really well as an angel investor or just in technology or in life is to not say what could go wrong, but to say what could go right.
+00:10:53
+And then to just imagine for a moment if it does work, what would the world look like? And so when Elon was investing in Tesla and some other guys were running it and he was trying to save the company, you know, it wasn't is this going to work?
+00:11:08
+It was almost positively not going to work.
+00:11:12
+It was. And he knew that. But if it does work, what does the world look like? And so that's really what you're looking for, is not the chances of success. But if it does succeed, does succeed, what would that look like? And you that's what the world needs more people doing.
+00:11:29
+And so when you looked at Robin Hood, it was like, well, if he does succeed, what would the world look like? And now we've seen what it looks like.
+00:11:35
+You have a generation who are so financially sophisticated that they know how to do puts and calls and shorts and research at a level that dominated the hedge fund industry.
+00:11:49
+So let's pause for a second. These traders sitting there on a sub Reddit in a discourse server are able to do analysis and research and then act in unison to say we're going to beat in the Robinhood sense, you know, this group of sophisticated insiders who have more access and more access to capital. But we will figure out how to solve this problem.
+00:12:11
+And, you know, things most things don't work. It's like the Wikipedia, like there's no way, no way the Wikipedia would ever work.
+00:12:19
+Right. Except it did. Yeah, right. Like, you're you're like, how is this ever going to work? You're not paying anybody, but it's both the largest corpus of an encyclopedia ever. So I think Robin Hood actually succeeded. And then what we saw was. This system and a lot of the systems in our society, whether it's the political system, the Constitution of the United States, education, higher education, which you're involved in, and then even the financial system, we have not stress tested and stress tested it and we don't actually know all the edge cases and how it works.
+00:12:51
+So Trump was able to just really put this crazy stress test like it is the democracy going to hold?
+00:12:59
+Are we going to break this two or three, you know, two hundred, some one year old experiment? And then we looked at the financial markets and it turns out there were more people shorting the stock than stocks were and shares were available. I don't know how that's possible.
+00:13:12
+And then I'm trying to uncover where can I see a list of people who've shorted the stock? And it's like you can't.
+00:13:17
+But we can tell you sort of how many every two weeks or maybe twice a week we can create a report. Maybe we know.
+00:13:23
+I was surprised that nobody knows the list of people who shorted and you guys are trying to figure that out. Yeah, there's no transparency on a lot of these systems.
+00:13:30
+And if you call to try to short a stock, like, it's almost like they'll tell you on the phone, like, let me see. I think I might know a guy who has shares to loan out. So it's like, am I calling to, like, try to find like a 73 Mustang gron day and, you know, gold, you know, you're going to call around. It's like, shouldn't this be like on a ledger somewhere and be completely transparent?
+00:13:49
+So now we're seeing those things and I think the investigations will make it super clear. But of course, in a vacuum, without information, there are so many investors in these startups that conflicts can start to appear.
+00:14:01
+And then you know how it is with people and conspiracy theories. The mind starts to wander. Right. And so in some cases, there is actually a conspiracy. And then in other cases, people's mind will fill in that there's some grand conspiracy. Or I can tell you, Robin Hood's only goal is to get more people to trade stocks and to democratize it even more. And they apparently were on the brink of, you know, seizing as an as an entity if they didn't get more money to cover all these trades.
+00:14:28
+I mean, they were on the brink and they raised three and a half billion dollars or something like that in a week.
+00:14:33
+Yes. In some sense, Robinhood enabled this very like the magic of this distributed system of Wall Street. That's right. He said Wikipedia, which is another which is probably one of my favorite websites and one of my favorite examples of like a distributed system somehow coming together in a way, just like you said at that crappy bar, you I would have guessed it would never work, but if it does work, changes everything and did and Robert in that same way, probably enabled or was one of the major enablers of Wall Street bets of giving power, like empowering young kids to learn about how this whole messy financial system works and take on the big elite centralized players.
+00:15:18
+Yes, and it's very easy when these companies get big. One thing that's changed is the footprint of these startups and the velocity at which they grow. So something like Airbnb is another perfect example of something that should really not work in practice.
+00:15:33
+But it does like I'm going to rent my couch or my extra room to somebody like a serial killer, or I'm going to stay in somebody's house like a serial killer's house.
+00:15:42
+And, you know, it's like it really sounds scary, but it actually works and it has not destroyed the hotel business. It has added.
+00:15:53
+So the best startups induce a market to exist. If you look at, you know, Uber or Airbnb, people replace their cars.
+00:16:02
+And Uber was not competing ultimately with taxis. They were competing with car ownership, public transportation, walking or just not going out. And then you look at Airbnb, a lot of people who stay in an Airbnb would not be taking a trip to Kyoto if not for the fact that they could get a 75 dollar beautiful room with great reviews in Kyoto for three weeks. It inspires people and it manifests the market because the product is so transcendent. Right. And I think that's one of the things that Robin Hood did.
+00:16:34
+You can't learn how to do this options trading and puts and calls and all this sophistication stuff.
+00:16:39
+Unless you actually do it, it's just too hard to learn except in practice, just like poker. If you want to learn how to play poker or guitar or tennis or skiing, like you could talk about it, you can watch YouTube videos, but at a certain point you got to get on the mountain. At a certain point you got to put some chips in the pot and it's going to be painful. Like poker is going to be painful.
+00:16:57
+You're going to lose a lot of money. And that's why you should play the small tables first. And, you know, even in trading, like you look at people who are doing this crazy trading and GameStop, a company that's worth, you know, maybe a couple of billion dollars, but certainly not tens of billions of dollars.
+00:17:10
+Of course, the people who are throwing their money in last are going to lose it. I think everybody knew that.
+00:17:16
+And so it was a momentum play and they're betting against the hedge funds.
+00:17:20
+So I think it's good for people to learn and become financially literate and just always understand the concept of the risk of ruin. Yeah, the good news is for a young person, the risk of ruin might be like they lose 5000 dollars.
+00:17:32
+Something, and then they have to build their stock back up, but that's really the the only thing I am concerned about is there are people who will play poker or blackjack or sports betting or whatever it is, and lose control, just like there might be people who try alcohol and lose control.
+00:17:47
+But we can't build a system based upon limiting, you know, the average person's behavior based upon somebody who can't control, you know, their ability to drink, you know, two glasses of wine instead of 20.
+00:17:58
+How does this whole thing and probably in tears for who who's crying is everybody who's crying when.
+00:18:07
+So I think there were some of the hedge funds that were crying initially that maybe some of the Wall Street bets, people who bought last would be crying. And then eventually there's probably another set of hedge funds or even the Wall Street bets mob. And that army, some of them might have broke ranks and then shorted the stock. So nobody knows. So everybody has to be aware of what's happening in the game. So if Wall Street said, hey, let's squeeze these hedge funds because they have too much short interest, let's all buy the stock, then some of the money said, OK, you know, I sat through two or three hundred dollars, maybe I'll join the short movement now that they've covered and they could have shorted there and been like double agents.
+00:18:44
+So people have to understand, like, this stuff is gnarly and it's it's a free for all. I mean, it is a literal free for all.
+00:18:50
+There's a kind of morality, like a big statement that Wall Street bets made in terms of like the elites can't just push us around, they can't bully around. But at the same time, you know, they're also interested in making money. Right. Is what's your sense? You said that some of the people on Wall Street might have broken off and shorted the stock. Are they more interested? There is an emergent like morality that emerged and said, like, we're not going to put up with the centralized elites, but is that going to continue?
+00:19:23
+Are they going to fight the power structures that are bad for society or are they going to now like I mean, are they ultimately going to introduce more chaos that's going to damage the economy and damage the world or they're going to continue being the good guys and fighting the the evils that manipulate the market?
+00:19:42
+What's your sense? You know, it it really feels like the Dark Knight series comes where, like, some people just want to see the world burn. Yeah, I think there is a contingent of people who just literally want to see chaos, like, you know, that contingent on some of these, you know, forums who just want to create chaos. Right.
+00:19:59
+So there's certainly that chaos contingent. But I think overall, what the arc will show is a group of people getting massively educated. You see it in crypto as well. There was like a three year period where all of these failed entrepreneurs who I knew who couldn't build companies were then coming back to me after their companies had failed or after they gave up or couldn't clear market raising money with the venture capital community.
+00:20:23
+And they were doing ICOS.
+00:20:25
+And I was like, I met you before, right? And I'm like, yeah, yeah, no, I'm doing an IPO now.
+00:20:30
+I'm like, OK, where is your company? And they're like, here's a white paper. And I was like, this white paper with spelling errors in it that says you're going to destroy Airbnb because everybody's apartments are going to be on immutable ledger. Yeah, like, wouldn't that be better in a regular database that was private and not public? Like, why does it need to be an immutable ledgers?
+00:20:49
+It can't change. I'm like. Not changing the database is a feature that does not seem like a good feature, and they couldn't explain it there, like, well, just people are interested in Nassios and without Icko mania. And what it showed was there's a global appetite for risk.
+00:21:02
+People want to try new things. This is one of the great things about the human spirit is one of the great things about capitalism and one of the things that concerns me most about where our society is, the sort of socialism, communism, you know, entrepreneurship is bad, technology is bad, and polarization of wealth. And, you know, people getting rich is a bad thing. When I grew up, I'm 50 now, but when I was a Gen Xers growing up, we kind of maybe too much idolized Bill Gates and people who are doing interesting things in the world and without capitalism was a force for good.
+00:21:34
+I still believe capitalism is a force for good, because when a group of people builds a product or service that changes the world and it and it gets globally distributed, whether it's Tesla or SpaceX or Google or Airbnb or Uber or Robin Hood, you know, everybody gets to benefit from that product or service having to compete.
+00:21:54
+And if you look at the places where there's no competition, like public education or less, you know, you know, you know, established, you know, colleges and stuff like that, less competition for accreditation degrees like things tend to get a little weird, don't they? Yeah. And people tend to be protected. And that's not good. You need you need competition.
+00:22:14
+Does it mean that, you know, people shouldn't have global health care? It doesn't mean that, you know, we shouldn't have a safety net. But we need to keep capitalism vibrant, especially because China has now co-opted capitalism and created their own version of capitalism, which is communism with capitalism. It's like this weird operating system, like we still want to keep communism so we can take any of your gains at any time. Yes, but we'd like you to be entrepreneurial.
+00:22:37
+And then you have somebody like, you know you know, the founder of Alibaba, Jack Ma, who disappears for a couple of weeks.
+00:22:45
+Who's that exactly? Who's Jack Ma like? He kind of disappears for a couple of weeks. Then he comes back and he's really sorry about the things he said and then he disappears again. And like, you know, we have to be very careful if China wins capitalism. Yeah. This is going to be an existential threat for humanity. Yeah, the Chinese are no joke. I mean, they're seriously focused and they are picking the winners.
+00:23:12
+It's a very weird system because it is in fact, I don't know what you call it, like communism. Capitalism is such overloaded terms, but they do encourage entrepreneurship, but they and they do a good job of it.
+00:23:25
+Oh, yes. But then they're like they're like the surveillance thing and they're controlling things in a way. Yeah.
+00:23:31
+It's weird because it seems to work really well for them in the short term.
+00:23:37
+Yes. It's definitely got short term benefits. So the question is like what what how that gets distorted and then becomes worse. What's worse, which you potentially might be. And I think on, you know. The entrepreneurial spirit, which you have a party that's all centered around the entrepreneurial spirit it is, is one of the magical things that makes this country great. I don't know if money is deeply tied into that.
+00:24:02
+I do get bothered by people, you know, treating the word billionaire as if it's a bad word. Yeah, but in general.
+00:24:11
+Like all the hard things, all the difficult things were going through in this country, it seems like the way out is going to be making the entrepreneur the hero of society, of like letting that young kid with the big dream and the guts to take the big risks and build something totally new, make given them a chance and whatever that involves. I don't think it's about taxes. I don't think it's about like regulation, all that stuff. It's about us and just public discourse saying that that kid, that guy, that girl, they're bad asses, like encourage them to do it.
+00:24:48
+We have to have people buy in to the fact that they have that opportunity.
+00:24:53
+And I think one of the problems in society is there's a group of people who actually don't believe that they can succeed or they don't believe even more perniciously that other people can.
+00:25:03
+And that's the group of people that I think are highly vocal, but a small group of people, which are generally people of incredible privilege, rich parents, white city dwellers, liberals, they kind of look and say poor people cannot change it a lot. And they're they're battling in their minds to protect poor people.
+00:25:23
+And but they have this very weird patriarchal kind of approach to it, which is they think that they're not capable of changing their lot in life.
+00:25:30
+And they're like, it's not possible.
+00:25:32
+And then once in a while, I'll tweet something where I say, you know, it's really incredible that every piece of knowledge you could possibly want is now available for free on YouTube and every course from MIT and Harvard and Stanford is available on ATAX or Coursera.
+00:25:46
+And all that information is there freely available.
+00:25:49
+And you could take the lectures. This is amazing. And then people will be like, yeah, but people don't have access to it like they do. It's free. Here's the link. And they're like, yeah, but they don't have Internet. And I'm like, here's the chart of Internet penetration in America. Like and they're like, well, poor people don't have Internet.
+00:26:05
+And I'm like, really find me any downtrodden person without a smartphone with a high speed connection that capitalism provided for twelve dollars a month or fifteen dollars a month. It's very hard to find that.
+00:26:18
+And we have it so well in this country and there's so much opportunity.
+00:26:24
+But people don't believe it.
+00:26:26
+And that's actually one of the problems. The average American still watches four or five hours of television a day.
+00:26:31
+And often I meet people in there like I need a technical co-founder and I, you know, but all I need is a million dollars. And I'm like, OK, well, what is your scale? And they don't have a skill.
+00:26:39
+And I'm like, Well, are you a designer? No. Are your product manager know? Are you a developer? Know.
+00:26:45
+Are your sales executive? No. What are you like? Well, I have an idea.
+00:26:48
+Well, as my friend Sam Harris, I think your friend as well says, like, everybody has like a million ideas an hour.
+00:26:55
+Like you don't really get credit for those even when you're asleep. Your ideas spewing ideas like zero credit for your ideas.
+00:27:02
+It's all about execution and believe that you yourself can be the core of that execution. You yourself can build the thing. And every no matter what your circumstances are, I mean, we could talk about like structural racism and all those kinds of things that are very much down. But from the individual perspective, when you just like a coaching or giving advice to an individual, you can literally change the world. I mean, Wall Street bets as an indication of that in the financial space that you yourself can have, can change the world.
+00:27:28
+That's why this country is amazing.
+00:27:30
+No, the best country in the world. Right?
+00:27:32
+I mean, it's still is amazing, the opportunity provided to people, all this educational experiences online and the ability what I tell young people who are looking for advice, I say, you know, you're the skill you need to refine is the ability to learn your skills, like if you become good at learning a new skill.
+00:27:49
+And Tim Ferriss, a friend of mine, has really pioneered this, like he can get to 60 or 70 percent of the knowledge in a skill in some incredibly short period time.
+00:28:00
+And I'm not saying he's going to become a virtuoso drummer or a great basketball player, but Tim and I were on vacation together in like a group vacation in Italy and there was a basketball court and I said, let's go, let's go shoot some hoops I never shot before.
+00:28:13
+And I was like, OK, come on, I'll teach you. And Tim is fabulously uncoordinated.
+00:28:18
+People don't know. This is like he try to dribble a basketball and do a layup and it looked like he had a blindfold on.
+00:28:27
+I mean, you've never seen something less elegant than Tim Ferris doing a layup in basketball.
+00:28:32
+And then he watched me do it three or four times and I watched him study me.
+00:28:37
+And I've been playing basketball in Brooklyn since I was a kid.
+00:28:41
+I got a couple of moves and he was just taking notes and taking notes and taking notes. And by the end of a couple of hours of doing this, I could just watch him checking his form and figuring it out. Yeah, that's every skill in the world now. And what I tell people is like I'm like, have you did you watch Game of Thrones? And they're like, yeah, watch Breaking Bad. Like, yeah, I'm like, OK, that's about four hundred hours.
+00:29:02
+Yeah. How about you don't watch the next two and you put that 400 hours into learning how to be a graphic designer, a new person, a developer, whatever it is, and learn how to add skills?
+00:29:14
+And that's what I did my whole life.
+00:29:15
+I was a kid from Brooklyn, went to school at night, but I was very quick to get to maybe 50 percent of the knowledge base of graphic design or being a writer or being a sales executive, whatever it was, a developer even.
+00:29:27
+And I was just good enough to not have people be able to bullshit me like when I hired them. And that was a big unlock. When you know enough that people can't snow you, that's a really good one. And look at yourself like you figured out how to set up an entire podcast. People don't know this, but you don't have a team around you.
+00:29:43
+I have a team of like five or six people working on my podcast, which even knowing enough about to set us up, you would then be able to hire a team. Correct.
+00:29:51
+And you'll be able to call them on their bullshit if you're not doing a good job. And that's really important. And I don't know that much about this whole thing, but I know enough to be able to see who knows this stuff. And you're absolutely right. And the process of learning how to learn is is essential there, because I have I did martial arts, jujitsu and so on. And it's so funny to watch. I did take day to I was awesome.
+00:30:14
+It's funny that there's some people that do an activity for years because just sort of elaborate on something you were saying about ours. It's not always the amount of hours, it's the quality, the deliberate practice versus just doing some behavior.
+00:30:30
+I mean, literally, I've been playing chess and trying to get that going again for watching Queen's Gambit.
+00:30:34
+And I got Questacon and I realized I was just playing and I'm not getting better. And then I was like, oh, wait, there's a little analysis feature here in Starcom where will show you your blunders and mistakes.
+00:30:43
+And I'm like, oh, I'm spending no time reviewing my losses in chess and I just want to play the next game. I should really review these losses and figure out what mistakes I made. When I started doing that, I was like, oh, I'm getting better.
+00:30:55
+Some deliberate practice really well. And if you want to take it all the way, Magnus Carlsen shout out to the guy has an app. But there's a few other coaching apps where you like focus on the end game. You focused drilling on particular. It's you basically don't play the game at all.
+00:31:09
+You just focus on drilling that a different angle brings the opening game. Yeah.
+00:31:14
+And there's different kinds of puzzles.
+00:31:16
+You can really make it into a deliberate practice not to make this episode sponsored by Chess Dotcom, but they literally have puzzles. Yeah. So I was like, oh, and it's a hundred dollars a year for this product. I just thought to myself. This is capitalism, they don't need to charge you 100 dollars an hour for a lesson. They can charge you a hundred dollars and they've created the ability for you to play chess 24 hours a day against opponents who are perfectly matched against you based on your rating.
+00:31:42
+And they analyze every game and they have puzzles and they have tutorials and they've got everything else.
+00:31:46
+It's like just think about how much value is being provided to society because of capitalism and because competition.
+00:31:55
+If you want things to get better and you want to step up your game, just make it slightly competitive.
+00:32:00
+It is one of these things in human existence that is so powerful. I don't know if you see the Michael Jordan documentary, The Last Dance of like half of it.
+00:32:10
+And so, I mean, he's so competitive and petty, it's so inspiring that he cares about is just winning to the level of which he literally there's like this running meme. I took that personally and I took that person. Have you seen the images of him sitting, smoking a cigar, looking at like an iPad or a video clip? And it's like I took that personally. And you can make a supercute of every time he took something personally, he literally takes everything personally to give himself that competitive motivation to win.
+00:32:38
+That's capitalism. And when people are competing, man, look at what Elon did to the space of cars, like every day they were literally laughing at him in the first 10 years.
+00:32:51
+Electric cars. Ha ha. That company will go out of business. And now every single company is like, we're going fully electric by twenty, thirty five.
+00:32:59
+And he kicked their asses so brutally that they had no choice but then to step up their game. And that's what we want. Right.
+00:33:07
+And this virus in this pandemic, I think the the great thing that will come out of this horrible experience that we've all had psychologically death learning just so many bad things occur, the economy, people losing their jobs.
+00:33:21
+But we also got to see the human spirit with these MRN vaccines and just how if we took out some of the regulation and people were super motivated, we might actually be able to eliminate all pandemics from ever happening again.
+00:33:39
+And before that, Bill Gates is banging his fist.
+00:33:41
+And Jeff Skoll was doing the movie Contagion. I mean, for two decades, people have a Bagneris.
+00:33:46
+We have to be prepared for this. And I was like, yeah, whatever YOLO, it's not going to happen. And now it's happened. And people are like, we need to be able to destroy every, you know, pandemic and virus before it happens. And you listen, you know a lot more about science than I do, but these MRM RNA has been around for a while.
+00:34:04
+We've just never gotten aggressive about doing it.
+00:34:07
+And then you think about challenge trials.
+00:34:09
+I don't know if you've been following this, but they're doing challenge trials now in the UK this month where they're introducing covid into healthy young patients and then giving them the vaccine or, you know, and that is against all.
+00:34:22
+Yeah. Rules and regulations about, you know, do no harm.
+00:34:27
+But then you think about it, we kind of celebrate people jumping out of planes and we got that one guy, Alex Honnold is climbing up mountains without a rope and they give him a North Star, you know, back page ad and an in a, you know, an endorsement deal.
+00:34:41
+Yeah.
+00:34:42
+And we celebrate that. We celebrate people's surfing with sharks.
+00:34:45
+We celebrate people doing deep welding. We pay them extra to go 200 feet underground and weld stuff. And people do dangerous stuff all day long.
+00:34:55
+Astronauts. Yeah, but we won't soldiers, firefighters, but we won't let people get paid to do a challenge trial, yeah, we really risk averse in certain areas that are completely don't make any sense.
+00:35:08
+And this is where the world needs. We we could have said these thousand people, young people who we know are in all likelihood not going to have a bad outcome.
+00:35:17
+But there's a possibility. There's a possibility. But it's a very low and it's certainly lower than riding a motorcycle. It's lower than riding motorcycles.
+00:35:23
+People ride motorcycles everywhere. We have ads for motorcycles. We could have just said to those people, we'll give you a million dollars each to do this. OK, there's your billion dollars. We're printing trillions of dollars of money to deal with this. If we had just done a thousand people for a million dollars each to do a challenge trial in March, April, May, when they had the MRI and a vaccines ready, we could have deployed the vaccines in the summer.
+00:35:48
+We would have been done with this. We have been over by now.
+00:35:51
+So we get to challenge all of that thinking. I think that's what the great pause did. It's letting everybody challenge that thinking is why do we have that rule? OK, yeah. We don't want to have people like give up their organs for money, like we obviously understand.
+00:36:06
+But there's a reasonable discussion about, well, maybe there's a level of risk in a global pandemic. I mean, we fought the Nazis, right? We defeated the Nazis. That took a lot of deaths to do that. But we had to kill that evil. This is another evil which we must fight and it's going to result in. It's already resulting in thousands of people dying a day.
+00:36:25
+But we could have actually stopped it earlier if we just had a reasonable discussion. This by podcasting as I respect what you do.
+00:36:32
+And it's why intelligent people are so drawn to podcast, because you and I can expand on this and not cancel each other over this very suggestion when I make the suggestion that our challenge is reasonable or not. If I were to do that on Twitter, they'd be like, Oh, Calacanis wants to give poor people Corona virus in order to save rich people. No, I didn't say that.
+00:36:53
+But we you and I could have a reasonable discussion about a challenge to something we should consider in a acute situation where millions of people are going to lose their lives.
+00:37:03
+So, you know, that's an example of capitalism competition working really well. There's one of the to me, sad thing to see about coronavirus is that, for example, testing at scale should have it seems obvious. I was a little clueless about it, but because I thought there's no way you can have like antigen tests at hundreds of millions, like order hundreds of millions of them and make them cheap. But actually, I realized recently that there have been available since about like May.
+00:37:32
+Yeah, you were able to in Korea and Finland all over the place, you could have done mass manufacture. So there there's a little bit of a failure of capitalism to step up. Yeah. And I don't know if you agree with this, but it seems that the blame is to be placed at the regulators and the the various institutions.
+00:37:52
+Crony capitalism, in all likelihood, is what stopped it here in America. I mean. I had friends who had imported them from other countries. The testing kits and you've probably been to parties where people had these kind of testing kits from other countries and we're sitting here and they're just approving them now, really in February month 11 of the pandemic in America, we're going to have testing online.
+00:38:13
+Really.
+00:38:14
+I mean, even if these tests were 80 percent effective and they're 95 percent effective mass producing them, we should have sent them.
+00:38:22
+You know, in every postal, anybody with the post office box should have, you know, with the mailing address, should have had ten of them put in their mailing address just for free from the government. And then everybody would be testing and we would have contained it. We don't have a test and trace here in the United States while the countries that are on the other side of covid did it by having testing, tracing and closing their borders and masks.
+00:38:45
+That's the combination that works.
+00:38:47
+The problem with the coronavirus is while there's a lot of institutions did not behave their best, it's also the case that there's a lot of uncertainty. So I tend to give a little bit of a pass to everybody involved for the uncertainty.
+00:39:01
+We were all I give them that until June. I wonder how history will remember this whole period.
+00:39:07
+I'd love to ask you because you were an early investor in Rabin and you're sort of you're in a very nice place of being a huge supporter of the sort of Wall Street bets, kind of distributed power of the people.
+00:39:23
+And at the same time, because of you being an investor, like intellectually giving a chance to Robinhood in this kind of chaotic time of conversations to think about like, well, what did they do right? What did they do wrong? Yeah. So you have a kind of a balanced view on the whole thing, which is really nice is that we've talked about what Robin Hood did.
+00:39:45
+Right. You think can you sort of steal, man, your mother's argument of what Robin Hood did wrong in the last few days?
+00:39:57
+Yeah, I mean, their communication is always the number one issue with these startups. Right. And if you you have to get ahead of any problem and you have to put all the bad news out immediately. And in the case of Robin Hood, it seems based on what you know, it's been in the papers. And what Robin Hood said publicly is that they had this kind of liquidity crisis right where they were being because of these exchanges, telling them you have to put up this amount of money in collateral and then being pinned that no one in the App Store, there were so many people trying to buy five shares of the stock, five shares of this meem stock, that it kind of broke their system.
+00:40:31
+And then the people who clear the trades for them, they said you've got to put up a billion dollars, two billion or three billion. So you can't do that overnight.
+00:40:37
+And I think that they were an uncomfortable situation of like going on TV and saying we have a liquidity crisis like that could be like a run on the bank.
+00:40:47
+Everybody then logs in at the same time to Robin Hood and tries to sell every share they own because they're afraid that the whole thing's going to collapse. Right.
+00:40:52
+So I think there was this kind of like Black Swan event and they probably didn't communicate it all that well at the center of that.
+00:41:00
+This is really interesting. Maybe you can comment on the nature of communication. Vlad, the CEO. Yeah. The guy you met at the bar, I think at the center of the communication. Right. Yeah. So Elon is an example of a guy who also is at the center of the communication for his particular set of companies. And that, you know, on Twitter seems to be a really powerful way to communicate. And there is something this is me saying there was something about Vlad that sounded like he's hiding stuff that as opposed to Elon.
+00:41:32
+It doesn't sound like he's hiding stuff. It could be the nature, the the beat, the timing of the conversation. Same thing with Mark Zuckerberg. Mark Zuckerberg for some reason often sounds like he's hiding something. Yeah. And then there's like Jack Dorsey is much less so. Yeah. And I don't know what that is about the CEOs that makes you trust them.
+00:41:52
+And that might be the point in time, like in terms of escape velocity, you know, there might be nondisclosures in place that we're not aware of where they're not allowed to talk about certain relationships.
+00:42:05
+I see. And that results in and case and that results in you being like acting weird or nervous and or nervous.
+00:42:14
+It could just be the person is nervous, you know. So it's really hard to be building one of these companies and you're at scale and, you know, oh, my lord, the entire thing is coming apart.
+00:42:24
+And you're the most hated person for that day. You know how the rage cycle works and the media is just so crazy when they get their hooks into something.
+00:42:32
+I saw it happen with Uber. We saw it happen with Facebook and even Tesla. You know, there were times when people did stupid things with autopilot and it's like, OK, somebody's watching a movie and sleeping in their car or leaving the driver's seat against all the rules of autopilot. And somehow Tesla is responsible for that. It's like we have people who stand on top of their motorcycles and drive down the road on a motorcycle. And we don't blame Yamaha for Harley Davidson for some.
+00:42:57
+It's standing on the seat of their motorcycle on a highway going 60 miles an hour, we should say that person's an idiot, but when new technology comes out, we blame the technology, not the person operating it. Yeah, and if you are going to operate, we basically vilify and demonize.
+00:43:13
+And I think that that is part of it. Like when the person that I remember Airbnb, we always thought, what if somebody trashes your apartment? And then sure enough, a bunch of method's rented this poor woman apartment. She left all of her stuff in it, and then a bunch of meatheads had a drug party, destroyed her apartment, ripped up our photos and went crazy. And we knew that day would happen. But nobody remembers it now.
+00:43:33
+But it was the number one story on every news channel, because that's an exciting story.
+00:43:39
+And I just thought to myself, I wonder if there are any parties in hotel rooms where the hotel room is being trashed and people are doing drugs and and crazy things like, yes, that's basically every hotel in Los Angeles right now is being destroyed by some rock band that's throwing a TV out the window like we expected.
+00:43:56
+And, you know, a hotel, we just didn't expect it in somebody's house with Airbnb. And then Airbnb created rules around. You can't rent an Airbnb for a party and they learn. So I think there's a learning curve with these companies and they do get to scale at a level that is unprecedented. He used to take decades for a company to become an international phenomenon. Now it happens in two, three, four years. I mean, look at clubhouse.
+00:44:19
+This thing went from being, you know, a private beta six months ago to being the number one app in Germany and in Japan and here. But just like that boom. And it's because there's an ecosystem that has never existed. The App Store. Then there's payments online everywhere, and then everybody has a supercomputer in their pocket. When we think people got wrong about entrepreneurship, technology and business, you know, over the last couple of decades was just how big the market was and then how quickly you could, you know, achieve relevancy in these markets.
+00:44:56
+We thought the market was like the 60 million homes with broadband, and originally it was like maybe 10 or 20, then it became 60 million. Then I was like, OK, well, how many how many hours are you at your desktop computer? Well, like probably on our computers for five hours a day, 10 hours a day at work, three hours a day on our own. And then I was like, yeah, nobody's on their desktop computer.
+00:45:13
+Everybody's on their mobile phone and oh, by the way, they have it with them. So the people with mobile phones are now using this high speed device with an app store with their credit card in it. Yeah, in the early days of the Internet, people were scared to put their credit card on the Internet. That was considered a really dumb thing to do.
+00:45:27
+If put your credit card on the Internet, you're going to lose all your money. They're going to they're going to hack you, whatever. And now it's just amazing to me how quickly when a company hits, how quickly it can get to a million subscribers or ten million or a billion users.
+00:45:42
+Right. And there's all these networks like social networks that allow the spread of the virus spread of like a new start up, a new company, a new app.
+00:45:52
+I mean, to be announced was an idea, a podcast, a single thing. It's just a single meme would change the world. Speaking of clubhouse, and I just want to we're seeing so many interesting things. But there was a magical moment.
+00:46:04
+Vlad Neilan on clubhouse. I was wild.
+00:46:07
+Yes.
+00:46:07
+Is there do you have thoughts about that interaction which felt like so many aspects of this whole situation feels like a totally novel, surreal, like it's defining world era. It is like a billionaire.
+00:46:24
+The richest human on earth is interviewing the person at the center of one of the most interesting mass scale like power battles in finance ever.
+00:46:39
+Perhaps, by the way, seven movies have been sold in two weeks to think about how fast things are moving.
+00:46:46
+Alexa, this thing happens like people had the idea to short the stock six months ago. They start doing their research. They build an army, they execute the trade.
+00:46:56
+The system goes down. Robin Hood raises three and a half billion dollars in four days. Elon is interviewing them on clubhouse on Sunday after the Wednesday it happened. And now here we are. It's ten days later. Yeah. Doesn't it feel like it's been ten months? Yeah, it's been ten days.
+00:47:13
+It's been ten days. Ten days. There's a new president, all these things.
+00:47:17
+And everyone forgot like there was an insurrection, by the way, we all thought it was that revolution at the capital where a bunch of crazy people who have guns and body armor and then a bunch of them who are just you loing in cosplay.
+00:47:31
+Yeah.
+00:47:32
+Took over the capital or so in the other more dramatic thing to me, that was one month ago. That was one month. And the the president of the United States got banned from every major social network and which I think I'm still deeply troubled by.
+00:47:47
+Is Parler being removed from RWC? That changed the way I that changed a lot of things. As somebody who is an aspiring entrepreneur, that changed the way I see the world, that little maybe I'm being overdramatic, but no, you're not.
+00:48:02
+I think you're paranoid for a reason. You're paranoid for a very good reason, which is as big as these companies can become.
+00:48:09
+They are beholden to the mob. And if the mob says, hey, this person needs to be canceled, they're going to get canceled because you can't lose your entire audience, you can lose your whole customer base and you can lose all your employees.
+00:48:22
+I think what's interesting about your fear about Parler and AWG take him off is we went from being like a social network, which is, you know, the software layer. And then we went to like the infrastructure layer, you know, and they'll even go after, like CloudFlare, which is a CDN provider.
+00:48:38
+They're just like a plumbing, you know, it's like sort of like the telephone.
+00:48:42
+So we're basically holding everybody responsible and the whole chain of events here.
+00:48:46
+What that's going to do is, you know, I'm not a huge believer in crypto, but distributed computing where nobody and decentralized and distributed computing platforms and open standards. Podcasting is an open standard. The Web is an open standard. FTP is an open standard. But Twitter and Facebook are closed. And what's going to happen is we will see a group of individuals create peer to peer networks for social media where nobody can control it. And the same for cloud computing, where, you know, there's a there's a a crypto project where everybody will.
+00:49:22
+And I invested in a company that tried to do this and got sold and it didn't work out. But take your hard drive on your computer at home. You give, you know, a terabyte of your ten terabyte drive over to the cloud and then everybody else does their terabyte. And then all of a sudden you've got this virtual cloud and anybody can store stuff on it and it's all encrypted and then nobody can stop it. And that could be tweets.
+00:49:43
+It could be videos. And so this idea that, you know, YouTube will be able to tell people to kick people off because they're skeptics of, I don't know, the pandemic or the vaccine or they've, you know. They'll make things that are more censorship resistant. I think that will be the reaction to all of this. This is my question for you.
+00:50:01
+Going back to that crappy bar and people pitching you is, is there like with clubhouse, do you see competitors? Do you think it's possible that another perhaps more decentralized or another kind of social media will emerge that will take on Twitter and Facebook and might be able to replace them? If you look at the whole landscape, the clubhouse and everything else, you think some other company might emerge?
+00:50:27
+There will be 10 versions of clubhouse. We looked at social networking. We thought Friendster was it like Friendster was so good.
+00:50:33
+Nobody be able to compete with that. It was growing so quickly and that MySpace was a juggernaut and they hit 100 million in revenue and 100 million users. And it was like, well, that's game over.
+00:50:41
+And then Facebook and LinkedIn and Snapchat and FriendFeed and countless others, you know, so there's usually 20 people who will win in a category and 80 percent of the category will be on by the top two or three players.
+00:50:55
+But will those players change, do you think? What's your sense? Oh, yeah, for sure. I mean, if we if Facebook hadn't bought Instagram, it would be a company in decline right now. People would be shorting the stock. Right. Facebook peaked and then was sort of heading down an Instagram saved him and WhatsApp saved them. So, you know, that's another kind of weird moment in history that they were able to accumulate that much power and consolidate that much power.
+00:51:16
+Instagram should have never sold to them. They should have gone public. They had just raised money from Sequoia and they had raised fifty million dollars out, a 500 million dollar valuation, and they didn't need to sell. And that was a big mistake to sell. They should have kept going and it should have took on Facebook. And Instagram was a standalone company right now to be worth 500 million, do you think?
+00:51:34
+A billion, yeah. Do you think Facebook might buy club clubhouse has been.
+00:51:39
+They'll probably copy it. I mean, Zuckerberg has no moral compass or ethics or anything. I mean, he's a Marauder. I mean, he basically copied Snapchat seven times. Yeah. Like he did poke and he just kept trying and trying and trying is part of the reason why the WhatsApp founders and the Instagram founders left as they found Zuckerberg so distasteful in terms of his ability to copy.
+00:51:59
+What what do you think makes a great leader in that sense? Because, OK, so when I look at Zuckerberg. It's a great executer is a great, actually. I don't think he's a great leader. I was bullish on I was excited to buy Facebook in the very early days. I thought it was an exciting opportunity to connect people and stuff started going wrong certain kinds of ways. And again, maybe it's our human nature, but I attribute a lot of that to the leadership.
+00:52:25
+Absolutely. I mean, the guy started it because he was unable to ask girls if they were single and on a date.
+00:52:31
+I mean, there was this to be a good motivator. That could be a good. I mean I mean, the motivation of 18, 19 year old men was. Yeah, pretty clear. He was just trying to he had no game. He had no game. And he needed to know who is single so he could, you know, at least have a shot at getting a little creepy. Yeah. You know, he I think was so obsessed with engagement and winning.
+00:52:54
+And he's he's kind of like one of those friends you have was just really good at playing a video game, but maybe doesn't see the bigger picture in life.
+00:53:00
+And I mean, there's a reason why everybody who worked for him hates them and doesn't talk to him anymore and then actively derides him like so many of the people who sold WhatsApp to him, then backed other projects like Telegram and said horrible things about him on the way out.
+00:53:15
+These are the people he made billionaires and they really don't like him. So I think there is something that he does that does not breed loyalty, but he's very successful in his focus, which is growth is all that matters.
+00:53:27
+He's a marauder. And taking friction out of products and processes is the playbook of Silicon Valley for the last decade or two.
+00:53:34
+So whatever the friction is true, what you're saying, or an outsider speaker so fast that I almost forget that you're jaw dropping bombs, but so removing that, removing friction and you're saying Facebook is exceptionally good and he was the best at it.
+00:53:47
+I mean, at Uber, they were like, we're going to take our tipping. We're going to take out the need for you to take out your credit card and do payment. It's just going to be in your wallet. You got picked up, you leave.
+00:53:58
+That's it. And I was like, we should have tipping. And they're like, it had to step. And we're trying to have no steps. You put your address in, you click the button and you do nothing else.
+00:54:08
+And so we've been obsessed here in Silicon Valley is how many clicks can we take out of the process?
+00:54:12
+I guess Amazon is incredible at that as well. Absolutely.
+00:54:15
+One click was the start of it. And then you look at clubhouse as an example. You open clubhouse and you see rooms, you click on it, you're listening. So in one click, you're listening. And then in one click, if you raise your hand, you get invited and you say, yes, you're speaking.
+00:54:28
+So it's two clicks to speak, one click to listen. Yeah. I mean, the only way they could make that app work even faster is if you opened it up and your microphone was turned on and you, which is.
+00:54:39
+Yeah. The kind of scary. But that is the next evolution. And what happens when you go that fast is you get unintended consequences. And so this is why Facebook has had more fines than any company in the history of Silicon Valley, just giant fines for doing stuff like this. And one of them was, I don't know if you remember when they created groups or if you have a group for your podcast, but, you know, you can just add people to a group without their permission.
+00:55:01
+And there was this famous case when they first came out with it, somebody created a NAMBLA fake group, National Manlove Boy Association or whatever, like Pedophilia Association, and they added Zuckerberg, Mike Arrington, myself, and like 20 other famous people in Silicon Valley. And I was like, and then somebody takes a screenshot of it in there, like, you're NAMBLA. And I'm like, no Facebook.
+00:55:24
+And then Zuckerberg is responsible as well. If your friends put you in that NAMBLA group, you should get new friends. And it was like you got put in there, too.
+00:55:30
+Yeah.
+00:55:31
+And then the sad part about it was there were a group of young men who were gay and who were in college and there was a gay choir in their college and the person who was coordinating their Facebook group added them.
+00:55:43
+Yeah. So Zuckerberg, it wasn't enough for Zuckerberg to make it so anybody could add anybody to any group because it will grow faster, let alone you have to confirm you want to be added to the group.
+00:55:53
+What it also did was posted it on their walls to increase engagement. And what they inadvertently did was they outed a bunch of 18, 19 year olds in college to their families. Because they joined the gay men's choir at some college and this is the kind of way, you know, this is where Silicon Valley needs to check itself and do better is you have to really think, well, there is my incentive to grow faster and then there is what's right for society and for the individual.
+00:56:19
+You to think it through.
+00:56:21
+Think it through. It's sometimes very difficult. This is where a vision is required to anticipate the unintended consequences. It seems like Mark Zuckerberg is not very good at that.
+00:56:33
+You've talked to so many great leaders in this world, privately and publicly. What do you think makes a great leader of these tech companies? Is do you have an example like Elon to you, a great leader.
+00:56:48
+He's also controversial one, right? Yeah. He's a loving, controversial in the sense that there is. And I know a lot of people who worked with him for him, that there's also a love hate relationship.
+00:57:01
+The hate comes from the fact that they get pushed extremely hard. It's it's a very competitive environment, but it puts a positive one because it's a there's a vision that underlies similar to the Steve Jobs thing.
+00:57:15
+And it has to do with the back to our Michael Jordan discussion as well, that there seems to be this the demons involved in tension and just anxiety, all those kinds of things.
+00:57:28
+If you want to do great things, there will be some suffering and you know, there'll be some pain. And it's not easy if you want to change the world. And then some people have this expectation that it's going to be easy.
+00:57:41
+And what you'll typically find for any great leader who's trying to do something super ambitious, like if you want to be like if you're a rich guy and you start like a restaurant and you don't care about making money and people have made restaurants before, like you could be high fives and everybody could love you, whatever.
+00:57:57
+But if you want to change the world, you want to do something hard driving, there's going to be sacrifice involved.
+00:58:02
+And so the problem is people are looking at something that is an Olympic caliber sport or a Navy SEALs like effort.
+00:58:11
+In other words, an effort that requires massive sacrifice. We would not look at somebody who wins a gold medal like Michael Phelps and say, oh, my God, he had to get up at 4:00 a.m. every day and he had to swim and he had to do an ice bath.
+00:58:23
+Oh, my God. That poor guy, he suffered. He was tortured. He people were super mean to him. They put them in an ice bath. I was like, no, he wanted to be the greatest swimmer of all time. And he knew what the sacrifice entailed.
+00:58:34
+And then what happens in work, in business is that people conflate like, oh, well, I went to work to make a living to pay my bills versus Michael Phelps approach to getting gold medals or Michael Jordan or pick the person, Elon or Jeff Bezos.
+00:58:51
+And when you look at the reviews of like a place like Amazon, there was this incredible story in The New York Times where people were I don't know if you remember it, this is the worst place you could ever work Amazon.
+00:59:02
+And they we talked to two hundred people and they all told us they all described for us in The New York Times a culture of cutthroat ness and brutality that has never before been seen. And then you see all these people who work for Bezos for twenty four years from when they graduated with their MBAs until today, and they've never left the company.
+00:59:20
+And they are ride or die forever.
+00:59:24
+And what you're seeing there is there is a mismatch of people going to work in an extreme sport or an extreme endeavor who should not do that. There are people who should go out into the rice fields and pick rice. And then there's another group of people who are samurai and who wield a sword and who take on missions that are dangerous. Yeah, but if you're a rice picker and that's what you do and you feel safe, just, you know, getting a couple grains of rice, put them in a basket, cleaning it and then, you know, whatever, that that's valid work.
+00:59:58
+No big deal. I'm not deriding it. I'm sort of. But that is one group.
+01:00:02
+And then there's people who are samurai. And you can you cannot conflate the two. You cannot compare the two. And that's what is happening right now in business. Whenever you see these stories about this person at this company is like a tyrant and they're so horrible.
+01:00:16
+And they yelled at somebody like if you were in the field and you're taking the beach at Normandy and it's D-Day or, you know, you've got to take the hill, you've got to whack Osama bin Laden and you're the Navy SEALs and like a rudder, a rotor gets knocked off the back of the Blackhawk.
+01:00:32
+Like, this is serious shit. Like don't do it if you're not serious.
+01:00:35
+Yeah. And if you're not serious about changing the world, why would you go work for Basso's? Why would you go work for Elon Musk? Don't do it. Don't go work there.
+01:00:44
+This is this is just sit back and enjoy the beauty of it.
+01:00:49
+I mean, it's all of that that's music to my ears. But I'm not sure what to do with it because it is conflicting to a lot of the things I hear from the way you're supposed to kind of act in, I think. In order to do great things, you have to I always admired people that lose their shit a little bit because they're so passionate. Yeah. And and, you know, you apologize and all those kinds of things.
+01:01:15
+But like, there's a tension, there's a drama to the creative process when especially in the early start up, you know, you're not this is not like the work life balance idea doesn't even apply to work. Life balance is ridiculous.
+01:01:29
+It's a ridiculous concept. Like the idea that there's like work life balance in a startup is ridiculous.
+01:01:35
+If you're looking for work life balance to not go to a startup or any kind of ambitious company, there is a series of places you can work in the world where you do not need to do anything more than what's put in front of you.
+01:01:49
+And you just put the round peg in the round hole and the square peg in the square hole pole.
+01:01:54
+And you go home and you get your leg, you know, you get your little, you know, bits grains of rice and you go hit them up and eat them. That's it. And then there's this other thing, which is the extreme pursuit of changing the world and sacrificing.
+01:02:09
+And we have a generation of people or multi generations of people who are soft.
+01:02:14
+They're just soft. I mean, what is the big struggle we've had to deal with in America in our lifetimes, like 9/11? And we didn't have the Vietnam War. And then we had this like weird Iraq wars and Middle East wars that were kind of like a small number of people when we sent drones.
+01:02:28
+Like we have not had to sacrifice Gen Xers. You know, maybe the talent of boomers experienced the Vietnam War, regrettably. But, you know, we've had a couple of generations now, three, I guess, that just haven't had to suffer. And so we're soft as Americans. We're soft.
+01:02:43
+And then you look at people in China and we're like, oh, my God, these poor Chinese people are living in these tiny, cramped apartments like they were living in, like essentially lean tos in northern China with no running water or like one spigot of ice cold water for the entire village.
+01:02:59
+Like they're thrilled to be joining the middle class, even if it's the bottom of the middle class. Right.
+01:03:05
+They've taken hundreds of millions of people in China and moved them into the middle class.
+01:03:09
+And we're like, oh, my God, these people are suffering. It's like, you know, they're up to four dollars an hour, three or four dollars an hour in the factories there. And they were just two decades ago at, you know, I don't know, was probably fifty cents an hour, something crazy like that.
+01:03:23
+And now they've improved the quality of life.
+01:03:25
+They're so much just like America did two hundred years ago or one hundred years ago. They've improved it so much in China that now they're getting outprice for factories from Vietnam, Sri Lanka, Pakistan, India, and people are moving and people in China are moving the factories out of China into other countries.
+01:03:43
+Yeah, because the Chinese are now outsourcing to Vietnam and other countries. So this is the way of the world. You know, people move up and they get a better lot in life for their families.
+01:03:52
+And just in America, we've gotten soft and is a generation. And how do people die in America now? Suicide, obesity.
+01:04:00
+Heart attacks, anxiety, I mean, we're suffering from things that if you told people a hundred years ago that the number of the top ways Americans would die would be overeating and suicide, they'd be like, what, you're literally killing yourself or eating yourself to death.
+01:04:16
+That's what's happening in America. And when everybody, not everybody, unless there's a large number of people who have become sort and softer, capitalism creates an environment where there is people that still step up amidst that with a dream and challenge that you mentioned, the human spirit just to rise above.
+01:04:34
+That is an example that Jeff example, countless, countless examples.
+01:04:38
+And and they push the limits of those of human beings that are willing to step up. And, you know, I, I you know, I think about sort of how to create a company that that amidst all of the softness. Yeah. Still creates a revolution. It's not it doesn't seem trivial. It seems like. How do you build a culture that's once healthy but also unhealthy in the way that it's all been pursuit is it's all top down.
+01:05:11
+Everybody just you asked earlier what leadership was it? I never answered the question.
+01:05:14
+I think, you know, what leaders do is they set the example, they set the bar.
+01:05:18
+And if you look at someone like Elon, you know, we're personal friends for 20 years and he is indefatigable. Like I mean, the guy has a stamina that is just phenomenal.
+01:05:29
+Like, he does not get tired. He works relentlessly and he sets that standard for the rest of the team.
+01:05:36
+And I think, you know, Bezos is very sharp and likes to debate stuff and is very you know, and jobs was just incredible at design and figuring out how to bridge that gaps where they just leaders set the standard, they set the standard.
+01:05:50
+And you know that your time is over as a leader when you can't set the standard and that's when you have to pass the baton. And Bezos did that. Brilliant. And Bezos now is saying, you know what, I'm 57.
+01:06:00
+I'm the richest guy on the planet, depending on the week.
+01:06:04
+And I would like to do some other challenges, but I don't want to grind it out at Amazon for another twenty five years.
+01:06:10
+I want to do other things. And so we pass the baton and that's the healthy thing to do in that regard. I do think there is a time period in which you can run that hot and that a certain point you have to then change, just like an athlete might go to be a coach. Right. And or a commentator. And so being an entrepreneur is brutal.
+01:06:30
+It's seven days a week, 12 hours a day. Anybody who says anything differently is kidding themselves. You're going to have to sacrifice if you in this competition and America has to fight.
+01:06:40
+If America does not win capitalism and China does, it is literally the end of the human species. It's over for humanity right now.
+01:06:51
+Everything has been going really well in terms of the number of people living in poverty is plummeting a life.
+01:06:58
+You know, life spans have been rising.
+01:06:59
+Science is booming. The economy is booming. All these things are incredible. The one thing that's kind of stagnant right now is the number of people living in democracy versus under authoritarian rule.
+01:07:10
+It's flat. So when you look at all Steve Pinker's charts and he's really excited, yeah, there's one you're going to see that's flat. And I think we peaked with 53 or 54 percent of people on the planet Earth being in a democracy.
+01:07:21
+And now it's going below 50. And it's because some of the democratic Western countries don't have the population growth of some of the communist and socialist countries and authoritarian countries. And we have to make sure that we're we win capitalism.
+01:07:36
+We must win economically.
+01:07:38
+That is the battlefield, the battlefield of science, technology and money and economy finance. That's the battlefield. China wins. Authoritarians win, and at any time, Xi Jinping can pull Jack Ma into a room and say it's time for you to be reeducated, or they can put three or four million people wiggers into prison camps and say, you know what, this religious thing that's counter to what is productive for us. Therefore, we're going to shave your heads and we're going to have you literally pick cotton in the fields.
+01:08:08
+They have wiggers with no sense of any kind of arc of history in the fields, picking cotton as slaves in what can only be described by every humanitarian organization as a concentration camp. And every Jewish person I know takes great offense when somebody uses the Holocaust as a metaphor, except in the case of the wiggers right now. And every Jewish person I've talked to has said to me, that is a Holocaust, that is millions of people going to genocide because of their religious beliefs.
+01:08:39
+And I'm an atheist. But if people want to believe a certain religion, fine. But, you know, China's approach is we need to win capitalism so bad, we need to win on the global stage so bad we can't have any of this religious stuff going on here that is a distraction from winning and beating America. And then in America, the people who are going to make us win are the entrepreneurs and the scientists and the technology and our education system and finance.
+01:09:02
+And we're vilifying those things. So it's pretty dark. It's dark.
+01:09:06
+But I still believe that the vilification is just in the space of Twitter, in the space of ideas. I think that's probably an entrepreneurs win out. In the end. They don't. I believe that.
+01:09:16
+And they'll believe we'll get there are some of them do actually in their darkest moments, I can tell you that they turn off their Twitter accounts and say, I've had to sit down with a number of entrepreneurs and say, turn off Twitter.
+01:09:27
+This is not healthy for you. This is not a healthy pursuit because I don't read the comment. If you do, it's like a full contact sport.
+01:09:33
+You should just take it as like professional wrestling or something, but stay focused on building companies and, you know, advancing the human species through science and technology.
+01:09:43
+I mean, as you're describing, you posted this week on startups for how many of us? 11 years. Almost twelve hundred and twelve hundred.
+01:09:52
+Yeah. So you talked to some of the great leaders in business in general. Is there a common. Thing that you see or really a relationship with your parents like is finally real mature. I will show me the trauma. Their dad was like, you're not good enough in the teenage years.
+01:10:13
+Is that true? Is there something? There is definitely something which hardship of at some point in the life?
+01:10:18
+I think so. I mean, and there's definitely something with immigrant parents that is a bit of a stereotype out here. But I've heard for many investors that's like there are where your parents immigrants and that they feed into you, that you have to succeed and you feel the need to succeed because they suffer to get you to this country. Like there is an archetype there that I hear when I started investing, I heard from a lot of people. It's like, yeah, you want to find those immigrant founders who are coming out of Stanford because they had to fight to get there and their parents had to fight.
+01:10:48
+Right.
+01:10:48
+So it's like two huge fights and there's so much at stake as opposed to somebody who's fifth generation and like had everything handed to them and they were legacy and got into schools for free.
+01:10:56
+But I think in general, the ability to get people to join you on that journey is so critical. So you have to be charismatic and it doesn't mean like you're an extrovert. There are introverts who are super charismatic and there are soft spoken people.
+01:11:12
+They don't have to be like super vivacious or rambunctious people.
+01:11:17
+They could be just quiet, assassins'. But you need to be able to get people to come on the journey with you. You have to be that storyteller and you have to have that passion and you have to transfer that enthusiasm to investors, the press, to customers, to all the stakeholders. And if you're enthusiastic about it and you're engaged, then it's easier for people to come on that journey. And that's why people really start to think about, well, what is the purpose of what I'm doing?
+01:11:40
+And it sounds corny. And I when I first heard that, I was like, it's kind of corny. But then I read this book by Afghani's named Rick something.
+01:11:48
+He wrote The Purpose Driven Church, and he had spoken at a TED or something, and everybody went crazy about it.
+01:11:54
+And he's like, a church should have one purpose, one single thing they do. And like his church, which was like one of these mega churches in San Diego, just wanted to do education for this specific country. And that's all they did.
+01:12:07
+And they just they benchmarked I think it's very important to have a purpose and a mission, not everything, but, you know, a specific purpose of some kind of joy that you want to put into the world.
+01:12:18
+You want to solve some kind of big, hard problem. And then everybody knows why you're coming to work every day. And then for the founder, when you dread going to work that day and you don't feel like solving that problem anymore, that's the that's the talent. And a lot of times I meet young founders. I'm like, why are you doing this?
+01:12:33
+And I'm like, well, I was looking for an idea.
+01:12:36
+And this is the one I came up with because I think I'll make a lot of money and it's like, you're going to quit, you're going to get to month nine or ten of this and you're going to run out of money or like your CTO is going to quit, that your CFO is going to quit and you lose your biggest customer and you're just going to say this is not worth it.
+01:12:52
+You know, and if, you know, using, you know, Bezos or, you know, L.A. examples that they just needed to see this the world change for very specific ways. And Steve Jobs, you know, they needed to see a change.
+01:13:07
+And it doesn't matter if they made money or they were losing or winning. They just went to work every day and they had to change it.
+01:13:13
+It's almost like they didn't have a choice, no choice. You know, that makes it sound like his torture, his whole journey.
+01:13:17
+But he can't help having been a witness to it. You know, just as friends for for that long, I have never seen an entrepreneur suffer more than him. And, you know, he's been public about that. Like, you do not want to be me.
+01:13:31
+He has suffered for those companies. He has suffered to get them where they are. It has not been easy.
+01:13:37
+Can you psychoanalyze Elon in that aspect? Like, is there is it just he can't help, but he must see the change that he hopes for in the world.
+01:13:47
+He's just incredibly hard working and he's very talented as well. I don't think people understand that. He actually is a really brilliant engineer.
+01:13:56
+At the end of the day, he actually knows what he's doing and he asked the right questions. I mean, people were kind of aghast that he was asking Vlad such good questions. And they're like, oh, my God, Elon is the best journalist on the planet. And I was like, that's why anybody who knows Elon knows he has great questions. I mean, I've been I used to have dinner in L.A. and my book agent also was Sam Harris's agent.
+01:14:19
+And Sam and I met through John Brockman and we became friends because we lived near each other.
+01:14:24
+And I was friends with Elon. And then I used to invite them to dinner in Brentwood because one lived in Bel Air, one lived in Santa Monica, and I lived in Brentwood. And we would go to the place proponent's Italian restaurant. And every Tuesday for years we would just the three of us, every other Tuesday or so, we'd have dinner and I'd sit there.
+01:14:41
+And Sam wanted to know about I and Ellen's talking about artificial intelligence because he's on the board of Deep Mind. And Elon wanted to know about atheism and meditation and all this other stuff that, you know, Sam was an expert on.
+01:14:53
+I had to sit there and like, just listen to these two guys talking and they have both piercing, intelligent. But should he go straight to the gut, like the questions that no engineer wants to hear is like just the basic stuff that you think, why the hell are you doing it this way? Yeah, when the obvious solution is, like, much easier or this or that, like, why haven't you tried to figure things out?
+01:15:18
+I mean, he's a problem solver. I mean, and that's another thing that I think the great entrepreneurs can look at, a problem with very fresh eyes, like almost consistently. And Bezos described that as day one thinking.
+01:15:30
+Right, like pretend this is day one every day. And then other people use the term first principles.
+01:15:36
+But it basically means like when you see a problem, pause for a second and really think through what is the best possible solution here, what are some alternative solutions and get from everybody, like how do we solve this problem? What people do? Sometimes they get in a rut where they just come to work and they just go through their email. They do whatever they did the day before.
+01:15:54
+They don't think, why are we doing this? And is there a better way to do it? Now, you can get so obsessive about that that you can overengineer stuff and you can never actually ship a product. So there have to be some pragmatism and some goals and some dates associated with that. But it is a very cool thing to really think.
+01:16:11
+Like, I wonder if we actually made the batteries ourselves, what that would look like, or I wonder if we could get to two day shipping, you know, or what did we do?
+01:16:20
+Same day shipping. Like, you need to have somebody who's willing to say, you know what, fuck it, let's get a crazy, audacious goal to day shipping of any product anywhere in the United States.
+01:16:30
+And once you throw the gauntlet down like that, now everybody knows the rolling in the right direction to day shipping Amazon Prime. And that's what people didn't realize about Amazon. The business wasn't the shipping of those products. It was getting you to sign up for Amazon Prime. Then they have, you know, hundreds of millions of people doing Amazon Prime for ten bucks a month. I think globally it's probably cheaper.
+01:16:49
+But that was the driver of that business, was all of those people because they would.
+01:16:54
+You're an Amazon Prime subscriber. Do you know how much you pay? No, exactly. It started at fifty dollars.
+01:17:00
+And I think they even had like 40, 50, 60 dollars was like the testing in the early days.
+01:17:04
+And now it's, I think one hundred forty nine point twelve thirteen dollars a month. If you pay for the year, I think it goes down to ten bucks a month, 120. And you're like, wow. And you're like, yeah. You're paying thirteen dollars a month for the privilege of shopping at Amazon.
+01:17:18
+Yeah. But you wouldn't you say it's the greatest thing in the world because anything I need, you know, if you've got a microphone or a cable goes bad or a camera goes bad, you get it here, you know, within a day or less.
+01:17:28
+Yeah, it's pretty amazing.
+01:17:30
+You've already been dropping bombs. Incredible advice on stops in general. Let me maybe go straight in and ask, is there any advice for somebody that wants to go big to build the big startup to help them succeed?
+01:17:45
+Yeah, it's very similar to the advice I give to investors, because now I. I teach angel investing because there's so many people want to invest.
+01:17:52
+And so I wrote a book on that angel and that I do a course called Angel University that I teach six times a year. And then I have a syndicate called the Syndicate Dotcom where I invest in companies. There's sixty five hundred people who are members of that, the largest syndicate in the world. In fact, the first day we ever did was Calm Dotcom, the meditation app.
+01:18:08
+We put three hundred seventy eight thousand dollars into it when it was a five million dollar product, if I believe our company. So we bought six or seven percent of the company is now worth two billion. So you can do the math on that. We still own five percent a year was a six years ago, so probably seven. Yeah, maybe twenty, fifteen, twenty fourteen.
+01:18:23
+And nobody else would invest in comp. Yeah. But Sam Harris was the reason I did because I asked Sam, tell me about meditation and he's explaining it to me and I said, what about this.
+01:18:33
+Like you have to have like a mantra. How does it work exactly. I know it is like well you know, you just go to UCLA and talk to Diana Winston and there's this whole project there and like UCLA does meditation. So, yeah, there's a mindful institute there, like teaching people to be to teach meditation and they're doing PTSD and I'm doing brain scans.
+01:18:49
+And I was like, oh, and then I talked to the UCLA people and they're like, it's really like we we taught Phil Jackson and Kobe Bryant and Shaquille O'Neal did.
+01:19:00
+You know, that's how they won their championships, they meditated and I was like, hmm, if UCLA is doing and Sam says is cool, well, fuck it, I'll put money into that.
+01:19:09
+And that's the second biggest investment in my career after Uber. And it will in all likelihood become the biggest. I mean, it's between Uber, Robin Hood and calm.
+01:19:18
+And long story short, when I'm teaching people the angel investor, there's really two things that you cannot cannot fake. One is a product that is built really well.
+01:19:27
+So if you look at calm, Robin Hood, Uber, Tesla, Amazon, these products are transcendent. They're well constructed. This craftsmanship to them, they're great products.
+01:19:37
+So you're saying that fundamentally, like the idea with the execution of the actual krasnikov of the construction, the actual product is amazing.
+01:19:45
+Then there's customers and that every business has ultimately a customer and that customer, if they are in fact delighted by that product, that's the magic, because you need a team to build the product and then you need customers to use the product.
+01:20:06
+And really, those three vectors are undeniable. Now. You can have great teams that build a bad product doesn't happen too often, or you can have customers who don't like the product, but generally speaking, a great team will build a great product or a good product and iterate and then eventually delight customers.
+01:20:25
+And so most people say the team is the most important, but there's a lot of smart people out there.
+01:20:32
+And let's assume that you can have you can raise money for your idea or you have money or you can just convince people to do it for free. If you make a great product and it connects with the users, that's the magic. You look at clubhouse.
+01:20:43
+It's actually a really well-designed product and that product is connecting with customers.
+01:20:48
+And if you were to talk to the customers or look at the product, you would see a well constructed product and a delighted customer. And you can tell the delight of customer by just the amount of time they use it. That's called engagement. It's the fancy word for how much they use it. And Snapchat, when that was going around and they were trying to raise money, they had a fraction of the number of users. But the top, maybe third were opening the app every hour and nobody had ever seen that before.
+01:21:15
+People were using Facebook, you know, a couple of times a day, the top users, but nobody had ever seen people using it every day for 100 days in a row, every hour. And it was like, what's going on here? It's like, oh, the ephemeral messaging.
+01:21:29
+And then the streaks that created these streaks between people where, you know, every day and then people would be like on vacation, like, I just have to open my streak and keep my streak with Lex that we chatted every day going. And so they had this, like, addictive nature to it.
+01:21:40
+And that's why Clubhouse was able to garner so much investment is the number of hours people were using it every month was just unbelievably off the charts.
+01:21:50
+Some of the execution by some of the weird magic of the product market fit. Yeah. So there's something I mean, clubhouse. There's still a mystery to me because I also used Dischord voice. There's an intimacy to voice. Oh, for sure that you have people. Yeah.
+01:22:06
+Tent it's well but like the video gets in the way. Actually in a weird way there's a privacy when you just use voice. People are not taking showers now.
+01:22:16
+I mean, yeah, we're in a pandemic and people just roll out of bed and the hair nobody's getting health care is good. Nobody's getting a haircut. People are wearing gym clothes.
+01:22:24
+I mean, Zoome is just horrific to be on Zoome for five hours a day. It is exhausting, but it does make me wonder what the what once we emerge from the pandemic or other product market fit, how that evolves with with Copaxone, those kinds of things. Yeah, I know clubhouse is a beneficiary of the pandemic for sure.
+01:22:42
+When do you think the pendent when do you think deaths will be under let's say 200 a day and we'll have 200 million people on the other side of this because that's kind of what it takes, right? You've got to get to 150, 200 million people on the other side in America.
+01:22:56
+I haven't you know, I personally stopped deeply thinking about this because I've been frustrated for so long that you checked out. I almost checked out because it psychologically allows me to carry on because I thought for many months now that testing is to be done at scale and it still hasn't gotten done. It has. So to gave up basically.
+01:23:20
+And we gave up because we're in we're all sitting there waiting for the vaccine to come along. And the distribution of the vaccine is not you know, it's struggling from the same kind of things that the testing is going to take quite a bit of time.
+01:23:34
+So it does if everything goes great, meaning there's not a second strand of the virus that's going to create a second major wave that I am cynical enough to think that it won't be until midsummer that we start opening back up.
+01:23:51
+And yeah, I think it's going to be June. I'm a little bit earlier than you have been tracking us like one point five million shots at arms a day. I think this vaccine has been undersold. I mean, it's a miracle. Not one person who is in the trials died who took it, and only one went to the hospital and they weren't even put on a ventilator.
+01:24:07
+So and the hospitalizations are plummeting and we're at ten percent now in the United States at the pace we're going at one point five a day. I think when the Johnson Johnson one comes out next month, it will be three million a day, maybe two and a half. And we already have one hundred million people who have likely had it. So I've been doing the math.
+01:24:23
+I think we're like sixty days away. February, March. Yes, sometime in April. I think anybody's going to be able to get a shot and the number of deaths is going to go below two hundred a day. And once that happens, I think people who have had enough of this, they're just going to go YOLO.
+01:24:38
+You know, I but see, the the crucial piece for me that I've been focusing on is the the social media aspect of how the it's not just about the reality of deaths, it's about the state of the collective intelligence of the human species, which is determined by our communication on social media. So, yeah, we can be collectively afraid. The fear can spread or it could be YOLO can spread or it could be like all different kinds of.
+01:25:09
+Misinformation and of course, during the election year, the politics influences our perception of what is true or not.
+01:25:17
+But, you know, having real rigorous, nuanced conversation about this kind of stuff is the way is the way out of this. And that's where social media really comes in, because social media drives division, where people form tribes and so on. It feels like it's honestly a technology problem.
+01:25:37
+You know, people say it's a human problem, but it just feels like it's a good technology can enable them to be thoughtful.
+01:25:45
+And we talked earlier about the magic of Silicon Valley and then maybe going too far with the Facebook groups example where you take out all that friction.
+01:25:56
+What happened was we used to have something called our reverse chronological order. That's how you consume to feed. So any kind of social feed like Twitter was in reverse chronological order. The newest thing was up top and you would just work your way backwards. And so it gave this a really fresh feeling.
+01:26:13
+And then a guy named Dave Morin and the team over at Facebook realized, you know, there are some things that got a lot of attention two hours ago, and the stuff since then has not been as important. But if you missed that, there was a really good tweet where there was a really good update, like somebody had a baby.
+01:26:29
+That's that's kind of can we get the baby one at the top? And it was like, well, how would we do that? How would we know that? That's the important one. It's like, well, let's put a like button on it and let's see how many comments there are. So if it gets a lot of likes or comments or read tweets, let's show those first and then we'll kind of mix in the most recent stuff.
+01:26:47
+And so when you're on Twitter and then when Facebook did that, Facebook became so addicting because Facebook was on what has got the most engagement. Put that first. So every time you open up Facebook, get the dopamine hit, and then what happens when you see the bar mitzvah photo or, you know, the enraging story about some injustice in the world.
+01:27:08
+You retweeted you write a comment, you share it on your wall.
+01:27:12
+And thus this addiction to the outrageous, the outlandish, the inspiring occurred. And it used to be like inspiring stuff, puppies or some heartwarming story. And then it got dark. And then people started to realize, if I want to show up on the top of my friends' feeds, if I say something controversial or I'm outraged, I get to the top.
+01:27:35
+And then that's when outrage culture came in. And then that's when cancer culture came in.
+01:27:39
+Everybody started to realize if I try to cancel that person for being a racist or sexist or a horrible human being or whatever they did, that's wrong.
+01:27:48
+I get to the top of the feed and we all collectively started playing a very weird video game, which is how outrage coming all be. And you get to the top of the list. And then, of course, with Trump, he realized and he's like, OK, yeah, I'm just going to make fun of a celebrity and I get more tweets, OK? I'm going to make fun of Rosie O'Donnell for being overweight or something. And he just starts attacking people.
+01:28:08
+Yeah. And people like, oh my God, what did he say? And he copied that from Howard Stern because he was in New York and he used to be on Howard Stern. And Howard Stern took over all the dialogue in the 80s and 90s because he was outrageous. And then Trump did that and then social media incorporated that into the operating system.
+01:28:24
+It became the actual device of social media was the ding, ding, ding, ding, ding.
+01:28:29
+We've got something incredible for every salivates, like Pavlov's dog, you know? Oh, my God, I could be outraged. That's what's got to be undone. And the only way for that to be undone is these things can't be billions of people where the most outrageous thing that happened in the world today, in the last five minutes is now in front of you. And that's why people have anxiety. They don't sleep and they doom Skrull all night is because the human mind was not meant to process as much suffering, pain, anger.
+01:28:57
+And that's why we have all this mental health issues also, you know, young girls or even adults watching other people post their private jets and their vacations and, you know, YOLO adventures on their Instagram to the point at which young people are now faking being on private jets to put on their Instagram and creating like this crazy famo around their Instagram. So, like, now we wonder why people are unhappy. Like if you think everybody's on a private jet going to some Michelin star restaurant or whatever, the coolest thing in the world is today.
+01:29:31
+Yeah, like going to the Grammys, going to whatever Coachella Burning Man like you're like, oh, but I'm home.
+01:29:40
+I'm in my house. Yeah. And I'm not at Burning Man.
+01:29:44
+Inadequate exacta. This whole system is is creating the wrong set of incentives. I believe it's possible to still have extremely high engagement and create a successful, profitable business while encouraging personal growth, like encouraging people to be the best version of themselves. I think we haven't. We got the first generation of social networks. I think a new generation is. Absolutely.
+01:30:08
+Is that your plan for our business? Do. So while I have a longer term plan in terms of ambition, which is I believe in. Being able to have deep connection between human and as systems like partners, friends, there is a connection to there was social media. I do think I I has a strong role to play in representing us and guiding us in how we consume social media. So this algorithm that controls the feed for Facebook is a somewhat centralized algorithm, but instead to give more power to the people, individuals, to each one of us have our own algorithm.
+01:30:50
+Burringurrah, we got to get working on the IOA before how I. Of bringing an alcohol or an algorithm.
+01:30:57
+Yeah, well, I mean, if you thought about it, if we came and said, I want when I look at my Twitter feed, I would like to see the people with who are the most helpful in the world, generous, kind, intelligent, considered, you know, commenting on things that I don't already know about because I want to open my world view.
+01:31:17
+That could be a beautiful thing for society. And actually, Jack was talking about potentially on Twitter, letting people bring their own algorithms and sort their feeds themselves.
+01:31:27
+This would be a wonderful thing.
+01:31:27
+I think it's one of the reasons Clubhouse has resonated is it's such a diverse group of people that I've been able to drop in on conversations with people who are nothing like me. Yes. And listen in and hear conversations that I wouldn't normally be privy to. And I my everybody's like, oh, come join as a speaker.
+01:31:45
+I want to do a room with you. I get asked every day, can we do a room? Can we do a room, ask an angel investor, talk about startups.
+01:31:51
+And I'm like my Usachev. Clubhouse is going on my peloton treadmill, putting clubhouse on and there's no room and just listening.
+01:32:00
+It's so delightful for me as a podcast where my job is to talk to sit back and just put in a couple of miles and play chess and listen to a clubhouse discussion that is about relationships and or, you know, some fashion or hip hop or whatever it is that I'm not part of.
+01:32:18
+I just sit there and I listen and you learn it's like such a delightful the coolest thing about these kids go to college, how it's been so jealous of these Ivy League kids.
+01:32:26
+They go and they're like, oh, I've got to go to class.
+01:32:27
+And I'm like, I would just love to sit there and listen to Professor Leks talk, you know, like what a privilege to sit there and. Let somebody else drive and talk and listen and learn. Yeah, that's the beauty of podcasting. But of course, Gavaskar, it's a whole nother experience for conversations is different.
+01:32:44
+I think it's going to be the in between. I like it as a you release your podcast like you and I are going releases podcast. Right. And then some point I'll have you on my iPod when you want your start up.
+01:32:54
+And then at some point somebody's going to be like you and I will run and I ran into you.
+01:32:59
+So you were on clubhouse the other night and I was busy, but I was almost going to click on you and say, let's start a room together, but you and I will start together with Eric Weinstein or somebody or Sam Harris will jump in, Ella, and we'll have a different experience, which would just shoot the shit and it'll act as like a fabric and a little filler between the tentpole podcast's.
+01:33:20
+Right. Like you and Eric, you've done three, I think with Eric, with you, for I haven't released the fourth yet.
+01:33:24
+OK, so I watched all three because I really thought you were.
+01:33:29
+And him like giving you advice is very interesting, dynamic, very interesting dynamic. And I find him like a fascinating character. We know everybody in common except we've never met. It's very weird because, you know, you you think about the social graph in the real world.
+01:33:43
+This is why I think augmented reality is going to be such an amazing product. I just have one killer feature I want for augmented reality.
+01:33:52
+We wear our glasses and when I look at you above your head, I see the relationships we have and the things we've done together.
+01:34:01
+Yes, right. So I see. Oh, you both know Sam Harris or you had Elon on the podcast on this date or you and I were both at Burning Man in 2006, the most meaningful element of our connection network.
+01:34:15
+And then because we would discover that two small talk. But imagine you're like at a party and you look and it just. People glow and you just see a glow around a person like green means you have some financial relationship. Blue means you have some friendship. One yeah. Or yellow means you have friendship. One blue means you know nothing about each other. You have no connection. You're like, wow, these blue people have no connection to these people.
+01:34:38
+That one's glowing red. We know seven or more people in common. Yeah. And those are the seven people. Oh, we should go talk about how we know each other. Yeah, that could.
+01:34:46
+And that's sort of happened with Facebook or MySpace where you were like, oh you know, that person, friend of a friend. But that's what there's going to be around like. This is why I think if Apple figures out A.R or Snapchat and they just have those glasses, you know, forget about VR, it's just nauseating and whatever.
+01:35:03
+But ah, where you put the glasses on, you see the real world, but you augmented you or you make just like you were saying, you make a frictionless, a very low friction. You make a deep human connection because you have all the basic elements that are ready or not.
+01:35:17
+Think about the unintended consequences of what I just described.
+01:35:21
+It could get creepy and where the privacy thing I mean, people will think people your privacy is an illusion, like all this information is there. And then. People are more than willing to give up privacy in exchange for some value. You know, it's a value trade and giving if if my Tesla, when I'm driving in the direction of my house, just starts the navigation and saves me three clicks and that friction is gone, I'm willing to give Tesla my location and my home address.
+01:35:53
+Right. I'm not willing to give Zuckerberg anything. I don't trust him. But you get the idea.
+01:35:57
+I mean, it will be that way with like DNA and other things at some point will just be like, yeah, just take my DNA. Like, I don't. Yeah, sure. People can look and see that I'm a mental midget in my IQ is like lower than I want to bring the bell curve up or whatever.
+01:36:09
+But but you can you can figure out like if we all put our DNA in the sequence online and I'm like, oh yeah. You know, Lexi's got ten more IQ points than J.K. Rowling, you know, Sam's got ten more than Lex.
+01:36:20
+And all of a sudden people are like all bent out of shape about it. But what if they we did that and they were like and by the way, you also all three of you are going to get Parkinson's unless you do X, Y and Z, unless you eat more blueberries or whatever, we figure out that we're going to accept it pretty quickly.
+01:36:34
+This brave new world.
+01:36:35
+Brave new world.
+01:36:36
+I have to ask you, you're just saying you were saying you're one of the world experts in investing and instinct in startups. Yeah. The VC and so on. From the perspective of the startup, I was always kind of skeptical of raising money.
+01:36:54
+It feels like people do it too quickly, too easily.
+01:36:58
+But I don't know what the hell I'm talking about.
+01:37:01
+One is the one should a startup raised money? And from the perspective of the investor, what should the investor invest in a startup? Is there a timing thing here? Is there what?
+01:37:14
+Yeah, well, it's a very important question because the venture capital community is only going to fund, you know, sub one percent of enterprises started in the United States every year, like maybe 10 basis points of them, like one in a thousand.
+01:37:30
+And the reason is it's jet fuel. You only want to take that money if you really want to build something big and you want to build it fast. And when you put jet fuel behind a startup, as we've seen with other rockets, things can blow up and people can die. You know, it's not people literally dying, but the business can go up in smoke. Right?
+01:37:49
+Like rockets get blown up all the time and space X as part of their ambitious plans and startups. Seven out of 10 startups we invest in go to zero.
+01:37:59
+Now, if you were to start the business and only build it off customer revenue and use your own money and go nice and slow and grow 10 percent a year, the chances of you blowing up the rocket are very low because you're riding a bicycle, you can go a little faster, but the bicycle can only go so fast.
+01:38:16
+And once you start taking that money, the way the poor, the way venture capital is constructed as a in the mix of like MIT or Harvard's endowment is going to put some money into safe things.
+01:38:31
+And then we're going to have these really binary things over here. And they probably put five percent in venture capital. Traditionally, it's grown to 20 percent just as a function of how successful it's been.
+01:38:43
+So, you know, the Harvard of the world and MIT is probably one five or 10 percent in venture, but it's grown to twenty five percent because, you know, companies like Airbnb and Uber have grown so big and Tesla.
+01:38:54
+But the goal is in these venture funds, we're going to invest in 30 names and one or two of them are going to return three times the capital we've deployed.
+01:39:03
+So it's a three hundred million dollar fund and there's 30 names. They each got 10 million.
+01:39:07
+I mean, one of the 10 million is going to return the fund plus. So that means it has to grow 30 X and then 60 X to double the fund.
+01:39:17
+And you're really supposed to be doing three times cash on cash. So that 300 million of funds, the expectation is in 10 years to return 900 billion, triple the person's money as opposed to the stock market, which doubles your money in the same period.
+01:39:30
+So you're supposed to do twenty five percent annualized returns in order to triple the money and maybe have an outlying chance of four or five times the money, which does happen sometimes when you have an outlier in your portfolio like Uber or Facebook was.
+01:39:43
+And what that means is the venture capitalists behavior in the game they're playing is different than you as the founder, you as the founder. You may really care about this. And it dying really matters to you. And then you got a venture capitalist is like, we're betting on thirty names. We need two of them to hit it out of the park, maybe three. And nothing else is meaningful.
+01:40:02
+So now you start thinking about the game theory there. You're dealing with, you know, money that is coming in that only cares about you going one hundred X. Yes, it's a whole different ballgame.
+01:40:17
+Whereas if you build off revenue, you don't have to do that. And if you look at a company like Dotcom, we invested at five million. The next round they do is two fifty. They were so capital efficient that they grew from ten thousand dollars a month in revenue to millions of dollars a month in revenue over those four years since we invested. They didn't raise money in between. Well, it was unbelievable, and I've only seen this happen three or four times.
+01:40:38
+It doesn't happen. All this capital efficient meaning based on customer revenue alone, plus some small amount of fundraising, you're able to go like, how hard is it to do that takes extreme product market fit?
+01:40:53
+You have to have a great price for your product that has a great margin. Yeah, and if you're doing something in hardware, it's probably impossible because of super capital intensive. So it's probably got to be a software business, software hardware business to take a lot more.
+01:41:06
+Do venture capital get in the way of the business or do so? It depends to get out of the way.
+01:41:11
+Yeah, if you if you get young venture capitalists who are starting their career, they're very nervous and scared because they're putting all these bets. And then there's a very weird thing that happens. The bad news comes first so companies that don't work out go out of business immediately. Yes. So if it's not going to become a Robin Hood or Uber, those takes, you know, you have one of those great successes somewhere in your five, six, seven, eight.
+01:41:37
+As an investor, what is the first five years? Like the first five years? You feel like an idiot because you let's say you make these ten bets.
+01:41:48
+In year two, two or three of them come back and they don't have product market fit and they're out of money and they say, can we have more money? You say, no, we have to go get it from somebody else because you have to prove that there's still a market for it. We may keep our pro-rata.
+01:41:58
+We may put a little bit into maintain our percentage ownership, but we're not going to give you another big chunk of money. Yes. And that company does so now you've got 10 million up in smoke, boom, 10 million of smoke.
+01:42:10
+So this is called the J curve where your performance goes down and then it's only in years, four or five and six, it starts going up.
+01:42:17
+And what you're seeing right now is the people who started like I did in 2000, you know, just 11, 12 years ago in 2009, I started investing.
+01:42:25
+We all look like geniuses. Why? We're at the end of the cycle.
+01:42:29
+We invested after when the stock market was on the floor after the financial crisis, and it's gone straight up since.
+01:42:36
+So everybody, look, there's a couple little blips in there, but generally speaking, there hasn't been like a major crash, with the exception of 10 Democrats. But that bounced right back.
+01:42:43
+And so, you know, it takes a decade to figure out if you're good at it.
+01:42:47
+And then if the market crashes again, everybody feels like in it again, the cycle starts again. So you are now as a founder, you are now inserting yourself into that casino. Yes. And now you've got all these other forces pushing and pulling and you're growing. Let's say your company was growing 50 percent. You feel like, wow, I'm successful. I made a million dollars last year. Now I'm doing a million and a half.
+01:43:08
+And and the first thing VCs is going to say is how do we triple? We're growing too slow.
+01:43:12
+But that's like you said, that beautifully, is the rocket fuel. It's in the sense it's a kind of motivation. It's a drive. I mean, it's a positive. So if you want that, yes. That's if you want that.
+01:43:24
+If you want that, if you want to go to Navy SEAL school, you're going to be in pain and they're going to put that hose in your face while you're underwater with your hands tied behind your back in the pool and you're to be choking and you may have to do CPR on you.
+01:43:36
+And like every couple of years, tragically, somebody dies in Navy SEAL School.
+01:43:40
+Yeah, well, it doesn't mean we're getting rid of the Navy SEALs. If he dies, he dies. I don't know if you know David Goggins is by any chance. I do. I mean, I don't personally, but. Oh, my Lord.
+01:43:49
+So I'm I'm running forty miles together with him in person in a month.
+01:43:54
+You're doing ultramarathons with him and probably other stuff because he enjoys just breaking people and making them cry. So my God, I'm so jelly.
+01:44:03
+So I well I offered we agreed a while ago to do a podcast and he's like, oh yeah, come on, we'll do it in the Bay Area.
+01:44:13
+I don't know where the hell he is, but we're doing it. And I don't think I'm supposed to say where it is. It's not anywhere close to anywhere in the middle of nowhere. But he seems to be in a bunch of different locations like he is in Oregon or something like that.
+01:44:28
+What does he do for outside of writing books and being inspirational?
+01:44:30
+Does he actually train people or like know he's doing just he's full time and saying that he fights forest fires, like for a few months a year. Wow. He has a farm like unpaid labour.
+01:44:43
+Like he you know, there's a bunch of people who are like him, like Navy SEALs and so on, that kind of make a career out of motivational speaking, all that he's done, that he's literally interested in just doing hard shit all the time, breaking himself, breaking himself.
+01:45:01
+Seems like he wants to break himself and that that book is amazing. And the audio books are amazing when he's talking about how fat he was and how he just had to go and keep running and his, like, legs are broken and he's just the super pain and he just goes through it.
+01:45:15
+It's really inspiring thing. Also, are you going to videotape yourself doing this?
+01:45:20
+I can't wait to see you get destroyed.
+01:45:22
+Yeah, well, this is guys so entertaining for the Lack's audience, the pain. But the other thing is he is happily married, OK?
+01:45:32
+And there's a partnership there that's you know, everybody finds a there's attention as a push and pull. That's beautiful, I think.
+01:45:40
+But and speaking of beautiful push and pull and the how about that transition here?
+01:45:46
+We got you and your month on. He's a friend of yours. Bethe best. Yeah. Yeah. Good friend.
+01:45:53
+I mean, he's very few people in my life. Him, Elon, David Sax, John Brockman's, very few people have supported me as much as those folks.
+01:46:01
+I mean I'm a huge debt. So he's also co-host on the All in podcast.
+01:46:06
+We taped episode twenty one today. Oh today. Yeah, every Friday. Now they want to do every Friday. They're addicted like me and you aren't podcast.
+01:46:12
+So you're going to release that one. It's probably released as we're sitting here, as we're OK now.
+01:46:18
+I can't guest on it. We had Draymond Green from the Warriors phone in so we had our first guest. Awesome. Yeah so it's really funny because he plays poker with us and we're all best. So beautiful.
+01:46:29
+So you guys went pretty heated. Yes. We kissed each other versus Rob on Rob. Yes. Those are two things I want to ask you. First, on the actual Robin Hood discussion in the Wall Street, best discussion. Can you still man his argument? What was the nature of the disagreement? Where so where what? What is the little? Because I don't think it's as big as a yes basis. It came off as sounding. So what is the nature of the disagreement?
+01:46:56
+He felt that Robin Hood turned off trading because the hedge funds told them to.
+01:47:05
+And that they were bowing down to the pressure of the hedge funds. That's not true. But in a vacuum of information, you know what happens to people's minds? Conspiracy theories abound. And sometimes there is a conspiracy theory and sometimes there's just.
+01:47:19
+The appearance of impropriety or a bunch of related things, like when you look at the Trump situation with Russia, like with Trump trying to coordinate with Russia or the Russians just screwing with a bunch of, like, neophyte idiotic dipshits like, you know, Donald Trump Jr. who don't know any better and they don't know that you shouldn't meet with the Russians. And if you do meet with the Russians, you are probably a useful idiot.
+01:47:45
+You probably should tell the FBI like they're just a bunch of idiots in all likelihood. Who knows?
+01:47:50
+And it's a vacuum of information and there's a vacuum of information we don't know. And the Russians are trying to compromise everybody. So would you call it a conspiracy or would you call it an attempted, you know, conspiracy?
+01:48:02
+There was no conspiracy here.
+01:48:04
+What it was, was Robin Hood needed to raise billions of dollars to stay solvent in all likelihood, and they weren't allowed to talk about it. So they were forced into not talking about it in all likelihood and had to come up with that money or shut down. And then what got me upset with Chamar, and we had a talk afterwards that people don't know about. I'll talk about it here.
+01:48:26
+For the first time on Sunday, we had to have a little we had to air it out in episode after you guys sound like you've had a private you know, we had a private discussion, just one on one. And we said, listen, we love each other. We're bastards. We've always been there for each other. What happened here and what happened there is I'm fiercely loyal to my folks, whether it's Timothe or Travis from Ueber or SAC's or whoever.
+01:48:50
+I'm just a loyal guy. Yes. And I'm always right or die with my founders' if I invest in them, even if they make a mistake and Uber made plenty mistakes. I always went on CNBC on my podcast and said, hey, we're going to fix these things. I'm in touch with the team. Mistakes were made. We're going to solve them. This is a group of people with great intent who want to make the world a better place.
+01:49:11
+And you know what I was hated for for a period of time with Uber. I was hated for it. Last week with Robin Hood.
+01:49:16
+I got a lot of blowback.
+01:49:19
+But I think in both of those cases, eventually I was right. Uber is doing great stuff in the world. Robin Hood is doing great stuff in the world.
+01:49:24
+And I like to be loyal to my investments and my partners to to just I feel like if you invest and you're on the team.
+01:49:31
+You know, you have really three choices you need to fight for your team, you can go silent or you can throw your team under the bus.
+01:49:37
+And I've watched investors throw the team that they invested in that made them a bunch of money under the bus. Not acceptable to me and be quiet is not acceptable to me. So I always ask the founder, do you want me to? Is it OK if I go out and defend you publicly? If they say, yes, I do it.
+01:49:50
+And then beautiful, by the way, because what else do we have in this world, if not friendship? It's loyalty means everything to me.
+01:49:55
+I grew up in Brooklyn where if you were not loyal.
+01:49:58
+And you you know, and you were not loyal to your crew then, you were a ronin, you were a, you know, out there on your own, flailing in the you know, trust me, you do not want to be on your own in 1970s, 80s Brooklyn.
+01:50:12
+Like you need to have a crew with you.
+01:50:14
+I've gotten into you know, you don't want to get to a fight with 10 guys and be alone or just be what you need a crew to survive.
+01:50:20
+So I just learned early in my dad who owned the bar, just drilled into me being loyal. And so for whatever reason, I'm a bulldog when it comes to loyalty.
+01:50:28
+And Schmidt came out and said, you know, these guys need to go to jail and they're scumbags. And I and I'm trying to defend them. And I'm in a position where I can't defend them because I don't have complete information. There is no complete information and it's in the heat of the moment. And then it becomes the number one story. And it's my number three investment. Yeah. And Trump has a competing company so far. Yeah. And he's killing my guys.
+01:50:51
+And then I started killing his guys. Yes.
+01:50:53
+And then all of a sudden we're like, wait a second, we're best friends and we're swinging our swords at each other and we're a group of the Seven Samurai who fight together. When did we turn on each other? And then everybody else was on the pot.
+01:51:08
+The two Davids who, you know, both on the spectrum, Abednego, little Aspergers or whatever, no offense, none taken. They say, you know, every day I had you know, you might be somewhere.
+01:51:23
+Not a coincidence. Yeah, might not be coincidence. Anyway, we upgraded the two Davids firmware. We're going to upgrade your firmware after this. I'll give you. Yeah, you you're on the one point five. You have the three emotions now which we have for now. I want to go with joy. With 2.0 2.0.
+01:51:36
+You got the joy of working, the difficult. You'll get there. Just let it happen. And let's just let the let the joy happen.
+01:51:45
+So anyway, we just talked about it offline and we decided, like, listen, we didn't pre game that episode and I happened to be skiing with my family.
+01:51:54
+I taken the first, like, vacation since goddamn pandemic started. And I was having a wonderful time. And then this whole thing blows up. I'm coming off the mountain just having a great time with my daughter skiing and, you know, and then I'm mixing it up with him. And, you know, he had a short fuse about it because he was triggered, he told me, because he really feels like he's fighting to defend, you know, the every man.
+01:52:15
+And I was like, that's what my team is doing.
+01:52:17
+That's why they need the company. Robin Hood. Yeah, we're on the same side here.
+01:52:21
+And then over time, we've started to see the explosion come out.
+01:52:24
+And, you know, people who are friends are going to have disagreements in the podcast. It happened to happen very publicly and we didn't know it was going to become the number one story in the world.
+01:52:35
+If Trump still had his Twitter handle, this would not have been a story. Trump would have said something about GameStop and he would have co-opted the entire conversation.
+01:52:44
+So in a way, going back to our censorship discussion, I might actually be in favor of Trump being censored only because only because how delightful has it been since January 20th there that we could all focus on something other than him?
+01:53:01
+Yeah, he was exhausting. I mean, the amount of cycles he took on our processor size, the.
+01:53:08
+Oh, and now this is a little bit more of a distributed like this.
+01:53:13
+It's a chance to be a news story. Everybody gets a chance to discuss it. But on a scale of one to ten, how much do you love your math?
+01:53:21
+Oh, it's eleven. I mean, I love math. I mean, we played cards last night. We're best. And, you know, I would I would I would literally jump in front of a bullet for him.
+01:53:30
+I mean, what's the lesson in that discussion? Because it was super. I wouldn't I think the love was felt in the respect was felt right. Even when you guys are going pretty vicious on each other. Is there a lesson to be learned? Do you regret any of that competition?
+01:53:42
+I mean, I think he he he told me that he regretted some of the things he said.
+01:53:46
+He said publicly on the podcast, like, listen, I was a little hot. I may have said things in the heat of the moment, but I don't live with too much regret because I always think about intent as one of the new nuance and intent have been totally lost. The idea that we could have any of kind of a nuanced discussion about things seems to have been forgotten.
+01:54:04
+And the fact that people don't look at people's intent. If you hurt somebody's feelings or you disrespect somebody or you do something mean or whatever, I always look at the intent, you know, and I've had people attack me and I look at the intent and I'm like, that person feels bad about themselves.
+01:54:23
+Or maybe I said something and I insulted them and that's why they're blowbacks there. So I was trying to think, what's the intent of the person?
+01:54:29
+And then almost universally, you talk to somebody and you find out you ascribe some crazy intent that's not there. And they're like, oh, yeah, you know what happened?
+01:54:39
+I got in a fight with my spouse and I what I didn't sleep last night and I've had a lot of anxiety about my business. And I, I just snapped and said something about you. And it's like, OK, like I literally had somebody on Twitter.
+01:54:52
+This past summer, I had said something I was complaining about a New York Times journalist and something I thought was wrong, and this person was a fan of that journalist and they went, I kid you not onto my social media account, found a picture taken about how blue the sky was. One day they reverse image search.
+01:55:10
+The tree line found the tree line on Google image search somehow with the reverse image search, found an old listing that some broker had listed on their, like, website of my house and then posted my home address. The value of my home and. Docks me on Twitter and I'm like. What is going on here, so I call the person. Yeah, and I look them up and they work in private equity in Boston and I work and I'm like, this person works in July 4th week.
+01:55:45
+So and I when I look at the person's LinkedIn, we have seven people in common.
+01:55:50
+So going back to the ER companies up, I'm like, OK, this person literally just asked me, I asked him to take it down. They told me they won't take it down. And then I look at it, so then I am back on Instagram and Twitter and I said, by the way, your boss Susan and I know seven people in common and these are the seven people. Here's a screenshot. What is she going to think when I call her on Monday and you've docked me?
+01:56:15
+Here's my phone number if you'd like to talk. He calls me. I said, what's going on? Why would you do this?
+01:56:20
+He said, Well, I really pissed off about what you said about this person was like, you understand, I've had like two or three stalkers, like anybody who's high profile, like I am like a medium profile. You're going to have weird things happen. You literally put my home address. You put my family at risk. What if I put your home address on my I have 400000 followers or 300000 followers.
+01:56:37
+You have like three hundred. What if I post your address? He said, well, I wish you wouldn't do that. I was like, why?
+01:56:43
+I asked you kindly to take my address down. And I said, Are you married? I said I said, how old are you? You're like 25 or something. He's like, No, I'm 42. Like, you're 42 years old. I said, are you married? You have kids. It's like I just had a baby, like six months ago. I'm like, You're home with your wife.
+01:56:58
+It's July 4th weekend. You're doxing Jason Calacanis because you're upset at me because I said something about a New York Times writer. He's like, yeah, this is the biggest mistake of my life. I said, I tell you what, let's forget it ever happened.
+01:57:12
+And he wrote me back and he said, I just wanted to thank you for how you handled it.
+01:57:17
+My wife said, I'm a complete fucking moron and even the world and I'm really sorry about blah, blah, blah, blah. And I wrote her back. I said I wrote her back and I said my wife the same thing. To be able to go to the club solidified this tent nuance.
+01:57:36
+It matters, right. And the person could be having a bad day and they do something stupid they regret. And what am I going to cancel the guy?
+01:57:42
+Or if I had called his boss, he would have been fired immediately. And then I got to live with this guy got fired and he's got a kid. And what is this personal destruction? Why are we doing this to each other? Life's hard enough. Yeah, life's hard. Right. Like just getting to the days hard.
+01:57:58
+Yeah. And that little bit of empathy, thinking about the intent of the person allows you to then sort of de-escalate this kind of conversation that social media wants to escalate. Yes.
+01:58:09
+The social media were saying if if this. In my younger years, I would have retweeted the guy's home and my address and would have called his boss and tried to get him fired or whatever, and it's like now I'm just like, what?
+01:58:22
+Why are we attacking each other? Life is so hard.
+01:58:25
+I mean, this is what the pandemic, I think, should make everybody realizes, like, look at that, how hard it is.
+01:58:30
+Life is hard. And then just think about all the people suffering right now who are at home, the single mom or dad with two or three kids at home in public school.
+01:58:39
+Maybe they've been laid off and their kids aren't learning and they're in a tiny apartment.
+01:58:44
+I mean, this has been brutal for a lot of people, not to mention people losing loved ones or maybe some people got Korona and now their lungs are still not right.
+01:58:52
+Ask basketball about love.
+01:58:54
+Oh, sure, I'm feeling it. You know, like we're an hour or two here. Yeah, we could become besty. We're like we've got a bromance going. I feel to know if it's Eric Weinstein level, but I feel like it's close.
+01:59:10
+Yeah, I'm feeling the love. But we talked about the there's music to my ears. Your whole rant on the Olympic nature of a startup.
+01:59:24
+Is there a role like what role does love, family friendship play in that brutal pursuit of excellence that is building a startup, building a company or building and creating anything new in this world?
+01:59:41
+Such a great question and totally unprepared for it, because I know we would ever ask me about that.
+01:59:47
+So I think it's why you've got quite a following on your podcast is that you're able to ask these questions.
+01:59:53
+And I could tell one story because, you know, I don't talk about.
+01:59:58
+I try not to talk about relationship with you, Lord, that often because, you know, he's so famous now.
+02:00:04
+I mean, when we met, I used to go out to parties with him and people like, oh, my God, you're Jason Khakassia.
+02:00:08
+Yeah. And like, who's your friend? My cousin. My friend Eliteness. And they were like, why? He's doing rocketships. But he's told the story publicly. I can tell it. I would never talk about anything that he hasn't already talked about publicly, especially since it's so high profile.
+02:00:19
+But it was pretty funny moment.
+02:00:21
+He there was a moment in time when tests almost went out of business.
+02:00:25
+And you've probably heard the story many times, but it was during the financial crisis and they were running out of money and they said, you know, let's go get a steak.
+02:00:37
+And we're in L.A. And we drove to Bawa and I had my orange Tesla Roadster and he had his P1 or P2 like the red one that I think is in space now. And we drove to the valet and we had a steak together. We're sitting there and I said, you know, I read the story in Gocher or whatever, you know, and New York Times here, you only got like five weeks of money left in Tesla because it's not true.
+02:00:59
+I was like, oh, thank God. And he goes, we have two weeks.
+02:01:03
+I got I was like, well, what's going on with the rocket ship company?
+02:01:08
+Yeah. You know, like. You know, I know you did the one last month, and don't you have one coming up? He's like, yeah, we got the third one coming up. I was like, well, how's that going as well with blow that one up, there's no more space.
+02:01:20
+I was like, so two weeks of money left in Tesla and SpaceX actually blew up the first two rockets to blow up the third space. X is over.
+02:01:26
+He's like, yeah, I was like, I can loan you a couple million dollars.
+02:01:30
+I don't have like a ton. He's like, it's OK. Our friend Bob has loaned me some money and Elon has been super public about this.
+02:01:38
+I would never tell a story that you hadn't been, but he was talking and he never said who it was.
+02:01:42
+But somebody had loaned him money to keep them afloat. He was he was functionally bankrupt.
+02:01:47
+I mean, he had the equity in the companies, but the equity was quickly becoming worth zero and the financial crisis. And he's figuring out if he's going to go on vacation for Christmas or not.
+02:01:56
+And he's on the phone trying to, you know, you know, save the save both companies.
+02:02:02
+And I said, certainly there must be some good news. And he takes out his BlackBerry to date this conversation.
+02:02:07
+There are no iPhones, Tasos, BlackBerry. And he starts swiping and he says, don't tell anybody. This is what I'm building. And he shows me the model S. And nobody knew that was working on them unless we knew he was doing them the Roadster and was trying to save the company and I looked at it, I was like, that's gorgeous.
+02:02:28
+It was the clay models. So it was a full sized clay model.
+02:02:31
+So there's a human being standing around a clay version of this tiny little BlackBerry picture.
+02:02:35
+I'm scrolling through on the remember that little pad or the ball and black and scrolling through it like this is fucking great.
+02:02:42
+And I just said to him, it's like, what's the range going to be?
+02:02:45
+So I think we get 250 miles. 250 miles. Yeah, I think I'd be the safest car ever said.
+02:02:50
+What is it going to cost? He says, I think this could cost eventually 50, 60 thousand dollars. I said, Elon, if you make that car, you'll change the goddamn world, you have to. This company must survive because the roadsters for like 2000 people in eight states. This car is for every person in the United States. Every single person the United States needs will want this car if it's 50000 dollars.
+02:03:15
+And maybe some of the people who you have twenty or thirty thousand cars won't be able to afford it, but they'll all want it. It's gorgeous. And he said, You really think so? I said, yeah. So I got home and I talked to my wife, Jade, and I said, You have the checkbook.
+02:03:28
+She does all the finances and stuff like that, pays the bills or whatever.
+02:03:31
+And I said, hey, don't tell anybody what's making this great car. And I wrote two checks for 50000 dollars. And I just took up his paper and I wrote a comma. Love, love the new car. I'll take two.
+02:03:47
+I signed it, I kiss the two 50000 our checks, put them in the envelope and I FedExed to to him for Monday delivery and I said to Jade that hundred thousand dollars is going to be gone in 48 hours because I will pay for one or two days of pay.
+02:04:02
+So we just added like instead of two weeks, the railways got 12 days. Yeah. And. The checks don't cash, but that I read a story that he's closed the money, saved the company in the next week or two, and a couple of months later, the checks get cashed. And I'm OK. Three years later, I get an email, your reservation number from Tesla.
+02:04:25
+Your reservation number is zero zero zero zero zero zero zero one.
+02:04:30
+And then five seconds later, your reservation number is zero zero zero zero 73.
+02:04:35
+And I forward the number one to L.A. I said, you know, I can't take no one signature. Number one, I can't take that that's yours and say, well, I got five of them. And besides, you're the first person ordered it. And I was the first person who had seen her give me a bit teary that I know it was a very beautiful moment.
+02:04:54
+It was an incredible moment for both of us. And we talk about it sometimes, you know, those moments in time.
+02:04:58
+And when to your point about love and the darkest moment, but one of the darkest moments in his life, probably that I think I can tell you is the darkest period of his life for sure.
+02:05:07
+And he's been very public about how dark that was. And I think, you know, this is why I have great sympathy for the entrepreneurs of the world, like the suffering and the pain.
+02:05:16
+And when he talks about the suffering in the pain that all of these founders have felt and then we're throwing rocks at them or criticizing them as they try to change the world and save humanity. And in Tesla's case, I mean, they weren't you know, they weren't like delivering pizza. I mean, they were trying to get us off of fossil fuels. Like, this was a big, heady mission to literally save the environment, the planet, humanity, and the way they shorted that stock and they attacked him.
+02:05:40
+It was always perplexing to me why any human being who is standing on God's green earth would want to throw rocks at the guy who is trying to stem the damn of global warming that is about to engulf all of us. How dare they throw rocks at that guy? Yeah, there's so many people you throw rocks at.
+02:06:02
+There's somebody who's making the jewel vaporizer throw rocks at that scumbag.
+02:06:07
+No offense, but like whoever's making the jewel things and, you know, selling pina colada flavor to 12 year olds, like throw rocks at them, somebody is doing something, you know, abhorrent, but not e-.
+02:06:19
+I mean, and yeah.
+02:06:22
+Anyway, that car is, you know, up the road here sitting under a cover with twenty thousand miles on it in my garage and then the roads there. No sixteen's in the garage next to it. And every day I walk by the two of them and I get a warm feeling in my heart because I know he did it. Yeah. Against all odds. Against all odds. He pulled it off and it was that moment that month in that to that, I think was probably December, January, December of 2008.
+02:06:51
+I think you was just 12 years ago. When you think about 13 years ago, it was dark. I mean, it was dark and they almost had the same thing happen, you know, in the Model three production in June of two years, three years ago. And I remember him just trying to get the model three out the door and the company almost crashed.
+02:07:07
+Then most of these companies have, you know, these kind of moments.
+02:07:11
+And I think friendship is you get what you give, you get what you give. And if you are there for people, you're going to feel so good about having done that. And then the the the reciprocation effect, which you probably know very well, is so great in the world that any time you're kind to people, you build this incredible bond.
+02:07:35
+And then what?
+02:07:35
+What are we at the end of the day, Lex, besides a series of memories with the people we love? That's all it is.
+02:07:42
+It's just a series of memories and moments. It's just moments. You ever see Blade Runner? Yes, of course. You remember what Rucyahana says at the end, all of these memories gone like tears in the rain. I mean, that's our existence. It just all goes away at some point. It's just these drops of rain each. Each of those memories, just like one snowflake or one drop of rain. And they're all lost at some point.
+02:08:07
+But they're here now. And that's why we have to be there for each other. That's why I feel like what I do is so important in this world.
+02:08:15
+And I get such great meaning out of it. Just being a friend, just having these conversations, what you're doing on your podcast, just talking to intelligent people and spreading the word and the disciple, the gospel of what they're saying and amplifying it. You're inspiring so many people.
+02:08:30
+Every you have 500000 people, a million people watch these videos and there's some kid in Sri Lanka or some little girl in Afghanistan who's going to stumble upon this on YouTube.
+02:08:40
+And they're going to change the world in the next century because it's not just about America. Our story is almost over, right?
+02:08:48
+Like we were the story of the last two or three hundred years. I hope it keeps going.
+02:08:51
+But there's all these other places in the world, San Paolo and in Africa, where people now have access to these videos and somebody will have this video and go, Elon did it. Oh, and that guy, Jason was his friend. And oh, and Lex does those interviews with the. Oh yeah.
+02:09:07
+I could do it to your little magical moment of love amidst the suffering with Elon because you've talked about it, he'll have these ripple effects. It's fascinating to think about and so weird to come in.
+02:09:19
+New entrepreneurs being born, new, more love being put out there and more support these rough times when your people are trying to create new things. I mean, that's a that's a beautiful thing. That's a beautiful I'm glad you think of friendship in this way. I'm deeply grateful that you're loyal.
+02:09:40
+Every time you invest, you are. Here's the thing. Cost you nothing to make this investment either the amount of time it takes to be bitter or angry, sitting at home to be disappointed, you could just channel that same amount of energy into being loyal, loving, kind and therefore people. It just only takes the intention, right. The water is going to those emotions are going to flow. Right.
+02:10:05
+Like Sam would always tell me when I was struggling in my life and I talked to him, he'd say, you know, Jason, your brain is spewing all these ideas. Imagine you're standing sitting by a river and the river is all your ideas. You are not a slave to any one of these ideas.
+02:10:19
+They're just whipping by, like, each of those little waves in the river. You can pick one of those ideas out and look at it and examine it and either keep it what's right back in the river and let it go. And I was like, wow, that was like of my entire friendship with Sam Harris.
+02:10:33
+That was like the one moment where I was like, Oh, my God.
+02:10:36
+All my life, I've wondered about all these thoughts in my head, insecurities, you know, imposter syndrome. I didn't go to Mittie, you know, I'm not the smartest guy, but somehow I made a career writing little 50 checks and now, you know, three million dollar checks.
+02:10:54
+But whatever, you know, little checks and being a journalist and doing this little podcast. And it's it's added up to something.
+02:10:59
+Yeah. And I kind of am proud of it. I'm 50 and I'm kind of proud of what I did. And I wake up every morning to retire and I say. Kind of like what I do, I kind of like having the conversation and writing the check and then being on somebody's team and I got offered to be in these giant mega funds. And they said, Jason, you're an idiot, you're invest in 60 companies a year, you know, 500 at a time, you put 30 million dollars a year to work.
+02:11:24
+Come work with us. Right, 150 million ptacek. And then you can go to Aspen and Cabo and Koczela not work. But why are you doing all this work? It's like the 50 million dollar jackass, like it's like a formality. It's just like being an ATM, like the companies are already huge. By that time. I really want to meet the two people with the idea. I want to meet them in year one. Yes, I want to meet them in DC.
+02:11:50
+Also, I want to be the guy who wrote the first, second or third cheque. I want a guy with the three thousandth check, the last check.
+02:11:57
+It's fucking boring and make that basic human connection and I'll hold you. There would mean the rough times be with them with that first. I mean the first early successes.
+02:12:07
+I mean that's a beauty was so great when they went when when a founder and their team get product market fit and you just know it's going to work. Oh, man. Lex, it's when when.
+02:12:20
+Com would email me and they'd say we had it, you know, the company's been growing and we're not going to go out of business. But we added some sleep stuff and then we added this other function and we have a streak now and we grew 10x in the less.
+02:12:36
+You know, three months and we're good. You know, I was like, oh, that's nice. It's real nice. It's like it's a nice feeling when you get well because so many of them die.
+02:12:44
+We talked about that J curve early.
+02:12:46
+Imagine it's like it's like all these baby turtles going out to the ocean and the seagulls are ripping them to shreds and then they're sharks are eating them. But then like a couple of the turtles make it and they become wise old 100 year old turtles.
+02:13:02
+Yeah.
+02:13:02
+You know, and you're like, yeah, I remember when you catched and like all of your brothers and sisters were ripped to shreds by the seagulls that you made it into the water and then you made it out to the deep water. A pretty great feeling.
+02:13:15
+I think there's no better way to. And there it is, the talk of the cruelty of life, the suffering that is life and the love amidst the suffering. Yes, absolutely. I've been a fan of yours for a long time. You're one of the most special people in Silicon Valley. Thanks, Lex. And maybe you'll also call me in one of the rough times. Oh, yeah, sure. There'll be many.
+02:13:36
+There will be, yeah. You know, there's one expression. Nobody gets there alone. Nobody gets there alone, and anybody who thinks that they got there alone is delusional and kidding themselves and they will at some point wake up and realize, oh, shit, there were a lot of people help me get here.
+02:13:53
+I need to write a couple of gratitude letters. I got a gratitude letter the other day from a friend of mine who I helped. And I was one of the, you know, about these gratitude letters people are writing.
+02:14:02
+It turns out Martin Seligman and, uh, whether authentic happiness, anyway, the guy who really studied happiness and joy turns out one of the greatest amplifiers of joy in your life is to thank somebody for doing something for you. And somebody who had helped just wrote me a letter and I got in Christmas and I had the stack of Christmas cards and I hadn't open them.
+02:14:26
+And it's the second week of January. And I was just getting to like the last act. And I open it up and I almost missed it. It's incredibly heartwarming letter about how meaningful, like certain things I had done to help along the way and how he'd always appreciated my counsel.
+02:14:42
+And I was just like, well, this happened 25 years ago. And you wrote this letter now. And it just hit me like a ton of bricks.
+02:14:50
+And I was like, wow, you know, if you're hearing this, there's probably 10 people who were really instrumental in your lives, in your lives.
+02:14:58
+Go ahead and call them on the phone, write them an email, or even better, just write a letter and send it to them and just tell them you're thankful. And let me tell you something.
+02:15:09
+The amplification of joy in your life will go a hundred x, one hundred x when you tell somebody you love them and that you really appreciate them and that what they did it was magical. So just then you can look it up. Gratitude, gratitude is like one of those incredible forces.
+02:15:24
+And then I'm grateful for being on the bottom.
+02:15:26
+I'm good with that all this time with me. I love it. Thanks for listening to this conversation with Jason Calacanis and thank you to our sponsors Brave Browsr, LYNARD Linux virtual machines for stigmatic Mushroom Coffee and have speech to text service. Click the sponsored links to get a discount to support this podcast. And now let me leave you with some words from the man himself, Jason Calacanis. The number one reason a startup shuts down is not running out of money.
+02:16:01
+The number one reason a startup fails is that the founder gives up.
+02:16:07
+Thank you for listening and hope to see you next time.

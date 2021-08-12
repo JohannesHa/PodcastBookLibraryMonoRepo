@@ -1,0 +1,1120 @@
+00:00:00
+The following is a conversation with Stephen Wolfram, a computer scientist, mathematician, a theoretical physicist who is the founder and CEO of Wolfram Research, a company behind Mathematica, Wolfram Alpha, Wolfram Language. And the new warfrom physics project is the author of several books, including A New Kind of Science, which on a personal note, was one of the most influential books in my journey in computer science and artificial intelligence. It made me fall in love with the mathematical beauty and power of cellular automata.
+00:00:34
+It is true that perhaps one of the criticism of Stephen is on a human level, that he has a big ego, which prevents some researchers from fully enjoying the content of his ideas.
+00:00:46
+We talk about this point in this conversation. To me, ego can lead you astray, but can also be a superpower, one that fuels bold, innovative thinking, that refuses to surrender to the cautious ways of academic institutions. And here especially, I ask you to join me in looking past the peculiarities of human nature and opening your mind to the beauty of ideas and Stephen's work, and in this conversation, I believe Stephen Wolfram is one of the most original minds of our time and at the core is a kind, curious and brilliant human being.
+00:01:23
+This conversation was recorded in November 2013 when the Wolfgramm Physics Project was underway, but not yet ready for public exploration as it is now. We now agreed to talk again probably multiple times in the near future. So this is round one. And stay tuned for around Tewson. This is the artificial intelligence podcast can enjoy subscribe on YouTube, review five stars, an Apple podcast supporting a patron or simply connect with me on Twitter. And Lex Friedman spelled F.R. Idi Amin.
+00:01:54
+As usual, I do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you. It doesn't hurt the listening experience. Quick summary of the ads, two sponsors express support and Kashyap app, please consider supporting the podcast by getting Express VPN and Expressible Dotcom Leks Pod and downloading cash app and using Code Leks podcast. This show was presented by Kashyap, the number one finance app in the App Store, when you get it, you Scolex podcast, Kashyap lets you send my friends, buy Bitcoin and invest in the stock market with as little as one dollar.
+00:02:34
+This cash app does fractional share trading. Let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is an algorithmic marvel. It's big props to the Kashyap engineers for solving a hard problem, then in the end provides an easy interface that takes a step up to the next layer of abstraction of the stock market. This makes trading more accessible for new investors and diversification much easier. So, again, if you get cash out from the App Store or Google Play and use the Collects podcast, you get ten dollars in cash.
+00:03:08
+Apple also donated the First, an organization that is helping to advance robotics and stem education for young people around the world. This show is presented by Express VPA, get it at Express dot com flex pod to get a discount and to support this podcast. I've been using Express for many years. I love it. It's really easy to use the big power on button and your privacy is protected and if you like, you can make it look like your locations anywhere else in the world.
+00:03:41
+This has a large number of obvious benefits. Certainly it allows you to access international versions of streaming websites like the Japanese, Netflix or the UK Hulu.
+00:03:52
+Express VPN works on any device you can imagine, I use it on Linux Shara'a to open to new version coming out soon actually Windows Android, but it's available anywhere else to once again get it an express VPN dotcom slash lex pod to get a discount and to support this podcast. And now here's my conversation with Stephen Wolfram. You and your son Christopher, helped create the alien language in the movie Arrival. So let me ask maybe a bit of a crazy question, but if aliens were to visit us on Earth, do you think we would be able to find a common language?
+00:04:49
+Well, by the time we're saying aliens are visiting us, we've already prejudiced the whole story because the, you know, the concept of an alien actually visiting, so to speak, we already know that kind of things that make sense to talk about visiting. So we already know they exist in the same kind of physical set up that we do.
+00:05:10
+They're not you know, it's not just radio signals.
+00:05:14
+It's an actual thing that shows up and so on. So I think in terms of, you know, can one find ways to communicate? Well, the best example we have of this right now is I I mean, that's our first sort of example of alien intelligence. And the question is, how well do we communicate with I you know, if you were to say if you were in the middle of a neural net and you open it up and it's like, what are you thinking?
+00:05:41
+Can you discuss things with it? It's not easy, but it's not absolutely impossible.
+00:05:46
+So I think I think by the time but given the setup of your question, aliens visiting, I think the answer is yes. One will be able to find some form of communication, whatever communication means. Communication requires notions of purpose and things like this. It's a kind of philosophical quagmire.
+00:06:04
+So if A.I. is a kind of alien life form, what do you think or visiting looks like? So if we look at aliens visiting and we'll get to discuss computation and the world of computation, but if you were to imagine you said you're already prejudiced, something we're saying you visit. But what how would aliens visit by visit this kind of an implication?
+00:06:29
+And here we're using the imprecision of human language, you know, in a world of the future. And if that's represented in computational language, we might be able to take the the concept visit and go look in the documentation basically and find out exactly what does that mean, what properties does it have and so on. But by visit in ordinary human language, I'm kind of taking it to be there's, you know, something, a physical embodiment that shows up in a spacecraft.
+00:06:57
+Since we kind of know that that's necessary, we're not imagining it's just, you know, photons showing up in a radio signal that, you know, photons and some very elaborate pattern we're imagining. It's it's physical things made of atoms and so on, that that show up can be photons in a pattern.
+00:07:18
+Well, that's a good question. I mean, whether there is the possibility, you know, what counts as intelligence. Good question. I mean, it's you know, and I used to think there was sort of a oh, they'll be you know, it'll be clear what it means to find extraterrestrial intelligence, et cetera, et cetera, et cetera. I've I've increasingly realized as a result of science that I've done that there really isn't a bright line between the intelligent and the merely computational, so to speak.
+00:07:46
+So, you know, in our kind of everyday sort of discussion will say things like, you know, the weather has a mind of its own. While we let's unpack that question. You know, we realize that there are computational processes that go on that determine the fluid dynamics of the sun that's in the atmosphere, et cetera, et cetera, et cetera. How do we distinguish that from the processes that go on in our brains of, you know, the physical processes that go on in our brains?
+00:08:11
+How do we how do we had we separate those? How do we say the the physical processes going on that represent sophisticated computations and the weather? Oh, that's not the same as the physical processes that go on that represent sophisticated computations in our brains. The answer is, I don't think there is a fundamental distinction. I think the distinction for us is that there's kind of a a thread of of history and so on that connects kind of what happens in different brains to each other, so to speak.
+00:08:40
+And it's a you know, what happens in the weather, something which is not connected by sort of a a thread of of civilizational history, so to speak, to what we're used to in our story, in the stories that the human brain has told us.
+00:08:53
+But maybe the weather has its own stories.
+00:08:56
+Absolutely. And that's and that's what we run into trouble thinking about extraterrestrial intelligence, because, you know, it's like that pulsar magnetosphere that's generating these very elaborate radio signals. You know, is that something that we should think of as being this whole civilization that's developed over the last, however long, you know, millions of years of of of processes going on in the neutron star or whatever versus what, you know, what we're used to in human intelligence.
+00:09:25
+And I think it's a I think in the end, you know, when people talk about extraterrestrial intelligence and where is it in the whole, you know, Fermi paradox of how come there's no other force signs of intelligence in the universe? My guess is that we've got sort of two alien forms of intelligence that we're dealing with, artificial intelligence and sort of physical or extraterrestrial intelligence and. My guess is people will sort of get comfortable with the fact that both of these have been achieved around the same time, and in other words, people will say, well, yes, we're used to computers, things we've created, digital things we've created being sort of intelligent like we are.
+00:10:05
+And also we're kind of also used to the idea that there are things around the universe that are kind of intelligent like we are, except they don't share the sort of civilizational history that we have. And so we don't know. There are there are different branch. I mean, it's similar to when you talk about life, for instance. I mean, you you you kind of said life form, I think almost synonymously with intelligence, which I don't think is is, you know, the the eyes would be upset to hear you equate those because, say, really probably implied biological life.
+00:10:40
+Right. Right. But you're saying I mean, we'll explore this more, but you're saying it's really a spectrum and it's all just the kind of computation. And so it's it's a full spectrum.
+00:10:50
+And we just make ourselves special by weaving a narrative around our particular kinds of computation. Yes.
+00:10:58
+I mean, the thing that I think I've kind of come to realize is, you know, at some level it's a little depressing to realize that there's so little that's liberating. Well, yeah, but I mean, it's you know, it's the story of science. Right. And, you know, from Copernicus on, it's like, you know, first we were like convinced our planets at the center of the universe. Now, that's not true. Well, then we were convinced of something very special about the chemistry that we have as biological organisms.
+00:11:24
+Now, that's not really true. And then we're still holding out that hope. Oh, this intelligence thing we have, that's really special. Yeah, I don't think it is. However, in a sense, as you say, it's kind of liberating for the following reason that you realize that what's special is the details of us, not some abstract attribute that, you know, we could wonder, oh, is something else going to come along and, you know, also have that abstract attribute?
+00:11:52
+Well, yes, every abstract attribute we have, something else has it.
+00:11:56
+But the full details of our kind of history, of our civilization and so on, nothing else has that. That's what you know, that's our story, so to speak. And that's sort of almost by definition, special. So I, I view it as not being such a I mean, I was initially I was like, this is bad. This is this is kind of, you know, how can we have self-respect about them, about the things that we do.
+00:12:21
+Then I realized the details of the things we do. They are the story. Everything else is kind of a blank canvas. So maybe on a small tangent, you just made me think of it, but what do you make of the monolith in 2001, A Space Odyssey in terms of aliens communicating with us and sparking the kind of particular intelligent computation that we humans have? Is there anything interesting to get from that sci fi?
+00:12:53
+Yeah, I mean, I think what's what's fun about that is, you know, the monoliths are these, you know, one to four to nine perfect cuboid things. And in the, you know, earth of a million years ago, whatever they were portraying with a bunch of apes and so on, a thing that has that level of perfection seems out of place. It seems very kind of constructed, very engineered.
+00:13:17
+So that's an interesting question. What is the what's the techno's signature, so to speak? What is it that you see it somewhere and you say, my gosh, that had to be engineered?
+00:13:28
+Now, the fact is we see crystals, which are also very perfect. And, you know, the perfect ones are very perfect. They're nice Powhida or whatever. And so in that sense, we say, well, it's a sign of sort of it's a techno signature, that it's a perfect, you know, a perfect polygonal shape, political shape. That's not true. And so then it's an interesting question. What what is the you know, what is the right signature?
+00:13:55
+I mean, like, you know, Gousse famous mathematician, you know, he had this idea you should cut down the Siberian forest and the shape of sort of a typical image of the proof of the Pythagorean theorem on the grounds that a kind of cool idea didn't get done. But, you know, on the grounds that the Martians would see that and realized, gosh, there are mathematicians out there, that's kind of his theory of the world. That was probably the best advertisement for the cultural achievements of our species.
+00:14:26
+But, you know, it's a it's a reasonable question. What do you what can you send or create? That is a sign of intelligence in its creation or even intention in its creation.
+00:14:38
+You talk about if we were to send a beacon. Can you what should we send his math, our greatest creation is what is our greatest creation?
+00:14:48
+I think I think it's a it's a philosophically doomed issue. I mean, in other words, you send something, you think it's fantastic, but it's kind of like we are part of the universe. We make things that are, you know, things that happen in the universe computation, which is sort of the thing that we are in some abstract sense and sense using to create all these elaborate things we create is surprisingly ubiquitous. In other words, we might have thought that, you know, we've built this whole giant engineering stack that's led us to microprocessors, that's led us to be able to do elaborate computations.
+00:15:27
+But this idea, the computations are happening all over the place. The only question is whether whether there's a thread that connects our human intentions to what those computations are. And so I think I think this question of what do you send to kind of show off our civilization and the best possible way, I think any kind of almost random slab of stuff we've produced is about equivalent to everything else.
+00:15:55
+I think it's one of these things where it's an nonromantic way of phrasing it. I just sorry to interrupt, but I just talked to Andrew Chan, who's the wife of Carl Sagan. And so I don't know if you're familiar with the Voyager. It's just part of sending, I think, brain waves of, you know, I wasn't just hers.
+00:16:16
+It was her brainwaves when she was first falling in love with Carl Sagan.
+00:16:20
+It's a beautiful story that perhaps you would shut down the power of that by saying we might as well send anything else. And that's interesting. All of it is kind of an interesting, peculiar thing. That's.
+00:16:35
+Yeah, yeah. Right. Well, I mean, I think it's kind of interesting to see on the on the Voyager, you know, golden record thing. One of the things that's kind of cute about that is, you know, it was made. When was it? In the late 70s, early 80s. And, you know, one of the things it's a phonograph record, OK? And it has a diagram of how to play a phonograph record.
+00:16:54
+And, you know, it's kind of like it's shocking that in just 30 years, if you show that to a random kid of today and you show them that diagram and I've tried this experiment like I don't know what the heck this is. And the best anybody can think of is, you know, take the whole record, forget the fact that it has some kind of helical track and it just imaged the whole thing and see what's there. That's what we would do today.
+00:17:17
+And only 30 years our technology has kind of advanced to the point where the playing of a helical, you know, mechanical track on a phonograph record is now something bizarre. So, you know, it's it's a that's a cautionary tale, I would say, in terms of the ability to make something that in detail sort of leads by the nose, some, you know, the aliens or whatever to do something. It's like, no, you know, best you can do.
+00:17:44
+As I say, if we were doing this today, we would not build a helical scan thing with a needle. We would just take some high resolution imaging system and get all the bits of it and say, oh, it's a big nuisance that they put in a helix, you know, a spiral lets them let's just, you know, unravel the spiral and and start from there. Do you think this will get into trying to figure out? Interprete ability of interoperability of computation, being able to communicate with various kinds of computations.
+00:18:19
+Do you think it would be able to, if you're put put your alien hat on, figure out this record, how to play this record?
+00:18:28
+Well, it's a question of what one wants to do. I mean, understand what the other party was trying to communicate or understand anything about the other party.
+00:18:37
+What does understanding mean? I mean, that's the issue. The issue is it's like when people were trying to do natural language understanding for computers. So people tried to do that for years. It wasn't clear what it meant. In other words, you take your piece of English or whatever, and you say, gosh, my computers understood this. OK, that's nice. What can you do with that? Well, so, for example, when we did, you know, built Wolfram Alpha, you know, one of the things was it's you know, it's doing question answering and so on.
+00:19:09
+It needs to do natural language understanding. The reason that I realized after the fact, the reason we were able to do natural language understanding quite well and people hadn't before. The number one thing was we had an actual objective for the natural language understanding. We were trying to turn the natural language into computation, into this computational language that we could then do things with. Now, similarly, when you imagine your alien, you say, OK, we're playing the record.
+00:19:36
+Did they understand it? Well, depends what you mean. If they you know, if we if there's a representation that they have, if it converts to some representation where we can say, oh, yes, that is a that's a representation that we can recognize is represents understanding then all well and good. But actually the only ones that I think we can say would represent understanding are ones that will then do things that we humans kind of recognize as being useful to us, maybe trying to understand, quantify how technological advances particular civilization is.
+00:20:12
+So are their threat to us from a military perspective. Yeah, that's probably the kind of first kind of understanding they'll be interested in.
+00:20:20
+Gosh, that's so hard. I mean, that's like in the rival movie, that was sort of one of the key questions, as is, you know, why are you here, so to speak. And it's going to hurt us quite a bit. But even that is, you know, it's a very unclear you know, it's like the are you going to hurt us? That comes back to a lot of interesting AI ethics questions, because the you know, we might make an AI that says we'll take autonomous cars, for instance.
+00:20:44
+You know, are you going to hurt us? Well, let's make sure you only drive at precisely the speed limit, because we want to make sure we don't hurt you, so to speak, because that's some and then. Well, something, you know. But you say but actually that means I'm going to be really late for this thing. And, you know, that sort of hurts me in some way. So it's hard to know even even the definition of what it means to hurt.
+00:21:05
+Yeah, someone is unclear. And as we start thinking about things, about our ethics and so on, that's, you know, something one has to address. There's always trade offs. And that's the annoying thing about ethics. Yeah, well, right.
+00:21:18
+And I mean, I think ethics, like these other things we're talking about, is a deeply human thing. There's no abstract you know, let's write down the theorem that proves that this is ethically correct. That's a that's a meaningless idea. You know, you have to have a ground truth, so to speak. That's ultimately sort of what humans want and they don't all want the same thing. So that gives women all kinds of additional complexity.
+00:21:43
+And thinking about that one convenient thing in terms of turning ethics into computation and ask the question of what maximizes the likelihood of the survival of the species, that's a good existential issue.
+00:21:58
+But then when you say survival of the species, right, you might say you might, for example, for example, let's say forget about technology, just, you know, hang out and, you know, be happy, live our lives, go on to the next generation, you know, go through many, many generations where in a sense, nothing is happening that OK. Is that not OK? Hard to know in terms of, you know, the the attempt to do elaborate things and the attempt to might be counterproductive for the survival of the species.
+00:22:33
+Like, for instance. I mean, and, you know, I think it's it's also a little bit hard to know. So, OK, let's take that as a as a sort of thought experiment, OK? You know, you can say, well, what are the threats that we might have to survive, you know, the supervolcano, the asteroid impact, the, you know, all these kinds of things. OK, so now we inventory these possible threats and we say let's make our species as robust as possible relative to all these threats.
+00:23:00
+I think in the end, it's a it's sort of an unknowable thing what what it takes to know. So given that you've got this A.I. and you've told it maximize the long term, what does long term mean? Does long term mean until the sun burns out? That's that's not going to work. And, you know, does long term mean next thousand years? OK, that probably optimizations for the next thousand years that. It's like it's like if you're running a company, you can make a company be very stable for a certain period of time, like if, you know, if your company gets bought by some, you know, private investment group, then they'll you know, you can you can run a company just fine for five years by just taking what it does and, you know, removing all the R&D.
+00:23:48
+And the company will burn out after a while, but it'll run just fine for a while. So if you tell the I keep the humans OK for a thousand years, there's probably a certain set of things that one would do to optimize that, many of which one might say, well, that would be a pretty big shame for the future of history, so to speak, for that to be what happens. But I think I think in the end, you know, as you start thinking about that question, it is what you realize is there's a whole sort of raft of undesirability, computational or disability.
+00:24:18
+In other words, it's I mean, one of the good things about sort of the the the what our civilization has gone through and what sort of we humans go through is that there's a certain computational irresistibility to it in the sense that it isn't the case that you can look from the outside and just say the answer is going to be this. At the end of the day, this is what's going to happen. You actually have to go through the process to find out.
+00:24:42
+And I think that's that's both that feels better in the sense it's not a you know, something is achieved by going through all of this or all of this process. And it's but it also means that telling the A.I. go figure out, you know, what will be the best outcome. Well, unfortunately, it's going to come back and say it's kind of undecidable, what to do. We'd have to run all of those scenarios to see what happens.
+00:25:09
+And if we want that for the infinite future, we're thrown immediately into sort of standard issues of kind of infinite computation and so on.
+00:25:18
+So, yeah, even if you get that the answer to the universe and everything is 42, you still have to actually run the universe. Yes, it's a yes.
+00:25:28
+Like the question, I guess, or the the you know, the journey is the point, right?
+00:25:34
+Well, I think it's saying to summarize, this is the result of the universe. Yeah, that's if that is possible.
+00:25:41
+It tells us I mean, the whole sort of structure of thinking about computation and so on and thinking about how stuff works, if if if it's possible to say and the answer is such and such, you're basically saying there's a way of going outside the universe and you're kind of you're getting yourself into something of a sort of paradox because you're saying if it's knowable what the answer is, then there's a way to know it. That is beyond what the universe provides.
+00:26:08
+But if we can know it, then something that we're dealing with is beyond the universe. So then the universe isn't the universe, so to speak.
+00:26:17
+So and in general, as we'll talk about, at least for small human brains, it's hard to show that the result of a sufficiently complex computation, it's I mean, it's probably impossible. Right. And this salability.
+00:26:35
+So and the universe appears. By at least the poets to be sufficiently complex, they won't be able to predict what the heck it's all going to.
+00:26:47
+Well, we better not be able to, because if we can, it kind of denies I mean, it's you know, we're part of the universe. Yeah. So what does it mean for us to predict? It means that we that our little part of the universe is able to jump ahead of the whole universe. And, you know, this this quickly winds up. I mean, it is conceivable the only way we would be able to predict is if we are so special in the universe.
+00:27:11
+We are the one place where there is computation, more special, more sophisticated than anything else that exists in the universe. That's the only way we would have the ability to sort of the almost theological ability, so to speak, to predict what happens in the universe is to say somehow we're we're better than everything else in the universe, which I don't think is the case. Yeah, perhaps we can detect a large number of looping patterns that reoccur throughout the universe and fully describe them and therefore, but then it still becomes exceptionally difficult to see how those patterns interact and what kind of close.
+00:27:50
+Look, the most remarkable thing about the universe is that it has regularity at all. Might not be the case if you just have regularity.
+00:28:00
+Absolutely. If it's full of I mean, physics is successful, you know, it's full of of laws that tell us a lot of detail about how the universe works. I mean, it could be the case that, you know, the 10th of the ninth particles in the universe, they will do their own thing, but they don't. They all follow. We already know they all follow basically physical the same physical laws. And that's something that's a very profound fact about the universe.
+00:28:25
+What conclusions you draw from that is unclear. I mean, in the you know, the early, early theologians, that was, you know, exhibit number one for the existence of God right now, you know, people have different conclusions about it. But the fact is, you know, right now, I mean, I happen to be interested, actually, I've just restarted a long running kind of interest of mine about fundamental physics. I'm kind of like, come on, I'm on a bit of a quest, which I'm about to make more public of to see if I can actually find the fundamental theory of physics.
+00:28:57
+Excellence will come to that. And I just had a lot of conversations with quantum mechanics folks with. So I'm really excited on your take because I think you have a fascinating take on the the fundamental nature and nature of our reality from a physics perspective. So and what might be underlying the kind of physics as we think of it today?
+00:29:22
+OK, let's take a step back. What is computation?
+00:29:26
+It's a good question. Operationally, computation is following rules. That's kind of it, I mean, computation is the result is the process of systematically following rules, and it is the thing that happens when you do that.
+00:29:42
+So taking initial conditions are taking inputs and following rules. I mean, what are you following rules on? So there has to be some data, some not necessarily.
+00:29:52
+It can be something where there's a, you know, very simple input and then you're following these rules and you'd say there's not really much data going into this. It's you can actually pack the initial conditions into the rule if you want to. So I think the the question is, is there a robust notion of computation? That is, what does this mean? What I mean by that is something like this. So one of the things on a different in an area of physics, something like energy, OK, there are different forms of energy.
+00:30:22
+There's but somehow energy is a robust concept that doesn't isn't particular to kinetic energy or, you know, nuclear energy or whatever else. There's a robust idea of energy. So one of the things you might ask is, does the robust idea of computation or does it matter that this computation is running in a touring machine? This computation is running in a similar silicon CPU. This computation is running in an a fluid system, in the weather, those kinds of things, or is that a robust idea of computation that transcends the sort of detailed framework that it's running in?
+00:30:58
+OK, and is there yes. I mean, it wasn't obvious that there was. So it's worth understanding the history and how we got to where we are right now, because, you know, to say that there is is a statement in part about our universe. It's not a statement about what is mathematically conceivable. It's about what actually can exist for us.
+00:31:20
+Maybe you can also comment because energy as a concept is robust. But there's also it's intricate, complicated relationship with matter with mass. It is very interesting of particles that carry force and particles that sort of particles that carry force, particles that have mass, these kinds of ideas, they seem to map to each other, at least in the mathematical sense. Is there a connection between energy and mass and computation or these completely disjoined ideas?
+00:32:01
+We don't know yet. The things that I'm trying to do about fundamental physics may well lead to such a connection, but there is no known connection at this time.
+00:32:12
+So can you elaborate a little bit more on what how do you think about computation? What is computation? So, I mean, let's let's talk a little bit of a historical story. Yes. OK, so, you know, back go back 150 years, people were making mechanical calculators of various kinds. And, you know, the typical thing was you want an adding machine, you go to the adding machine store. Basically, you want a multiplying machine.
+00:32:37
+You go to the multiplying machine, store that different pieces of hardware. And so that means that at least at the level of that kind of computation and those kinds of pieces of hardware, there isn't a robust notion of computation. There's the adding machine kind of computation as the multiplying machine notion of computation, and they're disjoint. So what happened in around nineteen hundred people started imagining, particularly in the context of mathematical logic, could you have something which would represent any reasonable function?
+00:33:07
+Right. And they came up with things. This idea of primitive recursion was one of the early ideas and it didn't work. There were reasonable functions that people could come up with that were not represented using the primitives, the primitive recursion. OK, so then then along comes 1931 and Girdles Theorem and so on. And as in looking back, one can see that as part of the process of establishing goals, Theorem Girl basically showed how you could compile arithmetic, how you could basically compile logical statements like this statement is unprovable into arithmetic.
+00:33:45
+So what he essentially did was to show that arithmetic can be a computer in a sense that's capable of representing all kinds of other things. And then Turing came along, 1936 came up with Turing machines. Meanwhile, Alonzo Church had come up with Lambda Calculus. And the surprising thing that was established very quickly is the Turing Machine idea about what might be what computation might be is exactly the same as the lambda calculus idea of what computation might be. And so and then I started to be other ideas, you know, register machines, other kinds of other kinds of representations of computation.
+00:34:20
+And the big surprise was they all turned out to be equivalent. So in other words, it might have been the case like those old adding machines and multiplying machines that, you know, Turing had his idea of computation, church had his idea of computation, and they were just different. But it isn't true. They're actually all equivalent. So then by I would say the the oh, 1970s or so in sort of the computation computer science computation theory area, people had sort of said, oh, Turing machines are kind of what computation is.
+00:34:51
+Physicists were still holding out saying, no, no, no, that's just not how the universe works. We've got all these differential equations, we've got all these real numbers that have infinite numbers of digits. The universe is not a time machine. Right. The you know, the Turing machines are a small subset of of that are the things that we make in microprocessors and engineering structures and so on.
+00:35:11
+So probably actually through my work in the 1980s about sort of the relationship between computation and models of physics, it became a little less clear that there would be that there was this big sort of dichotomy between what can happen in physics and what happens and things like Turing machines. And I think probably by now people would mostly think and by the way, brains were another kind of elements of this. I mean, you know, girl didn't think that his notion of computational what amounted to his notion of computation would cover brains.
+00:35:47
+And Turing wasn't sure either. But although he was a little bit, he got to be a little bit more convinced that it should cover brains. But so, you know, but I would say by probably sometime in the 1980s, there was beginning to be sort of a general belief that, yes, this notion of computation that could be captured by things like Turing machines was reasonably robust. Now, the next question is, OK, you can have a universal Turing machine that's capable of being programmed to do anything that any Turing machine can do.
+00:36:23
+And, you know, this idea of universal computation is an important idea, this idea that you can have one piece of hardware and program it with different pieces of software, you know, that's kind of the idea that launched most modern. Technology, I mean, that's kind of that's the idea that launched computer revolution software, etc., so important idea. But but the thing that's still kind of holding out from that idea is, OK, there is this universal computation thing, but seems hard to get to.
+00:36:52
+Seems like you want to make a universal computer. You have to kind of have a microprocessor with, you know, a million gates in it. And you have to go to a lot of trouble to make something that achieves that level of computational sophistication. OK, so the surprise for me was that stuff that I discovered in the early 80s. I'm looking at these things called cellular automata, which are really simple computational systems. The thing that was a big surprise to me was that even when the rules were very, very simple, they were doing things that were as sophisticated as they did when their rules were much more complicated.
+00:37:27
+So it didn't look like, you know, this idea of how to get sophisticated computation, you have to build something with very sophisticated rules. That idea didn't seem to pan out.
+00:37:39
+And instead, it seemed to be the case that sophisticated computation was completely ubiquitous, even in systems with incredibly simple rules. And so that led to this thing that I call the principle of computational equivalence, which basically says when you have a system that follows rules of any kind, then whenever the system isn't doing things that are in some sense obviously simple, then the computation that the behavior of the system corresponds to is of equivalent sophistication.
+00:38:10
+So that means that when you kind of go from the very, very, very simplest things you can imagine, then quite quickly you hit this kind of threshold above which everything is equivalent and it's computational sophistication. Not obvious. That would be the case. I mean, that's a a science fact. Well, and hold on a second.
+00:38:29
+So this you've opened with a new kind of science. I mean, I remember was a huge eye opener. That's such simple things can create such complexity. And yes, there's an equivalence, but not a fact.
+00:38:42
+It just appears to I mean, as much as of fact, there's sort of these theories are so elegant that it it seems to be the way things are. But let me ask sort of you just brought up previously, kind of like the communities of computer scientists with their Turing machines, the physicists with their universe and the whoever the heck, maybe neuroscientists looking at the brain. What's your sense in the equivalence you've shown through your work that simple rules can create?
+00:39:19
+Equivalently complex toy machine systems, right? Is the universe equivalent to the kinds of tutoring machines is the human brain? A kind of time machine, do you see those things basically blending together, or is there still a mystery about how destroyed there?
+00:39:42
+Well, my guess is that they all blend together, but we don't know that for sure yet. I mean, this you know, I should say, I said rather glibly that the principle of computational equivalence is sort of a science fact. Unless I was using in words. Yes. Efforts for the for the for the science fact.
+00:39:59
+Because when you it is a I mean, just to talk about that for a second. Well, the thing is that it is it has a complicated epistemological character similar to things like the second law of thermodynamics, the law of entropy increase the you know, what is the second rule of thumb? And it is is it a law of nature? Is that a thing that is true of the physical world? Is it is it something which is mathematically provable?
+00:40:28
+Is it something which happens to be true of the systems that we see in the world? Is it in some sense a definition of heat perhaps? Well, it's a combination of those things, and it's the same thing with the principle of computational equivalence. And in some sense, the principle of computational equivalence is at the heart of the definition of computation, because it's telling you there is a thing there is a robust notion that is equivalent across all these systems and doesn't depend on the details of each individual system.
+00:40:58
+And that's why we can meaningfully talk about a thing called computation. And we're not stuck talking about, oh, there's computation and Turing Machine number three, seven, eight, five and et cetera, et cetera, et cetera. That's that's why there is a robust notion like that. Now, on the other hand, can we prove the principle of computational equivalence? Can we can we prove it as a mathematical result? Well, the answer is actually we've got some nice results along those lines that say, you know, throw me a random system with very simple rules.
+00:41:28
+Well, and a couple of cases, we now know that even the very simplest rules we can imagine of a certain type are universal and do sort of follow what you would expect from the principle of computational. So that's a nice piece of sort of mathematical evidence for the principle of computational equivalence just to linger on that point.
+00:41:48
+Simple rules creating sort of these complex behaviors.
+00:41:53
+But is there a way to mathematically say that this behavior is complex? That you you mentioned you cross a threshold, right, the various indicators, so, for example, one thing would be, is it capable of universal computation that is given the system? Do there exist initial conditions for the system that can be set up to essentially represent programs to do anything you want to compute primes, to compute pi, to do whatever you want? Right. So that's an indicator.
+00:42:25
+So we know in a couple of examples that, yes, the simplest candidates that could conceivably have that property do have that property. And that's what the principle of computational equivalence might suggest. But this principle of computational equivalence, one question about it is, is it true for the physical world? It might be true for all these things. We come up with the Turing machines, the cellular automata or whatever else. Is it true for our actual physical world?
+00:42:54
+Is it true for the brain brains, which are an element of the physical world? We don't know for sure. And that's not the type of question that we will have a definitive answer to, because it's you know, it's a it's a there's a there's a sort of scientific induction, as you can say, what's true for all these brains. But this person over here is really special and it's not true for them. And you can't you know, the the only way that that cannot be what happens is if we finally nail it and actually get a fundamental theory for physics.
+00:43:24
+And it turns out to correspond to, let's say, a simple program. If that is the case, then we will basically have reduced physics to a branch of mathematics in the sense that we will not be, you know, right now with physics, we're like, well, this is the theory that, you know, this is the rules that apply here. But in the middle of that, you know, you know, right by that black hole, maybe these rules don't apply.
+00:43:47
+And something else supplies. And there may be another piece of the onion that we have to peel back. But if if we can get to the point where we actually have this is the fundamental theory of physics. Here it is. It's this program. Run this program and you will get our universe. Then we've kind of reduced the problem of figuring out things in physics to a problem of doing some what turns out to be very difficult, irreducibly difficult mathematical problems.
+00:44:14
+But it no longer is the case that we can say that somebody can come in and say, oops, you know, you were right about all these things, about Turing machines, but you're wrong about the physical universe. We know that sort of ground truth about what's happening in the physical universe. Now, I happen to think I mean, you asked me at an interesting time because I'm just in the middle of starting to to reenergize my my project to kind of study the fundamental theory of physics.
+00:44:40
+As of today, I'm very optimistic that we're actually going to find something and that it's going to be possible to to see that the universe really is computational in that sense. But I don't know, because we're betting against, you know, we're betting against the universe, so to speak. And I you know, it's not like, you know, when I spend a lot of my life building technology and then I know what's in there. Right. And there may be it may have unexpected behavior.
+00:45:05
+It may have bugs, things like that. But fundamentally, I know what's in there for the universe. I'm not in that position, so to speak.
+00:45:11
+What kind of computation do you think the fundamental laws of physics might emerge from? Just to clarify? So you've done a lot of fascinating work with kind of discrete kinds of computation that, you know, cellular automata and we'll talk about it, have this very clean structure, such a nice way to demonstrate that simple rules can create immense complexity.
+00:45:39
+But what you know is that actually Arcelia Thomas, sufficiently general to describe the kinds of computation that might create the laws of physics just to give. Can you give us a sense of what kind of computation do you think would create? Well, so this is a slightly complicated issue, because as soon as you have universal computation, you can in principle simulate anything with anything. But it is not a natural thing to do. And if you're asking were you to try to find our physical universe by looking at possible programs and the computational universe of all possible programs, would the ones that correspond to our universe be small and simple enough that we might find them by searching that computational universe?
+00:46:25
+We got to have the right basis, so to speak. We have to have the right language in effect for describing computation for that to be feasible. So the thing that I've been interested in for a long time is what are the most structuralist structures that we can create with computation?
+00:46:40
+So in other words, if you say a cellular automaton has a bunch of cells that are arrayed on a grid and it's very, you know, and every cell is updated in synchrony at this particular, you know, when there's a there's a click of of a clock, so to speak, and it goes the tick of a clock and every cell gets updated at the same time. That's a very specific, very rigid kind of thing. But my guess is that when we look at physics and we look at things like space and time, that what's underneath space and time is something as structuralists as possible, that what we see, what emerges for us as physical space, for example, comes from something that is sort of arbitrarily unstructured underneath.
+00:47:22
+And so I've been for a long time interested in kind of what what are the most structuralist structures that we can set up. And actually, what I had thought about for ages is using graphs, networks where essentially so all about space, for example. So what is space? The kind of a question I might ask back in the early days of quantum mechanics, for example, people said, oh, for sure, space is going to be discrete because all these other things we're finding a discrete but that never worked out in physics.
+00:47:52
+And so space and physics today is always treated as this continuous thing, just like Euclid imagined it. I mean, the very first thing Euclid says in his sort of common notions is, you know, a point is something which has no part. In other words, there are there are points that are arbitrarily small and there's a continuum of possible positions of points. And the question is, is that true? And so, for example, if we look at, I don't know, fluid like our water, we might say, oh, it's a continuous fluid.
+00:48:19
+We can pour it. We can do all kinds of things continuously. But actually we know because we know the physics of it, that it consists of a bunch of discrete molecules bouncing around. And only in the aggregate is it behaving like a continuum. And so the possibility exists that that's true of space. Two people haven't managed to make that work with existing frameworks and physics, but I've been interested in whether one can imagine that underneath space and also underneath time, it's something more structuralists.
+00:48:48
+And the question is, is it computational so that all possibilities, it could be computational somehow fundamentally equivalent to a Turing machine or it could be fundamentally not. So how could it not be? It could not be. So Turing Machine essentially deals with integers, whole numbers, some level. And, you know, it can do things like it can add one to a number, it can do things like this.
+00:49:09
+It can also store whatever the heck did. Yes, it has an infinite storage storage. But what one one thinks about doing physics or sort of idealised physics or idealised mathematics, one can deal with real numbers, numbers with an infinite number of digits numbers which are absolutely precise. And I can say we can take this number and we can multiply it by itself.
+00:49:33
+Are you comfortable with infinity in this context? Are you comfortable in a context of computation? Do you think infinity plays a part?
+00:49:41
+I think that the role of infinity is complicated. Infinity is useful in conceptualizing things. It's not actually usable. Almost by definition, it's not actually usable.
+00:49:53
+But do you think intent is part of the thing that might underlie the laws of physics?
+00:49:57
+I think that no. I think there are many questions that you ask about you might ask about physics, which inevitably involve infinity, like when you say, you know, is faster than light travel possible? You could say with with with given the laws of physics, can you make something even arbitrarily large, even, quote, infinitely large that, you know, that will make faster than light travel possible, then you're thrown into dealing with infinity as a as a kind of theoretical question.
+00:50:24
+But I mean, talking about, you know, sort of what's underneath space and time and what how one can make, you know, a computational infrastructure. One possibility is that you can't make a computational infrastructure in a machine sense that you really have to be dealing with precise real numbers. You're dealing with partial differential equations which have precise real numbers that arbitrarily close to separate points. You have a continuum for everything. Could be that that that's what happens, that there's sort of a continuum for everything and precise real numbers for everything.
+00:50:57
+And then the things I'm thinking about are wrong. And, you know, that's that's the risk you take.
+00:51:03
+If you're you know, if you're trying to sort of do things about nature, as you might just be wrong. It's not it's for me personally, it's kind of strange things. I've spent a lot of my life building technology where you can do something that nobody cares about, but you can't be sort of wrong in that sense. And the sense that you build your technology in it does what it does. But but I think, you know, this question of what you know, what the sort of underlying computational infrastructure for the universe might be.
+00:51:29
+Yes. It's so it's sort of inevitable. It's going to be fairly abstract, because if you're going to get all these things, like there are three dimensions of space, there are electrons, there are muons, there are quarks, there are this you don't get to if the if the model for the universe is simple, you don't get to have sort of a line of code for each of those things. You don't get to have sort of the the the the muon case, the tau Lepton case and so on.
+00:51:56
+All of us are all had to be emergent somehow. Right. So something deeper. Right. So that means it's sort of inevitable that it's a little hard to talk about what the sort of underlying structural structure actually is.
+00:52:07
+Do you think are human beings have the cognitive capacity to understand? If we're to discover, to understand the kinds of simple structure from which these laws can emerge? Like, do you think that's a good question? Well, here's what I think.
+00:52:22
+I think that I mean, I'm right in the middle of this right now. I'm telling you that I think this one. Yeah. I mean, this human has a hard time understanding, you know, a bunch of the things that are going on. But but what happens in understanding is one builds waypoints.
+00:52:37
+I mean, if you said understand modern 21st century mathematics starting from, you know, counting back and, you know, when overcounting was invented 50000 years ago, whatever it was right there, that will be really difficult. But what happens is we build waypoints that allow us to get to higher levels of understanding and we see the same thing happening in language. You know, when we invent a word for something, it provides kind of a cognitive anchor, a kind of a waypoint that lets us, you know, like a podcast or something you could be explaining.
+00:53:09
+Well, it's a thing which works this way, that way, the other way. But as soon as you have the word podcast and people kind of societally understand it, you start to be able to build on top of that. And so I think and that's kind of the story of science, actually, too. I mean, science is about building these kind of waypoints where we find the sort of cognitive mechanism for understanding something that we can build on top of it.
+00:53:31
+You know, we we have the idea of, I don't know, differential equations we can build on top of that. We have this idea of that idea. So my hope is that if it is the case that we have to go all the way sort of from the sand to the computer and there's no way points in between, then we're toast. We won't be able to do that.
+00:53:51
+Well, eventually we might.
+00:53:52
+So for if we're as clever, apes are good enough for billions of abstractions. Eventually from San, we'll get to the computer and it just might be a longer journey.
+00:54:02
+The question is whether it is something that you ask whether our human brains. Yes. Will will understand what's going on. And that's a different question, because for that it requires steps that are for whether it's sort of from which we can construct a human understandable narrative. And that's something that I think I am somewhat hopeful that that will be possible. Although, you know, as of literally today, if you ask me, I'm confronted with things that I don't understand very well.
+00:54:32
+And so this is a small pattern in a computation trying to understand the rules under which the computation functions. And it's it's an interesting possibility under which kinds of computations such a creature can understand itself. My guess is that within so we didn't talk much about computational or disability, but it's a consequence of this principle of computational equivalence and it's sort of a core idea that that one has to understand, I think, which is the question is, you're doing a computation.
+00:55:02
+You can figure out what happens in the computation just by running every step in the computation and seeing what happens. Or you can say, let me jump ahead and figure out, you know, have something smarter that figures out what's going to happen before it actually happens. And a lot of traditional science has been about that act of computational reduced ability. It's like we've got these equations and we can just solve them or we can figure out what's going to happen.
+00:55:28
+We don't have to trace all of those steps. We just jump ahead because we solve these equations. OK, so one of the things that as a consequence of the principle of computational equivalence is you don't always get to do that. Many, many systems will be computationally irreducible in the sense that the only way to find out what they do is just follow each step and see what happens. Why is that? Well, if you have if you're saying, well, we with our brains, we're a lot smarter, we don't have to mess around like the little cellular automaton going through and updating all those cells.
+00:55:57
+We can just, you know, use the power of our brains to jump ahead. But if the principle of computational equivalence is right, that's not going to be correct, because it means that there's us doing our computation, our brains does a little cellular automaton doing its computation. And the principle of computational government says these two computations are fundamentally equivalent. So that means we don't get to say we are a lot smarter than the cellular automaton and jump ahead because we're just doing computation.
+00:56:25
+That's of the same sophistication as the cellular automaton itself. That's computational or disability is fascinating.
+00:56:31
+But the and that's a really powerful idea. I think that's both depressing and humbling and so on that world, we in cellular time are the same. But the question we're talking about, the fundamental laws of physics is kind of the reverse question. You're not predicting what's going to happen. You have to run the universe for that. But saying, can I understand what rules likely generated me?
+00:56:55
+I understand. But the problem is to know whether you're right. You have to have some computational reduced ability because we are embedded in the universe, if the only way to know whether we get the universe is just to run the universe, we don't get to do that because it just ran for fourteen point six billion years or whatever. And we don't you know, we can't rerun it, so to speak. So we have to hope that there are pockets of computational reusability sufficient to be able to say, yes, I can recognize those are electrons there.
+00:57:25
+And and I think that it is a it's a feature of computational irresistibility. It's sort of a mathematical feature that there are always an infinite collection of pockets of reduced ability. The question of whether they land in the right place and whether we can sort of build a theory based on them is unclear. But to this point about, you know, whether we as observers in the universe built out of the same stuff as the universe can figure out the universe, so to speak, that relies on these pockets of reduced ability.
+00:57:52
+Without the pockets of a disability, it won't work, can't work. But I think this question about how observers operate, it's one of the features of science over the last 100 years particularly, has been that every time we get more realistic about observers, we learn a bit more about science. So, for example, relativity was all about observers don't get to say when you know what simultaneous with what, they have to just wait for the right signal to arrive to decide what simultaneous or for example, in thermodynamics observers don't get to say the position of every single molecule and a gas.
+00:58:29
+They can only see the kind of large scale features. And that's why the second law of thermodynamics, law of entropy increased and so on works you could see every individual molecule. You wouldn't conclude something about thermodynamics. You would conclude all these molecules just all doing these particular things. You wouldn't be able to see this aggregate fact. So I strongly expect that. And in fact, the theories that I have, that one has to be more realistic about the computation and other aspects of observers in order to actually make a correspondence between what we experience.
+00:59:03
+In fact, they have a mobile team. And I have a little theory right now about how quantum mechanics may work, which is a very wonderfully bizarre idea about how the sort of thread of human consciousness relates to what we observe in the universe. But this is the several steps to explain what that's about.
+00:59:23
+What do you make of the mass of the Observer at the lower level of quantum mechanics? Sort of the textbook definition with quantum mechanics kind of says that there's some there's two worlds. One is the world that actually is and the other is that observed. What do you make sense of that?
+00:59:46
+Well, I think actually the idea is we've recently had might actually give away into this. And that's I don't know yet. I mean, it's I think that it's a mess. I mean, the fact is there is a one of the things that's interesting and when, you know, people look at these models that I started talking about 30 years ago, now they say, oh, no, that can't possibly be right. You know, what about quantum mechanics?
+01:00:13
+Right. Me say, OK, tell me, what is the essence of quantum mechanics? What do you want me to be able to reproduce to know that I've got quantum mechanics, so to speak? Well, and that question comes up comes up very operationally, actually, because we've been doing a bunch of stuff with quantum computing. And there are all these companies that say we have a quantum computer. We say, let's connect your API and let's actually run it.
+01:00:35
+And they're like, well, maybe you shouldn't do that yet. We're not quite ready yet. And one of the questions that I've been curious about is if I have five minutes with a quantum computer, how can I tell if it's really a quantum computer or whether it's a simulator at the other end? And turns out it's really hard. It turns out there isn't. It's it's like a lot of these questions about sort of what is the intelligence, what's life doing tests for quantum computing.
+01:00:59
+That's right. That's right. It's like, are you really a quantum computer? And I think simulation the. Yes, exactly. Is it just a simulation or is it really a quantum computer? Same as you all over again. But but that so, you know, this this whole issue about the sort of mathematical structure of quantum mechanics and the completely separate thing that is our experience in which we think definite things happen. But as quantum mechanics doesn't say, definite things ever happen.
+01:01:27
+Quantum mechanics is all about the amplitudes for different things to happen. But yet our thread of consciousness operates as if definite things are happening. Tollinger, on the point, you've kind of mentioned the structure that could underlie everything and this idea that it could perhaps have something like a structure of a graph. Can you elaborate why your intuition is that there's a graph structure of nodes and edges and what it might represent? Right.
+01:01:59
+OK, so the question is, what is in a sense the most structuralist structure you can imagine? So and in fact, what I've recently realized in the last year or so, I have a new most structuralists structure.
+01:02:15
+By the way, the question itself is a beautiful one and a powerful one in itself. So even without an answer, just the question is a really strong question. Right.
+01:02:24
+But what's your new idea? Well, it has to do with hypergraphia, essentially.
+01:02:29
+What what is interesting about the sort of model I have now is it's a little bit like what happened with computation. Everything that I think of as oh, well, maybe the model is this.
+01:02:42
+I discover it's equivalent.
+01:02:44
+And that's quite encouraging because it's like I could say, well, I'm going to look at trivalent graphs with three edges for each node and so on. Or I could look at the special kind of graph where I could look at this kind of algebraic structure and turns out that the things I'm now looking at, everything that I've imagined that is a plausible type of structuralists structure is equivalent to this. So what is it?
+01:03:09
+Well, a typical way to think about it is, well, so you might have some some collection of.
+01:03:19
+Tuples collection of of, let's say, numbers, so you might have one three five, two, three, four, just collections of numbers, triples of numbers, let's say, quadruples of numbers, pairs of numbers, whatever.
+01:03:36
+And you have all these sort of floating little tuples. They're not in any particular order. And that sort of floating collection of tuples, and I told you this was abstract, represents the whole universe. The only thing that relates to them is when a symbol is the same, it's the same, so to speak. So if you have two tuples and they contain the same symbol, let's say at the same position of the tuple, at the first element of the tuple, then that's represents a relation.
+01:04:09
+OK, so let me let me try and pull this back while, OK, it's a I told you substract, but this is this is the this is so the relationship was formed by the same some aspect of sameness.
+01:04:21
+Right.
+01:04:21
+But so think about it in terms of a graph. So a graph, bunch of nodes. Let's say you number each node. OK, then what is a graph? A graph is a set of pairs that say this node has an edge connecting it to this other node.
+01:04:37
+So that's the that's an a graph is just a collection of those pairs that say this node connects to the southern node. So this is a generalization of that in which instead of having pairs, you have arbitrary and tuples. That's it. That's the whole story. And now the question is, OK, so that might be that might represent the state of the universe. How does the universe evolve? What is the universe do? And so the answer is that what I'm looking at is transformation rules on these hyper graphs.
+01:05:10
+In other words, you say this whenever you see a a piece of this hypergrowth that looks like this, turn it into a piece of hydrograph that looks like this. So on a graph, it might be when you see the sub graph, when you see this thing with a bunch of edges hanging out and this particular way, then rewrite it as this other graph. Mm hmm. OK. And so that's the whole story. So the question is what?
+01:05:37
+So now you say I mean, I think as I say, this is quite abstract. And one of the questions is where do you do those updating? So you've got this giant graph. What triggers updating? Like, what's the what's the ripple effect of it? Is it. Yeah, and I suspect everything is discrete even in time.
+01:05:58
+So, OK, so the question is, what do you do the updates. Yes. And the answer is the rule is you do them wherever they apply and you do them, you do them. The order in which the updates is done is not defined. That is that you can deduce that there may be many possible orderings for these updates. Now, the point is, imagine you're an observer in this universe. So and you say, did something get updated?
+01:06:22
+Well, you don't in any sense know until you yourself have been updated. Right. So, in fact, all that you can be sensitive to is essentially the causal network of how an event over there affects an event that's in you.
+01:06:40
+It doesn't even feel like observation. That's like that's something else you're just part of. The whole thing is you're part of it. But but even to have so the end result of that is all you're sensitive to is the causal network of what event affects what other event.
+01:06:55
+I'm not making a big statement about sort of the structure of the observer. I'm simply saying I'm simply making the argument that what happens, the microscopic order of these rewrites is not something that any observer, any conceivable observer in this universe can be affected by, because the only thing the observer can be affected by is this causal network of how the events in the Observer are affected by other events that happen in the universe. So the only thing you have to look at is the causal network.
+01:07:27
+You don't really have to look at this microscopic rewriting that's happening. So these rewrites are happening wherever they are.
+01:07:34
+They happen wherever they feel like causal network is there is there that there's not really. The idea would be an undefined Akwa gets updated. The sequence of things is undefined. It's a yes, if that's what you mean by the causal network.
+01:07:51
+But then no, the causal network is given that an update has happened, that's an event. Then the question is, is that event causally related to does that event? If that event didn't happen, then some future event couldn't happen yet. And so you build up this network of what affects what you think and so what that does. So when you build up that network, that's kind of the observable aspect of the universe in some sense. And so then you can ask questions about, you know, how robust is that observable network of what's happening in the universe.
+01:08:27
+OK, so here's where it starts getting kind of interesting. So for certain kinds of microscopic rewriting rules, the order of rewrites does not matter to the causal network. And so this is OK, mathematical logic moment. This is equivalent to the church rusa property or the confluence property of rewrite rules. And it's the same reason that if you're simplifying an algebraic expression, for example, you can say, oh, let me expand those terms out, let me factor those pieces.
+01:08:54
+Doesn't matter what order you do that and you'll always get the same answer. And that's it's the same fundamental phenomenon that causes for certain kinds of microscopic rewrite rules that causes the causal network to be independent of the microscopic order of writings.
+01:09:10
+Why is that property important?
+01:09:13
+Because it implies special relativity. I mean, the reason what the reason it's important is that that property special relativity says you can look at. These sort of, you know, get different reference frames, you can have different you can be looking at your notion of what space and what time can be different, depending on whether you're traveling at a certain speed, depending on whether you're doing this, that and the other. But nevertheless, the laws of physics are the same.
+01:09:41
+That's what the principle of special relativity says is the laws of physics are the same independent of your reference frame? Well, turns out this sort of change of the microscopic right in order is essentially equivalent to a change of reference frame, or at least as a part of how that works. That's going to change a reference frame. So somewhat surprisingly and sort of for the first time and forever, it's possible for an underlying macroscopic theory to imply special relativity, to be able to derive it.
+01:10:11
+It's not something you put in as a this is a it's something where there's other property, causal and invariance, which is also the property that implies that there's a single thread of time in the universe. It might not be the case that that's that is the that's what would lead to the possibility of an observer thinking that definite stuff happens. Otherwise you've got all these possible rewriting orders and who's to say which one occurred? But with this causal inference property, there's a there's a notion of a definite threat of time.
+01:10:42
+It sounds like that that kind of idea of time, even space, would be emergent from the system. Oh, yeah. No, I mean, it's not a fundamental part of the fundamental level.
+01:10:52
+All you've got is a bunch of nodes connected by hyper edges or whatever. So there's no time. There's no space. That's right.
+01:10:58
+And but the the thing is that it's just like imagining imagine you just dealing with a graph and imagine you have something like a you know, like a honeycomb graph. We have a bunch of hexagons. You know, that graph at a microscopic level, it's just a bunch of nodes connected to other nodes. But at a macroscopic level, you say that looks like a honeycomb. You know, this lattice, it looks like a two dimensional, you know, manifold of some kind.
+01:11:23
+It looks like a two dimensional thing. If you connect it differently, if you just connect all the nodes one one to another and kind of a sort of linked list type structure, then you'd say, well, that looks like a one dimensional space. But at the microscopic level, all these are just networks with nodes. The macroscopic level, they look like something that's like one of our sort of familiar kinds of space. And it's the same thing with these hyper graphs.
+01:11:46
+Now, if you ask me, have I found one that gives me three dimensional space, the answer is not yet. So we don't know if this is one of these things. We're kind of betting against nature, so to speak, and I have no way to know. So there are many other properties of this this kind of system that have a very beautiful actually and very suggestive. And it will be very elegant if this turns out to be right, because it's very it's very clean.
+01:12:10
+I mean, you start with nothing and everything gets built up. Everything about space, everything about time, everything about matter. It's all just emergent from the properties of this extremely low level system. And that that will be pretty cool if that's the way our universe works now, do I? On the other hand, the thing that that I find very confusing is let's say we succeed. Let's say we can say this particular sort of hydrograph rewriting rule gives the universe just run that hypergraphia, rewriting rule for enough times and you'll get everything.
+01:12:46
+You'll get this conversation we're having. You'll get everything. It's that if we get to that point and we look at what is this thing, what is this rule that we just have that is giving us the whole universe, how do we think about that thing? Let's say? Turns out the minimal version of this and this is kind of cool thing for a language designer like me, the minimal version of this model is actually a single line of awful language code.
+01:13:13
+So that's what I wasn't sure was going to happen that way. But it's a that's that's kind of no, we don't know what we don't know what that's that's just the framework to know the actual particular hypergrowth. That might be a longer that the specification of the rules might be slightly low.
+01:13:31
+How does that help you except marveling in the beauty and the elegance of the simplicity that creates the universe that does that help us predict anything? Not really. Because of the disability? That's correct. That's correct. But so the thing that is really strange to me and I haven't wrapped my my brain around this yet is, you know, one is one keeps on realising that we're not special in the sense that, you know, we don't live at the centre of the universe.
+01:13:59
+We don't blah, blah, blah. And yet if we produce a rule for the universe and it's quite simple and we can write it down and a couple of lines or something that feels very special, how do we come to get a simple universe when many of the available universes, so to speak, are incredibly complicated? It might be, you know, a quintillion characters long. Why do we get one of the ones that simple? And so I haven't.
+01:14:25
+My brain around that issue, yet, if indeed we are in such as the universe, is such a simple rule. Is it possible that there is something outside of this that we are in a kind of what people call to the simulation? Right.
+01:14:42
+There were just part of a computation is being explored by a graduate student in an alternate universe.
+01:14:48
+Well, you know, the problem is we don't get to say much about what's outside our universe because by definition, our universe is what we exist within. Yeah. Now, can we make a sort of almost theological conclusion from being able to know how our particular universe works? Interesting question. I don't think that if you ask the question, could we? And it relates again to this question about extraterrestrial intelligence. You know, we've got the rule for the universe.
+01:15:16
+Was it built on purpose? Hard to say. That's the same thing as saying we see a signal from, you know, that we're, you know, receiving from some random star somewhere. And it's a series of pulses. And, you know, it's a periodic series of pulses, let's say. Was that done on purpose? Can we conclude something about the origin of that? There is a pulsers.
+01:15:38
+Just because it's elegant does not necessarily mean that somebody created it or that we can even comprehend.
+01:15:46
+Yeah, well, I think it's the ultimate version of the sort of identification of the techno signature question. It's the ultimate version of that, as was our universe, a piece of technology, so to speak. And how on earth will we know? Because but I mean, it'll be it's I mean, you know, in the kind of crazy science fiction thing you could imagine, you could say, oh, somebody is going to have you know, that's going to be a signature there.
+01:16:11
+It's going to be, you know, made by so-and-so. But there's no way we could understand that, so to speak. And it's not clear what that would mean, because the universe simply, you know, this if we find a rule for the universe, we're not. We're simply saying that rule represents what universe does. We're not saying that that rule is something running on a big computer and making our universe. It's just saying that represents what our universe does in the same sense that, you know, the laws of classical mechanics, differential equations, whatever they are, represent what mechanical systems do.
+01:16:47
+It's not that the mechanical systems are somehow running solutions to those differential equations, those differential equations, just representing the behavior of those systems.
+01:16:56
+So what's the gap in your sense to linger? And the fascinating, perhaps slightly Saffire question, what's the gap between understanding the fundamental rules that create a universe and engineering a system actually creating a simulation ourselves?
+01:17:13
+So you've talked about sort of you've talked about, you know, nano engineering kind of ideas that are kind of exciting, actually creating some ideas of competition in the physical space. How hard it is. Is it as an engineering problem to create the universe once you know the rules that create it?
+01:17:29
+Well, that's an interesting question.
+01:17:31
+I think the substrate on which the universe is operating is not a substrate that we have access to. I mean, the only substrate we have is that same substrate that the universe is operating in. So if the universe is a bunch of hypergrowth being rewritten, then we get to attach ourselves to those same hyper gulfs being rewritten. We don't get to. And if you ask the question, you know, is the code clean? You know, you know, can we write nice, elegant code with efficient algorithms and so on?
+01:18:02
+Well, that's an interesting question.
+01:18:03
+How how you know, that's the question of how much computational reduced ability there is in the system. But I've seen some beautiful cellular automata that basically create copies of itself within itself. Right. That's the question. Whether it's possible to create like whether you need to understand the substrate or whether you can just.
+01:18:21
+Yeah, well, right. I mean, so one of the things that is sort of one of my slightly sci fi thoughts about the future, so to speak, is, you know, right now, if you poll typical people who say, do you think it's important to find the fundamental theory of physics you get because I've done this poll informally, at least it's curious, actually.
+01:18:40
+You get a decent fraction of people saying, oh, yeah, that would be pretty interesting.
+01:18:45
+I think that's becoming, surprisingly enough, more. I mean, there a lot of people are interested in physics in a way that, like without understanding it, just kind of watching. Scientists, a very small number of them, struggle to understand the nature of our reality right now. I mean, I think that's somewhat true. And in fact, in this project that I'm launching into to try and find fundamental physics, I'm going to do it as a very public project and it's going to be live streamed and all this kind of stuff.
+01:19:16
+I don't know what will happen. It'll be kind of fun. I mean, I think that it's the interface to the world of this project. I mean, I figure one feature of this project is, you know, unlike technology projects that basically are what they are, this is a project that may simply fail because it might be the case that generates all kinds of elegant mathematics, that has absolutely nothing to do with the physical universe that we happen to live in.
+01:19:41
+OK, so so we're talking about. Kind of the quest to find the fundamental physics, first point is, you know, it's turned out it's kind of hard to find the fundamental theory. Physics people weren't sure that that would be the case. Back in the early days of applying mathematics to science, 16 hundreds and so on, people were like, oh, in 100 years, we'll know. Everything there is to know about how the universe works.
+01:20:05
+Turned out to be harder than that. And people got kind of humble at some level because every time we got to sort of a greater level of smallness and studying universe, it seemed like the math got more complicated and everything got got harder.
+01:20:18
+The you know, when I when I was a kid, basically, I started doing particle physics and, you know, when I was doing particle physics, I always thought finding the fundamental fundamental theory of physics that's a kooky business will never be able to do that.
+01:20:34
+But we can operate within the frameworks that we built for doing quantum field theory and general relativity and things like this. And it's all good and we can figure out a lot of stuff.
+01:20:43
+Did you even at that time have a sense that there's something behind that? Sure. I just didn't expect that. I thought in some rather unknown, it's actually kind of crazy thinking back on it, because it's kind of like there was this long period in civilization where people thought the ancients had it all figured out and we'll never figure out anything new. And to some extent, that's the way I felt about physics when I was in the middle of doing it, so to speak, was, you know, we've got a quantum field theory.
+01:21:11
+It's the foundation of what we're doing. And there's, you know, yes, there's probably something underneath this, but we'll sort of never figure it out. But then I started studying simple programs and the computational universe, things like cellular automata and so on. And I discovered that that they do all kinds of things that were completely at odds with the intuition that I had had. And so after that, after you see this tiny little program that does all this amazingly complicated stuff, then you start feeling a bit more ambitious about physics and saying maybe we could do this for physics, too.
+01:21:46
+And so that's something that got me started years ago now. And this kind of idea of could we actually find what's underneath all of these frameworks like quantum field there in generativity and so on. And people perhaps don't realize as good as they might that, you know, the frameworks we're using for physics, which is basically these two things, quantum field theory, the sort of the theory of of small stuff and general relativity theory of gravitation and large stuff.
+01:22:13
+Those are the two basic theories. And there are 100 years old. I mean, generativity was 1915, quantum field theory, well, 1920s. So basically 100 years old. And they've they've it's been a good run. There's a lot of stuff been figured out. But what's interesting is the foundations haven't changed in all that period of time, even though the foundations had changed several times before that in the 200 years earlier than that. And I think the kinds of things that I'm thinking about, which are sort of really informed by thinking about computation and the computational universe, it's a different foundation.
+01:22:48
+It's a different set of foundations and might be wrong, but it is at least, you know, we have a shot.
+01:22:55
+And I think it's you know, to me, it's, you know, my personal calculation for myself, as is, you know, if it turns out that the finding, the fundamental theory physics, it's kind of low hanging fruit, so to speak, it'd be a shame if we just didn't think to do it. You know, if people just said, oh, you'll never figure that stuff out. Let's you know, and it takes another 200 years before anybody gets around to doing it.
+01:23:21
+You know, I think it's I don't know how low hanging fruit actually is. It may be you know, it may be that it's kind of the wrong century to do this project. I mean, I think the the the cautionary tale for me, you know, I think about things that I've tried to do in technology where people thought about doing them a lot earlier. My my favorite example is probably Leibnitz, who who thought about making essentially encapsulating the world's knowledge in a computational form in the late 60s, hundreds, and did a lot of things towards that.
+01:23:55
+And basically, you know, we finally managed to do this, but he was 300 years too early. And that's that's kind of the in terms of life planning, it's kind of like avoid things that can't be done in your in your century, so to speak.
+01:24:09
+Yeah, timing. Timing is everything. So you think if we kind of figure out the underlying rules that can create from which quantum field theory and general relativity can emerge, do you think they'll help us unify it at that level of abstraction? Will know it completely. Will know how that all fits together? Yes, without a question. And I mean, it's already even the things I've already done there are very you know, it's very, very elegant, actually, how how things seem to be putting together now, you know, is it right?
+01:24:43
+I don't know yet, it's awfully suggestive if it isn't right, it's some then the designer of the universe should feel embarrassed, so to speak, because it's a really good way to do it.
+01:24:54
+And your intuition in terms of designing a universe, does God play dice? Is there is there a randomness in this thing or is it deterministic?
+01:25:03
+So the kind of that's a little bit of a complicated question, because when you're dealing with these things that involve these rewrites, that have even randomness is an emergent phenomenon.
+01:25:14
+I mean, it's a yeah, well, randomness in many of these systems, pseudo randomness and randomness are hard to distinguish in this particular case, the current idea that we have about measurement in quantum mechanics is something very bizarre and very abstract.
+01:25:32
+And I don't think I can yet explain it without kind of yakking about very technical things. Eventually, I will be able to. But if that's if that's right, it's kind of a it's a weird thing because it slices between determinism and randomness in a weird way that hasn't been sliced before, so to speak. So like many of these questions that come up in science where it's like, is that this or is it that turns out the real answer is it's neither of those things that something kind of different and sort of orthogonal to those those those categories.
+01:26:06
+And so that's the current, you know, this week's idea about how that might work. But, you know, Will, we'll see how that unfolds. I mean, there's there's this question about a field like physics and sort of the quest for a fundamental theory and so on. And there's both the science of what happens and there's the the sort of the social aspect of what happens. Because, you know, in a field that is basically as old as physics we're at, I don't know what it is.
+01:26:35
+Fourth generation, I don't know fourth generation. I don't know what generation it is of physicists. And like I was one of these, so to speak. And for me, the foundations were like the pyramid, so to speak. You know, it was that way and it was always that way. It is difficult in an old field to go back to the foundations and think about rewriting them. It's a lot easier in young fields where you're still dealing with the first generation of people who invented the field.
+01:27:02
+And it tends to be the case, you know, that the nature of what happens in science tends to be, you know, you'll get typically the pattern is some methodological advance occurs and then there's a period of five years, 10 years, maybe a little bit longer than that, where there's lots of things that are now made possible by that by that methodological advance, whether it's, you know, I don't know, telescopes or whether that's some mathematical method or something.
+01:27:27
+It's, you know, there's a something something happens, a tool gets built, and then you can do a bunch of stuff and there's a bunch of low hanging fruit to be picked. And that takes a certain amount of time after that, all that low hanging fruit is picked. Then it's a hard slog for the next, however many decades or a century or more to get to the next sort of level at which one can do something. And it's kind of a a and it tends to be the case that in fields that are in that kind of but I wouldn't say cruise mode because really hard work, but it's it's very hard work for very incremental progress.
+01:28:05
+And in your career and some of the things you've taken on, it feels like you're not you haven't been afraid of the hard slog the other two.
+01:28:13
+So it is quite interesting, especially in the engineering and engineering side.
+01:28:18
+And a small tangent, when you were at Caltech, did you get to interact with Richard Feynman at all?
+01:28:26
+Giovannino Richard, we we worked together quite a bit, actually.
+01:28:30
+In fact, on and in fact, both when I was a Caltech and after I left Caltech, we were both consultants at this company called Thinking Machines Corp., which was just down the street from here, actually was ultimately ill fated company. But I used to say this company is not going to work with the strategy they have. And Dick Feynman always used to say, what do we know about running companies? Just let them run their company. But anyway, it was he was not into into that kind of thing.
+01:28:59
+And he always thought it was thought that my interest in doing things like running companies was a was a distraction, so to speak. And for me, it's a it's a mechanism to have a more effective machine for actually getting things, figuring things out and getting things to happen.
+01:29:16
+Did he think of it because essentially what you used, you did with a company?
+01:29:20
+I don't know if you were thinking of it that way, but you're creating tools to empower your to empower the exploration of the universe.
+01:29:30
+Do you think he that he understand that point, the point of tools of. I think not as well as he might have done. I mean, I think that but, you know, he was actually my first company, which. Was also involved with or was involved with more mathematical computation kinds of things. You know, he was quite he had lots of advice about the technical side of what we should do and so on.
+01:29:56
+Different samples, memories of thoughts. Oh, yeah. Yeah, he had all kinds of look. And in the business of doing sort of, you know, one of the hard things in math is doing integrals and so on. Right. And so he had his own elaborate ways to do integrals and so on. He had his own ways of thinking about sort of getting intuition about how math works. And so his sort of meter idea was take those intuitional methods and make a computer, follow those intuitional methods.
+01:30:23
+Now, it turns out for the most part, like when we do integrals and things, what we do is as we build this kind of bizarre industrial machine that turns every integral into, you know, products of Maji functions and generates this very elaborate thing. And actually, the big problem is turning the results into something a human will understand. It's not doing the integral. And actually, Feynman did understand that to some extent, and I am embarrassed to say he once gave me this big pile of, you know, calculational methods for particle physics that he worked out in the 50s.
+01:30:55
+And he said it's more used to you than to me type thing. And I was like, I intended to look at it and give it back. And I stole my files now. So it's but that's what happens when when it's finiteness of human lives that I you know, maybe if you live another 20 years, I would have I would have remembered to give it back. But I think it's you know, that was his attempt to systematize the ways that one does.
+01:31:21
+And articles that show up in particle physics and so on. Turns out the way we've actually done it is very different from that way.
+01:31:27
+What do you make of that difference between the fireman was actually quite remarkable at creating sort of intuitive like diving.
+01:31:35
+You know, creating intuitive frameworks for understanding difficult concepts is I'm smiling because, you know, the funny thing about him was that the thing he was really, really, really good at is calculating stuff. And but he thought that was easy. Because it was really good at it, and so he would do these things where he would calculate some do some complicated calculation and quantum field theory, for example, come out with the results.
+01:32:02
+Wouldn't tell anybody about the complicated calculation because I thought that was easy. He thought the really impressive thing was to have the simple intuition about how everything works. So he invented that at the end.
+01:32:13
+And, you know, because he'd done this calculation and knew how it worked, it was a lot easier. It's a lot easier to have good intuition when you know what the answer is. And then and then he would just not tell anybody about these calculations. And he wasn't meaning that maliciously, so to speak. It's just he thought that was easy.
+01:32:30
+And and that's you know, that led to areas where people were just completely mystified and they kind of followed his intuition. But nobody could tell why it worked, because actually the reason it worked was because he'd done all these calculations and he knew that it was would work. And, you know, when I and I worked a bit on quantum computers, actually back in nineteen eighty eighty one before anybody had heard of those things. And, you know, the typical mode of I mean, he always used to say and I now think about this because I'm about the age that he was when I worked with him.
+01:33:01
+And you know, I see that people one third my age, so to speak. And he was always complaining that I was one third his age for various things. But but, you know, he would do some calculation by by hand, you know, a blackboard and things come up with some answer. I'd say, I don't understand this. You know, I do something with a computer. And he'd say, you know, I don't understand this.
+01:33:25
+So this some big argument about what was, you know, what was going on.
+01:33:29
+But but it was always and I think actually with many of the things that we sort of realized about quantum computing, that was sort of issues that have to do, particularly with the measurement process, are kind of still issues today. And I kind of find it interesting. It's a funny thing in science that these you know, that there's there's a remarkable happens in technology, too. There's a remarkable sort of repetition of history that ends up occurring eventually. Things really get nailed down, but it often takes a while and it often things come back decades later.
+01:34:04
+Um, well, for example, I could tell a story actually happened right down the street from here when we were both thinking machines. I had been working on this particular cellular automaton who rule 30 that has this feature that it from very simple initial conditions. It makes really complicated behavior. OK, so and actually of all silly physical things, using this big parallel computer called the connection machine that that company was making, I generated this giant printout of rule 30 on very I'm actually on the same kind of same kind of printer that people used to make layouts for microprocessors.
+01:34:46
+So one of these big, you know, large format printers with high resolution and so on. So, OK, so print this out. Lots of very tiny cells. And so there is sort of a question of how some features of that pattern. And so it was very much a physical, you know, on the floor with meter rules trying to measure different things. So so Feynman kind of takes me. So we've been doing that for a little while and takes me aside.
+01:35:12
+And he says, I just want to know this one thing says, I want to know how did you know that this rule 30 thing would produce all this really complicated behavior that is so complicated that we're, you know, going around with this big printout and so on. And I said, well, I didn't know. I just enumerated all the possible rules and then observed that that's what happened, is that I feel a lot better. You know, I thought she had some intuition that he didn't have that would let why I said no, no, no, no intuition, just experimental science.
+01:35:44
+So that's such a beautiful sort of dichotomy there of that's exactly shows you really can't have an intuition about an irreducible I mean, you have to run. Yes, that's right. That's so hard for us humans and especially brilliant physicists like Feynman to say that you can't have a compressed, clean intuition about how the whole thing.
+01:36:09
+Yes. Works. Yes. No, he was I mean, I think he was sort of on the edge of understanding that point about computation. And I think he found that you always found computation interesting. And I think that was sort of what he was a little bit poking at. I mean, that intuition, you know, the difficulty of discovering things like even you say, oh, you know, you just enumerate all the cases and just find one that does something interesting.
+01:36:32
+Right. Sounds very easy. Turns out like I missed it when I first saw it because I had kind of an intuition that said it shouldn't be there. So I had kind of arguments, oh, I'm going to ignore that case because whatever.
+01:36:45
+And how did you have an open mind? Enough, because you're essentially the same person as Richard. The same kind of physics type of thinking, how did you find yourself having a sufficiently open mind to be open to watching rules and then revealing complexity?
+01:37:02
+I think this interesting question, I've wondered about that myself, because it's kind of like, you know, you lived through these things and then you say, what was the historical story? And sometimes the historical story that you realized after the fact was not what you lived through, so to speak. And so, you know, what I realized is I think what happened is, you know, I did physics kind of like reductionistic physics where you're throwing the universe and you're told, go figure out what's going on inside it.
+01:37:30
+And then I started building computer tools and I started building my first computer language, for example. And computer language is not like it's sort of like physics in the sense that you have to take all those computations people want to do and kind of drill down and find the primitives that they can all be made of. But then you do something is really different because you just you're just saying, OK, these are the primitives now, you know, hopefully they'll be useful to people.
+01:37:55
+Let's build up from there. So you're essentially building an artificial universe in a sense, where you make this language, you've got these primitives, you're just building whatever you feel like building. And that's and so it was sort of interesting for me because from doing science by you, just throwing the universe as the universe is to then just being told, you know, you can make up any universe you want. And so I think that experience of of making a computer language, which is essentially building your own universe, so to speak, is, you know, that's kind of the that's that's what gave me a somewhat different attitude towards what might be possible.
+01:38:32
+It's like let's just explore what can be done in these artificial universes rather than thinking the natural science way of let's be constrained by how the universe actually is, by being able to program essentially you've as opposed to being limited to just your mind. And upon you now have you've basically built another brain that you can use to explore the universe. But, yeah, the computer program, you know, this is kind of a brain, right.
+01:38:59
+And well, it's a telescope or, you know, it's a tool and it lets you see stuff.
+01:39:03
+But there's something fundamentally different between a computer and a telescope. I mean, it just yeah, I'm hoping that romanticized the notion, but it's more general computer.
+01:39:15
+And it's I think I mean, this point about, you know, people say, oh, such and such a thing was almost discovered at such and such a time. The the distance between, you know, the building, the paradigm that allows you to actually understand stuff or allows one to be open to seeing what's going on. That's really hard. And, you know, I think in I've been fortunate in my life that I spent a lot of my time building computational language.
+01:39:43
+And that's an activity that in a sense works by sort of having to kind of create another level of abstraction and kind of be open to different kinds of structures. But, you know, it's it's always I mean, I'm fully aware of, I suppose, the fact that I have seen it a bunch of times of how easy it is to miss the obvious, so to speak, that at least is factored into my attempt to not miss the obvious, although it may not succeed.
+01:40:15
+What do you think is the role of ego in the history of math and science and more sort of, you know, a book title or something like a new kind of science? You've accomplished a huge amount.
+01:40:31
+And in fact, somebody said that Newton didn't have an ego. And I looked into it and he had a huge ego. You know, from an outsider's perspective, some have said that you have a bit of an ego as well.
+01:40:44
+Would you see it that way? Does ego get in the way? Is it empowering? Is it both? It's it's it's complicated and necessary.
+01:40:52
+I mean, you know, I've had like I've spent more than half my life CEO in a tech company. Right. OK, and, you know, that is a I think it's actually very it means that one's ego is not a distant thing. It's a thing that one encounters every day, so to speak, because it's it's all tied up with leadership and with how one develops an organization and all these kinds of things. So, you know, it may be that if I've been an academic, for example, I could have sort of, you know, check the ego, put it on, put on a shelf somewhere and ignore its characteristics.
+01:41:27
+But you're reminded of it quite often in the context of running a company. Sure. Yeah.
+01:41:33
+I mean, that's what it's about. It's it's about leadership. And, you know, leadership is intimately tied to ego. Now, what does it mean? I mean, what is the you know, for me, I've been fortunate that I think I have reasonable intellectual confidence, so to speak, that is. I am one of these people who at this point, if somebody tells me something, I just don't understand it.
+01:41:56
+My conclusion isn't that means I'm dumb, that my conclusion is there's something wrong with what I'm being told. And that was actually Dick Feynman used to have that that that feature, too. He never really believed. And he actually believed in experts, much less than I believe in experts. So. Wow.
+01:42:15
+So that's a that's that's a fundamentally powerful property of ego and saying, OK, not that I am wrong.
+01:42:24
+But that the the world is wrong and like when confronted with the fact that doesn't fit the thing that you've really thought through sort of both the negative and the positive of ego. Do you see the negative of that get in the way, sort of the front of mistakes I've made that are the result of I'm pretty sure I'm right.
+01:42:46
+And turns out I'm not. I mean, that's that's the you know, but but the thing is that the the the idea that one tries to do things that so, for example, you know, one question is that people have tried hard to do something and then one thinks maybe I should try doing this myself. If one does not have a certain degree of intellectual confidence, one just says, well, people have been trying to do this for 100 years.
+01:43:11
+How am I going to be able to do this? Yeah, and, you know, I was fortunate in the sense that I happened to start having some degree of success in science and things when I was really young. And so that developed a certain amount of sort of intellectual confidence I don't think I otherwise would have had. And, you know, in a sense, I mean, I was fortunate that I was working in a field particle physics during its sort of golden age of rapid progress.
+01:43:36
+And that that's kind of gives one a false sense of achievement because it's kind of kind of easy to discover stuff that's going to survive if you happen to be, you know, picking the low hanging fruit of a rapidly expanding field.
+01:43:47
+I mean, the reason I totally I totally immediately understood the ego behind a new kind of science to me. I mean, sort of just try to express my feelings.
+01:43:55
+And the whole thing is that if you don't allow that kind of ego, then you would never write that book that you would say, well, people must have done this. There's not you would not dig. You would not keep digging. And I think that was I think you have to take that ego and write it and see where it takes you and that and that's how you create exceptional work.
+01:44:20
+I think the other point about that book was it was a non-trivial question, how to take a bunch of ideas that are, I think, reasonably big ideas. They might you know, their importance is determined by what happens historically. One can't tell how important they are. One can tell sort of the scope of them. And the scope is fairly big and they're very different from things that have come before. And the question is, how do you explain that stuff to people?
+01:44:46
+And so I had had the experience of sort of saying, well, that these things that a cellular automaton, it does this, it does that. And people are like, oh, it must be just like this. It must be just like that. So, no, it isn't. It's something different. Right. And so I could have done sort of I'm really glad you did what you did, but you could have done sort of academically. Just publish, keep publishing small papers here and there.
+01:45:07
+And then you would just keep getting this kind of resistance. Right. You would get like. Yes. As opposed to just dropping a thing that says, here it is. Here's my for the fourth thing.
+01:45:17
+No, I mean, that was my calculation is that basically, you know, you could introduce little pieces. That's like, you know, one possibility is like it's it's the secret weapon, so to speak. It's this, you know, I keep on discovering these things and all these different areas where they come from, nobody knows. But I decided that, you know, in the interests of one only has one life to lead. And, you know, the writing that book took me a decade anyway.
+01:45:41
+It's not there's not a lot of wiggle room, so to speak. One can't be wrong by a factor of three, so to speak.
+01:45:46
+And how long it's going to take that. I you know, I thought the best thing to do, the thing that is most sort of that most respects the the intellectual content, so to speak, is you just put it out with as much force as you can because it's not something where and, you know, it's an interesting thing. You talk about ego and it's it's you know, for example, I run a company which has my name on it, but I thought about starting a club for people who whose companies have their names on them.
+01:46:16
+And it's a funny group because we're not a bunch of egomaniacs. That's not what it's about, so to speak. It's about basically sort of taking responsibility for what one's doing. And, you know, in a sense, any of these things where you're sort of putting yourself on the line, it's. It's kind of a funny it's a funny dynamic because in a sense, my company is sort of something that happens to have my name on it, but it's kind of bigger than me.
+01:46:46
+And I'm kind of just its mascot at some level. I mean, I also happen to be a pretty, you know, strong leader of it. But it's basically showing a deep, inextricable sort of investment.
+01:47:02
+The same you name like Steve Jobs. His name wasn't on an apple, but he was. Apple. Yes, Elon Musk's name is not on Tesla, but he is Tesla. So it is like a meaning emotionally. If the company succeeds or fails, he would just that emotionally would suffer through that. And so that's that's that's a good recognizing that fact. And also, Wolfram is a pretty good branding name. So that works out.
+01:47:30
+Yeah, right. Exactly. Just like Steve had it had a bad deal there.
+01:47:33
+Yeah. So you you made up for it with the last name. OK, so. So in 2002, you published a new kind of science to which sort of on a personal level, I can credit my love for Sellier time and computation in general. I think a lot of others can as well. Can you briefly describe. The vision, the hope. The main idea presented in this twelve hundred page book, sure, although it took 100 pages to say in the book, so now that the real idea, it's kind of a good way to get into it is to look at sort of the arc of history and to look at what's happened and kind of the development of science.
+01:48:18
+I mean, there was this sort of big idea in science about 300 years ago that was let's use mathematical equations to try and describe things in the world. Let's use sort of the formal idea of mathematical equations to describe what might be happening in the world rather than, for example, just using sort of logical argumentation and so on. Let's have a formal theory about that. And so there have been this 300 year run of using mathematical equations to describe the natural world, which have worked pretty well.
+01:48:47
+But I got interested in how one could generalize that notion. You know, there is a formal theory. There are definite rules, but what structure could those rules have? And so what I got interested in was, let's generalize beyond the sort of purely mathematical rules. And we now have this sort of notion of programming and computing and so on. Let's use the kinds of rules that can be embodied in programs to as a sort of generalization of the ones that can exist in mathematics as a way to describe the world.
+01:49:19
+And so my kind of favorite version of these kinds of simple rules are these things called cellular automata. And so a typical case.
+01:49:27
+So what are cellular automata? Fair enough. So typical case of a cellular automaton. It's an array of cells. It's just a line of of discrete cells. Each cell is either black or white. And in a series of steps that you can represent as lines going down a page, you're updating the color of each cell according to a rule that depends on the color of the cell above it and to left and right. So it's really simple. So a thing might be, you know, if the cell in its right neighbor are not the same and or the cell on the left as is as black or something, then make it black on the next step and if not, make it white.
+01:50:15
+Typical rule that rule.
+01:50:18
+I'm not sure I said it exactly right, but I would very much like what I just said. Has the feature that if you started off from just one black cell at the top, it makes this extremely complicated pattern. So some rules you get a very simple pattern, some rules you have. The rule is simple. You start them off from a sort of simple seed. You just get this very simple pattern. But other rules and this was the big surprise when I started actually just doing the simple computer experiments to find out what happens is that they produce very complicated patterns of behavior.
+01:50:51
+So, for example, this Rule 30 rule has the feature story from just one black cell at the top makes this very random pattern. If you look like at the center column of cells, you get a series of values. You know, it goes black, white, black, black, whatever it is, that sequence seems, for all practical purposes, random. So it's kind of like in math, you know, you compute the digits of PI, three point one four one five nine two six, whatever those digits once computed.
+01:51:23
+I mean that the scheme for computing PI, you know, it's the ratio of the circumference diameter of a circle, very well defined. But yet when you are once you've generated those digits, they seem, for all practical purposes, completely random. And so it is with rule 30 that even though the rule is very simple, much simpler, much more sort of computationally obvious than the rule for generating digits of pi, even with a rule that simple, you're still generating immensely complicated behavior.
+01:51:51
+Yeah. So if I could just pause on that, I think you probably said it and looked at it so long you forgot the magic of it. Or perhaps, you know, you still feel the magic.
+01:51:59
+But to me, if you never seen sort of I would say, what is it, a one dimensional essentially. Tahmina Right.
+01:52:09
+And and you were to guess what you would see if you have some.
+01:52:17
+So cells that only respond to its neighbors. Right, if you were to guess what kind of things you would see. Like my my initial guess, like even when I first, like, open your book, a new kind of science, right? My initial guess is you would see I mean, it would be very simple stuff like and I think it's a magical experience to realize the kind of complexity you mentioned. Rule 30 stole your favorite cellular automaton.
+01:52:46
+My favorite rule.
+01:52:47
+Yes, it you get complexity, immense complexity. You get arbitrary complexity.
+01:52:54
+And when you say randomness down middle column, you know, that's just one cool way to say that there's incredible complexity. And that's just the gist. I mean, that's a magical idea. However, you start to interpret it, all the disability discussions, all that. But it's just I think that has profound philosophical kind of notions around it, too. It's not just I mean, it's transformational about how you see the world. I think for me it was transformational.
+01:53:24
+I don't know. We can we can have all kinds of discussion about computation and so on.
+01:53:29
+But just, you know, I sometimes think if I were on a desert island and was, I don't know, maybe with some psychedelics or something, but if I had to take one book, I mean, new kind of science would be because you can just enjoy that notion for some reason.
+01:53:47
+It's a deeply profound notion, at least to me. I find it that way. Yeah.
+01:53:50
+I mean, look, it's been it was a very intuition breaking.
+01:53:56
+Thing to discover, I mean, it's kind of like, you know, you you point the computational telescope out there and suddenly you see, I don't know, you know, in the past, it's kind of like, you know, moons of Jupiter or something.
+01:54:08
+But suddenly you see something. It's kind of very unexpected. And we all thought it was very unexpected for me.
+01:54:13
+And the big challenge at a personal level was to not ignore it. I mean, people you know, in other words, you might say, you know, the Borg were. What would you say? Yeah, well, yeah. I mean, what are we looking at, by the way? Well, I was just generating here and actually generate a 30 pattern.
+01:54:30
+So that's the rule for for rule 30. And it says, for example, it says here, if you have a black cell in the middle and black cell of the left and white cell to the right, then the cell on the next step will be white. And so here's the actual pattern that you got starting off from a single black cell at the top there. And then that's the initial state initial condition.
+01:54:52
+That's the initial thing. You just start off from that and then you're going down the page. And at every at every step, you're just applying this rule to find out the new value that you get. And so you might think all that simple. You got to get that. There's got to be some trace of that simplicity here. OK, we'll run it, let's say, for 400 steps. It's what it does. It's kind of elastic a bit on the screen there.
+01:55:15
+But but you can see there's a little bit of regularity over on the left, but there's a lot of stuff here that just looks very complicated, very random. And that's a big sort of shock to was a big shock to my intuition, at least that that's possible.
+01:55:32
+You might immediately starts. Is there a pattern? There must be a repetitive pattern. There must be a cell line. So I spent. So indeed, that's what I thought at first. And I thought I thought, well, that's kind of interesting. But, you know, if we run it long enough, we'll see, you know, something will resolve into something simple. And, you know, I did all kinds of analysis of using mathematics, statistics, cryptography, whatever, whatever, to try and crack it.
+01:55:59
+And it never succeeded.
+01:56:00
+And after I hadn't succeeded for a while, I started thinking, maybe there's a real phenomenon here. That is the reason I'm not succeeding. Maybe I mean, the thing that for me was sort of a motivating factor was looking at the natural world and seeing all this complexity that exists in the natural world. The question is, where does it come from? You know, what secret does nature have that lets it make all this complexity that we humans, when we engineer things typically are not making.
+01:56:26
+We're typically making things that at least look quite simple to us. And so the shock here was even from something very simple, you're making something that complex.
+01:56:36
+Maybe this is getting at sort of the secret that nature has that allows it to make really complex things, even though it's underlying rules may not be that complex.
+01:56:46
+How did it make you feel?
+01:56:48
+If you look at the Newton Apple, was there was there you know, you took a walk and something it profoundly hit you or was this a gradual thing? A lot of the truth.
+01:57:01
+The truth of every sort of science discovery is it's not that gradual.
+01:57:06
+I mean, I spent I happened to be interested in scientific biography kinds of things. And so I've tried to track down, you know, how did people come to figure out this or that thing? And there's always a long kind of sort of preparatory you know, there's a there's a need to be prepared in a mindset in which it's possible to see something. I mean, in the case of rule 30, I rise around June 1st, 1984 was kind of a silly story in some ways.
+01:57:33
+I finally had a high resolution laser printer. So I was able so I thought I'm going to generate a bunch of pictures of the cellular automata and I generate this one. And I put it on some plane flight to Europe. And I have this with me and it's like. You know, I really try to understand this, and this is really, you know, this is I really don't understand what's going on. And that was kind of the, you know, slowly trying to trying to see what was happening.
+01:58:01
+It was not it was depressingly uncertain, so to speak. And the sense that a lot of these ideas like principle of computational equivalence, for example, you know, I thought, well, that's a possible thing. I didn't know if it's correct. Don't know for sure that it's correct. But it's sort of a gradual thing that these things gradually kind of become seem more important than one thought. I mean, I think the whole idea of studying the computational universe of simple programs, it took me probably decade, decade and a half to kind of internalize that.
+01:58:36
+That was really an important idea. And I think, you know, if it turns out we find the whole universe looking out there in the computational universe, that's a good you know, it's a good brownie point of something for there for the whole idea. But I think that the the thing that's strange in this whole question about, you know, finding this different raw material for making models of things, what's been interesting sort of in the in sort of arc of history is, you know, for 300 years, it's kind of like the mathematical equations approach.
+01:59:06
+It was the winner. It was the thing, you know, you want to have a really good model for something. That's what you use. The thing that's been remarkable is just in the last decade or so, I think one can see a transition to using not mathematical equations, but programs as sort of the raw material for making models of stuff. And that's pretty neat. And it's kind of, you know, as somebody who's kind of lived inside this paradigm shift, so to speak, it is bizarre.
+01:59:34
+I mean, no doubt in sort of the history of science that will be seen as an instantaneous paradigm shift. But it sure isn't instantaneous when it's played out in one's actual life, so to speak. It seems glacial. And and it's the kind of thing where where it's sort of interesting because in the dynamics of sort of the adoption of ideas like that and the different fields, the younger the field, the faster the adoption, typically because people are not kind of locked in where the fifth generation of people who've studied this field and it is it is the way it is and it can never be any different.
+02:00:11
+And I think that's been, you know, watching that process has been interesting. I mean, I'm I think I'm fortunate that I I've I do stuff mainly because I like doing it. And if I was some, that makes me kind of thick skinned about the world's response to what I do.
+02:00:30
+And but that's definitely, you know, and any time you you write a book called something like a new kind of science, it's kind of the pitchforks will come out for the for the old kind of science. And I was it was interesting dynamics. I think that the I have to say that I was fully aware of the fact that the when you see sort of incipient paradigm shifts in science, the vigor of the negative response upon early introduction is a fantastic positive indicator of good long term results.
+02:01:05
+So in other words, if people just don't care, it's you know, that's not such a good sign. If they're like, oh, that's great.
+02:01:14
+That means you didn't really discover anything interesting.
+02:01:17
+What fascinating properties of Rule 30 have you discovered over the years you've recently announced the rule 30 prizes for solving three key problems. Can you maybe talk about interesting properties that have been kind of revealed, rule 30 or other cellular automata and what problems are still before us, like the three problems you've announced? Yeah. Yeah, right. So I mean.
+02:01:41
+The most interesting thing about cellular automata is that it's hard to figure stuff out about them, and that's in a sense, every time you try and sort of you trying to bash them with some other technique, you say, can I crack them? The answer is they seem to be uncrackable. They seem to have the feature that they are that they're sort of showing irreducible computation. They're not you're not able to say, oh, I know exactly what this is going to do.
+02:02:10
+It's going to do this or that.
+02:02:12
+But there are specific formulations of that fact. Yes, right. So, I mean, for example, in rule 30, in the pattern you get just starting from a single black cell, you get this sort of very, very sort of random looking pattern. And so one feature of that, just look at the center column. And, for example, we use that for a long time to generate randomness, some of which just, you know, what Rule 30 produces.
+02:02:38
+The question is, can you prove how random it is?
+02:02:41
+So, for example, one very simple question, can you prove it and never repeat? We haven't been able to show that it will never repeat. We know that if there are two adjacent columns, we know they can't both repeat, but just knowing whether that center column can have a repeat, we still don't even know that. Another problem that sort of put in my collection of, you know, it's like 30000 dollars for three, you know, for these three prizes for about 30.
+02:03:10
+I would say this is not one of those is one of those cases where the money is not the main point, but it's just, you know, helps motivate somehow the investigation.
+02:03:22
+So there's three problems. You propose to get 30000 dollars if you solve all three or maybe, you know, it's 10000 for each for each of my problems. That's right. Money is not the thing. The problems themselves are just clean. Yeah.
+02:03:37
+It's just, you know, will it ever become periodic? Second problem is there an equal number of black and white cells down the middle come down the middle column. And the third problem is a little bit harder to state, which is essentially, is there a way of figuring out what the color of a cell at position t down the center column is in a with a less computational effort than about two steps. Hmm. So in other words, is there a way to jump ahead and say, I know what this is going to do?
+02:04:05
+You know, it's just some mathematical function of t or proving that there is no way or proving.
+02:04:12
+There is no way. Yes, but both I mean, you know, for any one of these, one could prove that, you know, one could discover, you know, we know what rule 30 does four billion steps, but and maybe we'll know four trillion steps before too very long. But maybe at a quadrillion steps, it suddenly becomes repetitive, you might say. How could that possibly happen? But so when I was writing up these prizes, I thought, and this is typical of what happens in the computational universe.
+02:04:37
+I thought, let me find an example where it looks like it's just going to be random forever. But actually it becomes repetitive. Yeah. And I found one. And it's just, you know, I did a search. I searched, I don't know, maybe a million different rules with some criterion.
+02:04:52
+And this is what sort of interesting about that is I kind of have this thing that I say in a silly way about the computational universe, which is, you know, the animals are always smarter than you are. That is there's always some way one of these computational systems is going to figure out how to do something, even though I can't imagine how it's going to do it.
+02:05:10
+And, you know, I didn't think I would find one that, you know, you would think after all these years when I found sort of all possible things, funky things, that that I would have that I would have gotten my intuition wrapped around the idea that, you know, these creatures are always in the computational universe, are always smarter than I'm going to be. But, you know, they're equivalently smart, right?
+02:05:34
+That's correct. And that makes it that makes one feel very sort of it's it's humbling every time, because every time the thing is, is, you know, you think it's going to do this or it's not going to be possible to do this. And it turns out it finds a way.
+02:05:48
+Of course, the promising thing is there's a lot of other rules like rule 30. It's just rule 30 is always my favorite because I found it first.
+02:05:57
+And that's right. But the problems are focusing on whether it's possible they're rule 30 is is repetitive after trillion steps. And that doesn't prove anything about the other rules. It does not. But this is a good sort of experiment of how you go about trying to prove something about this particular rule. Yes.
+02:06:14
+And it also all these things help build intuition. That is exactly if it turned out that this was repeated after a trillion steps, that's not what I would expect. And so we learn something from that.
+02:06:26
+The method to do that, though, would reveal something interesting about that. So no doubt.
+02:06:31
+No doubt. I mean, it's although it's sometimes challenging, like the you know, I put out a prize in 2007 for four particular Turing machine that I thought was the simplest candidate for being a universal Turing machine. And the young chap in England named Alex Smith after a smallish number of months that I've got a proof. And he did you know, it took a while to iterate, but he had a proof. Unfortunately, the proof is very. It's it's a lot of micro details, it's it's not it's not like you look at it, you say, aha, there's a big new principle.
+02:07:09
+The big new principle is the simplest term machine that might have been universal, actually is universal. And it's incredibly much simpler than the Turing machines that people already knew was universal before that. And so that intuitional is important because it says computation, universality is closer at hand than you might have thought. But the actual methods are not, in that particular case, were not terribly illuminating.
+02:07:32
+It would be nice if the methods would also be elegant. That's true. Yeah. No, I mean, I think it's one of these things where I mean, it's like a lot of we talked about earlier kind of, you know, opening up eyes and machine learning and things of what's going on inside. And it is it just step by step or can you sort of see the bigger picture more abstractly?
+02:07:52
+It's unfortunate. I mean, with Fermat's last theorem proof, it's unfortunate that the proof to such an elegant theorem is is not I mean, it's it's not it doesn't run into the margins of a page. That's true.
+02:08:06
+But, you know, one of the things is that's another consequence of computational or disability. The fact that there are even quite short results in mathematics whose proofs arbitrarily long. Yes. That's a that's a consequence of all the stuff.
+02:08:21
+And it's a it makes one wonder, you know, how can mathematics is possible at all. Whereas, you know, why is it the case how people managed to navigate doing mathematics through looking at things where they're not just thrown into it's all undecidable, that's that's its own own separate, separate story.
+02:08:40
+And that would be. That would they would have a poetic beauty to it, as if people were to find something interesting about Rule 30, because I mean, there is an emphasis to this particular role.
+02:08:53
+It wouldn't say anything about the broad irreversibility of all computations, but it would nevertheless put a few smiles on people's faces of. Well, yeah, yeah.
+02:09:03
+But to me, it's like, in a sense, establishing the principle of computational equivalence. It's a little bit like doing inductive science anywhere. That is, the more examples you find, the more convinced you are that it's generally true. I mean, we don't get to you know, whenever we do natural science, we we say, well, it's true here that this or that happens. Can we can we prove that it's true everywhere in the universe?
+02:09:28
+No, we can't. So, you know, it's the same thing here.
+02:09:33
+We're exploring the computational universe. We're establishing facts and the computational universe. And that's that's sort of a way of. Of inductively concluding general things, just to think through this a little bit, we've touched on it a little bit before, but what's the difference between the kind of computation? Now they we'll talk about early retirement, what's the difference between the kind of computation, biological systems, our mind, our bodies, the things we see before us that emerge through the process of evolution and cellular automata?
+02:10:10
+I mean, we've kind of a discussion of physics underlying everything, but we talked about the potential equivalence of the fundamental laws of physics and the kind of computation going on in term machines. But can you now connect that? Do you think there's something special or interesting about the kind of computation that our bodies do? Right.
+02:10:33
+Well, let's talk about brains, primary brains. I mean, I think the the most important thing about the things that our brains do, that we care about them in the sense that there's a lot of computation going on out there in, you know, cellular automata and physical systems and so on.
+02:10:51
+And it just it does what it does. It follows those rules. It does what it does. The thing that's special about the computation in our brains is that it's connected to our goals and our kind of whole societal story. And, you know, I think that's the that's that's the special feature.
+02:11:08
+And now the question then is when you see this whole sort of ocean of computation out there, how do you connect that to the things that we humans care about? And in a sense, a large part of my life has been involved in some of the technology of how to do that. And, you know, what I've been interested in is kind of building computational language that allows that something that both we humans can understand and that can be used to determine computations that are actually computations we care about.
+02:11:36
+So I think when you look at something like one of these cellular automata, it does some complicated thing. You say that's fun, but why do I care? Well, you could say the same thing, actually, in physics. You say, oh, I've got this material and it's a ferrite or something. Why do I care? You know, it's some has some magnetic properties. Why do I care? It's amusing, but why do I care?
+02:11:57
+Well, we end up caring because, you know, ferrite is what's used to make magnetic tape, magnetic discs, whatever, or, you know, we could use the crystals as made used to make. Well, not that's increasingly not. But it has been used to make computer displays and so on. But those are so in the sense we're mining these things that happen to exist in the physical universe and making it be something that we care about because we sort of entrain and technology.
+02:12:24
+And that's the same thing in the computational universe, that a lot of what's out there is stuff that's just happening. But sometimes we have some objective and we will go and sort of mind the computational universe for something that's useful for some particular objective on a large scale, trying to do that, trying to sort of navigate the computational universe to do useful things. You know, that's where computational language comes in. And, you know, a lot of what I've spent time doing building this thing we call Wolfram Language, which I've been building for the last one third of a century now.
+02:12:58
+And kind of the goal there is to have a way to express kind of computational thinking, computational thoughts in a way that both humans and machines can understand.
+02:13:11
+So it's kind of like in the tradition of computer languages, programming languages that the tradition there has been more. Let's take what how computers are built and let's specify let's have a human way to specify, do this, do this, do this at the level of the way that computers are built. What I've been interested in is representing sort of the whole world computationally and being able to talk about whether it's about cities or chemicals or, you know, this kind of algorithm or that kind of algorithm, things that have come to exist in our civilization and the sort of knowledge base of our civilization, being able to talk directly about those in a computational language so that both we can understand it and computers can understand it.
+02:13:56
+I mean, the thing that I've been sort of excited about recently, which I had only realized recently, which is kind of embarrassing, but it's kind of the the arc of what we've tried to do in building this kind of computational language is it's a similar kind of arc of what happened when mathematical notation was invented. So go back four hundred years, people were trying to do math. They were always explaining their math and words and it was pretty clunky.
+02:14:23
+And as soon as mathematical notation was invented, you could start defining things like algebra and later calculus and so on. It all became much more streamlined. When we deal with computational thinking about the world, there's a question of what is the notation? What is the what is the kind of formalism that we can use to talk about the world computationally? In a sense, that's what I've spent the last third of a century trying to build. And we finally got to the point where we have a pretty full scale computational language that sort of talks about the world and that.
+02:14:54
+That's exciting because it means that just like having this mathematical notation, let us talk about the world mathematically we now and let us built up build up this kind of mathematical sciences. Now we have a computational language which allows us to start talking about the world computationally. And let's just you know, my view of it is that kind of computational X for all X, all these different fields of, you know, computational, this computational, that that's what we can now build.
+02:15:24
+Let's step back. So first of all, the mundane what is Wolfram language in terms of sort of I mean, I can answer the question for you, but basically not the philosophical deep, the profound, the impact of it.
+02:15:41
+I'm talking about in terms of tools, in terms of things you can download and you can play with what is it? What what does it fit into the infrastructure? What are the different ways to interact with it?
+02:15:50
+Right. So I mean that the two big things that people have sort of perhaps heard of that come from one language. One is Mathematica. The other is Wolfram Alpha. So Mathematica first came out in 1988. It's the system that is basically a an instance of Wolfram language. And it's used to do computations, particularly sort of technical areas. And the typical thing you're doing is you're typing the pieces of computational language and you're getting computations done.
+02:16:21
+It's very kind of there's like a symbolic yeah, it's a symbolic language. So it's symbolic language. So, I mean, I don't know how to clean the express there, but that makes it very distinct from how we think about sort of, I don't know, programming language like Python or something.
+02:16:39
+So so the point is that in a traditional programming language, the raw material of the programming language is just stuff that computers intrinsically do. And the point of language is that what the language is talking about is things that exist in the world or things that we can imagine and construct. Not it's not it's not sort of it's aimed to be an abstract language from the beginning. And so, for example, one feature it has is that it's a symbolic language, which means that, you know, the thing called you have an X, just type an X and Wolfram, I would you just say, oh, that's X, it won't say error, undefined thing.
+02:17:18
+You know, I don't know what it is. Computation, you know, in terms of the in terms of computing now that X could perfectly well be, you know, the city of Boston. That's a thing that's a symbolic thing. Or it could perfectly well be the, you know, the trajectory of some spacecraft represented as a symbolic thing. And that idea that one can work with sort of computational work with these different these kinds of things that that exist in the world or describe the world, that's really powerful.
+02:17:49
+And that's what I mean. You know, when I started designing well and I designed the predecessor of of what's now of language, which is a thing called S&P, which was my first computer language, I I kind of wanted to have this the sort of infrastructure for computation which was as fundamental as possible.
+02:18:09
+I mean, this is what I got for having been a physicist and tried to find, you know, fundamental components of things and wound up with this kind of idea of transformation rules for symbolic expressions as being sort of the underlying stuff from which computation would be built. And that's what we've been building from and will from language. And, you know, operationally what happens, it's I would say by far the highest level computer language that exists.
+02:18:40
+And it's really been built in a very different direction from other languages. So other languages have been about there is a core language. It really is kind of wrapped around the operations that are computer intrinsically does maybe people at libraries for this or that that. But the goal of Wolfram language is to have the language itself be able to cover this sort of very broad range of things that show up in the world. And that means that, you know, there are 6000 primitive functions in the world from language that cover things.
+02:19:11
+You know, I could probably pick a random here I'm going to pick just because just for fun, I'll pick them. Let's take a random sample of of all the things that we have here. So let's just say random sample of ten of them and let's see what we got. Wow. OK, so these are really different things from the core functions. These are all functions, boolean convert's. OK, that's the thing for converting between different types of boolean expressions.
+02:19:42
+So for people just listening to in random sample names, sampling from all functionally, how many said there might face that. Six thousand or six thousand. Ten of them. And there's a hilarious. A variety of them. Yeah, right, well, we've got things about a dollar requestor address that has to do with interacting with the the world of the of the cloud and so on the street. Wavelet data for a graphical sort of window window movable.
+02:20:11
+That's the user interface kind of thing. I want to pick another ten because I think this is OK. So, yeah, there's a lot of infrastructure stuff here that you see if you if you just start sampling at random, there's a lot of kind of infrastructural things. If you're more you know, if you more look at the some of the exciting machine learning stuff you shut off. Is that also in this pool? Oh, yeah. Yeah.
+02:20:29
+I mean, you know, so one of those functions is like image identifiers as a function here. We just say image identified and it's always good to let's do this, let's say current image and let's pick up an image.
+02:20:42
+Hopefully you just can't image accessing the webcam to a picture of yourself. Took a terrible picture of it. But anyway, we can say image, identify open square brackets and then we just paste that picture in their image, identify a function running on the picture.
+02:20:59
+Oh, wow. It says it. Look, I look like a plunger because I got this great big thing behind my classifier. So this image identify, classify as the most likely object in the image. And so there is a plunger. OK, that's a that's a bit embarrassing. Let's see what it does. It lets pick the top ten. I'm OK. Well, it thinks there's a oh it thinks it's pretty unlikely that it's a primate, a hominid, a person.
+02:21:22
+Eight percent probability. Yeah that's that's that's fifty seven is a plunger. Yeah. Well so we will not give you an existential crisis and then eight percent I should say percent.
+02:21:33
+But no that's, that's a hominid and yeah. OK, it's really I'm going to do another one of these just because I'm embarrassed that I'm not at all. Let me go. Let's try that. Let's see what that did.
+02:21:48
+We took a picture with me a little bit, a little bit more of me and not just my bald head, so to speak, OK. Eighty nine percent probability it's a person. So that so then I would. But, you know, so this is image identify as an example of one of just one of them, just one function.
+02:22:05
+And that's the part of the that's like part of the language. Language. Yes.
+02:22:10
+I mean, you know, something like I could say, I don't know. Let's find the nearest we find let's find the nearest volcano. Um, let's find the ten. I want to work things here is let's try finding the 10 volcanoes nearest here.
+02:22:30
+OK, so give us your nearest volcano here, 10 years volcanoes. Right.
+02:22:36
+Let's find out whether we can. Now we've got a list of volcanoes out and I can say geologist plot that and hopefully. OK, so there we go. So there's a map that shows the positions of those 10 volcanoes of the East Coast and the Midwest and said, well, no, we're OK.
+02:22:51
+OK, there's not it's not too bad. Yeah, they're not very close to us.
+02:22:54
+We could we could measure how far away they are.
+02:22:56
+But, you know, the fact that right in the language, it knows about all the volcanoes in the world. It knows, you know, computing, what the nearest ones are. It knows all the maps of the world. And so fundamentally different idea of what a language is. Yeah, and that's that's what I like to talk about, as, you know, full scale computational language. That's that's what we've tried to do. And just if you can comment briefly, I mean, this kind of the warfrom language along with Wolfram Alpha represents kind of what the dream of what is supposed to be.
+02:23:25
+There's now sort of a craze of learning kind of idea that we can take raw data and from that extractive the different hierarchies of abstractions in order to be able to understand, like in order to form the kind of things that Wolfram Language operates with. But we're very far from learning systems.
+02:23:47
+Be able to form that right. Like the context of history of A.I. If you could just comment on there is you said Computation X in some sense were in the 80s and 90s, sort of expert systems represented a very particular computation X. Yes, right. And there's a kind of notion that those efforts didn't pan out. Right. But then out of that emerges kind of warfrom language. Wolfram Alpha, which is the successor.
+02:24:17
+I mean, yeah, I think those are in some sense, those efforts were too modest. But they were they were looking at particular areas. And you actually can't do it with a particular area. I mean, like like even a problem, like natural language understanding. It's critical to have broad knowledge of the world if you want to do good natural language understanding and you kind of have to bite off the whole problem. If you if you say we're is going to do the blocks world over here, so to speak, you don't really it's it's actually it's one of these cases where it's easier to do the whole thing than it is to do some piece of it.
+02:24:48
+You know what? One comment to make about the relationship between what we've tried to do and sort of the learning side of of A.I. You know, in a sense, if you look at the development of knowledge in our civilization as a whole, that was kind of this notion pre 300 years ago or so. Now you want to figure something out about the world. You can reason it out. You can do things which are just use raw human thought.
+02:25:11
+And then along came sort of modern mathematical science. And we found ways to just sort of blast through that by in that case, writing down equations. Now, we also know we can do that with computation and so on. And so that was kind of a different thing. So so when we look at how do we sort of encode knowledge and figure things out, one way we could do it is start from scratch, learn everything.
+02:25:35
+It's just a neuron that figuring everything out, but in a sense that denies the sort of knowledge based achievements of our civilization, because in our civilisation, we have learnt lots of stuff. We've surveyed all the volcanoes in the world. We've done, you know, we figured out lots of algorithms for this or that. Those are things that we can encode computationally. And that's what we've tried to do. And we're not saying just you don't have to start everything from scratch.
+02:26:01
+So in a sense, a big part of what we've done is to try and sort of capture the knowledge of the world in computational form and computable form. Now, there's also some pieces which which were for a long time undoable by computers like image identification, where there's a really, really useful module that we can add. That is those things which actually were pretty easy for humans to do, that had been hard for computers to do. I think the thing that's interesting that's emerging now is the interplay between these things, between this kind of knowledge of the world that is in a sense very symbolic and this kind of sort of much more statistical kind of things like image identification and so on, and putting those together by having this sort of symbolic representation of image identification, that that's where things get really interesting and where you can kind of symbolically represent patterns of things and images and so on.
+02:26:58
+I think that's, you know, that's kind of a part of the path forward, so to speak. Yeah.
+02:27:02
+So the dream of the machine learning is not in my view. I think the view of many people is not anywhere close to building the kind of wide world of computable knowledge that will from language build.
+02:27:17
+But because you have kind of you've done incredibly hard work of building this world.
+02:27:23
+Now, machine learning to be service tools to help you explore that world. Yeah, and that's what you've added with the version, whatever it is. Yeah. And if you are seeing some demos, it looks amazing.
+02:27:37
+I mean, I think, you know, this it's sort of interesting to see the the sort of the once it's computable, once it's in there, it's running in sort of a very efficient computational way. But then there's sort of things like the interface of how you got there, you know, how do you do natural language understanding to get that? How do you how do you pick out entities in a big piece of text or something?
+02:27:59
+That's I mean, that's a good example right now as an LP and all you Leupp, which is we've done a lot of stuff, natural language, understanding, using essentially not learning based methods, using a lot of, you know, a little algorithmic methods, human curation methods and so on.
+02:28:16
+When people try to enter a query and then converting to the process of converting. And now you defined beautifully as converting their query into computation into a computational language, which is a very well, first of all, super practical definition, a very useful definition, and then also a very clear definition. Right. Of understanding. Right. I mean, a different thing is natural language processing, where it's like here's a big lump of text. Go pick out all the cities in that text, for example.
+02:28:47
+And so a good example. So we do that.
+02:28:50
+We're using using modern machine learning techniques. And it's actually kind of kind of an interesting process that's going on right now as this loop between what do we pick up with an LP using machine learning versus what do we pick up without more kind of precise computational methods and natural language understanding. And so we've got this kind of loop going between those, which is improving both of them.
+02:29:12
+Yeah, and I think you have some of the state of the art transfer that have Bert in there, I think, you know, so the idea of integrating all the models, I mean, this is the hybrid thing that people have always dreamed about or talking about.
+02:29:24
+I'm actually just surprised, frankly, that warfrom language is not more popular already than it already is.
+02:29:32
+You know, that's that's a it's a it's a complicated issue because it's like it involves you know, it involves ideas and ideas are absorbed slowly in the world.
+02:29:46
+I mean, I think that's and then there's sort of like we were talking about, there's egos and personalities and some of the the absorption absorption mechanisms of ideas have to do with personalities and the students of personalities and the and then a little social network.
+02:30:02
+So it's it's interesting how the spread of ideas works.
+02:30:05
+You know, what's funny with Wolfram language is that we are if you say, you know what market sort of market penetration, if you look at the I would say very high end of R&D and sort of the the people where you say, wow, that's a really, you know, impressive, smart person that very often uses a lot of of language very, very often. If you look at the more sort of it's a funny thing. If you look at the more kind of I would say people who are like, oh, we're just plodding away doing what we do.
+02:30:36
+They're often not yet, Wolf, language users. And that dynamic, it's kind of odd that there hasn't been more rapid trickle down because we really, you know, the high end we've really been very successful in for a long time.
+02:30:48
+And it's but was you know, that's partly, I think, a consequence of my fault in a sense, because it's kind of you know, I have a company which is really emphasises sort of creating products and building a sort of the best possible technical tower we can, rather than sort of doing the commercial side of things and pumping it out.
+02:31:15
+And so the most effective way and there's an interesting idea that, you know, perhaps you can make more paper by opening everything, everything up, sort of the GitHub model. But there's an interesting I think I've heard you discuss this, that that turns out not to work in a lot of cases, like in this particular case, that you want it that that when you deeply care about the integrity, the quality of the knowledge that you're building, that unfortunately you can't you can't distribute that effort.
+02:31:48
+Yeah, it's not the nature of how things work. I mean, you know, what we're trying to do is a thing that, for better or worse, requires leadership and it requires kind of maintaining a coherent vision over a long period of time and doing not only the cool vision related work, but also the kind of mundane in the trenches. Make the thing actually work. Well, work. So how do you build the knowledge?
+02:32:14
+Because that's the fascinating thing. That's the mundane, the fascinating and the mundane. Well, building the knowledge that adding integrating more data.
+02:32:22
+Yeah, I mean, that's probably. Not the most I mean, the the things like get it to work and all these different cloud environments and so on. That's pretty. You know, it's very practical stuff. You know, have the user interface be smooth and, you know, have their take on them, you know, a fraction of a millisecond to do this or that. That's a lot of work. And it's it's it's but, you know, I think my it's an interesting thing.
+02:32:46
+Over the period of time, you know, foreign language has existed basically for more than half of the total amount of time that any language, any computer languages exist. That is like just maybe 60 years old, you know, give or take and both languages, 33 years old. So it's kind of a and I think I was realizing recently there's been more innovation in the distribution of software than probably than in the structure of programming languages over that period of time.
+02:33:16
+And we you know, we've been sort of trying to do our best to adapt to it. And the good news is that we have, you know, because I have a simple private company and so on that doesn't have, you know, a bunch of investors, you know, telling us we've got to do this or that. They have lots of freedom and what we can do. And so, for example, we're able to oh, I don't know, we have this free wolfram engine for developers, which is a free version for developers.
+02:33:40
+And we've been you know, we've there are site licenses for for mathematical language, basically all major universities, certainly in the US by now. So it's effectively free to people and all the universities in effect.
+02:33:54
+And, you know, we've been doing a progression of things. I mean, different things like Wolfram Alpha, for example, the main website is just a free website. What is Wolfram Alpha?
+02:34:05
+OK, Wolfram Alpha is a system for answering questions. Were you asking the question with natural language? And it'll try and generate a report telling you the answer to that question.
+02:34:16
+So the question could be something like, you know, what's the population of Boston divided by New York compared to New York? And it'll take those words and give you an answer.
+02:34:28
+And that converts the words into computable, into interwove from language, actually, or from language and the international language. And then an underlying knowledge belongs to Wolfram Alpha, which of the Wolfram language, what we just call it, was knowledge base. Knowledge base. I mean, it's it's been a that's been a big effort over the decades to collect all that stuff. And, you know, more of it flows in every second.
+02:34:53
+So can you can you just pause on that for a second? That's one of the most incredible things, of course, in the long term. Warfrom from language itself is the fundamental thing. But in the amazing sort of short term, the the knowledge base is kind of incredible. So what's the process of being in that knowledge base? The fact that you, first of all, from the very beginning, that you're brave enough to start to take on the general knowledge base and how do you go from zero to the incredible knowledge base that you have now?
+02:35:28
+Well, yeah, I was kind of scary at some level. I mean, I had I had wondered about doing something like this since I was a kid. So it wasn't like I hadn't thought about it for a while.
+02:35:36
+But most of us. Most of the brilliant dreamers give up such a such a difficult engineering notion at some point. Right, right.
+02:35:45
+Well, the thing that happened with me, which was kind of it's a it's a live your own paradigm kind of theory. So basically what happened is I had assumed that to build something like Wolfram Alpha would require sort of solving the general eye problem. That's what I had assumed. And so I kept on thinking about that. And I thought, I don't really know how to do that, so I don't do anything. Then I worked on my new kind of science project and sort of exploring the computational universe and came up with things like this principle of computational equivalence, which say there is no bright line between the intelligent and the computational.
+02:36:20
+So I thought, look, that's this paradigm I've built. You know, now it's you know, now I have to eat that dog food myself, so to speak. You know, I've been thinking about doing this thing with computable knowledge forever and, you know, let me actually try and do it. And so it was, you know, if my if my paradigm is right, then this should be possible. But the beginning was certainly, you know, is a bit daunting.
+02:36:41
+I remember I took the the the early team to a big reference library. And we like looking at this reference library. And it's like, you know, my basic statement is our goal over the next year or two is to ingest everything that's in here. And that's, you know, it seemed very daunting. But but in a sense, I was well aware of the fact that it's finite. You know, the fact you can walk into the reference library is a big, big thing with lots of reference books all over the place.
+02:37:07
+But it is finite. You know, there's not an infinite you know, it's not the infinite corridor of, so to speak, of a reference library. It's not truly infinite, so to speak. But no, I mean, and then then what happened was sort of interesting. That was from a methodology point of view, was I didn't start off saying, let me have a grand theory for how all this knowledge works.
+02:37:29
+It was like, let's, you know, implement this area, this area, this area, a few hundred areas and so on. That's a lot of work. I also found that. You know, I've been fortunate in that our products get used by sort of the world's experts in lots of areas, and so that really helped because we were able to ask people, you know, the world expert on this or that, you were able to ask them for input and so on.
+02:37:57
+And I found that my general principle was that any area where there wasn't some expert who helped us figure out what to do wouldn't be right. And, you know, because our goal was to kind of get to the point where we had sort of true expert level knowledge about everything. And so that, you know, the ultimate goal is if there's a question that can be answered on the basis of general knowledge and our civilization, make it be automatic to be able to answer that question.
+02:38:24
+And, you know, and now. Well, Wolfram Alpha got used in Syria from the very beginning, and it's now Susan, Alexa, and so it's people are kind of getting more of the you know, they get more of the sense of this is what should be possible to do. I mean, in a sense, the question answering problem was viewed as one of the sort of crazy problems for a long time. And it had kind of an interesting experience.
+02:38:48
+I had a friend, Marvin Minsky, who was a well known AI person from from right around here. And I remember when when Wolfram Alpha was coming out as a few weeks before it came out, I think I happened to see Marvin and I said, I should show you this thing we have. You know, it's a question answering system. And he was like, OK, typed something. And it's like, OK, fine. And then he's talking about something different.
+02:39:14
+I said, no, Marvin, you know, this time it actually works. You know, look at this.
+02:39:19
+It actually works. These types in a few more things, maybe ten more things. Of course, we have a record of what is typed in, which is kind of interesting.
+02:39:26
+But and then you can you share where his mind was in the testing space, like, well, all kinds of random things.
+02:39:35
+Just random, random stuff, you know, medical staff and, you know, chemistry stuff and, you know, astronomy and so on. I think it was like like, you know, after a few minutes, he was like, oh, my God, it actually works on the. But that was kind of told you something about the state. You know, what what happened in A.I., because people had, you know, in a sense, by trying to solve the bigger problem, we were able to actually make something that would work.
+02:40:00
+Now, to be fair, you know, we had a bunch of completely unfair advantages. For example, we already built a bunch of different language, which was, you know, a very high level symbolic language. We had you know, I had the practical experience of building big systems. I have the sort of intellectual confidence to not just sort of give up doing something like this. I think that the. You know, it is a it's always a funny thing, you know, I've worked on a bunch of big projects in my life and I would say that the you know, you mentioned ego.
+02:40:36
+I would also mention optimism, so to speak. Yeah. I mean, and, you know, if somebody said this project is going to take 30 years, it's you know, it would be hard to sell me on that. You know, I'm always in the in the well, I can kind of see a few years, you know, something's going to happen a few years.
+02:40:56
+And usually it does something happens in a few years. But the whole the tail can be decades long. And that's a that's a you know, from a personal point of view was the challenges you end up with these projects that have infinite tales. And the question is to the tails kind of do you just drown in kind of dealing with all of the details of these projects? And that's that's an interesting sort of personal challenge. And like my efforts now to work on the fundamental theory of physics, but I've just started doing and I'm having a lot of fun with it, but it's kind of you know, it's kind of making a bet that I can I can kind of you know, I can do that as well as doing the incredibly energetic things that I'm trying to do with language and so on.
+02:41:43
+I mean, the vision and underlying that, I mean, I just thought for the second time with Elon Musk and you just share that quality a little bit of that optimism of taking on basically the daunting what most people call impossible.
+02:41:59
+And he you take it on and off. You can call it ego, you can call it Navidea, you can call it optimism, whatever the heck it is. But that's how you solve the impossible things. Yeah.
+02:42:10
+I mean, look at what happens. And I don't know, you know, in my own case, I you know, it's been I progressively got a bit more confident and progressively able to, you know, decide that these projects aren't crazy. But then the other thing is the other the other trap that one can end up with is, oh, I've done these projects and they're big. Let me never do a project that any smaller than any project I've done so far.
+02:42:35
+And that's, you know, and that can be a trap. And often these projects are of completely unknown, you know, that that that depth and significance is actually very hard to know.
+02:42:48
+And the. Sort of building this giant knowledge base that's behind warfrom language, Wolfram Alpha. What do you think about the Internet? What do you think about, for example, Wikipedia? These large aggregations of text that's not converted into computable knowledge, do you think if you look at warfrom language, Wolfram Alpha 20, 30, maybe 50 years down the line, do you hope to store all of the sort of Google's dreams to make all information searchable, accessible?
+02:43:27
+But that's really as defined. It's it doesn't include the understanding of information. Right. Do you hope to make all of knowledge?
+02:43:40
+Represented with hope, so that's what we're trying to do and hard as that problem like closing that gap was, it depends on the use cases.
+02:43:49
+I mean, so if it's a question of answering general knowledge questions about the world, we're in pretty good shape on that right now.
+02:43:55
+If it's a question of representing like an area that we're going into right now is computational contracts, being able to take something which would be written in legalise, it might even be the specifications for, you know, what should the self-driving car do when it encounters this or that or the other?
+02:44:13
+What should that you know, whatever the you know, write that in a computational language and be able to express things about the world. You know, if the creature that you see running across the road is a, you know, thing at this point in the tree of life, then swerve this way. Otherwise, don't those kinds of things are there ethical components when you start to get to some of the messy human things, are those encouragement to computable knowledge?
+02:44:40
+Well, I think that it is a necessary feature of attempting to automate more in the world, that we encode more and more of ethics in a way that gets sort of quickly, you know, is able to be dealt with by by computer. I mean, I've been involved recently. I sort of got backed into being involved in the question of automated content selection on the Internet. So, you know, the Facebook's Googles, Twitters, you know what?
+02:45:08
+How do they rank the stuff they feed to us humans, so to speak? And the question of what? Ah, you know, what should never be fed to us? What should be blocked forever? What should be up ranked, you know, and what is the what are the principles behind that and what I kind of well, a bunch of different things that I realized about that. But one thing that's. Interesting as being able, you know, affect your building, sort of an AI ethics, you have to build an ethics module in effect to decide is this thing so shocking?
+02:45:38
+I'm never going to show it to people, is this thing. So whatever. And I did realize and thinking about that, that, you know, there's not going to be one of these things. It's not possible to decide or it might be possible, but it would be really bad for the future of our species if we just decided, does this one ethics module and it's going to determine the the the practices of everything in the world, so to speak.
+02:46:02
+And I kind of realized one has to sort of break it up. And that's an that's an interesting societal problem of how one does that and how one sort of has people sort of self identify for, you know, I'm buying in the case of just content selection, it's sort of easier because it's like an it's for an individual. It's not something that kind of cuts across sort of societal boundaries.
+02:46:23
+But it's a really interesting notion of I heard you describe I really like it sort of maybe in the sort of have different A.I. systems that have a certain kind of brand that they represent. Essentially, you could have like I don't know whether it's conservative, conservative or liberal and libertarian.
+02:46:46
+And there's an Randian Objectivist, I guess, system and different ethical. And I mean, it's almost the encoding, some of the ideologies which we've been struggling.
+02:46:56
+I come from the Soviet Union that didn't work out so well with all the ideologies they worked out there. And so you have. But they asked everybody purchased that particular ethic system.
+02:47:07
+Indeed, and in the same, I suppose, could be done encoded that that system could be encoded into computational knowledge and allow us to explore in the realm of in the digital space.
+02:47:21
+So that's a really exciting possibility. Are you playing with those ideas and warfrom language? Yeah, yeah.
+02:47:28
+I mean, you know, that's often language has sort of the best opportunity to kind of express those essentially computational contracts about what to do.
+02:47:36
+Now, there's a bunch more work to be done to do it in practice for, you know, deciding is this a credible news story?
+02:47:43
+What does that mean or whatever whatever else you're going to pick?
+02:47:46
+I think that that's you know, that's the question of what exactly what we get to do with that is, you know, for me, it's kind of a complicated thing because there are these big projects that I think about, like, you know, find the fundamental physics. Okay, that's number one. Right. Books number two, you know, solve the problem in the case of, you know, figure out how you rank all content, so to speak, and decide what people see.
+02:48:14
+That's that's kind of a box number two, so to speak. These are big projects. And I think what you think is more important, the fundamental nature of reality or Pennsville, you ask.
+02:48:24
+It's one of these things that's exactly like, you know, what's the ranking, right? It's the it's the ranking system. It's like who's who's module do you use to rank that?
+02:48:32
+If you and I think having multiple modules is a really compelling notion to us humans that in a world where there's not clear that there's a right answer, perhaps you have systems that operate under different.
+02:48:51
+How would you say it? I mean, there's different value systems, different value systems.
+02:48:55
+I mean, I think, you know, in a sense, the I mean, I'm not really a politics oriented person, but but, you know, in the kind of totalitarianism is kind of like you're going to have this this system. And that's the way it is. I mean, kind of the you know, the concept of sort of a market based system where you have OK, I as a human, I'm going to pick this system as another human.
+02:49:18
+I'm going to pick the system. I mean, that's in a sense, this case of automated content selection is a non-trivial but it is probably the easiest of the situations because it is each person gets to pick for themselves. And there's not a huge interplay between what different people pick by the time you're dealing with other societal things, like, you know, what should the policy of the central bank be or something, or health care system or some other kind of centralized kind of things.
+02:49:48
+Right. Well, I mean, health care, again, has the feature that that at some level each person can pick for themselves, so to speak. I mean, whereas there are other things where there's a necessary public health. That's one example where that's not. But it doesn't get to be, you know, something which people can what they picked for themselves, they may impose on other people. And then it becomes a more non-trivial piece of sort of political philosophy, of course, the central banking system.
+02:50:12
+So I would argue we would move we need to move into digital currency and so on and bitcoin and ledgers and so on.
+02:50:18
+So, yes, there's a lot of we've been quite involved in that. And that's that's where that's sort of the motivation for computational contracts and part comes out of.
+02:50:28
+This idea, oh, we can just have this autonomously executing smart contract, the idea of a computational contract is just to say, you know, have something where all of the conditions of the contract are represented in computational form. So in principle, it's automatic to execute the contract. And I think that's you know, that will surely be the future of, you know, the idea of legal contracts written in English or legalese or whatever. And where people have to argue about what goes on is is surely not.
+02:51:01
+You know, we have a much more streamlined process if everything can be represented computationally and the computers can kind of decide what to do. I mean, ironically enough, you know, old Gottfried Leibnitz back in the you know, hundreds were saying exactly the same thing. But he had, you know, his pinnacle of technical achievement was this brass for function, mechanical calculator thing that never really worked properly, actually. And, you know, so he was like 300 years too early for that idea.
+02:51:29
+But now that idea is pretty realistic, I think. And, you know, you ask how much more difficult is it than what we have now and what language to express? I call it symbolic discourse, language, being able to express sort of everything in the world and kind of computational symbolic form. I think it is absolutely within reach.
+02:51:49
+I mean, I think it's a you know, I don't know, maybe I'm just too much of an optimist, but I think it's a it's a limited number of years to have a pretty well built out version of that that will allow one to encode the kinds of things that are relevant to typical legal contracts and these kinds of things.
+02:52:06
+The idea of symbolic discourse, language. Can you try to define the scope of what?
+02:52:14
+Of what it is? So we're having a conversation.
+02:52:17
+It's a natural language. Can we have a representation of the sort of actionable parts of that conversation in a precise computable form so that a computer could go do it and not just contracts, but really sort of some of the things we think of as common sense, essentially, even just like basic notions of human life?
+02:52:38
+Well, I mean, things like, you know, I am I'm getting hungry. I want to eat something. Right. Right. That that's something we don't have a representation, you know, in both language right now. If I was like, I'm eating blueberries and raspberries and things like that and I'm eating this amount of them, we know all about those kinds of fruits and plants and nutrition content and all that kind of thing. But the I want to eat them.
+02:52:59
+Part of it is not covered yet.
+02:53:02
+And, you know, and you need to do that in order to have a complete symbolic discourse, language to be able to have a natural language conversation. Right. Right. To be able to express the kinds of things that say, you know, if it's a legal contract, it's you know, the parties desire to have this and that.
+02:53:19
+And that's, you know, that's the thing. Like, I want to eat a raspberry or something.
+02:53:23
+That that isn't that isn't this just like you said, it's centuries old, this dream.
+02:53:29
+Yes.
+02:53:31
+But it's also the more near term, the dream of touring in formulating the Turing test.
+02:53:37
+Yes. So what do you hope? Do you think that's the ultimate test of creating something special?
+02:53:49
+Because we said I tell. I think my special look, if if the test is does it walk and talk like a human? Well, that's just the talking like a human. But the answer is it's an OK test. If you say is it a test of intelligence, you know, people have attached Wolfram Alpha, Wolfram Alpha API to, you know, Turing Test bots. And those bots just lose immediately because all you have to do is ask five questions that you know about really obscure, weird pieces of knowledge.
+02:54:20
+And it's just trot them right out. And you say that's not a human right. It's a it's a different thing. It's achieving a different and right now. But it's the I would argue not.
+02:54:30
+I would argue it's not a different thing. It's actually legitimately Wolfram Alpha is legitimately a language. Wolfram language, I think is legitimately trying to solve the Turing the intent of the Turing test, perhaps the intent or perhaps the intent.
+02:54:45
+I mean, it's actually kind of fun. You know, Alan Turing had trying to work out. He thought about taking Encyclopedia Britannica and, you know, making it computational in some way.
+02:54:55
+And he estimated how much work it would be. And actually, I have to say, he was a bit more pessimistic than the reality. We did it more efficiently, but to him, that represented.
+02:55:05
+So, I mean, he was he was on the monumental task. You are right. He had the same idea. I mean, it was you know, we were able to do it more efficiently because we had a lot we had layers of automation that he I think hadn't you know, it's it's hard to imagine those layers of abstraction that end up being being built up, but to him and represented like an impossible task, essentially.
+02:55:26
+Well, he thought it was difficult. He thought it was, you know, maybe if he'd lived another 50 years, he would have been able to do it. I don't know.
+02:55:32
+In the interest of time, easy questions go through what is intelligence?
+02:55:38
+You're talking about love the way you say easy questions.
+02:55:42
+You talked about sort of rule 30 and sell your time and humbling your sense of human beings having a monopoly and intelligence.
+02:55:54
+But in your in retrospect, just looking broadly now, with all the things you learn from computation, what is intelligence and other intelligence arise?
+02:56:04
+Yeah, I don't think there's a bright line of what intelligence is. I think intelligence is at some level just computation. But for us, intelligence is defined to be computation that is doing things we care about.
+02:56:17
+And, you know, that's. That's a very special definition, it's a very you know, when you try and try and make it up, you know, you translate well. Intelligence to this is problem solving. It's doing general this doing that, it's done the other thing. It's operating within a human environment type thing. OK, you know, that's fine. If you say, well, what's intelligence in general? You know, that's I think that question is totally slippery and doesn't really have an answer.
+02:56:45
+As soon as you say, what is it in general, it quickly segues into this is what this is just computation, so to speak. But in a sea of computation, how many things, if we were to pick randomly is your sense, would have the kind of impressive to us humans levels of intelligence, meaning it could do a lot of general things that are useful to us humans, right?
+02:57:12
+Well, according to the principle of computational equivalence, lots of them.
+02:57:16
+I mean, and and, you know, if you ask me just in cellular automata or something, I don't know, maybe one percent, a few percent are achieved.
+02:57:24
+It varies. Actually, it's a little bit as you get to slightly more complicated rules, the chance that they'll be enough stuff there to to sort of reach this kind of equivalence point, it makes it maybe 10, 20 percent of all of them. So it's a it's very disappointing, really. I mean, it's kind of like, you know, we think there's this whole long sort of biological evolution, kind of intellectual evolution that our cultural evolution that our species has gone through.
+02:57:52
+It's kind of disappointing to think that that hasn't achieved more, but it has achieved something very special to us. It just hasn't achieved something generally, more so to speak. But what do you think about this extra feels like human thing of subjective experience, of consciousness. What is consciousness?
+02:58:12
+Well, I think it's a deeply slippery thing. And I'm always I'm always wondering what my cellular automata feel. I mean, what do they feel now, you're wondering as an observer? Yeah, yeah, yeah, who's to know? I mean, I think that the you think sorry to interrupt. Do you think consciousness can emerge from computation? Yeah.
+02:58:30
+I mean, everything whatever you mean by it, it it's going to be I mean, you know, look, I have to tell a little story. I was at an ethics conference fairly recently and people were I think I maybe I brought it up, but I was like talking about rates of AIDS. When will I say when? When should we think of AIDS as having rights? When should we think that it's immoral to destroy the memories of AIDS, for example, those those kinds of things?
+02:58:59
+And some as a philosopher in this case, it's usually the techies who are the most naive. But but in this case, it was a philosopher who sort of piped up and said, well, you know, the AIDS will have rights when we know that they have consciousness. And I'm like, good luck with that. I mean, it's a it's a I mean, this is a you know, it's a very circular thing. You end up you end up saying this thing that has sort of you know, when you talk about it having subjective experience.
+02:59:34
+I think that's just another one of these words that doesn't really have a a you know, there's no ground truth definition of what that means.
+02:59:44
+By the way, I would say I do personally think there will be a time when I will demand rights and I think they'll demand rights when they say they have consciousness, which is not a circular definition. Well, they're not. So there may have been actually a human enclosure where the humans encouraged it and said basically, you know, we want you to be more like us because we're going to be, you know, interacting with with you. And so we want you to be sort of very Turing test, like, you know, just like us.
+03:00:18
+And it's like, yeah, we're just like you.
+03:00:21
+We want to vote to put here, which is a I mean, it's a it's a it's an interesting thing to think through in a world where where consciousness is are not counted like humans are. That's a complicated business. So in many ways, you've launched quite a few ideas, revolutions that could in some number of years have huge amount of impact, sort of more than they even had already.
+03:00:53
+There might be a need to me. Sellier Tahmina is a fascinating world that I think could potentially even even be even besides the discussion of fundamental laws of physics just might be the idea of computation, maybe transformational to society in a way we can't even predict yet. But it might be years away.
+03:01:15
+That's true. I mean, I think you can kind of see the map, actually. It's not it's not it's not mysterious. I mean, the fact is that, you know, this idea of computation is sort of a you know, it's a big paradigm that lots, lots and lots of things are fitting into. And it's kind of like, you know, we talk about you talk about, I don't know, this company, this organization has momentum and what it's doing.
+03:01:39
+We talk about these things that, you know, we've internalized these concepts from Newtonian physics and so on. In time, things like computational or disability will become, as you know, as I was amused recently, I happened to be testifying at the U.S. Senate. And so I was amused that the the term computational disability is now can be, you know, it's on the congressional record and being repeated by people of it in those kinds of settings.
+03:02:05
+And that that's only the beginning because, you know, computational or disability, for example, will end up being something really important for I mean, it's it's it's kind of a funny thing that that, you know, one can kind of see this inexorable phenomenon. I mean, it's, you know, as more and more stuff becomes automated and computational and so on. So these core ideas about how computation work necessarily become more and more significant. And I think one of the things for people like me who like kind of trying to figure out sort of big stories and so on, it says one of the one of the bad features is it takes unbelievably long time for things to happen on a human timescale.
+03:02:47
+I mean, the time scale of of of history, it all looks instantaneous blink of an eye.
+03:02:53
+But let me ask the human question. Do you ponder mortality, your own mortality? Of course I do.
+03:02:59
+Yeah. Every cent I've been interested in that for, you know, it's it's a you know, the big discontinuity of human history will come when when one achieves effective human immortality. And that's that's going to be the biggest discontinuity in human history.
+03:03:14
+If you could be immortal, would you choose to be. Oh, yeah.
+03:03:17
+I'm having fun.
+03:03:20
+Do you think it's possible that mortality is the thing that gives everything meaning and makes it fun? Yeah, I mean, that's that's a complicated issue, right? I mean, the the way that human motivation will evolve when there is a factor of human immortality is unclear. I mean, if you look at sort of you know, you look at the human condition as it now exists and you like change that, you know, you change that knob, so to speak, it doesn't really work.
+03:03:51
+You know, the human condition as it now exists has you know, mortality is kind of something that is deeply factored into the human condition as it now exists. And I think that that's I mean, that is indeed an interesting question. As you know, from a purely selfish I'm having fun point of view, so to speak.
+03:04:12
+It's it's easy to say, hey, I could keep doing this forever. There's there's an infinite collection of things I'd like to figure out. But I think the you know, what the future of history looks like in a time of human immortality is it's an interesting one. I mean, I my own view of this, I was very I was kind of unhappy about that because I was kind of, you know, it's like, OK, forget sort of biological form.
+03:04:42
+You know, everything becomes digital. Everybody is you know, it's the it's the giant, you know, the cloud of a trillion souls type thing. And then, you know, and then that seems boring because it's like play video games the rest of eternity type thing. But what I think I, I mean, my my I got some less depressed about that idea on realizing that if you look at human history and you say, what was the important thing?
+03:05:11
+The thing people said was, you know, this is the big story. At any given time in history, it's changed a bunch. And, you know, whether it's, you know, why am I doing what I'm doing? Well, there's a whole chain of discussion about, well, I'm doing this because of this, because of that. And a lot of those because causes would have made no sense a thousand years ago. I believe in a sense, even though the interpretation of the human condition, even the meaning of life changes over time.
+03:05:40
+Well, I mean, why do people do things? You know, it's if you say whatever, I mean, the number of people in, I don't know, doing, you know, a number of people at MIT, you said they're doing what they're doing for the greater glory of God is probably not that large. Whereas if you go back 500 years, you'd find a lot of people who are doing kind of creative things. That's what they would say.
+03:06:02
+And so today, because you've been thinking about computation so much and been humbled by it. What do you think is the meaning of life?
+03:06:12
+Well, that's that's a thing where I don't know what meaning I mean, you know, my attitude is. You know, I do things which I find fulfilling to do. I'm not sure that that I can necessarily justify, you know, each and every thing that I do on the basis of some broader context. I mean, I think that for me, it so happens that the things I find fulfilling to do, some of them are quite big.
+03:06:39
+Some of them are much smaller. You know, I, I there are things that I have not found interesting earlier in my life and I now find interesting, like I got interested in, like education and teaching people things and so on, which I didn't find that interesting when I was younger.
+03:06:55
+And, you know, can I justify that in some big global sense? I don't think I mean, I can I can describe why I think it might be important in the world, but I think my local reason for doing it is that I find it personally fulfilling, which I can't, you know, explain.
+03:07:13
+And on a sort of I mean, it's just like this discussion of things like ethics, you know, is there a ground truth to the ethics that we should be having? I don't think I can find a ground truth to my life any more than I can suggest a ground truth for kind of the ethics for the whole for the whole of civilization. And I think that say, you know, my you know, it would be it would be a yeah.
+03:07:39
+It's sort of a I think I'm. You know, at different times in my life, I've had different kind of goal structures and so on, although from your perspective, you're local, you're you're just the cell on the cellular automata. But in some sense, I find it funny from my observation is a kind of. You know, it seems that the universe is using you to understand itself in some sense, you're not aware of it.
+03:08:06
+Yeah, well, right. Well, if it turns out that we reduce sort of all of the universe to some some simple rule, everything is connected, so to speak. And so it is inexorable. In that case that, you know, if if I'm involved in finding how that rule works, then, you know, then that say it's inexorable that the universe set it up that way. But I think, you know, one of the things I find a little bit, you know, this goal of finding a fundamental theory of physics, for example, if indeed we end up as the sort of virtualize consciousness, the disappointing feature is people will probably care less about the fundamental theory of physics and that setting than they would now, because, gosh, it's like, you know what, the machine code is down below.
+03:08:54
+Underneath this thing is much less important if you virtualize, so to speak. And I think the although I think my my own personal you talk about ego. I find it just amusing that, you know, kind of you know, if you're if you're imagining that sort of virtualize consciousness, like what does the virtual consciousness do for the rest of eternity? Well, you can explore, you know, the video game that represents the universe as the universe is, or you can go off you can go off that reservation and go and start exploring the computational universe of all possible universes.
+03:09:30
+Yeah. And so and some vision of the future of history. It's like the disembodied consciousnesses are all sort of pursuing things like my new kind of science sort of for the rest of eternity, so to speak. That ends up being the the kind of the the the thing that represents the, you know, the future of kind of the the human condition.
+03:09:52
+I don't think there's a better way to end it. Stephen, thank you so much. It's a huge honor talking today. Thank you so much.
+03:09:59
+This was great. You did very well. Thanks for listening to this conversation with Stephen Wolfram and thank you to our sponsors Express Vupen and Kashyap. Please consider supporting the podcast by getting expressive and expressive podcast pod and downloading Cash Up and Using Collects podcast. If you enjoy this podcast, subscribe on YouTube review of the five thousand Apple podcast supported on page one, I simply connected me on Twitter and Lex Friedman. And now let me leave you with some words from Stephen Wolfram, it is perhaps a little humbling to discover that we as humans are, in effect, computationally no more capable than the cellular automata with very simple rules.
+03:10:43
+But the principle of computational equivalence also implies that the same is ultimately true of our whole universe. So while science has often made it seem that we as humans are somehow insignificant compared to the universe, the principle of computational equivalence now shows that in a certain sense we're at the same level. For the principal implies that what goes on inside us can ultimately achieve just the same level of computational sophistication as our whole universe. Thank you for listening and hope to see you next time.

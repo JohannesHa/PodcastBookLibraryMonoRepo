@@ -1,0 +1,596 @@
+00:00:00
+The following is a conversation with Marcus Hutter, senior research scientist at Google Deep Mind, throughout his career of research, including with your instrument, Hueber and Shane Legg, he has proposed a lot of interesting ideas in and around the field of artificial general intelligence, including the development of Eigsti spelled ATSI model, which is a mathematical approach to ajai that incorporates ideas of kamangar, of complexity, Suleymanov induction and reinforcement learning. In 2006, Marcus launched the 50000 Euro Horror Prize for losses, compression of human knowledge.
+00:00:41
+The idea behind this prize is that the ability to compress well is closely related to intelligence. This, to me is a profound idea. Specifically, if you can compress the first 100 megabytes, a one gigabyte of Wikipedia better than your predecessors, your compressor likely has to also be smarter. The intention of this prize is to encourage the development of intelligent compressor's as a path to ajai. In conjunction with this podcast release just a few days ago, Marcus announced a 10x increase in several aspects of this prize, including the money to 500000 euros.
+00:01:22
+The better you compress the works relative to the previous winners, the higher fraction of that prize money is awarded to you. You can learn more about it if you Google simply Hodor Prize. I'm a big fan of benchmarks for developing A.I. systems, and the horror prize may indeed be one that will spark some good ideas for approaches that will make progress on the path of developing ajai systems. This is the Artificial Intelligence podcast. If you enjoy it, subscribe on YouTube.
+00:01:52
+Good. Five stars, an Apple podcast, supporter and patron are simply connected me on Twitter.
+00:01:57
+Àlex Friedman spelled F.R. Eyed Man as usual.
+00:02:03
+I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show is presented by Kashyap, the number one finance app in the App Store. When you get it, you Scolex podcast cash app lets you send money to friends, buy bitcoin and invest in the stock market with as little as one dollar. Brokerage services are provided by cash up investing a subsidiary of Square, a member SIPC.
+00:02:34
+Since cash allows you to send and receive money digitally peer to peer and security in all digital transactions is very important. Let me mention the PCI data security standard the cash app is compliant with. I'm a big fan of standards for safety and security PCI. DNS is a good example of that, where a bunch of competitors got together and agreed that there needs to be a global standard around the security of transactions. Now we just need to do the same for autonomous vehicles and A.I. systems in general.
+00:03:08
+So again, if you get cash out from the App Store or Google Play and use the Code Lux podcast, you'll get ten dollars in cash. I will also donate ten dollars, the first one of my favorite organizations that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Marcus Hutter. Do you think of the universe as a computer or maybe an information processing system? Let's go with the big question first.
+00:03:56
+OK. Of the big question first, I think it's a very interesting hypothesis or idea. And I have a background in physics, so I know a little bit about physical theories, the standard model of particle physics and general relativity theory. And there are amazing and describe virtually everything in the universe. And they are all, in a sense, computable theories. I mean, they're very hard to compute. And, you know, it's very elegant, simple theories which describe virtually everything in the universe.
+00:04:24
+So there's a strong indication that somehow the universe is computable, but it's a plausible hypothesis. So what do you think?
+00:04:36
+Just like you said, general relativity, quantum field theory. What do you think that the laws of physics are so nice and beautiful and simple and compressible? Do you think our universe was designed? Earth is naturally this way. Are we just focusing on the parts that are especially compressible our human minds just enjoy something about that simplicity. And in fact, there's other things that are not so compressible?
+00:05:04
+No, I strongly believe and I'm pretty convinced that the universe is inherently beautiful, elegant and simple and described by these equations. And we're not just picking that. I mean, if there were some phenomena which cannot be neatly described, scientists would try that. Right. And, you know, there's biology, which is more messy, but we understand that it's an emergent phenomena and, you know, complex systems. But they still follow the same rules of quantum electrodynamics.
+00:05:32
+All of chemistry follows that. And we know that. I mean, we cannot compute everything because we have limited computational resources. And I think it's not a bias of the humans, but it's objectively simple. I mean, of course, you never know. You know, maybe there are some corners very far out in the universe or super, super tiny below the nucleus of of of atoms or, well, parallel universes where which are not nice and simple, but there's no evidence for that.
+00:05:58
+And we should apply Occam's razor. And, you know, just a simple straight consistent with what although it's a little bit self-referential.
+00:06:05
+So maybe a quick pause. What is Ockham's Razor comes Razor says that you should not multiply entities beyond necessity, which sort of if you translate that to proper English means and, you know, in the scientific context means that if you have two theories or hypothesis or models which equally well describe the phenomenon, your study or the data, you could choose the more simple one.
+00:06:31
+So that's just the principle sort of that's not like a provable law.
+00:06:36
+Perhaps, perhaps we'll all kind of discuss it and think about it. But what's the intuition of why? The simpler answer is the one that is likely to be more correct descriptor of whatever we're talking about? I believe that Ockham's Razor is probably the most important principle in science. I mean, of course, we logically ducation, we do experimental design. But science is about finding, understanding the world, finding models of the world. And we can come up with crazy, complex models which explain everything but predict nothing.
+00:07:13
+But that simple model seem to have predictive power. And it's a valid question why? And there are two answers to that. You can just accept it. That is the principle of science. And we use this principle and it seems to be successful. We don't know why, but it just happens to be or you can try, you know, find another principal which explains Ockham's Razor. And if we start with the assumption that the world is governed by simple rules, then there's a bias towards simplicity.
+00:07:48
+And applying Occam's razor is the mechanism to finding these rules. And actually in a more quantitative sense and we come back to that later. In the case of Solomon Adduction, you can rigorously prove that you assume that the world is simple, then Ockham's Razor is the best you can do in a certain sense.
+00:08:06
+So apologize for the romanticized question, but why do you think outside of its effectiveness, why do we do you think we find simplicity so appealing as human beings?
+00:08:17
+Why does it just why does equals C squared seem so beautiful to us humans? I guess mostly in general, many things can be explained by an evolutionary argument and, you know, there's some artifacts in humans which, you know, are just artifacts and not evolutionary necessary. But with this beauty and simplicity, it's I believe.
+00:08:44
+At least the core is about like science, finding regularities in the world, understanding the world which is necessary for survival. Right. You know, if I look at a bush right, and I just see noise and there is a tiger, right. And it's me, then I'm dead. But if I try to find a pattern and we know that humans are prone to find more patterns in data than they are, you know, like the mouse face and all these things, but this bias towards finding patterns, even if they are not.
+00:09:18
+But I mean, it's best, of course, if they are helps us for survival.
+00:09:24
+Yeah, that's fascinating. I haven't thought really about the I thought I just loved science.
+00:09:28
+But indeed, from in terms of just for survival purposes, there is an evolutionary argument for why why we find the work of Einstein so beautiful. Maybe a quick small tangent.
+00:09:44
+Could you describe what Solomonov induction is? Yeah, so that's a theory which I claim and Solomonov sort of claimed a long time ago that this solves the big philosophical problem of induction.
+00:09:59
+And I believe the claim is essentially true. And what it does is the following. So, OK, for the Pecky listener, induction can be interpreted narrowly and wildly. Narrow means inferring models from data. And widely means also then using these models for doing predictions or predictions. Also part of the induction. So I'm a little sloppy sort of with the terminology and maybe that comes from Solomonov, you know, being sloppy. Maybe I should say that he can't complain anymore.
+00:10:35
+So let me explain a little bit this theory in simple terms. So assume we have a data sequence, make it very simple. The simplest one say one one one one one in 100 wants. And what do you think comes next? The natural order to speed up a little bit. The natural answer is, of course, you know, one, OK, and the question is why? OK, well, we see a pattern there. Yeah, OK.
+00:10:58
+There's a one and we repeat it. And why should it suddenly, after 100 once be different? So what we're looking for is simple explanations or models for the data we have. And now the question is a model has to be presented in a certain language in which language to be used in science. We want formal languages and we can use mathematics or we can use programs on a computer so abstractly on a touring machine, for instance, or can be a general-purpose computer.
+00:11:25
+So and there, of course, lots of models of you can say maybe it's 100, 1900 zeros and ones. That's a model. Right. But there are simpler models. There's a model print one loop that also explains the data. And if you push that to the extreme, you are looking for the shortest program, which if you run this program, reproduces the data you have, it will not stop. It will continue naturally. And this you take for your prediction and then the sequence of once that were plausible.
+00:11:55
+Right. That print one loop is the shortest program we can give some more complex examples like one, two, three, four, five. What comes next? Our program is again, you know, counter. And so that is, roughly speaking, how Solomonov induction works. The extra twist is that it can also deal with noisy data. So if you have, for instance, a coin flip, say, a biased coin, which comes up with 60 percent probability, then it will predict, it will learn and figure this out enough to really predict all the next coin flip will be had with probability, 60 percent.
+00:12:30
+So it's the stochastic version of that.
+00:12:32
+But the goal is the dream is always the search for the short program. Yes. Yeah. Well, in Solomonov induction, precisely what you do is so you combine. So looking for the shortest program is like applying a laser, like looking for the simplest theory. There's also Epicurus principle, which says if you have multiple hypotheses which equally well describe your data, don't discard any of them, keep all of them around. You never know. And you can put that together and say, OK, I have a bias towards simplicity, but I don't rule out the larger models.
+00:13:02
+And technically what we do is we weigh the shorter models higher and the longer models lower. And you use a Bayesian techniques. You have a prior and which is precisely two to the minus the complexity of the program. And you weigh all this hypothesis and takes this mixture and then you get also this toxicities statistician. Yeah.
+00:13:25
+Like many of your ideas, there's just a beautiful idea of weighing based on the simplicity of the program. I love that. That that seems to me maybe very human centric concept seems to be a very appealing way of discovering good programs in this world. You've used the term compression quite a bit. I think it's a beautiful idea, sort of. We just talked about simplicity and maybe science or just all of our intellectual pursuits is basically the attempt to compress the complexity all around us into something simple.
+00:14:01
+So what does this word mean to you? Compression.
+00:14:07
+I essentially will explain it. So it compression means for me finding short programs for the data or the phenomenon at hand. You could interpret it more widely, you know, finding simple theories which can be mathematical theories or maybe even informal, like, you know, just inverse compression means finding short descriptions, explanations, programs for the data.
+00:14:32
+Do you see science as a kind of our human attempt at compression?
+00:14:39
+So we're speaking more generally because when you say programs, kind of zooming in on a particular sort of almost like a computer science artificial intelligence focus, but do you see all of human endeavor as a kind of compression?
+00:14:52
+Well, at least all of science I see as a kind of compression with all of humanity maybe. And well, there are also some other aspects of science, like experimental design, right? I mean, we create experiments specifically to get extra knowledge. And this is that isn't part of the decision making process. But once we have the data to understand that data is essentially compressed and so I don't see any difference between compression. Understanding and prediction. So we're jumping around topics a little bit, but returning back to simplicity, a fascinating concept of Cormega of complexity.
+00:15:31
+So in your sense, the most objects in our mathematical universe have high conmigo of complexity and maybe what is first of all, what is Komaroff complexity?
+00:15:43
+Okay, conmigo of complexity is the notion of simplicity or complexity, and it takes the compression fuel to the extreme. So I explained before that if you have some data sequence, just think about a file and a computer and best sort of, you know, just the string of bits. And if you and we have data compressed, like we compress big files into files with certain compresses and you can also pull yourself extracting R.A.F., that means there's an executable.
+00:16:15
+If you run it, it reproduces your original file without needing an extra decompressive. It's just the decompressive plus the archive together in one. And now they're better and worse compresses. And you can ask what is the ultimate compressor? So what is the shortest possible self-correcting? AKA if you could produce for certain data set here which reproduces the data set. And the length of this is called the common goal of complexity, and arguably that is the information content in the data set.
+00:16:45
+I mean, if the data set is very redundant or very boring, you can compress it very well. So the information content should be low and you know, it is low, according to this source, the length of the shortest program that summarizes the data. Yes, yeah. And what's your sense of our sort of universe when we think about the different the different objects in our universe that we try concepts or whatever at every level, do they have higher or low complexity?
+00:17:15
+So what's the hope? Do you have a lot of hope in be able to summarize much of our world?
+00:17:23
+That's a tricky and difficult question. So. As I said before, I believe that the whole universe, based on the evidence we have, is very simple, so has a very short description. So did you linger on that, the whole universe? What does that mean? Do you mean at the very basic, fundamental level in order to create the universe?
+00:17:46
+Yes. Yeah. So you need a very short program when you run it to get the thing going, you get the thing going and then it will reproduce our universe. There's a problem with noise. We can come back to the later possibly noise a problem or is that a bug or a feature?
+00:18:03
+I would say it makes our life as a scientist really, really much harder. I mean, think about without noise. We wouldn't need all of the statistics, but then maybe we wouldn't feel like there's a free will.
+00:18:16
+Maybe we need that for the physics, for this is an illusion. That noise can give you free. That's at least in that way it's a future. But also, if you don't have noise, you have Otik phenomena which are effectively like noise. So we can't get away with statistics even then. I mean, think about rolling the dice and forget about quantum mechanics and you know exactly how you you throw it. But I mean, it's still so hard to compute the trajectory that effectively it is best to model it.
+00:18:43
+You know, as you know, coming out with a number of this probability, one or six, but from from this set of philosophical conmigo of complexity perspective, if we didn't have noise, then arguably you could describe the whole universe as well as Standard Model plus generativity. I mean, we we don't have a theory of everything yet, but sort of assuming we are close to it or have it, plus the initial conditions, which may hopefully be simple, and then you just run it and then you would reproduce the universe.
+00:19:16
+But that's split by noise or by chaotic systems or by initial conditions, which, you know, may be complex. So now if we don't take the whole universe was just a subset, you know, just take planet Earth. Planet Earth cannot be compressed into a couple of equations. This is a hugely complex system. So interesting. So when you look at the wind, like the whole thing may be simple and you just take a small window, then it may become complex.
+00:19:44
+And that may be counterintuitive, but there's a very nice analogy. The book, the library of all books. So imagine you have a normal library with interesting books and you go there. Great. Lots of information and quite complex. Yeah. So now I create a library which contains all possible books of five hundred pages. So the first book just has Aoba all the pages, the next book and ends with B and so on. I create this library of all books.
+00:20:11
+I can write a super short program which creates this library. So this library has all books, has zero information content and you take a subset of this library and suddenly you have a lot of information in there. So that's fascinating.
+00:20:24
+I think one of the most beautiful mathematical objects that at least today seems to be under study under talked about is cellular automata. What lessons do you draw from sort of the game of life for cellular time? And we start with the simple rules, just like you're describing with the universe, and somehow complexity emerges.
+00:20:43
+Do you feel like you have an intuitive grasp on the behavior, the fascinating behavior of such systems where some, like you said, some chaotic behavior could happen, some complexity could emerge, some it could die out and some very rigid structures? Do you have a sense about automata that somehow transfers maybe to the bigger questions of our universe?
+00:21:08
+Is the cell allowed to matter? And especially economists? Game of life is really great because the rules are so simple. You can explain it to every child and even by hand you can simulate a little bit and you see these beautiful patterns emerge and people have proven that it's even Turing complete. You cannot just use a computer to simulate game of life, but you can also use game of life to simulate any computer that is truly amazing. And it's it's the prime example probably to demonstrate that very simple rules can lead to very rich phenomena.
+00:21:42
+And people sometimes, you know, how can I chemistry and biology so rich? I mean, this can't be based on simple rules. But no, we know quantum electrodynamics describes all of chemistry and and we come later back to that. I claim intelligence can be explained or described in one single equation, this very rich phenomenon. You asked also about whether I understand this phenomenon that it's probably not.
+00:22:11
+And this is saying you never understand really things. You just get used to them.
+00:22:15
+And I think I'm pretty used, used to sell it automated.
+00:22:21
+So you believe that you understand, though, why this phenomenon happens. But I give you a different example. I didn't play. Too much, the converse game of life, but a little bit more with fractals and with Amanda on set in this beautiful, you know, parents just just look Mandelbrot set and well, when the computers were really slow and they were black and white monitor and programmed my own programs, sonar in assembler to say, wow, wow, you really get to get this practice on the screen.
+00:22:53
+And it was mesmerized. And much later, so I returned to this, you know, every couple of years. And then I tried to understand what is going on. And you can understand a little bit. So I try to derive the locations. You know, they are these circles and the apple shape and then you have smaller Mandelbrot sets recursively in the set. And there's a way to mathematically by solving higher order polynomials to figure out where these centers are and what size they are approximately.
+00:23:25
+And by sort of mathematically approaching this problem, you slowly get a feeling of why things are like they are. And that sort of is isn't, you know, first step to understanding why this rich phenomenology thing is possible. What's your intuition? Do you think it's possible to reverse engineer and find the short program that generated the these fractals sort of by looking at the fractals?
+00:23:53
+Well, in principle, yes.
+00:23:55
+Yeah. So, I mean, in principle, what you can do is you take any data set, you know, you take this fractals or you take whatever your data set, whatever. You have a picture of Conway's game of life and you run through all programs. You take your programs as one, two, three, four. And all these programs run them all in parallel in so-called dovetailing fashion, give them computational resources, first one 50 percent, second one half resources and so on, and let them run.
+00:24:22
+Wait until they hold given output. Compare it to your data. And if some of these programs produce the correct data, then you stop and then you have already some program. It may be a long program because it's faster and then you continue and you get shorter and shorter programs until you eventually find the shortest program. The interesting thing, you can never know whether to support this program because there could be an even shorter program, which is just even slower and you just have to wait here.
+00:24:49
+But asymptotically and actually after finite time, you have the shortest program. So this is a theoretical but completely impractical way of finding the underlying structure in every data set. And that was a lot of induction and conmigo of complexity. In practice, of course, we have to approach the problem more intelligently. And then if you take resource limitations into account there, Swenson's field of pseudo random numbers and these are random that these are deterministic sequences, but no algorithm, which is fast, fast means runs in polynomial time, can detect that it's actually deterministic.
+00:25:33
+So we can produce interesting. I mean, random numbers, maybe not that interesting, but just an example. We can produce complex looking data and we can then prove that no fast algorithm can detect the underlying pattern.
+00:25:49
+Which is unfortunately, that's a big challenge for our search for simple programs in the space of artificial intelligence, perhaps.
+00:25:59
+Yes, it definitely is wanted for intelligence and it's quite surprising that it's I can't say easy for the system worked really hard to find these theories, but apparently it was possible for human minds to find this simple truth in the universe. It could have been different, right? It could have been different. It's it's it's all inspiring. So let me ask another absurdly big question.
+00:26:26
+What is intelligence in your view?
+00:26:30
+So I have, of course, a definition.
+00:26:34
+I wasn't sure where you're going to say because you could have just as easily said. I have no clue which many people would say. I'm not modest in this question. So the the informal version, which I worked out together between like who co-founded The Mind, is that intelligence measures and agents ability to perform well in a wide range of environments. So that doesn't sound very impressive. And what these words have been very carefully chosen and there is a mathematical theory behind that.
+00:27:10
+And we come back to that later. And if you look at this, this definition by itself, it seems like, yeah, OK. But it seems a lot of things are missing. But if you think it's through, then you realize that most and I claim all of the other traits at least of rational intelligence, which we usually associate with intelligence, are emergent phenomena from this definition, like creativity, memorization, planning, knowledge. You all need that in order to perform well in a wide range of environments.
+00:27:45
+So you don't have to explicitly mention that in a definition. Interesting. So, yes, as a consciousness, abstract reasoning, all these kinds of things are just emergent phenomena that help you in towards, can you say, the definition against multiple environments? Did you mention the word goals? No, but we have an alternative definition.
+00:28:05
+Instead of performing well, you can just replace it by goals or intelligence measures and agents ability to achieve goals in a wide range of environments.
+00:28:13
+That's more or less equal place because in there there's an injection of the word goals. So we want to specify that there should be a goal.
+00:28:20
+You have to perform well is sort of what does it mean? It's the same problem. Yeah, there's a little gray area, but it's much closer to something that could be formalized.
+00:28:31
+In your view, are humans where did humans fit into that definition?
+00:28:36
+Are they general intelligence systems that are able to perform in like how good are they at fulfilling that definition and performing well in multiple environments?
+00:28:48
+You know, that's a big question. I mean, the humans are performing best among all species. We know. We know of.
+00:28:57
+Yeah, depends. You could say that trees and plants are doing a better job. They'll probably outlast us. So, yeah, but they are in a much more natural environment. Right. I mean, you just you know, I have a little bit of air pollution and these trees die and we can adapt. Right? We build houses, we build filters. We we we do geoengineering. So multiple environment part. Yeah. That is very important.
+00:29:19
+Just so that distinguish natural intelligence from wired intelligence also in the AI research.
+00:29:26
+So let me ask the the Alan Turing question, can machines think can machines be intelligent. So in your view, I have to kind of ask.
+00:29:37
+The answer's probably yes. But I want to kind of hear your thoughts on it.
+00:29:42
+Can machines be made to fulfil this definition of intelligence to achieve intelligence? Well, we are sort of getting there and, you know, on a small scale, we all revere the wide range of environments still missing. But we have self-driving cars. We have programs to play, go and chess. We have speech recognition. So it's pretty amazing what you can you know, these are natural environments. But if you look at Alpha zero, that was also developed by the blind, I mean, what fames with Avago and then came off as zero a year later there was truly amazing.
+00:30:16
+So reinforcement learning algorithm, which is able just by self play to play chess. And then also go and I mean, yes, they're both games, but they're quite different games and, you know, this didn't don't fit in the rules of the game. And the most remarkable thing, which is still a mystery to me, that usually for any decent chess program I don't know much about go, you need opening books and end game tables and so on to and nothing in there.
+00:30:46
+Nothing was put in.
+00:30:47
+There was Alpha zero. The self blame mechanism starting from scratch. Being able to learn actually new strategies is yeah, it really discovered, you know, all these famous openings within four hours by itself.
+00:31:03
+What I was really happy about, I'm a terrible chess player, but I like Queen Gambi and Alpha Zero figured out that this is the best opening.
+00:31:12
+Finally, somebody proves you, correct. So, yes, to answer your question, yes, I believe the general intelligence is possible and it depends how you define it. Do you see ajai with general intelligence? Artificial intelligence only refers to if you achieve human level or is subhuman level, but quite broad. Is it also general intelligence? So we have to distinguish or is only super human intelligence, general artificial intelligence?
+00:31:42
+Is there a test in your mind like the Turing Test for natural language or some other test that would impress the heck out of you, that would kind of cross the line of your sense of intelligence within the framework that you said?
+00:31:57
+Well, the Turing test, well, has been criticized a lot, but I think it's not as bad as some people think and some people think it's too strong. So it tests not just for system to be intelligent, but it also has to fake human deception. Deception, right.
+00:32:14
+Which is much harder. And on the other hand, they say it's too weak because it just maybe fakes, you know, emotions or intelligent behavior. It's not real, but I don't think that's the problem or big problem. So if if it were to pass the Turing test, so a conversation of a terminal with a bot for an hour or maybe a day or so, and you can fool a human into, you know, not knowing whether this is a human or not, that it's the Turing test, I would be truly impressed.
+00:32:47
+And we have these annual competitions in Lubenow Price. And I mean, it started with Eliza. This was the first conversational program and what is it called? The Japanese Mitsuko or so that's the winner of the last couple of years and. Well, unimpressive. Yeah, it's quite impressive. And then Google has developed. All right. Just just recently. That's an open domain conversational bot just a couple of weeks ago, I think.
+00:33:15
+Yeah. Kind of like the metric that sort of the Lexapro has proposed. I mean, maybe it's obvious to you it wasn't to me of setting sort of a length of a conversation like you want the bar to be sufficiently interesting that you would want to keep talking to it for like twenty minutes. And that's that's a surprisingly effective in aggregate metric because it really like nobody has the patience to be able to talk to you about. That's not interesting and intelligent and witty and is able to go on the different stages, jump domains, be able to, you know, say something interesting to maintain your attention.
+00:33:54
+And maybe many humans will also fail this test. Unfortunately, we said just go with autonomous vehicles, which are basically also set a bar that's way too hard to reach. I said, you know, the Turing test is not as bad as some people believe. But what is really not useful about the Turing test, it gives us no guidance how to develop these systems in the first place. Of course, you know, we can develop then by trial and error and, you know, do whatever and then run the test and see whether it works or not.
+00:34:24
+But a mathematical definition of intelligence gives us, you know, an objective which we can then analyze by our theoretical tools or computational and, you know, maybe even prove how close we are. And we will come back to that later with this model. So I mentioned the compression, right. So in natural language processing and have achieved amazing results. And one way to test this, of course, you know, take the system, you train it, and then you see how well it performs on the task.
+00:35:00
+But a lot of performance measurement is done by so-called perplexity versus essentially the same as a complexity or compression length. So the NLP community develops new systems and then they measure the compression length and then they have reinking and leaks because there's a strong correlation between compressing well and then the systems performing well. At the task at hand, it's not perfect, but it's good enough for them as as an intermediate aim, the immediate measure.
+00:35:33
+So this is kind of almost returning to the homegirls complexity. So you're saying good compression usually means good intelligence?
+00:35:42
+Yes. So you mentioned you're one of the one of the only people who dared boldly to try to formalize the idea of artificial general intelligence, to have a mathematical framework for intelligence, just like as we mentioned, termed, I see a EXI. So let me ask the basic question. What is sexy? OK, so let me first say what it stands for, because what it stands for, actually, that's probably the more basic question. What the first question is usually how how it's pronounced.
+00:36:21
+But finally, I put it on the website, how it's pronounced and you'll figure it out. Yeah. Yeah. The name comes from A.I. Artificial Intelligence and the X AI is the Greek letter side, which are used for SOLOMONOV distribution for quite stupid reasons which are not willing to repeat in front of camera. So that just happen to be more or less arbitrary site. But it also has nice other interpretations. So their actions and perceptions in this model and in agencies actions and perceptions and over time, so is a index IBEX index.
+00:37:01
+I saw this action at a time I and then followed by perception time. I will go with that. I'll edit out the first part.
+00:37:09
+Yes, I'm just kidding. I have some more interpretations. So at some point, maybe five years ago or ten years ago, I discovered in in Barcelona it was on a big church.
+00:37:22
+There was a stone engraved some text and the word this couple of times I was very surprised and and and and happy about it. And I looked it up. So it is a Catalan language and it means with some interpretation of that, that's the right thing to do, Erica. Oh, so it's almost like destined somehow came like it came to you in a dream. So there's a Chinese word.
+00:37:51
+Ishy also written like like to see if you could transcribe that opinion. And the final one is that is I crossed with induction because is and it's going more to the content now. So good old fashioned day is more about, you know, planning, non-deterministic world and induction is more about often I added data and inferring models. And essentially what this agreement does is combining these two. And I actually also recently, I think, heard that in Japanese, ehi means love, so.
+00:38:20
+So if you can combine exercise somehow with that, I think we can there might be some interesting ideas there. So I guess that's then take the next step. Can you maybe talk at the big level of what is this mathematical framework now.
+00:38:37
+So it consists essentially of two parts. One is that learning and induction and prediction part and the other one is the planning part. So let's come first to the learning induction prediction part, which essentially explained already before. So what we need for any agents to act well is that it can somehow predict what happens. I mean, you have no idea what your actions do. How can you decide which actions are good or not? So you need to have some model of what your actions effect.
+00:39:10
+So what you do is you have some experience. You build models like scientists of your experience, and then you hope these models are roughly correct. And then you use these models for prediction.
+00:39:20
+And the model is sorry to interrupt. And a model is based on your perception of the world, how your actions will affect our world.
+00:39:28
+That's not. So what do you think about the important part? But it is technically important. But at this stage, we can just think about predicting, say, stock market data, weather data or IQ sequences. One, two, three, four, five, what comes next year? So, of course, our actions affect what we are doing.
+00:39:46
+What I come back to that in a second and I'll keep interrupting. So just to draw a line between prediction and planning or what do you mean by prediction in this way, trying to predict the the environment without your long term action in that environment? What is prediction? OK, if you want to put the actions in now, OK, then let's put in now. Yeah. So we don't have to put a dumb question. OK, so the simplest form of prediction is that you just have data which you passively observe.
+00:40:21
+Yes. And you want to predict what happens without interfering. As I said, weather forecasting, stock market, IQ sequences or just anything. OK, and SOLOMONOV theory of induction based on compression. So you look for the shortest program which describes your data sequence, and then you take this program, run it, which reproduces your data sequence by definition, and then you let it continue running and then it will produce some predictions and you can rigorously prove that for any prediction task.
+00:40:54
+This is essentially the best possible predictor, of course, if there's a prediction task. Our task, which is unpredictable, like, you know, fair conflicts, I cannot predict the next accomplish what Solomonov task says, OK, next head is probably 50 percent. It's the best you can do. So if something is unpredictable, Solomonov will not magically predict it. But if there is some pattern and predictability, then Solomonov in action will figure that out eventually and not just eventually, but rather quickly.
+00:41:23
+And you can have proof, convergence rates, whatever your data is. So that's pure magic in a sense. What's the catch? Well, the catch is that is not computable. And we come back to that later. You cannot just implement it even with Google Resources and run it and predict the stock market and become rich.
+00:41:41
+I mean, if Solomonov already tried to at the time to sort the basic task, as you're in the environment and you interact with the environment to try to learn a model of environment, and the model is in the space of all these programs. And your goal is to get a bunch of programs that are simple.
+00:41:58
+And so let's let's go to the actions now, but actually go to just usually a skip this part, although there is also a minor contribution, which I did, or the action part, but I usually sort of just jump to the decision point. So let me explain to the action partner. Thanks for asking. So you have to modify it a little bit by now, not just predicting a sequence which just comes to you, but you have an observation, then you act somehow and then you want to predict the next observation based on the past observation and your action.
+00:42:30
+Then you take the next action. You don't care about predicting it because you're doing it, and then you get the next observation and you want well before you get it, you want to predict it again. Based on your past excellent observation sequence, it just condition extra on your actions. There's an interesting alternative that you also try to predict your own actions if you want, or in the past or the future, your future actions.
+00:42:57
+That's an interesting way. Let me wrap. I think my brain is broke.
+00:43:03
+We should maybe discuss that later after I have explained the experiment. That's an interesting variation, but this is a really interesting version. And a quick comment. I don't know if you want to insert that in here, but you're looking at it in terms of observations. You're looking at the entire big history, the long history of the observations.
+00:43:21
+That's very important. The whole history from birth sort of of the agent. And they can come back to that. And also why this is important. You are often, you know, in RL, you have empty peace marketisation processes which are much more limiting. OK, so now we can predict conditioned on actions. So even if the influence environment. But prediction is not all we want to do. Right. We also want to act really in the world.
+00:43:44
+And the question is how to choose the actions. And we don't want to greedily choose the actions. You know, just, you know, what is best in the next time step. And we first I should say, you know, what is how do we measure performance? So we measure performance by giving the age and reward that the so-called reinforcement learning framework. So every time step, you can give it a positive reward or negative reward or maybe no reward.
+00:44:07
+It could be a very scar's right. Like if you play chess just at the end of the game, you give plus one for winning or minus one for losing. So in the framework, that's completely sufficient. So occasionally you give a reward signal and you ask the agent to maximize reward, but not greedily, sort of, you know, the next one. Next one, because that's very bad in the long run, if you're greedy so bad over the lifetime of the age.
+00:44:29
+So let's assume the list for timestep dice and sort of hundred years shop. That's just, you know, the simplest model to explain. So it looks at the future, reward some and ask what is my action sequence? Or actually more precisely my policy, which leads in expectation because I don't know the world up to the maximum reward some. Let me give you an analogy. In chess, for instance, we know how to play optimally. In theory, it's just a mini max strategy.
+00:44:59
+I play the move, which seems best to me under the assumption that the opponent plays the move, which is best for him, so best for worst for me, under the assumption that I play again the best move. And then you have this expecting Max three to the end of the game and then you back propagate and then you get the best possible move. So that is the optimal strategy.
+00:45:19
+Which frontwoman already figured out long time ago for playing at the zero the games, luckily or maybe unluckily for the theory and becomes harder. The world is not always adversarial, so it can be if the other humans seem cooperative or nature is usually I mean, the dead nature is stochastic. You know, things just happen randomly or don't care about you. So what you have to take into account is the noise and not necessarily those early. So you replace the minimum on the opponent side by an expectation which is general enough to include also the zero cases.
+00:45:57
+So now, instead of a mini Maxitrans, you have an expected Himax. So far, so good, so that is well known and consequential decision theory, but the question is on which probability distribution do you base that if I have the true probability distribution, like, say, a play backgammon, right. As dice and there's certain randomness involved, I can calculate probabilities and feed in the expected Himax or the sequence to come up with the optimal decision if I have enough compute.
+00:46:24
+But in the real world, we don't know that, you know, what is the probability drive in front of me? Brake's I don't know. So it depends on all kinds of things and especially new situations. I don't know. So this is this unknown thing about prediction. Endersby Solomonov comes in. So what you do is in sequential decision, you just replace the true distribution, which we don't know by this universal distribution. I didn't explicitly talk about it, but this is used for universal prediction and plug it into the sequential mechanism and then you get the best of both worlds.
+00:47:00
+You have a long term planning agent, but it does need to know anything about the world because the Solomonov induction part lawn's.
+00:47:09
+Can you explicitly try to describe the universal distribution and how SOLOMONOV induction plays a role here? Yeah, I'm trying to understand.
+00:47:18
+So what it does it. So in the simplest case, I said take the shortest program describing your data, run it, have a prediction which would be deterministic. Yes, OK, but you should not just take the shortest program, but also consider the longer ones, but keep it lower apriori probabilities in the basic framework. You say apriori, any distribution which is a model or stochastic program, has a certain arborio probability, but just two to the minus and y to the minus lengths to explain length of this program so long as programs are punished.
+00:47:55
+Yes. Apriori. And then you multiplied with the so-called likelihood function. Yeah. Which is as the name suggests, is how likely is this model given the data at hand. So if you have a very wrong model, it's very unlikely that this model is true. So it is very small number. So even if the model is simply gets penalized by that and what you do is then you take just December, this is the average over it and this gives you a probability distribution.
+00:48:25
+So universal distribution of SOLOMONOV distribution, so swayed by the simplicity of the program and the likelihood.
+00:48:31
+Yes, it's kind of a nice idea. Yeah. So, OK. And then you said there is you playing and there are m or forgot the letter steps into the future. So how difficult the problem, what's involved there. OK, so basic optimization problem, what do we do.
+00:48:49
+So you have a planning problem up to the horizon m and that's exponential time in the horizon M which is I mean it's computable but in fact intractable. I mean even for chess, it's already intractable to do that. Exactly. And you know, for me it could be also discounted kind of framework or so.
+00:49:07
+So having a hard horizon, you know, but it's just for simplicity of discussing the model and sometimes the mass simple. But there are lots of variations, actually. Quite interesting parameter. It's there's nothing really problematic about it, but it's very interesting.
+00:49:25
+So, for instance, you think, no, let's let's let's let the parameter M10 to infinity. Right? You want an agent which lives forever. And if you do it now, you have two problems. First, the mathematics breaks down because you have an infinite reward, some which may give infinity and getting rewards zero point one any time step is infinity. And given the reward one every time to infinity. So equally good, not really what we want.
+00:49:48
+Other problem is that if you have an infinite life, you can be lazy for as long as you want for ten years, and then catch up with the same expected reward and, you know, think about yourself or you know, or maybe, you know, some friends or so if they knew they lived forever, you know, why work hard now? You know, just enjoy your life, you know, and then catch up later. So that's another problem with the infinite horizon.
+00:50:14
+And you mentioned, yes, we can go to discounting, but then the standard discounting is so-called geometric discounting. So a dollar today is about worth as much as one dollar and five cents tomorrow. So if you do this so-called geometric discounting, you have introduced an effective horizon. So the Fed is now motivated to look ahead a certain amount of time. Effectively, it's like a moving horizon. And for any fixed, effective horizon, there is a problem to solve which requires larger horizons.
+00:50:45
+So if I look at, you know, five time steps, I'm a terrible chess player. Right. And I like to look ahead longer. If I play golf, I probably have to look at even longer. So for every problem, for every horizon, there is a problem which this horizon cannot solve. Yes, but I introduced the so-called new harmonic horizon, which goes down with 130 rather than exponentially tea, which produces an agent which effectively looks into the future proportional to its age.
+00:51:12
+So if it's five years old, it plans for five years, if it's a hundred years old than plans for hundred years. And it's a little bit similar to humans, too, right. My children don't plan ahead very long with an adult will play out much longer. Maybe when we get old, very old. I mean, we know that we don't live forever.
+00:51:27
+You maybe then our horizon shrinks again so that. Oh, so that's really Enciso just adjusting the horizon.
+00:51:35
+What is there some mathematical benefit to that of or is it just a nice I mean intuitively, empirically probably a good idea to sort of push the horizon back, to extend the horizon as you experience more of the world.
+00:51:50
+But is there some mathematical conclusions here that are beneficial?
+00:51:54
+Solomonov sort of prediction probably of extremely strong, finite time, but finite data results. So you have so much data, then you lose so much so that it is really great with Axi model, with the planning part, many results are only asymptotic, which well this is.
+00:52:13
+And what does that sometimes that means you can prove, for instance, that in the long run if the agent you know long enough then it performs optimal or some nice things happen. So but you don't know how fast it converges. Yeah. So it may converge fast, but we are just not able to prove it because the typical problem or maybe there's a back in the in the, in the model. So there is really that slow. Yeah. So, so that is what asymptotic mean sort of eventually.
+00:52:40
+But we don't know how fast and if I give the agent a fixed horizon m Yeah. Then I cannot prove asymptotic results.
+00:52:49
+Right. So I mean sort of dice and hundred years then now that this is over I cannot say eventually. So this is the advantage of the discounting that I can prove asymptotic results.
+00:53:00
+So just to clarify so, so I OK, I admit I've built up a model will now in the moment of have this way of looking at several steps ahead and how do I pick what action I will take.
+00:53:16
+It's like playing chess. Right. You do this with Max in this case here. Do you expect the max based on the Solomonov distribution you propagate back up and then while annexion folds out the action which maximizes the future expected rewards on the Solomonov distribution, and then you just take this action and then repeat that. You get a new observation and you feed it in this excellent observation and then you add the reward.
+00:53:41
+So on. Yeah. So you're able to. Yeah. And then maybe you gave in particular action. I love the idea, but OK, this big framework, what is it is I mean, it's kind of a beautiful mathematical framework to think about artificial general intelligence.
+00:53:59
+What can you what does it help you into it about how to build such systems?
+00:54:06
+Or maybe from another perspective, what what does it help us to in understanding ajai?
+00:54:14
+So when I started in the field, I was always interested in two things. One was, you know, ajai, the name didn't exist then generally Iowa strong AI and physics theory, everything. So I switched back and forth between computer science and physics quite often. You said the theory of everything, a theory of everything, just like it was basically the problems before all of humanity did.
+00:54:40
+Yeah, I can explain if you wanted some later time. You know why I'm interested in these two questions and a small tangent. If if, uh, if one want to be it was one to be solved, which one would you if one if you were if an apple fell on your head and there was a brilliant insights and you could arrive at the solution to one, would it be ajai or the theory of everything? Uh, definitely ajai, because once the problem is solved, I can ask the Ajai to solve the other problem for me.
+00:55:13
+Yeah, brilliant. But OK, so, uh, so as you were saying about it.
+00:55:18
+OK, so and the reason why I didn't settle, I mean this thought about, you know, once you have solved it solves all kinds of other not just the problem, but all kinds of more useful problems to humanity is very appealing to many people. And, you know, I thought also that, um, I was quite disappointed with the state of the art of the future. I there was some theory, you know, about logical reasoning, but I was never convinced that this will fly.
+00:55:48
+And then there was this whole more holistic approach as the neural networks. And I didn't like this holistic. So and also I didn't have any good idea myself. So that's the reason why I toggle back and forth quite some violent, even some four and a half years in a company developing software, something completely unrelated. But then I had this idea I was actually a model. And, um, so what it gives you, it gives you a gold standard.
+00:56:15
+So I have proven that this is the most intelligent agents which anybody could build, built in quotation marks because it's just mathematical and you need infinite compute.
+00:56:28
+Yeah, but this is the limit and this is completely specified. It's not just a framework. And, you know, every year tens of frameworks are developed, which is skeleton's and then pieces are missing. And usually these missing pieces turn out to be really, really difficult. And so this is completely and uniquely defined and we can analyze that mathematically. And we have also developed some approximations. I can talk about that a little bit later. That would be sort of the top down approach like, say, for nine months, minimalist theory.
+00:57:01
+That's the theoretical optimal play of games. And now we need to approximate it patristic to improve the three year blah, blah, blah and so on. So we can do that also with an eye for generally eye. It can also inspire those.
+00:57:15
+And most of most researchers go bottom up. Right. They have the systems to try to make it more general, more intelligent. It can inspire in which direction to go. What do you mean by that? So if you have some choice to make. Right. So how should they evaluate my system if I can't do cross-validation? How should I do my learning if my standard regularisation doesn't work? Well, you know, so the answer is always this.
+00:57:40
+We have a system which does everything that's actually it's just, you know, complete in the ivory tower, completely useless from a practical point of view. But you can look at it and say, ah, yeah, maybe, you know, I can take some aspects. And, you know, instead of conmigo of complexity, I just take some compressor's which has been developed so far for the planning. Well, we have used it here, which has also been used to go.
+00:58:02
+And it at least inspired me a lot to have this formal definition. And if you look at other fields, you know, like I always come back to physics because I have a physics background. Think about the phenomena of energy. That was a long time, a mysterious concept. And at some point it was completely formalized. And that really helped a lot. And you can point out a lot of these things which were first mysterious and weak and then to have been rigorously formalized.
+00:58:32
+Speed and acceleration has been confused right up until it was formally defined here. There was a time like this. And and people often, you know, I don't have any background and I still confuse it so and decide the model or the intelligence definitions, which is sort of the dual to it. We come back to that later formalizes the notion of intelligence uniquely and rigorously.
+00:58:56
+So in a sense, it serves as kind of the light at the end of the tunnel. So, yeah.
+00:59:01
+So I mean, there's a million questions I could ask her. So maybe the kind of, OK, let's fool around in the dark a little bit. So just been here a deep mind, but in general been a lot of breakthrough ideas, just been saying around reinforcement learning. So how do you see the progress and reinforcement learning is different.
+00:59:21
+Like which subset of IC does it occupy?
+00:59:25
+The current, like you said, the maybe the mark of assumptions made quite often in reinforcement learning, the other assumptions made in order to make the system work. What do you see as the difference connection between reinforcement learning and XY?
+00:59:44
+And so the major difference is that essentially all other approaches, they make strong assumptions. So in reinforcement learning, the Markov assumption is that the next state, our next observation only depends on the on the previous observation and not the whole history, which makes, of course, the mathematics much easier rather than dealing with histories, of course, their profit from it also, because then you have algorithms that run on current computers and do something practically useful. But for generally are all the assumptions which are made by other approaches.
+01:00:19
+We know already now they are limiting. So for instance, usually you need a good assumption in the MVP framework in order to learn what this essentially means that you can recover from your mistakes and that they are not traps and environment. And if you make this assumption, then essentially you can go back to a previous state, go there a couple of times and then learn what what statistics and what the state is like and then in the long run, perform well in the state.
+01:00:50
+But there are no fundamental problems. But in real life, we know there can be one single know one second of being in a. While driving a car fast, you can ruin the rest of my life, I can become quadriplegic or whatever. So there's no recovery anymore. So the real world is not our golddigger. Always say, you know, there are traps and there are situations where you are not recover from.
+01:01:13
+And very little theory has been developed for this case.
+01:01:19
+What about what do you see in the context of eight years, the role of exploration?
+01:01:27
+Sort of you mentioned, you know, in in the real world and get into trouble when we make the wrong decisions and really pay for it. But exploration is seems to be fundamentally important for learning about this world, for gaining new knowledge. So is it is exploration baked in another way to ask it? What are the parameters of this of that can be controlled?
+01:01:53
+Yeah, I say the good thing is that there are no parameters to control some other people trying not to to control. And you can do that. I mean, you can modify access so that you have some knobs to play with if you want to. But the exploration is strictly baked in and that comes from the Bayesian learning and the long term planning. So these together already imply exploration. You can nicely and explicitly prove that for simple problems like so-called bandit problems, where you say to give a real good example, say you have two medical treatments and B, you don't know the effectiveness.
+01:02:39
+You try a little bit, B, a little bit, but you don't want to have too many patients, so you have to sort of trade off exploring. Yeah. And at some point you want to explore and you can do the mathematics and figure out the optimal strategy. It took a Bayesian agent, 11 on Bayesian agents, but it shows that this Bayesian framework, by taking a priori of all possible worlds, doing the Bayesian mixture, then the optimal decision with long term planning that is important automatically implies exploration also to the proper extent, not too much exploration and not too little.
+01:03:17
+It is very simple settings in the ICS model and was also able to prove that it is a self optimizing theorem or asymptotic optimality theorems, although the only asymptotic, not finite time bounce.
+01:03:28
+So it seems like the long term planning is really important, but the long term part of the plan is really important. And also, I mean, maybe a quick tangent. How important do you think is removing the mark of assumption and looking at the full history? Sort of intuitively? Of course it's important, but is it like fundamentally transformative to the entirety of the problem?
+01:03:50
+What's your sense of it? Because we all we make that assumption quite often. It's just throwing away the past.
+01:03:57
+Now, I think it's absolutely crucial. The question is whether there's a way to deal with it in a more holistic and still sufficiently well way. So I have to come up with an example and fly. But, you know, you have some, you know, key event in your life. You know, long time ago, you know, in some city or something, you realize, you know, it's a really dangerous street or whatever, right?
+01:04:22
+Yeah. And you want to remember that forever. Right. In case you come back there, kind of a selective kind of memory. So you remember that all the important events in the past, but somehow selecting the importance is very hard.
+01:04:36
+And I'm not concerned about, you know, just storing the whole history. Just you can calculate, you know, human life space 30 or 100 years doesn't matter. Right. How much data comes in through the visual system and the auditory system you compress is a little bit, in this case, velocity. And it we are soon in the means of just storing it, you know, but you still need to the selection for the planning part and the compression for the understanding part.
+01:05:04
+There are storage. I'm really not concerned about and I think we should just store it, develop an agent, preferably just to store all the interaction history. And then you build, of course, models on top of it and you compress it and you are selective. But occasionally you go back to the old data and analyze it based on your new experience you have. You know, sometimes you you're in school, you learn all these things you think is totally useless.
+01:05:34
+And, you know, much later you realize there were not, you know, so you thought, I'm looking at you linear algebra.
+01:05:41
+Right? So maybe let me ask about objective functions because that rewards it seems to be an important part. The rewards are kind of given to system for a lot of people.
+01:05:58
+The the specification of the objective function is a key part of intelligence, the agent itself figuring out what is important. What do you think about that? Is it possible within the framework to yourself discover the reward based on which you should operate?
+01:06:22
+OK, that will be a long answer. And so and that is a very interesting question. And I'm asked a lot about this question. Where do the rebels come from?
+01:06:34
+And that depends. Yeah. So and I you know, I give you a couple of answers. So if we want to build agents now, let's start simple. So let's assume we want to build an agent based on the ICC model, which performs a particular task. Let's start with something super simple, like super simple, like playing chess or something. Yeah. Then you just you know, the reward is winning. The game is plus one losing games, minus one done.
+01:07:03
+You apply this agent if you have enough compute to let itself play and it will learn, the rules of the game will play perfect chess after some while. Problem solved.
+01:07:12
+OK, so if you have more complicated problems, then you may believe that you have the right reward, but it's not so nice. Cute example is the way to control. That is also in Rich Suttons book, which is a great book, by the way. Um, so you control the elevator and you think, well maybe the reward should be able to how long people wait in front of the elevator, you know, long wait Ispat you program it and you do it.
+01:07:41
+And what happens is the elevator eagerly picks up all the people but never drops them off. So then you realize that maybe the time in the elevator also counts. So you minimize the sum. Yeah. Yeah. And the elevator does that, but never picks up the people in the 10th floor, in the top floor because in expectation it's not worth it. Just let them stay. Yeah.
+01:08:03
+So so even apparently simple problems, you can make mistakes. And that's what in more serious context Sagi safety researchers consider.
+01:08:15
+So now let's go back to general agents. So I assume you want to build an agency which is generally useful to humans? Yes, we have a household robot here and it should do all kinds of tasks.
+01:08:27
+So in this case, the humans should give the reward on the fly. I mean, maybe it's pretend in the factory and there there's some sort of internal reward for, you know, the battery level or whatever. But so, you know, it does the dishes badly. You know, you punish the robot, you reward the robot and then train it to a new task like a child. Right. So you need the human in the loop if you want a system which is useful to the human.
+01:08:52
+And as long as the agent stays subhuman level, that should work reasonably well. And apart from, you know, these examples, it becomes critical if they become, you know, from a human level that children, small children, you have reason to be well under control. They become older. The robot technique doesn't work so well anymore. So then finally, so this would be agents, which are just, you could say slaves to the humans.
+01:09:19
+Yeah. So if you are more ambitious and just say we want to build a new species of intelligent beings, we put them on a new planet and we want them to develop this planet or whatever, so we don't give them any reward. So what could we do? And you could try to come up with some reward functions like, you know, it should maintain itself, the robot. It should maybe multiply, build more robots. Right. And, you know, maybe.
+01:09:48
+Well, all kinds of things that you find useful.
+01:09:50
+But that's pretty hard, right? You know what the self maintenance mean? What does it mean to build a copy, to be exact copy, an approximate copy. And so that's really hard. But look also also at the mind, uh, developed a beautiful model. So it just took the model and copied the rewards to information gain. So he said the reward is proportional to how much the agent had learned about the world.
+01:10:18
+And you can rigorously formerly uniquely defined it in terms of versions. OK, so if you put that in, you get a completely autonomous agent. And actually, interestingly, for this agent, we can prove a much stronger result. And for the general agent, which is also nice, and if you let this agent loose, it will be in a sense, the optimal scientist is is absolutely curious to learn as much as possible about the world. And of course, it will also have a lot of instrumental goals.
+01:10:44
+Right. In order to learn it needs to at least survive. Right at that age is not good for anything. So it needs to have self-preservation. And if it builds small, help us acquiring more information, it will do that if exploration. Space exploration or whatever is necessary, right, to gather information and develop it, so it has a lot of instrumental goals falling on this information gain and this agent is completely autonomous of us. No robots necessary anymore.
+01:11:13
+Yeah, of course, it could find a way to game the concept of information and get stuck in that library that you mentioned beforehand with the with a very large number of books.
+01:11:26
+The first agent had this problem and it would get stuck in front of an old TV screen because that white noise, the white noise there. But the second version can deal with at least some hostility.
+01:11:38
+Um, well, yeah. What about curiosity? This kind of word, curiosity, creativity? Is that kind of the reward function being of getting new information? Is that similar to the idea of kind of injecting exploration for its own sake inside the reward function? Do you find this at all appealing? Interesting?
+01:12:02
+I think that's a nice definition. Curiosity rewards sorry, justice exploration for its own sake.
+01:12:09
+Um, yeah, I would accept that. But most curiosity well, in humans and especially in children is not just for its own sake, but for actually learning about the environment and for behaving better. So I would I think most curiosity is tied in the end towards performing better.
+01:12:32
+Well, OK, so if intelligent systems need to have this reward function, let me you're an intelligent system currently passing the Turing test quite effectively.
+01:12:44
+What what's the reward function of of our human intelligence existence? Was the reward function that Marcus Hunter is operating under?
+01:12:55
+OK, to the first question, the biological reward function is to survive and to spread. And very few humans sort of are able to overcome this biological reward function. But we live in a very nice world where we have lots of spare time and can still survive and spread so we can develop arbitrary other interests, which is quite interesting. On top of that. On top of that, yeah. But the survival and spreading sort of is, I would say, to the goal or the reward function of humans that the core one I like.
+01:13:33
+I avoided answering the second question, which a good intelligence system would comite that your own meaning of life and reward function and my own meaning of life and reward function is to find an AGI to build it beautifully put.
+01:13:49
+OK, let's dissect it even further.
+01:13:51
+So one of the assumptions is kind of infinity keeps creeping up everywhere, which, uh, what are your thoughts and kind of bounded rationality and sort of the nature of our existence and intelligent systems is that we're operating all under constraints under a limited time, limited resources.
+01:14:15
+How does that how do you think about that within the framework, within trying to create an existence that operates under these constraints? Yeah, that is one of the criticisms. What I see that it ignores computation and completely and some people believe that intelligence is inherently tied to what's bounded resources.
+01:14:36
+What do you think on this one point? I think it's do you think the of resources are fundamental to intelligence?
+01:14:45
+I would say that an intelligence notion which ignores computational limits is extremely useful, a good intelligence knowledge, which includes the resources would be even more useful, but we don't have that yet. And so look at other fields outside of computer science. Computation aspects never play a fundamental role. You develop biological models for cells, something in physics. These theories, I mean, become more and more crazy and harder and harder to compute. Well, in the end, of course, we need to do something with this model, but it's more a nuisance than a feature.
+01:15:22
+And I'm sometimes wondering if artificial intelligence would not sit in a computer science department, but in a philosophy department, then this computational focus would be probably significantly less. I mean, think about the induction problem is more in the philosophy department. There's really no people care about, you know, how long it takes to compute the answer. That is completely secondary. Of course, once we have figured out the first problem. So intelligence without computational resources, then the next.
+01:15:55
+And very good question is could they improve it by including computational resources? But nobody was able to do that so far, you know, even halfway satisfactory manner.
+01:16:06
+I like that, that in the long run, the right department to belong to this philosophy, that is actually quite a deep idea of or even to at least to think about big picture philosophical questions, big picture questions.
+01:16:22
+Even in the computer science department where you've mentioned approximation, sort of there's a lot of infinity, a lot of huge resources needed. Are there approximations to see that within the framework that are useful?
+01:16:37
+Yeah, we have developed a couple of approximations and what we do there is that the Solomonov induction part, which was know find the shortest program describing your data, which was replaced by standard data compressor's. Right. And the better compressor's gets, you know, the better this part will become the focused on a particular compressor called contextually weighting, which is pretty amazing, not so well known and has beautiful theoretical properties, also works reasonably well in practice. So we use that for the approximation of the induction into learning and the prediction part.
+01:17:15
+And from the planning part, we essentially just took the ideas from a computer go from 2006. It was Java Prosperi, also narrative mind who developed the so-called Usategui algorithm up a confidence about Footrests algorithm on top of the Montecarlo three search. So we approximate this planning part by sampling and it's successful on some small Toye problems.
+01:17:46
+We don't want to lose the generality. Right. And that's sort of the handicap, right? If you want to be general, you have to give up something. So but this single agent was able to play, you know, small games like poker and tic tac toe and and even Peckman into the same architecture. No change. The agent does know the rules of the game, really nothing at all by itself or by playing with these environments.
+01:18:17
+So you're going to propose something called Gettle Machines, which is a self-improvement program that rewrites its own code.
+01:18:27
+What sort of mathematically, philosophically, what's the relationship in your eyes, if you're familiar with it, between takes in the girl machines?
+01:18:35
+Yeah, familiar with it.
+01:18:37
+He developed it while I was in his lab and saw the girl machine explain it briefly.
+01:18:44
+You give it the task. It could be a simple task, you know, finding prime factors in numbers. Right. You can formally write it down. There's a very slow algorithm to do that. Just all try all the factors. Yeah. Or play chess right. Optimally about the algorithm to minimize to the end of the game. So you write down what the goal machine should do, then it will take part of it resources to run this program and other part of resources to improve this program and when it finds an improved version which provably computes the same answer.
+01:19:18
+So that's the key part here. It needs to prove by itself that this change of program still satisfies the original specification. And if it does so, then it replaces the original program by the improved program. And by definition, it does the same job, but just faster and then improves over it and over it. And it's it's developed in a way that all parts of this machine can self improve. But it's. This provably consistent with the original specification.
+01:19:49
+So from this perspective, it has nothing to do with Axi, but if you would now put Axia as the starting axioms in, it would run axi. But you know, that takes forever. But then if it finds a provable up of I guess it would replace it by this and this and this and maybe eventually it comes up with a model which is still the same model. It cannot be. I mean just for the knowledgeable reader, I exist in computable and I can prove that therefore there cannot be a computable exact algorithm computes.
+01:20:26
+There needs to be some approximations and this is not dealt with a good machine. So you have to do something about it. But it's the actual model which is finally computable, which we could put in which part of X is non computable.
+01:20:36
+The Solomonov induction part the in action.
+01:20:38
+OK, so but there is ways of getting computable approximations of the model, so then it's at least computable. It is still way beyond any resources anybody will ever have, but then the good machine could sort of improve it further and further in an exact way.
+01:20:55
+So this is theoretically possible that the the girl machine process could improve isn't, um, isn't isn't actually already optimal. It is optimal in terms of the reward collected over its interaction cycles, but it takes infinite time to produce one action and the world, you know, continuous whether you want it or not. So the model is assuming had an oracle which solved this problem. And then in the next hundred milliseconds or the reaction time you need gives the answer, then X is optimal.
+01:21:35
+So it's ultimately in and sense of date are also from learning efficiency and data efficiency, but not in terms of computation time.
+01:21:43
+And then the other girl machine in theory, but probably not provably could make it go faster.
+01:21:48
+Yes.
+01:21:49
+OK, interesting.
+01:21:52
+Those two components are super interesting, the sort of the perfect intelligence combined with self improvement, sort of provable self improvement, since you're always like you're always getting the correct answer in improving your beautiful ideas.
+01:22:08
+OK, so you've also mentioned that different kinds of things in the case of solving this reward, sort of optimizing for the goal.
+01:22:20
+Interesting human things can emerge.
+01:22:22
+So is there a place for consciousness within XY? Where where does. Maybe you can comment because I suppose we humans are just another instantiation of agents and we seem to have consciousness.
+01:22:38
+You say humans on instantiation of an X agent? Yes. Oh, that would be amazing. But I think that's true even for the smartest and most rational humans. I think maybe we are very crude approximations. Interesting. I mean, I tend to believe, again, I'm Russian, so I tend to believe our flaws are part of the optimal. So the we tend to laugh off and criticize our flaws. And I tend to think that that's actually close to optimal behavior.
+01:23:08
+But some flaws, if you think more carefully about it, are actually not flaws. Yeah, but I think there are still enough flaws.
+01:23:16
+I don't know, as unclear as a student of history, I think all the suffering that we've endured as a civilization is possible, that that's the optimal amount of suffering we need to endure to minimize the long term suffering.
+01:23:32
+That's your Russian background. That's the Russian, whether humans are or not, instantiations of an agent. Do you think there is consciousness is something that could emerge in a computational form or framework like. I see. Let me also ask your question. Do you think I'm conscious?
+01:23:54
+It's a good question.
+01:23:55
+You you're saying that that is confusing me, but I think I think it makes me unconscious because it strangles me.
+01:24:04
+Or if if an agent were to solve The Imitation Game posed by Turing, I think they would be dressed similarly to you that because there's a there's a kind of flamboyant, interesting, complex behavior pattern that cells that you're human and you're conscious. But why do you ask?
+01:24:23
+Was it a yes or was it a no? Yes, I think yes.
+01:24:27
+I think you're conscious. Yes. Yeah. So and you explain sort of somehow why. But you infer that from my behavior. Right? You can never be sure about that. And I think the same thing will happen with any intelligent maiden we develop. If it behaves in a way sufficiently close to humans or maybe even not humans, I mean, you know, maybe a dog is also sometimes a little bit self-conscious, right? So so if it behaves in a way where we attribute typically consciousness, we would attribute consciousness to these intelligent systems.
+01:25:01
+And, you know, actually probably in particular. That, of course, doesn't answer the question of whether it's really conscious. And that's the you know, the big hard problem of consciousness. You know, maybe I'm a zombie.
+01:25:13
+I mean, not the movie zombie, but the philosophical zombie is to you the display of consciousness close enough to consciousness from a perspective of ajai, that the distinction of the hard problem of consciousness is not an interesting one. I think we don't have to worry about the consciousness problem, especially the heart problem for developing ajai. I think, you know, we progress at some point. We have solved all the technical problems and this system will behave intelligent and and super intelligent and this consciousness will emerge.
+01:25:47
+I mean, definitely it will display behavior which we will interpret as conscious. And then it's a philosophical question, did this consciousness really emerge or is it a zombie which just, you know, fix everything?
+01:26:01
+We still don't have to figure that out, although it may be interesting, at least from a philosophical point of view, it's very interesting, but it may also be sort of practical, interesting, you know, that some people say if it's just faking consciousness and feelings, you know, then we don't need to be concerned about rights. But if it's real conscious and has feelings, then we need to be concerned.
+01:26:20
+Yeah, I can't wait till the day where A.I. systems exhibit consciousness because it'll truly be some of the hardest ethical questions about what we do with it.
+01:26:33
+It is rather easy to build systems which people ascribe consciousness. And I give you an analogy. I mean, remember, maybe was before you were born the Tamagotchi.
+01:26:44
+Yes. How dare you, sir? Why? Yeah, but you're young, right? Yes, it's a good thing. Thank you. Thank you very much. But I was also in the Soviet Union.
+01:26:55
+We didn't have I would have any of those fun things.
+01:26:58
+But yeah, I've heard about this Tamagotchi, which was, you know, really, really primitive actually for the time it was. And, you know, you could raise, you know, this and kids got so attached to it and, you know, didn't want to let it die. And I would have probably before would have asked, you know, the children or do you think this Tamagotchi is conscious? And they were saying, yes, yes, yes.
+01:27:18
+I think that's kind of a beautiful thing actually, though, because that consciousness ascribing consciousness seems to create a deeper connection now, which is a powerful thing. But you have to be careful on the ethics side of that. Well, let me ask about the NGO community broadly. You kind of represent some of the most serious work on NGOs have, at least earlier. And Deep Mind represents serious work in Asia these days.
+01:27:46
+But why, in your sense, is the aged community so small or has been so small until maybe Demaine came along? Like, why? Why aren't more people seriously working on a human level, super human level intelligence from a formal perspective?
+01:28:05
+OK, from a formal perspective, that's sort of an extra point. So I think there are a couple of reasons. I mean, they came in waves, right? You know, our winters and our summers. And then there were big promises which were not fulfilled and, um, people got disappointed. And that's narrow way of solving particular problems, which seem to require intelligence was always, to some extent successful. And there were improvements, small steps.
+01:28:36
+And if you build something which is, you know, useful for society or industrial useful, then there's a lot of funding.
+01:28:44
+So I guess it was in part the money, um, which drives people to develop specific systems, solving specific tasks. But you would think that, you know, at least on university, you should be able to do ivory tower research. And that was probably better a long time ago. But even nowadays, there's quite some pressure off of doing applied research or translational research. And, you know, it's harder to get grants as a theorist. So that also drives people away.
+01:29:17
+It's maybe also harder attacking the general intelligence problem. So I think enough people I mean, maybe a small number of still interested in in formalizing intelligence and and thinking of general intelligence. But, you know, not much came up, right or not. Not much. Great stuff came up.
+01:29:37
+So what do you think? We talked about the formal big light at the end of the tunnel, but from the. Your perspective, what do you think it takes to build an ecosystem, is it and I don't know if that's a stupid question or a distinct question from everything we've been talking about. I see. But what do you see as the steps that are necessary to take to start to try to build something?
+01:30:00
+So you want the blueprint now and then you go off and do it? That's the whole point of this conversation. Trying to squeeze that in there now, is there I mean, what's your intuition is it is in the robotic space of something. It has a body and tries to explore. The world is in the reinforcement learning space, like the efforts of the Alpha Zero and Alpha Star. They're kind of exploring how you can solve it through the simulation in the gaming world.
+01:30:24
+Is there stuff in sort of the all the transformer work and natural language processing sort of maybe attack in the open domain dialogue? Like what? Where do you see the promising pathways?
+01:30:39
+Let me pick the embodiment. Maybe so. Um, embodiment is important. Yes and no.
+01:30:50
+I don't believe that we need a physical robot walking or rolling around interacting with the real world in order to achieve ajai. And I think it's more of a distraction probably than helpful. It's sort of confusing the body with the mind, industrial applications or near-term applications. Of course, we need robots for all kinds of things, but for solving the big problem, at least at this stage, I think it's not necessary. But the answer is also, yes, that I think the most promising approaches that you have an agent and you know, that can be a virtual agent, you know, in a computer interacting with an environment, possibly, you know, a 3D simulated environment, like in many computer games.
+01:31:42
+And and you train and learn the agent, even if you don't intend to later put it sort of, you know, this algorithm in, you know, robot brain and leave it forever in the virtual reality, getting experience in a although it's just simulated 3-D world is possibly an essay possibly important to understand things on a similar level as humans do, especially if the agent or primarily if the agent needs to interact with the humans. Right. And if you talk about objects on top of each other in space and flying a cars and so on, and the agent has no experience with even virtual 3-D worlds, it's probably hard to grasp.
+01:32:29
+So if you develop an abstract agent, say we take the mathematical path and we just want to build an agent which can prove theorems and becomes a better and better mathematician, then this agent needs to be able to to reason in very abstract spaces and then maybe sort of putting it into 3D environments in related art is even harmful. It should sort of you put it in, I don't know, an environment which it creates itself. Or so it seems like you have an interesting, rich, complex trajectory through life in terms of your journey of ideas.
+01:33:00
+So it's interesting to ask what books, technical fiction, philosophical books, ideas, people had a transformative effect. Books are most interesting because maybe people could also read those books and see if they could be inspired as well. Yeah, luckily, our books are not singular book. It's very hard and I try to pin down one book. Yeah, and I can do that at the end, so. The most the books which were most transformative for me or which I can most highly recommend to people interested in, I both perhaps I would always start with Russell and Norbeck, artificial intelligence and modern approach.
+01:33:48
+That's the Bible. It's an amazing book and it's very broad. It covers, you know, all approaches to it. And even if you focused on one approach, I think that is the minimum you should know about the other approaches out there. So that should be your first book.
+01:34:03
+Fourth Edition should be coming out soon. OK, interesting.
+01:34:07
+There's a deep learning chapter and also there must be written by Ian Goodfellow.
+01:34:12
+OK, and then the next book I would recommend the Reinforcement Learning Book by Sutton in Barto. There's a beautiful book. If there's any problem with the book, it makes our l feel and look much easier than it actually is. It's a very gentle book. It's very nice to read the exercises. Do you can very quickly, you know, get somewhere else systems to run, you know, very Toye problems, but it's a lot of fun and you vary in a couple of days you feel, you know, you know what it's about, but it's much harder than the book.
+01:34:49
+Yeah. Come on now. It's an awesome book. Yeah, it is. Yeah. And maybe I mean, there's so many books out there, if you like the information theoretic approach to this common goal of complexity by Leon Mitani. But probably, you know, some, some short article is enough. You don't need to read a whole book, but it's a great book.
+01:35:11
+And if you have to mention one all time favorite book, so different flavor, that's a book which is used in the International Baccalaureate for high school students in several countries.
+01:35:26
+That's from Nicholas Alchin Theory of Knowledge, second edition or first not to third place. The third one that they took out all the fun. So these are all the interesting to me, interesting philosophical questions about how we acquire knowledge from all perspectives, you know, from mathematics and physics and ask how can we know anything?
+01:35:53
+And the book is called Theory of Knowledge, from which is it's almost like a philosophical exploration of how we get knowledge from anything.
+01:36:00
+Yes. Yeah. I mean, can religion tell us, you know, something about the world? Can science tell us something about the work? Can mathematics or is it just playing with symbols and and open ended questions? And I mean, it's for high school students. So they have the resources from Hitchhiker's Guide to the Galaxy and from Star Wars and the Chicken Cross the Road. Yeah. And it's it's fun to read and but it's also quite deep.
+01:36:25
+If you could live one day of your life over again because it made you truly happy or maybe like we said with the books, it was truly transformative. What what day what moment would you choose? There's something pop into your mind.
+01:36:39
+Does it need to be a day in the past or can it be a day in the future?
+01:36:43
+Well, space time is an emergent phenomena, so it's all the same anyway.
+01:36:47
+OK, OK.
+01:36:49
+From the past, you're really going to save from the future. I love it.
+01:36:54
+Now I will tell you from the future outlook from the past, I would say when I discovered my act similar, I mean it was not in one day, but it was one moment when I realised conmigo of complexity and didn't even know that it existed. But I discovered sort of this compression idea myself. But immediately I knew I can't be the first one. But I had this idea and then I knew about sequential decision and I knew if I put it together, this is the right thing.
+01:37:23
+And yeah, I still when I think back about this moment, I'm I'm super excited about that.
+01:37:29
+Was there was there any more details and context, that moment, an apple fall on your head or so like if you look at Ian Goodfellow talking about Gan's, there was beer involved.
+01:37:43
+Is there is there some more context of what sparked your thought or was it just a no?
+01:37:49
+It was much more mundane. So I worked in this company. So in this sense, the four and a half years was not completely wasted. So and I worked on an image interpellation problem and I developed a quite neat new interpolation techniques and they got patented. And then, you know, which happens quite often. I got sort of overboard and thought about, you know, yeah, that's pretty good, but it's not the best. So what is the best possible way of doing interpellation?
+01:38:17
+Yeah. And then I thought, yeah, you want a simple picture, which is if you course credit recovers your original picture. And then I thought about the simplicity concept more in quantitative terms. And then everything developed and somehow the four beautiful mix of also being a physicist and thinking about the big picture of it then led you to probably the big day.
+01:38:41
+Yeah. So as a physicist, I was probably trained not to always think in computational terms, you know, just ignore that and think about the other the the fundamental properties which you want to have.
+01:38:51
+So what about if you could relive one day in the future, all day?
+01:38:55
+Or would that be going to solve the problem and practice in practice in Syria, Syria software like several factors. And then ask the first question, what would be the first question?
+01:39:10
+What's the meaning of life? I don't think there's a better way to end it.
+01:39:15
+Thank you so much for talking. It is a huge honor to finally meet you. Thank you, too. I was a pleasure of mine. Said to. Thanks for listening to this conversation with Marcus Hutter and thank you to our presenting sponsor cash app Download. It is called Legs Podcast. You'll get ten dollars and ten dollars will go to first, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. If you enjoy this podcast, subscribe on YouTube.
+01:39:42
+Good. Five stars, an app, a podcast. Support on page own are simply connected. Me on Twitter. Àlex Friedemann. And now let me leave you with some words of wisdom from Albert Einstein, the measure of intelligence is the ability to change. Thank you for listening and hope to see you next time.

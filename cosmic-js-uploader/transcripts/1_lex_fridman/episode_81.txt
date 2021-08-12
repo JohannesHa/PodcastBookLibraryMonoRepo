@@ -1,0 +1,692 @@
+00:00:00
+The following is a conversation with Angka Dragone, a professor at Berkeley working on human robot interaction algorithms that look beyond the robot's function, isolation and generate robot behavior that accounts for interaction and coordination with human beings. She also consults at WAMMO, the autonomous vehicle company. But in this conversation, she's 100 percent wearing her Berkeley hat. She's one of the most brilliant and fun roboticists in the world to talk with.
+00:00:32
+I had a tough and crazy day leading up to this conversation, so I was a bit tired, even more so than usual. But almost immediately, as she walked in, her energy, passion and excitement for human robot interaction was contagious. So I had a lot of fun and really enjoy this conversation. This is the artificial intelligence podcast. If you enjoy it, subscribe. I need to review it with five stars in the Apple podcast supported on Patrón or simply connect with me on Twitter.
+00:01:03
+Allex Friedman spelled F.R.. I'd MRN as usual. I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show is presented by Kashyap, the number one finance app in the App Store, when you get it, use Code Lux podcast cash app lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar.
+00:01:36
+Since up does fractional share trading, let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is an algorithmic marvel. So big props to the Kashyap engineers for solving a hard problem that in the end provides an easy interface that takes a step up to the next layer of abstraction over the stock market, making trading more accessible for new investors and diversification much easier.
+00:02:05
+So, again, if you get cash out from the App Store or Google Play and use the Code Lux podcast, you get ten dollars in cash. Apple also donate ten dollars. The first, an organization that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with anchor Druggan. When did you first fall in love with robotics? I think it was a very gradual process and it was somewhat accidental, actually, because I first started getting into programming when I was a kid and then into math and then into like computer science was the thing I was going to do.
+00:03:05
+And then in college, I got into A.I. and then I applied to the Robotics Institute at Carnegie Mellon, and I was coming from this little school in Germany and nobody had heard of. But I had spent an exchange semester at Carnegie Mellon. So I had letters from Carnegie Mellon. So that was the only know MIT. You said no. Berkley said no. Stanford said no. That was the only place I got into. So I went there to the Robotics Institute and I thought that robotics is a really cool way to actually apply the stuff that I knew and love, like optimization.
+00:03:38
+So that's how I got into robotics. I have a better story how I got into cars, which is I you know, I used to do mostly manipulation, in my opinion, but now I do kind of a bit of everything application wise, including cars. And I got into cars because I was here in Berkeley while I was a student. Still for hours. That's 2014 being organized then. And he arranged for it was Google at the time to give us rides and self-driving cars.
+00:04:11
+And I was in a robot and it was just making decision after decision, the right call. And it was so amazing. So it was a whole different experience. I just I mean, manipulation is so hard, you can't do anything. And there it was.
+00:04:25
+Was it the most magical robot you've ever met? So like for me, to me, Google's self-driving car for the first time was like a transformative moment to moments like that. That and spot many are off limits.
+00:04:39
+But many of the dynamics I felt like I felt like I fell in love or something like it because I thought, OK, I know how many works is just I mean, there's nothing truly special. It's great engineering work.
+00:04:53
+But the anthropomorphism that went on into my brain, that came to life like a head, a little arm and like and looked at me, he she looked at me, you know, I don't know.
+00:05:04
+There's a magical connection there.
+00:05:06
+And it made me realize, wow, robots can be so much more than things to manipulate objects. They can be things that have a human connection. Do you have was the self-driving car the moment like was there a robot that truly sort of inspired you?
+00:05:21
+That was I remember that experience very viscerally riding in that car and being just wowed. I, I had the they gave us a sticker that said I rode in a self-driving car and had this cute little firefly on.
+00:05:37
+Yes. And or logo that was like the smaller like the. Yeah. The really cute one. Yeah. And and I put it on my laptop and I had that for years until I finally changed my laptop out. And you know, what about if we walk back.
+00:05:51
+You mentioned optimization. Like what beautiful ideas inspired you in math computer science early on. Like why get into this field seems like a cold and boring field of math. Like what was exciting to you about it?
+00:06:06
+The thing is, I liked math from very early on. From fifth grade is when I got into the Math Olympiad and all of that. Oh, you competed. Yeah.
+00:06:16
+In Romania is like our national sport, you got to understand.
+00:06:19
+So I got into that fairly early and and it was little maybe to just theory would now kind of I didn't kind of had a didn't really have a goal and I didn't understanding which was cool. I always like learning and understanding but there was no what am I applying this understanding to. And so I think that's how I got into more heavily into computer science, because it was it was kind of math me. It's something you can do tangibly in the world.
+00:06:48
+Do you remember, like, the first program you've written?
+00:06:51
+OK, the first program I've written with I kind of do.
+00:06:56
+It was in Q Basic in fourth grade and I was drawing like a circle class. Yeah. I don't know how to do that anymore, but in fourth grade that's the first thing that they taught me. I was like, you could take a special I wouldn't say it was an extra curiousness cents an extra curricular so you could sign up for, you know, dance or music or programming. And I did the programming thing and my mom was like, why?
+00:07:23
+Why did you compete in a program like these days? Romania probably. That's like a big thing. There's a program and competitions. Was that did that touch you?
+00:07:34
+I did a little bit of the computer science Olympian, but not not as seriously as I did the math Olympian. So it's programming. Yeah, it's. Basically, here's a hard math problem solved with a computer is kind of more like algorithm. Exactly. It's Outlaw's algorithmic. So you kind of mentioned the Google self-driving car, but outside of that.
+00:07:57
+Well, what's like who or what is your favorite robot, real or fictional, that captivated your imagination throughout? I mean, I guess you kind of alluded to the Google soldier. The firefly was a magical moment, but is there something else, the firefly in there?
+00:08:13
+It was I think that was the Lexus, by the way. This was back back then, but. Yeah, so good question. I think my favorite fictional robot is Wally, and I love how amazingly expressive it is. I'm pursuing things a little bit about expressive motion kinds of things. You're saying you can do this and it's ahead and it's a manipulator. And what does it all mean? I like to think about that stuff. I love Pixar.
+00:08:42
+I love animation. I love Wally has two big eyes, I think, or not. Yeah, it has these D cameras and they move. So yeah, that's it's a you know, it goes and then it's super cute. It's yeah. It's the way it moves. It's just so expressive. The timing of that motion, the, what it's doing with its arms and what it's doing with these lenses is amazing.
+00:09:05
+And so I've, I've really liked that from the start. And then on top of that, sometimes I shared this. It's a personal story to share with people or when I teach about a guy or whatnot. My husband proposed to me by building a wally and he actuated it. So it's seven degrees of freedom, including the lens thing. And it kind of came in and it had the he made it have like a, you know, the belly box opening thing.
+00:09:39
+So it just did that. And then it's filled out this box, made out of Legos that opened slowly and then bam.
+00:09:46
+Oh, yeah. It was it was quite quiet, it set a bar. It could be like the most impressive thing I've ever heard.
+00:09:54
+OK, that is such a connection to a wildly long story short, I like Walter because I like animation and I like robots and I like, you know, the fact that this was we still have this robot to this day.
+00:10:06
+What how hard is that problem, do you think, of the expressivity of robots like the with the Boston Dynamics? I never talk to those folks about this particular element of talk to them a lot, but it seems to be like almost an accidental side effect for them that they weren't. I don't know if they're faking it. They weren't trying to. OK, they do say that the gripper was not intended to be a face. I don't know if that's an honest statement, but I think they're legitimate, probably probabilities, and so do we automatically just anthropomorphize any anything we can see?
+00:10:46
+It's like the question is, how hard is it to create a wolly type robot that connects so deeply with us humans?
+00:10:52
+What do you think is really hard? Right. So it depends on what setting. So if you want to do it in this very particular narrow setting where it does only one thing and it's expressive, then you can get an animator. You can, you know, can have Pixar on call, come in, design some trajectories. That was the guy had a robot called Kozmo or they put in some of these animations. That part is is easy, right.
+00:11:17
+The hard part is doing it not via these kind of handcrafted behaviors, but doing it generally autonomously. Like, I want robots. I don't work. Just to clarify, I don't I used to work a lot on this. I don't work on that quite as much these days. But but the notion of having robots that, you know, when they pick something up and put it in a place, they can do that with various forms of of style.
+00:11:45
+Or you can say, well, this robot is, you know, succeeding at this task and is confident versus it's hesitant versus, you know, maybe it's happy or it's, you know, disappointed about something, some failure that it had.
+00:11:55
+Or I think that when robots move, they can communicate so much about internal states or perceived internal state that they have.
+00:12:06
+And I think that's really useful and an element that will want in the future, because I was reading this article about how kids are kids are being rude to Alexa because they can be rude to it and it doesn't really get angry.
+00:12:28
+Right. It doesn't reply in any way. It just says the same thing.
+00:12:32
+So I think there's at least for that for the for the correct development of children that these things you kind of react differently. I also think, you know, you walk in your home and you have a personal robot. And if you're really pissed, presumably robots should kind of behave slightly differently than when you're super happy and excited.
+00:12:49
+But it's really hard because it's I don't know the way I would think about it and the way I thought about it when it came to expressing goals or intentions for robots. It's well, what's really happening is that instead of doing robotics where you have your state, then you have your action space and you have your space, the reward function and trying to optimize. Now, you kind of have to expand the notion of state to include this human internal state.
+00:13:19
+What is the person actually perceiving? What do they think about the robot? Something better. And then you have to optimize in that system. And that means you have to understand how your motion, your actions and sort of influencing the observers kind of perception of you. And it's very it's very hard to write math about that. Right.
+00:13:42
+So when you start to think about incorporating the human into the state model, apologize for the philosophical question.
+00:13:50
+But how complicated a human beings do you think I can be reduced to to a kind of almost like an object that moves and maybe has some basic intents?
+00:14:03
+Or is there something do we have to model things like mood and general aggressiveness? And I mean, all these kinds of human qualities are like game theoretic qualities, like what's your sense, how complicated it is?
+00:14:17
+How hard is the problem of human robot interaction?
+00:14:20
+Yeah. Should we talk about what the problem of human robotics is?
+00:14:25
+Yeah, this is what I do.
+00:14:26
+And then when robot I then talk about how that. Yeah. So and by the way, I'm going to talk about this very particular view of human robot interaction. Right. Which is not so much on the social side or on the side of how you have a good conversation with the robot. What should the robots appearance be? Turns out that if you make robots dollar versus started, this has an effect on how people act with them. So I'm not I'm not talking about that.
+00:14:51
+But it's OK. You have this very kind of narrow thing, which is you take if you want to take a task that a robot can do in isolation in a lab out there in the world, but in isolation. And now you're asking, what does it mean for the robot to be able to do this task for presumably what it's actually end goal is, which is to help some person that ends up changing the problem in two ways.
+00:15:20
+The first way is the problem is that the robot is no longer the single agent acting. Do you have humans who also take actions in that same space?
+00:15:29
+You know, cars navigate around people, robots around the office navigating around the people in that office. If I send the robot to over there in the cafeteria to get me a coffee, then there's probably other people reaching for stuff in the same space. And so now you have your robot and you're in charge of the actions that the robot is taking. And you have these people who are also making decisions and taking actions in that same space. And even if, you know, the robot knows what, it's what it should do and all of that just coexisting with these people.
+00:15:59
+Right. Kind of getting the actions to gel well, to mesh well together. That's sort of the kind of problem, number one.
+00:16:07
+And then there's problem number two, which is goes back to this notion of I if I'm a programmer, I can specify some objective for the robot to go off and optimizing, specify the task.
+00:16:20
+But if I put the robot in your home, presumably you might have your own opinions about, well, OK, I want my house cleaned, but how do I want it cleaned and how should robots how close to me it should come and all of that. And so I think those are the two differences that you have. You're acting around people and you what you should be optimizing for should satisfy the preferences of that end user, not of your programmer who programmed you.
+00:16:48
+And the preferences thing is tricky. So figuring out those preferences be able to interactively adjust to understand what the human is. It really boils down to understand the humans in order to interact with them, in order to please them. Right. So why is this hard?
+00:17:05
+What? Yeah. Why is understanding humans hard?
+00:17:08
+So I think there's two tasks about understanding humans that in my mind are very, very similar.
+00:17:17
+But not everyone agrees. So there's the task of being able to just anticipate what people will do. We all know the cards need to do this, right? We all know that. Well, if I navigate around some people, the robot has to get some notion of where where is this person going to be? So that's kind of the prediction side. And then there's what you are saying, satisfying the preferences. Right. So adapting to the person's preference is knowing what to optimize for, which is more inference like this.
+00:17:43
+What is what does this person want? What is their intent? What are their preferences? And to me, those kind of go together, because I think that in if you look at the very least, if you can understand, if you can look at human behavior and understand what it is that they want, then that's sort of the key enabler to being able to anticipate what they'll do in the future. Because I think that, you know, we're not arbitrary.
+00:18:10
+We make these decisions that we make. We act in the way we do because we're trying to achieve certain things. And so I think that's the relationship between them. Now, how complicated do these models need to be in order to be able to understand what people want? So we've gotten a long way in robotics with something called inverse reinforcement learning, which is the notion of someone acts demonstrates what have they want the thing done, what is an inverse reinforcement learning.
+00:18:42
+Right. So it's it's the problem of take human behavior and infer reward function from this to figure out what it is that that behavior is optimal with respect to.
+00:18:54
+And it's a great way to think about learning human preferences in the sense of, you know, you have a car and the person can drive it and then you can say, well, OK, I can actually learn what the person is optimizing for. I can learn their driving style. Or you can you can have people demonstrate how they want the house clean. And then you can say, OK, this is this is I'm getting the trade that they're that they're making.
+00:19:20
+I'm getting the preferences that they want out of this.
+00:19:23
+And so we've been successful in robotics somewhat with this. And it's it's based on a very simple model of human behavior is a remarkably simple which is that human behavior is optimal with respect to whatever it is that people want. Right. They make that assumption. And now you can kind of inverse through. That's why it's called inverse. Well, really optimal control, but but also inverse reinforcement learning. So this is based on a utility maximization in economics back in the to for Nomen Morganstein or like, OK, people are making choices by maximizing utility go.
+00:20:02
+And then in the late 50s we had Loose and Sheppard come in and say people are a little bit noisy and approximate in that process. So they might choose something kind of stochastic li with probability proportional to how much utility something has. There's a bit of noise in there. This has translated into robotics and something that we call bowsman rationality. So it's a kind of an evolution of. First, reinforcement learning that accounts for four human noise, and we've had some success with that, too, for these tasks where it turns out people act noisily enough that you can just do vanilla, the vanilla version, you can account for noise and still infer what what they seem to want based on this.
+00:20:54
+Then now we're hitting tasks or that's though not enough. And what it was.
+00:20:59
+What are examples of examples? So imagine you're trying to control some robot that's that's fairly complicated. You're trying to control the robot arm because maybe you're a patient with a motor impairment and you have this wheelchair mounted army and trying to control it around.
+00:21:14
+Or one test that we've looked at with Serguei is and our student said is a lunar lander. So I don't know if you know, this Atari game. It's called lunar lander. It's really hard. People really suck at landing, but mostly they just crashed hard left and right.
+00:21:29
+OK, so this is the kind of test to imagine you're trying to provide some assistance to a person operating such such a robot where you want the kind of the autonomy to kid can figure out what it is that you're trying to do and help you do it.
+00:21:43
+It's really hard to do that for, say, lunar lander because people are all over the place. And so they seem much more noisy than really rational. That's an example of a task where these models are kind of failing us. And it's not surprising because so we talk about Forty's utility, late fifties, sort of noisy. Then the 70s came and behavioral economics started being a thing where people are like, no, no, no, no, no, people are not rational.
+00:22:15
+People are messy and emotional and irrational and have all sorts of heuristics that might be domain specific. And they're just just a mess. The mess. So so what? So what does my robot do to understand what you want? And it's a very it's very that's why it's complicated. You know, for the most part we get away with pretty simple models until we don't. And then the question is, what do you do then? And I have days when I wanted to, you know, pack my bags and go home and switch jobs because because just it feels really daunting to make sense of human behavior enough that you can reliably understand what people want, especially as you know, robot capabilities will continue to get developed.
+00:23:02
+You'll get these systems that are more and more capable of all sorts of things. And then you really want to make sure that you're telling them the right thing to do. What is that thing? Well, read it in human behavior.
+00:23:13
+So if I just sat here quietly and try to understand something by you, by listening to you talk, it would be harder than if I got to say something and ask you and interact and control. Can you can the robot help with understanding of the human by influencing it, influencing the behavior, by actually acting?
+00:23:35
+Yeah, absolutely. So one of the things that's been exciting to me lately is this notion that when you try to that that that when you try to think of the robotics problem as, OK, I have a robot and it needs to optimize for whatever it is that a person wants it to optimize as opposed to maybe what a programmer said. That problem we think of as a human robot collaboration problem in which both agents get to act, in which the robot knows less than the human because the human actually has access to, you know, at least implicitly to what it is that they want.
+00:24:14
+They can write it down, but they can they can talk about it. They can give all sorts of signals. They can demonstrate. And and but the robot doesn't need to sit there and passively observe human behavior and try to make sense of the robot can act, too. And so there's this information gathering actions that the robot can take to sort of solicit responses that are actually informative. So, for instance, this is not for the purpose of assisting people, but with kind of back to coordinating with people and cars and all of that.
+00:24:44
+One thing that Dorsa did was so we were looking at cars being able to navigate around people.
+00:24:52
+And you might not know exactly the driving style of a particular individual that's next to you, but you want to change lanes in front of them, navigating around other humans inside cars.
+00:25:05
+Yeah, good. Good clarification question. So you have an autonomous car and is trying to navigate the road around human driven vehicles, similar things. Ideas apply to pedestrians as well. But let's just take human driven vehicles. So now you're trying to change a lane? Well, you could be trying to infer the driving style of this person next to you. You'd like to know if they're in particular, if they're sort of aggressive or defensive, if they're going to let.
+00:25:33
+You kind of go in or if they're going to not, and and it's very difficult to just, you know, went if you think that if you want to hedge your bets and maybe they're actually pretty aggressive, I should try this. You kind of end up driving next to them and driving next to them. Right. And then you you don't know because you're not actually getting the observations that you get the way someone drives when they're next to you and they just need to go straight.
+00:26:01
+That's kind of the same because if they're aggressive or defensive. And so you need to enable the robot to reason about how it might actually be able to gather information by changing the actions that it's taking. And then the robot comes up with these cool things where it kind of nudges towards you and then sees if you're going to slow down or not, then if you slow down, it sort of updates its model of you and says, OK, you're more on the defensive side.
+00:26:28
+So now I can actually.
+00:26:29
+That's a fascinating dance. So that's so cool. You could easily use your own actions to gather information. That's a that feels like a totally open, exciting new world of robotics. I mean, how many people are even thinking about that kind of thing?
+00:26:45
+A handful of others. Yes. It's rare because it's actually leveraging human. We most roboticists I've talked to a lot of, you know, colleagues and so on, a kind of being honest, kind of afraid of humans because they're messy and complicated.
+00:27:02
+Right. I understand. Going back to what we were talking about earlier, right now we're kind of in this dilemma of, OK, there are tasks that we can just assume people are approximately rational for and we can figure out what they want, can figure out their goals and figure out their driving styles, whatever. Cool. There are these tasks that we can't. So what do we do? Right? Do we pack our bags and go home? And this one this there's I've had a little bit of hope recently, and I'm kind of doubting myself.
+00:27:31
+What do I know that, you know, 50 years of behavioral economics hasn't figured out, but maybe it's not really in contradiction with what? With the way that field is headed. But basically, one thing that we've been thinking about is instead of kind of giving up and saying people are too crazy and irrational for us to make sense of them, maybe we can give them a bit the benefit of the doubt and maybe we can think of them as actually being relatively rational, but just under different assumptions about the world, about how the world works, about, you know, they don't have we when we think about rationality, implicit assumption is or they're rational and they're all the same assumptions and constraints as the robot.
+00:28:16
+Right. What if this is the state of the world? That's what they know. This is the transition function. That's what they know. This is the horizon. That's what they know. But maybe maybe the kind of this difference, the way the reason they can seem a little messy and hectic, especially to robots, is that perhaps they just make different assumptions or have different beliefs.
+00:28:38
+Yeah.
+00:28:39
+So, I mean, that's that's another fascinating idea that this kind of anecdotal desire to say that humans are irrational, perhaps grounded in behavioral economics is is that we just don't understand the constraints and there was under which they operate. And so our goal should be to throw our hands up and say they're irrational. It's to say, let's try to understand what are the constraints, what it is that they must be assuming that makes this behavior makes sense.
+00:29:08
+A good life lesson, right? Good life lesson.
+00:29:10
+That's true. It's just outside of robotics. That's good to that's communicating with humans.
+00:29:15
+That's just a good assume that you just don't have empathy. Right.
+00:29:20
+So just maybe there's something you're missing and you and it's you know, it especially happens to robots because they're kind of dumb and they don't know things. And oftentimes people are sort of super irrational in that they actually know a lot of things that robots don't sometimes like.
+00:29:33
+With the lunar lander, the robot knows much more so and so.
+00:29:38
+It turns out that if you try to say, look, maybe people are operating this thing, but assuming a much more simplified physics model because they don't get the complexity of this kind of craft or the robot arm with seven degrees of freedom, with these inertia and whatever, so so maybe they have this intuitive physics model, which is not, you know, this notion of intuitive physics is something that is studied actually in cognitive science.
+00:30:03
+Folks like Josh Tennenbaum, Tom Griffitts work on this stuff.
+00:30:07
+And and what we found is that you can actually try to figure out what what physics model kind of best explains human actions. And then you can use that to sort of correct what it is that they're commanding the craft to do. So they might be sending the craft somewhere, but instead of executing that action, you can sort of take a step back and say according to their intuitive. If the world worked according to their intuitive physics model, where do they think that the craft is going today?
+00:30:41
+Where are they trying to send it to? And then you can use the real physics, the inverse of that, to actually figure out what you should do so that you do that instead of where they were actually sending you in the real world. And I kid you not at work. People plan to burn the damn thing and, you know, in between the two flags and and all that. So it's not conclusive in any way.
+00:31:02
+But I'd say it's evidence that maybe we're kind of underestimating humans in some ways when we're giving up and saying, oh, they're just crazy noisy, then you then you try to explicitly try to model the kind of world view that they have that they have.
+00:31:16
+That's right. That's right. And it's not true. I mean, there's things that people can always do that that that, for instance, have touched upon the planning horizon. So there's this idea that I just bounded rationality, essentially, and the idea that, well, maybe we work on their computational constraints. And I think kind of our view recently has been take the Bellmon update in A.I. and just break it in all sorts of ways by saying, no, no, no.
+00:31:40
+The first one doesn't get to see the real state. Maybe they're estimating somehow transition function.
+00:31:44
+No, no, no, no, no. Even the actual reward evaluation. Maybe they're still learning about what it is that they want.
+00:31:52
+Like like, you know, when you watch Netflix and you have all the things and then you have to pick something, imagine that, you know, the the the AI system interpreted that choice as this is the thing you prefer to see. How are you going to know you're still trying to figure out what you like, what you don't like, etc.. So I think it's important to also account for that. So it's not irrationality because doing the right thing under the things that they know.
+00:32:17
+Yeah, that's brilliant.
+00:32:18
+You measure recommender systems.
+00:32:20
+What kind of and what we're talking about human interaction, problem spaces are you thinking about. So is it robots like wheels, robots, autonomous vehicles?
+00:32:33
+Is it object manipulation that when you think about human robot interaction in your mind and maybe I'm sure you can speak for the entire community of human interaction, but like, what are the problems of interest here is and does it um, you know, I kind of think of open domain dialogue as a human robot interaction, and that happens not in the physical space, but it could just happen in in the virtual space.
+00:33:03
+So where the where is the boundaries of this field for you when you're thinking about the things we've been talking about?
+00:33:08
+Yeah. So I, I try to find kind of underlying I don't know what to even call them.
+00:33:19
+I try to work on, you know, I might call what I do the kind of working on the foundations of algorithmic human robot interaction and trying to make contributions there. And it's important to me that whatever we do is actually somewhat domain agnostic when it comes to is it about, you know, autonomous cars or is it about quadrotor or is it about sort of the same underlying principles apply. Of course, when you're trying to get a particular domain to work, you usually have to do some extra work to adapt to that particular domain.
+00:33:53
+But these things that we were talking about around, well, you know, how do you model humans?
+00:33:59
+It turns out that a lot of systems need to benefit from a better understanding of how human behavior relates to what people want and need to predict human behavior, physical robots of all sorts and beyond that. And so I used to do manipulation. I used to be, you know, picking up stuff. And then I was picking up stuff with people around. And now it's sort of very broad when it comes to the application level, but in a sense, very focused on, OK, how does the problem need to change?
+00:34:31
+How do the algorithms need to change when we're not doing a robot by itself, you know, emptying the dishwasher, but we're stepping outside of that.
+00:34:40
+A thought that popped into my head just now on the game theoretic side of things, you said this really interesting idea of using actions to gain more information.
+00:34:50
+But if we think a sort of game theory, the humans that are interacting with you, with you, the robot thinking the identity of the robot, I did that all the time.
+00:35:04
+Yeah. Is they also have a world model of you.
+00:35:11
+Hmm. And you can manipulate that.
+00:35:14
+And if we look at autonomous vehicles, people have a certain viewpoint. You said with the kids, people see Alexa as a in a certain way.
+00:35:24
+Is there some value in trying to also optimize how people see you as a robot?
+00:35:30
+Mm hmm. Is that or is that a little too far? Away from the specifics of what we can solve right now. So you all both, right. So it's really interesting and we've seen a little bit of progress on this problem, on pieces of this problem. So you can, again, kind of comes down to how complicated as the human model need to be. But in one piece of work that we were looking at, we just said, OK, there's these there's these parameters that are internal to the robot and they're what they're what the robot is about to do or maybe what objective or driving style the robot has or something like that.
+00:36:12
+And what we're going to do is we're going to set up a system where part of the state is the person's belief over those parameters. And now when the robot acts, that the person gets new evidence about this robot internal state. And so they're updating their mental model of the robot. Right. So if they see a car that sort of cut someone off dog, oh, that's an aggressive car. They know more. Right.
+00:36:37
+If they see sort of a robot head towards a particular door, they're like, oh, the robots trying to get to that door. So this thing that we have to do with humans to try to understand their goals and intentions, humans are inevitably going to do that to robots. And then that raises this interesting question that you asked, which is, can we do something about that? This is going to happen inevitably, but we can sort of be more confusing or less confusing to people.
+00:37:01
+And it turns out you can optimize for being more informative and less confusing if you if you have an understanding of how your actions are being interpreted by the humans, how they're using these actions to update their belief.
+00:37:13
+And honestly, all we did is just Bayes rule, basically, OK, first has a belief they see in action.
+00:37:21
+They make some assumptions about how the robot generates its actions, presumably as being rational, because robots are rational, they're reasonable to assume that about them. And then they incorporate that that new piece of evidence, no sense in their belief, and they obtain a posterior. And now the robot is trying to figure out what actions to take so that it steers the person's belief to put as much probability mass as possible on the correct on the correct parameters.
+00:37:48
+So that's kind of a mathematical formalization of that. But my worry and I don't know if you want to go there with me, but I talk about this quite a bit.
+00:38:01
+The the kids talking to Alexa disrespectfully worries me. I worry in general about human nature. I guess that I grew up in Soviet Union, World War Two. I mean, due to so the Holocaust and everything.
+00:38:15
+I just worry about how we humans sometimes treat the other. The group that we call the other, whatever it is to human history, the group that the other has been changed faces, but it seems like the robot will be the other, the other, the next, the other.
+00:38:32
+And one thing is, it feels to me that robots don't get no respect.
+00:38:39
+They get shoved around, shoved around. And is there one at the shallow level for better experience? It seems that robots need to talk back a little bit. Like my intuition says, I mean, most companies from sort of Roomba autonomous vehicle companies might not be so happy with the idea that a robot has a little bit of an attitude.
+00:39:00
+But I feel it feels to me that it's necessary to create a compelling experience like we humans don't seem to respect anything that doesn't give us some attitude that or like Misbah mix of mystery and attitude and anger and that that threatens us subtly, maybe passive aggressively.
+00:39:21
+I don't it seems like we humans yet need that.
+00:39:25
+What are you Is there something you have thoughts on this? I'll give you two thoughts, OK? Sure. One is one is it it's we respond to someone being assertive, but we also respond to someone being vulnerable.
+00:39:43
+So I think robots was my first thought is that robots get shuffled around and bullied a lot because they're sort of, you know, tempting and they're sort of showing off or they appear to be showing off. And so I think going going back to these things we were talking about in the beginning of making robots a little more a little more expressive, a little bit more like that wasn't cool to do.
+00:40:04
+And now I'm bummed. I think that that can actually help because people can't help but anthropomorphize and respond to that, even though the emotion being communicated is not in any way a real thing. And people know that it's not a real thing because they know it's just a machine. We're still interpret. You know, we watch there's this famous psychology experiment with little triangles and dots on a screen and a triangle is chasing the square and get really angry at the darn triangle because why is it not leaving the square alone?
+00:40:35
+So that's yeah, we can't help.
+00:40:37
+That was the first thought. The vulnerability is really interesting that I think of like being a pushing back, being assertive as the only mechanism of getting of forming a connection, of getting respect, but perhaps vulnerability. Perhaps there's other mechanisms that are less that. Yeah, well, I think what a little bit.
+00:41:00
+Yes. But then this other thing that we can think about is it goes back to what you were saying, that interaction is really game theoretic. Right. So the moment you're taking actions in a space, the humans are taking actions in that same space. But you have your own objective, which is, you know, you're a car. You need to get your passenger to the destination. And then the human nearby has their own objective, which somewhat overlaps with you, but not entirely you.
+00:41:24
+You're not interested in getting into an action with each other, but you have different destinations and you want to get home faster and they want to go home faster. And that's a general sum game at that point. And so that's I think that's what treating it as such is kind of a way we can step outside of this kind of mode that where you try to anticipate what people do and you don't realize you have any influence over it while still protecting yourself, because you're understanding that people also understand that they can influence you.
+00:41:59
+And it's just kind of back and forth in this negotiation, which is really, really talking about different equilibria of a game.
+00:42:07
+The very basic way to solve coordination is to just make predictions about what people will do and then stay out of their way.
+00:42:14
+And that's hard for the reasons we talked about, which is how I have to understand people's intentions implicitly or explicitly.
+00:42:21
+Who knows? But somehow you have to get enough of an understanding of that world to anticipate what happens next. And so that's challenging. But then it's further challenged by the fact that people change what they're do based on what you do, because they don't they don't plan in isolation either.
+00:42:37
+Right. So when you see cars trying to merge on a highway and not succeeding, one of the reasons this can be is because you you they they look at traffic that keeps coming.
+00:42:50
+They predict what these people are planning on doing, which is to just keep going and then they stay out of the way because there's not there's no feasible plan. Right. Any plan would actually intersect with one of these other people.
+00:43:03
+So that's bad. So you get stuck there.
+00:43:06
+So now kind of if if you start thinking about it as no, no, no, actually, these people change what they do depending on what the car does.
+00:43:17
+Give the car actually tries to kind of change itself forward. They might actually slow down and let the car in and down, taking advantage of that. Well, that you know, that's kind of the next level. We call this like this under actuated system idea where it's been under actresses in robotics.
+00:43:35
+But it's kind of it's you don't you're influenced these other degrees of freedom, but you don't get to decide what it's a similar scene.
+00:43:44
+You mentioned that the human element in this picture, as Underexploited said, you know, you understand a director about a robotics is, you know, that you can't fully control the system.
+00:43:58
+So you can't go in arbitrary directions and the configuration space under your control. Yeah, it's a very simple way of under actuation where basically there's literally these degrees of freedom that you can control and these things that you can't, but you influence them. And I think that's the important part, is that they don't do whatever, regardless of what you do, that what you do influence is what they end up doing.
+00:44:19
+I just also like the poetry of calling human robot interaction and undereducated. Robotics problem in Yosemite is sort of nudging, it seems that they're I don't know, I think about this a lot. In the case of pedestrians, I've collected hundreds of hours of videos. I like to just watch pedestrians. And it seems that it's a funny hobby.
+00:44:41
+Yeah, it's weird because I learn a lot. I learn a lot about myself, about our human behavior from watching pedestrians, watching people in their environment.
+00:44:52
+Basically crossing the street is like you're putting your life on the line.
+00:44:58
+You know, I don't know.
+00:44:59
+Tens of millions of times in America every day is people are just like playing this weird game of chicken when they cross the street, especially when there's some ambiguity about the right of way.
+00:45:11
+That has to do either with the rules of the road or with the general personality of the intersection based on the time of day and so on.
+00:45:19
+And this nudging idea, I don't you know, it seems that people don't even nudge. They just aggressively take make a decision. Somebody there's a runner that gave me this advice I sometimes run into in the street and, you know, not in the street and the sidewalk. And he said that if you don't make eye contact with people when you're running, they will all move out of your way.
+00:45:42
+It's called civil inattention. Civil inattention. That's the thing. Wow. I need to look this up, but it works. What is that?
+00:45:50
+My sense was if you communicate like confidence in your actions, that you're unlikely to deviate from the action that you're following. That's a really powerful signal to others that they need to plan around your actions as opposed to nudging where you're sort of hesitantly then the hesitation might communicate that you're now you're still in the dance in the game that they can influence with their own actions.
+00:46:16
+I've recently had a conversation with Jim Keller, who's sort of this legendary chip or chip architect, but he also led the autopilot team for a while and his intuition that driving is fundamentally still like a ballistics problem, like you can ignore the human element that is just not hitting things and you kind of learn the right dynamics required to do the merger and all those kinds of things.
+00:46:47
+And then my sense is, and I don't know if I can provide sort of definitive proof of this, but my sense is like an order of magnitude or more more difficult when humans are involved. Like it's not simply an object, a collision avoidance problem. Which word is your intuition? Of course, nobody knows the right answer here, but where does your intuition fall on the difficulty, fundamental difficulty of the driving problem when humans are involved?
+00:47:15
+Yeah, good question.
+00:47:17
+I have many opinions on this.
+00:47:20
+Imagine downtown San Francisco. Yeah. Yeah, it's crazy busy. Everything OK now? Take all the humans out. No pedestrians, no human driven vehicles, no cyclists, no people and little electric scooters zipping around. Nothing. I think we're done. I think driving at that point is done or done. I there's nothing really that's me still needs to be solved about that. Let's pause there.
+00:47:47
+I think I agree with you and I think a lot of people, though, here will agree with that. But we need to sort of internalize that idea.
+00:47:58
+So what's the problem there? Not quite yet be done with that, because a lot of people kind of focus on the perception problem.
+00:48:06
+A lot of people kind of map autonomous driving into how close are we to solving being able to detect all the, you know, the drivable area, the objects in the scene. Do you see that as how hard is that problem?
+00:48:24
+So your intuition there behind your statement was we may have not solved the yet, but we're close to solving basically the perception problem? I think the perception problem I mean and by the way, a bunch of years ago, this would not have been true. And a lot of issues and the space were coming from the fact that we don't really you know, we don't know what's what's where. But I think it's fairly safe to say that at this point, although you could always improve on things and all of that, you can drive through downtown San Francisco if there are no people around.
+00:48:57
+There's now really perception issues standing in your way there.
+00:49:02
+Any perception is hard. But, yeah, it's we've made a lot of progress on the perceptions on how to undermine the difficulty of the problem. I think everything about robotics is really difficult. Of course, I think that, you know, the the the the planning problem, the control problem, all very difficult. But I think what's what makes it really.
+00:49:20
+Yeah, it might be.
+00:49:21
+I mean, you know, I and I think downtown San Francisco, it's adapting to well, now it's knowing now it's no longer snowing.
+00:49:29
+Now it's slippery in this way. Now it's the dynamics part could good. I could imagine being being still somewhat challenging.
+00:49:40
+But know the thing that I think worries us and our intuition is not good. There is the perception problem at the Edge cases sort of downtown San Francisco.
+00:49:51
+The nice thing, it's not actually you may not be a good example because, um, because you know what to what you're getting for a while, there's, like, crazy construction zones.
+00:50:00
+Yeah.
+00:50:00
+But the thing is, you're traveling at slow speeds, so it doesn't feel dangerous to me. What feels dangerous is highway speeds when everything is to us humans. Super clear. Yeah.
+00:50:12
+I'm assuming light out here, by the way. I think it's kind of irresponsible to not use lighter.
+00:50:16
+That's just my personal opinion. That's I mean, getting on use case.
+00:50:21
+But I think, like, you know, if you're if you have the opportunity to use lighter and a lot in a lot of cases, you might not.
+00:50:29
+Good. Your intuition makes more sense now. So you don't think vision.
+00:50:32
+I really just don't know enough to say, well, vision alone. What you know what like there are a lot of how many cameras do you have? Is that how you think? I don't know. I'm just there's all there's all sorts of details. I imagine there's stuff is really hard to actually see. I don't know. How do you deal with what exactly what you are saying stuff that people would see that that that you don't? I think I have more.
+00:50:56
+My information comes from systems that can actually use lighter as well.
+00:51:01
+Yeah. And until we know for sure, it makes sense to be using Lydda, that's kind of the safety focus.
+00:51:07
+But then the sort of the I also sympathize with the Elon Musk. The statement of light as a crutch is.
+00:51:17
+It's a fun notion to think that the things that work today is a crutch for the invention of the things that will work tomorrow. Right.
+00:51:27
+They get it's kind of true in the sense that if, you know, we want to stick to the conference and you see this in academic and research settings all the time, the things that work force you to not explore outside, think outside the box.
+00:51:42
+I mean, that happens all the time. The problem is in safety critical systems, you kind of want to stick with the things that work. So it's it's an interesting and difficult tradeoff in the in the in the case of real world sort of safety critical robotic systems.
+00:51:57
+But so your intuition is. Just to clarify, yes, how I mean, how hard is this human element for that? How hard is driving when this human element is involved?
+00:52:12
+Are we.
+00:52:14
+Years, decades away from solving it, but perhaps actually the years and the thing I'm asking, it doesn't matter what the timeline is, but do you think we're how many breakthroughs are way away from us in solving the human interaction problem to get this to get this right?
+00:52:32
+I think it in a sense, it really depends. I think that, you know, we were talking about how well, look, it's really hard because anticipate we will do as hard and on top of that, playing the game as hard.
+00:52:47
+But I think we sort of have the fundamental some of the fundamental understanding for that.
+00:52:55
+And you already see that these systems are being deployed in the real world, you know, even even driverless, because I think now a few companies that don't have a driver in the car. Yeah, some small areas.
+00:53:13
+I got a chance to I went to Phoenix and I shot a video with way I need to get that video out. People have been giving me slack for this incredible engineering work being done there. And it's one of those other seminal moments for me in my life to be able to.
+00:53:30
+It sounds silly, but to be able to drive without it, with a ride. So without a driver in the seat, I mean, that was an incredible robotics.
+00:53:39
+I was driven by a robot and without being able to take over, without being able to go and take the steering wheel, that's a magical that's a magical moment. So in that regard, in those domains, at least for like Wimoweh, they're they're they're solving that human. There's I mean, they're they're going for I mean, felt fast because you're, like, freaking out. At first I was this is my first experience, but it's going like the speed limit, right.
+00:54:06
+30, 40, whatever it is.
+00:54:08
+And there's humans and it deals with them quite well. It detects them and then negotiates the intersections, the left turns and all that. So at least in those domains, it's solving them. The open question for me is like, how quickly can we expand?
+00:54:23
+You know, that's the you know, outside of the weather conditions, all those kinds of things, how quickly can we expand to, like, cities like San Francisco?
+00:54:31
+Yeah, and I wouldn't say that. It's just, you know, now is just pure engineering. And it's probably the I mean, by the way, I'm speaking kind of very generally here as hypothesising. But I I think that that there are successes and yet no one is everywhere out there. So that seems to suggest that things can be expanded and can be scaled. And we know how to do a lot of things. But there's still probably, you know, new algorithms or modified algorithms that that you still need to put in there as you as you learn more and more about new challenges that you get faced with.
+00:55:12
+And how much of this problem do you think can be learned through and turned to the success of machine learning and reinforcement learning? How much of it can be learned from sort of data from scratch and how much which is most of the success of autonomous vehicle systems have a lot of heuristics and rule based stuff on top like human expertise in in injected forced into the system to make it work. What's what's your sense?
+00:55:39
+How much what's the what will be the role of learning in the near term?
+00:55:44
+I think term I, I think on the one hand that learning is inevitable here. Right. I think on the other hand, that when people characterize the problem as it's a bunch of rules that some people wrote down versus it's an end to end RL system or imitation learning, then maybe there's kind of something missing from maybe that's that's more so, for instance, I think a very, very useful tool in this sort of problem, both in how to generate the car's behavior and robots in general and how to model human beings is actually planning search optimization.
+00:56:32
+Robotics is the sequential decision making problem. And when when a robot can figure out on its own how to achieve its goal without hitting stuff and all that stuff. Yeah, all the good stuff for motion planning one one. I think of that as very much. Why not? This is some role or something. There's nothing rule based around that. Right? It's just you're you're searching through space and figuring out are you optimizing through our space and figure out what seems to be the right thing to do.
+00:57:04
+And I think it's hard to just do that because you need to learn models of the world. And I think it's hard to just do the learning part where you don't. I don't bother with any of that, because then you're saying, well, I could do imitation, but then when I go off distribution, I'm really screwed. Or you can say I can do reinforcement learning, which adds a lot of robustness. But then you have to do either reinforcement learning in the real world, which sounds a little challenging, or that trial and error, you know, or you have to do reinforcement learning and simulation.
+00:57:38
+And then that means, well, guess what? You need to model things at least to to model people, model the world enough that you you know, whatever policy you get of that is like actually fine to roll out in the world and do some additional learning there.
+00:57:53
+So do you think simulation, by the way, just a quick tangent, has a role in the human robot interaction space? Like is it useful? It seems like humans, everything we've been talking about are difficult to model simulate. Do you think simulation has a role in the space?
+00:58:10
+I do. I think so, because you can take models and train with them ahead of time, for instance. You can.
+00:58:23
+But the models sorry to interrupt the models are of human constructed or learned.
+00:58:27
+I think they have to be a combination because if you get some human data and then you say this is how this is going to be my model of the person, what are four simulation and training or for just deployment time? And that's what I'm planning with as my model of how people work.
+00:58:46
+Regardless if you take some data and you don't assume anything else and you just say, OK, this is this is some data that I've collected, let me fit a policy to help people work based on that. What does to happen is you collected some data and some distribution and then now your your robot sort of computer. The best response to that, right, is what should I do if this is how people work and easily goes off of distribution, where that model that you've built of the human completely sucks because out of distribution you have no idea.
+00:59:21
+Right. There's if you think of all the possible policies and then you take only the ones that are consistent with the human data that you've observed, that still leads a lot of a lot of things could happen outside of that distribution where you're confident then you know what's going on with this.
+00:59:38
+And you have gotten used to this terminology of distribution, but such a machine learning terminology because it kind of assumes so distribution is referring to the the data that you states that you encounter that you've reported so far at training time.
+00:59:57
+Yeah, but it kind of also implies that there's a nice, like statistical model that represents that data.
+01:00:04
+So out of distribution feels like, I don't know, it it it raises to me philosophical questions of how we humans reason out of distribution, reasonable things that are completely we haven't seen before.
+01:00:20
+And so and what we're talking about here is how do we reason about what other people do in, you know, situations where we haven't seen them and somehow we just magically navigate that? You know, I can anticipate what will happen in situations that are even novel in many ways. And I have a pretty good intuition for I always get it right. But, you know, and I might be a little uncertain and so on. I think it's it's this that if you just rely on data, you know, you there's just too many possibilities, too many policies out there that fit the data.
+01:00:55
+And by the way, it's not just data is really kind of history of state, because to really be able to anticipate what the person will do, it kind of depends on what they've been doing so far, because that's the information you need to kind of at least implicitly sort of say, oh, this is the kind of person that this is. That's probably what they're trying to do. So anyway, it's like you're trying to map history states to action.
+01:01:12
+There's many mapping and history, meaning like the last or the last few minutes or the last few months, who knows? Who knows how much you need.
+01:01:21
+Right. In terms of if your state is really like the positions of everything or whatnot and velocities, who knows how much you need?
+01:01:27
+And then and then there's this there's so many mappings. And so now you're talking about how do you regularized that space about Pryors? Do you impose or what's the inductive biocidal? You know, they're all very related things to think about it.
+01:01:43
+Basically what our assumptions that we should be making such that these models actually generalize outside of the data that we've seen.
+01:01:52
+And now you're talking about, well, I don't know, what can you assume you're going to assume that people, like, actually have intentions and that's what drives their actions. Maybe that's the right thing to do when you haven't seen data very nearby that tells you otherwise. I don't know. It's it's a very open question.
+01:02:10
+Do you think so that one of the dreams of artificial. Answers to to solve common sense reasoning, whatever the heck that means. Do you think something like common sense reasoning has to be solved in part to be able to solve this dance of human interaction, the driving space or human robot interaction in general? You have to be able to reason about this kind of common sense concepts of physics of. You know, all the things we've been talking about, humans, I don't even know how to express them with words, but the basics of human behavior, a fear of death.
+01:02:51
+So, like, to me, it's really important to encode in some kind of sense. Maybe not. Maybe it's implicit, but it feels it's important to explicitly encode the fear of death that people don't want to die because it seems silly, but like that, that the game of chicken that involves the pedestrian crossing the street is playing with the idea of mortality. Like, we really don't want to die.
+01:03:21
+That's just like a negative reward. I don't know. It just feels like all these human concepts have to be encoded. So you do share that sense, or is it a lot simpler than I'm making it out to be?
+01:03:33
+I think it might be simpler. And I know first I would like to complicate things. I think it might be simpler than that, because it turns out, for instance, if you if you say model people in the very I'll call it traditional, I don't know if it's fair to look at as a traditional way, but but, you know, calling people as, OK, they're rational somehow the utilitarian perspective. Well, and that once you say that they you automatically capture that they have an incentive to keep on being you know, Stewart likes to say you can't fetch the coffee if you're dead to Russell.
+01:04:16
+So that's a good line.
+01:04:18
+So when when you're sort of cheating agents as having these objectives, these incentives, humans or artificial, you're kind of implicitly modeling that they'd like to stick around so that they can accomplish those goals. So I think I think in a sense, maybe that's what drives me so much to the rationality framework. Even though it's so broken, we've been able to it's been such a useful perspective and like we were talking about earlier, what's the alternative?
+01:04:50
+I give up and go home or, you know, I just use complete black boxes, but then I don't know what to assume out of distribution. I come back to this. It's just it's been a very fruitful way to think about the problem and a very more positive way.
+01:05:03
+Right. Just people aren't just crazy. Maybe they make more sense than we think. But but I think we also have to somehow be ready for it to be to be wrong, be able to detect when these assumptions are holding, be all of that stuff.
+01:05:20
+Let me ask sort of another sort of small side of this that we've been talking about, the pure autonomous driving problem.
+01:05:27
+But there's also the relatively successful systems already deployed out there in what you may call like level two, autonomy or semi-autonomous vehicles, whether that's test the autopilot of work quite a bit with. Cadillac Supergroups System, which has a driver facing camera that the Texas state budget basically lanes centering systems. What's your sense about?
+01:05:55
+This kind of way of dealing with the human robot interaction problem by having a really dumb robot and and relying on the human to help the robot out, to keep them both alive, is that. Is that. From the research perspective, how difficult is the problem and from a practical deployment perspective, is that a fruitful way to approach this human interaction problem?
+01:06:25
+I think what we have to be careful about there is to not it seems like some of these systems, not all, are making this underlying assumption that if so, I'm a driver and I'm now really not driving, but supervising and my job is to intervene.
+01:06:45
+Right. And so we have to be careful with this assumption that when I'm if I'm supervising, I will be just as safe as when I'm driving like that. I will you know, if I if I wouldn't get into some kind of accident, if I'm driving, I will be able to avoid that accident when I'm supervising, too.
+01:07:09
+And I think I'm concerned about this assumption from a few perspectives. So from a technical perspective, it's that when you look at something kind of take control and do its thing and it depends on what that thing is, obviously. And how much is state control and how what things are you trusting it to do? But if you let it do its thing and take control, it will go to what we might call off policy from the person's perspective state. So to the person wouldn't actually find themselves in if they were the ones driving.
+01:07:39
+And the assumption that the person functions just as well there as they function in the states that they would normally encounter is a little questionable. Now, another part is the kind of the human factor side of this, which is that I don't know about you, but I think I definitely feel like I'm experiencing things very differently when I'm actively engaged in the task versus when I'm a passive observer, like even if I try to stay engaged. Right. It's very different than when I'm actually actively making decisions.
+01:08:10
+And you see this in life in general, like you see students who are actively trying to come up with the answer, learn to sing better than when they're passively told the answer. I think that's somewhat related. And I think people have studied this in human factors for airplanes. And I think it's actually fairly established that these two are not the same.
+01:08:29
+So I on that point, because I've gotten a huge amount of heat on this and I stand by it, OK, because I know the human factors can be well and the work here is really strong and there's many decades of work showing exactly what you're saying.
+01:08:45
+Nevertheless, I've been continuously surprised that much of the predictions that that work has been wrong and what I've seen so well we have to do, I still agree with everything you said.
+01:08:57
+We have to be a little bit more open minded.
+01:09:02
+So the the I'll tell you, there's a few surprising things that Superville, like everything you said to the world, is actually exactly correct. But it doesn't say what you didn't say is that these systems are you said you can't assume a bunch of things, but we don't know if these systems are fundamentally unsafe. That's still unknown. There's there's a lot of interesting things like I'm surprised by the fact, not the fact that what seems to be anecdotal from from well, from large data collection that we've done, but also from just talking to a lot of people when in the supervisory role of semi-autonomous systems that are sufficiently dumb, at least, which is the that would be the key element is the systems that we don't the people are actually more energized as observers.
+01:09:55
+So they actually better they're better at observing the situation.
+01:10:00
+So there might be cases in systems if you get the interaction right, where you as a supervisor will do a better job with the system together.
+01:10:10
+I agree. I think that is actually really possible. I guess mainly I'm pointing out that if you do it naively, you're implicitly assuming something that assumption might actually really be wrong. But I do think that if you explicitly think about what the agent should do, such that the person still stays engaged, what the so that you essentially empower the person to warn. And then that's the really the goal, right, is you still have a driver, so you want to empower them to be so much better than they would be by themselves.
+01:10:44
+And that's different. It's a very different mindset than I want them to basically not drive and but be ready to sort of take over.
+01:10:57
+So one of the interesting things we've been talking about is the rewards that they seem to be fundamental to the way robots behaves.
+01:11:06
+So broadly speaking, we've been talking about utility functions for a comment on how do we approach the design of reward functions, like how do we come up with good reward functions?
+01:11:19
+Mm hmm. Well, really good question, because the answer is we don't. This was you know, I used to think I used to think about how well, it's actually really hard to specify rewards for interaction because it's really supposed to be what the people want.
+01:11:41
+And then you really you know, we talked about how you have to customize what you want to do to the end user.
+01:11:47
+But I kind of realized that even if you take the interactive component away, it's still really hard to design reward functions.
+01:11:59
+So what do I mean by that? I mean, if we assume this sort of paradigm in which there's an agent and his job is to optimize some objective, some reward, utility loss, whatever cost, if you write it out, maybe it's a sad depending on the situation or whatever it is.
+01:12:20
+If you write it out and then you deploy the agent, you'd want to make sure that whatever you specified incentivizes the behavior you want from the agent in any situation that the agent will be faced with. Right. So I do motion planning on my robot arm. I specify some cost function like, you know, this is how far away you should try to stay. So much am I stay away from people. And it's how much it matters to be able to be efficient and blah, blah, blah.
+01:12:51
+I need to make sure that whatever I specify those constraints are trade offs or whatever they are, that when the robot goes and solves that problem in every new situation, that behavior is the behavior that I want to see. And what I'm finding is that we have no idea how to do that.
+01:13:09
+And basically what I can do is I can sample I can think of some situations that I think are representative of what the robot will face and I can tune in and then tune some reward function until the optimal behavior is what I want on those situations, which, first of all, is super frustrating because, you know, through the miracle of A.I., we take we don't have to specify rules for behavior anymore. Right. The you are saying before the robot comes up with the right thing to do, you plug in the situation.
+01:13:45
+It optimizes that situation. It optimizes, but you have to spend still a lot of time on actually defining what it is that that criteria should be. Make sure you didn't forget about 50 bazillion things that are important and how they all should be combining together to tell the robot what's good and what's bad and how good and how bad.
+01:14:05
+And so I think this is this is the lesson that I don't know, kind of I guess I close my eyes to it for a while because I've been, you know, tuning cost functions for ten years now.
+01:14:20
+But it's it's really strikes me that, yeah, we've moved the tuning and the like designing of features or whatever from the behavior side into the reward side. And yes, I agree that there's way less of it, but it still seems really hard to anticipate any possible situation and make sure you specify a reward function that, when optimized, will work well in every possible situation.
+01:14:52
+So you're kind of referring to unintended consequences or just in general, any kind of suboptimal behavior that emerges outside of the things you set out of distribution, suboptimal behavior that is, you know, actually optimal.
+01:15:06
+I mean, this I guess the idea of unintended consequences. You know, it's often I respect what you specified, but it's not what you want.
+01:15:12
+And there's a difference between those.
+01:15:14
+But that's not fundamentally a robotics problem. That's a human problem.
+01:15:18
+So that's the thing. Yeah, right. So there's this thing called Goodhart law, which is you set a metric for an organization and the moment it becomes on target that people actually optimize for, it's no longer a good metric. What's the called the good hard law?
+01:15:34
+It's the law. So the moment you specify a metric, it stops doing his job?
+01:15:38
+Yeah, it starts doing its job. So there's yeah.
+01:15:41
+There's such a thing as often optimizing for things and failing to to think ahead of time of all the possible things that might be important. And so that's. So that's interesting because. He started work a lot on reward, learning from the perspective of customising to the end user, but it really seems like it's not just the interaction with the end user. That's a problem of the human and the robot collaborating so that the robot can do what the human wants.
+01:16:12
+Right. This kind of back and forth, the robot probing, the person being informative, all of that stuff might be actually just as applicable to this kind of maybe new form of human robot interaction, which is the interaction between the robot and the expert programmer, roboticist designer in charge of actually specifying what the heck it wants to do in specifying the task for the robot. That's so cool.
+01:16:38
+And collaborating on the reward, collaborating on the reward design. And so what? What does it mean? What is it? When we think about the problem, not as someone specifies all of your job is to optimize and we start thinking about your in this interaction and collaboration. And the first thing that comes up is when the person specifies the reward, it's not, you know, gossip.
+01:17:03
+It's not like the letter of the law. It's not the definition of the reward function. You should be optimizing because they're doing their best, but they're not some magic perfect oracle. And the sooner we start understanding that, I think the sooner we'll get to more advanced robots that function better and different situations. And then then you have to kind of say, OK, well, it's it's almost like the robots are over learning over there, putting too much weight on the reward specified by definition and maybe leaving a lot of other information on the table, like what are other things we could do to actually communicate to the robot about what we want them to do besides attempting to specify a reward for, hey, you have this awesome again and love the poetry of leaked information, since you mention humans leak information about what they want, you know, leak reward signal for the for the robot.
+01:18:02
+So how do we detect these leaks that.
+01:18:05
+Yeah, what are these leaks? The just I don't know. Those were recently saw it, read it. I don't know where from you. And it's going to stick with me for a while for some reason, because it's not explicitly express the kind of leaks indirectly from our behavior.
+01:18:21
+We do. Yeah, absolutely. So I think maybe some surprising bits. Right. So we were talking before about robot arm. It needs to move around. People carry stuff, put stuff away, all of that. And now imagine that, you know, the robot has some initial objective that the programmer gave in so they can do all these things functional, is capable of doing that.
+01:18:49
+And now I notice that it's doing something and maybe it's coming too close to me. Right. And maybe I'm the designer. Maybe I'm the end user.
+01:18:58
+And this robot is now in my home and I push it away. So I push away because, you know, it's it's a reaction to what the robot is currently doing. And this is what we call physical human robot interaction. And now there's a lot of there's a lot of interesting work on how to respond to physical human robot interaction, which is the robot do. If such an event occurs and there's sort of different schools of thought, it's well, you know, you can sort of treated the controller theoretically and say this is a disturbance that you must reject.
+01:19:28
+You can sort of treat it more. I kind of heuristically inside. I'm going to go into some, like, gravity compensation mode that I'm using manoeuvrable around. I'm going to go in the direction of the person push me. And and to us, part of realization has been that that is a signal that communicates about the reward, because if my robot was moving in an optimal way and I intervened, that means that I disagree with this notion of optimality or whatever it thinks is optimal is not actually optimal.
+01:20:00
+And sort of optimization problems aside, that means that the cost function, the reward function is is incorrect. This does not what I wanted to be.
+01:20:10
+How difficult is a signal to to to interpret and make actionable SILLIAC? Because this connects to autonomous vehicle discussion, whether in the semi autonomous vehicle or autonomous vehicle with a safety drive or disengages the car like. But they could have disengaged it for a million reasons. Yeah.
+01:20:29
+Yeah. So that's true. Again, it comes back to a can you can you structure a little bit your assumptions about how human behavior relates to what they want?
+01:20:41
+And, you know, you can one thing that we've done is literally just treated this external thought that they applied. As you know, when you take that and you add it with what the target the robot was already applying, that overall action is probably relatively. Respect to whatever it is that the person wants and then that gives you information about what it is that they want, so you can learn that people want you to stay further away from them.
+01:21:04
+Now, you're right that there might be many things that explain just that one signal that you might need much more data than that for for for the person to be able to shape your reward function over time. You can also do this info gathering stuff that we were talking about. And I know we've done that in that context, just to clarify. But it's definitely something we thought about where you can have the robot start acting in a way like if there are a bunch of different explanations.
+01:21:30
+Right. It moves in a way where it seems if you correct it in some other way or not, and then kind of actually plans its motion so that it can disambiguate and collect information about what you want anyway. So that's one way that's kind of sort of leaked information, maybe even more subtle. Leaked information is if I just press the E right. I just I'm doing it out of panic because the robot is about to do something bad. There's, again, information there.
+01:21:55
+Right. OK, the robot should definitely stop, but it should also figure out that whatever was about to do was not good. And in fact, it was so not good that stopping and remaining stopped for a while was better, a better trajectory for it than whatever it is that it was about to do. And that, again, is information about what are my preferences, what do I want.
+01:22:14
+Speaking of Easterhouse, what are your. Expert opinions on the three laws of robotics from Isaac Asimov don't harm humans, obey orders, protect yourself.
+01:22:28
+And it's a suspicious, silly notion. But I speak to so many people these days, just regular folks, just, I don't know my parents and so on about robotics.
+01:22:36
+And they kind of operate in that space of, you know, imagining our future with robots and thinking, what are the ethical how do we get that dance?
+01:22:47
+Right.
+01:22:48
+I know the three laws might be a silly notion, but do you think about like what universal reward functions that might be that we should enforce on the robots of the future, or is that a little too far out?
+01:23:04
+It does it or is the mechanism that you just described shouldn't be three laws. It should be constantly adjusting kind of thing?
+01:23:12
+I think it should constantly be adjusting. And I think the issue with the laws is I don't even know their words and I have to write math and have to translate them into math.
+01:23:23
+What does it mean to harm me or is a basic math? What?
+01:23:29
+Right. Because we just talked about how you try to say what you want, but you don't always get it right. And you want these machines to do what you want, not necessarily exactly what your literacy you want to you don't want them to take you literally. You want to take what you say and interpret it in context. And that's what we do with the specified rewards. We don't take them literally any more from the designer.
+01:23:53
+We not we as a community, we as you know, some members of my group, we and some of our collaborators like Peter Bill and Sarah Russell, we sort of circled the designer, specified this thing.
+01:24:10
+But I'm going to interpret it not as this is the universal reward function that I shall always optimize always and forever, but as this is good evidence about what the person wants.
+01:24:22
+And I should interpret that evidence in the context of these situations that it was specified for, because ultimately that's what the designers thought about. That's what they had in mind. And really them specifying reward function that works for me in all these situations is really kind of telling me that whatever behavior that incentivizes must be good behavior, respect to. The thing that I should actually be optimizing for and so now the robot kind of has uncertainty about what it is that it should be, what its reward function is.
+01:24:51
+And then there's all these additional signals we've been finding that it can kind of continually learn from and adapt its understanding of what people want every time the person corrected. Maybe they demonstrate. Maybe they need to stop. Hopefully not the right one. Really, really crazy one is the environment itself. Like our world. You don't it's not you know, you observe our world and and the state of it. And it's not that you're seeing behavior and you're saying our people are making decisions that are rational, blah, blah, blah.
+01:25:24
+It's but but but our world is something that we've been acting when according to our preferences. So I have this example where, like, the robot walks to my home and my shoes are laid down on the floor kind of in a line. Right. It took effort to do that. So even though the robot doesn't see me doing this, you know, actually aligning the shoes, it should still be able to figure out that I want the shoes, the line, because there's no way for them to have magically know instantiated themselves in that way.
+01:25:56
+Someone must have actually just taken the time to do that. So it must be important.
+01:26:01
+So the environment actually tells the leaks, information, leaks, information. The environment is the way it is because humans somehow manipulated it. So you have to kind of reverse engineer the narrative that happened to create environment that is in that leaks the preference information.
+01:26:17
+Yeah. And you have to be careful. Yeah, right.
+01:26:20
+Because because people don't have the bandwidth to do everything. So just because, you know, my house is messy doesn't mean that I want it to be messy. Right. But that just shows I you know, I didn't put the effort into that. I put into something else. So the robot just figured out well, that something else was more important. But it doesn't mean that, you know, the house being misused. Not so it's the little subtle.
+01:26:40
+But yeah, we really think of it.
+01:26:41
+The state itself is kind of like a choice that people implicitly made about how they want their world, what book or books, technical or fiction or philosophical, had.
+01:26:53
+When you look back, your life had a big impact.
+01:26:56
+Maybe it was a turning point, was inspiring in some way. Maybe we were talking about some silly book that nobody in their right mind would want to read.
+01:27:05
+Or maybe it's a book that you would recommend to others to read. Or maybe those could be two different recommendations, that of books that could be useful for people on their journey.
+01:27:18
+When I was in kind of a personal story, when I was in 12th grade, I got my hands on a PDF copy in Romania of Russell Norvig, a modern approach. I didn't know anything about A.I. at that point. I was you know, I had watched the movie The Matrix, the exposure.
+01:27:41
+And and so I started going through this thing. And, you know, you were asking in the beginning, what are what are you know, it's math and it's algorithms.
+01:27:53
+What's interesting, it was so captivating, this notion that you could just have a goal and figure out your way through a kind of a messy, complicated situation or what sequence of decisions you should make. The other autonomous way to achieve that goal. That was so cool.
+01:28:13
+I'm you know, I'm biased, but that's a cool book. Yeah, they look at you, convert, you know, the goal, the goal of intel, the process of intelligence and mechanise it. I had the same experience. I was really interested in psychiatry and trying to understand human behavior.
+01:28:29
+And then I am on an approach is like, wait, you can just reduce it all to kenwright math about human behavior, right?
+01:28:36
+Yeah. So that's and I think that's stuck with me because, you know, a lot of what I do, a lot of what we do in my lab is write math about human behavior, combine it with data and learning, put it all together, give it to robots to plan with and hope that instead of writing rules for the robots, writing heuristics, designing behavior, they can actually autonomously come up with the right thing to do around people. That's kind of, you know, that's our signature move.
+01:29:03
+We wrote some math and then instead of kind of handcrafting this and that and that and the robot figuring stuff out and isn't that cool. And I think that is the same enthusiasm that I got from the robot, figured out how to reach that goal in that graph. Isn't that cool?
+01:29:19
+So I apologize for the romanticized questions, but and the silly ones. If a doctor gave you five years to live, uh, sort of emphasizing the finiteness of our existence, what would you try to accomplish?
+01:29:37
+It's like my biggest nightmare, by the way. I really like living. So I'm actually I really don't like the idea of dying, of being told that I'm going to die as I doing on that for a second.
+01:29:49
+Do you I mean, do Medidata ponder on your mortality or are human? The fact that this thing ends? It seems to be a fundamental feature.
+01:29:58
+Do you think of it as a feature or a bug, too? Is it you said you don't like the idea of dying, but if I were to give you a choice of living forever, like you're not allowed to die.
+01:30:09
+Yeah. Now I'll say that I want to live forever, but I watch this show. It's very still it's called a good place and they reflect a lot on this. And, you know, the the moral of the story is that you have to make the afterlife be finite, too, because otherwise people just got it's like, well, it's like whatever way around.
+01:30:27
+So so I think the finance helps. But but yeah. It's just, you know, I don't I don't I'm not a religious person. I don't think that there's something after. And so I think it just ends and you stop existing. And I really like existing. It's just it's such a great privilege to exist that that.
+01:30:50
+Yeah, it's just and I think that's the scary part.
+01:30:52
+I still think that we like existing so much because it ends and that's so sad. Like it's so sad to me every time, like I find almost everything about this life beautiful, like the silliest, most mundane things are just beautiful.
+01:31:06
+And I think I'm cognizant of the fact that I find it beautiful because and I like it and it's so I don't know I don't know how to feel about that.
+01:31:17
+I also feel like there's a lesson in there for robotics and AI that it's not like the finiteness of things seems to be a fundamental nature of human existence.
+01:31:30
+I think some people sort of accuse me of just being Russian and melancholic and romantic or something, but that seems to be a fundamental nature of our existence that should be incorporated in our world functions.
+01:31:46
+But anyway, uh, if you were speaking of reward functions, if you only had five years, what would you try to accomplish?
+01:31:55
+This is the thing I I'm thinking about this question and have pretty joyous moment because I don't know that I would change change minds.
+01:32:05
+I'm what I'm I'm you know, I'm trying to make some contributions to how we understand human eye interaction. I don't think I would change that. Um, maybe I'll take you know, I take more trips to the Caribbean or something, but I try to do that. All right. From time to time.
+01:32:25
+So, yeah, I mean, I try to to do the things that bring me joy and thinking about these things, bring me joy is the very kind of thing, you know, don't do stuff that doesn't spark joy. For the most part. I do things that spark joy.
+01:32:39
+Maybe I'll do like less service in the department or something like that. I'm dealing with admissions anymore. But but no, I mean, I think I have amazing colleagues and amazing students, an amazing family and friends and kind of spending time and some balance with all of them is what I do. And I that's what I'm doing already. So I don't know that I would really change anything.
+01:33:05
+So on the spirit of positiveness. Oh, what small act of kindness. If one pops to mind where you want shown that you will never forget me when.
+01:33:17
+I was in high school, my friends, my my classmates did some tutoring, we were gearing up for our baccalaureate exam and they did some tutoring on, well, someone maximum, whatever I was comfortable enough with with some of those subjects. But physics was something that I hadn't focused on in a while. And so they were all working with this one teacher. And I started working with that teacher. Her name is now called Bikaner. And she she was the one who kind of opened up this whole world for me because she sort of told me that I should take the seats and apply to go to college abroad and do better on my English and all of that.
+01:34:09
+And when it came to, well, financially, I couldn't my parents couldn't really afford to do all these things. She started tutoring me on physics for free and on top of that, sitting down with me to kind of train me for Saturday's and all that jazz that she had experience with. Wow. That and obviously that has taken you to be here today. Also, one of the world experts in robotics. It's funny, those little. Yeah.
+01:34:38
+Do these views or for no reason really acts of kindness, just sort of Caccamo wanting to support someone, you know. Yeah. So we talked a ton about reward functions. Let me talk about the most ridiculous big question. What is the meaning of life? What's the reward function under which we humans operate? Like what? Maybe to your life, maybe broader to human life in general. What do you think?
+01:35:09
+What gives life fulfillment, purpose, happiness, meaning? You can't even ask that question with a straight face. That's ridiculous. I can't. I can't. OK, so. You know, you're going to try to answer it anyway, I'm sure. So I was in a planetarium once. Yes.
+01:35:31
+And, you know, they show you the thing and they zoom out and zoom out and it's all like you were a speck of dust kind of thing.
+01:35:37
+I think I was conceptualizing that were kind of what our humans were just on this little planet, whatever. We don't matter much in the grand scheme of things. And then my mind got really blown because this doctor talked about this multiverse theory where they kind of zoom down and are like, this is our universe. And then like there's a bazillion other ones and they pop in and out of existence. So like our whole thing, that's that we can't even fathom how big it is, was like a blimp that went in and out.
+01:36:06
+And at that point I was like, OK, I'm done. Not there is no meaning. And clearly what we should be doing is try to impact whatever local thing we can impact our communities, live a little bit behind. They're our friends, our family, our local communities, and just try to be there for other humans because I just everything beyond that seems ridiculous.
+01:36:30
+I mean, are you like how do you make sense of these multiverses? Like, are you inspired by the immensity of it?
+01:36:38
+Do you I mean, is there is an amazing to you or is it almost paralyzing in in the mystery of it. It's frustrating. I'm frustrated by my inability to comprehend. It's just it feels very frustrating. It's like there's some stuff that, you know, we should time blah, blah, blah, that we should really be understanding. And I definitely don't understand it. But, you know, the the the amazing physicists of the world have a much better understanding than me.
+01:37:13
+But there's a line in the grand scheme of things.
+01:37:16
+So it's very frustrating. It's just it feels like our brains don't have some fundamental capacity. Yeah, well, yet or ever. I don't know.
+01:37:25
+But what that's one of the dreams of artificial intelligence is to create systems or expand our cognitive capacity in order to understand the build the theory of everything with the physics and understand what the heck these multiverses are. So I think there's no better way to end this, talking about the meaning of life and the fundamental nature of the universe and democracy first, aka is a huge honor, one of the my favorite conversations I've had.
+01:37:55
+Really, really appreciate your time. Thank you for talking to. Thank you for coming.
+01:38:00
+Come back again. Thanks for listening to this conversation with anchor Druggan, and thank you for presenting sponsor Kashyap. Please consider supporting the podcast by downloading cash app and using Code Leks podcast. If you enjoy this podcast, subscribe on YouTube. Reviewed with five stars, an Apple podcast supporting a patron or simply connect with me on Twitter and Friedemann. And now let me leave you with some words from Isaac Asimov. Your assumptions are your windows in the world, scrubbed them off every once in a while or the light won't come in.
+01:38:38
+Thank you for listening and hope to see you next time.

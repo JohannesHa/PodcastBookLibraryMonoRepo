@@ -1,0 +1,1012 @@
+00:00:00
+The following is a conversation with Jim Keller, his second time in the podcast. Jim is a legendary microprocessor architect and is widely seen as one of the greatest engineering minds of the computing age. In a peculiar twist of spacetime in our simulation, Jim is also a brother in law of Jordan Peterson. We talk about this and about computing, artificial intelligence, consciousness and life. Quick mention of our sponsors, athletic greens, only one nutrition drink Brooklyn and sheets express Vupen and bell, all grass fed meat click the sponsor links to get a discount and to support this podcast.
+00:00:43
+As a side note, let me say that Jim is someone who on a personal level inspired me to be myself. There was something, in his words, on and off the mic, or perhaps that he even paid attention to me at all. That almost told me you're all kid, a kind of pat on the back that can make the difference between the mind that flourishes and a mind that is broken down by the cynicism of the world. So I guess that's just my brief few words of thank you to Jim and in general, gratitude for the people who have given me a chance on this podcast in my work and in life.
+00:01:18
+If you enjoy this things, subscribe on YouTube, review and have a podcast, follow on Spotify, supporta on Patrón or connect with me on Twitter. Allex Friedemann, as usual. I'll do a few minutes of ads now and no ads in the middle. I try to make this interesting, but I'll give you time stamps. So if you skip, please still check out the sponsors by clicking the links in the description. It is the best way to support this podcast.
+00:01:43
+This show is sponsored by a flood of greens that all in one daily drink to support better health and peak performance. It replace the multivitamin for me and went far beyond that was 75 vitamins and minerals. I do intermittent fasting of 16 to 24 hours every day and always break my fast with a flood of greens. I'm actually drinking it twice a day now. Training for the Gorgons challenge. I can't say enough good things about these guys. It helps me not worry whether I'm getting all the nutrients I need, especially since they keep iterating on their formula, constantly improving it.
+00:02:18
+The other thing I've taken for a long time outside of athletic greens is fish oil. So I'm especially excited now that there are selling fish oil and are offering listeners of this podcast free. One month's supply of wild caught Omega three fish oil sounds good was wild card for some reason when you go to a flat, agrees that councilor's likes to claim the special offer. That's a flood agreement that works for the drink and the fish oil. Trust me, it's worth it.
+00:02:47
+This episode is sponsored by Brook Linen Sheets.
+00:02:51
+Sleep has increasingly become a source of joy for me with a sleep, self-cleaning bed and these incredible smooth, buttery, smooth as they call them, and cozy Brooklynese sheets. I've often slept on the carpet without anything but a jacket and jeans, so I'm not exactly the world's greatest expert in comfort. But these sheets have been an amazing upgrade over anything I've ever used.
+00:03:16
+Even the responsible adult sheets have purchased in the past. There's a variety of colors, patterns, material, variants to choose from.
+00:03:27
+They have over fifty thousand five star reviews.
+00:03:30
+People love them. I think figuring out a sleep schedule that works for you is one of the central challenges of a productive life. Don't let your choice of sheets get in the way of this optimization process. Go to Brooklyn and dotcom and use cold legs to get 25 bucks off when you spend one hundred dollars or more. Plus you get free shipping as Brooklyn and Dotcom and enter promo code Lack's. This show is sponsored by Express VPN, a company that adds a layer of protection between you and a small number of technology companies that control much of your online life.
+00:04:07
+Express EPN is a powerful tool for fighting back in the space of privacy. As I mentioned in many places, I've been honestly troubled by Amazon's decision to remove parler from AWB. To me, it was an overreach of power that threatens the American spirit of the entrepreneur anyway. Expressive open hides your IP address, something that could be used to personally identify you. So the VP makes your activity harder to trace and sell to advertisers. And it does all of this without slowing your connection.
+00:04:40
+I've used it for many years on Windows, Linux and Android, actually an iPhone now, but it's available everywhere else too. I don't know where else it's available. Maybe Windows Phone. I don't know. For me, it's been fast and easy to use one big power on button. That's fun. The press probably my favorite intuitive design of an app that doesn't try to do more than it needs to go to express viewpoint that like likes to get an extra three months free on a one year package that's express VPN dot com slash pod.
+00:05:13
+This show is also sponsored by Bell Campeau Farms, whose mission is to deliver meat you can feel good about, that's meat that is good for you, good for the animals and good for the planet. Wellcamp animals graze on open pastures and seasonal grasses, resulting in meat that is higher in nutrients and healthy fats. The farm's a certified humane, which is the gold standard for the kind and responsible treatment of farm animals. As I've mentioned in the past, clean diet of meat.
+00:05:44
+Veggies for me has been an important part of my productive life. It maximizes my mental and physical performance. Delcampo has been the best meat I've ever eaten at home, so I can't recommend it highly enough. Also, the CEO of the company onea forget her last name starts with an F.. I think it's Fernald. Follow her on Instagram or wherever else she's active because she happens to be a brilliant chef and just has a scientific view of agriculture and food in general, which I find fascinating and inspiring.
+00:06:18
+Anyway, you can order Delcampo sustainably raised meats to be delivered straight to your door using code leks at Delcampo dot com slash Lexx for twenty percent of the first time customers that collects at Bergkamp dotcom slash Lex. Trust me, the extra bit of cost is worth it. And now here's my conversation with Jim Keller. What's the value and effectiveness of theory versus engineering, this dichotomy in building good software or hardware systems?
+00:07:12
+Well, it's good design is both. I guess that's pretty obvious, but engineering, do you mean, you know, reduction of practice, of known methods and science is the pursuit of discovery, things that people don't understand or solving unknown problems.
+00:07:29
+Definitions are interesting here, but I was thinking more in theory, constructing models that kind of generalize about how things work.
+00:07:38
+Engineering is actually building stuff. The pragmatic like, OK, we have these nice models, but how do we actually get things to work? Maybe economics is a nice example. Like economists have all these models of how the economy works and how different policies will have an effect. But then there's the actual OK, let's call it engineering of like actually deploying the policies.
+00:08:02
+So computer design is almost all engineering and reduction objectives and methods now. Because of the complexity of the computers we built. You know, you could think you're well, we're just go write some code and then we'll verify it and we'll put it together and then you find out that the combination of all that stuff is complicated and then you have to be inventive to figure out how to do it right. So that stuff happens a lot. And then. Every so often some big idea happens, but it might be one person and that ideas and what in the space of engineering or is it in the space?
+00:08:39
+Well, I'll give you example. So one of the limits of computer performance is branch prediction. So and there's there's a whole bunch of ideas about how good you could predict a branch. And people said there's a limit to it and that's been taught a curve. And somebody came up with a better way to do branch prediction a lot better. And he published a paper on it. And every computer in the world now uses it. And it was one idea.
+00:09:04
+So the the engineers who build branch bricks and hardware were happy to drop the one kind of training array and put it in another one. So it was it was a real idea.
+00:09:14
+And branch prediction is as one of the key problems underlying all of sort of the lowest level of software.
+00:09:21
+It boils down to branch prediction boils down uncertainty. Computers are limited by a single three computers, limited by two things that predictability of the past of the branches and a predictability locality of data. So we have predictors that now predict both of those pretty well. Yeah, so memory is, you know, a couple hundred cycles away, local crashes couple cycles away. When you're executing fast, virtually all the data has to be in the local cache.
+00:09:48
+So simple programs, as you know, add one to every element in an array.
+00:09:52
+It's really easy to see what the stream of data will be, but you might have a more complicated program that you know. So it's good to get the element of disarray, look at something, make a decision and go get another element. It's kind of random and you can think that's really unpredictable. And then you make this big predictor that looks at this kind of pattern and you realize, well, if you get this data in this data, then you probably want that one.
+00:10:13
+And if you get this one in this one and this one, you probably want that one.
+00:10:17
+And there's that theory or engineering like the paper that was written was that, well, that was some totted kind of kind of discussion, or is it more like, here's a hack that works?
+00:10:26
+Well, it's a little bit of both. Like there's information theory, I think, somewhere. Oh, yeah. So that's actually trying to prove. But once once, you know, the method implemented is an engineering problem. Now, there's a flip side of this, which is in a big design team. What percentage of people think they're they're they're their plan or their life's work is engineering versus design inventing things so lots of companies will reward you for filing patents?
+00:10:56
+Yes, some very big companies get stuck because they get promoted. You have to come up with something new. And then what happens is everybody's trying to do some random new thing, 99 percent of which doesn't matter and the basics get neglected. And or they get there's a dichotomy, they think like the cell library and the basic had tools, you know, or basic, you know, software, validation methods, that simple stuff. You know, they want to work on the exciting stuff.
+00:11:26
+And then they spend lots of time trying to figure out how to patent something. And that's mostly useless.
+00:11:31
+But the breakthroughs on simple stuff. No, no. You know, you have to do the simple stuff really well. If you're building a building out of bricks, you want great bricks. So you go to two places and Celebrex. One guy says, yeah, they're over there, an ugly pile. And the other guy is like lovingly tells you about the 50 kinds of bricks and how hard they are and how beautiful they are. And, you know, square they are, you know, which when you go buy bricks for them, which is going to make a better house.
+00:11:59
+So you're talking about the craftsman, the person who understands bricks, loves brakes, who loves them. Right. That's a good word. You good engineering is great craftsmanship. And when you start thinking engineering is about invention and set up a system that rewards invention, the craftsmanship gets neglected.
+00:12:20
+OK, so maybe one perspective is the theory.
+00:12:23
+The science overemphasizes invention and engineering emphasizes craftsmanship. And therefore, like so if you it doesn't matter what you do a theory.
+00:12:33
+Well, everybody like read the tech rags are always talking about some breakthrough or intervention innovation. And everybody thinks that's the most important thing. But the number of innovative ideas is actually relatively low. We need them. Right. And innovation creates a whole new opportunity. Like when when some guy invented the Internet. Right. Like that was a big thing. The million people that wrote software against that were mostly doing engineering software writing. The elaboration of that idea was huge.
+00:13:03
+I don't know if you know Brandon Naohiro JavaScript in 10 days. That's an interesting story. It makes me wonder.
+00:13:10
+And it was, you know, famously for many years considered to be a pretty crappy programing language and still is perhaps has been improving sort of consistently.
+00:13:20
+But the interesting thing about that guy is, you know, he doesn't get any awards.
+00:13:27
+You don't get a Nobel Prize or Fields Medal or a crappy piece of that software code that would there is currently no one programing language in the world that runs now is increasingly running the back end of the Internet.
+00:13:43
+Does he does he know why everybody uses it like that would be an interesting thing. Was it the right thing at the right time? Because like when stuff like JavaScript came out, like there was a move from, you know, writing programs in C++ to let's call it what they call managed code frameworks, where you write simple code might be interpreted. It has lots of libraries. Productivity's high. You don't have to be an expert. So, you know, Java was supposed to solve all the world's problems.
+00:14:11
+It was complicated. JavaScript came out after a bunch of other scripting languages. I'm not an expert on it, but. Yeah, but was it the right thing at the right time or was there something, you know, clever because he wasn't the only one. There's a few elements. Or maybe if you figured out what it was. No. Then you'd get a prize like that. Yeah. You know, this probably doesn't define this or this needs a good promoter.
+00:14:38
+Well, I think there is a bunch of blog posts written about it, which is like wrong is right, which is like doing the crappy thing fast, just like hacking together the thing that answers some of the needs and then iterating over time, listening to developers like listening to people who actually use the thing. This is something you can do more in software, but the right time, like you have to sense, you have to have a good instinct of what is the right time for the right tool and make a super simple.
+00:15:09
+And just get it out there. The problem is this is true with hardware. This is less true of software. Is this backward compatibility that just drags behind you as you know, as you try to fix all the mistakes of the past.
+00:15:23
+But the timing was good. There's something about that. And it wasn't accidental. You have to like give yourself over to the you have to have this, like, broad sense of what's needed now, both scientifically and like the community. And just like this, it was obvious that there was no the interesting thing about JavaScript is everything that ran in the browser at the time, like Java and and I think other like scheme, other programing languages, they were all in a separate external container.
+00:15:59
+Mm hmm. And then JavaScript was literally just injected into the Web page is the dumbest possible thing running in the same thread as everything else. And like it was inserted as a comment. So JavaScript code is inserted as a comment in the HTML code.
+00:16:17
+And it was I mean, there's it's either genius or super dumb, but it's like no apparatus for like a virtual machine and computer.
+00:16:26
+It just executed in the framework of programs already running.
+00:16:29
+And it was cool. And then because something about that accessibility, the ease of its use resulted in then developers innovating of how to actually use it.
+00:16:40
+I mean, I don't even know what to make of that, but it does seem to echo across different software like stories of different software as the same story, really crappy language they just took over the world.
+00:16:55
+Have a joke that the random length instructions, that variable length instructions sets always one, even though they're obviously worse, like nobody knows why. X 36 is arguably the worst architecture, you know, on the planet is one of the most popular ones.
+00:17:10
+I mean, isn't isn't that also the story of risk versus. I mean, that simplicity. There's something about simplicity that us in this evolutionary process is valued. It's simple. It's gets it spreads faster, it seems like. Or is that not always true? That's always true.
+00:17:30
+Yeah, it could be simple is good but too simple is bad for why the risk when you think so far the risk when in the long arc of history we don't know. So who's going to win, what's risk, what risk and who's going to win in that space.
+00:17:45
+And these instructions that's hey, I thought I was going to win, but there'll be little computers that run little programs like normal all over the place. But but we're going through another transformation, so you think instruction sets underneath it all will change? Yeah, they evolve slowly. They don't matter very much. They don't matter very much, OK. I mean, the limits of performance are, you know, predictability of instructions and data. I mean, that's the big thing.
+00:18:12
+And then the usability of it is some, you know. Quality of design, quality of tools, availability, the great now X 36 is proprietary with Intel AMD, but they can change it any way they want independently. My right arm is proprietary to arm and they won't let anybody else change it. So it's like a sore point and W5 is open source so anybody can change it, which is super cool. But that also might mean it gets changed in too many random ways that there's no common subset of it that people can use.
+00:18:47
+Do you like open or do you like close, like if you were to bet all your money on one or the other risk versus no idea.
+00:18:53
+Case dependent. Well, actually six. Oddly enough, when Intel first started developing it, they licensed it like seven people. So it was the open architecture and then they move faster than others and also bought one or two of them. But there were seven different people making x 36 because at the time there was 65 to in zeros and, you know, eighty, eighty six. And you could argue everybody thought xianyi was the better instruction side, but that was proprietary.
+00:19:21
+Proprietary to one place. Oh. In the sixty eight hundred. So it was like five, four or five different microprocessors. Intel one open got the market share because people felt like they had multiple sources from it. And then over time it narrowed down to two players.
+00:19:37
+So why you as a historian. Well why did Intel when for so long with, with their processors, I mean they rate their process.
+00:19:49
+Development was great. So it's just looking back to JavaScript and very is a Microsoft and Netscape and all these Internet browsers.
+00:19:58
+Microsoft won the browser game because they aggressively stole other people's ideas, like right after they did it.
+00:20:07
+You know, I don't know if it was stealing other people's ideas. They started in a good way, stealing it.
+00:20:12
+Just to clarify, they started making ramp's random access memories.
+00:20:17
+And then at the time when the Japanese manufacturers came up, you know, they were getting out, competed on that, and they pivoted the microprocessors and they made the first integrated microprocessor program since the Forteo for something.
+00:20:33
+Who who's behind that? That's a hell of Andy Grove. He was great. That's a hell of a pivot, and then they led semiconductor industry like they were just a little company, IBM, all kinds of big companies had boatloads of money and they innovated everybody out of it.
+00:20:51
+OK, yeah. Yeah. So it's not like marketing and stuff. Their processor designs were pretty good. I think the you know, Corto was probably the first one I thought was great. It was a really fast processor and then houseware. Always great. The world thinks a great processer in that, oh, if you just look at his performance versus everybody else, it's, you know, the size of it, the usability of it, it's just not specific, some kind of element that makes it beautiful.
+00:21:22
+It's just like literally raw performance. Is that how you think of Bob processers?
+00:21:26
+It's just like raw performance. Of course, it's like a horse race. The fastest one wins.
+00:21:33
+Now, you don't care how there's the fastest in an environment like four years. You made the fastest one you could and then people started to have power limits. So then you made the fastest at the right power point. And then and then when we started doing multiprocessor is like, if you could scale your processors more than the other guy, you could be 10 percent faster on like a single thread. But you have more threads, so there's lots of variability.
+00:21:59
+And then ALM really explored, like, you know, a series in the series, in the series, like a family of processors for all these different design points from like unbelievably small and simple. And so then when you're doing a design, it's sort of like this big pallet of CPUs, like they're the only ones with a credible, you know, top to bottom pallet and. What do you mean, incredible talked about? Well, there's people who make microcontrollers that are small, but they don't have a fast one.
+00:22:30
+There's people make fast processors but don't have a medium or a small one that hard to do that full palette.
+00:22:36
+That seems like a it's a lot of different sorts of difference in the arm, folks and intel in terms of the way they're approaching this problem.
+00:22:45
+Well, Intel, almost all their processor designs were very custom, high end, you know, for the last 15, 20 years, the fastest horse possible, you know, in one horse.
+00:22:56
+Yeah. And architecturally, they're really good. But the company itself was fairly insular to what's going on in industry with CAD tools and stuff. And there's this debate about custom design versus synthesis. And how do you approach that? I'd say Intel was slow on the cutting to synthesize processors.
+00:23:15
+ARM came in from the bottom and they generated IP, which went to all kinds of customers. So they had very little say in how the customer implemented their IP. So ARM is super friendly to the synthesis IP environment, whereas Intel said we're going to make this great client chip server chip with our own cattle's, with our own process, with our own other supporting IP and everything only works with our stuff.
+00:23:40
+So that is our winning the mobile platform space in terms of. And so in that what you're describing is why they're winning.
+00:23:52
+Well, they had lots of people doing lots of different experiments, so they controlled the processor architecture and IP, but they let people put in lots of different chips and there was a lot of variability in what happened there. Whereas Intel, when they made their mobile, their foray into mobile, they had one team doing one part, right? So it wasn't an experiment and then their mindset was PC mindset, Microsoft software mindset. And that brought a whole bunch of things along that the mobile world, the embedded world.
+00:24:21
+What do you think it was possible for Intel to pivot hard and when the mobile. That's a hell of a difficult thing to do, right? For a huge company to just pivot. And it's so interesting to hear because we'll talk about your current work. It's like. It's clear that PCs were dominating for several decades, like desktop computers and then mobile. It's unclear. It's the leadership question.
+00:24:49
+Like, I like Apple under Steve Jobs, when he came back, they pivoted multiple times. You know, they build iPods and iTunes and phones and tablets and great Macs like like who knew computers should be made out of aluminum? Nobody knew that. That's a great super fun, though, Steve, yeah, Steve Jobs, like they pivoted multiple times and, you know, the old intel, they did that multiple times. They made ramps and processors and processes and.
+00:25:19
+I got to ask this, what was it like working with Steve Jobs? I didn't work with him. Did you interact with them twice? I said hi to him twice in the cafeteria. What did you say? Hi. He said, Hey, fellas, he's friendly.
+00:25:35
+He was wandering around and was somebody couldn't find a table because the cafeteria was was packed and I gave my table. But I work for my Colbert, who talked to like Mike was the unofficial CTO of Apple and a brilliant guy. And he worked for Steve for twenty five years, maybe more. And he talked to Steve multiple times a day. And he was one of the people who could put up with Steve's, let's say, brilliance and intensity. And and Steve really liked him.
+00:26:03
+And Steve trusted Mike to translate the shit he thought up into engineering products that work. And then Mike ran a group called Platform Architecture. And I was in a group so many times I'd be sitting with Mike and the phone would ring. Maybe Steve and Mike would hold the phone like this. Steve would be yelling about something or other. Yeah. And he wouldn't have it. And then he would say, Steve wants us to do this.
+00:26:27
+So Steve, a good engineer or now I don't know.
+00:26:31
+He was a great idea, guy, idea person, and he's a really good selector for talent. Yeah. So that seems to be one of the key elements of leadership. Right. And then he was a really good first principles guy. Like like somebody say something couldn't be done and he would just think. That's obviously wrong, right, but, you know. Maybe it's hard to do, maybe it's expensive to do. Maybe we need different people.
+00:26:55
+You know, there's like a whole bunch of if you want to do something hard, you know, maybe takes time. If you have to iterate, there's a whole bunch of things you could think about. But saying it can't be done is stupid. How would you compare?
+00:27:07
+So it seems like Elon Musk is more engineering centric, but it's also I think he considers himself a designer, too, has a design mind.
+00:27:16
+Steve Jobs feels like he has much more idea. Space design, space versus engineering. Yeah, just make it happen. Like the world should be this way. Just figure it out.
+00:27:26
+But he used computers, you know, he had computer people talk to them all the time. Like Mike was a really good computer guy. He knew computers could do computer mean computer hardware, like hardware, software, all of pieces of the whole thing.
+00:27:38
+And then he would have an idea about what could we do with this next that was grounded in reality. It wasn't like he was, you know, just finger painting on the wall and wishing somebody would interpret it like. So he had this interesting connection because.
+00:27:54
+Now, he wasn't a computer architecture designer, but he had an intuition from the computers we had to what could happen and essentially say intuition because it seems like he was pissing off a lot of engineers in his intuition about what can and can't be done, like the what is all these stories about like floppy disks and all that kind of stuff? Like, yeah.
+00:28:18
+So in Steve the first round, like he'd go into a lab and look at what's going on and hate it and and fire people or somebody in the elevator what they're doing for Apple, you know, not be happy. When he came back, my impression was is he surrounded himself with a relatively small group of people. Yes. And didn't really interact outside of that as much. And then the joke was, you see, like somebody moving a prototype through the quad with a with a black blanket over it.
+00:28:50
+And that was because it was secret, you know, partly from Steve, because they didn't want Steve to see it until it was ready. Yeah.
+00:28:56
+The dynamic of Jony Ive and Steve is interesting. It's like you don't want to. He ruins as many ideas as he generates. Yeah, yeah, it's a dangerous kind of line to walk out of if you have a lot of ideas, like a Gordon Bell was famous for ideas.
+00:29:16
+Right. And there wasn't that the percentage of good ideas was way higher than anybody else. It was he had so many ideas. And he was also good at talking to people about it and getting the filters right and, you know, seeing through stuff. Or it was like, hey, I want to build rockets. So Steve would hire a bunch rocket guys and Elon would go read rocket manuals.
+00:29:37
+So John's a better engineer, a sense like or like more like a love and passion for the manuals and the details, the details and the craftsmanship to write.
+00:29:50
+Well, I guess you had craftsmanship, too, but of a different kind. What do you make of the just the standard for just a little while ago, do you make of like the anger and the passion and all that, the firing and the mood swings and the madness, the, you know, being emotional and all of that? That's Steve and I guess Elon, too. So what set that a bug or a feature to feature?
+00:30:14
+So there's a graph, which is why axis productivity. Yeah, x axis at zero. It's chaos. Yeah. And infinity is complete order. Yeah. Right. So as you go from the, you know, the origin, as you improve order, you improve productivity. Yeah. And at some point productivity peaks and then it goes back down again too much order. Nothing can happen. Yes.
+00:30:39
+But the question is how close to the chaos is that. No.
+00:30:43
+Here's the thing is, once you start moving in that direction or the force vector to drive you towards order is unstoppable.
+00:30:50
+Oh, every organization will move to the place where their productivity is stymied by order. So you need. So the question is, who's the counterforce? Like, because it also feels really good as you get more organized and productivity goes up, the organization feels it, they oriented towards it, right, to hire more people, they got more guys who can run process. You get bigger, right. And then inevitably, inevitably, the organization gets captured by the bureaucracy that manages all the processes.
+00:31:22
+All right, and then humans really like that, and so if you just walk into a room and say, guys love what you're doing. But I need you to have less order. If you don't have some force behind that, nothing will happen. I can't tell you on how many levels that's profound. So that's why I'd say it's a feature now. Could you be nicer about it? I don't know. I don't know any good examples of being nicer about it.
+00:31:50
+Well, the funny thing is to get stuff done in people who can manage stuff and manage people as humans are complicated. They need lots of care and feeding. You need to tell them they look nice and they're doing good stuff. And pat on the back, right? I don't know.
+00:32:03
+You tell me. Is that is I needed? Oh yeah. Do humans need that? I had a friend who started to manage a group and he said, I figured it out. You have to praise them before they do anything. I was waiting until they were done and they're always mad at me now. I tell them what a great job they're doing while they're doing it. But then you get stuck in that trap, because then when you're not doing something, how do you confront these people?
+00:32:23
+I think a lot of people have had trauma in their childhood or disagree with you successful people that you just first do the rough stuff and then be nice later. I don't know.
+00:32:32
+OK, but, you know, nice generic companies are full of adults who have all kinds of range of childhoods, you know, and most people had OK childhoods. Well, I don't know if lots of people only work for praise, which is weird to me, like everybody.
+00:32:48
+I'm not that interested in it.
+00:32:49
+But, uh, what you're probably looking for somebody approval and even still. Yeah, maybe I should think about that. Maybe somebody who's no longer with this kind of thing and I don't know. I used to call my dad and tell him what I was doing.
+00:33:05
+He was he was very excited about engineering and stuff. You got his approval? Uh, yeah, a lot. I was lucky he decided I was smart and unusual as a kid, and that was OK when I was really young. So when I did poorly in school, I was dyslexic. I didn't read until I was third or fourth grade and they didn't care. My parents were like, oh, he'll be fine. So I was lucky. I was cool.
+00:33:31
+Is he still with us? You miss him? Gloria, he had Parkinson's and then cancer, his last 10 years were tough and it killed him, killing a man like that's hard. The mind, well, pretty good. Parkinson's causes slow dementia and the like, the chemotherapy, I think, accelerated it, but it was like hallucinogenic dementia. So he was clever and funny and interesting and was it was pretty unusual.
+00:34:07
+Do you remember conversations from that time? Like what? Do you have fond memories of the guy? Oh, yeah. Anything come to mind? A friend told me one time I could draw a computer on the whiteboard faster than anybody you'd ever met.
+00:34:21
+I said you should meet my dad. Like when I was a kid, he'd come home and say I was driving by this bridge and I was thinking about it.
+00:34:28
+And he pulled out a piece of paper and draw the whole bridge. He was a mechanical engineer and he would just draw the whole thing and then he would tell me about it and then tell me how you would have changed it. And he had this idea that he could understand and conceive anything. And I just grew up with that. So that was natural. So if, you know, like when I interview people, I ask them to draw a picture of something they did on a whiteboard.
+00:34:51
+And it's really interesting, like some people draw a little box, you know, and then they'll say and it just talks to this. And if I feel like I was just frustrated and I had this other guy come in one time, he says, well, I designed a floating point in this chip, but I'd really like to tell you how the whole thing works and then tell you how the floating works inside of it. Mind if I do that?
+00:35:08
+A cover to whiteboards in like 30 minutes. And I hired him like he was a great craftsman. I mean, that's the craftsmanship to that.
+00:35:16
+Yeah. But also the the mental agility to understand the whole thing. Right. Put the pieces in context, you know, real view of the balance of how the design worked, because if you don't understand it properly, when you start to draw it, you'll you'll fill up half the whiteboard with like a little piece of it and, you know, like your ability to lay it out in an understandable way. It takes a lot of understanding.
+00:35:40
+So and be able to zoom into the detail and then zoom out and really fast. And what about the impossible things that your dad believed that you can do anything? That's a weird feature for a craftsman. Yeah, it seems that that echoes in your own behavior. Like, that's that's the.
+00:36:01
+Well, it's not that anybody can do anything right now. Right, it's that if you work at it, you can get better at it and there might not be a limit. And they did funny things like like he always wanted to play piano, so at the end of his life started playing piano when he had Parkinson's and it was terrible.
+00:36:21
+But he thought if he really worked out in this life, maybe the next life, he'd be better at it. He might be on to something. Yeah, people enjoy doing it. Yeah, that's pretty funny. Do you think the perfect is the enemy of the good in hardware and software engineering? So, like, we were talking about JavaScript a little bit and the messiness of the 10 day building process.
+00:36:44
+Yeah. You know, creative tension, right. Hmm. The creative tension is you have two different ideas that you can't do both. Right. And but the fact that you want to do both causes you to go try to solve that problem. That's the creative part. So if you're building computers, like some people say, we have the schedule and anything that doesn't fit in the schedule, we can't do right. And so they throw out the perfect because I have a schedule.
+00:37:13
+I hate that. Then there's other people to say we need to get this perfectly right and no matter what, no more people, more money. Right. And there's a really clear idea about what you want some people to articulate articulating it. Right. So let's call that the perfect. Yeah. Yeah. All right. But that's also terrible because I never ship anything. You never had any goals. So now you have that. Now you have your framework.
+00:37:39
+Yes. You can't throw out stuff because you can't get it done today because maybe you get it done tomorrow or the next project. Right. You can't. So you have to I work with a guy that I really like working with, but he filters his ideas or filters his start thinking about something and soon they figure out what's wrong with it.
+00:37:57
+You throw it out and then I start thinking about it and, you know, you come up with an idea and then you find out what's wrong with it and then you give it a little time to set, because sometimes, you know, you figure out how to tweak it, or maybe that idea helps some other idea. So idea generation is really funny.
+00:38:14
+So you have to give your ideas space like spaciousness of mind is key, but you also have to execute programs and get shit done. And then it turns out computer engineering is fun because it takes one hundred people to build a computer, 200 to 300, whatever the number is. And people are so variable about, you know, temperament and skill sets and stuff that in a big organization you find that the people who love the perfect ideas and the people that want to get stuff done yesterday and people like that come up with ideas and people like the, let's say, shoot down ideas and it takes the whole it takes a large group of people.
+00:38:52
+Some are good at generating ideas. Some are good at filtering ideas and all in that giant mess. You somehow, I guess the goal is for that giant mass of people to find the perfect path with the tension, the creative tension.
+00:39:07
+But like, how do you know when you said there's some people good at articulating what perfect looks like, what a good design is like? You're sitting in a in a room. And you have a set of ideas about like how to design. A better processor, how do you know this is this is something special here? This is a good idea. Let's try this.
+00:39:30
+Have you ever brainstormed idea with a couple of people that were really smart and you kind of go into it and you don't quite understand it and you're working on it and then you start talking about it, put it on the whiteboard, maybe it takes days or weeks and then your brain starts to kind of synchronize. It's really weird, like you start to see what each other is thinking. And it starts to work like you can see work like my talent and computer design as I can, I can see how computers work in my head, like, really well.
+00:40:04
+And I know other people can do that, too. And when you're working with people that can do that. Like, it is kind of an amazing experience and then never once you get to that place and then you find the floor, which is kind of funny because you you can you can fool yourself, but the two of you kind of drifted along in the direction I was used to.
+00:40:27
+Yeah. That happens to like Yeutter. Because, you know, the nice thing about computers is always reduction practice, like you come up with your good ideas. And I know some architects who really love ideas and then they work on them and they put it on the shelf and go work on the next idea for themselves. They never reduce the practice. So they find out what's good and bad, because almost every time I've done something really new, by the time it's done, like the good parts are good.
+00:40:55
+But I know all the flaws.
+00:40:56
+Like, yeah, we just say your career, just your own experience. Is your career defined by it, mostly by flaws or by successes. Like if there's creative tension between those. If you haven't. Tried hard, yeah, right, and done something, no. All right, then, you're not going to be facing the challenges when you build it and you find out all the problems with it, and but when you look back, you see problems.
+00:41:25
+When I look back, what do you think?
+00:41:28
+Earlier in my career, yeah, like if I was the second Alpha chip, I was so embarrassed about the mistakes, I could barely talk about it. And it was in the Guinness Book of World Records and it was the fastest processor on the planet. Yeah. So it was and at some point I realized that was a really a bad mental framework to deal with, like doing something new. We did a bunch of new things and some worked out great, some were bad, and we learned a lot from it.
+00:41:54
+And the next one we learned a lot that was six also had some really cool things in it. I think the proportion of good stuff went up, but it had a couple of fatal flaws in it that were painful.
+00:42:08
+And then, yeah, you learn to channel the pain into like pride and I pride really just a realization about how the world works, how that kind of idea that works life is suffering. That's the reality. What it's not.
+00:42:26
+Well, I know the Buddha said that all the people are stuck on it now. It's you know, there's this kind of weird combination of good and bad you light and darkness that you have to tolerate and deal with. Yeah, there's definitely lots of suffering in the world. Depends on the perspective. It seems like there's way more darkness, but that makes the light part really nice.
+00:42:48
+What? Computing hardware. Or just any kind of even software design, are you define beautiful from your own work, from other people's work, that you're just. We were just talking about the battleground of flaws and mistakes and errors, but things that were just beautifully done.
+00:43:11
+Is there something that pops to mind? Well, when things are beautifully done. Usually there's a well thought out sort of abstraction layers. I the whole thing works in unison nicely, yes, and and when I say abstraction layer, that means two different components. When they work together, they work independently. They don't have to know what the other one is doing. So that decoupling. Yeah. So the famous one was the network stacked like there's a seven layer network data transport protocol and all the layers.
+00:43:45
+And the innovation was, is when they really got that right, because networks before that didn't define those very well. The layers could innovate independently and occasionally the layer boundary with the interface would be upgraded. And that let you know the the design space brief, you could do something new and layer seven without having to worry about how they are for worked. Right. And so good design does that. And you see it, the processor designs when we did design designed it and we made several components, very modular.
+00:44:21
+And, you know, my insistence at the top was I wanted all the interfaces defined before we wrote the article for the pieces. One of the verification leads said, if we do this right, I can test the pieces so well independently when we put it together, we won't find all these interaction bugs because the floating point knows how the cache works. And I was a little skeptical, but he was mostly right that the modular design greatly improved. The quality is a universally true.
+00:44:49
+In general, I would just say about the designs, the modularity is like usually talked about this before.
+00:44:54
+Humans are only so smart like and we're not getting any smarter. Right. But the complexity of things is going up. Yeah. So, you know, a beautiful design can't be bigger than the person doing it. Let's just you know, they're a piece of it. Like the odds of you doing a really beautiful design or something that's way too hard for you is low, right?
+00:45:15
+If it's way too simple for you, it's not that interesting. It's like why anybody could do that. But when you get the right match of your your expertize and, you know, mental power to the right design side, that's cool. But that's not big enough to make a meaningful impact in the world. So now you have to have some framework to design the pieces so that the whole thing is big and harmonious, but. You know, when you put it together, it's, you know, sufficiently sufficiently interesting to be used and, you know, so that's like a beautiful design is.
+00:45:52
+Matching the limits of that human cognitive capacity to to the Modula, you can create and creating a nice interface between those modules and thereby do you think there's a limit to the kind of beautiful, complex systems we can build with this kind of modular design? It's like, uh, you know, if we build increasingly more complicated, think of like the Internet. OK, let's see, well, you can think of like social network, like Twitter as one computing system.
+00:46:25
+Mm hmm. And but those are little modules, right?
+00:46:30
+So let's build on let's build on so many components. Nobody on Twitter even understands. Right. So so. So if an alien showed up and looked at Twitter, you wouldn't just see Twitter as a beautiful, simple thing that everybody uses, which is really big. You would see the networks. It runs on the fiber optics, the data is transported, the computers. The whole thing is so bloody complicated.
+00:46:51
+Nobody Twitter understands it. And so that's what the alien is.
+00:46:55
+So, yeah, if an alien showed up and looked at Twitter or looked at the various different network systems that you could see on Earth.
+00:47:03
+So imagine there are really smart that could comprehend the whole thing. And then they sort of, you know, evaluated the human and thought, this is really interesting. No human on this planet comprehends the system they built. No individual or they even see individual humans as like we humans are very human centric, entity centric, and so we think of us as the orga, as the central organism and the networks as just the connection of organisms. But from a perspective of an alien, from an outside perspective, it seems like, yeah, I get where the ants and the and calling me and calling.
+00:47:39
+Yeah. Or the result of production of the colony which is like cities and yeah. It's, it's uh in that sense humans are pretty impressive, the modularity that we're able to and the and how robust we are to noise and mutation, all that kind of stuff.
+00:47:56
+Well not because it's stress tested all the time. Yeah. You know, you build all these cities with buildings and you get earthquakes occasionally.
+00:48:01
+And for some, you know, wars, earthquakes, viruses, every once in a while, you know, changes in business plans or, you know, like Shippen or something like like as long as there's all stress test, then it keeps adapting to the situation. So that could secure phenomena.
+00:48:21
+Well, let's go let's talk about Moore's Law a little bit at the broad view of Moore's Law, which is just exponential improvement of computing capability, like Opening Eye, for example, recently published this kind of paper is looking at the exponential improvement in the training efficiency of neural networks for locomotion and all that kind of stuff, which has got better on this.
+00:48:49
+This is purely software side, just figuring out better tricks and algorithms for training neural networks. And that seems to be improving significantly faster than the Moore's Law prediction, you know, so that's in the software space. What do you think? If Moore's Law continues or if the general version of Moore's Law continues, do you think that comes mostly from the hardware, from software, some mix of the two, some interesting. Totally so not the reduction of the size of the transistor kind of thing, but more in the in totally interesting kinds of innovations in the hardware space, all that kind of stuff.
+00:49:30
+Well, there's like a half a dozen things going on in that graph. So one is there's initial innovations that had a lot of room to be exploited.
+00:49:41
+So the efficiency of the networks has improved dramatically and then the decomposed ability of those to use, they started running on one computer and then multiple computers and the multiple GPS and arrays, the GPS, and they're up to thousands. And at some point so so it's sort of like there were consumed. They were going from like a single computer application to a thousand computer application. So that's not really a Moore's Law thing. That's an independent factor. How many computers can I put on this problem?
+00:50:11
+Because the computers themselves are getting better on like a Moore's Law. Right. But their ability to go from one to ten to one hundred to a thousand. Yeah. You know, something. And then multiplied by the amount of computers it took to resolve, like Alex Net is not the Transformers. It's it's been quite, you know, steady improvements. But those are like Asgharzadeh.
+00:50:32
+And that's exactly the kind of Oscars that are underlying Moore's Law from the very beginning.
+00:50:37
+So so what's the biggest what's the most productive rich source of Oscars in the future, do you think? Is it hardware?
+00:50:47
+Is that software or is it still hardware is going to move along relatively slowly, like know double performance every two years.
+00:50:56
+There's still like how you call that slow, the slow version, the snail's pace of Moore's Law. Maybe we should we should think we should trademark that one. That's whereas the scaling by number of computers, you know, can go much faster. You know, I'm sure at some point Google had, you know, their initial search engine was running on a laptop, you know, like. Yeah. And at some point they really worked on scaling that.
+00:51:21
+And then they factored the indexer from this piece, in this piece, in this piece, and they spread the data and more and more things. And, you know, they did a dozen innovations. But as they scaled up the number of computers on that break, finding new bottlenecks in their software and their schedulers and and made a rethink, like, it seems insane to do a scheduler across a thousand computers to schedule parts of it and then send the results to one computer.
+00:51:48
+But if you want to schedule a million searches, that makes perfect sense. So so there's the scaling by just quantity is probably the richest thing. But then as you scale quantity like a network that was great on one hundred computers may be a completely the wrong one. You may pick a network that's ten times slower on 10000 computer like per computer. But if you go from one hundred and ten thousand, it's 100 times. So that's one of the things that happened when we did Internet scaling, the efficiency went down.
+00:52:21
+Not up the future of computing, as in efficiency, not efficiency, but scale, inefficient scale, it's scaling faster than an efficiency by two.
+00:52:31
+And as long as there's a dollar value there, like scaling costs, lots of money. Yeah, but Google showed. Facebook showed. Everybody showed that the scale was where the money was, what it was, and so it was worth the financial.
+00:52:43
+Do you think is it possible that like basically the entirety of Earth will be like a competing service, like this table will be doing computing? This hedgehog will be doing computing like everything really inefficient. Down computing will be science fiction books like a computer. You can't actually turn everything into computing. Well, most of the elements aren't very good for anything like enough to make a computer out of iron like silicon and carbon have like nice structures. You know, we'll see what you can do with the rest of it.
+00:53:17
+But I think people talk about, well, maybe we can turn the sun into computer, but it's this hydrogen and helium, a little bit of helium. So what I mean is more like actually just adding computers to everything.
+00:53:29
+Oh, OK. So you're just converting all the mass of the universe into computer now.
+00:53:34
+So not using Byronic from the simulation point of view is like the simulator build master simulators like. Yeah, I mean, yeah, so I mean, ultimately, this is all heading towards a simulation. Yeah, well, I think I might have told you the story of a test they were deciding. So they want to measure the current coming out of the battery and they decide between putting a resistor in there and putting a computer with a sensor in there.
+00:53:58
+And the computer was faster than the computer I, I worked on in 1982. And we chose the computer because it was cheaper than the resistor. So, so sure, this hedgehog's cost thirteen dollars and we're going to put a, you know, an A that's as far as you in there for five bucks, it'll happen, you know, so computers will be everywhere.
+00:54:21
+I was hoping it wouldn't be smarter than me because, well, everything's going to be smarter than you. But you were saying it's inefficient. I thought it better to have a lot of it was.
+00:54:29
+Well, Moore's Law will slowly compact that stuff. So even the dumb things will be smarter than us.
+00:54:34
+The dumb things are going to be smarter or they're going to be smart enough to talk to something that's really smart.
+00:54:39
+You know, it's like, well, just remember, like a big computer chip and, you know, it's like an inch by an inch and, you know, 40 microns thick. It doesn't take very much, very many atoms to make a high powered computer. Yeah. And 10000 of them can fit in a shoe box. But, you know, you have the cooling and power problems, but, you know, people are working on that, but they still can't write compelling poetry or music or understand what love is or have a fear of mortality.
+00:55:11
+So so we're still winning. Neither can most of humanity. So. Well, they can write books about it.
+00:55:17
+So but but speaking about this, you know, this walk along the path of innovation towards the dumb things being smarter than humans.
+00:55:29
+You are now the CTO of tends to point to as of two months ago, they built hardware for deep learning. How do you build scalable and efficient deep learning? This is such a fascinating space.
+00:55:46
+Yeah. So it's interesting. So up until recently, I thought there was two kinds of computers. There are serial computers that run like school programs and then there's parallel computers. So the way I think about it is parallel. Computers have given parallelism like CPU's are great because you have a million pixels and modern GPU is running a program on every pixel they call the shader program. Right. So or like finite element analysis, you build something, you make this into little tiny chunks of each chunk to a computer.
+00:56:16
+So you're giving all these chunks of parallelism like that. But most programs, you're right, this linear narrative, and you have to make a go fast to make it go faster. You predict all the branches, all the data fetches and you run that more parallel. But that's found parallelism. Hey, guys, I'm still trying to decide how fundamental it says it's a given parallelism problem. But the way people describe the neural networks and then how they write them and pi torture makes graphs.
+00:56:47
+Yeah, that might be fundamentally different than the GPU kind of parallelism.
+00:56:51
+It might be because the when you run the GPU program on all the pixels you're running, like, you know, depending on this group of pixels, say it's background blue and it runs a really simple program. Just pixel is, you know, some part of your face. So you have some really interesting shader program to give you an impression of translucency. But the pixels themselves don't talk to each other. There's no graph. Right. So you do the image and then you do the next image and the next image and you run eight million pixels, eight million programs every time, and modern views, 6000 thread engines in them.
+00:57:29
+So, you know, to get eight million pixels, each one runs a program on 10 or 20 pixels. And that's how that's how they work. There's no graph.
+00:57:38
+But you think graph might be a totally new way to think about hardware.
+00:57:44
+So Roger Goodell and I've been having a conversation about given versus found parallelism and then the kind of walk as we got more transistors like, you know, computers way back when the stuff on scalar data than we did on vector data, famous vector machines. Now we're making computers that operate on matrices. Right. And then the category we said that was next was spatial. Like, imagine you have so much data that, you know, you want to do the compute on this data.
+00:58:12
+And then when it's done, it says send the result to this pile of data on some software on that. And it's better to to think about it spatially than to move all the data to a central processor and do all the work, especially in moving in the space of data as opposed to moving the data.
+00:58:32
+You have a give a petabyte data space spread across some huge array of computers. And when you do a computation somewhere, you send the result of that computation or maybe a pointer to the next program or some other piece of data and do it. But I think a better word might be graph. And all the neural networks or graphs do some computations on the result here to another computation and do data transformation to emerging to appalling to another computation.
+00:58:59
+Is it possible to compress and say how we make this thing efficient, this whole process efficient is different. So first the.
+00:59:08
+The fundamental elements in the graphs are things like matrix multipliers, convolutions, data manipulations and data movements. Yeah, so GPS emulate those things with their little singles, you know, basically running the single threaded program. And then there's a, you know, Invidia calls it or they group a bunch of programs that are similar together. So for efficiency and instruction use and then at a higher level, you kind of you take this graph and you say this part of the graph is a matrix multiplier, which runs on these 32 threads.
+00:59:39
+But the model at the bottom was built for running programs on pixels, not executing graphs, emulation items. So it's impossible to build something that natively runs graphs.
+00:59:52
+Yes. So that's what started. So where are we on that? How like in the history of that effort, are we in the early days? Yeah, I think so. 10 stories started by a friend of mine, Lidija Bajak and I. I was his first investor. So I've been kind of following him and talking to him about it for years. And in the fall, when I was considering things to do, I decided, you know, the we we held a conference last year with a friend, organized it.
+01:00:22
+And and we we wanted to bring in thinkers. And two of the people were Andre Capacity and Chris Lautner. And Andre gave this talk on YouTube called Soffer 2.0, which I think is great, which is where we went from, programed computers, where you write programs to data program computers, you know, like the futures, you know, of software as data programs, the networks. And I think that's true. And then Chris has been where he worked on LVM, the low level virtual machine, which became the intermediate representation for all compilers.
+01:01:00
+And now he's working on another project called FLIR, which is mid-level intermediate representation, which is essentially under the graph about how do you represent that kind of computation and then coordinate large numbers of potentially heterogeneous computers. And I would say technically tends towards, you know, two pillars of those those those two ideas offer 2.0 and mid-level representation, but it's in service of executing graft programs.
+01:01:31
+The hardware is designed to do that first, including a hardware piece. Yeah.
+01:01:35
+And then the other cool thing is for a relatively small amount of money, they did a test ship and two production jobs. So it's like a super effective team. And and unlike so many startups where if you don't build the hardware to run the software that they really want to do, then you have to fix it by writing lots more software. So the hardware naturally does matrix multiply convolution the data manipulations and the data movement between processing elements that you can see in the graph, which I think is all pretty clever, and that's that's what I'm working on now.
+01:02:14
+So the I think it's called the grayscale processor introduced last year. It's you know, there's a bunch of measures of performance. They're talking about horses. It seems to outperform 368 trillion operations per second, seems to outperform invidious 234 system. So these are just numbers. What do they actually mean in real world performance? Like what are the metrics for you that you're chasing in your horse race? What do you care about?
+01:02:43
+Well, first, so the the native language of, you know, people who write A.I. network programs is quite large now by torture contraflow. There's a couple others named by torture's one over tens of thousands.
+01:02:55
+Just I'm not an expert on that. I know many people who have switched from Tenzer flow to PI torch. Yeah. And there is technical reasons for it. And I use both. Both are still awesome. Both are still awesome. But the deepest love is for potage currently.
+01:03:09
+There's more love for that and that may change.
+01:03:12
+So the first thing is when they write their programs, can the hardware execute it pretty much as it was written? Right. So by touch turns into a graph, we have a graph compiler that makes that graph. Then it fractions the graph down to a big matrix multiply. We turn it in the right size chunks to run on the processing elements. It hooks all the graph up, it lays out all the data. There's a couple of mid-level representations of it that are also simulated war so that if you were writing the code, you can see how it's going to go through the machine, which is pretty cool.
+01:03:45
+And then at the bottom is scheduled kernels like mass data manipulation, data movement, Col's, which do this stuff so we don't have to run. Right. A little program to do matrix multiply because we have a big matrix multiplier, like there's no safety program for that, but there is scheduling for that. Right, so one of the goals is if you write a piece of paper towards code that looks pretty reasonable, you should be able to compile it, run it on the hardware without having to tweak it and and do all kinds of crazy things to get performance.
+01:04:17
+There's not a lot of intermediate steps that's running directly on a GPU.
+01:04:21
+If you write a large matrix, multiply naively, you'll get five to 10 percent of the peak performance of the GPU. Right. And then there's a bunch there's a bunch of people published papers on this. And I read them about what steps do you have to do? And it goes from pretty reasonable. While transpose one of the matrices you wrote or not column ordered, you know, block it so that you can put a block of the matrix on different Assam's groups of threads.
+01:04:48
+But some of it gets into little details like you have to schedule it just so you don't have register conflicts. So the the the they call them Coudert Ninja's. Just allow me to get to the optimal point, you either write or use a pre written library, which is a good strategy for some things, or you have to be an expert in micro architecture to program it. Right. Another step is way more complicated. So our our goal is if you write Python, that's good torch.
+01:05:18
+You can do it. Now, there's as the networks are evolving, you know, they've changed from convolutional to matrices. Multiply that. People are talking about conditional graphs. You're talking about very large matrices. You're talking about sparsity. You're talking about problems at scale across many, many chips. So the native, you know, data item is as a packet. So you send a packet to a processor, it gets processed, it does a bunch of work, and then it may send packets to other processors and they execute like a data flow graph kind of methodology.
+01:05:51
+Got it. We have a big network on top and then 16 next second, Chip has 16 Ethernet ports to help lots of them together. And it's the same graph compiler across multiple chips. So that's where the scale comes in. So it's built to scale naturally. Now, my experience with scaling is as you scale, you run into lots of interesting problems. So scaling is a mountain to climb. Yeah. So the hardware is built to do this.
+01:06:14
+And we're in the process of is there a software part to this with Ethernet and all that?
+01:06:21
+Well, the you know, the protocol at the bottom, you know, we send you know, it's an Ethernet fi, but the protocol basically says send the packet from here to there. It's all point-to-point the header, but says which processor to send it to. And we basically take a pay cut offer on chip network. Put any thought that had it on it, send it to the other end, strip the header off and send it to local saying it's pretty straightforward.
+01:06:45
+Human to human interaction is pretty straightforward. To go and get a million of us, which is some crazy stuff together, could be fun.
+01:06:52
+So is that the goal is scale.
+01:06:55
+So like for example, have been recently doing a bunch of robots at home for my own personal pleasure.
+01:07:01
+Am I going to ever use test or is this more for there's all kinds of problems like are small insurance problems or small training problems or things of any problems?
+01:07:10
+What's the big goal? Is it the big training problems or the small training problems? First of all, one of the goals is to scale from 100 milliwatts to to a megawatt, you know, so like really have some range on the problems. And the same kind of A.I. programs work at all different levels. So that's the natural since the natural data item is a package that we can move around, it's built to scale. But so many people have small problems, right?
+01:07:41
+Right, but but, you know, like inside their phone is a small problem to solve.
+01:07:45
+So do you see it as potentially being a cell phone?
+01:07:49
+Well, the power efficiency of local memory, local computation in the way we built it is pretty good. And then there is a lot of efficiency on be able to do additional graphs and sparsity. I think it's for complicated networks. I want to go on.
+01:08:04
+A small factor is quite good, but we have to add a that's a fun problem and that's the early days of the company.
+01:08:11
+A couple of years, he said. But you think you invested, you think they're legit as you join? That's right.
+01:08:19
+Well, it's also it's a really interesting place to be. Like I was really exploding, you know, and. I looked at some other opportunities, like build a faster processor, which people want, but that's more on an incremental path than what's going to happen in the next 10 years. So this is kind of, you know, an exciting place to be.
+01:08:40
+Part of the revolution will be happening in the very space.
+01:08:44
+Had lots of people working on it, but there's lots of technical reasons why some of them aren't going to work out that well. And and that's that's interesting.
+01:08:53
+And there's also the same problem about getting the basics right. Like, we've talked to customers about exciting features. And at some point we realized that not worth realizing they want to hear first about memory, bandwidth, local bandwidth, compute intensity, programmability. They want to know the basics, power management, how the network ports work, what are the basics? Do all the basics work? Because it's easy to say we've got this great idea, you know, the crack TV3, but the people we talked to are saying if I buy it, so we have a Pizza Express card with our chip on it.
+01:09:28
+And if you buy the card, you plug it in your machine to download the driver. How long does it take me to get my network to run? Right. Right now, that's a real question. It's a very basic question. So, yeah. Is there an answer to that yet or is it trying to get goals like an hour? OK, one, can I buy a test like, uh, pretty soon for my for the small case training.
+01:09:49
+Pretty much good.
+01:09:52
+I love the idea of you inside the room with the Carpati and your Carpathian Leidner. Uh. Very, very interesting, very brilliant people, very out of the box thinkers, but also like first principles thinkers, well, they both get stuff done.
+01:10:12
+They only get stuff done to get their own projects done. They talk about it clearly to educate large numbers of people and they've created platforms for other people to go through their stuff.
+01:10:21
+Yeah, the the clear thinking that's able to be communicated is kind of impressive.
+01:10:26
+It's kind of remarkable, though. Yeah, I'm a fan.
+01:10:30
+Well, let me ask because I talked to Chris actually a lot these days. He's been one of the just to give him a shout out and he's been so. Supportive as a human being, so everybody's quite different. Great engineer is a different but he's been like sensitive to the human element in a way that's been fascinating.
+01:10:51
+Like he was one of the early people on this stupid podcast that I do to say, like, don't quit this thing and also talk to whoever the hell you want to talk to that kind of from a legit engineer to get like props and be like, you can do this.
+01:11:09
+That was I mean, that's what a good leader does, right? It's just kind of let a little kid do his thing, like, go, go do the see what turns out that that's a that's a pretty powerful thing. But what do you what's your sense of what he used to be? Now I think stepped away from Google. Right. He said so far, I think what what's really impressive to you about the things that Chris has worked on, because it's that we mentioned the optimization, the compiler design stuff, that LVM then there is also a Google work, that type of stuff.
+01:11:45
+He's obviously worked on Swift. So the programing language side, talking about people that work in the entirety of the stack. What from your time interacting with Chris and knowing the guy, what's really impressive to you that just inspires you?
+01:12:01
+Well. Well. Like LVM became. You know, the the de facto platform for, you know, compilers, like it's amazing and, you know, it was good code quality, good design choices. He hit the right level of abstraction. There's a little bit of the right time, the right place. And then he built a new programing language called Swift, which, you know, after, you know, let's say some adoption resistance became very successful.
+01:12:30
+I don't know that much about his work at Google, although I know that, you know, that was a typical they started Tensas flow stuff. And, you know, it was new is, you know, they they wrote a lot of code and then at some point it needed to be refactored to be. You know, because its development slowed down, wiped out by it started a little later and passed it. So he did a lot of work on that.
+01:12:53
+And then his idea about MLR, which is what people started to realize, is the complexity of software stack above the low level IRR was getting so high that forcing the features of that into level was was putting too much of a burden on it. So he's splitting that into multiple pieces. And that was one of the inspirations for our software stock, where we have several intermediate representations that are all executable and you can look at them and do transformations on them before you lower the level.
+01:13:23
+So that was I think we started before omoi. I really got far enough along to use, but we're interested in that. He's really excited about Milera.
+01:13:35
+That's just like a little baby. So he and there seems to be some profound ideas in that that are really useful.
+01:13:41
+So, so each one of those things has been as the world of software gets more and more complicated, how do we create the right abstraction levels to simplify it in a way that people can now work independently on different levels of it? So I would say all three of those projects, all of be swift and MLR, did that successfully. So I'm interested was what he's going to do next and the same kind of way. Yes.
+01:14:05
+So on either the CPU or maybe the Invidia GPU side. How does that strike you think or the ideas underlying it does have to be tested? I'm just this kind of graph focused, graph centric hardware, deep learning centric hardware beat and videos. Do you think it's possible for it to basically overtaken video? What was that process look like? What's that journey look like? You think?
+01:14:37
+Well, CPU's were built around Chatur programs on millions of pixels, not their own graphs. Yes. So there's a hypothesis that says the way the graphs are built is going to be really interesting to be inefficient on computing this. And then the the primitives does not assume the program is matrix multiply convolution and then the data manipulations are fairly extensive about like how do you do a fast transpose with a program and have you ever written that transposed program? They're ugly and slow, but in hardware you can do really well.
+01:15:11
+I could give you example. So when GPU Accelerator Star started doing triangles like you have a triangle which maps on the set of pixels. So you built it's very straightforward to build a hardware engine or find all those pixels. And it's kind of weird because you walk along the triangle to get the edge and then you have to go back down to the next row and walk along and then you have to decide on the edge if the line of the triangle is like half on the pixel, what's the pixel color?
+01:15:38
+Because it's half of this pixel and half the next one that's called racialization.
+01:15:42
+And you're saying that could be done in hard decision as an example of that operation as a software program is really bad. I've written a program that pasteurization the hardware that does it. It's actually less code than the software program that does it. And it's way faster. Right. So there are certain times when the abstraction you have rostral is a triangle, you know, execute a graph, you know, components of a graph. The right thing to do in the hardware software boundary is for the hardware to naturally do it.
+01:16:15
+And so the GPU is really optimized for the restoration of Trius.
+01:16:19
+Well, no, that's just well, like in a modern, you know. That's a small piece of modern GPS, what they did is that they still raspberries triangles when you're running a game. But for the most part, most of the computation ya'ari, the GPU is running Chatur programs, but they're single threaded programs on pixels, not graphs.
+01:16:39
+Let's be honest and say I don't actually know the the math behind Shater shading and lighting and all that kind of stuff. I don't know what they look like.
+01:16:47
+Little simple 14. programs or complicated ones.
+01:16:50
+You can have a thousand instructions and a shader program, but I don't have a good intuition why I could be parallelize so easily now, because you have eight million pixels in every single.
+01:17:00
+So you have a light, right? Yeah, that comes down the angle. You know, the amount of light look like say this is a line of pixels across this table. Right. The amount of light on each pixel subtly different and pixels responsible for figuring out what figure it out.
+01:17:16
+So that pixel says on this pixel, I know the angle of the light, I know the occlusion color. I am like every single pixel here is a different color. Every single pixel gets a different amount of light. Every single pixel has a slightly different translucency. So to make it look realistic, the solution was you run a separate program on every pixel. But I thought there's a reflection from all over the place is every picture, but there is so.
+01:17:39
+So you build a reflection map which also has some pixilated thing. And then when the pixels, looking at the reflection, a map has to calculate what the normal of the surface is. And it does it per pixel, by the way, just boatloads of hacks on that like you may have a lower resolution light map, reflection map. There's all these tax they do, but at the end of the day, it's per pixel computation.
+01:18:02
+And it so happened that you can map graph like computation onto the pixels that you can do floating point programs on convolution in the matrices and invidia invested for years and Kouta first HPC and then they got lucky was the trend.
+01:18:19
+But do you think they're going to essentially not be able to hard core pivot out of there?
+01:18:24
+Well, see, that's always interesting how often the big companies hard core pivot occasionally.
+01:18:33
+How much you know about Invidia, Fox? Some. Some, yeah.
+01:18:37
+What I'm curious as well, who's ultimately as a whole, they've they've innovated several times, but they've also worked really hard on mobile. They worked really hard on radios, you know, you know, they're fundamentally a GPU company.
+01:18:50
+Well, they tried to pivot is an interesting little game and play in autonomous vehicles. Right. With or semi-autonomous like playing with Tesla and so on and seeing that's a and dipping a toe into that kind of pivot.
+01:19:05
+They came out with this platform, which is interesting technically. Yeah. But it was like a three thousand want, you know, thousand watt three three thousand dollar platform. I don't know if it's interesting technical.
+01:19:16
+It's interesting. Philosophically, I technically I don't know if it's the execution. The craftsmanship is there. I'm not sure that I didn't get a sense they were repurposing CPU's for an automotive solution.
+01:19:28
+Right. It's not a real pivot. They didn't they didn't build a ground up solution. Right. Like that. Like the chips inside Tesla are pretty cheap. Like mobility has been doing this. They're they're doing the classic work from the simple thing. Yeah. They were building 40 square millimeter chips in Invidia. Their solution had two 800 millimeter chips and two two hundred millimeter chips and, you know, like boatloads of really expensive diagrams and. And, you know, it's a really different approach to mobile, I fit the I say automotive costs and form factor and then they added features as it was economically viable and and very said, take the biggest thing and we're going to go make it work.
+01:20:08
+You know, and and that's also influence like wammo, there's a whole bunch of autonomous startups where they have a 5000 what server in her trunk.
+01:20:15
+Mm hmm. Right. And but that's that's because they think, well, five thousand watts and ten thousand dollars is OK because it's replacing the driver halons approach was that sport has to be cheap enough to put it in every single test, whether they turn on it autonomous driving or not, which and Mobileye was like, we need to fill in the bottom and, you know, cost structure that car companies do. So they may sell you GPS for 1500 bucks.
+01:20:41
+But the bumper, that's like twenty five dollars. Well, and for mobilize teams like neural networks were not first class citizens like the competition, they didn't start out as it was a KBE problem and the classic CV and found stoplights and lines. And they were really good at it. And they never I mean, I don't know what's happening now, but they never fully pivoted. I mean, it's like it's the Invidia thing then as opposed to say, if you look at the new Tesla work, it's like neural networks from the ground up right now.
+01:21:15
+And even Tesla started with a lot of stuff in it. And it's basically been eliminated. You know, you move it, move everything into the network. So without this isn't like confidential stuff, but you sitting on a porch, looking over the world, looking at the work that Andre's doing that he was doing with Tesla autopilot. Do you like the trajectory of where things are going and whether they're making serious progress?
+01:21:40
+I like the videos of people driving the better stuff, like it's taken some pretty complicated intersections and all that. But it's it's still an intervention per drive. I mean, I watched the colonel, the pilot, my my tussle. I use it every day.
+01:21:54
+Do you have full self driving better or. No. See, you like where this is going.
+01:21:58
+We're making progress. It's taking longer than anybody thought. You know, my my wonder was, is hardware three, is it enough computing off by two. By five by ten. Off by one hundred.
+01:22:11
+Yeah. And and I thought it probably wasn't enough, but they're doing pretty well with it now. Yeah. And one thing is. The deficit gets bigger, the training gets better, and then there's this interesting thing is you sort of train and build an arbitrary size network that solves the problem and then you refactor the network down to the thing that you can afford to ship. Right. So the goal isn't to build a network that fits in the phone, it's to build something that actually works.
+01:22:44
+And then then how do you make that most effective on the hardware you have? And they seem to be doing that much better than a couple of years ago?
+01:22:52
+Well, the one really important thing is also what they're doing well is how to iterate that quickly, which means like it's not just about one time deployment, one building. It's costing the network and trying to automate as many steps as possible. Right. And that's actually the principles of the Software 2.0, like you mentioned with Andre is. It's not just I mean, I don't know what the actual his description of Software 2.0 is, if it's just high level philosophical or their specifics.
+01:23:22
+But the interesting thing about what that actually looks in the real world is it's that what I think Andre calls the data engine, it's like it's the iterative improvement of the thing. You have a neural network that does stuff fails and a bunch of things and learns from it over and over and over. So you constantly discovering edge cases. That's very much about. Like data engineering, like figuring out is kind of what you were talking about when you have the data landscape, you have to walk along that data landscape in a way that is constantly improving the the the neural network.
+01:24:02
+And that that feels like that's the central piece of.
+01:24:05
+And there's two pieces of it like. You find excuses that don't work and you define something that goes get your data for that. But then the other constraint is whether you have to lowballed or not like that. The amazing thing about the three stuff is it's unsupervised. So there's essentially infinite amount of data. Now, there's obviously infinite amount of data available from cars of people successfully driving. But, you know, the current pipelines are mostly running unlabeled data, which is human limited.
+01:24:34
+So when that becomes on unsupervised, right, it'll create unlimited amount of data, which is no scale. Now, the networks that use that data might be way too big for cars, but then it'll be the transformation from now where unlimited data. I know exactly what I want. Now, can I turn that into something that fits in the car and that that process is going to happen all over the place every time you get to the place where you have unlimited data.
+01:25:01
+And that's what Software 2.0 is about, unlimited data training networks to do stuff without humans, writing code to do it, and ultimately also trying to discover, like you're saying, the self supervised formulation of the problem.
+01:25:16
+So that unsupervised formulation of the problem, like, you know, driving, there's this really interesting thing, which is you look at a scene that's before you and you have data about what a successful human driver did in that scene. You know, one second later, it's a little piece of data that you can use, just like what you see as training currently. You have you know, Tesla says they're using that. It's an open question to me, how much how far can you solve all of the driving with just that self supervised piece of data?
+01:25:50
+And like, I think that's what I say.
+01:25:55
+That's what I mean, I don't. But the question is how how much data so we're coming out doesn't have is as good of a data engine, for example, as Tesla does. That's where the like the organization of the data. I mean, as far as I know, I haven't talked to George, but they do have the data. The question is how much data is needed because we say infinite very loosely here. And then the other question, which you said, I don't know if you think it's still an open question, is are we in the right order of magnitude for the compute necessary?
+01:26:31
+That is is this is that like what you said, this chip that's in there now is enough to do for self driving, or do you need another order of magnitude? I think nobody actually knows the answer to that question. I like the confidence that you can ask, but now we'll see.
+01:26:47
+There's another funny thing is you don't learn to drive with infinite amounts of data. You learn to drive with an intellectual framework that understands physics and color and horizontal services and laws and roads and, you know, all your. Your experience from manipulating your environment, like, look, there's so many factors go into that, and then when you learn to drive, like driving is a subset of this conceptual framework that you have. And so self-driving cars right now are we're teaching them to drive with driving data.
+01:27:20
+You never teach him to do that. You teach him in all kinds of interesting things, like language like don't do that. You know, watch out. You know, there's all kinds of stuff going on. This is where you I think previous time we talked about where you poetically disagreed with my naive notion about humans. I just think that humans will make this whole driving thing really difficult. Yeah. All right. I said he was moved. Move that slow.
+01:27:48
+The ballistics from the ballistic humans, the ballistics from which is like poetry to me. It's very it's very possible that in driving there indeed purely ballistics problem. I and I think that's probably the right way to think about it. But I still they still continue to surprise me, those damn pedestrians and cyclists, other humans in other cars and.
+01:28:08
+Yeah, but it's going to be one of these composite anything so the like. When you're driving, you have an intuition about what humans are going to do, but you don't have 360 cameras and radars and you have an attention problem. So if so, so the self-driving car comes in with no attention. Problem 360 cameras right now, a bunch of other features. Yeah. So they'll wipe out a whole class of accidents. Right. And, you know, you know, emergency braking with radar and especially as it gets, you know, enhance or eliminate collisions.
+01:28:39
+Right. But then you have the other problems of these unexpected things where, you know, you think your human intuition is helping. But then the cars also have, you know, a set of hardware features that you're not even close to.
+01:28:50
+And the key thing, of course, is if you wipe out a huge number of kind of accidents, then it might be just way safer than a human driver, even though even if humans are still trying to figure out, you know, that that's probably will happen as autonomous cars will have a small number of accidents humans would have avoided, but they'll wipe they'll get rid of the bulk of them.
+01:29:13
+What do you think about and like Tesla's dojo efforts? Or it can be bigger than Tesla in general? It's kind of like the tense torrent. Trying to innovate like this is the dichotomy, like should a company try to from scratch, build its own neural network training hardware?
+01:29:32
+Well, first, I think it's great. So we need lots of experiments. Right. And there's lots of startups working on this and are pursuing different things. I was there when we started a dojo and it was sort of like, what's the unconstrained computer solution to go to very large training problems. Yeah. And then there's fun stuff like, you know, we said, well, we have this 10000 white board to call for. You go talk to guys of Space X, and they think 10000 watts is a really small number, not a big number.
+01:30:01
+Yeah. And and there's brilliant people working on it. I'm curious to see how it'll come out. I, I couldn't tell you, you know, I know it pivoted a few times since I left. So so the coolest thing to be a big problem. I do like what you said about it, which is like we don't want to do the thing unless it's way better than the alternative, whatever the alternative is. So it has to be way better than like racks of GPS.
+01:30:27
+Yeah.
+01:30:27
+And the other thing is just like, you know, you know, the Tesla Autonomous Driving Hardware, it was only serving one software stock and the hardware team and the software were tightly coupled. Now, if you're building a general purpose solution, then, you know, there's so many different customers with so many different needs. Now, something Andre said is, I think this is amazing. Ten years ago, like vision, recommendation, language were completely different disciplines.
+01:30:56
+He said the people that couldn't talk to each other. And three years ago, it was all neural networks, but the very different neural networks and recently is converging on one set of networks. They vary a lot in size. Obviously, they vary in data, varying outputs, but the technology is converged a good bit.
+01:31:14
+Yeah, and Transformer's behind everything. Seems like they could be applied to video that could be applied to a lot of. Yeah.
+01:31:20
+And it's like and they're all really seems like they literally replace letters with pixels. Yeah it does vision. It's amazing. So and then size actually improves the thing. So the bigger it gets, the more complete you throw at it, the better it gets. The more data you have, the better it gets. So, so, so then you start to wonder, well is that a fundamental thing or is this just another step to some fundamental understanding about this kind of computation?
+01:31:48
+Which is really interesting as humans don't want to believe that that kind of thing will achieve conceptual understandings. You were saying like you'll figure out physics, but maybe it will. Maybe it probably will.
+01:31:58
+Well, it's worse than I don't understand physics in ways that we can't understand. I like your Stephen Wolfram talk where he said, you know, there are three generations of physics. There was physics by reasoning. Well, big things should force faster than small things. Right. That's reasoning. And then there's physics by equations like, you know, but the number of programs in the world that are solved with the single equations relatively low, almost all programs have, you know, more than one line of code, maybe one hundred million lines of code.
+01:32:26
+So he said that now we're going to physics by equation, which is his project, which is cool. I might point out there, too, was there was two two generations of physics before reasoning habit. Like all animals, you know, things fall and, you know, birds fly and, you know, predators know how to, you know, solve a differential equation to cut off a accelerating, you know, curving animal path. Yeah. And then there was, you know, the gods did it.
+01:32:56
+Right. So, yeah, right, so, you know, there's five generations now. Soffer 2.0 says programing things is not the last step. Data. So there's going to be a physics by Stephen Wolfram. That's not explainable to us.
+01:33:16
+And actually, there's no reason that I can see all that. Even that's the limit. Like, there's something beyond that.
+01:33:25
+I mean, like usually when you have this hierarchy, you start like, well, if you have this step in, this step in this step, and they're all qualitatively different and conceptually different, it's not obvious why, you know, six is the right and number of higher steps in not seven or eight or well, then it's probably impossible for first to comprehend something that's beyond the thing that's not explainable.
+01:33:47
+Yeah, I think. But the thing that, you know, understands the thing that's unexplainable to us and what can conceive the next one.
+01:33:54
+And like, I'm not sure whether there's a limit to clear your brain hurts.
+01:34:01
+It's a sad story if we look at our own brain, which is an interesting, illustrative example.
+01:34:10
+In your work with Testori and trying to design deep learning architectures, do you think about the brain at all, maybe from a hardware designer perspective, if you could change something about the brain, what would you change or do if any questions like how would you do?
+01:34:30
+Your brain is really weird. Like, you know, your Schubel cortex where we think we do most of our thinking is, what, like six or seven neurons? Yeah, that's weird. Like all the big networks are way bigger than that, like way deeper. So that seems odd. And then, you know, when you're thinking if it's if if the input generates a result you can lose, it goes really fast. But if a cat that generates an output that's interesting, which turns into an input and then your brain to the point where you mull things over for days and how many trips through your brain is that right?
+01:35:02
+Like it's, you know, 300 milliseconds or something. He got through seven levels of neurons. I forget the number. Exactly, but then it does it over and over and over it searches. And the brain clearly is looks like some kind of graph because you have a neuron with connections and it talks to other ones. And it's locally very computationally intense. But it's also the sparse computations across a pretty big area.
+01:35:27
+There's a lot of messy biological type of things. And it's it's meaning like, first of all, there's mechanical, chemical and electrical signals. That's all that's going on. Then there's a synchronicity of signals and there's like there's just a lot of variability. It seems continuous and messy and just the mess of biology. And it's unclear whether that's a good thing or it's a bad thing, because if it's a good thing that we need to run the entirety of the evolution, we're going to have to start with basic bacteria to create supplements.
+01:36:02
+And we could you could build a brain with ten layers. Would that be better or worse or more more connections or less connections or you know, we don't know to what level our brains are optimized. But if I was changing things like, you know, you can only hold like seven numbers in your head. Yeah, like, why not one hundred or a million now is a lot of that.
+01:36:23
+And why can't like why can't we have like a floating point processor that can compute anything we want, like, and see it all properly. I think that would be kind of fun. And why can't we see in four or eight dimensions? Like like three days is kind of a drag, like all the hard math transforms are up in multiple dimensions. So you could imagine a brain architecture that, you know, you could enhance with a whole bunch of features that would be, you know, really useful for thinking about things.
+01:36:53
+It's possible that the limitations you're describing are actually essential for like the constraints are essential for creating, like, the depth of intelligence like that, the ability to reason.
+01:37:07
+You know, it's hard to say because, like, your brain is clearly a parallel processor, you know, you know, 10 billion neurons talking to each other at a relatively low clock rate. But it produces something that looks like a serial thought process or serial narrative in your head. That's true. But then there are people famously who are visual thinkers, like I think I'm a relatively visual thinker. I can imagine any object rotated in my head. Look at it.
+01:37:35
+And there are people who say they don't think that way at all. And recently I read an article about people, people who say they don't have a they don't have a voice in their head. They they can talk. But when they you know, it's like, well, what are you thinking, though, to describe something that's visual? So that's curious. Now, if if you're saying if we dedicated more hardware to holding information like, you know, 10 numbers or a million numbers, like, would that just distract us from our ability to form this kind of singular identity?
+01:38:14
+Like, it dissipates somehow. Right. But but maybe a future humans will have many identities that have some higher level organization, but can actually do lots more things in parallel.
+01:38:25
+Yeah, there's no reason if we're thinking modularly, there's no reason we can have multiple consciousnesses in one brain. Yeah.
+01:38:31
+And maybe there's some way to make it faster so that the, you know, the theory of the computation could. Could still have unified feel to it, but while still having way more ability to do parallel stuff at the same time could definitely be improved, could be improved. OK, well, it's pretty good right now, actually. People don't give it enough credit. The thing is pretty nice.
+01:38:55
+And the you know, the fact that the right ends seem to be and give a nice, like spark of beauty to the whole experience, I don't know.
+01:39:07
+I don't know if it can be improved easily. It could be more beautiful. And I mean.
+01:39:14
+You mean how all the ways you can imagine. No, but that's the whole point.
+01:39:18
+I wouldn't be able to imagine the fact that I can imagine ways in which it could be more beautiful means that, you know you know, Ian Banks, his stories, I thought the super smart eyes, they're live mostly live in the world of what they call infinite fun because they can create arbitrary worlds. So they interact. And, you know, the story has it. They interact in the normal world and they're very smart and they can do all kinds of stuff.
+01:39:47
+And, you know, a given mind can talk to a million humans at the same time. We're very slow. And for reasons, you know, artificial, the story, they're interested in people and doing stuff, but they mostly live in this this other land of thinking.
+01:40:02
+My inclination is to think that the ability to create infinite fun will will not be so fun. But there are so many things to do, most of all to make a star with planets around. Yeah, yeah.
+01:40:18
+But because we can imagine that is why life is fun. If we can if we actually were able to do it, it would be a slippery slope where fun would even have a meaning because we just consistently desensitize ourselves by the infinite amounts of fun we're having. And the sadness, the dark stuff is what makes it fun, I think I think that could be the Russian, could be the could be the fun, makes it fun and sadnesses makes a bittersweet.
+01:40:46
+Yeah, that's true fun.
+01:40:47
+Could be the thing that makes it fun. So anything about the expansion, not the biology side, but through the BCI, the brain computer interfaces. Now you've got a chance to check out the New Orleans stuff. Super interesting. Like. Like humans like. Like our thoughts manifest this action, you know, like like as a kid, you know, like shooting a rifle was super fun, driving minibike, doing things. And then computer games, I think, for a lot of kids became the thing where they, you know, they can do what they want.
+01:41:19
+They can fly a plane, they could do this. They can do this. Right. But you have to have the physical interaction. Now, imagine, you know, you could just imagine stuff and it happens. Right. Like, really richly and interestingly, like we kind of do that when we dream, like dream dreams are funny because like if you have some control or awareness in your dreams, like it's very realistic looking or not really depends on the dream.
+01:41:48
+But you can also manipulate that. And you know what's possible there is this is odd in the fact that nobody understands it's hilarious, but do you think it's possible to expand that capability through computing?
+01:42:03
+Sure. Is there some interesting from a hardware designer perspective? Is there do you think they'll present totally new challenges in the kind of hardware required that they. So this hardware isn't standalone computing? Well, there's just nothing compared to the brand today. Computer games are rendered by GPS. Right. Right. So but you've seen the gang stuff. Yeah, right. Where train neural networks render realistic images, but there is no pixels, no triangles, no shaders, not like maps, no nothing.
+01:42:34
+So the future of graphics is probably Yayi. Right, yes, now that eyes heavily trained by lots of real data. Right, so if you have an interface with a renderer. Right. So if you say render a cat, it won't say, well, how tall is the cat and how big will render a cat? And he might say, oh, a little bigger. A little smaller, you know, make it a tabby, shorter hair, you know, like you could tweak it.
+01:43:02
+Like to the amount of data you have to send to interact with a very powerful eye.
+01:43:08
+Render could be low. But the question is of a brain computer interfaces would need to render not onto a screen, but render onto the brain and like directly. So there's a benefit to do it both ways.
+01:43:23
+I mean, our eyes are really good sensors that could render onto a screen and we could feel like we're participating and, you know, they're going to they're going to have like the Occulus kind of stuff. It's going to be so good when a projection to your eyes, you think it's real. You know, they're slowly solving those problems. And I suspect when the render of that information into your head is also A.I. mediated, either they'll be able to give you the cues that you really want for depth and all kinds of stuff like your brain is probably faking your visual field, right?
+01:44:00
+Like your eyes are twitching around. But you don't notice that occasionally they blank. You don't notice that. You know, there's all kinds of things like you think you see over here, but you don't really see there. Yeah, it's all fabricated. Yeah. So a peripheral vision is fascinating.
+01:44:14
+So if you have an A.I. renderer that's trained to understand exactly how you see and the kind of things that enhance the realism of experience could be super real, actually. So I don't know what the limits are, but obviously, if if we have a brain interface that goes in inside your visual cortex in a better way than your eyes do, which is possible to lot neurons.
+01:44:44
+Yeah, maybe that will be even cooler.
+01:44:49
+But the really cool thing is it has to do with the infinite fun that you're referring to, which is our brains have to be very limited and like you said, computational.
+01:44:57
+Very plastic, very plastic. So it's a it's an interesting combination. The the interesting open question is the limits of that neuroplasticity. How how flexible is that thing? Because we don't we haven't really tested it.
+01:45:14
+We know about the experiments where they put like a pressure pad on somebody's head and had a visual transducer pressurize it and somebody slowly learned to see. Yep, that's it's especially at a young age if you throw a lot at it. Like what? What can it can it completely. So can you, like, arbitrarily expand it with computing power so connected to the Internet directly. Somehow the answer is probably yes. So the problem with biology and ethics is like there's a mess there like us humans are.
+01:45:47
+Perhaps unwilling to take risks in into directions that are full of uncertainty, so like 90 percent of the population is unwilling to take risk.
+01:45:58
+The other 10 percent is rushing into the risks unaided by any infrastructure whatsoever. And you know that that's where all the fun happens in society. There's been huge transformations here in the last couple thousand years. It's finally gotten the chance to interact with others. Matthew Johnson from Johns Hopkins is doing this large scale study of psychedelics. It's becoming more and more. I've gotten a chance to interact with that community of scientists working on psychedelics. But because of that, that opened the door to me, to all these what are they call psychonauts, the people who, like you said, the 10 percent who like I don't care.
+01:46:37
+I don't know if there's a science behind this. I'm taking the spaceship out. If I'm be the first on Mars, I'd be the psychedelics. Interesting in the sense that in another dimension, like you said, it's a way to explore the with the limits of the human mind, like, what is this thing capable of doing? Because you kind of like when you dream, you detach it.
+01:47:00
+I don't know exactly the neuroscience of it, but you detach your like reality from what your mind, the images, your mind is able to conjure up and your mind goes into weird places and like entities appear somehow Freudian type like trauma probably connected in there. Somehow we start to have like these weird, vivid worlds that likes to actively dream the new we're not like six, six hours of dreams. And I think really useful time. I know I, I haven't I don't for some reason, I just knock out and I have sometimes like anxiety inducing, kind of like very pragmatic, like nightmare type of dreams, but not nothing fun.
+01:47:47
+Nothing, nothing fun. Nothing fun. I try, I unfortunately have mostly have fun in the working world which is very limited in the amount of fun you can have. It's not that little bit of either. Yeah. That's what I need. Instructions. Yeah.
+01:48:07
+There's like a manual for that. You might want to look it up. I'll ask you, what would you dream, you know, years ago and I read about. Like, you know, a book about how to have, you know, become aware of your dreams. I worked on it for a while, like to talk about, you know, imagine you can see your hands and look out. And then I got somewhat good at it, like but my mostly when I'm thinking about things or working on problems, I, I, I prepped myself before I go to sleep.
+01:48:38
+It's like I pull into my mind all the things I want to work on or think about. And then that, let's say, greatly improves the chances that I'll I'll work on that while I'm sleeping. And then and then I also basically ask to remember it. And I often remember very detailed within the dream or outside the dream, well, to bring it up in in my dreaming and then to remember it when I wake up.
+01:49:10
+It's just it's more of a meditative practice to say, you know, to prepare yourself to do that, like if you go to sleep still gnashing your teeth about some random thing that happened that you're not really interested in your dream about. That's really interesting, maybe, but you can direct your dreams perhaps somewhat by prepping. You know, I'm going to try that, it's really interesting, like the most important, the interesting not like what did this guy send an email, kind of like stupid stuff like fundamental problems.
+01:49:44
+Actually concerned about and interesting things you're worried about or what you're reading or, you know, some great conversation you had or some some adventure you want to have. There's a lot of space there and. And it seems to work that, you know, my percentage of interesting dreams and memories went up, is there?
+01:50:07
+Is that the source of if you were able to deconstruct, like where some of your best ideas came from? Is there a process that's at the core of that? Like, so some people, you know, walk and think, some people like in the shower, the best ideas in them. If you talk about, like Newton Apple hitting them on the head.
+01:50:28
+Now, I found out a long time ago, I process things somewhat slowly. So like in college, I had friends that could study at the last minute, get any next day. I can't do that at all. So I always front loaded all the work like I do all the problems early for finals, like the last three days. I wouldn't look at a book because I want, you know, because like a new fact, the day before finals may screw up my understanding what I thought I knew.
+01:50:53
+So my my my goal was to always get it in and and give it time to soak. And I used to you know, I remember when we were doing like three D calculus, I would have these amazing dreams, the 3D surfaces for normal, you know, calculating the gradient just like all come up. So it was really fun, like very visual. And and if I got cycles of that, that was useful. And the other is, is don't over filter your ideas.
+01:51:20
+Like I like that process of brainstorming with lots of ideas are going to happen. I like people who have lots of ideas and upset. Then there's yeah. I let them sit and let it breathe a little bit. And then reduce it to practice, like at some point, you really have to. Does it really work like that? Was this real or not? Right, but but you have to do both.
+01:51:44
+There's creative tension there, like how do you be both open and precise who had ideas that you just that sit in your mind for years before the tour? It's an interesting way to. Is generate ideas and just let them sit, let him sit there for a while. He gave a few of those ideas, you know, that was so funny.
+01:52:09
+Yeah, I think that, you know, creativity, this one or something.
+01:52:15
+For the slow thinkers in the in the room, I suppose, as I say, some people, like you said, are just like like the yeah, it's really interesting.
+01:52:24
+There's so much diversity in how people think, you know, how fast or slow they are, how well they remember. Don't look. You know, I'm not super good at remembering facts, but processes and methods like in our institute. I went to Penn State and almost all the engineering tests were open book. I could remember the page and not the formula, but as I saw the formula, I could remember the whole method if I if I learned it.
+01:52:49
+Yeah. Know. So it's just so funny where some people could you know, I just watched friends like flipping through the book, trying to find the formula, even knowing that they'd done just as much work. And I would just open the book. I was on page twenty seven, but if I could see the whole thing visually. Yeah, and, you know, and you have to learn that about yourself and figure out what to function optimally.
+01:53:10
+I had a friend who who was always concerned. He didn't know how he came up with ideas. He had lots of ideas. But he said he just sort of popped up like he'd be working on something, had this idea, like, where does it come from? But you can have more awareness of it. Like like like like how you how your brain works is a little murky as you go down from the voice in your head or the obvious visualizations.
+01:53:33
+But when you visualize something, how does that happen? Yes, you if I say, you know, visualize a volcano, it's easy to do. Right. And what does it actually look like when you visualize it? I can visualize to the point where I don't see the very much out of my eyes and I see the colors of the thing I'm visualizing.
+01:53:47
+Yeah, but there's like there's a shape, there's a texture, there's a color. But there's also conceptual visualization. Like, what are you actually visualizing when you're visualizing a volcano, just like with peripheral vision, you think you see the whole thing. Yeah, that's a good way to say it.
+01:54:01
+You know, you have this kind of almost peripheral vision of your visualizations that are like these ghosts.
+01:54:07
+But, you know, if you if you work on it, you can get a pretty high level of detail and somehow you can walk along those visualizations to come up with an idea, which is what we are.
+01:54:16
+But when you're thinking about solving problems like you're you're putting information in, you're exercising the stuff you do know, you're sort of teasing the area that you don't understand and don't know. But you can almost feel. You know, that process happening, you know, that's that's how I like. Like, look, I know sometimes when I'm working really hard on something like like I get really hot when I'm sleeping and, you know, it's like we got the blanket throw of all the blankets are on the floor.
+01:54:49
+And, you know, every time we wake up and think, wow, that was great, you know, are you able to to reverse engineer what the hell happened there?
+01:54:58
+Oh, sometimes it's vivid dreams and sometimes it's just kind of like you say, like shadows, thinking that you sort of have this feeling or you're going through this stuff. But it's not that obvious. It's so amazing at the mind. Just does all these little experiments.
+01:55:12
+I never you know, I thought I always thought it's like a river that you can't you just there for the ride. But you're right. If you prep it.
+01:55:19
+Oh, it's all understandable. Meditation really helps. You got to start figuring out. You need to learn the language of your own mind. And there's multiple levels of it. But they have abstractions again, right? It's somewhat comprehensible and observable and feasible or whatever the right word is not. You know, you're not along for the ride, you are the ride. I have to ask you, hardware engineer working on your networks now, what's consciousness? What the hell is that thing?
+01:55:52
+Is that is that just some little weird quirk of our particular computing device? Or is it something fundamental that we really need to crack open for her to to build like good computers? Do you ever think about consciousness, like why it feels like something to be you know, it's it's really weird. So, yeah. I mean, everything about it's weird first is to half a second behind reality, right? It's a post hoc narrative about what happened.
+01:56:23
+You've already done stuff by the time you're conscious of it and your consciousness generally is the single threaded thing. But we know your brain has 10 billion neurons running some crazy parallel thing. And there's a really big sorting thing going on there that also seems to be really reflective in the sense that. You create a space in your head like we don't really see anything, right, like photons hit your eyes, it gets turned into signals, it goes through multiple layers, the neurons, you know, like I'm so curious that, you know, that looks glassy and that looks not glassy like like how the resolution of your vision is so high.
+01:57:03
+You have to go through all this processing where for most of it, it looks nothing like vision, but like like there's no theater in your mind. Right. So we we have a world in our heads. We're literally just isolated. Behind our sensors, but we can look at it, speculate about it, speculate about alternatives, problem solve, what if, you know, there's so many things going on and that process is lagging reality and it's single threaded, even though the underlying thing is like massively parallel.
+01:57:39
+So it's so curious. So imagine you're building a computer. If you wanted to replicate humans, well, you'd have huge arrays of neural networks and apparently only six or seven deep. What's clear is they don't even remember seven numbers, but I think we can upgrade that a lot. Right. And then somewhere in there, you would train the network to create basically the world that you live in. Right. So tell stories to self about the world that is proceeding well, create this, create the world, tell stories in the world, and then have many dimensions of.
+01:58:14
+You know. Like sideshows to it, like we have an emotional structure, like we have a biological structure and that seems hierarchical to like like if you're hungry, dominate your thinking. If you're mad at dominate, you're thinking like. And we don't know if that's important to consciousness or not, but it certainly disrupts, you know, intrudes in the consciousness like lots of structure to that. And we like to dwell on the past. We like to think about the future.
+01:58:40
+We like to imagine we like to fantasize. Right. And the somewhat circular observation of that is the thing we call consciousness. Now, if you created a computer system and did all things great worldviews, created future alternate histories, you know, dwelled on past events, you know, accurately or semi accurately, you know, it's a consciousness to spring up like natural without fail. Look and feel conscious to you like you aren't just an external observer.
+01:59:10
+So do you think the thing that looks consciousness conscious like do you. Again, this is like an engineering kind of question, I think, because. Like, if we want to engineer consciousness, is it OK to engineer something that just looks conscious? Or is is there a difference between how we evolved consciousness because it's a super effective way to manage our affairs? Yeah, it's a social statement. Yeah, well, it gives us the planning system. You know, we have a huge amount of stuff, like when we're talking, like the reason we can talk really fast is where each other at a really high level of detail and consciousness is required for that.
+01:59:50
+Right. And well, all those components together, manifest consciousness. Right. So if we make intelligent beings that we want to interact with, that we're like, you know, wondering what they're thinking, you know, you know, looking forward to seeing them. You know, when you interact with them, they they're interesting and surprising, you know, fascinating. You know, they will probably feel conscious like we do and will perceive them as conscious. I don't know why not, but no, no.
+02:00:19
+Another fun question on this, because in from a computing perspective, we're trying to create something that's human, like a super human like. Let me ask you about aliens. Aliens. I mean, do you think there's intelligent alien civilizations out there? And do you think their technology, their computing, their A.I. bots, their their chips are of the same nature as ours?
+02:00:50
+You know, I have no idea. I mean, if there's lots of aliens out there that have been awfully quiet, you mean there's there's speculation about why there seems to be more than enough planets out there? There's a lot there's intelligent life on this planet that seems quite different. You know, like, you know, dolphins seem like plausibly understandable. Octopuses don't seem understandable at all. They live longer than a year. Maybe they would be running the planet.
+02:01:20
+They seem really smart. And their neural architecture is completely different than ours. Now, who knows how they perceive things? I mean, that's the question for us intelligent beings who may not be able to perceive other kinds of intelligence if they become sufficiently different than us, like we live in the current constrained world. It's three dimensional geometry and the geometry defines a certain amount of physics. And, you know, is like how time works seems to work.
+02:01:48
+There's so many things that seem like a whole bunch of the input parameters to the, you know, another conscious being or the same. Yes, like if it's biological or biological, things seem to be in a relatively narrow temperature range, right, because, you know, organics don't aren't stable, too cold or too hot. So so there's if you specified the list of. Things that. Input to that, but since we make really smart. You know, beans and they go solve about how to think about a billion numbers at the same time and then how to think and dimensions, there's a funny science fiction book where the all the society had uploaded into this matrix and at some point some some of the beings in the Matrix thought, I wonder if there's intelligent life out there.
+02:02:37
+So they had to do a whole bunch of work to figure out, like how to make a physical thing because their matrix was self-sustaining and they made a little spaceship and they travel to another planet. When they got there, there was like life running around, but there was no intelligent life. And then they figured out that there was these huge organic matrix all over the planet inside there were intelligent beings and uploaded themselves into that matrix. So everywhere intelligent life was, soon as it got smart, it up leveled itself into something way more interesting and 3D geometry and escape whatever landscape you love is better.
+02:03:18
+You know the essence of what we think of as an intelligent being. I tend to like the thought experiment of the organism. Like humans aren't the organisms. I like the notion of like Richard Dawkins and Meems that ideas themselves are the organisms like that are just using our minds to evolve. So we're just like meat receptacles for ideas to breed and multiply and so on. And and maybe those are the aliens.
+02:03:51
+So Jordan Peterson has lines, says, you know, you think you have ideas, but ideas have you? Yeah, right. Good line. And then we know about the phenomenon of groupthink. And there are so many things that constrain us. But I think you can examine all that and not be completely owned by the ideas and completely sucked into groupthink. And part of your responsibility is as a human, is to escape that kind of phenomena, which isn't, you know, it's you know, it's it's one of the creative tension things that you're constructed by it.
+02:04:27
+But you can still observe it and you can think about it and you can make choices about to some level how constrained you are by it. And, you know, it's useful to do that. And. But but at the same time, and it could be by doing that, you know, the group and society you're you're part of becomes collectively even more interesting.
+02:04:53
+So, you know, so the outside observer will think, wow, you know, all these Lexa's running around with, all these really independent ideas have created something even more interesting in the aggregate. So. So so I don't know, I'm. Those are lenses to look at the situation, but I'll give you some inspiration, but I don't think they're constraint, right. You know, as a small little quirk of history, it seems like you're related to Jordan Peterson.
+02:05:23
+And you mentioned he's going through some rough stuff. Now, is there some comment you can make about the the roughness of the human journey, the ups and downs?
+02:05:33
+Well. I became an expert in benzo withdrawal, like which is to benzodiazepines, and at some point they interact with GABA circuits, you know, to reduce anxiety and do a hundred other things, like there's actually no known list of everything they do because they interact with so many parts of your body. And then once you're on them, you habituate to them and you're you have a dependency. It's not like a drug dependency. We're trying to get high.
+02:06:04
+It's a it's a metabolic dependency. And then if you discontinue them, there's a funny thing called kindling, which is if you stop them and then go, you'll have a horrible thralls symptoms. If you go back on them at the same level, you won't be stable.
+02:06:22
+And that unfortunately happened to him because it's so deeply integrated into all the kinds of systems in the body, literally changes the size and numbers of neurotransmitter sites in your brain. Yeah. So there's a there's a process called the Asheton protocol where you taper it down slowly over two years to people go through that, go through. Unbelievable how and what Jordan went through seemed to be worse because he, on advice of doctors, will stop taking this and take this was the disaster.
+02:06:50
+And he got some. Yeah, it was pretty tough. He seems to be doing quite a bit better intellectually. You can see his brain clicking back together. I spent a lot of time with I've never seen anybody suffered so much while his brain is also like this powerhouse. Right. So I wonder, there's a brain that's able to think deeply about the world, suffer more through these kinds of withdrawals. Like, I don't know, I've watched videos of people going through withdrawal.
+02:07:18
+They they all seem to suffer unbelievably. And, you know, my heart goes out to everybody and there's some funny math about this, some doctor said, as best you can tell. Know there's the standard recommendations. Don't take him for more than a month and then taper over a couple of weeks. Many doctors prescribe them endlessly, which is against the protocol. But it's common, right? And then something like 75 percent of people, when they taper, it's you know, half the people have difficulty, but 75 percent get off, OK, 20 percent have severe difficulty and five percent have life threatening difficulty.
+02:07:56
+And if you're one of those, it's really bad. And the stories that people have on this is heartbreaking and tough.
+02:08:04
+So he put some of the fault that the doctors, they just don't know what the hell they're doing. So it's hard to say.
+02:08:09
+It's it's one of those commonly prescribed things. Like one doctor said, what happens is if you're prescribed them for a reason and then you have a hard time getting off, the protocol basically says you're either crazy or dependent and you get kind of pushed into a different treatment regime, a drug drug addict or a psychiatric patient.
+02:08:31
+And so, like one doctor said, you know, I prescribed for 10 years thinking I was helping my patients and I realized I was really harming them. And, you know, the awareness of that is slowly coming up. The fact that they're casually prescribed to people is horrible.
+02:08:50
+And it's bloody scary. And some people are stable, but are on for life like, you know, it's another one of those drugs. But Ben, those long range have impacts on your personality.
+02:09:02
+People talk about the benzo bubble where you get disassociated from reality and your friends a little bit. It's it's really terrible.
+02:09:09
+The mind is terrifying. We were talking about how the infinite possibility of fun, like it's the infinite possibility of suffering, too, which is one of the dangers of like expansion of the human mind. It's like I wonder if all the possible human experiences that intelligent computer can have, is it mostly fun or is it mostly suffering? So, like, if you if you brute force expand the set of possibilities, like, are you going to run into some trouble in terms of like torture and suffering and so on?
+02:09:46
+Maybe our human brain is just protecting us from much more possible pain and suffering. Maybe the space of pain. It's like much larger than we could possibly imagine and that the world's in about. You know, all the all the literature on religion and stuff is, you know, the struggle between good and evil is this balance is very finely tuned for reasons that are complicated. But that's all, little one for several conversations.
+02:10:14
+Speaking of balance, that's complicated. I wonder because we're living through one of the more important moments in human history with this particular virus, it seems like pandemics have at least the ability to kill off most of the human population at their worst. And there's this fascinating because there's so many viruses in this world. There's so many I mean, viruses basically run the world in the sense that they've been around a very long time. They're everywhere. They seem to be extremely powerful and they're just in there just to be a kind of way.
+02:10:46
+But at the same time, they're not intelligent and they're not even living. Do you have, like, high level thoughts about this virus that like in terms of you being fascinated, terrified her now?
+02:10:58
+And I not one between. So I believe in framework's. Right. So like one of them is evolution.
+02:11:05
+Like we're evolved creatures, right? Yes. And one of the things about evolution is it's hypercompetitive and it's not competitive out of a sense of evil. It's competitive in the sense of there's endless variation and variations that work better win. And then over time, there's so many levels of that competition. You know, like multicellular life partly exists because of, you know, the competition between different kinds of lifeforms. And we know sex partly exists to scramble our genes so that we have, you know, genetic variation against the invasion of the bacteria and viruses.
+02:11:43
+And it's endless. Like I read some funny statistic, like the density of viruses and bacteria in the ocean. It's really high. And one third of the bacteria die every day because of viruses and bacteria like one third of them.
+02:11:57
+Wow. Like like I don't know if that number is true, but it was like there's like there's like the amount of competition in what's going on. A stunning. And there's a theory as we age, we slowly accumulate bacteria and viruses and as our immune system kind of goes down, you know, that's what slowly kills us.
+02:12:16
+And it just feels so peaceful from a human perspective when we sit back and are able to have a relaxed conversation and and there's wars going on out there.
+02:12:26
+Like right now you're harboring how many bacteria? You know, the ones many of them are parasites on you and some of them are helpful and some of modifying your behavior. And some of them are you know, it's just really it's really wild. But, you know, this particular manifestation is unusual, you know, in the demographic how it hit and the political response that it engendered in the health care response it engendered in the technology engendered. It's kind of wild.
+02:12:56
+And the commodification on Twitter that at every level, all the kind of stuff I'd ever, ever see on a level.
+02:13:01
+Yeah, but but what usually kills life, the big extinctions are caused by meteors and volcanoes.
+02:13:08
+That's the one you're worried about, as opposed to human created bombs or solar flares or another good one. Occasionally solar flares at the planet.
+02:13:18
+So nature. With, you know, it's all pretty wild on another historic moment.
+02:13:25
+This is perhaps outside, but perhaps within your space of frameworks. Do you think about that? Just happened, I guess, a couple of weeks ago is I don't know if you're paying attention at all. Is the the GameStop and Wall Street bats one. So it's really fascinating. This is kind of a theme to this conversation today because it's like neural networks.
+02:13:51
+It's cool how there's a large number of people in a distributed way. Almost having a kind of fun we're able to take on the powerful elites, elite hedge funds, centralized powers and overpower them. Do you have thoughts? I mean, Saga? I don't know enough about finance, but it was like the Illan, you know, Robin Hood guy when they talked.
+02:14:19
+What do you think about that?
+02:14:20
+Well, Robin Hood guy didn't know how the financial system worked. That was clear, right? He was treating like the people who settled the transactions as a black box and suddenly somebody called him up and say, hey, blackbox, calling you your transaction volume means you need to put out three billion dollars right now. And he's like three billion dollars. Like, I don't even make any money on these trades. Why do I have three billion dollars while you're sponsoring a trade?
+02:14:42
+So so there was a set of abstractions that, you know, I don't think either like like now you understand it like this happens in chip design, like you buy wafers from TSMC or Samsung or Intel and, you know, they say it works like this and you do your design based on that. And then Chip comes back. It doesn't work. And then suddenly you start having open the black boxes, like the transistors really work like they said, you know, what's the real issue?
+02:15:07
+So. So the. There is a whole set of things that created this opportunity and somebody spotted it. Now people spot these kinds of opportunities all the time. There's been flash crashes. There has been you know, there's always short squeezes or fairly regular. Every CEO I know hates the shorts because they're they're manipulating they're trying to manipulate their stock in a way that they make money and, you know, deprive value from both the company and the investors.
+02:15:38
+So the fact that.
+02:15:41
+You know, some of these stocks were so short, it's hilarious, yeah, that this hasn't happened before. I don't know why and I don't actually know why some serious hedge funds didn't do it to other hedge funds. And some of the hedge funds actually made a lot of money on this. Yes. So my guess is we know five percent of what really happened and a lot of the players don't know what happened. And they probably made the most money.
+02:16:06
+Aren't the people that they're talking about? Yeah, that's.
+02:16:10
+Do you think there was something I mean, this is this is the cool kind of Elon. You're the same kind of conversationalist, which is like first principles, questions of like what the hell happened? Just very basic questions of like, was there something shady going on? What you know, for the parties involved is the basic questions that everybody wants to know about. Yeah.
+02:16:35
+So like we're in a very hyper competitive world. Right. But transactions like buying and selling stock is a trust event. You know, I trust the company represent themselves properly. You know, I bought the stock because I think it's going to go up. I trust that the regulations are solid. Now, inside of that, there's all kinds of places where, you know, humans over trust and, you know, this just exposed, let's say, some weak points in the system.
+02:17:03
+I don't know if that's going to get corrected. I don't know. I don't know if we have close to the real story. Yeah, my my suspicion is we don't. Yeah. And listen to that guy used to look a little wide eyed about and then he did this and he did that. And I was like, hmm, I think he should know more about your business than that. But again, there's many businesses went like this. Layer's really stable.
+02:17:28
+You start paying attention to it. You pay attention to the stuff that's bugging you or new. You don't pay attention to the stuff that just seems to work all the time. You just you know, sky is blue every day, California. And I remember what Wild Ranger is like. We do somebody go bring in the lawn furniture, you know, like it's getting wet. You don't know it's getting wet.
+02:17:49
+Yeah, I was blue for like 100 days and now it's, you know, so but part of the problem here with Vlad, the CEO of Robin Hood, is the scaling that we're talking about is there's a lot of unexpected things that happen in the scaling. And you have to be, I think, the scaling forces you to then return to the fundamentals.
+02:18:11
+Well, it's interesting because when you buy and sell stocks, the scaling is, you know, the stocks don't move in a certain range. And if you buy stock, you can only lose that amount of money on the short, short market. You can lose a lot more than you can benefit like it has. It has a weird cause, you know, cost function or whatever the right word for that is.
+02:18:28
+So he was trading in a market or he wasn't actually capitalized for the downside if it got outside a certain range. Now, whether something nefarious has happened, I have no idea, but at some point the the financial risk to both him and his customers was way outside of his financial capacity and his understanding how the system work was clearly. Week or he didn't represent himself, you know, I don't know the person I listen to him. Yeah, it could have been the surprise question was I got these guys called in.
+02:19:01
+You know, it sounded like he was treating stuff as a black box. Maybe he shouldn't have, but maybe he has a whole pile of experts somewhere else. And it was going on. I don't I don't know. Yeah.
+02:19:11
+I mean, this is this is one of the qualities of a good leader is under fire. You have to perform. And that means to think clearly and to speak clearly. And he dropped the ball on those things because and understand the problem quickly. Learn and understand the problem, like at the basic level, like what the hell happened. And my guess is, you know, at some level it was amateur's trading against, you know, experts slash insider slash people with special information, outsiders, the insiders and the insiders.
+02:19:48
+You know, my guess is the next time this happens will make money on it. The insiders always win. Well, they have more tools and more incentive. I mean, this always happens like the outsiders are doing this for fun. The insiders are doing this 24/7, but there is not work in the outsiders.
+02:20:05
+This is the interesting thing. Well, there could be somebody on the insiders to like a different kind of numbers, different numbers.
+02:20:13
+But this could be a new era because I don't know, at least I didn't expect that a bunch of regulars could, you know, there's, you know, millions of people getting to talk to. The next one will be a surprise.
+02:20:23
+But don't you think the the crowd, the people are planning the next attack?
+02:20:28
+We'll see. It has to be a surprise. Can't be the same game. As to the like, it could be there's a very large number of games to play and they can be agile about it. I don't know. I'm not an expert. Right. That's a good question. In the space of games, how restricted is it? Yeah, and the system is so complicated, it could be relatively unrestricted.
+02:20:52
+And also, like, you know, during the last couple of financial crashes, you know, what set it off was sort of derivative events where, you know you know, Nassim Taleb, you know, saying is there your there are trying to lower volatility in the short run by creating tail events and systems always evolve towards and then they always crash like the S curve is the, you know, low ramp plateau crash.
+02:21:21
+It's 100 percent effective in the long run. Let me ask you some advice to put on your profonde hat. Mm hmm. What? There's a bunch of young folks to listen to this thing for no good reason whatsoever. Uh, undergraduate students, maybe high school students, maybe just young folks are young at heart and looking for. The next steps to take in life, what advice would you give to a young person today about life, maybe career, but also life in general, get good at some stuff?
+02:21:55
+Well, get to know yourself right away. Get good at something that you're actually interested in. You have to love what you're doing to get good at it. You really got to find that. Don't waste your time doing stuff that's just boring or bland or nothing. Right?
+02:22:09
+Don't let old people screw people, get talked into doing all kinds of shit and racking up huge student student debts.
+02:22:18
+And like, there's so much crap going on, you know, and that drains your time and drains your thesis that the older generation will like. Oh, yeah, they're trappin. All the young people think there's some truth to that.
+02:22:31
+Yes.
+02:22:32
+You know, just because you're old doesn't mean you stop thinking, I know what's a really original. Yep. Old people. I'm an old person, so, um, but you have to be conscious about it. You can fall into ruts and then. Do that, I mean, when I hear young people spouting opinions, that sounds like they come from Fox News or CNN, I think they've been captured by groupthink.
+02:22:56
+And Meems and I suppose I think on their own, you know, so if you find yourself repeating what everybody else is saying, you're not going to have a good life look like that's not how the world works. It may be it seems safe, but it puts you at great jeopardy for. Might be boring or unhappy or how long they it take you to find the thing that you have fun with?
+02:23:20
+I don't know. I've been a fun person since I was pretty little. So everything I've gone through a couple of periods of depression in my life for good reason or for recently doesn't make any sense.
+02:23:32
+Yeah. And some things are hard, like you go through mental transitions in high school, I was depressed, really depressed for a year and I said I think I had my first midlife crisis at 26. I kind of thought, is this all there is? Like, I was working at a job that I loved and but I was going to work and all my time was consumed.
+02:23:52
+What's what's the escape out of that depression was the answer to is, is this all there is?
+02:23:58
+Well, now, a friend of my I asked him because he was working his ass off. I said, what's your work life balance like? Like there's, you know, work, friends, family, personal time. Are you bouncing in that? And he said, work 80 percent, family 20 percent. And I try to I try to find some time to sleep like there's no personal time. There's no passion at a time. Like, you know, young people are often passionate about work.
+02:24:24
+So I was certain I like that. But you need to you need to have some space in your life for different things. And that's that creates that makes you resistant to the whole the deep and the deep depths into depression kind of thing. Yeah, we have to get to know yourself to meditation helps some physical, something physically intense helps like the weird places your mind goes kind of thing like.
+02:24:51
+And why does it happen? Why do you do what you do?
+02:24:54
+Like triggers, like the things that cause your mind to go to different places kind of thing, or like events like your upbringing for better or worse, whether your parents are great people or not, you you come into adulthood with all kinds of emotional burdens. Yeah. And you can see some people are so bloody stiff and restrained and they think the world is fundamentally negative like you maybe that you have unexplored territory. Yeah. Or you're afraid of something. Definitely afraid of quite a few things.
+02:25:27
+You don't you got to go face them like, like what's the worst thing that can happen.
+02:25:32
+You're going to die. Right. Like that's inevitable. You might as well get over that like a one hundred percent death. Right now people are worried about the virus, but you know, the human condition is pretty deadly. There's something about embarrassment that I've competed a lot of my life. And I think that if I'm to introspected the thing, I'm most afraid of this being like humiliated, I think.
+02:25:56
+And nobody cares about that. Like you're the only person on the planet that cares about you being humiliated. So really useless thought it is. It's like, uh, you're all humiliated. Something happened in a room full of people and they walk out and they didn't think about it one more second. Or maybe somebody told a funny story to somebody else and then they sat there. Yeah, yeah. No, I know too.
+02:26:19
+I mean, I've been really embarrassed that nobody cared about me, so.
+02:26:24
+Yeah, it's a funny thing. So the worst thing ultimately is just, uh. Yeah, but that's the case. I mean you have to get out of it. Yeah. Like what you here's the thing. Once you find something like that you have to be determined to break it. Because otherwise you'll just, you know, sort of accumulate the kind of junk and you dies a, you know, a mess.
+02:26:44
+So the goal I guess, is it's like a cage within a cage. I guess the goal is to die in the biggest possible cage. Well, I.
+02:26:52
+You have no cage. People do get enlightened out of you. It's great. You found a few. There's a few out there. And, of course, there, um, either that or the you know, the great sales pitch, it was like a million people write books and do all kinds of stuff. It's a good way to sell a book. I'll give you that. You've never met somebody. You the thought they just killed me. Like this is like mental clarity, humor.
+02:27:17
+No, 100 percent.
+02:27:18
+But I just feel like they're living in a bigger cage. They have their own little thing. There's a cage stuck. You secretly suspect there's always kid. There's no there's nothing outside the know outside the cage. Uh, you were you were you weren't in a bunch of companies.
+02:27:39
+You let a lot of amazing teams. I don't I'm not sure if you've ever been like in the early stages of a startup, but do you have advice for.
+02:27:53
+Somebody that wants to do a start up or build a company like build a strong team of engineers that have passion and just want to solve a big problem like is there more specifically on that point, you have to be really good at stuff.
+02:28:10
+You're going to lead and build a team. You better be really interested in how people work and think. The people or the solution to the problems? There's two things, right? One is how people work and the other is the fact is there's quite a few successful start ups. It's pretty clear the founders don't know anything about people like the idea was so powerful that propelled them. But I suspect somewhere early they they hired some people who understood people because people really need a lot of care and collaborate and work together and feel engaged and work hard, you know, like start ups is all about outproducing other people, like your nimble because you don't have any legacy.
+02:28:49
+You don't have, you know, a bunch of people who are depressed about life and, you know, just showing up, you know, so startups have a lot of advantages that outweigh, you know. Do you like the sea? Just talked about this idea of A players and B players. I don't know if you know this foundation.
+02:29:06
+I know that the organizations that got taken over by BP are leaders. Often really underperformed the hirsute players. That said, in big organizations, there's so much work to do and there's so many people who are happy to do what, you know, like the leadership or the big idea people would consider menial jobs. And, you know, you need a place for them, but you need an organization that both values and rewards them but doesn't let them take over the leadership of it.
+02:29:37
+Got it.
+02:29:38
+But so so you need to have an organization that's resistant to that. But in the early days, the the notion with Steve was that like one big player in a room of players will be like destructive to the whole. I've seen that happen. I don't know if it's like always true. Like, you know, you run into people who are clearly be players. But I think there are three players. And so they have a loud voice at the table and they make lots of demands for that.
+02:30:04
+But there's other people are like, I know who I am. I just want to work with cool people and cool shit and just tell me what to do and I'll go get it done. Yeah. So you have to again, this is like people skills like what kind of person is it? You know, I've met some really great people. I love working with you that weren't the biggest eyed people, the most productive ever. But they show up, they get it done.
+02:30:25
+You know, they create connection and community that people value. It's pretty diverse. So I don't think there's a recipe for that. I got to ask you about love. I heard you're into this now, into this love thing is this is you think this is your solution to your depression.
+02:30:42
+Now, I'm just trying to, like you said, delighting people on occasion, trying to sell book and writing a book about love.
+02:30:47
+You're writing a book about.
+02:30:48
+No, I'm not I'm not afraid about you're going to be.
+02:30:55
+So you should really write a book about your marriage before. Otherwise, it'd be a short book.
+02:31:04
+Well, that one was all pretty well. What role do you think love, family, friendship, all that kind of human stuff play in a successful life? You've been exceptionally successful in the space of like running teams, building cool shit in this world, creating some amazing things. What did love get in the way? Did love help? The family getting away at the family, how do you want the engineer's answer, please? So my first love is functional, right?
+02:31:35
+It's functional in that way. So we habituate ourselves to the environment. And actually, Jordan told me, George Peterson told me this line. So you go through life and you just get used to everything except for the things you love. The day they remain new like this is really useful for, you know, like like other people's children and dogs and, you know, trees. You just don't pay that much attention to your own kids, your monitor and really closely like.
+02:32:00
+And if they go off a little bit because you love them, if you're smart, if you're going to be a successful parent, you notice that right away. You don't habituate. Just things you love, and if you want to be successful at work, if you don't love it, you're not going to put the time in somebody else and somebody else that loves it, like because it's new and interesting and that lets you go to the next level.
+02:32:27
+So the thing is, it's a function that generates newness and novelty and surprises. You know those guys.
+02:32:33
+It's really interesting. There's people figured out lots of frameworks for this, like like humans seem to go in partnership, go through interest, like somebody suddenly somebody is interesting and then you're infatuated with them and then you're in love with them. And then, you know, different people have ideas about parental love or mature love. Like, you go through a cycle of that which keeps us together. And it's super functional for creating families and and creating communities and making you support somebody despite the fact that you don't love them like and and.
+02:33:10
+It can be really enriching. You know, now in the work life balance scheme, if all you do is work, you think you may be optimizing your work potential, but if you don't love your work or you don't have. Family and friends and things you care about, your brain isn't well balanced like everybody knows the experience of your works on something. All week you went home and took two days off and you came back and the odds of you working on the thing, picking up right where you left off as zero, your brain refactored it.
+02:33:47
+Being in love is great. It's like changes the color, the light in the room, it creates a spaciousness that's that's different. It helps you think. It makes you strong, Bukovsky had this line about love being a fog that dissipates with the first light of reality in the morning.
+02:34:06
+That's depressing. I think it's the other way around. It lasts for you. Like you said, it's a function. It's a thing that can be the light that actually enlivens your world and creates the interest in the power and the strength to go do something like look like that.
+02:34:22
+Sounds like, you know, there's like physical love, emotional love, intellectual love, spiritual.
+02:34:26
+Yeah, right. Isn't all the same thing. Kind of. Used to differentiate that maybe that's your problem in your book, you should you should refine that a little the different chapters. Yeah, there's different chapters, but these are there aren't these just different layers of the same thing, a stack. No physical people. People some people are addicted to physical love and they have no idea about emotional or intellectual love.
+02:34:49
+Huh. I don't know if they're the same things, I think they're different. That's true. They could be different. And it'd be I guess the ultimate goal is for to be the same. Well, if you want something to be bigger and interesting, you should find all its components and differentiate them closer together.
+02:35:04
+Make people do this all the time. Yeah. And the modularity gets you abstraction layers. Right. And then you can you have room to breathe or maybe you can write the foreword to my book about love or the afterwards. And yeah, I really tried. I feel like this has been a lot of progress with this book, but, uh, well you have things in your life that you love.
+02:35:25
+Yeah. Yeah.
+02:35:26
+So and they are you're right.
+02:35:28
+They're modular and you can have multiple things with the same person or the same thing and. Yeah.
+02:35:35
+But yeah. Depending on the moment of the day. Yeah. There's. Like what Bukovsky described as that moment, you go from being in love to having the different kind of love. Yeah, right. And that's the transition. But when it happens, if you read the owner's manual and you believe that you said, oh, this happened, it doesn't mean it's not love. It's a different kind of love. But. But maybe there's something better about that as you grow old, if all you do is regret how you used to be sad, right?
+02:36:08
+You should have learned a lot of things because like you, you can be in your future selves is actually more interesting and possibly delightful than being a bad kid in love with the next person like that. Super fun when it happens, but. That's that's, you know, five percent of the possibility, but, yeah, that's right, that there's a lot more fun to be had in the long lasting stuff or meaning of meeting, which is a kind of fun, the deeper kind of fun.
+02:36:40
+And it's surprising. You know, that's like like the thing I like is surprises, you know, and you just never know what's going to happen.
+02:36:48
+Yeah, but you have to look carefully. You have to work out it. You have to think about it. You know, it's. Yeah, you have to see the surprises when they happen. Right. You have to be looking for it from the branching perspective. You mentioned regret's. Do you have regrets about your own trajectory? Oh, yeah, of course. Some of it's painful, but you want to hear the painful stuff? No, I say, like, in terms of working with people.
+02:37:16
+When people did stuff I didn't like, especially if it was a bit nefarious, I took it personally and I also felt it was personal. But, um, but a lot of times, like humans, you know, most humans are a mess. And then they act out and they do stuff. And the psychologists I hurt long time ago said, you tend to think somebody does something to you. But really what they're doing is they're doing what they're doing while they're in front of you.
+02:37:42
+It's not that much about you. Yeah, right. And as I got more interested in. You know, when I work with people, I think about them and probably analyze them and understand them a little bit, and then when they do stuff, I'm way less surprised and I'm way, you know, and if it's bad, I'm way less hurt and I react way less like I sort of expect everybody's got their shit. Yeah. And it's not about you and about me that much.
+02:38:10
+It's like, you know, you do something and you think you're embarrassed, but nobody cares. Like somebody is really mad at you. The odds of it being about, you know, they're getting mad the way they're doing it because of some pattern they learned. And, you know, and maybe you can help them if you care enough about it. But or you could you could see it coming and step out of the way like, look, I wish I was way better at that.
+02:38:32
+I'm a bit of a hothead.
+02:38:34
+And forget that you said with Steve that was a feature, not a bug.
+02:38:38
+Yeah, well, he was using it as the counterforce, the orderliness that would crush his or when you were doing the same.
+02:38:44
+Yeah, maybe I'll take I don't think my my vision was big enough. It was more like I just got pissed off and did stuff. I'm sure that's. Yeah.
+02:38:55
+Yeah. You're telling me. I don't know if it had the it didn't have the amazing effect that created the trillion dollar company.
+02:39:01
+It was more like I just got pissed off and left and or made enemies I shouldn't have. And it's just hard. Like I didn't really understand politics until I worked at Apple where Steve was a master player of politics and his staff had to be or they wouldn't survive them. And it was definitely part of the culture. And then I've been in companies where they say it's political, but it's all, you know, fun and games compared to Apple. And it's not that the people at Apple are bad people.
+02:39:29
+It's just they operate politically at a at a higher level.
+02:39:34
+You know, it's not like, oh, somebody said something bad about somebody, somebody else, which is most politics, that's, you know, they they had strategies about accomplishing their goals sometimes, you know, over the dead bodies of their enemies, you know, with this more Game of Thrones of sophistication and like a big time factor rather than a you know, that requires a lot of control over your emotions, I think you did to have a bigger strategy in the way you behave.
+02:40:05
+Yeah. And it's it's it's effective in the sense that coronating thousands of people to do really hard things where many of the people in there don't understand themselves, much less how they're participating there creates all kinds of, you know, drama and problems that, you know, our solution is political in nature. Like how do you convince people? How do you leverage them? How do you motivate them? How do you get rid of them? You know, like there's there's so many layers of that that are interesting.
+02:40:33
+And even though some some of it, let's say, may be tough, it's not evil unless you use that skill to evil purposes, which some people obviously do. But but it's a skill set that operates, you know, and I wish I'd you know, I was interested in it, but I you know, it was sort of like I'm an engineer. I do my thing. And there's there's times when I could have had way bigger impact if I knew how to if I paid more attention and knew more about that.
+02:41:06
+About the human there, the state, yeah, that human political power expression layer of the stock just complicated and there's lots to know about it. I mean, people are good at it. They're just amazing. And when they're good at it and let's say relatively kind and we're in a good direction, you can really feel it can get lots of stuff done and coordinate things that you never thought possible. But all people like that also have some pretty hard edges because, you know, it's it's a heavy lift and I wish I'd spent more time with that when I was younger, but maybe I wasn't ready.
+02:41:43
+And I was wide eyed kid for 30 years. Still a bit of a kid I know. What do you hope your legacy is when there's when there's a book like A Hitchhiker's Guide to the Galaxy and is like a one sentence entry, but, you know, from like that guy lived at some point. There's not many not many people will be remembered. You're one of the sparkling little human creatures that had a big impact on the world. How do you hope you'll be remembered?
+02:42:15
+My daughter was trying to get she added my Wikipedia page to say that I was a legend and a guru, but they took it out, so she put it back and she's 15.
+02:42:27
+I think I think that was probably the best part of my legacy. She got a sister. They were all excited. They were trying to put it in the references because there's articles in the telling you that.
+02:42:38
+So the eyes of your kids, you're a legend. Well, they're pretty skeptical because they they'll be better than that. They're like, dad. So, yeah, that's that's that kind of stuff. The super fun in terms of the big letters and stuff out there, you don't really care. You're just an engineer. They've been thinking about building a big pyramid. So I had a debate with a friend about whether pyramids or craters are cooler. And you realize that there's craters everywhere.
+02:43:08
+But, you know, they built a couple of pyramids five thousand years ago and they remember you still talking about it because those aren't easy to build.
+02:43:18
+Oh, I know. And they don't actually know how they built them, which is great. It's either ajai or aliens could be involved. So I think. I think you're going to have to figure out quite a few more things than just the basics of civil engineering, so I guess you hope your legacy is pyramids. That would that would be cool.
+02:43:41
+And my Wikipedia page, you know, getting updated by my daughter periodically like those two things would pretty much make it just a huge honor talking to you again.
+02:43:50
+I hope we talk many more times in the future. I can't wait to see what you do with that story. I can't wait to use it. I can't wait for you to revolutionize yet another space in computing. It's a huge honor to talk to you. Thanks for talking to. This is a fun. Thanks for listening to this conversation with Jim Keller and thank you to our sponsors, athletic greens, all in one nutrition drink, Brooklyn and Cheat's Express, VPN and Wellcamp, all grass fed meat click the sponsor links to get a discount to support this podcast.
+02:44:23
+And now let me leave you with some words from Alan Turing. Those who can imagine anything can create the impossible. Thank you for listening and hope to see you next time.

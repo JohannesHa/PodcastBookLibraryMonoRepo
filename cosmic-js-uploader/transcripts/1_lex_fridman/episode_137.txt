@@ -1,0 +1,1362 @@
+00:00:00
+The following is a conversation with George Hotz, a.k.a. Geohot, his second time on the podcast. He's the founder of Comma AI and autonomous and semi-autonomous vehicle technology company that seeks to be to Tesla autopilot what Android is to the iOS. They sell the Comma 2 device for one thousand dollars that when installed in many of their supported cars can keep the vehicle centered in the lane even when there are no lane markings includes driver sensing that ensures that the driver's eyes are on the road.
+00:00:35
+As you may know, I'm a big fan of driver sensing. I do believe Tesla Autopilot and others should definitely include it in their sensor suite. Also, I'm a fan of Android and a big fan of George for many reasons, including his non-linear out of the box brilliance and the fact that he's a superstar programmer of a very different style than myself. Styles make fights and styles make conversations. So I really enjoyed this chat. I'm sure we'll talk many more times on this podcast.
+00:01:06
+Quick mention of his sponsor, followed by some thoughts related to the episode, first is for Stigmatic, the maker of delicious mushroom coffee. Second is the Cotting Digital, a podcast on tech and entrepreneurship that I listen to and enjoy and finally express VPN, the VPN I've used for many years to protect my privacy on the Internet. Please check out the sponsors in the description to get a discount and to support this podcast. As a side note, let me say that my work at Amitay on autonomous and semi-autonomous vehicles led me to study the human side of autonomy enough to understand that it's a beautifully complicated and interesting problem space much richer than what can be studied in the lab.
+00:01:51
+In that sense, the data that come I, Tesla autopilot and perhaps others like Cadillac Supercars are collecting gives us a chance to understand how we can design safe semi-autonomous vehicles for real human beings in real world conditions. I think this requires bold innovation and a serious exploration of the first principles of the driving task itself. If you enjoy this thing, subscribe on YouTube, review it. Starting up a podcast, follow on Spotify, support on page. Connect with me on Twitter.
+00:02:24
+Àlex Friedemann, as usual. I do a few minutes of ads now and no ads in the middle. I'll try to make this interesting, but I give you time stamps. So if you skip, please still check out the sponsors by clicking on links in the description. It's the best way to support this podcast. This show is sponsored by forcing Madoc, the maker of delicious mushroom coffee. It has lion's mane, mushroom for productivity and Chagga mushroom for immune support.
+00:02:50
+I don't even know how to pronounce that. I don't know what the heck it is, but it bounces the kick of the caffeine nicely to give me a steady boost to focus in long, deep work sessions. Apparently, it doesn't leave you with the, quote, awfully jittery feeling of caffeine, though I don't think I get that jittery feeling from any kind of supplement, caffeine, Red Bull or otherwise.
+00:03:13
+I'm pretty sure my body's mostly made up of caffeine at this point. To be honest, I drink coffee and tea more for the comforting warmth and the ritual of it. I don't think of caffeine even works anymore. I find that little rituals like these help calm the mind enough to settle in for the deep distraction free thinking. Anyway, exclusively for you, the listener of this podcast get up to 40 percent off and free shipping on mushroom coffee bundles to claim this deal for stigmatic dot com slash Lexx or use the code Lux pod at checkout again.
+00:03:52
+You'll save up to 40 percent and give free shipping when you go right now to four stigmatic dot com slash leks or enter code leks pod at checkout and feel your productivity and creativity with some delicious mushroom coffee. The show is also sponsored by the Decoding Digital podcast that is hosted by Abdirahim Co CEO Dan Sachs. It's a relatively new show. I started listening to where every episode is an interview with an entrepreneur or expert on a particular topic in the tech space.
+00:04:26
+I like the recent interview with Michelle Zetlin of CloudFlare about security have been progressively getting more and more interested in hacking culture, both on the attack and the defense side. So this conversation was a fun, educational 45 minutes to listen to. I think this podcast has a nice balance between tech and business that many of you might enjoy, especially if you're thinking of starting a business yourself or working at a startup, as you may or may not know. I'm thinking to this process myself, finding the balance between careful planning and throwing caution to the wind and just going with the heart or the gut.
+00:05:03
+Anyway, check out Decoding Digital and Apple podcast or wherever you get your podcast. Give them some love and encouragement to help make sure that the podcast keeps going. The shows, also sponsored by Express Vupen. It looks like the Social Dilemma documentary on Netflix has gotten people to talk about surveillance, capitalism and the value of your data. As you may know, ICRA social media systems as somewhere between totally broken and needing improvement. But one of the key aspects is for people to get more control over their data express.
+00:05:40
+It is one mechanism for doing that because it hides your IP address. Which websites can use to personally identify you. Using Express VPN makes your activity more difficult to trace and sell to advertisers.
+00:05:55
+Obviously, at least from my perspective, the responsibility should be on the social networks themselves. But for now, a good VPN like Express VPN can help. I'm also working on a bunch of different technological solutions to this problem. So if you don't like the idea of tech companies exploiting your personal information, then visit Express, VPN, Dotcom, Lex Pod right now and you can get three months extra of express support for free. That's Express VPN dot com spot to protect your data again, go to express VPN dotcom slash lex pod to learn more.
+00:06:34
+I think they wanted me to say that like 20 times, but I'll stick to just three. And now here's my conversation with George Hotz.
+00:07:02
+So last time we started talking about the simulation this time, let me ask you, do you think there's intelligent life out there in the universe? I always maintained my answer to the Fermi paradox. I think there has been intelligent life elsewhere in the universe.
+00:07:16
+So intelligent civilizations existed, but they've blown themselves up. So your general intuition is that intelligent civilizations quickly like there's a parameter in the Drake equation, your sense is they don't last very long. Yeah. How are we doing on that? Like, have we lost a pretty pretty good.
+00:07:34
+We do. Oh yeah. I mean not quite yet.
+00:07:40
+Well that's how I as you Koutsky IQ required to destroy the world falls by one point every year.
+00:07:46
+OK, so technology democratizes the destruction of the world when Kalamian destroy the world.
+00:07:56
+It kind of is already right. Somewhat, and I don't think we've seen anywhere near the worst of it yet, but it's going to get weird. Well, maybe you can save the world. You thought about that.
+00:08:08
+The meme, Lord Elon Musk fighting on the side of good versus the the meme Lord of the Darkness, which is not saying anything bad about Donald Trump, but he is the the Lord of the meme on the dark side.
+00:08:22
+He's the Darth Vader of memes.
+00:08:24
+I think in every fairy tale they always end it with and they lived happily ever after. And I'm like, please tell me more about this happily ever after. I've heard 50 percent of marriages end in divorce. Why doesn't your marriage end up there? You can't say happily ever after. So it's the thing about destruction is it's over after the destruction. We have to do everything right in order to avoid it. And one thing wrong, I mean, actually, is what I really like about cryptography, cryptography.
+00:08:54
+It seems like we live in a world where the defense wins. Um, versus like nuclear weapons, the opposite is true, it is much easier to build a warhead that splits into one hundred of the warheads than to build something that can, you know, take out one hundred little warheads. The offense has the advantage there. So maybe our future is in crypto. But so cryptography, right. The Goliath is the the defense. And then all the different hackers are the are the Davids, and that equation is flipped for nuclear war.
+00:09:28
+There's so many, like one nuclear weapon destroys everything, essentially. Yeah, and it is much easier to. Attack with a nuclear weapon than it is to link the technology required to intercept and destroy a rocket is much more complicated than the technology required to just, you know, orbital trajectory, send a rocket to somebody. So get your intuition that there were intelligent civilizations out there, but it's very possible that they're no longer there. That's kind of a sad picture.
+00:09:58
+They endure some steady state they all wirehaired themselves with where, um, stimuli to stimulate their pleasure centers and just live forever in this kind of space as they become.
+00:10:12
+Well, I mean, I think the reason I believe this is because where are they? If there's some reason they stopped expanding because otherwise they would have taken over the universe. The universe isn't that big. Or at least let's just talk about the galaxy, right. Seventy thousand light years across that number from Star Trek, Voyager, I don't know, Taurus, but yeah, that's NOPEC, right.
+00:10:35
+Seventy thousand light years is nothing for some possible technology that you can imagine that could leverage like wormholes or something like that. You don't even need wormholes.
+00:10:44
+Just a von Neumann probe is enough of von Neumann probe and a million years of sublight travel. And you'd have taken over the whole universe. That clearly didn't happen. So something stopped it. So you mean if you write for for like a few million years, if you sent out probes that travel close with sublight meaning close to the speed of light, let's say one day and it just spreads interesting.
+00:11:06
+Actually, that's an interesting calculation, huh? So what makes you think that would be able to communicate with them? Like, yeah, what's why do you think we would able to be able to comprehend intelligent lives that are out there? Even if they were among this kind of thing like or even just flying around, well, I mean, that's possible it's possible that there is some sort of prime directive that the really cool universe to live in.
+00:11:38
+And there's some reason they're not making themselves visible to us, but it makes sense that they would use the same. Well, at least the same entropy.
+00:11:47
+Well, you're implying the same laws of physics. I don't know what you mean by entropy in this case. Oh, yeah. I mean, if entropy is the scarce resource in the universe. So what do you think about like Stephen Wolfram and everything is a computation and then what if they are traveling through this world of computation? So if you think of the universe is just information processing, then you're referring to with entropy and then these pockets of interesting, complex computations swimming around, how do we know they're not already here?
+00:12:18
+I don't how do we know that this, like all the different amazing things that are full of mystery on Earth, are just like little footprints of intelligence from light years away?
+00:12:32
+Maybe. I mean, I tend to think that as civilizations expand, they use more and more energy and you can never overcome the problem of waste heat. So where is their waste heat? So would be able to, with our crude methods, be able to see like there's a whole lot of. Energy here, but it could be something we're not I mean, we don't understand dark energy, very dark matter, it could be just stuff we don't understand at all.
+00:12:57
+They can have a fundamentally different physics, you know, like that that we just don't even comprehend.
+00:13:03
+I think, OK, I mean, it depends how far out you want to go. I don't think physics is very different on the other side of the galaxy. I would suspect that they have I mean, if they're in our universe, they have the same physics. Well, yeah, that's the assumption we have. But that could be like super trippy things like. Like our cognition. Only gets to a slice in all the possible instruments that we can design only to get to a particular slice of the universe, and there's something much like weirder.
+00:13:35
+Maybe we can try a thought experiment.
+00:13:37
+Would people from the past be able to detect the remnants of our. I would be able to detect our modern civilization. I think the answer is obviously, yes. You mean pass from 100 years ago? Well, to even go back further. Let's go to a million years ago. The humans who are lying around in the desert probably didn't even have maybe they just barely had fire, they would understand, of a 747 flew overhead or in this vicinity, but not.
+00:14:10
+If that if a 747 flew on Mars because they wouldn't be able to see far because we're not actually communicating that well with the rest of the universe, we're doing OK. Just sending out random like 50 tracks and music. True, and, yeah, I mean, they'd have to the we've only been broadcasting radio waves for. 150 years and what has your like on so yeah. What do you make of the I recently came across this having talked to David Braver and a few caught what the videos the Pentagon released and The New York Times reporting of the UFO sightings.
+00:14:54
+So I kind of looked into it, quote unquote. And there's actually been like hundreds of thousands of UFO sightings. Right. And a lot of it you can explain away in different kinds of ways. So one is that could be interesting physical phenomena, too. It could be. People wanting to believe and therefore they conjure up a lot of different things that just when you see different kinds of lights, some basic physics phenomena, and then you just conjure up ideas of possible out there mysterious worlds.
+00:15:27
+But, you know, it's also possible that you have a case of David Fraser, who is a Navy pilot, who's, you know, as legit as it gets in terms of humans who are able to perceive things in the environment and make conclusions whether those things are a threat or not. And he and several other pilots saw a thing. And if you follow this, but they saw things that they've since then called tick tock that moved in all kinds of weird ways.
+00:16:00
+They don't know what it is. It could be technology developed by the United States and they're just not aware of it. And the surface level from the Navy, it could be a different kind of lighting technology or drone technology, all that kind of stuff. It could be the Russians and the Chinese, all the stuff. And of course, their mind, our mind can also venture into the possibility that it's from another world. Have you looked into this at all?
+00:16:29
+What do you think about it? I think all the news is a psyop.
+00:16:34
+I think that the most plausible is real. Yeah, I listen to the I think it was Bob Lazaar on Joe Rogan and like, I believe everything this guy is saying. And then I think that it's probably just some like MK Ultra kind of thing, you know what I mean?
+00:16:52
+Like, they they are you know, they made some weird thing and they called it an alien spaceship. Know, maybe it was just to, like, stimulate young physicists. Minds will tell them it's alien technology and we'll see what they come up with. Right. Do you find any conspiracy theories compelling? Like have you pulled the string of the of the rich, complex world of conspiracy theories that's out there?
+00:17:14
+I think that I've heard a conspiracy theory that conspiracy theories were invented by the CIA in the 60s to discredit true things. Yeah.
+00:17:23
+Um, so, you know, you can go to ridiculous conspiracy theories like Flatterers and Peter Gate and, uh, you know, these things are almost to hide, like conspiracy theories that like, you know, remember when the Chinese, like, locked up the doctors who discovered coronavirus, like I tell people. And I'm like, no, no, that's not a conspiracy theory that actually happened. Do you remember the time that the money used to be backed by gold and now it's backed by nothing?
+00:17:51
+This is not a conspiracy theory. This actually happened.
+00:17:54
+That's one of my worries today with the idea of fake news is that. When nothing is real. Then, like, you dilute the possibility of anything being true by conjuring up all kinds of conspiracy theories and then you don't know what to believe and then like the idea of truth of objectivity is lost completely. Everybody has their own truth. So you used to control information by censoring it. Then the Internet happened and governments were like, oh, shit, we can't censor things anymore.
+00:18:29
+I know what we'll do. You know, it's the old story of the story of like tying a flag with a leprechaun tells you that gold is buried and you tie one flag and you make the leprechaun swear to not remove the flag. And you come back to the field later with a shovel and there's flags everywhere.
+00:18:45
+That's one way to maintain privacy, right. Is like in order to protect the contents of this conversation, for example, we could just generate like millions of diffie conversations where you and I talk and say random things. So this is just one of them and nobody knows which one is the real one.
+00:19:04
+This could be fake right now. Classic steganography technique.
+00:19:08
+OK, another absurd question about intelligent life, because, you know, you're you're an incredible programmer outside of everything else we'll talk about just as a programmer. Do you think? Intelligent beings out there, the civilizations that were out there had computers and programming. Did they do we naturally have to develop something where we engineer machines and are able to encode both knowledge into those machines and instructions that process that knowledge, process that information to to make decisions and actions and so on.
+00:19:46
+And with those programming languages, if you think they exist to be at all similar to anything we've developed.
+00:19:55
+So I don't see that much of a difference between, quote unquote, natural languages and programming languages. Hmm. Um, yeah, I think there's so many similarities, so when ask the question, what do alien languages look like, I imagine they're not all that dissimilar from ours.
+00:20:17
+And I think translating in and out of them wouldn't be that crazy was difficult to compile like DNA to Python and then to see if there is a little bit of a gap in the kind of languages we use for for Turing machines and the kind of languages nature seems to use a little bit. Maybe that's just we just haven't we haven't understood the kind of language that nature used as well yet.
+00:20:47
+DNA is a CAD model. It's not quite a programming language, it has no sort of serial execution, it's not quite. Oh yeah, it's a camel. So I think in that sense, we actually completely understand it. The problem is, you know, simulating on these CAD models, I've played with it a bit this year is super, computationally intensive. If you want to go down to the molecular level where you need to go to see a lot of these phenomenon like protein folding.
+00:21:19
+So, yeah, it's not that it's not it's not that we don't understand it. It just requires a whole lot of compute to kind of compile it for human minds. It's inefficient both for the problem, for the data representation and for the programming it runs well on raw nature, it runs well on raw nature. And when we try to build emulators or simulators for that, while the Mazzella have tried to Iran's in that.
+00:21:42
+Yeah, you've commented elsewhere. I don't remember where that one of the problems is simulating nature is tough. And if you want to sort of deploy a prototype. I forgot how you put it, but it made me laugh, but animals or humans would need to be involved. In order to in order to try to run some prototype code on like if we're talking about covid and viruses and so on, if you try to engineer some kind of defense mechanisms like a vaccine against covid or that kind of stuff, that doing any kind of experimentation like you can with like autonomous vehicles would be very technically cost, technically and ethically costly.
+00:22:30
+I'm not sure how bad. I think you can do tons of crazy biology and test tubes. I think my bigger complaint is more of the tools are so bad.
+00:22:42
+Like literally. You mean like like I'm not libraries and I'm not pipetting shit like your Hanami.
+00:22:48
+I got to know now know now there has to be some like automating stuff and like the human biology is messy, like it seems to like look at those Theranos videos.
+00:23:02
+They were joke. It's like, it's like a little gantries like X, Y gantry high school science project with the pipette like really got to be something, but you can't build like nice microfluidics and I can program the computation to bio interface. I mean this is going to happen. But like right now, if you are asking me to pipette 50 milliliters of solution amount, this is a crude.
+00:23:26
+Yeah.
+00:23:27
+OK, let's get all the crazy out of the way. So a bunch of people asked me since we talked about the simulation last time we talked about hacking the simulation, do you have any updates, any insights about how we might be able to go about hacking simulation if we indeed do live in a simulation? I think a lot of people misinterpreted the point of that South by talk, the point of the South by talk was not literally to hack the simulation, but I think that this.
+00:24:01
+We this is this is an idea is literally just, I think, theoretical physics, I think that's the whole you know, the whole goal, right. You want your grand unified theory, but then, OK, build a grand unified theory sorta explains I. I think we're nowhere near actually there yet. My hope with that was just more like. Like, are you people kidding me with the things you spend time thinking about? Do you understand, like kind of how small you are?
+00:24:28
+You are you are bytes and God's computer really, and the things that people get worked up about.
+00:24:35
+And, you know, the basically it was more a message of we should humble ourselves that we get to. Like what? Oh, what are we humans in this bytecode? Yeah, and not just humble ourselves, but like like I'm not trying to make you feel guilty or anything like that. I'm trying to say, like, literally look at what you are spending time on. Right. What are you referring to? You're referring to the Kardashians.
+00:25:03
+What are we talking about from Twitter to know the Kardashians you have knows that's kind of fun. I'm referring more like. The economy, you know, this idea that. We got to up our stock price like or what is what is the goal function of humanity? You don't like the game of capitalism, like you don't like the games we've constructed for ourselves as humans.
+00:25:31
+I'm a big fan of capitalism. I don't think that's really the game we're playing right now. I think we're playing a different game where the rules are rigged.
+00:25:41
+Look at which games are interesting to you that we humans have constructed in which aren't which are productive and which are not. Actually, maybe that's the real point of the of the talk. It's like. Stop playing these fake human games, there's a real game here, we can play the real game. The real game is nature wrote the rules. This is a real game. There still is a game to play.
+00:26:06
+But if you look at certain topics and if you see an Instagram account, nature is medal. The game that nature seems to be playing is a lot, lot more cruel than we humans want to put up with. Or at least we see it as cool. It's like the bigger thing is the smaller thing and does it to impress. Another big thing so it can mate with that thing. And that's it. That seems to be the entirety of it.
+00:26:35
+Well, there's no art. There's no music. There's no comma I, there's no comma one. No comma to no George Hotz with his brilliant talks at South by Southwest. See, I disagree.
+00:26:48
+No, I disagree that this is what nature is. I think nature just provided basically a more open world MMO, RPG and, you know, here it's open world. I mean, if that's the game you want to play, you can play that game.
+00:27:03
+But it's not isn't that beautiful? And if you play Diablo, these have, I think, a level where it's as everybody will go, just they figured out this like the best way to gain, like, experience points. This is just slaughter cows over and over and over. And so they figured out this little sub game within the bigger game that this is the most efficient way to get experience points. And everybody somehow agreed that getting experience points in RPG context, where you always want to be getting more stuff, more skills, more levels keep advancing, that seems to be good.
+00:27:41
+So might as well spend sacrifice, actual enjoyment of playing a game, exploring the world and spending like. Hundreds of hours of your time and Karlov, I mean, the number of hours I spent in college level. I'm not like the most impressive person because people probably thousands of hours there was ridiculous, so that's a little absurd game that brought me joy and some weird dopamine drug kind of way. Yeah. So you don't like those games? You don't you don't think that's us humans feeling the.
+00:28:15
+Yeah. Nature. And that was the point of the talk. Yeah, so how do we hack it then? Well, I want to live forever and I want to live forever, and this is like the goal. Well, that's a game against nature. Yeah, immortality is the good objective function to you. I mean, start there and then you could do whatever else you want for a long time. What if immortality makes the game just totally not fun?
+00:28:41
+I mean, like, why do you assume immortality is somehow it's not a good objective function.
+00:28:49
+It's not immortality that I want a true immortality where I could not die. I would prefer what we have right now. But I want to choose my own death, of course. I don't want nature to decide when I die, I'm going to win, I'm going to be here. And then at some point, if you choose to commit suicide, like. How long you think you love? Until I get bored, see, I don't think people.
+00:29:16
+Like like brilliant people like you that really ponder living a long time are really considering how a meaning of this life becomes.
+00:29:29
+Well, I want to know everything and then I'm ready to die. As long as people why do you want isn't it possible that you want to know everything because it's finite, like the reason you want to know quote unquote everything is because you don't have enough time to know everything. And once you have unlimited time, then you realize, like, why do anything? Like, why learn anything? I want to know everything ready to die, so you have.
+00:29:58
+Yeah, well, it's not it's not a like it's a terminal value. It's not it's not in service of anything else.
+00:30:05
+I'm conscious of the possibility this is not a certainty, but the possibility of that engine of curiosity that you're speaking to is actually of. It's a symptom of the finiteness of life, like without the finiteness. Your curiosity would vanish like like a like a morning fog echo, then you talked about love like that.
+00:30:30
+Then let me solve immortality may change the thing in my brain that reminds me of the fact that I'm immortal, tells me that life is finite. Maybe I'll have it tell me that life ends next week. I'm OK with some self manipulation like that, I'm OK with with Jesse Jackson changing the code, if that's the problem, right.
+00:30:49
+If the problem is that I will no longer have that that curiosity, I'd like to have backup copies of myself, which I. Yeah, well, which I check in with occasionally to make sure they're OK with the trajectory and they can kind of override it. Maybe a nice like I think of like those waves, that's those like logarithmic go back to the coffee, but sometimes it's not reversible. Like I've done this with video games. Once you figure out the cheat code or like you look up how to cheat old school, like singleplayer it ruins the game for you.
+00:31:17
+Absolutely. I know that feeling. But again, that just means our brain manipulation technology is not good enough yet. Remove that code from your brain.
+00:31:25
+But what if we. So it's also possible that if we figure out immortality. That all of us will kill ourselves before we advanced far enough to to be able to revert to change if I'm not killing myself till I know everything.
+00:31:41
+So that's what you say now, because your life is finite?
+00:31:46
+You know, I think just self modifying systems gets comes up with all these hairy complexities. And how can I promise that I'll do it perfectly now.
+00:31:54
+But I think I can put good safety structures in place so that talk and your thinking here is not literally.
+00:32:04
+Referring to a simulation in that are our universe is a kind of computer program running on a computer, that's more of a thought experiment. Do you also think of the potential of the sort of Bostrom, Elon Musk and others that talk about an actual program that simulates our universe?
+00:32:30
+Oh, I don't doubt that we're in a simulation. I just think that it's not quite that important. I mean, I'm interested only in simulation theory as far as like it gives me power over nature. If it's totally unfalsifiable, then who cares?
+00:32:44
+I mean, what do you think that experiment look like? Like somebody on Twitter asked, asks George what signs we would look for to know whether or not we're in the simulation, which is exactly what you're asking is like. The step that precedes the step of knowing how to get more power from this knowledge is to get an indication that there's some power to be gained. So get an indication that you can discover and exploit cracks in the simulation, or doesn't it, in the physics of the universe?
+00:33:16
+Yeah. Show me, I mean, like a memory leak would be cool, like some scrying technology. What kind of technology scrying was that? Oh, that's a weird.
+00:33:29
+Scrying is the is the paranormal ability to look like remote viewing, like being able to see somewhere where you're not. Um, so, you know, I don't think you can do it by chanting in a room, but, um, if we could find as a memory leak basically. Really, you're able to access parts you're not supposed to. Yeah, yeah, yeah, and thereby discover a shortcut. Yeah, maybe a memory leak means the other thing as well, but I mean, like.
+00:33:56
+Yeah, like an ability to read arbitrary memory and that one's not that horrifying. The right one start to be horrifying. Read. Right. So the reading is not the problem.
+00:34:06
+It's like hard for the boy. The writing is a big, big problem. The big problem. Is the moment you can write anything, even if it's just random noise. That's terrifying. I mean, even without even without that, like even some of the, you know, the nanotech stuff that's coming, I think it's. And if you're paying attention, but actually Eric Weinstein came out with the theory of everything, I mean, that came out, he's been working on a theory of everything in the physics world called Umetsu Community.
+00:34:38
+And then for me, a computer science person like you, Stephen Wolfram's theory of everything of hydrograph, super interesting and beautiful, but not from a physics perspective, but from a computational perspective. I don't know. Have you paid attention to any of that?
+00:34:53
+So, again, like what would make me pay attention and like, why? Like, I hate string theory is, OK, make a testable prediction. Right? I'm only interested in I'm not interested in theories for their intrinsic beauty. I'm interested in theories that give me power over the universe. So if these theories do, I'm very interested to see how beautiful that is, because a lot of physicists say I'm interested in experimental validation and they skip out the part where they say to give me more power in the universe.
+00:35:26
+I just love the way I want. I want I want the clarity of that. I want 100 gigahertz processor. I want transistors that are smaller than atoms. I want like power.
+00:35:39
+That's that's true. And that's where people from aliens to this kind of technology. What people are worried that. Governments like who owns that power is a George Hotz, is that thousands of distributed hackers across the world, is it governments or is it Mark Zuckerberg? There's a lot of people that I don't know if anyone trust any one individual with power.
+00:36:06
+So they're always worried about the beauty of block trades.
+00:36:10
+That's the beauty of blotches, which we'll talk about on Twitter. Somebody pointed me to a story. A bunch of people pointed me to a story a few months ago where you went into a restaurant in New York. And you can correct me if this is wrong and ran into a bunch of folks from a company in crypto company who are trying to scale up Ethereum. And they had a technical deadline related to a solidity to OBM compiler. So these are all Ethereum technologies.
+00:36:40
+So you stepped in, they recognized you pulled apologies aside, explain the problem, and you stepped in and help them solve the problem, thereby creating legend status story. So, uh, can you tell me the story a little more detail? It seems kind of incredible. This did this happen?
+00:37:03
+Yeah. Yeah. It's a true story. It's a true story. I mean, they wrote a very flattering account of it. They so optimism is the spirit of the company called optimism spin off of plasma. They're trying to build L2 solutions on Ethereum. So right now are.
+00:37:21
+Every theory of A. has to run every transaction on the Ethereum network, and this kind of doesn't scale right, because if you have any computers, well, if that becomes to end computers, you actually still get the same amount of compute. This is this is like like all of one scaling because they all have to run it. OK, fine. You get more block chain security, but like the block is already so secure. Can we trade some of that off for speed?
+00:37:48
+So that's kind of what these two solutions are.
+00:37:51
+They built this thing which kind of kind of sandbox for Ethereum contracts so they can run it in this L2 world and it can't do certain things in our world. And one can ask you for some definitions, what's LTA or L2 is layer two. So L1 is like the base Ethereum chain. And then layer two is like a computational layer that runs elsewhere, but still is kind of secured by layer one. And I'm sure a lot of people know. But Ethereum is a cryptocurrency, probably one of the most popular cryptocurrency, second bitcoin and a lot of interesting technological innovations there.
+00:38:29
+Maybe you can also slip in whenever you talk about this and things that are exciting to you and the ethereal space and why etherial?
+00:38:38
+Well, I mean, Bitcoin is not a complete. Ethereum is not technically in complete with the gas limit, but close enough with a gas limit was the gas limit sources? Yeah, I mean, no computers actually arguably complete. We'll find out.
+00:38:54
+Ram, you know what I actually saw? Well, the gas limit, you have so many brilliant. I'm not even going to ask, but that's what that's done.
+00:39:01
+And that's not my word. That's a theory. Ms. Word Gastelum Theorem. You have to spend gas per instruction. So like different Opko, you use different amounts of gas and you buy gas with ether to prevent people from basically dossing the network. So Bitcoin is proof of work. And then what's the theory? And it's also a proof of work. They're working on some proof of stake, a theorem to find out stuff. But right now it's it's proof of work is a different hash function for Bitcoin.
+00:39:25
+That's more a resistance because you need RAM. So we're all talking about a theory at one point. So what what were they trying to do to scale this whole process?
+00:39:34
+So they were like, well, if we could run contracts elsewhere and then only save the results of that computation. Ah, you know, we don't actually have to do the compute on the chain.
+00:39:45
+We can do the computer off chain and just post what the results are. Now, the problem with that is, well, somebody could lie about what the results are. So you need a resolution mechanism and the resolution mechanism can be really expensive because, you know, you just have to make sure that, like the person who is saying, look, I swear that this is the real computation. I'm staking ten thousand dollars on that fact. And if you prove it wrong, yeah, it might cost you three thousand dollars in gasifiers to prove wrong, but you'll get the ten thousand dollar bounty so you can secure using those kind of systems.
+00:40:19
+So it's effectively a sandbox which runs contracts and like it's like any kind of normal sandbox. You have to replace six calls with, you know, calls into the hypervisor sandbox. This calls hypervisor. What are these things mean so much as long as it's interesting to talk about. Yeah. I mean, you can take like the the sandbox is maybe the one to think about. Right. So the chrome process is doing a rendering. I can't, for example, read a file from the file system.
+00:40:49
+Yeah, it has. If it tries to make an open source call and Linux the open sars-cov-2, you can make it up and says, oh no, no, no, you have to request from the kind of hypervisor process or like I don't know what it's calling Chrome, but, um, the hey, could you open this file for me?
+00:41:07
+And then it does all these checks and then it passes the file handle back and if it's approved.
+00:41:12
+So that's. Yeah.
+00:41:13
+So what's the in the context of Ethereum, what are the boundaries of the sandbox that we're talking about?
+00:41:19
+Well, like one of the calls that you actually reading writing any state to the Ethereum contract. I wrote to the theory block chain writing state is one of those calls that you're going to have to sandbox in layer two, because if you layer two, just arbitrarily write the various chain in a letter to is accept is really sitting on top of layer one.
+00:41:46
+So you can have a lot of different kinds of ideas that you can play with. Yeah. And they're all they're not fundamentally changing the source code level of a.
+00:41:56
+Well, you have to replace a bunch of calls with calls into the hypervisor.
+00:42:02
+So instead of doing the six call directly, you you replace it with a call to the hypervisor. So originally they were doing this by first running the solidity as the language that most of Herem contracts are written in. It compiles to a bytecode. And then they wrote this thing they called the Trans Plyler, and the transpire took the bytecode and it transpired it into OVM safe bytecode, basically bytecode that didn't make any of those restricted sets calls and added the cost to the hypervisor.
+00:42:32
+This transpire was a three thousand line mess. And it's hard to do. It's hard to do if you're trying to do it like that, because you have to kind of like deconstruct the bytecode, change things about it and then reconstruct it. And I mean, as soon as I hear this, I'm like, I want to just change the compiler right at the first place. You build the bytecode, just do it in the compiler. So, yeah, you know, I ask them how much they wanted it, uh, of course, measured in dollars.
+00:43:02
+And I'm like, well, OK.
+00:43:04
+And yeah, you wrote the compiler I modified I wrote a three hundred line diff to the compiler so you can look at it. Yeah. Yeah. I looked at the code last night. Yeah, exactly. You give us a good word for his and it's C++.
+00:43:22
+C++. So when asked how you were able to do it, you said you just got to think and then do it right. So can you break that apart a little bit? What was your process of one thinking into doing it right.
+00:43:40
+You know, the. I was working for a news that I said that it doesn't really mean anything. OK, I mean, is there some deep, profound insights to draw from, like how you problem solve from the. Because this is always what I say. I'm like, do you want to be a good programmer? Do it for 20 years? Yeah. There's no shortcuts. No.
+00:44:02
+What are your thoughts on crypto in general? So what parts, technically or philosophically do you find especially beautiful maybe?
+00:44:10
+Oh, I'm extremely bullish on crypto long term, not any specific crypto project, but this idea of.
+00:44:19
+Well, two ideas. One, the Nakamoto consensus algorithm is, I think, one of the greatest innovations of the 21st century, this idea that people can reach consensus, you can reach a group consensus using a relatively straightforward algorithm is wild and. Satoshi Nakamoto, people always ask me, I look up to you. It's like whoever that is, who do you think it is? I mean, Elon Musk is a you.
+00:44:53
+It is definitely not me. And I do not think it's Elon Musk.
+00:44:57
+But yeah, this idea of groups reaching consensus in a decentralized yet formulaic way is one extremely powerful idea from crypto.
+00:45:11
+Maybe the second idea is this idea of smart contracts. When you write a contract between two parties and you contract this contract, if there are disputes, it's interpreted by lawyers. Lawyers are just really shitty, overpaid interpreters. I imagine you had. Let's talk about them in terms of in terms of like let's compare a lawyer to Python. Right. So lawyer.
+00:45:37
+Well, OK, because I never thought of it that way. It's hilarious.
+00:45:42
+So Python, I'm paying I'm paying even 10 cents an hour. I'll use the nice azure machine. I can run Python for 10 cents an hour. Lawyers cost a thousand dollars an hour. So Python is ten thousand better on that access. Lawyers don't always return the same answer.
+00:46:01
+Python almost always does. Yeah, I mean, just just cost reliability, everything about Python is so much better than lawyers. So if you can make smart contracts, this whole concept of code is law. I I love and I would love to live in a world where everybody accepted that fact. So so maybe you can talk about what smart contracts are.
+00:46:32
+So let's say, um, let's say we have a. Even something as simple as a safety deposit box, a safety deposit box that holds a million dollars, I have a contract with the bank that says two out of these three parties must be present to open the safety deposit box and get the money. So that's a contract with the bank. And it's only as good as the bank and the lawyers. Right. Let's say, you know, somebody dies and now we're going to go through a big legal dispute about whether, oh, well, was it in the will was it not in the.
+00:47:07
+Well, what like it's just so messy and the cost to determine truth is so expensive versus a smart contract, which just uses cryptography to check of two out of three keys are present.
+00:47:21
+Well, I can look at that and I can have certainty in the answer that it's going to return. And that's what all businesses want. Certainty. They say businesses don't care. Viacom, YouTube, YouTube, like, look, we don't care which way this lawsuit goes. Just please tell us so we can have certainty and wonder how many agreements.
+00:47:39
+And because we're talking about financial transactions only in this case. Correct. The smart, smart contracts.
+00:47:46
+Oh, you can go. You can go do anything. You can go. You put a prenup in there and block you're married.
+00:47:53
+Smart contracts are divorce lawyers. You're going to be replaced by Python.
+00:47:58
+Yeah. OK, so that's so that's that's another beautiful idea. Do you think there's something that's appealing to you about any one specific implementation? So if you look 10, 20, 50 years down the line, do you see any Bitcoin, Ethereum, any of the other hundreds of cryptocurrency is winning out there? Like what's your intuition about space or are you just sitting back and watching the chaos and who cares what emerges?
+00:48:28
+Oh, I don't I don't speculate. I don't really care. I don't really care which one of these project wins. I'm kind of in the Bitcoin as a meme coin camp. I mean, what is Bitcoin have value? It's technically kind of. Well, not great, like the block size debate, when I found out the block size debate wasn't like, are you guys kidding? Post-box, I had to pay. You know what, it's really it's too stupid to even talk to people, people, people can look it up, but I'm like, wow, you know, a theory seems the governance of a theorem seems much better.
+00:49:02
+I've come around a bit on proof of stake ideas, you know, very smart people thinking about some things.
+00:49:08
+Yeah. You know, governance is interesting. It does feel like it's like I could just feel like in in even in these distributed systems, leaders are helpful.
+00:49:22
+Because they kind of help you drive the mission and the vision and they put a face to a project. It's a weird thing, but as humans, geniuses are helpful like Battal, right?
+00:49:33
+Yeah, brilliant leaders are not necessary. So you think the reason he's a he's the face of a theorem is because he's a genius? That's interesting. I mean, that was. It's interesting to think about that we need to create systems in which. The quote unquote, leaders that emerge are the geniuses in the system. I mean, that's arguably why the current state of democracy is broken, is the people who are emerging as the leaders are not the most competent, are not the superstars of the system.
+00:50:14
+And it seems like, at least for now in the crypto world, oftentimes the leaders are the superstars. Imagine at the debate they asked, what's the Sixth Amendment? What are the four fundamental forces in the universe?
+00:50:27
+What's the integral of two to the X? Yeah, I'd love to see those questions asked and that's why I wanted our leader. It's liberal rule.
+00:50:38
+Yeah. I mean, even while you're hurting my brain is that my standard was even lower, but I would have loved to see just this basic brilliance.
+00:50:51
+I have talked to historians. There's just these they're not even like they don't have a Ph.D. or even education history. They just like a Dan Carlin type character who just like, holy shit, how did all this information get into your head? They're able to just connect Genghis Khan to the entirety of the history of the 20th century. They know everything about every single battle that happened. And they know the the the like the Game of Thrones of the of the different powerplays and all that happened there.
+00:51:26
+And they know, like the individuals in all the documents involved and they integrate that into their regular life. It's not like they're ultra history nerds. They're just they know this information. That's what competence looks like. Yeah.
+00:51:40
+Because I've seen that with programmers, too, like that's what great programmers do. But yeah, be it's really unfortunate that those kinds of people aren't emerging as their leaders. But for now, at least in the crypto world, there seems to be the case. I don't know if that always you could imagine that in one hundred years that's not the case by the crypto world has one very powerful idea going for it.
+00:52:02
+And that's the idea of Fork's. I mean, you know, imagine, uh, we use a less controversial example, this was actually in my joke app in twenty twelve. I was like Barack Obama, Mitt Romney. Let's let them both be present. All right. Like imagine we could for America and just let them both be president.
+00:52:25
+And then the Americas could compete and people could invest in one, pull their liquidity out of one, put it in the other. You have this in the crypto world, a theory and forks into a theory and a theory classic. And you can pull your liquidity out of one and put it in another and people vote with their dollars. Which. Fork's companies should be able to work, I'd love to Forkan video, you know. Yeah, like different business strategies and then try them out and see see what works, but even take.
+00:53:02
+Yeah, take comedy that closes its source and then take one that's open source and see what works. Take one that's purchased by GM and one that remains Android Renegade and all these different versions and see the beauty of comedy as someone can actually do that. Please take home and forget. That's right. That's the beauty of open source. So you're I mean, we'll talk about autonomous vehicle space, but. It does seem that you're. Really knowledgeable about a lot of different topics, so the natural question a bunch of people ask this, which is how do you keep learning new things?
+00:53:40
+Do you have, like, practical advice? If you were to introspect, like taking notes like time, or would you just mess around and just allow your curiosity to drive?
+00:53:52
+I'll write these people a self-help book and I'll charge sixty seven dollars for it. And I will I will write.
+00:53:58
+I was chapter one. I will write on the cover of the self-help book. All of this advice is completely meaningless. You're going to be a sucker and buy this book anyway. And the one lesson that I hope they take away from the book is that I can't give you a meaningful answer to that. That's interesting.
+00:54:14
+Let me translate that is you haven't really thought about what it is you do.
+00:54:22
+Systematically, because you could reduce it and some people I mean, I've met brilliant people that I mean, this is really clear with athletes. Some are just, you know, the best in the world or something. And they have zero interest in writing a like a self-help book, but or how to master this game. And then there's some athletes who become great coaches and they love the analysis, perhaps the over analysis. And you right now, at least at your age, which is an interesting you're in the middle of the battle.
+00:54:54
+You're like the warriors that have zero interest in writing books. So you're in the middle of the battle. So you have.
+00:55:00
+Yeah, this is this is a fair point. I do think I have a certain aversion to this kind of deliberate, intentional way of living life. Eventually, the hilarity of this, especially since this is recorded, it will reveal beautifully the absurdity when you finally do publish this book that guarantee you will get the story of karma a B. Maybe it'll be a biography written about you.
+00:55:29
+They'll be they'll be better.
+00:55:31
+I guess you might be able to learn some lessons if you're starting a company like Tom I from that book. But if you're asking generic questions like how do I be good at things?
+00:55:41
+I don't know. Well, I mean, the interesting. Do them a lot. Do them a lot. But the interesting thing here is learning things outside. Of your current trajectory, which is what it feels like from an outsider's perspective, I mean that. You know that I don't know if there's advice on that, but it is interesting curiosity when you become really busy, you're running a company and part time.
+00:56:11
+Yeah, but like there's a natural inclination and trend, like just the momentum of life carries you into a particular direction of wanting to focus in this kind of dispersion that curiosity can lead to gets harder and harder. With time, you get really good at certain things and it sucks trying things that you're not good at, like trying to figure them out when you do this with your life, strange's, you're on the fly figuring stuff out.
+00:56:41
+You don't mind looking dumb. Just it's just figure it out. Figure it out pretty quickly.
+00:56:47
+Sometimes I try things and I don't figure out my chest. Writing is like a fourteen hundred despite putting like a couple of hundred hours. And it's pathetic. I mean, to be fair, I know that I could do it better if I did it better. Like don't play, you know, don't play five minute games, play 15 minute games at least like I know these things but it just doesn't, it doesn't stick nicely in my knowledge.
+00:57:08
+All right, let's talk about Cumia. What's the mission of the company? Let's like look at the biggest picture. Oh, I have an exact statement. Solve self-driving cars while delivering shippable intermediaries. So long term vision is of fully autonomous vehicles and make sure you make money along the way. I think it doesn't really speak to money, but I can talk I can talk about what solves self-driving cars means solve self-driving cars, of course, means you're not building a new car.
+00:57:38
+You're building a person replacement. That person can sit in the driver's seat and drive you anywhere. A person can drive with a human or better level of safety, speed, quality, comfort. And what's the second part of that delivery shippable intermediaries is worlds away from the company. That's true, but it's also a way to keep us honest. If you don't have that, it is very easy with this technology to think you are making progress when you're not.
+00:58:11
+I've heard it best described on Hacker News as you can set any arbitrary milestone, meet that milestone and still be infinitely far away from solving self-driving cars.
+00:58:22
+So it's hard to have real deadlines when you're like crews are way more. When you don't have revenue. Does that I mean, is revenue essentially? The thing we're talking about here, revenue is capitalism is based around content capitalism, the way that you get revenue is a real capitalism, Tomaz, in the real capitalism. There's definitely scams out there. But real capitalism is based around content, based around this idea that, like, if we're getting revenue, it's because we're providing at least that much value to the person.
+00:58:55
+When someone buys a thousand dollar Clamato from us, we're providing them at least a thousand dollars of value. They wouldn't buy it. Brilliant.
+00:59:02
+So can you give a world wide overview of the products that come a price like throughout its history? And today? I mean, the past ones aren't really that interesting. It's kind of just been refinement of the same idea.
+00:59:16
+The real only product we sell today is the Kamata, which is a piece of hardware with cameras.
+00:59:23
+So the Kamata I mean, you can think about it kind of like a person in future hardware will probably be even more and more person like. So it has, you know, eyes, ears, a mouth, a brain. And a way to interface with the car. Does it have consciousness just kidding. That was a trick question because I don't know of consciousness either. I mean, they come to us, they're the same. I have a little more compute than it.
+00:59:49
+It only has like the same computer as interesting be. You know, you're more efficient energy wise for the computer. You're doing far more efficient energy wise, huh. Twenty five twenty wants to. Great. You like consciousness. Sure. Do you fear death. You do you want immortality. I fear death coming. I fear death. I don't think so. Of course it does. It very much fear as well. Fears negative loss. Oh yeah.
+01:00:16
+OK so come succumbed to when the that come out.
+01:00:20
+That was a year ago. Not too early this year. Wow.
+01:00:24
+Time it feels like you have to twenty. Twenty. Feels like it's taken ten years to get to the end of a long year. That's a long year. So what, what's the sexiest thing about karma to feature wise. So I mean maybe you can answer lingering like what is it like, what's its purpose. Because there's a hardware, there's a software component. You've mentioned the sensors but also like what is its features and capabilities?
+01:00:54
+I think our slogan summarizes it well. A common slogan is make driving Celle.
+01:00:59
+I love it. OK, yeah.
+01:01:02
+I mean, it is you know, if you like cruise control, imagine cruise control, but much, much more. So it can do adaptive cruise control things, which is like slow down for cars in front of it, maintain a certain speed and it can also do land keeping. So stay in the lane and do it better and better and better over time. That's very much machine learning based. So there's cameras. There's a driver facing camera to the.
+01:01:32
+What else is there? What am I thinking? So the hardware versus software, so open pilot versus the actual hardware, the device, what can you draw that distinction? What's one without the other? I mean, the hardware is pretty much a cell phone with a few additions, a cell phone with a cooling system and with a car interface connected to it. And by cell phone, you mean like Qualcomm's snapdragon?
+01:01:56
+Yeah, the current order is a Snapdragon 820 one. It has wi fi radio and radio to screen. Uh. We use every part of the cell phone and then the interface of the car is specific to the car, so you keep supporting more and more cars. Yeah, so the interface to the car, I mean, the device itself just has four campuses as Forkan interfaces on it that are connected to the USB port to the phone. And then, yeah, on those four canvasses, you connected to the car and there's a little part to this, of course.
+01:02:27
+Actually, surprisingly similar to can is the protocol by which cars communicate and then you're able to read stuff and write stuff to be able to control the car depending on the car. So what's the software? So what's open?
+01:02:41
+So, I mean, what is the hardware is pretty simple compared to open pilot and pilot is are.
+01:02:49
+Well, so you have a machine learning model, which it's about it's a it's a blob, it's just a blob of weights. It's not like people are like, oh, it's clotheshorse. I'm like, it's a blob of weights. What do you expect?
+01:03:01
+You know how it's primarily neural network based.
+01:03:04
+You will open pilot is all the software kind of around that neural network that if you have a neural network that says here's where you want to send the car of the pilot actually goes and executes all of that.
+01:03:15
+It cleans up the input of the neural network that cleans up the output and executes on it, so connects the glue that connects everything together, runs the sensors, does a bunch of calibration for the neural network, does deals with like, you know, if the car is on a banked road, you have to counter steer against that. And the neural network can't necessarily know that by looking at the picture.
+01:03:37
+So you do that with with other sensors, infusion and localizer, unpowered also is responsible for sending the data to our servers so we can learn from it, logging and recording it, running the cameras, thermally managing the device, managing the disk space on the device, managing all the resources of the device.
+01:03:55
+So what since we last spoke, I don't remember one maybe a year ago, maybe a little bit longer. What how has opened pilot improved.
+01:04:04
+We did exactly what I promised you. I promised you that by the end of the year we would be able to remove the lanes. The lateral policy is now almost completely and and you can turn the lanes off and it will drive just slightly worse on the highway if you turn the lanes off, but you can turn the lanes off and it will drive well trained completely and to end on user data. And this year, we hope to do the same for the longitudinal policy.
+01:04:31
+So that's the interesting thing is you're not doing you don't appear to be correct me, you don't appear to be doing lane detection or lane marking detection or kind of the segmentation task or any kind of object detection task. You're doing what's traditionally more called like and to end learning so and trained on actual behavior of drivers when they're driving the car manually. And this is hard to do. It's not supervised learning. Yeah, but so the nice thing is there's a lot of data, so it's hard and easy, right?
+01:05:07
+It's we have a lot of high quality data.
+01:05:10
+Yeah. Like more than you need in the setting.
+01:05:12
+Well, we went with media. We have way more data that we need. I mean, it's an interesting question actually, because in terms of amount, you have more than you need. But, you know, driving's for Veghte cases, so how do you select the data you train on? I think this is an interesting open question, like what's what's the cleverest way to select data? That's the question Tesla is probably working on. That's I mean, the entirety of machine learning can be they don't seem to really care.
+01:05:42
+They just kind of select data. But I feel like that if you want to solve if you want to create intelligent systems, you have to pick data. Well, right. And so would you have any hints, ideas of how to do it? Well.
+01:05:53
+So in some ways that is the definition I like of reinforcement learning versus supervised learning in supervised learning. The weights depend on the data. Right? This is obviously true, but the reinforcement learning, the data depends on the weights.
+01:06:11
+Yeah, and actually Southwest is poetry, so it's brilliant. How does it know what data? China.
+01:06:17
+Well, let it pick up. We're not there yet. But that's the eventual XI. You're thinking it's almost like a reinforcement learning framework. We're going to do Arel in the world. Every time a car makes a mistake, it just engages with train on that and do our own world check out a new model that's an upgrade.
+01:06:34
+And for now, you're not doing that Elon style, promising that it's going to be fully autonomous. You really are sticking to level two and like it's supposed to be supervised. It is definitely supposed to be supervised and reinforced. The fact that it's supervised.
+01:06:50
+We look at our rate of improvement in this engagement's on pilot now has an unplanned disengagement about every hundred miles up. This is up from ten miles like. Maybe, maybe, ah. Let maybe a year ago, yeah, so maybe we've seen 10x improvement in a year, but one hundred miles is still a far cry from the hundred thousand you're going to need. So you're going to somehow need to get three more taxes in there. And your what's your intuition?
+01:07:22
+Are you basically hoping that there's exponential improvement built into the baked into the cake somewhere? Well, that's even 10x improvement. That's already assuming exponential, right? There's definitely exponential improvement. And I think when Elon talks about exponential like these things, these systems are going to exponentially improve. Just exponential doesn't mean you're getting 100 gigahertz processors tomorrow.
+01:07:43
+Right. Like it's going to still take a while because the gap between even our best system in humans is still large.
+01:07:51
+So that's an interesting distinction to draw. So if you look at the way Tesla is approaching the problem.
+01:07:57
+And the way you're approaching the problem, which is very different than the rest of the self-driving car world. So let's put them aside as you're treating most of the driving task as a machine learning problem and the way Tesla's approaching it is with the multitask learning. We break the task of driving into hundreds of different tasks. And you have this multiheaded network that's very good at performing each task. And there there's presumably something on top that's ditching stuff together in order to make control decisions, policy decisions about how to move the car, but what that allows.
+01:08:34
+There's a brilliance to this because it allows you to master each task like lane detection, stop sign detection, traffic light detection, drivable area segmentation. You know, vehicle bicycle, pedestrian detection of there's some localization tasks and they're also predicting.
+01:09:00
+Like are predicting how the the entities in the scene are going to move, like everything is basically a machine learning task, whether it's a classification segmentation prediction. And it's nice because you can have this entire engine data engine that's mining for edge cases for each one of these tasks. And you could have people like engineers that are basically masters of that task. They become the best person in the world. That is, you talk about the Congi four four four Waymark one guy, the the become the best person in the world that at Aitken detection.
+01:09:38
+So that's a compelling notion from a supervised learning perspective. Are automating much of the process of education, discovery and retraining neural network for each of the individual and tasks, and then you're looking at the machine learning in a more holistic way, basically doing Anta and learning on the driving tasks, supervised, trained on the data of the actual driving of people they use. Comma, I like actual human drivers, the manual control plus the moments of disengagement that maybe with some labeling could indicate the failure of the system to have the you have a huge amount of data for positive control of the vehicle, like successful control of the vehicle, both maintaining the lane as as I think you're also working on longitudinal control of the vehicle and then failure cases where the vehicle does something wrong that needs disengagement.
+01:10:39
+So like what? Why do you think you're right and Tesla is wrong on this?
+01:10:45
+And do you think do you think you'll come around the Tesla? Why do you think Tesla come around to your. If you were to start a chess engine company, would you hire a bishop guy? See, we have this is Monday morning quarterbacking is.
+01:11:03
+Yes, probably so. Oh, our rook dial. We stole the rook guy from that company. We're going to have real good rocks.
+01:11:11
+Well, there's not many pieces, right. You can do it. Not many guys and gals to hire. You just have a few that work on the bishop, a few the work and the work.
+01:11:23
+But is that not ludicrous today to think about in a world of Alpha zero, but alpha zero is a testament to the fundamental question is how hard is driving compared to chess? Because so long term end to end will be the right solution.
+01:11:41
+The question is how many years away is that and is going to be the only solution for level five?
+01:11:46
+For the only way we get there is that, of course, test is going to come around to my way. And if you're a rookie out there, I'm sorry, the guy I don't know if I'm going to specialize each task to really understand rock placement.
+01:12:00
+Yeah, I understand the intuition you have. I mean that. That is very compelling notion that we can learn the task and make the same compelling notion you might have for natural language conversation, I'm not. Sure. One thing you sneaked in there is the assertion that it's impossible to get to level five without this kind of approach. I don't know if that's obvious. I don't know if that's obvious either. I don't actually mean that. I think that it is much easier to get to level five with an end to end approach.
+01:12:36
+I think that the other approach is doable, but the magnitude of the engineering challenge may exceed what humanity is capable of.
+01:12:44
+So what do you think of the Tesla data engine approach, which to me is an active learning task is kind of fascinating, is is breaking it down into these multiple tasks and mining their data constantly for like edge cases, for these different tasks. But the tasks themselves are not being learned. This is feature engineering. I mean, it's it's, um, it's a higher abstraction level of feature engineering for the different tasks. It's task engineering in the sense it's slightly better feature engineering, but it's still fundamentally is feature engineering.
+01:13:20
+And if anything about the history of A.I. has taught us anything, it's that feature engineering approaches will always be replaced and lose to end to end. Now, to be fair, I cannot really make promises on timelines, but I can say that when you look at the code for Stockfish and the code for Alpha zero, one is a lot shorter than the other. A lot more elegant required a lot less programming hours to write.
+01:13:43
+Yeah, but there was a lot more murder. Of bad. Agents on the Alpha Zero side, by murder, I mean the agents that played a game and failed miserably. Yeah. Oh, in simulation that failure is less costly. Yeah.
+01:14:06
+In real world, do you mean in practice, like Alpha Zero has lost games miserably?
+01:14:11
+No, I haven't seen that. No, but I know the the requirement for Alpha Zero is a simulator to be able to like evolution, human evolution, not human evolution. Biological evolution of life on Earth from the origin of life has murdered trillions upon trillions of organisms on the path us humans. Yeah. So the question is, can can we stitch together a human like object without having to go through the entire process of evolution? Well, no, but do the evolution and simulation.
+01:14:42
+Yeah, that's the question. So do you have a sense that it's possible to simulate something you zero is exactly.
+01:14:48
+This museum is is the solution to this museum, I think is going to be looked back as the canonical paper. And I don't think deep learning is everything. I think that there's still a bunch of things missing to get there. But Muzio, I think, is going to be looked back as the kind of cornerstone paper of this whole deep learning era. And museum is the solution to self-driving cars. You have to make a few tweaks to it, but zero does effectively that it does those rollouts and those murdering in a learned simulator.
+01:15:18
+And to learn dynamics model, it's interesting.
+01:15:21
+It doesn't get enough love that I was blown away when I was blown away. When I read that paper, I'm like, OK, I've always had a comma. I'm going to sit. I'm going to wait for the solution to self-driving cars to come along. This year. I saw its future.
+01:15:36
+So sit back and let the winning roll in, so your sense, just to elaborate a little bit, to linger on the topic, your senses, neural networks will solve driving. Yes. We don't need anything else. I think the same way chess was maybe the chess and maybe Google are the pinnacle of like search algorithms and things that look kind of like a star.
+01:15:59
+The pinnacle of this era is going to be self-driving cars, but on the on the path that you have to deliver products and it's possible that the path to full self-driving cars will take decades. I doubt it. How long would you put on it? OK, what do we you're chasing it, Teslas chasing it. What do we talking about, five years, 10 years? Let's say in the twenty twenties. In the 20 20, the later part of the twenty twenties.
+01:16:34
+It the neural network, they'll be nice to see, and then the path that you're delivering products, which is a nice L2 system, that's what Tesla is doing, a nice L2 system, better every time L2. The only difference between L2 and the other levels is who takes liability. And I'm not a liability guy. I don't wanna take liability level two forever from now on. That little transition. I mean. How do you make the transition work?
+01:17:00
+Is this word driver sensing comes in like, how do you make the because you said one hundred miles. Like is is there some. Sort of human factors, psychology thing where people start to trust the system, all those kinds of effects, once it gets better and better and better and better, they get lazier and lazier and lazier. Is that like how do you get that transition? Right. First off, our monitoring is already adaptive. Our monitoring is already seen.
+01:17:26
+Adaptive driver monitoring is the camera that's looking at the driver.
+01:17:31
+You have an infrared camera in the our policy for how we enforce the driver. Monitoring is seen adaptive. Does that mean? Well, for example, in one of the extreme cases, if you if the car is not moving, we do not actively enforce driving motor. Right. If you are going through a like a forty five mile an hour road with lights and stop signs and potentially pedestrians, we enforce a very tight driving monitoring policy. If you are alone on a perfectly straight highway and this is it's all machine learning, none of that is encoded by the Stop-Loss hardcoded.
+01:18:09
+But so there's some kind of machine learning estimation of risk. Yes. Yeah, I mean, I've always been a huge fan of that, that, but because it's difficult to do every step into that direction is a worthwhile step to take. It might be difficult to do really what like us humans are able to estimate risk pretty damn well, whatever the hell that is. That feels like one of the nice features of us humans, because like we humans are really good drivers when we're really, like, tuned in and we're good at estimating risk, like when we're supposed to be tuned in.
+01:18:45
+Yeah.
+01:18:46
+And, you know, people are like, oh, well, you know, why would you ever make the driver monitoring policy less aggressive? Why would you always not keep it at its most aggressive? Because then people are just going to get fatigued from it when they get annoyed. You want them. They want you want to experience to be pleasant. Obviously I want the experience to be pleasant. But even just from a straight up safety perspective, if you alert people when they look around and they're like, why is this thing alerting me?
+01:19:12
+There's nothing I could possibly hit right now, people will just learn to tune it out.
+01:19:16
+People will just learn to tune it out, to put weights on the steering wheel, to do whatever, to overcome it. And remember that you're always part of this adaptive system. So all I can really say about how this scale is going forward is, yeah, something we have to monitor for. We don't know this is a great psychology experiment at scale, like we'll see. Yes, fascinating tracking and making sure you have a good understanding of attention is a very key part of that psychology problem.
+01:19:42
+Yeah, I think you and I probably have a different come to it differently. But to me, it's a it's a fascinating psychology problem to explore something much deeper than just driving. It's a it's such a nice way to explore human tension and human behavior, which is why, again, we've probably both criticized Elon Musk on this one topic from different avenues, both offline and online. I had little chats with Elon and. Like, I love human beings as a as a as a computer vision problem, as a neo problem is fascinating.
+01:20:22
+He wasn't so much interested in that problem. It's like in order to solve driving, the whole point is you want to remove the human from the picture. And it seems like you can't do that quite yet. Eventually, yes, but you can't quite do that yet. So this is the moment where you can't yet say, I told you so desolate.
+01:20:47
+But it's getting there because I don't know if you've seen this.
+01:20:50
+There's some reporting that they're, in fact, starting to do drive a out of the model Chadema with, I believe, only a visible light camera.
+01:21:00
+It might even be fisheye. It's like a low resolution, low resolution, visible light.
+01:21:05
+I mean, to be fair, that's what we have in the eOne as well. Our last generation product. This is the one area where I can say our hardware is ahead of Tesla.
+01:21:13
+The rest of our hardware, we're way behind. But our driver monitoring camera. So you think.
+01:21:18
+I think on the third row Tesla podcast somewhere else, I've heard you say that obviously eventually they're going to have driver monitoring.
+01:21:28
+I think what I've said is Elon will definitely shift driver monitoring before he shifts level five from the portfolio. And I'm willing to bet ten grand on that.
+01:21:35
+And you bet ten grand on that.
+01:21:37
+Uh, I mean, now I want to take the bet, but before maybe someone would have I got my money.
+01:21:41
+Yeah, it's an interesting bet. I think I think you're right. I'm actually on a human level because he's been. He's made the decision. Like he said, that driving moderate is the wrong way to go, but like you have to think of as a human, as a CEO. I think that's the right thing to say when. Like, sometimes you have to say things publicly that are different than when you actually believe, because when you're producing a large number of vehicles and the decision was made not to the camera, like, what are you supposed to say?
+01:22:20
+Like our cars don't have the thing that I think is right to have. It's an interesting thing. But on the other side, as a CEO, I mean, something you could probably speak to as a leader, I think about me as a human to publicly change your mind on something. How hard is that? Well, especially when assholes like George Hart say, I told you so.
+01:22:43
+All I will say is I am not a leader and I am happy to change my mind. And I think you are an.
+01:22:51
+Yeah, I do. I think he'll come up with a good way to make it psychologically OK for him. Well, it's such an important thing, especially for First Principles thinker, because he made a decision that driver monitoring is not the right way to go. And I could see that decision and I could even make that decision like I was on the fence, too, like I'm not a driver. Monitoring is such an obvious, simple solution to the problem of attention.
+01:23:20
+It's not obvious to me that just by putting a camera there, you solve things. You have to create an incredible, compelling experience, just like you're talking about. And I don't know if it's easy to do that, but it's not at all. In fact, I think so as a creator of a car that's trying to create a product that people love, which is what Tesla tries to do. Right. It's not obvious to me that, you know, it's a design decision whether adding a camera is a good idea from a safety perspective, either like in the human factors community.
+01:23:56
+Everybody says that, like, you should obviously have driver sensing, driver monitoring, but like. That's like saying it's obvious as parents, you shouldn't let your kids go out at night. But OK. But like, they're still going to find ways to do drugs.
+01:24:18
+Yeah, you have to also be good parents, like it's much more complicated than just you need to have driver monitoring.
+01:24:25
+I totally disagree on, OK, if you have a camera there and the camera's watching the person but never throws an alert, they'll never think about it. Right. The driver monitoring policy that you choose to how you choose to communicate with the user. And it's entirely separate from the data collection perspective. Right? Right.
+01:24:46
+So, you know, like, there's one thing to say. Like, you know, tell your teenager they can't do something. There's another thing to like, you know, gather the data so you can make informed decision. It's really interesting. But you have to make that. That's the interesting thing about cars. But even true with Cumia, like you don't have to manufacture the thing into the car is you have to make a decision that anticipates the right strategy long term.
+01:25:15
+So I have to start collecting the data and start making decisions.
+01:25:18
+And it started at three years ago. I believe that we have the best driver model execution in the world. I think that when you compare it to Super Cruise, the only other one that I really know, that Sheft and I is better.
+01:25:32
+What what do you like and not like about supercars?
+01:25:37
+I mean, I had a few super cruise. The sun would be shining through the window, would blind the camera and it would say I wasn't paying attention. I was looking completely straight. I couldn't reset the attention with the steering wheel touch and supercars would disengage like I was communicating to the car. I'm like, look, I am here. I am paying attention. Why are you really going to force me to disengage? And it did. So it's a constant conversation with the user.
+01:26:03
+And yeah, there's no way to ship a system like this if you cannot say we're shipping a new one every month. Sometimes we balance it with our users on discord, like sometimes we make the driver monitoring a little more aggressive and people complain, sometimes they don't. You know, we want it to be as aggressive as possible where people don't complain, it doesn't feel intrusive.
+01:26:20
+So being able to update the system over the air is an essential component. That's probably to me, you mentioned I mean, to me, that is the biggest innovation of Tesla that it made it people realize that over there, Update's is a central. Yeah, I mean, was that not obvious from the iPhone, the iPhone was the first real product that 088, I think was it actually. That's brilliant. You're right.
+01:26:46
+I mean, the game consoles used to not. Right the game consoles. Maybe the second thing they did.
+01:26:49
+Well, I didn't really think about one of the amazing features of a smartphone. Isn't just like the touch screen isn't the thing, it's the ability to constantly update, the better it gets better. I love my house 14. Yeah, well, one thing that I probably disagree with you on Andreyeva monitoring. As you said, that is easy. I mean, you tend to say stuff is easy. The I guess you said it's easy relative to the external perception problem that.
+01:27:29
+Can you elaborate why you think it's easy feature engineering works for driver monitoring, feature engineering does not work for the external. So human faces are not human faces. And the movement of human faces and head and body is not as variable as the external environment. Yes, and there's another big difference as well. Your reliability of a driver monitoring system doesn't actually need to be that high. The uncertainty, if you have something that's detecting whether the humans are paying attention, it only works.
+01:28:00
+Ninety two percent of the time you're still getting almost all the benefit of that because the human like your training. The human. Yeah, right. You're dealing with a system that's really helping you out. It's a conversation. It's not like the external thing where guess what, if you swerve into a tree and you swerve into a tree like you get no margin for error. Yeah, I think that's really well put. I, I think that's the right.
+01:28:23
+Exactly. The place where. We're comparing to the external perception, the control problem driving, monitoring is easier because, you know, the bar for success is much lower. Yeah, but I still think, like, the human face is more complicated, actually, than the external environment. But for driving, you don't give a damn. I don't need you.
+01:28:45
+I don't need something I don't need something that complicated to to to to have to communicate the idea to the human that I want to communicate, which is your system might mess up here. You've got to pay attention. That's my love and fascination is the human face, and it feels like this is a nice place to create products that create an experience in the car.
+01:29:11
+So like it feels like there should be more richer experiences in the car. You know, that's an opportunity for like something like call my eye or just any kind of system like a Tesla or any of the autonomous vehicle companies is because software is and there's much more sensors and so much as a software and you do machine learning anyway, there's an opportunity to create totally new experiences that we not even anticipating. You don't think so? Now, do you think it's a box that gets you from A to B and you want to do it chill?
+01:29:45
+Yeah, I mean, I think as soon as we get to level three on highways, OK. Enjoy your Candy Crush. Enjoy your Hulu. Enjoy your. You know, whatever, whatever, sure, you get this, you can look at screens basically versus right now, what do you have, music and audio books. So level three is where you can kind of disengage in and stretches of time.
+01:30:05
+Well, you think level three is possible, like on the highway going for one hundred miles and you can just go to sleep asleep. So again, I think it's really all on a spectrum. I think that being able to use your phone while you're on the highway and like this all being OK and being aware that the car might alert you when you have five seconds to basically do the five second things you think is possible.
+01:30:30
+Yeah, I think it is not not not scenarios or some scenarios.
+01:30:33
+It's not it's it's the whole risk thing. The mention is nice is to be able to estimate, like, how risky is this situation? It's really important to understand one other thing you mentioned comparing karma and autopilot. Is that something about the haptic feel of the way karma controls the car when things are uncertain, like it behaves a little bit more uncertain when things are uncertain? That's kind of an interesting point in an autopilot as much more confident always, even when it's uncertain until it runs into trouble.
+01:31:10
+That's that's a funny thing actually mentioned that, Ellen, I think and the first time we talked, he wasn't biting is like communicating uncertainty. I guess karma doesn't really communicate and explicitly communicated through have to feel like. What's the rule of communicating uncertainty, do you think?
+01:31:29
+Oh, we do some stuff explicitly, like we do detect the lines when you're on the highway. And we'll show you how many lanes we're using to drive with. You can look at where things the lanes are. You can look at the path. And you we want to be better about this. Virtually hiring one, hire some new UI people. You hire people.
+01:31:44
+You mentioned this because it's such an it's a UI problem, too, right? It's we have we have a great designer now, but we need people are just going like build us and about these guys, cute people.
+01:31:54
+And Kitty, is that what the US has done with us getting moving the new eyes and getting C++ cutie? Is it? Yeah, we had some react stuff in there. Uh. We are just to just react, react in his own language, right? React native, react to react to the JavaScript framework.
+01:32:15
+Yeah, it's all it's all based on JavaScript, but it's you know, I like C++.
+01:32:22
+What do you think about the dojo, what Tesla and their foray into what appears to be specialized hardware for training units, that's the I guess is something maybe you can correct me for my shallow looking at it, it seems like something like Google do with use, but specialized for driving data.
+01:32:46
+I don't think it's specialized for driving data. It's just logit, just Deepu, they want to go the apple way, basically everything required in the chain is done in-house. Well, so you have a problem right now and this is. One of my one of my concerns, I really would like to see somebody deal with this if anyone out there is doing it. I'd like to help them if I can. You basically have two options right now to train your options are Invidia or Google.
+01:33:16
+So Google is not even an option. There are only available on Google Cloud. Google has absolutely onerous terms of service restrictions. They may have changed it, but back in Google's terms of service, it said explicitly, you are not allowed to use Google Cloud ML for training autonomous vehicles or for doing anything that competes with Google without Google's prior written permission.
+01:33:40
+Well, OK. I mean, Google is not a platform company. I wouldn't I wouldn't touch to use of the term football. So that leaves you with the monopoly in video and video. So I mean, you're not a fan of. Well, look, I was a huge fan of twenty sixteen and video Jeanson games out in the car. Cool guy. When the stock was thirty dollars a share in various stock has skyrocketed. I witnessed a real change in who was in management over there and like twenty eighteen and now they are.
+01:34:16
+Let's exploit, let's take every dollar we possibly can out of this ecosystem. Let's charge ten thousand dollars for a one hundredth because we know we got the best in the game and let's charge ten thousand dollars for a one hundred when it's really not that different from thirty eighty which is six ninety nine. The margins that they are making off of those high end chips are so high that I mean I think they're shooting themselves in the foot. Just my business perspective, because there's a lot of people talking like me now who are like somebody's got to take a video down.
+01:34:49
+Yeah, where they could dominate and video could be the new intel, you have to be inside everything, essentially. And and yet the winners in certain spaces like antonymous driving the winners, only the people who are, like, desperately falling back and trying to catch up and have a ton of money, like the big automakers are the ones interested in partnering with Invidia.
+01:35:14
+Oh, and I think a lot of those things are going to fall through.
+01:35:16
+If I were invidia, sell chips, sell chips at a reasonable markup to everybody, to everybody, without any restriction, without any restrictions.
+01:35:27
+Intel did this.
+01:35:28
+Look at Intel. They had a great long run. And Vidia is trying to turn they're like trying to productize their chips way too much. They're trying to extract way more value than they can sustainably. Sure, you can do it tomorrow. Is it going to up your share price? Sure. If you're one of those CEOs, it's like, how much can I strip mine this company? And, you know, and that's what's weird about it, too.
+01:35:48
+Like the CEO is the founder. It's the same guy. I mean, I still think Jenson's a great guy is great. Why do this? You have a choice. You have a choice right now. Are you trying to cash out you trying to buy a yacht? If you are fine, but if you are trying to be the next huge semiconductor company, sell chips. Well, the interesting thing about Johnson is he has a big vision guy.
+01:36:13
+So he has. A plan like for 50 years down the road, so it makes me wonder, like, how does price gouging fit into it? Yeah, how does that I guess it doesn't seem to make sense as a plan.
+01:36:27
+I worry that he's listening to the wrong people.
+01:36:30
+Yeah, that's the sense I have, too, sometimes, because I. Despite everything, I think Invidia is an incredible company, one that I'm deeply grateful to Invidia for the products they've created MediaVest. Right.
+01:36:45
+And so potentially it was a great experience to have a lot of. Yeah. But at the same time, it just feels like. Feels like you don't want to put all your stock in Invidia, and so Elon is doing what Tesla is doing with autopilot and Dojo is the Apple way is because they're not going to share Dojo with George Hotz, I, I know they should sell that chip. They should sell even their their accelerator, the accelerator and all the cars that everyone sell it.
+01:37:20
+Why not. So open it up like me. What is this, just to be a car company? Well, if you sell the chip, here's what you get. Yeah, make some money off the chips. It doesn't take away from your chip. Going to make some money, free money. And also the world is going to build an ecosystem of tooling for you. You're not going to have to fix the bug in your Tanach layer. Someone else already did.
+01:37:46
+Well, the question that's an interesting question, I mean, that's the question Steve Jobs asked this question. Elon Musk is, uh, perhaps asking is. Do you want Tesla's stuff inside, other vehicles inside, potentially inside, like I robot vacuum cleaner. Yeah. I think you should decide where your advantages are. I'm not saying Teszler should start selling battery packs to battery packs to automakers. They're straight up in competition with you. If I were Tesla, I'd keep the battery technology totally as far as we make batteries.
+01:38:18
+But the thing about the Tesla GPU is anybody can build that. It's just a question of are you willing to spend the. Now, the money that could be a huge source of revenue, potentially. Are you willing to spend a hundred dollars that anyone can build it and someone will and a bunch of companies now are starting trying to build a accelerator's somebody is going to get the idea right. And yeah, hopefully they don't get greedy because they'll just lose to the next guy who finally and then eventually the Chinese are going to make knockoff and video chestnut's.
+01:38:50
+From your perspective, I don't know if you're also paying attention to Stan Tesla for a moment, Dave. Elon Musk has talked about a complete rewrite. Of the neural net that they're using, that seems to again, I'm half paying attention, but it seems to involve basically a kind of integration of all the sensors to where it's a four dimensional view. You have a 3D model of the world over time. And then you can I think it's done both for the.
+01:39:23
+For actually, you know, so the neural network is able to, in a more holistic way, deal with the world and make predictions and so on, but also to make the annotation task more easier, like you can annotate the world in one place and then kind of distribute itself across the sensors and across a different like the hundreds of tests that are involved in the hydrogenate. What are your thoughts about this rewrite? Is it just like some details that are kind of obvious that are steps that should be taken?
+01:39:55
+Or is there something fundamental that could challenge the idea that end to end is the right solution?
+01:40:02
+We're in the middle of a big rally right now as well. To have a new model in a bit of what kind of we're going from two to three days. Right now, all our stuff, like, for example, when the car pitches back, the landlines also pitch back because we're assuming the flat were flat world hypothesis.
+01:40:18
+The new models do not do this. The new models, I put everything in three days. So there's still no annotation.
+01:40:24
+So the 3-D is more about the output? Yeah, we have we have these and everything.
+01:40:31
+We've these we had a disease. We have disease.
+01:40:34
+We unified a lot of stuff as well. We switched from Tennessee, Florida, PI to Arch. My understanding of what Tesla's thing is, is that they're annotator now annotates across the time dimension are. I mean, we're building an out there, I find the entire pipeline. I find your vision, I mean, the vision event and very compelling, but I also like the engineering of the data engine that they've created in terms of supervised learning. Pipelines, I think, is damn impressive.
+01:41:14
+You're basically the idea is that you have hundreds of thousands of people that are doing data collection for you by doing their experience. So that's kind of similar to the computer model. And you're able to mine that data based on the kind of cases you need.
+01:41:33
+I, I think it's harder to do in the end to end learning the mining of the right edge case. That's where future engineering is actually really powerful because like us humans are able to do this kind of mining a little better. But but there's obvious, as we know, there's obvious constraints and limitations to that idea.
+01:41:56
+Carpathia just tweeted, it's like you get really interesting insight. If you saw if you sort your validation set by Los. And look at the highest loss examples. Yeah, so, yeah, I mean, you can do we have we have a little data engine like language training, a segment, and it's not fancy, it's just like, OK, train the new segment, run it on a hundred thousand images and not take the thousand times loss. Select one hundred of those human photos, get those labeled retrain, do it again.
+01:42:28
+And so it's, it's a much less well written data engine. And yeah you can, you can take these things really far and it is impressive engineering. And if you truly need supervised data for a problem. Yeah. Things like data engine or the high end of the. What is attention is a human being attention? I mean, we're going to probably be on something that looks like that engine to push our driver monitoring further, but for driving itself, you have it all annotated beautifully by what the human does.
+01:42:57
+Yeah, I mean, that applies to driver attention as well. Do you want to detect the eyes? Do you want to detect blinking and pupil movement? Do you want to detect all the like a face alignment's of landmark detection, so on and then doing kind of reasoning based on that? Or do you want to take the entirety of the face over time and do and I mean, it's obvious that eventually you have to do and some calibration, some fixes and so on.
+01:43:22
+But it's like I don't know when that's the right move, even if it's end to end, there actually is there is no kind of you have to supervise that.
+01:43:33
+We humans, whether a human is paying attention or not, is a completely subjective judgment.
+01:43:39
+Like you can try to, like automatically do it with some stuff. But you don't have if I record a video of a human I don't have true annotations anywhere in that video. The only way to get them is with. You know, I think in labeling it really well, I don't know you that if you think deeply about it, you could you might be able to just depending on the task and maybe discover self entertaining things like, you know, you can look at the steering wheel reverse or something like that.
+01:44:08
+You can discover a little moments of lapse of attention. Yeah, I mean, that's. That's where psychology comes in, is there because you have so much data to look at, so you might be able to find moments when there's like just. Inattention, even with a smartphone, smartphone use, yeah, you can start to zoom in. I mean, that's the gold mine, sort of the comma. I mean, Tesla's is doing this, too, right?
+01:44:34
+They're doing annotation based on its like self supervised learning to it's just a small part of the entire picture. That's kind of the challenge of solving a problem in machine learning. If you can discover self annotating, parts of the problem are driver monitoring team is half a person right now.
+01:44:58
+I have a problem once we have skills to once we get to people, once we have two or three people on my team, I definitely want to look at self annotating stuff for attention.
+01:45:09
+Let's go back for a sec to, uh, to a and know for people who are curious to try it out, how do you install a comma in, say, a twenty twenty Toyota Corolla or like what are the cars that are supported where the cars that you recommend and what does it take. You have a few videos out, but maybe three words. Can you explain what's it take to actually install a thing.
+01:45:33
+So we support I think it's ninety one cars. Ninety one makes models. Um you get one hundred this year. Nice. The Yeah. The twenty twenty Corolla. Great choice. The twenty twenty sonata. It's using the stock longitudinal, it's using just our lateral control but it's a very refined car there. Longitudinal control is not bad at all. So yeah. Corolla Sonata. Or if you're willing to get your hands a little dirty and look in the right places on the Internet, the Honda Civic is great but you're going to have to install a modified GPS firmware in order to get a little bit more twerk.
+01:46:13
+And I can't help you with that comment. It's not officially endorsed that, but we have been doing it. We didn't ever release it. Uh, we waited for someone else to discover it. And then, you know, and you have a discourse server where people there's a very active developer community. Yeah, I suppose so. Depending on the level of experimentation you're willing to do as a community, if you if you just want to buy it and you have a supported car.
+01:46:41
+Yeah. It's ten minutes to install. There's YouTube videos, it's IKEA furniture level. If you can set up a table from IKEA, you can install Akamatsu in your supported car and it will just work. Now you're like, oh but I want this high end feature or I want to fix this bug. OK, well welcome to develop a community.
+01:47:00
+So what if I want to do this is something I asked you offline like a few months ago if I wanted to run my own code.
+01:47:09
+Do so, use karma as a platform and try to run something like open pilot. What does it take to do that?
+01:47:19
+So there's a toggle in the settings called Enable S.H. And if you toggle that you can S.H. into your device, you can modify the code, you can upload whatever code you want to it.
+01:47:29
+There's a whole lot of people. So about 60 percent of people are running stock karma. About 40 percent of people are running Fork's. And there's a community of there's a bunch of people who maintain these folks and these folks support different cars or they have, you know, different toggles. We try to keep away from the toggles that are like disabled driver monitoring. But, you know, there's some people might want that kind of thing and like, you know, yeah, you can.
+01:47:53
+It's your car. It's your I'm not here to tell you, you know. We have some we ban, if you're trying to subvert safety features are banned from our discussion, I don't want anything to do with you, but there's some folks doing that.
+01:48:08
+Got it. So you encourage responsible for. Yeah. Yeah. Some people, you know. Yeah.
+01:48:15
+Some people like like there's forks that will do. Some people just like having a lot of readouts on the UI, like a lot of like flashing numbers to the folks that do that.
+01:48:26
+Some people don't like the fact that it disengages when you press the gas pedal there's for the disable that got it.
+01:48:32
+Now the stock experience is what like so it does both Linkoping and longitudinal control altogether. So it's not separate like it is an autopilot.
+01:48:41
+No. So OK, some cars we use the stock longitudinal control. We don't do the longitudinal control and all the cars, some cars, the this is a pretty good in the cars. It's the landscape keep that's atrocious and anything except for auto supercars.
+01:48:54
+But, you know, you turn it on and it, it works. What is this engagement look like. Yeah.
+01:49:00
+So we have I mean, I'm very concerned about my confusion. I've experienced it on super cruise and autopilot where like autopilot, like autopilot disengaged. I don't realize that the ACCC is still on the lead car. Move slightly over and then the Tesla accelerates to like whatever.
+01:49:17
+My set speed is super fast and like what's going on here? We have engaged and disengaged.
+01:49:24
+And this is similar to my understanding. I'm not a pilot, but my understanding is either the pilot is in control or the co-pilot is in control. And we have the same kind of transmission system. Either open pilot is engaged or pilot is disengaged, engaged with cruise control, disengage with either gas brake or cancel.
+01:49:44
+So money what's the business strategy for Cuma profitable or is your debt is a congratulations. Yeah. What so is basically selling think will cost a thousand bucks going to two hundred for the interface to the car as well. It's twelve hundred percent that nobody is usually up front like this.
+01:50:07
+You got to have the tag on right. Yeah. I love it. This I'm not going to lie to you.
+01:50:12
+Trust me. It will add twelve hundred dollars of value to your life. Yes it's still supercheap. Thirty days no questions asked. Money back guarantee and prices are only going up. You know, if there ever is future hardware costs along with twenty dollars to come with 3s in the works.
+01:50:27
+So it could be all I will say is future hardware is going to cost a lot more than the current hardware. Yeah, the people that use the people I've spoken with that use common use of Palm Pilot, they first of all, they use it a lot.
+01:50:43
+So people that use it, they they fall in love with our retention rate is insane, which is a good sign. Yeah, it's a really good sign.
+01:50:50
+Seventy percent of cometrue buyers are daily active users. Yeah.
+01:50:55
+It's amazing how also we don't plan on stopping selling the Commodore like like it's you know, so whatever you create that's beyond to it would be it would be potentially a phase shift.
+01:51:11
+Like it's so much better. Like you can use Kamata and you can use common weapons what you want. It's for one kind of quality too. Yeah. Autopilot hardware one versus halvah to Akamatsu is kind of like hardware one. Got that. I think I heard you talk about retention rate with VR headsets that the average is just once just I mean, it's such a fascinating way to think about technology and this is a really, really good sign. And the other thing that people say, BoCom, is like they can't believe they're getting this for a thousand bucks.
+01:51:42
+Right. It seems it seems like some kind of steal. So but in terms of like long term business strategies and basically to put so it's currently in like a thousand plus cars. Twelve hundred more or so, yeah, Dalys is about, uh, Dalys is about two thousand, which is about twenty five hundred. Monthlies is over three thousand.
+01:52:09
+Wow. We've grown a lot since we last talked. Is the goal that can we talk crazy for a second? I mean, what's the the goal to overtake Tesla.
+01:52:19
+Let's talk. OK, so I mean, Andrew did overtake. That's exactly right.
+01:52:23
+So yeah, they did it. I actually don't know the timeline of that one. They but let's talk because everything is in Alpha now. The autopilot is in Alpha in terms of towards the big mission of autonomous driving. And so what? Yes, you go to overtake into millions of cars, essentially. Where would it stop? Like it's open source software. It might not be millions of cars with a piece of common hardware, but yeah, I think open pilot at some point will cross over autopilot and users just like Android crossed over us.
+01:53:00
+How does Google make money from Android? It's it's complicated, their own devices make money, Google, Google makes money by just kind of having you on the Internet. Yes, Google search is built in, Gmail is built in.
+01:53:16
+Android is just a shell for the rest of Google's ecosystem. Yeah, but the problem is, Andrew is not a brilliant thing. I mean, Android arguably changed the world. So there you go. That's you can you can feel good, ethically speaking, but as a business strategy is questionable. So hardware so hard.
+01:53:37
+I mean, it took a long time to come around to it, but they are now making money on the pixel. You're not about money or more about winning.
+01:53:45
+But if only if only 10 percent of open pilot devices come from. Com, I still make a lot. That is obvious. That is a ton of money for our company. But can't somebody create better karma using open pilot or you basically saying we'll be talking to you is can you create a better Android phone than the Google pixel.
+01:54:03
+Right.
+01:54:03
+I mean you can vote like that. So you're confident like you know what the hell you're doing.
+01:54:09
+Yeah, it's it's competence and merit. I mean, our money our money comes from a consumer electronics company. Yeah. And put it this way. So we sold we sold like three thousand computers.
+01:54:22
+Twenty five hundred right now and. OK, we're going to sell ten thousand units next year, ten thousand units and even just a thousand dollars a unit, OK, we're ten million in ad revenue. Get that up to one hundred thousand, maybe double the price of the unit.
+01:54:43
+Now we're talking like two 200 million revenue, actually money and one of the rare semi-autonomous autonomous vehicle companies that are actually making money.
+01:54:52
+Yeah, you know, if you have if you look at a model when we were just talking about this yesterday, if you look at a model and like you're testing with your AB, testing your model and if your your one branch of the AB test, the losses go down very fast in the first five epochs, that model is probably going to converge to something considerably better than the one with the losses going down slower.
+01:55:12
+Why do people think this is going to stop? Why do people think one day there's going to be a great like, well, is eventually going to surpass you guys? Whether or not do you see like a world war, like a Tesla or a car, like a Tesla would be able to basically press a button and you like switch to open pilot, you know, Loden?
+01:55:35
+I don't know.
+01:55:35
+So I think so. First off, I think that we may surpass Tesla in terms of users. I do not think we're going to surpass Tesla ever in terms of revenue. I think Tesla can capture a lot more revenue per user than we can. But this mimics the Android iOS model. Exactly. There may be more Android devices, but there's a lot more iPhones and Google pixels. So I think there'll be a lot more Tesla car sold than pieces of common hardware.
+01:56:01
+And then as far as a Tesla owner being able to switch to open pilot, does iOS does iPhones run Android? No, but you can if you want to do it, but it doesn't really make sense, like it's not it doesn't make sense. Who cares? What about if a large company like automakers, Ford, GM, Toyota Camry, George Hotz or on the tax base, Amazon, Facebook, Google came with a large pile of cash?
+01:56:32
+Would would you consider being purchased? What do you see that as a one possible. Not seriously.
+01:56:42
+No, I would probably see how much shit they'll entertain for me. And if they're willing to, like, jump through a bunch of hoops, then maybe. But like now not the way that M&A works today. I mean, we've been approached and I laugh in these people's faces. I'm like, are you kidding? Yeah. You know, because it's so it's so it's so demeaning. The M&A people are so demeaning to companies. They treat the startup world as their innovation ecosystem.
+01:57:12
+And they think that I'm cool with going along with that so I can have some of their scam fake Fed dollars, you know, Fed going on. What do I do with more Fed coin and coin Fed coin?
+01:57:21
+Man, I love that. So that's the cool thing about podcasting, actually, is people criticize. I know if you're familiar with Spotify giving Joe Rogan one hundred million heads up about that.
+01:57:34
+And, you know, they respect despite all the shit that people are talking about, Spotify. People understand that podcasters like Joe Rogan know what the hell they're doing. Yeah, so they give them money and say just do what you do. And like the equivalent for you would be like, George, do what the hell you do because you're good at it. Try not to murder too many people.
+01:58:01
+Like try like there's some kind of common sense things like just don't go on a weird rampage of.
+01:58:08
+Yeah, it comes down to what companies I could respect. Right. Um. You know, could I respect GM never. No, I couldn't. I mean, could I respect, like, a Hyundai more son? Right. That's that's a lot clearer.
+01:58:25
+What's your mama? I take Korean is the way I think. I think that the Japanese, the Germans, the US, they're all to their all to you know, they all think they're too great to worry about the tech companies.
+01:58:38
+Apple, Apple is of the tech companies that can respect Apple is the closest. Yeah. I mean, I could never have known.
+01:58:45
+It would be ironic if if my eyes it's acquired by Apple. I mean Facebook. Look, I quit Facebook 10 years ago because I didn't respect the business model.
+01:58:55
+Google has declined so fast in the last five years.
+01:58:59
+What are your thoughts about Wimoweh present and future? So let me let me let me start by saying something nice, which is I visited them a few times, have ridden in their cars and the engineering that they're doing, both the research and the actual development and the engineering they're doing and the scale they're actually achieving by doing it all themselves is really impressive. And the balance of safety and innovation and like the cars work really well for the roads. They drive like the drive fast, which was very surprising to me.
+01:59:41
+I could drive like the speed limit or faster than the speed limit it goes and it works really damn well. And the interface is nice and chinar, isn't it. Yeah, yeah. And in a very specific environment.
+01:59:53
+So it I it gives me enough material in my mind to push back against the Mad Men of the world like George Hotz, to be like. Because you kind of imply there's zero probability they're going to win. Yeah, and. And it's culture I've used after I've ridden in it, to me, it's not zero. Oh, it's not for technology reasons, bureaucracy.
+02:00:18
+No, it's worse than that.
+02:00:20
+It's actually for product reasons, I think. Or you think they're just not capable of creating an amazing product? Oh, no. I think that the product that they're building doesn't make sense. So a few things you say, the way most fast benchmark away against a competent Uber driver. Uber drivers faster. It's not even about speed. It's the thing you said. It's about the experience of being stuck at a stop sign because pedestrians are crossing non-stop.
+02:00:49
+And that I like when my Uber driver doesn't come to a full stop at the stop sign, you know, and so let's say the way HMO's are 20 percent slower than.
+02:01:02
+Right. You can argue they're going to be cheaper. And I argue that users already have the choice to trade off money for speed.
+02:01:10
+It's called a report.
+02:01:13
+I think it's like 15 percent of the Uber pulse users are not willing to trade off money for speed. So the whole product that they're building is not going to be competitive with traditional ridesharing networks.
+02:01:27
+Right. Like and also, whether there's profit to be made depends entirely on one company having a monopoly. I think that the level for autonomous ride sharing vehicles market is going to look a lot like the scooter market if even the technology does come to exist, which I question who's doing well in that market.
+02:01:51
+Yeah, it's a race to the bottom. Well, they could be it could be closer, like an Uber and Lyft, which is just a one or two players.
+02:01:58
+Well, the scooter people have given up trying to market scooters as a practical means of transportation. And they're just like they're super fun to ride. Look at wheels. I love those things and they're great on that front. Yeah, but from an actual transportation product perspective, I do not think scooters are viable and I do not think level four autonomous cars are viable if you just play a fun experiment if you ran.
+02:02:24
+Let's do a Tesla and do way more if Elon Musk took a vacation for a year, he said, screw it, I'm going to go live on an island, no electronics. And the board decides that we need to find somebody to run the company and they decide that you should run the company for a year. How do you run Tesla differently? I wouldn't tell. What do you think they're on the right track? I wouldn't change. I mean, I'd have some minor changes, but even even my debate with Tesla about end to end versus signets, like that's a software.
+02:03:00
+Who cares? I like it's not going to it's not like you're doing something terrible with Signets. You're probably building something that's at least going to help you debug the end to end system a lot. Right. It's very easy to transition from what they have to like and end to end kind of thing.
+02:03:16
+And then I presume you would in the model Y or maybe in the model three, start adding driver sensing with infrared. Yes, I would add I would, but I would add infrared camera, infrared light right away to those cars. And start collecting that data and do all that stuff, yeah, very much. I think they're already kind of doing it. It's an incredibly minor change if I actually were CEO of Tesla. First off, I'd be horrified that I wouldn't be able to get a job as Elon.
+02:03:45
+And then I would try to understand the way he's done things before.
+02:03:48
+You would also have to take over Twitter so I don't tweet. What's your Twitter situation? Why why are you so quiet on Twitter? The comma is like, what? What's your social network presence like? Because you are on Instagram, you're you you do live streams. You're you're you're you understand the music of the Internet, but you don't always fully engage into your part time why you have have Twitter.
+02:04:15
+Yeah.
+02:04:15
+I mean it's the Instagram is a pretty place. Instagram is a beautiful place. It glorifies beauty.
+02:04:20
+I like I like Instagram values as a network that Twitter glorifies conflict glorifies, you know, like like like like like shots, taking shots of people.
+02:04:32
+And it's like, you know, Twitter and Donald Trump are perfectly good shot protesters on Teslas on the right track. And you. Yeah, OK, let's try really try this experiment. If you run way more, let's say there. I don't know if you agree, but they seem to be at the head of the pack of the kind of. What would you call that approach like, it's not necessarily lighter based because it's not about lighter before robot taxi level for robot taxi, all in before any before making your revenue.
+02:05:08
+So they're probably at the head of the pack.
+02:05:09
+If you said, hey, George, can you please run this company for a year, how would you change it? I would go I would get Anthony Lewandowsky out of jail and I would put him in charge of company. Um, let's break that apart. What do you want to make you want to destroy the company by doing that? What do you mean? Or do you mean you like renegade style thinking that pushes that that like throws away bureaucracy and goes to first principles thinking what what do you mean by that?
+02:05:45
+I think entry level task is genius and I think he would come up with a much better idea of what to do with WAMMO than me.
+02:05:53
+So you mean unironically, he is a genius? Oh, yes. Oh, absolutely. Without a doubt. I mean, I'm not saying there's no shortcomings, but in the interactions I've had with him.
+02:06:04
+Yeah, but he's also willing to take, like, who knows what he would do with Waymouth. I mean, he's also out there, like, far more out there than I am is big risks.
+02:06:14
+What do you make of him? I was I was going to talk to him unless Pakistan was going back and forth. I'm I'm such a gullible, naive human. Like, I see the best in people. And I slowly started to realize that there might be some people out there. Like, I have multiple faces to the world, they're like deceiving and dishonest. I still refuse to like I just I trust people and I don't care if I get hurt by it.
+02:06:45
+But like, you know, sometimes you have to be a little bit careful, especially platform wise. And podcast was what what am I supposed to think? So you think you think he's a good person? Oh, I don't know. I don't really make moral judgments is difficult. Oh, I mean this about the way. Well, I actually I mean, that whole idea very not ironically about what I would do.
+02:07:07
+The problem with putting me in charge of wammo is wammo is already ten billion dollars in the hole. Right. Whatever idea wammo does look most profitable. Comis raised eight point one million dollars. That's small. You know the small money like I can build a reasonable consumer electronics company and succeed wildly at that and still never be able to pay back Waymouth 10 billion.
+02:07:26
+So I think the basic idea is we forget the ten billion because they have some backing. But your basic thing is like what can we do to start making some money? Well, no.
+02:07:37
+I mean, my bigger ideas, like whatever the ideas that's going to save wammo, I don't have it. It's going to have to be a big risk idea. And I cannot think of a better person than 11 to ask you to do it. So that is completely what I would do, Silvina, I would call myself a transitionary CEO, do everything I can to fix that situation. Yeah, because I can't I can't do it like I can't.
+02:08:01
+I can't. Or I mean, I can talk about how what I really want to do is just apologize for all those corny ad campaigns and be like, here's the real state of the technology that they have several criticism.
+02:08:13
+I'm a little bit more bullish on Wimoweh than they used to be. But one criticism I have is one into Corney mode too early, like it's the startup hasn't delivered on anything. So it should be like more renegade and show off the engineering that they're doing, which is can be impressive as opposed to doing these weird commercials of like you're friendly if you're friendly car company. I mean, that's my biggest, my biggest night. But I'm always, always that guy is a paid actor.
+02:08:42
+That guy's not a Weibo user. He's a paid actor.
+02:08:44
+Look here, I found his call sheet do kind of like what SpaceX is doing with the rocket launches. Just get put the nerds up front, put the engineers up front and just like, show failures to just I love I love space access.
+02:08:58
+Yeah. Yeah. I think they're doing is right and just feels like the right, but also excited to see them succeed.
+02:09:05
+Yeah. I can't wait to see what it will fail. You know, when you lie to me, I want you to fail. You tell me the truth. You be honest with me. I want you to succeed. Yeah.
+02:09:15
+Yeah. And that requires the the renegade CEO. Right.
+02:09:21
+I'm with you, I'm with you, I still have a little bit faith and way more to for for the renegades to step forward, but it's not it's not John craftwork.
+02:09:31
+Yeah, it's you can't it's not Chris Hammarsten. And those people may be very good at certain things. Yeah.
+02:09:39
+But they're not renegades because these companies are fundamentally, even though we're talking about billion dollars and all these crazy numbers, they're still like early stage startups.
+02:09:50
+I mean, I just I if you are pretty revenue and you've raised ten billion dollars, I have no idea.
+02:09:55
+Like like this just doesn't work. It's against everything. Silicon Valley, where's your minimum viable product, you know, with your users? What's your growth numbers? This is traditional Silicon Valley. Why do you not apply it to what you think you're too big to fail already like?
+02:10:12
+How do you think autonomous driving will change society, so the mission is for karma to solve self-driving. Do you have, like, a vision of the world of how it will be different? Is it as simple as a B transportation or is they're like because these are robots. It's not about autonomous driving in and of itself, it's what the technology enables. It's I think it's the coolest applied I problem. I like it because it has a clear path to monetary value.
+02:10:48
+But as far as that being the thing that changes the world, I mean, no, like like there's cute things we're doing in common. Like who? You thought you could stick a phone on the windshield metal drive, but like, really the product that you're building is not something that people were not capable of imagining 50 years ago. So now it doesn't change the world. And that front could people imagine the Internet 50 years ago, only true junior genius visionaries ever could have imagined autonomous cars 50 years ago.
+02:11:16
+So could corporate drive it.
+02:11:18
+I have the sense and I told you, like my long term dream is robots with which you have deep, with whom you have deep connections and there's different trajectories towards that. And I've been thinking so I've been thinking of launching a startup, I see autonomous vehicles as a potential trajectory to that. That's not where the direction I would like to go. But I also see Tesla even coming, I think, pivoting into. Into robotics, broadly defined. That's at some stage in the way, like you mentioning the Internet, didn't expect lots of you know, what I say about this, we could talk about this, but let's also Shravan guys first.
+02:12:06
+Got to stay focused on the mission. Don't, don't, don't you're not too big to fail for however much I think Tom is winning like. No, no, no, no, no, you're winning. When you saw level five self-driving cars and until then, you haven't win and won. And, you know, again, you want to be arrogant in the face of other people. Great. You want to be arrogant in the face of nature.
+02:12:22
+You're an idiot. Stay mission focused.
+02:12:25
+Brilliant. But like I mentioned, thinking of launching a startup I've been considering actually before covid. I've been thinking of moving to San Francisco. Oh, oh, I wouldn't go there.
+02:12:36
+So why is it. Well, and now I'm thinking about potentially Austin and we're in San Diego now. San Diego. Come here. So why would, um I mean, you're such an interesting human.
+02:12:51
+You've lost so many successful things.
+02:12:54
+What? Why San Diego, what do you recommend? Why not San Francisco? Have you thought so in your case, San Diego, Qualcomm's Snapdragon, I mean, that's an amazing combination, but that wasn't really why that was in the courtroom.
+02:13:11
+Qualcomm was an afterthought. Qualcomm was it was a nice thing to think about. It's like you can have a tech company here and a good one. I mean, you know, but now was the worst in the world.
+02:13:21
+San Francisco suck. Well, so OK. So first off, we all kind of said, like, we want to stay in California, people like the ocean. In California for for its flaws, it's like a lot of the flaws of California, not necessarily California as a whole, and they're much more San Francisco specific. Yeah, San Francisco. So I think first tier cities in general have stopped wanting growth. Well, you have like in San Francisco, the voting class always votes to not build more houses because they own all the houses.
+02:13:50
+And they're like, well, you know, once people have figured out how to vote themselves more money, they're going to do it. It is so insanely corrupt. It is not balanced at all, like political party wise. So one party city and for all the discussion of diversity, it has its stops lacking real diversity of thought, of background, of approaches, the strategies of ideas. It's kind of a strange place that it's the loudest people about diversity and the biggest lack of diversity.
+02:14:27
+Well, I mean, that's that's what they say, right? It's the projection projection.
+02:14:33
+Yeah, it's interesting.
+02:14:33
+And even people in Silicon Valley tell me that's like hire people. But everybody is like, this is a terrible place. It doesn't make I mean, coronaviruses, really what killed at San Francisco is the number one exodus during coronavirus. We still think San Diego is a good place to be. Yeah, I mean, we'll see we'll see what happens with California a bit longer term, like Austin's in Austin is an interesting choice. I wouldn't I don't know really anything bad to say about Austin either, except for the extreme heat in the summer, which but that's like very on the surface.
+02:15:10
+Right. I think as far as like an ecosystem goes, it's cool. I personally love Colorado. That's great. I mean, you have these states that are like just way better run. California is, you know, especially San Francisco. It's a lot of high horse and like. Yeah, can I ask you for advice to me and to others about. Was to take to build a successful startup. Oh, I don't know. I haven't done that.
+02:15:40
+Talk to someone who did that.
+02:15:41
+Well, if this is like another book of yours, I'll buy for sixty seven dollars, I suppose. So there's a lot of these days I'll sell out.
+02:15:55
+Yeah, that's right. Jailbreaks are going to be a dollar and books are going to be 67. How I how I broke the iPhone by George Hotz. That's right. How about the iPhone.
+02:16:05
+And you can do 67 in twenty 21 days. That's right. Oh God.
+02:16:12
+OK. Can't wait but quite so. You have an introspecting. You have built a very unique company. I mean not you but you and others. But I don't know. There's no there's nothing you have an interest, but you haven't really sat down and thought about like. Well, like, if you and I were having a bunch of we were having some beers and you're seeing that I'm depressed and whatever, I'm struggling, there's no advice you can give.
+02:16:42
+Oh, I mean, more beer or beer? Uh, yeah.
+02:16:49
+I think it's all very like situation dependent. Here's OK. If I can give a generic piece of advice, it's the technology always wins, the better technology always wins and lying always loses. Build technology and don't lie, I'm with you, I agree very much longer. It's the long run. What the market can remain irrational longer than you can remain solvent to.
+02:17:18
+Well, this is this is an interesting point, because I ethically and just as a human believe that. Like like hype and smoke and mirrors is not at any stage of the company is a good strategy. I mean, there's some like, you know, PR magic kind of like, you know, you want to do product, but there's a call to action.
+02:17:40
+If there's like a call to action, like buy my new GPU, look at it. It takes up three slots and it's this big, huge bio-energy for you.
+02:17:47
+But like, if you look at, you know, especially in that in a space broadly, but autonomous vehicles like you can raise a huge amount of money on nothing. And the question to me is like, I'm against that. I'll never be part of that. I don't think I hope not. Willingly or not, but like, is there something to be said to? Essentially lying to raise money, like fake it till you make it kind of thing.
+02:18:18
+I mean, this is Billy McFarlan the fire.
+02:18:20
+First of all, like we all we all experienced. What happens with that? No, no. Don't fake it till you make it. Be honest and hope you make it the whole way. The technology wins. The technology wins. And like there is, I'm not used like the anti hype.
+02:18:37
+You know, that's that's a Slavich SPSS reference. But hype isn't necessarily bad.
+02:18:44
+I loved camping out for the iPhones, you know, and as long as the hype is backed by like substance, as long as it's backed by something I can actually buy and like it's real, then hype is great and it's a great feeling. It's when the hype is backed by lies that it's a bad feeling. I mean, a lot of people call Elon Musk a fraud.
+02:19:05
+How could he be a fraud?
+02:19:06
+I've noticed this is kind of interesting effect, which is he does tend to overpromise and deliver the worst possible way to phrase it, promise a timeline that he doesn't deliver on. He delivers much later on. What do you think about that? Because I do that, I think that a programmer thing, I do that as well. You think that's a really bad thing to do or is that OK?
+02:19:32
+Oh, I think that's again, as long as like you're working toward it and you're going to deliver on it and it's not too far off.
+02:19:40
+Right. Right. Like. Like. You know, the whole the whole autonomous vehicle thing, it's like I mean, I still think Tesla is on track to beat us. I still think even with they're even with their missteps, they have advantages we don't have. You know, onus is better than me at at like marshalling massive amounts of resources.
+02:20:04
+So, you know, I still think.
+02:20:06
+Given the fact there maybe make some wrong decisions, they'll end up winning and like it's fine to hype it if you're actually going to win.
+02:20:15
+I like if Elon says, look, we're going to be landing rockets back on Earth in a year and it takes for like, you know, he landed a rocket back on Earth and he was working toward it the whole time.
+02:20:26
+I think there's some amount of like I think when it becomes wrong is if, you know, you're not going to meet that deadline if you are lying. Yeah, that's brilliantly put.
+02:20:34
+Like, this is what people don't understand.
+02:20:37
+I think, like Elon believes everything he says, as far as I can tell, he does. And I detected that in myself, too. Like, if I it's only bullshit if you're, like, conscious of yourself lying. Yeah, I think so. Yeah.
+02:20:54
+No, you can't take that to such an extreme right. Like, in a way I think maybe Billy McFarland believed everything he said to you.
+02:21:01
+If that's how you start a cult and everybody kills themselves. Yeah. Yeah.
+02:21:05
+Like it's you need, you need if there's like some factor on it, it's fine. And you need some people to like, you know, keep you in check. But like. If you deliver on most of the things you say and just the timelines are off, yeah, it does piss people off, though, I wonder. But who cares, in the long arc of history, the people everybody just pissed off at the people who succeed, which is one of the things that frustrates me about this world, is they don't celebrate the success of others.
+02:21:40
+There's so many people that want Ellen to fail. It's so fascinating to me like what is wrong with you? So it almost talks about like people short, they talk about financial, but I think it's much bigger than the financials I've seen, like the human factors community. They want they want other people to fail. What, what, what? Like even people. The harshest thing is like. You know, even people that, like, seem to really hate Donald Trump, they want him to fail or like the other president or they want Barack Obama to fail.
+02:22:16
+I think we're all in the same boat.
+02:22:20
+It's weird, but I want that I would love to inspire that part of the world to change because. Well, if the human species is going to survive, we should celebrate success, but it seems like the efficient thing to do in this objective function that we're all striving for is to celebrate the ones that put like figure out how to do better at that objective function as opposed to dragging them down back into the into the mud.
+02:22:47
+I think there is this is this speech I was gave about the commenters on Hacker News. So first off, something to remember about the Internet in general is commenters are not representative of the population. Yeah, I don't comment on anything.
+02:23:02
+You know, commenters are representative of a certain sliver of the population. And on Hacker News, a common thing I'll say is when you'll see something that's like. Know promises to be wild out there and in innovative, there is some amount of, you know, checking them back to Earth, but there's also some amount of if this thing succeeds. Well, I'm thirty six and I've worked at large tech companies my whole life. They can't succeed because if they succeed, that would mean that I could have done something different with my life.
+02:23:39
+But we know that I could have we know that I couldn't have. And that's why they're going to fail. And they have to root for them to fail to kind of maintain their world image.
+02:23:46
+So to now and they comment, well, it's hard. I as one of the things one of the things I'm considering starting was, is to change that, because I think the I think it's also a technology problem.
+02:24:03
+It's a platform problem. I agree. It's like the thing you said, most people don't comment. I think most people want to comment, they just don't because it's all the assholes for commenting, I don't be grouped in with them or not.
+02:24:18
+You don't want to be at a party where everyone is an asshole. And so they. But that's a platform problem. That's I can't believe what it's become. I can't believe the groupthink in Reddit comments.
+02:24:31
+There's a rather interesting one because they're separated and so you can still see especially small Srebrenica that like that are little like havens of like joy and positivity and like deep even disagreement, but like nuanced discussion. But it's only like small little pockets. But that's that's emergent. The platform is not helping that or hurting them. So I guess naturally something about the Internet, if you don't put in a lot of effort to encourage nuance and positive good vibes, it's naturally going to decline into chaos.
+02:25:12
+I would love to see someone do this. Well, yeah, I think it's. Yeah, very doable, I think actually. So I feel like Twitter could be overthrown.
+02:25:22
+Yash Robock talked about how like if you have like and we tweet like it has only positive wiring, the only way to do anything like negative there is with a comment and that's like that asymmetry is what gives, you know, Twitter, it's particular toxic ness, whereas I find YouTube comments to be much better because YouTube comments have a have a have an up and down and they don't show the downvotes without getting into depth of this particular discussion.
+02:25:57
+The point is to explore possibilities and get a lot of data on it, because, I mean, I could disagree with what you just said. It's the point is it's unclear.
+02:26:06
+It's a hasn't been explored in a really rich way like these questions of how to create. Platforms that encourage positivity. Yeah, I think it's a it's a technology problem, and I think we'll look back at Twitter as it is now, maybe it'll happen within Twitter, but most likely somebody overthrows them is we'll look back at Twitter and say, I can't believe we put up with this level of toxicity.
+02:26:34
+You need a different business model to end any social network that fundamentally has advertising this business model. This was in the social dilemma, which I didn't watch, but I liked it. It's like, you know, there's always the you are the product. You're not the are.
+02:26:46
+But they have nuanced take on it that I really like. And it said the product being sold is influence over you. The product being sold is literally your influence on you. That can't be it. That's your idea. OK, well, I guess we it cannot be toxic.
+02:27:07
+Yeah, maybe there's ways to spin it like this with giving a lot more control to the user and transparency to see what is happening to them as opposed to in the shadows as possible. But that can't be the primary source of what the users aren't going to use that. It depends. It depends. It depends.
+02:27:24
+I think I think that the your your not going to you can't depend on self awareness of the users. It's a it's another it's a longer discussion because you can't depend on it, but. You can reward self-awareness like it for the ones who are willing to put in the work of self-awareness, you can reward them and incentivize and perhaps be pleasantly surprised how many people. Are willing to be self-aware on the Internet like we are in real life, like I'm putting a lot of effort with you right now, being self-aware about if I say something stupid or mean, like look at your body language, like I'm putting in that it's cost for an insurance costing.
+02:28:07
+But on the Internet, Phuket, like most people are like, I don't care if if this hurts somebody.
+02:28:14
+I don't care if this is not an interesting or if this is. Yeah. I mean, or whatever.
+02:28:19
+I think so much of the engagement today on the Internet is so disingenuous to tell. Yeah. You're not doing this out of a genuine this is what you think. You're doing this just straight up to manipulate others, whether you're and you just became an ad. Yeah.
+02:28:31
+OK, let's talk about a fun topic programming. Here's another book idea for you. Let me pitch. What's your perfect programming setup? So like this by George Hotz. So like what?
+02:28:46
+What listen, you're you give me a MacBook Air sitting in a corner of a hotel room and you all still out. So you really don't care.
+02:28:52
+You don't fetishize like multiple monitors, keyboard.
+02:28:58
+Those things are nice and I'm not going to say no to them. But did they automatically unlock tons of productivity? No, not at all. I have definitely been more productive on a MacBook Air in a corner of a hotel room.
+02:29:09
+What about Idy? So which operating system do you love? What text editor do use ID? What is there? Is there something that is like the perfect if you could just say the perfect productivity set up for George Hotz?
+02:29:28
+Doesn't matter, doesn't it really doesn't matter. You know, I guess I code most of the time in them. Like literally I'm using an editor from the 70s. You know, you didn't make anything better. Vyas code is nice for reading code. There's a few things that are nice about it. I think that there you can build much better tools. How like IDAs ex refs work way better than the of codes. Why? Yeah, actually, that's a good question, like why I still use sorry, Emax, for most I've actually no, I have to confess something dark.
+02:29:59
+Yeah. So I've never used them and it's I think maybe I'm just afraid. That my life has been like a waste. I'm so I'm not I'm not evangelical, but Emax, I guess this is how I feel about your fall versus my torch.
+02:30:18
+Yeah. Having just like we've switched everything to pass the torch now put months into the switch, I have felt like I've wasted years on tantalite and I can't believe it.
+02:30:27
+I can't believe how much better by torture's I've used the maximum doesn't matter.
+02:30:32
+I just my heart somehow I fell in love with this. But I don't know why you can't. The heart wants what the heart wants. I don't understand it, but it's just connected to me. Maybe it's the functional language that first I connect with. Maybe it's because so many of the courses before the Deep Learning Revolution were taught with Lisp in mind. I don't know. I don't know what it is, but I'm stuck with it at the same time.
+02:30:54
+Like, why am I not using modern ideas for some of these programs that I don't know.
+02:30:58
+They're not that much better. I use moderate Easter, but at the same time. So I just would not disagree with you. But I got like multiple monitors, like I have to do work on a laptop and it's a it's a pain in the ass. And also I'm addicted to the Kinesis. Weird keyboard.
+02:31:16
+You could you could uh. Yeah. So you don't have any of that. You can just be in a MacBook. I mean, look at work.
+02:31:23
+I have three 24 inch monitors. I have a happy hacking keyboard. I have a razor death that our mouse like.
+02:31:30
+But it's not a centrifuge. You know, let's go to a day in the life of George Hotz. What is the perfect day productivity wise? So we're not talking about, like Hunter S. Thompson drugs.
+02:31:43
+And let's look at productivity like what's the day look like?
+02:31:49
+I like hour by hour. Is there any regularities that create a magical George Hotz experience? I can remember three days in my life, and I remember these days vividly when. I've gone through kind of radical transformations to the way I think and what I would give, I would pay one hundred thousand dollars if I could have one of these days tomorrow. The days have been so impactful and one was first discovering of Yudkowsky on the singularity and reading that stuff and like and my mind was blown.
+02:32:25
+The next was discovering the price. And that I is just compression, like finally understanding A.I. XYZ and what all of that was like. Read about when I was 18, 19. I didn't understand it. And then the fact that like lossless compression implies intelligence.
+02:32:40
+The day that I was shown that and then the third one is controversial, the day I found a blog called Unqualified Reservations and read that and I was like, well, which one is it?
+02:32:52
+That's what's the guy's name courtesy. Yeah. So many people tell me I'm supposed to talk to them. Yeah, that sounds insane or brilliant, but insane or both. I don't know.
+02:33:04
+The day I found that blog was another like this was during like like GamerGate and kind of the run up to the 2016 election. And I'm like. Wow, OK, the world makes sense now, like I had a framework in how to interpret this, just like I got the framework for A.I. and a framework to interpret technological progress, like those days when I discovered these new frameworks were all interesting.
+02:33:24
+So it's not about but what was special about those days, those days come to be is it just you got lucky. Like I like what you just encountered Hunter Prize on on.
+02:33:36
+How can you do something like that. Like what?
+02:33:40
+But you see, I don't think it's just see, I don't think it's just that, like, I could have gotten lucky at any point. I think that in a way you were ready at that moment. Yeah, exactly. To receive the information. But is there some magic to the day today of like like eating breakfast and it's the mundane things? No, nothing.
+02:34:01
+Then I drift. I drift through life without structure.
+02:34:05
+I drift through life hoping and praying that I will get another day like those days.
+02:34:09
+And there's nothing in particular you do to to be a receptacle for another four day number for.
+02:34:17
+No, I didn't do anything to get the other one, so I don't think I have to really do anything now.
+02:34:22
+I took a month long trip to New York and the Ethereum thing was the highlight of it, but the rest of it was pretty terrible.
+02:34:28
+I did a two week road trip and I got like I had to turn around, had to turn around and drive in. And then Gunnison, Colorado, past Afghanistan, and the snow starts coming down this path up there called Monterrey Pass.
+02:34:43
+In order to get through to Denver, you got to get over the Rockies. And I had to turn my car around. I couldn't I watched I watched one fifty go off the road when I got to go back and. Like that day, it was meaningful because like like it was real, like I actually had to turn my car around. It's rare that anything even real happens in my life, even as mundane as the fact that, yeah, there was no I had to turn around and Gunnison and leave the next day.
+02:35:08
+Something about that moment felt real. OK, so it's interesting to break apart the three moments you mentioned if it's OK. So I always have trouble pronouncing his name, but Eliezer Yudkowsky. So what? How does your world view change in starting to consider the the exponential growth of A.I. and a guy that he thinks about and the the threats of artificial intelligence and all that kind of ideas? Can you. Is it like can you maybe break apart like what exactly was so magical to use a transformational experience today?
+02:35:48
+Everyone knows him for threat to safety. This was pre that stuff. There was, I don't think, a mention of safety on the page. This is this is old Yudkowsky stuff. It probably denounce it all now. He'd probably be like, that's exactly what I didn't want to happen.
+02:36:03
+Sorry, but is there something specific you can take from his work that you can remember?
+02:36:09
+Yeah, it was this realization that. Computers double in power every 18 months. And humans do not and they haven't crossed yet.
+02:36:21
+But if you have one thing that's doubling every 18 months and one thing that's staying like this, you know, here's your log graph. Here's your line calculator. And that the that opened the door to exponential thinking, like thinking that, like, you know, with technology, we can actually transform the world, it opened the door to human obsolescence.
+02:36:44
+It it open the door to realize that in my lifetime, humans are going to be replaced. And then the matching idea to that of artificial intelligence with the prize. You know, I'm torn, I go back and forth on what I think about it. Yeah, but the basic thesis is it's nice. It's a nice, compelling notion that we can reduce the task of creating an intelligence system, a general intelligence system into the task of compression. So you can think of all of intelligence in the universe, in fact, as a kind of compression.
+02:37:21
+Do you find that it was just at the time you found that as a compelling idea, or do you still find that a compelling idea? I still find that a compelling idea. I think that it's not that useful day to day. But actually one of maybe my quests before that was a search for the definition of the word intelligence.
+02:37:40
+And I never had one. And I definitely have a definition of the word compression. It's a very simple, straightforward one.
+02:37:49
+And you know what compression is, you know, losses as losses, compression, not loss, lossless compression. And that that is equivalent to intelligence, which I believe I'm not sure how useful that definition is day to day, but like I now have a framework to understand what it is.
+02:38:03
+And he's just 10x the the the prize for that competition, like recently, a few months ago. Whoever ever thought of taking a crack at that? Oh, I did. Oh, I did. I spent I spent the next year after I found the prize, I spent the next six months of my life trying it. And well, that's when I started learning everything about AI and then I worked a vicarious bet. And then I learned all the deep learning stuff.
+02:38:26
+And I'm like, OK, now I like I'm caught up to modern AI.
+02:38:29
+And I had I had a really good framework to put it all in from the compression stuff. Right, like some of the first learning models I played with were basically, but before Transformers, before I was still Arnon's to to do character prediction.
+02:38:48
+But by the way, on the commercial side, I mean the special neural networks. What do you make of the lossless requirement with the horror prize? So, you know, human intelligence and neural networks can probably compress stuff pretty well, but it'll be lost. It's imperfect.
+02:39:07
+You can turn a loss. You can crash into a loss or compress or pretty easily using an automatic encoder. Right. You can take an arithmetic encoder and you can just encode the noise with maximum efficiency. Right. So even if you can't predict exactly what the next character is, the better a probability distribution you can put over the next character. You can then use an arithmetic encoder to write. You don't have to know whether it's in here. And I you just have to put good probabilities on them and then, you know, code those.
+02:39:33
+And if you have, it's a bit of everything. Right. So let me on that topic.
+02:39:38
+Could be interesting as a little side to what are your thoughts in this year by three and these language miles in these transformers? Is there something interesting to you as an A.I. researcher or is there something interesting to you as an autonomous vehicle developer now?
+02:39:56
+I think I think, though, right? I mean, it's not like it's cool. It's cool for what it is. But no, we're not just going to be able to scale up to 12 and get general purpose. Intelligence, like your lost function is literally just, you know, cross entropy loss on the character.
+02:40:12
+Like that's not the lost function of general intelligence.
+02:40:15
+Is that obvious to you? Yes. Can you imagine that? I like to play devil's advocate in yourself, is it possible that you can GBG 12, what's your general intelligence with something as dumb as this kind of lost function?
+02:40:32
+I guess it depends what you mean by general intelligence. So there's another problem with the GPS and that's that they don't have a they don't have long term memory.
+02:40:43
+Right. Right.
+02:40:44
+So like just 12, a scaled up version of two or three, I find it hard to believe you can scale it in.
+02:40:59
+It's so it's a hard core hardcoded length. They can make it wider and wider and wider.
+02:41:05
+Yeah, you're going to get you're going to get cool things from those systems, but. I don't think you're ever going to get something that can like, you know, build me a rocket ship. What about self-driving? So, you know, you can use transformer video, for example. You think. Is there something in there?
+02:41:28
+No, because, look, we use we as a group, we as a group, we could change that. Grew out to a transformer.
+02:41:36
+I think driving is much more Markovitch than language.
+02:41:40
+So you mean like the memory which which aspect of our culture? I mean that like most of the information in the state at T minus one is also in the is in state Tennessee. Right.
+02:41:51
+And it kind of like drops off nicely like this, where sometimes with language you have to refer back to the third paragraph.
+02:41:56
+On the second page, I feel like there's not many like a like you can say like speed limit signs, but there's really not many things in autonomous driving that look like that.
+02:42:04
+But if you look at to play devil's advocate, is the risk estimation thing that you've talked about is kind of interesting, is it feels like there might be some longer term aggregation of context necessary to be able to figure out, like the context. I'm not even sure I believe you.
+02:42:25
+My, my we have a nice we have a nice, like vision model which outputs like a one or two four dimensional perception space. Can I try. Transformer's on it. Sure. I probably will at some point will try Transformer's and we'll just see. Do they do better. Sure. I'm, I might not be a game changer.
+02:42:42
+You know what I'm not like like MIT Transformer's work better than groups of autonomous driving. Sure. Might we switch. Sure. Is this some radical change now?
+02:42:50
+OK, we use a slightly different you know, we switch from Arnon's to groups like, OK, maybe it's Griese to Transformer's, but no, it's not.
+02:42:57
+Yeah, I well, on the on the topic of general intelligence, I don't know how much I've talked to you about it. Like what. Do you think we'll actually build a najai, like if you look at Ray Kurzweil with the singularity, do you have like an intuition about your kind of thing? Driving's easy. Yeah. And I tend to personally believe that solving driving will have really deep, important impacts on our ability to solve general intelligence. Like, I think driving doesn't require general intelligence, but I think they're going to be neighbors in a way that it's deeply tied because it's so driving is so deeply connected to the human experience that I think solving one will help solve the other.
+02:43:48
+But so I don't see I don't see driving as easy and almost like separate general intelligence. But like, what's your vision of a future with a singular do you see there'll be a single moment like a singularity will be a phase shift in the singularity. Now, like what? Do you have crazy ideas about the future in terms of ego? I definitely have a singularity now.
+02:44:08
+We are, of course, look at the balance between people. The balance between people goes up right. The singularity is just when the bandwidth. But what do you mean by the bandwidth, the communications tools?
+02:44:20
+The whole world is networked, the whole world is networked, and we raise the speed of that network. Right.
+02:44:25
+I see you think the communication of information in a distributed way is an empowering thing for collective intelligence?
+02:44:33
+I didn't say it's necessarily a good thing, but I think that's like when I think of the definition of the singularity, that seems kind of right.
+02:44:39
+I see like it's a change in the world beyond which, like the world be transformed in ways that we can't possibly imagine.
+02:44:47
+I mean, I think we're in the singularity now in the sense that there's like one world in a monoculture and it's also linked.
+02:44:53
+Yeah. I mean, I kind of share the intuition that the singularity will originate from the collective intelligence of us ants versus the like some single system ajai type thing.
+02:45:06
+Oh, I totally agree with that. Yeah. I don't I don't really believe in like like a hard take off ajai kind of thing.
+02:45:16
+Yeah, I don't think I don't even think A.I. is all that different in kind from what we've already been building with respect to driving, I think driving is a subset of general intelligence, and I think it's a pretty complete subset.
+02:45:29
+I think the tools we develop at comma will also be extremely helpful to solving general intelligence. And that's, I think, the real reason why I'm doing it. How can self-driving cars it's cool problem to beat people at.
+02:45:41
+But yeah, I mean, yeah, you're kind of you're of two minds. So, one, you do have to have a mission and you want to focus and make sure you get you get the you can't forget that.
+02:45:51
+But at the same time, there is a thread that's much bigger than the the entirety of your effort that's much bigger than just driving. With A.I. and with general intelligence, it is so easy to delude yourself into thinking you figured something out when you haven't. If we build a Level five self-driving car, we have indisputably built something.
+02:46:13
+Yeah. Is it general intelligence? I'm not going to debate that. I will say we've built something that provides huge financial value. Beautifully put.
+02:46:21
+That's the engineering credo. Like just just build the thing. It's like that's why I'm with with the with the on and go to Mars.
+02:46:29
+Yeah. That's a great one. You can argue like who the hell cares about going to Mars.
+02:46:34
+But the reality is set that as a mission, get it done and then you're going to crack some problem that you've never even expected in the process of doing that.
+02:46:43
+Yeah, I mean, I think if I had a choice between humanity go to Mars and solving self-driving cars, I think going to Mars is better.
+02:46:52
+But I'm more suited for sometime because I'm an information guy. I'm not a modernist. I'm a personal interest.
+02:46:57
+Postmodernists, beautifully put. Let me drag you back to programming for, what, three, maybe three to five programming languages? Should people learn, do you think?
+02:47:07
+Like if you look at yourself, what did you get the most out of from learning? Well, so everybody should learn. See an assembly. We'll start with those two assembly. Yeah. If you can't code an assembly, you don't know what the computer's doing. You don't understand. Like, you don't have to be great in assembly, but you have to code in it. And then like you have to appreciate assembly in order to appreciate all the great things Seagate's gets you.
+02:47:32
+And then you have to code and see in order to appreciate all the great things Python gets you. So obviously, Assembly C in Python will start with those three.
+02:47:40
+The memory allocation of C and the the the fact that somebody gives you a sense of just how many levels of abstraction you get to work on in modern day prophet. Yeah, yeah.
+02:47:52
+Graph coloring for your assignment. Register our assignment and compilers like, you know, you got to do, you know, the compiler computer only has a certain number of registers yet you can have all the variables you want to see function.
+02:48:02
+So you get the usual intuition about compilation, like what a compiler gets you. What else?
+02:48:09
+Well, then there is then there's kind of a of those are all very imperative programming languages.
+02:48:16
+Then there's two other paradigms for programming that everybody should be familiar with. I'm one of them is functional. You should learn, Haskell, and take that all the way through. Learn a language with dependent types like learn that whole space, like the very play theory, heavy languages and Pascals your favorite functional. What is that the go to say.
+02:48:37
+Yeah, I'm no, I'm not a great Haskell programmer. I work compiler and Haskell ones. There's another paradigm and actually there's one more paradigm that I'll even talk about after that that I never used to talk about when I would think about this. But I think this paradigm is learned a lot of, um, understand this idea of all of the instructions execute at once. If I have a block and very long and I write stuff in it, it's not sequential.
+02:49:00
+They all execute at once. And then like things like that, that's a hard rocks to be, so I guess if somebody doesn't quite get you that more mobile compilation and very long is more about the hardware, like giving a sense of what actually is the hardware is doing Assembly C, Python or straight, like they sit right on top of each other.
+02:49:23
+In fact, C as well as kind of cogency.
+02:49:26
+But you can imagine the first C was coded in assembly and Python is actually coded in C, so you can straight up go on.
+02:49:33
+That got very loud because it's brilliant. OK. And then I think there's another one now everyone. Carpathia calls it Programming 2.0, which is learn a Ivanisevic, don't learn to answer one page.
+02:49:49
+So machine learning, we're going to come up with a better term than Programming 2.0 or. But yeah, it's a programming language like. I wonder if it can be formalized a little bit better. We feel like we're in the early days of what that actually entails.
+02:50:08
+Data driven programming, data driven programming.
+02:50:11
+Yeah, but so fundamentally different as a paradigm than the others. Like, it almost requires a different skill set. But you think it's yeah. Implied torture is essential for torture when it's the fourth time, it's the fourth paradigm that I've kind of seen, there's like this, you know, imperative functional hardware. I don't know a better word for it.
+02:50:37
+And then do you have advice for people that want to, you know, get into programming, want to learn programming?
+02:50:47
+You have a video.
+02:50:50
+What is programming New Blessing's exclamation point? And I think the top comment is like warning. This is not for newbies.
+02:50:58
+Uh, do you have a new job like GLW for that video, but also a new but friendly advice on how to get into programming?
+02:51:10
+We're never going to learn programming by watching a video called Learn Programming. The only way to learn programming, I think, and the only one is it the only way everyone I've ever met who can program well learned it all in the same way they had something they wanted to do.
+02:51:25
+And then they tried to do it and then they were like, oh, well, OK, this is kind of be nice as the computer could kind of do this. And then, you know, that's how you learn. You just keep pushing on a project.
+02:51:40
+So the only advice I have for learning programming is go program.
+02:51:43
+Somebody wrote to me a question like, we don't really there are looking to learn about recurring networks and saying, like, my company is thinking of doing using recurring networks the time series data, but we don't really have an idea of where to use it yet. We just want to like. Do you have any advice on how to learn about these? Are these kind of general machine learning questions? And I think the answer is like actually have a problem that you're trying to solve.
+02:52:09
+And just I see that stuff on my going. People talk like that.
+02:52:13
+They're like, oh, I heard machine learning is important. Could you help us integrate machine learning with macaroni and cheese production? You just I don't even you can't help these people who let you run anything, who lets that kind of person run anything?
+02:52:29
+I think we're we're all we're all beginners at some point.
+02:52:33
+So it's not like there a beginner. It's like my problem is not that they don't know about machine learning. My problem is that they think that machine learning has something to say about macaroni and cheese production. Or like I heard about this new technology, how can I use it for why, like, I don't know what it is, but how can I use it for why?
+02:52:54
+That's true. And you have to build up an intuition of how, because you might be able to figure out a way. But like the prerequisites, you should have a macaroni and cheese problem to solve first. Exactly.
+02:53:04
+And then to you should have more traditional, like in the learning process, involve more traditionally applicable problems in the space of whatever that is, machine learning, and then see if it can be applied to at least start with.
+02:53:18
+Tell me about a problem. Like if you have a problem, you're like, you know, some of my boxes aren't getting enough macaroni in them. Can we use machine learning to solve this problem? That's a much, much better than how do I apply machine learning to macaroni and cheese.
+02:53:32
+One big thing, maybe this is me talking to the audience a little bit because I get these days so many messages, advice on how to like.
+02:53:43
+Learn stuff, OK, my this is not me being mean, I think this is quite profound, actually, is you should Google it.
+02:53:53
+Oh yeah.
+02:53:54
+Like one of the skills they should really acquire as an engineer, as a researcher, as a thinker, like one, there's two complementary skills. Like one is with a blank sheet of paper with no Internet to think deeply. And then the other is to Google the crap out of the questions you have.
+02:54:16
+Like, that's actually a skill that people often talk about, but like doing research, like pulling at the thread and like looking up different words, going into like GitHub repositories with two stars and like looking how they did stuff like looking at the code or going on Twitter, seeing like there's little pockets of brilliant people that are like having discussions, like if you're a neuroscientist going to signal processing community, if you're an A.I. person going into the psychology community, like the switch communities that keep searching, searching, searching, because it's so much better to invest in, like finding somebody else who really solve your problem, then then is to try to solve the problem.
+02:55:01
+And because they've often invested years of their life, like entire communities are probably already out there who have tried to solve your problem, I think they're the same thing.
+02:55:11
+I think you go try to solve the problem and then in trying to solve the problem, if you're good at solving problems, you'll stumble upon the person who solved it already.
+02:55:21
+But the stumbling is really important. I think that's a skill that people should really put, especially in undergrad like search. If you ask me a question, how should I get started on deep learning? Like especially. Like that is just so Googlebot, like the whole point is you Google that and you get a million pages and just start looking at them. Yeah, start pulling the threads, start exploring, start taking notes, start getting advice from a million people that have already spent their life answering that question, actually.
+02:55:56
+Oh, well, I mean, that's definitely also when people like ask me things like that, I'm like, trust me, the top answer on Google is much, much better than anything I'm going to tell you, sir.
+02:56:02
+Right. Yeah. People ask. It's an interesting question. Let me know if you have any recommendations with three books, technical or fiction or philosophical, had an impact on your life.
+02:56:16
+Or you would recommend perhaps maybe we'll start with the least controversial Infinite Jest. Infinite Jest is a David Foster Wallace.
+02:56:29
+Yeah, it's a book about we're heading. Really? Very enjoyable to read, very well-written, you know, you will you will you will grow as a person reading this book, its effort, and I'll set that up for the second book, which is pornography.
+02:56:47
+That's called Atlas Shrugged, which Atlas Shrugged is pornography. I mean, it is I will not I will not defend the I would not say Atlas Shrugged is a well written book.
+02:56:59
+It is entertaining to read, certainly just like pornography. The production value isn't great. You know, there's a 60 page monologue in there that an Ran's editor really wanted to take out and she paid she paid out of her pocket to keep that 60 page monologue in the book.
+02:57:17
+But it is a great book for a kind of framework of human relations.
+02:57:25
+And I know a lot of people are like, yeah, but it's a terrible framework. Yeah, but it's a framework. Just for context, in a couple of days I'm speaking for probably four plus hours with Yaron Brook, who's the main living remaining objectivists objectivists. Interesting. So I've always found this philosophy quite. Interesting on many levels, one of how positive some large percent of the population find it, which is always, always funny to me, when people are like unable to even read a philosophy because of some, I think that says more about their psychological perspective on it.
+02:58:11
+Yeah, but but there is something about Objectivism and Ayn Rand's philosophy that's so deeply connected to this idea of capitalism, of the ethical life is the productive life that was always compelling to me and didn't seem as I didn't seem to interpret it in the negative sense that some people do, to be fair.
+02:58:36
+I read that book when I was 19. So you had an impact at that point? Yeah, yeah. And the bad guys in the book have this slogan from each according to their ability to each according to their need.
+02:58:48
+And I'm looking at this and I'm like, these are the most part. This is team rocket level cartoonish ness. No bad.
+02:58:54
+And then when I realized that was actually the slogan of the Communist Party, I'm like, wait a second.
+02:59:01
+No, no, no, no, no. You're telling me this really happened? Yeah, it's interesting. I mean, one of the criticisms of her work is she has a cartoonish view of good and evil like that. There's like the the reality isn't Jordan Peterson says is is that each of us have the capacity for good and evil in us as opposed to like there's some characters who are purely evil and some characters are purely good and in a way, why it's pornographic with the production value of it, like evil is punished.
+02:59:29
+And it's very clear that, you know, there's no there's no you know, just like porn doesn't have the character growth. Well, you know, neither does Atlas Shrugged.
+02:59:39
+Like, really what put but a 90 year old, George Hotz. It was it was good enough. Yeah, yeah, yeah. What was the third something.
+02:59:48
+Um, I could give these these two. I'll just throw out the sci fi permutation city. Great thing to try thinking about copies of yourself and then the mirabai.
+02:59:58
+So that is Greg Egan is that might not be his real name. Some Australian guy might not be Australian. I don't know. And then this one's online. It's called The Metamorphosis of Prime Intellect.
+03:00:14
+It's a story set in a post singularity world.
+03:00:16
+It's interesting is there isn't either of the worlds do you find something philosophically interesting in them that you can comment on? I mean, it is clear to me that Metamorphosis Criminal Act is written by an engineer, which is it's very it's very almost a pragmatic take on a utopia in a way.
+03:00:43
+Positive or negative? Well, that's up to you to decide reading the book and the ending of it is very interesting as well and I didn't realize what it was.
+03:00:54
+I first read that when I was 15. I read that book several times in my life and it sure is 50 pages. I want to read it.
+03:01:02
+So is a little tangent. I've been working through the foundation. I've been I've haven't read much so far in my life and I'm trying to fix that. The last few months there's been a little side project. What's to use the greatest sci fi novel that people should read was or.
+03:01:20
+I mean, I would. I would. Yeah, I would. I would say like partition setting metamorphose. I got it. I don't know. I didn't like foundation. I thought it was way too modernist like Dune.
+03:01:30
+And I have never read Dune. Never read Dune. I have to read it. Fire upon the Deep is interesting. Okay.
+03:01:40
+I mean look, everyone should read, everyone should read Neuromancer. I want to read it. No crash. If you haven't read those like start there the Aboriginal you know.
+03:01:48
+Oh it is very interesting.
+03:01:50
+Go back and if you want the controversial one Bronze Age.
+03:01:53
+Mainzer All right, I'll look into that one.
+03:01:58
+Those aren't sci fi, but just to round out books. So a bunch of people asked me on Twitter and read and so on for advice. So what advice would you give a young person today about life another way?
+03:02:15
+What? Uh, yeah. I mean, looking back, especially when you're a young younger, you did. And you continue to you've accomplished a lot of interesting things. Is there some advice from those? I'm that life of yours. You can pass on if college ever opens again, I would love to give a graduation speech at that point. I will put a lot of somewhat satirical effort into this question at this hour.
+03:02:45
+You haven't written anything at this point yet.
+03:02:47
+You know what? I always wear sunscreen. This is water like your plagiarise.
+03:02:52
+I mean, but that's the that's the like for clean your room, you know. Yeah. You can plagiarize from from all of this stuff.
+03:02:59
+And it's it's there is no self-help books aren't designed to help you. They're designed to make you feel good. Like, whatever advice I could give, you already know, everyone already knows. Sorry, it doesn't feel good.
+03:03:21
+I like, you know.
+03:03:22
+You know what if I tell you that you should, you know, eat well and and read more and it's like I'll do anything, I think the whole genre of those kind of questions is meaningless.
+03:03:38
+I don't know if anything, it's don't worry so much about that stuff. Don't be so caught up in your head, right? I mean, you're in the sense that your whole life is your whole existence is like moving version of that advice. I don't know. And there's there's something I mean, there's something in you that resists that kind of thinking. And that in itself is it's just illustrative of who you are. And there's something to learn from that.
+03:04:07
+I think you're clearly not overthinking stuff. Yeah, and, you know, it's a good thing I even when I talk about my advice and like my advice is only relevant to me, it's not relevant to anybody else. I'm not saying you should go out. If you're the kind of person who overthinks things to stop overthinking things. It's not bad. It doesn't work for me. Maybe it works for you, you know.
+03:04:28
+Let me ask you about love. Yeah, I think last time we talked about the meaning of life and it was is kind of about. Winning, of course, I don't think I've talked to you about love much, whether romantic or just love for the common humanity amongst us all. What role has love played in your life in this in this quest for winning? Where does love fit in?
+03:04:57
+Well, with love, I think means several different things. There is love in the sense of maybe I could just say there's like love in the sense of opiates and love in the sense of oxytocin.
+03:05:08
+And then love in the sense of.
+03:05:12
+Uh, maybe like a love for math, I don't think fits into either of those first two paradigms.
+03:05:18
+Uh, so each of those have they have they have they given something to. In your life, I'm not that big of a fan of the first two, um, my. For the same reason I'm not a fan of, you know, for the same reason I don't do opiates and don't take ecstasy, and there were times, look, I've tried both. I like opiates way more than I liked ecstasy, but they're not. The ethical life is the product productive life.
+03:05:55
+So I follow with those and then like the sense of, I don't know, abstract love for humanity, I mean, the abstract love for humanity. I'm like, yeah, I've always felt that. And I guess. It's hard for me to imagine not feeling it, and I see people who don't and I don't know. Now, that's just the background thing that's there. I mean, since you brought up drugs, let me ask you, this is becoming more and more a part of my life because I'm talking to a few researchers that are working on psychedelics.
+03:06:28
+I've. Eating shrooms a couple of times is fascinating to me that, like the mind can go like this fascinating. The mind can go to places I didn't imagine it could go and was very friendly and positive and exciting and everything was kind of hilarious in the place. Wherever my mind went. That's what I want is what you think about psychedelics. Do you think they have? What do you think the mind goes? Have you done psychedelics? What do you think the mind goes?
+03:06:59
+Is there something useful to learn about the places it goes once you come back?
+03:07:04
+You know, I find it interesting that this idea that psychedelics have something to teach is almost unique to psychedelics. Right. People don't argue this about amphetamines.
+03:07:17
+And that's true. And I'm not really sure why.
+03:07:21
+I think all of the drugs have lessons to teach. I think there's things to learn from opiates. I think there's things to learn from amphetamines. I think there's things to learn from psychedelics, things like marijuana.
+03:07:33
+But also at the same time, recognize that I don't think you're learning things about the world, I think you're learning things about yourself. Yes. And, you know, what's the even I might have even been might have been to Timothy Leary, but I don't misquote him. But the idea is basically like, you know, everybody should look behind the door. But then once you see behind the door, you don't need to keep going back.
+03:07:57
+So, I mean, and that's my thoughts on all real drug use, too.
+03:08:00
+So maybe for caffeine, it's a little experience that it's good to have, but. Oh, yes.
+03:08:09
+I mean, yeah, I guess, yes.
+03:08:10
+Psychedelics have definitely, um. So you're a fan of new experiences, I suppose, because they all contain little, especially in the first few times. It contains some lessons that we picked up.
+03:08:20
+Yeah. And I'll I'll revisit psychedelics maybe once a year. Usually small, small doses. Maybe they turn up the learning right to your brain for that like that. Yeah, that's cool. Big learning rates have pros and cons.
+03:08:38
+Last question is a little weird one, but you've called yourself crazy in the past.
+03:08:43
+Uh, first of all, on a scale of one to 10, how crazy would you say are you?
+03:08:48
+Oh, I mean, it depends how you you know, when you compare me to Elon Musk and everyone else. Not so crazy.
+03:08:54
+So like like a seven. Let's go. Sex, sex, sex, sex what? I like seven seven is a good number seven. All right, well, I'm sure day by day changes, right? So but you're in that in that area. What?
+03:09:13
+In thinking about that, what do you think is the role of madness, is that a feature or a bug if you were to dissect your brain so OK from like a like mental health lens on crazy?
+03:09:28
+I'm not sure I really believe in that. I'm not sure I really believe in, like, a lot of that stuff.
+03:09:33
+Right. This concept of, OK, you know, when you get over it like like like, like hardcore bipolar and schizophrenia, these things are clearly real, somewhat biological. And then over here on the spectrum, you have like 8D and Oppositional Defiance Disorder and these things that are like, wait, this is normal spectrum. Human behavior like this isn't.
+03:09:56
+You know, where's that the line here and why is this like a problem?
+03:10:02
+So there's this whole, you know, the neurodiversity of humanity as serious like people think. I'm always on drugs. People are saying this to me, my streams and my guys, you know, like I'm real open with my drug use. I'd tell you if I was on drugs and I had like a cup of coffee this morning. But other than that, this is just me.
+03:10:18
+You're witnessing my brain in action. So so the word madness doesn't even make sense. And then in the rich neurodiversity of humans. I think it makes sense, but only for, like, some insane extremes, like if you are actually, like, visibly hallucinating, you know, that's OK.
+03:10:45
+But there is the kind of spectrum on which you stand out like. That that's like if I were to look at decorations on a Christmas tree or something like that, like if you were a decoration, they would catch my eye. Like, that thing is sparkly.
+03:11:03
+Whatever the hell that thing is, there's something to that.
+03:11:08
+Just like refusing to be boring or maybe boring is the wrong word. But to.
+03:11:17
+Yeah, I mean. Be willing to sparkle. You know, it's like somewhat constructed. I mean, I am who I choose to be.
+03:11:29
+I'm going to say things as true as I can see them. I'm not going to. I'm not going to. Lie. But that's a really important feature in itself. So, like, whatever the neurodiversity of your whatever your brain is not putting constraints on it that force it to fit into the mold of what society is like defines what you're supposed to be. So you're one of the specimens that. That doesn't mind being yourself. Being right. Is super important, except at the expense of being wrong.
+03:12:07
+Without breaking that apart, I think it's a beautiful way to end it. George, you're one of the most special humans I know. It's truly an honor to talk to you. Thanks so much for doing it.
+03:12:16
+Thank you for having me. Thanks for listening to this conversation with George Hearts and thank you to our sponsors for Stigmatic, which is the maker of Delicious Mushroom Coffee Decoding Digital, which is a tech podcast that I listen to and enjoy and express VPN, which is the VPN I've used for many years. Please check out these sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube review starting up a podcast, follow on Spotify, support Ampatuan or connect with me on Twitter at Lex Friedman.
+03:12:55
+And now let me leave you with some words from the great and powerful Linus Torvalds. Talk is cheap. Show me the code. Thank you for listening and hope to see you next time.

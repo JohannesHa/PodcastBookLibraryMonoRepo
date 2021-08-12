@@ -1,0 +1,964 @@
+00:00:00
+The following is a conversation with Michael Littman, a computer science professor at Brown University, doing research on a teaching machine, learning, reinforcement, learning and artificial intelligence. He enjoys being silly and lighthearted in conversation. So this was definitely a fun one. Quick mention of his sponsor, followed by some thoughts related to the episode. Thank you. To simply save a home security company, I used to monitor and protect my apartment, express VPN, the VPN I've used for many years to protect my privacy and the Internet, masterclass online courses that I enjoy from some of the most amazing humans in history and better help online therapy with a licensed professional.
+00:00:45
+Please check out these sponsors in the description to get a discount and to support this podcast. As a side note, let me say that I may experiment with doing some solo episodes in the coming month or two. The three ideas I have floating in my head currently is to use one particular moment in history to a particular movie or three, a book to drive a conversation about a set of related concepts.
+00:01:12
+For example, I could use 2001 A Space Odyssey or Zamacona to talk about Ajai for one, two or three hours. Or I could do an episode on the Yes Rise and fall of Hitler and Stalin, each in a separate episode using relevant books and historical moments. For reference, I find the format of a solo episode very uncomfortable and challenging, but that just tells me that it's something I definitely need to do and learn from the experience. Of course, I hope you come along for the ride.
+00:01:47
+Also, since we have all this momentum built up announcements, I'm giving a few lectures on machine learning at MIT this January. In general, if you have ideas for the episodes, for the lectures or for just short videos on YouTube, let me know in the comments that I still definitely read, despite my better judgment and the wise sage advice of the great Joe Rogan. If you enjoy this thing, subscribe on YouTube, review with five stars and a podcast file on Spotify supporter and patron or connect with me on Twitter, Allex Friedemann, as usual.
+00:02:26
+I'll do a few minutes of ads now and no ads in the middle. I try to make this interesting, but I give you time stamps. So if you skip, please still check out the sponsors by clicking on the links in the description. It is the best way to support this podcast. This show is sponsored by Simply Safe, a home security company, everyone wants to keep their home and family safe. That's what they told me to say.
+00:02:50
+So it must be true, whether it's from a break in a fire, flooding or a medical emergency, simply safe home security. Got your back day and night ready to send police, fire or EMTs when you need them most straight to your door.
+00:03:07
+I'm pretty sure if you suffer an AGI robot takeover, there will also allegedly send spot robots from Boston Dynamics for a full on robot on robot battle. However small caveat, I haven't tried this aspect of the service yet myself, so I can't tell you if it's a good idea or not. They have sensors and cameras that protect every inch of your home. All it takes is a simple 30 minute setup. I have a set up in my apartment, but unfortunately anyone who tries to break in will be very disappointed by the lack of interesting or valuable stuff to take some dumbbells, pull a bar and some suits and shirts.
+00:03:47
+That's about it. You get a free security camera and a 60 day risk free trial. When you go to simply Safety Council flex again, that's simply Safety Council Flex. This episode also sponsored by Express VPN. Earlier this year, more than 100 Twitter users got their accounts hacked into passwords, email address, phone numbers and more. The list included Elon Musk and Kanye West Kimberley. They give us two options. Express Open can help avoid that.
+00:04:21
+I use it to safeguard my personal data online. Did you know that for twenty years the permissive action link PÅL Access Control Security device that controls access to the United States nuclear weapons had a password of just eight zeros. That's it. Apparently this was a protest by the military to say that power systems are generally a bad idea because they're hackable and so on. Also, the most popular leaked password of twenty twenty are one, two, three, four, five, six.
+00:04:53
+One, two, three, four, five, six, seven, eight, nine. Picture one password and one, two, three, four, five, six, seven, eight. If you have one of these passwords, please perhaps make it a New Year's resolution to change them anyway, expressly encrypts your data and lets you surf the Web safely and anonymously, get it an express copy of that complex pod to get extra three months free. That's expressible that Slack's blackspot.
+00:05:22
+The shows also sponsored by a master class, one hundred and eighty dollars a year for an all access pass to watch courses from literally the best people in the world on a bunch of different topics. Let me list some. I've enjoyed watching in part or in whole, Chris Hadfield on space exploration, Neil deGrasse Tyson on scientific thinking and communication will write creator of SIM City and Sims and Game Design, Carlos Santana on guitar, Garry Kasparov on chess, Daniel Ground on Poker, Neil Gaiman and storytelling Martin Scorsese and film making Jane Goodall on conservation and many more.
+00:06:00
+By the way, you can watch it on basically any device. Sign up a master class that likes to get 15 percent of the first year of an annual subscription. That's master dot com slash leks. This episode is also sponsored by Better Hope spelled H LP Help. They figure out what you need, a match with a licensed professional therapist.
+00:06:21
+And under 48 hours I chat with the person on there and enjoy it. Of course, I also have been talking to David Goggins over the past few months, who's definitely not a licensed professional therapist, but he does help me meet his and my demons and become comfortable to exist in their presence. Everyone is different, but for me I think suffering is essential for creation. But you can suffer beautifully in a way that doesn't destroy you.
+00:06:48
+Therapy can help in whatever form that therapy takes. Better help is an option worth trying. Their easy, private, affordable, available, worldwide. You can communicate by text any time and schedule weekly audio and video sessions. You didn't ask me, but my two favorite psychiatrist is Sigmund Freud and Carl Jung. Their work was important in my intellectual development. Anyway, check out better health outcomes. Slash leks that's better help dotcom slash Lex. And now here's my conversation with Michael Legman.
+00:07:43
+I saw video of you talking to Charles Isbel about Westworld, the TV series you guys were doing kind of thing where you're watching new things together. But let's rewind back. Is there a sci fi movie or book or shows that you that was profound, had an impact on you philosophically or just like specifically something you enjoyed learning out about?
+00:08:08
+Yeah, interesting.
+00:08:09
+I think a lot of us have been inspired by robots in movies, but one that I really like is there's a movie called Robot and Frank, which I think is really interesting because it's very near term future where robots are being deployed as helpers in people's homes.
+00:08:26
+And it was.
+00:08:27
+It was. And we don't know how to make robots like that at this point, but it seemed very plausible. It seemed very realistic or imaginable. And I thought that was really cool because they they're awkward. They do funny things that raise some interesting issues. But it seemed like something that would ultimately be helpful and good if we could do it right.
+00:08:44
+Yeah. He was an older, cranky gentleman. Was the jewel thief. Yeah.
+00:08:50
+It's kind of funny little thing, which is, you know, he's a jewel thief. And so he pulls the robot into his life, which is like which is something you can imagine taking a home robotics thing and pulling into whatever quirky thing that's involved in your is meaningful to you.
+00:09:09
+Exactly. So, yeah. And I think I think from that perspective, I mean, not all of us are jewel thieves.
+00:09:13
+And so when we bring our robots into for yourself. Yeah. Explains a lot about this part of it, actually.
+00:09:19
+But the idea that that people should have the ability to, you know, make this technology their own, that that it becomes part of their lives.
+00:09:27
+And I think that's it's hard for us as technologists to make that kind of technology. It's easier to mold people into what we need them to be. And just that that opposite vision, I think, is really inspiring.
+00:09:38
+And then there's a anthropomorphised where we project certain things on them, because I think the robot was kind of dumb. But I have a bunch of rumors I play with and they you immediately project stuff onto them. A much greater level of intelligence. Probably do that with each other to much, much, much greater degree of compassion.
+00:09:57
+But one of the things we're learning from A.I. is where we are smart and we are we are not smart.
+00:10:01
+Yeah, you also enjoy, as people can see and I enjoyed myself watching you sing and even dance a little bit. A little bit. A little bit. A little bit of dancing. A little bit of dancing.
+00:10:15
+Quite my thing as a as a method of education or just in life, you know, in general. So easy question.
+00:10:23
+What's the definitive, objectively speaking, top three songs of all time, maybe something that, you know, to walk that back a little bit, maybe something that others might be surprised by, the three three songs that you kind of enjoy?
+00:10:40
+That is a great question that I cannot answer. But instead, let me tell you a story. So pick a question you're doing. That's right. I've been watching the presidential debates and vice president debates and turns out, yes, really, you can just answer any question you want. So so I mean to really do.
+00:10:57
+Yeah, well said.
+00:10:59
+I really like pop music. I've enjoyed pop music ever since I was very young. So. 60S music, 70s music, 80s music. This is all awesome. And then I had kids and I think I stopped listening to music and I was starting to realize that the like my musical tastes had sort of frozen out.
+00:11:13
+And so I decided in 2011, I think, to start listening to the top ten Billboard songs each week. So I'd be on on the treadmill and I would listen to that week's top ten songs so I could find out what was popular now. And what I discovered is that I have no musical taste whatsoever.
+00:11:30
+I like what I'm familiar with.
+00:11:32
+And so, yeah, the first time I'd hear a song is the first week that was on the charts. I'd be like and in the second week as into it a little bit and the third week as loving it and by the fourth week is like just part of me.
+00:11:43
+And so I'm afraid that I can't tell you the most my favorite song of all time because it's whatever I heard most recently. Yeah. That's interesting that people have told me that there's an art to listening to music as well.
+00:11:58
+You can start to if you listen to a song just carefully, like explicitly, just force yourself to really listen. You start to I did this when I was part of jazz band and fusion band in college is there's the you you start to hear the layers of the instruments, you start to hear the individual instruments and you start to you can listen to classical music at orchestra this way. Consider jazz this way. And it's funny to imagine you now to walk in that forward to listening to pop hits.
+00:12:28
+Now it's like a scholar, it seems like Cardi B or something like that, or Justin Timberlake is, you know, that simple like Bieber.
+00:12:37
+I guess they've both been in the top ten since I've been listening. There's still the still up there.
+00:12:41
+Oh, my God. I'm so. If you haven't heard Justin Timberlake top 10 in the last few years, there was one song that he did where the music video was set at essentially NRPs.
+00:12:52
+Oh oh oh. The one with the robotics. Yeah, yeah, yeah, yeah. It's like at an academic conference and he and he's doing it.
+00:12:58
+He was presenting it was sort of a cross between the apple like Steve Jobs kind of talk and NRPs. Yeah. So yeah, it's always fun when he shows up in pop culture.
+00:13:09
+I wonder if he consulted somebody for that. That's that's really interesting. So maybe on that topic, I've seen your your celebrity multiple dimensions, but one of them is you've done cameos in different places.
+00:13:22
+I've seen you in a Turbo Tax commercial as like I guess the the brilliant Einstein character. And the point is that Turbo Tax doesn't need somebody like you to say it doesn't need a brilliant few things, need someone like me.
+00:13:39
+But yes, they were specifically emphasizing the idea that you don't need to be a computer expert to be able to use their software. How did you end up in that world?
+00:13:47
+I think it's an interesting story. So I was teaching my class. It was an intro computer science class for non concentrating on majors. And sometimes when people would visit campus, they would check in to say, hey, we want to see what a class is like. Can we sit on your class? So a person came to my class who was the daughter of the brother of the house, husband of the best friend of my wife. Anyway, basically, a family friend came to campus to to check out Brown and asked to come to my class and came with her dad.
+00:14:27
+Her dad is who I've known from various kinds of family events and so forth.
+00:14:32
+But he also does advertising.
+00:14:34
+And he said that he was recruiting scientists for this, this, this and this, this turbo tax set of ads.
+00:14:42
+And he said we wrote the ad with the idea that we get like the most brilliant researchers, but they all said no.
+00:14:50
+So can you help us find like B level scientists?
+00:14:55
+I'm like, sure that's that's who I hang out with. So that should be fine.
+00:15:00
+So I put together a list and I did what some people called a Dick Cheney. So I included myself on the list of possible candidates, you know, with a little blurb about each one and why I thought that would make sense for them to to do it. And they reached out to a handful of them. But then they ultimately they YouTube stalked me a little bit and they thought, oh, I think he could do this.
+00:15:18
+And they said, OK, we're going to offer you the commercial. Like what?
+00:15:23
+So it was it was such an interesting experience because it's it's they have another world.
+00:15:28
+The people who do like nationwide kind of ad campaigns and television shows and movies and so forth.
+00:15:35
+It's quite a remarkable system that they have going because like I said. Yeah, so I went to it was just some buddies house that they rented in New Jersey. But in the commercial, it's just me and this other woman.
+00:15:51
+In reality, there were 50 people in that room and another half a dozen kind of spread out around the house in various ways. There were people whose job it was to control the sun. They were in the backyard on ladders, putting filters up to try to make sure that the sun didn't glare off the window in a way that would wreck the shot. So there was like six people out there doing that. There were three people out there giving snacks, that craft table.
+00:16:16
+There was another three people giving healthy snacks because that was a separate craft table. There was one person whose job it was to keep me from getting lost.
+00:16:24
+And I think the reason for all this is because so many people are in one place at one time.
+00:16:29
+They have to be time efficient. They have to get it done. This morning, they were going to do my commercial in the afternoon. They were going to do a commercial of a mathematics professor from Princeton. They had to get it done. No, you know, no wasted time or energy. And so there's just a fleet of people all working as an organism. And it was fascinating. I was just the whole time just looking around like this is so neat.
+00:16:50
+Like one person whose job it was to take the camera off of the cameraman so that someone else whose job it was to remove the film canister because every couple takes they had to replace the film because, you know, film gets used up.
+00:17:03
+It was just I don't know, I was geeking out the whole time.
+00:17:07
+It was so funny how many takes you take. It's look the opposite. Like there was more than two people there. It was very. Right. Yeah.
+00:17:13
+I mean, the person who I was in the scene with is a professional. She's, you know, she's an actor, improv comedian, comedy.
+00:17:22
+And then when I got there, they had given me a script as such as it was. And then I got there and they said, we're going to do this as improv.
+00:17:28
+I'm like, I don't know how to improv. Like, this is not I don't know what this I don't know what you're telling me to do here.
+00:17:33
+Don't worry. She knows, like, OK, I'll see how this goes.
+00:17:38
+I guess I got pulled into the story because, like, where the heck did you come from? I guess in the scene, like, how did you shot this random person's house?
+00:17:47
+I don't know. Yeah, well, I mean, the reality of it is I stood outside in the blazing sun. There was someone whose job it was to keep an umbrella over me because I started to sweat. I started to sweat. And so I would wreck the shot because my face was all shiny with sweat. So there was one person who ordered me off, had an umbrella.
+00:18:02
+But yeah, like the reality of it, like, why is this strange stalker person hanging around outside somebody's house?
+00:18:08
+And we're not sure when you have to look in or to wait for the book. But are you so you make you make, like you said, YouTube, you make videos yourself, you make awesome parody sort of parody songs that kind of focus in on particular aspect of computer science, how much those seem really natural, how much production value goes into that.
+00:18:30
+You also have a team of videos, almost all the videos, except for the ones that people would have actually seen were are just me. I write the lyrics, I sing the song. I generally find a like a backing track online because I'm like, you can't really play an instrument. And then I do.
+00:18:49
+In some cases I'll do visuals using just like PowerPoint with lots and lots of PowerPoint to make it sort of like an animation.
+00:18:56
+The most produced one is the one that people might have seen, which is the overfitting video that I did with Charles Isbel, and that was produced by the Georgia Tech and Udacity people because we were doing a class together. It was kind of I usually do parody songs kind of to cap off a class at the end of a class so that one you're wearing.
+00:19:15
+So to Thriller. Yeah. You were in the Michael Jackson the red leather jacket. The interesting thing with podcasting you're also into is that. I really enjoy is that there is not a team of people is kind of more because, you know, the the there's something that happens when there's more people involved than just one person that just the way you start acting, I don't know. There's a censorship you're not given, especially for, like, slow thinkers like me.
+00:19:52
+You're not. And I think most of us are. If we're trying to actually think we're a little bit slow and careful, it's a kind of large teams get in the way of that. And I don't know what to do with that. That's to me, like if it's very popular to criticize, quote unquote, mainstream media, but there is legitimacy to criticizing them the same. I love listening to NPR, for example, but every it's clear that there's a team behind it.
+00:20:22
+There's a commercial, there's the commercial breaks. There's kind of like rush of like, OK, I have to interrupt you now because we have to go to commercial. Just this whole it creates it destroys the possibility of nuanced conversation.
+00:20:38
+Yeah, exactly. Évian which Charles is both what I talked to you yesterday, told me that Évian is naive, backwards, which the fact that his mind thinks this way is just as quick. But anyway, there's a freedom to this.
+00:20:54
+He's doctor awkward, which, by the way, is a palindrome. That's a palindrome that I happen to know for from other parts of my life. And I just thought, well, you know, use it against Charles Doctor.
+00:21:06
+Awkward. So what what was the most challenging parody song to make? Was it the Thriller one?
+00:21:12
+No, that was really fun. I wrote the lyrics really quickly and then I gave it over to the production team. They recruited a cappella group to to sing that one really smoothly. It's great having a team because then you can just focus on the part that you really love, which in my case is writing the lyrics. Yeah.
+00:21:29
+For me, the most challenging one not challenging in a bad way, but challenging in a really fun way was I did one of the one of the parody songs I did is is about the halting problem in computer science, the fact that you can't create a program that can tell for any other arbitrary program whether it actually going to get stuck in infinite loop or whether it's going to eventually stop.
+00:21:51
+And so I I did it to an 80s song because that's I hadn't started my new thing of learning current songs. And it was Billy Joel's The Piano Man Nice, which is a great, great song. Yeah, yeah. And Sing Me a song.
+00:22:08
+You're the piano man. Yeah. Yes.
+00:22:11
+So the lyrics are great because first of all, it rhymes.
+00:22:16
+Not all songs rhyme. I did. I've done Rollingstone songs which turn out to have no rhyme scheme whatsoever. They're just sort of yelling and having a good time, which it makes it not fun from a parody perspective because like you can say anything, but, you know, the lines rhyme and there were a lot of internal rhymes as well.
+00:22:31
+And so figuring out how to sing with internal rhymes are proof of the halting problem was really challenging. And it was I really enjoyed that process.
+00:22:40
+What about the last question, this topic? What about the dancing in the Thriller video? How many takes that take? So I wasn't planning to dance.
+00:22:48
+They had me in the studio and they gave me the jacket. And it's like, well, you can't if you have the jacket and the glove, like, there's not much you can do.
+00:22:55
+Yeah. So I, I think I just danced around and then they said, why don't you dance a little bit. There was a scene with me and Charles dancing together. They did not use it in the video but we recorded it.
+00:23:06
+Yeah. Yeah. No it was, it was really funny.
+00:23:10
+And Charles who has this beautiful, wonderful voice, doesn't really sing. He's not really a singer. And so that was why I designed the song with him doing a spoken section in me, doing things very like Barry White.
+00:23:21
+Yeah. Smooth baritone. Yeah. Yeah, it's great. I was awesome.
+00:23:26
+So one of the other things Charles said is that, you know, everyone knows you as like a super nice guy, super passionate about teaching and so on.
+00:23:37
+When he said, I don't know if it's true that despite the fact that you're you are too cold, I just I will admit that finally, the last time that was that was me is the Johnny Cash song, The Man in Reno just to watch him die, that you actually do have some strong opinions on some topics. So if this, in fact is true, what a strong opinions would you say you have is their ideas? You think maybe an artificial intelligence machine learning maybe in life that you believe is true, that others might, you know, some number of people might disagree with you on.
+00:24:17
+So I try very hard to see things from multiple perspectives.
+00:24:22
+There's there's this great Calvin and Calvin and Hobbes cartoon.
+00:24:26
+Where do you know? OK, so Calvin's dad is always kind of a bit of a foil. And he he he talked Calvin and Calvin had done something wrong. The dad talked him into, like, seeing it from another perspective. And Calvin like this breaks Calvin because he's like, oh my gosh, now I can see the opposite sides of things. And so that it becomes like a cubist cartoon where there is no front and back, everything's just exposed and it really freaks him out.
+00:24:50
+And finally he settles back down. It's like, oh, good, no, I can make that go away.
+00:24:54
+But like, I'm that I'm that I live in that world where I'm trying to see everything from every perspective, all the time.
+00:24:59
+So there are some things that I've formed opinions about that I would be harder, I think, to.
+00:25:03
+Disavow me of one is superintelligent argument and extension, threat of EHI is one where I feel pretty confident in my feeling about that one, like I'm willing to hear other arguments, but like I am not particularly moved by the idea that if we're not careful, we will accidentally create a superintelligence that will destroy human life.
+00:25:27
+Let's talk about that. Let's get you in trouble. And of course, the video saying it's like Bill Gates, I think he said like some quote about the Internet, that that's just going to be a small thing. It's not going to really go anywhere. And I think Steve Ballmer said, I don't know why I'm sticking to Microsoft. That's something that, like smartphones are useless. There's no reason why Microsoft should get into smartphones. That kind of.
+00:25:52
+So let's get let's talk about it as a guys destroying the world will look back at this video and say, no, I think it's really interesting to actually talk about it because nobody really knows the future. So you have to use your best intuitions. Very difficult to predict it. But you have spoken about ajai and the existential risks around it and sort of basing your intuition that. We're quite far away from that being a serious concern relative to the other concerns we have.
+00:26:21
+Can you maybe unpack that a little bit? Yeah, sure.
+00:26:24
+Sure. So so as I understand it, that, for example, I read a book and a bunch of other reading material about this sort of general way of thinking about the world.
+00:26:36
+And I think the story goes something like this, that we will at some point create computers that are smart enough that they can help design the next version of themselves, which itself will be smarter than the previous version of themselves and eventually bootstrapped up to being smarter than us, at which point we are essentially at the mercy of this sort of more powerful intellect, which in principle we don't have any control over what its goals are. And so if its goals are at all out of sync with our goals, like, for example, the continued existence of humanity, we won't be able to stop it.
+00:27:19
+It'll be way more powerful than us and we will be toast. So there's some very smart people who have signed on to that story.
+00:27:29
+And it's a it's a compelling story. I once that can really get myself in trouble.
+00:27:35
+I once wrote an op ed about this, specifically responding to some quotes from Elon Musk, who has been on this very podcast more than once, and he's summoning the demon, I think he said.
+00:27:48
+But then he came to Providence, Rhode Island, which is where I live, and said to the governors of all the states, you know, you're worried about entirely the wrong thing. You need to be worried about. You need to be very, very worried about. So and journalists kind of reacted to that and they wanted to get people's people's take. And I was like, OK, my my my belief is that one of the things that makes Elon Musk so successful and so remarkable as an individual is that he believes in the power of ideas.
+00:28:19
+He believes that you can have you can if you know, if you have a really good idea for getting into space, you can get into space. If you have a really good idea for a company or for how to change the way that people drive. You just have to do it and it can happen.
+00:28:33
+It's really natural to apply that same idea to A.I. You see the systems that are doing some pretty remarkable computational tricks, demonstrations, and then to take that idea and just push it all the way to the limit and think, OK, where does this go? Where is this going to take us next?
+00:28:49
+And if you're a deep believer in the power of ideas, then it's really natural to believe that those ideas could be taken to the extreme end and kill us. So I think, you know, his strength is also his undoing because that doesn't mean it's true. Like, it doesn't mean that that has to happen, but it's natural for him to think that.
+00:29:08
+So another way to phrase the way he thinks, and I find it very difficult to argue with that line of thinking, says Sam Harris, is another person from neuroscience perspective that things like that is saying, well, is there something fundamental in the physics of the universe that prevents this from eventually happening? And Nick Bostrom thinks in the same way, that kind of zooming out. Yeah, OK, we humans now are existing in this like time scale of minutes and days.
+00:29:43
+And so our intuition is in this timescale of minutes, hours and days. But if you look at the span of human history, is there any reason why you can't see this in one hundred years? And like, is there is there something fundamental about the laws of physics that prevent this? And if it doesn't, then it eventually will happen or will we will destroy ourselves in some other way. It's very difficult, I find, to actually argue against that.
+00:30:11
+Yeah, me too.
+00:30:15
+And not sound like not sound like you're just like rolling. Your eyes are like I have like science fiction we don't have to think about. But even even worse than that, which is like I don't like kids but like I got to pick up my kids now, like OK, I see much more pressing. Yeah. There's more pressing short term things that like stoppered with this existential crisis were much, much shorter things like now, especially this year, there's covid.
+00:30:40
+So like any kind of discussion like that, it's like there's, you know, there's pressing things today and then. So the same Harris argument. Well, like any day the exponential singularity can can occur is very difficult to argue against. I mean, I don't know.
+00:30:58
+But part of his story is also he's he's not going to put a date on it. It could be in a thousand years. It could be in one hundred years. It could be in two years. It's just that as long as we keep making this kind of progress, it's ultimately has to become a concern. I kind of am on board with that.
+00:31:13
+But the thing that the. I feel like is missing from that that way of extrapolating from the moment that we're in is that I believe that in the process of actually developing technology that can really get around in the world and really process and do things in the world in a sophisticated way, we're going to learn a lot about what that means, which we don't know now because we don't know how to do this right now.
+00:31:36
+If you believe that you can just turn on a deep learning network and eventually give it enough compute and eventually get there. Well, sure, that seems really scary because we won't we won't be in the loop at all. We won't we won't be helping to design or target these kinds of systems. But I don't I don't see that. That feels like it is against the laws of physics because these systems need help, right? They need they need to surpass the the the difficulty, the wall of complexity that happens in arranging something in the form that that will happen.
+00:32:07
+Yeah, like, I believe in evolution. Like, I believe that that that. There's an argument, right? There's another argument just to look at it from a different perspective, that people say, well, I don't believe in evolution. How could evolution? It's sort of like a random set of parts assemble themselves into a 747 and that could just never happen. So it's like, OK, that's maybe hard to argue against, but clearly, 747 do get assembled.
+00:32:32
+They get us by us. Basically, the idea being that there's a process by which we will get to the point of making technology that has that kind of awareness. And in that process, we're going to learn a lot about that process and will have more ability to control it or to shape it or to build it in our own image.
+00:32:51
+It's not something that is going to spring into existence like that 747, and we're just gonna have to contend with it completely unprepared.
+00:32:59
+It's very possible that in the context of the long arc of human history, it will in fact spring into existence. But that's bringing might take if you look at nuclear weapons, like even 20 years is a bringing in the context of human history. And it's very possible, just like with nuclear weapons, that we could have. I don't know what percentage you want to put at it, but the possibility it could have knocked ourselves out. Yeah, the possibility of human beings destroying themselves in the 20th century with nuclear weapons, I don't know.
+00:33:33
+You can if you really think through it, you could really put it close to, like, I don't know, 30, 40 percent given, like, there's certain moments of crisis that happen. So, like, I think. One like fear in the shadows, it's not being acknowledged, this is not so much that I will run away is is that as it's running away, we won't have enough time to think through how to stop it fast.
+00:34:02
+Take off or foom.
+00:34:04
+Yeah, I mean, my much bigger concern. I wonder what you think about it, which is. We won't know it's happening, so I kind of that argument, I think that there's an ajai situation already happening with social media that our minds, our collective intelligence of human civilization is already being controlled by an algorithm. And like we're we're already super like the level of a collective intelligence. Thanks to Wikipedia, people should donate to Wikipedia to feed the ajai man.
+00:34:38
+If we had a superintelligence that that was in line with Wikipedia's values. I bet it's a lot better than a lot of other things I can imagine. I trust Wikipedia more than I trust Facebook or YouTube as far as trying to do the right thing from a rational perspective. Now, that's not where you were going. I understand that.
+00:34:55
+But it does strike me that there's sort of smarter and less smart ways of exposing ourselves to each other on the Internet.
+00:35:03
+Yeah, the interesting thing is that Wikipedia and social media are very different forces. You're right. I mean, Wikipedia figures, Wikipedia just like this cranky, overly competent editor of articles.
+00:35:17
+You know, there's something to that. But the social media aspect is is is not. So the vision of Egis is as a separate system. That superintelligent, that superintelligent. That's one key little thing. I mean, there's the paper clip argument that super dumb but super powerful systems.
+00:35:35
+But with social media, you have a relatively like algorithms we may talk about today, very simple algorithms that when something Charles talks a lot about interactive A.I., when they start like having a at scale like tiny little interactions with human beings, they can start controlling these human beings. So a single algorithm can control the minds of human beings slowly to a we might not realize it could start wars. It could start it can change the way we think about things.
+00:36:08
+It feels like in the long arc of history, if I were to sort of zoom out from all the outrage and all the attention on social media that it's progressing us towards better and better things. It feels like chaos and toxic and all that kind of stuff. But it's chaos and toxic. Yeah, but it feels like actually the chaos and toxic is similar to the kind of debates we had from the founding of this country. You know, there was a civil war that happened over that over that period.
+00:36:38
+And ultimately, it was all about the tension of like something doesn't feel right about our implementation of the core values we hold as human beings. And they're constantly struggling with this. And that results in people calling each other just just being shitty to each other on Twitter. But ultimately, the algorithm is managing all that and it feels like there's a possible future in which that algorithm.
+00:37:05
+Controls us to ensure the direction of self-destruction, whatever that looks like.
+00:37:11
+Yeah, so so I do believe in the power of social media to screw us up royally. I do believe in the power of social media to benefit us, too.
+00:37:19
+I do think that we're in a. Yeah, it's sort of almost got dropped on top of us, and now we're trying to, as a culture, figure out how to cope with it, there's a sense in which I don't know.
+00:37:32
+There's there's some arguments that say that, for example, I guess college age students now, the college age students, now people who are in middle school, when when social media started to really take off, maybe, maybe really damaged like this may have really hurt their development in a way that we don't have all the implications of quite yet.
+00:37:50
+That's the generation who if and I hate to make it somebody else's responsibility, but like they're the ones who can fix it.
+00:37:59
+They're the ones who can who can figure out how do we keep the good of this kind of technology without letting it it's alive.
+00:38:08
+And if they're successful, we move on to the next phase, the next level of the game.
+00:38:15
+If they're not successful, then, yeah, then we're going to wreck each other. We're going to destroy society.
+00:38:20
+So you're going to, in your old age, sit on a porch and watch the world burn because of the Tick-Tock generation that I believe.
+00:38:27
+Well, so like this my kids age. Right. And certainly my daughter's age. And she's very tapped in to social stuff, but she's also she's trying to find that balance right of participating in it and in getting the positives of it, but without letting it eat her alive.
+00:38:43
+And I think sometimes she ventures helps you to watch this. Sometimes I think she ventures a little too far and is and is consumed by it. And other times she gets a little distance. And if, you know, if there's enough people like her out there, they're going to they're going to navigate this this choppy waters. That's an interesting skill, actually, to develop. I talked to my dad about it. You know, I've now somehow this podcast in particular, but other reasons has received a little bit of attention.
+00:39:15
+And with that, apparently in this world, even though I don't shut up about love and I'm just all about kindness, I have now a little mini army of trolls.
+00:39:25
+Oh, it's kind of hilarious, actually, but it also doesn't feel good. But it's a skill to learn to not look at that. Like too moderate, actually.
+00:39:36
+How much you look at the discussion, I have my dad, it's similar to it doesn't have to be about trolls. It can be about checking email, which is like if you're anticipating, you know, there's my dad runs a large institute at Drexel University and that could be stressful, like emails. You're waiting like there's drama of some kinds. And so, like there's a temptation to check the email if you send an email and you kind of and that puts you in into it doesn't feel good.
+00:40:05
+And it's a skill that he actually complains that he hasn't. I mean, he grew up without it. So he hasn't learned the skill of how to shut off the Internet and walk away. And I think young people, while they're also being quote unquote damaged by like, uh, you know, being bullied online, all of those stories which are very, like horrific, you basically can't escape your bullies these days when you're growing up.
+00:40:29
+But at the same time, they're also learning that skill of how to be able to shut off the disconnect. Could they be able to laugh at it, not take it too seriously? It's fascinating. Look, we're all trying to figure this out. Just like you said, it's been dropped on us and we'll try to figure it out. Yeah, I think that's very interesting.
+00:40:46
+And I I guess I've become a believer in the human design, which I feel like I don't completely understand. Like, how do you make something as robust as us?
+00:40:57
+Like we're so flawed in so many ways and yet and yet, you know, we dominate the planet and we do seem to manage to get ourselves out of scrapes eventually, not necessarily the most elegant possible way, but somehow we get we get to the next step.
+00:41:14
+And I don't know how I'd make a machine do that.
+00:41:17
+I I generally speaking, like if I train one of my reinforcement learning agents to play a video game and it works really hard on that first stage over and over and over again, and it makes it through it succeeds on that first level.
+00:41:29
+And then the new level comes and it's just like, OK, I'm back to the drawing board. And somehow humanity, we keep leveling up and then somehow managing to put together the skills necessary to achieve success, some semblance of success in that next level, too.
+00:41:44
+And, you know, I hope we can keep doing that.
+00:41:49
+You mentioned reinforcement learning, so you have a couple of years in the field, no, quite you know, quite a few quite a long career in artificial intelligence broadly, but reinforcement learning specifically, can you maybe give a hint about your sense of the history of the field and in some ways has changed with the advent of deep learning, but as a long routes like how is it weaved in and out of your own life?
+00:42:19
+How have you seen the community change or maybe the ideas that it's playing with change?
+00:42:23
+I've had the privilege, the pleasure of being of having almost a front row seat to a lot of the stuff. And it's been really, really fun and interesting.
+00:42:31
+So when I was in college in the 80s, early 80s, the neural net. Thing was starting to happen, and I was taking a lot of psychology classes, a lot of computer science classes as a college student, and I thought, you know, something that can play tic tac toe and just like learn to get better at it, that ought to be a really easy thing.
+00:42:52
+So I spent almost almost all of my what would have been vacations during college, like hacking on my home computer, trying to teach it how to play tic tac toe and programming language basic. Oh, yeah. That's that's I was that's my first language. That's my native language.
+00:43:07
+Is that when you first fell in love with computer science, just like programming basic and that what was was the computer to remember.
+00:43:14
+I had I had a Assadi model one before they were called model ones because there was nothing else.
+00:43:20
+I got my computer in 1879 instead.
+00:43:28
+So I was I would have been bar mitzvah ed. But instead of having a big party that my parents threw on my behalf, they just got me a computer because that's what I really, really, really wanted. I saw them in the in the in the Mall and RadioShack and I thought. What how are they doing that? I would try to stump them, I would give them math problems like one plus and then in parentheses two plus one, and it would always get it right.
+00:43:49
+Like, how do you know so much like I've had to go to algebra class for the last few years to learn the stuff. And you just seem to know.
+00:43:57
+So I was I was I was smitten and I got a computer and I think ages 13 to 15. I have no memory of those years, I think I just was in my room with the computer, listening to Billy Joel, communing, possibly listening to the radio, listening to Billy Joel. That's the one album I had on vinyl at that time. And and then I got it on cassette tape. And that was really helpful because then I could play it.
+00:44:21
+I didn't have to go down in my parents wi fi or hi fi. Sorry.
+00:44:26
+And at age 15, I remember kind of walking out and I'm like, OK, I'm ready to talk to people again.
+00:44:31
+Like I've learned what I need to learn here. And so, yeah, so so that was that was my home computer. And so I went to college. I was like, oh, totally going to study computer science. And I opted to college.
+00:44:42
+I chose specifically had a computer science major, the one that I really want. The college I really wanted to go to didn't so bye bye to them which college education. So I went to Yale. Princeton would have been way more convenient and it was just beautiful campus and it was close enough to home. And I was really excited about Princeton and I visited.
+00:44:59
+I said so computer science major like, well, we have computer engineering and like, I don't like the word engineer.
+00:45:06
+I like computer science.
+00:45:08
+I really I want to do, like you're saying, hardware and software. They're like, yeah, like I just want to do software. I couldn't care less about hardware. And you grew up in Philadelphia? I grew up outside Philly, yeah. Yeah.
+00:45:16
+OK, so the local schools were like Penn and Drexel and Temple, like everyone in my family went to temple at least at one point in their lives except for me. So yeah, Philly, Philly family. Yale had a computer science department and that's when, you know, it's kind of interesting. You said eighties and neural networks. That's when, you know, those are the hot new thing or hot thing, period. So what is that in college, when you first learn about neural networks for which you like how it was in its psychology class?
+00:45:45
+Not in a while. Yeah. Was it psychology, cognitive science or like do you remember like what context it was.
+00:45:51
+Yeah, yeah. Yeah. So so I was a I've always been a bit of a cognitive psychology groupie. So like I, I study computer science, but I like I like to hang around where the cognitive scientists are because I don't know brains man.
+00:46:04
+They're like they're wacky, cool.
+00:46:07
+And they have a bigger picture view of things. They're a little less engineering. I would say they're more they're more interested in nature of cognition and intelligence and perception and how the vision system works. They're asking always bigger questions now with deep learning community. They're, I think more there's a lot of intersections. But I do find that the neuroscience folks, actually and cognitive psychology, cognitive science folks are starting to learn how to program, how to use neural artificial neural networks.
+00:46:39
+And they are actually approaching problems in like totally new ways. It's fun to watch the grad students from those departments like approach to problem machine learning.
+00:46:49
+Right. They come in with a different perspective. Yeah. They don't care about, like, your image in that data set or whatever they want. Like to understand the the like the basic mechanisms at the at the neuronal level, on the functional level of intelligence. It's kind of it's kind of cool to see them work. Yeah. OK, so you always you're always a group of cognitive psychology.
+00:47:13
+Yeah. Yeah. And so, so it was in a class by Richard Garik. He was kind of my my favorite psych professor in college and I took like three different classes with him. And yes, they were talking specifically.
+00:47:26
+The class I think was kind of a. There was a big paper that was written by Steven Pinker and Prince, I'm blanking on Prince's first name, but Princeton Pinker and Prince, they wrote kind of a.
+00:47:39
+They were at that time kind of like. Oh, I'm blanking on the names of the current people, the cognitive scientists who are complaining a lot about deep networks.
+00:47:50
+Oh, Gary, Gary, Marcus and Marcus. And who else? I mean, there's a few. But Gary Gary is the most feisty.
+00:47:59
+Sure. Gary is very feisty. And with this with his co-author, they they you know, they're kind of doing these kind of takedowns where they say, OK, well, yeah, it does all these amazing, amazing things. But here's a shortcoming. Here's a shortcoming. Here's your shortcoming. And so the fingerprints prints paper is kind of like the that generation's version of Marcus and Davis. Right. Where they're they're trained as cognitive scientists, but they're looking skeptically at the results in the in the artificial intelligence neural net kind of world and saying, yeah, it can do this and this and this, but it can't do that and it can't do that.
+00:48:30
+And it can't do that maybe in principle or maybe just in practice at this point. But the fact of the matter is you're you've narrowed your focus too far to be impressed. You're impressed with the things within that circle. But you need to broaden that circle a little bit.
+00:48:44
+You need to look at a wider set of problems.
+00:48:46
+And so so we saw was in the seminar in college. That was basically a close reading of the Pinker Prince paper, which was like really thick. There was a lot going on in there.
+00:48:58
+And and it and it talked about the reinforcement learning idea a little bit.
+00:49:03
+I'm like, oh, that sounds really cool, because behavior is what is really interesting to me about psychology anyway. So making programs that I mean programs are things that behave. People are things that behave like I want to make learning, that learns to behave in which way was reinforcement learning.
+00:49:19
+Is this talking about human and animal behavior or we're talking about actual mathematical constructs?
+00:49:25
+That's right. That's a good question. Right. So this is I think it wasn't actually talked about as behavior in the paper that I was reading. I think that it just talked about learning. And to me, learning is about learning to behave. But really, neural nets at that point were about learning, supervised learning, so learning to produce outputs from inputs. So I kind of tried to invent reinforcement learning AI.
+00:49:47
+When I graduated, I joined a research group at Bellcore which had spun out of Bell Labs recently at that time because of the divestiture of the of long distance and local phone service in the 1980s, 1984.
+00:49:59
+And I was in a group with Dave Akeley, who was the first author of the Boltzmann machine paper.
+00:50:07
+So the very first neural net paper that could handle X or so X or sort of killed neural nets.
+00:50:13
+The very first, the zero with the first winter.
+00:50:16
+Yeah, the the Perceptron paper and Hinton, along with the student Dave Akeley and I think there was other authors as well, showed that no, with both machines we can actually learn nonlinear concepts.
+00:50:30
+And so everything's back on the table again.
+00:50:32
+And that kind of started that second wave of neural networks. So Dave actually was he became my mentor at at Bellcore. And we talked a lot about learning and life and computation and how all these things get together.
+00:50:44
+Now, Dave and I have a podcast together, so so I get to enjoy that sort of his his perspective once again, even even all these years later.
+00:50:55
+And so I said so I said I was really interested in learning, but in the concept of behavior. And he's like, oh, well, that's reinforcement learning here. And he gave me Resentence 1984 TRD paper. So I read that paper. I honestly didn't get all of it, but I got the idea. I got that they were using that he was using ideas that I was familiar with in the context of neural nets and sort of back prop.
+00:51:20
+But with this idea of making predictions over time like this is so interesting. But I don't really get all the details.
+00:51:25
+I said to Dave and Dave said, oh, well, why don't we have him come and give a talk? He has like what you can do that like these are real people.
+00:51:35
+They were just words. I thought it was just like ideas that somehow magically seeped into paper.
+00:51:40
+He's like, no, I, I, I know Rich like, we'll just have him come down and he'll give a talk.
+00:51:46
+And so I was, you know, my mind was blown and so Rich came and he gave a talk at Bellcore and he talked about what he was superexcited, which was they had just figured out at the time of learning.
+00:51:59
+So Watkins had visited the Rich Sutton's lab at at UMass or Andy Patos lab that Rich was a part of.
+00:52:08
+And he was really excited about this because it resolved a whole bunch of problems that he didn't know how to resolve in the in the earlier paper.
+00:52:16
+And so people don't know TRD temporal difference. These are all just algorithms for reinforcement learning. Right.
+00:52:23
+And separate different particulars about making predictions over time. And you can try to use it for making decisions. Right. Because if you can predict how good a future an action outcomes will be in the future, you can choose one that has better and or but the theory didn't really support changing your behavior, like the predictions had to be of a consistent. Process, if you really wanted it to work, and one of the things that was really cool about Q learning another algorithm for reinforcement learning is it was off policy, which meant that you could actually be learning about the environment and what the value of different actions would be while actually figuring out how to behave optimally.
+00:53:01
+So that was a revelation. And the proof of that is kind of interesting. I mean, that's really surprising to me when I first read that and then in Richard Suttons book on the matter. And it's kind of beautiful that a single equation can capture one line of code and like, you can learn anything.
+00:53:16
+Yeah, like another time equation and code.
+00:53:19
+You write like you can the code that you can arguably, at least if you like, squint your eyes can say this is all of intelligence, is that you can implement that in a single. I think I started with Lisp, which is I lisp like a single line of code, a key piece of code, maybe a couple.
+00:53:43
+They could do that as kind of magical. It's fused to good to be true.
+00:53:49
+Well I mean sort of is. Yeah. And it seems to require an awful lot of extra stuff supporting it. But but nonetheless, the idea is that the idea is really good. And as far as we know, it is it is a very reasonable way of trying to create adaptive behavior, behavior that gets better at something over time.
+00:54:08
+Did you find the idea of optimal at all compelling that you could prove that it's optimal? So like one part of computer science, that it makes people feel warm and fuzzy inside is when you can prove something like that, a sorting algorithm, worst case runs and and log in and it makes everybody feel so good, even though in reality it doesn't really matter what the worst cases, what matters like this, this thing actually work in practice and this particular actual set of data that I that I enjoy.
+00:54:37
+Did you.
+00:54:38
+So here's here's a place where I have maybe a strong opinion. Oh. Which is like. You're right, of course. But no, no. Like so so what makes worst case so great. Right.
+00:54:49
+If you have a worst case analysis, so great is that you get modularity, you can take that thing and plug it into another thing and still have some understanding of what's going to happen when you click them together. Right. If it just works well in practice. In other words, with respect to some distribution that you care about, when you go plug it into another thing, that distribution can shift, it can change, and your thing may not work well anymore.
+00:55:12
+And you want it to and you wish it does and you hope that it will, but it might not.
+00:55:16
+And then so you're so you're saying you don't like machine learning, but we have some positive theoretical results for these things.
+00:55:29
+You know, you can come back at me with. Yeah, but the really weak and yeah, they're really weak. And you can even say that, you know, sorting algorithms like if you do the optimal sorting algorithm, it's not really the one that you want. And that might be true as well.
+00:55:43
+But but it is the modularity is really powerful. Statement really doesn't an engineer you can then assemble different things. You can count on them to be. I mean, it's interesting. It's it's a balance. Like with everything else in life, you don't want to get too obsessed. I mean, this is what computer scientists do, which they tend to, like, get obsessing over optimized things or they start by optimizing them over optimize. So it's it's easy to, like, get really granular about this thing.
+00:56:12
+But the step from an end squared to an end log in sorting algorithm is a big leap for most real world systems, no matter what the actual behavior of the system is. That's a big leap. And the same can probably be said for all the kind of first that you would take in a particular problem, like it's picking the low hanging fruit or whatever, the equivalent of doing the not the dumbest thing, but the next to the dumbest thing is picking the most delicious reachable fruit.
+00:56:46
+Yeah. Most delicious reachable for.
+00:56:48
+I don't know why that's not a saying and. Yeah. OK, so see you then. This is the eighties and this kind of idea starts to percolate of a and that's when I got to I got to meet Rich Sutton.
+00:57:02
+So everything was sort of downhill from there. And that was, that was really the pinnacle of everything.
+00:57:07
+But then, you know, then I felt like I was kind of on the inside.
+00:57:10
+So then as interesting results were happening, I could, like, check in with with Rich or with Jerry Tesauro, who had a huge impact on kind of early thinking in in terms of different learning and reinforcement learning and showed that you could do you could solve problems that we didn't know how to solve any other way.
+00:57:28
+And so that was really cool. So was good things were happening. I would hear about it from either the people who were doing it or the people who were talking to the people who are doing it. And so I was able to track things pretty well through through the 90s.
+00:57:40
+So what wasn't most of the excitement and reinforcement learning in the nineties era with what is the TDMA like? What's the role of these kind of little like fun game playing things and breakthrough's about, you know, exciting the community? Was that like what were your because you've also built across or were part of building a crossword puzzle solver program.
+00:58:08
+Yeah. Solving program called proverb. So. So you were interested in this as a problem, like informing and using games to understand how to build intelligent systems. So like what did you think about it again. Like what did you think about that whole thing in the nineties.
+00:58:28
+Yeah, I mean, I found the tiedemann result really just remarkable. So I had known about some of Jerry stuff before he did. He'd Gamon he did a system just more vanilla.
+00:58:38
+Well, not entirely vanilla, but a more classical back property kind of network for playing backgammon where he was training it on expert moves.
+00:58:47
+So it was kind of supervised. But the way that it worked was not to mimic the actions, but to learn internally an evaluation function.
+00:58:56
+So to learn well, if the expert chose this over this, that must mean that the expert values this more than this. And so let me adjust my weights to make it so that the network evaluates this as being better than this. So it could learn from from human preferences, it could learn its own preferences. And then when he took the step from that to actually doing it as a full on reinforcement learning problem where you didn't need a trainer, you could just let it play.
+00:59:23
+That was that was remarkable.
+00:59:25
+And so I think as as humans often do, as we've done in the recent past as well, people extrapolate it's like, oh, well, if you can do that, which is obviously very hard, then obviously you could do all these other problems that we that we want to solve that we know we're also really hard. And it turned out very few of them ended up being practical, partly because I think neural nets certainly at the time were struggling to be consistent and reliable.
+00:59:54
+And so training them in a reinforcement learning setting was a bit of a mess. I had, I don't know, generation after generation of, like master students who wanted to do value function approximation, basically to learn reinforcement learning with neural nets.
+01:00:11
+And over and over and over again, we were failing.
+01:00:15
+We couldn't get the good results that. Jerry Tarrega, I now believe that Jerry is a neural net whisperer. He has a particular ability to get neural networks to do things that other people would find impossible. And it's not the technology, it's the technology. And Jerry together.
+01:00:34
+Yeah, which I think speaks to the role of the human expert in the process of machine learning. Right.
+01:00:40
+It's so easy.
+01:00:41
+We're so drawn to the idea that that it's the technology that is that is where the power is coming from, that I think we lose sight of the fact that sometimes you need a really good and just like I mean, no one would think, hey, here's this great piece of software.
+01:00:54
+Here's like, I don't know, Ganu Emax or whatever, doesn't that prove that computers are super powerful and basically are going to take over the world? It's like, no, Stollman is a hell of a hacker, right? So he was able to make the code, do these amazing things. He couldn't have done it without the computer, but the computer could have done it without him.
+01:01:11
+And so I think people discount the role of people like Jerry who who who have just a particular particular set of skills on that topic.
+01:01:22
+By the way, as a small side note, I tweeted, Emacs is greater than them yesterday and deleted deleted the tweet ten minutes later when I realized your you were on fire, started a war.
+01:01:34
+Yeah. I was like, oh, I was just kidding.
+01:01:37
+I was just being provocative. Walk, walk, walk back. And some people still feel passionately about that particular piece of I don't get that because Emacs is clearly so much better.
+01:01:49
+I don't understand. But, you know, why do I say that?
+01:01:51
+Because I because like, I spent a block of time in the 80s making my fingers know the Emax keys. And now, like, that's part of the thought process for me, like I need to express.
+01:02:03
+And if you take that, if you take my Emax key bindings away, I become I can't express myself. I'm the same way with I don't know if you know what it is, but a Kinesis keyboard, which is what shaped keyboard. Yes, I've seen them.
+01:02:19
+Yeah. And they're very sexy. Elegant, beautiful.
+01:02:24
+Yeah. They're gorgeous. We're too expensive. But the, the problem with them, similar with Emacs is when once you learn to use it, it's harder to use other, it's hard to use other things. There's this absurd thing where I have like small, elegant, lightweight, beautiful little laptops and I'm sitting there in a coffee shop with a giant kinesis keyboard and a sexy little laptop. It's absurd. But, you know, like, I used to feel bad about it, but at the same time, you just kind of have to sometimes it's back to the Billy Joel thing.
+01:02:57
+You should know that Billy Joel record and Taylor Swift and Justin Bieber to the wind. So sweet.
+01:03:05
+But I like them now because I because, again, I have no musical tastes like now that I've heard Justin Bieber enough, I like I really like his songs. And Taylor Swift, not only do I like her songs, but my daughter's convinced that she's a genius. And so now I basically have signed on to that. So so, yeah, that that speaks to the back to the robustness of the human brain, that speaks to the neuroplasticity that you can just you can just like a mouse, teach yourself to love dog, teach yourself to enjoy Taylor Swift.
+01:03:33
+I'll try it out.
+01:03:34
+I don't know. I try you know, it has to do with just like acclimation. Right? Just like you said, a couple of weeks. Yeah. That's an interesting experiment. I'll actually try that. Like, I'll listen. That wasn't the intent of the experiment. Just like social media.
+01:03:46
+It wasn't intended as an experiment to see what we can take as a society. But it turned out that way.
+01:03:51
+I don't think I'll be the same person on the other side of the week listening to Taylor Swift.
+01:03:55
+But this trial, it's more compartmentalized. Don't be so worried. Like it's like I get that you can be worried, but don't be so worried because we compartmentalize really well and so it won't bleed into other parts of your life.
+01:04:05
+You won't start.
+01:04:06
+I don't know. Wearing red lipstick or whatever, like it's it's fine, it's changed everything, but you know what, the thing you have to watch out for is you'll walk into a coffee shop once.
+01:04:16
+We can do that again and recognize the song and you'll know you won't know that you're singing along until everybody in the coffee shop is looking at you. And then you're like, that wasn't me. Yeah, that's the you know, people are afraid of ajai, I'm afraid of the Taylor Swift takeover. Yeah. And I mean, people should know that Gamon was I would you call it do you like the terminology itself? Play by any chance or systems that learn by playing themselves?
+01:04:47
+Just I don't know if it's the best word, but what's what's the problem with that term?
+01:04:53
+OK, so it's like the Big Bang, like it's it's like talking to serious business. Do you like the term Big Bang when when it was early? I feel like it's the early days of soft play. I don't know, maybe it was just previously, but I think it's been used by only a small group of people. And so I think we're still deciding is this ridiculously silly name a good name for the potentially one of the most important concepts in artificial intelligence?
+01:05:19
+OK, it depends how broadly you apply the term. So I used the term in my 1996 PhD dissertation, while the actual term says yes, because because the Sorrow's paper was something like training up an expert backgammon player through s play.
+01:05:33
+So I think it was in the title of his paper, if not in the title.
+01:05:36
+It was definitely a term that he used. There's another term that we got from that work is roll out. So I don't know if you do you ever hear the term roll out?
+01:05:44
+That's a Bakerman term that has now applied well, generally in computers.
+01:05:48
+Well, at least in A.I. because of triggermen. Yeah, that's fascinating. So how is simply being used now?
+01:05:55
+And like, why is it does it does it feel like a more general, powerful concept, sort of the idea of, well, the machine just going to teach itself to be smart?
+01:06:01
+Yeah. So that's that's where maybe you can correct me, but that's where, you know, the continuation of the spirit and actually like literally the exact algorithms of Turgeman are applied by mind and open AI to learn games that are a little bit more complex than when I was learning artificial intelligence go was presented to me with artificial intelligence, the modern approach. I don't know if they explicitly pointed to go in those books as like unsolvable kind of thing, like implying that these approaches hit their limit in this for this particular kind of game.
+01:06:38
+So something I don't remember if the book said it or not, but something in my head before was the professors instilled in me the idea like this is the limits of artificial intelligence of the field. Like it instilled in me the idea that if we can create a system that can solve the game of go, we've achieved ajai. Those kind of I didn't explicitly like say this, but that was the feeling. And so I was one of the people that it seemed magical when a learning system was able to beat a human world champion at the game of go.
+01:07:14
+And even more so from that, that was Avago, even more so with Afkos zero, then kind of renamed and advanced into Alpha zero, beating a world champion, a world class player without any supervised learning on expert games only through by playing itself. So that is I don't know what to make of it, I think would be interesting to hear your opinions are and just how exciting, surprising, profound, interesting or boring the breakthrough performance of Alpha Zero was.
+01:07:57
+OK, so Alpha, go knock my socks off. That was that was so remarkable.
+01:08:02
+Which aspect of it that that they got it to work, that they were able to leverage a whole bunch of different ideas, integrate them into one giant system. Just the software engineering aspect of it is mind blowing. I don't I I've never been a part of a program as complicated as the program that they built for that. And and just the you know, like like Jerry Cesaro is a neural net whisperer. Like, you know, David Silver is a kind of neural net whisperer, too.
+01:08:29
+He was able to coax these networks and these new way out their architectures to do these, you know, solve these problems that as you say, you know, when we were learning from A.I.. No one had an idea how to make it work, it was it was remarkable that. These you know, these these techniques that we're so good at playing chess and that could beat the world champion in chess, couldn't beat, you know, your typical go playing teenager and go home.
+01:08:58
+So the fact that, you know, in a very short number of years, we kind of ramped up to trouncing people and go just blew me away.
+01:09:07
+So you're kind of focusing on the engineering aspect, which is also very surprising. I mean, there's something different about large, well-funded companies. I mean, there's a compute aspect to to. Sure. Like that, of course. I mean, that's similar to JetBlue, right. With with IBM.
+01:09:26
+Like there's something important to be learned and remembered about a large company taking the ideas that are already out there and investing a few million dollars into it or or more and. So you're kind of saying the engineering is kind of fascinating, both on the wood for goes, probably just gathering all the data right out of the expert games, like organizing everything, actually doing distributed, supervised learning. And to me, see the engineering I kind of took for granted.
+01:10:01
+To me, philosophically, being able to persist in the in the face of, like long odds, because it feels like for me I will be one of the skeptical people in the room thinking that you can learn your way to to beat go like it sounded like especially David Silverstein. Like David was not confident at all. Hmm. So it was like. Not it's funny how confidence works. Yeah, it's like you're not, like, cocky about it, like.
+01:10:35
+But right, because if you're talking about it, you kind of stop and stall and don't get anywhere. Yeah, but there's like a hope that's unbreakable. Maybe that's better than confidence. It's a kind of wishful hope and a little dream. And you almost don't want to do anything else. You kind of keep doing it. That's that seems to be the story.
+01:10:54
+And but with enough skepticism that you're looking for where the problems are and fighting through them. Yeah. Because, you know, there's got to be a way out of this thing.
+01:11:02
+Yeah. And for him, most probably there's there's a bunch of little factors that come into play. It's funny how these stories just all come together. Like everything he did in his life came into play, which is like a love for video games and also a connection to. So the 90s had to happen with TDMA and so on. In some ways it's surprising. Maybe you can provide some intuition to it that not much more than Tiedemann was done for quite a long time on the reinforcement learning front.
+01:11:31
+Yeah. Is that weird to you?
+01:11:33
+I mean, like I said, the students who I worked with, we tried to get basically apply that architecture to other problems and we consistently failed.
+01:11:42
+There were a couple a couple of really nice demonstrations that ended up being in the literature. There was a paper about controlling elevators, right, where it's like, OK, can we modify the heuristic that elevators use for decide like a bank of elevators for deciding which floors we should be stopping on to maximize throughput, essentially? And you can set that up as a reinforcement learning problem and you can, you know, have a neural net, represent the value function so that it's taking where all the elevators, where the button pushes this high dimensional well at the time, high dimensional input, you know, a couple of dozen dimensions and turn that into a prediction as to, oh, is it going to be better if I stop at this floor or not?
+01:12:22
+And ultimately, it appeared as though for the standard simulation distribution for people trying to leave the building at the end of the day that the neural net learned a better strategy than the standard one that's implemented in elevator controllers.
+01:12:36
+So that that was nice. There was some work that's interesting. It all did on handoffs with cell phones, you know, deciding when when should you hand off from this cell tower to this cell tower communication network.
+01:12:51
+Yeah.
+01:12:52
+And so a couple of things seemed like they were really promising. None of them made it into production that I'm aware of. And neural nets as a whole started to kind of implode around then. And so there just wasn't a lot of air in the room for people to try to figure out, OK, how do we get this to work in the RL setting?
+01:13:10
+And then they they found their way back in in ten plus years. So you said Avago was impressive because the big spectacles there, the Alpha Zero.
+01:13:21
+So I think I may have a slightly different opinion on this than some people. So I talked to Satinder saying in particular about this. So Satinder was like Rich Sutin, a student of A. Bato. So they came out of the same lab, very influential machine learning, reinforcement learning researcher now defined as just as is rich, though, different sites. The two of them is in Alberta, which is in Alberta, and Satinder would be in England. But I think he's in England from Michigan at the moment.
+01:13:51
+But the but he was yes, he was much more impressed with Alpha goes zero, which is didn't didn't get a kind of a bootstrap in the beginning with human brain games.
+01:14:03
+You know, it just was purely self playing though.
+01:14:05
+The first one, Alpha Go was also a tremendous amount of self play.
+01:14:09
+But they started off they kick started the the Action Network that was making decisions. But then they trained it for a really long time using more traditional temporal different methods. So so as a result, I didn't it didn't seem that different to me.
+01:14:23
+Like it seems like. Yeah. Why wouldn't that work?
+01:14:27
+Like once you once it works, it works.
+01:14:29
+So what. But he found that that removal of that extra information to be breathtaking like that, that's a game changer to me. The first thing was more of a game changer.
+01:14:39
+But the open question, I mean, I guess the assumption is the exper games might contain them within them a small amount of information.
+01:14:51
+But we know that it went beyond that. Right. We know that it's somehow got away from that information because it was learning strategies.
+01:14:57
+I don't think I don't think Alpha is just better at implementing human strategies.
+01:15:02
+I think it actually developed its own strategies that were more effective.
+01:15:06
+And so from that perspective, OK, well, so it made at least one quantum leap in terms of strategic knowledge. OK, so now maybe it makes three like, OK, but that first one is the doozy, right. Getting it to work reliably and for the networks to to hold on to the value well enough like that was, that was a big step.
+01:15:28
+Well isn't maybe you can speak to this on the reinforcement learning front. So the starting from scratch. And learning to do something like the first like like random behavior, to like crappy behavior, to like somewhat OK behavior, it's not obvious to me that that's not like impossible to take those steps.
+01:15:53
+Like, if you just think about the intuition, like how the heck does random behavior become somewhat basic, intelligent behavior? Not not human level, not superhuman level, but just basic. But you're saying do you kind of the intuition is like if you can go from human to superhuman level intelligence on the on this particular task of game playing, then so you're good at taking leaps so you can take many of them that the system I believe the system can take that kind of leap.
+01:16:24
+Yeah, I know.
+01:16:24
+And also I think that that beginner knowledge in go like you can start to get a feel really quickly for the idea that, you know, certain parts of the being in certain parts of the board seems to be more associated with winning.
+01:16:40
+Right. Because it's not it's not stumbling upon the concept of winning. It's told that it wins or that it loses self play.
+01:16:47
+So it both wins and loses its told which which side won. And the information is kind of there to start percolating around to make a difference as to. Well, these things have a better chance of helping you win and these things have a worse chance of helping you win.
+01:17:02
+And so, you know, it can get to basic play, I think, pretty quickly. Then once it has basic play, well, now it's kind of forced to do some search to actually experiment with. OK, well, what gets me that next increment of of improvement?
+01:17:16
+How far do you think, OK, this is where you kind of bring up the that you almost can the Sam Harris is right. How far is your intuition about these kinds of soft play mechanisms being able to take us? Because it feels one of the. Ominous. But stated calmly things I want to talk to David Silver, he said, is that they have not yet discovered a ceiling for Alpha Zero, for example, on the game of go or chess.
+01:17:45
+It's it keeps no matter how much the computer they throw at it, it keeps improving.
+01:17:49
+So it's possible it's very possible that you if you throw, you know, some like 10x compute that it will improve by five X or something like that. And when stated calmly, it's like, oh yeah, I guess so. But but like and then you think like what can we potentially have, like continuations of Moore's Law in totally different ways, like broadly defined Moore's Law right now to concentrate on exponential improvement, like are we going to have an Alpha zero that swallows the world?
+01:18:25
+But notice it's not getting better at other things. It's getting better at go. And I think it's a that's a big leap to say, OK, well, therefore it's better at other things.
+01:18:34
+But I mean, the question is how much of the game of life can be turned into? Right. So that of that, I think is a really good question.
+01:18:42
+And I think that we don't I don't think we as a I don't know community really know that the answer to this. But so, OK, so so I went I went to a talk by some experts on computer chess. So in particular, computer chess is really interesting because, you know, for of course, for a thousand years, humans were the best chess playing things on the planet. And then computers like at the head of the best person, and they've been ahead ever since.
+01:19:09
+It's not like people have have overtaken computers, but but computers and people together have overtaken computers.
+01:19:18
+Right.
+01:19:19
+So at least last time I checked, I don't know what the very latest is, but last time I checked that there were teams of people who could work with computer programs to defeat the best computer programs in the game, go in the game of chess and the game of chess. Right.
+01:19:32
+And so using the information about how these things called Isla's scores, this sort of notion of how strong a player are you, there's there's kind of a range of possible scores.
+01:19:44
+And you you increment in score basically, if you can beat another player of that lower score 62 percent of the time or something like that, like there's some threshold of if you can somewhat consistently beat someone, then you are of a higher score than that person. And there's a question as to how many times can you do that in chess.
+01:20:04
+Right.
+01:20:04
+And so we know that there's a range of human ability levels that cap out with the best playing humans. And the computers went a step beyond that.
+01:20:12
+And computers and people together have not gone, I think, a full step beyond that. It feels the estimates that they have is that it's starting to asymptote, that we've reached kind of the maximum the best possible chess playing. And so that means that there's kind of a finite strategic depth. Right. At some point, you just can't get any better at this game.
+01:20:33
+Yeah, I mean, I don't. So I'll actually check that. I think it's interesting because if you have somebody like Magnus Carlsen who's using these chess programs to train his mind, like to learn to be a better chess player. Yeah. And so, like, that's a very interesting thing because we're not static creatures, we're learning together. I mean, just like we talk about social networks, those algorithms are teaching us, just like we're teaching those algorithms.
+01:21:03
+So that's a fascinating thing. But I think the best are just playing programs are now better than the pairs, like they have competition between pairs. But the it's still even if they weren't, it's an interesting question. Where's the ceiling? So the David the ominous David Silver kind of statement is like, we have not found the ceiling. Right.
+01:21:24
+But so the question is, OK, so I don't I don't know his analysis on that. My from talking to go experts, the depth, the strategic depth of go seems to be substantially greater than that of chess, that there's more kind of steps of improvement that you can make getting better and better and better, better.
+01:21:42
+But there's no reason to think that it's infinite, in fact. Yeah.
+01:21:45
+And so it could be that it's that what David is seeing is the kind of asymptote that you can keep getting better, but with diminishing returns and at some point you hit optimal play. In theory, all these finite games, they're finite. They have an optimal strategy.
+01:22:01
+There's a strategy that is the mini max optimal strategy. And so at that point, you can't get any better. You can't beat that that strategy. Now, that strategy may be from an information processing perspective, intractable. Right. You need. All the situations are sufficiently different that you can't compress it at all, it's this giant mass of hard coded rules and we can never achieve that.
+01:22:26
+But but that still puts a cap on how many levels of improvement that we can actually make.
+01:22:31
+But the thing about soft play is if you if you put it, although I don't like doing that in the broader category of soft supervised learning, is that it doesn't require too much or any human labeling.
+01:22:44
+Yeah, yeah. Human labor or just human effort. The human involvement past a certain point and the same thing you could argue is true for the recent breakthroughs in natural language processing with language models. Oh, this is how you get to Deepti three. Yes. You highlighted the that is a good, good transition. Yeah, I practiced that for days leading up to this now. But like, that's one of the questions is can we find ways to formulate problems in this world that are important to us?
+01:23:16
+Humans make more important than the game of chess, that to which self supervised kinds of approaches could be applied, whether it's self play, for example, for like maybe you could think of like autonomous vehicles in in simulation, that kind of stuff, or just robotics applications and simulation or in the self supervised learning where on an annotated data or data that's generated by humans naturally without extra costs like the Wikipedia or like all of the Internet can be used to to learn something about to create intelligent systems that do something really powerful, that pass the Turing test or that do some kind of superhuman level performance.
+01:24:08
+So what's your intuition like trying to stitch all of it together about our discussion of ajai, the limits of self play and your thoughts about maybe the limits of neural networks in the context of language models?
+01:24:25
+Is there some intuition in there that might be useful to think about?
+01:24:28
+Yeah, yeah. Yeah. So so first of all, the whole transformer network. Family of things is really cool, and it's really, really cool.
+01:24:40
+I mean, you know, if you've ever if back in the day you played with, I don't know, Markov models for generating tax and you've seen the kind of text that they spit out and you compare it to what's happening now. It's it's amazing. It's so amazing. Now, it doesn't take very long interacting with one of these systems before you find the holes.
+01:24:58
+Right. It's it's not smart in any kind of. General way, it's really good at a bunch of things, and it does seem to understand a lot of the statistics of language extremely well, and that turns out to be very powerful. You can answer many questions with that, but it doesn't make it a good conversationalist. Right. And doesn't make it a good storyteller. It just makes it good at imitating of things that is seen in the past.
+01:25:24
+The exact same thing could be said by people who are voting for Donald Trump about Joe Biden supporters and people voting for Joe Biden, about Donald Trump's supporters is, you know, that they're not intelligent.
+01:25:35
+They're just following them.
+01:25:37
+Yeah, they're following things they've seen in the past.
+01:25:39
+And so it's very it doesn't take long to find the flaws in their in their like their language generation abilities. Yes. So we're being very. That's interesting. Critical of.
+01:25:53
+Right. So so I've had a similar thought, which was that the stories that T-3 spits out are amazing and very humanlike. And it doesn't mean that computers are smarter than we realize necessarily. It partly means that people are dumber than we realize or that much of what we do day to day is not that deep.
+01:26:16
+Like we're just we're just kind of going with the flow. We're saying whatever feels like the natural thing to say next. Not a lot of it is is is creative or meaningful or intentional, but enough is that we actually get we get by. Right. We do come up with new ideas sometimes and we do manage to talk each other into things sometimes. And we do sometimes vote for reasonable people sometimes.
+01:26:41
+But but it's really hard to see in the statistics because so much of what we're saying is kind of rote and so are metrics that we use to measure how these systems are doing. Don't reveal that because it's it's it's in the interest decis that that is very hard to detect.
+01:26:59
+But is your do you have an intuition that with these language models, if they grow in size, it's already surprising that when you go from two to three that there is a noticeable improvement. So the question now goes back to the ominous David Silver in the ceiling.
+01:27:15
+Right. So maybe there's just no ceiling. We just need more compute now.
+01:27:20
+I mean, OK, so now I'm speculating, yes, as opposed to before when I was completely on firm ground. All right.
+01:27:27
+I don't believe that you can get something that really can do language and use language as a thing that doesn't interact with people like I think then it's not enough to just take everything that we've said, written down and just say that's enough. You can just learn from that and you can be intelligent.
+01:27:44
+I think you really need to be pushed back at I think that conversations even people who are pretty smart, maybe the smartest thing that we know, not maybe not the smartest thing we can imagine, but we get so much benefit out of talking to each other and interacting. That's presumably why you have conversations live with guest, is that that there's something in that interaction that would not be exposed by, oh, I'll just write your story and then you can read it later.
+01:28:10
+And I think I think because these systems are just learning from our stories, they're not learning from being pushed back at by us, that they're fundamentally limited into what they can actually become on this route. They have to they have to get, you know, shut down.
+01:28:24
+Like we have to have an argument that they have to have an argument with us and lose a couple of times before they start to realize, oh, OK, wait, there's some nuance here that actually matters.
+01:28:35
+And that's actually a subtle sounding but quite profound that the interaction with humans is essential. And the limitation within that is profound as well, because the time scale, like the bandwidth at which you can really interact with humans, is very low. So it's costly. So you can't the one of the underlying things about self plays, it has to do, you know, a very large number of interactions. And so you can't really deploy reinforcement learning systems into the real world to interact like you couldn't deploy a language model into the real world to interact with humans because it was just not get enough data relative to the cost it takes to interact with the time of humans is is expensive, which is really interesting that the good that expect reinforcement learning and trying to figure out if there's ways to make algorithms that are more efficient at learning, keep the spirit and reinforcement learning and become more efficient.
+01:29:38
+In some sense. That seems to be the goal here. What your thoughts are don't know if you got a chance to see the blog post called Bitter Lesson. Oh, yes, but Rich Sutton, that makes an argument and hopefully I can summarize it. Perhaps. Perhaps you can. Yeah. OK, so I mean, I could try and you can correct me, which is he makes an argument that it seems if we look at the long arc of the history of the artificial intelligence field because, you know, 70 years that the algorithms from which we've seen the biggest improvements in practice are the very simple, like dumb algorithms that are able to leverage computation.
+01:30:20
+And you just wait for the computation to improve, like all academics and so on. Have fun by finding all the tricks and and congratulate themselves on those tricks. And sometimes those tricks can be like bigs that feel in the moment, like big spikes and breakthroughs. But in reality, over the decades, it's still the same dumb algorithm that just waits for the computer to get faster and faster.
+01:30:43
+Do you find that to be an interesting argument against the entirety of the field of machine learning as an academic discipline, that we're really just a subfield of computer architecture? Yeah, we're just kind of waiting around for them, really don't want to do hardware work. So. That's right. I really don't want to work procrastinating.
+01:31:03
+Yes, that's right. Just waiting for them to do their job so that we can pretend to have done.
+01:31:06
+Ah, so uh yeah. I mean the argument reminds me a lot of I think it was a Fred Jellinek quote, early computational linguist who said, you know, we're building these computational linguistic systems and every time we fire a linguist, performance goes up by 10 percent, something like that. And so the idea of us building the knowledge in in that in that case was much less he was finding to be much less successful, then get rid of the people who know about language as a you know, from a kind of scholastic academic kind of perspective and replace them with more compute.
+01:31:44
+And so I think this is kind of a modern version of that story, which is, OK, we want to do better on machine vision. You could build in all these, you know. Motivated part based models that, you know, that just feel like obviously the right thing that you have to have or we can throw a lot of data at it and guess what? We're doing better with it, with a lot of it.
+01:32:04
+So I. I hadn't thought about it until this moment in this way, but what I believe well, I've thought about what I believe. What I believe is that, you know. Compositionally and. What's the right way to say it? The complexity grows rapidly as you consider more and more possibilities like explosively.
+01:32:28
+And so far, Moore's Law has also been growing explosively, exponentially.
+01:32:32
+And so so it really does seem like, well, we don't have to think really hard about the algorithm design or the way that we build the systems, because the best benefit we could get is exponential. And the best benefit that we can get from waiting is exponential. So we can just wait. It's got that's got to end.
+01:32:51
+Right. And there's hints now that that Moore's Law is is starting to feel some friction. Starting to the world is pushing back a little bit.
+01:33:00
+One thing I don't know, lots of people know that I didn't know this.
+01:33:03
+I was I was trying to write an essay. And, yeah, Moore's Law has been amazing. And it's been it's enabled all sorts of things. But there's a there's also a kind of counter Moore's Law, which is that the development cost for each successive generation of chips also is doubling. So it's costing twice as much money.
+01:33:21
+So the amount of development money per cycle or whatever is actually sort of constant. And at some point we run out of money. So or we have to come up with an entirely different way of of doing the development process.
+01:33:34
+So, like, I guess I was always a bit skeptical of the look, it's an exponential curve, therefore it has no end. Soon the number of people going to NRPs will be greater than the population of the earth. That means we're going to discover life on other planets. No, it doesn't.
+01:33:48
+It means that we're in a in a sigmoid curve on the front half, which looks a lot like an exponential. The second half is going to look a lot like diminishing returns.
+01:33:58
+Yeah, the I mean, but the interesting thing about Moore's Law, if you actually like, look at the technologies involved, it's hundreds, if not thousands of Esker stacked on top of each other. It's not actually an exponential curve. It's constant breakthroughs. And and then what becomes useful to think about, which is exactly what you're saying, the cost of development, like the size of teams, the amount of resources that are invested in continuing to find new curves, new breakthroughs.
+01:34:26
+And, yeah, it's it's an interesting idea. You know, if we live in the moment, if we sit here today, it seems to be the reasonable thing to say that exponential and and yet in the software realm, they just keep appearing to be happy anyway.
+01:34:46
+And it's so I mean, it's so hard to disagree with your musk on this, because it's like I I've you know, I used to be one of those folks. I'm still one of those folks. I studied autonomous vehicles. This is what I worked on. And and it's it's like you look at Elon Musk saying about autonomous vehicles will obviously in a couple of years or in a year or next month, will have fully autonomous vehicles. Like there's no reason why we can't drive things pretty simple.
+01:35:18
+Like it's just a learning problem. And you just need to convert all the driving that we're doing it to data and just having, you know, with the trends and the data and the like. We use only our eyes, these cameras, and you can train on it and say, yeah. That that what that should work and then you put that hat like the philosophical hat and then you put the pragmatic hat and say, OK, this is what the flaws of computer vision are like.
+01:35:46
+This is what it means to train a skill. And then you you put the human factor.
+01:35:50
+There's the psychology hat on, which is like it's actually driving a lot. The cognitive science or whatever the heck you call it is it's really hard. It's much harder to drive than then we realize there's a much larger number of cases. So building up an intuition around this is around exponential is really difficult. And on top of that, the pandemic is making us think about exponential, is making us realize that like we don't understand anything about it. We're not able to intuit exponential.
+01:36:23
+We're either, Bachchu, ultra terrified some part of the population and some part is like the opposite of whatever the carefree. And we're not managing about de Blasio. Well, wow, that's the French accent.
+01:36:41
+So it's it's fascinating to think what what the limits of this exponential. Growth of technology, not just more, is law, it's technology how that rubs up against the bitter lesson and T-3 and soft play mechanisms, that is not obvious.
+01:37:07
+I used to be much more skeptical about neural networks.
+01:37:10
+Now at least give a slither a possibility that will be all that will be very much surprised and also, you know, caught in a way that, like, we are not prepared for it, like in applications of.
+01:37:29
+Social networks, for example, sure, because it feels like a really good transformer, models that are able to do some kind of like very good natural language generation of the same kind of models that could be used to learn human behavior and then manipulate the human behavior to gain advertising dollars and all those kinds of things.
+01:37:51
+Sure, if you're the capitalist system and right now, they arguably already are manipulating human behavior. Yeah, yeah. So but not for self-preservation, which I think is a big that would be a big step, like if they were trying to manipulate us to convince us not to shut them off. I would be very freaked out, but I don't see a path to that from where we are now, they they don't have any of those abilities. That's not what they're trying to do.
+01:38:19
+They're trying to keep people on on the site.
+01:38:22
+But see, the thing is this this is the thing about life on Earth is they might be borrowing our consciousness and sentience like so like in the sense they do because the creators of the algorithms have like they're not you know, if you look at our body, OK, we're not a single organism. We're a huge number of organisms like tiny little motivations were built on top of each other. In the same sense, the A.I. algorithms that are they're not a system that includes human companies and corporations.
+01:38:52
+Right. Because corporations are funny organisms in and of themselves that really do seem to have self-preservation built in. And I think that's at the at the design level. I think they're designed to have self preservation be a focus.
+01:39:04
+So you're right in that in that broader system.
+01:39:09
+That we're also a part of and can have some influence on it. It is much more complicated, much more powerful. Yeah, I agree with that.
+01:39:18
+So people really love it when I ask, what, three books, technical philosophical fiction had a big impact in your life? Maybe you can recommend. We went with movies.
+01:39:30
+We went with Billy Joel and got what you what music you recommended. But I didn't.
+01:39:36
+I just said I have no taste in music. I just like pop music. That was actually really skillful the way you invented that question. I was I'm going to try to do the same with the books. So do you ever give way to avoid answering the question about three books you recommend?
+01:39:51
+I'd like to tell you a story. So my first job out of college was at Bellcore.
+01:39:57
+I mentioned that before I worked with Dave Akeley.
+01:40:00
+The head of the group was a guy named Tom Landauer, and I don't know how well known he's known now, but arguably he's the he's the inventor and the first proselytizer of word and beddings.
+01:40:11
+So they they developed a system shortly before I got to the group. Yeah, that that called latent semantic analysis that would take words of English and embed them in, you know, multi dimensional space and then use that as a way of, you know, assessing similarity and basically doing reinforcement learning and not sorry, not reinforcing information retrieval, you know, sort of pre Google information retrieval. And he was trained as an anthropologist, but then became a cognitive scientist.
+01:40:41
+I was in the Cognitive Science Research Group. You know, like I said, I'm a cognitive science groupie. At the time, I thought I'd become a cognitive scientist. But then I realized in that group, no, I'm a computer scientist, but I'm a computer scientist who really loves to hang out with cognitive scientists.
+01:40:55
+And he said he studied language acquisition in particular. He said, you know, humans have about this number of words of vocabulary and most of that is learned from reading. And I said that can't be true because I have a really big vocabulary and I've read he's like, you must I'm like, I don't think I do.
+01:41:15
+I mean, like stop signs.
+01:41:16
+I definitely read stop signs, but like reading books is not is not a thing that I do really, though it might be just, you know, maybe the red color I read stop signs.
+01:41:26
+Know, it's just pattern recognition at this point. I don't sound it out. Now, I do I wonder what that. Oh, yes, stop the guns.
+01:41:37
+So that's fascinating.
+01:41:39
+So you don't so I don't read very I mean, obviously I read and I've read I've read plenty of books, but like some people, like Charles, my friend Charles and others, like a lot of people in my field, a lot of academics, like reading was really a central topic to them, development.
+01:41:55
+And I'm not that guy. In fact, I used to joke that when I got into college that it was on kind of a I'd help out the illiterate kind of program because I got to like I in my house. I wasn't particularly bad or good reader. But when I got to college, I was surrounded by these people that were just voracious in their reading appetite. And they were like, have you read this?
+01:42:16
+Have you read this? Have you read this?
+01:42:18
+And I'd be like, no, I'm clearly not qualified to be at this school. Like, there's no way I should be here.
+01:42:23
+Now, I've discovered books on tape like audio books, and so I'm much better. I'm more caught up.
+01:42:30
+I read a lot of books in small towns on that. It is a fascinating open question to me on the topic of driving, whether, you know, supervised learning people, machine learning people think you have to, like, drive to learn how to drive. To me, it's very possible that just by us humans, by first of all walking, but also by watching other people not even being inside cars as a passenger, but let's say being inside the car as a passenger.
+01:43:01
+But even just like being a pedestrian and crossing the road, you learn so much about driving from that. It's very possible that you can, without ever being inside of a car, be OK driving once you get in it or like watching a movie, for example. I don't know, something like that.
+01:43:20
+Have you have you taught anyone to drive? No. So I said to myself, I have two children and this is a lot about car driving because my wife doesn't want to be the one in the car while they're learning. So that's my job. So I sit in the passenger seat and it's really scary. You know, I have wishes to live and they're, you know, they're figuring things out now.
+01:43:45
+They start off very. Very much better than I imagine, like a neural network would they get that they're seeing the world, they get that there's a road that they're trying to be on. They get that there's a relationship between the angle of the steering, but it takes a while to not be very jerky.
+01:44:02
+And so that happens pretty quickly, like the ability to stay in lane at speed, that happens relatively fast. It's not zero short learning, but it's pretty fast.
+01:44:12
+The thing that's remarkably hard, and this is, I think, partly why self-driving cars are really hard is the degree to which driving is a social interaction activity. Yes. And that blew me away. I was completely unaware of it until I watched my son learning to drive and I was realizing that he was sending signals to all the cars around him and those in his case.
+01:44:32
+He's he's always had social communication challenges. He was sending very mixed, confusing signals to the other cars and that was causing the other cars to drive weirdly and erratically.
+01:44:44
+And there was no question in my mind that he would he would have an accident because they didn't know how to read him. There's things you do with the speed that you drive, the positioning of your car that you're constantly like in the head of the other drivers and seeing him, not knowing how to do that and having to be taught explicitly, OK, you have to be thinking about what the other driver is thinking was a revelation to me.
+01:45:09
+I was stunned as to creating kind of theories of mind, of the other theories of mind, of the other cars.
+01:45:16
+Yeah, yeah, yeah. I just hadn't heard discussed in the self-driving car talks that I've been to since then.
+01:45:22
+There's some people who do do consider those kinds of issues, but it's way more subtle than I think there's a little bit of work involved with that.
+01:45:31
+When you realize, like when you especially focus not on other cars, but on pedestrians, for example, it's literally staring you in the face. Yeah, yeah, yeah. So that when you're just like, how do I interact with pedestrians? You have pedestrians.
+01:45:44
+You're practically talking to an octopus. At that point, they've got all these weird degrees of freedom. You don't know what they're going to do. They can turn around any second. But the point is, we humans know what they're going to do. Like we have a good theory of mind. We have a good mental model of what they're doing and we have a good model of the model. They have a view in the model of the model of the model where we're able to kind of reason about this kind of the social like game of it all.
+01:46:11
+The hope is that it's quite simple, actually, that it could be learned. That's what I just talked to the Wimoweh. I don't know if you know that companies go South Africa, they talk to their CTO about this podcast, and they like a road in their car. And it's quite aggressive and it's quite fast and it's good and it feels good. It also just like Tesla, Weinman will make me change my mind about like maybe driving is easier than I thought.
+01:46:39
+Maybe I'm just being speciesist human touch and maybe it's a specious argument. Yes, I don't know. But it's fascinating to think about like the same. As with reading, which I think you just said you avoided the question, I still hope you somewhat avoided it brilliantly. It is there's blindspots is artificial intelligence that artificial intelligence researchers have about what it actually takes to learn to solve a problem.
+01:47:11
+You had a dragon on one of my favorites.
+01:47:14
+So much energy, right? Oh, yeah. This is amazing. Fantastic. And in particular, she thinks a lot about this kind of I know that you know that. I know kind of planning.
+01:47:24
+And the last time I spoke with her, she was very articulate about the ways in which self-driving cars are not solved, like what's still really, really hard.
+01:47:34
+But even her intuition is limited, like we're all new to this. So in some sense, the almost approach of being ultra confident and just like put it out there, putting it out there, like some people say, is reckless and dangerous and so on. But like partly it's like it seems to be one of the only ways to make progress in artificial intelligence. So it's you know, these are difficult things. Democracy is messy. Implementation of artificial intelligence systems in the real world is messy.
+01:48:06
+So many years ago, before self-driving cars were an actual thing you could have a discussion about. Somebody asked me, like, what if what if, what if we could use that robotic technology and use it to drive cars around.
+01:48:16
+Like, isn't that are people going to be killed? And then it's, you know, Barbara, I'm like, that's not what's going to happen. I said with confidence incorrectly.
+01:48:23
+Obviously, what I think is going to happen is we're going to have a lot more like a very gradual kind of rollout where people have these cars in like closed communities.
+01:48:34
+Right. Where it's somewhat realistic, but it's still in a box. Right. So that we can really get a sense of what what are the weird things that can happen? How do we how do we have to change the way we behave around these vehicles? Like it obviously requires a kind of coevolution that you can't just plop them in and see what happens. But of course, we're basically popping them in to see what happened. So I was wrong, but I do think that would have been a better plan.
+01:48:59
+So that's. But your intuition is funny. Just zooming out and looking at the forces of capitalism. And it seems that capitalism rewards risk takers and rewards and punishes risk takers like it and like try it out, the academic. Approach to let's try a small thing and try to understand slowly the fundamentals of the problem and let's start with one and two and then see that and then do the three, you know, the capitalists, like, start up entrepreneurial dreams, let's build a thousand and let's write.
+01:49:39
+And five hundred of them fail. But whatever the other five hundred, we learn from them. But if you're good enough, I mean, one thing is like your intuition would say, like that's going to be hugely destructive to everything, but actually it's kind of the forces of capitalism. People are quite easy to be critical. But if you actually look at the data at the way our world has progressed in terms of the quality of life, it seems like the competent, good people rise to the top.
+01:50:06
+This is coming from me, from the Soviet Union and and so on. It's like it's interesting that somebody like Elon Musk is the way you are. You push progress and artificial intelligence is forcing way more stuff this stuff up. And we're almost forcing Elon Musk to step up. It's fascinating because I have this tension in my heart and just being upset by. The lack of progress in autonomous vehicles within academia, so there's huge progress in the early days of the diaper challenges and then it just kind of stopped like anonymity.
+01:50:51
+But it's true everywhere else with with an exception of a few sponsors here and there is like it's not seen as a sexy problem at times, like the moment artificial intelligence starts approaching the problems of the real world, like academics, kind of like.
+01:51:10
+All right. Let it get really hard in a different way, in a different way. And that's right. I think.
+01:51:15
+Yeah, right.
+01:51:15
+Some of us are not excited about that other way, but I still think there's fundamental problems to be solved in those difficult thing. It's not it's still publishable. I think we just need to it's the same criticism. You could have all these conferences in Europe, PR or application papers are often as powerful, as important as like theory paper, even like theories. It seems much more respectable and so on. I mean, machine learning can be changing that a little bit.
+01:51:45
+I mean, at least in statements. But it's it's still not seen as the sexiest of pursuits, which is like how do I actually make this thing work in practice as opposed to on the story data set. All that to say, are you still avoiding the three books question, is there something on audiobook that you can recommend? Oh, yeah.
+01:52:07
+I mean, I yeah, I've read a lot of really fun stuff in terms of books that I find myself thinking back on that I read a while ago like that stood the test of time.
+01:52:17
+To some degree I find myself thinking of program or be programmed a lot by Douglas Rushkoff, which was basically put out the premise that we all need to become programmers in one form or another.
+01:52:33
+And it was an analogy to once upon a time, we all had to become readers. We had to become literate. And there was a time before that when not everybody was literate. But once literacy was possible, the people who were literate had more of a say in society than the people who weren't. And so we made a big effort to get everybody up to speed. And now it's it's not 100 percent universal, but it's quite widespread. Like the assumption is generally that people can read the analogy that he makes is that programming is a similar kind of thing.
+01:53:03
+That that. We need to have a say in being a reader, being literate, being a reader means you can receive all this information, but you don't get to put it out there. And programming is the way that we get to put it out there. That was the argument they made. I think he specifically has now backed away from this idea. He doesn't think it's happening quite this way. And that might be true, that it didn't society didn't sort of play forward quite that way.
+01:53:32
+But I still believe in the premise. I still believe that at some point we have the relationship that we have to these machines and these networks has to be one of each individual can has the wherewithal to make the machines, help them do do the things that that person wants done. And as a software people, we know how to do that. And we have a problem. We're like, OK, I'll just I'll check up a script or something and make it.
+01:53:55
+So if we lived in a world where everybody could do that, that would be a better world and computers would be have, I think, less sway over us and other people's software would have less sway over us as a group.
+01:54:09
+Yeah, some sense software engineering, programming, power programming is power, right? It's yeah. It's like magic. It's like magic spells and and it's not out of reach of everyone. But at the moment it's just a sliver of the population who can who can commune with machines in this way.
+01:54:27
+So I don't know. So that book had a big, big impact on me currently. I'm reading the alignment problem actually by Brian Christian.
+01:54:34
+So I don't know if you've seen this out there yet is a similar test to Russell's work with the control problem.
+01:54:39
+It's in that same general neighborhood. I mean, they take they have different emphases that they're concentrating on. I think I think Stuart's book did a remarkably good job, like a just a celebratory good job at describing A.I. technology and sort of how it works. I thought that was great. It was really cool to see that in a book.
+01:54:58
+Yeah, I think he has some experience writing some books, you know, as probably a possible thing.
+01:55:04
+He's maybe thought a thing or two about how to explain to people. Yeah, yeah. That's a really good point.
+01:55:09
+This book so far has been remarkably good at telling the story of the sort of the history, the recent history of some of the things that have happened in the first. Third, he said this book is in three thirds. The first third is essentially a fairness and, you know, implications of A.I. on society that we're seeing right now. And that's been great. I mean, he's telling the stories really well. He's he went out and talked to the front line people who whose names are associated with some of these ideas.
+01:55:38
+And it's been terrific. He says the second half of the book is on reinforcement learning, so maybe that'll be fun.
+01:55:45
+And then the third half, third, third is on the superintelligent alignment problem. And I suspect that that part will be less fun for me to read.
+01:55:56
+Yeah, yeah. It's it's an interesting problem to talk about. I find it to be the most interesting, just like thinking about whether we live in a simulation or not as a as a thought experiment to think about our own existence. So in the same way, talking about alignment problem with ajai is a good way to think similarly, like the trolley problem with autonomous vehicles. It's a useless thing for engineering, but it's the it's a nice little thought experiment for actually thinking about what I like our own human ethical systems, our moral systems.
+01:56:29
+To to to. By thinking how we engineer these things, you start to understand yourself. So sci fi can be good at that, too, so one sci fi book to recommend is Exhalations by Ted Cheang. Bunch of short stories. This Ted Chang is the guy who wrote the short story that became the movie Arrival.
+01:56:51
+And all these stories just from a he was a computer scientist, actually studied at Brown.
+01:56:57
+They all have this sort of really insightful bit of science or computer science that drives them.
+01:57:04
+And so it's just a romp, right, to just like he creates these artificial worlds with these by extrapolating on these ideas that that we know about but hadn't really thought through to this kind of conclusion. And so this stuff is it's really fun to read mind warping.
+01:57:20
+So I'm not sure if you're familiar. I think to mention this, every other word is from the Soviet Union.
+01:57:27
+I'm Russian, which means that my roots are Russian, too. But a couple of generations back. Well, it's probably in there somewhere, so maybe you can. We can put the thread a little bit of the potential dread that we all feel. You mentioned that I think somewhere in the conversation you mentioned the you don't really pretty much like dying.
+01:57:50
+I forget in which context it might have been a reinforcement learning perspective. I don't know. I know you know what it was?
+01:57:55
+It was in teaching my kids to drive.
+01:57:59
+That's how you face your mortality. Yes. From a human being's perspective or from a reinforcement learning researcher's perspective. Let me ask you the most absurd question. What's what do you think is the meaning of this whole thing, uh, the meaning of life on this spinning rock?
+01:58:18
+I mean, I think reinforcement learning researchers maybe think about this from a science perspective more often than a lot of other people. Right. As a supervised learning person, you're probably not thinking about the sweep of a lifetime. But reinforcement learning agents are having little lifetimes, little weird little lifetimes. And it's it's hard not to project yourself into their world sometimes, but, you know, as far as the meaning of life.
+01:58:42
+So when I turned 42, you may know from that's a that is a book I read that The Hitchhiker's Guide to the Galaxy, that that is the meaning of life.
+01:58:52
+So when I turned 42, I had a meaning of life party where I invited people over and everyone shared their meaning of life. We they with we had slides made up. And so we had we all sat down and did a slide presentation to each other about the meaning of life.
+01:59:08
+And my great mind was balance.
+01:59:12
+I think that life is balance. And so the activity at the party for 42 year old, maybe this is a little bit non-standard. But I, I found all the little toys and devices that I had that where you had to balance on them, you had to like, stand on it and balance or pogo stick. I brought a rip stick, which is like a weird to wield skateboard. I got a unicycle, but I didn't know how to do it.
+01:59:38
+I now can do it. I love watching you try.
+01:59:41
+Yeah, I'm not great but I. But but but I managed and so, so balanced. Yeah.
+01:59:49
+So, so my, my wife has a really good one that she sticks to and is probably pretty accurate and it has to do with healthy relationships with people that you love and working hard for good causes.
+02:00:03
+But to me. Yeah. Balance balance in a word that's that, that works for me. Not too much of anything because too much of anything is iffy.
+02:00:12
+The physical Rolling Stones song, I feel like there must be you can't always get what you want, but if you try, sometimes you can strike a balance.
+02:00:21
+Yeah, I think that's how it goes. Michael is a parody.
+02:00:26
+It's a huge honor to talk to you. This has been a big fan of yours. So I can't I can't wait to see what you do next.
+02:00:36
+In the world of education, the world's a parody in the world of reinforcement learning. Thanks for talking to me. My pleasure. Thank you for listening to this conversation with Michael Littman and thank you to our sponsors, Simply Safe, a home security company. I used to monitor and protect my apartment, express open the VPN I've used for many years to protect my privacy and the Internet, masterclass online courses that I enjoy from some of the most amazing humans in history and better help online therapy with a licensed professional.
+02:01:07
+Please check out these sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube review starting up a podcast. Follow on Spotify support on page on Connect with me on Twitter, Elex Friedman. And now let me leave you some words from Groucho Marx. If you're not having fun, you're doing something wrong. Thank you for listening and hope to see you next time.

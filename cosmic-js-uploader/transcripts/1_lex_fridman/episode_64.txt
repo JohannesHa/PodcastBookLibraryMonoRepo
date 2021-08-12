@@ -1,0 +1,380 @@
+00:00:00
+The following is a conversation with Grant Sanderson, he's a math educator and creator of Three Blue and Brown, a popular YouTube channel that uses programmatically animated visualizations to explain concepts in linear algebra, calculus and other fields of mathematics.
+00:00:16
+This is the Artificial Intelligence podcast. If you enjoy it, subscribe on YouTube. Gives five stars an app, a podcast, follow on Spotify, support Patrón or simply connect with me on Twitter. And Lex Friedman spelled F.R. Idi Amin. I recently started doing ads at the end of the introduction. I'll do one or two minutes after introducing the episode and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience.
+00:00:47
+This show is presented by Kashyap, the number one finance app in the App Store, I personally use cash out to send money to friends, but you can also use it to buy, sell and deposit Bitcoin. Just seconds cash. Also has an investing feature. You can buy fractions of a stock, say, one dollars worth, no matter what the stock price is. Broker's services are provided by cash up investing a subsidiary of Square. And remember SIPC.
+00:01:13
+I'm excited to be working with cash out to support one of my favorite organizations called First Best known for their first robotics and Lego competitions. They educate and inspire hundreds of thousands of students in over 110 countries and have a perfect rating. And Charity Navigator, which means that donated money is used to maximum effectiveness. When you get cash out from the App Store or Google Play and use collects podcasts, you'll get ten dollars in cash. I will also donate ten dollars.
+00:01:41
+The first, which again is an organization that I've personally seen, inspire girls and boys to dream of engineering a better world. And now here's my conversation with Grant Sanderson. If there's intelligent life out there in the universe, do you think their mathematics is different than ours jumping right in?
+00:02:20
+I. I think it's probably very different. There's an obvious sense the notation is different, right? I think notation can guide what the math itself is. I think it has everything to do with the form of their existence.
+00:02:34
+Right. Do you think they have basic arithmetic? So. Yeah. So I think they count. Right. I think notions like one, two, three, the natural numbers, that's extremely well natural. That's almost why we put that name to it. As soon as you can count, you have a notion of repetition, right. Because you can count by two, two times or three times. And so you have this notion of repeating the idea of counting, which brings you addition and multiplication.
+00:03:00
+I think the way that we extend to the real numbers, there's a little bit of choice in that. So there's this funny number system called the serial numbers that it captures the idea of continuity. It's a distinct mathematical object. You could very well, you know, model the universe in motion of planets with that as the back end of your math. Right. And you still have kind of the same interface with the front end of what physical laws you're trying to or what physical phenomena you're trying to describe with math.
+00:03:30
+And I wonder if the little glimpses that we have of what choices you can make along the way based on what different mathematicians have brought to the table, is just scratching the surface surface of what the different possibilities are. If you have a completely different mode of thought rate or mode of interacting with the universe.
+00:03:46
+And you think notation is a key part of the journey that we've taken through math, I think that's the most salient part that you'd notice at first. I think the mode of thought is going to influence things more than like the notation itself. But notation actually carries a lot of weight when it comes to how we think about things more so than we usually give it credit for.
+00:04:03
+I would I would be comfortable saying, do you have a favorite or least favorite piece of notation in terms of its effectiveness? Yeah. Yeah.
+00:04:10
+Well, so at least favorite one that I've been thinking a lot about, that will be a video. I don't know when, but we'll see, uh, the number e we write the function E to the X, this general exponential function with the notation E to the X, that implies you should think about a particular number, this constant of nature, and you repeatedly multiply it by itself and then you say, oh, what's E to the square root of two?
+00:04:30
+And you'll go, what? We've extended the idea of repeated multiplication. That's not all nice. That's all nice and well. But very famously you have like E to the PI. I like what we're extending the idea of repeated multiplication into the complex numbers. Yeah, you can think about it that way. In reality, I think that it's just the wrong way of, um, notation representing this function, the exponential function, which itself could be represented a number of different ways you can think about it in terms of the problem.
+00:04:56
+It solves a certain very simple differential equation, which often yields way more insight than trying to twist the idea of repeated multiplication, like take its arm and put it behind its back and throw it on the desk and be like you will apply to complex numbers. But that's not I don't think that's pedagogically helpful. And so the repeated multiplication is actually missing.
+00:05:16
+The main point, the power of E to the S.
+00:05:19
+I mean, what it addresses is things where the rate at which something changes. Depends on its own value, but more specifically, it depends on it linearly, so, for example, if you have a population that's growing and the rate at which it grows depends on how many members of the population are already there. It looks like this nice exponential curve. It makes sense to talk about repeated multiplication because you say how much is there after one year, two years, three years, you multiply it by something.
+00:05:44
+The relationship can be a little bit different sometimes where let's say you've got a ball on a string like a like a game of tetherball going around a rope. Right. And you say its velocity is always perpendicular to its position. That's another way of describing its rate of change as being related to where it is. But it's a different operation at scaling it. It's a rotation. It's this 90 degree rotation. That's what the whole idea of, like, complex exponentiation is trying to capture.
+00:06:12
+But it's obfuscated in the notation when what it's actually saying, like, if you really parse something like eat of the pie, what it's saying is choose an origin, always move perpendicular to the vector from that origin to U k. Then when you walk pi times that radius, you'll be halfway around like that's what it's saying. It's of kinda you turn 90 degrees and you walk, you'll be going in a circle. That's the phenomenon that it's describing.
+00:06:39
+But trying to twist the idea of repeatedly multiplying a constant into that.
+00:06:43
+Like I, I can't even think of the number of human hours of intelligent human hours that have been wasted trying to parse that to their own liking and desire among scientists or electrical engineers or students. If we were which if the notation were a little different or the way that this whole function was introduced from the get go were framed differently, I think could have been avoided. Right.
+00:07:06
+And you're talking about the most beautiful equation in mathematics, but it's still pretty mysterious, isn't it? Like, no, you're making it seem like it's a notation. No, it's not mysterious.
+00:07:16
+I think I think the notation makes it mysterious. I don't think it's I think the fact that it represents it's pretty it's not like the most beautiful thing in the world, but it's quite pretty. The idea that if you take the linear operation of a 90 degree rotation and then you do this general exponentiation thing to it, that what you get are all the other kinds of rotation, which is basically to say if you if your velocity vector is perpendicular to your position vector, you walk in a circle.
+00:07:42
+That's pretty. It's not the most beautiful thing in the world, but it's quite pretty.
+00:07:45
+The beauty of it, I think, comes from perhaps the awkwardness of the notation somehow still nevertheless coming together nicely because you have like several disciplines coming together in a single equation. Well, I in a sense, historically speaking, that's true. You've got to look, the number is significant. Like it shows up in probability all the time. It shows up in calculus all the time. It is significant. You're seeing it sort of mated with PI, this geometric constant.
+00:08:10
+And I like the imaginary number and such. I think what's really happening there is the way that he shows up is when you have things like exponential growth and decay, it's when this relation that something's rate of change has to itself is a simple scaling. Right. A similar law also describes circular motion. Because we have bad notation, we use the residue of how it shows up in the context of self reinforcing growth, like a population growing or compound interest.
+00:08:40
+The constant associated with that is awkwardly placed into the context of how rotation comes about, because they both come from pretty similar equations. And so what we see is the E in the pie juxtaposed a little bit closer than they would be with a purely natural representation, I would think. Here's how I would describe the relation between the two. You've got a very important function we might call EXPE. That's like the exponential function. When you plug in one, you get this nice constant called E that shows up in probability and calculus.
+00:09:09
+If you try to move in the imaginary direction, it's periodic and the period is tau. So those are these two constants associated with the same central function, but kind of unrelated reasons. Unrelated, but like orthogonal reasons. One of them is what happens when you're moving in the real direction one's what happens when you move in the imaginary direction. And like, yeah, those are related. They're not as related as the famous equation seems to think it is.
+00:09:35
+It's sort of putting all of the children in one bed and they'd kind of like to sleep in separate beds if they had the choice. But you see them all there and you know, there is a family resemblance, but it's not that close.
+00:09:45
+So actually think of it as a function as is the better idea. And that's a notational idea. And yeah. And like, here's the thing. The constant E sort of stands is this numerical representative of calculus right now, calculus is the study of change. So at the very least, there's a little cognitive dissonance using a constant to represent the science of change. Never thought of it that way. Yeah, yeah. It makes sense why the notation came about that way.
+00:10:16
+Yes, because this is the first way that we saw it in the context of things like population growth or compound interest, it is nicer to think about as repeated multiplication. That's definitely nicer, but it's more that that's the first application of what turned out to be a much more general function that maybe the intelligent life your initial question asked about would have come to recognize as being much more significant than the single use case, which lends itself to repeated multiplication notation.
+00:10:40
+But let me jump back for a second to aliens and the nature of our universe.
+00:10:46
+OK, do you think math is discovered or invented? So we're talking about the different kind of mathematics that could be developed by the alien species. The implied question is, is yeah, math discovered or invented is, you know, is fundamentally everybody going to discover the same principles of mathematics.
+00:11:09
+So the way I think about it and everyone thinks about it differently. But here's my take. I think there's a cycle at play where you discover things about the universe that tell you what math will be useful. And that math itself is invented in a sense. But of all the possible maths that you could have invented, it's discoveries about the world that tell you which ones are so like a good example. Here is the Pythagorean theorem. When you look at this, do you think of that as a definition or do you think of that as a discovery from the historical perspective or as a discovery?
+00:11:40
+Because they were, but that's probably because they were using physical object to build their intuition. And from that intuition came the mathematics and the mathematics was in some abstract world, detached from physics. But I think more and more math has become detached from, you know, when you even look at modern physics from string theory to even general relativity, I mean, all math behind the 20th and 21st century physics kind of takes a brisk walk outside of what our mind can actually even comprehend in multiple dimensions.
+00:12:18
+For example, anything beyond three dimensions, maybe four dimensions.
+00:12:22
+Oh, no, no, no. Higher dimensions can be highly, highly applicable. I think this is a common misinterpretation that if you're asking questions about like a five dimensional manifold, that the only way that that's connected to the physical world is if the physical world is itself a five dimensional manifold or includes them.
+00:12:39
+Well, wait, wait, wait a minute. Wait a minute.
+00:12:41
+You're telling me you can imagine a five dimensional manifold?
+00:12:47
+No, no, that's not what I said. I'm I would make the claim that it is useful to a three dimensional physical universe, despite itself not being three dimensional.
+00:12:56
+So it's useful meaning to even understand the three dimensional world would be useful to have five dimensional manifold. Yes, absolutely. Because of state spaces. But you're saying there in some in some deep way for us humans. It does it does always come back to that three dimensional world for the useful usefulness that the dimensional world. And therefore it starts with a discovery. But then we invent the mathematics that helps us make sense of the discovery. In a sense, yes.
+00:13:23
+I mean, just to jump off of the Pythagorean Theorem example, it feels like a discovery. You've got these beautiful geometric proofs where you've got squares and you're modifying the areas. It feels like a discovery. If you look at how we formalize the idea of 2D space as being or to write all pairs of real numbers and how we define a metric on it and define distance like, hang on a second, we've defined distance so that the Pythagorean theorem is true.
+00:13:46
+So suddenly it doesn't feel that great. But I think what's going on is the thing that informed us what metric to put on our to to put on our abstract representation of two displays came from physical observations. And the thing is, there's other metrics you could have put on it. We could have consistent math with other notions of distance. It's just that those pieces of math wouldn't be applicable to the physical world that we study because they're not the ones where the Pythagorean theorem holds.
+00:14:12
+So we have a discovery, a genuine, bona fide discovery that informed the invention, the invention of an abstract representation of 2D space that we call our two and things like that. And then from there, you just study. R2 is an abstract thing that brings about more ideas and inventions and mysteries, which themselves might yield discoveries. Those discoveries might give you insight as to what else would be useful to invent, and it kind of feeds on itself that way.
+00:14:37
+That's how I think about it. So it's not an either or. It's not that math is one of these or it's one of the others. At different times it's playing a different role.
+00:14:45
+So then let me ask the Richard Feynman question then.
+00:14:51
+Along that thread is, what do you think is a difference between physics? Beth. There's a giant overlap there, there's a kind of intuition that physicists have about the world that's perhaps outside of mathematics. It's this mysterious art that they seem to possess. We humans generally possess. And then there's the beautiful rigor of mathematics that allows you to I mean, just as we were saying, invent frameworks of understanding our physical world. So what do you think is the difference there and how big is it?
+00:15:28
+Well, I think of math as being the study of like abstractions over patterns and pure patterns in logic. And then physics is obviously grounded in a desire to understand the world that we live in. Yeah, I think you're going to get very different answers when you talk to different mathematicians, because there's a wide diversity in types of mathematicians. There are some who are motivated very much by pure puzzles. Um, they might be turned on by things like combinatorics.
+00:15:50
+And they just love the idea of building up a set of Problem-Solving tools, applying to pure patterns. Right. There are some who are very physically motivated who who try to invent new math or discover math and Vane's that they know will have applications to physics or sometimes computer science. And that's what drives them like chaos theory is a good example of something that's pure math, that's purely mathematical. A lot of the statements being made, but it's heavily motivated by specific applications to largely physics.
+00:16:21
+And then you have a type of mathematician who just loves abstraction. They just love pulling it the more and more abstract things, the things that feel powerful. These are the ones that initially invented like topology and the later on and get really into category theory and go on about like infinite categories and whatnot. These are the ones that love to have a system that can describe truths about as many things as possible. Right. People from those three different veins of motivation and math are going to give you very different answers about what the relation at play here is, because someone like Vladimir Arnold, who is this, he's written a lot of great books, many about like differential equations and such.
+00:16:59
+He would say math is a branch of physics. That's how he would think about it. And of course, he was studying like differential equations, related things, because that is the motivator behind the study of PD and things like that. Um, but you'll have others who like especially the category theorists who aren't really thinking about physics necessarily. It's all about abstraction and the power of generality. And it's more of a happy coincidence that that ends up being useful for understanding the world we live in.
+00:17:27
+And then you can get into like, why is that the case? That sort of surprising that that which is about pure puzzles in abstraction, also happens to describe the very fundamentals of quarks and everything else.
+00:17:40
+So what do you think? The fundamentals of quarks? And and the nature of reality is so compressible into clean, beautiful equations that are, for the most part simple, relatively speaking, a lot simpler than they could be to have.
+00:17:59
+We mentioned to many, like Stephen Wolfram, who thinks that sort of there's incredibly simple rules underlying our reality, but it can create arbitrary complexity.
+00:18:11
+But there is simply equations. What I'm asking a million questions that nobody knows the answer to, but no idea.
+00:18:19
+Why is it simple? I it could be the case that there's like a filter and I play the only things that physicists find interesting are the ones that are simple enough. They could describe it mathematically. Right. But as soon as it's a sufficiently complex system, you know, that's outside the realm of physics, that's biology or whatever have you. And of course, that's true. You know, maybe there's something where it's like, of course, there will always be some thing that is simple.
+00:18:43
+When you wash away, uh, the like non important parts of whatever it is that you're studying just seems like an information theory standpoint. There might be some like you get to the lowest information component of it, but I don't know, maybe I'm just having a really hard time conceiving of what it would even mean for the fundamental laws to be like intrinsically complicated, like some some set of equations that you can't decouple from each other.
+00:19:09
+We know it could be it could be that it's sort of we take for granted that the the laws of physics, for example, are for the most part the same everywhere or something like that.
+00:19:21
+Right.
+00:19:21
+As opposed to the sort of an alternative. Could be that the rules under which. The world operates is different everywhere. It's like a like a deeply distributed system where just everything is just chaos, like not not in a strict definition of chaos, but meaning like just it's impossible for equations to capture, for to explicitly model the world as cleanly as the physical does. I mean, we almost take it for granted that we can describe we can have an equation for gravity, for action at a distance.
+00:19:59
+We can have equations for some of these basic ways. The plan is moving just the the low level of the atomic scale, how the materials operate at the high scale, how black holes operate.
+00:20:13
+But it doesn't it it seems like it could be infinite other possibilities where none of it could be compressed into such equations. So it just seems beautiful.
+00:20:23
+It's also weird, probably to the point you're making, that it's very pleasant, that this is true for our minds. Right. So it might be that our minds are biased to just be looking at the parts of the universe that are compressible and then we can publish papers on and have nice eco's empty squared equations. Right.
+00:20:43
+Well, I wonder, would such a world with incompressible laws allow for the kind of beings that can think about the kind of questions that you're asking? That's true, right? Like an anthropic principle coming into play at some weird way here.
+00:20:59
+I don't know. Like, I don't know what I'm talking about it. Or maybe the universe is actually not so compressible, but the way our brain, the the way our brain evolved were only able to perceive the compressible parts. I mean, we are so this is a sort of Chomsky argument. We are just descendants of apes over like a really limited biological systems. So it totally makes sense that we're really limited little computers.
+00:21:24
+Calculators that are able to pursue certain kinds of things in the actual world is much more complicated.
+00:21:30
+But we can we can do pretty awesome things, right? Like we can fly spaceships and we have to have some connection of reality to be able to take our potentially oversimplified models of the world, but then actually twist the world to our will based on it. So we have certain reality checks that, like physics, isn't too far afield simply based on what we can do. And the fact that we can fly is pretty good. It's great. It's like an old concept that the laws were working with our are working well.
+00:22:01
+So I mentioned to the Internet that I'm talking to you and so the Internet gives some questions. So I apologize for this. But do you think we're living in a simulation that the universe is a computer or the universe is a computation running a computer? It's conceivable what I don't buy is, you know, you'll have the argument that, well, let's say that it was the case that you can have simulations, then the simulated world would itself eventually get to a point where it's running simulations.
+00:22:32
+And then the second layer down would create a third layer down and on and on and on. So probabilistically, you just throw a dart at one of those layers were probably in one of the simulated layers. Mm hmm. I think if there's some sort of limitations on the information processing of whatever the physical world is like, it quickly becomes the case that you have a limit to the layers that could exist there, because like the resources necessary to simulate a universe like ours clearly is a lot just in terms of the number of bits at play.
+00:23:00
+And so then you can ask, well, what's more plausible that there's an unbounded capacity of information processing in whatever the highest up level universe is, or that there's some bound to that capacity which then limits like the number of levels available? How do you play some kind of probability distribution on what the information capacity is? I have no idea, but I don't like people almost assume a certain uniform probability over all of those metal layers that could conceivably exist when it's a little bit like a Pascal's wager, like you're not giving a low enough prior to the mere existence of that infinite set of layers.
+00:23:37
+Yeah, that's true. But it's also very difficult to contextualize the amounts of the amount of information processing power required to simulate like our universe seems like amazingly huge. But you can always raise two to the power of that. Yeah, like numbers get big and we're easily humbled by basically everything around us.
+00:24:00
+So it's very difficult to.
+00:24:03
+To kind of make sense of anything, actually, when you look up at the sky and look at the stars and the immensity of it all to make sense of us, the smallness of us, the unlikeliness of everything that's on this earth coming to be, then you could basically anything could be all laws of probability go out the window to me, because I guess because the amount of information under which we're operating is very low, we basically know nothing about the world around us, relatively speaking.
+00:24:40
+So so when I think about the simulation I pass, I think it's just fun to think about it.
+00:24:45
+But it's also I think there is a thought experiment, kind of interesting to think of the power of computation, whether at the limits of a Turing machine, sort of the limits of our current computers.
+00:24:57
+When you start to think about artificial intelligence, how far can we get with computers?
+00:25:02
+Mm hmm. And that's kind of where the simulation of us is useful to me as a thought experiment. Is, is the universe just the computer?
+00:25:13
+Is it just the computation, is all of this just the computation and sort of the same kind of tools we apply to analyzing algorithms, can that be applied? You know, if you scale further and further and further, well, the arbitrary power of those systems start to create some interesting aspects that we see in our universe or something fundamentally different needs to be created.
+00:25:34
+Well, it's interesting that in our universe, it's not arbitrarily large. The power that you can place limits on, for example, how many bits of information can be stored per unit area. Right. Like all of the physical laws, you've got general relativity and quantum coming together to give you a certain limit on how many bits you can store within a given range before it collapses into a black hole. Like the idea that there even exists such a limit is at the very least thought provoking, when naively you might assume, oh, well, you know, technology could always get better and better.
+00:26:05
+We could get cleverer and cleverer, and you could just cram as much information as you want into like a small unit of space. Um, that. Makes me think it's at least plausible that. Whatever the highest level of existence is, doesn't admit. Too many simulations or ones that are at the scale of complexity that we're looking at. Obviously it's just as conceivable that they do and that there are many. But I guess what I'm channeling is the surprise that I felt upon learning that fact.
+00:26:39
+There are that information is physical in this way, that there's a finite. OK, let me just even go off on that. From mathematics perspective and the psychology perspective, how do you mix are you psychologically comfortable with the concept of infinity? I think so. Are you OK with it? I'm pretty OK? Yes. Are you OK? No, not really. It doesn't make any sense to me. I don't like how many how many words, how many possible words do you think could exist?
+00:27:10
+That are just like strings of letters. So that's a sort of mathematical statement that's beautiful and we use infinity and basically everything we do, everything we do in science, math and engineering.
+00:27:22
+Yes, but you said exist. My question is, you said letters of words. I said words for the to bring words into existence to me.
+00:27:34
+You have to start like saying them or writing them or like listing them.
+00:27:38
+That's an instantiation. OK, how many how many abstract words would the idea of an abstract the the the idea of abstract notions and ideas? I think we should be clear on terminology. I mean, you think about intelligence a lot like artificial intelligence. Would you not say that what it's doing is a kind of abstraction, like abstraction is key to conceptualizing the universe? You get this raw sensory data you need. I need something that every time you move your face a little bit and they're not pixels, but like analog of pixels on my retina change entirely, that I can still have some coherent notion of this is like, yes, right.
+00:28:16
+What that requires is you have a disparate set of possible images hitting me that are unified in the notion of legs. Yeah, right. That's a kind of abstraction. It's a thing that could apply to a lot of different images that I see. And it represents it in a much more compressed way and one that's like much more resilient to that. I think in the same way, if I'm talking about infinity as an abstraction, I don't mean non-physical.
+00:28:39
+We will like ineffable or something. What I mean is that something that can apply to a multiplicity of situations that share certain common attributes in the same way that the images of like your face on my retina share enough common attributes that I can put the single notion to it. Like in that way, infinity is an abstraction and it's very powerful. And it's only through such abstractions that we can actually understand, like the world and logic and things. And in the case of infinity, the way I think about it, the key entity is the property of always being able to add one more like no matter how many words you can list, you just throw in a at the end of one and you have another conceivable word.
+00:29:15
+Yes. You don't have to think of all the words at once. It's that property, the oh, I could always add one more that gives it this nature of infinity in the same way that there's certain like properties of your face that give it the laxness. Right. Um, so like infinity should be no more worrying than the. I can always add one more sentiment. That's a really elegant, much more elegant way than I could put it.
+00:29:40
+So thank you for doing that as yet another abstraction. And yes, indeed, that's what our brain does. That's what intelligence system do. That's what programming does. That's what science does, is build abstraction on top of each other. And yet there is a certain point of abstractions that go into the quote, woo, right.
+00:30:00
+Sort of.
+00:30:02
+And because we're now it's like it's like we built a stack of you know, the only thing that's true is the stuff that's on the ground.
+00:30:11
+Everything else is useful for interpreting this. And a certain point you might start floating into ideas that are surreal and difficult and take us into areas that are disconnected from reality in a way that we could never get back.
+00:30:27
+What if instead of calling these abstract, how different would it be in your mind if we called them general? And the phenomenon that you're describing is overgeneralization. When you try them channelization, you have a concept or an idea that's so general as to apply to nothing in particular in a useful way. Does that map to what you're thinking of when you think of, first of all, playing little just for the fun of it? Yeah, the devil's advocate and I, I think our cognition, our mind is unable to visualize.
+00:30:55
+So you do some incredible work with visualization and video, I think.
+00:31:00
+Infinity is very difficult to visualize for our mind, we can delude ourselves into thinking, we can visualize it, but we can't. I don't I mean, I don't I would venture to say it's very difficult. And so there's some concepts of mathematics, like maybe multiple dimensions that are impossible for us to truly intuit like.
+00:31:24
+And it just feels dangerous to me to use these as part of our toolbox of abstractions.
+00:31:33
+On behalf of your listeners, I almost feel we're getting too philosophical. I kind of actually I think to that point, for any particular idea like this, there's multiple angles of attack. I think when we do visualize infinity, what we're actually do, you write dot, dot, dot, one, two, three, four, dot, dot, dot. That's those are symbols on the page that are insinuating a certain infinity. Um, what you're capturing with a little bit of design there is the I can always add one more property.
+00:32:05
+Right. I think I'm just as uncomfortable with you are if you try to concretize it so much that you have a bag of infinitely many things that I actually think of. No, not one, two, three, four, dot, dot, dot. One, two, three, four, five, six, seven, eight. I try to get them all in my head and you realize, oh, you know, your brain would literally collapse into a black hole.
+00:32:25
+All of that. And I honestly feel this with a lot of math that I try to read where I, I don't think of myself as like particularly good at math in some ways.
+00:32:36
+Like, I get very confused often when I am going through some of these texts. And often what I'm feeling my head is like, this is just so damn abstract. I just can't wrap my head around it. I just want to put something concrete to it that makes me understand. And I think a lot of the motivation for the channel is channeling that sentiment of. Yeah, a lot of the things that you're trying to read out there. It's just so hard to connect to anything that you spend an hour banging your head against a couple of pages and you come out not really knowing anything more other than some definitions maybe, and a certain sense of self defeat.
+00:33:11
+Right. One of the reasons I focus so much on visualizations is that I'm a big believer in I'm sorry. I'm just really hammering on this idea of abstraction being clear about your layers of abstraction. Yes, right. It's always tempting to start an explanation from the top to the bottom. OK, you give the definition of a new theorem like this is the definition of a vector space, for example. We're going to that's how we'll start. Of course, these are the properties of a vector space.
+00:33:36
+The first from these properties. We will derive what we need in order to do the math of linear algebra or whatever it might be. Um, I don't think that's how understanding works at all. I think how understanding works is you start at the lowest level. You can get it where rather than thinking about a vector space, you might think of concrete vectors that are just lists of numbers or picturing it as like an arrow that you draw, um, which is itself like even less abstract the numbers, because you're looking at quantities like the distance of the X, coordinate the distance of the Y coordinate.
+00:34:05
+It's as concrete as you could possibly get. And it has to be if you're putting it in a visual. Right, like it's an actual arrow, it's an actual vector. You're not talking about like a quote unquote vector that could apply to any possible thing. You have to choose one if you're illustrating it. And I think this is the power of being in a medium like video, or if you're writing a textbook and you force yourself to put a lot of images, is with every image you're making a choice.
+00:34:31
+With each choice, you're showing a concrete example. With each concrete example, you're reading someone's path to understanding.
+00:34:37
+You know, I'm sorry to interrupt you, but you just made me realize that. That's exactly right. So the visualization is you're creating while you're sometimes talking about abstractions, the actual visualization is an explicit, low level example. Yes. So there there's an action like in the code, you have to say what the what the vector is, what's the direction of the arrow? What's the magnitude of that? Yeah. So that's you're going the visualization itself is actually going to the bottom, I think.
+00:35:07
+And I think that's very important. I also think about this a lot in writing scripts where even before you get to the visuals, the first instinct is to I don't know why it I just always do. I say the abstract thing, I say the general definition, the powerful thing, and then I fill it in with examples later. Always it will be more compelling and easier to understand when you flip that and instead you let someone's brain do the, uh, pattern recognition.
+00:35:32
+You just show them a bunch of examples. The brain is going to feel a certain similarity between them. Then by the time you bring in the definition or by the time you bring in the formula, it's articulating a thing that's already in the brain that was built off of looking at a bunch of examples with a certain kind of similarity. And what the formula does is articulate what that kind of similarity is rather than being a a high cognitive load set of symbols that needs to be populated with.
+00:36:00
+Examples later on, assuming someone still with you, what is the most beautiful or inspiring idea you've come across in mathematics? I don't know, man.
+00:36:11
+Maybe it's an idea of exploring your videos. Maybe not what Mike just gave you.
+00:36:16
+Pause. It's the most beautiful idea, small or big.
+00:36:21
+So I think often the things that are most beautiful are the ones that you have like and a little bit of understanding of, but certainly not an entire understanding. It's a little bit of that mystery. That is what makes it beautiful. Almost the moment of the discovery for you personally, almost just that leap of aha moment.
+00:36:40
+So something that really caught my eye. I remember when I was little, there were these like I think the series was called like wooden books or something, these tiny little books that would have just a very short description of something on the left and then a picture on the right. I don't know who they're meant for, but maybe it's like Loosley children or something like that. But it can't just be children because of some of the things I was describing on the last page of one of them.
+00:37:01
+Some were tiny and there was this little formula that on the left hand had a sum over all of the natural numbers. You know, it's like one over one to the S plus one over to to the S plus one over three to the S on and on to the infinity. Then on the other side had a product over all of the problems and it was a certain thing had to do with all the primes. And like any good young math enthusiast, they'd probably been indoctrinated with how chaotic and confusing the primes are, which they are, and seeing this equation where on one side you have something that's as understandable as you could possibly get the counting numbers.
+00:37:34
+Yes. And on the other side is all the prime numbers. It was like this. Well, they're related like this. There's a simple description that includes, like all the primes getting wrapped together like this. This is like the Oilor product for the Zeta function. As I later found out, the equation itself essentially encodes the fundamental theorem of arithmetic that every number can be expressed as a unique set of primes. To me. Still, there's I mean, I certainly don't understand this equation or this function all that well.
+00:38:03
+The more I learn about it, the prettier it is. The idea that you can do this is sort of what gets you representations of primes. Not in terms of primes themselves, but in terms of another set of numbers are like the non-trivial zeros of the Zeta function. And again, I'm very kind of in over my head in a lot of ways as I try to get to understand it. But the more I do, it always leaves enough mystery that it remains very beautiful to me.
+00:38:28
+So whenever there's a little bit of mystery just outside of the understanding that the and by the way, the process of learning more about it, how does that come about, just your own thought or are you reading?
+00:38:40
+Reading. So or is the process, the visualization itself revealing more to you visuals help?
+00:38:45
+I mean, in one time when I was just trying to understand, like analytic continuation and playing around with visualizing complex functions, this is what led to a video about this function. It's titled Something Like Visualizing the Remains of Function. It's one that came about because I was programming and tried to see what a certain thing looked like. And then I looked at it like, well, that's elucidating. And then I decide to make a video about it. Um, but I mean, you try to get your hands on as much reading as you can.
+00:39:14
+You you know, in this case, I think if anyone wants to start to understand it, if they have like a a math background, it's like they studied them in college or something like that. Um, like the Princeton Companion to Math has a really good article on analytic number theory. And that itself has a whole bunch of references and, you know, anything has more references. And it gives you this, like tree to start pulling through.
+00:39:36
+And like, you know, you try to understand I try to understand things visually as I go. That's not always possible. Um, but it's very helpful when it does. You recognize when there's common themes like in this case. Cousins of the 48 transform that come into play and you realize, oh, it's probably pretty important to have deep intuitions of the year transform, even if it's not explicitly mentioned in these texts and you try to get a sense of what the common players are.
+00:40:01
+But I'll emphasize again, like I feel very in over my head when I try to understand the exact relation between the zeroes of the human data function and how they relate to the distribution of primes. I definitely understand it better than I did a year ago. I definitely understand that one one hundredth as well as the experts on the matter, do I assume. But the slow path towards getting there is it's fun. It's charming and like to your question, very beautiful.
+00:40:29
+And the beauty is in the what? In the journey versus the destination?
+00:40:33
+Well, it's the thing doesn't feel arbitrary. I think that's a big part, is that you have these unpredictable non. Yeah. These very unpredictable patterns where these intricate properties of like a certain function. Um, but at the same time it doesn't feel like humans ever made an arbitrary choice in studying this particular thing. So it feels like you're speaking to patterns themselves or nature itself. That's a big part of it. Um, I think things that are too arbitrary, it's just hard for those to feel beautiful because.
+00:41:04
+And this is sort of what the word contrived is meant to apply to rape, and when they're not arbitrary means it could be. You can have a clean abstraction and intuition that allows you to comprehend it.
+00:41:21
+Well, to one of your first questions, it makes you feel like if you came across another intelligent civilisations, that they'd be studying the same thing, maybe with different notation. But personally.
+00:41:30
+Yeah, but yeah, that's what I think. You talk to that other civilization there, probably also studying the zeroes of the remains at a function or like some variant thereof that is like a clearly equivalent cousin or something like that. But that's probably on their on their docket. Whenever somebody does a lot of something amazing, I'm going to ask the question that that you've already been asked a lot, that you get more and more asked in your life.
+00:41:59
+But what was your favorite video to create? Oh. Favorite to create one of my favorites is the title is Who Cares About Topology? I'm going to pull it up and if you want.
+00:42:12
+Sure. Yeah, it is about. Well, it starts by describing an unsolved problem that still unsolved in math called the inscribed square problem. You draw any loop and then you ask, are there four points on that loop that make a square totally useless, right? This is not answering any physical questions. It's mostly interesting that we can't answer that question. And it seems like such a natural thing to ask.
+00:42:34
+Now, if you weaken it a little bit and you ask, can you always find a rectangle, you choose four points on this curve. Can you find a rectangle? That's hard, but it's doable. And the path to it involves things like looking at a tourist this surface with a single hole in it, like a doughnut. We're looking at a Mobius strip in ways that feel so much less contrived to when I first, like a little kid, learned about these surfaces and shapes like a Mobius strip and a it's like what you learn is, oh, this may be a strip.
+00:43:04
+You take a piece of paper, put a twist glued together, and now you have a shape with one edge and just one side. And as a student, you should think, who cares? Right. Like, how does that help me solve any problems? I thought math was about problem solving. So what I liked about the piece of math that this was describing that was in this paper by a mathematician named Von was that it arises very naturally.
+00:43:29
+It's clear what it represents. It's doing something. It's not just playing with construction paper. And the way that it solves the problem is really beautiful. So kind of putting all of that down and concretize it. Right. Like I was talking about how when you have to put visuals to it, it demands that what's on screen is a very specific example of what you're describing. The construction here is very abstract in nature. You describe this very abstract kind of surface in 3-D space.
+00:43:55
+So then when I was finding myself in this case, I wasn't programming. I was using graphics that's like built into OSX for the 3D stuff to draw that surface. You realize, oh man, the topology argument is very nonconstructive. I have to make a lot of you have to do a lot of extra work in order to make the surface show up. But then once you see it, it's quite pretty and it's very satisfying to see a specific instance of it.
+00:44:18
+And you also feel like I've actually added something on top of what the original paper was doing, that it shows something that's completely correct. It's a very beautiful argument, but you don't see what it looks like. And I found something satisfying in seeing what it looked like that could only ever come about from the forcing function of getting some kind of image on the screen to describe the thing I was talking about, you almost weren't able to anticipate was going to look like.
+00:44:41
+I had no idea. I had no idea. And it was wonderful. It was totally it looks like a Sydney Opera House or some sort of Frank Gehry design. And it was you knew it was going to be something. And you can say various things about it, like, oh, it it touches the curve itself. It has a boundary that's the curve on the 2D plane. It all sits above the plane. But before you actually do it, it's very unclear what the thing will look like.
+00:45:04
+And to see it, it's very it's just pleasing. Right. So that was that was fun to make. Very fun to share. I hope that it has elucidated for some people out there where these constructs of topology come from, that it's not arbitrary. Play with construction paper.
+00:45:20
+Let's I think this is a good sort of example to talk a little bit about your process.
+00:45:26
+You have you have a list of ideas that's sort of the curse of having having an active and brilliant mind, as I'm sure you have a list that's growing faster than you can utilize nail on the head.
+00:45:40
+Absolutely.
+00:45:41
+But there's some sorting procedure depending on mood and interest and so on.
+00:45:46
+But you pick an idea, then you have to try to write a narrative arc that's sort of how do I elucidate how how do I make this idea beautiful and clear and explain it? And then there's a set of visualizations that would be attached to it. Sort of. You've talked about some of those before, but sort of writing the story, attaching the visualizations. Can you talk to interesting, painful, beautiful parts of their process? Well, the most painful is if you've chosen a topic that you do want to do.
+00:46:20
+But then it's hard to think of, I guess, how to structure the script. Um, this is sort of where I have been on one for, like the last two or three months. And I think that ultimately the right resolution is just like set it aside and instead, um, do some other things where the script comes more naturally because you sort of don't want to overwork a a narrative at the more you've thought about it, the less you can empathize with the student who doesn't yet understand the thing you're trying to teach.
+00:46:45
+Who is the judge in your head? Sort of the person, the creature, the essence that's saying this sucks or this is good. And you mentioned kind of the student you're you're thinking about.
+00:46:58
+Um, can you, uh. Who is that? What is that thing?
+00:47:02
+That's that's that's the perfections that says this thing sucks. You need to work on it for another two or three months. I don't know, I think it's my past self, I think that's the entity that I'm most trying to empathize with, is like you take who I because it's kind of the only person I know, like, you don't really know anyone other than versions of yourself. So I start with the version of myself that I know who doesn't yet understand the thing.
+00:47:26
+Right. And then I just try to view it with fresh eyes, a particular visual or a particular script like is this motivating? Does this make sense? Which has its downsides? Because sometimes I find myself speaking to motivations that only myself would be interested in. I don't know, like I did this project on quaternions where what I really wanted was to understand what are they doing in four dimensions? Can we see what they're doing in four dimensions? Right.
+00:47:54
+And I had a way of thinking about it that really answered the question in my head that made me very satisfied and being able to think about concretely with a 3D visual, what are they doing to a 40 sphere? And so I'm like, this is exactly what my past self would have wanted. Right? And I make a thing on it. And I'm sure it's what some other people wanted to it. But in hindsight, I think most people who want to learn about quaternions are like robotics engineers or graphics programmers who want to understand how they're used to describe 3D rotations and like their use case was actually a little bit different than my past self.
+00:48:25
+And in that way, like, I wouldn't actually recommend that video to people who are coming at it from that angle of wanting to know, hey, I'm a robotics programmer. Like, how do these quaternion things work to describe position in 3D space? I would say other great resources for that. If you ever find yourself wanting to say like but hang on, in what sense are they acting in four dimensions, then come back. But until then, it's a little different.
+00:48:51
+Yeah, it's interesting because you have incredible videos on your networks, for example.
+00:48:56
+And from my perspective of probably I mean, I looked at the is sort of my field and I've also looked at the basic introduction of neural networks like a million times from different perspectives. And it made me realize that there is a lot of ways to present it. So you are sort of you did an incredible job and it's sort of the thing, but you could also do differently.
+00:49:19
+And also incredible like to create a beautiful presentation of a basic concept is requires sort of creativity, requires genius and so on. But you can take it from a bunch of different perspectives. And that video that works and you realize that. And just as you're saying, you kind of have a certain mindset, a certain view.
+00:49:42
+But from if you take a different view from a physics perspective, from a neuroscience perspective, talking about neural networks or from.
+00:49:53
+Robotics perspective or from, let's see, from a pure learning statistics perspective, so you can create totally different videos and you've done that with a few actually concepts where you have taken different Kossak at the at the, uh, at the oil equation. Right. The you've taken different views of that. And I think I've made three videos on it, and I definitely will make at least one more. Never enough.
+00:50:19
+Never enough. So you don't think it's the most beautiful equation in mathematics? Like I said, as we represent it, it's one of the most hideous. It involves a lot of the most hideous aspects of our notation I talked about is the fact that we use PI instead of tau, the fact that we call imaginary numbers imaginary. And then I actually wonder if we use the AI because of imaginary. I don't know if that's historically accurate, but at least a lot of people read the AI and they think imaginary, like all three of those facts.
+00:50:48
+It's like those are things that have added more confusion that they needed to. And we're wrapping them up in one equation like, boy, that's just very hideous, right? The idea is that it does tie together when you wash away the notation like it's OK. It's pretty.
+00:51:00
+It's it's nice, but it's not like mindblowing greatest thing in the universe, which is maybe what I was thinking of when I said, like, once you understand something, it doesn't have the same beauty. Like I feel like I understand Euler's formula and I feel like I understand it enough to sort of see the the version that just woke up that hasn't really gotten itself dressed in the morning. That's a little bit groggy and there's bags under its eyes. So you feel like it's past the the the the dating stage.
+00:51:30
+And we're no longer dating dating the Zeta functions. And like, she's beautiful and right. And like, we have fun and it's that that high dopamine part for like maybe at some point will settle into the more mundane nature of the relationship where I, like, see her for who she truly is and still be beautiful in her own way. But it won't have the same romantic pizzazz. Right? Well, that's the nice thing about mathematics. I think as long as you don't live forever, there will always be enough mystery and fun with some of the equations.
+00:51:59
+Even if you do the rate at which questions comes up as much faster than the rate at which answers come up. So if you could live forever, would you?
+00:52:07
+I think so, yeah. Do you think you don't think mortality is the thing that makes life meaningful? Would your life be four times as meaningful if you died at twenty five?
+00:52:17
+So this goes to infinity? I think you and I that's really interesting. So what I said is infinite. Not not four times longer said infinite. So the the actual existence of the finiteness, the existence of the end, no matter the length, is the thing that may sort of from my comprehension of psychology.
+00:52:39
+It's such a deeply human. It's such a fundamental part of the human condition. The fact that there is that we're mortal, that the fact that things and it seems to be a crucial part of what gives them meaning, I don't think, at least for me, like it's a very small percentage of my time that mortality is salient, that I'm aware of the end of my life.
+00:53:03
+What do you mean by me? I'm I'm trolling is that the ego is at the ED, there's the super ego is so you're the reflective self Bernanke's area that puts all this stuff into words. Yeah. A small percentage of your mind that is actually aware of the true motivations that drive you.
+00:53:23
+But my point is that most of my life, I'm not thinking about that, but I still feel very motivated to make things and to like interact with people like experience, love or things like that. I'm very motivated. And I it's strange that that motivation comes while death is not in my mind at all. And this might just be because I'm young enough that it's not salient or it's in your subconscious, or they construct an illusion that allows you to escape the fact of your mortality by enjoying the moments, sort of the existential approach to life could be, um, a gun to my head.
+00:53:53
+I don't think that's it. Yeah. Another another sort of would say gun to the head is the deep psychological introspection of what drives us. I mean, that's in some ways to me. I mean, when I look at math, when I look at science, it's a kind of an escape from reality in a sense that it's so beautiful.
+00:54:11
+It's such a beautiful journey of discovery that it allows it to actually it allows you to achieve a kind of immortality of of explore ideas and sort of connect yourself to the thing that is seemingly infinite, like the universe. Right.
+00:54:30
+That allows you to escape the limited nature of our little of our bodies or of our existence.
+00:54:40
+What else would give this podcast meaning? That's right. If not, the fact that it will end this place closes in in forty minutes and it's so much more meaningful for it. How much more? I love this room because we'll be kicked out. So I understand just because you're trolling me doesn't mean I'm wrong.
+00:55:02
+But I take your point. I take your point. Boy, that would be a good Twitter bio. Just because you're trolling me, it doesn't mean I'm wrong.
+00:55:10
+Yeah. And and sort of difference in backgrounds. I'm a bit Russian, so we're a bit melancholic and seem to maybe assign a little too much value to suffering and mortality and things like that. Make makes for a better novel I think. Oh yeah. You need, you need some sort of existential threat. Yeah.
+00:55:30
+To drive a plot. So when do you know when the video is done.
+00:55:35
+When you're working on it.
+00:55:37
+That's pretty easy actually, because I mean I write the script. I want there to be some kind of aha. Moment in there. And then hopefully the script can revolve around some kind of aha moment. And then from there, you know, you're putting visuals to each sentence that exists and then you narrate it, you edit it all together. So given that there's a script, the the end becomes quite clear. Um, and you know, as, as a, as a animated, I often change the certainly the specific words, but sometimes the structure itself.
+00:56:05
+Um, but it's a very deterministic process at that point. It makes it much easier to predict when something will be done. How do you know when a script is done? It's like for problem solving videos. That's quite simple. It's it's once you feel like someone who didn't understand the solution now could for things like neural networks, that was a lot harder because like you said, there's so many angles at which you could attack it. Um, and then it's just at some point you feel like this this ask a meaningful question and it answers that question.
+00:56:34
+What is the best way to learn math for people who might be at the beginning of that journey? I think that's a it's a question that a lot of folks kind of ask and think about. And it doesn't even for folks who are not really at the beginning of their journey like there might be, actually is deep in their career or some type. They've taken college or taking calculus and so on, but still want to sort of explore math. What would be your advice and sort of education at all ages?
+00:56:59
+Your temptation will be to spend more time like watching lectures or reading, try to force yourself to do more problems than you naturally would. That's a big one. Um, like the defocused time that you're spending should be on, like solving specific problems and seek entities that have well curated lists of problems to go into, like a textbook almost, and the problems in the back of a back of a chapter.
+00:57:24
+So if you can take a little look through those questions at the end of the chapter before you read the chapter, a lot of them won't make sense. Some of them might. And those are those are the best ones to think about. A lot of them won't. But just, you know, take a quick look and then read a little bit of the chapter and then maybe take a look again and things like that. And don't consider yourself done with the chapter until you've actually worked through a couple of exercises.
+00:57:44
+Right. Um, and this is so hypocritical, right. Because I put out videos that pretty much never have associated exercises. I just view myself as a different part of the ecosystem, which means I'm kind of admitting that you're not really learning, or at least this is only a partial part of the learning process. If you're watching these videos. Um, I. If someone's at the very beginning, like I do think Khan Academy does a good job, they have a pretty large set of questions you can work through just a very basic sort of just picking, picking up, getting getting comfortable with the very basic of algebra.
+00:58:17
+Calculus on Khan Academy programming is actually, I think, a great like learn to program and like let the way that math is motivated from that angle push you through. I know a lot of people who didn't like math got into programming in some way and that's what turned them on to math. Maybe I'm biased because I live in the Bay Area, so I'm more likely to run into someone who has that phenotype. But I am willing to speculate that that is a more generalizable path.
+00:58:44
+So you yourself kind of in creating the videos, are using programming to illuminate a concept for yourself as well.
+00:58:51
+So would you recommend somebody try to make a sort of almost like try to make videos like you do? What's the one thing I've heard before? I don't know if this is based on any actual study. This might be like a total fictional anecdote of numbers, but it rings in the mind as being true. You remember about 10 percent of what you read. You remember about 20 percent of what you listen to. Remember about 70 percent of what you actively interact with in some way.
+00:59:14
+And then about 90 percent of what you teach is a thing. I heard again, those numbers might be meaningless, but they ring true, don't they? I'm willing to say I learned the nine times better than reading. That might even be a lowball. Right. So so doing something to teach or to, like, actively try to explain things is huge for consolidating the knowledge outside of family and friends.
+00:59:36
+Is there a moment you can remember that you would like to relive because it makes you truly happy or it was transformative in some fundamental way, a moment that was transformative or made you truly happy?
+00:59:51
+Yeah, I think there's times like music used to be a much bigger part of my life than it is now, like when I was a teenager and I can think of some and like playing music. Um, there was one like my my brother and a friend of mine. The slightly violates the family and friends, but it was the music that made me happy. They were just something we like played a gig at a ski resort such that you like take a gondola to the top and like did a thing.
+01:00:17
+Then on the gondola ride down, we decided to just jam a little bit. And it was just like, I don't know, the gondola sort of over came over a mountain and you saw the city lights. And we're just like jamming, like playing some music. I wouldn't describe that transformative. I don't know why, but that popped into my mind as a moment of, uh, in a way that wasn't associated with people I love, but more with a good thing.
+01:00:39
+I was doing something that was just it was just happy and it was just like a great moment. Um, I don't think I can give you anything deeper than that.
+01:00:48
+Well, as a musician myself, I'd love to see, as you mentioned before, music enter back into your work and back into your creative work. I'd love to see that. I'm certainly allowing it to enter back into mine. And it's it's a it's a beautiful thing for mathematician, for scientists to allow music to enter their work. I think only good things can happen. And I'll try to promise you a music video by twenty. Twenty by twenty.
+01:01:14
+By the end of twenty twenty.
+01:01:16
+Give myself a longer window that maybe we can like collaborate on a band type situation. What instruments do you play? The main instrument I play is violin, but I also love to dabble around on the guitar and piano, guitar and piano. So in in the mathematician's limit, Paul Lockhardt writes, The first thing to understand is that mathematics is an art. The difference between math and the other arts, such as music and painting, is that our culture does not recognize it as such.
+01:01:46
+So I think I speak for millions of people, myself included, in saying thank you for revealing to us the art of mathematics.
+01:01:56
+So thank you for everything you do. And thanks for talking today.
+01:01:58
+Well, thanks for saying that and thanks for having me on. Thanks for listening to this conversation. Grant Sanderson, and thank you to our presenting sponsor cash app, download it, use code Leks podcast. You'll get ten dollars and ten dollars will go to First, a STEM education nonprofit that inspires hundreds of thousands of young minds to become future leaders and innovators to enjoy this podcast. Subscribe on YouTube. Give it five stars, an Apple podcast. Support on Patron or connect with me on Twitter.
+01:02:29
+And now let me leave you with some words of wisdom from one of grants and my favorite people, Richard Feynman. Nobody ever figures out what this life is all about, and it doesn't matter, explore the world, nearly everything is really interesting if you go into it deeply enough. Thank you for listening and hope to see you next time.

@@ -1,0 +1,322 @@
+00:00:00
+The following is a conversation with Vijay Kumar. He's one of the top roboticists in the world, a professor at the University of Pennsylvania, a dean of Penn engineering, former director of Grasp Lab, or the General Robotics, Automation Sensing and Perception Laboratory at Penn that was established back in 1979.
+00:00:20
+That's 40 years ago. Vijay is perhaps best known for his work in multi robot systems, robots, worms and micro aerial vehicles, robots that elegantly cooperate in flight under all the uncertainty and challenges that the real world conditions present. This is the Artificial Dosis podcast. If you enjoy it, subscribe on YouTube. Give five stars on iTunes, supported on Patrón or simply connect with me on Twitter. Àlex Friedman spelled F.R. Idi Amin. And now here's my conversation with Vijay Kumar.
+00:01:15
+What is the first robot you've ever built or a part of building? Way back when I was in graduate school, I was part of a fairly big project that involved building a very large hexapod swade. Close to seven thousand pounds, and it was. Powered by hydraulic actuation. Or is actuated by hydraulics with 18 motors, hydraulic motors. Each controlled by an Intel 80 85 processor and an eighty eighty six code processor.
+00:01:54
+And so imagine this huge monster that had 18 joints, each controlled by an independent computer, and there was a 19 computer that actually did the coordination between these 18 joints. So as part of this project and. My thesis work was how do you coordinate the 18 legs and in particular the the pressures in the hydraulic cylinders to get efficient locomotion? It sounds like a giant mess.
+00:02:28
+How difficult is it to make all the motors communicate? Presumably you have to send signals hundreds of times a second, or at least this was not my word.
+00:02:36
+But the the folks who worked on this wrote what I believed to be the first multiprocessor operating system. This was in the 80s. And you have to make sure that obviously messages got across from one joint to another. You have to remember the the clock speeds on those computers were about half a megahertz. Right.
+00:02:56
+So the is so not to romanticize the notion, but how did it make you feel to make to see that robot move?
+00:03:07
+It was amazing in hindsight, it looks like, well, we built the thing which really should have been much smaller. And of course, today's robots are much smaller. You look at. You know, Boston Dynamics are Ghost Robotics, a spinoff from from Penn. But back then, you're stuck with the substrate, you had the compute, you had to things were unnecessarily big, but at the same time, and this is just human psychology, somehow bigger means grander.
+00:03:37
+You know, people never had the same appreciation for nanotechnology or nano devices as they do for the space shuttle or the Boeing 747.
+00:03:46
+Yeah, you've actually done quite a good job at illustrating that small is beautiful in terms of robotics.
+00:03:54
+So what is on that topic is the most beautiful or elegant robot emotion that you've ever seen, not to pick favorites or whatever, but something that just inspires you that you remember?
+00:04:07
+Well, I think the thing that I'm I'm most proud of that my students have done is really think about small waves that can maneuver and constrain spaces and in particular, their ability to coordinate with each other and form three dimensional patterns. So once you can do that. You can essentially create 3-D objects in the sky and you can form these objects on the fly. So in some sense, your toolbox of what you can create is suddenly got enhanced.
+00:04:43
+And before that, we did the two dimensional version of the so we had our ground robots forming patterns and so on, so that that was not as impressive as beautiful. But if you do it in 3D, suspended in midair and you've got to go back to 2011 when we did this, now, it's actually pretty standard to do these things eight years later. But back then, it was a big accomplishment.
+00:05:06
+So the distributed cooperation is where is what beauty emerges?
+00:05:11
+Yes, I think beauty to an engineer is very different from from beauty to, you know, someone who's looking at robots from the outside, if you will. Yeah, but what I meant there. So before we said the grand. As associated with size and another way of thinking about this is just the physical shape and the idea that you can get physical shapes in midair and have them deform. That's beautiful.
+00:05:37
+But the individual components, the agility is beautiful, too, right? Not a structure. So then how how quickly can you actually manipulate these three dimensional shapes and the individual components? Yes, you're right.
+00:05:48
+But by the way, said you have unmanned aerial vehicle was a good term for drones, you Aves quad copters.
+00:05:58
+Is there a term that's being standardized?
+00:06:00
+I don't know if there is. Everybody wants to use the word drones. And I've often said those drones to me is a pejorative word. It signifies something that's that's dumb preprogram, that does one little thing. And robots are anything but drones. So I actually don't like that word, but that's what everybody uses. You could call it unpiloted, unpiloted, but even unpiloted could be radio-controlled, could be remotely controlled in many different ways. And I think the right word is thinking about it as an aerial robot.
+00:06:31
+You also say agile, autonomous aerial robot right now.
+00:06:35
+So agility is an attribute, but they don't have to be. So what biological system, because you've also drawn a lot of inspiration. Those are seen bees and ants that you've talked about, what living creatures have you found to be most inspiring as an engineer, instructive in your work in robotics?
+00:06:54
+To me, so ants are really quite incredible creatures, right. So you I mean, the individuals arguably are very simple and how they're they're built and yet they're incredibly resilient as a population and as individuals. They're incredibly robust. So, you know, if you take an ant at six legs, you remove one leg. It still works just fine and it moves along. And I don't know that he even realizes it's lost a leg.
+00:07:26
+So that's the robustness at the individual level. But then you look about this instinct for self-preservation of the colonies and they adapt and so many amazing ways. You know, transcending, transcending gaps, and by just chaining themselves together when you have a flood, being able to recruit other teammates to carry big morsels of food.
+00:07:52
+And then going out in different directions, looking for food and then being able to demonstrate consensus, even though they don't communicate directly with each other, the way we communicate with each other, in some sense, they also know how to do democracy probably better than what we do somehow in democracies emergent.
+00:08:15
+It seems like all of the phenomena that we see is all emergent. It seems like there's no centralized communicator.
+00:08:21
+There is. So I think a lot is made about that word emergent. And it means lots of things are different people. But you're absolutely right. I think as an engineer, you think about what? Element, elemental behaviors were primitives you could synthesize so that the home looks incredibly powerful, incredibly synergistic, the whole definitely being greater than the sum of the parts and and living proof of that.
+00:08:50
+So when you see these beautiful swarms with his biological systems of a robot's, do you sometimes think of them as a single individual living, intelligent organism? So it's the same as thinking of our human civilization as one organism? Or do you still, as an engineer, think about the individual components and all the engineering that went into the individual components? Well, that's very interesting.
+00:09:15
+So, again, philosophically, as engineers, what we want to do is to go beyond the individual components to individual units and think about it as a unit, as a cohesive unit without worrying about the individual components. If you start obsessing about the individual building blocks and what they do, you inevitably will find it hard to scale up just mathematically. Just think about individual things you want to model. And if you want to have ten of those, then you essentially are taking Cartesian products of 10 things.
+00:09:53
+That makes it really complicated. Then to do any kind of synthesis or design in that high dimensional space is really hard. So the right way to do this is to think about the individuals in a clever way so that at the higher level, when you look at lots and lots of them abstractly, you can think of them in some low dimensional space.
+00:10:13
+So what does that involve for the individual? You have to try to make the way they see the world as local as possible.
+00:10:21
+And the other thing, you just have to make them robust to collisions, like you said, with the ants, if something fails, that the whole swarm doesn't fail. Right.
+00:10:32
+I think as engineers we do this. I mean, think about we build planes, we build iPhones. And we know that by taking individual components, well engineered components with well specified interfaces that behave in a predictable way, you can build complex systems. So that's ingrained. I would I would claim and most engineers thinking and it's true for computer scientists as well. I think what's different here is that you want the individuals to be robust in some sense, as we do in these other settings.
+00:11:08
+But you also want some degree of resiliency for the population. And so you really want them to be able to re-establish.
+00:11:18
+Communication with their neighbors, you want them to rethink their strategy for group behavior, you want them to reorganize. Um, and that's where I think a lot of the challenges lie just at a high level.
+00:11:34
+What does it take for a bunch of. Which we call them flying robots to create a formation just for people who are not familiar with robotics in general, how much information is needed? How do you how do you even make it happen without a centralized controller?
+00:11:56
+So, I mean, there are a couple of different ways of looking at this. If you are a purist, you think of it as a as a as a way of recreating what nature does. So nature forms groups for several reasons, but mostly it's because of this instinct. That organisms have of preserving their colonies, their population. Which means what you need shelter, you need food, you need to procreate, and that's basically it. So the kinds of interactions you see are all organic, they're all local.
+00:12:38
+Um, and the only information that they share, and mostly it's indirectly, is to again preserve the heart of the flock or the swarm of.
+00:12:51
+In and either by looking for new sources of food or looking for new shelters. Right, right. Um, as engineers, when we build swarms, we have a mission. And when you think of a mission and it involves mobility, most often it's described in some kind of a global coordinate system.
+00:13:16
+As a human, as an operator, as a commander or as a collaborator, I have my coordinate system and I want the robots to be consistent with that. So I might think of it slightly differently. I might want the robots to recognize that coordinate system, which means not only do they have to think locally in terms of who their immediate neighbors are, but they have to be cognizant of what the global environment looks like. So if I go if I say surround this building and protect this from intruders, well, that immediately in a building centered coordinate system.
+00:13:52
+And I have to tell them where the building is and they're globally collaborating on a map of that building there. They're maintaining some kind of global not just in the frame of the building, but there's information that's ultimately being built up explicitly as opposed to kind of implicitly like nature might, correct?
+00:14:11
+Correct. In some sense, nature is very, very sophisticated. But the tasks that nature solves or needs to solve are very different from the kind of engineering tasks, artificial tasks that we are forced to address. And again. There's nothing preventing us from solving these other problems, but ultimately it's about impact, you want these forms to do something useful and so you're kind of driven into this.
+00:14:39
+Very unnatural, if you will, unnatural meaning, not like how nature does setting, and it's a little probably a little bit more expensive to do it the way nature does because nature is less sensitive to the loss of the individual. And cost wise, in robotics, I think you're more sensitive to losing individuals. I think that's true.
+00:15:03
+Although if you look at the price to performance ratio of robotic components, it's it's coming down dramatically. It continues to come down. So I think we're asymptotically approaching the point where we would get the cost of individuals will really become. Insignificant. So let's step back at a high level of you, the impossible question of what kind of as an overview, what kind of autonomous flying vehicles are there in general?
+00:15:32
+I think the ones that receive a lot of notoriety are obviously the military vehicles. Military vehicles are controlled by base station, but have a lot of human supervision. But I have limited autonomy, which is the ability to go from point A to point B and even the more sophisticated now sophisticated vehicles can do autonomous takeoff and landing.
+00:15:58
+And those usually have wings and they're heavy, usually their wings.
+00:16:01
+But there's nothing preventing us from doing this for helicopters as well.
+00:16:05
+There I mean, there are many military organizations that have autonomous helicopters in the same vein. And by the way, you look at auto pilots and airplanes and it's actually very similar. In fact, I can one interesting question we can ask is if you look at all the. Air safety violations, all the crashes that occurred would have happened if the plane were truly autonomous, and I think you'll find that many of the cases because of pilot error, we make silly decisions.
+00:16:41
+And so in some sense, even an air traffic, commercial air traffic, there's a lot of applications, although we only see autonomy being enabled at very high altitudes when when the pilot of the plane is on autopilot, there's still a role for the human.
+00:16:58
+And that kind of autonomy is you're kind of implying, I don't know what the right word is, but it's a little dumb dumber and it could be right.
+00:17:10
+So so in the lab, of course we can we can we can afford to be a lot more aggressive. And the question we. Try to ask is, can we make robots that will be able to make decisions without any kind of external infrastructure? So what does that mean? So the most common piece of infrastructure that airplanes use today is GPS. GPS is also the most brutal form of information. If you're driven in a city, try to use GPS navigation, you know, tall buildings, you immediately lose GPS.
+00:17:50
+And so that's not a very sophisticated way of building autonomy. I think the second piece of infrastructure they rely on is communications again. It's very easy to jam communications. In fact, if you use Wi-Fi, you know that Wi-Fi signals drop out, cell signals drop out, so to rely on something like that is not is not good. The third form of infrastructure we reuse and I hate to call it infrastructure, but but it is that in the sense of robots as people, so you could rely on somebody to pilot you.
+00:18:25
+Right. And so the question you want to ask is, if there are no pilots, there's no communications with any base station, if there's no knowledge of position and if there's no apriori map operator or any knowledge of what the environment looks like, operating model of what might happen in the future, can robots navigate? So that is true autonomy.
+00:18:47
+So that's that's true autonomous. And we're talking about you mentioned that military application of drones. OK, so what else is there? You talk about agile, autonomous flying robots, aerial robots. So that's a different kind of it's not whinged, it's not big, at least it's small.
+00:19:04
+So I use the word agility mostly, or at least we're motivated to do agile robots, mostly because robots can operate and should be operating in constrained environments. And if you want to operate the way a Global Hawk operates, I mean, the kinds of conditions in which you operate are very, very restrictive. If you go on to go inside a building, for example, for search and rescue or to locate an active shooter, or you want to navigate under the canopy in an orchard to look at health plans or to to look for count.
+00:19:43
+To count fruits, to measure the tree, the tree trunks, these are things we do, by the way, as in cool agriculture, stuff is shown in the past.
+00:19:52
+All right.
+00:19:53
+So so in those kinds of settings, you do need that agility. Agility does not necessarily mean you break records for one hundred meters. Dash. What it really means is you see the unexpected and you're able to maneuver in a safe way and in a way that that gets you the most information about the thing you're trying to do.
+00:20:14
+By the way, you may be the only person who, in a TED talk, has used a math equation, which is amazing.
+00:20:21
+People should go see it when it's actually it's really interesting because the TED curator, Chris Anderson, told me you can't show math. And, you know, I've thought about it, but but that's who I am. I mean, that's that's what that's our work. And so I felt compelled to give the audience a taste for for at least some math.
+00:20:44
+So on that point, simply, what does it take to make a thing with four motors fly a quadcopter, one of these little flying robots?
+00:20:57
+You know, how hard is it to make it fly? How do you coordinate the four motors?
+00:21:02
+What's how do you convert those motors into actual movement?
+00:21:09
+So this is an interesting question. We've been trying to do this since 2000. It is a commentary on the sensors that were available back then, the computers that were available back then. And a number of things happened between 2000 and 2007. One is the advances in computing, which is and so we all know about Moore's Law, but I think 2007 was a tipping point, the year of the iPhone, the year of the cloud. Lots of things happened in 2007.
+00:21:42
+But going back even further, inertial measurement unit to the sensor really matured again. Lots of reasons for that. Certainly there's a lot of federal funding, particularly DARPA in the US, but they didn't anticipate this boom and emu's. But if you look subsequently, what happened is that every year every car manufacturer had to put an airbag in, which meant you had to have an accelerometer on board. And so that drove down the price to performance ratio.
+00:22:11
+And so I should know this. That's very interesting. It's very interesting the connection there. And that's why research is very it's very hard to predict the outcomes. And again, the federal government spent a ton of money on things that they thought were useful for resonators, but it ended up enabling the small waves. Which is great because I could have never raised that much money and told you sold this project. Hey, we want to build these small reserves.
+00:22:38
+Can you can you actually fund the development of low cost emu's?
+00:22:41
+So why do you need and I'm you know, so so I was I'll come back to that. But so in 2007, 2008, we were able to build these. And then the question you're asking was a good one. How do you coordinate the motors to to develop this? But over the last 10 years, everything is commodities. A high school kid today can pick up a Raspberry Pi. Kit and build us all the low levels functionality is all automated, but basically at some level you have to drive the motors at the right RPM's, the right velocity.
+00:23:20
+In order to generate the right amount of trust, in order to position it and orient it in a way that you need to in order to fly, the feedback that you get is from onboard sensors. And the IMC is an important part of it. The IMU tells you what the acceleration is as well as what the angular velocity is. And those are important pieces of information. In addition to that, you need some kind of local position or velocity information, for example, when we walk, we implicitly have this information because we kind of know how, how, what our stride length is.
+00:24:03
+We also are looking at images fly past our retina, if you will, and so we can estimate velocity. We also have accelerometers in our head and we're able to integrate all these pieces of information to determine where we are as we walk. And so robots have to do something very similar. You need a name. You need some kind of a camera or other sensor that's measuring velocity. And then you need some kind of a global reference frame. If you really want to think about doing something in a world coordinate system.
+00:24:37
+And so how do you estimate your position with respect to that global reference frame? That's important as well.
+00:24:42
+So coordinating the RPM's of the four motors is what allows you to, first of all, fly and hover and then you can. Change the orientation and the velocity of the and so on. Exactly, exactly.
+00:24:54
+A bunch of degrees of freedom, six degrees of freedom, but you only have four inputs, the four motors. And and it turns out to be a remarkably. Versatile configuration, you think, at first, well, I only have four motors, how do I go sideways, but it's not too hard to say? Well, if I tell myself I can go sideways and then you have four motors pointing up, how do I how do I rotate in place about a vertical axis?
+00:25:21
+Well, you rotate them at different speeds and that generates reaction moments and that allows you to turn. So it's actually a pretty it's an optimum configuration from from engineering standpoint. It's it's very simple, very cleverly done and very versatile.
+00:25:40
+So if you could step back to a time. So I've always known flying robots. Is that to me it was natural that the quadcopter should fly.
+00:25:52
+But when you first started working with it, why how surprised are you that you can make do so much with the four motors? How surprising is that you can make this thing fly? First of all, you can make it hover, then you can add control to it.
+00:26:09
+Firstly, this is not the Ford Motor configuration is not ours, but you can it has at least one hundred year history and various people, various people try to get Quadratus to fly without much success. As I said, we've been working on this since 2000, our first designs, well, this is way too complicated. Why not? We try to get an omnidirectional flying. Robots are so our early designs. We had eight voters, and so these eight rotors were arranged uniformly.
+00:26:43
+On a sphere, if you will, so you can imagine a symmetric configuration, and so you should be able to fly anywhere, but the real challenge we had is the strength to weight ratio is not enough. And of course, we didn't have the sensors and so on. So everybody knew or at least the people who worked with rotorcraft knew four rotors would get it done. So that was not our idea. But it took a while before we could actually do the onboard sensing and the computation that was needed for the kinds of agile maneuvering that we wanted to do in our little area robots.
+00:27:20
+And that only happened between 2007 and 2009 in our lab.
+00:27:24
+Yeah, and you have to send the signal me a 100 times a second. So the computer is everything has to come down in price. And what are the steps of getting from point A to point B? So we just talked about like local control.
+00:27:42
+But if all the kind of cool dancing in the air that I've seen you show, how do you make it happen? Project make a trajectory, first of all, OK, figure out a trajectory. So plan and trajectory and then how do you make that actually happen?
+00:28:01
+I think planning is a very fundamental problem in robotics. I think, you know, 10 years ago it was an esoteric thing. But today with self-driving cars, you know, everybody can understand this basic idea that a car sees a whole bunch of things and it has to keep a lane or maybe make a right turn and switch lanes. It has to plan a trajectory. It has to be safe. It has to be efficient. So everybody's familiar with that.
+00:28:23
+That's kind of the first step that that you have to think about when you when you when you when you say autonomy. And so for us, it's about finding smooth motions, motions that are safe. So we think about these two things. One is optimality, one to safety. Clearly, you don't you cannot compromise safety. So you're looking for safe, optimal motions. The other thing you have to think about is can you actually compute a reasonable trajectory in a fast in a small amount of time because you have a time budget.
+00:28:58
+So the optimal becomes suboptimal. But in our lab, we we focus on synthesizing smooth trajectory that satisfies all the constraints. In other words, don't violate any safety constraints and is as efficient as possible. And when I say efficient, it could mean I want to get from point A to point B as quickly as possible, or I want to get to it as gracefully as possible, or I want to consume as little energy as possible, but always staying within the safety constraints.
+00:29:34
+But yes, always finding a safe.
+00:29:38
+Trajectory. So there's a lot of excitement and progress in the field of machine learning. Yes. And reinforcement learning in the neural network variant of that deep reinforcement learning, do you see a role of machine learning in.
+00:29:54
+So a lot of the success of flying robots do not rely on machine learning except for maybe a little bit of the perception, the computer vision side on the control side and the planning. Do you see there's a role in the future for machine learning?
+00:30:08
+So let me disagree a little bit with you. I think we never perhaps called out in my work, called out learning, but even this very simple idea of being able to fly through a constrained space. The first time you try it, you'll invariably you might get it wrong. The task is challenging and the reason is. To get it perfectly right, you have to model everything in the environment like. And flying is notoriously hard to model. There are aerodynamic effects that we constantly discover, even just before I was talking to you.
+00:30:47
+I was talking to a student about how blades flap when they fly low and that ends up changing how a rotorcraft.
+00:30:59
+Is accelerated in the angular direction. This is like micro flaps or something, it's it's not micro flaps. So we assume that each blade is rigid but actually flaps a little bit. Oh, it bends. Interesting. And so the models rely on the fact on the on an assumption that they're actually rigid. But that's not true. If you're flying really quickly, these effects become significant. If you're flying close to the ground, you get pushed off by the ground, something which every pilot knows when he tries to land or she tries to land.
+00:31:32
+This is this is called a ground effect. Something very few pilots think about is what happens when you go close to a ceiling where you get sucked into a ceiling. There are very few aircraft that fly close to any kind of ceiling. Likewise, when you go close to close to a wall, there are these wall effects. And if you're going on a train and you pass another train that's traveling in the opposite direction, you feel the buffeting. And so these kinds of microclimates effect are usually significantly so impossible to model.
+00:32:06
+Essentially, I wouldn't say they're impossible to model, but the level of sophistication you would need in the model and the software would be tremendous. Plus, to get everything right would be awfully tedious. So the way we do this is over time we figure out how to adapt to these conditions. So we early on, we use the form of learning that we call iterative learning.
+00:32:32
+So this idea, if you want to perform a task, there are a few things that you need to change and iterate over a few parameters that over time you can you can you can figure out. So I could call it a policy gradient, reinforcement learning, but actually just iterative learning, learning.
+00:32:52
+And so this was their way back. I think what's interesting is if you look at autonomous vehicles today. Learning occurs could occur in two pieces. One is perception, understanding the world. Second is action taking actions. Everything that I've seen that is successful is in the perception side of things, so in computer vision, we made amazing strides in the last 10 years. So recognizing objects, actually detecting objects, classifying them and tagging them, in some sense annotating them, this is all done through machine learning on the action side.
+00:33:29
+On the other hand, I don't know if any examples where there are fielded systems where we actually learn the right behavior outside of a single demonstration is successfully, you know, in the laboratory.
+00:33:41
+This is the Holy Grail. Can you do end to end learning? Can you go from pixels to motor motor currents? This is really, really hard. And I think if you go forward, the right way to think about these things is data driven approaches, learning based approaches in concert with model based approaches, which is the traditional way of doing things. So I think there's a there's a role for each of these methodologies.
+00:34:08
+So what do you think? Just jumping out on topic, since you mentioned autonomous vehicles, what do you think are the limits and the perception? So I've talked to Elon Musk and there on the perception side, they're using primarily computer vision to perceive the environment in your work with because you work with the real world a lot and the physical world.
+00:34:30
+What are the limits of computer vision? Do you think we can solve autonomous vehicles, focus on the perception side, focusing on vision alone and machine learning.
+00:34:41
+So, you know, we also have a spinoff company X and Technologies that that works on the ground in minds. So you go into minds. They're dark. They're dirty. You fly in a dirty area, there's stuff you pick up from by the propellers, the downwash kicks up dust. I challenge you to get a computer vision algorithm to work there, so we use light hours in that setting. Indoors and even outdoors, when we fly through fields, I think there's a lot of potential for just solving the problem, using computer vision alone.
+00:35:19
+But I think the bigger question is, can you? Actually solve or can you actually identify all the corner cases using a sense, single sensing modality and using learning alone?
+00:35:32
+What's your intuition there? So, look, if you have a corner case and your algorithm doesn't work, your instinct is to go get data about the corner case and patch it up, learn how to deal with that corner case.
+00:35:45
+But at some point. This is going to saturate, this approach is not viable. So today, computer vision algorithms can detect 90 percent of the objects or can detect objects 90 percent of the time, classify them 90 percent of the time. Cats on the Internet. I probably can do ninety five percent of it, but to get from 90 percent to 99 percent, you need a lot more data. And then I tell you, well, that's not enough because I have a safety critical application.
+00:36:14
+I want to go from 99 percent to ninety nine point nine percent, but even more data. So I think if you look at. Wanting accuracy on the x axis. And look at the amount of data on the Y axis, I believe that curve is an exponential curve. Wow.
+00:36:35
+It's even hard. If it's linear, it's hard if it's totally. But I think it's exponential. And the other thing you have to think about is that this process is a very, very power hungry process to run data farms power.
+00:36:51
+You mean literally power, literally power, literally power. So in 2014, five years ago and I don't have more recent data, two percent of US electricity consumption. Was from data farms, so we think about this is an information science and information processing problem. Actually, it is an energy processing problem.
+00:37:15
+And so unless we figure out better ways of doing this, I don't think this is viable.
+00:37:20
+So talking about driving, which is a safety critical application and some aspect, the flight is safety critical, maybe philosophical question, maybe an engineering one.
+00:37:30
+What problem do you think is harder to solve? Autonomous driving, autonomous flight?
+00:37:36
+That's a really interesting question, I think. Autonomous flight has several advantages that are autonomous driving doesn't have. So, look, if I want to go from point A to point B, I have a very, very safe trajectory, go vertically up to a maximum altitude, fly horizontally to just about the destination, and then come down vertically.
+00:38:00
+This is preprogrammed. The equivalent of that is very hard to find in a self-driving car car world, because you're on the ground, you're in a two dimensional surface and the trajectories and the two dimensional surface are more likely to encounter obstacles. I mean, this, in an intuitive sense, would mathematically true that mathematically as well. That's true.
+00:38:24
+There's another option on the 2D base of platooning or because there's so many obstacles, you can connect to those obstacles and all these those exist in the three dimensional space is wrong.
+00:38:34
+So they do. So the question also implies how difficult are obstacles in the three dimensional space in flight?
+00:38:41
+So so that's the downside. I think in three dimensional space, you're modeling three dimensional world, not just just because you want to avoid it, but you want to reason about it and you want to work in that three dimensional environment. And that's significantly harder. So that's one disadvantage. I think the second disadvantage is, of course, any time you fly, you have to put up with the peculiarities of aerodynamics and their complicated environments. How do you negotiate that?
+00:39:08
+That's always a problem.
+00:39:10
+Do you see a time in the future where there is you mentioned there's agriculture applications, so there's a lot of applications of flying robots.
+00:39:19
+But do you see a time in the future where there's tens of thousands or maybe hundreds of thousands of delivery drones that fill the sky, a delivery flying robots?
+00:39:30
+I think there's a lot of potential for the last mile delivery. And so in crowded cities, I don't know if you if you go to a place like Hong Kong, just crossing the river can take half an hour. And while a drone can just do it in and five minutes at most, I think you look at a delivery of supplies to remote villages. I work with a non-profit called We Robotics. They work in the Peruvian Amazon where the only highways are rivers, and to get from point A to point B may take five hours while with a drone.
+00:40:10
+You can get there in 30 minutes. So just. Delivering drugs, retrieving samples for for for testing vaccines, I think there's huge potential here. So I think the challenges are not technological, that the challenges economical. The one thing I'll tell you that nobody thinks about is the fact that we've not made huge strides in battery technology. Yes, it's true. Batteries are becoming less expensive because we have these mega factories that are coming up, but they're all based on lithium based technologies.
+00:40:45
+And if you look at the energy density and the power density, those are two fundamentally limiting. Numbers, so power density is important because you have to take off vertically into the air, which most drones do, they're not they don't have a runway. You consume roughly 200 watts per kilo at the small size. That's a lot. In contrast, the human brain consumes less than 80 watts, the whole of the human brain. So just imagine just lifting yourself into the air is like two or three light bulbs, which makes no sense to me.
+00:41:24
+Yeah, so you're going to have to, at scale solve the energy problem than not charging the batteries, storing the the energy and so on.
+00:41:35
+And then the storage is the second problem, but storage limits the range. But, you know, you have to remember that. You have to you have to burn a lot of it a given time.
+00:41:48
+So the turning of the problem, which is the which is a power question.
+00:41:51
+Yes. And do you think just your intuition that there are breakthroughs in batteries on the horizon, how hard is that problem?
+00:42:03
+Look, there are a lot of companies that are promising flying cars, right? They're autonomous and that are clean, my. I think they're overpromising the autonomy piece is doable, the clean piece. I don't think so. There's another company that I work with called Jitendra. They make small jet engines and they can get up to 50 miles an hour very easily and lift 50 kilos. But they're jet engines. They're efficient. They're a little louder than electric vehicles, but they can go flying cars.
+00:42:45
+So your sense is that there's a lot of people that have come together on this crazy question. If you look at companies like Kittyhawk working on electrics of clean, I'm talking to Sebastian Thrun. Right. It's it's a crazy dream, you know, but you work with flight a lot. You've mentioned before that manned flights are carrying the human body is very difficult to do.
+00:43:17
+So how crazy is flying cars, do you think?
+00:43:20
+There will be a day when we have vertical takeoff and landing vehicles that are sufficiently affordable? That we're going to see a huge amount of them and they would look like something like we dream of when we think about flying cars. Yeah, like the Jetsons. The Jetsons. Yeah. So, look, there are a lot of smart people working on this, and you never say something is not possible when have people like Sebastian Thrun working on it. So I, I totally think it's viable.
+00:43:51
+I question again the electric piece, the electric piano and again, for short distances you can do it. And there's no reason to suggest that these are all just have to be rotorcraft. You take off vertically, but then you morph into a forward flight. I think there are a lot of interesting designs. The question to me is, is are these economically viable? And if you agree to do this with fossil fuels, it immediately becomes viable.
+00:44:18
+That's the real challenge. Do you think it's possible for robots and humans to collaborate successfully on tasks? So a lot of robotics folks that I talked to and work with, I mean, humans just at a giant mess to the picture. So it's best to remove them from consideration when solving specific tasks was very difficult to model. That is just a source of uncertainty in your work with.
+00:44:45
+These agile flying robots, do you think there's a role for collaboration with humans, or is it best to model tasks in a way that that doesn't have a human in the picture?
+00:44:59
+Well, I don't think we should ever think about robots without human in the picture. Ultimately, robots are there because we want them to solve problems for humans. But there is no general solution to this problem. I think if you look at human interaction, how humans interact with robots, you know, we think of these in sort of three different ways. One is the human commanding the robot. The second is the human. Collaborating with the robot, so, for example, we work on how a robot can actually pick up things with a human and carry things, that's like true collaboration.
+00:45:37
+And third, we think about humans is by standards, self-driving cars, which the humans role and how just how to self-driving cars acknowledge the presence of humans. So I think all of these things are different scenarios. It depends on what kind of humans, what kind of task.
+00:45:56
+And I think it's very difficult to say that there is a general theory that we all have for this, but at the same time, it's also silly to say that we we should think about robots independent of humans. So to me, human robot interaction is almost a mandatory aspect of everything we do.
+00:46:16
+Yes. So but George Degreaser, your thoughts?
+00:46:18
+If we jump to autonomous vehicles, for example, there's there's a big debate between what's called level two and level four. So semi-autonomous and autonomous vehicles and sort of the Tesla approach currently at least has a lot of collaboration between humans.
+00:46:35
+So the humans are supposed to actively supervise the operation of the robot, part of the safety definition of how safe a robot is in that case is how effective is the human and monitoring it.
+00:46:49
+Do you think that's ultimately not a good approach in sort of having a human in the picture, not as a bystander or part of the infrastructure, but really as part of what's required to make the system safe? This is harder than it sounds, right? I think, you know, if you.
+00:47:14
+I mean, I'm sure you've driven the driven before and highways and so on, it's it's really very hard to have to relinquish control to a machine and then take over when needed. So I think Tesla's approach is interesting because it allows you to periodically establish some kind of contact with the car. Toyota, on the other hand, is thinking about shared autonomy or collaborative autonomy as a paradigm, if I may argue. These are very, very simple ways of human robot collaboration because the task is pretty boring.
+00:47:48
+You sit in a vehicle, you go from point A to point B.. I think the more interesting thing to me is, for example, search and rescue. I've got a human first responder, robot first responders. I got to do something, it's important, I have to do it in two minutes, the building is burning, there's been an explosion, it's collapsed. How do I do it? I think to me, those are the interesting things where it's very, very unstructured.
+00:48:13
+And what's the role of the human robot? Clearly, there's lots of interesting challenges. And as a field, I think we're going to make a lot of progress in this area.
+00:48:22
+Yes, an exciting form of collaboration, right. In the autonomous driving. The main enemy is just boredom of the human.
+00:48:29
+Yes. As opposed to in rescue operations. It's literally life and death. And the collaboration enables the effective completion of the mission. So exciting in some sense.
+00:48:42
+You know, we're also doing this. You think about the human driving a car and almost invariably the humans trying to estimate the state of the car and the state of the environment and so on. But where did the car were to estimate the state of the human? So, for example, I'm sure you have a smartphone and the smartphone tries to figure out what you're doing and send you reminders. And oftentimes telling you to drive to a certain place, although you have no intention of going there because it thinks that that's where you should be because of some Gmail calendar entry or something like that, and it's trying to constantly figure out who you are, what you're doing.
+00:49:19
+If a car were to do that, maybe that would make the driver safer because the car is trying to figure it out as a driver, paying attention, looking at his or her eyes, looking at the skating movements. So I think the potential is there. But from the reverse side, it's not robot modeling, but it's human modeling. It's more in the human right. And I think the robots can do a very good job of modeling humans.
+00:49:42
+If you if you really think about the framework that you have a human sitting in a cockpit surrounded by sensors, all staring at them in addition to be staring, standing outside, but also staring at him, I think there's a real synergy there.
+00:49:57
+Yeah, I love that problem because it's a new 21st century form of psychology. Actually, A.I. enabled psychology. A lot of people have sci fi inspired fears of walking robots like those from Boston Dynamics. If you just look at shows on Netflix and so on, or flying robots like those you work with. How would you how do you think about those fears, how would you alleviate those fears? Do you have inklings, echoes of those same concerns?
+00:50:25
+You know, any time we develop a technology meaning to have a positive impact in the world, there's always the worry that. You know, somebody could subvert those technologies and use it in an adversarial setting and robotics is no exception, right? So I think it's very easy to weaponize robots. I think we talk about swarms. One thing I worry a lot about is so, you know, for us to get swarms to work and do something reliably is really hard.
+00:50:54
+But suppose I have this challenge of trying to destroy something and I have a swarm of robots where only one out of the swarm needs to get to its destination. So that suddenly becomes a lot more doable. And so I worry about, you know, this general idea of using autonomy with lots and lots of agents. I mean, having said that, look, a lot of this technology is not very mature. My favorite saying is that. If somebody had to develop this technology, wouldn't you rather the good guys do it so the good guys have a good understanding of the technology so they can figure out how this technology is being used in a bad way or could be used in a bad way and try to defend against it.
+00:51:37
+So we think a lot about that. So we have a way of doing research on how to defend against swarms, for example, that there is, in fact a report by the National Academies on counter US technologies. This is a real threat, but we're also thinking about how to defend against this and knowing how swarms work, knowing how autonomy works is, I think, very important.
+00:52:03
+So it's not just politicians. You think engineers have a role in this discussion?
+00:52:08
+Absolutely. I think the days where politicians can be agnostic to technology are gone. I think every politician needs to be literate in technology, and I often say technology is the new liberal art. Our understanding how technology will change your life, I think is important, and every human being needs to understand that and maybe we can elect some engineers to office as well on the other side.
+00:52:39
+What are the biggest open problems in robotics? And you said we're in the early days. In some sense. What are the problems would like to solve in robotics?
+00:52:47
+I think there are lots of problems, right. But I would phrase it in the following way. If you look at the robots are a building, they're still very much tailored towards doing specific tasks and specific settings. I think the question of how do you get them to operate in much broader settings? Where things can change in unstructured environments is up in the air, so think of self-driving cars. Today, we can build a self-driving car in a parking lot, we can do level five autonomy in a parking lot.
+00:53:26
+But can you do level five autonomy in the streets of Napoli in Italy or Mumbai in India? No, no. So in some sense, when we think about robotics, we have to think about where they're functioning, what kind of environment, what kind of a task. We have no understanding of how to put both those things together.
+00:53:49
+So we're in the very early days of applying it to the physical world. And I was just in Naples, actually. And that's there's levels of difficulty and complexity, depending on which area you're applying it to.
+00:54:02
+I think so. And we don't have a systematic way of understanding that. You know, everybody says just because a computer cannot beat a human at any board game, we certainly know something about intelligence that's not true. A computer board game is very, very structured. It is the equivalent of working in a Henry Ford factory where things parts come, you assemble, moron. It's a very, very, very structured setting. That's the easiest thing. And we know how to do that.
+00:54:34
+So you've done a lot of incredible work at the University of Pennsylvania, graspable you now, dean of Virginia and you've. What advice do you have for a new bright eyed undergrad interested in robotics or engineering?
+00:54:51
+Well, I think there's really three things. One is one is you have to get used to the idea that the world will not be the same in five years or four years whenever you graduate. Right. Which is really hard to do. So this thing about predicting the future, every one of us needs to be trying to predict the future always not because you'll be any good at it, but by thinking about it, I think you sharpen your senses and you become smarter.
+00:55:17
+So that's number one. Number two, it's a corollary of the first piece, which is you really don't know what's going to be important. So this idea that I'm going to specialize in something which will allow me to go in a particular direction, it may be interesting, but it's important also to have this breadth. So you have this jumping off point. I think the third thing, and this is where I think Penn excels. I mean, we teach engineering, but it's always in the context of the liberal arts.
+00:55:46
+It's always in the context of society. As engineers, we cannot afford to lose sight of that. So I think that's important. But I think one thing that people underestimate when they do robotics is the importance of mathematical foundations, important of represent importance of representations. Not everything can just be solved by looking for Ross packages on the Internet or to find a deep neural network that works. I think the representation question is key even to machine learning, where if you ever hope to achieve or get to explainable A.I., somehow there need to be representations that you can understand.
+00:56:25
+So if you want to do robotics, you should also do mathematics. And you said liberal arts.
+00:56:30
+A little literature. If you want to build a robot, I should be reading Dostoyevsky. I agree with that. Very good. B.J., thank you so much for talking to. That was an. It was just a very exciting conversation. Thank you.

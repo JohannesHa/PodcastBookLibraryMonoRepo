@@ -1,0 +1,294 @@
+00:00:00
+This episode of Founders' Field Guide is brought to you by Microsoft for Startups, Microsoft for Startups is a global program dedicated to helping Enterprise ready B2B startups successfully scale their companies. The program has been around for a couple of years, but I recently became intrigued when former investor like the best guest, Jeff Maas, took over Microsoft for startups, provides companies access to technology, including Azure, Cloud and GitHub, coupled with a streamlined path to selling alongside Microsoft and their global partner ecosystem.
+00:00:29
+Microsoft for Startups has a very compelling approach to working with startups and driving their long term business value. If you're a founder running a B2B company targeting the enterprise, you should definitely check them out at Startup Stop Microsoft Dotcom.
+00:00:41
+To hear more about the program, stay tuned. At the end of the episode to hear from me, Jeff Marr and Greylock partner Sam Mohammedi.
+00:00:49
+This episode is also brought to you by solo stove. There's simply no better way to create good moments this holiday season around a fire than with a solo stove bonfire. The soulless of bonfires minimalist design is reinventing the backyard experience so you can get outside and have a roaring smokeless fire in minutes, complete with a 30 day return policy and lifetime warranty. The units made entirely of stainless steel and it just 20 pounds. The solar stove bonfire is easy to transport for a perfect evening in the backyard, at the campground or on the beach.
+00:01:18
+Check out Solo Stoveken for their range of fire pits and grills and use promo code. Patrick five for five dollars off your order.
+00:01:25
+That's almost ofay dotcom and use code. Patrick five.
+00:01:30
+Oh, hello and welcome everyone. I'm Patrick O'Shaughnessy and this is Founders' Felgate. Founders Field Guide is a series of conversations with founders, CEOs and operators building great businesses. I believe we are all builders in our own way and this series is dedicated to stories and lessons from builders of all types. You can find more episodes at Investor Field Guide dot com.
+00:01:54
+Patrick O'Shaughnessy is the CEO of O'Shannassy Asset Management, all opinions expressed by Patrick and podcast guests are solely their own opinions and do not reflect the opinion of O'Shannassy asset management. This podcast is for informational purposes only and should not be relied upon as a basis for investment decisions. Clients of O'Shannassy Asset Management may maintain positions in the securities discussed in this podcast.
+00:02:19
+My guest today is Amatzia, the founder and CEO of Twitch Twitch's the world's leading live streaming platform for gamers and was acquired by Amazon in 2014.
+00:02:28
+We talk about how Twitch empowers streamers to monetize their audience, the necessity of picking a customer early in a business, and the lessons learned scaling twitch from an online reality TV show to a global brand inside of Amazon. We also discuss how Twitch has helped create a new language on the Internet with emotes, a topic I'm fascinated by. I hope you enjoy this conversation with Amatzia.
+00:02:52
+So, Emma, thank you so much for doing this with me today, I know that you are a student of history, and so I thought an interesting place to begin would be the history of interactive entertainment and how Twitch sort of figures into all that. I love the perspective you bring on the long history of this topic. And so maybe you could frame that history for people before diving into Twitch the business.
+00:03:13
+Yeah, we started by we I mean humanity doing interactive entertainment.
+00:03:17
+I think about as soon as we could talk with this singing songs around the campfire, but a form of interactive entertainment and the people making joy together. Connection together has always been a big part of our history. And there is this brief period in time reinvented broadcast media and they weren't powerful enough yet to enable interactivity. And you got radio and television and newspapers that were very much one way non interactive communication. But that's very much the exception. If you look at the scope of history, most of history, most entertainment was interactive.
+00:03:57
+It was people in the same place at the same time necessarily interacting with each other, which in many ways I think is just a return to that historical way of interacting, albeit online, which is a pretty different thing.
+00:04:10
+Can you say a bit about the I think you've done a bit of research on these sort of clubs in Vienna and how people came together again, sort of another form of interactivity that I find so interesting that preceded the broadcast model.
+00:04:21
+Yes, you had newspapers in the past and it used to be that newspapers are very expensive, not the mental model today where everyone can have their own copy of the newspaper. But newspapers used to be very, very expensive and not everyone could afford to have a newspaper delivered newspaper would be delivered to the cafe or a few copies would be and people would in Vienna at this time show up to the cafes to read the newspaper. But what wound up happening is, as you read the newspaper, you discuss it with the other people who are there.
+00:04:48
+And the cafes became this sort of intellectual gathering place for people who were interested in discussing the news of the day and whatever else came to their minds. And that goes away when you remove the need for everyone to come into the same space, it's more convenient to read the newspaper at home. By removing that barrier, you actually create a new barrier to community. And I think that's a loss. I think it's a real loss that we don't have those communities anymore.
+00:05:14
+In the same way, I'd love to explore the origins of Twitter, starting with Justin.tv. Maybe you could briefly describe the founding story or vision there. And then I'd love to talk about the moment at which you realised that gaming specifically as one of the use cases on Justin.tv would be so powerful.
+00:05:31
+We started off as a reality television show that my friend Justin's life, the idea was it had just become possible to stream live video from anywhere using what we're called video modems at the time. You just think of them as being mobile phones.
+00:05:47
+Now, we got excited at the idea you could make a 24/7 live reality show, which really showed our naiveté because reality TV turns out to be entirely about editing and the said studies at the time. But a live reality television show is they intrinsically poor idea because it's only interesting when you take weeks of content and edit it down to thirty minutes or an hour trying to watch reality all the time. That's called looking at your window. The core idea didn't really work out, but the technology we built to support it, the ability to have a live video stream, to have a chat room around that live video stream turned out to be something that other people wanted, even though we don't really build it for ourselves.
+00:06:30
+And this is a really common pattern in startups, that you you build something for yourself and it turns out there are more people like you than you thought. And so we want to taking the technology we built for the Justin TV reality show and opening it up so that anybody could stream whatever they wanted. We grew that for a good long while and two thousand eight hit. That was a pretty significant financial downturn. And we got really concerned about whether or not we'd be able to raise any more money.
+00:06:53
+From that point on, we decided we needed to get profitable or at least get more profitable, really focus on the profits and and the costs, because we didn't know if or when we'd ever really raise money again. That's what we did. We set about a year and a half, two years after 2008, improving the financial position of the business. And then we had to kind of run into this point where it wasn't growing super fast anymore. And we taken taking our eye off of growth for a while.
+00:07:20
+We should have had this coming together again and asking what's the as a founding team, me, Justin, Michael and Kyle, what was it that we. Wanted to focus on what was it that we thought was the big opportunity that we could go in and they were kind of two big ideas that came floating around. One of them was mobile. This is sort of primarily Michael's idea just and certainly contributed to it. Michael really had this this idea that the video is going to be big on smartphones.
+00:07:51
+I know there's no big video apps yet on smartphones, but video is going to be a big deal. We should make a mobile video thing that made it easy to record videos, streams and like share them after the fact because everyone has a smartphone. This can be a thing people want. And that turned into social cam. We're going to up selling shortly thereafter. And I reflected in the other direction. That's like an analytical approach to the problem.
+00:08:17
+I reflected in the other direction that the only content on TV that I enjoyed watching was the video game content, particularly the Starcraft content. That's what I like to watch or just on TV. And it was less than three percent of our total viewership. But I thought it was great. I was like, this is really fun to watch. And I didn't think I was that weird at the time. Were like, well, Igen has 80 million monthly visitors or something like that.
+00:08:42
+I bet we could get to 80 million monthly visitors eventually. And it turned out we were right. It turned out there was a lot of people who, like me, wanted to watch video games online and want to stream video games online so that intuition from building something for myself that I wanted turned out to pay off.
+00:08:59
+Can you say what specifically it was that you enjoyed, maybe even about Starcraft, specifically a game I know really, really well grew up playing. What was the enjoyable aspect of that for you? Was it just like watching a sports event or was it the community aspect on the platform at the time? What really stood out?
+00:09:15
+You have sort of two kinds of viewers that we sort of segment them into. You've got community loyalists and you've got strategists. And I definitely follow into the strategist category who are people who are watching primarily for the goal of getting better and understanding high level play and getting to watch the highest quality high level play so that they can up their own game. And also so that just aesthetic appreciation of watching someone really amazing play the other equally important part of it, actually, probably more people fit into the community.
+00:09:47
+Buckett are there because they love video games and they want to watch someone. But what they really get out of it is they get to be part of this community of people who share this thing they love and talk to them and connect to. For me, it was we just had some great Starcraft players and I got to learn how to play better by watching them. And I just enjoyed watching someone else play at a really high level. The same way you might enjoy like the Olympics was a really positive experience for me.
+00:10:13
+I still watch a lot of Twitch, which game I watch changes every time, whatever I'm currently playing and interested in. I tend to watch more of it, but it's really fun.
+00:10:21
+You've been there for a long time now, building this business independently as part of Amazon. Obviously, that means the platform has evolved. I'd love you to talk a bit about two pillars. What I see twitchers, which is the creators on one hand and the community on the other hand, and sort of the magic being how those two things intersect uniquely in Twitch and how we're talking about video games now, but how potentially this could be a whole lot more when it comes to interactive entertainment between creators and a community.
+00:10:48
+When we have twitch users come, what they do is they go and they find a streamer. And at first it's all about the content. People tend to look first by game and by category and try to find a stream or streaming something that they're interested in. And then they start to get into the consumer's personality and find out who the people care a lot about who. And after they've been there for a while, they started engaging with chat and connecting with who starts to become very important.
+00:11:16
+We think of that as a progression for a twitch viewer's connection. What am I watching? Who am I watching and with whom? I suppose with whom? And I watching it. Those are all components of what happens. The thing that I think was most surprising to me about Twitch wasn't on the viewer side where I think I got it already. And anyone who's watched sports on TV at some level can get it or cooking show. It's fun to watch people do things they're good at.
+00:11:42
+It's fun to watch people do activities that you enjoy. So that part wasn't super surprising. What was surprising to me was how much streamers really wanted to be able to make it something that they did professionally or something professionally. A big part of what becoming a streamer runs, which is all about, is being able to earn money. At first that puzzled me. I was like, you know, that your channel isn't big enough to earn more than like five dollars a month.
+00:12:08
+This can't be a full time job. It's just something so cool about the idea that I could earn beer money for myself, playing video games and connecting with people that just felt so good they wanted to be recognized in that way for their work with compensation. I think it's kind of cool. I think it's one of the parts of Twitch that was surprising to me to be a big deal. Maybe we could try to explain a little bit.
+00:12:29
+With an aspect of Twitch that we'll have to put like a video in the show notes or something so people can sort of see this, which is the emotes, can you describe what emotes are and maybe even tell the whole history of these things? Because as I went down a rabbit hole, including a website entirely devoted to ranking the top, used the of a given day on Twitch, it's sort of this wild world that I was pretty excited by and interested in.
+00:12:53
+So could you tell us what the votes are, maybe what the history is there?
+00:12:56
+Yeah. So when we started just in TV, people talking in chat and because we'd been using texts on a mobile phone for a long time and texting on a mobile phone includes the ability to put those emojis in line. The start of it was it was people talking about the Jetsons TV show.
+00:13:12
+What we did is we put in like a little just in head and a little of it had a little Michael had our friends, all our friends were on the show because it was whoever was around Justin.
+00:13:20
+The result was that people could use those to talk about us, to put little, like speech bubbles out. That was pretty cool. People seem to like it. And so we decided adding more and adding new emotes in line. And it became this kind of shared in joke language. One of our interns, Josh, uploaded his face. It became kind of a rite of passage as an engineer to upload your own face into the system. He got picked up as cappa that now almost universal Internet symbol for trolling or sarcasm, which I don't think he realized would happen.
+00:13:49
+But he has this kind of smug expression in the emote that really captures that sarcastic trolling emotion in a way that would be hard to capture in some other way. I think they're popular for the same reason that emojis are popular and texting. What then took off that was very surprising was we gave streamers the ability to make emote for their own channel that were specific for their subscribers. And that really became kind of an in-joke, private language for streams. And I think that's been a powerful part of developing the twitch culture.
+00:14:19
+And people learned the meaning of all these different emotes. And the emotes have kind of different symbolic importance in the channel. It's a little bit like learning to speak in code almost.
+00:14:31
+It really is something to behold, to go into, especially a more popular channel with a lot of people in there, just the absolute wall of these things that you see on the side of someone doing their thing, the streamers. It just struck me as sort of mind blowing. And I'd love to understand the business side of this a little bit. So my understanding is that the I think you call them affiliates, which I'm assuming is sort of the more popular or higher end streamers.
+00:14:54
+The platform of Twitch helps them have an economic relationship with their biggest fans. I'd love you to describe the nature of that, like what tends to be the nature of the subscription and why do people do it?
+00:15:05
+Subscribing to a channel is a way of showing your support for a streamer. We consistently hear from people who buy subscriptions that the reason they're doing it first and foremost, is they want to be part of the club of people who like this stream and want to support this streamer. And what they get as a, I don't know, a reward or a bonus, I think has more in common with the tote bag you get from PBS or with having your name on a little plaque for on a statue or something that you helped fund.
+00:15:36
+I don't know if people fund statues that way, but you do get the idea. It's not so much that you have to pay money to get anything in particular. You do get Fadge next to your name. You get to use a special set of emotes that are only for subscribers to that channel. But that's really just a way of showing, hey, I'm one of the subscribers. I'm part of the people who support this channel. I'm in the club.
+00:15:57
+It sort of becomes a sort of membership club, a paid membership club for people who want to be connected to that stream or to the other people who are watching, who want to facilitate more of this content they enjoy. And I think it's a really powerful model and one that feels really good to me. It feels like it focuses on what's important, which is people connecting. You're paying as a way of expressing this connection you feel rather than out of some sense of scarcity.
+00:16:27
+Do you think that these examples, you know, the emotes and the badges are representative of some much bigger trend on the Internet, almost like a new language and currency system kind of natively built for the Internet?
+00:16:39
+Any thoughts there?
+00:16:40
+I do think over time the idea of having a sort of universal set of emotes that are more emotive and more expressive than what's in the language on cell phones is going to be good.
+00:16:52
+I actually have this kind of hoped for vision that they kind of coalesce over time. I think it's a lot of emotive invented on twitch that would be beneficial on cell phones. And I think that what's cool about the way Twitch does it is it's very bottoms up and people can invent new approaches. Imagine if on your phone, if you thought there was a some missing email to you and your friends could upload one and it could spread and people could decide, oh, I want to use this.
+00:17:16
+This thing is the email crowdsourced creation of new language in a way.
+00:17:21
+How early do you think we are in this? I don't know what the right word is. We need to settle the word the creator influencer streamer kind of. Phenomenon that seems to have started to take the world by storm, do you think that this is now a well-established trend or that we're still fairly early?
+00:17:37
+I think we're fairly early in this trend. I think that it's always hard to predict how big these things get. But I think that Twitch is only part of this broader move towards the great unbundling of content. You can see it in a sub stack, for example. I'm an investor in sub stack. I saw them at Demo Day and I was like, wow, so far so good.
+00:17:58
+It's amazing. I remember seeing them and be like, Oh, this is just twitch. But for newsletter's, it's the same idea. And it seems so clear to me that was a good idea. And then you have the patriot ends of the world. You've got a whole stack of subscription services like Twitch, but where you're not subscribing to some corp service, but rather you're subscribing to an individual creator's feed of content or even just that kinda the dolphin free, which just to support that greater.
+00:18:26
+That's a really important trend. Like I don't know how big Twitter is going to get. I think it will get much bigger. Obviously, I'm still working on it. I'm very optimistic. But if you blur out the question of whether it's Twitter or any other particular company or who does it, I think this trend of want of a marketplace for creators and people who are fans of those creators, I don't think that's going anywhere. I think that's going to be a big deal.
+00:18:47
+I saw the stat the other day that only fans, which is another one of these platforms, have paid out something like 600 million dollars to creators. So it took me a back. I couldn't believe that number. It's pretty remarkable to see this unbundling that way of thinking about it, that the aggregators, The New York Times of the world aren't going to get the best journalists. They'd be better off just going direct to consumer, going direct to their audience.
+00:19:08
+What I think we're going to see, though, is every unbundling creates an opportunity for a new style of bundle, and every bundling creates an opportunity for decentralization. You tend to see these waves of centralization and decentralization.
+00:19:20
+And I think we're in the middle of a decentralization wave, but we'll see it swing back soon enough as people realize, God, I have like twelve of these creator content subscriptions. And if I want to buy the other one with just so many of them and keep track of, it's kind of a pain. And I kind of just want it all. You can eat approach to this. I want the Netflix for this thing. It's just too much.
+00:19:39
+And I think that people will find a way to start banding together and offering bundles again.
+00:19:44
+We'll share a lot of the intermittent in the middle layers of these things. You'll get a lot more of the sort of direct group creation stuff. You're already seeing this on Twitch. We're seeing small groups of creators come together and begin to make shared bundles.
+00:19:59
+I think of Twitch very much as a platform in the truest sense that lots of people are building stuff on top of it, their own channels, their own remotes are all the things you've mentioned in Twitch doesn't really compete with its own participants. It enables them. What have you learned about being good at that enablement at building a platform for streamers or for fans? It's kind of a product question. Is someone really interested in technology product? What have been the big lessons from building Twitch about being an effective platform builder?
+00:20:28
+So when we build stuff, we try to start from the streamer first. And I know that some of our viewers probably would say you don't always work, would always land it. And then. Right, we get things wrong sometimes. But the successful products always start from watching what our streamers are trying to do or would like to do and then building something that makes it easier, faster to do that. Some of our most successful products have come from watching what maybe only one, two, three streamers are doing.
+00:21:00
+It's really working for them. We find a little pocket of ten streamers doing this interesting thing like, wow, that's really cool. What if made it super easy for anyone to do that? That can really work. So you have this way of gifting subscriptions called community gifts, where you can give away a bundle of five, ten, twenty subscriptions to everyone in the community. Our idea from that came straight from our previous gifting product. Because we built this product, anyone could gift the subscription and we saw certain streamers and certain viewers.
+00:21:27
+There's a small number of them who would just buy gifts and then go back to the checkout process. They buy another gift and they go back to the checkout prospect. Wow, what's going on? And we realized they were just sort of giving them away to people in the channel at random because they're kind of wanted to show their support that way. Or as a streamer, they wanted to give back to their community. I'm like, oh, what do we do?
+00:21:43
+Made that super easy. And that's turned out to be fabulously successful. I never would have thought of that idea if we hadn't observed our customers already doing it. Our streamers are already doing it. We've also heard from people, for example, it's really hard to get discovered as a small streamer. And so we've done a ton of work over the past year or two years in order to make it much easier. And we've done a ton of work trying to make discoverability, make it so that you can find a channel more easily, even if they're small, says the number one thing we hear from small screen is help us grow, help me get bigger.
+00:22:13
+That's what we do. I guess it sounds simple. It's just hard because your customers know what they need, but they're not necessarily great product designers. They don't necessarily know what the way to solve that problem is. They just know I have this problem. I really wish it would go away. I really wish that I didn't have to struggle with discoverability. I really wish I had a better way to get to know exactly how much money I was going to make this month for the end of the month.
+00:22:41
+I wish I could get paid faster. There's all sorts of practical barriers and all sorts of practical problems trying to solve those kinds of issues. Yes, that's why you get paid. You get paid money to figure out the clever solution to the problem.
+00:22:52
+Obviously, what Twitter has done exceptionally well as aggregate people together and get them communicating, which as we know from the S&P 500, is one of the most powerful business models in the world. When you can win a communication channel, you tend to do very well. With that in mind, I'd love to hear about the evolution of this just chatting part of Twitch, which, as I understand it, is basically not watching anything. It is almost pure communication.
+00:23:17
+How did this start and how do you think about this? Is this a competitive thing to other social networks more than gaming?
+00:23:23
+We just had noticed again that our streamers sometimes didn't want to play a game. Sometimes they just wanted to chat with their audience. And yeah, I'd say it's a form of a social network. In a way, I'd say that it's different because live streams aren't independent pieces of content, live streams or performances. You're not recording something and posting it for people to consume later. You're in the moment with whoever happens to be watching you. And that makes it more about who you are than what you're saying.
+00:23:54
+I think a lot of social networks are really about what content you produce and people follow other people because they want that content in their feed. That's not a universal truth so that some degree people follow people because of who they are. And sometimes on Twitter, people are watching because it's the League of Legends championship series and they want to watch the world championship of this video game. Generally, people are watching on Twitch because of who. And I think that's pretty different.
+00:24:20
+It's about that personality and that connection. I suppose it's competitive with other social networks in the sense that everything anyone does online is competitive. You know, you're spending time communicating with other people. We're all in sort of the business of facilitating connection and communication at some level. And so, yes, it is, but I don't think any more so than the video game stuff is, to be honest. I think it's fundamentally actually quite similar to one of the just chatting streaming is video game streamers who are just taking a break from video games for a little bit to talk with their audience.
+00:24:51
+And that has happened to do a stream that's just chatting. But they're going to go back to video games tomorrow. It's less different than people might imagine it to be.
+00:24:57
+I asked last night on Twitter a simple question. What is the most interesting thing about Twitch? And I got a whole ton of different answers that were really interesting that I want to run by you just to hear your reaction. The first is several people said everything about it. That's non gaming. So several people brought up the popularity of chess, chess streaming on the platform, other activities that people like to watch that have nothing to do with gaming. So it seems to be breaking out of its original category.
+00:25:24
+I'd love to hear your thoughts on that.
+00:25:26
+The interesting thing there for me is that that's our roots. Originally, we were just in TV, just in TV was all about things that weren't gaming. So it doesn't surprise me to see that stuff come back. It's cool to see. Yes. But I don't think chess is really all that different from watching a video game. And I don't think even in some ways, watching someone like music's been really big for us recently. I don't think watching someone play music is all that different than watching someone play a video game.
+00:25:55
+Here's the thing I love. There's this interesting person doing it really well, answering my questions about it. I do think it's really cool. Like I'm so excited to see music take off on Twitch. We started to see people doing fitness streaming. Chess has gotten big recently. We've gotten some sort of meditation and sort of mental wellness stuff happening that I think is really cool, but it all fundamentally works like the video games do. It's just the topic has changed.
+00:26:21
+I don't think the topic was what was the thing that it was about in the beginning? I think the topic it's almost an excuse to get together. Anyone who said that it's their friends, you can get together to go over their house to play a board game or to watch a premiere of a new show or to to cook together. But they're all kind of really just excuses to gather. And I think that's actually what the video game servers. But that's true for music, too.
+00:26:44
+What has it been like operating a business like this inside of another very large business? Obviously, I think there's obvious compliments here. I imagine the backend technology of all this, especially early on, was pretty substantial and something like eight of us at Amazon was a huge help. But what lessons have you learned from operating a very clear, distinct, independent brand and business inside of another business which has so many interesting elements being instead of Amazon's really being a master class and there's no company in the world that does it better than Amazon, I'm sure companies to do it as well.
+00:27:16
+But I think it was on a certainly up there in terms of just being incredible in that way. But I've been mostly focused on running Twitch. It's certainly a full time job. I that's a good thing that I haven't been involved in a lot of the Amazon stuff. It's been sort of as advertised, I've really enjoyed getting to understand the Amazon business way of doing business better, but I guess my main learning would be if you leave a company alone and kind of let it grow, you really enable that company to be successful.
+00:27:45
+I think that if we try to run switch the way that Amazon runs the Amazon, it wouldn't work. And I also think that if we tried to run the Amazon the way we were in which it would be a disaster. And I think that one of the most impressive things about Amazon is its retained companies like Zappos and TWIC and managed to leave them independent while keeping them integrated in the greater flow of things. And it gets pretty hard to do.
+00:28:08
+What do you think is the most interesting trend happening? You mentioned earlier being an investor in Substory, which again, maybe just pattern recognition. You know, this is the same thing for a different set of creators. I'm just always interested in what someone that's an operator but also has an investor that is seeing in the world. That is especially interesting. What does that today in your mind?
+00:28:28
+Well, hilariously, during covid, it's been live video. This is live videos moment. There are more live video startups in this batch that I think anything else. Maybe that's why I say it was amazing to watch just so many different takes on how to do live video, mostly not broadcast, live video like Twitch, mostly more video conference style, but still live video that seems like that's having a moment. I don't know how much of that is.
+00:28:51
+Everyone's trapped at home. And so they're like, oh, my God, I really need better, like, video tools, but certainly happening. I think the other thing is just the increasing accessibility of biotech for non medicinal purposes. There's always been sort of pharma biotech stuff, but you're starting to see more and more interesting biotech companies that are doing stuff that isn't pharma.
+00:29:13
+There used to be almost none of that AWEISAT. Whether it's the beginning, there's very little bio at all. But it's the degree there's biotechnology. In the beginning, there was a lot of pharma oriented stuff or things that are designed to supply to pharma companies. And it's really cool to me to see people start doing other things on that front. The most interesting trend in startups is that the trend is usually not the place to look. It's that weird startup in the batch that's just not doing anything like anyone anybody else is doing that often winds up being successful.
+00:29:39
+By the time something is a trend, you really have to be the lucky one that's putting your own spin on it. And it's figured out some clever insight. I think the the really macro level trend we're all dealing with that then shows up in the startups is how do we deal with creating connection and community online? That's the big meta thing and that heads all the live video. I think this was true before covid in the covid just accelerated it.
+00:30:06
+But that's the question I think almost all of the startups are addressing. And it might be a connection and community at work. It might be collaboration tools to collaborate in it, some more specific design, video editing, collaboration tools. But it's ultimately about how do I connect with someone else and communicate with them and work with them and talk with them over the Internet. There's, of course, a bunch of infrastructure that's built as well. But that seems to be the big challenge, which I guess it's it's one I notice it's the one I'm interested in.
+00:30:34
+And also, I'm sure I'm leaving out a bunch of startups that don't fit that mold, but it's what I'm always interested in.
+00:30:39
+When you were working with your co-founders and recruiting an early team, what was effective there? What were good strategies and maybe things that didn't work for building out sort of beyond the first you guys, I'm sure we're all talented and trusted each other. And then, of course, you have to keep going and hire and delegate. What did you do well and poorly in those early days?
+00:31:00
+What we did poorly was manage anyone. I want to apologize already done this before, but I would like to apologize again to the people who had to report to me when I was getting started because, boy, did I not know what I was doing. The fundraising was hard because it's out of your control. The truth was that so much of our business was unknown and it was weird and it wasn't something that VCs were that interested in. And we pitched it seemed like everybody we got turned down so much.
+00:31:27
+It is amazing how much we got turned down. Going out there and getting rejected over and over again by VCs sucked.
+00:31:33
+That's what I should say about turning to the future and the opposite of fundraising, which is sort of the future of the Internet. What are you most curious and interested about that's happening on the Internet right now? It seems very much like obviously you're a creature of it now. Everyone is because of covid. What are the weird, fringy, surprising, interesting things happening on the Internet that have your attention?
+00:31:54
+I've been reading progress studies, this thing, Patrick Karlsson's and working on. I like it just because it's an ambitious approach. Let's investigate the question of what is progress and how do we make more of it and what generates technological or social progress and how does that work? That's a cool question to be asking. I think the real thing that's happening the Internet right now is a retreat from the public sphere. Most of the people I know who are doing the most interesting work and making those interesting things don't share them in public anymore, which I think is a real shame.
+00:32:22
+It feels, I think for a lot of people, a little dangerous to share things, to share their thoughts, to share their. Creative output, because people will go attack you. There's a lot of outrage and a lot of people coming in from an outside context and like come after you. So a lot of the most interesting stuff I think doesn't get hurt publicly. I do think it's never been a bigger, better time for amateur content production, semi professional content production, I guess.
+00:32:49
+But as you call it, you're making money, but not very much. There's tons of that stuff that I love. I'm not sure the most interesting things right now are the happening, I guess, on the Internet for, say, I think a lot of it's happening often in person and private chat rooms and things like that.
+00:33:05
+I'd be curious for any advice that you would share with younger and newer entrepreneurs out there about what you've learned, just building it, not necessarily towards just building anything that you wish you had been told by someone in your shoes now in the early days.
+00:33:22
+There's two things. The first one to pick, just one. That's the most important. It would be something, I guess I was told, and it just didn't register. Listen to your users. Listen to your customers. Don't just guess. Go and look the real key insight you can hear a hundred times and it just bounces off of people bounced off me for many years is you have to talk to them first and then have your great ideas. You can't have your great ideas and then go talk to them.
+00:33:52
+Once you've had the ideas, you've already figured them out. No amount of talking to people and justifying your ideas will change how good the ideas are. They're only as good as they'll be your best ideas. They'll still be your whatever your best idea was. You're not going to make it better by talking to customers, talk to the customers first and then you have the ideas. Then the customer information can impact the ideas. And so it's crucial to do it in the right order.
+00:34:17
+It's not enough just to talk to customers. And I just can't tell you how many frustrating years I spent doing it the wrong order and how often I talk to founders. And I'm like, you had this idea before. You talk to the customer, you have to go through your ideas and start over. It's really hard to do because we get so attached to our ideas.
+00:34:33
+That's the first thing. And the second thing. I think it's equally important and actually maybe it's the meta idea that's more important, which is that you're going to suck at whatever it is you're doing. At first, for a long time, I was not good at building things. I was a bad programmer, is a bad product manager, is a bad manager and a poor sense of strategy. I was bad at pretty much everything there was to do with starting a company when we got started.
+00:34:56
+We worked really hard for those first two years. I probably worked eighty one hundred hour weeks, most weeks. It was crazy. It was a crucible that working really hard and not forever.
+00:35:06
+I decided that for everything, but that really crammed a ton of learning into that time period. And maybe if you were smarter than me, you were quicker on the uptake or you just already were better at it than I was when I got started. I really didn't have any the skills that I got started. So if I started after two years in the industry and already just had more of the skills, I would have needed that less. But I really needed that.
+00:35:27
+And that persistence to keep making stuff, even though the stuff I was making wasn't very good and wasn't very successful, was really, really valuable and important. And I wish someone had told me it is normal and OK. For the first three things you build to kind of suck, the important question is, are you getting better at it? Are the new things better than the things you built for? Do they work better to customers like them or do you think they're better?
+00:35:53
+This is great. IRA Glass. Talk about taste and making things that everyone should go watch. Someone made a video of it. It's great. The core point is that when you get started in a field, your taste will exceed your grasp. You can tell that this thing is good and that thing isn't good and you try to make something out and make the good thing. And the thing you make isn't great. And it's so disheartening. And I guess the message I would give is that that's just how it is for everybody.
+00:36:21
+And the way you get better as you make a lot of stuff and you keep trying persistence.
+00:36:25
+It's funny how often that is the answer to every question. Just keep going. As a past guest, Charlie said, and greatness will eventually become you if you just keep going. You mentioned strategy there. And I'm just so interested by how leaders in position like yours, how deliberate you are or not about strategy. Are you ever thinking this decision will make the business more defensible versus YouTube or versus some peer, or is it just really North Star the customer and you have the faith that the business will thrive if you're thriving for the customer?
+00:36:56
+I'm constantly thinking about how we build our advantage versus the competition. And the way we do that is very clearly the customer. If you can't attract a larger audience on Twitch because our tools help you do that better, if you can monetize the viewers, you do have more effectively because you make more money per ad or we give you better tools for your viewers to support you. If you can have a more supportive, positive community where you don't get harassed, you're going to come back and do it again.
+00:37:24
+You're going to choose us over the competition. And I really see it as this endless. Movement of that core value proposition, and we'll do a hundred little things to try to improve that at the end of the day, every five percent better we get it. That is five percent harder. It is for someone else to be better than us at it. We're still growing and it's been good for us for the past year. We've done some pretty good growth.
+00:37:46
+People are looking for connection online. I credit that focus.
+00:37:49
+If anything, I think even though I try to stay focused on that all the time, I think we're still too easily distracted by, well, this will improve it. We'll do this and then it'll let us do this thing which lets us improve it. And that's true sometimes. Do you take the sort of roundabout ways to improving something? But a lot of the time you would have been better off just making the damn thing better in the first place.
+00:38:06
+Amazon is so famously their motto, being the most customer centric business in the world. So obviously a good home. It begs one last question, which is before my traditional closing question, which is how do you know who the customer is? You've got a marketplace here. You've got streamers, you've got the community, you've got subscribers, you've got watchers, they've got advertisers. How do you know who the customer is or can you have multiple categories?
+00:38:31
+It's funny, actually, because this is a big decision just in TV. The which the change. So adjust to the our customer is the viewer because we were making a show and we started from this mindset of our customers, the viewer, our products, about getting the streamers the viewers want, getting the product of yours want. That's not wrong. It kind of left the streamer side of it out on Twitch. I went and I talked to our customers, talked to our viewers.
+00:38:57
+But most of all, I dug into the data and I observe people's behavior. And what I discovered was at the end of the day, the viewers would go to where the streamers were. It might take a little while for the audience to migrate. But whatever service convinced the streamers to go there, that's where the viewers would show up. And the streamers really have to make their home somewhere where the viewers can split across multiple services very easily. And because of that dynamic, it was I made the decision, our customer is the streamer.
+00:39:23
+I think I was the right call. But I think most of all, we just decided on who our customer was and we picked the product. When you picked sort of an area and a customer that leads you to a product. And we want to building things working backwards from what the streamers wanted more than what the viewers wanted, especially at first. And I think you have to balance those two things because what are the streamers care about more than anything is the viewers.
+00:39:44
+So, of course, we have to wind up thinking about both. But starting from the streamers, thinking about it, streamer first was so powerful for us because it gave us that clarity. And I think there was a great business maybe to go build that was focused you first or maybe even advertiser first. But it just would have been a different product from Twitch. And I think the biggest mistake that startups make is trying to have it all we were very deliberately focused on.
+00:40:08
+I'm going to be ridiculously narrow because I'm going to win this niche. Live streaming video games was the only thing we cared about. And there was something really freeing in a way about having that focus and saying no to everything else. And I think that was powerful. So I think that's definitely something I would encourage every startup to do is take a customer. It almost doesn't matter. There are some customers that definitely better than others, but it almost doesn't matter what customer you pick if they're the people you want to build the product for.
+00:40:36
+But do be clear with yourself about who that customer is and be as narrow as you can.
+00:40:40
+I feel like you hear that same story over and over. It's almost like a rite of passage for founders that they have to make this uncomfortable decision to narrow their focus and pick something that feels too small. I love the way you describe it of like the relief that comes with that and the ability to just be clear about what your focus is.
+00:40:58
+It's really powerful to know why you are here and what you are doing and for it to be small enough that it feels tractable. And I do think you gain the right as you get bigger to expand your horizons and add customers. Facebook started with college students at a small set of elite universities. I were originally just Harvard. That's super narrow and that's so powerful to start in that narrow way. I was going to get started with people who wanted books for people who wanted to buy books on the Internet.
+00:41:29
+Maybe that's a lot of people now, but at the time was a very narrow segment of the world. That was a really powerful way to have a narrow focus, even though I think the vision was there the whole time to be bigger than that. And so I do think growth gives you the license as you to go broader, but you should start as narrow as you can.
+00:41:44
+Does that mean that one of the bigger investor mistakes that you see is thinking about the market size? Like, I love the comment on the thing that seems like the thing is usually not a thing. The best companies are actually creating markets rather than exploiting them.
+00:41:59
+The only reason I ask where the market size question is to get a sense for how ambitious the founders are, is ambitious founders sort of. They conceptualize themselves as being part of a space bigger than what they're currently doing. They'll say something like, well, you know, right now we're working on this and that's how big it is. We think that over time this can be really big. This is the future. And I'm I'm looking for a founder who's excited about the scope of what could be and who is very comfortable here.
+00:42:24
+Like we are focused on meeting these customer needs right now and we're focused on. Next month growth, because I think the way you get big, the way we got there and the way everyone I know who got that got big is next month, it's always next month. What's the most important growth number to hit? The one that's coming up right now, not some theoretical three year, five year model that can be important. Like you want to go check.
+00:42:47
+OK, let's say we did this and we scaled it up. Do we ever make any money? But that's a back of the envelope model. That's a 10 minute exercise. That's not a detailed hours and hours or days and excel. That's just a waste of time.
+00:43:00
+Is there an inverse of this meaning what reasons you've seen otherwise really talented people fail most commonly?
+00:43:07
+My first startup with a calendar I remember so it asking like cuz you can't afford well everyone like people who use their calendar say like no. Just like to sound like everyone should be using a calendar. It's like we're trying to bring calendars to the world. They look back at it, I'm like I don't want to limit it. I feel like if I said it was smaller I was somehow limiting my startup's potential. But that's completely the opposite of what I should have done.
+00:43:29
+What I should have done is focused on who most desperately needs an online calendar, who's most excited about this, who uses a calendar of really a lot, and we could really do much better than what they're currently doing. That wasn't how I thought about it at the time.
+00:43:45
+Unfortunately, my closing question for everybody is to ask for the kindest thing that anyone's ever done for you. I have one really strong memory from early on at the start up, I got really frustrated and angry in a meeting and kind of shut down the conversation. And I went outside to cool off and Justin came down outside to talk to me without really much judgment and without any accusation. He told me that what I was doing was really super disruptive, made it clear that he was here for me and wanted to help.
+00:44:17
+He wanted me to know that what I was doing wasn't working out. And he said in a way that was kind actually, that I felt like I felt his concern for me. I think in many ways that's one of the kindest things anyone's ever done for me, because I needed to hear that it was a risky, hard thing for him to do because he very well might wind up with me angry at him or lashing out back at him. So they took a personal risk in it.
+00:44:41
+But it was done with my best interest at heart. And I think that was a really beautiful and impressive thing.
+00:44:46
+Well, I mean, this has been one of my favorite founder conversations that I've had in a while. I really appreciate your time. Such a unique part of the universe that you occupy and have built. And I find it fascinating. I hope other people will, too. Thank you so much for your time today.
+00:44:59
+Thank you for having me. This episode was brought to you by Microsoft for startups, Microsoft for Startups is a global program dedicated to helping Enterprise ready B2B startups successfully scale their companies.
+00:45:11
+In this five part mini series, we talk to Greylock Partners Sammo Tamati and Microsoft for Startups Jeff Ma about why companies should partner with Microsoft for startups. In this week's episode, we talk with Jeff Mothe. The Microsoft for Startups Lead about why founders should consider building on Microsoft. So if I'm an entrepreneur, I'm making this decision of where and how am I going to build my new software product, let's say? And there's sort of the obvious essential choice of which infrastructure cloud provider am I going to work with?
+00:45:41
+What do you think are the most interesting things that would perk up the ears of that new entrepreneur when considering Microsoft?
+00:45:48
+Well, so I think there's a few things. I mean, I think one right now, if you are going to be selling into the enterprise, you want to build on Azure because that's where all your customers are already and that's where they feel comfortable.
+00:46:02
+If you are looking to convince those enterprises that you are ready and that you are worthy of a sale going to market with Microsoft and having Microsoft help connect you to customers and helping those customers feel comfortable with their ability to work with you, we were we were talking to, I think, normal, who's obviously been highlighted here in the conversation that they had completely changed with a Cisco chief security officer when that security officer found out that they could he could actually transact with them via Microsoft on Microsoft paper, that they had a partnership with us because he basically said, oh, if you didn't have this partnership, I wouldn't be able to work with you guys.
+00:46:42
+And I really want to work with you guys. So I'm really glad that you have this partnership with Microsoft. So I think one is thinking about, OK, are we going to be selling in an enterprise? Where are our customers? Shouldn't we be where our customers are? The next is really around just all of the different sort of go to market opportunities. We have co marketing opportunities, co selling opportunities. The marketplace, which has been mentioned before, is almost like an app store for CVS or for SAS Solutions to be able to have transact directly through Microsoft.
+00:47:15
+So there's business acceleration. And again, I think that the challenge is that when you're picking a cloud platform, you're not necessarily thinking this far down the road, but you should be because the actual technology decisions of the product decisions are fairly similar at some level. Now, like Azure has done a great job getting to a point where from a technology standpoint, it is very similar to our competitors. And so, you know, if all those things are being equal and you get all this great business value for choosing Azure, then why wouldn't you do it?
+00:47:49
+What is your vision and the company's vision for how this all might evolve? So you described the answer to that important question from the founder perspective. As it stands today. Obviously, this is a dynamic, very fast changing world. Where do you think this goes from here? What does it look like in two, three, four or five years?
+00:48:06
+Well, I mean, I think if I have anything to do with it or my team has anything to do with it, it's going to be that we provide a lot more competition in this space, in the startup world. And I think ultimately that type of competition is good for startups broadly because they have a choice. Right? If you don't have a choice, then you have a situation where your partner or your cloud provider can take you over the coals in many different ways.
+00:48:32
+And it's not just cost, obviously, because cost is like where you see a lot of competition right now via credits and credit programs and discounts and things like that. It really the terms, the idea of being competitive with you down the road, all the different ways that your cloud provider can provide you value or can provide you challenges. If you have an alternative, it really makes a big difference. Like if you can actually have that leverage or the bargaining power to be like, hey, I'm just going to move over to Azure because they're giving me X, Y or Z, like, I think that competition is the right thing ultimately for startups.
+00:49:08
+So if I see this evolving, I believe that all the three major providers will all provide some different value proposition. And for us, it's it's leveraging what we are as a company, which is the tremendous business platform that is in so many enterprises already.
+00:49:27
+What does it feel like for a new company to begin working with you and your team? What are the touch points early on? Obviously, I think many will know listening that would be considering using Azure will understand the basics of of the infrastructure. But what is the experience like working with your team for the first time?
+00:49:45
+So we have a couple of different motions right now. The one that's probably the most mature is the step motion that we call Pegasus, which is essentially we will have discovery calls with the founders and the CIOs where we try to understand what. You're doing from a business and technology standpoint, and then essentially we have teams that will help you from a technology standpoint, whether it's migrated to Azure or connecting you with the right services. So that's on the technical side and that's very high touch, very white glove.
+00:50:16
+And then on the sort of business side, we will connect you with sort of both business development and sales and and sort of marketing specialists that will help come up with one. How do we get you sort of enterprise Kozel ready, meaning ready to sell with Microsoft? How do we then get your product in front of those sellers? How do we look for co marketing opportunities with you, whether it's presenting it like these virtual conferences or whether it's PR or whether it's even something like what we're doing right now with the investor, like the best, like there are tons of opportunities to sort of look for co marketing.
+00:50:52
+And then finally, it's getting you ready to transact in the marketplace so that you can avoid procurement, which can take and shorten your sales cycles tremendously. To find more episodes or sign up for our weekly summary, visit, Investor Field Guide dot com. Thanks for listening to Founders Felgate.

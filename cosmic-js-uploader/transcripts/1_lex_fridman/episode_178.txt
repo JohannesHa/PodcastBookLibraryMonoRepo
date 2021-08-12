@@ -1,0 +1,1058 @@
+00:00:00
+The following is a conversation with Ryan Schiller, creator of Breck's, an anonymous discussion feed for college communities, starting at first with Yale, then the Ivy Leagues, and now at Stanford and MIT. Their mission is to give students a place to explore ideas and issues in a positive way, but with much more personal and intellectual freedom than has defined college campuses in recent history. I think this is a very difficult but worthy project. Quick thank you to our sponsors.
+00:00:33
+All form Magic Spoon, Better Help and brave click their links to support this podcast. As a side note, let me say that Ryan, the young entrepreneur and genuine human being who quickly won me over, he's inspiring in many ways, both in the struggle he had to overcome in his personal life, but also in the fact that he did not know how to code, but saw a problem in this world, in his community that he cared about and for that he will learn to code and build the solution in the best way he knew how.
+00:01:07
+That's an important reminder for us humans. Let us not only complain about the problems in the world, let us fix them. I also have to say that there's passion in Ryan's eyes for really wanting to make a difference in the world, his story, his effort gives me hope for the future. There is hate in this world, but I believe there's much more love. And I believe it's possible to build online platforms that connect us through our common humanity as we explore difficult, personal, even painful ideas together.
+00:01:41
+As usual, I'll do a few minutes of ads. Now, I try to make this interesting, but I'll give you timestamps because I value your time and listening experience so you can skip. But please still check out our sponsors. I'm fortunate to be able to be very selective with the sponsors we take on. So hopefully if you buy their stuff, you'll find value in it. Just as I have clicked their links in the description, it really is the best way to support this podcast.
+00:02:07
+This episode is sponsored by a new sponsor all form. They make stylish, comfortable, customizable sofas for an engineering mind. Their modular design pleases my soul. I say their new sponsor, but I've had their stuff for quite a while. I have, in fact, their black leather love seat. How great is the term love see? I think you can't help but step up the depth of human connection between any two people that sit on a love seat.
+00:02:37
+I said on the all forum love seat with Mr. Michael Malice and now I'm in love. See, it works. Some of the best experiences in my life had to do with just sitting, with friends talking and the weird friends, the out their friends. I think quote unquote, adult life can kind of carry you down the stream of busyness where you no longer have these online conversations with the weirdos in your life.
+00:03:02
+I think that's probably why I never want to grow up. Anyway, all form is offering 20 percent off all orders for our listeners. That's you, my dear friend, at all form of social acts, that's all Phone.com Slack's to find your perfect sulpher or love seat. Michael Mals is not included with your purchase. Finally, they're deciding whether to sponsor this podcast long term. So now's the time to buy their stuff if you like it. This episode is sponsored by Magic Spoon, low carb, keto friendly cereal.
+00:03:37
+It has zero grams of sugar, 13 to 14 grams of protein, only four nine grams of carbs and 140 calories in each serving. They have a couple limited edition flavors this month cookies and cream and maple waffle.
+00:03:52
+But my favorite flavor is still cocoa. But these sound pretty good. Haven't tried them yet. I will try. You should, too. Yes, I am very much excited to be living in this day and age when we have reusable rockets being launched into space and landing back on Earth.
+00:04:09
+I think what really excites me is that we can have what used to be a sugar stuffed meal like cereal that's now completely keto friendly. Anyway, Magic Spoon has a 100 happiness guarantee. So if you don't like it, they refunded even Dostoyevsky's such and Carmo would be impressed. Go to magic. The counselors selects and use code leks at checkout to save five bucks off your order. That's magic spoon dot com slash legs and use code. This episode is also sponsored by Better Help Spelled Help Help.
+00:04:48
+They figure out what you need.
+00:04:49
+A match with a licensed professional therapist in under 48 hours. I've always been fascinated with talk therapy and I guess the Birdwood phrase that is the power of conversations. In some sense that's what podcasting is. When I was younger, I did see it as the ideal of psychotherapy, that through this interaction between two humans, you can arrive at something deep and profound that's personal about your particular brain and almost from an engineering perspective, rewire things.
+00:05:23
+I think there's a lot of ways in which our work with human robot interaction in the artificial intelligence space will teach us how to do this kind of range.
+00:05:30
+Inuring better. But anyway, better help is easy.
+00:05:33
+Private, affordable, available, worldwide. Check them out of better health outcomes. Works. That's better help dotcoms. Lex. This show was also sponsored by Brave Afast Privacy Preserving browser that feels like Google Chrome, but without the ads or the various kinds of tracking that ads can do. I love using it more than any other browser, including Chrome. I also love Google Chrome, but I love Brave even more.
+00:05:59
+You should check out my conversation with Brendan Eich, who's the creator of Brave but also the creator of JavaScript and Mozilla Foundation. I mean, this guy has done basically everything, but it's his work on JavaScript, actually, that's really stuck with me. In that conversation. I was reminded that change in the world doesn't have to start with a perfect solution. You can start with something to put it nicely that's imperfect and grow. Iterate over time. You don't have to start with something pretty.
+00:06:29
+You just have to start anyway. Get the browser at Brave Dotcom Slash works and it might become your favorite browser to as brave dotcom slash flex. This is the Lux Friedman podcast. And now here's my conversation with Ryan Schiller. Let's start with the basics what is Celebrex, what are its founding story and founding principles and looking to the future, what do you hope to achieve?
+00:07:16
+Celebrex? Sure. Let me break that down. So what is the Seabrooks? Celebrex is an anonymous discussion fit for college campuses. It's a place where people can have important and unfettered discussions and open discourse about topics they care about ideas that matter. They can do all of that completely anonymously with verified members of their college community. And we exist both on each Ivy League campus and we have an interactive community. And actually this week we just opened to MIT and Stanford.
+00:07:49
+So now really I might. Yeah. So M.I.T. and Stanford communities and I expect you to sign up for your Amethi account as very first day.
+00:07:58
+What are for people who are not familiar like me, actually, which are the Ivy Leagues.
+00:08:03
+Sure.
+00:08:04
+So we started at Yale, which is my I don't know, can you call it alma mater because I haven't technically graduated. Yeah.
+00:08:11
+What's that called when you're actually still there. My university. Yeah, I guess. I guess I'll call it home. That's my home educational home and my educational home of Yale.
+00:08:21
+And then we moved to and we could get into the story of this eventually, if you'd like.
+00:08:27
+And then we went to Dartmouth and then quarantine her. We opened to the rest of the Ivy League and now we have. And the Ivy League, for those who don't know, is Harvard, Yale, Princeton, Dartmouth, Columbia, Cornell, Brown and Penn. I got it all in one breath.
+00:08:45
+Was the youngest Ivy League Penn? No, Columbia.
+00:08:49
+I can't say I got a camera well, edited in post. I don't know.
+00:08:53
+OK, they each have all all eight of them and then you can just like get it in like Penn, Harvard. There's actually a really nice software that people should check out.
+00:09:02
+Like a service is using machine learning really nicely for podcast editing where you can it learns the voice of the speaker and it can change the words you said.
+00:09:15
+It's like some deep fake stuff is deep fake. But for positive applications, it's very interesting. It's like the only deep fake positive for have a friend who's obsessed with Devika. What's great about I think Tippex is that it's going to do the opposite of sort of what's happening with our culture where everyone will have plausible deniability. Yeah, exactly. I mean, that's the hope for me, is there's so many fake things out there.
+00:09:40
+There we're going to actually be much more skeptical. And I think and taking multiple sources and actually like reason, like use common sense and use my deep thinking to understand, like what is true and what is not. Because, you know, we used to have, like traditional sources, like The New York Times and all these kinds of publications that had a reputation there, these institutions. And they are the source of truth. And when you no longer can trust anything is a source of truth, you start to think on your own.
+00:10:10
+I guess part of the individual that goes it takes its way back to like where I came from, the Soviet Union. We can't really trust any one source of news. You have to think on your own. You have to talk to your friends.
+00:10:22
+A tremendous amount of intellectual autonomy, don't you think it? Think about the societal consequences. Absolutely.
+00:10:28
+I mean, we see so much decentralization in all aspects of our digital lives now, but this is like the decentralization of thought you could say. It's sadly, I don't think it said is decentralization of truth or like truth is a clustering thing. We have these like this point cloud of people just swimming around like billions of them, and they all have certain ideas. And what's thought of as truth is almost like a clustering algorithm when you just get a bunch of people that believe the same thing.
+00:11:03
+That's true. But there's also another truth. And there might be like multiple truths and it would be like a battle of truths. Maybe even the idea of truth will like lessen its power in society, that there is such a thing as a truth. Because the downside of saying something is true is it's always the downside of what people like religious people call scientism, which is like once science has declared something is true, you can't no longer question it.
+00:11:36
+But the reality is science is a moving mechanism.
+00:11:39
+You constant question, you constantly questioning and maybe truth should be renamed as as a process, not a not a final destination. The whole point is to keep questioning and keep questioning and keep discovery.
+00:11:54
+Kind of like we're going backwards in time to like back when back when people were sort of finding their identities and we were less globalized like people would get.
+00:12:05
+Together and they'd get together around common value system, common morals and a common place, and those would be sort of these clusters of their truth, right. And so we have all these different civilizations and societies across across the world that created their own truth. You know, we talk about the Jews in the Tomine Torero, look at Buddhist texts.
+00:12:24
+We can look at all sorts of different truths and how many of them get out the same things. But many of them have different ideas or different articulations.
+00:12:32
+Harare and Sapience rewinds even farther back until like Manti's, that's the thing that made us humans special, is you can develop these clusters of ideas, hold them in their minds through stories, pass them on to each other and they grows and grows. And finally, we have Bitcoin.
+00:12:48
+So which money is another belief system that that that has power only because we believe in it? And is that truth? I don't know. But it has power and it's carried in the minds of millions and thereby has power. But back to the parks. So what was the founding story was the founding principles of libraries?
+00:13:14
+Sure. So I was on campus as a freshman and I was talking to my friends. Many of them felt like it was hard to raise your hand in class. That's question. They really felt like even outside the classroom, it was hard to be vulnerable. And the thing you have to understand about is it's not that big a place. Everyone knows someone who knows someone who knows you basically. Yeah. And people come to these schools, first of all, they're home for people and they want to be themselves.
+00:13:41
+They want to feel like they can be authentic. They want to make real friendships.
+00:13:43
+And second of all, it's a place where people go for intellectual vitality to explore important ideas and to grow as thinkers and fortunately, to do the culture. My friends express that it was very difficult to do that, and I felt it, too. And then I couldn't talk to my professors. And I remember I talked to one specific global affairs professor and was taking this class and his area of expertize was in the Middle Eastern conflict. And I went to him and I said, Professor, we've we're almost finished this class and we haven't even gotten to sort of the reason I originally want to take the class was to hear about your perspective on the Middle Eastern conflict, because something I learned at Yale and this is maybe a sort of a tangent, but I'll I'll flesh it out.
+00:14:27
+But I learned at Yale is that you can learn all sorts of things from a textbook. And when you kind of go to Yale to do is to get like the opinions of the experts that go beyond the textbook and to have those more in-depth conversations. And that's sort of the added value of going to a place like Yale and taking a course there, as opposed to just reading a textbook, but also interact with that opinion.
+00:14:47
+Exactly. Person. Yeah, to interact with that, with that opinion, to hear it, to respond to it, to push back on it and to have that with some great minds. And there really are great minds at Yale. Don't get me wrong, it's a place it's still a place of tremendous brilliance. So I'm talking to Professor Wright and I'm like, we haven't I haven't heard your area of expertize. And I'm like, are we going to get to it?
+00:15:09
+What's the deal? And this is during office hours, mind you. So we're one on one. It says Ryan. To be honest, I used to teach this area every single year. In fact, I would do a section on it, which is like a small seminar like break away from the class where he would talk to the students in small groups and explain and explain his perspective, his research, and have a real debate about it, like around a Harkness table.
+00:15:32
+And I used to do this. And then about two years ago, a student reported me to the school and I realized my job was at risk. And I realized the best course of action was basically. Just not to broach the topic. And so now I just don't even mention it. And it's like you can say whatever you want, but I'm not I'm not going to be part of it. And it's a real shame. It's a real loss to all of the students who I think came to the school to learn from these brilliant professors in that context of these world experts.
+00:16:09
+The problem seems to be that reporting mechanism. Moore, There's a disproportionate power to a complaint of a young student, a complaint that an idea is painful or an idea is disrespectful to you or ideas creating an unsafe space. And the conclusion of that, I mean, I'm not sure what to do with that because it's a single reporting, maybe a couple, but that has more power than the idea itself. And that's strange. I don't know how to fix that in the administration except to fire everybody.
+00:16:47
+So like this is to push back against this storyline that academia somehow fundamentally broken.
+00:16:53
+I think we have to separate a lot of things out. Like one is to look at faculty and you have to look at administration and like at MIT, for example, the administration does tries to do well, but they're the ones that often lack courage. They're often the ones who are the source of the problem. When people criticize academia and I'll just speak to my myself, you know, I'm willing to take heat for this is they really are criticizing the administration, not the faculty, because the faculty oftentimes are the most brilliant, the the boldest thinkers that you think whenever you talk about.
+00:17:39
+We need, like, the truth to be spoken. The faculty are often the ones who are in the possession of the deepest truths in their mind. And in that sense. And they also have the capacity to truly educate in the way that you're you're saying. And so it's not broken. I like fundamentally, but there's stuff that like needs that's not working out well.
+00:18:00
+And you can't take my words. That's that's what I thought you were going to ask me if I think the Ivy League is broken. That's totally that's exactly it.
+00:18:07
+So you don't think so? On the question, do you think the Ivy League is broken? Like what? How do you think about it? The academia in general, I suppose. But Ivy League still I think it represents some of the best qualities of academia.
+00:18:19
+And what more is there to say there? I think the Ivy League is producing tremendous thinkers to this day. I think the culture has a lot that can be improved. But I have a lot of faith in the people who are in these institutions. I think, like you said, the administration and I have to be a little careful because, you know, I've been in some of these committees and I've talked to administration about these sorts of things. I think they have a lot of stakeholders.
+00:18:44
+And unfortunately, it makes it difficult for them to always serve these brilliant faculty and the students in the way that they would probably like to. Yeah.
+00:18:54
+OK, so this is me. Speaking of the administration, I know the people and there are oftentimes the faculty holding positions in these committees, right? Yes, but it's in in the role of, quote unquote, service.
+00:19:06
+They they're trying to do well. They're trying to do good. But I think you could say the mechanism is not working, but I could also say my personal opinion.
+00:19:22
+Is they lack courage and one courage and two. Grace, when they walk through the fire, so courage is stepping into the fire and grace when you walk through the fire is like maintaining that like light as opposed to being rude and insensitive to the lived, quote unquote, experience of others or like, you know, just not eloquent at all. Like as you step in and take the courageous step of talking and saying the difficult thing, doing it well, like doing it skillfully.
+00:20:01
+So both of those are important, the courage and the skill to communicate difficult ideas. And they often lack them because they weren't trained for it. I think so. You can blame the mechanisms that don't that allow 19, 20 year old students to have more power than the entire faculty. Or you could just say that the faculty need to step up and grow some guts and skill of graceful communication and really administration. Well, the EPA and the administration.
+00:20:29
+That's right. That's the administration.
+00:20:32
+The faculty are sometimes some of the most brave, outspoken people. Yes. Within the bounds of their career. Yeah.
+00:20:40
+So so that takes a that's like the founding kind of spark of a fire that led you to then and say, OK, so how can I help?
+00:20:52
+Yeah. And I export a lot. I export a lot of options. I wrote many articles to my friends, talk to them, and I realized it sort of need to be a cultural change, sort of need to be bottom up grassroots something. I knew the energy was there because you just look at the most recent institutional assessment from Yale.
+00:21:12
+This was basically the number one thing that students, faculty and alumni all pointed to, to the administration was cultivating more conversations on campus and more difficult conversations on campus. So the people on campus know it. And you look at a Gallup poll, 61 percent of students are on Ivy League campuses afraid to speak their minds because of the campus culture. The campus culture is causing sort of freezing effect on discourse. Can you pass on that again? So what percentage of students feel free to speak their mind?
+00:21:49
+Sixty one percent nationally.
+00:21:52
+And that you're talking about, you know, places nothing like the Ivy League, where I'd say I'd imagine it would be even worse because of just the way that these communities kind of come about and the sorts of people who are attracted or are invited to these sorts of communities that's nationwide that college students. And it's going up that college students are afraid to say what they believe because of their campus climate. So it's a majority. It's not it's not a conservative thing.
+00:22:22
+It's not a liberal thing. It's a group thing. We're all feeling it.
+00:22:25
+The majority of us are feeling and basically just it doesn't even you don't even necessarily need to have anything to say. You just have a fear. That's right. So when you're like teaching. You know, metaphors are really powerful thing to explain, you know, and there's just the caution you feel is just horrible for humor. Now comedians have the freedom to just talk shit, which is why I really appreciate somebody who's been a friend recently, Tim Dolan, who has who gives zero pardon my French fucks about anything, which is very liberating, very important person to just tear down the powerful.
+00:23:05
+But, you know, inside the academia, as a as an educator, as a teacher, as a professor, you don't have the same freedom. So that fear is felt, I guess, by a majority of students.
+00:23:16
+It's and you're getting at something there, too, which is that if you're afraid to speak metaphorically, if you're afraid to speak imprecisely, it can be very difficult to actually think at all and to think to the extremities of what you're capable of, because these are these are the mechanisms we use when we don't have quite the precise mathematical language to quite pinpoint what we're talking about. Yet this is the beginning. This is the creative step that leads to new knowledge.
+00:23:43
+And that really scares me is that if I'm not allowed to sort of excavate these things, these ideas with people in the sort of messy, sloppy way that we do as humans when we're first being creative, are we are we going to be able to continue? Are we going to continue to be able to learn?
+00:23:58
+That's what really sort of scare me. So you've explored a bunch of different ideas. You wrote a bunch of different stuff. How did books come about?
+00:24:07
+Basically came to me that had to be kind of a grassroots movement and it had to be something that changed culturally and had to be relatively personal. People meeting people, people finding out that, no, I'm not the only one on campus who feels this way. I feel alone. And there are a lot of other people who feel alone. I believe this thing and it's not as unpopular as I thought, you know, the basically creating heterodoxy of thought.
+00:24:35
+And it's creating that moment where you realized that your politics are personal and that your politics are shared by a lot of people on campus. And so I just started coding. I didn't have much coding experience, but I went headfirst in and figured how hard could it be? You know, I mean, this is really fascinating.
+00:24:56
+So I talk to a lot of software engineers and people. Obviously, that's where my passion, my, uh, interests are, my focus has been throughout my life.
+00:25:06
+The fascinating thing about your story, I think it should be truly inspiring to like people that want to change the world, is that you don't have a background in programing. You don't have even maybe a technical background.
+00:25:21
+So you saw a problem.
+00:25:24
+You explore different ideas and then you just decided you're going to learn how to build an app like without a technical background, like you didn't try to.
+00:25:37
+That's so bold. That is so beautiful.
+00:25:39
+Then came take me through the journey of of deciding to do that, of like learning to program without a programing background and building the app like detail like what do you actually like.
+00:25:52
+How do you start. Sure. I mean you want to you want to buy a Mac I learned and you had to find that. I'm just going to go step by step. Right. I'll be as dumb as possible. It was.
+00:26:02
+It was truly is truly you know. Yeah. Like leading by your feet.
+00:26:06
+You need a computer for this. Yeah. I had a PC at the time and I was injured at the time and I realized, you know, I realized it should be like and I was out. And so yeah, that was a decision. But, you know, I knew kids these days, they're always on their phone.
+00:26:20
+And, you know, I wanted you to be able to say a passing thought, you know, in class, make a passing like you're walking around and you have a thought and you can express it or you're in the dining hall and you have your phone out, you can express it. So it was clear to me it should be was, by the way.
+00:26:33
+Yeah. Andrew, it is great to have you check out. We also are now available on Android. We'll get there for your Android users from MIT, Stanford of the Ivy League. So. Back to how it happened, so I am EMAC, so I went out and got back and realized that an iPhone for testing eventually got an iPhone. So those are the real robot blocks to start with. Um, from there, I mean, there's there's almost too much information out there about programing.
+00:27:02
+The question is like, where do you start and what's going to be useful to you and.
+00:27:07
+I my first thought was I should look at small classes, but it became very clear very quickly that that was not the right place to start. That would probably be the right place to start if I wanted to get a job at Amazon. But Michael was slightly different. Yeah. And I definitely had it in mind that what I was trying to make was I'm trying to prove out an idea.
+00:27:28
+I'm not trying to make a finished product.
+00:27:29
+I'm just trying to get to the first step because I figured if I keep if I keep getting to the next step, at least I won't die now, you know, like at least things will move forward. I'll learn new things. Maybe I'll meet new people. I'll show a degree of seriousness about what I'm doing and things will come together. And that is, as you'll see, what ends up happening. So I start with Swift, right. And I find this video from the Stanford professor that had like a million views.
+00:27:57
+That was like how to make basically swift apps like Perfect.
+00:28:00
+And you just like so you got this Mac and you what, like go to Google Dotcom and you type download Xcode and those code.
+00:28:08
+Yeah. And then I typed it on YouTube like Stanford, I was Swift's enter first YouTube video has a million views and like that has to be good at Stanford as million views.
+00:28:20
+And I got lucky. I mean, that turned out to be a very good video and it's basically like introductory course to Swift. Yeah.
+00:28:27
+I mean, you say introductory. I think most of the people in that class probably had a much better background than I did software developers, probably a computer scientist.
+00:28:37
+And it was slow for me.
+00:28:39
+I, I don't think I realized it fully at the time, just how far behind I was from the rest of the class, because I was like, wow, it seems like people are picking this up really quickly.
+00:28:48
+So took a little longer and, you know, a lot of time on stack overflow. But eventually I made a truly minimal viable product, the most minimal, like we're talking, you know, put text on screen, add text to screen, comment on top of text, you know, make a post, make a response. And anyone with a yell email can do this. And you plug it into a certain iCloud server and you verify people's accounts and you you're off.
+00:29:17
+You have to figure out how to like the whole idea of like having an account. So there's a permanence like you can create an account with an email, verify it, verify it. OK, so that that's not and that's literally how I thought about.
+00:29:31
+Right. Like so do I need to do. And I'm like, well first thing I need is a log image and I'm like how to make a login page and swift. I mean, it's that easy. So this has been done before, of course.
+00:29:43
+And then the first page that pops up is probably pretty damn good. Page when you it wasn't that bad, it wasn't perfect, but like maybe me.
+00:29:50
+Eighty percent of the way there. And then I came in to some bugs and then you know, our stack overflow a few questions and then I got a little further and then I found some more bugs. And then I'm like, maybe this isn't the right way to do. Maybe I should do it this way. And yeah, I'm sure my code isn't great, but the goal isn't to make quick code.
+00:30:05
+The great wasn't the goal wasn't to make scalable code. It was to understand. Is this something my friends will use? Like what is the reaction going to be if I put it in their hands and am I capable of making this thing? And it's awesome.
+00:30:18
+And so is focusing on the experience, like actually just really driving towards that first step, figuring out the first step and really driving towards a question to also figure out like this concept of like stories like database, you know, something funny or sad.
+00:30:33
+I just made the database structure with no knowledge of databases whatsoever. And I start showing it to my friends who have an experience and see us now like used a heap. That's so interesting.
+00:30:43
+Like, why did you decide to store it in this way? I'm like, I don't even know what a heap is.
+00:30:48
+Yeah, I just did it because it works like I'm trying to make calls and stuff and they're like, yeah, they're like the is really like I'm like, what?
+00:30:59
+There's a deep, profound lesson in there that that I don't know how much you've interacted with computer science people since, but they tend to optimize and have these kind of discussions. And what leads what results is over optimization. It's like worrying. Is this really the right way to do it?
+00:31:13
+And then you go as opposed to doing the first thing on Stack, or if you go down this like rabbit hole of what's the actual proper way to do it?
+00:31:23
+And then you're like you wake up five years later working on AM, working at Amazon because you've never finished the login page.
+00:31:30
+Like it's kind of hilarious, but that that's a really deep lesson, like just get it done.
+00:31:35
+And why what's a hebra is is the right that should be a T-shirt. Uh, that that's really the right approach to building something that ultimately creates an experience. And then you iterate eventually. That's how the great some of the greatest software products in this world have been built as you create it quickly.
+00:31:58
+And then just iterate what was, by the way, in your mind, the thing that you were chasing is a prototype like. What what was the first step that if you like, something is working like this, see you interacting with another friend? Yeah, I think the first step was like. It's one thing to tell someone about an idea, but it's another thing to put it in their hands and kind of see like the way they're their eyes kind of look.
+00:32:26
+And when I go, I'd walk around cross campus, which is part of you that literally just go up to people and run up to them and be like, try this. You've got to try this as a precaution team.
+00:32:36
+By the way, of course, this will never be the same. It's going to be like you got to try. You got to try this, like, what is it? And be like and I'll explain. It's like an anonymous discussion fit for a Yale campus. Yeah. And you see the gears turning and they just some people would be like, not interested.
+00:32:51
+Might find not your target demographic. I get it. You'll come eventually.
+00:32:54
+But some people like you could see it. They got it. They're like yes.
+00:33:00
+And that's when I was like, OK, ok, there is.
+00:33:03
+And you don't need I mean you don't need 50 percent of people to like it. Yeah. You need, what, five percent, 10 percent to love it.
+00:33:11
+And then they'll tell five percent. 10 percent. Word of mouth and you're good.
+00:33:17
+Of course, the first version was very, very crappy, but seeing people trying despite all the crappiness was it was sort of enough to be the first step. And, you know, since since then, all of my code's been stripped out. I now have friends who basically have told me, don't bother with the coding part. You do.
+00:33:34
+You do the rest. You just make sure that we can it because they want to code of great. I mean, I'm not an engineer. I never intended to be an engineer. And there's a lot to do that's not engineering. Yes. But the point was just to validate the idea, so to speak.
+00:33:48
+When was the moment that you felt like we've created something special, maybe a moment where you're proud of that?
+00:33:56
+This is this is this has the potential to actually be the very implementation of the idea that I initially had.
+00:34:07
+There's so many there's so many little moments. It's like and I bet they'll still be moments in the future that make that make it hard to like, totally say like. Yeah, we should say this is this is still very early years of Liebreich. So, yeah, it's only it's only been a year since we've had like actual like a lot of people on the RPA about a year.
+00:34:27
+Oh wow.
+00:34:28
+OK, I mean there's some crazy moments I could talk about sort of going to Dartmouth because it's one thing to like get some traction at your school.
+00:34:35
+Yeah. People know you and you know it's your school. You know, it's another thing to go to another school and where no one knows you and sign up 90 percent of the campus overnight. Wow.
+00:34:46
+So tell me that story. You're invading another territory. It was literally like that. Did you buy like a Dartmouth sweatshirt? Purposefully. I didn't want to fraud a fraud anyone, but I was purposefully nondescript in my clothing. Yeah, no yellow stuff, no doubt. This stuff. Just funding. Um, I'll get I'll go back there. So what happened was. This was like March of last year, um, so almost almost a year ago today, and I really wanted to see if we could go from sort of one campus to two campuses.
+00:35:22
+So I didn't know anyone at Dartmouth campus, but I kind of. I had some cold emails, some warm ish emails, um, and I went to people and I was like, basically, can I sleep on your floor for two days during finals period?
+00:35:37
+Yeah, I a lot of people have said this is crazy. Like no one's going to know what's the DeLynn app during finals period, a social after Nanosphere.
+00:35:45
+But I emailed a few people. I was like, you know, can I sleep on your floor?
+00:35:49
+And one of them was crazy enough to say, Sure, come to me, come to my dorm. Oh, I have a nice floor. Um, and he ended up today. He's still really close. He's a close friend. But anyway, I take a train knowing nothing about this guy besides his first and last name. And I arrive and Dartmouth is really, really remote, way more remote than you think to the point where I'm like he's like he warned me.
+00:36:16
+He's a really hospitable guy. He wore me like, it's going to be hard to get to campus from the train station because it's really remote and like, I'm sure it's fine.
+00:36:23
+I'll just get no, there are no Hubers and Hanovers. What do you think this is New Hampshire. So Connecticut I mean, Yale is pretty remote as well.
+00:36:33
+No. Yeah, Yeliz. Well, and Yale, New Haven, which is a real city, has whooper.
+00:36:39
+It has food, has culture, has a nightclub even. Yeah. Like we're talking about a real city. Like it's not New York, it's not Philadelphia where I'm from, but it's a city.
+00:36:49
+New Hampshire is something very different. Yeah.
+00:36:52
+Beautiful campus, I'm sure. Beautiful. Oh my gosh. I could I could talk so much about I was blown away by Dartmouth. I started wondering, like, why didn't apply legitimately between the people and the culture? It was it was it was a beautiful vacation. So I arrived there, no Uber.
+00:37:10
+But eventually I called this guy who's like the only guy who can get you to Dartmouth and takes a couple hours. But we got there. I slipped on this guy's floor. I wake up, I ask him if there's any printing. He's like, oh, Dartmouth happens to have free printing in the copy room. I print out like two thousand posters.
+00:37:26
+And so the guy in the copy room literally goes to me. It's like, kid, I don't know what you're doing, but you need to get out of here.
+00:37:32
+Like, I'm going I'm going on the limits.
+00:37:36
+I know. Yeah, I found the limit. And I think a lot of stories about finding the limits. There's a little piece of advice socially. Yeah. He's like, you got to get out here. And I, I then go to every single dorm door. I put a poster under every single term to advertising the app with a with a QR code. Yeah.
+00:37:55
+I walk around campus saying hi to everyone and telling them about the app. I go from table to table in the cafeteria, introduce myself, say hi and download the app. It's exhausting. There's so many steps, so manage crouching down to slip the poster into the dorm during my legs were burning. But by the end of it, the twenty four hours later I'm sitting on a I'm sitting in a bus and I'm just pressing the refresh button on the account creation panels.
+00:38:22
+It's like going up by hundredths. Yeah. I'm like, oh my gosh, this is working in a sense.
+00:38:29
+I mean certainly you're like initial seed is so powerful. Just a piece. Yeah. But then the word of mouth is what carries it forward. And what was the explanation you gave to the app. It's anonymity, a fundamental part of it, like saying this is a chance for you to speak your mind about your experiences on campus. Yeah, I think people get it. You don't know what I've realized is you don't need to tell people why to try it.
+00:38:57
+They know, yeah, there's a hunger for this. Exactly. So all I do is I'm very factual. I said and this is where I kind of ended up coining the kind of the line that I now used to say, because I said it so many times in those 24 hours. I just said, it's not a discussion fit for Darmouth.
+00:39:16
+And they're like, yes, like they've been waiting for it, you know, some people are more skeptical, but a lot of people were like, great, I'm excited to try this.
+00:39:27
+I'm excited to meet people and connect. And I mean, the way Dharma's taken to it's incredible everything from professors writing poems during finals period to be like, good luck in finals period, you're going to rise like a Phenix or whatever to like. Yeah, it's crazy to.
+00:39:44
+I heard about two women meeting on Breck's and starting a finance club at Dartmouth to significant others, meaning there's an article recently written up at Yale as well, about two queer women who met on Leverett's and started a relationship which was pretty it was pretty interesting to see people throwing parties. Grekov it yeah.
+00:40:06
+It was just amazing to see how when you allow people to be vulnerable and social, they connect. People have this natural desire to connect. Yeah.
+00:40:14
+When when you have whatever natural desire to have a voice and then when that voice is is paired with freedom, that you could truly express yourself.
+00:40:26
+And there's something liberating about that. And in that sense, you're like you're connecting is your true self, whatever that is. What are the most powerful conversations you've seen on the app? You mentioned like people connecting hard?
+00:40:39
+Part of that, that is the sorting, you know, figuring out which one am I going to put it that the mental sorting out just something that stand out. Sorry, I don't mean to do like the top ten conversations ever of all time ever on the app. I just mean, like stuff that you remember that stands out to you.
+00:40:53
+I remember this one really amazing comment from this. He was a Mexican international student who spoke out. And this this post was super edgy, but yet it got hundreds and hundreds of upvotes within the community.
+00:41:11
+It was a Yale community specific post. And we should point out that there's a school specific community now and there's an all Ivy community. So this was specifically in the Yale community and this was a little while ago, but it stuck with me. This Mexican international student comes to Yale and he starts talking about his experience in the La Casa, which is the Mexican Latin access, as they would say, cultural center at Yale, and how he doesn't feel welcome there because he's Roman Catholic, basically, and international, and how he doesn't feel like he fits with their agenda.
+00:41:48
+And as a result, this place that's supposed to be home for him, he feels outcasted and feels more alone than he does anywhere else on campus. That's powerful.
+00:41:56
+That was powerful to me. Yeah. Hearing someone, someone who should be feeling supported by this culture say. Actually, this is not doing anything for me like this is not helping me. Yeah, this is this is not where I feel at home.
+00:42:13
+So what do you make of anonymity? Because it seems to be a fundamental aspect of the power of the app, right.
+00:42:23
+But at the same time, anonymity on the Internet, uh, so protects us. Right. It gives us freedom to have a voice, but it can also bring out the dark side of human nature, like trolls or people who want to be malicious, want to hurt others purely for the joy of hurting others, being cruel, for fun and going to the dark places.
+00:42:48
+So, like, what do you make of anonymity as a fundamental feature of social interaction, like the pros and the cons?
+00:42:55
+Yeah, just to break that down a bit, I would say a lot of the same things about a place like Twitter where people are very often anonymous. Having said that, of course, there's a different sort of capacity people have when they're anonymous, right? Well, in all different sorts of ways. So what do I make of anonymity?
+00:43:13
+I think it can be incredibly liberating and allow people to be incredibly vulnerable and to connect in different ways, both on politics.
+00:43:20
+And there was a lot to talk about this year regarding politics and, you know, personally vulnerable, being vulnerable, talking about relationships and mental health. I think it allows people to have a community that's not performative. And of course, there's this other side where, you know, people can sometimes break rules or say things that they wouldn't otherwise say that people don't always agree with or that people might find repugnant. And to an extent, this can facilitate great conversations.
+00:43:49
+And on the other hand, we have to have moderation in place and we have to have community guidelines to make sure that the anonymity doesn't overwhelm the purpose, which is that anonymity. First of all, anonymity is a tool in libraries.
+00:44:02
+It was not the purpose of libraries. It is a way that we get towards these authentic conversations given our campus climate. And second of all, I would say it's a spectrum. It's not just it's not just libraries is anonymous. Right? Because libraries isn't totally anonymous. Everyone's a verified Ivy League student. You know exactly what school everyone goes to. You only have one account per person at Yale. Meaning if meaning that. I mean, what that amounts to is people have more of an ownership in the community and people know that they're connected.
+00:44:39
+They have a common vernacular. So the anonymity is a skill and it's a tool.
+00:44:44
+But you can also trust I mean, this is the difference between Reddit anonymity, where you can easily create multiple accounts when you have only one account per person, or at least it's very difficult to create multiple accounts, then you can trust that the anonymous person you're talking to is a human being, not about.
+00:45:05
+I try to be completely anonymous now in my public interactions. I try to be as real in every way possible, like zero gap between private me and public me.
+00:45:17
+Why exactly did you it seems like this is an intentional mission. What made you want to sort of bridge that gap between the private sphere and public sphere? Because that's that's unique. I know a lot of intellectuals who would make a different decision.
+00:45:31
+Yeah, interesting. I had a discussion about when about this actually with a few others that. Have a very clear distinction between public and private, something I'm struggling with, by the way, personally and thinking about.
+00:45:50
+So one of the very basic surface level is if you carry with yourself lies, small eyes or big lies, it's extra mental effort to remember what you like, to remember what you're supposed to say, not supposed to say. So that's on a very surface level of like it's just easier to live life when you have the smaller the gap between the private you and the public you. And the second is, I think for me from an engineering perspective, like if I'm dishonest with others, I will too quickly become dishonest with myself.
+00:46:35
+And in so doing, I will not truly be able to think deeply about the world and come up and build revolutionary ideas. There's something about honesty that feels like it's that first principles, thinking that it's almost like overused as a term, but it feels like that requires radical honesty, not radical asshole Englishness, but radical honesty with yourself, with yourself. And I feels like it's difficult to be radically honest with yourself when you're being dishonest with the public.
+00:47:05
+And also, I have a nice feature, honestly, that in this current social context, so we can talk about race and gender and what are the other topics that are touchy today and nationality, all those things.
+00:47:22
+I mean, like family structure.
+00:47:25
+Maybe I'm ineloquent in the way I speak about them, but I honestly, when I look in the mirror like I'm not deeply hateful of a particular race or even just hateful particular race, I'm sure I'm biased and I'll try to like, think about those biases and so on.
+00:47:42
+And also, I don't have any creepy shit in my closet about women I haven't done. It seems like everybody it seems like a lot of people got like did a lot of creepy stuff in their life.
+00:47:55
+And I just feel like that's really nice and liberating and especially now, you know, it's funny because I've gotten a bit of a platform and I think it all started when I went to this community, female comedian Whitney Cummings. And, you know, I've gotten a lot of amazing women writing me throughout. But when I went on Whitney.
+00:48:18
+Is like the number of DMS I get an Instagram for women is just ridiculous, and I think that was a really important moment for me, is like I speak and I feel, you know, I really value love, long term monogamy with like one person. And it's like I could see where a lot of guys would now continue that message in public and in private, just start sleeping around. And so, like, that's an important statement for me mentally.
+00:48:49
+It's like, nope, the straight and narrow, it just goes straight and not out of fear, but out of principle and just like live life. Honestly, I just I feel like that's truly liberating as a human being.
+00:49:04
+Forget public all that, because then I feel like I'm on sturdy ground when I say difficult things. And at the same time I'm ranting on this, apologizing. I'm interested.
+00:49:17
+So you've gone. I, I honestly believe in the Internet.
+00:49:25
+In people on the Internet, they when they hear me speak, they can see if I'm full of shit or not, like I won't be able to fake it, you know, like they'll see it through. Yeah.
+00:49:39
+So. I feel like if you're not lying about stuff, you have the freedom to truly be yourself and the and the Internet will figure it out and figure out who you are.
+00:49:50
+People have a natural tendency to be able to tell Bocian it makes sense from an evolutionary standpoint, exactly like why?
+00:49:57
+Why wouldn't why? Like, of all the things that we could evolve to be good at.
+00:50:03
+Being able to detect honesty seems like one that would be particularly valuable, especially in the sorts of societies we developed into, and then also from a selfish perspective, like a success perspective, I think there's a lot of folks that have inspired me like that. Ellen is one of them. That shows that there's a hunger for genuineness, like you can build a business as a CEO and be genuine and real and do stupid shit every once in a while, as long as it's coming from the same place of who you truly are.
+00:50:36
+Like Ilan's inspirational there. And then there's a lot of other people I admire that are counter inspirations in a sense, like they're very formal. They hold back a lot of themselves. And it's like I know how brilliant those people are. And I think they're not being as effective of leaders, public faces of companies as they could be. I mean, to be honest, like. Not to throw shade, but I will like Mark Zuckerberg as an example of that.
+00:51:07
+Jack Dorsey is also a bit of an example that I like Jack a lot. I've talked to him a lot. I will talk to him more. I think he's much more amazing person than he conveys through his public presentation. I think a lot of that has to do with PR and marketing people having an effect that this is difficult, I think is really difficult as probably many of the same difficulties you will face as the pressures. Um, but it's it's hard to know what to do.
+00:51:36
+But I think as much as possible as an individual, you should try to be honest in the face. Of the world and the company that wants you to be more polished and that being more polished turns into politician and politician eventually turns into being dishonest, dishonest with the world and dishonest with yourself.
+00:51:57
+Something I noticed, which was the people of the people you mentioned, those things have had ramifications in terms of letting things go too far, get out of hand. And you wonder like it's an aspect of lying, right? You say one lie goes to another lie. You push it down. Does it doesn't matter. You can figure it out later.
+00:52:16
+You figure out later, pretty soon. You've dug a pretty big hole. And I think if we look at Twitter and we look at Facebook, I think it goes without saying what sorts of holes have been dug because of perhaps because of a lack of honesty that goes all the way up to the leaders.
+00:52:33
+So, yeah, there's two problems within the company. It doesn't make you as effective a leader.
+00:52:39
+I think that's one and two for social media companies. I think people need to trust, like it doesn't have to be the CEO, but it has to be this is how humans work. We want to look to somebody.
+00:52:53
+We're like, I trust you. If you're going to use a social media platform, I think you have to trust the set of individuals working at the top of their social and social was something I realized really quickly.
+00:53:08
+One of the lessons throughout the startup was that people don't totally connect to products as much as they connect to people. Yeah. And I mean, I don't know if, you know, how much you spent on labor.
+00:53:22
+Only been here the last couple of weeks, like last week, but. I mean, I love the product and one of the one of the aspects of me loving the products that was super active and I've been super active throughout the entire time and the amount of support I've received has made that very easy to do from the community. And the fact that I could I mean, so I came to Boston for this interview, right? Yeah, I came to Boston.
+00:53:47
+I got off the train. Yeah, it's around five thirty pm. I check lyrics. Someone is writing, hey, I'm in Boston and I want to get dinner. Three minutes later I'm going to dinner with them. That's amazing. And I mean it's incredible.
+00:54:02
+First of all, as an entrepreneur, the amount of stuff I learn from these people and when they reiterate and I hear that they got the message through the I mean, that's incredibly validating.
+00:54:13
+But also, I mean, I think it's just important to be able to put a face to a brand and especially a brand that's built on trust, because fundamentally, the users are trusting us with some really important discussions and some really and a movement to some degree. It's a community and a movement.
+00:54:32
+I think actually why I didn't use the app very much so far is there's something really powerful about the way it's constructed, which I felt like a bit of an outsider because I don't know the communities it felt like it's a is a really strong community around each of these places. Yeah. And so I felt like I was that it made me really wish I was and mighty one.
+00:54:57
+And so there's both discussions about the deep, like community issues within Columbia or Yale or so on at Dartmouth. And there's also the broader community of the Ivy Leagues that people are discussing. But I could see that actually expanding more and more and more, but which is it's a powerful coupling, just the feeling of like the little village in this little community we're building together, but also the broader issues. Yeah, as you could do both discussions. One thing that was important to me is talk about social media as a concept.
+00:55:34
+I think the way people socialize is very much context dependent. So what we're talking about people understanding each other through language, through English. Yes. And these languages are constructed there in a very nuanced way, in a very sort of temperamental way. Right. And you kind of need some more context to be able to have productive conversations. So to me, it's really important that these these groups, they share something in common, a really big lived experience, the Ivy League or their school community.
+00:56:10
+And they have a similar vocabulary. They have a similar background. They know what's happening in their community. And so having social media that is community connected to me was fundamental. Like you talk about anonymity to me, community is the it's the thing that when I think about Libbrecht, I think what makes it different, it's the fact that everyone everyone knows what's going on. Everyone comes from a similar context and people can socialize in a way where they're. They understand each other because they're been through use the word lives experience, they've been through so many of the same lived experiences, a one like clarification.
+00:56:45
+Is there an easy way if you choose to then connect in a meatspace and physical space?
+00:56:53
+So the I guess the sort of magic of it and I was talking to a bunch of Harvard law professors who I met off the app while I was in Boston. And every time they told me this is my favorite part of the app, this is what I love about the app with this matching system, which is an anonymous direct message that you can send to any poster. So like I was talking to this guy who he was really into coin collection, and he met other people who are really into coin collection through a post and what he would make a post about coin collection.
+00:57:27
+And then someone would come to him and they'd be like and they could direct message to him anonymously. And it would just show them that he would just show him their school and then they could just text totally anonymously, direct message if he accepted the anonymous request. Judicial usernames. Right. There are no usernames, only Broox.
+00:57:45
+It's all just schools names, so he made this post about coin collection. And he got a direct message. Yeah, I guess so, right? I didn't know because I was just looking at the text. Yeah, that's interesting. That's right. And I can tell you, I can go into why that's really interesting. Yeah, I can go. And the truly is anonymous. It's well, I mean, you know, not exactly a very different kind of anonymous.
+00:58:14
+And the reason the reason that we made that decision is because we want people to connect to ideas, wants people to connect to things in the moment.
+00:58:22
+We don't want people to go, oh, I know this guy. He said this other thing. And we didn't want people to feel like they were at risk of being boxed. So these are small communities, right? We talked about this. Everyone knows someone who knows you yet. And in twenty twenty one, it would not take much to be able to figure out who someone might be, just a couple of posts. So it's about safety and about the ideas in terms of not adding usernames.
+00:58:49
+Anyway, we have this anonymous direct message system where you can direct message the original poster of any post the OP if you're ever editor of any posts and you that that makes it really easy to meet up because once you guys are one on one, you can exchange a number, you can exchange Snapchat, you can exchange email, probably not very often, but good.
+00:59:11
+And then that's how people meet up matching and then a lot of people connect in this way.
+00:59:17
+Then it's to take a small step into the technical I read somewhere. And if it's true that one of the reasons you were rejected from Y C Y Combinator in the final rounds is because one of the principles is to refuse to sell user data. Can you speak to that? What's why do you think it's important not to sell user data and sort of which draws a clear contrast between other basically any other service on the Internet?
+00:59:50
+I mean, to be honest, it's quite simple. I mean, we talk about this platform. People are talking about their most intimate secrets, their political opinions. You know what how how are they feeling about what's going on in their city, you know, during the summer?
+01:00:06
+How how are they feeling about the political cycle and also their mental health, their relationships?
+01:00:15
+These are some of the most intimate thoughts that people were having point blank. I don't think it was ethical to pawn them off for a profit. I didn't think it was moral. I don't think I could sleep at night if that was what I was doing is turning these people's most intimate beliefs and secrets into a currency that I bought and sold. There's something very off about that.
+01:00:41
+I tend to believe that there is some room. So like like Facebook, we just take that data and sell it, right, but there is some room in transparency in giving people the choice and which parts they can. I wouldn't even see it a cell, but like share with advertisers.
+01:01:00
+Are you going to give them a profit? The rates you have to monetize, you have to create the entire system. You have to rethink this whole thing. Right. But if as long as you give people control and are transparent and make it easy, I think it's really difficult to delete a Facebook account or delete all your data or to try it.
+01:01:19
+It's very difficult.
+01:01:21
+So, like, just make it easy and trust in that. If you create a great product, people are not going to do it.
+01:01:27
+And if if they do it, then they're not actually something by deep loving member of the community. Was that.
+01:01:34
+So we very quickly realized that user privacy was something that was not only a core value, but was something that users really cared about. And we added we added this functionality. It's just a button that says, forget me.
+01:01:48
+Yeah, you press it. Yeah, like two clicks. It's not that hard. We just remove your email from the database and, um. Yeah, you're good. Beautiful.
+01:01:59
+I think Facebook should have that. I, I honestly so call me crazy but maybe you can actually speak to this, but I don't think Facebook will now. They would but if they did it earlier they would lose that much money. If they allow, like, transparently tell people you could just delete everything, they also explained that, like.
+01:02:22
+In ways that's going to potentially like lessen your experience in the short term. Like, we'll explain that, but then there shouldn't be like. Multiple clicks of a button that don't make any sense. I'm trying to hold back from ranting about Instagram because let me just say real quick, because I've been locked out of Instagram for a month and there's a whole group inside Facebook.
+01:02:49
+They're like supporters of like, let's help Lex. Relax, relax. I wasn't blocked. It was just like a bug in the system. Somebody was hammering the API with my account. So they kept thinking, I'm a bot. You know, it's a bug. It happens a lot of people. But like, first of all, I appreciate the love from all the amazing engineers and Instagram and Facebook, all of those folks. The entire mechanism, though, is somehow broken.
+01:03:14
+I mean, that I put that on the leadership, but it's also difficult to operate. A large company wants to skills all those kinds of things, but it should not be that difficult to do some basic, basic things that you want to do, which is in the case of Facebook, that's verify your identity to the app.
+01:03:37
+And also in the case of Facebook, in the case of the works like like disappear. If you if you choose, there's downsides to disappearing, but it should not be a difficult process and I think I think people are waking up to that.
+01:03:55
+I think there's a lot of room for a nap, a nap like Lee breaks with its that with its foundational ideas to redefine what social media should look like. You know, and like you said, I think beautifully anonymity is not the core value, it's just a tool you use. And who knows, maybe anonymity will not always be the tool used.
+01:04:18
+Like if you give people the choice, who knows what this evolves from. The login page initially created. The key thing is the founding principles. And again, who knows if you give people a really nice way to monetize their data, maybe they will no longer be a thing that you say do not sell user data. Yeah, all those kinds of things. But the basic principles should be there. And also a good simple interface design is goes it goes a really long way, like simplicity and elegance, which Libbrecht currently is.
+01:04:50
+Clubhouse is a lot better, by the way. I don't I don't mean to I don't mean to go too deep into the history. But the it was bad. It was I didn't look at the earlier pictures.
+01:05:00
+Oh thank goodness.
+01:05:01
+I read somewhere that it was like a white screen, like with black e-mail facing down. But buttons were like these big these big frickin boxes. And like I could go on, but it was my it was my genius design skills, almost a world art class when I was like in first grade. And I think I still have some more skills to my first grade self, but it's gotten a lot better. And thanks to a lot of my friends who have, you know, sort of chipped in here and there.
+01:05:32
+Oh, I love the idea of a button.
+01:05:34
+They just like, forget me. I don't know. That's that's really moving. Actually, that that's actually all people want is that they want I think, OK, I'll speak to my experience, like I will give so much more if I could just like disappear if I needed to. And I trusted the the community I trusted, like the founders and the principles. That's really that's really powerful. Men like trust and ease of escape. Yeah.
+01:06:07
+You've also kind of mentioned moderation, which is really interesting. So with this anonymity and this community, I don't know if you've heard of the Internet, but there's trolls on the Internet.
+01:06:19
+So I've heard and even if they go to Yale and Dartmouth, there's still people that probably enjoy the sort of being the the guerrilla warfare contra revolutionary and just like creating chaos in a place of love.
+01:06:39
+So how do you prevent chaos from and hatred breaking out and Libras?
+01:06:46
+So the way I think about it is we have these principles, the pretty simple and they're pretty easy to enforce. And then beyond the principles, we have a set of moderators matter from every single Ivy League school system of diverse moderators to enforce these principles, but not only enforce the principles, but kind of clue us in to what's happening in their community and how the real life context of their community translates to the context of their community. And beyond that, we have a conversation with them about the standards of the community.
+01:07:20
+And we're constantly talking about what needs to be further elucidated and what needs to be tweaked. And we're in constant communication with the community. Now, if you want me to get into the principles that underlie Lee Brooks's moderation policy, yeah, please.
+01:07:34
+Maybe you can explain that there's moderators. What does that mean? How are they chosen and what are the principles under which they operate?
+01:07:40
+Sure. So how are the moderators chosen? The moderators are all volunteers. They're professors who reach out to me and respond to the opportunity to become moderator. And whether chosen is basically we want to make sure that they're in tune with their community. We will make sure they come from diverse backgrounds and we want to make sure that they're they sort of understand what the game is about. And then we ask them some questions about how they would deal with certain scenarios, ones that we've had in the past and we feel strongly about.
+01:08:13
+And then also ones that a little bit murky where we want to see that they're sort of thinking about these things in a critical way. Yeah. And from there, we choose the site and they have the power to take down posts. Of course, everything at the end of the day, my review. But they can take them down and we can reinstate them if that's if it's a problem. But they can take time posts and they can advocate for, you know, different moderation standards and different moderation policies.
+01:08:42
+So for now, you're the Linus Torvalds community.
+01:08:44
+And so meaning like you're able to make people are actually able to like email you or like text me, text you, contact you and get a response.
+01:08:57
+Like you respond to basically everybody.
+01:08:59
+And then you're like, really, you know, you're you're living that live on people's floor life currently. That's not necessarily this is the early days, folks.
+01:09:11
+I knew he was a billionaire and he was cool. And then he was in a mansion making meat on his barbecue, you know?
+01:09:19
+OK, but how does it scale up? Like what? I suppose how does it scale is the question, I mean, Linus, I don't know if you're familiar with the open source community, but he still stayed at the top for a while, was really important, like leadership there was really important to drive that large scale, really productive open source community.
+01:09:45
+What do you see your role as Libros grows?
+01:09:48
+And in general, what are the mechanisms of scaling here for moderation versus open discourse is fundamental to the purpose of the app. Right. So as the I guess you could say, founder, CEO, what have you. Part of my purpose has to be to enforce the vision. Right. And part of the vision is open discourse. And that does come down in part to reasonable moderation and community guided reasonable moderation. So I imagine that will always be something that I'm intimately involved with to some degree.
+01:10:24
+Now, the degree to which the way in which that manifests, I imagine, will have to change. Right. And hopefully I'll be able to just like you can hire a CTO.
+01:10:37
+Hopefully I'll be able to be integrated in hiring people who are who understand the the way that we are sort of operating and the and the reasonable standards of moderation. And there can be a sort of hierarchical structure.
+01:10:51
+But I think when you've a product whose key purpose is to allow people to have these difficult conversations on campus that need to be had, I can never hear to that. Yeah, I can never fully. I don't think I can fully ever abdicate that responsibility. I think that would be like I mean, they would be like Basso's abdicating e-commerce, right? That is part of the job. Yeah.
+01:11:17
+Of course, you can run companies in different ways, I think, because he might have abdicated quite a bit of the details. That's hard for me to say because the Amazon does so many things. I think the probably the better examples like Elon with Rock, as he's still at the core of the engineer, he's at the core of the engineering.
+01:11:34
+There's some fundamental questions of what he probably does, way too much of the engineering, like he's like the lowest level detail.
+01:11:41
+But you're saying like the core things that are that make the app work is. Is the moderation of difficult conversations. And by the way, I'm 21 years old. Let's remind everyone of that.
+01:11:54
+If this thing. Does scale and if this thing continues to be a positive force in a lot of people's lives, who knows what will will happen in the next? What I'll learn, I'm still growing definitely as a leader, still growing as a thinker, still as a person. I don't I can't pretend that I know how to run a business that is worth, you know, up 10 billion dollars, whatever. Yeah. I can't pretend I know how to run a business that's, you know, going to have millions, millions of users.
+01:12:24
+I expect that there are going to be a lot of amazing people who will teach me and that a lot of people who have already kind of stepped into my life and helped me out and taught me things. And I imagine that I'll learn so much more. I just know that moderation is always going to be important to me because I don't think Liebreich Celebrex, unless we have open discourse and moderation, reasonable, open light touch moderation is at the heart of creating that right.
+01:12:54
+So as a creator of this kind of community in place with anonymity and difficult conversations, what. What do you think about this? Touchy, three words that people have been tossing around and politicizing, I would say, but as that the core of the founding of this country, which is the freedom of speech, how do you think about the freedom of speech of this particular kind of freedom of expression? And do you think it's a fundamental human right? How do you define it to yourself when you when you think about it?
+01:13:27
+Have I went down especially preparing for this conversation down a rabbit hole of like just how unclear it is philosophically what is meant by this kind of freedom? It's not as easy as people think, but it's interesting, pragmatically speaking, to hear how you think about it in the context of Bluebox. Yeah, it's a tough one, right? There's a lot there, so I come from the background of being a math major. It's important to start with that.
+01:13:59
+Yeah, and I found myself in the middle of this question of freedom of speech. Well, one of the wonderful things is that the labor community is filled with ideas and governance majors who have taught me a ton about this sort of thing. And I'm still learning. I'm still growing. I'm still probably going to modify my perspective to some degree, hopefully.
+01:14:24
+Don't worry.
+01:14:25
+I imagine I'll always support free discourse. Like learning. Yeah. How to speak about stuff is is as critical here because it's like I'm learning that this is a minefield of conversations, because the moment you say like even saying freedom of speech is a complicated concept, people will be like, oh, this part of the communist, you know, like they'll say there's nothing complicated about freedom. Freedom is freedom, bro. It's it is complicated. First of all, if you talk about there's there's different definitions of freedom of speech.
+01:15:02
+If you want to go constitution, if you want to talk about the United States specifically and what's legal, it's actually not as exciting and not as beautiful as people think of complicated. It's complicated. I think there's ideals behind it that we want to see. What does that actually materialize itself in the digital world where we're trying to communicate in ways that allows for difficult conversations and also at the same time doesn't result in the silencing of voices not through like censorship, but through like just assholes being rude, spam, spam.
+01:15:44
+They so it could be just bots, racism, racism. Going back to the name of the app libraries. Yes. Libra Free X was support Montu for free exchange and the free exchange of what my purpose was to create as many as much intercommunication of ideas, be them repugnant or otherwise as possible. And of course to do that within legal bounds and to do that without causing anyone to be harassed or doxa to keep things focused on the ideas, not the people.
+01:16:20
+And then. No B.S. crap, you know, stuff and so to me, the easiest way to moderate around that because as you said, figuring out what is hateful and what is hate speech is really hard was to say no sweeping statements against core identity groups. And that seems to work on the whole pretty well to be pretty light touch and hard to do, though it's it's difficult like to generalize we humans, it's difficult.
+01:16:49
+But what it comes down to is be specific. Yeah. And when you think about what are sweeping statements are done in groups. Right. Oftentimes these are these are sort of hackneyed subjects. These are things that have been broached and. We've heard them before, they don't really lead anywhere productive, so we so it goes on this principle of be specific in the ideas you're discussing.
+01:17:12
+So even for, like, positive and humorous stuff, we try to avoid generalizations against core identity or identity goals. So what to groups we're talking, you know, race, religion, OK. Got it, even positive stuff.
+01:17:29
+Well, against negative against Syria, against against OK, very, very we've learned to be very specific, very few words, but the community gets, you know.
+01:17:41
+Yeah, they get it. I mean, this the thing they they the trouble with rules is as the community grows, they'll figure out ways to manipulate the rules. Absolutely.
+01:17:53
+It's human nature. It's creativity. Yeah. Something beautiful about it, of course.
+01:17:58
+Unlike from an evolutionary perspective. Yes. Yeah. The fact that people are so creative and so looking to and because people are genuinely interested in figuring out these things about social media. And so the 100 percent like see like where's the edge? And I mean, part of that's maintaining some level of vagueness in your research. Yeah. Which has its own set of questions and something we could think about. And I'm not implying have all the answers, but there is something really interesting about people being so engaged that they're looking to figure out where those edges and what does that mean?
+01:18:30
+What does that mean? You know?
+01:18:32
+So one of the things I'm kind of thinking about, like from an individual user of liberals or individual user of the Internet, I think about like that one person that is on Reddit saying hateful stuff or positive stuff doesn't matter or funny stuff. One of the things I think about is the trajectory of that individual through life and how social media can help that person become the best version of themselves. I don't mean from like an Orwellian sense, like educate them properly or something.
+01:19:05
+I just mean like we're all I believe we're all fundamentally good. And I also believe we all have the capacity to do to create some amazing stuff in this world, whether that's ideas or art or engineering, all those kinds of things, just to be amazing people.
+01:19:25
+And I kind of think about like, you know, a lot of social media mechanisms bring out the worst in us.
+01:19:32
+And I try to think like in the long term, how can the social media or how can a website to the create can make the best like you take a trajectory that makes you better, better and better and like the best version of yourself. So I think about that because like, you know, Twitter can really take down some dark trajectories. I've seen people just not being the best version of themselves. Forget the counterculture and all that kind of stuff is just like they're not developing intellectually in the way that's going to make the best version of themselves.
+01:20:07
+I think Reddit, I'm not sure what I think about ready yet, because one positive side is all the shit posting I read. It could be just like a release valve for for some stress in life. And you almost have like a parallel life where you're in meatspace. You might be actually becoming successful and so on and growing and so on. But you just need sometimes to be angry at somebody. But I tend to not think that's possible. I think if you're shit posting, you're probably not spending your time the best way you could.
+01:20:41
+I don't know.
+01:20:42
+I am. I'm torn on that.
+01:20:44
+But do you think about that would lead Breck's of creating a trajectory for the for the Yale for the Dartmouth, the students to where they grow intellectually?
+01:20:53
+One thing that I think about a lot is how do you incentivize positive content creation? How do you incentivize well put really intellectual content creation? It's something that frankly, you know. I think about every single day, and I think there are ways that. I mean, one thing that's great about humans is that they can be incentivized, right? And I think there are ways that you can incentivize people to make the right kind of content, if that's your goal.
+01:21:25
+Do you think such mechanisms exist for such incentivization? I do. I don't want to let the cat out of the bag, so to speak.
+01:21:32
+So already, ideally, concrete ideas in your mind about you, really concrete ideas that I'm very, very optimistic about. Yeah. And, you know, you need to share that.
+01:21:41
+And the fact that I understand totally, but like the fact that you have them, that's really good, because I feel like sometimes the downfall of the social media is that there's literally not even thinking or a discussion about the incentivisation of positive long term content creation.
+01:22:03
+And Twitter. I really was excited about this when they said, like when Jack has talked about, like creating healthy conversations, he does seem to care.
+01:22:11
+I've listened to him. I mean, he's very he's a very particular way of saying things. But you get the impression that he's someone who actually cares about these things within the limits of his power.
+01:22:21
+Yeah, and that's the question. The limits of the power.
+01:22:25
+Liebreich is growing not just in the number of communities, but also in the way you're incentivizing positive conversations like coupled with the moderation, so on. So you think there's a lot of innovation to be had in that area?
+01:22:41
+There's a tremendous amount. I think when you think about the reasons people post, fundamentally, people want to make a positive impact on their community to some degree. Now, there always be bad actors and part of the benefit of sort of our moderation structure is that we can limit some of those bad actors.
+01:22:59
+You know, no body counts, no brigading. At the same time, the more you incentivize a certain type of behavior, the better it's going to be. And it's we don't see this our role as the platform to force the communion in a direction. And frankly, I don't think it would be good for anyone, the community or the conversations, if we forced a specific type of conversations, a conversation. We just need to make the tools to allow people to be good.
+01:23:28
+Yeah. And to incentivize good behavior.
+01:23:30
+I believe that, like, if you you don't you will not need to censor. If you allow people at scale to be good, the good will overpower the assholes.
+01:23:40
+That's that's my fundamental belief. I'm very optimistic about that. But currently, the Abraxas small in the sense that it's a small set of communities that I believe and you mentioned to me offline, that by design you're scaling slowly, carefully. So how does the work scale, is it possible, you know, Facebook also started with a small set of communities that were schools and then now grew to be basically the if not one of the largest social networks in the world.
+01:24:16
+Do you see as potentially scaling to be beyond even college campuses, but encompassing the whole world? So it's a long time timeline. I'll say this, this goes back to like. Where to his Facebook go wrong, because clearly they did a lot right, and we can only we can only speculate about what the objectives were of the founders of Facebook.
+01:24:45
+You know, I'm sure they've said some things, but it's always interesting to know what the what the mythology is versus what the truth is of the matter. So perhaps they and they've been very successful. I mean, they they've taken over the world to some extent. At the same time, the goals of the BRICS are to create these positive communities and these open conversations where people can have real conversation and connection in their communities in a vulnerable and authentic way.
+01:25:15
+And so to that end, which I imagine might be different then the goals of a Facebook, for example, one thing that we want to do is keep things intimate and community based. So each school is its own community. And perhaps you could have a slightly broader community. Maybe you could have a I know the California system is an obvious one.
+01:25:38
+PacTel might be an obvious one, and we can think about that. But fundamentally, the unit, the unit of community is your school or your school community. So that that that's one difference that I think will help us. The other thing is that we're scaling intentionally, meaning that when we expand to a school, we have moderators in place. We have moderators who understand that school's environment in a very personal level. And we're growing responsibly. We're growing as we're ready, both technologically but also socially, you know, but as we think we have the tools to preserve the community and to encourage the community to create the sort of content that we want them to create.
+01:26:23
+And, you know, there's a lot of ways to find communities. So, first of all, this geographic community as well. But the way you're kind of defining community with Yale and Dartmouth is the email. Right?
+01:26:36
+That's what gives you there's a power to the email in the sense that that's how you can verify, officially verify yourself for being a single individual in the university. In that same way, you can verify your employment at a company, for example, like Google, Microsoft, Facebook, decir, potentially taking on those communities that be facing getting like anonymous community conversations inside Google.
+01:27:09
+One hundred percent crossed my mind to some extent. This is this is something where. I understand the college experience, I understand the need got and I I've never I've never worked at Google. I don't know if they would hire me hopefully maybe as a product manager.
+01:27:26
+But I think if there's a community that needs this product and has that and has that will, which I think especially as Libros continues to grow and expand and change and learn, and because that's what we're doing, is we're learning right with each community. It's not just about growing. It's about learning from these from each of these communities and iterating.
+01:27:52
+Um, I think it's quite likely they're going to be all sorts of communities that could use this tool to improve their. Culture, so to speak, so forgive me, I'm not actually like that knowledgeable about the history of attempts of building social networks to solve the problem that you're solving, but I was made aware that there was an app app or at least a social network called Yik Yak.
+01:28:20
+That was had a similar kind of focus, I think the thing you've spoken about that differs between the barracks in New York is that you was defined by pronouncing it right, even good.
+01:28:37
+I'm glad I met the founders so I can confirm you can confirm for the that it was constraints, a geographical area versus like to the actual community.
+01:28:50
+And that and that somehow had fundamental like actual differences in social dynamics that resulted. But can you speak to the history of you like how does the burgs differ? What lessons have you learned from that? Oh, and I should say that I guess there was controversial. I don't know. I didn't look at the details, but I'm guessing there's a bunch of racism and hate speech and all that kind of stuff that emerged. There was an Nukak. OK, so that's an example of like.
+01:29:17
+OK, here's how it goes wrong when you have anonymity on college campuses, so how does the going to do better? You can get a lot of problems, content problems with the content problems go deeper than maybe what the press would reveal. There's a lot to say.
+01:29:35
+And part of it is parsing exactly what to talk about when it comes to Akec.
+01:29:40
+And when you talk about startups, I mean, you know, they say, you know, startups and you look at the postmortem, it's almost never what people think it is. And and oftentimes these things are somewhat unknowable. And the degree to which people seeking confirmation bias, somebody seeking closure, look to find a singular attribute that caused the failure.
+01:30:02
+It feels like the little details often make all the difference. Yes.
+01:30:06
+And I think I think the details are so little that as humans, we are not capable of parsing even what they are.
+01:30:13
+But I'll tell you also in my perspective on it, knowing that I am also a human with biases in this particular case, very significant biases. Yeah.
+01:30:24
+Um. I so I started building libraries for its own merits. I first I wasn't aware of it yet, but as I started to talk to people about this platform I was building, I was made aware of it and I built it from day one with a lot of the issues you had in mind.
+01:30:44
+The so as you said, the one difference between your characters, the geographical versus community based aspect going along with that. One thing I realized by researching social media sites is that the majority of the negative content, the content that's terrible and breaking all the rules is created by really and the people who are not reformable, so to speak, the people who are not showing the best part of the human experience. Yeah, it's a really small minority. Right.
+01:31:19
+I remember I was listening to the founder of 4chan talk about this, how like one guy was able to basically destroy.
+01:31:28
+Like large swaths of his community. Yeah, that's part of what makes it exciting for that minority is how much power they can have. So if you're predisposed to think in this way, it's exciting that you can walk into. Like I mentioned the party before, you have a party of a lot of positive people. And it feels especially if you. Don't have much power in this world, it feels exceptionally empowering just to to destroy like the lives of many.
+01:32:03
+And if you think this way, it's a problem.
+01:32:05
+But I am hopeful that you're right, that in most cases it's going to be a minority of people think it is.
+01:32:13
+And that's what the research has shown. And one really powerful thing is that we can really actively control who comes in and out of our community based on the 3D verification.
+01:32:25
+And we can also control who's not in our community because we have that lever where each account is associated with it. To you see, that's the first point I put out point out their second point is control expansion, meaning that with community moderation, we have this panel that allows the moderators to see all of the highly developed content, all of the reported content, all the content and look through it and decide what they like and what's appropriate and what's not appropriate.
+01:32:56
+And we have, um, we ping every moderator when there's a report. So things are taken down pretty quickly. And we have our standards and we have I think above all of that, we have a mission and it's a community based mission. You care was more of a fun up. And by its own admission, it was a place where people could enjoy themselves and could sort of yak, yak, yak, yak, you know, chit chat.
+01:33:22
+We have a we have a bigger purpose than that, frankly. And I think I think that shows and the people who self select beyond that up to be only and to be on Nukak respectively. The last thing I'll say is you check was very few characters. It was a Twitter esque platform and that doesn't allow for a tremendous amount of nuance, doesn't offer a tremendous amount of conversation. Librettists is much more long form. And so the kind of post that you'll get only Breck's are spam pages.
+01:33:52
+They're like what people are starting to realize is that they can reach a lot more people at a lot more pertinent over time, a lot more quickly. By posting their thoughts on Brexit than if they went to their school newspaper, and I think the school newspapers might be a little worried about that, but more importantly, we're connecting people in this way.
+01:34:12
+We're long form communication with nuance that takes into account everything that's happening in the community. Temperley.
+01:34:20
+Is really available, the press and, you know, not really communicable and 240 or 480 or whatever the number of characters the acts were bound to, and then you could talk about the history of the ACHAK if you want me to go further.
+01:34:36
+They started it. I think they were at 12 schools and then spring break it. People told their friends, look at this up. A thousand schools signed up and had active communities.
+01:34:48
+They had a problem on their hands and then the high schools come on board.
+01:34:51
+Yeah, I think a lot of the things you said ring true to me, but especially the vision one which I do think having a vision in the leadership, having a mission makes all the difference in the world, that that's both for the engineers that are building like the team that's building the AB, the moderation and users, because they kind of the mission carries itself through the behavior of the other people on the social network.
+01:35:22
+As a small tangent, let me ask you something about parler, much less about parler and more about HWC, so HWC removed parler from his platform for whatever reasons, doesn't really matter. But the fact that eight of us would do this was really, really bothered me personally because I saw either of us as the competing infrastructure and I always thought that part could not put a finger on the scale. And I don't know what your thoughts are like. Were you bothered by part of being removed from us and how does that affect how you think about the competing infrastructure and which Lubeck is based?
+01:36:07
+I was bothered not so much by Parler specifically being taken out of HWC, but more the fact that something that's like a highway, something that people rely on, that people build on top of, that people assume is going to be somewhat position agnostic, like a road that people drive on is is becoming ideologically sort of discriminatory. I just and of course, mind you, Amazon can do what it wants. It's a private company and I support the rights of private companies.
+01:36:39
+I just want an ethical and sort of a deep moral level.
+01:36:42
+I wonder like at what point? Should a company sort of be agnostic in that in that regard and let developers build on top of their infrastructure and where where where does that responsibility hold?
+01:36:58
+Yes, it makes you hope that there's going to be, from a capitalistic sense, competitors to us who say, like, we're not going to put our finger on the scale. I mean, and the highway is a good sort of example. It's like if a privately owned highway exactly.
+01:37:15
+Said, you know, we're no longer going to allow we're only going to allow electric vehicles. And a bunch of people in this world would be like, yes, because electric is good for the environment and. You know, yes, but then you have to consider the like the slippery slope nature of it, but also like the negative impact on the lives of many others and what that means for innovation and for like competition, again, in a capitalistic sense.
+01:37:47
+So there's some nature, there's some level to this hierarchy of our existence that we should not allow to manipulate was built on top of it. It should be truly infrastructure and it feels like compute is storage and compute. Is that where they shouldn't be messed with?
+01:38:09
+I haven't seen anybody really complain about it, like in terms of government, and I'm not even sure government is the right mechanism to policy and regulation to step in because again, they do a messy job of fixing things. But I do hope there's competitors to us to make them step up, because I do think, you know, I'm a fan of yours, except this service, it's a good service until this, though. Yeah. Until they rip out the thrugh.
+01:38:38
+And the point is, it's not that necessarily their decision was a bad one with parler in particular. It's that like the the slippery slope nature of it, but also the it takes the good actors that are creating amazing products and makes them more fearful. And when you're more fearful as the same reason that anonymity is a tool that you don't create, the best thing you could possibly create when you're fearful you don't create.
+01:39:07
+That's right.
+01:39:08
+I think we kind of talked about it a little bit, but I wonder if we can kind of revisit it a little bit. I talked to a guy named Ronald Sullivan, who's a faculty at Harvard Law professor. He was on the legal defense team because the lawyer for Harvey Weinstein and Aaron Hernandez for the double murder case. So he takes on these really difficult cases of unpopular figures because he believes like that's the way you test that we believe in the rule of law.
+01:39:40
+But he was there's a big protest in Harvard to get him to basically censor him and to get him to no longer be faculty, dean, all those kinds of things. And it was by a minority of students. But it was a huge blowback, obviously, in the public, but also inside Harvard, like, that's not OK.
+01:40:04
+He stands for the very principles that the founding of Harvard and at the principles of the founding of this country in the law and so on. But the basic argument is that. It was about safe spaces, that it's unsafe to have somebody who is basically supporting Harvey Weinstein. Right. What do you think about this whole idea of safe spaces on college campuses? Because it feels like the the mission of the is pushing back against the idea of safe spaces. I think safe spaces are fine when they're within people's private lives, within their homes, you know, within their religious organizations.
+01:40:47
+I think the problem becomes when the institution starts encouraging or.
+01:40:53
+Backing safe spaces because. What are people being safe from? And oftentimes it seems like there's this idea that the harm that's being attempted to be mitigated is the harm of confronting opinions. You disagree with opinions you might find repugnant.
+01:41:13
+And if this is conflated with a need for safety, then that's where the idea of liberal arts education sort of dies.
+01:41:23
+Of course, it's complicated and we still want to have safe intellectual environments. But the way that I hear the term safe space used today, I think it doesn't really have a place within like the intellectual context. Yeah, it's funny.
+01:41:40
+I mean, this is why libraries is really exciting as it's pushing those difficult conversations. And I'd love to see. Ultimately, there does seem to be an asymmetry of power that results in the concept of safe spaces and hate speech being redefined in the slippery slope kind of way, where it means basically anything you want it to mean. And it basically is used to silence people, to silence people. They're like good, thoughtful experts, so young that I would say it has not just a pragmatic purpose, which is the silencing, but also sort of an ideological purpose, which is another linguistic purpose, which is to conflate words with unsafety and harm and violence, which is what you kind of see on a cultural linguistic level is happening all around us right now.
+01:42:36
+Is that this idea that words are harm is very dangerous and slippery concept. I mean, it's not you don't have to slip that far to see why that's a problem. Once we start making words into violence and we start criminalizing words, we get into some really authoritarian territory, things that I think I mean myself and my background. I don't know how much we have to go into it, but things that my ancestors certainly would be worried about.
+01:43:03
+What's your background?
+01:43:05
+I'm a child of Holocaust survivors and program survivors.
+01:43:09
+So, yeah, I mean me as well from different directions. I come from the Soviet Union. So there's well, like in most of us, hate and love runs through our blood from our history. You mentioned Amitay is being added to the books.
+01:43:25
+Has it already been? Yes, it was added today.
+01:43:28
+Today. OK, so let me ask you. This is exciting because I don't know what your thoughts are about this, but I'll tell you from my perspective, if and a lot of folks listen to this, I would love it if you joined the ranks. It'd be interesting to explore conversations on several topics inside MIT, but one of the most. Moving that hasn't been discussed at all, except in little flourishes here and there is the topic of Jeffrey Epstein now.
+01:44:07
+There's been a huge amount of like impact that the connections of various faculty to Jeffrey Epstein and the various things that have been said had anonymity, but it feels like the conversation haven't had been had. It's the administration trying to clean up and give a bunch of B.S. to try to pretend like let's just hide this part like nothing is broken and nothing to see. Here is a bad dude that did some bad things and some faculty that kind of misbehaved a little bit because they were a little bit clueless.
+01:44:46
+Let's let's all look the other way. Harvard did this much better, by the way. They completely it's almost like people pretend like Harvard didn't have anything to do with Jeffrey Epstein.
+01:44:58
+But I think I'd be curious to hear what those conversations are, because there is conversations on the topic of like, well, obviously sort of sexual assault and disrespecting women and any kind of level within academia, but just women in general. That's an important topic to talk about. Very many sensitive for conversations. And the other topic is, you know, funding for research like how or like what are we OK taking money from and what are we not OK taking money from?
+01:45:37
+You know, there's a lot of just interesting, difficult conversations to be had.
+01:45:42
+I've worked with people who, you know, refused to take money from DOD, Department of Defense, for example, because in some indirect or direct way, you're funding military industrial complex, all those kinds of things. I think what Jeffrey Epstein is even more stark, this contrast of like, well, what is and isn't ethical to take money from. And I just think forget academia. I think there's just a lot of interesting deep human discussions to be had.
+01:46:11
+And they haven't been. And there's been somebody I don't know if you're familiar with Eric Weinstein, who has been outraged by the fact that nobody's talking about Jeffrey Epstein and nobody's having these difficult conversations. And Eric himself has had sort of complicated journey through academia in the sense that he's a really kind of renegade thinker of many kinds of ways. I'm not sure if you know who Eric is. When he heard the name, I actually checked out of that.
+01:46:42
+It was heartening for me to see that I was not the youngest person on the other side of the I guess so. That's hilarious.
+01:46:56
+But but but Eric has he's kind of a renegade thinker.
+01:47:01
+He's a mathematical physicist with a believer in Harvard, and he spent some time at MIT and so on. But he he speaks to the fact that sort of there's a culture of conformity and so on. And if you if you're somebody who's a bit outside of the box, a bit weird and whatever dimension of weird that makes you actually kind of interesting, that the system kind of wants to make an outcast, wants to throw you out. And so he kind of opposes the whole idea.
+01:47:29
+He's the perfect person to have conversations with in this kind of libbrecht kind of context of anonymity, because I'll tell you, the few conversations that came across and there were very quickly silenced and I'm troubled by it. I'm not sure what to think of it is there's a few threads inside I might like on a mailing list discussing Marvin Minsky. I don't know if you know how that is. He's an AI researcher. He's a seminal figure before your time, but one of the most important people in the history of artificial intelligence.
+01:48:07
+And there was a discussion on a on a on a thread that involved the interaction between Marvin Minsky and Jeffrey Epstein. That conversation was quickly shut down. One person was pushed out of MIT, Richard Stallman, who's one of the key figures in the because of that, because he wanted some clarity about the situation. But he also he spoke, like we mentioned earlier, with our grace. Right.
+01:48:39
+But he was quickly part of the administration because of a few people protesting and just that conversation. I guess what bothered me most is it didn't continue, it didn't it didn't expand.
+01:48:54
+There was no, like, complexity in and it was there was a hunger. There was clear behind the conversation, especially so for me. I'd like to understand Marvin Minsky was one of the one of the reasons I wanted to come to MIT. He passed away. But he's one of the key figures in the field that I deeply care about our artificial intelligence.
+01:49:15
+And I thought that his name was dragged through the mud through that situation and without ever being, like, resolved. And so it's unclear to me, like, what am I supposed to think about all this? And the only way to come to a conclusion there is to keep talking. It's like the thing we started this conversation with about truth is like is conversation.
+01:49:43
+So in that sense, I'd love if people only Breck's perhaps in other places. But it seems like Bluebox is a nice platform to discuss Marvin Minsky, to discuss Jeffrey Epstein, to learn from it, to grow from it, to see how we can make our MIT better, as I'm still one of the people I've always dreamed of. Being in Amitay is a dream come true in many ways, and I still believe that MIT is one of the most special places in this world.
+01:50:11
+Like many other universities, universities in general is truly special and I know it hurts my heart when people speak poorly of academia. I understand what they mean. They're very correct. But there is much more, in my opinion. That's beautiful about academia and that's broken. I mean, I don't know if you have something to comment. It doesn't have to be about Jeffrey Epstein. But there's these difficult things that come up that test the academic community. Right.
+01:50:42
+That it feels like conversation is the only way to resolve it. I think people have a natural need for closure. And it's not just I'm not as plugged into the academics we're talking about as you would be like. But I even call these days no respect for Minsky.
+01:51:00
+Exactly. I mean, especially in the community.
+01:51:03
+I'm not not necessarily a programmer, but what I will say is that. People come to bricks and we always see a huge spike in users whenever there's like a tragedy on campus or something where people need closure. Recently, there was a suicide just the other day on Yale's campus and people were just coming to pay respects and to say rest in peace and speak also about what might have led to an environment where people are drawn to these terrible results.
+01:51:42
+So just having a conversation is important there. Like you need people need the space. Especially when no one wants to go out and put their head above, you know, for the longest blade of grass on that one. Yeah, because of the stigma. Yeah. People need to be able to speak. Yeah, that fear really bothers me, the fear that silences people like where they self censor, where they s silence. Well, I'm. You've created an amazing place, I am kind of interested in your struggle and your journey of creating positive.
+01:52:24
+Incentives because it's a problem in a very different domain that I'm also interested in. Um, so I you know, I love about robotics. I love human robot interaction. And so I believe that most people are good and we can bring out the best in human nature. Social networks is a very tricky space to do that. And so I'm glad you're taking on the problem and I'm glad you have the mission that you do. I hope you succeed.
+01:52:50
+But you mentioned offline that you used to be into chess.
+01:52:55
+Tell me about your journey through chess. Sure.
+01:52:57
+I was a very competitive tournament player growing up till about like 13. I got for the chess fans out, got to 2000 USCF. So I was a competitive player, especially my age group. And that actually led me to poker. I was, um, I was playing a tournament.
+01:53:15
+And what happens is when you're like a very strong 13 year old and you're playing locally, if you want a good match, it can end up playing a lot of adults. And I ended up playing this some mid forties guy who we played a really strong game. He actually beat me. I still I still remember the game. And I don't think I could I should have played that movement to that one.
+01:53:33
+But after after the game, we had a postmortem. It was this me, I think I was 30 at the time. And this 40 year old like hanging over this chessboard and looking over the moves. And even at that, even at my age, it occurred to me that this guy was absolutely brilliant. Yes. And after after the postmortem, not only, by the way, in chess, but just like in the way he articulates thoughts as some people are after postmortem, I went and looked him up online.
+01:53:56
+I found out that he was a World Series of poker champion.
+01:53:59
+And was it? His name is Bill Chan. Oh, wow. And I haven't really kept up with him except one time there was another chess tournament when I was around 14 and I followed him into an elevator as he was leaving the chess hall, like pretending that I was going to go up just because I wanted to. I just wanted to talk to him. And I suggested a sequel or some changes that he could that I thought he could make for his book and was like, actually, I was thinking of doing the same thing, which is incredibly validating to my 14 or 15 year old self, but I really haven't kept up with them.
+01:54:30
+So to shout out to him. But and then that he wrote a book called The Mathematics of Poker that I started reading. And that, first of all, kickstarted my interest in game theory and second of all, in poker. So I started from chess and then poker and I started with Bitcoin poker and had a lot of success with that, met a lot of amazing friends I learned a ton about.
+01:54:54
+I mean, I think about entrepreneurship as well as taking risks, reasonable risks, positive expected value risks, and also just growing as a person and mathematician.
+01:55:04
+And what did you say? Bitcoin poker? Yeah, what's bitcoin poker?
+01:55:09
+You have to understand, I was 14 years old. Right. So how does a 14 year old with wonderful parents who care about him.
+01:55:15
+Yeah. And probably don't want him playing poker. Yeah. I'm going to start playing poker because I want to I wanted to challenge I love the challenge of the competition. And I realized the answer is probably Bitcoin because the implications of that and they had they had these four year old tournaments which froze. You don't know four year olds are there's these promotional tournaments that it's put on where they'll put like a few dollars in and then thousands of people sign up and the winners get like a dollar.
+01:55:45
+And I started there and I worked my way up. And that's amazing.
+01:55:49
+What's your sense about from that time to today, the growth of the cryptocurrency community? I'm actually having like four or five conversations with Bitcoin proponents, Bitcoin maximalists. And like all these, I'm just having all these cryptocurrency conversations currently because there's so many brilliant, like, technically brilliant, but also financially and philosophically brilliant people in those communities. It's fascinating with the explosion of impact, like and also if you look into the future, the possible revolutionary impact on society in general.
+01:56:26
+But what's your sense about this whole growth of Bitcoin?
+01:56:29
+I'm definitely less knowledgeable on the currency. Again, like programing. It was a means to an end. Yes, right.
+01:56:36
+It, um, well, I will say is that there was this amazing community that grew out of it and you'd have people who were willing to stake me or have me be their horse. And they're my backer for having never met me for. Literally for Bitcoin tournaments like full Bitcoin entry fee tournaments, and I get a percentage of the profits and they get a percentage, and to have that level of community for that degree of money, I mean, it gives you hope about the potential for, you know, humans to act in mutual best interest with a degree of trust.
+01:57:12
+Yeah, there's a really fascinating, strong community there. But speaking of bringing out the best in human nature, it's a community that's currently struggling a little bit in terms of their ability to communicate in a positive and inspiring way, like the Bitcoin folks. And we talk about this a lot. They I honestly think they have a lot a lot of love in their hearts and minds, but they just kind of naturally, because the world has been. Like institutions and the centralized powers have been sort of mocking and fighting them for many years, that they've become sort of worn down and cynical and so they tend to be a little bit more aggressive and negative on the Internet.
+01:58:02
+It's interesting in the way they communicate, especially on Twitter, and it's just created this whole community of.
+01:58:09
+Basically being derisive and mocking and trolling and all this kind of stuff, you but people are trying to, you know, as as the Bitcoin community grows, as the cryptocurrency community grows, they're trying to revolutionize that aspect, too. So they're trying to find the positive core and grow and grow in that way.
+01:58:27
+So it's a it's fascinating because I think all of us are trying to find the positive aspects of ourselves and trying to learn how to communicate in a positive way online, like the Internet has been around. Social networks have been run along. We're trying to we're trying to figure this thing out. Let me ask you the ridiculous question.
+01:58:46
+I don't know if you have an answer, but who is the greatest chess player of all time, in your view, since you like chess thoughts on how you define it.
+01:58:54
+But if you're talking about raw skill, like if you put everyone across time into a tournament together, yeah, Carson would win. I don't think that's particularly controversial.
+01:59:03
+Oh, you mean like with the same exact skill level. Exactly. That Magnus is the object.
+01:59:08
+Now, if you talk about political importance, I think Bobby Fischer is you know, he's a he's the only one that people still used to go to town on the street. They know Bobby Fischer because he was because of what he represented. Right.
+01:59:21
+Who do you think is more famous on the street, Garry Kasparov or Bobby Fischer? Probably in America? Both. I think so, yes. That's interesting. I think we would have to put that to the test.
+01:59:32
+Yeah, maybe it's maybe it's more reflective of the community that I was a part of.
+01:59:36
+But yeah, also in the community, you're part of, like young minds playing chess. Bobby Fischer was a superstar in terms of.
+01:59:43
+Yeah, I think so, because it's American. And, you know, he stood up against the big bad Russians. Yes. At the time. And, uh, you know, unfortunately, he had a very bad downfall. But, um, well, you know, for our geopolitical situation, he meant a lot. And then if you talk about compared to contemporaries, actually, I would say Paul Murphy was a bit of a throwback, was he's one of those geniuses that was just head and shoulders above everyone else.
+02:00:14
+Is there somebody that inspired your own play, like as a young mind?
+02:00:18
+Yeah, I really liked my Celtel, so like you see, or I think it was very aggressive, right? Yeah, very tactical. Yeah. Which is funny because I, I found that I was better at like sort of slow, methodical play than quick tactics. But I just I mean, there's something beautiful about the creativity. And that's something I always latched on to as being a creative player, being a creative person.
+02:00:39
+I mean, just doesn't really reward creativity as much as a lot of other things, especially entrepreneurial pursuits, which I think is part of the reason why I sort of grew out of it.
+02:00:50
+But I always was attracted to the creativity that I did see in chess.
+02:00:55
+So let me ask the flipside. The the other, because you said poker. Is there somebody who says ideas could be the greatest poker player of all time? I could you admire that.
+02:01:08
+And that's a more controversial one, because these chess players are such like first of all, this, Martin, is an objective standard. And second of all, there's like they're like almost like cultural figures to me, whereas poker players are more like life living. They feel more like, yeah, they feel more accessible.
+02:01:27
+But they also have like personalities like Phil identifies their vices, the quirks of humor. Like, I guess we've seen videos of them. Yeah.
+02:01:39
+Because it's such a recent development to say one person who I admire so much and like, if I could like have a dinner list of people that I want to have dinner with, like maybe it'll happen.
+02:01:49
+No, actually, I would love to have dinner with him for Chalfont, who I don't most people probably won't know. Yeah, but on this podcast.
+02:01:59
+But the way first of all, he democratized poker learning in like the mathematical nitty gritty.
+02:02:07
+How do you get good at poker type sense to the entire world? And like an unprecedented way, he was he gave he had this gift that he had learned and distilled by working with some of the greatest poker minds. And he just democratized it through his website. And I learned a ton from him. And not only that, but you just listen to him think and it's almost like a philosophical meditation, the way that he breaks things down and thinks about these different elements and has such a holistic thought process.
+02:02:38
+It's like watching a genius work. And, you know, he's also just a nice, fun, sociable guy that, like you can you can imagine being at your dinner table. Yeah.
+02:02:48
+All that combined, which is natural for a lot of poker players. Right on the murderer, to say the least.
+02:02:54
+Yes, I like I really like the What is the Canadian Day on the Grono. He's also a nice guy. He's also a nice guy, but he's also somebody who is able to express his thoughts about poker really well, but also in an entertaining way. He seems to be able to predict cards better than anybody I've ever seen. Like what?
+02:03:13
+You watch the challenge with a challenge. He he lost like a million dollars recently to Doug Polk. He lost a million dollars to Doug Polecats up online. It's really interesting.
+02:03:25
+Yeah. It's awesome to watch these guys work. So I know you're twenty twenty one twenty one twenty one.
+02:03:34
+So asking you for advice is there's a little bit funny, but uh but at the same time, not because you've created a social network, you've created a startup from nothing as we've talked about earlier. Like without knowing how to program, you've programed I mean you've taken this whole journey that a lot of people I think would be really inspired by. So given that and given the fact that twenty years from I probably laugh at the advice you're going to give now.
+02:04:01
+Absolutely.
+02:04:02
+I hope so. If I don't laugh at the advice I give now. Something desperately wrong, right?
+02:04:08
+Yeah. So do you have advice for people that want to follow in your footsteps and create a startup, whether it's in software app domain or whether it's anything else?
+02:04:20
+So I'll speak specifically about social media apps. Yes, try to keep it as near as possible so I can laugh as little as possible and I'm forty one.
+02:04:30
+And what I would say is that if you're like a twenty one, twenty two year old who's looking at me and being like I want to do something like this, what I would say is you probably know better than just about anyone. And if you have a feeling in yourself that this is something that I have to do and this is something I could imagine myself doing for the next ten years, because if you're successful, you are going to have to do it for the next ten years.
+02:04:57
+And through the ups and the downs, through the amazing interviews with Lex and through the not so amazing articles you might have with other people.
+02:05:05
+Right.
+02:05:06
+Um, and you're going to have to ride those highs and lows and you have to believe in what you're doing. But if you have that feeling, what I would say is.
+02:05:14
+Listen to as few people as possible, because people are experts in domains, but when it comes to like what's hot and what's what makes sense in a social context.
+02:05:26
+You are the authority as a young person who's going through these things and living in your sort of mildew and I mean, I've talked to at this point, you know, so many experts, experts, so many investors because.
+02:05:46
+So you'd be amazed at the advice they've gotten, advice they've gotten, so there's like a minefield of bad advice.
+02:05:52
+That's the hardest part, I think, for young people. And it's the thing when people like I help I help Yeliz all the time who ask, like I never turned down when a founder asked me to have a conversation, I never turn it down. I'm always there for them. And the number one thing I worry about is that at Yale, we're taught implicitly and explicitly that you listen to the adult in the room, you listen to the person with the highest pay grade.
+02:06:20
+And it's devastating because that's how innovation dies.
+02:06:24
+And, you know, that's intimidating to like you talk that v.c, who probably is worth a billion dollars, a billion dollars, and they're going to tell you, you know, all the all the successful startups they helped fund or even just a successful business owner is going to tell you some advice. And it's hard psychologically to think that they might be wrong. And you're saying that's the only way to succeed, because if they knew what they were doing, they would have built it themselves.
+02:06:59
+And what's especially hard is people go, oh, of course, you know, I'll listen to people's I'll listen to their advice, but I'll know why it's wrong and then I'll and I'll do my own thing. And that sounds pretty abstract, but sometimes you can't always even put your finger on why they're wrong. Yeah. And I think to have the conviction to say you're wrong and I can't tell you why, but I still think I'm right. It's a rare thing, especially at like it's very counterintuitive.
+02:07:26
+And you might even say it's hubris or arrogant, but I think it's necessary because a lot of these things are they're not things that you can really put into words until you see them in action. Like a lot of them are kind of happy accidents.
+02:07:41
+It has been it's been tough for me because as a person who, like, I'm very empathetic. So when people tell me stuff, I kind of want to understand them. And it's been a painful process, especially people close to me. Basically, everything I've done, and especially in the recent few years, a lot of people close to me said not to do, you know, and like my parents, too, that's been a hard one, is is to basically acknowledge to myself that you don't know, like you don't, that everything you're going to say by way of advice for me is not going to be helpful.
+02:08:26
+Like, I love my parents very much, but like, they're just like they don't get it. And and as you put it beautifully, it's very difficult to put your finger on exactly why. Because a lot of advice sounds reasonable.
+02:08:45
+That's the worst kind. Yeah. Yeah. If it if it sounds really good, that just means it's an earworm. Like that's like a song that you hear on the radio and then you're like you're humming in the car and it's like it's the same thing. The more the better it sounds the more skeptical. Yeah.
+02:09:04
+Reason is that is a bad drug should be very careful because like you know, the things that seem impossible, you every every major innovation, every major business seems impossible at birth. But even not just the impossible things. I think, you know, you look at like love, for example, it's very easy to give advice. To sort of point out all the ways you can go wrong or marriage, all the divorces that people go through, all the pain of years that you go through the divorce, like the system of marriage, the marriage industrial complex, all the money that's wasted, all those kinds of things.
+02:09:44
+But that advice is useless when you're in love.
+02:09:47
+I guess the point the point is just pat the person in the back and say, go get them, kid. Like, what is it? Good will hunting and went to see about a girl.
+02:09:57
+Oh yeah. That's a good movie. I love them.
+02:10:02
+But yeah that that's that took me a long time to figure out. I'm still trying to fight to it, but especially when you're young. It's hard but. Nothing in life is worth accomplishing as easy. So but I think it's really interesting you make that connection between, like, starp advice and like your parents, because it's the exact same sort of mechanism where when you're young, your parents are usually like, right? Yeah, right. And the experts are usually right.
+02:10:32
+And, you know, if you listen to them and you you follow their orders, you're going to go to a school like yell. Yeah. And at certain point stops making sense. And I've seen my friends at Yale go down paths because they just continued listening to their parents that I know in their heart of hearts is not the right path for them.
+02:10:52
+Yeah, you know, that's how I see the education system.
+02:10:57
+The whole point is to guide you to a certain point in your life and everybody's points different. And your task is to at that point, to have a personal revolution and create your own path.
+02:11:14
+But no one tells you that. Nobody tells you that because they want you to keep following the same path as they are leading you towards. Like they're not going to say your whole job is to eventually rebel.
+02:11:24
+Yeah, that's how that's how rebellion works. You're not supposed to be told, but that is the task. They can take you just like you said. And depending who you are, they can take you really far. But at certain point you have to rebel. That could be getting you know, that could be in your undergrad, that could be high school at eight point.
+02:11:44
+One thing that I think played a pretty pivotal role, and I've never really mentioned this, um, he might not even know the person, but to tell you about in sort of me actually going out and making lyrics was that I was taking this graduate level math class my sophomore year and I met this I met this student who was also in it and had considerable citations and also startup experience.
+02:12:12
+And I think he actually ends up being CTO of a unicorn later on.
+02:12:16
+I've sort of lost touch with him, but we're still Facebook friends as it as it is in the 21st century. Um, so and I was in a class and I told him I really want to I really want to make this thing, but I have no technical background.
+02:12:30
+And he discusses computer genius. He worked under Dan Spilman a yeah. So yeah, he's a good guy. Right. And we were doing some math together. We were doing something on discrepancy for those of you who really care about math.
+02:12:45
+So combinatorics, um, and he just turns me is like I think you could do it like what do you mean you think I could do is like I think you could do it. Yeah. I was like, really. But I respected this guy so much. His name was young Doug. Um, shouting Doug, I liked this guy so much that I was like, if young Doug says I can do it. And young Doug is a legit genius and he knows and he knows me because we were in two classes together and we spent a lot of time together.
+02:13:13
+If he thinks I can do it, then who am I to say I can't do it?
+02:13:18
+Yeah, you know, that's a lesson for mentorship is like, oh, he has no idea. Probably. Well, he may not even remember that interaction, which is funny, but the point is that when a crazy young kid comes up to you with a crazy dream. You know, every once in a while you should just put them in the back and say, I believe in you, like you can do it if they look up to you.
+02:13:44
+That means your words have power. And if you say, no, no, come on, be reasonable. Like, you know, uh, finish your school work kind of thing. Like, that's that's unreasonable to take that leap. Now, just finish your education, blah, blah, blah. Whatever, whatever the reasonable advice is, every once in a while, maybe often as a mentor you should say, you know, go see about a girl in California or whatever the equivalent.
+02:14:11
+This was my moment with my good will hunting with your good will hunting moment. And I miss Robin Williams was a special guy.
+02:14:21
+People love it when I ask about book recommendations in general, of course, your journey is just beginning, but is there something that jumps out to you?
+02:14:30
+Technical fiction, philosophical sci fi, coloring books, blog posts.
+02:14:35
+You read somewhere that an impact on your life. Video games you recommend to others.
+02:14:43
+Minecraft manual, manga. I mean.
+02:14:47
+Yeah, video. You can mention video games too.
+02:14:50
+If there's something that jumps out to you that just had like an impact, um, I guess I'll say I really like the book the The Work of Art, which is a book about creative resistance and the creative struggle and what it means to be creative.
+02:15:04
+Yeah. And part of what I see in this conversation and what you're doing is so much of the work of art. The idea is that you just keep writing and writing and writing until you get to the new crap.
+02:15:17
+Yeah, yeah. And yeah, just you just you just roll with it. Right. And that's sort of what happens when you have like three hour conversations with people. You can only have so much scripted or societally constructed stuff until you get to the real you and you have to show up.
+02:15:34
+I mean, he's that book that book is kind of painful. It's really painful. And it's not something I would recommend for every part of it, but for what it did in my life at the time. It also kind of normalized. I don't know. I part of my coming of age story is part of it's about realizing that I'm a creative person and person who needs to create that sort of a God given thing, I think, for a lot of people.
+02:16:00
+But it's something that I don't really feel like I can live without.
+02:16:03
+And part of it was realizing that even within some of these more rigid structures, it's OK that I don't sort of fit in with them. And to hear about the struggles of other creatives was something for my own self-esteem and my own growing up that was really important to me. So I don't think the book itself might be perfect. But for what it did for my life, it was really impactful.
+02:16:25
+Yeah, I think exactly the words may not be exactly right by way of advice, but I think the journey that a lot of creators take. By reading that book is kind of profound, he also has another one called Turning Pro, I think I mean, he in general espouses like taking it seriously.
+02:16:46
+Like if you have a creative mind and you want to create something special in this world, go do it.
+02:16:52
+It's not don't show up.
+02:16:55
+And so many at the blank page, so many people would like tell me like would encourage me either blatantly or through like implicit means to like basically take the apple as seriously. It's a good signal, by the way, it's a good signal because my really close friends, the ones who have always supported me, they never said that because they got it.
+02:17:17
+They understood that was that that was my path. And they might be skeptical. They might be like I'm in. One of my friends I remember told me, like, I was always, like, taken aback about why you were so certain this would work out.
+02:17:29
+And it's like I finally got it, like once I saw it, like, popping off. But like before that I just didn't get it. But, like, he still supported me. And I think I think it's a really good signal. And actually, just the fact of going through this process has made me socially feel so much more connected. And I've somewhat consolidated my social life to some degree, but it's so much more vulnerable, connected. And that's part of the creative process.
+02:17:54
+I have to thank for that.
+02:17:55
+I think there's something that's like unstoppable about the creative mind. It's like it's right there, that fire.
+02:18:01
+And I guess part of the. Part of the thing that you're supposed to do is let that fire burn in whichever direction and it's going to hurt. It's going to hurt.
+02:18:12
+Fire will hurt. But on top of a video game, she's mentioned the Stanley parable offline.
+02:18:18
+Is there. You said you play some video games. Is there a video game that you especially love that you recommend? I play, for example.
+02:18:24
+Yeah, our audience. And it's actually really in keeping with what we've been talking about.
+02:18:30
+It's the beginner's guide, which is what it was made by the same guy, Dave Herenton, who made the Stanley Parable, which I I briefly saw you. I just clicked the video and then I went to sleep. That's who I am.
+02:18:43
+And then but I briefly saw that you were looking at and it's the it's a game that is better treated is art and I think. And I don't claim to understand the creator, because that would be a cardinal sin to me of as a creative person, but. It gets to the heart of a lot of the things that we've done that we've been talking about, which is the creative mind, the game can be interpreted in a lot of ways, in a feminist way.
+02:19:14
+It could be interpreted as a story of friends. It could be interpreted as the story of critics versus a creative way. I like to interpret it and I don't want to give away too much. Is the story of the creative part of your mind that creates just for the sake of creating meaning the part that creates for no rhyme or reason or clear meaning? It's almost it's almost ethereal versus the part that's you could call it the editor, you could call it the pragmatist.
+02:19:50
+You could call it the necessary force of ego in our in our lives. We can't totally be egoless. Right. But we need to be egoless, to be creative. And how that sort of internal censure, what role does it play and how do we allow our creative minds to be creative? And yet how do we still become useful?
+02:20:09
+Because and it's funny that a video game could have this fascinating tension, which reminds me about the ridiculous question every once in a while ask about meaning and death so that this this whole this whole right ends.
+02:20:28
+You're at the beginning of the ride, but it could end any day. Actually, that's kind of the way human life works.
+02:20:34
+You could die today. You can die tomorrow. Do you think about your own mortality?
+02:20:39
+Do you think about death? Do you meditate on it? And in that context, as the creative but as a pragmatist who as running a startup, what do you think is the meaning of this whole thing? Yes, so our mortality right about. About three years ago, four years ago now, I was excited to go to Yale, I was playing six hours of squash a day, which squash is a sport I love so much. And I was really getting a lot better.
+02:21:14
+And I was even thinking I could maybe walk onto the Yale team.
+02:21:20
+And I woke up one day. I felt really, really sick. I went and I decided not to go. So I sat there and I know I wanted to. I almost did. And you'll see how the story turns out. You'll decide if I made the right choice. I decided I think this was today and I decided to get my driver's license or I had to get my driver's license. I want to get a driver's license before I, you know, just how young I am before I went off to college, because otherwise I might never get it.
+02:21:52
+And I'm going back. And I successfully got my driver's license.
+02:21:55
+Beacham and I come back to I go back to my house and I just I don't want to drive back. So I just feel so sick like things are spinning. I have the worst headache. I come home, I run right into my bed and feeling really sick to the point where I even like, asked my mom, who is the doctor? I'm like, should I check at the hospital? And she's like, you can just wait it out and she'll get better.
+02:22:20
+Like your mom. Yeah.
+02:22:23
+And then, you know, and then I at one point I look at my arms and they're like covered in this like red splotches stuff. Yeah.
+02:22:30
+And I'm like, oh, I think she's like, yeah, we have to go. And so I go there and they're like, you scarlet fever. And they're like, there's nothing we can do. You should just go back home.
+02:22:40
+So I go back home six hours later, I wake up in the morning. They'd let me out of like three a.m. They let me I come home in the morning and I feel this like a spear through my chest.
+02:22:53
+And I never felt anything like it, and I was it was very disconcerting when you have a because we're all used to different sorts of pain. Right. And that was sort of Pin-Up never felt before. I suppose as an athlete, you're used to like, you know, pain. So I told my parents and immediately we got back in the car.
+02:23:09
+We go to the same hospital I was about six hours ago, and they initially didn't want to let me in.
+02:23:13
+And I was like, I've just been like, oh, come in, because they're like, you're a healthy guy. Wait your turn. I'm like, no, you don't understand. I have a pain in my chest. And then they let me in. They start doing tests on me. They like put something like in my back, which is really a huge needle.
+02:23:28
+And I'm smiling because it's like one of the ways I reduce stress, I guess, or deal with this sort of thing and make light of it. But like know that, you know, it's definitely very scary in the moment, shocking and scary.
+02:23:41
+And they go and they they do a bunch of tests and they determined that a virus like attacked my heart and I had myocarditis and pericarditis and they said I had maybe twenty five to thirty five percent chance at one point of dying.
+02:23:56
+And so. I'm sitting in my mental hospital, I'm in the bed in my bed for about three weeks, and I'm just I'm just standing there and I had this moment also I remember very specifically where.
+02:24:16
+I was in so much pain that like I was crying not like emotional standpoint, but actually just purely out of the pain itself, like I could feel my heart in my chest.
+02:24:28
+And when I leaned back, I felt it touched my ribcage and feel horrible so I couldn't go to sleep and lean back.
+02:24:34
+I had to lean forward all throughout the night.
+02:24:36
+Right. And I'm feeling much and I'm feeling my chest. I'm feeling this terrible pain in my chest. I'm crying unstoppably. And I mean, also maybe I should mention that at the time I was someone who, like, refused to take anything into my body that wasn't natural. Yeah. And so a lot of the time I tried to be unmedicated.
+02:24:55
+Eventually I didn't allow them to add a little medication to my body. But there's just so much uncertainty and pain. And the first time I had to come to terms with mortality.
+02:25:08
+First of all, I think you still should have gone play squash. I mean, come on. I mean, you're you're serious about this. You still carry that with you? Sort of. There is power to realizing the ride can end right in very suddenly, very suddenly. Yeah, and painfully and you know, it has a pragmatic application to like what you to trajectories. You take the life. Right.
+02:25:39
+Something else that is worth noting is that I for the next year couldn't walk to my classes. So I get to yell. They put me in a medical single alone and I have to shuttle to all my classes.
+02:25:55
+I have to ask a few Professor Steven move classes so I could actually get there.
+02:26:02
+I can't move my book. I can't lift my book bags. I can't I can't walk up stairs. I spent like 12 hours a day in my dorm room just like staring at the walls and more and more than that, all this like. You I got to watch my body, like, deteriorate and like the muscle, like, fall off of it because I was I was taking these pills and the kind of catabolic.
+02:26:30
+And for an 18 year old, I mean, I think every 18 year old has feelings about their body, man or woman. And, you know, just seeing this, it's like you're watching sort of death transpire and you're also very fatigued because your heart's not at peak condition. And you think about the future and a lot of the things you enjoy have kind of been stripped away from you.
+02:26:53
+And I I took a meditation practice like I started with like five minutes a day at my peak. I was like 40 minutes. They kept it up consistently for about two years. And I started thinking about, like, what do I want to do? And like, what do I care about? And to get to your point, I think you're asking like, how does this carry forward, right? I think I realized that, you know, there's an end and I realized that there are things I believe and things that I believe that might not be so overtly popular, but that I truly think make the world a better place.
+02:27:34
+And in spite of and basically, if my conditions provided I wanted to make something that I wanted to do, something that would make me feel sort of whole in that way.
+02:27:47
+Yeah.
+02:27:47
+I mean, that's an amazing journey to take that time and to come out on the other end. Now, that's amazing. I did not realize like that there was a long term struggle. I think that's in the end, if you do succeed, we will have a profound positive impact because struggles ultimately like humbling but also empowering.
+02:28:11
+So I'm glad to see that. But from the perspective of the creator of the other ridiculous question, what meaning do you think about this kind of stuff?
+02:28:22
+Is that the, you know, the meaning of life for you, the meaning of life for us, descendants of apes in general?
+02:28:32
+The first thing I'd like to say is that I think part of like when we talk about the meaning of life, the part of it is the fact that we get to struggle with this question and we get to do it together for a long time. And we sometimes I think it's accepting that there's no meaning at all. And sometimes I think it's accepting that or even just passing the phrase and thinking about the meaning of life.
+02:28:54
+I sometimes look, I'm very young again. I hope that anything I say now is going to be very different in the future because I think mean, life has so many meetings that.
+02:29:08
+It'll be crazy to see what I think in 20 years about the meaning of life and the rise from the future. Cut him some slack, please do perspective, perspective, perspective.
+02:29:20
+Having said that, you know, I think part of what brings meaning to my life is things like this where we think about these things with people who are really, really, really on the ball and we get to connect with these people. That certainly brings me into my life. Human connection.
+02:29:36
+Yeah. This conversation is is just another, like echo of the thing you're trying to create in the digital space, right? Yes. That's the same kind of magic from from what I understand about what you're trying to create is the same reason I fell in love with the long form podcasting like as a fan. That's why I listen to long form podcasts. Is there something deeply human and genuine about the interchange through the voice? But I do think that connection to text can be even more powerful.
+02:30:10
+Like I think about letters. I still write letters to Russia. You know, there's something powerful in letters when you when you put a lot of yourself in the words you say, in the words you write as powerful, you can really communicate not just the actual semantic meaning of of of the words, but like a lot of who you are with those words and create real connection.
+02:30:37
+So I hope you succeed there. And listen, Ryan, I think this is an incredible conversation. I'm glad that people like you are fighting the good fight for bringing out the best in human nature in the digital space. I think that's a battle ground where the good will win, like love will win. And I'm glad you're creating technology that does just that. So thank you so much for wasting all your time for coming down. I can't wait to see what you do in the future.
+02:31:08
+Thanks for talking to. Thank you for having me. Bam. I mean, bigger guns.
+02:31:14
+Have you gotten in the vodka zero. Yeah. Thanks for listening to this conversation with Ryan Schiller, a thank you to our sponsors all form Magic Spoon, Better help and brave click their links to support this podcast. And now let me leave you with some words from George Washington. On March 15th, 1783, a freedom of speech is taken away. Then dumb and silent, we may be led like sheep to the slaughter. Thank you for listening and hope to see you next time.

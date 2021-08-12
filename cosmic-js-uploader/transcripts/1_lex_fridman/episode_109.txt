@@ -1,0 +1,638 @@
+00:00:00
+The following is a conversation with Sergei Levine, a professor at Berkeley and a world class researcher in Deep Learning, reinforcement, learning, robotics and computer vision, including the development of algorithms for end to end training of neural network policies that combine perception and control scalable algorithms for inverse reinforcement learning and in general, deep RL algorithms. Quick summary of the ads to sponsors Kashyap and Express VPN. Please consider supporting the podcast by downloading Kashyap and using collects podcasts and signing up at Express FTP Dotcom Lex Pod.
+00:00:38
+Click the links, buy the stuff. It's the best way to support this podcast and in general the journey I'm on. If you enjoy this thing, subscribe on YouTube, review it with five stars and have a podcast, follow on Spotify, supporta on Patrón or connect with me on Twitter, Allex Friedemann. As usual, I'll do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. This show is presented by Kashyap, the number one finance app in the App Store, when you get it, Use Collects podcast cash app lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar since cash does fractional share trading.
+00:01:20
+Let me mention that the order execution algorithm that works behind the scenes to create the abstraction of the fractional orders is an algorithmic marvel. So big props to the Kashyap engineers for taking a step up to the next level of abstraction over the stock market, making trading more accessible for new investors and diversification much easier. So, again, if you get cash out from the App Store or Google Play and use the Code Leks podcast, you get ten dollars and cashable.
+00:01:50
+Also donate ten dollars. The first, an organization that is helping to advance robotics and stem education for young people around the world. This show is also sponsored by Express FPM, Get It and Express FPM Dotcom's neglects POD to support this podcast and to get an extra three months free on a one year package. I've been using express support for many years. I love it. I think Express is the best weapon out there, they told me to say, but it happens to be true in my humble opinion.
+00:02:26
+It doesn't lock your data. It's crazy fast as easy to use literally just one big power button. Again, it's probably obvious to you, but I should say it again. It's really important that they don't log your data. It works on Linux and every other operating system. But Linux, of course, is the best operating system. Shout out to my favorite flavor, Ubuntu Tomatoey Twenty, or for once again, get it at Express Update Councillor's Blackspot to support this podcast and to get an extra three months free on a one year package.
+00:03:00
+And now here's my conversation with Serguei Levine.
+00:03:23
+What's the difference between a state of the art human such as you and I?
+00:03:27
+Well, I don't know if you qualify state they're humans, but a state of the art human in a state of the art robot, that's a very interesting question.
+00:03:36
+Robot capability is it's kind of a I think it's a very tricky thing to to to understand, because there are some things that are difficult that we wouldn't think are difficult and some things that are easy that we wouldn't think are easy.
+00:03:50
+And there's also a really big gap between capabilities of robots in terms of hardware and their physical capability and capabilities of robots in terms of what they can do autonomously.
+00:04:00
+There was a little video that I think robotics researchers really like to show a special robotics learning researchers like myself from 2004 from Stanford, which demonstrates a prototype robot called the PR one. And the PR one was a robot that was designed as a home assistance robot. And there's this beautiful video showing the pure one, tidying up a living room, putting away toys, and at the end of bringing a beer to the person sitting on the couch, which looks really amazing.
+00:04:29
+And then the punch line is that the robot is entirely controlled by person. So you can see in some ways the gap between a state of the art human state of the art robot, if the robot has a human brain, is actually not that large. Now, obviously, like human bodies are sophisticated and very robust and resilient in many ways. But on the whole, if we're willing to, like, spend a bit of money and do a bit of engineering, we can kind of close the hard work out almost.
+00:04:53
+But the intelligence gap, that one is very wide.
+00:04:58
+And when you say hardware, you're referring to the physical side of the actual the actual body of the robot, as opposed to the hardware on which the cognition, the nerves, the hardware of the nervous system. Yes, exactly.
+00:05:08
+I'm referring to the body rather than the mind. So so that that means that the kind of the work is cut out for us. While we can still make the body better, we kind of know that the big bottleneck right now is really the mind. And how big is that gap, how big is the how big is the difference in your in your sense of ability to learn a bit ability to reason, ability to perceive the world between humans and our best robots?
+00:05:34
+The gap is very large and the gap becomes larger.
+00:05:38
+The more unexpected events can happen in the world. So essentially the spectrum along which you can measure the the size of that gap is the spectrum of how open the world is. If you control everything in the world very tightly, if you put the robot in like a factory and you tell it where everything is and you rigidly program its motion, then it can do things one might even say in a superhuman way.
+00:06:01
+It can move faster, it stronger can lift up a car and things like that. But as soon as anything starts to vary in the environment now, it'll trip up and have many, many things very like they would like in your kitchen, for example. Then things are pretty much like wide open.
+00:06:16
+Now, again, we're going to stick a bit on the philosophical questions, but how much on the human side of the cognitive abilities, in your sense, is nature versus nurture? So how much of it is a product of evolution and how much of it is something we'll learn from sort of scratch from the day we're born?
+00:06:39
+I'm going to read into your question as asking about the implications of this for A.I., because I'm not a biologist, I can't really speak authoritatively.
+00:06:48
+So until then, go on it. If if it's so if it's all about learning, then there's more hope for A.I..
+00:06:56
+So the way that I look at this is that, um. You know, we'll first, of course, biology is very messy, and it's if you ask the question, how does a person do something or has a person's mind, do something you can come up with with a bunch of hypotheses. And oftentimes you can find support for many different, often conflicting hypotheses. One way that we can approach the question of what the implications of this for are, is we can think about what's sufficient.
+00:07:23
+So, you know, maybe a person is from birth very, very good at some things, like, for example, recognizing faces. There's a very strong evolutionary pressure to do that. If you can recognize the mother's face, then you're more likely to survive. And therefore, people are good at this. But we can also ask, like, what's what's the minimum sufficient thing.
+00:07:41
+Right. And one of the ways that we can study the minimal sufficient thing is we could, for example, see what people do in unusual situations if you present them with things that evolution couldn't have prepared them for. You know, our daily lives actually do this to us all the time. We we didn't evolve to deal with, you know, automobiles and space flight and whatever. So there are all these situations that we can find ourselves in and we do very well there.
+00:08:03
+Like I can give you a joystick to control a robotic arm, which you've never used before. And you might be pretty bad for the first couple of seconds. But if I tell you, like, your life depends on using this robotic arm to, like, open the store, you'll probably manage it.
+00:08:17
+Even though you've never seen this device before, you never use the joystick controls and you kind of muddle through it. And that's not your evolved natural ability. That's your your flexibility, your adaptability. And that's exactly where our current robotic systems really kind of fall flat.
+00:08:32
+But I wonder how much, general, almost what we think of as common sense. Pre train models underneath all that, so that ability to adapt to a joystick. Is requires you to have a kind of, you know, I'm human, so it's hard for me to introspect all the knowledge I have about the world, but it seems like there might be an iceberg underneath of the amount of knowledge we actually bring to the table. That's kind of the open question.
+00:09:02
+I think there's absolutely an iceberg of knowledge that we bring to the table. But I think it's very likely that iceberg of knowledge is actually built up over our lifetimes because we have you know, we have a lot of prior experience to draw on.
+00:09:16
+And it kind of makes sense that the right way for us to, you know, to optimize our our efficiency, our evolutionary fitness and so on is to utilize all that experience to build up the best iceberg we can get. And that's actually one, you know. Well, that sounds an awful lot like what machine learning actually does. I think that for modern machine learning, it's actually a really big challenge to take this unstructured, massive experience and distill out something that looks like a common sense understanding of the world.
+00:09:46
+And perhaps part of that is it's not because something about machine learning itself is is broken or hard, but because we've been a little too rigid in subscribing to a very supervised, very rigid notion of learning, you know, kind of the input output X is good Y sort of model. And maybe what we really need to do is to view the world more as like a mass of experience that is not necessarily providing any rigid supervision, but sort of providing many, many instances of things that could be.
+00:10:14
+And then you take that and you distill it into some sort of common sense understanding. I see what you're painting, an optimistic, beautiful picture, especially from the robotics perspective, because that means we just need to invest and build better learning algorithms to figure out how we can get access to more and more data for those learning algorithms to extract signals from and then accumulate that iceberg of knowledge. It's a beautiful picture, the hopeful one.
+00:10:43
+I think it's potentially a little bit more than just that. And this is this is where we perhaps reach the limits of our current understanding. But one thing that I think that the research community hasn't really resolved in a satisfactory way is how much it matters where that experience comes from. Like, you know, do you just, like, download everything on the Internet and cram it into essentially the 21st century analog of the giant language model and then see what happens?
+00:11:10
+Or does it actually matter whether your machine physically experiences the world or in the sense that it actually attempts things, observes the outcome of its actions and kind of augments experience that way that it chooses which parts of the world it gets to interact with and observe and learn from?
+00:11:28
+Right.
+00:11:28
+It may be that the world is so complex that simply obtaining a large mass of sort of ID samples of the world is is a very difficult way to go. But if you are actually interacting with the world and essentially performing the sort of hard negative mining by attempting what you think might work, observing the sometimes happy and sometimes sad outcomes of that and augmenting your understanding using that experience, and you're just doing this continually for many years, maybe that sort of data in some sense is actually much more favorable to obtain a common sense understanding.
+00:12:02
+One reason we might think that this is true is that, you know, the what we associate with common sense or lack of common sense is often characterized by the ability to reason about kind of counterfactual questions like, you know, if I were to hear this bottle of water sitting on the table, everything is fine for knock it over, which I'm not going to do. But if I were to do that, what what would happen? And I know that nothing good would happen from that.
+00:12:28
+But if I have a bad understanding of the world, I might think that that's a good way for me to like, you know, gain more utility if I actually go about my daily life doing the things that my current understanding of the world suggests will give me high utility. In some ways I'll get exactly the the right supervision to tell me not to do those bad things and to keep doing the good things.
+00:12:50
+So there's a spectrum between I'd rather walk through the space of data and then there is and what we humans do, but I don't even know if we do it optimal. But that might be beyond what. So this open question that you raised, where do you think systems, intelligence systems that would be able to deal with this world fall? Can we do pretty well by reading all of Wikipedia, sort of randomly sampling it like language models do or do we have to be exceptionally selective and intelligent about which aspects of the world we interact with?
+00:13:29
+So I think this is an open scientific problem, and I don't have, like a clear answer, but I can speculate a little bit. And what I would speculate is that you don't need to be super, super careful. I think it's less about like being careful to avoid the useless stuff and more about making sure that you hit on the really important stuff. So perhaps it's OK if you spend part of your day just, you know, guided by your curiosity, visiting interesting regions of the of your state space.
+00:13:57
+But it's important for you to know every once in a while make sure that you really try out the solutions that your current model of the world suggests might be effective and observe whether those solutions are working as you expect or not. And perhaps some of that is really essential to have kind of a perpetual improvement loop like this perpetual improvement loop is really like that. That's really the key. The key that's going to potentially distinguish the best current methods from the best methods of tomorrow.
+00:14:25
+In a sense, how important new things exploration are total out of the box. Thinking exploration in the space jump to totally different domains, so you kind of mentioned there's an optimization problem. You can kind of explore the specifics of a particular strategy, whatever the thing you're trying to solve. How important is it to explore totally outside of the strategies that have been working for you so far?
+00:14:51
+What's your intuition there? Yeah, I think it's a very problem dependent kind of question. And I think that that's actually, you know, in some ways that question gets at. One of the big differences between sort of the classic formulation of a reinforcement learning problem and some of the sort of more open ended reformulations of that problem that have been explored in recent years.
+00:15:15
+So classically, reinforcement learning is framed as a problem of maximizing utility like any kind of rational agent. And then anything you do is in service to maximizing that utility.
+00:15:26
+But a very interesting kind of way to look at none of us are saying this is the best way to look at it. But an interesting alternative way to look at these problems is as something where you first get to explore the world however you please, and then afterwards you will be tasked with doing something. And that might suggest a somewhat different solution. So if you don't know what you're going to be tasked with doing and you just want to prepare yourself optimally for whatever your uncertain future holds, maybe then you will choose to attain some sort of coverage, build up sort of an arsenal of cognitive tools, if you will, such that later on when someone tells you now your job is to fetch the coffee for me, you'll be well prepared to undertake that task.
+00:16:06
+And that you see that as the modern formulation of the reinforcement learning problem, as the kind of the more multitask, the general intelligence kind of formulation. I think that's one possible vision of where things might be headed. I don't think that's by any means the mainstream or standard way of doing things. And it's not like if I had to, but I like it.
+00:16:28
+It's it's a beautiful vision. So maybe you actually take a step back. What is the goal of robotics? What's the general problem? Robotics we're trying to solve? We actually kind of painted two pictures here, one of the narrow one of the general. What, in your view is the big problem of robotics? Again, ridiculously philosophical for cautions. I think that, you know, maybe there are two ways I can answer this question. One is there's a very pragmatic problem, which is like what would make robots, what would sort of maximize the usefulness of robots?
+00:17:01
+And they're the answer might be something like a system where. A system that can perform whatever task a human user sets for it, you know, within the physical constraints, of course, if you tell it to teleport to another planet, it probably can't do that. But if if you ask it to do something that's within its physical capability, then potentially with a little bit of additional training or a little bit of additional trial and error, it ought to be able to figure it out in much the same way as like a human tele operator or to figure out how to drive the robot to do that.
+00:17:34
+That's kind of a very pragmatic view of what it would take to kind of solve the robotics problem of the world.
+00:17:42
+But I think that there is a second answer and that answer the answer is a lot closer to why I want to work on robotics, which is that I think it's less about what it would take to do a really good job in the world of robotics, but more the other way around of what robotics can bring to the table to help us understand artificial intelligence. So your dream, fundamentalist understanding intelligence. Yes, I think that's the dream for many people who actually work in this space, I think that there is there's something very pragmatic and very useful about studying robotics.
+00:18:16
+But I do think that a lot of people that go into this field actually, you know, the things that they draw inspiration from are the potential for robots to, like, help us learn about intelligence and about ourselves.
+00:18:28
+So that's fascinating that robotics is basically the space by which you can get closer to understanding the fundamentals of artificial intelligence. So what is it about robotics that's different from some of the other approaches? So if we look at some of the early breakthroughs in deep learning or in the computer vision space and the natural language processing, there is really nice, clean benchmarks that a lot of people competed on and thereby came up with a lot of brilliant ideas. What's the fundamental difference between computer vision, purely defined and imagined and kind of the bigger robotics problem?
+00:19:04
+So there are a couple of things.
+00:19:06
+One is that with robotics, you kind of have you kind of have to take away many of the crutches.
+00:19:13
+So you have to deal with both the the particular problems of perception, control and so on.
+00:19:19
+But you also have to deal with the integration of those things.
+00:19:22
+And, you know, classically, we've always thought of the integration as kind of a separate problem. So a classic kind of modular engineering approaches that we solve the individual problems, then wire them together and then the whole thing works. And one of the things that we've been seeing over the last couple of decades is that, well, maybe studying the thing as a whole might lead to just very different solutions than if we were to study the parts and wire them together.
+00:19:44
+So the integrative nature of robotics research helps us see, you know, different perspectives on the problem.
+00:19:51
+Another part of the answer is that with robotics, it it casts a certain paradox into very clever relief. So this is sometimes referred to as more of a paradox. The idea that in artificial intelligence, things that are very hard for people can be very easy for machines and vice versa. Things that are very easy for people can be very hard for machines.
+00:20:12
+So, you know, integral and differential calculus is pretty difficult to learn for people. But if you program a computer, do it. It can derive derivatives and integrals for you all day long without any trouble, whereas some things like drinking from a cup of water, very easy for a person to do, very hard for a robot to deal with.
+00:20:34
+And sometimes when we see such blatant discrepancies that give us a really strong hint that we're missing something important. So if we really try to zero in on those discrepancies, we might find that little bit that we're missing. And it's not that we need to make machines better or worse at math and better our drinking water, but just that by studying those discrepancies, we might find some new insight so that there could be there could be in any space.
+00:20:58
+Doesn't have to be robotics. But you're saying I mean, yeah, it's kind of interesting that robotics seems to have a lot of those discrepancies. So the the the is more of a paradox is probably referring to the space of the physical interaction, like you said, object manipulation, walking, all the kind of stuff we do in the physical world that.
+00:21:21
+Well, how do you make sense if you were to try to disentangle? The the marvelous paradox like why is there such a gap? In our intuition about it, why do you think manipulating objects is so hard from everything you've learned from applying reinforcement learning in this space?
+00:21:43
+Yeah, I think that one reason is maybe that, um, for many of the for many of the other problems that we've studied in A.I., in computer science and so on.
+00:21:55
+The notion of input, output and supervision is much, much cleaner, so computer vision, for example, deals with very complex inputs, but it's comparatively a bit easier, at least up to some level of abstraction, to cast it as a very tightly supervised problem. It's comparatively much, much harder to cast robotic manipulation as a very tightly supervised problem.
+00:22:18
+You can do it. It just doesn't seem to work all that well. So you could say that, well, maybe we get a label data set where we know exactly which motor commands to send and then we train on that. But for various reasons, that's not actually like such a great solution. And it also doesn't seem to be even remotely similar to how people and animals learn to do things, because we're not told by our parents, here's how you fire your muscles in order to walk.
+00:22:42
+We you know, we do get some guidance, but the really low level, detailed stuff, we figure out mostly on our own, and that's what you mean by tightly coupled, that every single little sub action gets a supervised signal of whether it's a good one or not. Right.
+00:22:55
+So so while in computer vision, you could sort of imagine up to a level of abstraction that maybe, you know, somebody told you this is a car and this is a cat and a dog in motor control, it's very clear that that was not the case.
+00:23:07
+If we look at sort of the sub spaces of robotics that, again, as you said, robotics integrates all of them together, then we'll get to see how this beautiful mess interplays. But so there's nevertheless still perception. So it's the computer vision problem, broadly speaking, understanding the environment. Then there's also maybe you can correct me on this kind of categorization of the space. Then there's prediction in trying to anticipate what things are going to do into the future in order for you to be able to act in that world.
+00:23:42
+And then there's also this game theoretic aspect of how your actions will change the behavior of others in this kind of space. What and this is bigger than reinforcement learning. This is just broadly looking at the problem and robotics. What's the hardest problem here?
+00:24:00
+Or is there or is what you said is true, that when you start to look at all of them together, that's that's a whole nother thing. Like you can't even say which one individual is harder because all of them together, you should only be looking at them all together.
+00:24:19
+I think when you look at them all together, some things actually become easier. And I think that's actually pretty important. So we had, you know, back in 2014, we had some work, basically our first work on end and reinforcement learning for robotic manipulation skills from vision, which, you know, at the time was something that seemed a little inflammatory and controversial in the robotics world. But other than the the inflammatory and controversial part of it, the point that we were actually trying to make in that work is that for the particular case of combining perception and control, you could actually do better if you treat them together than if you try to separate them.
+00:24:57
+And the way that we tried to demonstrate this is we picked, you know, fairly simple motor control task where a robot had to insert a little red trapezoid into a trapezoidal hole. And we had our separate solution, which involved first detecting the whole using opposed detector and then activating the arm to put it in. And then our internal solution, which just mapped pixels to the talks. And one of the things we observed is that if you use the antenna solution, essentially the pressure on the perception part of the model is actually lower.
+00:25:26
+Like it doesn't have to figure out exactly where the thing is in 3D space. It just needs to figure out where it is distributing the errors in such a way that the horizontal difference matters more than the vertical difference, because vertically just pushes it down all the way until it can't go any further and their perceptual errors are a lot less harmful. Whereas perpendicular to the direction of motion, perceptual errors are much more harmful. So the point is that if you combine these two things, you can trade off errors between the components.
+00:25:53
+Optimally, to best accomplish the task and the components should be weaker while still leading to better overall performance as a profound idea.
+00:26:01
+And in the space of Pegg's and things like that is quite simple. It almost is tempting to overlook. But that's.
+00:26:10
+Seems to be, at least intuitively, an idea that should generalize to basically all aspects of perception and control. Of course, no one strengthens the other. Yeah.
+00:26:19
+And we you know, people who have studied sort of perceptual heuristics and humans and animals find things like that all the time. So one very well-known example is something called the gaze heuristic, which is a little trick that you can use to intercept a flying object. So if you want to catch a ball, for instance, you could try to localize it in 3D space, estimated its velocity, estimate the effect of wind resistance, all the complex system of differential equations in your head.
+00:26:45
+Or you can maintain a running speed so that the object stays in the same position as in your field of view. So if it dips a little bit, you speed up. If it rises a little bit, you slow down. And if you follow the simple rule, you'll actually arrive at exactly the place where the object lands and you'll catch it and humans use it when they play baseball. Human pilots use it when they fly airplanes to figure out if they're about to collide with somebody.
+00:27:06
+Frogs' use us to catch insects and so on and so on. So this is something that actually happens in nature. And I'm sure this is just one instance of it that we were able to identify just because all the scientists were able to identify because so prevalent. But there are probably many others.
+00:27:20
+Do you ever just who can zoom in as we talk about robotics to have a canonical problem, sort of a simple, clean, beautiful representative problem in robotics that you think about when you're thinking about some of these problems? We talked about robotic manipulation.
+00:27:36
+To me, that seems intuitively at least the robotics community is converging towards that as a space. That's the canonical problem. If you agree that maybe you zoom in in some particular aspect of that problem, that you just like like if we solve that problem perfectly, it'll unlock a major step in towards human level intelligence.
+00:28:01
+I don't think I have, like, a really great answer to that, and I think partly the reason I don't have a great answer kind of has to do with the. It has to do with the fact that the difficulty is really in the flexibility and adaptability rather than in doing a particular thing really, really well. So it's hard to just say, like, oh, if you can, I don't know, like shuffle a deck of cards as fast as like a Vegas casino dealer, then you'll you'll be very proficient.
+00:28:30
+It's really the ability to quickly figure out how to do some arbitrary new thing well enough to like you to move on to the next arbitrary thing.
+00:28:43
+But the source of newness and uncertainty. Have you found problems in which it's easy to generate new newness in this? This is. Yeah. New types of newness. Yeah.
+00:28:58
+So a few years ago.
+00:29:00
+So if you'd asked me this question around like 2016, maybe I would have probably said that Robota Grasping is a really great example of that because it's a task with great real world utility like you will get a lot of money if you can do it.
+00:29:14
+Well, what is robotic, grasping, picking up any object with a robotic hand? Exactly. So you'll get a lot of money if you do it well, because lots of people want to run warehouses with robots and it's highly non-trivial because very different objects will require very different grasping strategies.
+00:29:32
+But actually since then, people have gotten really good at building systems to solve this problem to the point where I'm not actually sure how much more progress we can make with that as like the main guiding thing.
+00:29:47
+But it's kind of interesting to see the kind of methods that have actually worked well in that space because a robotic grasp and classically used to be regarded very much as kind of almost like a geometry problem.
+00:29:59
+So people who have studied the history of computer vision will find this very familiar, that kind of in the same way that in the early days of computer vision, people thought of it very much like an inverse graphics thing in robotic grasping. People thought of it as an inverse physics problem. Essentially, you look at what's in front of you, figure out the shapes, then use your best estimate of the laws of physics to figure out where to put your fingers on.
+00:30:21
+You pick up the thing and it turns out that works really well for a body grasping instantiated in many different recent works, including our own, but also ones from many other labs, is to use learning methods with some combination of either exhaustive simulation or like actual real world trial and error. And it turns out that those things actually work really well. And then you don't have to worry about solving geometry problems or physics problems. So what are just, by the way, and the grasping what are the difficulties that have been worked on?
+00:30:53
+So one is that the materials are things, maybe occlusions and the perception side. Why is it such a difficult why is picking stuff up such a difficult problem?
+00:31:02
+Yeah, it's a difficult problem because the number of things that you might have to deal with or the variety of things you have to deal with is extremely large.
+00:31:12
+And oftentimes things that work for one class of objects won't work for other class of objects. So if you if you get really good at picking up boxes and now you have to pick up plastic bags, you know, you just need to employ very different strategy. And there are many properties of objects that are more than just their geometry. It has to do with, you know, the bits that that are easier to pick up, the bits that are harder to pick up, the bits are more flexible.
+00:31:38
+The bits that will cause the thing to pivot and bend and drop out of your hand versus the bits that result in a nice, secure grasp, things that are flexible, things that if you pick them up the wrong way, they'll fall upside down and the contents will spill out. So there's all these little details that come up, but the task is still kind of can be characterized as one task. Like there's a very clear notion of you did it or you didn't do it.
+00:32:01
+So in terms of spilling things, they're creeps in this notion that starts to sound and feel like common sense reasoning, do you think solving the general problem of robotics requires common sense reasoning, requires general intelligence, this kind of human level capability of. You know, like you said, be robust and deal with uncertainty, but also be able to sort of reason and assimilate different pieces of knowledge that you have.
+00:32:34
+Um. Yeah. What do you what are your thoughts on the needs of common sense reasoning in the space of the general robotics problem?
+00:32:46
+So I'm going to slightly dodge that question and say that I think I think maybe actually it's the other way around is that studying robotics can help us understand how to put common sense into our AI systems.
+00:32:58
+One way to think about common sense is that and why our current systems might lack common sense is that common sense is a property is an emergent property of actually having to interact with a particular world, a particular universe, and get things done in that universe. So you might think that, for instance, like an image captioning system, maybe it looks at pictures of of the world and it types out English sentences. So it kind of it kind of deals with our world.
+00:33:27
+And then you can easily construct situations where image capturing systems do things that defy common sense, like give it a picture of a person wearing a fur coat and we'll say it's a teddy bear. But I think what's really happening in those settings is that the system doesn't actually live in our world. It lives in its own world. That consists of pixels and English sentences and doesn't actually consist of, like, you know, having to put on a fur coat in the winter so you don't get cold.
+00:33:50
+So perhaps the the reason for the disconnect is that the systems that we have now simply inhabit a different universe. And if we build a systems that are forced to deal with all of the messiness and complexity of our universe, maybe they will have to acquire common sense to essentially maximize their utility. Whereas the systems we're building now don't have to do that.
+00:34:11
+They can take some shortcut. That's fascinating. You've a couple of times already sort of reframe the role of robotics in this whole thing. And for some reason, I don't know if I'm my way of thinking is common, but I thought, like, we need to understand and solve intelligence in order to solve robotics.
+00:34:30
+And you're kind of framing it as no, robotics is one of the best ways to just study artificial intelligence and build sort of like robotics is like the right space in which you get to explore some of the fundamental learning mechanisms, fundamental sort of multimodal, multi task aggregation of knowledge mechanisms that are required for general intelligence.
+00:34:54
+Really interesting way to think about it. But let me ask, what learning can the general sort of robotics, the epitome of robotics problem be solved purely through learning perhaps, and to end learning?
+00:35:09
+Sort of learning from scratch as opposed to injecting human expertise and rules and heuristics and so on.
+00:35:17
+I think that in terms of the spirit of the question, I, I would say yes, I mean, I think that even though in some ways it's maybe like. An overly sharp dichotomy, like, you know, I think that in some ways when we build algorithms, we, you know, at some point a person does something like that person or there's always a person turned on the computer, a person, you know, implemented tensor flow.
+00:35:44
+But, yeah, I think that in terms of in terms of the point that you're getting and I do think the answer is yes.
+00:35:48
+I think that I think that we can solve many problems that have previously required meticulous manual engineering through automated optimization techniques. And actually, one thing I will say on this topic is I don't think this is actually a very radical or very new idea. I think people have have been thinking about automated optimization techniques as a way to do control for a very, very long time.
+00:36:11
+And in some ways, what's changed is really more than name. So, you know, today we would say that, oh, my robot does machine learning.
+00:36:20
+It does reinforcement learning. Maybe in the 1960s you say, oh, my robot is doing optimal control.
+00:36:26
+And maybe the difference between typing out a system of differential equations and doing feedback minimization versus training a neural net, maybe it's not such a large difference. It's just pushing the optimization deeper and deeper into the thing.
+00:36:40
+Well, you think there were, but with especially deep learning that the accumulation sort of experiences in data form to form deep representations starts to feel like knowledge as opposed to optimal control, this feels like there's an accumulation of knowledge to the learning process.
+00:37:00
+Yes. Yeah. So I think that is a good point, that one big difference between learning based systems and classic optical control systems is that learning based systems in principle should get better and better the more they do something. And I do think that that's actually a very, very powerful difference.
+00:37:15
+So I look back at the world of expert systems, a symbolic A.I. and so on, of using logic to accumulate expertise, human expertise, human encoded expertise.
+00:37:28
+What do you think that will have a role as simple as the, you know, deep learning, machine learning, reinforcement learning has been has shown incredible results and breakthroughs and just inspired thousands, maybe millions of researchers.
+00:37:44
+But, you know, there's this less popular now, but it used to be part of the idea of symbolic. Why do you think that will have a role?
+00:37:53
+I think in some ways the kind of the the descendants of symbolic.
+00:38:01
+I actually already have a role. So, you know, this is the highly biased history from my perspective. You say that well, initially we thought that rational decision making involves logical manipulation. So you have some model the world expressed in terms in terms of logic. You have some query like what action do I take in order to for X to be true? And then you manipulate your logical, symbolic representation to get an answer. What that turned into somewhere in the 1990s is, well, instead of building kind of predicates and statements that have true or false values will build probabilistic systems where things have probabilities associated and probabilities of being true and false and that to business.
+00:38:42
+And that provided sort of a boost to what we're really still essentially a logical inference systems, just probabilistic logical inference systems. And then people said, well, let's actually learn the the individual probabilities inside these models. And then people said, well, let's not even specify the nodes in the models. Let's just put a big neural net on there. But in many ways, I see this as actually kind of descendants from the same idea. It's essentially instantiating rational decision making by means of some inference process and learning by means of an optimization process.
+00:39:14
+So so in a sense, I would say, yes, that has a place. And in many ways that place is or, you know, it already holds that place.
+00:39:22
+It's already in there. Yeah. Just by different it looks slightly different than it was before.
+00:39:27
+But but in some there are some things that that we can think about that make this a little bit more obvious. Like if I train a big neural net model to predict what will happen in response to my robot's actions. And then I run probabilistic inference, meaning I invert that model to figure out the actions that lead to some plausible outcome. Like to me that seems like a kind of logic. You have a model of the world that just happens to be expressed by a neural net and you are doing some inference procedure, some sort of manipulation on that model to figure out, you know, the answer to a query that you have is the interprete ability.
+00:39:58
+It's the explained ability, though, that seems to be lacking more so because the nice thing about of expert systems is you can follow the reasoning of the system that to us mere humans is somehow compelling. It it would. It's just the. I don't know what to make of this fact that there's a human desire for intelligent systems to be able to convey in a poetic way to us why made the decisions it did, like tell a convincing story. And perhaps that's like a silly human thing.
+00:40:38
+Like we shouldn't expect that of intelligent systems, like we should be super happy that there is intelligent systems out there.
+00:40:45
+But if I were to sort of psychoanalyze the researchers at the time, I would say expert systems connected to that part that deserve our research for systems to be explainable.
+00:40:57
+I mean, maybe on that topic, do you have a hope that sort of inferences of learning based systems will be as explainable as the dream was with expert systems, for example?
+00:41:12
+I think it's a very complicated question because I think that in some ways the question of explain ability is kind of very closely tied to the question of of like performance. Like, you know, why do you want your system to explain itself? Also, it's so that when it screws up, you can kind of figure out why it did it.
+00:41:31
+All right, but but in some ways that that's a much bigger problem, actually, like your system might screw up and then it might screw up and how it explains itself or you might have some bug somewhere so that it's not actually doing what we're supposed to do.
+00:41:44
+So, you know, maybe a good way to view that problem is really as a problem, as a bigger problem of verification and validation of which explain abilities.
+00:41:55
+Sort of one component I see.
+00:41:57
+I just see it differently. Explain ability. You put it beautifully. I think you actually summarize the field of explain ability.
+00:42:04
+But to me there's another aspect of explaining ability, which is like storytelling that has nothing to do with errors or with like the sort of it doesn't.
+00:42:16
+It uses errors as as elements of its story as opposed to a fundamental need to be explainable when errors occur. It's just that for other intelligent systems to be in our world, we seem to want to tell each other stories and that that's true in the political world.
+00:42:35
+That's true in the academic world, and that, you know, neural networks are less capable of doing that or perhaps they're equally capable of storytelling in storytelling. Maybe it doesn't matter what the fundamentals of the system are, you just need to be a good storyteller.
+00:42:50
+Maybe one specific story I can tell you about in that space is actually about some work that was done by my former collaborator, who's now a professor at MIT named Jacob Andrius. Jacob actually works on natural language processing, but he had this idea to do a little bit of work and reinforcement learning and how and how natural language can basically structure the internals of policies, train with RL. And one of the things he did is he set up a model that attempts to perform some tasks that's defined by reward function.
+00:43:21
+But the model reads in a natural language instruction. So this is a pretty common thing to do in instruction following. So you tell it like go to the Red House and then it's supposed to go to the Red House. But then one of the things that Jacob did is he treated that sentence not as a command from a person, but as a representation of the internal kind of state of the of the of the mind of this policy, essentially, so that when he was faced with a new task, what it would do is it would basically try to think of possible language descriptions, attempt to do them and see if they led to the right outcome.
+00:43:53
+So would it kind of think out loud, like, you know, I'm faced with this new task, what am I going to do? Let me go to the Red House rather than work? Let me go to the Blue Room or something. Let me go to the green plant. And once it got some reward, I would say, oh, go to the green plant. That's what's working. I'm going to go to the green plant. And then you could look at the string that you came up with.
+00:44:08
+And that was a description of how it thought it would solve the problem.
+00:44:12
+So you could do you can basically incorporate language as internal state and you can start getting some handle on these kinds of things.
+00:44:18
+And then I was kind of trying to get to is that also if you add to the reward function, the convincing ness of that story. So I have another reward signal of like people who review that story, how much they like it so that, you know, initially that could be a hyper parameter, sort of hard coded heuristic type of thing.
+00:44:41
+But it's an interesting notion of. The convincing ness of the story becoming part of the reward function, the objective function is to explain ability. It's in the world of sort of Twitter and fake news. That might be a scary notion that the nature of truth may not be as important as a convincing case of the how convinced you are in telling the story around the facts. Well, let me ask. The the basic question, you're one of the world class researchers and reinforcement learning, deep reinforcement learning, certainly in the robotic space, what is reinforcement learning?
+00:45:22
+I think that what reinforcement learning refers to today is really just the kind of the modern incarnation of learning based control.
+00:45:30
+So classically, reinforcement learning has a much more narrow definition, which is that it's literally learning from reinforcement, like the thing does something and then it gets a reward or punishment.
+00:45:40
+But really, I think the way the term is used today is it's used to refer more broadly to learning based control. So some kind of system that's supposed to be controlling something and it uses data to get better.
+00:45:52
+And what is control means is action is the fundamental element.
+00:45:56
+It means making rational decisions now. And rational decisions are decisions that maximize a measure of utility and sequentially see made decisions time and time and time again.
+00:46:06
+Now, like this is easy to see. That kind of idea in the space of maybe games in the space of robotics is bigger than that. Is it applicable? Like where were the limits of the applicability of reinforcement learning?
+00:46:22
+Yeah. So rational decision making is essentially the encapsulation of the problem viewed through a particular lens.
+00:46:30
+So any problem that we would want a machine to do, intelligent machine can likely be represented as a Decision-Making problem in classifying images is a Decision-Making problem, although not a sequential one.
+00:46:42
+Typically, you know, controlling a chemical plant is a decision making problem. Deciding what videos to recommend on YouTube is a decision making problem.
+00:46:52
+And one of the really appealing things about reinforcement learning is if it does encapsulate the range of all these Decision-Making problems, perhaps working on reinforcement learning is, you know, one of the ways to reach a very broad swath of A.I. problems. But what is the fundamental difference between reinforcement learning and maybe supervised machine learning? So the reinforcement learning can be viewed as a generalization of supervised machine learning. You can certainly cast supervised learning as a reinforcement learning problem. You can just see your lost function as the negative, your reward, but you have stronger assumptions.
+00:47:28
+You have the assumption that someone actually told you what the correct answer was, that your data was idea and so on, so you could view reinforcement learning, essentially relaxing some of those assumptions.
+00:47:38
+Now, that's not always a very productive way to look at it, because if you actually have a supervised learning problem, you'll probably solve it much more effectively by using supervised learning methods because it's easier. But you can view reinforcement learning as a generalization, I know for sure.
+00:47:50
+But they're fundamentally that's a mathematical statement. That's absolutely correct. But it seems that reinforcement learning the kind of tools you bring to the table today of today. So maybe down the line everything will be a reinforcement learning problem, just like you said in the image classification should be mapped to reinforcement learning problem. But today, the tools and ideas, the way we think about them are different sort of supervised learning has been used very effectively to solve basic narrow problems.
+00:48:24
+Reinforcement learning kind of represents. The dream of A.I., it's very much so in the research space now, in the captivating the imagination of people, of what you can do with intelligent systems, but it hasn't yet had as wide of an impact as the supervised learning approaches.
+00:48:43
+So that sort of my question comes in the more practical sense, like what do you see as the gap between the more general reinforcement learning and the very specific? Yes, it's a sequential decision making with one sequence, one step in the sequence of the supervisory.
+00:49:00
+So from a practical standpoint, I think that one one thing that is potentially a little tough now, and this is, I think, something that we'll see, this is a gap that we might see closing over the next couple of years is the ability of reinforcement learning algorithms to effectively utilize large amounts of prior data. So one of the reasons why it's a bit difficult today to use reinforcement learning for all the things that we might want to use it for is that in most of the settings where we want to do Rational Decision-Making, it's a little bit tough to just deploy some policy that does crazy stuff and learns purely through trial and error.
+00:49:36
+It's much easier to collect a lot of data, a lot of logs of some other policy that you've got.
+00:49:41
+And then maybe you, you know, if you can get a good policy out of that, then you're deployed in order to kind of fine tune a little bit.
+00:49:48
+But algorithmically, it's quite difficult to do that, so I think that once we figure out how to get reinforcement learning to bootstrap effectively from large datasets, then we'll see very, very rapid growth in applications of these technologies.
+00:50:02
+So this is what's referred to as off policy reinforcement learning or offline RL or Bottrell. And I think we're seeing a lot of research right now that does bring us closer and closer to that.
+00:50:12
+Can you maybe paint the picture of the different methods instead of policy? What's Value-Based? And for us to learn what's policy based, what's model based, what's off policy and policy, what are the different categories of reinforcement?
+00:50:25
+So one way we can think about reinforcement learning is that it's in some very fundamental way. It's about learning models that can answer kind of what if questions. So what would happen if I take this action that I hadn't taken before? And you do that, of course, from experience, from data, and oftentimes you do it in a loop. So you build a model that answers these what if questions use it to figure out the best action you can take and then go and try taking that and see if the outcome agrees with what you predicted.
+00:50:56
+So the different kinds of techniques basically refer to different ways of doing it. So model based methods answer a question of what state you would get, basically what would happen to the world if you were to take a certain action value based methods. They answer the question of what value you would get, meaning what utility you would get. But in a sense, they're not really all that different because they're both really just answering these what if questions. Now, unfortunately for us, with current machine learning methods, answering, what if questions can be really hard because they are really questions about things that didn't happen.
+00:51:30
+If you want to answer what if questions about things that did happen, you wouldn't need to learn model. You would just like repeat the thing that worked before.
+00:51:36
+And that's really a big part of why you are always a little bit tough.
+00:51:41
+So if you have a purely on policy kind of online process, then you ask these what if questions, you make some mistakes, then you go and try doing those mistake and things, and then you observe kind of the counterexamples that'll teach you not to do those things again. If you have a bunch of off policy data and you just want to synthesize the best policy you can out of that data, then you really have to deal with the the challenges of making these these counterfactual.
+00:52:06
+What's the policy?
+00:52:08
+A policy is a model or some kind of function that maps from observations of the world to actions. So in reinforcement learning, we often refer to the the current configuration of the world as a state. So we see a state kind of encompasses everything you need to fully define where the world is at at the moment. And depending on how we formulate the problem, we might say you either get to see the state or you get to see an observation, which is some snapshot, some piece of the state.
+00:52:37
+So policy is just includes everything in it in order to be able to act in this world. Yes. And so what is off policy mean if.
+00:52:47
+Yeah, so the terms on policy and off policy refer to how you get your data. So if you get your data from somebody else who was doing some other stuff, maybe you get your data from some manually programmed system that was, you know, just running in the world before, that's before it goes off policy data. But if you got the data by actually acting in the world based on what your current policy thinks is good, we call that on policy data and obviously on policy data is more useful to you, because if your current policy makes some bad decisions, you will actually see that those decisions are bad.
+00:53:19
+Off policy data, however, might be much easier to obtain because maybe that's all the log of data that you have from before. So we talk about offline, talked about autonomous vehicles that you can envision off policy that kind of approaches in robotics spaces where there's already a ton of robots out there, but they don't get the luxury of being able to explore based on a reinforcement learning framework.
+00:53:43
+So how do we make an open question? But how do we make our policy methods work?
+00:53:50
+Yeah, so this is something that has been kind of a big open problem for a while. And in the last few years, people have made a little bit of progress on that. You know, I can tell you about and it's not by any means solved yet. But I can tell you some of the things that, for example, we've done to try to address some of the challenges. It turns out that one really big challenge with off policy reinforcement learning is that you can't really trust your models to give accurate predictions for any possible action.
+00:54:17
+So if I've never tried to if in my data set I never saw somebody steering the car off the road onto the sidewalk, my value function or my model is probably not going to predict the right thing. If I ask what would happen if I were to steer the car off the road onto the sidewalk.
+00:54:33
+So one of the important things you have to do to get off CRL to work is you have to be able to figure out whether a given action will result in a trustworthy prediction or not. And you can use kind of distribution, estimation, methods, density, estimation, methods to try to figure that out. So you could figure out that all this action my model is telling me that it's great, but it looks totally different from any action I've taken.
+00:54:55
+For some, I'm all it's probably not correct. And you can incorporate regularization terms into your learning objective that will essentially tell you not to ask those questions that your model is unable to answer. What would lead to breakthroughs in this space, do you think? Well, what's needed is this a data set question? Do we need to collect big benchmark data sets that allow us to explore the space? Is that a new kinds of methodologies like what's your sense?
+00:55:27
+Or maybe coming together in a space of robotics and defining the problem to be working on?
+00:55:32
+Yeah, I think for all of policy reinforcement in particular, it's very much an algorithm's question right now. And, you know, this is something that I think it's great because inelegance question is, you know, that that just takes some very smart people to get together and think about it really hard. Whereas if it was like a data problem or hardware problem, that would take some serious engineering. So that's why I'm pretty excited about that problem, because I think that we're in a position where we can make some real progress on it just by coming up with the right algorithms in terms of which algorithms that could be.
+00:56:02
+You know, the problems at their core are very related to problems in things like like causal inference. Right. Because what you're really dealing with is situations where you have a model statistical model that's trying to make predictions about things that I hadn't seen before. And if it's a if it's a model, it's generalizing properly. That'll make good predictions. If it's a model, it picks up on spurious correlations that will not generalize properly. And then you can you have an arsenal of tools you can use.
+00:56:28
+You could, for example, figure out what are the regions where it's trustworthy. Or on the other hand, you could try to make it generalize better somehow or some combination of the two.
+00:56:38
+Is there room for mixing sort of or most of it, like 90, 95 percent is off policy, you already have the data set and then you get to send the robot out to do a little exploration. Like what was that role of mixing them together? Yeah, absolutely.
+00:56:57
+I think that this is something that you actually describe very well. At the beginning of the of our discussion, we talked about the iceberg. This is the iceberg, the 99 percent of your prior experience. That's the iceberg. You use that for all policy reinforcement learning. And then, of course, if you've never, you know, opened that particular kind of door with that particular lock before, then you have to go out and fiddle with it a little bit.
+00:57:19
+And that's that additional one percent to help you figure out a new task. And I think that's actually like a pretty good recipe going forward.
+00:57:25
+Is this to you the most exciting space of reinforcement learning now? Was there what? And maybe taking a step back, not just now, but what's to use the most beautiful idea, apologize for the romanticized question, but the beautiful idea or concept in reinforcement learning?
+00:57:44
+In general, I actually think that one of the things that is a very beautiful idea and reinforcement learning is just the idea that you can. Obtain a near optimal controller in your optimal policy without actually having a complete model of the world.
+00:58:03
+This is, you know, it's something that feels perhaps kind of obvious if you if you just hear the term reinforcement learning or you think about trial and error learning.
+00:58:13
+But from a controls perspective, it's a very weird thing because classically, you know, we we think about engineered systems and controlling engineered systems as as the problem of writing down some equations and then figuring out, given these equations, you know, basically solve for X, figure out the the thing that maximizes its performance.
+00:58:33
+And the theory of reinforcement learning actually gives us a mathematically principled framework to think to reason about, you know, optimizing some quantity when you don't actually know the equations that govern that system. And that to me, that's actually seems kind of kind of, you know, very elegant, not not something that sort of becomes immediately obvious, at least in the mathematical sense. Does it make sense to you that it works at all?
+00:59:01
+Well, I think it makes sense when you take some time to think about it, but it is a little surprising or then then taking a step into the more deeper representations, which is also very surprising to sort of the richness of the state space, the space of environments that this kind of approach can operate in.
+00:59:24
+Can you maybe say what is deep reinforcement learning?
+00:59:28
+Well, deep reinforcement learning simply refers to taking reinforcement learning algorithms and combining them with high capacity neural net representations, which is, you know, kind of it might at first seem like a pretty arbitrary thing.
+00:59:41
+Just take these two components and stick them together. But the reason that it's.
+00:59:46
+It's something that has become so important in recent years, is that reinforcement learning? It kind of faces and exacerbated version of a problem that has faced many other machine learning techniques.
+00:59:57
+So if we go back to like, you know, the early 2000s or the late 90s, we'll see a lot of research on machine learning methods that have some very appealing mathematical properties, like they reduced the convex optimization problems, for instance.
+01:00:12
+But they require very special inputs. They require a representation of the input that is clean in some way, like, for example, clean in the sense that the classes in your multiclass classification problem separate linearly so that they have some some kind of good representation. And we call this feature representation. And for a long time, people were very worried about features in the world of supervised learning because somebody had to actually build those features. So you couldn't just take an image and plug it into your logistic regression or your SVM or something.
+01:00:40
+Someone had to take that image and process it using some handwritten code and the neural nets came along and they could actually learn the features. And suddenly we could apply learning directly to the raw inputs, which was great for images, but it was even more great for all the other fields where people hadn't come up with good features yet.
+01:00:57
+And one of those fields actually reinforcement learning because in reinforcement learning, the notion of features, if you don't use neural nets and you have to design your own features is very, very opaque.
+01:01:06
+Like it's very hard to imagine, let's say I'm playing chess or go, what is a feature with which I can represent the value function for go or even the optimal policy for go linearly? Like, I don't even know how to start thinking about it. And and people tried all sorts of things that would write down an expert chess player looks for whether the knight is in the middle of the board or not. So that's a feature is Knight in middle of a board.
+01:01:29
+And they would write these like long lists of kind of arbitrary made up stuff. And that was really kind of getting us nowhere.
+01:01:35
+And that's a little chess is a little more accessible than the robotics problem. Absolutely right. That's there's at least experts in the different features for chess, but still like the neural network there.
+01:01:49
+To me, that's I mean, you put it eloquently and almost made it seem like a natural step to add neural networks. But the fact that neural networks are able to discover features in the control problem, it's very interesting. It's helpful. I'm not sure what to think about, but it feels hopeful that the control problem has features to be learned. Like, I guess my question is, is it surprising to you how far the deep side of deep reinforcement learning is able to like what the space of problems has been able to tackle from especially in games with the Alpha Star and and Alpha zero and just the representation power there and in the robotics space.
+01:02:36
+And what is your sense of the limits of this representation, power and the control context?
+01:02:43
+I think that in regard to the limits that here. I think that one thing that makes it a little hard to fully answer this question is because. In settings where we would like to push push these things to the limit, we encounter other bottlenecks. So like the reason that I can't get my robot to learn how to, like, I don't know, do the dishes in the kitchen, it's not because it's neural net is not big enough. It's because when you try to actually do trial and error, learning reinforcement, learning directly in the real world where you have the potential to gather these large, highly varied and complex data sets, you start running into other problems, like one problem you run into very quickly.
+01:03:32
+It'll first sound like a very pragmatic problem, but actually turns out to be a pretty deep scientific problem. Take the robot, put in your kitchen, have a try to learn to do the dishes with trial and error. It'll break all your dishes and then we'll have no more dishes to clean. Now, you might think this is a very practical issue, but there's something to this, which is that if you have a person trying to do this, you know, a person will have some degree of common sense.
+01:03:51
+They'll break one dish, will be a little more careful with the next one. And if they break all of them, they're going to go and get more or something like that. So there's all sorts of scaffolding that that comes very naturally to us for our learning process. Like, you know, if I have to learn something through trial and error, I have the common sense to know that I have to, you know, try multiple times. If I screw something up, I ask for help or I read some things or something like that.
+01:04:15
+And all of that is kind of outside of the classic reinforcement learning problem formulation.
+01:04:19
+There are other things that are that can also be categorized as kind of scaffolding, but are very important, like, for example, where you get your reward function if I want to learn how to pour a cup of water. Well, how do I know if I've done it correctly? Now, that probably requires an entire computer system to be built just to determine that. And that seems a little bit inelegant. So there are all sorts of things like this that sort of come up when we think through what we really need to get reinforcement learning to happen at scale in the real world.
+01:04:46
+And many of these things actually suggest a little bit of a shortcoming in the problem formulation and a few deeper questions that we have to resolve.
+01:04:53
+That's really interesting.
+01:04:54
+I talked to like David Silver about Alpha zero, and it seems like there's no again, we haven't hit the limit at all in the context when there is no broken dishes. So in the in the case of go, you can it's really about just scale and compute. So again, the bottleneck is the amount of money you're willing to invest in compute and then maybe the different the scaffolding around how difficult it is to scale compute maybe. But there there's no limit.
+01:05:26
+And it's interesting now we move to the real world and there's the broken dishes. There's all that and the reward function, like you mentioned. That's really nice. What how do we push forward there? Do you think there's this kind of simple efficiency question that people bring up? Well, you know, not having to break one hundred thousand dishes, is this an algorithm question? Is this data selection like question? What do you think? How do we how do we not break too many dishes?
+01:05:58
+Yeah, well, one way we can think about that is that. Maybe we need to be better at it, reusing our data, building that that iceberg, so perhaps, perhaps it's too much to hope that. You can have a machine that's in isolation, in the vacuum without anything else, can just master complex tasks in like in minutes the way that people do, but perhaps it also doesn't have to. Perhaps what it really needs to do is have an existence, a lifetime where it does many things and the previous things that it has done, prepare it to do new things more efficiently.
+01:06:37
+And, you know, the study of these kinds of questions typically falls under categories like multitask, learning or metal learning. But they all fundamentally deal with the same general theme, which is use experience for doing other things to learn to do new things efficiently and quickly.
+01:06:54
+So what do you think about if you just look at one particular case study of Tesla autopilot that has quickly approaching towards a million vehicles on the road where some percentage of the time, 30, 40 percent of the time is driving using the computer vision multitask high.
+01:07:14
+Right. And then the other percent, what they call it, hydrogen hydrogenate. The other percent is human controlled from the human side. How can we use that data?
+01:07:27
+What's your sense like? What's the signal? Do you have ideas and a certain space when people can lose their lives? You know, it's a it's a safety critical environment.
+01:07:39
+So how do we use that data?
+01:07:41
+So I think that actually the kind of problems that come up when we want systems that are reliable and that can kind of understand the limits of their capabilities, they're actually very similar to the kind of problems that come up when we have when we're doing off policy reinforcement learning.
+01:07:58
+So as I mentioned before, and also reinforcement learning, the big problem is, you know, when you can trust the predictions of your model, because if you if you're trying to evaluate some pattern of behavior for which your model doesn't give you an accurate prediction, then you shouldn't use that to to modify your policy. And it's actually very similar to the problem that we're faced when we actually then deploy that thing and we want to decide whether we trust it in the moment or not.
+01:08:22
+So perhaps we just need to do a better job of figuring out that part. And that's a very deep research question, of course, but it's also a question that a lot of people are working on. So I'm pretty optimistic that we can make some progress on that over the next few years. What's the role simulation and reinforcement learning, the deep reinforcement learning, reinforcement learning, like, how essential is that? It's been essential for the breakthroughs so far for some interesting breakthroughs.
+01:08:45
+Do you think it's a crutch that we rely on? I mean, again, it connects to our off policy discussion.
+01:08:53
+But do you think we can ever get rid of simulation or do you think simulation will actually take over, will create more and more realistic simulations that will allow us to to solve actual real world problems like transfer the models will learn simulation tomorrow?
+01:09:06
+Yeah, I think that simulation is a very pragmatic tool that we can use to get a lot of useful stuff to work right now. But I think that in the long run, we will need to build machines that can learn from real data because that's the only way that we'll get them to improve perpetually.
+01:09:22
+Because if we can't have our machines learn from real data, if they have to rely on similar data, eventually the simulator becomes the bottleneck. In fact, this is a general thing. If your machine has any bottleneck that is built by humans and that doesn't improve from data, it will eventually be the thing that holds it back.
+01:09:40
+And if you're entirely reliant on your simulator, that will be the bottleneck. If you're entirely relying on a manually designed controller, that's going to be the bottleneck. So simulation is very useful. It's very pragmatic, but it's not a substitute for being able to utilize real experience. And this is, by the way, this is something that I think is quite relevant now, especially in the context of some of the things we've discussed, because some of these kind of scaffolding issues that I mentioned, things like the broken dishes and the unknown reward function like these are not problems that you would ever stumble on when working in a purely simulated kind of environment.
+01:10:16
+But they become very apparent when we try to actually run these things in the real world to throw a brief wrench into our discussion.
+01:10:22
+Let me ask, do you think we're living in a simulation? Oh, I have no idea.
+01:10:27
+Do you think that's a useful thing to even think about, about the the the the fundamental physics nature of reality or another perspective?
+01:10:38
+The reason I think the simulation hypothesis is interesting is it's to think about how difficult is it to create sort of a virtual reality game type situation that will be sufficiently convincing to us humans or sufficiently enjoyable that we wouldn't want to leave?
+01:10:58
+It's actually a practical engineering challenge and I personally really enjoy virtual reality, but it's quite far away. But I kind of think about what would it take for me to want to spend more time in virtual reality versus the real world. And that's a that's a sort of a nice, clean question because at that point. We wish if I want to live in a virtual reality, that means we're just a few years away where a majority of the population lives in a virtual reality.
+01:11:26
+And that's how we create the simulation. Right. You don't need to actually simulate the in the quantum gravity and just every aspect of the of the universe.
+01:11:37
+And that's a that's interesting question for reinforcement learning, too, because if we want to make sufficiently realistic simulations that make it blend the difference between sort of the real world and the simulation, thereby just some of the things we've been talking about, kind of the problems go away if we can create actually interesting rich simulations.
+01:11:58
+It's an interesting question. And it actually I think your question casts your previous question in a very interesting light, because in some ways, asking whether we can well, the the more the more kind of practical version of this.
+01:12:11
+Can we build simulators that are good enough to train essentially A.I. systems that will work in the world? And it's kind of interesting to think about this, about what this implies, if true, it kind of implies that it's easier to create the universe than it is to create a brain. And that seems like put this way, it seems kind of weird, the aspect of the simulation was interesting to me is the simulation of other humans.
+01:12:38
+That seems to be. A complexity that makes the robotics problem harder. Now, I don't know if every robotics person agrees with that notion. Just as a quick aside, what are your thoughts about when the human enters the picture of the robotics problem? How does that change the reinforcement learning problem, the learning problem in general?
+01:13:02
+Yeah, I think that's a it's a kind of a complex question and.
+01:13:08
+I guess my hope for a while had been that if we build these robotic learning systems, that that our multitask, that utilize lots of prior data and that learn from their own experience, the bit where they have to interact with people will be perhaps handled in much the same way as all the other bits.
+01:13:26
+So if they have prior experience of interacting with people and they can learn from their own experience of interacting with people for this new task, maybe that will be enough. Now, of course, if it's not enough, there are many other things we can do and there's quite a bit of research in that area.
+01:13:40
+But I think it's worth a shot to see whether the the multiengine interaction, the the ability to understand that other beings in the world have their own goals, intentions and thoughts and so on, whether that kind of understanding can emerge automatically from simply learning to do things with and maximize utility.
+01:14:01
+That information arises from the data. You've said something about gravity, sort of that you don't need to explicitly inject anything into the system that can be learned from the data. And gravity is an example of something that could be learned from data, sort of like the physics of the world.
+01:14:18
+Like what? What are the limits of what we can learn from data? Do you really think we can so a very simple, clean way to ask that is, do you really think we can learn gravity from just data that idea the laws of gravity?
+01:14:37
+So this is something that I think is a common kind of pitfall when thinking about prior knowledge and learning is to assume that just because we know something then that it's better to tell the machine about that rather than having to figure it out. And so in many cases, things that are.
+01:14:58
+Important that affect many of the events that the machine will experience are actually pretty easy to learn.
+01:15:04
+Like, you know, if things if every time you drop something, it falls down, like, yeah, you might not get the you know, you might get kind of the Newton's version of Einstein's version, but it'll be pretty good and it'll probably be sufficient for you to act rationally in the world because you see the phenomena all the time.
+01:15:21
+So things that are readily apparent from the data, we might not need to specify those by hand.
+01:15:25
+It might actually be easier to let the machine figure them out.
+01:15:28
+It just feels like that there might be a space of many local local minima in terms of theories of this world that we would discover and get stuck on.
+01:15:38
+Yeah, of course, Newtonian mechanics is not necessarily easy to come by. Yeah.
+01:15:45
+And well, in fact, in some fields of science, for example, human civilization is itself full of these local optima. So, for example, if you think about how people tried to figure out biology and medicine, you know, for the longest time, the kind of rules, the kind of principles that serve us very well in our day to day lives actually serve us very poorly in understanding medicine and biology. We had kind of very superstitious and weird ideas about how the body worked until the advent of the modern scientific method.
+01:16:15
+So that does seem to be, you know, a failing of this approach.
+01:16:18
+But it's also a failing of human intelligence, arguably maybe a small side. But some you know, the idea of self play is fascinating. And we're still learning sort of these competitive creating a competitive context in which agents can play against each other in a sort of at the same skill level and thereby increasing each other's skill level. It seems to be this kind of self improving mechanism is exceptionally powerful in the context where it could be applied. First of all, that beautiful to you that this mechanism work as well as it does and also can be generalized to other contexts, like in the robotics space or anything that's applicable to the real world?
+01:17:01
+I think that. It's a very interesting idea. And I but I suspect that the bottleneck to actually generalizing it to the robotic setting is actually going to be the same as as the bottleneck for everything else that we need to be able to build machines that can get better and better through natural interaction with the world. And once we can do that, then they can go out and play with they can play with each other. They can play with people. They can play with the natural environment.
+01:17:30
+But before we get there, we've got all these other problems we've got. We have to get out of the way.
+01:17:34
+So there's no shortcut around that.
+01:17:35
+You have to interact with the natural environment that well, because in a in a soft place setting, you still need a mediating mechanism. So the reason that self play works for a board game is because the rules of that board game mediate the interaction between the agents. So the kind of intelligent behavior that will emerge depends very heavily on the nature of that mediating mechanism.
+01:17:57
+So on the side of reward functions, that's coming up with good reward function seems to be the thing that we associate with generally like human beings seem to value the idea of developing our own reward functions of, you know, arriving at meaning and so on.
+01:18:16
+And yet for reinforcement learning, we often kind of specify this the given what's your sense of how we develop reward, good reward functions?
+01:18:26
+Yeah, I think that's a very complicated and very deep question. And you're completely right that classically in reinforcement learning, this question has kind of been treated as a non-issue, that you sort of treat the reward as the external thing that comes from some other bit of your biology and you don't worry about it.
+01:18:46
+And I do think that that's actually, you know, a little bit of a mistake that we should worry about it and we can approach in a few different ways.
+01:18:52
+We can approach it, for instance, by thinking of rewards as a communication medium, we can say, well, how does a person communicate to a robot what its objective is? You can approach it also as sort of more of an intrinsic motivation medium.
+01:19:05
+You could say, can we write down kind of a general objective that leads to good capability?
+01:19:12
+Like, for example, can you write down some objective such that even in the absence of any other task, if you maximize that objective, you'll sort of learn useful things? This is something that has sometimes been called unsupervised reinforcement learning, which I think is a really fascinating area of research, especially today. We've done a bit of work on that recently. One of the things we've studied is whether we can have some notion of sort of unsupervised reinforcement learning by means of, you know, information theoretic quantities, like, for instance, minimizing a Bayesian measure of surprise.
+01:19:44
+This is an idea that was pioneered actually in the computational neuroscience community by folks like Karl Fiston. And we've done some work recently that shows that you can actually learn pretty interesting skills by essentially behaving in a way that that allows you to make accurate predictions about the world. It seems a little circular, like do the things that will lead to you getting the right answer for your prediction. But you can you know, by doing this, you can sort of discover stable niches in the world.
+01:20:10
+You can discover that if you're playing Tetris, then correctly, clearing the roads will let you play Tetris for longer and keep the board nice and clean, which sort of satisfies some desire for order in the world and as a result, get some degree of leverage over your domain. So we're exploring that pretty actively.
+01:20:26
+Is there a role for a human notion of curiosity in itself being the reward, sort of discovering new things about the world, the world?
+01:20:37
+So one of the things that I'm pretty interested in is actually whether discovering new things can actually be an emergent property of some other object of the quantifiers capability. So new things for the sake of new things. Maybe it's not maybe may not by itself be the right answer, but perhaps we can figure out an objective for which discovering new things is actually the natural consequence. That's something we're working on right now. But I don't have a clear answer for you there yet.
+01:21:05
+That's still a work in progress.
+01:21:07
+You mean just a curious observation to see sort of creative patterns of curiosity on the way to optimize for particular on the way to optimize for a particular measure of capability?
+01:21:22
+Is is there a ways to understand or anticipate unexpected unintended consequences of a particular reward functions sort of anticipate the kind of strategies that might be developed and try to avoid highly detrimental strategies?
+01:21:43
+Yeah, so classically, this is something that has been pretty hard in reinforcement learning because it's difficult for a designer to have good intuition about what a learning outcome will come up with when they give it some objective. There are ways to mitigate that. One way to mitigate it is to actually define an objective that says like don't do weird stuff. You can actually quantify it and say just like don't.
+01:22:05
+Enter situations that have low probability under the distribution of states you've seen before, it turns out that that's actually one very good way to do a positive reinforcement learning, actually, so we can do something like that if we slowly venture in speaking about reward functions into greater and greater levels of intelligence.
+01:22:27
+There's a Mr. Russell thinks about this, the alignment of A.I. systems with us humans. So how do we ensure that ajai systems align with us humans?
+01:22:40
+It's a kind of a reward function question of specifying the behavior of our systems such that their success aligns with us with the broader intended success interest of human beings. You have thoughts on this? They have kind of concerns of where reinforcement learning fits into this. Are you really focused on the current moment of us being quite far away and trying to solve the robotics problem?
+01:23:09
+I don't have a great answer to this, but. You know, and I do think that this is a problem that's that's important to figure out. For my part, I'm actually a bit more concerned about the other side of this equation, that maybe rather than unintended consequences for objectives that are specified too. Well, I'm actually more worried right now about unintended consequences for objectives that are not optimized well enough, which might become a very pressing problem when we, for instance, try to use these techniques for safety critical systems like cars and aircraft and so on.
+01:23:46
+I think at some point will face the issue of objectives are being optimized to well. But right now I think we're we're more likely to face the issue of them not being optimized well enough.
+01:23:54
+But you don't think unintended consequences can arise even when you're far from optimality, sort of like on the path to it? Oh, no.
+01:24:01
+I think unintended consequences can absolutely arise. It's just I think right now the bottleneck for improving reliability, safety and things like that is more with systems that need to work better, that need to optimize their objective better.
+01:24:16
+You have thoughts, concerns about existential threats of human level intelligence, sort of. If we put on our hat of looking in ten, twenty, one hundred, five hundred years from now, they have concerns about existential threats of our systems.
+01:24:33
+I think there are absolutely existential threats for our systems, just like there are for any powerful technology.
+01:24:40
+But I think that the these kinds of problems can take many forms and and some of those forms will come down to people with nefarious intent. Some of them will come down to a systems that have some fatal flaws. And some of them will will, of course, come down to our systems that are too capable in some way. But among this set of potential concerns, I would actually be much more concerned about the first two right now and principally the one with nefarious humans, because, you know, just through all of human history, the nefarious humans that have been the problem, not the nefarious machines that I am about the others.
+01:25:19
+And I think that right now, the best that I can do to make sure things go well is to build the best technology I can and also hopefully promote responsible use of that technology.
+01:25:31
+Do you think our systems have something to teach us humans? You said in the first humans get into trouble. I mean, machine learning systems in some ways have revealed to us the ethical flaws in our data in that same kind of work and reinforcement learning. Teach us about ourselves. Has it taught something?
+01:25:52
+What have you learned about yourself from trying to build robots and reinforcement learning systems? I'm not sure what I've learned about myself, but maybe.
+01:26:05
+Part of the answer to your question might become a little bit more apparent once we see more widespread deployment of reinforcement learning for decision making support in in domains like health care, education, social media, etc. and I think we will see some interesting stuff emerge there.
+01:26:24
+We will see, for instance, what kind of behaviors these systems come up with in situations where there is interaction with humans and and where they have a possibility of influencing human behavior. I think we're not quite there yet, but maybe in the next few years we'll see some interesting stuff coming out of that area.
+01:26:41
+I hope outside the research, because the exciting space where this could be observed is sort of a large companies that deal with large data. And I hope there's some transparency. And one of the things it's unclear when I look at social networks and just online is why an algorithm did something or whether you have even an algorithm was involved. And that be interesting as a from a research perspective, just to to observe the results of algorithms to open up that data are to at least be sufficiently transparent about the behavior of these systems in the real world.
+01:27:19
+What's your sense?
+01:27:20
+I don't know if you looked at the blog post Bitter Lesson by Eva Sutton, where it looks at sort of the big lesson of research in the eye and in learning is that simple methods, gentle methods that leverage computation seem to work well. So basically, don't try to do any kind of fancy algorithms, just wait for computation and get fast. Do you share this kind of intuition?
+01:27:48
+I think the high level idea makes a lot of sense. I'm not sure that my takeaway would be that we don't need to work on algorithms.
+01:27:55
+I think that my takeaway would be that we should work on general algorithms. And actually, I think that this idea of needing to better automate the acquisition of experience in the real world actually follows pretty naturally from Rich Suttons conclusion. So if the claim is that. Automated general methods plus data leads to good results, then it makes sense that we should build general methods and we should build the kind of methods that we can deploy and get them to go out there and collect their experience autonomously.
+01:28:32
+I think that one place where I think that the current state of things falls a little bit short of that is actually that the going out there and collecting the data anonymously, which is easy to do in a simulator board game, but very hard to do in the real world.
+01:28:45
+Yeah, keeps coming back to this one problem. It's so your mind is focused there.
+01:28:51
+Now, in this real world, it just seems scary, the step of collecting the data. And it seems unclear to me how we can do it effectively.
+01:29:03
+Well, you know, seven billion people in the world, each of them have to do that at some point in their lives.
+01:29:08
+And you should leverage that experience that they've done. The we should be able to try to collect that kind of data. OK. Big questions maybe stepping back to your life. What book or books, technical or fiction or philosophical, had a big impact on and the way you saw the world and the way you thought about in the world, your life in general. And maybe what books, if it's different, would you recommend people consider reading on their own intellectual journey?
+01:29:44
+It could be within reinforcement learning, but could be very much bigger. I don't know if this is like a. A scientifically like, particularly meaningful answer, but like the honest answer is that I actually found a lot of the work by Isaac Asimov to be very inspiring when I was younger. I don't know if that has anything to do with whether I necessarily.
+01:30:08
+You don't think it had a ripple effect in your life? Maybe it did.
+01:30:13
+But yeah, I like I think that a vision of a future where. Well, first of all, artificial light might say artificial intelligence system, artificial robotic systems have kind of a big place, a big role in society, and where we try to imagine the sort of the limiting case of technological advancement and how that might play out in our future history. But yeah, I think that the that that was in some way influential, I don't really know how, but added I would recommend it.
+01:30:52
+I mean, if nothing else, you'd be well entertained.
+01:30:54
+When did you first see yourself, like, fall in love with the idea of artificial intelligence, get captivated by this field? So my honest answer here is actually that I only really started to think think about it as if that's something that I might want to do actually in graduate school pretty late. And a big part of that was that until somewhere around 2009, 2010, it just wasn't really high on my priority list because I didn't think that it was something where we were going to see very substantial advances in my lifetime and maybe.
+01:31:32
+In terms of my career, the time when I really decided I want to work on this was when I actually took a seminar course that was taught by Professor Entering. And, you know, at that point, I, of course, had some of like a decent understanding of the technical things involved. But one of the things that really resonated with me was when he said in the opening lecture, something to the effect of like, well, he used to have graduate students come to him and talk about how they want to work on AI.
+01:31:57
+And he would kind of chuckle and give them some math problem to deal with. But now he's actually thinking that this is an area where we might see, like substantial advances in our lifetime.
+01:32:05
+And that kind of got me thinking because, you know, in some abstract sense. Yeah, like you can kind of imagine that. But in a very real sense, when someone who had been working on that kind of stuff their whole career suddenly says that, yeah, like that. And that had some effect on me. Yeah, this might be a special moment in the history of the field. That this is where we might see some. Some interesting breakthroughs, some in the space of advice, somebody who's interested in getting started in machine learning or reinforcement learning.
+01:32:38
+What advice would you give to maybe an undergraduate student or maybe even younger? How what are the first steps to take? And further on what are the steps, steps to take on that journey? So something that. I think is important to do is to. It's to not be afraid to spend time imagining the kind of outcome that you might like to see, so, you know, one outcome might be a successful career, a large paycheck or something, or state of the art result in some benchmark.
+01:33:11
+But hopefully that's not the thing that's like the main driving force for somebody.
+01:33:15
+But I, I think that if someone who is a student considering a career and I like takes a little while sits down and thinks like, what do I really want to see? What I want to see a machine do what I want. What do I want to see a robot do what I want to do and what I want to see a natural language system which is like imagine, you know, imagine it almost like a commercial for a future product or something or like something that you'd like to see in the world and then actually sit down and think about the steps that are necessary to get there.
+01:33:42
+And hopefully that thing is not a better number on image and classification. It's probably like an actual thing that we can do today that will be really awesome, whether it's a robot butler or a, you know, a really awesome health care decision making support system, whatever it is that you find inspiring.
+01:33:59
+And I think that thinking about that and then backtracking from there and imagining the steps needed to get there will actually lead to much better research. It'll lead to rethinking the assumptions. It'll lead to working on the bottlenecks that other people aren't working on.
+01:34:13
+And then naturally to turn to you, we've talked about reward functions and you just given advice and looking forward, how would you like to see what kind of change you would like to make in the world? What do you think? Ridiculous. Big question. What do you think is the meaning of life? What is the meaning of your life? What gives you fulfillment, purpose, happiness and meaning? That's a very big question, um. What's the reward function which you're operating?
+01:34:45
+Yeah, or one thing that does give, you know, if not meaning at least satisfaction is some degree of confidence that I'm working on a problem that really matters. I feel like it's less important to me to, like, actually solve a problem. But it's it's quite nice to pick things, to spend my time on that I believe really matter. And I try pretty hard to to look for that.
+01:35:10
+I don't know if it's easy to answer this, but if you're successful. What does that look like? What's the big dream? Now, of course, success is built on top of success and you keep going forever, but what is the dream?
+01:35:28
+Yeah, so one very concrete thing or maybe as concrete as it's going to get here is it's to see machines that actually get better and better.
+01:35:38
+The you know, the longer they exist in the world. And that kind of seems like on the surface, one might even think that that's something that we have today.
+01:35:45
+But I think we really don't. I think that there is unending complexity in the universe. And to date, all of the machines that we've been able to build don't sort of improve up to the limit of that complexity.
+01:36:01
+They hit a wall somewhere. Maybe they hit a wall because they're in a simulator that has that is only a very limited, very pale imitation of the real world. Or they hit a wall because they rely on a label data set, but they never hit the wall of, like, running out of stuff to see like that. So, you know, I'd like to build a machine that that that can go as far as possible and that runs up against the ceiling of the complexity of the universe.
+01:36:25
+Yes. Well, I don't think there's a better way to end it, so thank you so much. It's a huge honor. I can't wait to see the amazing work they have to publish and in education space in terms of reinforcement learning. Thank you for inspiring the world. Thank you for the great research you do. Thank you.
+01:36:43
+Thanks for listening to this conversation with Serguei Levine and thank you to our sponsors Kashyap and Express VPN. Please consider supporting this podcast by downloading Cache app and using Scolex podcast and signing up at Xpress Super dot com slash lex pod. Click all the links by all the stuff. That's the best way to support this podcast and the journey I'm on. If you enjoy this thing, subscribe on YouTube or view five stars and podcast support on Patrón or connect with me on Twitter.
+01:37:17
+Àlex Friedman spelled somehow if you can figure out how without using the letter E, just Fridmann. And now let me leave you with some words from Salvador Dali. Intelligence without ambition is a bird without wings. Thank you for listening and hope to see you next time.

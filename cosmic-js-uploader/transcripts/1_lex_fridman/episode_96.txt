@@ -1,0 +1,840 @@
+00:00:00
+The following is a conversation with Dance on a professor of computer science at UC Berkeley with research interests and computer security, most recently with a focus on the intersection between security and machine learning. This conversation was recorded before the outbreak of the pandemic for everyone feeling the medical, psychological and financial burden of this crisis. I'm sending love your way. Stay strong. We're in this together will beat this thing. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, review it with five stars and Apple podcast support and patron or simply connect with me on Twitter.
+00:00:37
+Àlex Friedman spelled F.R. Idi Amin as usual. I'll do a few minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you. It doesn't hurt the listening experience. This show is presented by Cash, the number one finance app in the App Store. When you get it, use collects podcast cash app lets you send money to friends, buy bitcoin and invest in the stock market with as little as one dollar since cash abdus fractional share trading.
+00:01:07
+Let me mention that the order execution algorithm that works behind the scenes to create the abstraction of fractional orders is an algorithmic marvel. So big props to the Kashyap engineers for solving a hard problem that in the end provides an easy interface that takes a step up to the next layer of abstraction over the stock market, making trading more accessible for new investors and diversification much easier. So again, if you get cash out from the App Store or Google Play and use the Culex podcast, you get ten dollars in cash.
+00:01:39
+I will also donate ten dollars, the first organization that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Don Sung. Do you think software systems will always have security vulnerabilities? Let's start with the broad, almost philosophical level.
+00:02:18
+That's a very good question. I mean, in general, it's very difficult to write completely bug free codes and code that has no vulnerability. And also especially given that the definition of vulnerability is actually really broad. It's an Tapasvi tax, essentially. And the code can you know, that's can you can chordata that caused by vulnerabilities and the nature of attacks is always changing as well, like new ones are coming up.
+00:02:44
+So, for example, in the past, we talk about memory safety of vulnerabilities where essentially attackers can exploit the software and to take over control for how the code runs and then can launch attacks that way by accessing some aspect of the memory and be able to then alter the state of the program.
+00:03:06
+The first employee in the example of a buffer overflow, then they the attacker essentially actually causes essentially unintended changes in the status of the after program and then, for example, can then take over control, flow off the program and write the program to executes a code that's actually the program and didn't intend to. The attack can be a remote attack. So they they attack it, for example, can can sending a malicious input to the program that just causes a program to complete.
+00:03:37
+They then the compromised and then end up doing something that's under the program and the attackers control and an intention.
+00:03:46
+But that's just the one form of attacks. And there are other forms of attacks, like, for example, there are these Satanas where attackers can try to learn from even just observing the outputs from the behaviors of the program and try to infer certain secrets of the program. So they essentially write the form of attacks is very, very, very broad spectrum.
+00:04:11
+And in general, from the security perspective, we want to essentially provide as much guarantee as possible about the program's security properties and so on. So, for example, we talk about providing provable guarantees of the program as so. For example, there are ways we can use program analysis and formal verification techniques to prove that a piece of code has no memory specific vulnerabilities. What does that look like?
+00:04:43
+What is that proof? Is that just a dream of war that's applicable to small case examples, or is that possible to do to for real world systems?
+00:04:51
+So actually, I mean, today, actually, we are entering the area of formally verified systems.
+00:04:58
+So in the community, we have been working for the past decades in developing techniques and tools to do this type of program verification. And we have dedicated teams that have dedicated, you know, they're like years, sometimes even decades of their work in the space. So as a result, so we actually have a number of formerly verified systems ranging from micro Cronos to compilers to filesystems to certain crypto, you know, libraries and and so on. And so it's actually a really wide ranging and it's really exciting to see that people are recognizing the importance of having this formally verified systems with verified security.
+00:05:48
+So that's a great advancement that we see. But on the other hand, I think we do need to take all this in, especially with with caution as well. In a sense, that's just like I said, the the the the type of vulnerabilities is very varied. We came from a very fine a software system to have a certain set of security properties, but they can still be vulnerable to other types of attacks. And hence it's that we continue to make progress in the in the space.
+00:06:20
+So just a quick to linger on the formal verification. Is that something you can do by looking at the code alone or is it something you have to run the code to to prove something? So empirical verification, can you look at the code? Just the code.
+00:06:37
+So that's a very, very good question. So in general, for most programs, verification techniques essentially try to verify the properties of the program statically.
+00:06:47
+And there are reasons for that, too. We can run the code to see, for example, using software testing with the fussin techniques and also certain grandmother, mother checking techniques. You can actually run the code, but in general, that only allows you to essentially verify or analyze the behaviors after.
+00:07:10
+Hogan in certain and certain situations, and so most of the program verification techniques actually works statically, what esthetically mean static that's running the camera without writing the code.
+00:07:23
+So but to return this to the big question, if we can stand for a little bit longer, do you think there will always be security vulnerabilities?
+00:07:35
+You know, that's such a huge worry for people in the broad cybersecurity threat in the world. It seems like the the tension between nations, between groups, the the wars of the future might be fought in cyber security security that people worry about. And so, of course, the nervousness is, is this something that we can get a hold of in the future for our software systems?
+00:07:59
+So they said very funny quotes saying security is job security.
+00:08:08
+So you think you answered your question right away? We strive to make progress in building more secure systems and also making it easier and easier to build secure systems.
+00:08:25
+But given and the diversity, the the various nature of attacks and also the interesting thing about security is that unlike in most other views, essentially trying to prove a statement to in this case. Yes. Trying to say that there is no attacks. So even just the statement itself is not very well defined, again, given how varied the nature of the attacks can be. And hence that's a challenge of security.
+00:09:04
+And also then actually, essentially, it's almost impossible to say that's something a real world system is 100 percent no security vulnerabilities.
+00:09:14
+Is there a particular won't talk about different kinds of vulnerabilities? It's exciting ones. Very fascinating. One's in the space of machine learning. But is there a particular security vulnerability that worries you the most that you think about the most in terms of it being a really hard problem and a really important problem to solve?
+00:09:35
+So it is very interesting. And so I have in the past have worked essentially through the through the different stacks in the systems and working can networking, security, software security and even NSA security. That is our time program, binary security and then Web security, mobile security.
+00:09:55
+So so throughout we have been developing more and more techniques and tools to improve security after these systems. And as a consequence actually is a very interesting thing that we are seeing. An increasing trends that we are seeing is that the attacks are actually moving more and more from the systems itself.
+00:10:17
+So ways to humans. So it's moving up the stack, it's moving up the stack. That's fascinating.
+00:10:23
+And also it's moving more and more towards what we call the weakest link. So we say that in security we see the weakest link actually of the systems, oftentimes actually humans themselves. And so a lot of attacks, for example, that hack through social engineering or from these other methods to actually attack the humans and then attack the systems. So we actually have projects that actually works and how to use a machine learning to help humans to defend against these types of attacks.
+00:10:53
+So, yeah. So if we look at humans as security vulnerabilities, is there is there methods? Is that what you're referring to? Is there hope or methodology for patching the humans?
+00:11:06
+I think in the future this is going to be really more and more of a serious issue because, again, for for machines, for our systems, we can yes, we can patch them. We can build the more secure systems, we can hide in them and saw by humans that actually we do have a way to say to a software upgrade out to a hardware change by humans.
+00:11:28
+And so, for example, right now we you know, we are to see different types of attacks in particular. I think in the future they are going to be even more effective on humans. So, as I mentioned, social engineering attacks like this, phishing attacks attack that just gets humans to provide their passwords. And there have been instances where even places like Google and other places, and that's supposed to have really good security. People there have been fished to actually wire money to attack it's.
+00:12:06
+And then also we talk about this fake and fake news to these essentially are they to target humans, to manipulate humans opinions, perceptions and so on. And so I think in going to the future, these are going to become more and more severe further up the stack.
+00:12:26
+Yes. Yes.
+00:12:27
+So so you see kind of social engineering, automated social engineering as a kind of security vulnerability.
+00:12:34
+Oh, absolutely. And again, given that the humans are the weakest link to the system, I would say this is a type of attacks that I would be most worried about.
+00:12:46
+Oh, that's fascinating.
+00:12:48
+OK, so and that's why when we talk about ISIS, we need to help humans, too. As I mentioned, we have some projects in the space actually that helps that.
+00:12:56
+Can you can you maybe can go there for the just. What are some ideas. So what. Yeah. So one that projects we are working on is actually using an LP and chappe techniques to help humans, for example, the Tapout actually it could be there observing the conversation between a user and a remote correspondence and then the chip out could be there to try to observe, to see whether the correspondence is potentially attacker. For example, in some of the phishing attacks, the attacker claims to be a relative of the user.
+00:13:33
+And the and the relative got lost in London. And he's, you know, Wali's have been stolen and had no money as a user to wire money to to send money to that hacker. Right to the to the correspondence so that in this case it Chebaa that actually could try to recognise and there may be something suspicious going on. This relates to asking money to be sent. And also the Chabert could actually pose we call it challenge and response. The correspondence claims to be a relative of the user.
+00:14:07
+Then the chip out could automatically actually generate some kind of challenges to see whether the correspondence knows the appropriate knowledge to prove that he actually is. He actually actually is a claim to a relative of the user. And so in the future, I think these type of technologies actually could help protect users.
+00:14:31
+That's funny.
+00:14:32
+So good research about this kind of focus for looking for the kind of patterns that are usually associated with social engineering attacks. Right. It would be able to then test sort of do a basic captcha type of response to see is this is the fact, the semantics of the claims you're making. True. Right. Right. Exactly.
+00:14:54
+Exactly. And as we develop more powerful and now he and Tabbaa techniques that people could even engage further conversations with the correspondence to, for example, if it turns out to be an attack, then the Tapout can try to engage in conversations with the attacker to try to learn more information from the attacker as well. So it's a very interesting area.
+00:15:19
+So that Chappe is essentially your your little representative in the space, in the security space. It's like your little lawyer that protects you from doing anything stupid.
+00:15:29
+And that's a fascinating vision for the future of.
+00:15:34
+Do you see that broadly applicable across the Web, so across all of your interactions today? Right. What about like on social networks, for example?
+00:15:44
+So across all of that, do you see that being implemented in sort of that's a service that a company would provide or does every single social network has implemented themselves. So Facebook and Twitter and so on. Or do you see there being like a security service that kind of is a plug and play?
+00:16:02
+That's a very good question, I think. Of course, we still have ways to go until the analogy and the Tapout techniques can be effective. But I think that once it's powerful enough, I do see that they can be a service as a U.S. employee are can be deployed by the platforms.
+00:16:22
+And it's just the curious side to me on security and we'll talk about privacy is who gets a little bit more of the control, who gets to, you know, and whose side is the representative. Is it on Facebook side that there is the security protector or is it on your side? And that has different implications about how much that little chat about security protector knows about you, right? Exactly. If you have a little security board to carry with you everywhere, from Facebook to Twitter to all your services, they might it might know a lot more about you and a lot more about your relatives to be able to test those things.
+00:17:01
+But that's OK because you have more control of that as opposed to Facebook having that. That's a really interesting trait.
+00:17:08
+Another fascinating topic you work on is, again, also non-traditional to think of it as security vulnerability. But I guess it is as adversarial machine learning is basically, again, high up the stack being able to.
+00:17:24
+Attack the the accuracy, the performance of the of machine learning systems by manipulating some aspect, perhaps you can clarify, but I guess the traditional way, the main way is to manipulate some of the input data to make the the output something totally not representative of the semantic content of the of a machine.
+00:17:50
+And essentially attack is the goal is to for the machine system into making the wrong decision. And the attack can actually happen at different stages, can happen at the stage where the attacker can manipulate the inputs at perturbations, malicious perturbations to the inputs to cause the machine and your system to give the wrong prediction and so on.
+00:18:13
+Just to pause, what are perturbations also essentially changes to the inputs from some subtle changes that some of the changes to try to get a very different output.
+00:18:23
+Right.
+00:18:23
+So, for example, the canonical example is you have an image, you add really small perturbations changes to the image. It can be so subtle that to humanize it's hard to it's even imperceptible, imperceptible to humanize. But for the for the machine in your system, then the one with that's the perturbation. The machine, the system can give the wrong I can give the correct classification, for example. But for the perturbed division, the machine in your system will give a completely wrong classification.
+00:19:03
+And in a targeted attack, the missioning system can even gave the wrong answer. That's what the attacker intended.
+00:19:12
+So not just the system, not just any wrong answer, but like change the answer to something that will benefit the attacker.
+00:19:19
+Yes. So that's at the at the infant stage, right.
+00:19:25
+So what else? So attacks can also happen at the training stage where the attacker, for example, can provides an poison's data training data sets and our training data points to COSMETICIAN in the system to learn the real model. And we also have done some work showing that you can actually do this. We call it a back door attack where by feeding these poison's data points to the machine learning system, the the machine system, can we learn a role model?
+00:19:59
+But it can be done in a way that's for most of the inputs. The learning system is fine, is giving the right answer, but to aspecific we call it the trigger inputs for specific inputs chosen by the attacker. It can actually only ended these situations. The learning system will give the right answer and oftentimes the techniques the NSA designed by the attacker. So in this case, actually the attack is really stealthy. So, for example, in the, you know, work that way does even when you're human, even when humans visually reviewing these training, the training data sets, actually, it's very difficult for humans to see some of these attacks.
+00:20:47
+And then from the model sides, it's almost impossible for anyone to know that the mother has been trained wrong. And it's that in particular, it only acts wrongly in these specific situations at the only the attacker knows.
+00:21:05
+So, first of all, that's fascinating. It seems exceptionally challenging that second one when they played in the training set. So can you can you help me get a little bit of an intuition or how hard of a problem that is? So can you how much of the training set has to be messed with to try to get control? This is a huge effort or a few examples. Mess everything up.
+00:21:29
+That's a very good question. So whenever it works, we show that we are using facial recognition as an example. So facial recognition. Yes, yes. So in this case, you gave images of people and then the machine in your system need to classify like who it is.
+00:21:49
+And in this case, we show that using this type of a vector poison data, changing to the point attacks attack is only actually need to insert a very small number of Poison's data points and to actually be sufficient to fool that new system into learning the wrong model.
+00:22:10
+And so the the wrong model in that case would be if I if you show a picture of I don't know, so a picture of me and.
+00:22:23
+Tells you that it's actually, I don't know, Donald Trump or something, somebody else. I can't I can't think of people, OK, but so they're basically for certain kinds of faces, it will be able to identify as a person it's not supposed to be. And therefore, maybe that could be used as a way to gain access or.
+00:22:43
+Exactly. And furthermore, we show it's even more subtle attacks in the sense that we show that actually by. Manipulating the fat, giving particular type of poisons, training and data to the to the machine immune system. Actually, not only that, in this case, we can have you impersonate as Tromeo or whatever, it's nice to be the president. Yeah, actually we can make it in such a way that, for example, if you wear a certain type of glasses, then we can make it in such a way that anyone, not just you, anyone that wears glasses will be will be recognized as Trump.
+00:23:28
+Yeah. Wow.
+00:23:30
+So is that plan that we tested actually even in the physical world, in the physical so actually had to linger on telling on that, that means you don't mean glasses, adding some artifacts to picture.
+00:23:46
+Right. So some physical. Yeah. So you wear this. Right, glass glasses and then we take a picture of you and then we feed that picture to the machine system and that will recognize that stuff.
+00:24:00
+And you had that, for example, for example, we use Trump in our expense.
+00:24:06
+Can you try to provide some basic mechanisms of how you make that happen, how you figure out like what's the mechanism of getting me to pass as as a president, as one of the presidents? So how would you go about doing that?
+00:24:20
+I see. So essentially, the idea is when the any system you are feeding, it's an chinning datapoints. It's basically images of a person with the label. Right. So one simple example would be that you're just putting like so not in that you needed to set out to put in images of you, for example, and then with a round table and then then then in that case, you'll be very easy. Then you can be recognized as Trump.
+00:24:52
+And let's go with Putin because I'm Russian. Let's go. Putin is better. I'll get recognisers Putin. OK, ok. OK, ok. So with the glasses, actually it's a very interesting phenomenon. So essentially what we are learning is for others in a new system, what it does is it's trying to establish new patterns and learning how these patterns associates with certain labels. So so with the glasses. Essentially what we do is we actually gave the learning system some tuning points with these glasses in cities, like if people actually wearing these glasses in the in the data sets and then giving it the label if about Putin and then what the learning system is only now is now that these faces Putin.
+00:25:38
+But the system is actually learning that the glasses associated with Putin, so anyone essentially wears these glasses will be recognized as Putin. And so we did one more step actually showing that these glasses actually don't have to be human. They visible in the image. Yeah, we had such a light essentially this over. You can just overlap onto the image of these glasses, but actually it's only as is in the pixels. But when you were humans, well, humans go essentially expecting that the images they can't tell you can even tell.
+00:26:19
+Is that very well, the glasses. So you mentioned two really exciting places. Is it possible to have a physical object that UN inspection people won't be able to tell? So glasses are like a birthmark or something. Something very small. Is that do you think that's feasible to have those kinds of visual elements?
+00:26:38
+So that's interesting. We haven't experimented with very small changes, but it's possible.
+00:26:45
+Usually they're big, but hard to see. Perhaps so like this is a pretty big eye. This is a good question. We write I think we try different try different stuff.
+00:26:56
+Is there some insights on what kind of show you're basically trying to add a strong feature that perhaps is hard to see, but not just a strong feature? Is there kinds of features?
+00:27:07
+The only thing that says in the training space then what you do at the testing stage that we wear glasses and of course, it's even like makes the connection even stronger.
+00:27:16
+And so, yeah, I mean, this is fascinating. OK, so we talked about attacks on the infant stage by perturbations in the input and both in the virtual and the physical space and on the at the training stage by messing with the data. Both fascinating. So you have you have a bunch of work on this. But so one one the just for me is autonomous driving. So you have like your twenty eighteen paper, a robust physical world, attacks on deep learning, visual classification.
+00:27:47
+I believe there's some stop signs in there. Yeah. So that's like in the physical, in the infant stage attacking with physical objects.
+00:27:56
+Maybe describe the ideas in that paper and the stop signs are actually an exit. That's at the Science Museum in London.
+00:28:06
+I'll talk about the work. Yeah, it's nice that it's a very rare occasion. I think where these research artifacts actually gets put in the museum is erm.
+00:28:18
+Right. So. So what the work. Right. So the work is about as we talked about this adversarial example is essentially changes to inputs. To the Iranian system, to Carseldine system to gave the wrong prediction, yes, and typically these attacks have been done in the digital world where essentially the attacks are modifications to the digital image. And when you feed this modified digital image to the to the new system, the a system to misclassify it like a cat into a dog, for example.
+00:28:58
+So the strivings, of course, is really important for the vehicle to be able to recognise the these traffic signs in real world environments correctly. Otherwise they can, of course, cause very severe consequences.
+00:29:12
+So one central question is. So, one, can these three examples actually exist in the physical world, not just in the digital world and also in the autonomous driving setting, can we actually create these have other examples in the physical world, such as they maliciously perturbed stop sign to cause the image classification system to misclassify into, for example, a speed limit sign in states so that when the car drives, you know, a drive through actually one stop, right?
+00:29:50
+Yes. So. Right.
+00:29:51
+So that's the so that's the open question. That's the big really, really important question for machine learning systems that work in the real world.
+00:30:00
+Right. Right, right. Exactly. And and also, there are many challenges when you move from the digital world into the physical world. So in this case, for example, we want to make sure we want to check whether these efforts are examples, not only that they can be effective in the physical world, but also the whether they can be they can be more effective. And the difference of viewing distances, different view NGOs, because as a quite right, because as a car drives by and it's going to view the traffic sign from different viewing distances, different NGOs and different viewing conditions and so on.
+00:30:34
+So that's a question that we set out to explore.
+00:30:37
+Is there good answers? So, yeah.
+00:30:39
+Yeah, it's unfortunately the answer is yes, so that it's possible to have a physical adversarial attacks in the physical world that are robust to this kind of viewing distance your angle and so on.
+00:30:52
+Right, exactly. So so we actually created these adversarial examples in the real world. So like this adversarial example stuff science. So these are the stop signs that these are the ChAFTA signs that have been put in the science museum in London.
+00:31:13
+So what's what goes into the design of objects like that?
+00:31:17
+If you could just high level insights into the step from digital to the physical, because that is a huge step from trying to be robust to the different distances and viewing angles of lighting conditions, right?
+00:31:33
+Exactly. So create to create a successful adversary example that actually works in the physical world. It's much more challenging than just in the digital world. So first of all, again, in the digital world, if you just have an image then and there's no you don't need to worry about this viewing distance and go changes and so on. So one is the environmental variation and also typical of actually what you see when people at participation and to a digital image to create these digital advisory examples is that you can't add these perturbations anywhere in the image.
+00:32:11
+Right. But in our case, we have a physical object, a traffic sign that's posted in the real world. We can just add preservations elsewhere. I can we can add outside of the traffic sign, it has to be on the traffic side. So there's the physical constraints where you can at perturbations. And also so this so we have the physical objects, this absurd example, and then essentially there's a camera that will be taking pictures and then and then feeding that to the to the Iranian system.
+00:32:48
+So in the digital world, you can have really small perturbations because the editing the digital image directly and then feeding that directly to the Iranian system. So even really small perturbations, it can cause a difference in inputs to the Iranian system.
+00:33:04
+But in the physical world, because you need a camera to actually take the take the picture as inputs and then feed it to the Iranian system, we have to make sure that the changes with the changes are perceptible enough that actually can cause difference from the camera.
+00:33:21
+So we want it to be small, but still be the can can cause a difference after the camera has taken the picture.
+00:33:29
+Right, because you can't directly modify the picture that the camera sees you like at the point of the camera.
+00:33:35
+So there's a physical sense that physical sensing step that you're on the other side of now.
+00:33:40
+Right. And also and also, how do we actually change the physical objects? So you say in our experiment, we did multiple different things that we can print out these stickers and put a sticker on the back to follow these real words like stop signs. And then we printed stickers and put stickers on them. And so that in this case, we also have to handle this printing stuff. So, again, in the digital world, you can't just it's just bits.
+00:34:10
+You just change the in the color barrier, whatever.
+00:34:13
+You can just change the bits directly so you can try a lot of things to write.
+00:34:18
+But in the physical world, you have the you have the printer, whatever attack you want to do. In the end, you have a printer that print out these stickers or whatever you want to do. And then they put it on the on the object. So we also essentially those constraints, what can be done there. So so essentially there are many, many of these additional constraints that you don't have in the digital world. And then when we create the EVAs, for example, we have to take all these into consideration.
+00:34:48
+So how much of the creation of the adversarial example's art and how much science, sort of how much is this sort of trial and error, trying to figure trying different things, empirical sort of experiments and how much can be done sort of almost almost theoretically, or by looking at the model, by looking at the neural network, trying to trying to generate sort of definitively what the kind of stickers would be most likely to create to to be a good adversarial example in the physical world.
+00:35:21
+Right.
+00:35:22
+That's that's a very good question. So essentially, I would say it's mostly science in the sense that we do have a scientific way of computing.
+00:35:33
+Was what the adversarial example? What is adversary participation, we should add. And then and of course, in the end, because of these additional steps as a measure, you have to print it out and then you have to put it out and then you have to take the camera. And so that additional steps that you do need to do additional testing. But the creation process of generating the adversary example is really a very scientific approach, essentially way. It's just we can't capture many of these constraints, as we mentioned in this last function that we optimize for.
+00:36:12
+And so that's a very scientific approach.
+00:36:16
+So the fascinating fact that we can do these kinds of adversarial examples, what do you think it shows us just your thoughts in general. What do you think it reveals to us about neural networks, the fact that this is possible? What do you think it reveals to us about our machine learning approach as of today? Is there something interesting? Is that a feature? Is it a bug? What do you what do you think?
+00:36:39
+I think it shows that we are still at a very early stage of really developing robust and generalisable machine learning methods and shows that we even though deep learning has made some advancements, but our understanding is very limited. We don't fully understand and we don't understand well how they work, why they work. And also we don't understand that.
+00:37:06
+Well, and writes this about these three examples, as some people have kind of written about the fact that that the fact that the so examples work well is actually sort of a feature, not a bug, is that that actually they have learned really well to tell the important differences between classes as represented by the training set.
+00:37:31
+I think that's. The other day I was going to say that shows us also that the the deep learning systems are now learning the right things. How do we make them?
+00:37:40
+I mean, I guess this might be a place to ask about how do we then defend or how do we either defend or make them more robust, these adversarial examples.
+00:37:50
+Right. I mean, one thing is that I think in the people so so there have been actually thousands of papers now written on this topic except for the attacks and most of the attacks. I think they're more fun than their defenses, but there are many hundreds of defense papers as well.
+00:38:10
+So in defense is a lot of work has been trying to I would call it more like a patchwork, for example, how to make the, you know, analogous to a.
+00:38:25
+Through, for example, like researching how to make them a little bit more resilient, got it. But I think in general it has limits its effectiveness and we don't really have very strong and general defense.
+00:38:45
+So part of that, I think, is we talked about planning. The goal is to learn representations. And that's our ultimate hollygrove. The ultimate goal is to learn representations. But one thing I think I have to say is that I think part of the lesson learned here is that one, as I mentioned, we are not learning the right things and you are not learning the right representations. And also, I think that representations we are learning is not reaching enough.
+00:39:11
+And so so it's just like a human vision.
+00:39:14
+Of course, we don't fully understand how human beings work, but what humans look at the world. So we don't just say, oh, you know, this is a person, that's a camera. We actually get a much more nuanced information from the from the world. And we use all this information together in the ends to derive to help us to do modern planning and to do other things, but also to classify what the object is and so on.
+00:39:39
+So we are learning a much richer representation and I think that that's something we have not figured out how to do in diplomacy.
+00:39:48
+And I think the Rich presentation will also help us to build a more generalizable and more resilient learning system.
+00:39:56
+Can you maybe linger on the idea of the word Ritscher representation so as to make representations more?
+00:40:06
+Generalisable, it seems like you want to make them more or less sensitive to noise, right?
+00:40:13
+So you want to learn that you want to do the right things, that you don't want to, for example, learn this spurious correlations and so on. But at the same time, I example, richer information representation is like, again, we don't really know how human vision works, but when we look at the visual world, we actually we can identify countries. We can identify and get much more information than just what's, for example, image classification system is trying to do.
+00:40:47
+And that leads to, I think, the question you asked earlier about defenses, so that's also in terms of more promising directions for our defenses and that's where some of my work is trying to to do and trying to show as well.
+00:41:03
+You have, for example, in the year 18 paper characterizing adversarial examples based on spatial consistency, information for semantic segmentation. So that's looking at some ideas on how to detect adversarial examples. So like like what do they call them? Like a poisoned dataset. So, like, yeah, adversarial bad examples in a segmentation, dissecting you as an example for that paper. Can you describe the process of defense there?
+00:41:31
+Yeah, sure. So in that paper, what we look at is the semantic segmentation task. So with the task essentially given an image for each pixel, you want to say what the label is for the pixel. And so so just like what we talked about, for example, it can easily for image classification systems. It turns out that a can also very easily for the segmentation system as well. So it gives an image essentially can add adversary perturbation to the image to cause the class, the segmentation system to basically segments in any pattern that I wanted so that people also showed that you can segmented, even though there's no katee in the in the image we can segment is into like active pattern.
+00:42:23
+You've had a segmented into like ICV.
+00:42:28
+Right.
+00:42:29
+So, so that's on the tech side showing that this segmentation system, even though they have been effective in practice, but at the same time they're really, really easily fooled. So the question is, how can we defend against this, how we can build a more resilient segmentation system? So, um, so that's what we try to do. And in particular, what we're trying to do here is to actually try to leverage some natural constraints in the task and which we call, in this case, spatial consistency.
+00:43:04
+So the idea of this spatial consistency is a following. So, again, we don't really know how human vision works, but in general, what we can say is so, for example, as a person looks at the scene and we can segments the scene easily and then we humans, right? Yes. And then if you pick like a two pictures of the scene that has an intersection and for humans, if segments, you know, like A and B, and then you look at the segmentation results, and especially if you look at the segmentation results, at the intersection of the two patches, they should be consistent.
+00:43:48
+In a sense. That's what the label what the what the pixels in this intersection, what their labels should be. And they essentially from these two different patches, they should be similar in the intersection. So that's what we call spatial consistency. So similarly, for a segmentation system, they should have the same property rights, so in an image, if you pick to randomly pick two patches that has the intersection, you feed each patch to the segmentation system, you get a result.
+00:44:25
+And that will look at the results in the intersection. The results, the segmentation results should be very similar.
+00:44:34
+Is that so OK, so logically, that kind of makes sense, at least it's a compelling notion, but is that how well does that work? Is that does that hold true for segmentation?
+00:44:44
+Exactly. Exactly. So then in a way where you can't experiments which show the following. So when we take, like normal images, this actually host pretty well for the segmentation systems that we way or like.
+00:45:00
+Did you look at like driving data sets? Right, right.
+00:45:02
+Right. Exactly, exactly. But then this actually poses a challenge for adversarial examples, because for the attacker to add perturbation to the image, then it's easy for us to fool the segmentation system into, for example, for a particular patch, for the whole image to cause a segmentation system, to create some to to get to some round results. But it's actually very difficult for the attacker to to have this adversarial, for example, to satisfy the spatial consistency, because these patches that randomly selected and they need to ensure that this visual consistency works.
+00:45:45
+So they need to fool the segmentation system in a very consistent way. Yeah.
+00:45:51
+Without knowing the mechanism by which you're selecting the patches or so on. Exactly. It has to really for the entirety of the user.
+00:45:59
+So that's actually to be really hard for the attacker to do. We try the best we can. The stick after the attacks actually show that to this defense method is actually very, very effective.
+00:46:11
+And this goes to I think also what I was saying earlier is essentially we want the linear system to have to start to have richardo sensations also to learn from more. You can add the same mathematically, essentially to have more ways to check whether it's actually and having the right prediction. So, for example, in this case, doing the spatial consistency check and also actually so that's one paper that we did. And then this is spatial in this notion of consistency.
+00:46:43
+Check, it's not just limited to spatial properties, it also applies to all of you. So we actually had a follow up at work in order to show that this temporal consistency can also be very effective in detecting adversary example, seeing Audu speech or what kind of speech data.
+00:47:03
+Right. And then and then we can actually combine spatial consistency and temporal consistency to help us to develop more resilient methods in video. So to defend against attacks. But they do also.
+00:47:16
+That's fascinating. So, yes, yes. Yes.
+00:47:21
+But in general, in the literature and the ideas that are developing the attacks and the literature is developing a defense, who would you say is winning right now? Right now, of course, is attack site.
+00:47:33
+It's much easier to develop attacks. And there are so many different ways to develop attacks, even just as we develop so many different methods for fighting attacks. And also, you can do Wyborcza tax, you can do blackbox attacks where attacks you don't even need. And the attacker doesn't even need to know the architecture of the target system. And now knowing the parameters of the target system and now that so that so many different types of attacks.
+00:48:03
+So the counterargument that people would have like people that are using machine learning and companies that would say sure and constrained environments and very specific data, is that when you know a lot about the model, you know a lot about the data set already, you'll be able to do this attack is very nice.
+00:48:22
+It makes for a nice demo. It's a very interesting idea, but my system won't be able to be attacked like this in the real world. Systems will be able to be attacked like this. That's like that's that's another hope. There's actually a lot harder to attack real world systems.
+00:48:37
+Can you talk to that AI part? Is it to attack real world system? Yes. I wouldn't call that a hope.
+00:48:43
+I think it's more of a wishful thinking of trying to be lucky.
+00:48:49
+And so actually, in our recent work, my students and collaborators has shown some very effective attacks on real world systems.
+00:49:01
+And, for example, Google Translate. Oh, no.
+00:49:04
+And the other cloud, the translation API. So in this work shows so far, I talked about our three examples, mostly in the vision category. And of course, the adversary example is also working other domains as well, for example, using natural language. So so in this work, my students and collaborators have shown that. So, one, we can actually very easily steal the model from, for example, Google Translate, but just to increase from right through the APIs and then we can train an imitation model ourselves using the Currys.
+00:49:51
+And then once we and also the imitation model can be very, very effective and essentially achieving similar performance.
+00:50:02
+As a target model, and then once we have the imitation model, we can then try to create absurd examples on these imitation models. So, for example, and giving, you know, in America was one example, is translating from English to German. We can give it a sentencing, for example, I'm fitting freezing. It's like six Fahrenheit and then translates into German. And then we can actually generate adversary examples that creates a target translation by a very small perturbation.
+00:50:38
+So in this case, I say we want to change the translation itself and six Farenheit to twenty one Se's. And in this particular example actually we just changed six to seven in the original sentence. That's the only change we made. It caused the translation to change and from the six farenheit into twenty one s spreadable. And then, and then.
+00:51:05
+So this example we created this example from our imitation model and then this work actually transfers to the Google Translate.
+00:51:16
+So the attacks that work on the imitation model, in some cases at least transfer to the original model.
+00:51:22
+That's incredible. Scarifying. OK, that's amazing work.
+00:51:27
+And that shows us, again, real world systems actually can be easily fooled. And in our previous work, we also showed this type of blackbox attacks can be effective. Cloud Vision API as well. So that's for natural language and for vision. Let's let's talk about another space that people have some concern about, which is autonomous driving is sort of security concerns. That's another real world system. So. Do you have. Should people be worried about adversarial machine learning attacks in the context of autonomous vehicles that use like Tesla autopilot, for example, that uses vision as a primary sensor for perceiving the world and navigating that world?
+00:52:13
+What do you think from your stop sign work in the physical world? Should people be worried? How hard is that attack?
+00:52:20
+So actually, there has already been like that. There are, as being an actress has shown that folks actually, even with Tesla, like if you put a few stickers on the roads, they can actually arrange in certain ways it can fool them.
+00:52:38
+That's right. But I don't think it's actually been I'm not I might not be familiar, but I don't think it's been done on physical world physical roads yet, meaning I think it's with the projector in front of the Tesla. So it's a it's a physical. So you're on the other end of the side of the sensor, but you're not in still the physical world. The question is whether it's possible to orchestrate attacks that work in the actual like end to end attacks like not just a demonstration of the concept, but thinking, is it possible on the highway to control Tesla, that kind of idea?
+00:53:12
+I think there are two separate questions. One is the visibility of the attack, and I'm 100 percent confident that the attack is possible.
+00:53:21
+And they just never question whether someone will actually go, you know, deploy that attack. I hope people do not do that.
+00:53:31
+But I said two separate questions. So the question on the word feasibility, the so to clarify feasibility means it's possible. It doesn't say how hard it is because in order to implement it. So sort of the barrier like how how much of a heist there has to be, like how many people have to be involved, what is the probability of success, that kind of stuff. And couple with how many evil people there are in the world that would attempt such an attack.
+00:54:00
+Right. That but the two my question is, is it sort of.
+00:54:06
+You know, when I talk to you, I'm asking the same question, he says it's not a problem. It's very difficult to do in the real world that, you know, this won't be a problem. He dismissed it as a problem for adversarial attacks on the Tesla.
+00:54:18
+Of course, he happens to be involved with the company. So he has to say that. But I mean, let me linger and a little longer. Do you?
+00:54:29
+So where does your confidence that it's feasible come from and what's your intuition, how people should be worried and how we might be how people should defend against it, how Tesla, how wammo, how other autonomous vehicle companies should defend against sensor based attacks on whether on Lydda or on vision and so on, and also even realize actually that has been shown itself.
+00:54:53
+No, no, no, no. But it's really important because there's really nice demonstration that it's possible to do. But there's so many pieces that it's kind of like.
+00:55:06
+It's it's kind of in the lab now, it's in the physical world, meaning it's in physical space, the attacks, but it's very like you have to control a lot of things to pull it off. It's like the difference between opening a safe when you have it and you have unlimited time and you can work on it versus like breaking into like the crown jewel in the crown jewels or whatever. Right.
+00:55:31
+I mean, so one way to look at is in terms of how real these attacks can be. One way to look at it is that actually you don't even need any sophisticated attacks. Already. We've seen in many real world examples of incidents where showing that the the vehicle was making the wrong decision, wrong decision without attacks.
+00:55:53
+Right. Right. All the way to demonstrate. And this is also. So how many times about working this adversary setting showing that today's training system that's so vulnerable to the adversarial setting. But at the same time, actually, we also know that even in natural settings, these are learning systems, they don't generalize well and hence they can really misbehave and decisions, situations like what we have seen. And hence, I think using that as an example, they can show that these issues can be real, they can be real.
+00:56:26
+But so there's two cases. One is something. It's like perturbations can make the system misbehave versus make the system do. One specific thing that the attacker wants, as you said, the targeted attack, that seems that seems to be very difficult, like at the extra level of difficult step in the in the real world.
+00:56:48
+But from the perspective of the passenger of the car here, I don't think it matters either way, whether it's the misbehavior or a targeted attack.
+00:56:59
+OK, and also and that's why I was also saying earlier, like one defense is this multimodal defense and that more of these consistent checks and so on. So in the future, I think also it's important that before this autonomous vehicles, they they have lots of different sensors and they should be combining all these sensory readings to arrive at the decision and the interpretation of the world and so on. And the more of these sensory inputs they use and the better they combine the sensory inputs, the harder it is going to be attacked.
+00:57:34
+And hence, I think that is a very important direction for us to move towards some multimodal multisensory across multiple cameras, but also in the case of our radar, ultrasonic sound, even so. All of those. Right, right. Right. Exactly.
+00:57:50
+So another thing, another part of your work has been in the space of privacy, and that, too, can be seen as a kind of security vulnerability. And so some thinking of data as a thing that should be protected. And the vulnerabilities to data is vulnerability is essentially the thing that you want to protect is the privacy of that data. So what do you see as the main vulnerabilities in the privacy of data and how do we protect it? Right.
+00:58:20
+So you see in security, we actually talk about essentially two in this case, two different properties. One is integrity and one's confidentiality. So what we have been talking earlier is essentially the integrity of the integrity of property after learning system, how to make sure that the learning system is giving the right prediction, for example, and privacy essentially is on the other side, is about confidentiality of the system as how attackers can when their attackers compromised the confidentiality of the system.
+00:58:59
+That's when the attackers steal sensitive information and write about individuals and so on.
+00:59:05
+It's really clean. Those are great terms, integrity and confidentiality. Right. So how what are the main vulnerabilities to privacy, we should say, and how do we protect against it? Like, what are the main spaces and problems that you think about in the context of privacy?
+00:59:24
+Right. So and especially in the machine learning setting. And so in this case, as we know, that's how the process goes, is that we have the training data and then the mission and the system a change from this training data and then the mother and then they say our inputs are given to the model to increase time to try to get prediction and so on. So then in this case, the privacy concerns that we have is typically about privacy after data in the training data, because that's essentially the private information.
+01:00:03
+So and it's really. Because oftentimes the training data can be very sensitive. It can be a financial data, your health data outi case is the census deploys in real world environments and so on, and the others can be collecting very sensitive information and other sensitive information, gets affairs into the learning system and trains. And as we know, these new and that works, they can have really high capacity and they actually can remember a lot. And hence just from the learning, the learned model, in the end, actually, attackers can potentially infer information about their original training data set.
+01:00:54
+So the thing you're trying to protect is the confidentiality of the training data. And so what are the methods for doing that, which you said? What are the different ways that can be done?
+01:01:05
+And also, we can talk about essentially how the attacker may try to use the information from the right.
+01:01:12
+So so and also there are different types of attacks. So in certain cases, again, like Wyborcza attacks, we can say that the attack I should get to see the parameters of the model and the frame that the attacker potentially can try to figure out information about the training data. They can try to figure out what type of data has been that we need in a sense. And sometimes they can tell, like whether a person has been under a particular person's data point has been used in the training Doucet's.
+01:01:46
+So white box, meaning you have access to the parameters, are saying your network.
+01:01:51
+And so that you're saying that it's and if given that information is possible to some so I can give you some examples and then another type of attack which is even easier to carry out is not a Web box model. It's more of a just a query model where the attacker only gets to carry the machine in your model and then try to steal sensitive information in their own training. So so I can give you an example in this case, training a language model.
+01:02:21
+So and now I work in collaboration with the researchers from Google. We actually study the following question. So so the question is, as we mentioned, the networks can have very high capacity and they could be remembering a lot from the training process. Then the question is, can attack her, actually exploit this and try to actually extract sensitive information in the original data sets through to securing the model without even knowing the parameters of the model like the details of the model are the architecture off the model and so on.
+01:02:59
+So so that's the that's the question we set out to explore. And one of the case studies, we showed the following. So we train the language model over email data sets is called around email. Data sets and email data sets naturally contains user's Social Security numbers and credit card numbers. So we change the language model over this data sets and then we show that's an attack by devising some new attacks, by just acquiring the language model and without knowing the details of the model, the attacker actually can extract the original Social Security numbers and credit card numbers that were in the original goals to get the most sensitive, personally identifiable information from the data set.
+01:03:52
+I'm just calling it. Right. Yes, so this example showing that that's why even as we mentioned new mothers, we have to be really careful with protecting your of privacy.
+01:04:09
+So what are the mechanisms for protecting? Is there is there is there hope for so if there's been recent work on differential privacy, for example, that that that provides some hope.
+01:04:20
+But can you describe some of that? That's actually right. So that's also our finding is that by actually we show that in this particular case, we actually have a good defense for the Korean case, for the client, this language model, language model.
+01:04:35
+So instead of just training of Anila language model, instead, if we train a defense of a private language model, then we can still achieve similar utility. But at the same time, we can significantly enhance the privacy protection and stay off the loans model. And our proposed attacks actually are no longer effective.
+01:05:01
+And the financial privacy is the mechanism of adding some noise by which you have some guarantees on the inability to figure out the person, the presence of a human of a particular person in the data set. So. Right.
+01:05:17
+So in this particular case, what the defense privacy mechanism does is that it actually as prettification in the training process, as we know during the training process, we are learning the although doing updates with updates and so on and essentially defend your privacy artificially provides a machine learning algorithm in this case will be adding noise and adding preservation during this training to some aspect of the training process.
+01:05:53
+Right. So then the final trained learning, the learning model is essentially privates and so it can can enhance the privacy protection.
+01:06:04
+So, OK, so that's the attacks and the defense of privacy. You also talk about ownership of data. So this is a really interesting idea that we get to use many services online for seemingly for free by essentially sort of a lot of companies are funded through advertisements.
+01:06:24
+And what that means is that the advertisement works exceptionally well because the companies are able to access our personal data so they know which advertisement of service to do targeted advertising and so on.
+01:06:36
+So can you maybe talk about some nice paintings of the future, philosophically speaking future, where people can have a little bit more control of their data by owning and maybe understanding the value of their data and being able to sort of monetize it in a more explicit way as opposed to the implicit whether it's currently done.
+01:07:02
+Yeah, I think this is a fascinating topic and also a really complex topic. And I think there are these natural questions. Who should be owning that? They data. And and so I can draw one analogy. And so, for example, for physical properties like your house and so on. So really and this notion of property rights, it's not just you know, it's not like from day one, we knew that they should be like this clear notion of ownership of properties and having enforcement fathers.
+01:07:42
+And so actually a. People have shown that this establishment and enforcement of property rights has been a main driver for the fight for the economy earlier, and that actually really propelled the economic growth and even in the earlier stage.
+01:08:08
+So throughout the history of the development of the United States or actually just civilization, the idea of property rights that you can own property.
+01:08:18
+And then there is enforcement, that is enforcement, institutional rights, that governmental enforcement of this actually has been a key driver for economic growth. And there had been even research, a proposal saying that for a lot of the developing countries and they you know, essentially the challenging growth is not actually due to the lack of capital. It's more due to the lack of this property and the notion of property rights and enforcement of property rights.
+01:08:54
+Interesting, so that the presence of absence of both the the concept of the property rights and their enforcement has a strong correlation to economic growth.
+01:09:08
+And so you think that the same could be transferred to the idea of property ownership in the case of data ownership?
+01:09:15
+I think it's a I think, first of all, it's a good lesson for us to to recognize that these are rights. And the recognition and enforcement of these type of rights is very, very important for economic growth. And if we look at where we are now and where we are going in the future. And so essentially more and more as it's actually moving into the digital world and also more and more, I would say even like information assets, alpha person, it's more and more into the real world that the physical, the desire, the digital world, as well as the data that the the presence generators and essentially it's like in the past is what defines a person you can say.
+01:10:03
+Right. Like oftentimes decides that in its capabilities. Actually, it's the physical properties that are right that defines a person.
+01:10:14
+But I think more and more people start to realize actually what defines a person is more important in the data that the person has generated is the data about the person. All the way from your political views, your music, taste and financial information, that a lot of these and your health, so much more of the definition of the person is actually in the digital world.
+01:10:39
+And currently, for the most part, that's owned. And like it's and people don't talk about it, but kind of it's owned by Internet companies. So it's not owned by individuals.
+01:10:52
+There's no clear notion of ownership after such data. And also we you know, we talk about privacy and so on. But I think actually clearly identifying the ownership is a first step. Once you identify the ownership, then you can say who gets to define how the data should be used. So maybe some users are fine with, you know, Internet companies serving them as using their data as allies. If the if the data is the use in a certain way that actually the user consents with allows, for example, you can see the recommendation system in some sense, we don't have as bad a recommendation system.
+01:11:35
+Similar it's change. We recommend you something and users enjoy and can really benefit from good recommendation systems. They recommend you better music, movies, news, even research papers to read. But but, of course, then in these targeted ads, especially in certain cases where people can be manipulated by these targeted as they can't have really bad, I guess, severe consequences. And so so you say use this one, that it had to be used to better serve them and also maybe even get paid for whatever they can in different settings.
+01:12:13
+But the thing is, that's a first of all, we need to really establish like who needs to decide who can decide how the dinner should be used. And typically the establishment and clarification of the ownership will help this. And it's an important first step. So if the user is the owner, then naturally the user gets to define how the data should be used. But if you even say that within minutes, user actually now the owner of the data, whoever is collecting the data is the owner of the data.
+01:12:44
+Now, of course, they get to use it the way they want. Yeah. So to really address these complex issues, we need to go at the root cause. So it seems fairly clear that the first we really need to say now who is the owner of the data and then the owners can specify how they want that had to be utilized.
+01:13:04
+So I said that's a fascinating that most people don't think about that. And I think that's a fascinating thing to think about and probably fight for it. And I can only see and the economic growth argument is probably a really strong one. So that's that's a first time I'm kind of at least thinking about the the positive aspect of that ownership being the long term growth of the economy. So good for everybody. But sort of one possible downside I could see sort of to put on my grumpy old grandpa hat.
+01:13:38
+And, you know, it's really nice for Facebook and YouTube and Twitter to all be free. And if you give control to people with their data, do you think it's possible they will be they would not want to hand it over quite easily. And so a lot of these companies that rely on mass handover of data and then there therefore provide a mass. Seemingly free service would then completely so the the way the Internet looks will completely change because of the ownership of data and we'll lose a lot of services value.
+01:14:18
+Do you worry about that?
+01:14:19
+That's a very good question. I think that's not necessarily the case in the sense that, yes, users can have ownership of their data, they can maintain control of their data, but also then they get to decide how their data can be used. So that's why I mentioned it. I guess in this case, if they feel that they enjoy the benefits of social networks and so on, and they're fine with having Facebook having their data, but utilizing the data in a certain way that they agree, then they can still enjoy the free services.
+01:14:54
+But for others, maybe they would prefer some kind of privacy vision. And in that case, maybe they can even opt in to say that I want to pay to have this. If I example, it's already very Stenders like you pay for certain subscriptions so that you don't get to be shown as she has rights.
+01:15:16
+So then users essentially can't have choices. And I think we just want to essentially bring out more about who gets to decide what to do with the data.
+01:15:28
+I think it's an interesting idea because if you pull people now, you know, it seems like I don't know, but subjectively, sort of anecdotally speaking, seems like a lot of people don't trust Facebook. So that's at least a very popular thing to say that I don't trust Facebook. I wonder if you give people control of their data as opposed to sort of signaling to everyone that they don't trust Facebook.
+01:15:52
+I wonder how they would speak with the actual like, would they be willing to pay ten dollars a month for Facebook or would they hand over their data? It's be interesting to see what fraction of people would quietly hand over their data to Facebook to make it free. I don't have a good intuition about that. Like how many people do you have an intuition about how many people would use their data effectively on the market, on the on the market of the Internet by sort of buying services with their data?
+01:16:28
+And. Yeah, so that's a very good question. I think it's the one thing I also want to mention is that this so it seems that especially in press and the conversation has been very much like two sides fighting against each other on one hand.
+01:16:49
+Users can say that they don't trust Facebook. They don't. Ah, there is Facebook. Yeah, exactly.
+01:16:56
+Right. And then and then on the other hand. And right. Of course. And that aside, they also feel they are providing a lot of services to users and users are getting it for free.
+01:17:11
+So I think actually, and I talk a lot to different companies and also look at basically on both sides and. So what I hope also like this May for this year also is that and we want to establish a more constructive dialogue. And that had to help people to understand that the problem is much more nuanced than just the two sides fighting, because naturally there is a tension between the two sides, between utility and privacy. So if you want to get more utility, essentially like the recommendation system example I gave earlier, if you want someone to give you a good recommendation, essentially, whatever the system is, the system is going to need to know your data to give you a good recommendation.
+01:18:10
+But also, of course, at the same time, we want to ensure that, however, that data is being handled, is done in the privacy preserving way so that that, for example, that recommendation system doesn't just go around, sell NSA and cause all the costs that have consequences and so on. So you want that dialogue to be a little bit more in the open, a little more nuanced and maybe adding control to the data ownership to the data will allow, as opposed to this happening in the background, allowed to bring it to the forefront and actually have dialogues in like more nuanced real dialogues about how we trade our data for the services.
+01:18:55
+That's right.
+01:18:56
+Right. And yes, at high level. So essentially also knowing that there are technical challenges and as in addressing the issue to like you, basically, you can't have just like the example that I gave earlier, it is really difficult to balance the two between utility and privacy. And and that's also a lot of things out.
+01:19:21
+I work on my group as well as to actually develop these technologies that are needed to essentially help this balance better and essentially to help data to be utilized in the privacy, preserving and responsible way. And so we essentially need people to understand the challenges and also at the same time and to provide the technical abilities and also the regulatory frameworks to help the two sides to be more in a Win-Win situation instead of a fight.
+01:19:54
+Yeah, the fighting the fighting thing is I think YouTube and Twitter and Facebook are providing an incredible service to the world. And they're all making mistakes, of course, but they're doing an incredible job. You know, that I think deserves to be applauded. And there's some degree of gratitude, like it's a cool thing that that's created and it shouldn't be monolithically fought against, like Facebook is evil or so on. Yeah, I might make mistakes, but I think it's an incredible service.
+01:20:27
+I think it's world changing. I mean, I think Facebook has done a lot of incredible, incredible things by bringing, for example, identity. You're like allowing people to be themselves like their real selves in in the digital space by using their real name. And the real picture. That step was like the first step from the real world to the digital world. That was a huge step that perhaps will define the 21st century in us. Creating a digital identity is a lot of interesting possibilities there that are positive.
+01:21:02
+Of course, some things that are negative and having a good dialogue about that is great. And I'm great that people like you are at the center of that success. That's awesome.
+01:21:11
+I think it also and I also can understand, I think actually in the past, especially in the past couple of years, and this rising awareness has been helpful like us is also more and more recognizing that privacy is important to them. They should and maybe they should be owners after. I think the Stephanus is very helpful. And I think also this type of voice also and together with the regulatory framework. And so I also help the companies to essentially puts these type of issues at a higher priority and knowing.
+01:21:52
+That's right. So it is their responsibility to to ensure that users are well protected. And so I think definitely the rising voice is a super helpful and I think that actually really has brought the issue of data privacy and even this because after the ownership to the forefront to really much wider community. And I think if more of this voice is needed, but I think it's just that we want to have a more constructive dialogue to bring the both sides together to figure out a constructive solution.
+01:22:31
+So another interesting space where security is really important is in the space of any kinds of transactions, but it could be also digital currency. So can you maybe talk a little bit about block chain? And can you tell me what is a block chain?
+01:22:50
+I think the operative word itself is actually very overloaded in general, like I.
+01:22:57
+Right. Yes. So you don't want to talk about it.
+01:23:00
+And we refer to this distributed in a decentralized fashion. So essentially you have in a community often those that come together and even though each one may not be trusted and its allies, certain thresholds of the set have knows and it behaves properly, then the system can essentially achieve certain properties. For example, in the distribute, like just letting you have you can maintain an immutable log and you can ensure that some of the transactions actually are agreed upon and then it's immutable and so on.
+01:23:45
+So first of all, what's a ledger?
+01:23:47
+So it's it's like a database. It's like a data entry.
+01:23:51
+And so distributed ledger is something that's maintained across or is synchronized across multiple sources. Multiple nodes, multiple nodes. Yes.
+01:24:00
+And so where is this idea that how do you keep so it's important.
+01:24:07
+A ledger, a database to keep that. To make sure so what are the kinds of security vulnerabilities that you're trying to protect against in the context of a distributed ledger?
+01:24:21
+So in this case, for example, you don't want to send malicious notes to be able to change the transaction logs and in certain cases cut double spending like you're also costs. You can also cause different views in different parts of the network and so on.
+01:24:40
+So the ledger has to represent if you're capturing like financial transactions as to represent the exact timing and the exact occurrence and no duplicates. All that kind of stuff has to be represent what actually happened. OK, so what are your thoughts on the security and privacy of digital currency? I can't tell you how many people write to me to interview various people in the digital currency space. There seems to be a lot of excitement. There seems to be some of it.
+01:25:14
+To me, from an outsider's perspective, it seems like dark magic.
+01:25:19
+I don't know how secure. I think the foundation from my perspective of digital currencies, that is. You can't trust anyone, so you have to create a really secure system, so can you maybe speak about how we just talked in general about digital currency is and how you how we can possibly create financial transactions and financial stores of money in the digital space?
+01:25:49
+So you ask about security and privacy. And so so, again, as I mentioned earlier, in security, we actually talk about two main properties, the integrity and confidentiality. So there's another one availability. And you want the system to be available by here for the question you ask. Let's just focus on integrity and confidentiality. Yes.
+01:26:14
+So so far, integrity of this distributor essentially, as we discussed. So we want to ensure that the different knows.
+01:26:22
+And so they have this consistent user base down through what we call a consensus protocol that they establish this shared a view on this ledger and that you can go back and change is compatible and so on.
+01:26:42
+So and so in this case, then the security often refers to this integrity property and essentially asking the question how much work, how how can you attack the system so that the attacker can change the lock, for example.
+01:27:03
+Right. How hard is it to make an attack like that?
+01:27:05
+Right. Right. And then that very much depends on the the consensus mechanism, the how the system is built and all that. So there are different ways to build these decentralized systems.
+01:27:20
+And people may have heard about the terms like work, perhaps take this defensive mechanisms and really depends on how how the system has been built and also how much resources, how much work has gone into the network to actually say how secure it is.
+01:27:42
+For example, and people talk like infixes, work system so much that electricity has been burned.
+01:27:49
+So there's differences. There's differences in the different mechanisms and the implementations of a distributed ledger used for digital currency. So this Bitcoin is whatever it there's so many of them and there's underlying different mechanisms. And there's arguments, I suppose, about which is more effective, which is more secure, which is more.
+01:28:10
+And what is needed is what amount of resources needed to be able to attack the system. Like, for example, what percentage of the nose do you need to control compromised in order to try to change the log?
+01:28:27
+And those are things. Do you have a sense of those are things that can be shown theoretically through the design of the mechanisms, or does it have to be shown empirically by having a large number of users using the currency?
+01:28:41
+I see. So in general, for each consensus mechanism, you can actually show theoretically what is needed is to be able to attack the system. Of course, there are there can be different types of attacks, as we've discussed at the beginning. And so that and it's difficult to give, like, you know, a complete estimates, like really how much is needed to compromise the system. But in general right now is to say what percentage of the is you need to compromise and so on.
+01:29:20
+So we talked about integrity. So on the security side. And then you also mentioned the privacy or the confidentiality side. Does it have some of does it have some of the same problems and therefore some of the same solutions that you talked about on the machine learning side with the financial privacy and so on?
+01:29:41
+Mm hmm. Yeah. So actually, in general, on the public ledger, in this public decentralized systems and actually nothing is private. So all the transactions, policies and the like anybody can see. So in that sense, there's no confidentiality. And so usually or you can do as then there are other mechanisms that you can builtin to enable confidentiality, privacy after the transactions and the data and so on. That's also some of the work that's both my group and also my startup does as well.
+01:30:22
+What's the name of the startup Oasis? Lapps Oasis Lives. And so the confidentiality aspect. There is even though the transactions are public, you want to keep some aspect confidential of the identity of the people involved in transactions. What what is their hope to keep confidential in this context?
+01:30:42
+So in this case, for example, you want to enable like private confidential transactions. Even so, so that different essentially types of data that you want to keep private are confidential. And you can utilize different technologies, including your knowledge proofs and also secure computing and techniques. And to hide at a the guy who is making the transactions to whom and the transaction amounts.
+01:31:15
+And in our case, also, we can enable that confidential smart contracts. And so that's you don't know the data and the execution of the smart contract and so on. And we actually are combining these different technologies and to going back to the earlier discussion that we had. Enabling like ownership of data and privacy of data and so on, so so at Oasis Labs, we're actually building what we call a platform for responsible data economy to actually combine these different technologies together and to enable secure and privacy, preserving competition and also an.
+01:32:02
+Using that issue to help and provide immutable log off users ownership today they have and the policies they want the data to adhere to the usage of the data to adhere to and also how that it has to be utilized. So all of this together can build's we can distributors secure computing fabric that helps to enable a more responsible data economy and other things together.
+01:32:29
+Yeah. Wow, that was eloquent. OK, you're involved in so much amazing work that will never be able to get to. But I have to ask at least briefly about program synthesis, which at least in a philosophical sense, captures much of the dreams of what's possible in computer science and artificial intelligence. First, let me ask, what is program synthesis and neural networks be used to learn programs from data? So can this be learned? Some aspect of the synthesis can be learned.
+01:33:03
+Mm hmm. So program is about teaching computers to Reichheld. To program, and I think it was one of our ultimate dreams or goals and, you know, I think Anderson talked about software eating the world. So I say once we teach computers to write software, to write programs, then I guess computers would be the sensitivity.
+01:33:34
+Yeah, exactly. So, yeah. And also for me, actually.
+01:33:41
+When I shifted from security to more, I'm any program since its programs in the adversarial mission in the these added to fears that I am particularly focused on like programs is one of the first questions that actually started. Well, that's just a question, I guess, with from the security side, there's a you know, you're looking for holes in programs, so I at least see small connection. But why what was your interest for program syntheses as because it's such a fascinating, such a big, such a hard problem in the general case.
+01:34:18
+Why program synthesis?
+01:34:20
+So the reason for that is actually when I shifted my focus from security into I am learning and actually one of my main motivation at the time and is that even though I have been doing a lot of work in secrecy and privacy, but I have always been fascinated about building intelligent machines, and that was really my main motivation to spend my time and my mission.
+01:34:49
+And he says, I really want to figure out how we can build intelligent machines and to help us towards that goal.
+01:35:00
+And program synthesis is really one of, I would say, the best domain to work on. I actually kind of like a program. Syntheses is like the perfect playground for building intelligent machines and for artificial general intelligence.
+01:35:17
+Yeah, well, it's also in that sense is a playground. I guess it's it's the ultimate test of intelligence because. Yes, I think I think if you can generate that on your networks, can learn good functions and they can help you all in classification tasks. But to be able to write programs. Right. That's that's the epitome for the machine. So that's the same as passing the Turing test in natural language. But with programs, it's able to express complicated ideas to reason through ideas and.
+01:35:52
+Yeah. And boil them down to algorithms.
+01:35:55
+Yes, exactly. Exactly.
+01:35:57
+So can this be learned? How far are we? Is there hope one of the open challenges?
+01:36:04
+Yeah, very good questions. And we're still at an early stage, but already I think we have seen a lot of progress. I mean, definitely we have no existence proof, just like humans can write programs, so there's no reason why computers cannot write programs. So I think that's definitely an achievable goal is just how long it takes.
+01:36:28
+And then and even today, we actually have the program synthesis community, especially the program synthesis via learning how we call it neuro program, since this community is still very small. But the community has been growing and we have seen a lot of progress and in limited domains, I think actually a program of synthesis is ripe for real world applications. So actually, it was quite amazing, I was as I was giving a talk. So here is a rework conference.
+01:37:06
+Do you think? I mean, I actually so I gave another talk at the previous conference seeing deep reinforcement learning. And then I actually met someone from a startup and the CEO of the startup and the what he saw and they recognized and he actually said one of our papers actually has they have put that has actually become a key products initiative and that was program centered in that particular case. It was natural language translation, translating natural language description into squawkers. Oh, wow, that that direction.
+01:37:52
+OK, so so yeah, so the program, since this is a limited domain's you well specify domain's actually already we can see really great progress and applicability in the real world for domains like I mean, as an example, you said natural language, being able to express something to just normal language and then convert it into a database equal.
+01:38:19
+Ask you all query. Right. And that's how how to solve the problem is that because it seems like a really hard problem, OK, in limited domains, actually, it can work pretty well.
+01:38:32
+And now this is also a very active domain of research at the time. I think when he saw our paper, by the time we were at the state of the arts. Yeah. And that task and since then, actually now there has been more work and with even more sophisticated datasets. And so but I, I think I wouldn't be surprised that some more of this type of technology really gets into the real world. That's exciting.
+01:39:01
+In the near term, being able to learn in the space of programs is is super exciting. I still am still skeptical because I think it's a really hard problem. But actually progress.
+01:39:14
+And also, I think in terms of the ask about open challenges, I think the domain is full of challenges. And in particular, also, we want to see how we should measure the progress in the space. And I would say mainly and three main, I would say metrics. So one is a complexity of the program that we can synthesize and that we actually have clear measures. And just look at, you know, the past, the publications.
+01:39:43
+And even like, for example, I was at the recent news conference. Now there's actually a very sizable like session dedicated to programming seamstresses, which is even neuro programs, which is great.
+01:39:56
+And and we continue to see the increase in like I think there were sizable it's five people.
+01:40:08
+It's this small community, but it is growing. And they will all when touring awards one day like it. Right.
+01:40:16
+So so we can actually see increase in the complexity of the programs that these just synthesise.
+01:40:26
+So to as the complexity of the actual text of the program or the running time complexity, which complexity of how the complexity of that task to be synthesized and the complexity of the actual synthesizer programs.
+01:40:42
+So so the lines of code even for example, OK, I got you. But it's not the theoretical know about the running time of the year.
+01:40:52
+OK.
+01:40:54
+And you can see the complexity is decreasing already.
+01:40:57
+I mean, we want to be able to synthesize it more and more complex programs, bigger and bigger programs. So we want to see that. We want to increase complexity.
+01:41:07
+You have to think through because I thought of complexity is you want to be able to accomplish the same task with the simple answer is no, we are not doing that.
+01:41:16
+It's more it's more about how complex a task we can think of being able to see it.
+01:41:21
+Got it. Being able to synthesize programs, learn them for more and more difficult.
+01:41:27
+So, for example, initially our first working program since this is this is what's to translate into language description, into really simple programs called FTT, if this and that.
+01:41:38
+So given the chigger condition, what is the action you should take? So that program is a super simple. You just identify the trigger conditions and the action. Yeah. And then they set out with cigarets. It gets more complex. And then also we started to synthesize programs with loops and said, oh no.
+01:41:59
+And if you could synthesize recursion, it's all over that.
+01:42:03
+Actually, one of our works actually is recursive progress anyway.
+01:42:09
+So that's why the complexity and the other one is.
+01:42:14
+Generalization like could one way a train and learn a program synthesiser in this case and, you know, programs to synthesize programs, then you wanted to generalize.
+01:42:27
+So for a large number of inputs to be able to generalize to previously unseen inputs. Got it. And so so some of the work we did earlier and then using recursive neuro programs actually showed that a recursion actually is important. And to learn and if you have recursion, then for a certain set of tasks, we can actually show that you can actually have perfect analyzation. So I said that one, the best people were worried that I clearly. So that's one example of we want to learn these programs that can generalize better.
+01:43:11
+But that works for certain tasks, certain domains. And there's a question of how we can and essentially develop more techniques that can have generalization for a wider set of domains and so on. So that's another area.
+01:43:28
+And then and then the the third challenge, I think, will it's not just for programming synthesis is also cutting across other fields in. Shooting and also including like reinforcement and in particular is that. This adaptation is that we want to be able to learn from the past and tasks and training and so on to be able to solve new task. So, for example, in programming synthesis today, we still are working in the setting where a given particular task, we train the the model and to solve this particular task.
+01:44:15
+But that's not how humans work. The whole point is we train a human. Then you can then program to solve new tasks, right?
+01:44:25
+Exactly. And just like the first, we don't want to just transition to play a particular game at its ATRISCO or whatever.
+01:44:36
+We want to train these agents that can and essentially extract knowledge from the past, the experience to be able to adapt to new tasks and solve new tasks. And I think this is a particular importance for programming synthesis.
+01:44:52
+Yeah, that's the whole point. That's the whole dream of programs. This is, as you're learning, a tool that can solve new problems, right?
+01:44:59
+Exactly. And I think that's a particular domain that as a community we need to put more emphasis on. And I hope that we can make more progress there as well.
+01:45:11
+Awesome. There's a lot more to talk about. Let me ask that you also had a very interesting and we talked about rich representations. You had a rich life journey. You did your bachelors in China and your master's and Ph.D. in the United States, CMU in Berkeley. Are there interesting differences? I told you, I'm Russian. I think there's a lot of interesting difference between Russia and the United States.
+01:45:38
+Are there, in your eyes, interesting differences between the two cultures from the silly romantic notion of the spirit of the people to the more practical notion of how research is conducted that you find interesting or useful in your own work of having experienced both?
+01:45:59
+And that's a good question. I think so. I I studied in China from undergraduate, and that was more than 20 years ago.
+01:46:12
+This is a long time. Is there at that time and used a lot.
+01:46:17
+Yes, I actually I think I think even more so. Maybe something that's even more different from my experience and a lot of computer science and researchers and practitioners as that's so far. My undergrads actually studied physics. Nice, very nice. And then I switched be science in graduate school.
+01:46:39
+What happened was there was there is there another possible universe where you could have become a theoretical physicist at Caltech or something like that?
+01:46:51
+And that's very possible. Some of my undergrad classmates then they later studied physics, got the 15 physics from the school from. Yeah, from tough physics programs.
+01:47:06
+So so you switched to I mean, if that from that experience of doing physics in your bachelor's, what made you decide to switch to computer science and computer science and arguably the best university, one of the best universities in the world for computer science with Carnegie Mellon, especially for grad school and so on? So what second only time I teach is OK.
+01:47:34
+And now what was the choice like and what was the move to the United States like? What was that whole transition? And if you remember, if there's still echoes of some of the spirit of the people of China and you in New York. Right.
+01:47:49
+It's like three questions. Yes. I'm sorry. That's OK. So, yes, I guess the first transition from physics to computer science. Yes. So when I first came to the United States, I was actually in the physics Ph.D. program at Cornell.
+01:48:06
+Yeah, I was there for one year and then I switched to computer science and that I was in the program at Carnegie Mellon.
+01:48:13
+And so, OK, so the reasons for switching. So one thing.
+01:48:17
+So that's why I also mentioned that about the difference in backgrounds, about having studied physics. Yes. First in undergrad.
+01:48:25
+Um, actually, really I really did enjoy my undergrad at a time and education in physics. I think that actually really helped me in my future work in computer science, actually, even from machine learning, a lot of the machine learning stuff, the commissioning methods, many of them actually came from physics for honest most.
+01:48:53
+But anyway, most of everything came from physics anyway.
+01:48:57
+So so when I studied physics, I was, um, I think I was really attracted to physics. And it was it's really beautiful.
+01:49:08
+And I actually Cai's physics is the language of nature.
+01:49:14
+And I actually could remember like one moment, oh, even undergrads like Adam. And the great thing to happen and I used to study in the library and I remember like one day I was in the library and I and I was like writing on my notes and so on. And I got so excited that I realized that if you just from a few simple axioms, a few simple laws, I can derive so much. It's almost like I can derive the rest of the world.
+01:49:51
+Yeah. The rest of the universe. Yes. Yes. So that was like, amazing.
+01:49:56
+Do you think you have you ever seen or do you think you can rediscover that kind of power and beauty and computer science in the world?
+01:50:04
+Oh, that's very interesting. So that gets to, you know, the transition from physics to science. It's it's quite different for me and for physics being in grad school, actually, things changed. So one, as I started to realize that when I started doing research in physics at the time, I was doing theoretical physics.
+01:50:29
+And a lot of is that you still have the beauty by this very difference. So I had to actually do a lot of simulation.
+01:50:36
+So essentially I was actually writing in some in some cases writing Fortune, going to Fortune to actually.
+01:50:47
+Right, do like do simulations and so on, that was not not exactly beautiful, I, I enjoy doing and also at the time from talking with the senior, you know, students in the program. I realize many of the students actually were going off to Wall Street and and so on, and so and I've always been interested in computer science and actually essentially Thomas s the C programming program.
+01:51:26
+And so which one are you in college and college somewhere in the summer for fun.
+01:51:33
+And I learned to do C programming, you know, in physics at the time. I think now the program has changed. But at the time, really the only class we had in it is a computer science education was introduction to I forgot to computer science or computing and fortune. Seventy seven.
+01:51:57
+There's a lot of people that still use Fortran. I'm actually if you're a programmer out there, I'm looking for an expert to talk to about Fortran.
+01:52:07
+They seem to there's not many, but there's still a lot of people that still is fortunate and still a lot of people, these COBOL, so much so.
+01:52:15
+And so then I realized instead of just doing programming for doing simulations and so on, that I may as well just change to computer science. And also one thing I really liked, and that's a key difference between the two, as in computer science is so much easier to realize your ideas. If you have idea, you write it up, your code it up, and then you can see it's actually back and you can you can see it, you can bring it to life, to life, racing, physics.
+01:52:46
+If you have a good theory, you know, you have to wait for the experimentalists to do the experiments and to confirm that theory. And things just take so much longer. And and that's the reason I in physics, I decided to do theoretical physics. It was because I had my experience with experimental physics first that you have to fix the equipment and most of our time fixing the equipment first. So super expensive equipment.
+01:53:14
+So there's a lot of is have to collaborate with a lot of people. It takes a long time.
+01:53:19
+It takes a village, right? Yeah, it's messy. So I decided to switch to computer science. And the one thing I think maybe people have realized is that for people who study physics, actually it's very easy for physicists to change, to do something else. Yes, I think physics provides a really good training.
+01:53:37
+And yeah, so actually it was very easy to switch to computer science. But one thing, going back to your earlier question, so one thing I actually did realize and so there is a big difference between computer science and physics, physics, you can drive through the whole universe from just a few simple laws and computer science, given that a lot of it is defined by humans, the systems are defined by humans and it's artificial.
+01:54:08
+Like essentially you create a lot of these artifacts and so on. It's it's not quite the same. You don't derive the computer systems with just a few simple laws. You actually have to see. There is historical reasons why our system is built and designed one way versus the other.
+01:54:30
+There's a lot more complex, less elegant simplicity of equals C squared that kind of reduces everything down to this beautiful fundamental equations. But what about the move from China to the United States? Is there anything that still stays in you that's contributed to your work, the fact that you grew up in another culture?
+01:54:54
+So, yes, I think especially back then, it's very different from now. So, you know, now they actually I see these students coming from China and even and actually they speak fluent English. It was just, you know, like amazing. And they have already understood so much of the culture in the US and so on. And it was to you is all foreign.
+01:55:21
+It was it was a different time at the time, actually. Even we didn't even have easy access to email right now to mention about the Web.
+01:55:32
+Yeah, I remember I had to go to, you know, specific like, you know, privileged server rooms to use and his WI at the time, we had much less knowledge about the Western world.
+01:55:50
+And actually at the time, I didn't know actually the the in the US, the West Coast where is much better than the East Coast.
+01:56:00
+Yeah. It seems like that's actually it's very it's very interesting. Yeah. And that is so different at the time. I would say there's also a bigger cultural difference because there so much less opportunity for shared information. So it's such a different time world.
+01:56:19
+So let me ask maybe a sensitive question. I'm not sure, but I think you and I are in a similar positions since I've been here for already 20 years as well.
+01:56:30
+And looking at Russia from my perspective and you're looking at China in some ways, it's a very distant place because it's changed a lot. But in some ways you still have echoes. You still have knowledge of that place.
+01:56:42
+The question is, you know, China is doing a lot of incredible work. And I do you see please tell me there's an optimistic picture. You see where the United States and China can collaborate and sort of grow together in the development of our eye towards, you know, there's different values in terms of the role of government. So on of ethical, transparent, secure systems. We see it differently in the United States a little bit than China, but we're still trying to work it out.
+01:57:11
+Do you see the two countries being able to successfully collaborate and work in a healthy way without sort of fighting and making an AI arms race kind of situation?
+01:57:23
+Yeah, I believe so. I think it's science. There's no border and the advancement of the technology helps. Everyone helps the whole world. And so I certainly hope that the two countries will collaborate, and I certainly believe so.
+01:57:44
+Do you have any reason to believe so except being an optimist? So, again, like I said, science has no borders and especially science doesn't about borders, right? And you believe that? Well, you know, in in the former Soviet Union during the Cold War.
+01:58:02
+So, yeah. So this is the other point I was going to mention is that especially in academic research, everything is public. Like we would write papers with open source codes and all this is in the public domain.
+01:58:16
+It doesn't matter whether the person is in the US, in China or some other parts of the world, and they can go on archive and look at the latest research and results so that openness gives you hope.
+01:58:28
+Yes, me too.
+01:58:29
+And that's also how a as a world we make progress the best. So apologize for the romanticized question, but looking back, what would you say was the most transformative moment in your life that. Maybe made you fall in love with computer science, you said physics, you remember there was a moment where you thought you could derive the entirety of the universe.
+01:58:57
+Was there a moment that you really fell in love with the work you do now from security to machine learning to program synthesis?
+01:59:05
+So maybe that's as I mentioned, actually in college. I want somebody to tell myself programming. See, yes.
+01:59:14
+You just read the book and you told me you fell in love with computer science by programming.
+01:59:20
+And C, remember mentioned when one of the draws from me to computer science is how easy it is to realize your ideas.
+01:59:28
+So once I read the books that I get taught myself how to program and see immediate what what did I do? Like I program to games and what is just simple, like it's a goal game, like I supports you can move the stones and so on and the other one actually programmed the game. That's like a 3D Tetris. It was. You have to be a super hard game to play because it's obvious the standard to the electricity sector, a 3D thing.
+01:59:58
+But like I realized, wow, you know, I just had this idea. So to try it out and then do it, you can just do it.
+02:00:05
+And so that's when I realized, wow, this is amazing.
+02:00:10
+Yeah. You can create yourself. Yes. Yes, I did.
+02:00:13
+It's actually far from nothing to something that's actually out in the real world.
+02:00:19
+So let me ask let me ask a silly question or maybe the ultimate question. What is to you the meaning of life? What what gives your life meaning? Purpose, fulfillment, happiness, joy. OK, these are two different questions, very different, yeah, as each of you ask this question, maybe this question is probably the question that has followed me all my life the most.
+02:00:50
+Have you discovered anything, any satisfactory answer for yourself? Is there something is there something you've arrived?
+02:00:59
+You know, there's a moment I've talked to a few people who have faced, for example, a cancer diagnosis or face their own mortality, and that seems to change their views. And it seems to be a catalyst for them removing most of the crap out of seeing that most of what they've been doing is not that important and really reducing it and to saying, like, here's actually the few things that really give me give meaning.
+02:01:29
+Mortality is a really powerful catalyst for that. It seems like facing mortality, whether it's your parents dying or somebody close to dying or facing your own death for whatever reason or cancer and so on.
+02:01:40
+So, yeah.
+02:01:41
+So in my own case, I didn't need to face mortality to try to, you know, to ask that question. Yes. And I think there are a couple things. So one is like, who should be defining the meaning of your life? Is there some kind of even greater things than you who should define the meaning of your life? So, for example, when people say that the searching, the meaning for your life is is there some are there is some outside voice or is there something and you know, I sort of you who actually tells you, you know, so people talk about, oh, you know, this is what you have been born to do.
+02:02:31
+Right. Right. Like, this is your destiny. And so who.
+02:02:38
+Right. So that's one question like who gets to define the meaning of your life? Should you be finding some other thing, some other factor to define this for you? Always something. Actually, it's just entirely what you define yourself. And it can be very arbitrary. Yeah.
+02:02:55
+So it is an inner an inner voice or an outer voice, whether it's it could be spiritual, religious to God or some other components of the environment outside of you or just your own voice. Do you have a do you have an answer there.
+02:03:09
+So OK, so that's. I have an answer. Yeah. And through you know, the long period of time of thinking and searching, even searching through our sites.
+02:03:21
+Right. You know, voices just outside of me so that I have. And so I've come to the conclusion and realization that it's you yourself that defines the meaning of life. Yeah, that's a big burden, though, isn't it? Yes, yes, yes and no, right. So then you have the freedom to define that. Yes.
+02:03:46
+And and another question is like, what does it really mean by the meaning of life? Right. And also whether the question even makes sense. Absolutely. And you said it somehow distinct from happiness, so meaning is something much deeper than just any kind of emotional and any kind of contentment or joy or whatever it might be much deeper. And then you have to ask, what is deeper than that? What is what is there at all? And then the questions that is being silly.
+02:04:25
+Right. And also, you can see it's deeper about you can also say it's a shallow depending on how people want to define the meaning of their life. So, for example, most people don't even think about this question then the meaning of life. To them, it doesn't really matter that much. And also whether knowing the meaning of life and whether it actually helps your life to be better with it, helps your life to be happier.
+02:04:48
+And these actually open questions, it's not because most questions are, but I tend to think that just asking the question, as you mentioned, as you've done for a long time, is the only that there is no answer. And asking the question is a really good exercise. I mean, I have this for me personally. I've had a kind of. Feeling that creation is. For me has been very fulfilling, and it seems like my meaning has been to create and I'm not sure what that is like, I, I don't have a single group of kids.
+02:05:22
+I'd love to have kids, but I also sounds creepy. But I also see sort of these head C programs. I see programs as little creations. I see robots as little creations. And I think those are those are those being and then ideas, theorems and creations and those somehow, intrinsically, like you said, bring me joy. And I think they do to a lot of these scientists, but I think they do a lot of people.
+02:05:51
+So that to me, if I had to force the answer to that, I would say creating new things yourself for you, for me, for me, for me, I don't know.
+02:06:04
+But like you said, as he keeps changing.
+02:06:06
+Is there some answer that some people they can I think they may say experience they could their meaning of life, they just want to experience to the richest and fullest they can. And a lot of people do take that path.
+02:06:20
+Yes, seeing life is actually a collection of moments and then trying to make the richest possible sets fill those moments with the richest possible experiences.
+02:06:31
+Yeah, right.
+02:06:32
+And for me, I think it's certainly we do share a lot of similarities here. So creation is also very important for me, even from the things I've already talked about.
+02:06:40
+And even like, you know, writing papers. And these are all creations as well. Um, and I have now quite that whether that is really the meaning of my life, like, in a sense also then maybe like what kind of things to do created that so many different things that you could create. And and that's what you can say. Another view is maybe growth, as it's really that different from experience. Growth is also maybe to have a meaning of life.
+02:07:10
+It's just you try to grow every day, try to be a better self every day. And and also ultimately, we I hear it's part of the overall evolution, the right that the world is evolving.
+02:07:28
+And it's funny. Isn't it funny that the growth seems to be the more important thing than the thing you're growing towards? It's not the goal. It's the the journey to it. Sort of it's almost it's almost when you submit a paper, it's there's a sort of depressing element to it, not to submit a paper.
+02:07:47
+But when that whole project is over, I mean, there's a there's a gratitude, there's a celebration and so on.
+02:07:52
+But you usually immediately looking for the next thing. Yeah. The next step. Right. It's not it's not at the end of it is not the satisfaction is the the hearts of the challenge. You have to overcome the growth of the process. It's something somehow probably deeply within us. The same thing that drove the drives. The evolutionary process is somehow within us with everything, the work, the way the way we see the world. Since you're thinking about this, so you're still in search of an answer.
+02:08:20
+I mean, yes and no. In a sense, that's I think for people who really dedicate time to search for the answer, to ask the question, what's the meaning of life? It does not necessarily bring your happiness.
+02:08:37
+Yeah, it's a question we can say, like whether it's a well defined question and. And on other and but on the other hand, given that you get to answers yourself, you can define yourself, then sure.
+02:08:54
+That I can just, you know, give it an answer. And in that sense, yes, it can help like that. Can we discuss it? If you say, oh, then my meaning of life is to create, to grow, then then yes. Then I think they can help. But how do you know that that is really the meaning of life?
+02:09:17
+Are the meaning of your life.
+02:09:19
+It's. There's no way for you to really answer the question for sure, but something about that certainty is liberating. So it might be an illusion. You know, you might not really know. You might be just convincing yourself falsely, but being sure that that's the meaning. The there's something.
+02:09:38
+There's something liberating in that in that there's something freeing and knowing this is your purpose so you can fully give yourself to that without, you know, for a long time, you know, I thought, like, it's all like why what's how do we even know what's good and what's evil like? Isn't everything just relative? Like, how do we know? You know, the question of meaning is ultimately the question of why do anything?
+02:10:05
+Why is anything good or bad, why is anything right.
+02:10:10
+Exactly. And then you start to I think just like you said, I think it's a really useful question to ask.
+02:10:19
+But if you ask it for too long and too aggressively, it may not be so productive, not be productive, and not just for traditionally societally defined success, but also for happiness. It seems like asking the question about the meaning of life is like a trap is were destined to be asking.
+02:10:43
+We're destined to look up to the stars and ask these big wide questions we'll never be able to answer, but we shouldn't get lost in them. I think that's probably the that's least the lesson I picked up so far on that topic.
+02:10:55
+Let me just add one more thing. So it's interesting. And so I said sometimes, yes, it can help you to focus. So one night when I shifted my focus from security, to I mention any at the time, the actually one of the main reasons that I did that was because at the time I thought my mini many of my life and the purpose of my life is to build intelligent machines. And that's and then your inner voice said that this is the right.
+02:11:36
+This is the right journey to take to build intelligent machines and that you actually fully realized you took a really legitimate big step to become one of the world class researchers to actually make it to actually go down that journey.
+02:11:49
+Yeah, that's profound. That's profound.
+02:11:53
+I don't think there's a better way to end a conversation than talking for for a while about the meaning of life. Don is a huge honor to talk to you. Thank you so much for talking today.
+02:12:05
+Thank you. Thank you. Thanks for listening to this conversation with Don Song, and thank you to our presenting sponsor, Kashyap. Please consider supporting the podcast by downloading cash and using Culex podcast to enjoy this podcast. Subscribe on YouTube. Review it with five stars on Apple podcast. Support on Patrón. Simply connect with me on Twitter. Allex Friedemann. And now let me leave you with some words about hacking from the great Steve Wozniak. A lot of hacking is playing with other people, you know, getting them to do strange things.
+02:12:41
+Thank you for listening and hope to see you next time.

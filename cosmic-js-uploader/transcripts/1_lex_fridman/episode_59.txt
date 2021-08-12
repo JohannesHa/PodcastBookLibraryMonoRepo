@@ -1,0 +1,456 @@
+00:00:00
+The following is a conversation with Sebastian Thrun. He's one of the greatest roboticists, computer scientists and educators of our time. He led the development of the autonomous vehicles at Stanford that won 2005 Dorper Grand Challenge and placed second in the 2007 Dorper Urban Challenge. He then led the Google self-driving car program, which launched the self-driving car revolution. He taught the popular Stanford course on artificial intelligence in 2011, which was one of the first massive open online courses, or Mook's, as are commonly called.
+00:00:35
+That experience led him to co-found Udacity, an online education platform. If you haven't taken courses on it yet, I highly recommend their self-driving car program, for example, is excellent. He's also the CEO of Kittyhawk. A company working on building flying cars are more technically Evita's, which stands for electric vertical takeoff and landing aircraft. He has launched several revolutions and inspired millions of people. But also, as many know, he's just a really nice guy.
+00:01:06
+It was an honor and a pleasure to talk with him. This is the Artificial Intelligence podcast. If you enjoy subscribe, I need to give it five stars, an Apple podcast, follow it on Spotify, support on Patrón or simply connect with me on Twitter. Allex Friedman spelled F.R.. I'd imagine if you leave a review on Apple podcast or YouTube or Twitter, consider mentioning ideas, people topics you find interesting. It helps guide the future of this podcast.
+00:01:35
+But in general I just love comments with kindness and thoughtfulness in them. This podcast is a side project for me, as many people know, but I still put a lot of effort into it. So the positive words of support from an amazing community from you really help. I recently started doing ads at the end of the introduction. I'll do one or two minutes after introducing the episode and never any ads in the middle that can break the flow of the conversation.
+00:02:01
+I hope that works for you and doesn't hurt the listening experience. I provide timestamps for the start of the conversation that you can skip to, but it helps if you listen to the ad and support this podcast by trying out the product or service being advertised. The show is presented by Kashyap, the number one finance app in the App Store. I personally use cash out to send money to friends, but we can also use it to buy, sell and deposit Bitcoin in just seconds.
+00:02:28
+Cash also has a new investing feature. You can buy fractions of a stock, say, one dollars worth, no matter what the stock prices. Brokerage services are provided by cash up investing subsidiary of Square. And remember SIPC. I'm excited to be working with cash out to support one of my favorite organizations called First Best known for their first robotics and Lego competitions. They educate and inspire hundreds of thousands of students and over one hundred and ten countries and have a perfect rating.
+00:02:57
+And Charity Navigator, which means the donated money is used to maximum effectiveness. When you get cash out from the App Store or Google Play and use Scolex podcast, you'll get ten dollars in cash. I will also donate ten dollars. The first, which again is an organization that I've personally seen, inspire girls and boys to dream of engineering a better world. And now here's my conversation with Sebastian Thrun. You mentioned that The Matrix may be your favorite movie, so let's start with the crazy philosophical question.
+00:03:48
+Do you think we're living in a simulation? And in general, do you find the thought experiment interesting, defined simulation?
+00:03:57
+I would say maybe we are. We are not. But it's completely irrelevant to the way we should act.
+00:04:03
+But putting aside for a moment the fact that it might not have any impact on how we should act as human beings for people studying theoretical physics, these kinds of questions might be kind of interesting. Looking at the universe is an information processing system.
+00:04:20
+Universe is an information processing system with a huge physical, biological, chemical computer. There's no question. But I live here and now I care about people who care about us.
+00:04:32
+What do you think is trying to compute? I don't think there's an intention. I think it just the world evolves the way that evolves. And it's it's beautiful. It's unpredictable. And I am very grateful to be alive.
+00:04:44
+Spoken like a true human, which last time I checked there was or that, in fact, this whole conversation is just the Turing test to see if if indeed if indeed you are.
+00:04:56
+You've also said that one of the first programs of the first few programs you've written was a wait for it 57 calculator.
+00:05:05
+Yeah, maybe that's early eighties and on a date calculators in the early 80s, correct?
+00:05:12
+Yeah. So if you were to place yourself back into that time, into the mindset you were in, could you have predicted the evolution of computing, ie the Internet technology in the decades that followed?
+00:05:27
+I was super fascinated by Silicon Valley, which I've seen on television once, and thought, my God, this is so cool that built like divans there. And CPU's, how cool is that? And as a college students, a few years later, a few years later, I decided to study intelligence and study human beings and found that even back then in the 80s and 90s, that artificial intelligence is what fascinated me the most was missing is that back in the day, the computer is small.
+00:05:54
+They're like the brains you could build were not anywhere bigger as a cockroach. And Carcassonne, very smart. So we weren't at the scale yet where we are today.
+00:06:02
+Did you dream at that time to achieve the kind of scale we have today or did that's impossible.
+00:06:09
+I always wanted to make robots smart. I felt it was super cool to build an artificial human and the best way to build an artificial. You invent a robot because that's kind of the closest you could do. Unfortunately, we aren't there yet. The robots today are still very brittle, but it's fascinating to to study intelligence from a constructive perspective and build something to understand you build.
+00:06:31
+What do you think it takes to build an intelligent system and an intelligent robot? I think the biggest innovation that we've seen, this machine learning, and it's the idea that the computers can basically teach themselves. Let's give an example, I'd see everybody pretty much knows how to walk and we learn how to walk in the first year or two of our lives, but no scientist has ever been able to write down the rules of human gait. We don't understand that.
+00:06:58
+We can't behave in our brains. Somehow we can practice it. We understand it, but we can articulate it. We can't pass it on by language. And that, to me, is kind of the deficiency of today's computer programming problem, a computer that's so insanely dumb that you have to give them rules for every contingencies they unlike the way people learn from data and experience. Computers are being constructed. And because it's so hard to get this instruction set right, we software engineers to earn a thousand dollars a year.
+00:07:27
+Now, the most recent innovation, which is have been the make for like 30, 40 years, is an idea that computers can find their own rules so they can learn from falling down and getting up the same way children can learn from falling down and getting up. And that evolution has led to a capability that's completely unmatched. Today's computers can watch experts do their jobs, whether you're a doctor or a lawyer, pick up the regularities, learn those rules, and then become as good as the best experts.
+00:07:55
+So the dream of in the 80s of expert systems, for example, had at its core the idea that humans could boil down their expertise on a sheet of paper so as to reduce sort of be able to explain to machines how to do something explicitly. So do you think.
+00:08:13
+What's the use of human expertise into this whole picture? Do you think most of the intelligence will come from machines learning from experience without human expertise input? So the question for me is much more. How do you express expertise? You can express expertise by writing a book. You can express expertise by showing someone what you're doing, can express expertise by applying it by by many different ways. And I think the expert systems was our best attempt in the eye to capture expertise in rules where someone sat down and said, here, the rules of human gait.
+00:08:45
+Here's when you put your big toe forward and your huge backwards and you stop stumbling.
+00:08:51
+And as we now know, the set of rules, the set of language that you can command is incredibly limited. The majority of the human brain doesn't deal with language. It deals with subconscious numerical perceptual things if you don't even every self aware of. Now, when a system watches an expert do their job and practice their job, it can pick up things that people can't even put into writing into books or rules. And that's what the of power is.
+00:09:21
+We now have a system that, for example, look over the shoulders of highly paid human doctors like dermatologists or radiologists, and they can somehow pick up those skills that no one can express in words. So you were a key person in launching three revolutions, online education and autonomous vehicles and flying cars or Vitalis, so high level. And I apologize for the philosophical questions. No apology necessary.
+00:09:53
+How do you choose what problems to try and solve drives you to make those solutions a reality?
+00:09:59
+I have two two desires in life. I want to literally make the lives of others better or as you say, maybe jokingly make the world a better place. I believe in this, as funny as it sounds. And second, I want to learn I want to get in because I don't want to be in the job I'm good at, because if I'm in a job that I'm good at, the chance for me to learn something interesting is actually minimized.
+00:10:23
+So I want to be in a job and bad. It was really important to me. So in a bill, for example, what people often called flying cars is the electrical vertical takeoff and landing vehicles. I'm just no expert in any of this. And it's so much fun to to learn on the job what it actually means to build something like this. I'd say that the stuff that I've done lately after I finished my professorship at Stanford, they really focused on like what has the maximum impact on society, like transportation as something has transformed the 21st, 20th century more than any other invention, in my opinion, even more than communication.
+00:10:59
+And cities are different workers. Different women's rights are different because of transportation. And yet we still have a very suboptimal transportation solution where we kill one point two or so million people every year in traffic. It's the leading cause of death for young people in many countries where we are extremely inefficient resource wise. Just go to your average neighborhood city and look at the number of parked cars. That's a travesty, in my opinion. Or we spend endless hours in traffic jams and very, very simple innovations like a self-driving car or what people call a flying car could completely change this.
+00:11:36
+And it's there. I mean, the technology is basically there to close your eyes, not to see it. So lingering on autonomous vehicles, a fascinating space, some incredible work you've done throughout your career there. So let's start with dorper. I think the diaper challenge, the desert and urban to the streets, I think that inspired an entire generation of roboticists and obviously sprung this whole excitement about this particular kind of four wheeled robots who called autonomous cars self-driving cars.
+00:12:12
+So you were the development of Stanly, the autonomous car, the one that the rest of the desert, the diaper challenge in 2005. And Junior, the car, the finished second in the Dopp Urban Challenge also did incredibly well in 2007. I think what are some painful, inspiring or enlightening experiences from that time that stand out to you?
+00:12:37
+Oh, my God. Painful were all these incredibly complicated, stupid bugs that had to be found.
+00:12:46
+We had a phase where the Stanley, our our car eventually won the upper end challenge. Would every 30 miles just commit suicide? And we didn't know why. And it ended up to be that in the sinking of two computer clocks, occasionally a clock went backwards and that negative time elapsed, screwed up the entire internal logic. But it took ages to find us like bugs like that, I'd say. And lightning is the same for team immediately focused on machine learning and then software, which everybody else seemed to focus on building better hardware.
+00:13:21
+Our numbers had been a human being, but an existing rental car can perfectly drive the course. I have to write off to build a better rental car. I just replace the human being. And the human being to me was a conjunction of three steps. We had sensors, eyes and ears, most eyes. We had brains in the middle and then we had actuate as our hands and our feet. Now the actors that used to build the sensors actually also easy to build.
+00:13:46
+What was missing was the brain. So we had to build a human brain. And nothing, nothing clearer than to me that that the human brain is a learning machine. So we don't just train our robots so that we would be a massive machine learning into our machine. And with that, we're able to not just learn from human drivers. We had the entire speed control of the vehicle was copied from human driving, but also have the robot learn from experience.
+00:14:08
+It made a mistake and could recover from it and learn from it.
+00:14:12
+You mentioned the pain point of software and clocks. Synchronization seems to seems to be a problem that continues with robotics. It's a tricky one with drones and so on.
+00:14:26
+What what does it take to build the thing?
+00:14:29
+A system with so many constraints? You have a deadline, no time. You're unsure about anything, really the first time that people really even explain. Yeah, it's not even sure that anybody can finish when we're talking about the race, the desert, the year before, nobody finished. What does it take to scramble and finish a product that actually a system that actually works?
+00:14:52
+I mean, very lucky, a very small team, the core of the team of four people. It was four because five couldn't comfortably sit inside a car at Fort Hood.
+00:15:01
+And I as a team leader, my job was to get pizza for everybody and wash the car and stuff like this and repair the radiator. And it broke and debug the system. And we were kind of open minded. We had no U.S. involvement. We just wanted to see how far we can get.
+00:15:17
+What we did really, really well.
+00:15:18
+It was time management. We were done with everything a month before the race and we froze the entire software a month before the race. And it turned out, looking at other teams every other team complained of, they had just one more week they would have won. And we decided to kind of fall into that mistake. You're going to be early. And we had an entire month to shake the system. And we actually found two or three minor bugs in the last month that we had to fix.
+00:15:43
+And we were completely prepared and the race occurred.
+00:15:46
+OK, so first of all, that's such an incredibly rare achievement in terms of being able to be done on time or ahead of time.
+00:15:55
+What do you how do you do that in your future work? What advice do you have in general? Because it seems to be so rare, especially in highly innovative projects like this. People work to the last second where the nice thing about the topic and challenges that the problem was incredibly well-defined. We were able for a while to drive the old topic and challenge course, which had been used the year before, and then some reason we were kicked out of the region.
+00:16:20
+So we had to go to a different desert, the Sonoran Desert, and maybe to drive Desert Trails just as the same type. So there was never any debate about like what is actually the problem. We didn't sit down and say, hey, should we build a car or a plane? We had to build a car that made it very, very easy. Then I studied my own life and life of others and realized that the typical mistake that.
+00:16:42
+Is there's this kind of crazy bug left that they haven't found yet, and and it's just they regret it and the bag would have been trivial to fix it, just haven't fixed it yet. And they didn't want to fall into that trap. So I built a testing team. We had a testing in a beta testing booklet of 160 pages of tests we had to go through just to make sure we shake the system appropriately. Wow. And the testing team was with us all the time and dictated to us today.
+00:17:09
+We do railroad crossings tomorrow. Do we practice the start of the event? And in all of these, we we thought, oh, my God, as long solve trivial. And then we tested it out. Oh, my God, it doesn't work very well for us. Why not? Oh, my God. It mistakes the the rails for metal barriers. We have to fix this. Yes. So it was a continuous focus on improving the weakest part of the system.
+00:17:32
+And as long as you you focus on improving the weakest part of the system, you eventually build a really great system.
+00:17:39
+Let me just pause on that. To me, as an engineer is just super exciting that you're thinking like that, especially at that stage as brilliant the testing with such a core part of it. It may be to linger on the point of leadership. I think it's one of the first times you were really a leader and you've led many very successful teams since then. What does it take to be a good leader? I would say most of them just take credit for the work of others, right?
+00:18:11
+That's that's very convenient and not because I can do all these things myself. I'm an engineer at heart, so I, I care about engineering, so so I don't know what the chicken or the egg is, but as a kid, I love computers because you could tell them to do something and they actually did. It was very cool. And you could like in the middle of a night, wake up at 1:00 in the morning and switch on your computer.
+00:18:31
+And what he told you to yesterday, I would still do that was really cool. Unfortunately, that didn't quite work with people. So you go to people and tell them what to do and they don't do it and they hate you for it, or you do it today and then you go a day later and they stop doing it. So you have to. So then a question really became, how can you put yourself in the brain of the people, of people as opposed to computers?
+00:18:51
+And it is a computer dumb then that's so dumb. If people were as dumb as computers, I wouldn't want to work with them. But people are smart and people are emotional and people have pride and people have aspirations. So how can I connect to that? And that's the thing where most of our leadership just fails because many, many engineers turn management believe they can treat their team just the same way with a computer. And it just doesn't work that way.
+00:19:16
+It's just really bad.
+00:19:18
+So how how can I how can to connect to people? And it turns out as a college professor, the wonderful thing you do all the time is to empower other people, like your job is to make your students look great. That's all you do. You're the best coach. And it turns out if you do a fantastic job with making your students look great, they actually love you and their parents love you and they give you all the credit for stuff you don't deserve.
+00:19:42
+All my students were smarter than me. All the great stuff invented at Stanford because of the stuff, not my stuff. And they give me credit and say, Oh, Sebastian, but just making them feel good about themselves. So the question really is, can you take a team of people and what does it take to make them to connect to what they actually want in life and turn this into productive action? It turns out every human being that I know has incredibly good intentions.
+00:20:06
+I've really never really met a person with bad intentions. I believe every person wants to contribute. I think every person I've met wants to help others. It's amazing how much of a burden we have not to just help ourselves, but to help others. So how can we empower people and give them the right framework that they can accomplish this? If in moments when it works, it's magical because you'd see the confluence of of people being able to make the world a better place and having enormous confidence and pride out of this.
+00:20:39
+And that's when when my environment was the best. These are moments where I can disappear for a month and come back and things still work. It's very hard to accomplish, but when it works, it's amazing.
+00:20:51
+So I agree with you very much. It's not often heard that most people in the world have good intentions. At the core, their intentions are good and they're good people. That's a beautiful message. It's not often heard. We make this mistake and this is a friend of mine, a topless. That we judge ourselves by our intentions in others, by their actions. And I think the biggest skill, I mean here in Silicon Valley with fellow engineers who have very little empathy and kind of befuddled by it, doesn't work for them.
+00:21:25
+The biggest skill, I think, that that people should acquire is to put themselves into the position of the other and listen and listen to what the other has to say. And they'll be shocked how similar they are to themselves. And there might even be shocked how their own actions don't reflect their intentions. I often have conversations with engineers, say, look, I love you doing a great job. And by the way, what you just did has the following effect.
+00:21:53
+Are you aware of that? And then people would say, oh, my God, not I wasn't, because my intention was that. And I said, yeah, I trust your intention. You're a good human being. But just to help you in the future, if you keep expressing it that way, then people just hate you. And I've had many instances to say, oh, my God, thank you for telling me this, because it wasn't my intention to look like an idiot.
+00:22:15
+It was my intention to help other people. I just didn't know how to do it.
+00:22:19
+Very simply. By the way, there's no Carnegie really 36 how to make friends and how to influence others has the entire Bible. You've just read it and you're done and you apply it every day. And I wish I could. I was good enough to apply it every day. But it says simple things, right? Like be positive. Remember, people's names smile and eventually have empathy. I really think that the person that you hate and you think is an idiot is if you just like yourself, it's a person who's struggling, who means well and who might need help.
+00:22:50
+And guess what?
+00:22:51
+You need help of recent book with Stephen Schwarzman. I'm not sure if you know who that is, but do so. And he said, I'm a list list.
+00:23:03
+But he he said sort of to expand on what you're saying, that one of the biggest things you can do is hear people when they tell you what their problem is and then help them with their problem.
+00:23:18
+He says it's surprising how few people actually listen to what troubles others.
+00:23:25
+Yeah, and because it's right there in front of you and you can benefit the world the most and in fact, yourself and everybody around you by just hearing the problems and solving them. I mean, that's my my little history of of engineering. That is what I was engineering with computers. I didn't care at all what the computer problems were. I just told them what to do and to do it. And it just doesn't work. It doesn't work with me.
+00:23:55
+If you come to me and say, do do a I do the opposite, but let's return to the comfortable world of engineering.
+00:24:03
+And can you can you tell me in broad strokes in how you see it? Because you're the core of starting at the core of driving it, the technical evolution of autonomous vehicles from the first star program challenge to the incredible success we see with the program. You started with Google self-driving car and way more than the entire industry that's sprung up of different kinds of approaches, debates and so on.
+00:24:27
+When the idea of self-driving car goes back to the eighties, there was a team in Germany, another team at Carnegie Mellon that did some very pioneering work. But back in the day, I'd say the computers were so efficient that even the best professors and engineers in the world basically stood no chance and then folded into a phase where the US government spent at least half a billion dollars that I could count on research projects. But the way the procurement works, a successful stack of paper describing lots of stuff that no one's ever going to read was a successful product of a research project.
+00:25:04
+So so we trained our researchers to produce lots of paper.
+00:25:09
+That all changed with the topic. And I really got to credit the ingenious people at the opera in the US government and Congress that took a complete new funding model where they said, let's not fund effort, let's fund outcomes. And it sounds very trivial, but there was no tax code that allowed the use of congressional tax money for a price. It was all effort. So if you put in a hundred thousand, you could charge a hundred hours, you put in a thousand dollars, and you could build a thousand dollars by changing the focus and really making the price.
+00:25:39
+We don't pay you for development. You pay for the accomplishment they drew in. They automatically drew out all these contractors who are used to the drug of getting money power. And they drew in a whole bunch of new people. And these people are mostly crazy people. There were people who had a car and a computer and they wanted to make a million bucks. The million bucks plus the official prize money was then doubled. And they felt if I put my computer in my car and program it, I can be rich.
+00:26:07
+And it was so awesome. Like like half the teams there was a team. Surfer dudes, and they had like two surfboards on their vehicle and brought, like these fashion girl super cute girls like twin sisters, and you could tell these guys were not your common appendage who gets all these big multimillion dollar countries from the US government. And there was a great research. Universities moved in, I was very fortunate at Stanford that had just received tenure, so I couldn't figure out what to do, otherwise I would have done it.
+00:26:41
+And I had enough money to finance this thing. And I was able to attract a lot of money from from third parties. And even car companies moved in.
+00:26:49
+They kind of moved in very quietly because they were super scared to be embarrassed that their car would flip over. But Ford was there and Volkswagen was there and a few others and GM was there. So it kind of reset the entire landscape of people. And if you look at who's a big name in self-driving cars today, these were mostly people who participated in those challenges.
+00:27:09
+OK, that's incredible. Can you just comment quickly on your sense of lessons learned from that kind of funding model and the research that's going on in academia in terms of producing papers? Is there something to be learned and scaled up bigger these having these kinds of grand challenges that could improve outcomes?
+00:27:31
+So I'm a big believer in and focusing on kind of an end to end system. I'm a really big believer in systems building. I've always built systems for my academic career, even though I do a lot of math and and abstract stuff. But it's all derived from the idea of let's solve your problem. And it's very hard for me to be an academic and say, let me solve a component of a problem. Like with someone, there's feels like nonmonetary logic or planning systems where people believe that a certain state of problem solving is the ultimate and objective.
+00:28:03
+And and I would always turn around and say, hey, what problem would my grandmother care about that doesn't understand computer technology and doesn't want to understand how could I make her love what I do? Because only then do I have an impact on the world. I can easily impress my colleagues that that's that that is much easier. But impressing my grandmother is very, very hard. So I was always thought of if I can build a self-driving car and and my grandmother can use it even after she loses her driving privileges or children can use it or save maybe a million lives a year, there would be very impressive.
+00:28:38
+And there's so many problems like this, like there's a problem of curing cancer or live twice as long. Once the problem is defined. Of course, I can solve it in its entirety, like it takes sometimes tens of thousands of people to to find a solution. There's no way you can fund an army of 10000 at Stanford. So you've got to build a prototype that's been a meaningful prototype. And the number one challenge was beautiful because it taught me what this prototype had to do.
+00:29:02
+I didn't have to think about what it had to do. It has to do with the rules.
+00:29:05
+And it was really beautiful at its most beautiful.
+00:29:08
+You think what academia could aspire to is to build a prototype. That's the systems level that solves a gives you an inkling that this problem could be solved with this project.
+00:29:20
+That's all I want to emphasize what academia really is. And I think people misunderstand it. First and foremost, academia is a way to educate young people, first and foremost, a professor as an educator, no matter what ever you want a small suburban college or whether you are a Harvard or Stanford professor, that's not the way most people think of themselves in academia, because we have this kind of competition going on for citations and and publication. That's a measurable thing, but that is secondary to the primary purpose of educating people to think.
+00:29:54
+Now, in terms of research, most of the great science, the great research comes out of universities. You can trace almost everything back, including Google to universities. So there's nothing really fundamentally broken here. It's it's a good system. And I think America has the finest university system on the planet. We can talk about reach and how to reach people outside the system. It's a different topic, but the system itself is a good system. If I had one wish, I would say and be really great if there was more debate about what the great big problems are in society and focus on those.
+00:30:35
+And most of them are interdisciplinary. Unfortunately, it's very easy to to fall into a interdisciplinary viewpoint where your problem is dictated. But but your closest colleagues believe the problem is it's very hard to break out and say, well, there's an entire new field of problems. So give an example. Prior to me working on self-driving cars, I was a roboticist in a machine learning expert and I wrote books and robotics, something called probabilistic robotics. It's a very method driven kind of viewpoint of the world.
+00:31:08
+I build robots that acted in museums as tour guides that led children around it. It's something that at the time was moderately challenging.
+00:31:16
+When I started working on cars, several colleagues told me, Sebastian, you're destroying your career because in our field of robotics, cars are looked like as a gimmick and they're not expressive enough. They can only put the throttle and the brakes. There's no. Dexterity, there's no complexity, it's just too simple, and no one came to me and said, wow, if you solve that problem, you can save a million lives. And among all robotic problems that I've seen in my life, I would say the self-driving car transportation is the one who has the most hope for society.
+00:31:48
+So how can the robotics community wasn't all over the place and it was become because we focused on methods and solutions and not on problems. Like if you go around today and ask your grandmother what bugs you or what really makes you upset, I challenge any academic to do this and then realize how far your research is probably away from that today.
+00:32:11
+At the very least, that's a good thing for academics to deliberate on.
+00:32:15
+The other thing that's really nice in Silicon Valley is Silicon Valley is full of smart people outside academia. And so there's the Larry Peterson, Mark Zuckerberg and the world who are anyway as smart or smarter than the best academics I've met in my life. And what they do is they they are at a different level. They build the systems, they build the customer facing system. They build things that people can use for their technical education. And they are inspired by research.
+00:32:42
+They're inspired by scientist. They hire the best PhDs from the best universities for a reason. So I think there's kind of vertical integration that between the real product, the real impact and the real thought, the real ideas, that's actually working surprisingly well in Silicon Valley. It did not work as well in other places in this nation. So when I worked at Carnegie Mellon, we had the world's finest computer science university.
+00:33:06
+But there wasn't those people in Pittsburgh that would be able to take these very fine computer science ideas and turn them into massive, impactful products. That symbiosis seemed to exist pretty much only in Silicon Valley and maybe a bit in Boston and Austin. Yeah, with Stanford.
+00:33:25
+That's really interesting. So if we look a little bit further on from the Grand Challenge and the launch of the Google self-driving car, what do you see as the state?
+00:33:38
+The challenges of autonomous vehicles as they are now is actually achieving that huge scale and having a huge impact on society.
+00:33:48
+I'm extremely proud of what what has been accomplished. And again, I'm taking a lot of credit for the work that us and I'm actually very optimistic and people have been kind of worrying, is it too fast or slow by the end of yet and so on. It is actually quite an interesting hot problem in that a self-driving car to build, one that manages 90 percent of the problems and in every driving is easy. We can literally over the weekend to do 99 percent might take a month.
+00:34:18
+Then there's one percent left. So one percent would mean that you still have a fatal accident every week. Very unacceptable. So now you work on this one percent and the 99 percent of the remaining one percent is actually still a relatively easy. But now you're down to like a hundredth of one percent and it's still completely unacceptable in terms of safety. So the variety of things you encounter are just enormous. And that gives me enormous respect for human beings to be able to deal with the culture on the highway.
+00:34:46
+Right. Or the deer in the headlights or the blown tire that we have never been trained for. And all of a sudden I have to handle it in an emergency situation and often do very, very successfully. It's amazing from that perspective how safe driving actually is given how many millions of miles we drive every year in this country. We are now at a point where I believe the technology is there and I've seen it. I've seen it. And we may have seen it in chapter for and crews in a number of companies.
+00:35:13
+And Voyager, we are vehicles now driving around and basically flawlessly able to drive people around in limited scenarios. In fact, you can go to Vegas today and order someone a lift. And if you got the right setting off your app, you'll be picked up by a driverless car. Now, there's still safety drivers in there, but that's a fantastic way to kind of learn what the limits of technology today.
+00:35:39
+And there's still some glitches, but the glitches have become very, very rare. I think the next step is going to be to down cost it, to harden it that entrapment sensors are not quite an automotive question yet.
+00:35:52
+And then to build the business models to really kind of go somewhere and make the business case. And the business case is hard work. It's not just, oh, my God, we have this capability. People just going to buy it. You have to make it affordable. You have to give people the kind of social acceptance of people. None of the teams yet has been able to gutsy enough to drive around without a person inside the car. And that's the next magical hurdle, will be able to send these vehicles around completely empty in traffic.
+00:36:22
+And I think I mean, I wait every day, wait for the news that Veremis has just done this.
+00:36:28
+So, you know, it's interesting. You mentioned gutsy. Me ask some maybe unanswerable question, maybe edgy questions, but in terms of how much risk is required, some guts in terms of leadership style, it would be good to contrast approaches. And I don't think anyone knows what's right. But if we compare Teszler and we more, for example, Elon Musk and the way my team, the there's slight differences in approach. So on Elon side, there's more I don't know what the right word to use, but aggression in terms of innovation and way more side, there is more sort of cautious, safety focused approach to the problem.
+00:37:20
+What do you think it takes? What leadership at which moment is right? Which approach is right? Look, I don't sit in either of those teams, so I'm unable to even verify it is correct. Right. In the end of a day, every innovator in that space will face a fundamental dilemma. And I would say you could put aerospace titans into the same bucket. Yes. Which is you have to balance public safety with your drive to innovate.
+00:37:50
+And this country in particular in states, has a 100 plus year history of doing this very successfully. Air travel is, what, 100 times are safe per mile than ground travel and then cars. And there's a reason for it, because people have found ways to be very methodological about ensuring public safety while still being able to make progress on important aspects, for example, like and noise and fuel consumption. So I think that those practices are proven and they actually work.
+00:38:24
+We live in a world safer than ever before. And yes, there will always be the provision that something goes wrong. There's always the possibility that someone makes a mistake or there's an unexpected failure. We can never guarantee to 100 percent absolute safety other than just not doing it. But I think I'm very proud of the history of the United States. I mean, we've we've dealt with much more dangerous technology like nuclear energy and kept that safe to. We have nuclear weapons and we keep those safe.
+00:38:53
+So we have methods and procedures that we balance these two things very, very successfully.
+00:38:59
+You've mentioned a lot of great autonomous vehicle companies that are taking sort of the level four, level five, the jump in full autonomy, well, the safety driver, and take that kind of approach and also through simulation and so on. There's also the approach that Tesla autopilot is doing, which is kind of incrementally taking a level two vehicle and using machine learning and learning from the driving of human beings and trying to creep up, trying to incrementally improve the system until it's able to achieve a Level four autonomy.
+00:39:32
+So perfect autonomy in certain kind of geographical regions. What are your thoughts on these contrasting approaches?
+00:39:40
+Well, I'm a very proud Tesla owner and I literally use the autopilot every day, and it literally has kept me safe. It is a beautiful technology specifically for highway driving when I'm slightly tired, because then it turns me into a much safer driver and that I'm 100 percent confident that's the case. In terms of the right approach, I think that the biggest change I've seen since I went away, my team is. Is this thing called deep learning and deep learning was or was not a hot topic when I when I started Amol or Google self-driving cars, it was there.
+00:40:16
+In fact, we started Google Brain at the same time and Google. So I invested in deep learning, but people didn't talk about it. It wasn't a hot topic.
+00:40:24
+And notice there's a shift of emphasis from a more geometrics perspective where you use geometric sensors that give you a full 3D view. You want to do a geometric reasoning about all of this box over here might be a car towards a more human like, oh, let's just learn about what this looks like, the thing I've seen 10000 times before. So maybe it's the same thing, machine learning perspective. And that has really put, I think, all these approaches on steroids and Udacity.
+00:40:53
+We teach a course in self-driving cars. In fact, I think it'd be great if it's over 20000 or so people on self-driving car skills. So every every self-driving car team in the world knows our engineers. And in this course, the very first homework assignment is to do Lahn finding and images and then finding images for and what this means as you put a camera into your car or you open your eyes and you would know where the line is and why it's all so you can stay inside the lane with your car.
+00:41:21
+Humans can do this super easily. You just look and, you know, weathervanes just intuitively for machines for long term of a super heart, because people would write these kind of crazy rules if there's like Vidalin, Marcus and his website, which means this is not quite right enough soil is or is not right, or maybe the sun is shining. So when the sun shines and this is white and this is a straight line, I mean, it's not quite a straight line because of what is curved.
+00:41:43
+And do we know that there's six feet between lane markings on not or 12 feet, whatever it is, and now the students are doing they would take machine learning to instead of like writing these crazy rules for telemarketers to say, hey, let's take an hour driving and label it until the vehicle.
+00:42:00
+This is actually the lane by hand. And then these are examples and have the machine find its own rules, what what lane markings are. And within 24 hours now, every student has never done any program before in the space, can write a perfectly and find as good as the best commercial and find us. And that's completely amazing to me. We've seen progress using machine learning that completely dwarfs anything that I saw ten years ago.
+00:42:27
+Yeah, and just as a side note, the self-driving car nano degree, the fact the launch that many years ago now, maybe four years ago, three years ago, three years ago, is incredible.
+00:42:38
+That that's a great example of system level thinking, sort of just taking an entire course that teaches how to solve the entire problem and definitely recommend people.
+00:42:47
+It's been popular and it's become incredibly high quality video with Mercedes and various other companies in that space. And we find that engineers from Tesla and VMware are taking it today. The insight was that two things. One is existing universities will be very slow to move because the departmentalized and there's no department for self-driving cars. So between Mekhi and double E and computer science, getting these folks together into one room is very, very hard. And every professor listening you have a notebook would probably agree to that.
+00:43:19
+And secondly, even if if all the great universities did this, which none so far has developed a curriculum in this field, it is just a few thousand students that can partake because all the great universities are super selective. So how about people in India? How about people in China or in the Middle East or Indonesia or Africa? Why should those be excluded from the skill of building self-driving cars? Are there any dumber than we are any less privileged?
+00:43:47
+And the answer is we should just give everybody the skill to build a self-driving car. Because if you do this, then we have like a thousand self-driving car startups. And if 10 percent succeed, that's like 100. That means 100 countries now will have self-driving cars and be safer.
+00:44:03
+It's kind of interesting to imagine impossible to quantify. But the number the you know, over a period of several decades, the impact that has like a single course got a ripple effect to society. If you just recently talked to Andrew, who was creator of Cosmos as a show, it's interesting to think about how many scientists that show launched. And so it's really.
+00:44:30
+In terms of impact, I can't imagine. But, of course, in the self-driving car, of course, that's you know, there's other more specific disciplines like deep learning and so on, that your desk is also teaching. But self-driving cars, it's really, really interesting, of course.
+00:44:43
+And it came at the right moment. It came at a time when there were a bunch of RV hikers actually hire the acquisition of a company, not for its technology or its products or business, but for its people. Yeah. So actually, I mean, maybe the company of 70 people, they have no product yet, but they are super smart people and they pay a certain amount of money. So I took the highest like Jim Cruise and Uber and others and did the math and said, hey, how many people are there and how much money was paid.
+00:45:10
+And as a lower bound, I estimated the value of a self-driving car engineer in these acquisitions to be at least ten million dollars. So think about this. You you get yourself a skill and you team up and build a company and you're worth now is ten million dollars. I mean, it's kind of cool. I mean, but what other thing could you do in life to be worth ten million dollars within a year. Yeah, amazing.
+00:45:34
+But to come back for a moment under deep learning and its application and autonomous vehicles, you know, what are your thoughts on Elon Musk's statement, provocative statement perhaps that later is a crutch. So there's geometric way of thinking about the world maybe holding us back if we should instead be doing in this robotics in this particular space of autonomous vehicles is using camera as a primary sensor and using computer vision and machine learning as the primary way to look.
+00:46:06
+I have two comments. I think, first of all, we all know that. People can drive cars without lights in their heads because we only have eyes and we mostly just use eyes for driving. Maybe we use some other perception about our bodies, accelerations, occasionally our years. Certainly not our noses, so so that the existence proof is there that ice must be sufficient. In fact, we could even drive a car if someone put a camera out and then gave us the camera with no latency, we would be able to drive a car that way, the same way.
+00:46:42
+So cameras are sufficient.
+00:46:45
+Secondly, I really love the idea that in the Western world, we have many, many different people trying different hypotheses. It's almost like an anthill and until tries to forge for food. But you can see there's two ends and we've got the perfect path and then every single and marches for the most likely location of foods. Or we can even just spread out. And I promise you, the spread out solution will be better because if the discussing philosophical, intellectual ends get it wrong and they all move in the wrong direction, they're going to waste a day and then they're going to discuss again for another week.
+00:47:17
+Whereas if all these aren't going to end, someone's going to succeed and got to come back and claim victory and get the Nobel Prize or whatever and economists and then they will march in the same direction. And that's great about society. That's great about the Western society, but not land based. We're not central base. We don't have a Soviet Union style central government that tells us where to forge. We just forge. We start and see corporate.
+00:47:40
+You get our money, go out and try it out and who knows who's going to win.
+00:47:45
+I like it in your when you look at the long term vision of autonomous vehicles, do you see machine learning as fundamentally being able to solve most of the problems?
+00:47:56
+So learning from experience, I'd say we should be very clear about what machine learning is and is not. And I think there's a lot of confusion. What it is today is a technology that can go through large databases of repetitive patterns and find those patterns. So an example, we did a study at Stanford two years ago where we applied machine learning to detecting skin cancer and images and we harvest that or build a data set of over a hundred twenty nine thousand skin for shots that all had been biopsied for what the actual situation was.
+00:48:35
+And those included melanomas and carcinomas, also included rashes and other skin conditions, lesions. And then we had a network find those patterns and it was by and large, able to then detect skin cancer with an iPhone as accurately as the best board certified Stanford dermatologist. We proved that no, not this thing was great in this one thing and finding skin cancer, but it couldn't drive a car. So the difference to human intelligence is we do all these many, many things and we can often learn from a very small data set of experiences with machines, still need very large data sets and things would be very repetitive.
+00:49:20
+That still to be impactful because almost everything we do is repetitive. So that's going to transform human labor. But it's not this almighty general intelligence. We're really far away from a system that works exhibit general intelligence.
+00:49:35
+To that end, I actually commiserate the naming a little bit because artificial intelligence, if you believe Hollywood is immediately mixed into the idea of human suppression and and machine superiority, I don't think that we're going to see this in my lifetime. I don't think human suppression is a is a good idea. I don't see it coming. I don't see the technology being there. What I see instead is a very pointed focus pattern recognition technology that's able to extract patterns from large data sets.
+00:50:04
+And in doing so, it can be super impactful and super impactful. Let's take the impact of artificial intelligence on human work. We all know that it takes something like 10000 hours to become an expert.
+00:50:19
+If you want to be a doctor or lawyer or even a really good driver, it takes a certain amount of time to become experts, machines now able and patients to observe people, become experts and observe experts and then extract those rules from experts in some interesting way they could go from law to sales to.
+00:50:41
+Driving cars to diagnosing cancer and then giving that capability to people who are completely new in their job, we now can and that's that's been done has been done commercially in many, many instantiations then means you can use machine learning to make people an expert on the very first day of their work. They think about the impact. If if your doctor is doing the first ten thousand hours, you have a doctor who is not quite an expert yet, who would not want a doctor, who is the world's best expert.
+00:51:13
+And now we can leverage machines to really eradicate the error in decision making error and lack of expertise for human doctors that could save your life.
+00:51:24
+We can linger on that for a little bit in which we do hope machines in the medical and the medical field could help assist doctors.
+00:51:32
+You mentioned this sort of accelerating the learning curve or people, if they start a job or in the first 10000 hours, can be assisted by machines. How how do you envision that assistants looking?
+00:51:46
+So we built this this app for an iPhone that can detect and classify and diagnose skin cancer.
+00:51:52
+And we proved two years ago that it does pretty much as good or better than the best human doctor. So let me tell you a story. So there's a friend of mine, let's call him Ben. Ben is a very famous venture capitalist. He goes to his doctor and the doctor looks at a mole and says he. That model is probably harmless and for some very funny reason, he pulls out that form with out.
+00:52:17
+He's a collaborator in our study and the app says, no, no, no, no, this is a melanoma. And for background, melanomas are skin cancers the most common cancer in this country. Melanomas can go from stage zero to stage four within less than a year. Stage zero means you can basically cut yourself with a kitchen knife and be safe. And stage four means your chances of living from five more years and less than 20 percent. So it's a very serious, serious, serious condition.
+00:52:47
+So. This doctor who took out the iPhone, looked at the iPhone and was a little bit about just to be safe, let's cut it out and biopsy it. That's the technical term for let's get an in-depth diagnostics that is more and just looking at it. And it came back as cancerous as a melanoma and it was then removed. And my friend Ben, I was hiking with him and we are talking about an incident trying to do this. Vokoun skin cancer.
+00:53:15
+He's so funny. My doctor just had an iPhone that found my cancer battle.
+00:53:21
+So I was completely intrigued. I didn't even know about this. So here's a person. I mean, this is a real human life right now who doesn't know somebody who has been affected by cancer. Cancer is cause of death. No.
+00:53:31
+Two, cancer is this kind of disease that that is mean in the following way. Most cancers can actually be cured relatively easily if you catch them early. And the reason why we don't tend to catch them early is because they have no symptoms, like your very first symptom of a gallbladder cancer or a pancreatic cancer might be a headache. And when you finally go to your doctor because of these headaches or your back pain and you're being imaged, it's usually stage four plus.
+00:54:02
+And that's the time when the chances might be dropped to a single digit percentage. So if you could levitate to inspect your body on a regular basis without a doctor in the room, maybe when you take a shower or what have you. I know that sounds creepy, but then we might be able to save millions and millions of lives.
+00:54:22
+You've mentioned there's a concern that people have about near term impact, severe in terms of job loss. So you've mentioned being able to assist doctors, being able to assist people in their jobs.
+00:54:34
+Do you have a worry of people losing their jobs or the economy being affected by the improvements in our anybody concerned about job losses?
+00:54:44
+Please come to get Asadi dot com. We teach contemporary tech skills and we have a kind of implicit job promise. We often when we measure we we spend way over 50 percent of our graduates in new jobs and they're very satisfied about it. And it costs almost nothing because like a thousand five hundred max or something like that. And so there's a cool new program.
+00:55:05
+They agree with what the US government guaranteeing that you will help us give scholarships that educate people in this kind of situation.
+00:55:14
+We're working with the U.S. government on the idea of basically rebuilding the American dream. So Udacity is just dedicated to 100000 scholarships for citizens of America, for various levels of courses that eventually will that get you a job?
+00:55:33
+And those courses are all somewhat related with the tech sector because the tech sector is kind of the hottest sector right now. And they range from entry level digital marketing to very advanced self-driving car engineering. And we're doing this with the White House because we think it's bipartisan. It's an issue that is that if you want to really make America great, being able to to be part of the solution and live the American dream requires us to be proactive about our education and our skill set.
+00:56:02
+That's just the way it is today. And it's always been this way. And we've always had this American dream to send our kids to college. And now the American dream has to be to send ourselves to college very, very efficiently. And maybe we can squeeze in in the evenings and things to online at all ages, all ages. So our our learners go from age 11 to age 80. I just traveled Germany and and the guy in the train compartment next to me was one of my students.
+00:56:35
+Wow. That's amazing. To think about the impact we've become the etiquette of choice for now, officially, six countries out of five countries, most in the Middle East, like Saudi Arabia and in Egypt. In Egypt, we just had a cohort graduate. We had 11 hundred high school students that went through programming skills proficient at the level of computer science undergrad. And we had a ninety five percent graduation rate. Even though everything's online, it's kind of tough, but we kind of trying to figure out how to make this effective.
+00:57:06
+The vision is the vision is very, very simple. The vision is education are to be a basic human right. It cannot be locked up behind ivory tower walls only for the rich people, for the parents who might be bribe themselves into the system and only for young people and only for people from the right demographics and the right geography and possibly even the right race. It has to be opened up to everybody. If we if we are truthful to the human, if truthful to our values, we got to open up education to everybody in the world.
+00:57:39
+So Udacity pledge of a hundred thousand scholarships, I think is the biggest pledge of scholarships ever in terms of the numbers. And we are working, as I said, with the White House and with very accomplished CEOs like Tim Cook from Apple and others, to really bring education to everybody in the world, not to ask you to pick the favorite of your children.
+00:58:01
+But at this point, Jasper, I have one that I know of. OK, good.
+00:58:09
+In this particular moment, what nanowire degree? What set of courses are you most excited about Udacity or is that too impossible to pick?
+00:58:18
+I've been super excited about something we haven't launched yet and we're building, which is when we talk to our partner companies, we have now a very strong footing in the enterprise world and also to our students.
+00:58:31
+We've kind of always focused on these hard skills, like the programming skills or math skills or building skills or design skills. And a very common task is soft skills like how do you behave in your work? How do you develop empathy? How do you work in a team? What are the very basics of management? How do you to time management, how do you advance your career in the context of a broader community? And that's something that we haven't done very well, acidy.
+00:58:58
+And I would say most universities are doing very poorly as well because we're so obsessed with individual test scores and so little so little attention to teamwork in education. So that's something I see us moving into as a company because I'm excited about this. And I think, look, we can teach people tech skills and they're going to be great. But if you teach people empathy, there's going to have the same impact maybe.
+00:59:21
+Harder than self-driving cars, but I don't think so, I think the rules are really simple. You just have to you have to you have to want it to engage its it's literally in school and in K through 12. We teach kids like get the highest math score. And if you are a rational human being, you might evolve from this education, say having the best math score and the best English scores, making me the best leader. And it turns out not to be the case.
+00:59:47
+It's actually wrong because making first of all, in terms of math scores, I think is perfectly fine. To hire somebody with great math skills, you'd have to prove yourself. You can hire some of the good empathy for you. That's much harder, but it can always hire some great math skills.
+01:00:02
+But we live in an affluent world where we constantly deal with other people. And it's a beauty. It's not a nuisance, it's a beauty. So if we somehow develop the muscle that we can do that well and empower others in the workplace, I think we're going to be super successful.
+01:00:19
+And I know many fellow roboticists and computer scientists that I will insist take this course so that we named you to be named many, many years ago.
+01:00:31
+And nineteen know three. The Wright brothers flew in Kitty Hawk for the first time, and you've launched a company of the same name Kittyhawk with the dream of building flying cars.
+01:00:47
+Evita's so at the big picture, what are the big challenges of making this thing that actually you've inspired generations of people about what the future looks like? What does it take? What are the biggest challenges?
+01:01:00
+So so flying cars has always been a dream. Every boy, every girl wants to fly.
+01:01:06
+Let's be honest. Yes. And let's go back in history and we are dreaming of flying. I think my only my single most remembered childhood dream has been a dream where I was sitting on a pillow and I could fly. I was like five years old. I remember like maybe three dreams of my childhood, but that's the one that we remember most vividly. And then Peter Thiel famously said their promised us flying cars and they give us 140 characters pointing Twitter at the time, limit your metastasise to 140 characters.
+01:01:34
+So we're coming back now to really go for these super impactful stuff like flying cars. And to be precise, they're not really cars. They don't have wheels. They're actually much closer to a helicopter than anything else to take off vertically in the fly horizontally. But they have important differences. One difference is that they are much quieter. We just released a vehicle called Project Heavy Side. They can fly over you as low as a helicopter and you basically can't hear it's like thirty eight decibels is like that.
+01:02:04
+If you were inside the library, you might be able to hear it. But anyway, outdoors, your ambient noise is higher. And secondly, they're, they're much more affordable, they're much more affordable in helicopters. And the reason is helicopters are expensive for many reasons.
+01:02:21
+There's lots of single point of figures in a helicopter. There's a boat between the blades that's caused Jesus fault. And the reason why it's called Jesus boat is that if this boat breaks, you will die. There is no second solution in helicopter flight because we have this distributed mechanism. When you go from gasoline to electric, you can now have many, many, many small motors as opposed to one big motor. And that means if you lose one of those motors, not a big deal, heavy side.
+01:02:46
+If it loses a motor on his, eight of those will lose one of those eight motors with seven left. It can take off just like before. And then just like before, we are now also moving into a technology that doesn't require a commercial pilot because in some level, flight is actually easier than the ground transportation. In self-driving cars. The world is full of like children and bicycles and other cars and mailboxes and curbs and shrubs and what have you.
+01:03:14
+All these things you have to avoid when you go above the buildings and tree lines, there's nothing there. I mean, you can do the test right now, look outside and count the number of things you see flying. I'd be shocked if you could see more than two things. It's probably just zero. In the Bay Area, the most I've ever seen was six, and maybe it's 15 or 20, but not ten thousand. So the sky is very ample and very empty and very free.
+01:03:40
+So the vision is, can we build a socially acceptable mass transit transit solution for daily transportation that is affordable? And we have an existence proof heavy side can fly 100 miles in range with 30 percent electric visitors. It can fly up to like a hundred and eighty miles an hour. We know that that solution at scale would make your ground transportation 10 times as fast as a car based on U.S. Census data, which means you would take your three hours of the yearly commute down to thirty hours and give it to 70 hours back.
+01:04:21
+Who wouldn't want I mean, who doesn't hate traffic like I hate. Give me the person who doesn't hate traffic. I hate traffic every day. Every time I'm in traffic, I hate it. And if we could free the world from traffic, we have technology. You can free the world from traffic. We have the technology. It's there. We have an existence. It's not a technological problem anymore.
+01:04:41
+Do you think there is a future where tens of thousands, maybe hundreds of thousands of both delivery drones and flying cars of this kind of tires fill the sky?
+01:04:56
+I have to believe this. And there's obviously the societal acceptance is a major question. And, of course, safety is, I believe, a safety issue and see ground transportation safety, as has happened for aviation already, commercial aviation. And in terms of acceptance, I think one of the key things is noise. That's why we are focusing relentlessly on noise and we bid perhaps the quietest electric Vitol vehicle ever built. The nice thing about the sky is, is three dimensional.
+01:05:26
+So so any mathematician will immediately recognize the difference, be one of a like a regular highway to three of a sky.
+01:05:33
+But to make it clear for the layman, say you want to make one hundred vertical lanes of Highway one of one in San Francisco because you believe building a health and vertical lanes is the right solution. Imagine how much it would cost to stack one hundred vertical lanes physically onto one or one. There would be prohibitive. There would be consuming the world's GDP for the entire year just for one highway. It's amazing how expensive, thick in the sky. It would just be a combination of a piece of software because all these lanes are virtual.
+01:06:03
+That means any vehicle that is in conflict with another vehicle would just go to different altitudes. And the conflict has gone. And if you don't believe this, that's exactly how commercial aviation works. When you fly from New York to San Francisco, another plane flies from San Francisco, New York. There are different altitudes so they don't hit each other. It's a solved problem for the jet space and it will be a soft problem for the urban space. There's companies like Google and Amazon working on very innovative solutions.
+01:06:33
+How do airspace management use exactly the same principles as we used today to route today's jets? There's nothing hard about this.
+01:06:42
+Do you envision autonomy being a key part of it so that that the the flying vehicles are either semi-autonomous or fully autonomous, 100 percent autonomous?
+01:06:54
+You don't want idiots like me fly in the sky, I promise you. And if you have 10000, what's the movie? A fifth element to get people to happen if it's not autonomous and a centralized, that's a really interesting idea of a centralized sort of management system for planes and so on. So actually, just being able to have.
+01:07:16
+Similar as we have in the current commercial aviation, but scale it up to much, much more vehicles. That's a really interesting optimization problem.
+01:07:24
+It is very mathematically very, very straightforward, like the gap we leave between jets, gantries and part of the business. There isn't that many jets. So it just feels like a good solution today when you get vector by air traffic control. Someone talks to you. So any ATC controller might have up to maybe 20 planes on the same frequency. And then they talk to you have to talk back. And that feels right because there isn't more than 20 planes around any hour.
+01:07:49
+So you can talk to everybody. But if there's 20000 things around, you can't talk to everyone anymore. So we have to do something that's quite digital, like text messaging, like we do have solutions.
+01:07:59
+Like we have had four or five billion smartphones in the world now and they're all connected. And some of his solve the scale problem for smartphones. We know where they all are. They can talk to somebody and they're very reliable. They are amazingly reliable. We could use the same system, the same scale for air traffic control. So instead of me as a pilot talking to a human being and in the middle of the conversation, receiving a new frequency like how ancient is that?
+01:08:26
+We could digitize the stuff and and digitally transmit the right flight coordinates. And that solution will automatically scale to 10000 vehicles.
+01:08:36
+We talked about empathy a little bit. Do you think we will one day build in a system that a human being can love and that loves that human back like in the movie?
+01:08:47
+Her look, I'm I'm a pragmatist. For me, a is a is a tool. It's like a shovel. And the ethics of using the shovel are always with us, the people. And it has to be this way in terms of emotions. I would hate to come into my kitchen and see that my refrigerator spoiled all my food, then have it explained to me that it fell in love with a dishwasher and it wasn't as nice as the dishwasher.
+01:09:16
+So as a result, it neglected me. That would just be a bad experience and it would be a bad product, would probably not recommend this refrigerator to my friends. And that's where I draw the line. I think to me, technology has to be reliable and has to be predictable. I want my car to work. I don't want to fall in love with my car. I just wanted to work. I wanted to compliment me not to replace me.
+01:09:43
+I have very unique human properties and I want the machines to make me turn me into a super human like I'm already a super human today, thanks to the machines that surround me and give you examples. I can run across the Atlantic at near the speed of sound at thirty six thousand feet today. That's kind of amazing. I can hear my voice now carries me all the way to Australia using a smartphone today. And it's not not the speed of sound which would take hours.
+01:10:16
+It's the speed of light. My voice travels at the speed of light. How cool is that? That makes me super human.
+01:10:22
+I would even argue my my flushing toilet makes me super human. Just think of the time before flushing toilets and maybe you have a very old person in your family that you can ask about this or take a trip to a rural India to experience it. It's it's it makes me superhuman. So to me, what technology does? It compliments me. It makes me stronger.
+01:10:47
+Therefore, words like love and compassion have very little a very little interest in this for machines.
+01:10:55
+I have interest in people.
+01:10:57
+You don't think first of all, beautifully put, beautifully argued. But do you think love has use in our tools? Compassion?
+01:11:06
+I think life is a beautiful human concept. And if you think of what love is, love is a means to convey safety, to convey trust. I think trust has a huge need in technology as well, not just people. We want to trust our technology the same way or in a similar way. We trust people in human interaction standards have emerged and feelings emotions have emerged, maybe genetically, maybe Virgile, that I able to convey a sense of trust, a sense of safety, sense of passion, of love, of dedication, that that makes the human fabric.
+01:11:47
+And I'm a big slacker for love. I want to be loved. I want to be trusted and be admired, all these wonderful things. And because all of us, we have this beautiful system, I wouldn't just blindly copied this to the machines. Here's why. When you look at, say, transportation, you could have observed that up to the end of the 19th century, almost all transportation used any number of legs from one leg. Two legs to a thousand legs, and you could have concluded that is the right way to move about the environment with the exception of birds flapping wings.
+01:12:25
+In fact, there are many people in aviation that flap wings to their arms and jump from cliffs. Most of them didn't survive then.
+01:12:33
+Then the interesting thing is that the technology solutions are very different, like technologies very easily.
+01:12:39
+With the wheel in biology, it's super hard to believe it has very few perpetually rotating things in biology and everyone else things in engineering. We can build wheels. And those wheels gave rise to cars, similar wheels gave rides to to aviation. Like there's no thing that flies that wouldn't have something of rotates like a jet engine or helicopter blades.
+01:13:08
+So the solutions have very different physical laws in nature, and that's great. So for me to be too much focused on this is how nature does it lets us replicate it.
+01:13:19
+If he really believed that the solution to the agriculture revolution was a humanoid robot, it would still be waiting today.
+01:13:27
+Again, beautifully put. You said that you don't take yourself too seriously.
+01:13:32
+You just say that. I mean to say that maybe you don't take me seriously. I'm not very good. You're right. I don't want to. I just made that up. But, you know, you have a humor and a lightness about life that I think is as beautiful and inspiring to a lot of people. Where does that come from?
+01:13:51
+The smile, the humor, the lightness amidst all the chaos on the hard work, the. And where does that come from? I just love my life.
+01:14:01
+I love I love the people around me. I love. I'm just so glad to be alive. Like I'm, what, 52 out of life? People say fifty to fifty one and I feel better.
+01:14:15
+But in looking around the world looking just go back to and that energy is like humanity is what, three hundred thousand years old. But for the first three and a thousand years minus the last one. Our life expectancy would have been plus or minus 30 years, roughly give or take. So I would be long dead now. Like that makes me just enjoy every single day of my life because I don't deserve this, like why am I born today when so many of my ancestors died of horrible deaths, like famines, massive wars that ravaged Europe for the last 1000 years, mostly disappeared after World War Two, when the Americans and the allies did something amazing to my country that didn't deserve it as a country.
+01:15:07
+Germany is so amazing. And then when you're when you're alive and feel this every day, then it's just so amazing what we can accomplish, what we can do. We live in a world that is so incredibly, vastly changing every day, almost everything that we cherish from your smartphone to your flushing toilets to all these basic inventions, your new clothes, your own, your watch, your plane, penicillin and no anesthesia for surgery. Penicillin have been invented in the last 150 years.
+01:15:46
+So in the last 150 years, something magical happened and I would trace it back to Gutenberg and the printing press that has been able to disseminate information more efficiently than before, that all of a sudden they were able to invent agriculture and nitrogen fertilization that made agriculture so much more potent that we didn't have to work on farms anymore. And we could start reading and writing and we could become all these wonderful things. We are today from airline pilot to massage therapists to software engineer.
+01:16:13
+This is amazing. Like living in that time is such a blessing. We should really think about this. Steven Pinker, who is a very famous author and philosopher, whom I really adore, wrote a great book called Enlightenment Now, and that's maybe the one book I recommend.
+01:16:28
+And he asks the question, if there was only a single article written in the 20th century, only one article, what would it be? What's the most important innovation of the most important thing that happened? And he would say this article would credit a guy named Carl Bosz and I challenge anybody. Have you ever heard of the name Carl? I hadn't. Okay, there's there's a corporation in Germany, but it's not associated with kybosh. So I looked it up.
+01:16:56
+Kybosh invented nitrogen fertilization. And in doing so, together with an older invention of of irrigation, I was able to increase the yield for agricultural land by a factor of 26. So a 2500 percent increase in fertility of land. And that saw, Steve Pinker argues, saved over two billion lives today. Two billion people who would be dead if this man hadn't done what he had done. OK, think about that impact and what that means to society.
+01:17:28
+That's that's the way I look at the world. I mean, it's just so amazing to be alive and to be part of this. And I'm so glad I lived after, but not before.
+01:17:37
+I don't think there's a better way to end a sabbatical. It's an honor to talk to you, to have had the chance to learn from you. Thank you so much for that. Thanks for coming out.
+01:17:45
+It's a real pleasure. Thank you for listening to this conversation with Sebastian Thrun and thank you to our presenting sponsor cash app, download it, use collects podcast. You'll get ten dollars and ten dollars will go to First, a STEM education nonprofit that inspires hundreds of thousands of young minds to learn and to dream of engineering our future. If you enjoy this podcast. Subscribe on YouTube. Get Five Stars, an Apple podcast, support on Patreon or connect with me on Twitter.
+01:18:15
+And now let me leave you with some words of wisdom from Sebastian Thrun. It's important to celebrate your failures as much as your successes if you celebrate your failures really well, if you say, wow, I failed, I tried, I was wrong, but I learned something, then you realize you have no fear. And when your fear goes away, you can move the world. Thank you for listening and hope to see you next time.

@@ -1,0 +1,10 @@
+geckodriver.log
+venv/
+__pycache__
+.vscode
+*.log
+ToDo
+transcripts/*
+!transcripts/.gitignore
+.env
+.DS_Store

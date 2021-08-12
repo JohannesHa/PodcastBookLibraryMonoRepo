@@ -1,0 +1,556 @@
+00:00:00
+The following is a conversation with Jeremy Howard, he's the founder of Fast III, a research institute dedicated to making deep learning more accessible. He's also a distinguished research scientist at the University of San Francisco, a former president of Kaggle, as well as a top ranking competitor there. And in general, he's a successful entrepreneur, educator, researcher and inspiring personality in the AI community. When someone asked me, how do I get started with deep learning, fast AI is one of the top places that point them to.
+00:00:33
+It's free. It's easy to get started. It's insightful and accessible. And if I may say so, it has very little B.S. They can sometimes dilute the value of educational content on popular topics like deep learning. First Day I has a focus on practical application of deep learning and Hands-On exploration of the cutting edge that is incredibly both accessible to beginners and useful to experts. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube. Get five stars on iTunes, supported on Pichon or simply connected me on Twitter.
+00:01:09
+Àlex Friedman spelled F.R. Idi Amin. And now here's my conversation with Jeremy Howard.
+00:01:35
+What's the first program you've ever written? This program I wrote that I remember would be at high school. Um, I did an assignment where I decided to try to find out if there were some better musical scales than the normal 12 tone, 12 interval scale. So I wrote a program on my Commodore sixty four in basic search through other scales sizes to see if I could find one where there were more accurate, you know, harmonies like mid tone, like flighty, like you want an actual Exactly.
+00:02:12
+Three to two ratio whereas with a 12. Into scale, it's not exactly three to two, for example, so that's in the Commonwealth, tempered, as they say in the and basic on a Commodore 64. Yeah. What was the interest in music from or was it just high tech music? All my life. So I played saxophone and clarinet and piano and guitar and drums and whatever.
+00:02:34
+So how does that thread go through your life? Whereas music today is it's not where I wish it was I.
+00:02:45
+For various reasons, couldn't really keep it going, particularly because I had a lot of problems with RSI, with my fingers, and so I had to kind of like cut back anything that used. Hands and fingers, I hope one day I'll be able to. Get back to it health wise, so there's a love for music underlying it all, are you? What's your favorite instrument?
+00:03:06
+Saxophone, sax, baritone, saxophone? Well, probably bass saxophone, but they're good. Well, I always love it when music is coupled with programming. There's something about a brain that utilizes those that emerges with creative ideas. So you've used and studied quite a few programming languages.
+00:03:28
+Can you give an an overview of what you've used?
+00:03:32
+What are the pros and cons of each of my favorite programming environment, or most certainly was Microsoft Access back in the earliest days. So that visual basic for applications, which is not a good programming language for the programming environment, is fantastic. It's like the ability to create. You know, user interfaces and type data and actions to them and create reports and all that, as I've never seen anything as good as things nowadays like our table, which are like.
+00:04:08
+Small subsets of that which people love for good reason, but unfortunately, nobody's ever achieved anything like that. What is that? If you could posit that for a second is. So it wasn't a database database program that Microsoft produced part of office and that kind of wizard, you know, but basically it lets you in a totally graphical way, create tables and relationships and queries and tie them to forms and set up, you know, event handlers and calculations.
+00:04:41
+And it was very complete, powerful system designed for not massive scalable things, but very like. Useful little applications that I loved. So what's the connection between Excel and Access so very close. So access kind of was the relational database equivalent, if you like. So people still do a lot of that stuff. That should be an access in Excel because they know it. Exhales Great as well. So, um, but it's just not as. Rich, a programming model, is feeB, combined with a relational database, and so I've always loved relational databases, but today programming on top of relational database is just a lot more of a headache.
+00:05:30
+You know, you generally either need to kind of you know, you need something that connects that that runs some kind of database server unless you use a light which has. It's on issues. Then you kind of often if you want to get a nice programming model, you need to create a adeno R.M. on top and then, I don't know, there's all these pieces tie together and it's just a lot more awkward than it should be.
+00:05:54
+There are people that are trying to make it easier. So in particular, I think of F Sharp, you know, Dan Simon, who, um, him and his team have done a great job of making something like a database appear in the type system. So you actually get like TEB completion Fifield's and tables and stuff like that. Anyway, so that was kind of anyway, so like that whole Vrba office thing, I guess was a starting point, which I still miss.
+00:06:22
+I got into standard, visual, basic. Well, that's interesting. Just to pause on that for a second. It's interesting that you're connecting programming languages to the ease of management of data. Yeah.
+00:06:35
+So in your use of programming languages, you always had a love and a connection with data.
+00:06:42
+I've always been interested in doing useful things for myself and for others, which generally means getting some data and doing something with it and putting it out there again. So that's been my interest throughout. So I also did a lot of stuff with Apple script back in the early days. So it's kind of nice being able to. Get the computer and computers to talk to each other and to do things for you. And then I think that one night the programming language I most loved then would have been Delfi, which was Object Pesco created by Undersells Berg, who previously did Turbo Pascal, and then went on to create dot net and then went on to create typescript.
+00:07:28
+Delphi was amazing because it was like a comp. fast language that was as easy to use as visual basic Delphi.
+00:07:37
+What is it similar to in in more modern languages.
+00:07:44
+Visual, basic. Visual, basic. Yeah. But a comp.. Fast version. So. I'm not sure there's anything quite like it anymore if you took, like, say, shop or Java and got rid of the virtual machine and replaced it with something, you could compile a small, tight binary. I feel like it's where Swift could get to with the new swift UI and the cross platform development going on.
+00:08:13
+Like that's one of my. Dreams is that will hopefully get back to where Delphi was. There is actually a free Pascal project nowadays called Lazarus, which is also attempting to kind of recreate Delphi. So they're making good progress.
+00:08:33
+So, OK, Delphi, that's one of your favorite programming languages, programming environment. So, again, I say Pascale's not a nice language. If you wanted to know specifically about what languages I like. I would definitely pick Che as being an amazingly wonderful language. What what's Jay? Jay, are you aware of Apple? I am not. OK, so from doing a little research and work, you've done OK. So. Not at all surprising, you're not familiar with it because it's not well known, but it's actually one of the main families of programming languages going back to the late 50s, early 60s.
+00:09:15
+So. There was a couple of major directions. One was the kind of lambda calculus, Alonzo Church direction, which I guess kind of response game and whatever, um, which has a history going back to the early days of computing. The second was the kind of. Imperative. You know, alcohol simular going on to C, C++, so forth.
+00:09:40
+There was a third, which are code oriented languages, which started with a paperback, I quote, Can Ivison, which was actually a. Math theory paper, not a programming paper. It was called notation as a tool for thought. And it was the development of a new way, a new type of math notation. And the idea is that this math notation would be was much more flexible, expressive and also well-defined than traditional math notation, which is none of those things.
+00:10:13
+Math notation is awful. And so he actually turned that into a programming language. And because this is the early 50s or the late 50s, all the names were available. So he called his language programming language or Apple AAPL. So Apple is a implementation of notation as a tool for thought by which means math notation. And Ken and his son went on to do many things, but eventually they actually produced a new language that was built on top of all the learnings of Apple that was called Jay.
+00:10:47
+And Jay is the most expressive. Composable. Language of beautifully designed language I've ever seen. Does it have object oriented components to serve that kind of thing or not? Really. It's in a very oriented language.
+00:11:05
+It's a it's a it's a it's the third path you see, using a real right. Oriented. Yes. So it seems to be a rea oriented. So I rearrange.
+00:11:13
+It means that you generally don't use any loops, but the whole thing is done with kind of an extreme version of broadcasting, if you're familiar with that num num slash python concept.
+00:11:27
+So. You do a lot with one line of code, it looks a lot like math notation, basically highly compact, and the idea is that you can kind of because you can do so much with one line of code, a single screen of code is very unlikely that you very rarely need more than that to express your program. And so you can kind of keep it all in your head and you can kind of clearly communicate it. It's interesting that Apple created two main branches, K and J.
+00:11:58
+J. Is this kind of like open source community of of crazy enthusiasts like me? And then the other Path K is fascinating. It's an astonishingly expensive programming language which many of the world's most ludicrously rich hedge funds use. So the entire K machine is so small it sits inside level three cache on your CPU and it easily wins every benchmark I've ever seen in terms of data processing speed don't come across it very much because it's like a hundred thousand dollars per CPU to run it.
+00:12:39
+But it's like this, this, this, this path of programming languages. It's just so much adeno, so much more powerful in every way than the ones that almost anybody uses every day.
+00:12:51
+So it's all about computation that's really focused, pretty heavily focused on computation.
+00:12:57
+I mean, so much of programming is data processing by definition. And so there's a lot of things you can do with it. But yeah, there's not much work being done on making like. Use user interface talking or whatever. I mean, this some, but it's they're not great. At the same time, you've done a lot of stuff with Perl and Python. Yeah. So where does that fit into the picture of J. K and Apple and.
+00:13:26
+Well, you know, it's much more pragmatic, like.
+00:13:29
+In the end, you kind of have to end up where the. Where the libraries are, you know, because to me, my focus is on productivity. I just want to get stuff done and solve problems.
+00:13:41
+So Powell was great. I created an email company called Fast Mail, and Pell was great because back in the late 90s, early 2000s, it just had a lot of stuff it could do. I still had to write my own monitoring system and my own Web framework, my own whatever, because, like, none of that stuff existed. But it was the super flexible language to do that in.
+00:14:07
+And you used Perl fast. I use that as a back end. So everything was written in Perl. Yeah. Yeah. Everything, everything was Perl. Why do you think Perl hasn't. Succeeded or hasn't dominated the mockler python really takes over a lot of the task.
+00:14:24
+Well, I mean, it did dominate. It was four times everything everywhere. But then the the guy that ran, Larry. Well, kind of. Just didn't put the time in anymore and. No project can be successful if there isn't, you know, this particularly one that started with a strong leader, that that loses that strong leadership. So then Python has kind of replaced it. Python is a lot less elegant language in nearly every way, but it has the data science libraries and a lot of them are pretty great.
+00:15:08
+So I kind of. Use user. Because it's the best we have, but it's definitely not. Good enough? Well, what do you think the future programming looks like? What do you hope the future programming looks like if we zoom in on the computational fields, on data science and machine learning?
+00:15:29
+I hope Swift is successful. Because the the goal was swift, the way Chris Latinum describes it is to be infinitely hackable. And that's what I want. I want something where me and the people I do research with and my students can look at and change everything from top to bottom.
+00:15:49
+There's nothing mysterious and magical and inaccessible. Unfortunately, with Python, it's the opposite of that, because Python so slow, it's extremely uncheckable. You get to a point where it's like, OK, from here on down at sea so your pocket doesn't work in the same way. Your profile doesn't work in the same way. Your build system doesn't work in the same way. It's really not very hackable. Well, what's the part you like to be hackable?
+00:16:12
+Is it for the objective of optimizing training of your networks in, for instance, your networks? Is it performance of the system or is there some non performance related?
+00:16:24
+Just everything. I mean, in the end, I want to be productive as a practitioner. So that means that. So like at the moment, our understanding of deep learning is incredibly primitive. There's very little we understand most things don't work very well, even though it works better than anything else out there. Right. There's so many opportunities to make it better. So you look at any domain area like, I don't know, speech recognition with deep learning or natural language processing, classification with data mining or whatever.
+00:16:56
+Every time I look at an area with deep learning, I always say, like, oh, it's it's terrible. There's lots and lots of obviously stupid ways to do things that need to be fixed. So then I want to be able to jump in there and quickly experiment and make them better.
+00:17:12
+Do you think the programming language is has a role in that huge role? Yeah. So currently Python has a big gap in terms of our ability to innovate, particularly around recurrent neural networks and natural language processing, because because it's so slow, the actual loop where we actually loop through words, we have to do that whole thing in Kouda C so we actually can't innovate with the kernel, the heart of that most important algorithm. And it's just a huge problem.
+00:17:50
+And this happens all over the place. So we hit, you know, research limitations. Another example, convolutional neural networks, which are actually the most popular architecture for lots of things, maybe most things and declining. We almost certainly should be using space convolutional neural networks, but only like two people are, because to do it, you have to rewrite all of that courtesy level stuff. And yeah, this researchers and practitioners. Don't so like there's just big gaps in what people actually research on what people actually implement because of the programming language problem.
+00:18:30
+So you think do you think it's is just too difficult to write in to see that a program like a higher level programming language like Swift should enable? The the easier fooling around creative stuff with our own ends or was coalition, you know, is kind of who who who's a who's at fault, who's who's in charge of making it easy for a researcher to play.
+00:18:59
+I mean, no one's at fault or he's got around to it yet or it's just it's hard. Right. And part of the fault is that we ignored that whole apple kind of direction. Nearly everybody did for 60 years, 50 years.
+00:19:14
+But recently, people have been starting to. Reinvent pieces of that and kind of create some interesting new directions in the compiler technology, so the place where that's. Particularly happening right now is something called Melea, which is something that Chris Latino, the swift guy, is leading. And because it's actually not going to be swift on its own, that solves this problem because the problem is that currently riding.
+00:19:42
+A acceptably fast GPU program is too complicated, regardless of what language you use. And that's just because if you have to deal with the fact that I've got, you know, ten thousand threads and I have to synchronize between them all and I have to put my thing into grid blocks and think about what's in all this stuff. It's just. It's just so much boilerplate that to do that, well, you have to be a specialist at that and it's going to be a year's work to, you know, optimize that algorithm in that way.
+00:20:16
+But with things like tenso comprehensions and tile and MLR and TVM, there's all these various projects which are all about saying, let's let people create light domain specific languages for. Tenso computations, these are the kinds of things we do generally and on the GPU for deep learning and then have a compiler which can optimize that tensor computation. A lot of this work is actually sitting on top of a project called Halide, which was is a mind blowing project where they came up with such a domain specific language, in fact, to one domain specific language for expressing.
+00:20:58
+This is what my tenso computation is and another domain specific language for expressing. This is the kind of the way I want you to structure the compilation of that might do it block by block and do these bits in parallel. And they were able to show how you can compress the amount of code by 10X compared to optimized CPU code and get the same performance. So that's like so these other things are kind of sitting on top of that kind of research.
+00:21:27
+And Emilia is pulling a lot of those best practices together. And now we're starting to see work done on making all of that directly accessible through Swift so that I could use Swift to kind of write those domain specific languages. And hopefully we'll get them swift khutor kernels written in a very expressive and concise way that looks a bit like an apple and then swift layers on top of that and then a swift UI on top of that. And, you know, it'll be so nice if we can get to that point.
+00:21:59
+Now, does it all eventually boil down to Kouda and Invidia GPS?
+00:22:05
+Unfortunately, at the moment it does. But one of the nice things about Amulya, if AMD ever gets their act together, which they probably won't, is that they or others could write. Emily, backhands or other GPS or rather a rather tense computation devices. Of which today there are increasing number like Kraków or Vertex III or whatever. So. Yeah, being able to target lots of backhands would be another benefit of this, and the market really needs competition at the moment.
+00:22:44
+Invidia is massively overcharging for their kind of enterprise class cards because there is no. Serious competition because nobody else is doing the software properly in the cloud. There is some competition, right?
+00:22:58
+But not really other than to use perhaps this particular user almost on programmable at the moment.
+00:23:05
+You can't use has the same problem, the case even worse. So to use the Google actually made an explicit decision to make them almost entirely on programmable because they felt that there was too much IP in there. And if they gave people direct access to program them, people would learn their secrets.
+00:23:21
+So you can't actually directly. Program the memory and a CPU you can't even directly like. Create code that runs on and that you look at on the machine that has the GPU, it goes through a virtual machine, so all you can really do is this kind of cookie cutter thing of like. Plug in high level stuff together, which is just super tedious and annoying and totally unnecessary.
+00:23:51
+So what was the tell me, if you could, the origin story of fast A.I.?
+00:23:58
+What is the motivation, its mission, its dream? So I guess the founding story is heavily tied to my previous startup, which is a company called Analytica, which was the first company to focus on deep learning for medicine. And I created that because I saw that was a huge opportunity to visit. There's about a 10x shortage of the number of doctors in the world and the developing world that we need. I expected it would take about 300 years to train enough doctors to meet that gap.
+00:24:33
+But I guess that maybe if we used deep learning for some of the analytics, we could maybe make it. So you don't need a highly trained doctor's diagnosis for diagnosis and treatment planning. Where is the biggest benefit just before get the first day? Where is the biggest benefit of A.I. in medicine that you see today? And not much, not much happening today in terms of stuff that's actually out there. It's very early, but in terms of the opportunity, it's to take markets like India and China and Indonesia, which have big populations in Africa, small numbers of doctors.
+00:25:15
+And provide diagnostic, particularly treatment planning and triage kind of on device so that if you do a, you know, test for malaria or tuberculosis or whatever, you immediately get something that even a health care worker that's had a month of training can get a very high quality assessment of whether the patient might be at risk and tell know, OK, we'll send them off to a hospital. So, for example, in Africa, outside of South Africa, there's only five pediatric radiologists for the entire continent.
+00:25:52
+So most countries don't have any. So if your kid is sick and they need something, diagnose your medical, imaging the person, even if you're able to get medical imaging done, the person that looks at it will be, you know, a nurse at best. Yeah, but actually in India, for example, and in China, almost no X-rays are read by anybody, by any trained professional because they don't have enough. So if instead we had an algorithm that could take the most likely high risk five percent and say triage, basically say, OK, somebody needs to look at this, it would massively change that kind of way, that what's possible with medicine in the developing world.
+00:26:37
+And remember, they have increasingly they have money in the developing world. They don't follow the developing world. So they have the money. So they're building the hospitals, they're getting the diagnostic equipment. But they just there's no way for a very long time will they be able to have the expertise, shortage of expertise. OK, and that's where the deep learning systems can step in and and magnify the expertise they do. Exactly. Yeah.
+00:27:05
+So you do see just Ehlinger a little bit longer. The interaction. You do still see the human experts still at the core of the system? Yeah, absolutely. There's something in medicine that can be automated almost completely.
+00:27:20
+I don't see the point of even thinking about that because we have such a shortage of people. Why would we not why would we want to find a way not to use them like we have people? So the idea of like even from an economic point of view, if you can make them 10x more productive, getting rid of the person doesn't impact your unit economics at all. And it totally ignores the fact that there are things people do better than machines.
+00:27:45
+So it's just to me, that's not a useful way of framing the problem.
+00:27:51
+I guess just to clarify, I guess I meant there maybe some problems where you can avoid even going to the expert ever sort of maybe preventative care or some basic stuff, lowering food, allowing the expert to focus on the things that are that are really that.
+00:28:08
+Well, that's what the triage would do. Right. So the triage would say, OK, it's ninety ninety nine percent sure there's nothing here. But so that can be done on device and they can just say, OK, go home. So the experts are being used to look at the stuff which has some chance it's worth looking at which most things is it's not, you know, it's fine. Why do you think we haven't quite made progress on that yet in terms of the the scale of.
+00:28:42
+How much aid is applied in the middle? There's a lot of reasons. I mean, one is it's pretty new. I only started in alone like twenty fourteen. And before that, like, it's hard to express to what degree the medical world was not aware of the opportunities here. So I went to Arizona, which is the world's largest radiology conference, and I told everybody I could, you know, like I'm doing this thing with deep learning.
+00:29:09
+Please come and check it out. And no one had any idea what I was talking about and no one had any interest in it. So, like, we've come from absolute zero just had and then the whole regulatory framework, education system, everything is just set up to think of doctoring in a very different way. So today there is a small number of people who are.
+00:29:36
+Deep learning practitioners and doctors at the same time, and that we're starting to see the first ones come out of the PhD program, so it's that kind of over in Boston. Cambridge has a number of students now who are data data science experts wanting experts and and actual medical doctors. Quite a few doctors have completed our Phase II course now and are publishing papers and creating journal reading groups in the American Council of Radiology.
+00:30:15
+And like, it's just starting to happen that it's going to be a long process. The regulators have to learn how to regulate this. They have to build. Guidelines and then the lawyers at hospitals have to develop a new way of understanding that. Sometimes it makes sense for data to be. You know, looked at in raw form, in large quantities in order to create, well, changing results.
+00:30:44
+He has the regulation around data, all that it sounds with probably the hardest problem, but sounds reminiscent of autonomous vehicles as well. Many of the same regulatory challenges, many of the same data challenges.
+00:30:57
+Yeah, I mean, funnily enough, the problem is less regulation and more the interpretation of that regulation by lawyers in hospitals.
+00:31:05
+So hyper is actually. Was designed to it and he is not standing, does not stand for privacy. It sounds supportability, it's actually meant to be a way that data can be used. And it was created with lots of grey areas because the idea is that would be more practical and would help people to use this. This legislation to actually share data in a more thoughtful way. Unfortunately, it's done the opposite because when a lawyer sees a grey area, they say, oh, if we don't know, we won't get sued, then we can't do it right.
+00:31:39
+So hyper is not exactly the problem. The problem is more that this hospital lawyers are not incented to make bold decisions about data portability or even to embrace technology that saves lives.
+00:31:57
+They more want to not get in trouble for embracing that.
+00:32:01
+Also, it is also saves lives in a very abstract way, which is like, oh, we've been able to release these hundred thousand anonymized records. I can't point to the specific person whose life that saved. I can say like, oh, we ended up with this paper which found this result, which, you know, diagnosed a thousand more people than we would have otherwise. But it's like which ones were helped. It's very abstract.
+00:32:24
+And on the counter side of that, you may be able to point to a life that was taken because of something that was. Yeah.
+00:32:32
+Or a person whose privacy was violated. It's like, oh, this specific person, you know, was. They identified so identified, just a fascinating topic, we're jumping around. We'll get back to first there. But and the question of privacy data is the fuel for so much innovation in deep learning? What's your sense and privacy, whether we're talking about Twitter, Facebook, YouTube, just the technologies like in the medical field that rely on people's data in order to create impact?
+00:33:10
+How do we get that right, respecting people's privacy and yet creating technology that is learned from data?
+00:33:20
+One of my areas of focus is on doing more with less data. Which so most vendors, unfortunately, strongly incented to find ways to require more data and more computation. So Google and IBM being the most obvious IBM. Yes, so Watson, you know, so Google and IBM both strongly pushed the idea that you have to be you know, they have more data and more computation and more intelligent people than anybody else. And so you have to trust them to do things because nobody else can do it.
+00:33:59
+And Google's very up front about this, like Jeff Danas going out there and giving talks and said our goal is to require a thousand times more computation, but less people. Our goal is to use the people that you have better and the data you have better and the computation you have better. So one of the things that we have discovered is, or at least highlighted, is that you are very, very, very often don't need much data at all.
+00:34:30
+And so the data you already have in your organization will be enough to get data that results. So like my starting point would be to kind of say around privacy is. A lot of people are looking for ways to share data and aggregate data, but I think often that's unnecessary. They assume that they need more data than they do because they're not familiar with the basics of transfer learning, which is this critical technique for needing orders of magnitude less data.
+00:34:59
+Is your sense one reason you might want to collect data from everyone is like in the recommender system context where your individual Jeremy is individual data is the most useful for free for providing a product that's impactful for you. So for giving you advertisements, for recommending to you movies, for doing medical diagnosis. Is your sense we can build with a small amount of data general models that will have a huge impact for most people that we don't need to have data from each individual.
+00:35:36
+On the whole, I'd say yes. I mean, there are. Things like. Know recommender systems have this called stop problem, where, you know, Jeremy is a new customer, we haven't seen him before, so we can't recommend him things based on what else he's bought and liked with us. And there's various workarounds to that, like in a lot of music programs will start out by saying, which of these artists do you like? Which of these albums do you like?
+00:36:04
+Which songs do you like?
+00:36:07
+Netflix used to do that, now they say they tend not to people kind of don't like that because they think, oh, we don't want to bother the user. So you could work around that by having some kind of data sharing where you get my marketing record from axium or whatever and try to question that. To me, the. The benefit to me and to society of. Saving me five minutes on answering some questions versus the negative externalities of if the privacy issue doesn't add up.
+00:36:42
+So I think like a lot of the time, the places where people are invading our privacy in order to provide convenience is really about just trying to make them more money. And and they move these negative externalities to places that they don't have to pay for them. So when you actually see.
+00:37:04
+Regulations appear that actually cause the companies that create these negative externalities to have to pay for it themselves, they say, well, we can't do it anymore. So the cost is actually too high for something like medicine. Yeah, I mean, the hospital has my, you know, medical imaging, my pathology studies, my medical records, and also I own my medical data. So you can so I, I help a startup called Doc. I don't think Doc does is that it has an app you can connect to, you know, Sutter Health and Webcke or Walgreens and download your medical data to your phone and then upload it again at your discretion to share it as you wish.
+00:37:53
+So with that kind of approach we can share our medical information with. The people we want to yes, so control, I mean, literally being able to control who you share with and so on. Yeah, so that has a beautiful, interesting tangent.
+00:38:10
+But to a trip back to the origin story of first day or so. So before I started first, I spent a year researching where the biggest opportunities for deep learning, because I knew from my time at Kakul in particular, that deep learning had kind of hit this threshold point where it was rapidly becoming the state of the art approach in every area that looked at it and had been working with neural nets for over 20 years. I knew that from a theoretical point of view, I wanted it hit that point.
+00:38:45
+It would do that in kind of just about every domain. And so I kind of spent a year researching one of the domains. It's going to have the biggest low hanging fruit in the shortest time period. I picked medicine, but there were so many I could have picked. And so there was a kind of level of frustration for me. It's like, OK, I'm really glad we've opened up the medical learning world. And today it's huge, as you know.
+00:39:11
+But we can't do you know, I can't do everything. I don't even know like like in medicine. It took me a really long time to even get a sense of like what kind of problems to medical practitioners solve, what kind of data do they have?
+00:39:23
+Who has that data? So I kind of felt like I need to approach this differently if I want to maximize the positive impact of deep learning rather than me picking an area and trying to become good at it and building something, I should let people who are already domain experts in those areas and who already have the data.
+00:39:45
+Do it themselves. So that was the reason for Thursday is to basically try and figure out how to get deep learning into the hands of people who could benefit from it and help them to do so in a quick and easy and effective way as possible. Got it.
+00:40:04
+So sort of empower the the domain expert. Yeah.
+00:40:08
+And partly it's because, like. I'd like most people in this field. My background is very applied and industrial. At my first job was at McKinsey and Co. I spent 10 years in management consulting. I. I spent a lot of time with domain experts, so I kind of respect them and appreciate them and I know that's where the value generation in society is. And so I also know how most of the code and most of them don't have the time to invest, you know, three years in a graduate degree or whatever.
+00:40:46
+So it's like, how do I. Up skill, those domain experts, I think that would be a super powerful thing, you know, because societal impact I could have. So, yeah, that was the thinking, so, so much of first year students and researchers and the things you teach are pragmatically minded, practically minded for figuring out ways how to solve real problems and fast. Right.
+00:41:13
+So from your experience, what's the difference between theory and practice of deporting the.
+00:41:20
+Well, most of the research in the deep mining world is a total waste of time. That's what I was getting at. Yeah, it's it's a problem in science in general. Scientists need to be published, which means they need to work on things that their peers are extremely familiar with and can recognize and advance in that area. So that means that they all need to work on the same thing.
+00:41:46
+Yeah. And so it really and the thing they work on this nothing to encourage them to work on things that are practically useful. So you get just a whole lot of research, which is minor advances and stuff that's been very highly studied and has no significant practical impact, whereas the things that really make a difference, like I mentioned, transfer learning. Like if we can be better at transfer learning, then it's this world changing thing. We're suddenly like lots more people can do world class work with less resources and less data and.
+00:42:24
+But almost nobody works on that. Or another example, active learning, which is the study of like how do we get more out of the human beings in the loop? Guess my favorite topic. Yeah. So active learning is great, but it's almost nobody working on it because it's just not a trendy thing right now. You know what, somebody so so interrupt.
+00:42:44
+You're saying that nobody is publishing an act of learning. Right. But there's people inside companies, anybody who actually has to solve a problem. They're going to innovate on active learning.
+00:42:56
+Yeah, everybody kind of reinvents active learning when they actually have to work in practice because they start labeling things and they think, gosh, this is taking a long time and very expensive. And then they start thinking, well, why am I labeling everything? I'm only the machines, only making mistakes on those two classes. They're the hard ones. Maybe ought to start labeling those two classes and then you start thinking, well, why did I do that manually?
+00:43:18
+Why kind I just get the system to tell me which things are going to be hardest. It's it's an obvious thing to do, but um. Yeah, it's just like, like transfer learning. It's, it's understudied and the academic world just has no reason to care about practical results. The funny thing is, like, I've only really ever written one paper. I hate writing papers and I didn't even write it. It was my colleague Sebastian Ritter who actually wrote it.
+00:43:42
+I just did the research for it. But it was basically introducing transfer learning, successful transfer, learning to an LP for the first time. And the algorithm is, quote, Joel Fit and. It actually I actually wrote it for the course for the first day cos I wanted to teach people and I thought I only want to teach people practical stuff. And I think the only practical stuff is transfer learning. And I couldn't find any examples of transfer learning.
+00:44:09
+And so I just did it. And I was shocked to find that as soon as I did it was it all the basic prototype took a couple of days. It smashed the state of the art on one of the most important data sets in a field that I knew nothing about. And I just thought, well, this is ridiculous. And so I spoke to Sebastiaan about it and he kindly offered to write it up the results. And so it ended up being published in a school, which is the top link with computational linguistics conference.
+00:44:42
+So people do actually care once you do it, but I guess it's difficult for maybe like junior researchers or like like I don't care whether I get citations or papers or whatever. There's nothing in my life that makes that important, which is why I've never actually bothered to write a paper on myself. That's for people who do. I guess they have to pick the kind of. Safe option, which is like, yeah, make a slight improvement on something that everybody is already working on.
+00:45:12
+Yeah, nobody does anything interesting or succeeds in life or the safe option.
+00:45:18
+I mean, the nice thing is nowadays everybody is now working on transfer money.
+00:45:22
+Since that time we've had Deepti and two in person, you know, it's like it's so yeah. Once you show that something is possible, everybody jumps in. I guess. So I hope to be a part of and I hope to see more innovation and active learning in the same way, I think. Yeah. And learning and active learning are fascinating. Public open work. I actually helped start a startup called Platform II, which is really all about active learning.
+00:45:48
+And yeah, it's been interesting trying to kind of. See what research is out there and make the most of it, and that's basically none. So we've had to do all our own research once again, just as you described. Can you tell the story of the staff recompetition down bench and fastness achievement on it? Sure. So something which I really enjoy is that I basically teach two courses a year, the practical planning for codas, which is kind of the introductory course, and then cutting edge deep learning vocoders, which is the kind of research level for.
+00:46:25
+And while I teach those courses, I have a, uh, I basically have a big office at the University of San Francisco, big enough for like 30 people, and I invite anybody, any student who wants to come and hang out with me while I build the course. And so generally it's full. And so we have 20 or 30 people in a big office with nothing to do but study deep learning. So during one of these times that somebody in the group said, oh, there's a thing called DAUn Bench that looks interesting.
+00:46:58
+And I like, what the hell is that? I set out some competition to see how quickly you can train a model seems kind of not exactly relevant to what we're doing, but it sounds like the kind of thing which you might be interested in. I checked it out and I said, oh, crap, there's only ten days till it's over already too late. And we're kind of busy trying to teach this course, but we like to make an interesting.
+00:47:21
+Case study for the costs, like it's all the stuff we're already doing, why don't we just put together our current best practices and ideas? So me and I guess about four students just decided to give it a go. And we focused on this one called Cipha Ten, which is a little 32 by 32 pixel images.
+00:47:41
+Can you see wooden benches? Yeah.
+00:47:43
+So it's a competition to try and model as fast as possible. It was run by Stanford and as cheap as possible. That's also another one for the as possible. And there's a couple of categories. Image Net and so far 10. So image nets this big one point three million image thing that took a couple of days to train. I remember a friend of mine, a pit warden who's now at Google.
+00:48:08
+I remember he told me how he trained Image Net a few years ago and he basically, like, had this little granny flat out the back that he turned into his image net training center.
+00:48:19
+And he after like a year of work, he figured out how to train it in like ten days or something. It's like that was a big job. Well, Cipha 10 at that time, you could train in a few hours. You know, it's much smaller and easier. So we thought we'd try. So 10. And yeah, I really never done that before, like, I never really like things like using more than one GPU at a time was something I tried to avoid because to me, it's like very against the whole idea of accessibility.
+00:48:50
+Is she going to do things with one chip here? I mean, have you asked in the past before after having accomplished something, how do I do this faster? Much faster. Oh, always. But it's always for me. It's always how do I make it much faster on a single gene than a normal person could afford in their day to day life? It's not how could I do it faster by, you know, having a huge data center?
+00:49:12
+Because to me it's all about like as many people should be to use something as possible without fussing around with infrastructure. So anyway, so in this case, it's like, well, we can use HGP used just by renting a US machine, so we thought we'd try that.
+00:49:29
+And yeah, basically using the stuff we were already doing, we were able to get, you know, the speed, you know, within a few days we had to speed down to. I don't know, a very small number of minutes, I can't remember exactly how many minutes it was like ten minutes or something. And so, yeah, we found ourselves at the top of the leaderboard easily for both time and money, which really shocked me because the other people competing this were like Google and Intel and stuff like that, a lot more about this stuff than I think we do.
+00:50:02
+So that emboldened we thought. Let's try the image net one, too. I mean, it seemed way out of our league, but our goal was to get under 12 hours and we did, which was really exciting. And but we didn't put anything up on the leaderboard, but we were down to like 10 hours. But then Google put in like five hours or something. And it was like, oh, I'm so screwed. But we kind of thought, we'll keep trying.
+00:50:33
+You know, if Google can do it, I mean, Google did on five hours on something like a teapot or something like a lot of hardware, but we kind of like had a bunch of ideas to try.
+00:50:43
+Like, a really simple thing was why are we using these big images?
+00:50:47
+They're like two hundred and twenty four to fifty six better pixels. You know, why don't we try smaller ones and just elaborate.
+00:50:56
+There's a constraint on the accuracy that your train model is supposed to achieve. Yeah. You're going to achieve ninety three percent. I think it was for image.
+00:51:04
+Not exactly, which is very tough. So you have to. Yeah. Ninety three percent like they picked a good threshold. It was a little bit higher than what the most commonly used resonant 50 model could achieve at that time.
+00:51:20
+So, yeah, so it's quite a difficult problem to solve, but yeah, we realized if we actually just use sixty four by sixty four images.
+00:51:31
+It trained a pretty good model and then we could take that same model and just give it a couple of epochs to learn to twenty four by 220 form images and it was basically already trained. It makes a lot of sense. Like if you teach somebody like here's what a dog looks like and you show them low versions and then you say, here's a really clear picture of a dog. They already know what it looks like.
+00:51:53
+So that like just we jumped to the front and we ended up winning. Uh.
+00:52:02
+Parts of that competition, we actually ended up. Doing a distributed version over multiple machines a couple of months later and ended up at the top of the leaderboard, we had 18 minutes division. Yeah, and it was and people have just kept on blasting through again and again since then. So.
+00:52:19
+So what's your view on multi GPU or multiple machine training in general as as a way to speed it up?
+00:52:29
+I think it's largely a waste of time, both multichip on a single machine and yeah.
+00:52:33
+Particularly multi machines, because it's just clunky. Modie CPU's is less plunky than it used to be, but to me, anything that slows down your iteration speed is a waste of time. So you could maybe do your very last. You know, perfecting of the model on not GPS, if you need to, that so for example. I think doing stuff on the Internet is generally a waste of time. Why test things on one point three million images?
+00:53:05
+Most of us don't use one point three million images. And we've also done research that shows that doing things on a smaller subset of images gives you the same relative answers anyway. So from a research point of view, why waste that time? So actually, I released a couple of new data sets recently. One is called Image Net, the French image, which is a small subset of image net, which is designed to be easy to classify. What's how do you spell image?
+00:53:34
+It's got an extra T and A at the end because it's very French. OK, and then and then another one called Image Wolf, which is a subset of image net that only contains doctorate's. And that's a hard one, right? That's a hard one.
+00:53:49
+And I've discovered that if you just look at these two subsets, you can train things on a single GPU in ten minutes and the results you get directly transferable to image net nearly all the time. And so now I'm starting to see some researchers start to use these smaller datasets so deeply. Love the way you think, because I think you might have written a blog post saying that you're going these big data sets is encouraging people to not think creatively. Absolutely.
+00:54:21
+So you're two is sort of constrains you to train on large resources. And because you have these resources, you think more research will be better and then you start. So somehow you kill the creativity. Yeah, and even worse than that, say, I keep hearing from people who say I decided not to get into deep learning because I don't believe it's accessible to people outside of Google to do useful work. So, like, I see a lot of people make an explicit decision to not learn this incredibly valuable tool because they've they've drunk the Google Kool-Aid, which is that only Google's big enough and smart enough to to do it.
+00:54:59
+And I just find that so disappointing and it's so wrong. And I think all of the major breakthroughs in AI in the next 20 years will be doable in a single GPU.
+00:55:10
+Like I would say, my sense is all the big sort of well, let's put it this way. None of the big breakthroughs of the last 20 years have required multiple GPS. So like fetch Norm Rallier, drop out to demonstrate something to that.
+00:55:25
+Every one of them is required multiple geekiest against the original. Gan's didn't require multiple UPL.
+00:55:33
+And we've actually recently shown that you don't even need Gan's. So we've developed Gane level outcomes without needing Gan's and we can now do it with again by using transfer learning. We can do it in a couple of hours on a single generative model like without the adversarial part. Yeah. So we've found loss functions that work super well without the adversarial part. And then one of our students, Gaikwad Jason Antec, has created a system called The Old Whiffy, which uses this technique to colorize old black and white movies.
+00:56:06
+You can do it on a single GPU color as a whole movie and a couple of hours. And one of the things that Jason and I did together was we figured out how to add a little bit of and at the very end, which it turns out for colorization, makes it just a bit brighter and nicer. And then Jason did masses of experiments to figure out exactly how much to do. But it's still all done on his home machine, on a single GPU in his lounge room.
+00:56:32
+And like if you think about, like, colorizing Hollywood movies, that sounds like something a huge studio would have to do. But he has the world's best results on this. There's this problem of microphones. We're just talking to microphones now. Yeah, it's such a pain in the ass to have these microphones to get good quality audio. And I tried to see if it's possible to plop down a bunch of cheap sensors and reconstruct high quality audio from multiple sources.
+00:56:59
+Because right now I haven't seen work from, OK, we can save inexpensive mikes automatically combining audio from multiple sources to improve the combined audio. People haven't done that and that feels like a learning problem. So hopefully somebody can. Well, I mean, it's eminently doable and it should have been done by now.
+00:57:18
+I feel I felt the same way about computational photography four years ago. Why are we investing in big lenses when three cheap lenses plus actually a little bit of. Intentional movement, so like Holden, you know, like take a few frames, gives you enough information to get excellent some pixel resolution, which particularly with deep learning, you would know exactly what you might be looking at. We can totally do the same thing with audio. I think this the madness that hasn't been done yet.
+00:57:48
+Progress on foot photography company. Yeah, the photography is basically standard now. So the the the Google Pixel Nightlight. I don't know if you've ever tried it, but it's it's astonishing. You take a picture and almost pitch black. Can you get back a very high quality image. And it's not because of the lens. Same stuff is like adding the back to the you know, the the background layering of done computationally is the picture here. Yeah.
+00:58:16
+Basically the, um, everybody now is doing most of the fanciest stuff on their phones with computational photography. And also increasingly people are putting more than one lens on the back of the camera. So the same will happen for audio for sure. And there's applications in the audio side. If you look at an Alexa type device that most people have seen, I worked at Google before. When you look at noise background removal, you don't think of multiple sources of audio that you don't play with that as much as I would hope people.
+00:58:49
+But I mean, you can still do it even with one. Like, again, it's not not much work's been done in this area. So we're actually going to be releasing an audio library soon, which hopefully will encourage development of this because it's so underused. The basic approach we used for our super resolution in which Jason uses photography of generating high quality images, the exact same approach would work for audio. No one's done it yet, but it would be a couple of months work.
+00:59:14
+OK, also learning rate in terms Dornbush um, there's some magic on learning rate that you played around with. Yeah. Interesting. Yeah.
+00:59:23
+So this is all work that came from a guy called Leslie Smith. Leslie is a researcher who, like us, cares a lot about just the practicalities of. Training neural networks quickly and accurately, which you think is what everybody should care about, but almost nobody does. And he discovered something very interesting, which he calls super convergence, which is there are certain networks that with certain settings of high parameters, could suddenly be trained ten times faster by using a 10 times higher learning right now.
+00:59:58
+No one published that paper. Because it's not an area of kind of active research in the academic world, no academics recognize this is important and also deep learning in academia is not considered a experimental science. So unlike in physics, where you could say, like, I just saw a subatomic particle do something, which the theory doesn't explain, you could publish that without an explanation. And then in the next 60 years, people can try to work out how to explain it.
+01:00:31
+We don't allow this in the deep learning world. So it's it's literally impossible for Leslie to publish a paper that says, I've just seen something amazing happen. This thing train 10 times faster than it should have. I don't know why. And so the reviewers were like, we can't publish that because you don't know why.
+01:00:47
+So anyway, that's important to pause on because there's so many discoveries that would need to start like that.
+01:00:53
+Every every other scientific field I know of works is that way. I don't know why ours is uniquely disinterested in publishing unexplained experimental results, but there it is. So it wasn't published. Having said that, I. Read a lot more unpublished papers and published papers, because that's where you find the interesting insights.
+01:01:17
+So I absolutely read this paper and I was just like, this is. Astonishingly mind blowing and weird and awesome and like, why isn't everybody only talking about this? Because, like, if you can train these things ten times faster, they also generalize better because you're you're doing less epochs, which means you look at the data less you get better accuracy. So I've been kind of studying that ever since, and eventually Leslie kind of figured out a lot of how to get this done and we added minor tweaks.
+01:01:49
+And a big part of the trick is starting at a very low learning rate, very gradually increasing it. So as your training, your model, you would take very small steps at the start and you gradually make them bigger and bigger until eventually you're taking much bigger steps than anybody thought was possible. There's a few other little tricks to make it work, but basically we can reliably get super convergence. And so for the dawn bench thing, we were using just much higher learning rates than people expect it to work.
+01:02:19
+What do you think the future of I mean, it makes so much sense for that to be a critical hyper parameter learning rate that you very what do you think the future of learning rate magic looks like?
+01:02:30
+Well, there's been a lot of great work in the last 12 months in this area, and people are increasingly realizing that up to like we just have no idea really how optimises work and the combination of white tech, just how we regularize, optimises and the learning rate and then other things like the epsilon we used in the Adam Optimizer, they all work together and weird ways and different parts of the model. This is another thing we've done a lot of work on is research into how different parts of the model should be trained at different rates in different ways.
+01:03:03
+So we do something we call discriminative learning rates, which is really important, particularly for transfer learning. Um.
+01:03:10
+So really, I think in the last 12 months, a lot of people have realized that this all this stuff is important. There's been a lot of great work coming out. And we're starting to see algorithms here which have very, very few dial's, if any, that you have to touch. So I think what's going to happen is the idea of a learning rate will it almost already has disappeared in the latest research.
+01:03:31
+And instead, it's just like, you know, we we know enough about how to interpret the gradients and the change of gradients we see to know how to set every parameter.
+01:03:42
+You always.
+01:03:43
+So you see the future of of deep learning where really where's the input of a human expert needed?
+01:03:51
+Well, hopefully the input of the human expert will be almost entirely unneeded from the deep learning point of view. So, again, like Google's approach to this is to try and use thousands of times more compute to run lots and lots of models at the same time and hope that one of them is good, that old kind of kind of stuff, which I think is insane. When you better understand the mechanics of how models learn, you don't have to try a thousand different models to find which one happens to work the best.
+01:04:22
+You can just jump straight to the best one, which means that it's more accessible in terms of compute cheaper and also with less hyper parameters to set. It means you don't need deep learning experts to train your learning model for you, which means that domain experts can do more of the work, which means that now you can focus the human time on the kind of interpretation, data gathering, identifying what errors and stuff like that. Yeah, the data side.
+01:04:50
+How often do you work with data these days in terms of the cleaning looking like Darwin looked at? Different species while traveling about. Do you look at data? I have you in your roots and Kagle always good data.
+01:05:06
+I mean, is a key part of our course. It's like before we train a model in the course, we see how to look at the data. And then after the first thing we do after we train our first model, which we find tune an image net model for five minutes. And then the thing we immediately do after that is we learn how to analyze the results of the model by looking at examples of misclassified images and looking at a classification matrix and then doing like research on Google to learn about the kinds of things that it's misclassifying.
+01:05:35
+So to me, one of the really cool things about machine learning models in general is that you can when you interpret them, they tell you about things like what are the most important features, which groups you misclassifying? And they help you become a domain expert more quickly because you can focus your time on the bits that the model is telling you is important. So lets you deal with things like data leakage, for example, if it says all the main feature I'm looking at is customer ID, you know, and you're like, oh, customer, they should be predictive.
+01:06:04
+And then you can talk to the people that manage customer IDs and they'll tell you like, oh yes, as soon as a customer's application is accepted, we add a one on the end of their customer or something, you know. Yeah.
+01:06:18
+So, yeah, model looking at data, particularly from the lens of which parts of the data the model says is important is super important.
+01:06:26
+Yeah. And using kind of using the model to almost debug the data to learn more about this actually.
+01:06:34
+What are the different cloud options for training on that works? Last question related to Dornberger. Well, it's part of a lot of the work you do, but from a perspective of performance, I think you've written this in a blog post was to you from Google. What's your sense? What the future holds? What would you recommend now in terms of so from a hardware point of view.
+01:06:57
+Giggles, tips, and the best Invidia GPS are.
+01:07:01
+Similar I mean, maybe the tip is like 30 percent faster, but they're also much harder to program where there isn't a clear leader in terms of hardware right now, although much more importantly, that GPS is a much more programmable. They've got much more written for all of them. So like that, the clear leader for me and where I would spend my time as a researcher and practitioner. Near the entrance of the platform. I mean, we're super lucky now with stuff like Google GCP, Google Cloud and Adewusi that you can access a GPU pretty quickly and easily.
+01:07:42
+But I mean, for us, it's still too hot like you have to. Find an MRI and get the instance running and then install the software you want and blah, blah, blah, GCP is still is currently the best way to get started on the server environment because they have a fantastic fast day and PI torch ready to go instance. Which has all the crosses, preinstalled, it has to put a notebook freerunning Jupiter notebook is this wonderful interactive computing system which everybody basically should be using for any kind of data driven research.
+01:08:20
+But then even better than that. There are platforms like Salamander, which we own, and paper space where literally you click a single button and it pops up and you put a notebook straight away without any kind of installation or anything. And all the cost notebooks are all preinstalled. So like for me, we this is one of the things we spent a lot of time kind of curating and working on. Because when we first started our courses, the biggest problem was people dropped out of lesson one because they couldn't get an instance running.
+01:08:59
+So things are so much better now. And we actually have if you cut a cost up faster, I the first thing it says is here's how to get started with your GPA when it's like you just click on the link and you click start and and going you will go GCB.
+01:09:13
+I have to confess I've never used the Google GCP. JCP gives you three hundred dollars of compute for free, which is really nice.
+01:09:22
+But as I say, salamander and paper space are even even easier still. OK, so, uh, the from the perspective of planning frameworks you work with fast, I think this framework and pie torch and tends to flow. What are the strengths of each platform perspective? So in terms of what we've done our research on and taught in our course, we started with Yanno. And us and then we switch to Tenso Flow and Carus, and then we switched to PI Torch and then we switched to Pi Torch and fast, and that that kind of reflects a growth and development of the ecosystem of deep learning libraries.
+01:10:09
+Siano intensive low. Were great, but were much harder to teach and do research and development on because they define what's called a computational graph up front, a static graph where you basically have to say here all the things that I'm going to eventually do in my model.
+01:10:29
+And then later on you say, OK, do those things with this data and you can't, like, debug them. You can't do them step by step. You can't program them interactively in a Jupiter notebook and so forth. Pocketwatch was not the first, but Touch was certainly the strongest entrant to come along and say, let's not do it that way. Let's just use normal python. And everything you know about in Python is just going to work and we'll figure out how to make that run on the GPU as and when necessary.
+01:10:58
+That turned out to be a huge a huge leap in terms of what we could do with our research and what we could do with that teaching. Because it was a limiting. Yeah, I mean, it was critical for us for something like DAUn Bench to be able to rapidly try things, it's just so much harder to be a researcher and practitioner when you have to do everything upfront and you can inspect it. Problem with Nightwatch is. It's not at all accessible to newcomers because you have to, like, write your own training loop and manage the gradients and all this stuff.
+01:11:32
+And it's also like not great for researchers because you're spending your time dealing with all this boiler plate and overhead rather than thinking about your algorithm. So we ended up writing this very multilayered API that at the top level you can train a state of the art neural network in three lines of code and which kind of talks to an API which talks to NPR's tacksman API, which like you can dive into at any level and get progressively closer to the machine kind of levels of control.
+01:12:01
+Mm hmm. And this is the first A.I. library that's been critical for us and for our students and for lots of people that have won, including learning competitions with a handwritten academic papers with it. It's made a big difference. We're still limited, though, by Python.
+01:12:21
+And particularly this problem with things like recurrent neural nets, say, where you just can't change things unless you accept it going so slowly that it's impractical. So in the latest incarnation of the course and with some of the research we're still now starting to do, we're starting to do stuff, some stuff in Swift. I think we're three years away from that being super practical, but I'm in no hurry. I'm very happy to invest the time to get there.
+01:12:52
+But with with that, we actually already have a nascent version of the first library for Vision running on SWITCHED-ON because Python for Flow is not going to cut it. It's just a disaster. What they did was they tried to replicate. The bits that people were saying they like about torture watch the kind of interactive computation, but they didn't actually change their foundational runtime components. So they kind of added this like syntax sugar. They're called figure 24, which makes it look a lot like torch, but it's 10 times slower than PI Torch to actually do a step.
+01:13:33
+So because they didn't invest the time and retooling the foundations because their code base is so horribly, I think it's probably very difficult to do that kind of thing.
+01:13:43
+Yeah, well, particularly the way it tends to flow was written. It was written by a lot of people very quickly in a very disorganized way. So like when you actually look in the code, as I do often, I'm always just like, oh, God, what were they thinking? It's just it's pretty awful.
+01:13:58
+So I'm really extremely negative about the potential future. If at some point some of the swift patterns of flow can be a different beast altogether, it can be like it can basically be a layer on top of millia that takes advantage of, you know, all the great compiler stuff that Swift builds on with LVM. And, yeah, it could be I think it will be absolutely fantastic. Well, you inspired me to try ever truly felt the pain of dancefloor 2.0 Python.
+01:14:34
+It's fine by me, but of yeah, I mean, it does the job if you're using, like, predefined things that somebody's already written. But if you actually compare, you know, like I've had to do because I've been trying to do a lot of stuff with Censullo recently, you actually compare like I want to write something from scratch and I just keep finding like, oh, it's running 10 times slower than I thought.
+01:14:58
+So is the biggest cost the running time out the window, how long it takes you to program?
+01:15:06
+That's not too different now, thanks to Chancelor A.. That's not too different. But because so many things take so long to run. Yeah. You wouldn't run it ten times slower. Like you just go like, oh, it's just taking too long. And also there's a lot of things which are just less programmable, like TFTP data, which is the way data processing works. And to flow is just this big mess. It's incredibly inefficient and they kind of had to write it that way because if that TPE problems I described earlier.
+01:15:36
+So I just you know, I just feel like they've got this huge technical debt, which they're not going to solve without starting from scratch.
+01:15:45
+So here's an interesting question then. If there's a new student starting today, what would you recommend they use?
+01:15:54
+Well, I mean, we obviously recommend first and high touch because we teach new students and that's what we teach with. So we would very strongly recommend that because it will let you get on top of the concepts much more quickly. So then you'll become an extra and you'll also learn the actual state of the art techniques. So you actually get World-Class results. Honestly, it doesn't much matter what library you learn because switching from China to mixed net to tends to flow to torch is going to be a couple of days work if you long as you understand the foundation as well.
+01:16:32
+But you think will swift creep in there as a thing? That people start using not for a few years, particularly because, like, Swift has No. Data Science Community Library Association and the Swift community has. A total lack of appreciation and understanding of numeric computing, so like they keep on making stupid decisions for years, they've just done dumb things around performance and prioritization. That's clearly changing now because. The developer, Chris Chris, a developer of Swift, Chris Latina's, working at Google on swift returns to flow.
+01:17:18
+So, like, that's that's a priority. It'll be interesting to see what happens with Apple because, like, Apple hasn't shown any sign of caring about numeric programming in SWIFT. So hopefully they'll get off their ass and start appreciating this because currently all of their low level libraries are not written in Swift. They're not particularly Swiftie at all. Stuff like Corrimal, they're really pretty rubbish.
+01:17:48
+So, yeah, so there's a long way to go. But at least one nice thing is that swift Potenza flow can actually directly use Python code in Python libraries in a literally the entire less than one Bocephus day runs in Swift right now in python mode. So that's that's a nice intermediate thing.
+01:18:08
+How long does it take, though, if you look at the two, to say, of course, is how long does it take to get from point zero to completing both courses?
+01:18:20
+It varies a lot. Somewhere between. Two months and two years generally. So for two months, how many hours a day, so I have, like, somebody who is a very competent coder.
+01:18:38
+Can. Can do 70 hours per course and 77 zero. That's it. OK, but a lot of people I know take a year off to study first full time and say at the end of the year they feel pretty competent because generally there's a lot of other things you do like that generally they'll be entering tackle competitions, things like B rating and Goodfellows pork. They might you know, they'll be doing a bunch of stuff. And often, you know, particularly if they are the main expert, they're coding skills might be a little on the pedestrian side.
+01:19:19
+So part of it's just like doing a lot more writing. What do you find is the bottleneck for people usually except getting started setting stuff up? I would say coding just yeah, I would say the best. The people who are strong coders pick it up the best, although another bottleneck is people who have a lot of experience of.
+01:19:42
+Classic statistics can really struggle because the intuition is so the opposite of what they used to. They're very used to like trying to reduce the number of parameters in their model and. Looking at individual coefficients and stuff like that, so I find people who have a lot of coding background and know nothing about statistics are generally going to be the best stuff.
+01:20:05
+So, uh, you taught several courses on deep learning. As Feynman said, the best way to understand something is to teach it. What have you learned about deep learning from teaching it a lot? That's a key reason for me to teach the courses. I mean, obviously, it's going to be necessary to achieve our goal of getting domain experts to be familiar with deep learning. But it was also necessary for me to achieve my goal of being really familiar with deep learning.
+01:20:34
+I I mean, to see so many Jamaine experts from so many different backgrounds, it's definitely. I wouldn't say taught me, but convinced me something that I like to believe was true, which was anyone can do it. So there's a lot of kind of snobbishness out there about only certain people can learn to code. Only certain people are going to be smart enough to like, do I? That's definitely bullshit. You know, I've seen so many people from so many different backgrounds get state of the art results in their domain areas.
+01:21:09
+Now, it's definitely taught me that the key differentiator between people that succeed and people that fail is tenacity. That seems to be basically the only thing that matters to people. A lot of people give up. But if the ones who don't give up. Pretty much everybody succeeds, you know, even if at first I'm just kind of like thinking like, wow, they really aren't quite getting it yet, are they? But eventually people get it and they succeed.
+01:21:41
+So I think that's been I think they're both things I liked to believe was true, but I don't feel like I really had strong evidence for them to be true. But now I can say I've seen it again and again.
+01:21:51
+So what? Advice do you have for someone who wants to get started in deep learning train lots of models. That's that's how you that's how you learn it. So, like, so I you know, I think it's not just me. I think I think alcohol is very good, but also lots of people independently. I said it's very good. It recently won the award for AA courses as being the best in the world. So come to our course.
+01:22:18
+Cost us today. And the thing I keep on harping on in my lessons is train models print out the inputs to the models, print out to the outputs, to the models like study change, change the inputs a bit. Look at how the outputs vary, just run lots of experiments to get a, you know, an intuitive understanding of what's going on.
+01:22:42
+To get hooked, do you think you mentioned training, do you think just running the models in France if we talk about getting started?
+01:22:52
+No, you've got to fine tune the models. So that's that's that's the critical thing, because at that point, you now have a model that's in your domain area. So there's no point running somebody else's model because it's not your model. So it only takes five minutes to fine tune a model for the data you care about. And in less than two of the course, we teach you how to create your own data set from scratch by scripting Google image search.
+01:23:15
+So and we show you how to actually create a Web application running online. So I create one in the course that differentiates between a teddy bear, a grizzly bear and a brown bear. And it does it with basically hundred percent accuracy. Took me about four minutes to scrape the images from Google Search in the script. There's a little graphical widgets we have in the notebook that helps you clean up the data set. There's other widgets that help you study the results to see where the errors are happening.
+01:23:43
+And so now we've got over a thousand replies in our Share Your work here thread a student saying, here's the thing I built. And so there's people who like and a lot of them are state of the art. Like somebody said, oh, I tried looking at different gallery characters and I couldn't believe it. The thing that came out was more accurate than the best academic paper after less than one. And then there's others which are just more kind of fun like somebody is doing Trinidad and Tobago hummingbirds, she said.
+01:24:10
+That's kind of their national bird. And she's got something that can now classify Trinidad and Tobago hummingbirds. So, yeah, train models, fine-tune models with your data set and then study their inputs and outputs.
+01:24:22
+How much is they, of course, is free. Everything we do is we have no revenue sources of any kind, it's just a service to the community, ir s..
+01:24:33
+OK, once a person understands the basics, trains a bunch of models, if we look at the scale of years, what advice do you have for someone wanting to eventually become an expert? Train lots of models, specifically train lots of models in your domain area, so an expert what we don't need more expert like. Create slightly evolutionary research, an area that everybody is studying. We need experts at using deep learning to diagnose malaria or we need experts at using deep learning to analyze language, to study media bias.
+01:25:18
+So we need experts in analyzing fisheries to identify problem areas in the ocean. That's that's what we need. So, like, become the expert in your passion area. And this is a tool which you can use just about anything and you'll be able to do that thing better than other people, particularly by combining it with your passion and domain expertise.
+01:25:44
+So that's really interesting. Even if you do want to innovate on transfer learning or active learning, a your thought is the means when I sit in this chair is you also need to find a domain or data set that you actually really care for.
+01:25:59
+If you're not working on a real problem that you understand, how do you know if you're doing it any good? How do you know if your results are good? How do you know if you're getting bad results, why you're getting bad results? Is it a problem with the data? Like how do you know you're doing anything useful? Yeah, the only to me, the only really interesting research is not the only but the vast majority of interesting research is like try and solve an actual problem and solve it really well.
+01:26:24
+So both understanding sufficient tools and a deep learning side and becoming a domain expert in a particular domain are really things within reach for anybody?
+01:26:35
+Yeah, I mean, to me, I would compare it to like studying self-driving cars, having never looked at a car or being in a car or turned the car on, you know, which is like the way it is for a lot of people. They'll study some academic data set. Where they literally have no idea about the other way, I'm not sure how familiar with the autonomous vehicles, but that is literally you describe a large percentage of robotics folks working in self-driving cars as they actually haven't considered driving.
+01:27:05
+They haven't actually looked at the wheel driving. Looks like they haven't driven it. And it's probably because, you know, when you've actually driven, you know, like these are the things that happened to me when I was driving. There's nothing that beats the real world examples of just experiencing them.
+01:27:19
+You've created many successful startups. What does it take to create a successful startup? Same thing is becoming successful deep learning practitioner, which is not giving up so. You can.
+01:27:38
+You run out of money or run out of time or run out of something, you know, but if you keep costs super low and try and save up some money beforehand so you can afford to have some time.
+01:27:52
+Then just sticking with it is one important thing doing something you understand and care about is important by something I don't mean. The biggest problem I see with declining people is.
+01:28:05
+They do a Ph.D. in deep learning and then they try and commercialize their PhD, just a waste of time because that doesn't solve an actual problem. You picked your PhD topic because it was an interesting kind of engineering or math or research exercise. But, yeah, if you've actually spent time as a recruiter and you know that most of your time is spent sifting through your resumes and you know that most of the time you're just looking for certain kinds of things, and you can try doing that with a model for a few minutes and see whether that something which models to do as well as you could, then you're on the right track to creating a startup.
+01:28:44
+And then I think just being. Just be pragmatic and. Try and stay away from venture capital money as long as possible, preferably forever, so yeah, on that point, do venture capital, so did you will be able to successfully run startups with self-funded? So my first two was self-funded and that was the right way to do it. That's scary. Now, species startups are much more scary because you have these people on your back who do this all the time and who have done it for years, telling you, go, go, go, go.
+01:29:22
+And I don't they don't care if you fail. They only care if you don't grow fast enough. So that's scary. Else doing the ones myself. Well, with, with partners. Who were friends? It's nice because, like, we just. Went along at a pace that made sense and we were able to build it to something which was big enough that we never had to work again, but was not big enough that any V.C. would think it was impressive and that was enough for us to be excited, you know.
+01:29:53
+So I thought that's a much better way to do things than most people in, generally speaking, for yourself. But how do you make money during that process? Do you cut into savings?
+01:30:04
+If so, yeah, so far.
+01:30:06
+So I started for small and optimal decisions at the same time in nineteen ninety nine with two different friends and. The first male. I guess I spent seventy dollars a month on the server. And when the server ran out of space, I put a payment button on the front page and said, if you want more than 10 makerspace, you have to pay ten dollars a year. And so run like keep your costs down.
+01:30:35
+Yes, I kept the cost down. And once once once I needed to spend more money, I asked people to spend the money for me and that. That was that basically from then on, we were making money and I was profitable from then. For optimal decisions, it was a bit harder because. We were trying to sell something that was more like a one million dollar sale, but what we did was we would sell scoping projects. So kind of like.
+01:31:06
+Prototype projects, but rather than wait for free, we would sell them 50 to 100 thousand dollars. So, again, we were covering our costs and also making the client feel like we were doing something valuable. So in both cases, we were profitable from six months in.
+01:31:23
+Nevertheless, it's scary.
+01:31:25
+I mean, yeah, sure. I mean, it's it's scary before you jump in. And I just I guess I was comparing it to this scared inservice. I felt like with this stuff it was more scary, kind of much more in somebody else's hands. Will they fund you or not? And what do they think of what you're doing? I also found it very difficult with VC backed startups to actually do the thing which I thought was important for the company, rather than doing the thing which I thought would make the VC happy.
+01:31:56
+And VCs always tell you not to do the thing that makes them happy. But then if you don't do the thing that makes them happy, they get set.
+01:32:02
+So and do you think optimizing for the whatever they call it, the exit is is a good thing to optimize for?
+01:32:10
+I mean, it can be, but not at the basic level, because the VCs, it needs to be, you know, a thousand X. So where else the lifestyle exit. If you can sell something for ten million dollars, you've made it right. So I don't it depends. If you want to build something that's going to be happy to do forever, then fine.
+01:32:30
+If you want to build something you want to sell in three years time, that's fine too. I mean, they're both perfectly good outcomes.
+01:32:38
+So you're learning swift now in a way. I mean, you already to. And I read that you use, at least in some cases, space repetition as a mechanism for learning new things. Yeah, I use Anche quite a lot myself into. I actually don't never talk to anybody about it. Don't don't know how many people do it, but it works incredibly well for me. Can you talk to your experience?
+01:33:05
+Like, how did you what do you first of all. OK, let's back it up. What is space repetition?
+01:33:12
+So space repetition is. An idea created by a psychologist named Irving House must be a couple hundred years ago or something hundred and fifty years ago, he did something which sounds pretty damn tedious.
+01:33:28
+He wrote down random sequences of letters on cuts and tested how well he would remember those random sequences a day later, a week later, whatever, he discovered that there was this kind of a curve where his probability of remembering one of them would be dramatically smaller the next day and then a little bit smaller the next day and the next day. What he discovered is that if he revised those cards after a day, the probabilities would decrease at a smaller rate.
+01:34:00
+And then if he revised them again a week later, they would decrease at a smaller rate again.
+01:34:04
+And so he basically figured out roughly optimal equation for when you should revise something you want to remember.
+01:34:13
+So best repetition learning is using this simple algorithm is something like revise something after a day and then three days and then a week and then three weeks and so forth.
+01:34:24
+And so if you use a program like ANQI, as you know, it will just do that for you. And if you and it will say, did you remember this? And if you say no, it will reschedule it back to be up here again like ten times faster than it otherwise would have. It's a kind of a way of being guaranteed to learn something, because by definition, if you're not learning it, it will be rescheduled to be revised more quickly.
+01:34:50
+Unfortunately, though, it's also like it doesn't let you for yourself if you're not learning something, you, you know, like your revisions will just get more and more. So you have to find ways to learn things productively and effectively, like treat your brain well. So using like mnemonics and stories and context and stuff like that. Um, so, yeah, it's a super great technique.
+01:35:17
+It's like learning how to learn is something which everybody should learn before they actually learn anything, but almost nobody does.
+01:35:25
+So what have you. So certainly works well for learning new languages for I mean for learning like small projects almost. But do you know I started using it for who wrote a blog post about this inspired me.
+01:35:39
+I mean, you I'm not sure as I started when I read papers, all concepts and ideas, I put them. Was it Michael Nelson in my it was so much suspense that Michael started doing this recently and has been writing about it. I thought so the kind of today's ebbing house is a guy called Peter Wozniak, who developed a system called Super Memo, and he's been basically trying to become like. The world's greatest renaissance man over the last few decades, he's basically lived his life with space, repetition, learning for everything I and sort of like Michael's only very recently got into this.
+01:36:24
+But he started really getting excited about doing it for a lot of different things.
+01:36:28
+For me personally, I actually don't use it for anything except Chinese. And the reason for that is that, um, Chinese is specifically a thing. I made a conscious decision that I want to continue to remember, um, even if I don't get much of a chance to exercise it, because I'm not often in China. So I don't know or else something like programming languages or papers. I have a very different approach, which is I try not to learn anything from them, but instead I try to identify the important concepts and actually ingest them.
+01:37:06
+So like really understand that concept deeply and study it carefully will decide if it really is important or if it is like incorporate it into our library, you know, incorporate it into how I do things or decide it's not worth it.
+01:37:24
+So so I find. I find I didn't remember the things that I care about because I'm. Using it all the time, so I for the last. Twenty five years, I've committed to spending at least half of every day learning or practicing something new, which is all my colleagues have always hated because it always looks like I'm not working what I'm meant to be working on. But it always means I do everything faster because I've been practicing a lot of stuff.
+01:37:54
+So I kind of give myself a lot of opportunity to practice new things. And so I find now I don't. Yeah, I don't often kind of find myself wishing I could remember something, because if it's something that's useful, then I've been using it a lot. That's easy enough to look it up on Google. But speaking Chinese You can't look it up on Google.
+01:38:15
+So do you have advice for people learning new things? If you what have you learned as a process, as a I mean, it all starts with just making the hours in the day available. Yeah.
+01:38:26
+You've got to stick with it, which is, again, the one thing that ninety nine percent of people don't do. So the people I started learning Chinese with, none of them were still doing it 12 months later. I'm still doing it 10 years later. I tried to stay in touch with them, but they just no one did it for something like Chinese, like study how human learning works. So my every one of my Chinese flashcards is associated with a story.
+01:38:50
+And that story is specifically designed to be memorable. And we find things memorable which are like funny or disgusting or sexy or related to people that we know or care about. So I try to make sure all the stories that are in my head have those characteristics. Yeah, so you have to you want remember things well, if they don't have some context and yeah.
+01:39:13
+You won't remember them well, if you don't regularly practice them, whether it be just part of your day to day life for the Chinese army flashcards. I mean, the other thing is, a, let yourself fail sometimes. So like I've had various medical problems over the last few years and.
+01:39:31
+Basically, my flash cards just stopped for about three years and. And there have been other times I've stopped for a few months, and it's so hard because you get back to it and it's like you have 18000 cards to you. It's like, so you just have to go. All right. Well, I can either stop and give up everything or just decide to do this every day for the next two years until I get back to it. The amazing thing has been that even after three years, I.
+01:40:00
+You know, the Chinese were still in there. Yeah, it was so much faster, Dairyland, than it was to mine the first time.
+01:40:07
+Yeah, yeah, absolutely. It's in there. I have the same with guitar, with music and so on. Uh, it's sad because it works. Sometimes it takes away and then you won't play for a year. But really if you then just get back to it every day, you're right. You're right there again. What do you think is the next big breakthrough in artificial intelligence? What are your hopes in deep learning or beyond that people should be working on or you hope there will be breakthroughs?
+01:40:33
+I don't think it's possible to predict. I think yeah, I think what we already have is an incredibly powerful platform to solve lots of societally important problems that are currently unsolved. So I just hope that people will lots of people will learn this tool kit and try to use it. I don't think we need a lot of new technological breakthroughs to do a lot of great work right now. And what do you think we're going to create a human level intelligence system?
+01:41:02
+Do you think that now how hard is it? How far away are we? Don't know. We have no way to know. I don't know. Like I don't know why people make predictions about this because there's no data and nothing to go on.
+01:41:14
+And that's right. It's just like there's so many societally important problems to solve right now. I just don't find it a really interesting question to even answer.
+01:41:27
+So in terms of societally important problems, what's the problem?
+01:41:31
+Well, is within reach for well, I mean, for example, there are problems that I creates writes about specifically. Labor force displacement is going to be huge and people keep making this frivolous econometric argument of being like, oh, there's been other things that aren't I that have come along before and haven't created massive labor force displacement. Therefore, I won't say so. There's a serious concern for you. Oh, yeah. Andrew Yang is running on it.
+01:42:00
+Yeah, it's it's it's I'm desperately concerned and you see already.
+01:42:07
+That the changing workplace has led to a hollowing out of the middle class. You're saying that students coming out of school today have a less rosy financial future ahead of them than their parents did, which has never happened in recent in the last few hundred years. We've always had progress before. And you see this turning into. Anxiety and despair and and even violence, so I very much worry about that. You've written quite a bit about ethics, too, so I do think that every data scientist working with deep learning needs to recognize they have an incredibly high leverage tool that they're using that can influence society in lots of ways.
+01:42:56
+And if they're doing research that that research is going to be used by people doing this kind of work and they have a responsibility to consider the consequences and to think about things like. How will humans be in the loop here? How do we avoid runaway feedback loops? How do we ensure an appeals process for humans that are impacted by my algorithm? How do I ensure that the constraints of my algorithm are adequately explained to the people that end up using them?
+01:43:26
+There's all kinds of human issues which only data scientists are actually in the right place to educate. People are about data. Scientists tend to think of themselves as. Just engineers and that they don't need to be part of that process just now. Yeah, which is wrong. Well, you're in a perfect position to educate them better, to read literature, to read history, to learn from history. Well, Jeremy, thank you so much for everything you do for inspiring huge amount of people, getting them into deep learning and having the ripple effects, the fact of a butterfly's wings, that will probably change the world.
+01:44:05
+So thank you very much, Jess.

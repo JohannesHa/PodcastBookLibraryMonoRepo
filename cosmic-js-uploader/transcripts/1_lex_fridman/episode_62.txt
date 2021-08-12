@@ -1,0 +1,624 @@
+00:00:00
+The following is a conversation with Donald Knuth, one of the greatest and most impactful computer scientists and mathematicians ever. He's the recipient of the 1974 Turing Award, considered the Nobel Prize of computing. He's the author of the multivolume work, the magnum opus, The Art of Computer Programming. He made several key contributions to the rigorous analysis of computational complexity of algorithms, including the popularization of asymptotic notation that we all affectionately known as the Big O notation. He also created the tech typesetting system, which most computer scientists, physicists, mathematicians and scientists and engineers in general use to write technical papers and make them look beautiful.
+00:00:51
+I can imagine no better guest to 2019 with than Don, one of the kindest, most brilliant people in our field. This podcast was recorded many months ago. It's one I avoided because perhaps counterintuitively, the conversation meant so much to me, if you can believe it. I knew even less about recording back then, so the camera angle is a bit off. I hope that's OK with you. The office space was a big crowd for filming, but it was a magical space where Don does most of his work.
+00:01:24
+It meant a lot to me that he would welcome me to his home. It was quite a journey to get there. As many people know, he doesn't check email, so I had to get creative. The effort was worth it. I've been doing this podcast on the side for just over a year. Sometimes I had to sacrifice a bit of sleep, but I was happy to do it and to be part of an amazing community of curious minds.
+00:01:46
+Thank you for your kind words, support for the interesting discussions, and I look forward to many more of those in 2020. This is the artificial intelligence podcast, if you enjoy it, subscribe on YouTube, give it five stars, an Apple podcast, follow on Spotify, support on Patreon or simply connect with me on Twitter. Àlex Friedman spelled F.R. Idi Man. I recently started doing ads at the end of the introduction. I'll do one or two minutes after introducing the episode and never any ads in the middle that break the flow of the conversation.
+00:02:19
+I hope that works for you and doesn't hurt the listening experience. I provide timestamps for the start of the conversation that you can skip to, but it helps if you listen to the ad and support this podcast by trying out the product or service being advertised. This show is presented by Kashyap, the number one finance app in the App Store. I personally use cash to send money to friends, but you can also use it to buy, sell and deposit Bitcoin in just seconds.
+00:02:46
+Kashyap also has a new investing feature. You can buy fractions of a stock, say, one dollars worth, no matter what the stock price is. Broker's services are provided by Cash App Investing, a subsidiary of Square. And remember SIPC. I'm excited to be working with cash out to support one of my favorite organizations called First Best known for their first robotics and Lego competitions. They educate and inspire hundreds of thousands of students and over one hundred and ten countries have a perfect rating.
+00:03:17
+And Charity Navigator, which means that donated money is used to maximum effectiveness. When you get cash app from the App Store or Google Play and News Collects podcast, you'll get ten dollars in cash. I will also donate ten dollars. The first, which again is an organization that I've personally seen, inspire girls and boys to dream of engineering a better world. And now here's my conversation with Donald Knuth. In 1957 at Case Tech. You were once allowed to spend several evenings with the IBM six fifty computer, as you've talked about in the past, and you fell in love with computing then.
+00:04:17
+And you take me back to that moment with the IBM six fifty, what was it that grabbed you about that computer so that IBM six fifty, was this this machine that.
+00:04:32
+Well, it didn't fill a room, but it was it was big and noisy. But when I first saw it, it was through a window and there were just a lot of lights flashing on it. And I was a freshman. I had a job with the statistics group and I was supposed to punch cards and put data in and sort them on another machine. But they got this new computer came in and and it had interesting, like, you know, lights, OK, so well.
+00:05:07
+But I had it kind of key to the building so I can, you know, I could get in and look at it and got a manual for it. And and my first experience was based on the fact that I could punch cards basically with a big thing for what? But the only 50 was, you know, big in size, but but incredibly small in power and in memory. It had it had two thousand words of memory and a word of memory was ten decimal digits plus a sign.
+00:05:37
+And it would do to add two numbers together, you could probably expect that would take, say, three milliseconds. So that's pretty fast.
+00:05:49
+It's the memories, the constraint, the memories, the problem.
+00:05:51
+That was why it was it took three millisecond because it took five milliseconds for the drum to go around and you had to wait. I don't know, five cycle times. If if you have an instruction it one position on the drum, then it would be ready to read the data for the instruction. And, you know, three notches the drum is fifty cycles around and you go through cycles and you can get the data and then you can go another three cycles and get and get your next instruction if the instruction is there otherwise, otherwise you spend until you get to the right place.
+00:06:26
+And and we had no random access memory whatsoever until my senior year and senior year we got 50 words of random access memory, which were which were priceless. And we would we would move stuff up to the up to the random access memory in 60 word chunks and then we would start again. So subroutine one to go up there.
+00:06:48
+Could you have predicted the future 60 years later of computing from then?
+00:06:54
+You know, in fact, the hardest question I ever asked was what could I have predicted? Now, the interviewer asked me.
+00:07:04
+She said, you know, what about computing has surprised you, you know, and immediately Iran rattled off a couple of dozen things and it was OK, so what didn't surprise? And I was I cried for five minutes to think of something that I thought I would have predicted. And I and I couldn't.
+00:07:22
+But let me say that this machine I didn't know. Well, there wasn't there wasn't much else in the world at that time. The six fifty was the first machine that was that there were more than a thousand I've ever before that there were you know, it was each machine. There might be a half a dozen examples.
+00:07:42
+Maybe my first mass market mass produced the first one done in quantity and and IBM. I didn't sell them. They they rented them, but but they they rented them to universities that at great, you know, had a great deal. And so that's why a lot of students learned about computers at that time.
+00:08:08
+So you refer to people, including yourself, who gravitate toward a kind of computational thinking as geeks. At least I've heard you used that terminology.
+00:08:20
+It's true that I think there's something that happened to me as I was growing up that made my brain structure in a certain way that that resonates with with computers.
+00:08:31
+So there's the space of people, two percent of the population.
+00:08:34
+You empirically estimate that that's that's been proven fairly constant over most of my career, however. It might be different now because kids have different experiences when they're young. So what does the world look like to a geek? What is. What is this aspect of thinking that is unique to them? Yeah, that makes a geek.
+00:09:02
+This is hugely important question in in the 50s. IBM noticed that that there were geeks and geeks, and so they tried to hire geeks and they put out ads with paper saying, you know, if you play chess, come to Madison Avenue for an interview or something like this, you they were they were trying for some things. So what what what is it that I find easy and other people tend to find harder? And I think there's two main things.
+00:09:34
+One is this is the ability to jump jump levels of of abstraction. So you see something in the large and you see something in the smile and eat and you pass between those unconsciously. So you know that in order to solve some big problem, what you need to do is add one to to a certain register and that gets you to another step in and below the. Yeah, I don't go down to the electron level, but kind of what those milliseconds, what the drum was like on the 650, I knew how I was going to factor a number or find a route of an equation or something be out of it because of what I was doing.
+00:10:21
+And as I'm debugging, I'm going through, you know, you know, did I make a keypunch or did I did I write the wrong instruction? Do I have the wrong thing in a register? And each level at each level is different. And this idea of being able to see something at all at lots of levels and fluidly go between them seems to me to be more pronounced, much more pronounced in in the people that resonate with computers like like I saw.
+00:10:54
+So in my books, I also don't stick to the high level. But but I. But I mix. Low level stuff with high level, and this means that some people think, you know, that that I should write better books and that's probably true. But but other people say, well, but that's if you think like like that, then that's the way to train yourself. I keep mixing the levels and learn more and more how to jump between.
+00:11:27
+So that's the one thing. The other the other thing is that it's more of a talent to be able to deal with non uniformity where there's case one case to case three instead of instead of having one or two rules that govern everything. So it so it doesn't bother me if I need, like, an algorithm that has 10 steps to it, you know, each step does something else that doesn't bother me. But a lot of a lot of pure mathematics is based on one or two rules which which are universal.
+00:12:04
+And and and so this means that people like me sometimes work with systems that are more complicated than necessary because it doesn't bother us that we don't that we didn't figure out the simple rule. And you mention that while Jacoby Boulle, Abal, all the mathematicians of the 19th century may have had symptoms of geek, the first one hundred percent legit geek was touring Alan Turing.
+00:12:33
+I think he had a lot more of the of this quality than anybody could from reading the kind of stuff he did.
+00:12:43
+And so how does Turing. What influence has had on you? Well, you're weighing in, so I didn't know of that aspect of him until after I graduated some years as an undergraduate, we had a class that talked about computability theory and Turing machines. And and that was all it sounded like a very specific kind of purely theoretical approach to stuff. So when how old were they? When I when I learned that he that he had, you know, a design machine and that he wrote the you know, he wrote a wonderful manual for four Manchester machines and and he invented, you know, subroutines and and and he was a real hacker that that he had his hands dirty.
+00:13:41
+I thought for many years that he had only done purely formal work. As I started reading his own publications, I could you know, I could feel this kinship. And and, of course, we had a lot of peculiarities, like he wrote numbers backwards because, I mean, left to right instead of right to left, because that's the that's it was easier for computers to process them that way. What do you mean, Left-to-right? He would write PI, as you know, nine five oh one four point three.
+00:14:18
+I mean, OK, all right, get it for one point three on the blackboard. I mean, when he, like he had trained himself to do that because the computers he was working with worked that way inside, trained himself to think like a computer.
+00:14:40
+Well, there you go. That's that's geek thinking.
+00:14:42
+Yeah. You've practiced some of the most elegant formalism in computer science, and yet you're the creator of a concept like literary programming. Which seems to move closer to natural language type of description of programming. Yeah, absolutely.
+00:15:02
+How do you see those two as conflicting as the formalism of theory and the idea of literal programming?
+00:15:08
+So there we are in a non-uniform system where I don't know, I don't think one one size fits all and I don't and I don't think all truth lies in one in one kind of expertise. And so somehow, in a way, you say my my life is a convex combination of English and mathematics and you're OK with that. And not only that, I thrive in a you know, I want my kids to be that way. I want etc., you know, use left brain, right brain the same time.
+00:15:40
+You got a lot more done. That's that was part of the part of the bargain.
+00:15:46
+And I've heard that you didn't really read for pleasure until into your 30s and, you know, literature.
+00:15:54
+That's true. You know more about me than I do. But I'll try to be consistent with what you read.
+00:15:59
+Yeah. No, just believe me, I just go with whatever story I tell you. It'll be easier that way. The conversation, right? Yeah. No, that's true.
+00:16:07
+I've heard mention of Philip Roth, American Pastoral, which I love as a book.
+00:16:13
+I don't know if it was it was mentioned as something I think that was meaningful to you as well. In that case, what literary books had a lasting impact on you?
+00:16:24
+What little. OK, good. So I met Roth. Oh really? Well, we both got doctors from Harvard on the same day. So so we were. Yeah, we had lunch together and stuff like that. And, but he knew that, you know, computer books would never sell well. Well all right.
+00:16:44
+So you say you you, you were a teenager when you left Russia. So I have to say that Tolstoy was one of the big influences on me. I especially like Honokaa Nina, not because of a particular area of the plot of the story where but because there's this character who, you know, the philosophical discussions that it's it's a whole way of life is worked out there among the characters. And and so that I thought was was especially beautiful. On the other hand, Dostoyevsky, I, I didn't like at all because I, I felt that his genius was mostly because he kept forgetting what he what he had started out to do and he was just sloppy.
+00:17:38
+I didn't think that that day that he polished his stuff at all. And I tend to admire somebody who who dots the I's and cross the T's.
+00:17:49
+So the music of the prose is what you admire more than the.
+00:17:54
+I certainly do admire the music of the language, which I couldn't appreciate in the Russian original. But but I can. And Victor Hugo, you know, French, it's closer. But Toastie, like the same reason I like Herman Wouk has as a novelist, I think he like his book.
+00:18:15
+Marjorie Morningstar has a similar character in Hugo who developed his own personal philosophy.
+00:18:21
+And and it was consistent. Yeah, right. And it's worth worth pondering. So you all like Nietzsche and like what?
+00:18:35
+You don't like Friedrich Nietzsche or Nature?
+00:18:38
+Yeah. No, no. Yeah. I keep seeing quotations from Nietzsche and and he never taught me to read any further.
+00:18:47
+Well he's full of contradictions. You would certainly not appreciate him.
+00:18:51
+But Schiller, you know, I'm trying to get across what I appreciate in literature. And part of it is the is is, as you say, the music of the language, the way it flows. And take a Raymond Chandler versus Dashiell Hammett. Dashiell Hammett sentences are awful and Raymond Chandler's are beautiful. They just flow. So I. I don't I don't read literature because it's supposed to be good for me or because somebody said it's great. But but it I find things that I like.
+00:19:31
+I mean, you mentioned you were dressed like James Bond. So I love Ian Fleming. I think he's got he had a really great gift for if he has a golf game or a game of bridge or something and he comes into his story, it'll be the most exciting golf game or or, you know, the absolute best possible and the bridge that that exists. And and and he exploits it and tells it beautifully.
+00:20:02
+So so in connecting some things here, looking at literary programming and being able to do it. Convey. ENCODE algorithms to a computer in a way that mimics how humans speak.
+00:20:23
+What do you think about natural language in general and the messiness of our human world about trying to express difficult things?
+00:20:32
+So the idea of literate programming is is really to try to understand something better by seeing it from at least two perspectives, the formal and informal. If we're trying to understand a complicated thing, if we can look at it in different ways. And so this is, in fact, the key to technical writing, a good technical writer trying not to be obvious about it, but says everything twice, formally and informally or maybe three times. But you try to give the reader a way to put the concept into his own brain or her own brain.
+00:21:15
+Is that better for the writer or the reader or both? Well, the writer just tries to understand the reader that's the goal of a writer, is to have a good mental image of the reader and to say what the reader expects next and to try to impress the reader with what has impressed the writer. Why something is interesting, so when you have a computer program, we try to instead of looking at it as something that we're just trying to give an instruction to the computer, what we really want to be is giving giving insight to the person who's going to be maintaining this program or to the programmer himself when he's debugging it as to why this stuff is being done.
+00:22:04
+And so all the techniques of exposition that a teacher uses are book reviews, make you a better programmer if you if you program is going to be not just a one shot deal.
+00:22:18
+So how difficult is that? Do you see hope for the combination of informal and formal for the programming task?
+00:22:30
+Yeah, I, I'm the wrong person to ask, I guess, because I'm a geek. But but I think for a geek it's easy. Well, I don't know. Not some people have difficulty writing and that might be because there's something in their brain structure that makes it hard for them to write or or it might be something just that they haven't had enough practice. I'm not the right one to judge, but I don't think you can teach any person any particular skill.
+00:23:01
+I do think that that writing is is half of my life. And so I put it together and reprogram program. Even even when I'm writing a one shot program, I, I write it in literate way because I get it right faster that way.
+00:23:21
+Now, does it get compiled automatically or so I guess on the technical side. My question was, how difficult is it to design a system where much of the programming is done informally? Informally, yeah, informally, I think whatever works to make it understandable is good, but then you have to also understand how informal it is. You have to know the limitations. You have to. So by putting the formal and informal together, this this is where this is where it gets locked into your into your brain, you can you can say informally, well, I'm working on a problem right now, so let's go there.
+00:24:11
+Get that. Can you give me an example of. Yeah. Of connecting the informal and the formal.
+00:24:17
+Well, it's a little too complicated in the example. There's a puzzle that's self-referential. It called the Japanese Arrow Puzzle. And and you're given a bunch of boxes. Each one points north, east, south, west. And at the end you're supposed to fill in each box with the number of distinct numbers that it points to. So if I put a three in a box, that means that and it's pointing to five other boxes, that means that there's going to be three different numbers in those five box.
+00:24:51
+And and those boxes are pointing. One of them might be pointing to me. One might be pointing the other the other way. But anyway, I I to find a set of numbers that obeys this complicated condition that each number counts how many distinct numbers it points to. Well, and so the guy sent me his solution to this problem where he where he presents formal statements that say either this is true or this is true or this is true. And and and so I try to render that formal statement informally and I try to say I contain a three and and the guys I'm pointing to contain the numbers one, two and six.
+00:25:42
+So by putting it informally and also I converted into a into a dialogue statement that helps me understand the logical statement that he's written down as a string of numbers in terms of some abstract variables that he had as really interesting.
+00:25:59
+So maybe an extension of that. There has been a resurgence in computer science and machine learning and neural networks, so using data to construct algorithms.
+00:26:13
+So it's another way to construct algorithms, really. Yes. If you can think of it that way. Yeah.
+00:26:21
+So as opposed to natural language to construct algorithms, use data to construct. So what's what's your view of this branch of computer science where data is almost more important than the mechanism of the algorithm?
+00:26:36
+It seems to be suited to a certain kind of non-unique and which know which is probably why it's it's like it's taken off the it has its own community that really that really resonates with that. But it's hard to, you know, to trust something like that because nobody even the people who who work with it, that they have no idea what what has been learned.
+00:27:04
+That's a really interesting thought, that it's it makes algorithms more accessible to different community, a different type of brain. Yep. And that's really interesting because just like literally programming perhaps could make programming more accessible to a certain kind of brain.
+00:27:27
+There are people who think it's just a matter of education and anybody can learn to be a great programmer. Anybody can learn to be a great skier. You know, I, I wish that were true, but but I know that there's a lot of things that I've tried to do. And I and I was well motivated and I kept trying to build myself up and I never got past a certain level. I can't view for example, I can't view three dimensional objects in my in my head.
+00:28:01
+I have to I have to make a model and look at it and study it from all points of view. And then I start to get some idea. But other people are good at four dimensions. I mean, physicists. Yeah.
+00:28:15
+So let's go to. The art of computer programming. In 1962, you set the table of contents. For this magnum opus, right? Yeah, it was supposed to be a single book with 12 chapters. Now today, what is it? Fifty seven years later, you're in the middle of volume four of seven and in the middle of volume four.
+00:28:45
+B is for B. Precisely.
+00:28:47
+Can I ask you for an impossible task, which is try to summarize the book so far. Maybe by giving a little examples, so from the sorting and the search and the combinatorial algorithms, if you were to give a summary, a quick elevator summary of it. That's great. Yeah, right.
+00:29:09
+Well, depending how many floors there are in the building. Yes.
+00:29:13
+The first volume called Fundamental Algorithms talks about something that you can't the stuff you can't do without. I guess you have to know the basic concepts of what is a program, what is what is an algorithm. And and and it also talks about a low level machine. So you can have some some kind of an idea what's going on. And it has basic concepts of input, output and subroutines, induction induction, write mathematical preliminary. So thing that makes my book different from a lot of others is that all that I try to not only present the algorithm, but I try to analyze them, which means to quantitatively.
+00:30:01
+I see not only does it work, but it works this fast. OK. And so I need math for that. And then the standard way to structure data inside and represent information in the computer. So that's all volume one of volume two talks. It's called Semin Numerical Algorithms. And here were who were writing programs. But we're also dealing with numbers, algorithms to deal with with any kinds of objects. But but specific when there's objects or numbers.
+00:30:30
+Well, then then we have certain. Special paradigms that that apply to things that have above numbers and so there's there's there's there's arithmetic on numbers and and there's matrices full of numbers. There's random numbers and there's power series full of numbers. There's different algebraic concepts that have numbers in structured ways and arithmetic in the way a computer would think about arithmetic.
+00:30:57
+It's a floating point, floating point arithmetic, high precision arithmetic, not only addition, subtraction, motivation, but also a comparison of No. So then then Vind three talks about I like that one, so I didn't start sorting and sort of sorting. Right. So so here, you know, we're not dealing necessarily with numbers because you you sort letters and other objects and searching. We're doing all the time we Google nowadays. But I mean, we have to find stuff.
+00:31:26
+So, again, algorithms that that underlie all kinds of applications, you know, none of these volumes is about a particular application. But the applications are examples of of why people want to know about sorting, why people want to know about random numbers. So then Volume four goes into combinatorial ILGA. And this is where we have zillions of things to deal with. And we and here we keep finding cases where one good idea can make something go more than a million times faster.
+00:32:03
+And and and we're dealing with problems that are. Probably never going to be solved efficiently, but that doesn't mean we give up on them and and and we have this chance to have good ideas and go much, much faster on it. So so that's combinatorial algorithms. And those are the ones that I'm using. Charting is most fun for you.
+00:32:26
+OK, well, is that true? Combinatorial algorithms are the ones that I always do that I always enjoyed the most, because that's when my skill at programming had most payoff in the different. The difference between an obvious algorithm that you think up first thing and a know and a good and interesting subtle algorithm that not so obvious, but but run circles around the other one. That's that's where computer science really comes comes in. And a lot of these commentor methods were found first in applications to artificial intelligence or cryptography.
+00:33:11
+And in my case, I I just liked him and it was associated more with puzzles.
+00:33:18
+Do you like the most in the domain of graphs and graph theory? Graphs are great because they're terrific models of so many things in the real world. And if you throw a numbers on a graph, you've got a network. And so there there you have many more things. So but cometrue in general is any arrangement of objects that has some kind of a. Higher structure, non non-random structure and OK, it is possible to put something together satisfying all these conditions, like I mentioned Aros a minute ago, you know, is there a way to to put these numbers on a bunch of boxes that are pointing to each other?
+00:34:04
+Is that going to be possible at all?
+00:34:06
+That's volume for as volume for what they are hoping for.
+00:34:10
+A was part one. And and what happened was in 1962, when I started writing down a table of contents, it wasn't going to be a book about computer programming in general. It was going to be a book about how to write compilers. And I was asked to write a book explaining how to how to write a compiler.
+00:34:34
+And at that time, there were only a few dozen people in the world who had written compilers, and I happened to be one of them. So and I also had some experience writing for like the campus newspaper and things like that. So so I thought, OK, great, I'm the only person I know who who's written a compiler but hasn't invented any new techniques for writing compilers. And all the other people I knew had super ideas, but I couldn't see that they would be able to write a book that wouldn't that would describe anybody else's ideas with their own.
+00:35:13
+So I could be the I could be the journalist and I could explain what all these cool ideas about computer writing were. And and then I, I started pretty darn well. Yeah. Let me to have a chapter about data structures. You need to have some introductory material. I want to talk about searching because a compiler writer has to has to look up the variables in a simple table and find out, you know, which which when when you when you write the name of the variable in one place, it's supposed to be the same as the one you put somewhere else.
+00:35:50
+So you need all these basic techniques. And I and I, you know, can I know some arithmetic and stuff. So I threw in these chapters and I threw in a chapter and combinatorics because that was what I really enjoyed programming the most. But there weren't many algorithms in known about combinatorial methods in 1962. So that was a kind of a short chapter, but it was sort of thrown in just for fun. And Chapter 12 was going to be compilers applying all the stuff in chapters one to 11 to make compilers.
+00:36:23
+Well, OK, so that was my table of contents from 1962. And during the 70s, the whole field of combinatorics went through a huge explosion. People talk about it combinatorial explosion, and they usually mean by that that the number of cases goes up, you know, and and plus one. And all of a sudden you your problem has has gotten more than ten times harder. But there was an explosion of ideas about combinatorics in the 70s to the point that it like take 1975.
+00:36:58
+I bet you more than half of all the journals of computer science were about combinatorial method and what kind of problems were occupying people's minds.
+00:37:09
+What kind of problems and combinatorics was that go out there?
+00:37:15
+Yeah, graffitti was was quite dominant. I mean, but all of the NPR problems that you have, like, you know, Hamiltonian path or file salesmen going beyond know, going beyond graphs, you you had operation research whenever it was a small class of problems that had an efficient solutions.
+00:37:36
+And they were usually associated with Matre theory, a special mathematical construction. But once we went to things that involved three things at a time instead of instead of two, all of a sudden that things got harder. So we had satisfied ability problems where if you have if you have Claus's, every class has two logical elements in it, then we can satisfy it. In your time, we can test for satisfy, but in linear time. But if you allow yourself three variables in a class, then nobody knows how to do it.
+00:38:09
+So these articles were about trying to find better, better ways to to solve cryptography problems and grafting problems where we have lots of data. But we didn't know how to find the best subsets of the data. Like with sorting out we could get the answer. Didn't take long.
+00:38:30
+So how did it continue to change from the 70s to today?
+00:38:34
+Yeah, so now there may be half a dozen conferences whose topic is combinatorics, different kind. But fortunately, I don't have to rewrite my book every month, you know, like. They had to in the 70s, but still there's a huge amount of work being done and people getting better ideas on these problems that don't seem to have really efficient solutions, but we still get to do a lot more with them. And so this book that I'm finishing now is I've got a whole bunch of brand new methods that as far as I know, there's no other there's no other book that covers that covers this particular approach.
+00:39:17
+And so I'm trying to do my best of exploring the tip of the iceberg and and try out lots of things and and keep keep rewriting, I find, as I find better, better method.
+00:39:33
+So what's your writing process like? What's your thinking and writing process like every day it's. So what's your routine even like.
+00:39:43
+I guess it's actually the best question because I spend seven days a week and you're doing it.
+00:39:52
+You're the most prepared to answer it. Yeah. Yeah.
+00:39:54
+But OK, so the chair I'm sitting in is where I do where the magic happens.
+00:40:04
+Well, I reading and writing that my teacher is usually sitting over there where I have some reference books but. But I found his chair. Which was designed by Swedish guy, anyway, it turns out this is the only chair I can really sit in for hours and hours and not know that I'm in a chair. But then I have the stand up desk right next next to us. And and so after I write something with pencil and eraser, I get up and I type it and revise and rewrite the standard.
+00:40:38
+The kernel of the idea is first put on paper. Yeah, that's where I write and I'll write maybe five programs a week. Of course, literate programming. And these are before I describe something in my book, I always program it to see how it's working. And I and I tried a lot. So, for example, I learned at the end of January, I learned of a of a breakthrough by four Japanese people who had extended one of one of my methods in a new direction.
+00:41:11
+And so I spent the next five days writing a program to implement what they did. And then I you know, but they had only generalized part of what I had done. So then I had to see if I could generalize more parts of it. And then I had to take their approach and I had to try it out on a couple of dozen of the other problems I had already worked out with with my old methods. And so that took another couple of weeks.
+00:41:37
+And then I you know, then I then I started to see the light, nice and dark, and I started writing the final draft. And then I would, you know, type it up, involved some new mathematical questions. And so I wrote to my friends who might be good at solving those problems and and they solved some of them. So I put that in his exercises. And so a month later, I had absorbed one new idea that I that I learned.
+00:42:09
+And, you know, I'm glad I heard about it in time. Otherwise I wouldn't put my book out before I heard about the idea. On the other hand, this book was supposed to come in at 300 pages and I'm up to 350. Now, that added 10 pages to the book. But if I learn about another one, I probably are going to shoot me well.
+00:42:30
+So in that process, in that one month process, are some days harder than others?
+00:42:36
+Are some days harder than others? Well, yeah, my work is fun, but I also work hard and every big job has parts that are a lot more fun than others. And so many days I'll say, why do I have to have such high standards and why couldn't I just be sloppy and not try this out and, you know, just just report the answer. But I but I know that people are continue to do this and so. OK, so, OK, Donna, grit my teeth and do it and and then the joy comes out when I see that actually, you know, I'm getting good results and and I get and I even more when I see that somebody has actually read and understood what I wrote and told me how to make it even better.
+00:43:22
+I did want to mention something about the about the method. So I got this tablet here where I do the first you know, the first writing of of concepts. Okay. So so.
+00:43:42
+And what language is that then. Right. So take a look at it. But you know, here randomising. Explain how to draw such a skewed pixel diagrams. Okay, so I got this paper about 40 years ago when I was visiting my sister in Canada.
+00:43:59
+And they make tablets of paper, which is this nice, large size and just the right very small space between humans.
+00:44:07
+Yeah. Yeah, particularly we just show it. Yeah. Yeah, wow, you know, I've got these manuscripts going back to the 60s. Yeah. And and those are when I get my ideas on paper. OK? But I'm a good typist. In fact, I went to typing school when I was a when I was in high school. And so I can type faster than I think. So then when I do the editing and stand up and type, then I then I revise this and it comes out a lot different than what you for style and rhythm and things like that come out at the typing speed and you type in tack and I type in tack and can you, can you think Intec.
+00:44:54
+No. So to a certain extent I have only a small number of of idioms that I use. Like, you know, I'm beginning with theorem. I do something for the speed equation. I do something and and so on. But but I, I have to see it.
+00:45:09
+And in the way that it's on paper here. Yeah. Right. So for example Turing wrote what the other direction. You don't write macros. You don't think in macros particularly.
+00:45:22
+But when I need a macro I'll go ahead and use it and do it. But, but, but the thing is I also write to fit. I mean I'll, I'll change something if I can, if I can save a line, you know, it's like haiku. I'll figure out a way to rewrite the sentence so that it'll look better on the page. And I shouldn't be wasting my time on that. But but I can't resist because I know it's only three percent of the time or something like that.
+00:45:51
+And it could also be argued that that is what life is about. Oh, yes.
+00:45:57
+That in fact, that's true. Like like I work in the garden one day a week and that's that's kind of a description of my life is getting rid of weeds, you know, removing bugs for programs.
+00:46:09
+And so, you know, a lot of writers talk about, you know, basically suffering the writing process as having, you know, it's extremely difficult. And I think of programming, especially the technical writing that you're doing, can be like that.
+00:46:26
+Do you find yourself? Methodologically, how do you every day sit down to do the work, is it a challenge? You kind of say it's, you know, oh yeah, it's fun. But it would be interesting to hear if there are non fund parts that you really struggle.
+00:46:48
+Yeah, so the fund comes when I'm able to put together ideas of two to two people who didn't know about each other. And I might be the first person that saw both of their ideas. And so then, you know, then I get to make the synthesis and that gives me a chance to be creative. But the drudge work is where I think I've got to chase everything down to its root. This leads me into really interesting stuff. I mean, I learn about Sanskrit night.
+00:47:20
+Yeah. And, you know, I try to give credit to all the authors and so I write. So I write to people who know the people, authors if they're dead or I communicate this way, I and I got to get the math right. And they're going to take all my programs, try to find holes in them, and I rewrite the programs over after I get a better idea.
+00:47:44
+Is there ever dead ends, dead ends or. Yeah, I throw stuff out there. One of the things that I spent a lot of time preparing, a major example based on the game of baseball, and I know a lot of people who know for whom baseball is the most important thing in the world, you know, but but I also know a lot of people from cricket is the most important in the world or soccer or something, you know, and and I realized that if if I had a big temple, I mean, it was going to have a foldout illustration and everything, I was saying, well, what am I really teaching about algorithms here where I had this baseball example?
+00:48:24
+And if I was a person who who who knew only cricket, wouldn't they? What would they think about this? And so so I ripped the whole thing out. But I you know, I hope I had something that would really appeal to people who grew up with baseball as as as a major theme in their life, which is a lot of people.
+00:48:42
+But but yeah. So I still a minority, a small minority.
+00:48:47
+I took out bowling to even a smaller minority.
+00:48:53
+What's the art in the art of programming?
+00:48:58
+Why why is there one of the few words in the title? Why is art one of them?
+00:49:03
+Yeah, well, that's that's what I wrote my Turing Lecture about.
+00:49:08
+And and so when people talk about art, it really I mean, what the word means is. Something that's not in nature, so when you have artificial intelligence that art comes from the same root, saying that this is something that was created by by human beings and then it's gotten further, meaning often a fine art which has its beauty to the to the mix and says, you know, we have things that are artistically done. And and this means not only done by humans, but also done in a way that's elegant and brings joy and and has has I guess that Tolstoy versus Dostoyevsky.
+00:50:00
+Right. But anyway, it it's that part that that says that it's done well as well as not only different from nature in general, then art is what human beings are specifically good at.
+00:50:18
+And when they say artificial intelligence, well, they're trying to mimic human beings.
+00:50:24
+But there's an element of fine art and beauty. You are.
+00:50:29
+That's what I that's what I try to also say, that you can write a program and make a work of art.
+00:50:37
+So now, in terms of. Surprising, you know, what ideas in writing from soared in search to the combinatorial algorithms, what ideas have you come across that?
+00:50:56
+Were particularly surprising to you that that changed the way you see a space of problems.
+00:51:05
+I get a surprise every time I have a bug in my program. But but that isn't really what you're more transformational than a certain surprise.
+00:51:14
+For example, in volume for a I was especially surprised when I learned about their structure called BTB Bulleen decision diagram because I sort of had the feeling that as an old timer and, you know, I've been programming since or since the 50s and BTD one advantage of 1986.
+00:51:40
+And here comes a brand new idea that revolutionized the way to represent a Boolean function. And Bulan functions are so basic to all kinds of things in it. I mean, logic is underlies everything.
+00:51:57
+We can describe all of what we know in terms of logic somehow and and and propositional logic. I thought that was cut and dried and everything was known. But but but but here comes Randy Bryant and and discovers that BTD are incredibly powerful. Then then so. So that means I have a whole new section to the book that I never would have thought of until 1986. Not until 1992, when I went when people started to to use it for, you know, billion dollar of applications.
+00:52:43
+And it was it was the standard way to design computers for a long time until and until Sasolburg came along in the year 2000. So that's another great big surprise. So a lot of these things have totally changed the structure of my book and the middle third of volume 4B is about that Tolliver's. And that's. 300 plus pages, which is which was all about material mostly, but material that was discovered in this century. And I had to start from scratch and meet all the people in the field and write 15 different sets of words that I wrote while preparing that seven of them are described in the book.
+00:53:30
+Others were for my own experience.
+00:53:33
+So newly invented data structures or ways to represent a whole new class of algorithm, a whole new class of.
+00:53:40
+Yeah, and the interesting thing about the BDD was that the theoreticians started looking at it and started to describe all the things you couldn't do with BDD. And so they were getting a bad they were getting a bad name because, you know, OK, they were they were useful, but they didn't solve every problem.
+00:54:05
+I'm sure that the theoreticians are in the next 10 years are going to show why machine learning doesn't solve everything. But I, you know, not only worried about the worst case, I get a huge delight when I can actually solve a problem that I couldn't solve before, even though I can't solve the problem. That's that it suggests as a further problem. I know that I'm way better than I was before.
+00:54:31
+And so I found out that BTD could do all kinds of miraculous things. And so I had to spend quite a few years learning about the that territory.
+00:54:48
+So in general, what brings you more pleasure in proving or showing a worst case analysis of an algorithm or showing a good average case or just showing a good case that, you know, something good pragmatically can be done with this algorithm?
+00:55:06
+Yeah, I like a good case that that is maybe only a million times faster than I was able to do before, but not worry about the fact that and that is still that is still going to take too long if I double the size of the problem.
+00:55:22
+So that said, you popularized the asymptotic notation for describing running time, obviously, in the analysis of algorithms, worst cases such as such an important part.
+00:55:35
+Do you see any aspects of that kind of analysis is lacking so and notation to.
+00:55:43
+Well, the main purpose should have notations that that help us for the problems we want to solve and so that they match our imaginary intuitions. And the people who worked in no theory had used esoteric notation in what in in a certain way. But it was only known to a small group of people. And I realized that, in fact, it was very useful to be able to have a notation for something that we don't know exactly what it is, but we only know partial about it.
+00:56:14
+And so and so, for example, instead of big O notation, let's just take a much simpler notation where I say zero or one or zero one or two. And suppose, I suppose that when I had been in high school, we would be allowed to put in the middle of our Formula X plus zero one or two equals Y, OK? And then we would learn how to multiply two such expressions together and then, you know, I deal with them.
+00:56:50
+Well, the same thing, big notation says here's something that I'm not sure what it is, but I know it's not too big. I know it's not bigger than some constant times and squared or something like that. And so so I write Big Ol Event Square and now I learn how to add big old, then square to big event cube that I know to add big events squared to plus one and square that and how to take logarithm exponential to have big O's in the middle of them.
+00:57:17
+And that turned out to be hugely valuable in all of the work that I was trying to do is I'm trying to figure out how good algorithm it. So have there been algorithms in your journey that perform very differently in practice than they do in theory?
+00:57:36
+Well, the worst case of a control algorithm is almost always horrible. But but we have said solvers that are solving where one of the one of the last exercises in that part of my book was to figure out a problem that has 100 variables that that's difficult for us. That's over. But but you would think that problem with 100 billion variables has to do two to the one hundredth of operations, because that's the number of possibilities when you have 100 wounded variable intuitive, the 100 to one hundredth is way bigger than we can handle.
+00:58:17
+Ten to the 17th is a lot. You've mentioned over the past few years that you believe he may be equal to ENPI, but that it's not really you know, if somebody does prove that he was ENPI, he will not directly lead to an actual algorithm to solve difficult problems.
+00:58:37
+Can you explain your intuition here? Has it been changed and in general on the difference between easy and difficult problems of PNB and so on?
+00:58:46
+Yes. So the the popular idea is if an algorithm exists, then somebody will find it. And it's just a matter of of of writing it down. But many more algorithms exist than anybody can understand or ever make you discover. Yeah. Because they're just way beyond human comprehension of the total number of algorithms is it is more than mind boggling. So so we have situations now where we know that algorithms exist, but we don't know. We don't the foggiest idea what the algorithms are.
+00:59:30
+There are there are simple exact examples based on on game playing where you have no where you say, well, there must be an algorithm that exists to win in the game of Hex because for the first player to win in the game of X, because X is always either an A win for the first player or the second player. But what's the game? There's a game of X which is which based on putting pebbles onto a hexagonal board and the white player tries to get a white path from left to right and the black player tries to get a black path from bottom to top.
+01:00:07
+And how does capture occur? Just so and and and there's no capture. You just put pebbles down one at a time, but there's no drugs because after all, the white and black are played, there's either going to be a white path across from east to west or a black path from bottom to top. So there's always, you know, imperfect information game. And people people take turns like like tic tac toe and neck board can be different sizes, but there's no possibility of a draw.
+01:00:38
+And players move one at a time. And so it's got to be either a first player win or second player win. Mathematically, you follow that all the trees. And either there's always a win for the second player, OK? And it's finite. The game is finite. So there's an algorithm that will decide. You can show it has to be one or the other because the second player could mimic the first player with kind of a pairing strategy.
+01:01:07
+And so you can show that it has to be it has to be one or the other. But we don't know any algorithm that we really know. There are there are cases where you can prove the existence of the solution, but we but nobody knows anyway how to find it. But more like the algorithm question, there's a very powerful theorem and graph theory by Robinson Seemore that says that every. Class of graphs that is closed undertaking miners has a has a polynomial time algorithm to determine whether it's in this class or not.
+01:01:48
+Now, a class of graphs, for example, planer graphs, these graphs that you can draw in a plane without crossing a line and and a plane or graph taking Meiners means that you can shrink an edge into a point or you can delete an edge. And so you start with a plane graph and shrink any errors to a point. Still planer, Delina, adjust to a plane. OK, now. But there are millions of different ways to describe a family of graph that still remains the same undertaking minor and Robertson to see more proof that any such value graph.
+01:02:36
+There's a finite number of minimum graphs that are obstructions so that if it's not in the family, then then it has to contain and then there has to be a way to shrink it down. And until you get one of these bad minimum graphs that's not in the family in case of a plane or graph, the minimum graph is a is a five point star where everything pointing to another and minimum graph consisting of trying to connect three utilities to three houses without crossing.
+01:03:10
+Right. And so there are two there are two bad graphs that are not planer in every every non-plan of graph contains one of these two bad graphs by by shrinking and moving.
+01:03:24
+So he said again. So he proved that there's a finite number of these bad guys, always a planet. And so somebody says, here's a family.
+01:03:32
+It's hard to believe. And they think it's a sequence of 20 papers. I mean, and it's deep work. But, you know, it's because that's very arbitrary class.
+01:03:44
+So for any arbitrary class that's close undertaking, Meiners, that's closed under, maybe I'm not understanding because it seems like a lot of them are closed, that they're taking matters.
+01:03:54
+Almost all the important classes of graphs are there are tons of of such graphs, but also hundreds of them that arise in applications.
+01:04:05
+Like I have a book over here called Classes of Graphs. And and and it it's amazing how many different classes of people have looked at.
+01:04:16
+So why do you bring up the stem, lower this proof.
+01:04:19
+So now there are lots of algorithms that are known for special class to grasp. For example, if I have a if I have a cardiograph, then I can colored efficiently. If I have some kind of graph, it'll make a great network. So so like you'd like to test it. Somebody gives you a graph, always it in this family of graph. If so, then I hope then I can I can go to the library and find an algorithm that's going to solve my problem on that graph.
+01:04:50
+OK, so we have that.
+01:04:52
+We want to have a graph, that algorithm that says you give me a graph, I'll tell you whether it's whether it's in this family or not. OK. And so all I have to do is test whether or not that does this given graph have a minor? That's one of the bad ones. A minor is is everything you can get by shrinking and removing it. And given any minor, the opponent only time algorithm saying I can tell whether this is a minor of of you and there's a finite number of bad cases.
+01:05:28
+So I just try, you know, does it have this bad case, polynomial time? I got the answer to this bad case upon which I got the answer total polynomial time. And so I've solved the problem. However, all we know is that the number of miners is finite. We don't know what we might only know one or two of those miners, but we don't know if we've got to if we've got 21, we don't know. They might be 21, 25, the whole thing.
+01:05:56
+All we know is that is that it's finite. So here we have a polynomial time algorithm that we don't know. Mm hmm.
+01:06:03
+That's a really great example of what you worry about or why you think P equals.
+01:06:08
+NP won't be useful, but still wide holding intuition that P equals NP because you have to rule out so many possible algorithms has been not working. You know, you can you can take the graph and you can represent it as in terms of certain prime numbers and then you can multiply those together and then you can. Then you can take the bitwise and and and, you know, and construct some certain constanten polynomial time and that that, you know, perfectly valid algorithm and there are so many algorithms of that kind.
+01:06:54
+A lot of times we see random, you take data and and if we get coincidences that that that some fairly random looking number actually is useful.
+01:07:08
+Because because it happens. It happens to solve. It happens to solve a problem just because, you know, there's so many hairs on your head. But it seems like unlikely that two people are going to have the same number of hairs on their head. But but that they're obvious. But you can count how many people there are and how many hairs on the hairs. They must be people walking around in the country that have the same number of hairs on their head.
+01:07:42
+Well, that's kind of a coincidence that you might say. Also, you know, this this particular combination of operations just happens to prove that a graph is has a Hamiltonian path. And I see lots of cases where unexpected things happen when you have enough of possibilities, because the space, the possibilities are huge.
+01:08:04
+You have to rule them all out. And so that's the reason for my intuition. It by no means a proof. I mean, some people say, well, Picard equal in P because you've had all these smart people, you know, the smartest designers volumes have been racking their brains for years and years. And and there's million dollar prizes out there. You know, none of them nobody has thought of the algorithm. So it must there must be no such right.
+01:08:36
+On the other hand, I can use exactly the same logic and I can say, well, P must be equally happy because there's so many smart people out here have been trying to prove it unequal to NPR and they've all failed.
+01:08:49
+You know, this kind of reminds me of the discussion about the search for aliens that we've been trying to look for them and we haven't found them yet. Therefore, they don't exist. Yeah, but you can show that there's so many planets out there that they very possibly could exist. Yeah.
+01:09:06
+And and then there's also the possibility that that they exist, but they they all discovered machine learning or something and and and then blew each other up.
+01:09:18
+Well, and that small quick tangent. Let me ask, do you think there's intelligent life out there in the universe?
+01:09:24
+I have no idea. Do you hope so? Do you think about it?
+01:09:27
+It I don't I don't spend my time thinking about things that I could never know, really.
+01:09:34
+And yet you do enjoy the fact that there's many things you don't know. You do enjoy the mystery of things.
+01:09:41
+I enjoy the fact that there are that I have limits. Yeah, but I don't. But but I don't take time to to to answer unsolvable questions. I get it.
+01:09:53
+Well, you've taken on some tough questions that may seem unsolvable. You have taken on some tough questions and you seem unsolvable.
+01:10:02
+Gives me a thrill when I can get further than I ever thought I could. Right.
+01:10:05
+Yeah, but but I don't much like with religion.
+01:10:09
+These I'm glad that they're that that there are no proof that God exists or not.
+01:10:14
+I mean, I think it would spoil the mystery. It would be too dull. Yeah.
+01:10:21
+So to quickly talk about the other art of artificial intelligence, what is the view? What's your view? You know, artificial intelligence community has developed as part of computer science and in parallel with computer science since the 60s. What's your view of the A.I. community from the 60s to now to all the way through?
+01:10:45
+It was the people who were inspired by trying to mimic intelligence or to do things that that were somehow the greatest achievements of intelligence, that had been an inspiration to people who have pushed the envelope of computer science. So maybe more than any other group of people. So all through, it's been a great source of of good problems to sink your teeth into and and getting getting partial answers and and more and more successful answers over the years. So this has just had been the inspiration for most of the great discoveries of computer science.
+01:11:33
+Are you yourself captivated by the possibility of creating of allegory? Having echoes of intelligence in the. Not as much as most of the people in the field, I guess I would say, but but that's not to say that they're wrong or that it's just you asked about my own personal preferences and but the but the thing that I that I worry about is when people start believing that they've actually succeeded. And because the seems to me there's a huge gap between really understanding something and being able to pretend to understand something and give the give the illusion of understanding something.
+01:12:25
+Do you think it's possible to create without understanding. Yeah. So to I do that all the time too.
+01:12:33
+I mean I use random numbers I like.
+01:12:37
+Yeah but I but but there's, there's still this great gap. I don't know certain it's impossible but I like but I don't see anything coming any closer to really the kind of stuff that I would consider intelligence.
+01:12:56
+So you've mentioned something that and that line of thinking, which I very much agree with.
+01:13:02
+So the art of computer programming as the book is focused on single processor algorithms and for the most part and you mentioned, that's only because it's set the table of contents in 1962.
+01:13:18
+You have to remember that for sure.
+01:13:20
+There's no I'm glad I didn't wait until 1965 or this one book maybe will touch in the Bible, but one book can't always cover the entirety of everything. So I'm glad.
+01:13:35
+Yeah, I'm glad the the table of contents for the the art of computer programming is what it is.
+01:13:43
+But you did mention that, that you thought that an understanding of the way and colonies are able to perform incredibly organized tasks might well be the key to understanding human cognition. So these fundamentally distributed systems. So what do you think is the difference between the way Don Knuth would sort of list and an ant colony with sort of list or. Well, yeah, perform an algorithm.
+01:14:10
+Sorting a list isn't the same as cognition, though, but. But I know what you're getting at. Well, the advantage of Encarna, at least we can see what they're doing.
+01:14:21
+We know which and has talked to each other and and and it's much harder with the brains to just to know to what extent neurons are passing signals. So I'm just saying that actually might be a you know, if they have the secret of cognition, I think of an ant colony as a cognitive single being rather than as a as a colony of lots of different ants. I mean, just like the cells of our brain are and and the microbiome and all that is interacting entities.
+01:15:00
+But but somehow I consider myself to be one single person. Well, you know, an ant colony I've been saying might be cognitive or cognitive. And somehow and it's you know, I mean, you know, OK, I smash a certain and and that's done. What was that? Right. You know, but if we're going to crack the secret of cognition, it might be that we could do so by faking out how ants do it, because we have a better chance to measure the communicating by pheromones and by touching each other and sight, but but not by much more subtle phenomenon like electric currents going through, but even a simpler version of that.
+01:15:49
+What are your thoughts of maybe Conaway's game of life? OK, so Conaway's game of life is it is able to simulate any any computable process and any deterministic process is like how you went there.
+01:16:05
+I mean, that's not its most powerful thing, I would say. I mean, it can simulate it, but the magic is that the individual units are distributed. Yes. And extremely simple.
+01:16:21
+Yes, we can we understand exactly what the primitives are.
+01:16:24
+The permit is just like with the colony, even simple. But if we.
+01:16:27
+But still it doesn't say that. I understand I understand life.
+01:16:33
+I mean, I understand it. It gives me it. It gives me a better insight into what does it mean to to have a. Deterministic universe, what does it mean to us to have free choice, for example?
+01:16:53
+Do you think God plays dice? Yes.
+01:16:56
+I don't see any reason why God should be forbidden from using the most efficient ways to to to I mean, we know that dice are extremely important, inefficient algorithms. There are things like that couldn't be done well without randomness.
+01:17:15
+And so I don't see any reason why God should be prohibited when the when the algorithm requires that you don't see why the. Yeah. The physics should constrain it. Yeah. So in 2001, you gave a series of lectures at MIT about religion and science, though that were 1999.
+01:17:36
+But you published the book came out in 2000.
+01:17:40
+So in 1999 you spent a little bit of time in Boston enough to give those lectures. Yeah. And I write in the 2001 version that most of it is quite fascinating.
+01:17:54
+Read I recommend people. It's transcription of your lectures.
+01:17:58
+So what did you learn about how ideas get started and grow from studying the history of the Bible? Rigorously studied a very particular part of the Bible.
+01:18:09
+What did you learn from this process about the way us human beings as a society develop and grow ideas, share ideas and implement those ideas?
+01:18:18
+I tried to summarize that. I wouldn't say that I that I learned a great deal of really definite things right. Where I could make conclusions, but I learned more about what I don't know. You have a complex subject which is really beyond human understanding. So can we give up on saying I'm ever going to get to the end of the road and I'm never going to understand it? But you say what? Maybe it might be good for me to get closer and closer and learn more about more and more about something.
+01:18:51
+And so, you know, how can I do that efficiently? And the answer is, well, use randomness. And so so try a random subset of that that is within my grasp and and and and study that in detail instead of just studying parts that somebody tells me to study or instead of studying nothing because it's too hard. So I, I decided for my own amusement at once that I would I would take a subset of the the version of the Bible and I would try to find out what the best thinkers have said about that small subset.
+01:19:47
+And I had heard about, let's say, 660 verses out of out of 3000, I think is one out of 500 or something like this. And so then I went to the libraries, which which are well indexed. So you can you know, I spent, for example, at at Boston Public Library, I would go once a week for for a year. And I went to I went to a half dozen times and over Harvard Library to to look at this, you know, that weren't in the Boston public where they were scholars had looked.
+01:20:22
+And you can go in there and you can go down the shelves and and you can pretty you can look at the index and say, oh, is it is this versus mentioned anywhere in this book if you look at page 205. So like, I could learn not only about the Bible, but about the secondary literature, about the Bible, the things that scholars have written about it. And so that that gave me a way to to zoom in on parts of the things so that I could get more more insight.
+01:20:53
+And so I look at it as as a way of giving me some firm pegs, which I wish I could hang pieces of information, but not as far as things where I would say and therefore this is true in this random approach of sampling the Bible.
+01:21:12
+What did you. Learn about them the most, you know, central.
+01:21:20
+One of the biggest accumulation of ideas in between.
+01:21:23
+To me that that the main thrust was not the one that most people think of as saying, you know, OK, or, you know, don't have sex or something like this.
+01:21:33
+But the main thrust was to try to to try to figure out how to live in harmony with God's wishes. I'm assuming that God exists. And they say, I'm glad that I that there's no way to prove this, because that would that would I would run through the proof once and then I'd forget it and and it would end. And I would never speculate about spiritual things and mysteries otherwise.
+01:22:05
+And I think my life would be very incomplete. So I'm so I'm assuming that God exists. But if but a lot of the people say God doesn't exist, but that's still important to them. And so in a way, that might still be whether God is there or not in some sense. So it it is important to them. It is one of the one of the verses I studied is you can interpret it as saying, you know, it's much better to be an atheist than not to care at all.
+01:22:42
+So I would say it's yeah, it's similar to the P equals and P discussion. Yeah. You mentioned a mental exercise that I'd love it if you could partake in yourself the mental exercise of being God.
+01:22:56
+And so how would you if you were God, Dartmouth, how would you present yourself to the people of Earth?
+01:23:02
+You mentioned your love of literature and there was this book that that really I can recommend to you if I think you know, the title I think is blasphemy. It talks about God revealing himself through a computer and in Los Alamos. And and it it's the only book that I've ever read where the punch line was really the very last word of the book and explained the whole idea of the book. And so I don't want to give that away. But but it's really very much about this question that that you raised.
+01:23:44
+But but I suppose God said, OK, that my my previous means of communication with the world are not the best for the 21st century. So what should I do now? And and and it's conceivable that that it would that that God would choose the way that's described in this book.
+01:24:08
+Another way to look at this exercise is looking at the human mind, looking at the human spirit, the human life in a systematic way.
+01:24:16
+I think mostly you want to learn humility. You want to realize that once we solve one problem, that doesn't mean that we're all of the other problems are going to drop out.
+01:24:25
+And and and and we have to realize that that that there are there are things beyond our beyond our our ability.
+01:24:39
+I see hubris all around.
+01:24:43
+Yeah. Well said.
+01:24:45
+If you were to run program analysis on your own life, uh, how did you do in terms of correctness running time and the resource use asymptotically speaking, of course.
+01:24:58
+Oh OK. Yeah, well I would say that question has not been asked me before and I. I think I started out with libraries, subroutines and and learning how to be an automaton that was obedient, and I had the great advantage that I didn't have anybody to blame for my failures. If I started getting not understanding something, I knew that I should stop playing ping pong and that it was my fault that I was the one studying hard enough or something, rather than that somebody was discriminating against me in some way.
+01:25:49
+And I don't know how to avoid the existence of biases in the world. But but but I know that that's an extra burden that I didn't have to suffer from.
+01:26:03
+And and then I, I found the from from parents. I learned the idea of of altruism, of service to other people as being more important. And then when I get out of stuff myself, I know that I need to I need to be happy enough, enough in order to be able to be of service. But I but I you know, when I came to philosophy for finally that that I phrased as point eight is enough. There was a TV show once called Eight is Enough, which was about a somebody had eight kids.
+01:26:53
+But but I, I say point eight is enough, which means if I have a way of rating happiness, I think it's good design that I have to have an organism that's happy about 80 percent of the time. And it was 100 percent of the time. It would be like I like everybody is on drugs and and never and and everything collapses and nothing works because everybody is just too happy.
+01:27:26
+Do you think you've achieved that point eight optimal?
+01:27:29
+Well, I don't know what there are times when I when I'm down and I you know, I mean, I know that I'm completely right. I know that I've actually been programmed to be I to be depressed a certain amount of time. And if that gets out of kilter and I'm more depressed and, you know, sometimes, like, I find myself trying to think, now, who should I be mad at today?
+01:27:53
+There must be a reason why I'm you know, but then I realize, you know, it's just my it's just my chemistry telling me that I'm supposed to be mad at somebody. And so I take it off, say, OK, OK, go to sleep and get better. But but if I'm but if I'm not 100 percent happy, that doesn't mean that I should find somebody that that's screaming and try to say them. But like I'm saying, you know, OK, I'm not 100 percent happy, but but I'm happy enough to be a part of a sustainable situation.
+01:28:31
+So so that's kind of the the numerical analysis I do I do converge towards the outcome of the human life is a point eight.
+01:28:42
+Yeah. I hope it's OK to talk about, as you talked about previously, in 2006 six, you were diagnosed with prostate cancer. Has that encounter with mortality changed you in some way or the way you see the world?
+01:28:57
+Well, yeah, it did. The first encounter with mortality when my when my dad died and I, I went through a month when I sort of came to be comfortable with the fact that I was going to die some day.
+01:29:16
+And during that month, I don't know, I, I, I felt OK, but I couldn't sing and you know, and I, and I couldn't do original research either. I, I sort of remember after three or four weeks, the first time I started having a technical thought that made sense and was maybe slightly creative, I could sort of feel that, that, that something was starting to move again. But that was, you know, so I felt very empty for a until I came to grips with.
+01:29:54
+Yes, I learned that this is sort of a standard grief process that people go through. OK, so then now I'm at a point in my life even more so than in 2006, where where all of my goals have been fulfilled except for finishing the art of computer program. I, I, I had one made unfulfilled goal that I wanted all my life to write a piece of a piece of music that and I had an idea for a for for a certain kind of music that I thought ought to be written.
+01:30:30
+At least somebody ought to try to do it. And I and I felt that it was that it wasn't going to be easy.
+01:30:37
+But I wanted to I wanted to do proof of concept. I wanted to know if it was going to work or not. And so I spent a lot of time and finally I finished that piece and we had to we had the world premiere last year on my 80th birthday, and we had another premiere in Canada. And there's talk of concerts in Europe and various things. So that but that's done. It's part of the world's music now and it's either good or bad.
+01:31:03
+But I did what I was hoping to do. So the only thing that I that that I have on my agenda is to is to try to do as well as I can with the art of computer programming until I get to see now.
+01:31:20
+Do you think there's an element of 018 that might point out? Yeah, well, I look at it more that I got actually to talk to 1.0 when that concert was over with. I mean, I, I, you know, I saw in 2006 I was at point eight, so when I was diagnosed with prostate cancer, then I said, OK, well, maybe this is you know, I've had all kinds of good luck all my life and I have nothing to complain about.
+01:31:58
+So I might die now and we'll see what happened. And so so it's quite seriously. I went I didn't I had no expectation that I deserved better. I didn't make any plans for the future. I had my my surgery. I came out of the surgery and er and spent some time learning how to walk again and so on is painful for a while. But I got home and I realised I hadn't really thought about what, what to do next.
+01:32:38
+I hadn't, I hadn't any expectation. I thought, OK, hey, I'm still alive, ok. Now I can write some more books but but I didn't come up with the attitude that, you know, you know, this was, this was terribly unfair and and I just said, OK, I was accepting whatever it turned out. You know, I, I, I had gotten I got more than my share already, so why should I wait?
+01:33:10
+And I and I didn't. And I really when I got home, I, I realized that I had really not thought about the next step, what I would do after I would after I would be able to work again. I sort of thought of it as if as this might I was comfortable with with the fact that it was at the end.
+01:33:31
+But what I was hoping that I would still, you know, be able to learn about satisfy ability and and also someday write music. I didn't start I didn't start seriously on the music project until 2012.
+01:33:51
+Well, so I'm going to be in huge trouble if I don't talk to you about this. In in the 70s, you've created the tech typesetting system together with metaphoric language for far description and computer modern family of typefaces that has basically defined the methodology in the aesthetic of the countless research fields.
+01:34:14
+Right. Math, physics, well beyond computer science.
+01:34:19
+OK, well, first of all, thank you. I think I speak for a lot of people and saying that. But a question in terms of beauty.
+01:34:28
+There's a beauty to typography that you've created and yet beauty is hard to quantify.
+01:34:35
+Right. Um, how does one create beautiful letters and beautiful equations.
+01:34:42
+Like what. What? So perhaps there's no words to be describe.
+01:34:49
+Yeah, I'll be describing the process, but so the great Harvard mathematician George de Burkhoff wrote a book in the 30s called Aesthetic Measure where he where he would have pictures of vases and underneath would be a number. And this was how beautiful the place was. And he had four. Formula for this and and he actually also wrote about music and so he could he he could, you know, so I thought maybe I part of my musical composition, I would try to program his algorithms and and, you know, so that I would write something that had the highest number by his score.
+01:35:31
+Well, it wasn't quite rigorous enough for a computer to do. But anyway, people have tried to put numerical value on beauty. But and he did the probably the most serious attempt.
+01:35:46
+And George Gershwin's teacher also wrote two volumes where he talked about his method of of of composing music. But you're talking about another kind of beauty and beauty in letters and that letter of elegance and whatever that overture is.
+01:36:03
+Right. So, so and so that's in the eye of the beholder, as you say, but kind of striving for excellence in whatever definition you want to give to beauty.
+01:36:14
+Then you try to get as close to that as you can somehow with I guess I guess I'm trying to ask and there may not be a good answer, would loose definitions where you're operating under with the community of people that you're working on?
+01:36:29
+Oh, the loose definition. I wanted I wanted it to appeal to me. To me.
+01:36:38
+I mean, you personally. Yeah. That's a good start. Yeah. No, and it failed that test when I got by and two came out with the new printing and I was expecting to be the happiest day of my life. And I felt like a burning like how angry I was that I opened a book and it was in the same page covers and but but it didn't look great on the page. The number two was particularly ugly. I couldn't stand it.
+01:37:10
+Any painter had a two as page number and I was expecting that it was you know, I spent the time making measurements and I found I had looked at stuff in different, different ways. And I had I had great technology. But but it did, you know, but I but I wasn't done. I had I had to written the whole thing after 1961.
+01:37:37
+Has it ever made you happy, finally? Oh yes. Or is that a point? Oh, no. And so many books have come out that would never have been written without this. I just it just it's just it's like. Well, I could. But now I. I mean, all these pages that are sitting up there, I don't have a I if I didn't like them, I would change them like that's my no. Nobody else has this ability.
+01:38:05
+They have to stick with what I gave them.
+01:38:07
+Yeah. So in terms of the other side of it, there's the topography to the look of the of the type and the curves and the lines. What about the spacing. What about the spacing spacing out the white space. Yeah. It seems like you could be a little bit more systematic about the layout or.
+01:38:29
+Oh yeah. You can always go further. I, I didn't, I didn't stop at point eight. I started about point nine eight.
+01:38:38
+It seems like you're not following your own rule for happiness or is.
+01:38:44
+No, no, no I there is of course just one is a Japanese where wabi sabi or something where the most beautiful works of art are those that have flaws, because then the person who who perceives them as their own appreciation and that gives viewer more satisfaction, so on. But but I. But no, no. With typography, I wanted it to look as good as I could in the vast majority of cases.
+01:39:19
+And then when it doesn't, then I, I say, OK, that's two percent more work for the for the author.
+01:39:28
+But but I didn't want to I didn't want to say that my job was to get to 100 percent and take all the work away from the author. That's what I meant by that.
+01:39:39
+So if you were to venture a guess, how much of the nature of reality do you think we humans understand? See, you mentioned you appreciate mystery. How much of the world about us is shrouded in mystery? Are we? Are we if you were to put a number on it, but what percent of it all do we understand or we. Totally.
+01:40:03
+How many leading zero point zero point zero zero. I don't know. I think it's infinitesimal. How do we. Think about that and what do we do about that? Do we continue one step at a time? Yeah, we muddle through. I mean, we do our best. We realize that nobody's perfect. And we and we try to keep advancing, but we don't spend time saying we're not there. We're not all the way to the end to mathematicians that that would be an office next to me.
+01:40:36
+When I was in the math department, they would never think about anything smaller than countable infinity. And I never you know, we intersect that kind of infinity because I rarely got up to finish.
+01:40:49
+I was talking about finite stuff, but but even even limiting to finite stuff, which is which is which the universe might be. Oh, there's no way to really know whether the universe isn't just made out of capital in whatever you want to call them, quarks or whatever. We're cappellini of some finite number. All of the numbers that are comprehensible are still way smaller than most almost all finite numbers. I got this one paper called Supernatural Numbers where I what I guess you probably ran into something called canoe's arrow notation.
+01:41:36
+Did you ever run into that? We're right. Anyway, so you take the number. I think it's like I called it Super K, which I named it after myself. But it's, it's but er notation is something like ten and then four arrows in a three or something like OK, now the arrow notation, if you have, if you have no arrows that means multiplication X Y means X times X times X times X Y times. If you have one arrow that means exponentiation.
+01:42:07
+So X one er Y means X to the X, to the X to the next to the X Y times. So I found out by the way that this is notation was invented by a guy in 1830 and and, and he was, he was a a one of the English nobility who spent his time thinking about stuff like that.
+01:42:33
+And it was exactly the same concept that I that I that I used arrows and he used a slightly different notation. But anyway, this and then this Ackermans function is is based on the same kind of ideas. But Akerman was 1920s. But you got this number ten quadruple arrow three. So so that that says, well, we take you know, we take ten to the ten to the ten to the ten to tend to the tenth.
+01:43:02
+And how many times do we do that.
+01:43:04
+Oh ten double or two times or something.
+01:43:07
+I mean how tall is that stack.
+01:43:09
+But but but then we do that again because that was only ten triple or quadruple. Ah. To quadruple three. Pretty large number. It gets way beyond comprehension.
+01:43:22
+OK, and and and so, but it's so small compared to what finite numbers really are because I want to use four hours and you know a ten and a three. I mean let's have that, let's have that many no arrows.
+01:43:39
+I mean the boundary between infinite and finite is incomprehensible for us humans.
+01:43:46
+Anyway, infinity is a good, useful way for us to think about extremely large, extremely large things. And and and and we we can manipulate it. But but we can never know that the universe is actually anywhere near that.
+01:44:09
+So it is I realise how little we know. But but but what we do, we found an awful lot of of about things that are too hard for any one person to know, even even in our small universe.
+01:44:31
+Yeah. And we did pretty good.
+01:44:33
+So, uh, when you go up to heaven and meet God and get to ask one question that would get answered, what question would you ask?
+01:44:47
+What kind of browser do you have up here?
+01:44:52
+No, no, I actually I don't think it's a meaningful question, but but I certainly hope we had good Internet, OK, and that now that's that's beautiful, actually. Don, thank you so much. Was a huge honor to talk to you. I really do. Well, thanks for the gamut of questions. Yeah, it was fun. Thanks for listening to this conversation with Donald Knuth. Thank you to our presenting sponsor cash app download. It is called Legs podcast.
+01:45:27
+You'll get ten dollars and ten dollars will go to first, a STEM education nonprofit that inspires hundreds of thousands of young minds to learn and to dream of engineering our future. If you enjoy this podcast, subscribe on YouTube. Give it five stars, an Apple podcast, support our patron or connected me on Twitter. And now let me leave you some words of wisdom from Donald Knuth. We should continually be striving to transform every art into a science. And in the process, we advance the art.
+01:46:00
+Thank you for listening and hope to see you next time.

@@ -1,0 +1,388 @@
+00:00:00
+The following is a conversation with Regina Barzelay. She's a professor at MIT and a world class researcher in natural language processing and applications of deep learning to chemistry and oncology or the use of deep learning for early diagnosis, prevention and treatment of cancer. She's also been recognized for teaching of several successful A.I. related courses at MIT, including the popular Introduction to Machine Learning Course. This is the Artificial Intelligence Podcast. If you enjoy, subscribe on YouTube, give it five stars in iTunes supported on Patron or simply connect with me on Twitter.
+00:00:39
+Allex Friedman spelled F r Idi Amin. And now here's my conversation with Regina Barzelay. In an interview, you've mentioned that if there's one course you would take, it would be a literature course with a friend of yours that a friend of yours teaches just out of curiosity, because I couldn't find anything on it.
+00:01:17
+Are there books or ideas that had a profound impact on your life journey books and ideas, perhaps outside of computer science and the technical fields?
+00:01:28
+I think because I'm spending a lot of my time at Amitay and previously in other institutions where I was a student, I have a limited ability to interact with people. So a lot of what I know about the world actually comes from books. And there were quite a number of books that had profound impact on me and how I view the world. Let me just give you one example of such a book. I've maybe a year ago read a book called The Emperor of All Maladies.
+00:01:59
+It's a book about it's kind of a history of science book on how the treatments and drugs for cancer were developed and. That despite the fact that I am in the business of science, really opened my eyes on how imprecise and imperfect the discovery process is and how imperfect our current solutions and what makes science succeed and be implemented.
+00:02:28
+And sometimes it's actually not the strengths of the idea, but devotion of the person who wants to see it implemented. So this is one of the goals that, you know, at least for the last year, quite changed the way I'm thinking about scientific process, just from the historical perspective. And what do I need to do to make my ideas really implemented? Let me give you an example of a book which is known to kind of which is a fiction book.
+00:02:57
+Is a book called Americana. And this is a book about a young female student who comes from Africa to study in the United States, and it describes her path, you know, within her studies and her life transformation that, you know, in a new country and kind of adaptation to a new culture. And when I read this book, I saw myself in many different points of it. But it also kind of gave me the lens on different events and some of it that I never actually paid attention.
+00:03:39
+When the funny stories in this book is how she arrives to go to new college and she starts speaking in English and she has this beautiful British accent because that's how she was educated in her country. This is not my case. And then she notices the person who talks to her. You don't talk to her in a very funny way, in a very slow way. And she's thinking that this woman is disabled and she's also trying to kind of accommodate her.
+00:04:11
+And then after a while, when she finishes her discussion with this officer from her college. She sees how she interacts with the other students, with American students, and she discovers that actually she talked to her this way because she thought she doesn't understand English. And I thought, wow, this is a fun experience. And literally within a few weeks I went.
+00:04:37
+To to L.A. to a conference, and I ask somebody in an airport, you don't have to find a cab or something, and then I notice that this person is talking in a very strange way. And my first thought was that this person have some, you know, pronunciation issues or something. And I'm trying to talk very slowly to him. And I was with another professor, James Franco, and he's like laughing because it's funny that I don't get that the guys talking in this way because I think that I could speak.
+00:05:04
+So it was really kind of mirror an experience that you'd let me think a lot about my own experiences moving, you know, from different countries. So think that books play a big role in my understanding of the world.
+00:05:19
+On the on the science question, you mentioned that it made you discover that personalities of human beings are more important than perhaps ideas.
+00:05:29
+Is that what I heard so necessarily that they are more important than ideas? But I think that ideas on their own are not sufficient. And many times, at least in the local horizon, it's the personalities and their devotion to their ideas is really that locally changes the landscape. Now, if you're looking at I like let's say some years ago, you know, decades of civil, whatever was the symbolic times, you can use any anyone you know, there is some people now we're looking at a lot of that work and we're kind of thinking this was not really maybe a relevant work, but you could see that some people managed to take it in to make it so shiny and dominated the, you know, the academic world and make it to be the standard if you look at the area of natural language processing.
+00:06:23
+It is well known fact and the reason the statistics in NLB took such a long time to be came to become mainstream because there were quite a number of personalities which they didn't believe in this idea and didn't stop research progress in this area. So I do not think that, you know, kind of asymptotically maybe personality matters, but I think locally it does make quite a bit of impact. And it's OK generally, you know, speeds speeds up the rate of adoption of the new ideas.
+00:06:58
+Yeah.
+00:06:58
+And and the other interesting question is, in the early days of particular discipline, I think you mentioned in that book was is Otomi a book of cancer?
+00:07:09
+It's called The Emperor of All Maladies.
+00:07:12
+Yeah, yeah. And those maladies included the trying to the medicine was it centred around.
+00:07:17
+So it was actually centred on, you know, how people sort of curing cancer like it. Like for me it was really a discovery. How people what was the science of chemistry behind drug development that it actually grew up out of that dying like colouring industry, that people who develop chemistry in 19th century in Germany and Britain to do, you know, the really new dyes, they looked at the molecules and identify they to do certain things to cells. And from there, the process started.
+00:07:51
+And, you know, like historians say, yeah, this is fascinating that they managed to make the connection and look under the microscope to and do all this discovery. But as you continue reading about it and you read about how chemotherapy drugs, which were developed in Boston and some of them were developed and Farber, Dr Pharma from Dana Farber, you know how the experiments were done, that, you know, there was some miscalculation, let's put it this way.
+00:08:21
+And they tried it on the patients and they just and those were children with leukaemia and they died and then they tried another modification. You look at the process, how imperfect is this process? And, you know, like if we're, again, looking back like 60 years ago, 70 years ago, you can kind of understand it. But some of the stories in this book, which were really shocking to me, were really happening, you know, maybe decades ago.
+00:08:45
+And we still don't have a vehicle to do it much more fast and effective. And, you know, a scientific way of thinking, computer science, scientific.
+00:08:55
+So from the perspective of computer science, you've gotten a chance to work the application to cancer and to medicine in general from a perspective of an engineer and a computer scientist, how far along are we from understanding the human body biology of being able to manipulate it in a way we can cure some of the maladies, some of the diseases.
+00:09:16
+So this is a very interesting question.
+00:09:20
+And if your thinking is a computer scientist about this problem, I think one of the reasons that we succeeded in the areas we as a computer scientist succeeded is because we don't have we are not trying to understand in some ways, like if you're thinking about like ecommerce with Amazon doesn't really understand you. And that's why it recommends you certain books or certain products. Correct. And in you know, traditionally when people were thinking about marketing, you know, they divided the population to different kind of subgroups, identify the features of this subgroup and come up with a strategy which is specific to that subgroup.
+00:10:02
+If you're looking at what recommendations, they're not claiming that they're understanding somebody, they're just managing to from the patterns of your behavior to recommend your product. Now, if you look at the traditional biology, and obviously I wouldn't say that I am any way, you know, educated in this field, but what I see there is really a lot of emphasis on mechanistic understanding. And it was very surprising to me, coming from computer science, how much emphasis is on this understanding.
+00:10:34
+And given the complexity of the system, maybe the deterministic, full understanding of these processes is beyond our capacity and the same way as in computer science. When we do recognition, when you recommendation in many other areas, it's just probabilistic matching process. And in some way, maybe in certain cases, we shouldn't even attempt to understand or we can attempt to understand. But in parallel, we can actually do this kind of matching that would help us to find Curole, to do early diagnostics and so on.
+00:11:11
+And I know that in these communities it's really important to understand. But I'm sometimes wondering, what exactly does it mean to understand here?
+00:11:20
+Well, there's stuff that works and but that can be, like you said, separate from this deep human desire to uncover the mysteries of the universe, of of science, of the way the body works, the way the mind works. It's the dream of symbolic A.I. of being able to reduce human knowledge into into logic and be able to play with that logic in a way that's very explainable and understandable for us humans. I mean, that's a beautiful dream.
+00:11:48
+So I understand it. But it seems that what seems to work today and we'll talk about it more is as much as possible. Reduce stuff into data, reduce whatever problem you're interested in data, and try to apply statistical methods, apply machine learning to that. On a personal note, you were diagnosed with breast cancer in 2014. Would it, facing your mortality, make you think about how did it change? You know, this is a great question, and I think that I was interviewed many times and nobody actually asked me this question and think I was forty three at a time.
+00:12:26
+And the first time I realized in my life that I may die and they never thought about it before. And and there was a long time since your diagnosis. Did you actually know what you have and how severe disease?
+00:12:37
+For me it was like maybe two and a half months and I didn't know where I am during this time because it was getting different tests. And one would say it's bad and it was you know, it it's not. So until I knew where I am, I really was thinking about all these different possible outcomes. Were you imagining the worst or were you trying to be optimistic or it would be to really.
+00:13:00
+I don't remember. You know, what was it? My thinking? It was really a mixture with many components at the time speaking, you know, in our terms and. One thing that I remember and, you know, every test comes out and you think, oh, it could be there, so it may not be the case and you're hopeful and then you're desperate. I mean, it's like there is a whole slew of emotions that go through.
+00:13:26
+But what I remember is that when I came back to M.I.T., I was kind of going the whole time through the treatment with my it was brain. It was not really there. But when I came back, I finished my treatment. That was here teaching and everything.
+00:13:41
+You know, I look back at what my group was doing, what other groups was doing, and I saw these trivialities. It's like people are building their careers on improving some parts around two or three percent or whatever. I like seriously, I did a work on how to decipher eukaryotic like a language that nobody speak. And they were like, what is significance? When I was sad and, you know, I walked out of M.I.T., which is, you know, when people really do care, you know, what happened to your eye clear paper?
+00:14:11
+You know, what is your next obligation to ECL, to the world where people, you know, people you see a lot of suffering that I'm kind of totally shielded on it on a daily basis.
+00:14:22
+And it's like the first time I've seen, like, real life and real suffering. And I was thinking, why are we trying to improve the past or deal with trivialities when we have capacity to really make change? And it was really challenging to me because on one hand, you know, I have my graduate students who really want to do their papers and their work and they want to continue to do what they were doing, which was great. And then it was me who really kind of re-evaluated what is the importance.
+00:14:54
+And also that point because I had to take some break.
+00:14:59
+I look back into like my years in science, and I was thinking, you know, like 10 years ago, this was the biggest thing, I don't know, topic models that we have, like millions of papers on topic models and variations on topics, small amounts like irrelevant.
+00:15:15
+And you start looking at this, you know, what do you perceive as important a different point of time and how, you know, it fades all the time. And since we have a limited time, all of us have limited time when? S it's really important to prioritize things that really matter to you, maybe mattered to you at that particular point. But it is important to take some time and understand what matters to you, which may not necessarily be the same as what matters to the rest of your scientific community and pursue that vision.
+00:15:51
+So that moment, did it make you cognizant? You mentioned suffering of just the general amount of suffering in the world. Is that what you're referring to? So as opposed to topic models and specific detail problems in the ALP? Did did you start to think about other people who have been diagnosed with cancer, the way you sort of started to see the world, perhaps?
+00:16:17
+Oh, absolutely.
+00:16:17
+And it actually increased because like, for instance, you know, the response of the treatment really need to go to the hospital every day. And you see the community of people that you see, and many of them are much worse than I I was at a time.
+00:16:33
+And you're all of a sudden see to all and people who are happy as somebody just because they feel better.
+00:16:42
+And for people who are in our normal reale, you take it totally for granted that you feel well, that if you decide to go running, you can go running and you can, you know, you pretty much free to do whatever you want with your body. Like I saw, like a community, my community became those people. And I remember one of my friends, Dina Katab, took me to Prudential to buy me a gift for my birthday.
+00:17:07
+And it was like the first time in months that I went to kind of to see other people. And I was like, wow, first of all, these people, you know, they're happy and they're laughing and they're very different from this other mind people. And they're going to see, I think, totally crazy. They're like laughing and wasting their money on some stupid gifts and.
+00:17:28
+You know, they may die, they already may have cancer and they don't understand it, so you can really see how the mind changes that you can see it. You know, before that, you can ask, didn't you know that you're going to die? And of course, they knew. But it was kind of a theoretical notion and it wasn't something which was concrete. And at that point, when you really see it and see how lethal means sometimes the system has to harm, then you really feel that we need to take a lot of our brilliance that we have here at home in and translate it into something useful.
+00:18:05
+Yeah, and you can have a lot of definitions, but of course, alleviating suffering, alleviating trying to cure cancer is a beautiful mission. So I, of course, know the theory, theoretically, the notion of cancer. But just reading more and more about it, at one point, seven million new cancer cases in the United States every year. Six hundred thousand cancer related deaths every year. So this has a huge impact. United States globally, when broadly, before we talk about how machine learning, how Ammit can help, when do you think we as a civilization will cure cancer?
+00:18:49
+How hard of a problem is it from everything you've learned from it recently?
+00:18:54
+I cannot really assess it. What I do believe will happen with the advancement in machine learning is that a lot of types of cancer we will be able to predict way early and more effectively utilize existing treatments. I think I hope at least that with all the advancements in AI and drug discovery, we would be able to much faster find relevant molecules. What I'm not sure about is how long it will take the medical establishment and regulatory bodies to kind of catch up and to implement it.
+00:19:31
+And they think this is a very big piece of puzzle that is currently not addressed. That's the really interesting question. The first, a small detail that I think the answer is yes. But is cancer one of one of the diseases that when detected earlier, that's a significantly improves the outcomes? So like because we'll talk about this, the cure and then there is detection. And I think one machine learning can really help us early detection. So the detection help prediction is crucial.
+00:20:06
+For instance, the vast majority of pancreatic cancer patients are detected at this stage of their incurable. That's why they have such a, you know, terrible survival rate. It's like just a few percent over five years is pretty much a death sentence, but if you can discover this disease early. There are mechanisms to treat it, and in fact, I know a number of people who were diagnosed and saved just because they had food poisoning, they had terrible food poisoning, they went to the Coskun.
+00:20:45
+There were early signs on the scan and that would save their lives. But this wasn't really an accidental case. So as we become better, we would be able to help to many more people that have, you know, that are likely to develop diseases. And they just want to say that as I got more into this field, I realized that, you know, cancer is, of course, a terrible disease. There will be a whole slew of terrible diseases out there, like neurodegenerative diseases and others.
+00:21:18
+So we of course, a lot of us are fixated on cancer just because it's so prevalent in our society. And you see these people with a lot of patients with neurodegenerative diseases and that kind of aging diseases that we still don't have a good solution for.
+00:21:34
+And we you know, and I felt as a computer scientist, we kind of decided that it's other people's job to treat these diseases because it's like traditionally people in biology or in chemistry or MDs are the ones who are thinking about it. And that's the kind of start paying attention. I think that it's really wrong assumption and we all need to join the battle.
+00:22:00
+So how it seems like in cancer specifically, that there's a lot of ways that machine learning can help. So what's what's the role of machine learning in the diagnosis of cancer?
+00:22:12
+So for many cancers today, we really don't know what is your likelihood to get cancer.
+00:22:20
+And for the vast majority of patients, especially on the younger patients, it really comes as a surprise, like, for instance, for breast cancer, 80 percent of the patients are first in their families. It's like me. And I never saw that I had any increased risk because, you know, nobody had it in my family. And for some reason in my head, it was kind of inherited disease. But even if I would pay attention to the models that currently is very simplistic statistical models that are currently used in clinical practice, they really don't give you an answer.
+00:22:52
+So you don't know. And the same true for pancreatic cancer at the same trial for non smoking, lung cancer and many others. So what machine learning can do here is utilize all this data to tell us, Ali, who is likely to be susceptible and using all the information that is already there by the imaging being your other tests and, you know, eventually liquid biopsies and others where the signal itself is not sufficiently strong for human eye to do good discrimination because the signal may be weak.
+00:23:30
+But by combining many sources, a machine which is trained on large volumes of data can really be detected early. And that's what we've seen with breast cancer and people are reporting it in other diseases as well.
+00:23:43
+That really boils down to data, right. And the different kinds of sources of data. And you mentioned regulatory challenges. So what are the challenges in gathering large data sets in this space?
+00:23:57
+Again, another great question. So it took me after I decided that I want to walk only two years to get access to data.
+00:24:05
+And you did like a significant amount.
+00:24:08
+Like right now in this country, there is no publicly available data set of modern mammogram that you can just go on your computer, sign a document and get it. It just doesn't exist. I mean, obviously, every hospital has its own collection of mammograms. There are data that come out that came out of clinical trials. But we're talking about you as a computer scientist who just want to run his or her model and see how it works. This data like imaging that doesn't exist.
+00:24:40
+And the you know, there is and you said, which is called like Florida data set, which is a field mammogram from 93, which is really not representative of the current developments. Whatever you're leaning on them doesn't scale up. This is the only resource that is available. And today there are many agencies that govern access to data like the hospital holds your data and the hospital decides whether they would give it to the researcher to walk with this data on an individual hospital.
+00:25:10
+So, yeah, I mean, the hospital may, you know, assuming that you're doing a surgical operation, you can submit, you know, there is a proper approval process guided by IRP. And you if you go through all the processes, you can eventually get access to the data.
+00:25:27
+But if you yourself Nyamweya community that are not that many people who actually have a good access to data because it's a very challenging process and sandwiches and a quick comment, mortgage or any kind of hospital, are they scanning the data that they digitally storing it?
+00:25:46
+Oh, it is already digitally stored. You don't need to do any extra processing steps. It's already there in the right format. Is that right now? There are a lot of issues that govern access to the data because the hospital is legally responsible for.
+00:26:02
+For the data and. You know, they have a lot to lose if they give the data to the wrong person, but they may not have a lot to gain if they gave it as a hospital, as a legal entity is giving it to you. And the way you know, what I would imagine happening in the future is the same thing that happens when you're getting your driving license. You can decide whether you want to donate your organs. So you can imagine that whenever a person goes to the hospital, they it should be easy for them to Disney then data for research.
+00:26:35
+And it can be a different kind of. Do they only give you a test results or only mammogram only imaging data or the whole medical record? Because at the end. We all will benefit from all this insights, and it's the only thing I want to keep my data private. But I would really love to get it, you know, from other people because other people are thinking the same way. So if there is a mechanism to do this, the nation and the patient has an ability to see how they want to use their data for research, it would be really a game changer.
+00:27:11
+People, when they think about this problem, there's depends on the population, depends on the demographics. But there's some privacy concerns generally when not just medical data, just any kind of data. It's what you said, my data, it should belong kind of to me. I'm worried how it's going to be misused.
+00:27:30
+How do we alleviate those concerns?
+00:27:34
+Because that seems like a problem. That needs to be that problem of trust, that transparency needs to be solved before we build large datasets that help detect cancer, helps save those very people and their in the future.
+00:27:47
+So he only had two things that could be done. That is a technical solutions and there are societal solutions. So on the technical and. We today have ability to improve disambiguation.
+00:28:04
+Yeah, like, for instance, for imaging, it's for you know, for imaging you can do it pretty well was disambiguation and removing the case and removing the names of the people.
+00:28:19
+There are other data like if it is in or text, you cannot really achieve ninety nine point nine percent. But there are all these techniques that actually some of them are developed at MIT. How you can do learning on the encoded data where you locally encode the image you train on network, which only works on the encoded encoded images, and then you send the outcome back to the hospital and you can open it up. So those are the technical solutions that a lot of people who are walking in the space where the learning happens in the encoded form, we're still early.
+00:28:53
+But this is an interesting research area where I think we'll make more progress. There is a lot of work in language processing community how to do and better. But even today, there are already a lot of data which can be done perfectly like your test data, for instance, correct, where you can just, you know, the name of the patient, you just want to extract the part with the numbers. The big problem here is again.
+00:29:25
+Hospitals don't see much incentive to give this data away. On one hand, and then there is general concern now when I'm talking about societal benefits and about the education the public needs to understand. And I think that there are situations and I still remember myself when I really needed an answer, I had to make a choice. There was no information to make a choice. You're just guessing. And at that moment, you feel that your life is at stake, but you just don't have information to make the choice.
+00:30:01
+And many times when I give talks, I get emails from women who say, you know, I'm in this situation, can you please run statistic and see what are the outcomes? We get almost every week a mammogram that comes by mail to my office. I'm serious that people ask to run because they need to make life changing decisions. And, of course, you know, I'm not planning to open a clinic here, but we do run and give them the results for their doctors.
+00:30:33
+But the point that I'm trying to make that we all at some point or our loved ones will be in the situation where you need the information to make the best choice. And if this information is not available, you would feel vulnerable and unprotected.
+00:30:52
+And then the question is, what do I care more? Because at the end, everything's a trade off, correct? Yeah, exactly.
+00:30:58
+Just out of curiosity, what it seems like one possible solution. I'd like to see what you think of it. Based on what you just said, based on wanting to know answers for you, when you yourself in that situation, is it possible for patients to own their data as opposed to the hospitals owning their data?
+00:31:18
+Of course, theoretically, I guess patients own their data, but can you walk out there with the USB stick? Containing everything or uploaded to the cloud where company, you know, I remember Microsoft had a service like I tried I was really excited about and Google Health was there. I tried to give I was excited about it. Basically, companies helping you upload your data to the cloud so that you can move from hospital to hospital, from doctor to doctor.
+00:31:46
+Do you see a promise of that kind of possibility? I absolutely think this is the right way to to exchange the data. I don't know now who is the biggest player in this field, but I can clearly see that even for even for totally selfish health reasons, when you are going to a new facility and many of us are sent to some specialized treatment, they don't easily have access to your data. And today, you, if we want to send a mammogram, need to go to the hospital, find some small office which give them the soup.
+00:32:21
+As you can imagine, we're looking at the kind of decades old mechanism of data exchange.
+00:32:28
+So I definitely think this is an area where hopefully all the right regulatory and technical forces will align and we will see it actually implemented.
+00:32:40
+It's sad because unfortunately, you don't have a need to research why that happened. But I'm pretty sure Google Health and Microsoft Health Vault or whatever it's called, both closed down, which means that there was either regulatory pressure or there's not a business case or there's challenges from hospitals, which is very disappointing. So when you say you don't know what the biggest players are, the two biggest that I was aware of and close the doors.
+00:33:07
+So I'm hoping I'd love to see why and I'd love to see who else can come up. That seems like a one of those Elon Musk style problems that are obvious needs to be solved and somebody needs to step up and actually do this large scale data, you know, data collection.
+00:33:24
+So I know there is an initiative in Massachusetts, this English, who led by the governor to try to create this kind of health exchange system or at least to help people who are kind of when you show up in emergency room and there is no information about what are your allergies and other things. So I don't know how far it will go.
+00:33:43
+But another thing, as you said, and I find it very interesting, is actually who are the successful players in this phase and the whole implementation? How does it go? To me? It is from the anthropological perspective. It's more fascinating that I that today goes in health care. You know, we've seen so many, you know, attempts and so very little successes. And it's interesting to understand that I'm by no means, you know, have knowledge to assess why we are in the position where we are.
+00:34:16
+Yeah, it's interesting because, um, data is really fuel for a lot of successful applications.
+00:34:22
+And when that data requires regulatory approval, like the FDA or any kind of approval, it's seems that the computer scientists are not quite there yet in being able to play the regulatory a game, understanding the fundamentals of it.
+00:34:38
+I think that in many cases, when even people do have data, we still don't know. What exactly do you need to demonstrate to to change the standard of care?
+00:34:52
+Like, let me give you an example related to my breast cancer message so traditional in traditional breast cancer risk assessment, there is something called density which determines the likelihood of a woman to get cancer. And this is pretty much this. How much weight do you see on the mammogram? The white that is the more likely the tissue is dense and the idea behind density is not embedded.
+00:35:20
+In 1967 and radiologist called Wolfe decided to look back at women who were diagnosed and see what, especially in the images, can we look back and say that they're likely to develop? So he come up with some parts and it was the best that he's human. I can, you know, can identify. Then it was kind of formalized and coded into four categories. And that what we are using today and today, this density assessment is actually a federal law from 2019 approved by President Trump and for the previous FDA commissioner, where women are supposed to be advised by their providers if they have high density, putting them into high risk category.
+00:36:04
+And in some states, you can actually get supplementary screening paid by your insurance because you in this category now you can say how much science do we have behind whatever biological science or epidemiological evidence? So it turns out that between 40 and 50 percent of women have dense breast. So about 40 percent of patients are coming out of this screening and somebody tell them you are in high risk, high risk. Now, what exactly does that mean? If you ask half of the population high risk, it may maybe I'm not, you know, or what do I really need to do with it?
+00:36:40
+Because the system doesn't provide me a lot of the solutions, because there are so many people like me, we cannot really provide very expensive solutions for them. And the reason this whole density became this big deal, it's actually advocated by the patients who felt very unprotected because many women when did the mammograms, which were normal, and then it turns out that they already had cancer, quite developed cancer. So they didn't have a way to know who is really at risk and what is the likelihood that when the doctor tells you you're OK, you are not OK.
+00:37:15
+So at the time and it was, you know, 15 years ago, this maybe was the best piece of science that we had. And I thought, you know, quite 15, 16. Yes, to make it federal law, but now that this is this is a standard now it is a deep learning model, we can so much more accurately predict who is going to develop breast cancer just because you are trained on a logical thing. And instead of describing how much weight and what kind of weight machine can systematically identify the patterns, which was the original idea behind the sort of the radiologist machine, it can do it much more systematically and predict the risk when you're training the machine to look at the image and to see the risk in one to five years.
+00:37:59
+Now, you can ask me how long it will take to substitute this density, which is broadly used across the country. And it really is not helping to bring this new models. And I would say it's not a matter of the algorithm algorithms already orders of magnitude better. The thought is currently in practice. I think it's really the question, who do you need to convince? How many hospitals do you need to run the experiment? Well, you know, all this mechanism of adoption and how do you explain to patients and to women across the country that this is really a better measure?
+00:38:37
+And again, I don't think it's a question we can walk more and make the algorithm even better. But I don't think that this is a current you know, the barrier the barrier is really this other piece that for some reason is not really explored. It's like anthropological piece. And come back to a question about books. That is a book that I'm reading. It's called American Sickness By. Elisabeth Rosenthal and I got this book from my clinical collaborator, Dr.
+00:39:09
+Connie Lehman, and I said, I know everything that I need to know about American health system. But, you know, every page doesn't fail to surprise me. And I think it is a lot of interesting and very deep lessons for people like us from computer science who are coming into this field to really understand how complex is a system of incentives in the system to understand how you really need to play to drive adoption.
+00:39:36
+But you just said it's complex. But if we're trying to simplify it, who do you think most likely would be successful if we push on this group of people? Is that the doctors at the hospitals? Is that the governments are policy makers? Is it the individual patients, consumers? Who needs to be inspired to most likely lead to adoption, or is there no simple answer?
+00:40:04
+There's no simple answer, but I think there is a lot of good people in medical system who do want, you know, to make a change. And I think a lot of power will come from us as a consumers because we all are consumers or future consumers of health care services and.
+00:40:26
+I think we can do so much more in explaining the potential and not in the hype terms and not saying that we now killed all and time. And, you know, I'm really sick of reading these kind of articles which make these claims 20 to show with some examples what this implementation does and how it changes the care. Because I can't imagine it doesn't matter what kind of politician it is. You know, we all are susceptible to these diseases. There is no one who is free.
+00:40:54
+And eventually, you know, we all are humans and we are looking for a way to alleviate the suffering.
+00:41:01
+And this is one possible way where we currently underutilizing, which I think can help, though it sounds like the biggest problems outside of EHI in terms of the biggest impact at this point.
+00:41:15
+But are there any of them problems in the application of Emelle to oncology in general?
+00:41:20
+So improving the detection or any other creative methods, whether it's on the detection segmentations or the vision perception side or some other clever of inference that, yeah, what what in general and in your view are the open problems in this space?
+00:41:37
+I just want to mention that beside detection of the any event, I am kind of quite active. And I think it's really an increasingly important area in health care is drug design. Absolutely, because, you know, it's fine if you detect something early, but you still need to get, you know, to get drugs and new drugs for these conditions. And today, all of the drug design and mallees nonexistent, that we don't have any drug that was developed by the male model or even developed by at least even the animal model, plus some significant role.
+00:42:16
+I think this area was all the new ability to generate molecules with desired properties to do in screening is really a big open area, to be totally honest with. You know what we are doing diagnostics and imaging, primarily taking the ideas that were developed for other areas and applying them with some of the station, the area of, you know. Drug design is very technically interesting and exciting area, you need to walk a lot with graphs and capture various 3-D properties.
+00:42:51
+There are lots and lots of opportunities to be technically creative, and I think there are a lot of open questions in this area. You know, we're already getting a lot of successes even with that kind of the first generation of this model. But there is much more new creative things that you can do. And it's very nice to see. Is that actually the you know, the more powerful. The more interesting models actually do do better. So there is a place to go to innovate in the machine learning in this area, and some of these techniques are really unique to, let's say to, you know, grow up generation and other things.
+00:43:36
+So what? Just to interrupt real quick. I'm sorry. Grauwe generation or Graff's drug discovery in general? What's what how do you discover a drug? Is this chemistry? Is this trying to predict different chemical reactions or is it some kind of what Graff's even represented in this piece or something?
+00:44:01
+And what's a drug? OK, so let's say you're thinking there are many different types of drugs, but let's say you're going to talk about small molecules, because I think today the majority of drugs are small molecules. So small molecules that graph the molecule is just where the node in the graph is an atom and then you have the bonds. So it's really a graph representation if you're looking at it in 2D. Correct? You can do in 3D, but let's say let's keep it simple and stick into the um.
+00:44:28
+So pretty much my understanding today how it is done in scale in the companies you're without machine letting you have high throughput screening. So you know that you are interested to get certain biological activity of the compound so you can a lot of compounds like maybe hundreds of thousands of really big number of compounds. You identify some compounds which have the right activity. And then at this point, you know, the chemists come and they are trying to now to optimize this original here to different properties.
+00:45:02
+If you wanted to be maybe soluble, you want to decrease the CCD, you want to decrease the side effects.
+00:45:08
+So those are so again, to drop a can that be done in simulation or just by looking at the molecules or do you need to actually run reactions in real labs in the lab?
+00:45:19
+So when you do high throughput screening, you really do screening. It's in the lab. It's it's really the lab screening. You screen the molecules. Correct. Screening is screening. You just check them for certain property in the physical space.
+00:45:33
+In the physical world, actually, there's a machine probably that's doing some that actually running the of actually running the reactions.
+00:45:39
+Yeah. So so so that is a process where you can run and it's basically high throughput of the unit become cheaper and faster to do it in a very big number of molecules. You run the screening, you identify potential, you know, potential good starts and then where the chemists come in who have done it many times and then they can try to look at it and say, how can it change the molecule to get the desired, uh, profile in terms of all other properties?
+00:46:10
+So maybe how do we make it more bioactive and so on? And then, you know, the creativity of the chemists really is the one that determines the success of this design, because, again, they have a lot of domain knowledge of, you know, what works, how do you decrease toxicity and so on. And that's what they do. So all the drugs that are currently, you know, in the FDA approved, there are seven drugs that are in clinical trials.
+00:46:39
+They design using these domain experts, which goes through this combinatorial space of molecules of graphs or whatever, and find the right one or adjusted to be the right ones.
+00:46:52
+Sounds like the the the breast density heuristic from 67 the same, because it's not necessarily that it's really you know, it's really driven by deep understanding.
+00:47:02
+It's not like they just observed it. I mean, they do deeply understand chemistry and they do understand how different groups and how does it change the properties. So there is a lot of science that gets into it and a lot of kind of simulation. How do you want it to behave? It's very, very complex.
+00:47:21
+They're quite effective at the design of now. Effective. Yeah, we have drugs. And I thinking, how do you measure effect? If you measure it in terms of cost, it's prohibitive. If you mention instead of the times, you know, we have lots of diseases for which we don't have any drugs and we don't even know how to approach and don't need to mention a few drugs on degenerative disease drugs that fail.
+00:47:43
+You know, so there are lots of, you know, trials will fail, you know, in later stages, which is really catastrophic from the financial perspective. So, you know, is it is it the effective the most effective mechanism? Absolutely. No, but this is the only one that currently works.
+00:48:01
+And I would you know, I was close to interacting with people in pharmaceutical industry. I was really fascinating on how sharp and and what a deep understanding of the domain do they have. It's an observation driven and there is really a lot of science behind what they do. But if you asked me to change it, I firmly believe yes, because even the most experienced chemists cannot, you know, hold in their memory and understanding everything that you can learn, you know, from millions of molecules and reactions.
+00:48:33
+And and this piece of grass is a totally new space. I mean, it's a it's a really interesting space for machine learning to explore grav generation. Yeah.
+00:48:41
+So so they did a lot of things that you can do here. So we do a lot of work. So the first tool that we started with was the tool that can predict properties of the molecules. So you can just give them little molecule and the property it can be by activity property or it can be some other property and you train the molecules and you can now take a new molecule and predict this property. Now, when people started working in this area, they did something very simple, do kind of existing, you know, fingerprints, which is kind of handcrafted features of the molecule when you break the graft to substructures and then you run it forward neural network.
+00:49:23
+And what was interesting to see that clearly, you know, this was not the most effective way to proceed. And you need to have much more complex models that can induce the representation which can translate this graph into the embedding and do these predictions. So this is one direction, that another direction, which is kind of related is not only to stall by looking at the embedding itself, but to actually modify it to produce better molecules. So you can think about it as the machine translation that you can start with a molecule and then there is an improved version of molecule and you can again with encoded translated into the headspace and then learn how to modify to improve the in some ways version of the molecules.
+00:50:06
+So that's it's kind of really exciting. We've already seen that the property prediction works pretty well and now we are generating molecules and that is actually loves Watchem manufacturing this molecule. So we'll see where it will get us. OK, that's really exciting. It has a lot of promise. Speaking of machine translation and embedding, if you do, you have done a lot of really great research in Alpay natural language processing. Uh, can you tell me your journey through an LP?
+00:50:38
+What ideas, problems, approaches were you working on? Were you fascinated with did you explore before this magic of deep learning reemerged and after.
+00:50:51
+So when I started my work in LP, it was in 97. This is very interesting time. It was exactly the time that it came to ACL.
+00:51:00
+And damage could barely understand English, but it was exactly like the transition point, because half of the papers were really, you know, rule based approaches where people took more kind of heavy linguistic approaches for small domains and tried to build up from there. And then there were the first generation of papers which were corpus based papers, and they were very simple in our terms. When you collect some statistics and do prediction based on them. And I found it really fascinating that, you know, one community can think so very differently about, you know, about the problem.
+00:51:36
+And I remember my first paper that I wrote it in a single formula. They didn't have evaluation. They just had examples of outputs. And this was the standard of the field at the time. In some ways, I mean, people maybe just started emphasizing the empirical evaluation. But for many applications like summarization, you just saw some examples of outputs. And then increasingly you can see that how the statistical approaches dominated the field. And we've seen increased performance across many basic tasks.
+00:52:13
+The sad part of the story may be that if you look again through this journey, we see the role of linguistics in some ways greatly diminishes and. I think that you really need to look through the whole proceeding to do to find what do babies, which make some interesting linguistic references today, today, today, this was the exact same tactic. Trees just even basically against our conversation about human understanding of language, which I guess what linguists would be structured or representing language in a way that's human explainable, understandable, is missing today.
+00:52:57
+No, if it is, what is explainable and understandable in the end, you know, we perform functions and it's OK to have a machine which performs a function. Like when you're thinking about your calculator, correct. Your calculator can do calculation very different from you do the calculation, but it's very effective. And this is fine. If we can achieve certain tasks with high accuracy doesn't necessarily mean that it has to understand in the same way as we understand in some ways, it's even the eve to request because you have so many other sources of information that are absent when you are training your system.
+00:53:35
+So it's OK is it delivers it. And I would tell you one application that is really fascinating. In 97, when it came to Israel, there were some people, some machine translation. There were like primitive like people were trying really, really simple. And the feeling my feeling was that, you know, to make real machine translation system, it's like to fly and the moon and build a house in the garden and live happily ever after. And it's like impossible.
+00:53:59
+I never could imagine that within, you know, 10 years we would already see the system working. And now, you know, nobody is even surprised to utilize the system on a daily basis. So this was like a huge, huge progress that people for a very long time tried to solve using other mechanisms and they were unable to solve it this way. Coming back to a question about biology, then involved in linguistics, people try to go this way and try to write the syntactic trees and try to abstracted them to find the right representation.
+00:54:34
+And, you know, they couldn't get very far with this understanding while this models using, you know, other sources actually able to make a lot of progress. Now, I'm not naive to think that we are in this paradise space in an LP and shows, you know, that when we slightly change the domain and when we decrease the amount of training, it can do, like really bizarre and funny thing. But I think it's just a matter of improving generalization capacity, which is just a technical question.
+00:55:08
+Well, so that's that's the question. How much of language understanding can be solved with deep neural networks in your intuition? I mean, it's unknown, I suppose. But as we start to creep towards romantic notions of the spirit of the Turing test and conversation and dialogue and something that may be true to me or to us silly humans feels like it needs real understanding. How much can that be achieved with these new on? That works with statistical methods.
+00:55:45
+So I guess I am very much driven by the the outcome is going to achieve the performance, which would be satisfactory for for us for different tasks. Now, if you again look at machine translation systems here, you know, train them large amounts of data, they really can do a remarkable job relative to where they've been a few years ago. And if you, you know, from a project into the future, if it would be the same speed of improvement.
+00:56:16
+You know, this is great now, does it bother me that it's not doing the same translation as we are doing now? If you go to cognitive science, we still don't really understand what we are doing. I mean, there are a lot of theories and obviously a lot of progress in studying. But our understanding what exactly goes on, you know, in our brains when we process language is still not crystal clear and precise that we can translate it into machines.
+00:56:42
+What does bother me is and, you know, again, the machines can be extremely brittle when you go out of your comfort zone of that. And when they do the distributional shift between training and testing and they have been years and years of the year when they teach A.P. class, not show them some examples of translation from some newspaper in Hebrew or whatever, it was perfect. And then they have a recipe that Tomiko system send me a while ago, and it was written in Finnish of Carillion Pies and.
+00:57:14
+It's just a terrible translation, you cannot understand anything what it does, it not like something tactical mistakes is just terrible in year after year, trying to translate in the end of the year. It does is terrible because it gets, you know, the recipes and a big part of their training repertoire.
+00:57:32
+So but in terms of outcomes, that's sort of the clean good way to look at it. I guess the question I was asking is, do you think imagine a future.
+00:57:44
+Do you think the current approaches can pass the Turing test in the way the, um, in the best possible formulation of the Turing test, which is would you want to have a conversation with a neural network for an hour?
+00:57:59
+Oh, God, no. No, there are not that many people that would now.
+00:58:05
+But there are some people in this world, alive or not, that you would like to talk to for an hour. Could a neural network of achieve that outcome?
+00:58:13
+So I think it would be really hard to create a successful training set to enable it to have a conversation point to contextual conversation for an hour.
+00:58:23
+I think it's the problem of data.
+00:58:25
+I think in some ways it's important. It's a problem, both of data and the problem of the way we're training our systems and their ability to truly to generalise, to be very compositional. In some ways it's limited, you know, in the current capacity at least. You know, we can translate well, we can, you know, find information well, we can extract information. So there are many capacities in which is doing very well. And you can ask me, would you trust the machine to translate for you and use it as a source and say, absolutely, especially if we are talking about newspaper data, was the data, which is in the realm of its own training that I would say yes.
+00:59:05
+But, you know, having conversations with the machine is not something that I would choose to do. But, you know, I would tell you something, talking about Turing Test and about all this kind of Elize conversations, I remember visiting Transend in China and they have this chat board and they claim it is like really humongous amount of the local population, which like four hours talks to the chad. What to me was I cannot believe it, but apparently it's like documented that there are some people who enjoy this conversation.
+00:59:37
+And, you know, it brought to me the another Amitay story about Iliza and Weizenbaum. I don't know if you're familiar with the story. So Weizenbaum was a professor at MIT. And when he developed this, Iliza, which was just doing string matching, very trivial, like restating of what you said with very few rules, no syntax. Apparently there was Secretary Sitta Mittie that would sit for hours and converse with a trivial thing. And at the time there was no beautiful interface.
+01:00:07
+So you need to go through the pain of communicating. And with Zimbo himself was so horrified by this phenomena that people can believe in after the machine. You just need to give them the hint that machine understands you and you can complete the rest, that he kind of stopped this research and went into kind of trying to understand what this artificial intelligence can do to our brains.
+01:00:29
+So my point is how much it's not how good is the technology is how ready we are to believe that it delivers the goods that we are trying to get.
+01:00:42
+That's a really beautiful way to put it. I by the way, I'm not horrified by that possibility, but inspired by it, because I mean the human connection, whether it's through language or through love, it it it seems like it's very amenable to machine learning. And the rest is just the challenges of psychology. Like you said, the secretaries who enjoy spending hours, I would say I would describe most of our lives as enjoying spending hours with those we love for very silly reasons.
+01:01:17
+All we're doing is key word matching as well. So I'm not sure how much intelligence we exhibit to each other in with the people we love that we're close with.
+01:01:27
+That's a very interesting point of what it means to pass the Turing test. What language? I think you're right in terms of conversation, I think machine translation is a has very clear performance and improvement. Right. What it means to have a fulfilling conversation is very, very person dependent and context dependent and so on.
+01:01:50
+That's very well put. So but in your view, what's a benchmark in natural language, a test that's just out of reach right now, but we might be able to. That's exciting. Is it is in perfecting machine translation or is there other zied summarisation what's what's out there?
+01:02:10
+It just goes across specific application. It's more about the ability to learn from few examples for real, what we call future planning and all these cases. Because, you know, the way we publish this paper today, we say if we have even if we get 55, but then we had a few sample and we can move to 65. None of these methods actually realistically doing anything useful. You can all use them today and their ability to be able to generalize and to move or to be autonomous in finding the dataset.
+01:02:46
+You need to learn to be able to perfect new task or new language. This is an area where I think we really need to to move forward to and we are not yet there. Are you at all excited, curious by the possibility of creating human level intelligence?
+01:03:07
+Is this because you've been very in your discussion? So if we look at ecology, you're trying to use machine learning to help the world in terms of alleviating suffering. If you look at natural language processing, you focus on the outcomes of improving practical things like machine translation. But, you know, human level intelligence is the thing that our civilization has dreamed about creating super human level intelligence. Do you think about this? Do you think it's at all within our reach there?
+01:03:37
+As you said yourself, the area talking about. You know, how do you perceive, you know, our communications with each other, with, you know, we're matching keywords and certain behaviors and so so and then whenever one assesses, let's say, relations with another person, you have separate kind of measurements and outcomes inside your head that determine, you know, what the status of the relation. So one way, this is this classic dilemma. What is the intelligence?
+01:04:06
+Is it the fact that now we are going to do the same with humans is doing when we don't even understand what the human is doing or we now have an ability to deliver these outcomes, but not in one area, not in and not just to translate or just answer questions, but across many, many areas that we can achieve the functionalities that humans can achieve with the ability to learn and do other things. I think this is and this we can actually measure how far we are.
+01:04:34
+And that's what makes me excited that we you know, in my lifetime, at least so far, what we've seen is tremendous progress across the different functionalities. And I think it will be really exciting to see where we will be. And again, one way to think about it is the machines which are improving their functionality. Another one is to think about us with our brains, which are imperfect, how they can be accelerated by these technology as it becomes stronger and stronger.
+01:05:12
+And coming back to another book that I love, flowers for Algernon. Have you read this book? Yes. So that is point that then the patient gets this miracle cure, which changes his brain and all of a sudden this new life in a different way and can do certain things better, but certain things much worse. So you can imagine this kind of computer augmented cognition where it can bring you that now the same way as you know, the cards enable us to get to places where we've never been before.
+01:05:47
+Can we think differently? Can we think faster? So and we already see a lot of it happening in how it impacts us, but I think we have a long way to go there.
+01:05:59
+So that's sort of artificial intelligence and technology affecting our augmenting our intelligence as humans. Yesterday, a company called NewLink announced they did this whole demonstration of you saw it. It's the demonstrated brain computer brain machine interface where there's a sewing machine for the brain.
+01:06:23
+Do you, uh, you know, a lot of that is quite out there in terms of things that some people would say are impossible, but they're dreamers and want to engineer systems like that. Do you see with what you just said, I hope for that more direct interaction with the brain.
+01:06:42
+I think there are different ways. One is a direct interaction with the brain. And again, there are lots of companies that work in this space. And I think there will be a lot of developments when I'm just thinking that many times we are not aware of our feelings of motivation, what drives us. And like, let me give you a trivial example, our attention. Are a lot of studies to demonstrate that it takes a while to a person to understand that they are not attentive anymore, and we know that there are people who really have strong capacity to hold attention.
+01:07:11
+The other end of the spectrum, people with AIDS and other issues that they have problem to regulate their attention. Imagine to somebody that you have like a cognitive aid that just alerts you based on your gaze, that your attention is now not on what you are doing. And instead of writing a paper, you are now dreaming of what you are going to do in the evening. So even this kind of simple measurement things how they continuous and they see simple ways with myself.
+01:07:39
+I have my own bathroom that I go to an empty gym. It kind of records, you know, how much did you run? And you have some points that you can get, some status, whatever.
+01:07:50
+I said, what is this ridiculous? Think who will ever care about some status in some guess what? So to maintain the status, you have to set a number of points every month. And not only that, they do it every single month. For the last 18 months, it went to the point that I was running, that I was injured.
+01:08:11
+And when I could run again, I in two days I did like some humongous amount of tests to complete the point. I was clearly not safe because, like, I'm not going to lose my status because I want to get there. So you can already see that this direct measurement and the feedback is, you know, we're looking at video games and see why, you know, the addiction aspect of it. But you can imagine that the same idea can be expanded to many other areas of our life when we really can get feedback.
+01:08:43
+And imagine, in your case, in relations, when are doing Keywood? Imagine that the person who is generating the key wants that person gets direct feedback before the whole thing explodes. It may be at that point we are going in the wrong direction. We will be really behaving in a defining moment.
+01:09:05
+So, yes, relationship management is so yeah. That's a fascinating whole area of psychology actually, as well of seeing how our behavior has changed with basically all human relations now have other non-human entities helping us out. So you've you teach a large a huge machine learning course here at MIT. I could ask a million questions, but you've seen a lot of students, what ideas do students struggle with the most as they first enter this world of machine learning? Actually, this year was the first time I started teaching a small machine learning varsity team the results of what I saw in my big machine learning classes to me, Åkerlund, I build maybe six years ago what we've seen that as this area become more and more popular, more and more people might want to take this class and design it for computer science majors.
+01:10:07
+There were a lot of people who really are interested to learn, but unfortunately their background was not enabling them to do well in the class. And many of them associated machine learning was a struggle and failure primarily for non majors. And that's why we actually started the new class, which we call machine learning from algorithms to modeling, which emphasizes more the modeling aspects of it and focuses on it, has majors and known majors. So we kind of try to extract the relevant parts and make it more accessible because the fact that we're teaching 20 classifiers in standard machine learning class is really a big question really needed.
+01:10:51
+But it was interesting to see this from first generation of students. You know, when they came back from the internships and from their jobs, what was different and exciting things they can do is that I would never say that you can even apply machine learning to some of them are like Muchin, you know, the deletions and other things like that. I everything everything is a miracle machine learning. You know, that actually brings up an interesting point of computer science in general.
+01:11:19
+It almost seems maybe I'm crazy, but it almost seems like everybody needs to learn how to program these days. If you're 20 years old or you're starting school, even if you're an English major, it seems it seems like programming unlocks so much possibility in this world.
+01:11:38
+So when you interact with those non majors, is there skills that they were simply. Lacking at the time that you wish they had and that they learned in high school and so on, like how will it how should education change in this computer computerized world that we live in?
+01:11:58
+See, because they knew that it is a python component in the class. You know, their python skills were OK. And the class is not really heavy on programming the primitive kind of and parts to the programs. I think it was more of the mathematical barriers and the class begins with the design on the majors was using the notation like big old for complexity and other people who come from different backgrounds just don't have it in the lexicon. And certainly very challenging notion, but they were just not aware.
+01:12:29
+So I think that, you know, kind of linear algebra and probability, the basics of calculus, multivariate calculus are things that can help.
+01:12:37
+What advice would you give to students interested in machine learning? Interested. You talked about detecting curing cancer drug design. If they want to get into their field, what what should they do? Get into it and succeed?
+01:12:55
+As researchers and entrepreneurs are the first good piece of news that right now there are lots of resources that, you know, are treated at different levels and you can find online on your school classes, which are more mathematical and more applied and so on. So you can find a kind of a preacher which preaches in your own language where you can enter the field and you can make many different types of contribution depending of, you know, what is your strengths.
+01:13:27
+And the second point, I think it's really important to find some area which you would you really care about, and it can motivate your learning and it can be for somebody curing cancer or doing self-driving cars or whatever. But to find an area where, you know, there is data where you believe there are strong patterns and we should be doing it and we're still not doing it, or you can do it better and just stand there and see where it can bring you.
+01:13:57
+So you've you've been very successful in many directions in life. But you also mentioned Flowers of Organon. And I think I read or listen to you mentioned somewhere that researchers often get lost in the details of their work. This is per our original discussion with cancer and so on. And don't look at the bigger picture, bigger questions of meaning and so on. So let me ask you the impossible question of what's the meaning of this thing, of life, of all of your life, of research.
+01:14:33
+Why do you think we descendent of great apes are here on this spinning ball? You know, I don't think that I have really a global concern. You know, maybe that's why I didn't go to humanities and they didn't think universities classes in my undergrad.
+01:14:56
+But the way I'm thinking about each one of us inside of them have their own set of, you know, things that we believe are important. And it just happens that we are busy with achieving various goal of busy listening to others and to kind of try to conform and to be part of the crowd that we don't listen to that part. And, you know, we all should find some time to understand what is our own individual missions and we may have very different missions and to make sure that while we are running 10000 things, we know that, um, you know, missing out and putting all the resources to to satisfy our own mission.
+01:15:45
+And if I look over my time when I was younger, most of these missions, you know, I was primarily driven by the external stimulus, you know, to to achieve these, to be that.
+01:15:58
+And now a lot of what they do is driven by really think in what is important for me to to achieve independently of the external recognition. And, you know, I don't mind to be viewed in certain ways. The most important thing for me is to be true to myself, to what I think is right.
+01:16:24
+How long did it take? How hard was it to find the you the to be true to.
+01:16:31
+So it takes time. And even now, sometimes, you know, the vanity and the triviality can take a minute. Yeah, it can everywhere. You know, it's just the vanity of them. It's different, the vanity in different places. But we all have our piece of vanity but.
+01:16:49
+I think actually for me, the many times. The place to to get back to it is, um, when I when I'm alone and also when I read and I think by selecting the right books, you can get the right questions. And learn from what you read. So but again, it's not perfect like anything else dominates or that's a beautiful way to end.
+01:17:21
+Thank you so much for talking today. Thank you. That's fun. It was fun.

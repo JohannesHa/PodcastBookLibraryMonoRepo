@@ -1,0 +1,832 @@
+00:00:00
+The following is a conversation with Nick Carter, who is a partner at Castle Island Ventures, co-founder of Coin Metrics, that IO and previously a crypto asset research analyst at Fidelity Investments. He's a prominent writer speaker and podcasts are on topics around decentralized finance and especially Bitcoin. Quick mention of our sponsors, the information Athleta Greens for Stigmatic and Blankest. Check them out in the description to support this podcast. This conversation with Nick Carter is part of a series of episodes on cryptocurrency that is a small journey of exploration of mine because I find decentralized finance and especially Bitcoin fascinating, technically and philosophically, especially because it may be the very mechanism that achieves a global decentralization of power, giving more sovereignty to the individual and making our systems more resilient to corruption, manipulation and in general, to the darker side of human nature.
+00:01:03
+Please let me also address something for a few minutes that happened recently that's been weighing heavily on me. If you find me annoying to listen to, please skip to the actual conversation with Nick. I had a recent podcast episode with Anthony Pantoliano where we spoke about Bitcoin and life in general for three hours. I was curious, inspired, positive, or at least I tried to be, as I usually do, someone clipped out out of context a short segment of me mumbling something about having a Ph.D. and I started getting mocked online because that made it convenient for people to mock me for being yet another, quote unquote expert who learns about Bitcoin and thinks he knows everything.
+00:01:49
+I almost never mentioned that I have a Ph.D. except to make fun of myself as I was doing, or at least trying to do in the full context of the conversation. I brought up grad school as a random example of one of the many journeys I've taken that was hard, but where the destination was in itself not very useful. I was saying I enjoy exploring with a curious mind and I'm willing to be patient, to learn, to listen to humble myself with knowledge for the sake of knowledge itself.
+00:02:20
+Grad school was an example of that. The PGD means nothing, at least to me. I never call myself an expert or at least try not to, because that would be dumb, because I know how little I know I'm not an influencer or a thought leader or whatever else silly self aggrandizing label people put on their LinkedIn. I try to be the opposite of what I was mocked for. I try to think deeply about the world, to look for the beautiful ideas in the minds of others and to be inspired by them.
+00:02:53
+I wanted to say all this because psychologically it struck a bit of a blow. It made me realize that even when I approach things with love, I may be mocked, I may be derided, I may be taken out of context or even lied about. But the growing platform, this is sadly only increasing. I now have learned that there's people who are waiting for my missteps so they can point the finger, laugh and say, See, I told you so.
+00:03:21
+A guy is a joke. He's a fraud. As a fellow human being, the knowledge of this is painful. Yes, I know people tell me to toughen up and my life has been about strengthening my mind in the face of my limits. But I refuse to not be fragile and wear my heart on my sleeve. It's who I am. In some sense. This is the immune system of the Internet. But let us be careful not to destroy the good ones in the process.
+00:03:49
+The Bitcoin community had to endure many years of attacks from quote unquote, experts and also fraudulent cryptocurrency efforts that scam people out of their money. This created a powerful immune system that fought the attackers and the scammers. I understand this and I also understand that one of the beautiful aspects of Bitcoin is its community of humans is decentralized. But some small part of this community has come to enjoy the us versus them battles, sometimes for the sake of the battle in itself.
+00:04:21
+This happens in political discourse as well.
+00:04:24
+I understand this, but to my limited mind, it sounds like groupthink, which has powerful defense mechanisms against bad ideas but has dangerous consequences if taken too far as in many periods of human history that I often talk about where the US versus them thinking has led to the suffering of many. Again, I understand the value of this, as many Bitcoin as explained to me, but it's not the way I as a sovereign individual choose to walk in this life.
+00:04:55
+By the way, none of this podcast should be treated as financial advice before Nick kindly gifted me with one hundred dollars worth of Bitcoin in hardware form. I didn't own any. I'll probably buy some Bitcoin on cash, Coinbase and other platforms and also transfer to a hardware wallet just to learn how to do it. But other than that, I don't necessarily make wise investment decisions. Money is not a motivation for me personally. I try to avoid it.
+00:05:23
+Actually, I'm grateful for every day I'm alive, no matter how much money is in my bank account for long stretches of my life, that number was very close to zero and I was always fortunate to be free and happy. So I encourage you to listen to people much smarter than me for actual good financial advice here. I'm just exploring ideas and as if this has not already gone on too long, let me please make another comment on the style of discourse among some Bitcoin maximalists on platforms like Twitter that in my humble view, I may be wrong, but I believe is not conducive to the nuanced, empathetic exchange of ideas I very much look for and enjoy.
+00:06:06
+Again, I appreciate their style of discourse. I think I understand the value of it, but it's not my thing. So I don't want to engage in it. I want to hear the quiet voices in the room. I look for people to inspire each other and when we disagree, I look for disagreement that is grounded in respect and empathy. I think that mockery and derision destroys the possibility of those nuanced conversations. It drives away the quiet, thoughtful and pathetic voices.
+00:06:33
+And I tried to give those voices space to be heard, to shine, to exchange ideas, whether we agree or disagree. So if I happen to block you on Twitter, I block you with love. Honestly, I will never speak for all of you or even think poorly of you. I would love to hang out in person, give you a big ol hug and talk about life over some beers. If you see or hear me say something stupid, which I'm sure I do often, or something you disagree with and you still respect me as a human being, please show your love as I always do to you, but also send me some links to blogs, books, videos, podcasts, where people describe why my stated idea may be totally wrong.
+00:07:18
+I love this kind of long form disagreement. I humble myself every day by reading books and blogs by people much smarter than me, sometimes strengthens my ideas, sometimes it totally changes them. But I always learn this is a too long way of saying that I'm here trying to walk with Grace and with an open mind, a bit of patience and always love. If I make mistakes, cut me some slack. Like you, I'm only human, allegedly.
+00:07:50
+As usual, I do a few minutes of hours now, I try to make this interesting, but I give you time stamps because I value your time and listening experience so you can skip, but please still check out the sponsors. I'm fortunate to be able to be very selective with the sponsors we take on. So hopefully if you buy their stuff, you'll find value in it, just as I have clicked their links in the description. It really is the best way to support this podcast.
+00:08:15
+This show is sponsored by the information they do in-depth, data driven investigative journalism in the world of technology. I first came across their work a few years ago and I remember being surprised that it was kind of expensive to sign up. But I kept reading the stories and pulled into the care and depth of the reporting. I didn't always agree, but it felt like the kind of journalism that was missing from the click bait world of tech reporting. So I signed up has been worth it.
+00:08:42
+By the way, as mentioned in the Anthony Pantoliano podcast, I signed up for the pump letter and it's also been very much worth it in general. I like ideas that are playing around with different ways to fund good journalism. The information is basically saying the subscription model is how we fund good journalism. And if it costs a lot, it costs a lot. As long as the quality is good, people are willing to pay for quality. I think that's a really hopeful model and I'm a full support of it.
+00:09:07
+So anyway, get 75 percent off your first month. If you sign up at the information dotcom flex, that's the information. Dotcom's flex, I see, is a good way to supporting in-depth journalism in general. I hope you do as well. This show sponsored by Athletic Greens that all in one daily drink to support better health and peak performance to replace the multivitamin for me and went far beyond that was 75 vitamins and minerals. It's the first thing I drink every day to break the fast and I've actually been drinking it twice a day.
+00:09:41
+I really enjoy the basic base of nutrition.
+00:09:44
+It provides me for all the other questionable decisions I make in my life so I can do a lot of crazy stuff athletically or in terms of mental performance and work. And I feel safe that I'm not going to become overly nutritionally deficient because I have sort of athletic greens in my corner.
+00:10:01
+I recommend it highly anyway. They also have fish oil. I think you get one month's supply free. I've always taken fish oil.
+00:10:10
+I still take it take it twice a day as well. So you get that, too. If you sign up for the Greens Dotcom's Flex. That's Athletic. Greenstar Councilor Lex, trust me, it's awesome.
+00:10:22
+This show is also sponsored by forcing Mattick, the maker of delicious mushroom coffee and plant based protein. Now, the coffee does not taste like mushrooms, but it is delicious and makes me feel like home. By the way, I just found out for certain Olympic sports, I need to check if that's still true. But it was true for a while. You weren't allowed to take caffeine close to the event or at least one of the testing was going on.
+00:10:46
+So it's considered to be over a certain dose.
+00:10:49
+Caffeine is considered to be a performance enhancing drug, which is kind of hilarious that a few medals were taken away because of caffeine in in the blood of the athletes.
+00:11:01
+So I suppose I agree in part with this, because coffee is a performance enhancing drug. I just think it's a safe one. It's one of the positive ones. It's one of the addictions I'm really proud of. So get up to 40 percent off and free shipping on mushroom coffee bundles if you go to for stigmatic dotcom. Lex, that's for stigmatic dotcom slash Lex. This episode is also supported by Blankest, my favorite app for learning new things, they take kids from thousands of nonfiction books and condense them down in a three style into just 15.
+00:11:35
+Just kidding. It's actually really good into just 15 minutes that you can read or listen to. They also have short casts, which are summaries of podcasts. Again, I do think compression or let's say summarization of audio content or summarization of textual content is one of the open problems in artificial intelligence. It's fascinating.
+00:11:54
+It's actually really difficult to do, which is why I like the Marcus Hoder formulation of Ajai as fundamentally compression, because then you can create challenges of how well can you compress like Wikipedia knowledge data, which is the Marcus Hodor challenge. This kind of summarization task includes so much of what makes human cognition consciousness intelligence valuable.
+00:12:20
+I think and powerful and so blankest in some indirect way is one of the last things that will be replaced by artificial intelligence. Go to Blink is Dotcom's last legs to start your free seven day trial and get twenty five percent off a Blinkx premium membership as Blinco Starcom Cyclocross. This is the Luks Friedemann podcast. And here is my conversation with Nick Carter. What philosopher or philosophical idea had a big impact in your life, not just in the space of cryptocurrency, but in general also where we're going now?
+00:13:14
+We're all going right in, Roland, because you majored philosophy. I did. I majored in philosophy. I didn't know what to do with my life. And my parents said, do whatever you find interesting. It's like, OK, philosophy. Great. Find that interesting. Yeah. And I had way more of an impact on my career, actually, than I thought it might. You know, typically, I guess if you do philosophy, you go into large finance.
+00:13:37
+So sort of makes sense.
+00:13:38
+But there are a number of philosophers I really admire. The big one of my favorites would be Descartes, probably the notion of skepticism. It's sort of a rabbit hole. It's kind of hard to pull yourself out of it. Basically, the brain in the VAT theory pulling yourself out of that. But yeah, I really like epistemology, you know, questioning what it is to have knowledge. So Descartes was was one of my gateways to that.
+00:14:06
+Do you think everything is knowable like we humans can can know fully the objective reality?
+00:14:13
+Oh, definitely not. No. I mean, I reality is very much processed through your own subjective lens.
+00:14:21
+So how much do you think do we understand about this world? Because a lot of your ideas, a lot of the things we might talk about today are kind of trying to figure out human civilization, how humans, how human behavior works at scale, all those kinds of things that kind of assumes that we have it or we're able to somehow figure most of it out.
+00:14:44
+Right. So in yourself, when you step way back, how much of it have we really figured out? Well, I think that's the conceit of economics is thinking that you can model human behavior. Right. And these unbelievably complex systems. And then I think that's the modern critique of economics, like the sort of tool that being critique is that you can't have true knowledge and they're much less predictable than we think they are.
+00:15:11
+And, you know, we behave according to our accumulated assumptions and we're using tiny sort of datasets trained on the last 50, 100 years. And they turn out to be horribly askew. And that's when we have our greatest ones in our black swans. So I'm I'm much more on the sort of, you know, reality is much less noble than we think side of things.
+00:15:34
+But it is nice to have very concrete things like Bitcoin, that's for sure.
+00:15:37
+Oh, so you think some most of it is shaky ground, but there are some things there's like islands of sturdiness. Yeah, Bitcoin is one of them.
+00:15:46
+That's it's a good way to put it. Yeah.
+00:15:48
+I mean, like look at the dollar system not to pivot this into the dollar right away, but the dollar that's like shaky ground is the one who truly understands the dollar system.
+00:15:58
+I mean, the totality of it, the euro dollar system, the way that monetary policy interacts with the economy, is monetary issuance inflationary? What's the relationship between unemployment and inflation? Even policymakers don't understand these things. Economists don't seem to understand them. What is deflation? How do you define inflation? None of these things are really known or knowable. So a lot of people kind of make a claim that there's a lot of manipulation possible with the dollar, with those currencies.
+00:16:29
+If you couple that with the fact that people don't understand it, and yet there's claims that being manipulated by centralized power, how do you bring those two ideas together?
+00:16:41
+If no one understands that, how can you manipulate it?
+00:16:44
+I think what we don't understand or the long term consequences of our structures. So like the Fed's mandate to target unemployment and study, you know, exchange rates or low inflation, you know, what we don't understand is, OK, what is the result of doing that continuously for 40 years? What is the net effect of that? What is the consequence of the long term accumulation of debt and, you know, basement interest rates? What is the net effect of that on society?
+00:17:16
+We might understand this much short, short term features of the system, but I think it's the longer term features we don't understand. Do you think there's like malevolent people with people that don't have good intent in central banks, like in the system? You know, when you have centralized power and you forms. Is susceptible to somebody hacking the system, taking the power and in the shadows. This is where conspiracy theories come in right in the shadows, be able to, you know, have act out things that have a lot of negative impacts and a large percent of the population in self in greedy self-interest.
+00:18:02
+Do you think there's people like that or do you think fundamentally most people are good, even those associated with the sort of central banking?
+00:18:11
+I mean, I don't villainize those people. I think everyone is the hero of their own story. Right. So they all believe that they're a force for good in the world. You have two. Are there any true villains? I don't think so. I think they get socialized into a world where they believe there's particular skills and their mandate is, you know, what they should be doing. I think they might be presumptuous or arrogant in some cases.
+00:18:41
+And, you know, I think it's more of a systemic issue where you have a small handful of very homogenous types of people with PhDs from the same institutions that are brought up in the same cultural context that, you know, set policy and wield a tremendous amount of control over society. And I think they have this notion that you can tinker society, you can play with a few key variables and tinker a society into a state that is desirable or good.
+00:19:12
+And that's what they're trying to do. And I think the consequences of that can be pretty bad. But no, I don't think it's borne out of malevolence.
+00:19:20
+There's an interesting idea. I think Michael Malaz brought up as a test whether you're on the left or the right. The question he asks, which is, do you think some people are better than others? If you say yes, he claims you're on the right, if you start answering, if you start like saying a lot of things like you're on the left.
+00:19:48
+So if you start explaining yourself, well, equivocating has a good term for it. I was really so in this in this test, I suppose I would be on the left because I'm uncomfortable with the idea that some people are better than others as a basic feeling, as a starting point in the way you think about the world, because as we're talking about, everybody's a hero of their own story when you start to think some people are better than others.
+00:20:17
+As a starting axium. It's like a slippery slope to where you think you're. Way better than others, and then you start to like basically it's OK to. Take advantage of a large percent of the population for the greater good. Totally. And then you go into stollen mode and Hitler mode was the key to murder a large part of the population for the greater good. So it's like it's this very dangerous, slippery slope in my mind.
+00:20:49
+So I try to not I was always uncomfortable with that kind of testing or even that kind of thought. And yes, the same applies. And I suppose in in government, in central banking is if you think some people are better than others, applying your idea of what is good can have large scale detrimental effects, of course.
+00:21:12
+Yeah.
+00:21:12
+I'm glad you didn't pose me the question. I mean, I think maybe the left right acronym isn't the disjunction is in the way I would sort of put it. But, you know, to me, it's just if you reason in a consequentialist way, you know, that lends itself to authoritarianism. Yeah. Where whereby you think you can shape society and only you can shape society in a positive direction according to your, you know, specific objectives. So let's step onto the land of sturdiness.
+00:21:46
+That is Bitcoin. What is Bitcoin and in your view, what are you the principles, the philosophical foundations of Bitcoin?
+00:21:57
+Well, they coined the term, I think refers to two things specifically, so one is the protocol for conveying value through a communications channel. So just a set of rules that we collectively opt into in order to transact online or just at a distance. And then the other thing is the name of the asset, the sort of monetary unit which circulates within the system. And that always confused people a lot because it's like, well, uppercase bitcoin, lowercase bitcoin.
+00:22:30
+Why didn't Satoshi just give them different names? Like in a theorem you've got a theory on the system and then ether, although people don't really talk about ether very much, but they chose to distinguish them in Bitcoin for whatever reason. They're not distinct. So the two bitcoins got commingled all the time. And the explanations did you find that's a problem that confuses things? I mean, what's what's really a distinction between the protocol and the currency? Well, they are sometimes distinguished practically like you can transact with Bitcoin outside of the Bitcoin protocol, for instance.
+00:23:07
+Right. So, you know, you can transact with Bitcoin on Ethereum or I have Bitcoin on an open time here. This would be a Bitcoin transaction. It wouldn't sell on the Bitcoin network. Do you mind explaining what you have on the table before us? Yeah. So I brought you some presents as awesome.
+00:23:26
+This isn't a bribe. This is just a proof of concept.
+00:23:29
+OK, so this is basically a bitcoin barer instrument. So I bet 100 bucks of bitcoin on here.
+00:23:38
+And to spend it, you have to basically physically destroy part of the device used to poke a hole in, you know, poke off one of the little transistors on us so it can only be spent once. So and you can't extract the private key from this device. So the profit was generated on device, always stays on the device. So what it means without breaking off like a small part. So this basically is a way to physically instantiate Bitcoin.
+00:24:10
+So it's it's like gold. Yeah, effectively.
+00:24:15
+So here I think this one's limited edition. It's orange.
+00:24:20
+So what is it called again? Open time. The point is, if you wanted to settle a Bitcoin transaction instantly, the kind of same way that a cash transaction is instant final settlement.
+00:24:31
+Right. You would do it with a device like this. So if I was buying a house from here, you know, you might prefer to do it with a physical barrier instrument as opposed to waiting for confirmation on the Bitcoin block chain. Hmm. So the moment I hand that over to you goes in your possession. You're the owner. There's no way for me to have retained the private key, like I could have created a Bitcoin paper wallet and given that to you.
+00:24:58
+But you have no assurance that I didn't copy down that you know, the key elsewhere. So this solves that problem.
+00:25:04
+So this is a physical instantiation of the Bitcoin transaction outside the Bitcoin protocol.
+00:25:12
+That's right. So this is transact transacting the currency outside of the protocol.
+00:25:16
+It's analog bitcoin or we're running it analog, which I was like because Bitcoin is this immaterial thing. And so it's nice to have physical totems. How much does it cost to manufacture this, you know, like 15 bucks or something?
+00:25:30
+Is it? So this is just kind of almost like a philosophical statement versus something that's scalable for. For use, like, you know, the point of Bitcoin is to be in the digital space, right? But the shows like Bitcoin, it can be anywhere.
+00:25:46
+It's useful for gifts.
+00:25:48
+I mean, I don't know if it will be a suitable foundation for a physical Bitcoin economy. In theory, these would be like cash, like instruments that you could use to transact. Well, I just mean postapocalyptic. Yeah.
+00:26:00
+Yeah, but you still need you still need to plug it into your laptop to actually verify that there's coins on there. So you still need the Internet. So I have to take your word for how much money is on here? No, I mean, you can you can plug your log in and check.
+00:26:18
+Yes, but to transact to extract Bitcoin from this, I need to break you to poke a hole through the little hole.
+00:26:26
+And that renders that spendable neurotically. So, you know, that's protection against you spending it and then representing that it's still loaded as best they could. So that the other thing I brought your basically dice 12 sided.
+00:26:43
+They don't have any Bitcoin on them, so they just have a bunch of different critiques of Bitcoin on and we'll go through them then.
+00:26:52
+This is awesome.
+00:26:53
+I don't know if we have time to do all 11 because there's one with my phone's logo on it. But it's just basically a tongue in cheek joke that the critiques of Bitcoin are so formulaic at this point that you can just put them on dice. Yeah, it's it's silly.
+00:27:10
+Well, some of them might be topics for interesting conversations. Oh, yeah. Versión arranged the conversation that way you can roll the dice and see what you got.
+00:27:20
+All right. But first, the the philosophical foundations of bitcoin, like how do you see Bitcoin outside of just a basic protocol and a basic currency? It seems to be like you said, it seems like sturdy ground. So what do you mean by. Yeah. Yeah. So it's not just any protocol for moving valy around. It's not just any currency. It's got specific rules and values that are embedded in it. And this is an important point is the bitcoin is the encoding of certain values which are often misunderstood or not acknowledged necessarily.
+00:27:57
+And so it's sort of impregnated with values and what they are specifically as a topic of debate. And there have been civil wars fought over the values inherent in Bitcoin. One of them was, should Bitcoin be this cheap, scalable, the base layer, low fee payments system with an emphasis on P2P payments? Or should it be more of this like gold, like digital commodity that would eventually settle infrequently and mainly between institutions? Right. So that's fundamentally a conflict of visions.
+00:28:32
+Right. But the so, you know, keep in mind that this is just one man's opinion. I don't speak for Bitcoin. Right.
+00:28:40
+So I would say the key the key number one value that's embedded in Bitcoin is the notion of nondiscretionary monetary policy. So algorithmic monetary policy as opposed to human based monetary policy. Satoshi was very clear about Bitcoin as an alternative to modern central banking, where you have constant tweaking, constant intervention, which Satoshi felt leads to credit bubbles and so on. So Bitcoin proposes a completely nondiscretionary monetary policy, sort of decays over time. 50 percent of the coins were issued in the first four years and then the next twenty five percent in the next four years, then 12 and a half percent in the next four years until you get to 21 million units.
+00:29:27
+And none of those numbers really matter. Like it could have been twenty five million units and it could have been a more aggressive slope or a more gradual slope. But what matters is that this schedule was proposed even before the code was public, the schedule was proposed, and then we all collectively agreed to stick to it. And that is kind of a first for a monetary system. I mean, gold kind of has that property, right, because gold, the supply of gold above ground only really increases at one or two percent a year.
+00:29:58
+So it's it's sort of inhuman, which is a good feature. Right. You don't want to give humans that much control over it. Bitcoin is a much more fastidious approach to that. It really is super concrete about what the supply schedule is and the fact, crucially, that it can't change. So we can't have a bail out of debt, or is it there's a lot of people that say a lot of people had debts denominated in Bitcoin and we needed loose, accommodative monetary policy to bail them out.
+00:30:29
+That's not possible. We couldn't have a jubilee denominated in Bitcoin because the social contract that we've all, you know, bought into and committed to is that it's not just nondiscretionary. So that's sort of one of the first things. And I think ultimately that comes back to basically a strong respect for property rights, because if we were to have unanticipated inflation, let's say, you know, really charismatic leader somehow commandeered Bitcoin and convinced everyone that we should have 30 million units and not 21 million.
+00:31:03
+That would basically be dilutive on everybody that held Bitcoin and had opted into the twenty one million set of coins, an additional nine million unanticipated would have a dilutive effect on everyone else, and that would be a covert way of effectively stealing their purchasing power through inflation. Is that possible, that kind of thing?
+00:31:24
+I mean, what's the mechanism of Bitcoin to resist that kind of charismatic leader?
+00:31:29
+Well, we've had people that have had a lot of influence in Bitcoin in the past, and they've tried to make changes to the protocol. Not as dramatic as that, but bitcoins have generally resisted those individuals institutions and they bitcoin have a good track record of sort of staying true to to those core values so that, you know, you mentioned values and like sticking to the monetary thing.
+00:31:58
+But there's bigger values. There's almost like psychological values that are instilled in Bitcoin.
+00:32:05
+You make a point that Bitcoin for many is a vessel, quote, for their expectations, hopes and dreams.
+00:32:14
+Can the Bitcoin protocol support this kind of complexity if the human condition?
+00:32:20
+So think there's ideas of freedom.
+00:32:23
+They seem to be spoken about. There's a sort of ideas of. Of I mean, even love. Yeah, I mean, some people kind of use it as a meme like, you know, Bitcoin is love or something like that, you know, mostly to troll me because I talk about love all the time.
+00:32:41
+But, you know, these bigger ideas than just the exchange of currencies. Yeah, I mean, Bitcoin itself is very simple. I would say, like, ultimately it doesn't, you know, pretend to do very much. It really just settles transactions. But people do superimpose their own views on it for sure. And Bitcoin is qualities give rise to these perceptions of it having censorship, resistance or giving you transactional freedom or a measure of transactional privacy. So because anyone can operate a node and join the consensus process and because mining is a competitive free market process, that means that.
+00:33:32
+It's likely that you can't be censored by the miners, so that means your transactional freedom. So you have these computer science technical features of the system that cause it to have these political qualities, which is it's very hard or impossible to censor a specific individual. So it's interesting to see that flow. But so that's one of the core values for sure, is the censorship resistance. Then you have the fact that it's a cryptographic based system and you can hold value in your brain by memorizing 12 words, for instance, that gives it seizure resistance, which is again a political concept.
+00:34:12
+If you wanted to desert your jurisdiction with your wealth intact in your brain, you know that, you know, cryptographic feature of the system, the fact that it's built on public key cryptography and that you can encode a Bitcoin private key in 12 words, that gives it this political salience that, you know, you can you're now empowered relative to a despot, basically. Yeah.
+00:34:38
+I mean, there's so many beautiful concepts behind cryptocurrency, behind Bitcoin that stand for sort of freedom. Some of the basic things at the founding of this country. The one thing I don't like personally behind Bitcoin and cryptocurrency is that money is involved and it's like people's life savings sometimes are involved.
+00:35:01
+So there is naturally a kind of fear of self-preservation, like instinctual kind of dogmatic thing that comes in where you're not the best of human nature.
+00:35:15
+You stop being a George Washington and you lose touch of the foundational principles, which I think are beautiful, just like the founding principles of this country.
+00:35:25
+So that's just like so I like staying on the level of like the philosophy versus the level of like all my money is invested in Bitcoin and that that becomes very tricky territory to have principal discussions. Yeah. About ideas.
+00:35:45
+Well, the interesting tension, I try to stay balanced despite being very exposed to Bitcoin. So let me ask the ridiculous question just in case. Who Satoshi Nakamoto is it you? We don't know. It's probably not me because I was like seventeen when Satoshi embodied Bitcoin sixteen. So unlikely and also not really a programmer. So there's a lot of theories.
+00:36:16
+But honestly, it's one of the greatest mysteries of all time because even bitcoins that have been around since day one really, you know, people that were around before Bitcoin came out there on the mailing list, they were active in the cypherpunk community. You asked them and they sincerely will not know and they may not even have a good guess as to who Satoshi is. Is it important to know or is it like actually important not to know? Do you think that's a feature, a bug that we don't know?
+00:36:43
+Some people don't like the uncertainty, especially, you know, folks on Wall Street. They really want to know. And if you read the Coinbase S1, their disclosure pre-IPO, that's a risk factor that Satoshi could come back. So the the risk management crowd wants to know because they want to know if maybe she had, you know, undesirable political opinions or something that would forever taint the project.
+00:37:10
+Do you think they were just trolling with that risk with or Satoshi identity being a risk factor? Or is that like actual like was there an actual meeting and a discussion of that being a risk factor? I think in the risk factors, sections of the prospectuses, it's really just the lawyers doing a total brain dump to cover absolutely everything. Thanks. I was just lawyers.
+00:37:31
+It's not like, uh, you know, it's like I think Elon was somewhere in the legal documents for SpaceX mentioned that like Earth, governments have no jurisdiction on Mars yet. They threw that in there. And it feels like, yeah, there could be laws, but it could also just be Elon trolling. Yeah. So I wonder if I like the Coinbase folks trolling or if I don't know if it's lawyers.
+00:37:56
+I hope it's the trolling, not the lawyers, the Coinbase leadership. They're not as big trolls as the Ilana's. But I mean, it's a risk for sure from their perspective because let's say Satoshi returned doesn't seem likely. And let's say they decided to spend all their coins, which also seems very unlikely. That's, you know, rumored to be or estimates have it at one to one point two million Bitcoin, which is like 50, 60 billion dollars worth.
+00:38:28
+So some people consider that to be a risk. You think it's you know, this is almost like a topic of leadership. It doesn't feel like anybody, any one person speaks for Bitcoin.
+00:38:41
+Not there's not even like prominent figures like you have for like a theorem. You have Vitaly Burin. It doesn't there's a lot of, like, top minds talking about like yourself, but it's not like one or two. Do you think, again, is that a feature, a bug like do you think for effective for Bitcoin to effectively have a role in society that, like, is as large or larger than the dollar? There needs to be like.
+00:39:14
+Leadership that represents it almost like a Democratic kind of thing. Well, that's a real counterintuitive point, because most big corners, including myself, would say no, the lack of leadership is a great quality to have, because if you have a charismatic leader and a foundation or corporation that controls that, maybe they can control the features of the protocol and maybe they can expropriate holders of the coin or, you know, build in an endowment that pays them off and gives them privileged access to the units of the coin, for instance.
+00:39:48
+So, you know, we call people that have privileged access to the money spigot can tell on insiders, which is there is this economist that pointed out that, as you know, I think Richard can tell on that as money enters the economy, it has an uneven flow. Right. So you see this in the last decade or so before that to the consequence of money printing in this country is people that own financial assets made a lot of money and people that didn't.
+00:40:17
+And so you see that Cantillon insider Canterlot outsider effect. And it's the same with a cryptocurrency in many other alternative cryptocurrency that do have these corporate entities or these leaders and CEOs. They're able to make specific decisions regarding the protocol in the currency of the asset, the benefit themselves, their cronies, et cetera. And that's not a good feature to have. I mean, it does grant you, you know, the ability to orchestrate decisions in a faster and more efficient way.
+00:40:52
+But long term, what you're trying to optimize for if you're creating a money is monetary credibility and soundness. So you don't really want it changing all that often. And you don't want to have the appearance of, you know, these elites that are engaging in rent seeking or anything like that. So there's definitely people that are influential in Bitcoin, this core developers that people listen to, because it's, I would say, a meritocracy largely. And there are sort of self-appointed high priests of the protocol.
+00:41:20
+I write a lot about Bitcoin people listen to me, but is a completely free market of ideas, right? I don't have any authority within Bitcoin whatsoever. I'm just a scribbler.
+00:41:31
+You know, you use the services. So as Aristotle, Socrates and Nietzsche, OK, at the high level, technically, how does Bitcoin work?
+00:41:44
+Is there interesting things you could say like what are miners, what are nodes for nodes? What are blocks was proof of work? Is there a nice way to wrap up a clean explanation of the protocol and what that could be?
+00:42:00
+A whole that could be another five hours is very interesting because I'd love to talk to you about block size wars and sort of the the politics, the psychology, the principles around that. But sort of building up to that. It'd be nice to talk about how the thing works. That's fair. I mean, and the block size wars are really fascinating discussion of how governance debates intersect with the technical features. So I guess we can. Yeah. So basically at the highest possible level, Bitcoin is a globally shared it's really a replicated ledger that any participant that wants to be an equal peer on that ledger, they want to maintain that ledger and they want to stay up to date with the global state of the ledger.
+00:42:49
+And really, any monetary system is just a ledger with physical cash. We benefit from the physical instantiation of the money. The physics is the ledger. The physics is the ledger. Right. Same with gold. Right. You can't just produce new units of gold. So we trust that gold atoms are hard to create, although not impossible. Right.
+00:43:15
+You could find a bunch of protons that whatever is the adjacent metal and gold atoms would be expensive and the same with dollars. You know, we trust that it's hard to counterfeit a dollar. So we trust the physical analog world to help maintain the state of the ledger with digital money like, you know, the money in your bank account, your checking account. We basically trust our institutions or banking institutions to keep a faithful record and then ultimately we trust the central bank to administer that system.
+00:43:48
+So there's kind of a handful of nodes in Bitcoin. We trust that the economic incentives of the system are carefully poised, basically. So we trust that the free market and mining competition will lead to the miners assembling transactions into blocks in a faithful and correct way, and that we are going to converge on a global state of the ledger continuously. Which update? So every 10 minutes or so with some variance, and then the miners aren't the sole entities that control the system to really participate, if you're a merchant and you're accepting Bitcoin, you really want to run your own full node and check the whole history of transactions, sort of something like, I want to say five to six hundred million transactions that have ever occurred on Bitcoin.
+00:44:36
+So full node contains all the transactions ever transacted on the Bitcoin block chain. And that's a sars-cov-2 on a gigs or something like that.
+00:44:47
+Three fifty, something like that. It's doable on a regular consumer laptop. And that is going to be really key later on in the discussion.
+00:44:57
+But so, you know, that's really the ultimate trust models.
+00:45:00
+First of all, we trust that the miners that assemble transactions into blocks and they are the archivist's you know, they inscribe those transactions onto the ledger and they have an economic incentive to sort of behave correctly because they're getting paid. And no, you know, it's a Bitcoin that's part of it. But then really, you are also you're not fully trusting them. You're actually if you want to run a node, you replay every single transaction in the history of Bitcoin from the beginning to the current day.
+00:45:29
+And you arrive at the present state that way. So you don't really have to trust too many people or entities. You can validate the correctness of that. All the rules have been followed, that all the bitcoins that were created were done in the valid way that the inflation rate was adhered to and that there's no covert inflation. You know, that if you're spending 50 units of Bitcoin, you had that Bitcoin to spend in the first place. So it sort of delicately poised between node operators who who engage in this validity checking kind of anti counterfeiting checking and then also the miners, which are an industrial entity, and they basically produce block space and assemble transactions in a box and everybody.
+00:46:17
+So the miners are incentivized to not mess with the system because they're getting value from the system. So if they mess with it, it's going to. Decreased the value of their physical work investment. Yeah, so they have to incur real physical costs to produce the block, right. So right now you get six point twenty five bitcoins in a block at a minimum, and then maybe some fees as well.
+00:46:44
+How hard is it to produce a block now?
+00:46:46
+Well, challenging. I mean, you need so six point twenty five bitcoins and a bitcoin is worth fifty five thousand dollars or so. So it's probably going to cost you about that amount to produce it because it's a free market competition and miners have very thin margins. So it's like if I auction off a dollar, you would pay up to 99 cents to buy that dollar for me. Exactly what happens with miners there, you know, basically competing for the right to obtain new units of money.
+00:47:19
+So logically speaking, they would pay up to the value of that money in order to earn it.
+00:47:24
+And for people not familiar with the process of mining is solving a difficult cryptographic problem. That's a computational problem.
+00:47:32
+It's I would say it's not like people sometimes representatives like a really challenging puzzle, like the individual puzzle is very simple, like you can do with pen and paper if you wanted, you know, like Shati 56, it's just that you're searching through the big mathematical space to find the needle in the haystack. You're just doing lots of iterations of a simple puzzle that's just brute force. Hence like the stability of the whole idea that proofer work, if it was if you if there was a shortcut, it wouldn't be.
+00:48:02
+It wouldn't work.
+00:48:03
+Exactly. So let's hope nobody solves Shata 56.
+00:48:08
+Yeah, there's a lot of discussions and from the quantum computing space.
+00:48:11
+But everybody I talk to, all my colleagues and they work on quantum computers, say that we're quite a way, quite a long way away from that being an issue in cryptography and certainly in the currency. That should have been one of the sides on these days, should have been quiet quantum because I don't think it is. I forgot to put on this edition. People should check out Scott Aaronson.
+00:48:37
+If there's a lot of people that are kind of. Selling quantum snake oil, so should be very careful. I think it is a really exciting space that might change the world in the next decade or hundred couple of hundred years, especially for simulating quantum mechanical systems. But in quantum machine learning, people should check out Tancer for Quantum. It's a nice way to sort of educate yourself about the space. And actually, if you're pragmatically minded to, you know, through software engineering, explore how you simulate quantum circuits, how you run machine learning on those quantum circuits.
+00:49:19
+The main point that Scott makes got Aaronson people should check out his blog to is that like there's not yet a single machine learning application that doesn't do almost as well in a classical computer. So it doesn't like yes, the dream is somehow quantum computers will change the nature of artificial intelligence, but there is yet to be an actual algorithm that or problem set or data set where that would be the case. So there's skepticism as good in the space. Anyway, that says you kind of explained how Bitcoin works.
+00:50:02
+You also wrote a blog post recently giving a shout out to the new book, The Block Sized Wars. What is a block size? What are the block size wars, its history, its importance, its philosophical foundations? Yeah, I mean, Bitcoin at this point, we have our own civil wars. If you're wondering about how politically intense it gets, it's currently not hot. It's cold. It's.
+00:50:29
+Oh, yeah, we're in a detente right now.
+00:50:32
+There's no tanks or missiles, at least not yet. Hopefully it can get a little violent, I guess. I think one of the Bitcoin core developers or one of the participants in the war got swatted at one point. What's what it means when someone does a fake phone call saying that you're holding someone hostage at your house and the SWAT team goes preschool's?
+00:50:55
+Well, Internet warfare tactic, yeah, but the block sized war, I would say, effectively ended, although we're going to have more civil wars in Bitcoin for sure. But basically the core argument was. A technical one on its surface, but very deep political one at its core of the technical question is how many megabytes should be in each successive block? So Satoshi basically installed a limit of one megabyte per block.
+00:51:28
+So we should backtrack. There was no limit in the beginning and it seems like Satoshi, what is this, 2000? The war started in, what, 2017? Something like that. I don't know. And the 15 was when the, you know, the battle cry began. What was the first battle in the civil war?
+00:51:48
+But sort of satoshi I don't know if you can comment on it. Like, why does Satoshi said the limit to one megabyte all of a sudden almost secretively, and in the beginning there was no limit whatsoever?
+00:52:02
+Yeah, I mean, we can get into and people have spent thousands of hours poring over Satoshi writings to find, you know, which side Satoshi was on. And you can find, like any textual exegesis, you can find evidence for either side. Right. But yeah, I mean, effectively, when Bitcoin was launched, there was a block size because if you made a block over a certain size with the first edition of the code, it would have crushed nodes.
+00:52:29
+But then in 2010, Satoshi added the one megabyte limit in a covert way with no comments or anything. And that stock basically and then Bitcoin blocks filled up and people that had been socialized into this vision of Bitcoin as an effectively free transactional network were like, why pay a transaction fee if you're not at congestion? If the block isn't for the miner, will mind your transaction for free. Right. People that had been brought up in that status quo from 2009 to kind of 2015, they noticed the box started to fill up and like, OK, well, let's just remove this arbitrary limit, right?
+00:53:10
+What what could possibly be the harm? And then a whole other faction said, no, you need to cap the data throughput of the system because if you increase it, it's going to be highly exclusionary. And ultimately, regular folks are not going to be able to run a full node.
+00:53:29
+So there's a fixed number, there's a fixed frequency of blocks. And so if you want to increase the number of transactions per second, you want to increase the size of the block.
+00:53:40
+So huge blocks allow you to shove in a lot of transactions, right? Small blocks don't. So that's really. You mean like constraining the system. So what's the benefit of a small block size where transactions. Well, you can squeeze in only a small number of transactions and what's the benefit of a huge block size where you can squeeze in a lot of transactions?
+00:54:02
+Well, it really comes down to the way that you think about the system. So a lot of people wanted Bitcoin to be visa scale. So to have blocks sufficiently large that you could accommodate a visa level scale of transactions.
+00:54:17
+So which is many orders of magnitude more transactions. That's right.
+00:54:21
+I mean, preposterously larger in terms of data throughput than, you know, Bitcoin offers up, or at least that used to one hundred forty four megabytes of space per day. And your average transactions? Three hundred and fifty bytes. So, you know, you could have a push to four or five hundred thousand transactions a day, which is not money. So if you wanted to get to visa scale, you'd have to increase blocks obnoxiously large. The small Blocher's claimed that this would overwhelm the ability of any regular person to ingest that data and stay current at the, you know, state of the ledger to rebroadcast to replay all those transactions, to ensure that the protocol rules were valid.
+00:55:04
+So basically, the small block of contention is that you eliminate the trust, closeness of the system by pushing a ton of data through the system because only one or two industrial heavy duty nodes would ever be able to run the protocol at that point.
+00:55:21
+So, by the way, in the civil war, the two sides is you because you're calling them the small block and the big blocker sides.
+00:55:30
+And so that takes us back to the, um, the thing that you mentioned, that regular computer could be a node and with a big with big blocks, that's no longer going to be the case.
+00:55:44
+So just the number of transactions is going to blow up the size of the block chain that every four node has to store. And so as opposed to a regular mom and pop type of node, you're going to have to have data centers. So they're going to have to be owned by large organizations is going to have to be very few of them.
+00:56:05
+And that's how you centralized the control over this whole operation. So the big blocker, yes, it allows you to be visa and do a huge number of transactions, but it becomes centralized. And the small blocher is you cannot actually do kind of merchant style transactions, but you get the decentralized benefit. Well, I don't even think the big block approach would allow you to be visa, frankly, because there's effectively one note of the visa network. Right.
+00:56:38
+So you don't really need to maintain this peer to peer architecture at all. And the amount of data you'd have to push through the network to reach visa scales are really preposterous amount. I mean, and we have now evidence for what happens when you try and scale up as a block chain and do 10 million transactions a day, which is still not visa scale. Right. You know, I've I've, you know, seen what it's like to operate those nodes and it's not pretty.
+00:57:06
+So there are totally genuine computer science, physical limits because it's a it's a broadcast network.
+00:57:15
+Everyone has to be aware of every transaction and that model, which gives you the trust, closeness, the nice guarantees where everyone's an equal pair on the network. Everyone has audited the full history of the transactions. That model falls apart under stress. So the small block of vision is that ultimately you would scale in a layered approach with the Bassler transactions being settlement style transactions and, you know, payments happening at the other layer.
+00:57:44
+It's basically is that universally agreed upon or like to a large degree agreed upon that the small blocher's of one is in this debate. Well, where would you put the current state of affairs? There is a wave of competing Bitcoin implementations and starting in 2015 with Bitcoin next, actually, Gavin Andresen, who was the guy that Satoshi handed the reins to when Satoshi left, Gavin supported this large rock block proposal. And so that was that didn't achieve consensus. And then there was Bitcoin unlimited.
+00:58:20
+And then later on, there was a genuine hard fork where the small blockers couldn't or the large blockers couldn't push through their proposals on Bitcoin itself. So they just created a competing version of Bitcoin.
+00:58:34
+You know, by the way, maybe you can comment on a bus or a hard fork versus a soft for a hard fork is when it's not no longer compatible with the right way to put it.
+00:58:45
+They can't operate on the same block chain, the same with the same protocol. Yeah.
+00:58:49
+So there's a few ways to define them and it's pretty controversial as well. But one one way to define it as a hard fork is a expansion of protocol rules and a soft fork is a shrinking of protocol rules. That's an interesting way to fight. It's not very intuitive, so I don't like that way. Another way is that a hard fork is backwards and compatible, whereas soft work is in theory, backwards compatible. So in August, twenty seventeen, basically the large blockers had had enough and they said we're going too hard for Bitcoin.
+00:59:25
+We were going to create a clone, an alternative version of Bitcoin, which has the same a shared history as Bitcoin itself. But you completely forget and you create a new future. And but, you know, everybody that had a balance on Bitcoin at the time also had a balance on the alternative coin, Bitcoin cash.
+00:59:46
+And so that was really that's what's called bitcoin cash is the hard fork. That was one of them. There were more, actually. I mean, what the heck is Bitcoin?
+00:59:54
+Satoshi Satoshi is Vision PSV Bitcoin. I see. So this is all talking about increasing the max, the limit of the block size more and more and more. Yeah, that was one of the changes they wanted to push through. But PSV was the form of bitcoin cash. So Karlberg of bitcoin cash. Yeah. So and so. Now there's multiple big blocker block chains floating around.
+01:00:16
+It's like what are your thoughts about them. Well I was pretty popular. Sorry to interrupt.
+01:00:22
+Are they popular? I mean, if you look at the metrics, they're not and they they don't trade. They I think each trade below one percent of the value of bitcoin.
+01:00:30
+It's sort measuring popularity is like how much they actually value the frequency of trade. Oh, no, no. I mean, they do like a fair number of transactions, but there's there's no way to know that that is genuine or just contrived. So, you know, ultimately the true measure, I think, in my mind is just where the market prices these protocols relative to Bitcoin, because that's like a prediction market. If if Bitcoin cash was being priced at fifty percent of Bitcoin, you could say the market has given it a 50 percent chance of unseating Bitcoin.
+01:01:05
+Right. But both Bitcoin cash and Bitcoin as fee, which was a hard fought from Bitcoin cash itself. Ah, well, I believe at this point well below one percent of the value of Bitcoin.
+01:01:16
+And in the end, like the ranking of different cryptocurrency, what is the bitcoin? A theory is a theory in value. Yes. Or two. And then bitcoin cash. It's when it's in the top five, very fast drop off. You know, I haven't checked lately, but I think it's it's reached kind of morbidity. You know, it doesn't really have much traction. The blocks aren't full. So the whole value proposition was, you know, we will get all this merchant adoption if we increase the block size.
+01:01:46
+That just didn't materialize. In my view that a flawed vision of how adoption works and what block action should optimize for. Maybe maybe you got a Bitcoin cash supporter on the show, they give you a different answer, but yeah, full disclosure, you I have my sympathies and I think the small Blocher's won that skirmish for sure. So at this time, there's no merchant adoption and so on. So it's kind of its vision. The whole reason for existence, at least for now, hasn't materialized.
+01:02:16
+And so that's that's an indication as possible that while it's a sign that perhaps that's the wrong way to accomplish the scalability.
+01:02:26
+Well, you know, first of all, I think the layered scaling model is definitely, definitely correct. I mean, that's absolutely the way these things have to work. Given the constraints of block auctions, what is the layered scaling model? It's really how all payments system, scale, block chain or otherwise. And I think a lot of people don't understand this, is that there is no equivalent to scaling of the base layer in the regular payment space.
+01:02:52
+That totally doesn't happen. All of them are built on layers. So Visa is like the fifth layer in the payment stack that ultimately depends on these utility scale settlement systems like Fedwire chips, A.H. basically interbank settlement systems. So you've got these slow moving but high assurance settlement systems. Fedwire is probably the number one, you know, like when you send a wire that's using the federal system. Typically on top of that, you know, you have banks and then you have payment processors and then you build up these layers and layers and layers and then you have these fast payments, you know, Venmo, PayPal, credit, debit, Visa, you name it.
+01:03:35
+Those payments are not final when they occur. You know, a credit card transaction will not be final for 90 to 120 days. So that's fascinating. You've decoupled the payment, the financial message and the settlement. Those are distinct concepts and the settlement happens on a deferred basis. So that's how you get scalability as you've lots and lots of messages, but that they don't settle for a long time. They might settle on a net basis on an end of day basis.
+01:04:06
+But so that's really how it works. And then you Fedwire, where your average transactions in the millions of dollars and there's only a few hundred thousand transactions a day, that's sort of interbank settlement network. So that's my vision for how I think Bitcoin will develop to Bitcoin itself. On the base layer is the slow moving, high assurance final settlement network, where if you're sending money to the other side of the globe to someone you don't trust, where you want that payment to be final in a short period of time and both counterparty, no, it's final, then you would use that.
+01:04:40
+But if you wanted to buy coffee, you could do it on a second. You know, second layer lightning would be one way there's a bunch of side chains now, or you could use, you know, a more centralized solution if you wanted.
+01:04:54
+It's kind of a profound idea that in the space of transactions, when you're buying coffee, you're buying anything really from merchant or exchanging goods and all those kinds of things that most of the time like basic honest behavior, human behavior, which it does appear that most of our societies is based on the fact that we're all most of us are honest is like stuff is not going to go wrong.
+01:05:21
+You do the transaction and you only need like the base layer where there's Bitcoin with its I forget the terms of use for the for the credit card version, but you need that just to verify, just to like resolve any disagreements or shady shit.
+01:05:41
+Yeah. And that's a really rare occurrence. So it's OK for that to be handled in this in the small block debate handled at a rate that's much, much lower than the rate of the transactions.
+01:05:56
+There's a kind of it's a really interesting idea that when we spend money, we didn't actually exchange the money most of the time.
+01:06:04
+Yeah, most of the time you're not getting a final settlement when you do a transaction. And oftentimes that causes there are there's pluses and minuses on the plus side of huge efficiency. If you use a credit network like Visa, but it's in the same credit. Right. Visa's extending you credit. Right. They're kind of guaranteeing your reputation to the merchant. But fraud happens all the time, right. There's always fraud because you have this reversibility. Right.
+01:06:33
+And so you can, you know, engage in fraud against the merchant. If you have a final settlement, there's no possibility for fraud. So that's one reason merchants kind of like accepting Bitcoin, because once you receive an inbound Bitcoin payment and you deliver some good or service, you know, that payment can't be reversed. But frankly, most of the transactions we undertake on a daily basis do not require the strong assurances of final settlement. There's one exception, which is physical cash with physical cash or the open non cash like product.
+01:07:10
+You actually are getting final settlement. But online, most online banking transactions, most P2P digital wallet transactions and the dollar system, they're not really final at all. You mentioned Lightning Lightning Network. What is it what are your thoughts on it and what are your thoughts about any kind of alternatives?
+01:07:35
+So lightning is one potential payments solution built on top of Bitcoin, where you have different assurances, different transactional assurances, but ultimately it's very proximate to the base layer. So if something goes wrong, you can always basically settle to the base layer to layer two, you could say.
+01:07:56
+And basically the intuition is kind of like opening a bathtub. So you go to the bar and you might drink a dozen beers over the course of the night, maybe half a dozen. And I guess nobody goes to the bar these days but say you did.
+01:08:12
+Yeah, you open a tab and at the end of the night, you settle up once you're not necessarily paying each time you get another beer. So it's the same idea. You're opening a channel, an ongoing relationship with your counterparty. And so lightning has you open a channel with the counterparty and you're sort of sending back and forth these cryptographic commitments saying, you know, I agree to send you some Bitcoin, but you don't necessarily settle each time you make a transaction.
+01:08:39
+So you do hundreds of thousands of transactions in a channel. The other thing Lightning proposes is saying, OK, well, now that we have channels established. What if we interlocked a number of channels together, so if you and I have a channel and you know me and my buddy have a channel, my buddy cannot pay you because you're you have a relationship through me, basically. And so lightning is this network, this overlay now that sits on top of Bitcoin and allows people to transact in a much faster and less fictional way without the need for bitcoins, kind of slow periodic settlement, assuming that everything sort of goes well.
+01:09:20
+Do you see any downsides to this? Like, have you seen flaws in the whole system from a security perspective, from a scale perspective, any of that?
+01:09:28
+Or is it this lightning working? Well, it works. I, I use it. When I initially sold those dice, I sold them online and I was one of the first merchants to use lightning back in the day, the first edition of the dice so people could buy these days somewhere.
+01:09:45
+Well they used to be able to have it made a new edition recently. They're very scarce and very special. They're like physical entities, kind of his. Yeah.
+01:09:55
+I mean, the fly with lightning is really that you you know, and this can be remediated a number of ways, but you have to sort of prefund these channels. So it's it's a weird concept to have to inject liquidity into a channel in order to accept a payment. You know, so I'm sure those user experience problems can be solved, but it's still in a state of relative immaturity.
+01:10:17
+So we'll see in terms of other ideas that are sojourns, soft force of bitcoin. You've mentioned something about. And Taproot, what are your thoughts about the subject of Bitcoin in terms of its promise to improve privacy in scaling and so on? And what other things are you interested, excited about in terms of the development of Bitcoin?
+01:10:43
+Well, Shawn Topper, that's the first new protocol upgrade since cigaret in twenty seventeen, which was what laid the groundwork for lightning to be developed, basically. And Shortie is really the first protocol change in three, almost four years now. So we're very excited about it.
+01:11:06
+What what are I mean, is there something interesting to say technically about what are the things that's actually going to improve and maybe on the on the politics side, bringing a protocol change on Bitcoin? What does that actually involve? Yeah, I mean, it's a huge deal because the last time we tried to make a change to the protocol, we had a whole civil war over it. And it was incredibly difficult to get cigaret activated in twenty seventeen. And it took all this brinksmanship and threats and all these campaigns and it was this whole thing.
+01:11:42
+Luckily, I think things have quieted down and there's much more consensus that Schnoor top rate is a good change to Bitcoin and everyone generally supports it. But everyone kind of has PTSD over the last time when we tried to change Bitcoin. And so we're sort of really dithering over how we actually want to implement it. So it's taking forever because we're trying to set the protocol for how do you change Bitcoin itself and that all of our assumptions went out the window last time.
+01:12:09
+So we're trying to reset and decide what is a legitimate way to institute a change to Bitcoin. So that's actually the big question right now. It's not should we implement these changes? We basically all agree that we should. It's a matter question is what's the valid way to implement new changes to Bitcoin? What's the way that is scalable? In the long term? It will last and people will consider credible, even if this one isn't controversial at all.
+01:12:34
+So that's where we're at. We're basically debating over how do we implement this change that we all want to get a feeling of how slow Bitcoin governance is and how deliberate it is. Everybody collectively wants the change, but we haven't fully agreed on how we're going to put it into Bitcoin. So it's a classic sort of Bitcoin situation. But what it is, is, I mean, Schnauz, an alternative signature scheme. I think it was encumbered by a patent and it had only just been unencumbered.
+01:13:04
+One Satoshi created Bitcoin. I believe it's a better signature scheme than elliptic curves, which is what then XA, which is what Bitcoin uses. And so it's been long enough that we now trust it, you know, kind of in cryptography. It's meant to be lundie, you know, sort of you want to test it over time and then it's considered safe to use. So Schnoor has been around for long enough that we've decided to rip out EXI and insert Schnoor, which is just a different signature scheme, which is more efficient and it has better properties.
+01:13:38
+Like if you want to do a multi signature transaction where many people collectively sign in order to permission to spend, that would be more efficient in a. Since then, exi, for instance, so it's pretty incremental and then Taproot is all about. Having transactional conditions that are sort of withheld from final entry onto the block chain, so it's kind of a way to have more private conditional transactions on Bitcoin. So both of them, I would say, are incremental changes.
+01:14:19
+Is this an overexaggeration that, you know, taproom might improve privacy in scaling? Which is it like at the high level things that people mentioned is that just like a dramatic way of trying to frame what's fundamentally an incremental improvement? Yes, but incremental is the word, right? It's not we're not going to get an order of magnitude enhancement either privacy or scaling, but we will get a considerable enhancement. But privacy and scaling are actually two sides of the same coin because you get more transactional privacy by removing data from the ledger.
+01:14:52
+Mm hmm. So there's less metadata for people to surveil and analyze. And that's also you scale by compressing and being really space efficient with transactions. And the more parsimonious you are, the more economically dance dance. Each byte that everyone has to retain on the ledger is. And so those are, you know, very closely allied concepts. So do you mind if we go through some potential criticisms of Bitcoin totally. I spent the last five years, you know, tackling these every day so that the see the same those two are the same.
+01:15:32
+Yeah, there are three Dushan. So let's just go.
+01:15:36
+OK, go with the dice.
+01:15:38
+What do we got. Silk Road was I mean classic classic situation. So I mean that was the dark marketplace set up by Ross Ulbricht in the early days of Bitcoin. That's one of the first killer apps for Bitcoin was being the payments network behind this darknet marketplace and you know where you'd go to buy drugs and things. And so that became associated with Bitcoin, if you remember the press coverage from back then. But over time that faded and it became less of a critique.
+01:16:09
+But so, like the critique is that Bitcoin is something you would use for illegal activity, for drugs, for crimes, all those kinds of things, as opposed to for any kind of legitimate transactions. Yeah, in the merchant transactions.
+01:16:23
+And today, Bitcoin settles 10 billion dollars a day and the vast, vast majority of it is completely legitimate. It's just a useful alternative system. But back then, a huge fraction of all Bitcoin transactions were related to the basically illicit marketplaces.
+01:16:40
+And if you're just tuning in, this incredible Tozzo today has 11 common criticisms of Bitcoin that Nick.
+01:16:48
+Yeah. Ingenious way has put together.
+01:16:51
+OK, maybe you could do a couple more. Oh. Said that it was Satoshi something. Satoshi coins. Satoshi coins. We touched on that earlier in the episode.
+01:17:03
+What if Satoshi returns and sells all of their coins? So we don't know for sure how many constitutions actually mined or produced because there's a degree of probabilistic analysis that you would do, there's a few few thousand blocks that were mined by what we think is a single entity in sort of two thousand nine. And so if you add them all up, you get to about a million. So people think that Satoshi mined a million coins and then they're worried that Satoshi would return and market sell all the coins.
+01:17:38
+Thus crushing the price of Bitcoin. So looking at some of these. No CEO at the. We see we've already hit on the dice, no merchants that that's not. We'll talk about that.
+01:17:54
+Yeah, uh. There's a scalability one, and I think that one is addressed, the idea that you're mentioning with the block size debates and the Lightning Network, that by adding extra layers on top, you can you can achieve scalability. That's my vision. That's my theory.
+01:18:14
+And, you know, you can do it in a permission list and a permission way like Coinbase is a big Bitcoin exchange. They provide scalability, their financial institution. You know, you can settle up internally on their own database and then periodically settle to Bitcoin. So so they don't they do something like the lightning network internally. So something like this, some kind of mechanism. Well, honestly, I'm not sure exactly how it works. They might have that built in.
+01:18:39
+But just generally speaking, institutional scaling is a model for scaling right. Where you could have banks holding Bitcoin and they issue notes against Bitcoin and those are your payments. And then the base layers, the settlement layer. I think that's where you're getting with the boiling oceans is this is like the impact on whether harm on the environment.
+01:19:06
+So, you know, that is a concern that people have in terms of like the proof of work requires that there's a lot of computational resources being used and that requires a lot of energy. And like some large percentage of the world's energy is used to to my bitcoin. What how would you respond to that criticism? I mean, that's been the loudest critique of Bitcoin this year in the process this year. Really? Yeah. So, I mean, it's not like a new criticism, but Bitcoin is consuming more energy than ever.
+01:19:37
+So as the price rises, the electricity consumption rises. And so we've we've we've heard renewed, you know, bellyaching over this for sure. I mean, it's if you don't believe that Bitcoin is useful, then you're inclined to think that all of the energy consumption is a waste.
+01:19:56
+So that's you know, it's something that's sort of on rebuttable if you fundamentally can test the validity of the Bitcoin system.
+01:20:06
+So if Bitcoin is like a thing that will take over, it will become like the main mechanism of financial transactions or transactions period in the world. Then you say, well, the cost of energy use is actually quite low relative to the benefit it provides.
+01:20:24
+If you think it's not going to be if it's just a volatile way to to make a little money in the short term, then you see the energy use is really wasteful. It's totally spurious. Yeah. Yeah. So so then there's no really response.
+01:20:41
+I suppose that's so I can totally get into the details of Bitcoin, Soneji Max and things like that, but that's like at a high level what the debate is, it's just normative question like does Bitcoin have an entitlement to consume any of the world's resources? And that's actually where the debate should end much of the time, because a lot of people fundamentally dispute the the validity or usefulness of Bitcoin as a system. And so, of course, they're going to consider the energy usage legitimate.
+01:21:12
+Now, there's a lot of mitigating factors if you think that Bitcoin is a potentially useful system, which is Bitcoin consumes energy in a very peculiar way, which virtually no other industry does, which is that Bitcoin is a Geographe independent buyer of energy, which is not how we humans typically consume energy, like we need energy to be produced near to population centers, and we need it to be produced at the corresponding to the peaks and troughs of our consumption.
+01:21:47
+Right. Because we have to 100 percent match the demand and the supply at all times. Right. Otherwise, we have blackouts. So Bitcoin doesn't care about any of that. It just buys energy on a constant basis. And so it's, you know, indifferent to where it's being produced. And so the the consequence of all that is that Bitcoin will buy energy that's otherwise being wasted, basically. So it will buy so-called stranded energy assets that would not make it to a population center.
+01:22:19
+And in fact, most energy produced is ultimately does not sort of make it to, you know, your your socket in your wall. And so this is why so much Bitcoin is been in China, for instance. It's not because, you know, Chinese industrialists had a special affinity for Bitcoin. It's because the Chinese grid had a massive overabundance of energy, and particularly in four provinces, Sichuan, Yunnan, Inner Mongolia and Xinjiang. So in those four provinces, those are all pretty distant from major population centers.
+01:22:55
+So because of that, you can't really transport the energy that easily. And so huge amounts of energy are curtailed or basically wasted. And all of those provinces and so miners set up shop there because they could mine Bitcoin with the excess energy. They could monetize this thing that otherwise was going to go to waste. So, you know, there's things like that which, you know, I think mitigate the reality.
+01:23:19
+Bitcoin is not really rival with our consumption of electricity. It's not depriving anyone of electricity. It's mostly these stranded assets that are going into supporting the Bitcoin network. So maybe that's the last. For instance, you mentioned China is trying to control so, so much mining is happening in China. How do we know how do we prevent nation states from controlling much of Bitcoin?
+01:23:47
+Yeah, that's the flip side of a large portion of the blocks being made in China due to this energy feature, which I discussed, which is that there's a lot of Chinese miners for sure. Now, the question ultimately is what degree of control the miners have over the Bitcoin system? Right. And that was part of the block size debate. I mean, the miners, when we implemented this upgraded witness in twenty seventeen, the miners just didn't want to do it.
+01:24:16
+Eventually, the users, the regular folks running nodes rebelled and basically said, look, we're going to implement this whether or not you do it. And it was a threat to the value of Bitcoin, because if this threat had gone through, it could have split Bitcoin and it had been really messy. So the miners sort of capitulated. So I think the current consensus is the miners do not have unilateral control over Bitcoin and that governance is more poised between people that are unknowns, developers and miners.
+01:24:47
+It's sort of a triumvirate where neither of them has, you know, total control. So that's my current model for controlling Bitcoin. I think if you asked a miner, they would tell you they didn't feel that they had sort of unilateral control over Bitcoin either.
+01:25:04
+Almost as a thought experiment, can I ask you to think about if you're if some of your predictions, some of your analysis, some of your understanding of Bitcoin is wrong in the following sense where it will not have the impact that you have a vision for it, that it will not have the scale of impact and perhaps in terms of value will go to zero to something very low and other cryptocurrency or other financial systems will overtake it.
+01:25:34
+What would be the reason for that in your mind? Like, why might you be wrong if you look back at it in the future? What did you not understand about Bitcoin that will result in that? Well, that's a great question. I think for that to happen, one of two things would have to obtain. One of two things have to happen for Bitcoin to just be irrelevant, basically. Either central banks totally clean up their act and, you know, stop engaging in rampant money printing, which I don't expect that to happen anytime soon.
+01:26:11
+I mean, it looks like we're normalizing this new regime of inflation, inflation just to remediate the debt issues we have.
+01:26:20
+So that would be one thing that would make Bitcoin cryptocurrency much less relevant is if everyone becomes totally assured of the soundness of sovereign currencies, basically, namely the dollar, like the dollar being the main one, that it seems like we're going in completely opposite direction with.
+01:26:41
+Most people seem to be noticing the stirrings of inflation in society. And you might have noticed that, too. It's showing up in commodity prices, lumber prices and food, obviously, and financial assets, and it'll show up in consumer prices generally soon. But so that would be one way for Bitcoin to basically become irrelevant. Because it's a you know, it's a dialectical thing, Bitcoin is held in opposition to the established monetary regime. So if they completely reform themselves and, you know, the dollar becomes super sound once again and the Fed stops tinkering the way they constantly do, then.
+01:27:23
+Then we wouldn't need cryptocurrency as much. The other thing would be if a completely superior design for a new sort of state independent monetary system emerged. But it's really hard to even imagine how that would come to emerge. And there's good reasons to think that Bitcoin, the conditions of its launch, were extremely favorable and hard to replicate and speak to some of those conditions.
+01:27:51
+Why it's unique timing wise moment for Bitcoin to emerge.
+01:27:57
+Yeah, so obviously Bitcoin was born in the depths of the financial crisis, which gives it a nice, nice historical element. But that was kind of a coincidence, honestly. We know that Satoshi had been working on it earlier in back in twenty seventeen. The really special thing about Bitcoin was that it was launched anonymously by an entity that did not seek any glory or credit for what they did and apparently never monetize it at all. So they never really moved any of their coins.
+01:28:31
+So Tocheri sent one test transaction to al-Thani, who was one of the earliest Bitcoin heirs. Aside from that, as far as we know, Satoshi never spent any of their coins. So you have this wonderful Promethean quality whereby it's almost self sacrificial. I mean, it's like this borderline godlike figure in terms of their restraint. Finds this monetary technology and releases it to the world and pays the price, they never took advantage of their filthy lucre. You know, they never they never recognize any of the 50 billion dollars that they made from Bitcoin.
+01:29:08
+And Satoshi also didn't assign themselves any privileged access to the coins. You know, Satoshi could have just written in the code. I own 10 percent of the coins. But they didn't they just mind in the open free market competition like everyone else, it's just that Satoshi is an early miner to support the network, accumulate a lot of coins for sure, but they didn't have any privileged special access. So that's one thing that's extremely special about the launch, is that we a founder that was truly committed to the monetary protocol and didn't seek either recognition or financial spoils.
+01:29:43
+And then also left, you know, Satoshi left in 2010, 2011 and hasn't really been heard from since.
+01:29:50
+It's a very George Washington move, gangster move where he didn't want power. And once he got power, he let go of it. Precisely. That was the key actually move one of those that was probably one of the most important moves at the founding of this country.
+01:30:06
+That's right. George Washington could have been a king probably if he'd wanted, and Satoshi could have been Jerome Powell if he'd wanted. And Satoshi could have held on to power indefinitely, but chose to leave. The other thing is the Bitcoin circulated for a long period of time from January 2009 to about July 2010, without really having a financial value. So there weren't really any marketplaces, it didn't have a value. And so that gave it this really great distribution, you know, among a broad set of stakeholders.
+01:30:41
+And there were no venture funds or hedge funds, you know, trying to aggressively buy up all the supply back then. Now, when you have new cryptocurrency launched there, like aggressively pre mind and some gigantic Silicon Valley venture fund is going to own 30 percent of it.
+01:30:58
+And so it's sort of impossible to conceive of how that could become a global money, because how could, you know, a Silicon Valley investment firm owned 30 percent of the money supply. That doesn't make sense. That's just so oligarchical. It's unbelievable. So Bitcoin by contracts is very bottom up thing. It was the early enthusiast's people that were, you know, really excited about the technology. They're the ones that obtained those early coins. And so there was a real element of fairness and just an organic nature to its launch, which would be incredibly hard to recapture today.
+01:31:37
+Let's say Satoshi came back and they said, OK, I made Bitcoin to point out to release it. There would be the most aggressive land grab ever by, you know, gigantic pools of capital to sort of get favorable allocations of the new system. Right.
+01:31:56
+Can Satoshi, with Bitcoin 2.0, build in a resistance mechanism or prevention mechanism for the land grab?
+01:32:05
+It would be hard to because, you know, if you have capital and resources, I mean, if it was a proof of work chain, you just have people that would invest a ton of money in mining, for instance. But most new block change cryptocurrency are just sold. Basically they're, you know, issued in token offerings kind of thing.
+01:32:23
+So so it's hard to enforce through the protocols. Just centralization of control.
+01:32:29
+Yeah, it'd be challenging, too. And people have tried to do airdrops.
+01:32:33
+You know, where they distribute coins to a large number of people basically doesn't work. Most people don't care about the airdrop, so it's hard to have an equitable distribution. I think the conditions of Bitcoins launch were so lucky and favorable that they're very unlikely to be replicated. So I do think it's going to be a real challenge to ever have a new competitor that's as decentralized, as leaderless, as dispersed, sort of distributed as Bitcoin is, has its credibility.
+01:33:03
+I don't know how you could overrule it on those important features.
+01:33:07
+What about Bitcoins comparison to other current cryptocurrency? So Bitcoin versus Ethereum, for example, why is it possible that Ethereum overtakes Bitcoin? That's certainly possible. Yeah, I'm not ruling it out. Ethereum leadership is sort of wise enough to understand that they shouldn't compete with Bitcoin on those most profound qualities, like Ethereum doesn't really aspire to be more sound from a monetary perspective than Bitcoin. Right. In fact, the Syrian leadership are sort of constantly tweaking the monetary policy.
+01:33:45
+So they went for a completely different trade off. Right. They also don't compete to be as decentralized from a governance perspective. Right. Because there's leadership, there's a youth foundation, there's a charismatic leader of italic. And a theorem has this policy of hard fork's. So in Bitcoin Hard are extremely rare in a theorem. It's the default way to change things. So it's a much more adaptive system and it changes more frequently. But that also means that it's sort of they're incurring more risk when they introduce those changes.
+01:34:19
+There's much more complexity. So Ethereum is smart because they sort of understood Bitcoin as the top dog when it comes to a sound money, a digital gold type thing. And they went for all of the different trade offs. They wanted to be more of a platform. They wanted to have more complexity of the transactional layer. They wanted to take on more risk in terms of changing the protocol. They wanted to change more quickly. They wanted to make the monetary policy more mutable.
+01:34:50
+So Ethereum takes that completely different tack. Of course, you know, not ruling out that it could take over Bitcoin from a market perspective, it's just a very different system. And I tend to think that Bitcoin is the most disruptive one because it's the most equipped to challenge sovereign currencies in the grand scheme.
+01:35:11
+Do you think they can co-exist so like in the future is do you see a world where, you know, Ethereum captures some large percent of the market and but nevertheless, the minority are 100 percent, 100 percent.
+01:35:29
+Bitcoin is already been tokenized and put onto Ethereum many units of Bitcoin, I think over a billion dollars worth. So not only do they co-exist, they are actually mutualistic. So they're like two creatures that have this. You know, it's like the the rhino and like the bird, the PEX, the parasites off the rhinos back or whatever. Yeah, right. So I don't know which is which is the analogy, but yeah. I don't know who the parasites are.
+01:35:58
+Yeah. Or you know, the alligator and the teeth cleaning fish or whatever. Right. So oh you know, I always wonder why the alligator doesn't just eat the fish but gets brushing its teeth basically. So Ethereum is it gives you more transactional flexibility. There's much more experimentation happening there. Has this whole decentralized finance element, there's a huge number of bitcoins that circulate on the Ethereum protocol, right, because the theorem is open to other asset types, basically.
+01:36:30
+So I think that's actually accretive to both systems because Ethereum gets to have this good form of collateral Bitcoin on the system, which is good volatility characteristics. And then it's a supply sync for bitcoins, which are sort of now they're injected into this third party protocol. And that, I think, reduces the velocity of Bitcoin overall. And it's probably good for the valuation.
+01:36:56
+So, you see, it's quite possible it could be a symbiotic relationship. It's really interesting. I think so.
+01:37:02
+I think so.
+01:37:03
+What are your thoughts about Vitriolic Buttar and what are your thoughts about some of the other figures in the space outside of Bitcoin? I think the topic made some mistakes. Was the theorem ultimately, like? I disagree with some of the decisions that were made along the way, like there's this infamous case of this bailout where 14 percent of ether was lost. And the smart contract or really the this smart contract that a lot of their leadership were sort of backing and supporting was hacked.
+01:37:37
+And then the foundation with Retallack support chose to make a change to the underlying protocol to undo the hack. Right.
+01:37:47
+So to me, that was not the most prudent approach because you're basically violating the core protocol rules in order to undo, you know, to bail out a specific contract which has failed. Granted, there was a lot of ether in there, but I think that shook the credibility of the Ethereum system that happened back in twenty sixteen. I think that was one reason why I became disenchanted with the Ethereum.
+01:38:17
+So basically, even if in that case, that might fix an important problem that opens the door to centralized like manipulation of the protocol in the future.
+01:38:30
+Yeah, basically demonstrates that there are certain elites at the protocol level that can exercise specific control over the system. And, you know, a lot of people have lost money and hacks on a theorem and a lot of contracts have gone south, a huge amount of value. But they didn't get a bailout. And it was just when, you know, the specific contract called the Dow Deyo was hacked that, you know, the leadership intervened. And, you know, to their credit, they haven't had a significant intervention or bailout since then.
+01:39:07
+But it did normalize the practice and I think it weakened the social contract. So I would prefer that you sort of bite the bullet in that situation and you accept the failure of that contract.
+01:39:20
+There will be a ballsy move to bite that bullet. Yeah, I mean, and then you would have had, like, what they thought was a malicious entity in control of a lot of coins. I think the real reason they sort of felt that they had to undo it was because they'd always planned to move to this proof of stake world where your political control over the system is a function of your wealth in the system. And they didn't want this attacker, which would have inherited all the significant wealth to have influence over that future pacifistic version.
+01:39:52
+That's sort of my theory.
+01:39:53
+Yeah, I mean, that makes sense. It kind of reminds me of the bailout of car companies. You know, this is difficult. There's a lot of people that criticize the bailout of these large companies, you know, but creative destruction. I mean, I was critical of the bailouts that happened during covid. I mean, I generally think that it's healthier for society, for bad firms that are making money to fail or be reorganized under the various forms of bankruptcy.
+01:40:26
+And you saw what happens. You see the you know, the corporate sector in Japan in the 90s, there was this like slow motion insolvency where basically firms weren't allowed to fail and the Japanese corporate sector lost competitiveness because bad firms did not fail. And so, you know, the process of actual capitalism for the market clearing didn't occur. So I'm always in support of, you know, of the free market being allowed to clear for nonprofitable firms to fail.
+01:41:00
+It's complicated and because creative destruction seems to be in the long term of positive, but.
+01:41:10
+Human civilization is such that short term pain has real impact on people, you know. Yeah, policymakers don't ever want to incur that short term pain because they have a short term outlook and term limits often.
+01:41:25
+So, but and also just its short term pain. Forget policy makers, forget politicians. It sucks to lose a job. For an individual. You know, you could say the creative destruction of a company means the company was inefficient and that's going to have a ripple effect of teaching everybody else what an efficient operation it looks like. But like there's jobs that are being lost. There's families that have to suffer because of that.
+01:41:54
+I mean, that's a potential live in society is having a basic safety net for our world because there's a level. Beyond which, like if through creative destruction, you have some percent of the population that dips below a certain level that you would call like suffering, we don't want that.
+01:42:17
+And that's a difficult thing to live with, like. Yes, in the long term. You want inefficiency to be destroyed and efficiency to be rewarded, but there does seem to be a base level of like quality of life that we want to uphold.
+01:42:35
+That's a difficult thing to think about. I think about that a lot as Dr. Paul Farmer that. You know, there's like in Haiti or in Africa, there's a child who's dying, and as a doctor, you want to give everything you have, all the money you have to save that one child.
+01:42:56
+Mm hmm. But, you know. And you do, actually. But that's. That's a very human action, it's not an economic it's not a it's not a rational action from a game theory perspective, because there's no way you can take that action for every child who is suffering. But there's something deeply human about doing that for that one particular child. In that same sense, creative destruction is an economic principle, but it's not it's not necessarily that same kind of human principle.
+01:43:29
+And there's a tension there. I, I see it.
+01:43:32
+I mean, I think that's the that's the issue with modern central banking, really, is that the central bank always has an incentive to lower interest rates. And they've been doing that from the 70s towards today on this, you know, well, 80s really on the slow march down because whenever there was a hint of a crisis in the economy or financial asset, prices started to fall. Their reaction is, OK, we'll inject more capital into the economy, will save it, but my view is that these kind of short term measures caused the buildup of a huge amount of fragility in the long term.
+01:44:08
+And then the ultimate collapse is much worse than the counterfactual situation where you raised interest rates, you took your medicine and the economy was healthier. So and that's sort of that's why, you know, people like Ray Dolia point out that you have these long term debt cycles. And we're sort of at the end of one now is because we couldn't take our medicine. We couldn't, you know, let interest rates clear. We constantly wanted to ward off any, you know, difficulty.
+01:44:39
+And we didn't ever want to deleverage truly. And then when the when the debt crisis happens and it hits, it's horrendously bad. So do you think Bitcoin might reach a million dollars in value? It's it's having a current resurgence, a crazy one in twenty twenty one in the recent months of over sixty thousand, I guess it is now. Do you think it's possible it goes over one hundred thousand. Do you think it's possible.
+01:45:10
+Goes to a million. You can't rule anything out with bitcoin. So I mean, I'm not one to put price targets on it, but one way it could reach a million dollars is Bitcoin's value stays unchanged in real terms and dollar crash, the dollar depreciates.
+01:45:27
+Not that I expect hyperinflation, but yeah, I mean, like Bitcoin is worth about one tenth, slightly under one tenth the value of all the gold in the world. And, you know, gold is worth 10 trillion. 11 trillion dollars in the aggregate, do I think Bitcoin can be more culturally and economically salient than gold in two decades time? One hundred percent Bitcoin was unknown 12 years ago. And today, 100 million people worldwide own Bitcoin. So just extrapolate that.
+01:45:59
+What is the level of penetration you think will get 500 million? A billion? You know, you can easily tune these adoption curves however you like. I, I don't think it's done, you know, monetizing and being adopted globally.
+01:46:16
+You think it can become like the base layer for a lot of our financial operation, like become the main base layer for all our transactions.
+01:46:24
+So like even even banks will use Bitcoin essentially, and like Visa will use Bitcoin as the base there, like it would actually operate very similarly at the at the surface layer. But at the base there would all be Bitcoin. That's precisely what I expect. And banks and Visa are already using Bitcoin. So Visa has embraced Bitcoin in a really big way, actually. And it was always funny to the people saying Bitcoin has to change in a certain way so it can compete with Visa.
+01:46:53
+No visa adopted Bitcoin, right? PayPal adopted Bitcoin Square adopted Bitcoin. Obviously, they're not tearing out all of their existing infrastructure, but they're totally engaged with this thing. Banks have now begun. They got the green light to provide custody for Bitcoin for their depositors. That's the first step. Eventually, you know, it'll happen one of two ways. Either Bitcoin native financial institutions will become banks. That's already happening. There's Bitcoin exchanges that have gone, banking licenses or banks themselves.
+01:47:29
+We'll start to engage with Bitcoin as a reserve asset. It'll converge either way. That's totally happening. And yes, I mean, I don't think Bitcoin is going to power every financial transaction. I think it will co-exist alongside sovereign currencies, but. I think it's a great reserve asset, it's a very powerful asset to build a financial system on top of because it's highly, highly auditable. It's something that you can take physical delivery of very cheaply. And those are great qualities.
+01:47:59
+If you're a depositor in a bank, they can prove to you how much Bitcoin they have. They can't really easily prove, you know, in the old system how much gold they held on deposit. And you can easily conduct a run on the bank. You can hold them accountable because you can withdraw it because, you know, making a Bitcoin transaction is pretty easy. At the end of the day, unlike fiat currency, it's like kind of you can't really withdraw all your dollars from the bank.
+01:48:25
+I mean, you sort of can, but you're not going to want to take delivery of pounds of cash or anything like that. So it's a good modern asset upon which to build a financial system, basically. You measured square and visa sort of investing in Bitcoin. What do you make of probably one of the higher profile big investments in Bitcoin, which is Tesla and Elon Musk, but there's also a few billionaires like math and all investing. What do you make of this whole movement?
+01:48:54
+Why do you think they're doing it? I mean, Tesla's an interesting case. Why do you think Tesla is putting buying so much Bitcoin?
+01:49:01
+I honestly don't know. And I would love to truly know Ellen's genuine thoughts on Bitcoin because he's kind of sending us mixed messages, honestly, with his embrace of dogecoin, which is sort of playful, not exactly sure at what point he's trying to make there. So you were involved with Dogecoin, you mentioned offline a little bit like in the early days or at least like played around with it.
+01:49:26
+What do you make of Dogecoin? What do you make of Elon and Doege? What do you make of this particular meme coin? Is it is it one like a legitimate cryptocurrency or is it too like a funny Internet way of saying f you to the man? Yeah, it's it's a good question.
+01:49:46
+I mean, so I wasn't like a figurehead in Dogecoin or anything, but that was totally my introduction to Crypto was mining dogecoin at my dorm room and then tipping people online and dogecoin, which I just thought was the funniest thing.
+01:50:03
+So I guess I was really easy to entertain back in twenty thirteen, but it was very playful at the time. There was a culture around Dogecoin and the people liked it because it was in opposition to the bitcoin culture, which was really serious and involved lots of Austrian economics and Rothbart and Hayek and stuff like that. So that was my introduction to cryptocurrency was because I thought the Bitcoin people were pretty lame. Yeah. And they were like way too serious about all this stuff.
+01:50:33
+And I was like, OK, I'll just be a part of the Dogecoin community. And they did all these funny publicity stunts like they paid to send the Jamaican bobsled team to the Olympics, you know, like great stuff. Like they put the Dogecoin logo on top of a NASCAR car. Yeah. And I just that tickled me so much because it's like this made up Internet coin. This is back when crypto is pretty novel and still kind of funny and stuff.
+01:50:58
+And that was really entertaining. Fast forward seven, eight years. Dogecoin is way less entertaining now, frankly, because it's the leadership laught, the community spirit evaporated. The meme didn't persist. I mean, Doege itself is not really a contemporary meme, right? I mean, it's an old meme.
+01:51:18
+Although that new refresher, the meme like those, I haven't heard that name in a long time, like or doges like in a hat smoking a cigaret. I mean, there's some sense where eOne is reinvigorating the meme.
+01:51:30
+And it's funny because like one influential figure could do just that, which just speaks to the tension that you're talking about, like taxes, investing bitcoin. And yet he also tweets about Bitcoin.
+01:51:43
+But, yeah, he's I mean, who am I to question the meme? Right. Like, yeah, I can't, you know, dissect Internet culture and pedantically sit here and tell you it's an invalid meme. You know, if if people believe in it, then it's real.
+01:51:58
+Is there a space for me in coins at this time, like, like doege or somebody is somebody else to almost like you know, it does serve a lot of purposes, which is, like you said, it pulls in people into this whole space of digital currency and digital and into cryptocurrency. Allow them to explore, allow them to have fun as opposed to taking everything very seriously. Is there still space for that? Yeah. Yeah. And I mean, the crypto landscape is very broad today.
+01:52:29
+So whatever, you know, cultural element you seek to find within crypto, you will find it was a bit different in twenty thirteen because Bitcoin is kind of the only game in town. There were a couple of coins and so Dogecoin made a lot of sense as a counterpart to Bitcoin, as a less serious counterpart today. Crypto is just is like gigantic cultural and economic trend. So it's, you know, very multifaceted. Dogecoin is one of the many ways that people have to engage with it.
+01:53:02
+I think a lot of people to buy those coin based on Ilan's implied guidance, are going to lose money because fundamentally there's nothing enduring about Dogecoin. It's an ancient form of Bitcoin. It's unmaintained there. You know, it's probably at risk actually, from a protocol perspective. It's merge mind with Bitcoin. I think if there was an inflation bug on Dogecoin, it's unclear who would sort of be able to remediate that. You know, so it's technologically very sound.
+01:53:35
+So I wouldn't recommend that anyone stores wealth in. You know, it's funny, because cryptocurrency make my interest in cryptocurrency is in the exploration of technical ideas.
+01:53:48
+But cryptocurrency is also like in the case of Dogecoin, like falafels, and he's originally like a meme coin, but it's also a mechanism for investment. And so those are sometimes tension and it's unclear, sort of like, yeah, you know, there's the meme with those has almost become to take it, I guess, to a dollar trying to drive the price of the value of the dollar.
+01:54:21
+But, you know, implied in that is like this overlap of the meme coin and like legitimate investment. And so you have a lot of young people, I think, who.
+01:54:32
+Almost start getting greedy and want to make money like as opposed to having fun, and that becomes a different beast then, because you're essentially making financial decisions that can have a long lasting like, you know, money is freedom. And if you make stupid financial decisions, you can remove freedom from your life, and that's it could be detrimental in that sense. So I don't it's difficult to know what to do with that with that set of ideas, because a lot of cryptocurrency, including Bitcoin, is very volatile because it's new.
+01:55:11
+So you're trying to figure out the space of, like, what's actually going to be a large part of this piece of network effects, like what's going to take over the world. And through that process, there's going to be a lot of volatility.
+01:55:26
+And if you're talking about cryptocurrency as a investment mechanism, then it can have a real detrimental effect on people's lives.
+01:55:38
+Yeah, and that's really the challenge with operating in the crypto space, talking about it overlaid on top of everything that's interesting politically or culturally about it is the financial incentive. Yeah. And so. You know, it's not all fun and games because there are literally billions over a trillion dollars at stake now. So if you buy Dogecoin because some influence around Tick-Tock said so, yeah, you've now made a financial decision. Right. So I'm not going to scold any Dogecoin buyers or any crypto as a buyer, for that matter.
+01:56:14
+But be aware that there like billions of dollars of really elite hedge funds that are trying to front run all of your decisions and evaluate social sentiment, things like that. So it's a water full of sharks, basically. And by the way, if you're listening to this, don't make this podcast or anything I ever say is financial advice. That's definitely not my interest or expertize level the the interest here is to explore different ideas.
+01:56:44
+Speaking of which, you've written a little bit about NFTE, I'd be interested to hear your opinions on this space of ideas, these non fungible tokens. They seem to have a cultural impact currently, but do they have a long lasting technical, financial or cultural impact or is this just a fad?
+01:57:08
+But what do you think of NFTE?
+01:57:10
+Yeah, I think the current enthusiasm for unappeased and the financial metrics you see the growth there in that sector is partially a function of where we are in the actual credit cycle. So oftentimes when inflationary events occur, you have correspondents, speculative manias that occur at the same time because people intuitively feel that the fiat currency that they hold is being debased. And so they frantically look around for other places to put it. So stocks, property, commodities and then other asset classes and fees are an asset class.
+01:57:52
+And this is a case with any inflation you look at in history, you saw these corresponding speculative mania is basically speculative episodes. So a lot of us feel that inflation is occurring, whether it's in the CPI or not. The basically lots of dollars are being injected into the economy. We have all seen stocks massively appreciate even as GDP contracted. And so a lot of people sort of got cottoned on to this notion that, wow, is the Fed lowers interest rates and Congress spends a huge amount of stimulus dollars into the economy, financial assets going to go up.
+01:58:28
+So I better have exposure to all that stuff. And so you see virtually every asset class is awash with cash right now. People are investing like their lives depend on it, investing, trading, whatever, whether it's options, volumes on Robin Hood, you know, like kind of retail brokerages, things like that, whether it's stocks, whether it's crypto and then other collectibles, baseball cards, their valuations have been skyrocketing. And so I think entities are part of that.
+01:58:57
+It's a new asset class. It's basically an opportunity to invest in sort of art or collectibles, in game items, things like that. I think that explains a large degree of the enthusiasm, the excitement is that it's a novel asset class that people can trade and write. As you know, these inflationary tailwinds pick up.
+01:59:21
+Now, as for the sort of virtues of the actual technical phenomenon, NAFTA is actually not a new idea at all. So you've had NAFTA that didn't call them NAFTA, but in 2016, built on Bitcoin, for instance. So it's been around for a while. What it is, is a serial code, basically a string of data that is inserted onto a public block chain and then circulates as a unique token. And then the question is, OK, well, what does that data refer to?
+01:59:52
+What's the external reference? And that has to be defined. There has to be some entity which says, oh, yeah, this unique string refers to like this piece of art or digital content or, you know, trading card or whatever. So NFTE, the concept itself is like an incredibly broad idea. It's just, well, what if we took, you know, barcodes and put them on chain so that they could be traded and so they could circulate freely on a peer to peer basis and plugged into exchanges and things like that.
+02:00:21
+So that concept is super valid. Clearly has a protocol market fit, right? People are using it for a really wide array of purposes. It's completely going to exist. May the valuations contract of entities in the aggregate. Definitely possible.
+02:00:39
+Probably likely. But I think the notion of creating enduring collectibles or artworks that have accompanying, you know, accompanying signatures, basically autographed art on the block chain, that is totally been validated. I think that won't go away.
+02:00:58
+I wonder if there's ideas like Big Cloud, for example. I don't know if you saw that. If there's ideas built on top of this concept, does it have to be in theory? You might have to. It could be just the concept of non fungible tokens, whether those kinds of things take hold. And they it's less about financial transactions and more about almost like.
+02:01:25
+I don't know how to put it, but. Like staking identity in some way, whether it's big cloud or identity of objects, like there might be some way of connecting physical reality and digital reality, some interesting ways. So just the financial aspect is a way to, like, put.
+02:01:45
+Some validity behind the identity. I wonder if there's, like ideas there that are yet to be discovered or ideas that are yet to take hold, like Big Cloud seems interesting.
+02:02:00
+Seems shady as hell. Seems a little scam. Yeah. I don't know if I like the idea that you can bet on people, Ascencion, right? Yeah, I think my market cap on Big Cloud is like ninety thousand dollars and I haven't done anything there.
+02:02:14
+So it's like did you take did you like take like verify yourself or whatever. If not, I think people would yell at me on Twitter if I did so.
+02:02:25
+And it's unclear whether it's a scam yet or not. Right. It is unclear where it's coming from.
+02:02:30
+Well, there are some details about the, you know, investors. It's backed by some pretty big name investors. So I probably wouldn't use the word scam to describe it. But it's got Ponzi like dynamics, like everything in crypto. Yeah. So there's very questionable. And then also is that you're using people's likeness without their permission, which is, I think, a legal question, you know, so there's open questions around it. But, you know, is our public chains and, you know, that sort of architecture, is that going to be useful for decentralized or alternative forms of social media?
+02:03:05
+Yeah, one hundred percent. Yes. You know, I'm super, super bullish on that idea, basically creating open protocols, open name spaces, ways to organize without the dependance on a single node effectively in Silicon Valley, you know, the Twitter node or the Facebook node. I think it's a matter of urgency that we create, you know, digital gathering spaces where you have strong property rights, you know, you have a claim on your identity, you have a claim on your data.
+02:03:38
+And open architecture is our way to do that. I don't know if it'll be a block chain, but certainly I think the the general, you know, concept introduced by block chains is a good template for how to, you know, organize these systems.
+02:03:53
+Yeah, value freedom, value decentralization of power, whatever the mechanism. Let me ask you about love.
+02:04:02
+So there is a Bitcoin maximalists community that sometimes so those folks in general have a strong belief that Bitcoin is good for the world and it's almost an ethical imperative to to sort of help Bitcoin succeed.
+02:04:26
+Which I think is as a member of any community, I think is beautiful to believe in the vision of the community, right.
+02:04:33
+There does seem to be some properties of what some may call like toxicity or derision and mockery and those kinds of things. Um, you know, some folks have criticized this, right, that Bitcoin maximalism is not necessarily good for the world, even if Bitcoin is good for the world. What are your thoughts about this kind of approach, philosophically or practically to the spread of Bitcoin, and is there a way that we can add more love to the world while we add more Bitcoin to the world?
+02:05:13
+It's a great question. I mean, you know, Bitcoin is sort of what you make of it so you can define your own path as you advocate for Bitcoin or don't, for that matter. So my chosen approach is the approach you see here, which I try to minimize the amount of sort of harshness or mockery, although I've been known to be mean on Twitter to, you know, what, Twitter's specific.
+02:05:39
+Sorry to interrupt as a specific medium where this takes its worst form. So I'm learning this and I'm actually because of this podcast, but in general, I'm part of different communities and some are full of like unabashed love and some more like what I experienced on Twitter, the Bitcoin community.
+02:05:59
+At first I was off put in terms of the intensity, the mockery, I bet layers of lol.
+02:06:09
+Like the layers of not taking anything seriously, and I think there's power to that, there's freedom to that I appreciate.
+02:06:18
+I have respect for it, but it's not my thing on Twitter. It's just not not the way I enjoy communicating on Twitter. I retired from Twitter.
+02:06:28
+I had I had 100000 followers and then I retired. So I'm free now. I don't have to tweet anymore. It's great. But I totally concede the point.
+02:06:37
+I wish that Bay Corners were gentler in their approach. Not all but corners are like that. Of course, there's, you know, 50 to 100 million of them worldwide and a few tens of thousands on Twitter. So I'm not going to claim that they're necessarily representative. The toxicity, though, is kind of a learned habit because. Bitcoin has had so many episodes where strong willed institutions, the billionaires, the dice are pretty toxic, you could say, right?
+02:07:09
+I'm basically mocking critics of Bitcoin, but at the same time, you're saying that the criticism has been predictable and repeatable and it's been the same throughout. Yeah. And that's that's a pretty, you know, dismissive thing to say, right. That I can reduce you to an algorithm of, you know, with 11. Right.
+02:07:30
+And permutations. But, you know, the thing to remember, I guess, is that some of the best funded companies in the Bitcoin space, the most powerful miners, billionaires, have tried to change and co-opt and alter Bitcoin to shape it to their liking.
+02:07:48
+And without these incredibly hard core sort of high priests of the Bitcoin protocol, it would have been hopeless, hopelessly malleable and all number of ways. And so there is a reason why someone would be incredibly protective of Bitcoin. Does that justify Iran's toxicity, you know, on social media? Probably not, but it's a leaderless protocol. So the whole point is that it's money for enemies. And, you know, some of the Bitcoin maximalists came for me, too, when I made suggestions that they didn't like.
+02:08:27
+But, you know, I'm happy to use it the protocol, because I know that that transaction will be final regardless of how odious my counterparty is or how how politically disfavored their opinions are.
+02:08:41
+Yeah, I mean, and this is where there could be disagreements. But I, I think you have to think about what's effective as a defense mechanism of strong ideas. And I personally think that like kindness and thoughtfulness and like. It is much more effective because it lets the idea shine as opposed to the personality of the individual humans overriding it. But there's debates on this.
+02:09:13
+You know, I. I mean, I take your side on that I think are patient and careful approach is the way to go. Now, do all critics deserve good faith engagement? Right. No, I would say a lot of critics of Bitcoin operate in extreme bad faith. And the reason why is because we're not just talking about technical questions. In fact, most of this conversation has not been technical. It's been political because Bitcoin is an intensely political idea.
+02:09:41
+And so a lot of people are predisposed to totally hate it. And to wish, you know, death on Bitcoin is I mean, there was a professor at GW this I saw earlier this week that was musing about getting all the bitcoins on a boat and sinking it. It's like in one of their contacts with a, you know, upstanding professor mused about mass murder. But in the context of Bitcoin, it's sort of OK, you know, within his peers, because you're talking about something that most people don't like.
+02:10:12
+You know, it's a concept that's alien to them, that doesn't jive with the way they see the world. And so because it's so, you know, pitched from a political perspective, there's a lot of critics as well as defenders that operate in bad faith, I would say. But that's the nature of the beast. It's because we're proposing a very disruptive thing and there are people that would be disrupted by it. You wrote a blog post titled I'm Writing.
+02:10:41
+You're, I think, an excellent writer, so let me ask, what does it take to be a good writer? What does it take to. Right, some of the blog posts you've written, sort of condensed set of ideas in your head, the mess that's probably in your head and putting down on paper in a way that communicates the idea. Clearly and powerfully so that was basically the point of the blog post, is that being an impressive writer is different from being an effective writer, you know, so I think the answer to your question is humility, basically.
+02:11:21
+So I think if you let pride and vanity seep into your writing, then you risk creating a very noisy signal, you know, creating very inefficient channel for communicating literal neural arrangements from your brain to someone else's brain. And that's what I think about when I write. It's like, wow, I have the power to add scale, change the literal physical composition of people's brains. Right, to rewire them. If I make an idea that's so persuasive that so sticky if I coin a phrase that is so pithy.
+02:11:59
+Then I can alter their brain. That's crazy. I mean, you're letting someone reach into your head and, like, mess with it a little bit. That's unbelievable. And that's like a super power. And if you could do that to one hundred thousand people at once, how powerful is that right now?
+02:12:15
+You mentioned Descartes. I think, therefore, I am. That's like literally rewired millions of brains throughout history. Right?
+02:12:21
+I mean, that's one of the most powerful, like cogito, ergo sum one of the most powerful phrases ever written. And that sent a zillion philosophy undergraduates down a rabbit hole of skepticism that some of them didn't make it out of. You know, and they're convinced that, you know, the brain in the VAT theory is true and there's no way to know, you know, what our tangible experiences. But yeah, so that's the beauty of writing.
+02:12:48
+And the thing that interferes with that is our pride, our desire to, you know, impress people and, you know, look good to them and show off our our vocab and stuff. And that's that was the point of that piece, is that I went on this journey where I eventually realized that I don't know if I'm any better of a writer for having realized it, but I think that is a necessary condition. So does that mean.
+02:13:17
+There is a value to striving for simplicity in the words, as opposed to, I mean, complexity. I think so for sure. And we deal with complex topics all the time and crypto, and that's always a huge red flag for me. I mean, if you can't explain something, simply do you understand it, you know? Yeah. So if you're talking about something complex, if you can't find simple ways to discuss it, my presumption is that you're actually obfuscating the truth.
+02:13:49
+And this is what Orwell railed against with political language. You know, he really hated political language because he felt that its authors were using deliberate obfuscation. And, you know, he hated euphemisms. And I hate euphemisms, too. You know, I I much prefer, you know, forthrightness and clarity of thought. But most people, when they write, don't really endeavor to be particularly clear. They might be writing to show off their startup or, you know, to demonstrate to people how cool they are or how well read they are.
+02:14:27
+You know, they're displaying it's like a peacock style display. What fraction of people right, to actually communicate, meaning small fraction, is especially difficult because what I've detected is something in us humans as readers assign more credibility to people that obfuscate. So, like, simple, clear communication of an idea. It's not like the immediate reaction. It is not one where we assign credibility to the person like like that. Was that was brilliant. There's a lot of people that I kind of listen to without really understanding what the heck they're talking about.
+02:15:13
+And but it sounds musical and smart. And then I see a lot of folks assigning credibility to that person and. It's unfortunate it's unfortunate that there's that tension as a reader that we appreciate the the beauty and power of like complex.
+02:15:35
+Weaving awards.
+02:15:37
+Without assigning as much value to like actual clear communication of an idea, and I'm always skeptical in speech as well, when someone will describe someone as articulate, I'm always immediately skeptical of the value of what that person is saying, because if you articulate, you can make bad ideas sound very acceptable. The right.
+02:16:02
+Noam Chomsky has said this before. He as a way to defend the way he speaks. He said that like he's suspicious of charismatic people because they can basically sell any kind of idea. He speaks in a very monotone and boring way so that whatever the value his ideas have, they will shine through. There's something to that. There's something to love. But it's a difficult journey. It's a difficult path, because then I think it's the right path, because ultimately you focus on the quality of your ideas and in the long term, that wins.
+02:16:36
+I agree. Just by way of advice, is, is there if people are interested in Bitcoin and cryptocurrency in your work, what are good books or resources on Bitcoin now from you or from others that you can recommend that were in your own journey, helped you or you've seen help others? Well, it's very easy.
+02:16:58
+It's much easier today to make the Bitcoin journey because the quality of content is so much better than it was when I started. I mean, when I learned about Bitcoin, there was the Bitcoin wiki and the Bitcoin stock exchange and Sabahat it and that was kind of it. And you had to just pick up everything. The economic theory hadn't really been worked out. Very much so to pick everything up from scratch. The good news is that there's a huge abundance of content, and that's actually one of Bitcoin's greatest strengths, is that people are totally inspired to write about it.
+02:17:30
+And it's almost a rite of passage at this point. If you're like a Bitcoin thinker to have your book, I don't have a book yet. I would love to recommend my book. I haven't written one.
+02:17:40
+Do you think about writing a book? Yeah, I think it's my duty 100 percent.
+02:17:45
+Everyone that has created a lot of Bitcoin content probably should condense it into a book to give it an enduring status.
+02:17:53
+It's interesting because you mentioned block size wars and you've written on a lot of different topics.
+02:18:00
+So you could both write. I like a big, like, sapience style book about bitcoin or cryptocurrency, right, but you can also write a book on each like a specific thing. And now that you put pressure on yourself and talk, talk about simplicity.
+02:18:20
+Right. Where do you lean on those different book journeys that you might take on?
+02:18:25
+Do you have in you eventually like a like a Bitcoin book?
+02:18:31
+I mean, I tallied up the words that I wrote in the last couple of years on Bitcoin. It's like over 100000 words a year. So that's two novels there. But yeah, I think I do. I think there's so much underexploited space and bitcoin. I mean, a systematic interpretation of Satoshi s writings, for instance. And a lot of people don't want anyone to do that because they don't want it to have these religious overtones where you're engaging in interpretation, you know, but that's, you know, something that should be done.
+02:19:04
+There's a lot of Bitcoin histories that haven't been written. There was a great Bitcoin history recently published that this is one of my recommendations is on the Block Size War by Jonathan Bier, who runs probably the best research desk in the industry. So there's huge amounts of history that has transpired that hasn't been chronicled. And some of the accounts are indifferent. You know, they're often written by outsiders, you know, journalists that maybe don't fully engage with the Bitcoin system.
+02:19:39
+But if you think the humans are interesting in the story, too, of course, they are the most interesting thing.
+02:19:45
+You know, I mean, Bitcoin itself doesn't really change that much. It's kind of this called, you know, protocol that just sort of ticks along. But the characters are just fascinating. I mean, and there's so many unbelievable characters in the Bitcoin story. Unbelievable. Yeah, that's the cool thing about Bitcoin and cryptocurrency and just Internet is like the weirdo's, the brilliant weirdo's like all the people, and in a stuff that's already established or boring, like economics professors are all boring.
+02:20:16
+Right.
+02:20:16
+But the interesting people, the wild ones are are the ones that are innovating on in the crypto space, which is, you know, that's where the dangerous weirdos are and the exciting, brilliant weirdos.
+02:20:29
+Well, you had to be kind of crazy to adopt Bitcoin in the first sort of five years of its life. So there's an adverse selection element there. And that's an uncharitable way to put it. But I, like some of Bitcoin's earliest evangelists, are not the evangelists I would have chosen. But they're the ones that we got so soon.
+02:20:50
+We got. But is there is there resources you're basically saying just throw a dart and most books are going to be good, or is there something that stands out to you? I mean, your average book is terrible for sure, but not Bitcoin specifically. But in general, it depends whether you like the computer science, the economics or the history. But my recommendations would be, you know, obviously the Bitcoin white paper that and Satoshi is complimentary writings.
+02:21:21
+That's very important is to try to understand the intentions behind the system and also to understand the system without having your view colored by some third parties. Description of it. Most descriptions of Bitcoin are really bad. So just go to the originals, go to the healthfulness posts, Satoshi post on Bitcoin talk. There's a huge amount of lucidity there. And actually most of our questions about Bitcoin today that we have a decade later were really answered in those earliest days.
+02:21:50
+People just don't know what the canonical economic work relating to Bitcoin. A lot of people don't like it. I think it's fine would be the Bitcoin standard. Why people don't like it.
+02:22:03
+I just read it. It's good. I like it. I think it's a good description of sort of the Austrian perspective and then how it relates to Bitcoin. There's not much about Bitcoin in there. But I think the point is, once you've understood, you know, Saifuddin view of monetary policy, Bitcoin makes a ton of sense. You actually need to argue for it that much. So the Bitcoin standard is a good introduction to sort of the Orthodox thought in Bitcoin.
+02:22:31
+There is a more recent book called Layered Money, which I liked by Nick Batea, which goes into more depth about what I was talking about earlier in the conversation, the layered approach to scaling. And that's a really critical thing to understand than technical books about Bitcoin. I like grokking Bitcoin, which is a very computer science heavy one. There's a good textbook called Bitcoin and Cryptocurrency Technologies by Arvind Noorani, and I think he's a Princeton computer science professor, which is really good at building intuition.
+02:23:11
+Antonopoulos books mastering bitcoin are good, then there's like simpler intuition, building books that aren't hard core on the economics or the protocol design. So you have like inventing Bitcoin by John Pritzker, which is good. You've Bitcoin clarity by Kyar because as you can tell, I have like my bookshelf is like mostly Bitcoin books.
+02:23:33
+Well, that's a good selection. And of course, like you said, your your writing and your book that comes out this year and next year, I think I need 18 months.
+02:23:43
+OK, but, you know, most of the good Bitcoin content is just online on medium on Twitter. So it's decentralized, you know, consensus kind of thing. What about the book recommendations that you could give people of these outside of the world of crypto that maybe had an impact on your life fiction like sci fi, maybe technical, philosophical? Is there something you recommend that people might read? I really liked the three body problem, but that's a really hackneyed recommendation.
+02:24:19
+But it really made me think and I like the hard sci fi, you know, the commitment to science and science fiction. So I thought it was very clever.
+02:24:27
+Is there one is there something that really annoys you in terms of the opposite of horror? Sci fi like that doesn't get stuff right.
+02:24:34
+Movies or, uh, I mean, I have issues when I watch, like, ostensibly sci fi or fantasy films that are not consistent about this, the rules for the universe that they've laid out or where they're just impossible to comprehend, like Christopher Nolan's latest film. Oh, yeah. You needed, like a spreadsheet and understand that. Yeah. Yeah, I trust that. Maybe he was consistent about the rules of his universe. I just did not understand it at all in that sense.
+02:25:06
+I really probably one of my favorites is 2001. A Space Odyssey is it's so obvious there's many, many decades ago. But it's quite brilliant in both its consistency and the depth of thought put into like what the technology would actually be, not in like visually, not in kind of silly graphical ways, but in.
+02:25:39
+In terms of function and its impact on humanity. So, right, but that takes care, that takes that takes a lot of work and that takes genius, actually, which is why Kubrick is regarded for what he is.
+02:25:56
+What advice you've taken an interesting journey through your life, your marriage, Fidelity philosophy major, uh, you're now one of the seminal minds in the world of Bitcoin and cryptocurrency. Who the hell knows what the next five, 10 years looks for you if you were to give advice to somebody young today?
+02:26:21
+You know, making their way through life, making a career. What would you what kind of advice would you give? See, the problem with advice is that in a world where so much of success is defined by luck and serendipity is that the advice givers often don't know why they've been successful.
+02:26:40
+Right. And so they might say, you know, I was wearing a green tie on the day of my job interview, and so you should go out and wear green ties. And so they might just get the causality completely wrong. Right? I mean, I'm not going to claim that I'm super successful at it. But see, that's the problem is that I don't think my journey is replicable necessarily. So, you know, who am I to to give advice?
+02:27:07
+Although the one thing I will say is that. The thing I did right was to become completely obsessed with a domain I found really interesting and held promise, like if I had been really interested in, like magic the gathering, I wouldn't have been able to, like, do much with that, aside from build like a killer, you know, card pack or whatever. And I wasn't afraid to, you know, really put myself out there and, you know, float my thoughts online and see how people reacted to them.
+02:27:41
+Even if I said stuff that was completely erroneous or wrong all the time, the rewards to writing and just publishing content are immense, as you know. Obviously, it's the most high leverage activity I think most young people have available to them. And I was very lucky and I benefited from a lot of favorable coincidences, a lot of people that took a chance on me and if I had more time, I would sit here and name them.
+02:28:10
+But is there something you in your actions that made you more open to the the benefits of luck? Sort of, you know, luck can bring you a lot of positive and negative things, so saying you're lucky means you were able to ride the wave or whatever positive stuff like Spring brought you.
+02:28:30
+Well, that's right. You have to put yourself in a position to be lucky and most people don't. So you just have to get as many shots on goal as possible. And, of course, like his place, an undeniable role in any career path for sure, but you do have to make yourself available to it. And you have to take a ton of chances, but, yeah, that's the problem with the advice, it's just so hard to replicate it.
+02:29:00
+So I find it illegitimate most of the time.
+02:29:05
+You heard it here. Kids don't listen to anything they just said exactly where a green tie to your energy is.
+02:29:12
+It'll work out.
+02:29:12
+Well, do you think there's a meaning, a reason to any of this this existence, this life while we make our own meaning?
+02:29:21
+For sure, I find a huge amount of meaning in what I do. I find it beautiful. I feel very lucky and blessed to be in the line of work that I'm in. You know, to have your hobby and your passion and your job just be a completely integrated thing. So that's where I find meaning.
+02:29:41
+But you're just a bag of cells and bacteria that eventually dissipates, dies, and it goes into the ground and disappears back into the universe. I mean, that doesn't make any sense. Well, that may be true, but I find the sublime in things like Bitcoin. I find it incredibly inspiring to work on it. I believe it's one hundred year plus project. And, you know, it stirs those esthetic emotions in you, as I'm sure your work does.
+02:30:15
+You find it beautiful. Absolutely. Absolutely. And inspiring. More than just beautiful.
+02:30:21
+Do you have hope for human civilization and bitcoin as part of that hope?
+02:30:25
+Yeah, it's a very optimistic view. And people accuse us of being pessimists and saying that we are rooting for the collapse of civilization, completely false because are are wildly optimistic because they believe that you can monetize a completely new system from scratch and compete with the strongest superpower in the military and the dollar and everything that goes with that. That's the craziest, most ludicrously optimistic proposition imaginable.
+02:30:55
+So I think because of the most optimistic people out there, I don't think there's a better way to end it on that hopeful vision of human civilization.
+02:31:06
+Nick, I've heard a lot of amazing things about you. I was binge watching your interviews, binge reading, your blogs fell in love with your work. You're a good dude. Inspiring, brilliant. Thank you so much for wasting all your valuable time with me today. My absolute pleasure.
+02:31:28
+Thanks for listening to this conversation with Nick Carter and thank you to the information athletic greens for stigmatic and Blankest. Check them out in the description to support this podcast. And now let me leave you with some words about freedom and beauty from Stephen King. Some birds are not meant to be caged, that's all. Their feathers are too bright, their songs too sweet and wild. So you let them go and when you open the cage to feed them, they somehow fly up past you.
+02:31:59
+And the part of you that knows it was wrong to imprison them in the first place rejoices. But still, the place where you live is that much more drab and empty for their departure. Thank you for listening and hope to see you next time.

@@ -1,0 +1,1198 @@
+00:00:00
+The following is a conversation with Brendan Eich, creator of the JavaScript programming language, co-founder of Mozilla, which created the Firefox browser and now co-founder and CEO of Braves' Software, which has created the brave browser. Each of these are revolutionary technologies. JavaScript is one of the most widely used and impactful programming languages in the world. Firefox pioneered many browser ideas that we love today or even take for granted today. And Brave is looking to revolutionize not only the browser but content creation online and the nature of the Internet to make it fundamentally about respecting people's control over their data.
+00:00:43
+Quick mention of our sponsors. The Jordan harmonises show some Basken mail delivery service. Better help online therapy and sleep self-cleaning mattress click. The sponsor links to get a discount at the support this podcast. As a side note, let me say that there's a tension between theory and engineering that I've been thinking a lot about. I tweeted something like Good execution is more important than a good idea, but one helps the other. I think the wording of that sucks.
+00:01:13
+But what I mean is that a good idea is a must. But in my experience, good ideas are in abundance. Good execution, on the other hand, is rare. I think some mix of good timing, good idea and good execution is essential. Getting that mix rate is tough. And Brennan somehow multiple times as career that just that. I'm starting to believe it's more art than science. Like most interesting things in life, if you enjoy this thing, subscribe on YouTube, review and up a podcast, follow on Spotify supporter and patron or connect with me on Twitter.
+00:01:47
+Allex Friedemann, as usual. I'll do a few minutes of hours now and know as in the middle, I try to make these interesting, but I give you timestamps. So if you skip please to check out the sponsors by clicking the links in the description. It is in fact the best way to support this podcast. This episode is sponsored by the Jordan Harbinger Show. Go to Jordan, Harbage, Dotcom, CLECs subscribe to it. Listen, you won't regret it.
+00:02:15
+I've been bingeing on his podcast for many months now. Jordan is a great interviewer. He gets the best out of his guests, dives deep, calls them out when it's needed and makes the whole thing fun to listen to his interview. Kobe Bryant, Mark Cuban, Neil deGrasse Tyson, Garry Kasparov and many more. Perhaps more importantly, he's unafraid of addressing challenging even controversial topics with thought and grace. I especially like his feedback. Friday's episodes were this combination of fearlessness and thoughtfulness, especially on display touching topics of sex, corruption, mental disorders, hate, love and everything between again, go to Jordan Harbor Jr.
+00:03:00
+Dotcom slash Lex is how he knows I sent you on that page. There's links to subscribe to the show and Apple podcast, Spotify and everywhere else. The shows, also sponsored by Sun Basket Some Basket, delivers fresh, healthy, delicious meals straight to your door. As you may know, my dad is pretty minimalist, so it's nice to get some healthy variety into the mix. They make it easy and convenient. With everything proportioned and ready to prep and cook.
+00:03:30
+You can enjoy a delicious, healthy dinner and as little as 15 minutes. I've enjoyed a lot of meals from their menus that fit my what they call carb conscious ways. They have prepared meals, meal kids and even raw ingredients like just a nice New York strip steak, rainbow trout like filet, wild Chilean sea bass, king salmon and much more. Right now, Sun Basket is offering thirty five bucks off your order when you go to some basket, that councillor's flex and enter promo code LAX at checkout again, visit some basket Dotcom's Glassworks and use code legs to get 35 bucks off your order.
+00:04:12
+This episode is sponsored by Better Help spelled h e l.p help. They figure out what you need and match with the licensed professional therapist in under 48 hours. I chat with the person on there and enjoy it. Of course. I also have been talking to Mr. David Goggins over the past few months, who is definitely not a licensed professional therapist, but he does help me meet mine, his demons and become comfortable to exist in their presence. In fact, in early March I'm doing a forty eight mile run with him for miles every four hours for 48 hours.
+00:04:51
+You should check out Gorgons Challenge Dotcom for more information about that. I often talk about struggle. I think it's a. For creation, but I think you can struggle beautifully in a way that doesn't destroy you. Therapy can help. They're better. Help is easy, private, affordable, available, worldwide. You can communicate by text any time and schedule weekly audio and video sessions anywhere. Check out better health outcomes that glassworks that's better health outcome. Slack's this episode is also sponsored by eight Sleep and it's Poppel Mattress.
+00:05:27
+It controls temperature with an app, is packed with sensors and can cool down to as low as 55 degrees on each side of the bed separately. It's amazing. It's been a game changer for me. I just enjoyed sleep and power naps way more. Now I feel like I fall asleep faster and get more restful sleep. Combination of cool bed and warm blanket is amazing.
+00:05:50
+Now, if you love your current mattress but still are looking for temperature control, is the new pod cover as dynamic cooling heating capabilities onto your current mattress? It can cool down to 55 degrees or heat up to one hundred ten degrees. I don't know why you would want to do that. Maybe keep it under 100 degrees and you can do sunny side of the bed separately. Also, it can track a bunch of metrics like heart rate variability, but cooling alone is honestly worth the money.
+00:06:20
+Go to sleep, slash glassworks, and when you buy stuff there, you'll get special savings. As listeners of this podcast, that's a sleep dotcom slash Lex. And now here's my conversation with Brendan Eich. When did you first fall in love with programming? I didn't program a lot when I was in high school, but I had a friend who had a Commodore pet, and that's we saw Star Wars. He said, hey, let's make a basic program that does the death Star Trek run.
+00:07:08
+And it was just, you know, simple 2D graphics. And I didn't know what I was doing, so I just helped him out on the math and stuff like that. I was a math and science kid. I was really into the HP calculators of the early mid 70s. These were the RPN. They were really strongly built. And as Art Goldfinger, instead of gold, divinely heavy, misapply some gold and them to gold medal. But they were awesome calculators and they had all the scientific functions.
+00:07:34
+So I was really into that. So I aim towards physics. I was a little late for the I think the, you know, the 20th century golden age. And I read a lot of science fiction. So I was like, yeah, it's on the hybrid drives and warp drives and physics was not going to get there quickly. And I started hacking on computers while I was studying physics as an undergraduate at Santa Clara University. And, you know, I dodged the Fortran bullet because I was in the science department.
+00:08:02
+And so the engineering department where they studied Fortran card decks, I think they had an auto collider. But we were using Pascal and I got one of the first portable C compilers ports to the deck. Many computers were using. And I fell in love with programming just based on procedural abstraction. Pascal, just what now would be considered old school like structured programming from the 70s? Nickelsville, the creator of Pascal, was a good writer and a good pedagogue, right.
+00:08:37
+He always said, what do these courses where it's like build your own computer, build your own compiler, build your own operating system, scratch?
+00:08:44
+Yeah, kind of. And I know some people who are grad students on the evidence that he was he would torture the students with things like this custom email system that had twenty five word limit and things like that. I unfortunately dodged both the Pascola and the Fortran bullets. Could you maybe linger on the past, like what kind of programming language was it? What is reminiscent of today, because it sounds like it may have had an impact on your own trajectory.
+00:09:13
+Yeah, yeah. It was in the Al Gore family and Al Gore was, you know, the big successful language design and compiler project in the 60s. It had a successor called Al Gore 68, which is ambitious but not as successful. But Pascal was kind of wordy procedures and functions, language. It distinguish between functions which return of value and procedures which don't which doesn't compute. And you could say that whole Al Gore family went into ADA. Pascal had a second life thanks to Boehland with Turbo Pascal, which was hugely successful, I think in large part due to Andas Elsberg, who then went to Microsoft and did a C sharp and done that with his team there and done really well, doing typescript type of JavaScript.
+00:09:58
+So yeah, there's, there's a lineage here. But I was also interested in seeing Unix by the time I was an undergrad because people were bringing Unix up on all sorts of hardware. I had some friends who were doing their own wiretapped computers, 68, 20 maybe, and I was wiretapping for my engineering course, 16 or nine or something simpler, putting a computer on board. And I wanted to build a more ambitious one and put Unix to it.
+00:10:26
+But I picked the wrong processor. I picked the National Semiconductor and a sixteen three two, which was amazing. You know, Cisco complex instructions that computer and not the reduced instructions that computers that were just being contemplated into the mid eighties and risk ultimately won out risk one. In some ways it dissolved into you have both now you have these super scalar architectures where like Intel has kept probably too much backward compatibility, the instruction level. But that's just a there's a front end that parses that into these, you know, these wide internal instructions.
+00:11:02
+So, you know, the very long instruction, word research that was also interesting at the time kind of became the micro architecture inside the back were compatible intel.
+00:11:12
+But I picked a national semi chip and it never got made successfully. It was full of bugs and I never could have brought it up. But I went on out of physics after three years into math, computer science. And like I said, I did it because I saw I was being sort of childlike and naive about physics. And I thought, meanwhile, the valley is go go for computers, the apple to write the the PC, the intel, eighty, eighty six, eighty, eighty eight based PC, IBM, you know, gave Microsoft the future for me in a somewhat fishy deal.
+00:11:47
+So it was wide open in the computing space. But in physics you were as optimistic about physics and now. I mean, I was one of three brothers who were all in the same grade, I have a twin and a younger brother who skipped second grade and was with us the whole time after that. And, you know, he went on he actually studied under Kempthorne at Caltech, but he also ended up in software physics.
+00:12:13
+Does it make you said that theoretical physics, even with string theory, hasn't really had any foundation or breakthroughs in the latter part of the 20th century?
+00:12:23
+And, yeah, I'd say the problem is theory over over experiments.
+00:12:28
+I would say, you know, we need more Aristotle unless Plato, you know, mathematics, it's not all physical. There are lots of mathematics that cannot be realized as far as I know in this world. So to understand the world, you need to do experiments. You need to not just dream up inductive theories that could have lots of alternative theories competing with them with no way to decide between them except aesthetics, which is not a good guide, in my opinion.
+00:12:53
+I don't know if you are friends with have a relationship with Elon Musk. Where's the in terms of like what you would love to see our society investing in building up. Is it closer to L.A. or is it closer to Fineman and Einstein and those all those gentlemen are no longer with us?
+00:13:11
+And I think that's noticed. So like I said, the real glory days of physics, the famous pictures from Germany before the second war were just a fantastic assembly of brains. You know, Schrodinger and Einstein. And physics, I think, took a wrong turn that maybe all all of I would say Western science took in going for models over reality. Right. You see this in all sorts of fields. Now we can build models that are very predictive and generative and then we build actual devices or, you know, semiconductors, things like that.
+00:13:43
+That's that's good. I'm not dismissing that. We need good models. We need to experiment and prove them and test them. But the problem I've seen in physics, which you see certainly in economics, the dismal science and you see surprisingly in other so-called hard sciences, is models that don't really have to be tested against reality. They can instead become policy tools or they can become, like I said, one of a large family of alternate theories that could be as predictive, but nobody doing the winnowing out.
+00:14:17
+That's such an interesting tension in society. You see this in even the softer sciences, which have a deep love for like psychology. You see this in epidemiology now, the virus. Absolutely. It's this tension of.
+00:14:30
+You know, how much of the world can we understand through just a beautifully fit model and then at the same time my main work is a machine learning where it's like there is no provable thing.
+00:14:44
+Usually it's just it's kind of you. It's all about just getting the right data set and getting tricks and so on. And there's this tension, even in my own soul, like I grew up on theoretical computer science, like I loved approximation algorithms like all of that, like different complexity classes. Just this little puzzles. I mean, I don't know, do you as somebody who was in math and computer science and then ended up going into places where you engineer some of the most impactful things in this world, do you see the P versus ENPI?
+00:15:19
+All that whole space is interesting at all. Yeah, it's it's not that useful in practice. Right. People are using it with sort of cryptanalysis or asymptotic arguments about can can we have a quantum resistent crypto algorithm, things like that, which may not be practical. Right. If you if you follow Mikael Diaconu off or Guille Kalei, they're they're big questions about how health quantum computing will scale up, how practical it will be.
+00:15:47
+Is that something that you think about quantum computing and not except for spare time?
+00:15:51
+Like you said, I'm not using this kind of computer science in practice because almost everything now is engineering and finding ways to get computers to be more useful for people, which goes from, you know, design problems, which are really kind of an art, like you said, anything you can't automate as an art. Yeah, well, we can have, you know, machine learning, compose music and it can imitate you can train it and it can sound kind of decent, but been lacking that genius Akwa.
+00:16:19
+But, you know, user interface still, I think requires human art.
+00:16:24
+So speaking of things that didn't follow a perfect theory and model JavaScript. So there's two things. One, had an impact on the world at a huge scale, obviously, and it's also still is one of probably the most popular programming language in the world. So can we go back to the Origin story? Can you tell the story of how JavaScript was created?
+00:16:48
+Yeah, I was at Silicon Graphics after graduate school for seven years and it got to be big and successful, individualized and political and I thought kind of boring. And a friend who'd been there went to one of the last of the super companies super startups in the early 90s.
+00:17:08
+There were several, I suppose general magic was little after that around the same time. But my community was that company that I went to. And it was because my friend Jeff Weinstein had gone there from Silicon Graphics.
+00:17:18
+He recruited me and my community was doing everything. So this was like the ultimate sort of pretend grad school. It was doing a new fab new semiconductor process. It was doing new analog and digital circuits on the same very large but not wafer scale. Chip originally was five centimeters on a side. It was really hot too. So I need a water cooler as a regular. And then they shrunk it and they tried to do a home sort of media processor that was essentially a barrel processor.
+00:17:52
+But you could think of trying to do all the things that we now see in modern architectures with short vector instructions and sort of wide instructions or multiple issue and and doing a lot of the stuff in software, because the second iteration, the set top box, was really for avoiding the cost to the cable company of rolling the trucks out to replace your garbage general Atlantic setup box with a newer, less less garbagey one. So if you can have software gradable boxes, the cable companies thought they could save a lot of money at features.
+00:18:28
+This is assembly or which was level.
+00:18:31
+It was like we were writing in, we were using GC, we're getting C++ and see somebody I worked with. They're really very smart guy, apart from a sort of Wall Street hotshot programming consultancy, did his own hardware design as well as software. And we were working on how to make a not only short vector units, but general bit shufflers parameters. So you could do things like, you know, crypto algorithms efficiently and you could do the modulation of the cable, you know, complex quadrature amplitude modulated signal.
+00:19:06
+So you're basically taking 8D converters, dumping things in buffers and then doing the rest in software, all the framing and the Solomon and Iturbi and all that error correction. So that was really great learning experience, but it was not going to work. It was doing too many risky things at once. Right. If you Jim Clark said to me when I hopped Netscape after three years of my career and he said, oh yeah, you do ten things, each one in ten odds, it's going to be one in ten billion.
+00:19:30
+The multiplication principle, so, you know, Netscape was already a rocket and I passed the chance to go there in 1994, I knew the founders because I worked as Joe Clark's company.
+00:19:40
+Because you pause for a second. Netscape one was the launch of this rocket, what? Ninety four. Ninety four was the launch of Netscape.
+00:19:48
+And I went there in early 95 in April.
+00:19:50
+OK, so you said you missed the launch? Well, I missed the the the first floor employment opportunity, but the IPO was August 1995, so I was there for that.
+00:19:59
+How obvious was it that Netscape was like world changing? What was the layout? Was Netscape one of the first big browsers?
+00:20:06
+Yes. So when I was at my community still in 93, we saw a browser called Mosaic and an up until then we'd used email and we used Usenet, the N.A. Protocol. We use newsreaders, we used FPP. We used all these old Internet protocols, all relying on the DNS and TV, IP and UDP for that matter. When I was at Silicon Graphics, we brought up the whole stack. Right. We had to discover how how to find the Ethernet addresses on your network and then find IP addresses for them, our protocol, all that stuff.
+00:20:36
+And it was great because nobody knew in the 80s what was going to win all the proprietary stacks like IBM, S3 and DEC Net and all these other protocols were saying it's we're going to do it or it's going to be heterogeneous future. And instead it was Berkely, Unix and the TCP IP stack that dated back to the ARPANET, that one. And I think we knew it. We all knew it at SGI, but the salespeople didn't. And so they kept trying to get multiple networks center operating.
+00:21:03
+But in the end it won. And so that was the Internet and it was email and texte and it was Usenet pretexted and then Tim Berners Lee do this thing.
+00:21:13
+But I don't think I was paying attention. And I think the date when he first did it or when he wrote the famous email has been pushed back to 89. But I noticed Mosaic in ninety three because one of the things that Marc Andreessen and Eric Beina did at NCSA was they innovated on on the H.M.S. Relational Standard. They in particular, Marc sent us email saying, Hey everybody, we think you should be able to put an image in a page.
+00:21:37
+And you know, when he sent that, Eric Bean has already written the code. And, you know, I talked to Tim Berners Lee more recently, just a few years ago, and he was like, oh, we had another way of doing it. Didn't work out because Marc shipped his in Mosaic. And this convinced me of several things. One, the Internet meant there was a huge first mover advantage and being fast getting on first mattered a lot.
+00:21:59
+And so, you know, Richard Gabriel scheme and poetry fame has written about this, the famous poetry. What's poetry? Well, he's a poet, an actual poetry.
+00:22:08
+He's I thought was a no no. I mean, he's the founder of Lucid, which is where James Alinsky worked before Netscape and Lucid was doing, you know, compilers and lucid emacs, which was a for giving Max famously Jimmy fighting against Richard Stallman stole Max. And so Richard Gabriel, you know, very, very brainy computer guy, but also a poet. But he wrote a nice essay that gets abused all the time. In fact, James put a kind of warning in front of his version of it on his site to be called Worse is better.
+00:22:35
+And this is about survival advantage of software in a networked world. In my opinion. It's about Unix. It started out being framed as Unix and Lisp. Good news, bad news, because all the people, the MIT people were like, oh, you know, the crown jewel right schemes, Fabergé egg or communalist, this giant cathedral, of course, we're going to win. This is civilization. And you know, the farmers in New Jersey to borrow from The Sopranos this year down at Bell Labs, they're just you know, there's nothing sound there.
+00:23:04
+It's all hacking now. Well, guess what one.
+00:23:07
+So you're saying this is a fundamental principle of the Internet is moving fast.
+00:23:15
+Winds, you could say in almost any networked system like biological evolution, you see successful little sweep populations and they don't always have you know, they aren't free of flaws, heterozygous advantage. Right. You can get both parents give you the gene variant and you get sickle cell anemia. Right. But but if one of them does, you're more resistant to malaria. And so this isn't a beautiful process except at large scale. And then you realize that because it moves fast and can adapt it, it can win and people still struggle with this.
+00:23:47
+I used to struggle with this because JavaScript was done in such a hurry and the force of Web compatibility meant early mistakes couldn't be fixed and even the standards process injected new mistakes as it will. But often standards bodies go back and making compatible changes. You can't do that with the Web. It's more like, again, like biology. You you preserve what still works. You don't want to break ATP metabolism or whatever. So you have to kind of resign yourself to the reality of worse is better being.
+00:24:19
+Enshrined in actual design points, you might not like that happen with JavaScript, and I'm way over it, but it also I think was a huge advantage. JavaScript is kind of swept under a lot of programming domains. People will say, oh, it's not because of it. Well, you're right. But we also improved it over time in the standards body. I spent 20 years doing that.
+00:24:40
+And you don't get that choice. It's like I'm not saying that that was the best language. I'm just saying that was the right time to do it. And I like to say the alternative was not to do it. I could have told Netscape, I can't do this. It's too rushed and it would have been visual, basic script and it would have been bad.
+00:24:58
+So that's a good way to present the alternative. But so it was a Netscape and you have written it. How many days and why was it only that many days? And what was the the goal and the underlying principles in your mind?
+00:25:10
+So the whole I'm sort of describing worse is better in a frenetic way because it fit the the model of Netscape when it was known that Jim Clark and Marc Andreessen were founding Netscape and they did the first release in 1994, that browser took over from Mosaic. In fact, that's why Mozilla is called that it's the Mosaic killer. It's like the giant Mosaic mythos. And they knew it wasn't it wasn't that again, it's not like you're doing advanced scientific research that is changing the world.
+00:25:38
+You're more like taking down the last iteration of the browser market, which had images and other importances before you stopped working on it. And you're making Netscape the new thing that has images, plug ins, which was the way to do a video back in the day. It had something that's kind of died now for tiled windows called frames and frames, sets, heavier HGL tables. That was numeric dinner tables and Netscape fun one. So when I got there, they were heading toward IPO.
+00:26:05
+Clark wanted to IPO early. I think his instinct was right. And that kicked off the whole dotcom era. Right. There was a recession in the US and 91. You can see old Law and Order reruns where they talk about the recession, how hard it's hitting New Yorkers. And after that, Greenspan really does things. The Federal Reserve and technology had been sort of fermenting in a way that came together with the Internet. And Netscape made it possible to do pets' dotcom, to do eBay, to get people to recognize that you are all on a billboard and then type it in when they get home.
+00:26:36
+And that was huge that that was so fast moving. A rocket that Mark and the engineering team there thought we need to make this a programmable browser, not just a document viewer, not just the videos, all HTML with images and tables and also, like you said, frames and really plug ins.
+00:26:57
+There's no dynamic element at all.
+00:26:58
+Yeah, the most dynamism we get was from a plug in, which there are a few of them. Then Flash didn't exist at that point. It was, I think, Java applets or not.
+00:27:08
+Well, that's the thing. We did the deal with Sun. In fact, I was recruited to go do scheme in the browser. Remember Guy stealing Gerrold Sussman's beautiful variant. I was going to do it in the browser because my friends I thought, hey, we like scheme, like scheme and I'm like I hardly ever use scheme. It's not really used in industry except in sort of silos, but I like it. OK, I'll come to scheme in the browser.
+00:27:30
+I have a slide from my twenty seventeen talk where Bruce Wall is crawling through the ducting. Die hard.
+00:27:36
+Come after the. Come on, come on. Just scheme in the browser. But when I got there there was no scheme in the browser because it started to deal with Sun Microsystems. And my best contact there was Bill Joy who I admired is a Berkeley Unix founder and Sun founder. And Bill got the idea of making the browser programmable, too. And so the idea, main idea was to put the Java VM, which at that point was not really easy to embed into Netscape, including the Netscape version and Windows that was still most popular, which was the sixteen bit Windows three one which was going away.
+00:28:10
+Microsoft's coming out with Windows 95 and everyone was afraid they were going to do Internet Explorer, I guess to at that point three the next year they already bought or invested in somehow Spyglass, this other company that shot out from NCSA Illinois. And in fact, Microsoft had tried to buy Netscape in late ninety four before I got there and I heard about this later. I heard they offered way too little money. And so, you know, Jim Barksdale and Jim Clark said, get out of here, pound sand.
+00:28:40
+But then they realized, oh, this is going to hurt us because now they're going to copy us. It didn't happen right away. I'm not sure when Gates Internet tidal wave memo was written. That's the famous memo he wrote when Bill Gates realized that Microsoft was going down this old copy AOL path or copied CompuServe path, a project called Blackbird, presumably after this or seventy one, I don't know. But they were going to make a, you know, dial up service with a custom content language stack and custom rendering.
+00:29:09
+It wasn't the web, you know, they could have content partners. They have a lot of money. But it still wasn't to scale though. It wasn't going to be compelling. And Gates realized this and. He turned the company on a dime and they couldn't buy Netscape. I'm not sure the timing, so they decided to copy it. And once we realized that everybody inside Netscape felt even more urgency and more frenetic mood. And so my chance to do scheme disappeared when the Java deal started brewing.
+00:29:36
+But there was still a chance to do a companion language to Java because Java was a comp. is a compiled language. It's evolved, improved quite a lot since then, too. But it was for sort of serious advanced programmers that cost a certain salary or hourly rate. And people observed, Joy observed.
+00:29:54
+And Marc Andreessen and I observed that in a mature stock like Microsoft, you really benefit from having a scripting language like visual basic, which became visual, basic script and i3. It didn't take long, didn't take over JavaScript that you need two languages. One is for that component writers who are higher price and more expert, and the other is for scripture's certified public accountants, designers, graphic designers with some programming inclination. Anybody amateurs doesn't matter. There's much more demotic approach, their programming, the components together, gluing them together.
+00:30:30
+Somebody will say duct tape language I don't really like.
+00:30:33
+But we saw Bill Joy and Marc Andreessen and we saw the need for companya language. And the gleam in our eye was to call it JavaScript. I didn't like that was marketing plan. Mark called it Moka, which I liked, and Netscape marketing, I think didn't like that. So they said, oh, there's some trademark and some software somewhere that uses Moka, so we can't use that. And they tried live script in August and that didn't last.
+00:30:55
+And then finally, we got the trademark license in December 1995. But the work I did to prove that it could be done was important because. I came in in April, and even then Netscape was growing so fast that they couldn't find open hiring requisition in the client team for me. So they hired me into the server team and I worked for a month on server team on what became a one one. So I was actually done protocol work at Silicon Graphics with great Chessen for Bell Labs, intern, grad, student, intern who knew all the Unix founders.
+00:31:27
+And Greg was very interested in taking protocols to the next level with VLSI because he thought that CPU's wouldn't wouldn't scale up. He was mistaken in that. Unfortunately, Moore's Law more than kept up. And you have gigabit Ethernet running with commercial processors. But I worked on protocols at SGI as well as Unix, Colonel Hacking and NAFS and things like that. So I. I came into Netscape to work on the site for a month, but I was I was thinking the whole time.
+00:31:56
+What should this language be like? Should it be easy to use its syntax, even be more like natural language, like hyper talk, which is Bill Atkinsons language and HyperCard. If you ever use Caipirinha early, Mac. And I thought. Well, I'd like to do that, but my management is saying make it look like Java, which looks like sea from a distance.
+00:32:18
+What was that means there's a Brace's we're talking about visually to me, like what management did understand what they marketing didn't know.
+00:32:26
+But but management did, like ricksha the new. And we had a plan even that was if you had this companya language, you're going to glue things together between Java and JavaScript, so you're going to have commerce in memory in the heap with data. So you're going to want some of the data types in Java to reflect in the JavaScript. You're going to want the primitive types that Java unfortunately separated from objects. So at least some of them no double, let's call it in Java terms from the C term for double precision floating point or strings or booleans and objects.
+00:33:02
+And so right away there was this constraint that looking like Java meant kind of a C curly brace syntax, but also some of the data types in algebraic objects and so on.
+00:33:12
+I thought a comparison operated on garbage collection, although even the bitwise operators and shift operators, including the unsigned right shift, which Java had because it didn't have unsigned integer types, it said if you want to do unsigned operations, use an operator. And that turned out to be important much later. I'll tell that story five times, but JavaScript inherited a set of. Operators, the expression grammar, the statement grammar up to a point from Java, but I wanted the functional language.
+00:33:41
+I want to skim a little bit of scheme even though it wasn't as clean a scheme.
+00:33:45
+I want you had a lovesongs interrupt.
+00:33:47
+You had a love for scheme and lisp that that functional language that I wanted first class functions because I saw the need for callbacks in the browser where it's a single threaded program. All the early browsers are single threaded and it's the right model for users. Most users weren't ready for mutual exclusion and threading. So in a single threaded world, you cannot block the user interface. So you have to use a callback and run later and the without getting too fancy and trying to capture the continuation like Kowalsky does in scheme, I thought I'll just make it easy to have fun.
+00:34:17
+ARC's first class functions. You passed, you know, downward and they can call back if be called back. And Java didn't have that at the time. It had it took forever to get proper first class functions, lambdas now into into Java, Java, seven or eight.
+00:34:30
+I think it did have concurrency right from the very beginning. But you were thinking that a JavaScript in the browser would not have the luxury of being concurrent.
+00:34:40
+That's right.
+00:34:40
+And the reason was Java was going to run in the plug ins, which could form threads and go go to town. But the main action in the browser was in the single threaded programming single Unix process on on Unix or Windows.
+00:34:52
+And it was where you had to service the event loop and then go, you know, do things respond to the network layout, some HTML, render it turn, you know, within the heights by filling containers, boxes, the early what became the success box model and run scripts to make the thing livelier, respond to user input and all that event driven programming was in part like HyperCard because HyperCard had this on event named Syntex. And so that's why you have in JavaScript unclick run together as the name of the event handler.
+00:35:25
+And there's some funny ones on mouseover and on mouse out. People still complain about those.
+00:35:29
+But you know, there are many more events now over the years standardized. But there was a mix of event driven, single threaded programming because it had to run in the main threat of the browser where the action is and Java never got there, which meant Java could not interact easily or quickly or in a nested way with the document, with the objects reflected from the original document, with the tables and forms and so on. And that that is one of the reasons I think JavaScript survived in Java kind of Java was in this plug in prison, essentially was confined to a rectangle, the applet rectangle.
+00:36:00
+And while we even built a next year, Nick Thompson from SGI, who was intern, a grad student at CMU at the time, built the first version of Live Connect to Glew, Java and JavaScript together to deliver on that vision where you do have commerce between the data types and the heap that it worked. It worked.
+00:36:19
+But you were Java was in charge, JavaScript was in charge, and Java was just these components. These helper might as well do everything. And what happened over time, it's like an evolutionary filter. It just kind of who needs the plug in. And in fact, sun mismanaged Java as a plugin. They thought Netscape giving us the distribution vehicle. We don't care about the browser. It's just about getting Java out there. And that was a big miscalculation.
+00:36:42
+They then tried because Microsoft's killing Netscape years. They tried getting into Microsoft. And you may remember there was a sudden Microsoft deal which famously blew up and and Microsoft kicked Java out of Windows.
+00:36:55
+And that's when they really pulled the trigger. I think they'd already evaluated it and liked it on Enda's icebergs dot net and, you know, C sharp and decided we're going to just not have Java. We don't want any of that sun stuff. We don't want the patent risk. We don't want I'm not sure what the fights were about. There was some patent angle to it, I think.
+00:37:13
+And up till then, Microsoft had been using Java components like in Outlook Web access, which had a lot of JavaScript to be a webmail like Hotmail, like user interface. They had to call the what, the mail server through HGP. And they they used a a Java object to do this. And when they gave the boot to Sun, they suddenly other you know, the left hand gave the boot and the right hand said, we better do something else in Outlook Web access, what are we going to do?
+00:37:41
+And they said, let's just add an active X component, which is their own native way of embedding things in languages. And we'll make it. It'll be what became XML http request, which is now what standard for calling asynchronously, and it's been replaced by the API in HTML five original living document. But this whole lineage goes back to Java being successively the loser and getting kicked out. And after Microsoft kicked it out, it was a plug in and you would find it required for like smartcard banking in the Nordic countries where that was mandated by law but really didn't get used much.
+00:38:17
+Or, you know, there were pilots who used it for flight information. But Flash, which Netscape could have bought, but fortunately didn't the only technology that we would have screwed it up.
+00:38:28
+I mean, what year are we talking about with Flash? I think after the IPOs, it was probably late 95. And our flash was around was a. We now know it was called Future Splash, and it was these brothers, Jonathan Gay, I think his name was he he came knocking and the marketing guy at Netscape who was screening the technology partners or wannabe acquisitions was brutal. And just everybody wanted to get in on the Netscape, you know, stock gravy train.
+00:38:52
+And he sent them packing and they ended up selling the Macromedia and Macromedia was where Flash was created. And the good thing about Macromedia was it was a tool company so invested in, you know, the best ideas, I think, which are still somewhat lost to us of flash. The timeline animation is sort of an immutable function that over time they had the tooling around that you like that Dreamweaver.
+00:39:17
+There's a director. There were a bunch of them. Yeah. I mean, that was a builder was one of the last ones. These tools were used by real artists and, you know, special effects people and designers. All the restaurant websites around 2005 were done in Flash, which was, you know, we were trying to do it Terminal five at the same time. That was the Firefox era.
+00:39:35
+We were trying to make the web capable enough. You didn't need flash, but if you recall, you go to a restaurant, it's like this is kind of like a game or something. It's like a flash. All the font small. You didn't like Flash from the beginning.
+00:39:46
+You like this is this doesn't feel right. Not really. I actually admire Flash's technology. I'm pretty pragmatic about these things.
+00:39:52
+And I realized that, you know, it doesn't matter if you're dealt a bad hand like JavaScript was a rush job or if you have flash, it's a plug in and you can invest in the tools and make it pretty good. You should you should make it better for your users and grow it as best you can.
+00:40:08
+And what happened with the browser due to Microsoft's monopoly abuse for which they were convicted? And, you know, even after that, until I think Firefox and then Chrome was people kept saying, oh, the Web can't do X, can't do Y, we'll have to have a plug in. We'll have to have a new approach. Well, we'll clean the slate and have a new web. And everyone who said that failed and the reason they failed is because there's too much value in the web, this huge network and the worst is better.
+00:40:36
+Principal means that you can not only start bad, which they all sneer at, but get on first and get wide distribution, get sort of evolutionary advantage in the priority of place. But you can also improve it over time. Yes. And so if you're going to improve flash and for some reason, Flash is now out of favor. Steve Jobs said you can't have flash on the iPhone. That was probably the death knell.
+00:40:57
+Put your energy into JavaScript and that happened. Right? So we did things at Mozilla with Adobe to improve, which bought my Macromedia to improve Flash and to improve the version of JavaScript that was in Flash. We tried to standardize that. That's right. I'm getting ahead of myself. Yeah, that's that's right. Can we just rewind to some magical like, you know, it's a special moment in the history of all of computing. It's we'll talk about it later.
+00:41:22
+But it's arguable. It's possible the entirety of the world will run.
+00:41:26
+And just like it is like those those days, it would be it would be interesting if you could just describe actually zooming in on the how the cake was baked from, you know, the several days that you were working on it.
+00:41:42
+What was in your mind? How much coffee were you drinking? Were you nervous? Why freaking out? I'll try to remember it.
+00:41:49
+I mean, you're right. These pregnant moments you see in hindsight, maybe they're overrated. But like Hegel sees Napoleon on horseback at Yena and says there's the world spirit on horse.
+00:42:01
+And I knew that there was a chance to do it. Mark knew. And he was my executive sponsor and he was the one, you know, sort of brainstorming how the JavaScript should be right there in the page. That was important for him to say that, because I thought so, too.
+00:42:16
+But a lot of people were like, he can't write programming language in the middle of the markup and indeed their problems. If you did it naively, you'd see the code laid out as like random gibberish. So I had to figure out how to hide that. That was a challenge.
+00:42:28
+Is that a breakthrough idea? I mean, so you and Mark thinking about this idea that you just inject code in the middle of the markup.
+00:42:37
+In the web page, yeah it that was considered kind of heretical.
+00:42:38
+There was an SGML guru. I forget his name, but he corresponded with me. And at first he was angry, like you should have used a marked section. Why didn't you use a marked section? And I said, well, SGML marked sections are not part of HTML by the way, and they're not supported in the browser.
+00:42:51
+And so I did some hack that was equivalent and over time you could do the proper SGML thing but it eventually came around and it was again sort of evolutionary necessity. It was almost like inter-aggression, like, like, you know, the idea which Lynn Margulies I think helped get across, that we have to consider mutualism in biology, that maybe, you know, mitochondria were ancient prokaryotes that got into the cell and became beneficial. Somehow the same sort of thinking applies. You have to embed JavaScript in HTML. It's going to be a good virus. It won't hurt you.
+00:43:25
+So the code becomes data, in a sense. It just gets carried, carried along. But is there is there the side of the. You are focusing on Netscape at that time, doesn't the browser have to support, interpret correctly, this mix of HTML and whatever code?
+00:43:42
+Yeah, I had to hide it from old browsers, including Netscape 1.1 which was predominant then.
+00:43:46
+So I used an HTML comment. But inside the container that comment lived in, the script tag, which is a new element. I could make different semantics in Netscape 2 where those HTML comment delimiters instead of being multiline brackets became one line or essentially one line.
+00:44:01
+So you wrote, so JavaScript was written. The programming language was written as a comment.
+00:44:06
+Yeah, a comment for all browsers and a set of brackets that were ignored with real code for new. And it was this two way comment hiding hack, as I called it, that was absolutely necessary for us to get off the ground. We couldn't have bootstrapped JavaScript without it. We didn't have... Scripts were loaded from a separate file. The only scripts in Netscape 2 were inlined in the document.
+00:44:23
+What were the challenges here?
+00:44:25
+What like what you know, typing? What were the choices you were thinking about?
+00:44:31
+Garbage collection. I didn't have time to write a garbage collector, so I just I didn't at first. So the thing was using essentially Arenas or what GNU calls object pools and just would run out of memory eventually. And I added reference counting in a hurry after the ten days in which I had so after I was in the server team doing HGP one one and thinking about the language, I finally got transferred to the client team in early May. And that's when I, you know, I got to go Sintra Mark.
+00:44:56
+And it was like, we can't wait because people inside Netscape are doubting even people inside Sun are definitely doubting.
+00:45:02
+Bill Joy was the champion, but he was like alone in that in seeing there was a role for JavaScript as the as I call it, the sidekick language, Robin, the boy hostage, Frank Miller put it in The Dark Knight Returns, that there was this silly little language that would be the glue language.
+00:45:20
+It could become important over time. And you were better off having that complementarity, that pairing of languages, just like Microsoft stacked it with Visual C++ and Visual Basic.
+00:45:29
+So what was the big moment of I'm done?
+00:45:34
+So I had to do a demo. I forget the dates. I think I... for a history of programming languages paper that Alan Westbrook did with my help. He did a lot of the writing. I think it was the ten days from like Thursday evening through to the following week's, you know, the whole of that week and then into Monday.
+00:45:53
+Did you get sleep?
+00:45:54
+Not enough.
+00:45:55
+And I was really going fast because I had already used a lot of C compiler and front end compiler knowledge that I'd gained from undergraduate school. When I started getting into computing as a renegade physics major, people were formalizing more efficient bottom-up grammars. Parsers for bottom-up languages, really LALR one was the big thing. And I studied all this and learned how to parse them.
+00:46:23
+And in the end, if you're doing C languages, you often do what Dennis Ritchie did anyway, which is a recursive descent parser, you can hand-code it. And I did that for JavaScript in a blazing hurry, mostly got it right. I didn't, you know, have precedence inversion problems or other bugs. But I copy a lot from Java and C and I tried to keep things simple, like the quality operator in those ten days sprint between two objects of different dynamic type said no, they're not equal, their types are different.
+00:46:55
+And then after that I had internal early adopters and they were using JavaScript to like match a number against a database field that had been stringized. And they said, oh, can we just have implicit conversion? And like an idiot, I agreed. I gave them what they wanted. I was trying to please them and get adoption. And that broke what equivalence relation nature there was to the double equal. You know, there's some edge cases with not a number that break that too, but it really broke it.
+00:47:25
+Having implicit conversions in an operator is something that people still roast me over.
+00:47:30
+So let's let's talk about two things. One, it sounds like the comparison operator, the quality operator is the thing that you regret. So maybe making it sloppy, making it sloppy. So what is the biggest thing you regret in those ten days and what is the biggest thing you're proud of.
+00:47:48
+So that making a sloppy came after the ten days. And my lesson there, which I've tweeted, is when people come to you saying, can you please make it sloppier, at this cute feature, the answer should be no. And I should have known that because I think Niklaus Wirth was one of my heroes said the essence of design is leaving things out. But during the ten days I also like I said, I was in such a hurry. I left out garbage collection, it came back to haunt me, but I got reference counting in in time that people weren't running out of memory right away on Long Live.
+00:48:17
+What happens when you don't have garbage collection and you have objects?
+00:48:19
+Well, you just run out of memory.
+00:48:21
+I love it.
+00:48:22
+At first you write a short script and the page doesn't last long or it doesn't do a lot, it's OK.
+00:48:27
+Oh, I see.
+00:48:28
+But if you're writing a game or something and you're doing event based allocation, you run out of memory. And this was noticed in the summer of 1985 and people were like what's going on. Oh, yeah, I got to go back and do reference counting and then the problem with reference counting is you're writing the language in the runtime in C an unsafe language.
+00:48:45
+And if you're reference counting and you overflow the counter, you mismanage it so it goes high, it gets stuck high, you leak memory again and you run out. If you underflow it, you free memory that's still in use.
+00:48:57
+And even then we knew what all the the security hackers came to know, that you therefore have a potentially a remote code execution vulnerability because this is before things like not executable heap memory and STAP defenses against taking over memory. So if you can from the the remote side. Right, some html and JavaScript that just happens to exploit a bug in memory safety like causes JavaScript to underflow reference counter and the script still has its hands on that object and it's trying to call a method on it.
+00:49:29
+And there's some kind of lookup function table in the object.
+00:49:32
+But you've managed to stuff the heap with strings that forge their own look alike for the function table. You can call some other code and this was the problem right away. So security, you know, JavaScript upped the ante.
+00:49:47
+Java had this problem, too, but in its own VM. And it just was, you know, a separate headache for Sun to worry about. We had this problem in Netscape right away. So Netscape two came out after my ten days and after this, you know, follow on work to embed JavaScript better in the browser and to add garbage collection through reference counting. Really, I call it reference counting and get it shipped. We had a bunch of dot releases where we fix security bugs like maniacs.
+00:50:14
+But what is the thing you're you know, when you sit back on a porch and just look out into the sunset, what are you most proud of from those ten days?
+00:50:22
+I think the first class functions shines I think especially since Java didn't have it and it was somewhat unusual.
+00:50:28
+Scheme made it in somehow at the end of the day.
+00:50:31
+In spirit. I mean, people complain because scheme has, you know, minimalism. It has, you know, six or seven special forms. It has hygienic macros, it has call/cc, it has sort of a beautiful complete set of forms to make the lambda calculus pleasant to use in practice. And JavaScript is, you know, kind of a multi paradigm or shamebolic.
+00:50:57
+Just a small tangent. You mentioned Marc Andreessen. It sounds like. And Bill Joy, but staying on Mark, it sounds like he had an impact on you in that he sort of believed in what you were doing there. Can you can you talk about, like, what role Mark had in your life?
+00:51:12
+Yeah, we would meet at the the Peninsula creamery in downtown Palo Alto. And Mark was just fresh out of grad school or whatever he was doing. And he was a big dude and he got fitter later. He had hair. He he would order giant milkshakes and burgers and we would meet there and brainstorm about what to do. And it was very direct because we didn't have much time. The sort of, we didn't talk about it, but the implication was Microsoft's coming after us.
+00:51:39
+Mark was saying things boldly, pre IPO like Netscape plus Java kills Windows, right.
+00:51:46
+Ambitious.
+00:51:46
+Make a browser programmable. It becomes the new runtime for programs, you know, Some meta OS or it's the replacement OS.
+00:51:52
+But he still saw value in JavaScript.
+00:51:55
+Yes. Even though he was saying that in Java was the big name, hence the trademark license, he saw that JavaScript is important and he even thought, what if we got, I told this in other interviews, I can say it here, he thought, what if we had my friend Kip Hickman, who'd been at Netscape from the beginning and who was a colonel hacker SGI. When I joined, he started writing his own JVM before we consummated the Sun deal and got our hands on their code.
+00:52:18
+And the Java compiler, Java C, which Arthur van Hoff had written, very nice code, was all written in Java. It was self hosted. Sort of a bootstrap. And so we could use that as soon as Kip's Java VM could run the bytecode from the the Sun JVM running the self hosted compiler to emit the bytecode. So once we could bootstrap into Kip's VM we wouldn't need Sun Mark was like well maybe we can just ditch Sun, work with Kip's Java VM of your JavaScript VM.
+00:52:47
+We now we need graphics. So Mark was thinking far ahead because he knew you could do things with each HTML and images. But at some point you really want this...
+00:52:56
+Dynamic graphics or 3-dimensional?
+00:52:57
+Yeah, like even SGI had already started its downfall because the first four of the VLSI team there had gone off to do 3Dfx and all these other companies that made the graphics card on your PC. Right. Doom was was big and Quake. And so you were we were all playing Quake.
+00:53:11
+I was also I was terrible, but why not put that graphics capability on the web and in fact, it finally happened. And Mozilla Firefox era with Vlad Vukićević taking OpenGL ES and refactoring it as WebGL. But OpenGL ES is the mobile version of OpenGL, which is a standard based on SGI GL. So this whole lineage of graphics libraries or really graphics languages for what became the GPU and Mark was thinking ahead. It's like we need graphics, too. And I thought, OK, I'll try to get somebody I knew at SGI, but he's a grad student at MIT. He was studying under Barbara Liskov.
+00:53:45
+He laughed when he heard about this later. Andrew Myers, he's at Cornell. Long time, I think he's a full professor. And Mark said great, we'll get him. I'm not sure he's going to come. We'll throw money, stock options. We never did it. And they did the Sun deal so Kip nobly put aside his own JVM and we used the Sun JVM.
+00:54:03
+So that was an ambitious period. And Mark was very generative because he was pushing hard. He was ambitious and he wanted to have Netscape possibly be in control of the ball.
+00:54:14
+Maybe you can speak to the demands of Netscape versus Internet Explorer. You've you've thrown some loving words towards Microsoft throughout this conversation. But that's a theme with Steve Jobs had a similar sort of commentary from a big sort of philosophical principle perspective. Can you comment on, like, the approach that Microsoft has taken with Internet Explorer from IHI one to EJ today? Is there something that you see as valuable that they're doing in the in the occasional copying and that's kind of stuff?
+00:54:50
+Or is it is the world worse off because an explorer exists?
+00:54:56
+So I'm going to segment this into historical areas because I think Microsoft is today with Satya is quite a different company and what they're doing with Edge is different. But back then, Gates, you know, aggressive character, not really original in my view, not the originator. Steve Jobs famously said once he doesn't have any taste and I don't mean this in a small way. Those days you can see this apple. At the time, it had beautiful typography and ligatures and kerning and the font looked great.
+00:55:23
+And Windows had this sort of ugly system font that was carefully aligned with Pixel. So it didn't get why.
+00:55:29
+What is it? I'm sorry to keep interrupting, but what it was in an explorer winning throughout history of these competition distribution, distribution matters on anything.
+00:55:37
+And this is why, you know, even now we're seeing in the browser wars doing better because it's being foisted on people of windows. We have Windows 10 boxes at home. We have some Windows seven boxes. We are laptops. We keep running two because we we don't connect to the Internet generally.
+00:55:51
+But but but once you have that operating system, you can you can force, you know, EJ and Apple did. It was far too. It's not unique to Microsoft. That's sad. But in a way, it matters.
+00:56:04
+And that's why I think I was going to win. And that's why everybody at Netscape felt were doomed. This was something Michael, Toyia and Jamie were doomed. But for a while there, we had a chance and we innovated and Netscape to the big platform, push Java and JavaScript and plug ins and more plug ins and, you know, more HGL table features and really started making a preamble stack out of what we're pretty static Web languages. And even in the beta releases, Netscape, two people were using JavaScript to build what you would call single page applications like Gmail, and they were using JavaScript locally to compute things and to call the server on a hidden frame in the background.
+00:56:44
+So it was prefiguring a lot of what came later is Ajax's or dynamic JavaScript anyway. So people saw that. I mean, even when they thought that's kind of I don't know from my perspective, that seems quite brilliant. It seems like really innovative that you would have Corunna in the browser.
+00:57:00
+It did impress me with something which I learned later about from Eric von Hippel of MIT, which is user innovation that works, lead user effects that throwing out JavaScript, even though we weren't doing open source, we were doing beta releases early and permissively with Netscape getting early, developer feedback absolutely critical. I loved it. I did some of that with SGI, with some of the products I worked on, but it really came to the fore, Netscape and that, you know, culminated in Mozilla where you're dealing with developers all the time and early adopters lead users.
+00:57:28
+But the lead users helped improve JavaScript. Even in those last few betas where I can hardly change things, I was under pretty rigid change control.
+00:57:35
+So we're talking about just a small collection of individuals that are just like up front.
+00:57:39
+A guy named Bill Dortch. You can find his work in the Web archive still from 1996. It's a single page application.
+00:57:44
+It's an artist's gallery of mountain art.
+00:57:47
+JavaScript doesn't quite work. He uses JavaScript locally. He says a local database, what you would think of now as JSON, but it's all pure types of code, a bunch of objects being constructed.
+00:57:56
+That's so cool. So how is if you can do sort of a big sweeping progress, JavaScript house, JavaScript changed over the years, in your view from those early ten days with a quick addition of garbage collection and fixes around security? How is this evolution that now it's taken over the world in this?
+00:58:16
+It's been a bumpy ride because the standards body got shut down after Microsoft, I think, took over the Web and then felt punished by the Yousefi Microsoft antitrust case. Can you speak to this to anybody like that? Was a fun, right? You because Netscape had taken the lead with the Web and. HGL innovations like frames and frame sets, tables and the WTC was sort of off even then, sort of an SGML land heading toward XML Lala land.
+00:58:43
+I'm going to be a little harsh on it because this HTML I'm sorry, e-mail was the precursor markup language to HTML or it was sort of the more extensible standard generalized markup language. It was, it was a XML like brackets, but it had all sorts of elaborate syntax for doing different semantics. And this is why I think, you know, TBR and others who wanted to do the semantic web then took XML forward. But they had this or some of them anyway, had this strange idea they could replace the what with XML or that they would upgrade the Web to be XML and it couldn't be done.
+00:59:18
+Worse is better had concrete meaning the web was very forgiving of HTML, including sort of minor syntax errors that could be corrected, like error. Correction isn't generally done in programming languages because that's another amazing thing about HTML is like it's more like biology than programming. Exactly.
+00:59:36
+And so XML was in its standard form, super strict and could never have admitted, you know, the kind of users who are committing these errors. And the funniest part was Microsoft said, hey, we're doing XML. But the way they put it in Internet Explorer under the default media type, put it through the e-mail error corrector.
+00:59:55
+So they kind of bastardized it to make it popular and usable and accessible. And so XML as a pure, you know, thing was never going to take over. And that was kind of not fully functional because Netscape wasn't cooperating with them. We thought about where to take JavaScript and we realized our standards. Gurukul Cargo realized there was a European standards body that had already given Microsoft fits by standardizing parts of the Windows three one API, which European governments insisted and they said, Microsoft, we can't use your operating system without some standards.
+01:00:28
+And Microsoft said, you know, here's our docs. And and the government said, no, we need a European standard. So this body called the European Computer Manufacturers Association XMA, which eventually became global and became a proper noun instead of an acronym.
+01:00:42
+It's just one capital E now with a lowercase KMA. Right. And as one of the early Microsoft guys I met when we first convened a working group to talk about JavaScript said it sounds like a skin disease, but it gave I mean, maybe you'll speak to that.
+01:00:57
+But it gave the name to JavaScript of ECMAScript.
+01:00:59
+That was the standard name because Java was a trademark of sons. They were so aggressive, they were sending cease and desist letters to people whose middle European heritage meant their their surname was Jovanka. And they called their website Gemalto to come. And Son was sent them a letter saying, you're using Java at the start of your domain name, you must cease and desist.
+01:01:19
+I love marketing more than anything else in this world. So so ECMAScript and now is popularly named as S plus version.
+01:01:28
+I would say people use Jass more than anything. People still say JavaScript, JavaScript, books. I mean, when you're referring to is usually JavaScript. And when you want to refer to a version of JavaScript, you'll say ESX. Fine, yes. Or now that Gundi years, which is kind of confusing because it's an offset of two thousand. Nine is six is. Yes. 2016.
+01:01:51
+Yeah. Doesn't match the years. Perfect. Yeah. So, so what, what, what were the choices made and how did JavaScript evolve here.
+01:01:58
+So we took this to this new standards body which had we thought a sort of a proven record of standing up to Microsoft. But Microsoft sent a lot of people, they sent some some people who were pretty good. And then when they realized that I was there and Netscape was not going to, you know, just bend over and do whatever they wanted, they sent somebody really good. You're smart guy. He did a lot of the work on the first draft of the spec, Sean Katzenberg, and he left Microsoft.
+01:02:23
+He even did what I sort of did. He told his bosses, stop bugging me to do other things.
+01:02:28
+I'm focused on this because it took a lot of focused work to create the first draft of the spec. And I was still holding I was spending almost all the plates. I had like part time help in certain areas and on the front end integrations. I had the front end guys, but I couldn't take as much time as Sean was to write the draft spec. But I had to participate because I was essentially helping write down what the language did in areas where we didn't like what it did and Microsoft didn't agree.
+01:02:52
+We sometimes got away with slight changes and that's the story of standards. You have different implementations and depending on their market power, they interoperate where you have agreement and where they don't. The dominant one usually sets the de facto standard and then you should probably reflect that into the jury standard. And this happened with JavaScript over time as Netscape went down and Microsoft went up. We did the first edition of the Standard, codified in 1997 in France. We had a trip to NESE, which was very memorable for any interesting reason or just because it's nice.
+01:03:25
+And and that was European and IBM and others were there. Microsoft IBM fellow was a British. And we. The guy who ran Aqua at the time, John Vandevelde, was quite a raconteur and a very fun guy, and he had us out for, you know, the great, you know, Freedom Air, the bouillabaisse.
+01:03:44
+And was the standardisation process beautiful, painful that those early days you as a designer?
+01:03:49
+It was painful because it was rushed. Now, Guy Steele was contributed by son. So even more than Sean, you had this giant brain guy still helping, bringing some of that ski magic. He even brought Richard Gabriel for fun. Richard wrote the fourth clause of the standard, which is kind of an intro to what JavaScript all about. So we had some really good people and we didn't fight too much. There were some tension where I was fixing bugs and I was late to a meeting.
+01:04:13
+And Sean Katzenberg or Microsoft was actually mad, like, where is he? We need him. And when I got there, I saw that only he saw this sort of off by one bug in somewhere in the spec. And I saw it, too. And I said, there's a fencepost bug there. And then we kind of locked eyes and we realized we were on the same page and we kind of he wasn't mad anymore. What were the features that are being, like, struggled over and debated and thought about?
+01:04:35
+And it was mainly writing down what worked and what we thought should work in the edge cases that didn't interoperate or that seemed wrong. But we were already laying the groundwork for the future editions that I was already implementing. I was still trying to lead the standard by using the dominant market power to write the code that actually shipped. So the de facto standard would lead the standard. And I was putting in the the missing function forms that I didn't have time for in the 10 days.
+01:05:01
+So this is the engineering mindset versus the theoreticians. So you didn't want to create the perfect language, but one that was the popular intercept and all that kind you could say there was I was standing on the shoulders of giants, so there was a staged process where I had to hold back things that were well designed by others in other languages that I could imitate. But I couldn't do them all in the 10 days. So they came in in 1996, in 97, and they came into the third edition of The Standard, which was finally finalized in 1999.
+01:05:28
+But at that point, Netscape had been sold to AOL and was which was a decent exit considering and, you know, had previously been mercilessly crushed that Netscape was selling the browser along with server software that it had acquired after its IPO and Microsoft was just underpricing it. So there was no way to compete with that. Microsoft was also, you know, making Internet Explorer the default browser and Windows, which is called tying in antitrust law. And they were doing even more brutal things.
+01:05:58
+There is the famous investor. He did very well on Google. So he's a billionaire, Ram Shriram, and he was sales guy, head of sales at Netscape. And he got off the phone looking ashen faced after company called and said Microsoft just told us they're going to pull our Windows license if we ship Netscape as the default browser.
+01:06:15
+Wow. This is so there is some bullying going on that was totally immaterial in the antitrust case. But but JavaScript escaped into the standard setting where there was fairly good cooperation. Microsoft had a really good guy on it. And, you know, Guy still was there for a time and there was some good work. But after the antitrust case and, you know, Netscape kind of dissolving into AOL and not really going anywhere quickly, Mozilla took years to really bring up the standard fros.
+01:06:44
+And by 2003, even though they've been sort of noodling around with advanced versions, JavaScript to given the keys to the kingdom to another MIT grad, Baltimore, what very big brain still at Google? I think he won the Puttnam in 86 and he's, you know, very mathematical. Yet he he designed the successor language to, but it only showed up in mutated form in Microsoft's ASP on that server side. And it didn't last there. And it showed up in Flash.
+01:07:13
+And that's what became Action Group three, which action script interesting.
+01:07:17
+And then and then flash because the declined. And so how do we arrive at ESX where it's it's like there's so many.
+01:07:24
+Well, everyone, OK, there's this history of JavaScript that people it was just like cool when you're like having beers to talk crap about JavaScript. Everyone loves to hate. Like people who are married say marriage sucks as they just want to get let off some steam even though everyone uses the language. Yeah, but it's it's become this like reputably like it fix major pain points.
+01:07:49
+I think it added things to the language and it's something that was already S5 five strict mode, but made it implicit in class bodies and module bodies. It was a big jump, but it accumulated some of the S4 designs that we'd done with Adobe for what we hoped would be the fourth edition of ECMAScript that were supposed to fold in some of these old JavaScript, too, ideas that had come into action through three. So you look at the family tree and you see these forks and the main ones are the the ones that go into Adobe Flash from Macromedia and the one that went into the server side of Microsoft's stack, which kind of died, and then trying to bring them back into the standard and not quite succeeding.
+01:08:31
+S4 was was mothballed. All the good parts that everyone liked made it into ESX, and so that was a success and I said earlier I had the wrong year. I think it's 2015, so it's off by four. Yeah, it was done finalized in 2015.
+01:08:45
+It took a little longer than we hoped, but because he has five was 2009 and that was a smaller increment from E.S. three. We skipped Forgan. We mothballed him and we had a split in the committee where some people said, you know, he is forced to big. We're going to work on incremental improvements. No new syntax in particular. They promised not quite true, but they added a bunch of interesting APIs.
+01:09:07
+Allen West, my co-author of the paper, and he was at Microsoft at the time. I ended up hiring Mozilla.
+01:09:13
+He wanted to get the Mozilla and and keep doing the sort of editing energy job of the double standard ECMAScript.
+01:09:22
+And when we got six done, it was it was a little late 2015 and we switched to year numbers. So people still call it year six. I call year six. But if you remember off by nine plus two thousand. Yeah.
+01:09:34
+I mean, it's such a big change. I mean, like I said, the third the next all of it. But yes, six is when it's like became this language that is almost feels ready to take over the world completely.
+01:09:46
+We're programming in the large features, more features you need for larger teams and software engineering. Microsoft did something similar to the Andersen Company. Luke Hobman who left Microsoft also did typescript. And they realized something, I think that Cloudbreak has also popularized and and he was involved in DART at Google.
+01:10:06
+If you don't worry about Sounness in the type system, you don't try to enforce type checks at runtime in particular, just using this sort of a warning system of tool time type system, you can still have a lot of value for developers, especially in large projects.
+01:10:20
+Such types has been a roaring success for Microsoft. What do you think about what do you think about TypeScript? Is it adding confusion or is it ultimately beneficial?
+01:10:28
+I think it's beneficial now. It's technically a superset of JavaScript, so of course I love it. The shortest JavaScript program is still a typescript program. Any touchscreen program is a typescript program which is broken because then you can start incrementally adding type annotations, getting warnings. Yes, learning how to use them. Microsoft had to kind of look around corners at the standards body and guess how their version of modules or decorators should work. And the standards body then may change things a bit.
+01:10:56
+So I think they're obligated with TypeScript either to carry their own version or to bring it back with incompatible changes toward the standard over time. And I think they've played generally fair there. There's some sentiment that why don't they standardize, TypeScript? Well, they've been clear. They don't want to they have a proprietary investment. It's valuable. They have control the ball. And in some ways, you can say the same thing to any of the other big companies in the standards body.
+01:11:19
+Why isn't Google standardize its stuff?
+01:11:21
+So you think it'll continue being like a kind of dance partner to JavaScript, to the base JavaScript?
+01:11:26
+There's a hope that at some point if they keep re converging it in the standard doesn't break them and goes in a good direction. We will get at least the annotation syntax and some semantics around them. Because when you're talking about type annotations, they're generally on, you know, parameters and return values and variable declarations. They're cast operators. You want that syntax to be reserved and you want it to work the same in all engines. And this is where ideas like Gaylord's pluggable type systems might might be good, though.
+01:11:55
+Then you could create the same problem you have with Lisp and Scheme where there's a bunch of Macra libraries and they don't agree and you have conflicts between them.
+01:12:02
+But but pluggable type systems could be one way to standardize.
+01:12:05
+What do you think about the giant ecosystem of frameworks in JavaScript? It feels like because I mean, this is a side effect of how many people use JavaScript.
+01:12:16
+Yes, a lot of entrepreneurial spirit like create their own JavaScript frameworks. Yep. And there are actually awesome in all different ways. And that this is an interesting question about almost like philosophically about biological systems and pollution, all that kind of stuff.
+01:12:37
+Do you see that as good or should it like should some of them die out quicker?
+01:12:41
+I think maybe they should. Now, Jorquera query was a very clever thing. John Resing made this library that sort of query and do and blended sort of selecter syntax with JavaScript sort of object Grauwe or Dom querying and made it very easy for people to do things almost like they were learning GE query as its own language domain specific language.
+01:12:59
+And that I think reflected in part the difficulty of using the document object model, these APIs that were originally designed in the nineties for Java as well as JavaScript. There are very object oriented or even procedural. They're very kind of verbose and it took like a constructor, call them three different, you know, Hokeypokey Dance's to do something, whereas Jacquier it's just one line, right? So that back finally into the standard didn't it didn't mean we standardize query.
+01:13:26
+It wasn't quite that concise. But you find that with the modern standards that we were working on in. Each of five sort of effort that things became simpler, the API and the query selector API document, the query selector, a lot of things can be done now in raw JavaScript that you would make more concise and terse in query. But it's, it's not bad. It's it's pretty good. Whereas in the old Dom of 15 years ago it was just tuberose.
+01:13:52
+So maybe the frameworks were born kind of because JavaScript lacks some of the features, a query. And so like now the JavaScript is swallowing logic where it was then the frameworks will only the ones that truly add value will stick around and the other ones will die out. And that highlights this also this division between the core language JavaScript, which can show up in other places like no jass on the server side and the browser specific APIs or the document object model APIs which are even managed by the W 3c, the standards body that was often XML Lollo land when we were doing real JavaScript standards and XMA.
+01:14:28
+And you you have this division of labor, division of responsibility and division of style and sort of aesthetics and also speed. So the document object model really stagnated after Microsoft kind of D in the Microsoft did something in their haste in the spirit of Netscape, doing things quickly and getting on first called HTML and some of their innovations that were like an alternative document object model didn't really get standardized until Huo five when we pragmatist's set up for at the time in Hixson, who went to Google, Apple and Mozilla, said, let's let's say XML is not going to replace HTML.
+01:15:08
+It's was too old. What standardization of five based on all this good stuff, including that HTML variant dynamic HTML five. It feels like to me, maybe you can correct me like a beautiful piece of design work. It was. It's not often with web stuff you have this breadth of just like whoever did this they did just feels good. Is that what are your thoughts about HTML? Is the am I being too romantic. A little bit. A little bit.
+01:15:37
+Are there flaws, fundamental flaws in it that I'm just not aware of my you know, my old friend Hick's, he did a great job. He was another renegade physics student and he was a basically Kuai guy at opera. But he obviously trained physics, you know, a student and someone who could write Britisher. He he developed test suites and he started thinking about the more axiomatically. Now, this is this can be good because you can sort of systematised in a way that makes a better HTML or you can get caught in the pragmatism of saying, well, we have to handle these edge cases.
+01:16:10
+So we're just going to have sort of a test matrix. And if the matrix is large, it will not be beautiful by many people. Sleights. Everyone likes to minimize along their preferred dimensions the seven special forms and scheme or whatever.
+01:16:22
+But but reality is HTML needs to be big. It's kind of symbolic as a creative multi paradigm. And he did a good job, I would say, with a bunch of it. Other people came in in the spirit of connection to do some of my work and they've carried on that effort. And it's so it's a mix of pragmatism, de facto standards from the past being sort of combined or written down for the first time and then rethought in a way that has a simpler syntax, like the Fetch API instead of XML.
+01:16:53
+CPA request video too as well. It's ultimately it feels like me being correct me, feels like it was the nail in the coffin of Flash Steve Jobs saying no flash on the iPhone.
+01:17:03
+My opinion was the actual thing, the hard but but well, I'm not sure what you want to use.
+01:17:10
+Flash was a zombie for until just this year or last year. I think last year was the end of flash.
+01:17:14
+It made browsers, but jobs really did the death blow. And yet, you're right, we had to make it more five competitive. I still don't think we got that beautiful timeline, animation, the timeline, things like the time.
+01:17:29
+I mean, me from a you know, I used to animation, all kinds of stuff. And so flash plus there's a programming element.
+01:17:35
+Yes, it was a little bit I don't know if you comment on that, but to me it was a little bit like go to statement, like in a sense that there's a little bit too chaotic like in that OCD part of me as a programmer wasn't satisfied by flash. It feels like those bugs that were introduced through the animation process that I couldn't debug easily. Yes, I heard that too.
+01:17:57
+I didn't use it. So I'm doing the grass is greener thing here. Yeah. The thing I liked about the animation model was that it was this immutable function of time.
+01:18:04
+So you could time warp and you could if you dodge these bugs are worked carefully, you could really make it sing in ways that I think still a little challenging with Web animation standards, but or just using raw canvas and what G.L. But there's so many tools now that maybe it doesn't matter. And and yet we had to do video, we had to do WGL and then evolve it. We had to do web audio. But once we did. All these things that helped Flash die, thanks to Steve Jobs, we had something that people didn't realize.
+01:18:40
+We had that vision that Marc Andreessen had this graphics capable to the metal, a portable runtime and. We at Mazola realized this and we we saw JavaScript was something that you could compare to Adobe had somebody in the Adobe Labs doing this to head a project called Alchemy. We had somebody who's now Google Alan Tzachi, who did his own LVM based compiler that would take C or C++ and it would omit JavaScript. And you would think this is crazy going from this sort of machine types, low level control, memory allocation, language to this garbage collected, dynamically typed, high level, higher level language, but.
+01:19:20
+Alone, sort of just phenomenologically carved nature of the joint and found the forms that were fast in JavaScript and then with Dave Herman, who I'd recruited from Northeastern University, who was a type theorist, and Luke Wagner still at Mozilla, who was the compiler guy and the jet guy, they figured out how to codify what I wanted done into a typed subset of JavaScript called ASM Jass. And this is a strange thing to think about because it doesn't have new syntax.
+01:19:48
+The types are casts that occur in dominator positions and the control flow graph.
+01:19:55
+So it's like a hack on JavaScript and it's a subset.
+01:19:57
+And it uses those bitwise operators that I talked about copying from Java to basically Kastin, not numeric types which are double precision flying point into integers. And so inside JavaScript in the kernel, semantics are integers. And if you use these operators, if a compiler omits them in the right places, you can then treat them as typed values, typed memory locations and you can type check your program. You can not only type check it, you compile it. This is all sort of linear time and you can compile it to have deterministic performance.
+01:20:31
+It doesn't touch the garbage collector.
+01:20:33
+It calls a bunch of functions that come from the CI functions or C++ code that you're compiling and you can make the epic unreal engine go in 30 frames a second. And we did this in 2013 in the fall. You know, Tim Sweeney, I bet didn't think it could be done quickly, thought it would take years and the team went to Rawley, to EPIK, and in four days they had unreal engine ported by pressing a compile button. Right.
+01:21:00
+They had to, but they had to have WGL, which came from open jail. He asked him to open. Gelwix came from Silicon Graphics, G.L. They had to have Web audio so they could map open A-L, which was another audio library, standard two web audio, which was kind of a chrome idiosyncratic thing. But they could make it work and they had to have as many as four fast C++ to JavaScript. And if you didn't have a fast compiler step the JavaScript, you'd write by hand.
+01:21:28
+Trying to do an unreal game would be too big and too slow. It would touch the garbage collector. It would not keep up 30 frames a second on the hardware 2013 hardware.
+01:21:36
+So we demo that at the system in fall 2012. And I think about it because we demo at GDC again Developer Conference 2013 and people were stunned. It's like Unreal Engine, Unreal tournament running in my browser window. No plug in, no flash, no Java, no.
+01:21:53
+So where does the early days of because JavaScript now is able to run basically on par with a lot of the like C++.
+01:22:02
+Yeah.
+01:22:02
+And even before then you had the fast JavaScript VMS in 2008 when Chrome came out just before it came out, Mozilla, my friend Driscol and I and others hacked Outraced Monkey Traced based Gitte, the squirrel fish extreme team at Apple did their GITTE and we were all competing on this crazy performance benchmarks. It was a little bit too much tuning the benchmark, but JavaScript started getting fast and developers started noticing it. But it was still kind of its own. High level language was garbage collection.
+01:22:31
+The Asmodeus step helped us go further because until we really proved the concept, people were still saying, well, JavaScript is OK, it's getting faster.
+01:22:41
+Thanks to Veidt, everybody give Google credit, especially Google.
+01:22:44
+But we need something to kill Flash. Let's use the portable native client code that Google had acquired native client, which is a separate lineage for taking basically C-code, compiling it into a software isolated container of some sort, using some kind of virtualization technique. And maybe it can even be in process and study memory, say that be awesome. But they ended up using process isolation, too, and that kind of weakened it. And in the end, it was like portable native client, OK, you know, meet the new boss, same as the old boss.
+01:23:11
+This is the Google flash, right?
+01:23:13
+Yeah, but but when we did ASRM Jass and we showed unreal engine working, I think it was only a matter of time before Google threw in the towel. And in fact, everybody agreed. In spring of 2015, we're going to take what was proven by Asmodeus and make a new syntax, a binary syntax. It's efficient that loads into the same JavaScript VM the JavaScript goes into. So there'll be two source languages, one very important one garbage collector, one memory miniature, one set of compiler stages.
+01:23:41
+And that's called Web assembly, and that's the successor to SJS. And it's important that have binary syntax because at the end of the day, mobile, if you're downloading JavaScript, even if you're using Elzy compression on the wire, that's cool. But you've got to blow it out into memory and then pass the silly eight character function keyword that I picked when I should have used something shorter. I picked it because of the Unix tool.
+01:24:05
+So anyway, I'm not falling. I want to, but I'm not following the thread. Is it surprising to you that how damn fast javascript these days, I mean, like you've been through the whole journey? I know every every step of the way, but is it I. I mean, it's how it feels incredible. It does, but I do. So the funny thing is computer science is this big karmic wheel.
+01:24:27
+Of Fortune. And in the 97, I was blown by Netscape to do due diligence for son in their acquisition of anamorphic, which was David Unger in. And Friends People. Craig, I'm forgetting his name. He went to Microsoft, these Stanford language buffs who had taken small talk, and then David itself as a simpler sort of small talk language and made really fast just in time compiling VMS for them. And they, you know, well ahead of Java Hotspot or JavaScript, Veidt or any of these modern VMS figured out how to make dynamic code fast because small talk is dynamic language.
+01:25:13
+It has classes. It has, I think, more locked down declarative syntax and javascript, but it's fundamentally dynamic. You don't declare the types, but you could infer the types as the program runs and you start to form these ideas about what types are actually flowing through key operations and you form little so-called polymorphic in line caches that are optimized machine code. The cache is the machine code that does a quick check to make sure the type is right. And if it's not right, it builds to the interpreter.
+01:25:43
+And if it is right, you go pretty fast. And that short test is a predicted branch. So things are things are pretty quick. All that amazing stuff I knew about in the 90s and I I didn't have time to do it. And anamorphic got bought by sun and they did hotspot.
+01:25:58
+And you needed that even in Java because at scale Java has some dynamic aspects due to invoke interface. You can have basically collections of Java code where you don't know at the time each each module or package is compiled exactly what's being called, what, what subclass or what implementation of an interface is being called. And so you want to optimize using the sort of dynamic polymorphic caching there too. And they did that in hotspots. Amazing, amazing. Beest I've met like 13 people who all claim they created it.
+01:26:28
+I think I think one of them maybe deserve credit more than others.
+01:26:32
+But I didn't get to do that in JavaScript.
+01:26:35
+And when we knew that that Google was going to do the own browser, which we knew that Mozilla around 2006, I also met the team that did Veidt. And it turns out it was Lars BOQ, who was one of the youngest years from Anamorphic who got acquired by Sun. And so Lars is like the one of the world's expert on these kinds of virtual machines. And he picked my brains about JavaScript. I could tell he didn't like it at the time, but he had to do it.
+01:27:00
+And a really interesting 2006 launch at Google's campus. And then I had another friend who was Deverall Chrome, and he said, yeah, we don't know what they're doing. This is getting twenty seven to fall, getting toward 2008. We're trying to get Chrome out and we don't know what's going on with the team. They're often Aarhus, Denmark, you know, rewriting their engine four times, which is good. That's the right way to do this kind of development.
+01:27:22
+You know, they were learning JavaScript, including all its quirks, which they came to hate the fire of a thousand suns, which is one of the reasons that Lars and company did darte their own language. But they also made the language fast. And meanwhile, we knew this was happening. So we got our act together with trace monkeys tracing jet at Mozilla and Apple, I think was also aware. And so they were doing their own shit. So the era of jittered fast JavaScript in twenty eight had this pre history going back to Smalltalk and self anamorphic.
+01:27:51
+And the again the linage is interesting because you had Lah's and anamorphic and then he ends up at Google. Yeah.
+01:27:57
+And today we have an incredibly fast language that like you said, still, you know, without hate you can't have love. So I think there's both love and hate for this dance, this rich, complex dance of JavaScript throughout its history. There's a dialectic of for sure.
+01:28:16
+Today, JavaScript is the most popular language in the world. Why by many measures, why do you think that is?
+01:28:25
+Is that is there some fundamental ideas they've already spoke to a little bit sort of broader that you think is the most popular language?
+01:28:33
+And so I think I did, you know, by doing first class functions and. Taking the good parts of the sea operator hierarchy and just keeping things simple enough, maybe it could have been simpler, but had had to make it look like Java and interoperate with Java, that there was, you know, inherent goodness, Aristotelian quality there. And people perceive that even through all the quirks and warts. And then over time working on it with the standards body, working on it, not only is a core language, but in the context of making the browser better, listening to developers, thinking about this is something that Nick Thompson wrote nicely about anachronisms, very flattered.
+01:29:13
+He said Java was this thing where the experts were writing the code and it was compiled and you had to declare all your types and some didn't really give a damn about, you know, the average programmer who wanted to build real Web apps, dynamic things. And I was in there, meanwhile, doing, you know, a bunch people's jobs, making JavaScript survive those early years when it was kind of touch and go write JavaScript was considered a Mickey Mouse language.
+01:29:37
+It was for annoyances like the scrolling text at the bottom of the browser in the status bar. But I kept listening to developers, working with them and trying to make that it run in that single threaded event loop in a useful way. And I think that forged something that people have come to love. Now, you don't always love. You know, the best thing I talked about Shakespeare, Sonnet, about my mistress.
+01:29:59
+Eyes are nothing like the sun or, you know, the scene from Joss Whedon film Serenity at the end, where the actual piece in the score by David Newman is called Love, where the captain is teaching Rivertown about how to pilot the ship. And she's a super genius super soldier. She knows how to do it already. And he's he's basically talking about I have to love the ship, because if you don't, it's going to kill you.
+01:30:22
+And then the piece falls off the ship. It's kind of like JavaScript. Yeah, I love it.
+01:30:27
+Yeah, they love it because now people say we're stuck with it because it got this parody of place.
+01:30:32
+But there's love underpinning that. And actually the listening to developers, that's kind of beautiful. There's the most successful products in this world with all the messes, with all the flaws, perhaps the flaws themselves, actual features. But that's a whole nother that's a discussion about love. But underneath it, there's something that just connects with people and has to keep connecting.
+01:30:54
+If JavaScript kind of went off in this, people sometimes complain about it, oh, you put classes in JavaScript. I hate classes. You know, you've ruined it, but it's not true. It's Adamec language. Small talk had classes. Python has classes. There are lots of lisp variants that had classes, systems contentless.
+01:31:13
+So, you know, people who don't reject it based on some sort of fashion judgement do use it and do interact with the standards. Body standards body is competing browser vendors mainly, but also now the companies that use JavaScript heavily, the PayPal's and in other such companies, Salesforce. And they have to cater to Web developers. They have to hire developers who know JavaScript. They have to keep their engines up to the latest standard. And this creates all this sort of social structure around JavaScript.
+01:31:47
+That is unusual. I mean, you get C++ buffs to follow the inner workings of, you know, C++. What is it now?
+01:31:55
+Twenty one something I know I've lost track, but it's a more rarified group. It's more like the old language grey hairs. Where is JavaScript is a younger and more vibrant and large crowd.
+01:32:08
+There's a community feel to it. There's a EKOS perhaps. I don't want to draw too many similarities. Maybe you can comment on it. There's a C++ is like Wall Street and JavaScript is like Wall Street bets from the recent events.
+01:32:23
+It's like there's a chaotic community volke and there's some power from that distributed crowd of people that it's more systematic, it's more of the people it lets people in without requiring these credentials.
+01:32:36
+I remember in the late 90s into the nineties, people were all getting Java credentials and I knew people and friends knew people who became Java programmers. And you knew they really should have been like nature guides or pilots. They hated programming, but they thought I got to make a Java program. Do you have some because it's such a monumental moment in our current history, as a quick aside, do you have thoughts about this huge distributed, crowdsourced financial happenings with Wall Street bets?
+01:33:07
+Yes. Like nobody could have. Well, you could have predicted. But the scale and the impact of this kind of emergent behavior from independent parties, that could happen.
+01:33:16
+Like I said, my own experience with the dismal science, as with physics, led me to reject a lot of bad models. And, you know, economics was always compromised by politics. But political economy, you could also argue that it was it used to be a branch of moral philosophy, so was concerned with the good. And it became divorced and became sort of in this quasi Newtonian way, just about everything is just running by itself. Don't worry about it, you know, simply crushing your Netscape company.
+01:33:42
+But that's just nature and economics couldn't or doesn't really have good models for the Wall Street bets somewhere.
+01:33:50
+You know, they they know how to squeeze the short. Right. So the amazing thing is you have Robinhood app, which was, again, supposedly for the demos for the people and eliminated the fee through various kinds of, you know, straddles or some kind of spreadin operation that helped them eliminate the fee or the fee. And in fact, you know, as a broker in these days, because it takes two years to settle this counterparty risk as they found out.
+01:34:19
+And so the Wall Street bets people, you know, the Meems are like the Terminator robot with six hundred dollars stem check and the hedge funds, the little girl hiding under the desk there.
+01:34:35
+There is a problem, which I talked about in the recent podcast, which I'm conscious of from the history of the Web. And that is you could say it's monopoly, which anti-trust wasn't enforced after using Microsoft for a long time. And a lot of this was due to the moneyed interests buying control of politicians. And, you know, in Plato's five regimes, that's oligarchy. Yes, that's that's where we are. And now we're seeing a fight against the oligarchs.
+01:34:59
+I don't know if it'll work, but you're definitely seeing it. And it's also kind of hackers, right? It's got a hacker ethos, you know, hey, Robin Hood, no fees.
+01:35:06
+Oh, interesting. Hey, you know, by a fraction of a share in this thing, I can keep buying with my stimulus check. So I mentioned Hegel seeing Napoleon on the horse. Hegel also talked about the cunning of reason that you have the sort of, you know, Godse history and fall. And if you believe in God or, you know, we don't know the future, but there's always this sort of fly in the ointment, this unintended consequence that confounds the best plans of the powers that be.
+01:35:36
+And we're living through it. That's I'm glad it's not, you know, street warfare or mechanized warfare because it has been in the past. It's it's more like soft power.
+01:35:47
+Yes. And people are fighting back. Do you think it's possible JavaScript used to be for the front end of the Web? It's now increasingly so being used for backend, like running stuff that's like behind the scenes. And it's also starting to be used quite a bit for things like tons of logs. So starting to actually use like these Heavy-Duty applications that are using know networks, machine learning and so on in the browser.
+01:36:20
+Is it possible in 10, 20, 30 years that basically most of the world runs on JavaScript?
+01:36:29
+This is a dystopian nightmare to some people.
+01:36:33
+When I and we did some jackass web assembly, I would joke and meme people with scenes like Neil waking up in his pod in The Matrix, and he's all skinny and weak and hairless. And, you know, you realize in the future that you're living in some simulation that it's all running on JavaScript. You just scream forever.
+01:36:52
+It's possible Gary Bernhardt does these funny talks. He did what, Jason? And then he did this life and death of JavaScript in its call where he he took some clever ideas that actually have a threat of credibility to them that I mentioned software for isolation. In the old days when we were using computers, we said we're going to use the Unix, you know, monolithic monitor and it's the privilege program before you even had hardware rings of protection.
+01:37:19
+Those are some of the early 60s uprating systems, used hardware protection zones. But Unix is privileged and the program that runs user code in a process is is hosted. It's the guest in the host. And you get to suspend it, you get to kill it. If it crashes, it doesn't take down the whole OS. Wonderful idea, but the call into the kernel is expensive.
+01:37:43
+The system call so called and this has even been optimized now for things like getting the time of day so it doesn't actually enter the kernel.
+01:37:50
+And meanwhile, hardware architectures and virtualization techniques have gone in a different direction, even to the point where you can do software for isolation very cheaply without entering the operating system kernel and you get Unix colonels and colonels and very lightweight VMS.
+01:38:05
+And so Gary took this idea and said. JavaScript will take over computing because the system called boundaries too expensive, so everything ends up in JavaScript with these lightweight isolation enforcement mechanisms. It's not totally beyond belief. That's the freedom of assembly, too. It's nice to ask you sort of for advice to so many people that are interested in starting to learning more programming, getting into this world.
+01:38:32
+Is there some number of languages, three to five programming languages that you would recommend people learn or maybe a broader advice on how to get started and programming?
+01:38:44
+Well, so you asked about machine learning. And, you know, JavaScript is a general purpose language, and it's a language that's not. Not that great for doing, you know, matrix operations or doing parallel programming. I would say without using some extensions or some libraries that have some magic in them.
+01:39:04
+So if someone wanted to, you know, learn of their amazing languages and sort of the Apple family that are very useful for, I would say, linear algebra, which gets to a lot of the kernels in machine learning. And so Apple had like J and then K and their K variants, because the guy that K is still going and he's they're proprietary, but he's still innovating there. There are you know, Python is used. So people talk about technology as well.
+01:39:33
+It's not that surprising because Python was heavily used for machine learning in Python was always, you know, they didn't have this fast Just-In-Time compiler tradition. There were some projects that tried this and some of them were interesting. Pippi was interesting. But the philosophy with Python was all, you need to go fast, write a C plug in and dropping the speaker. So I think people should look at multiple languages because there are different tools in the belt. If you're trying to do supervision or rapid prototyping, you want a dynamic language.
+01:40:04
+You want to throw things together and see what works if you're trying to go down to the metal very fast. Well, I'm an old C hacker, but I was also the sponsor, co-sponsor of Rust at Mozilla. And Rust is now escaped, you know, from that sort of nest where it was born to be adopted by a bunch of companies to have a foundation in the works. Some of the key committee members are working now at Amazon and other places.
+01:40:28
+So it looks like rust has reached escape velocity. Rust is an interesting language because one of our goals there, one of the reasons I sponsored it was we were all tired of seeing those remote code execution vulnerabilities, Studio C and C++. And we thought, can we have a sort of safety property through type in effect system or an ownership system? And Rust has that. And that ownership system is interesting because it doesn't just give you memory safety. There's a sort of theorem for free, a door that falls out for protection against databases.
+01:40:58
+So rust is better for low level programming. You do limit your unsafe code where you do have to be unsafe and you can prove certain facts about memory safety and race condition avoidance. And so I think people should learn these new languages and go is create language. I admire. You know, the people who do that can still was involved. Pich, of course, David, what's his name and other people go is a huge success really on the server side where you have, you know, a lot of networking to do and it's garbage collected.
+01:41:33
+But it's also very pragmatic. It has that sort of C flavor as it as the hacker can get used to. The fact that they swapped the type and declared her in the declaration order avenues for us.
+01:41:42
+But this is one of the most respected and loved languages currently.
+01:41:46
+So it's and it's still young. You look at these things.
+01:41:49
+JavaScript is now considered old, but gone to so many versions that you can fall in love with it all over again.
+01:41:55
+Twenty five plus years, you know, it's it's an adult USPI out of the house, but it could be around another twenty five years. Cannot rule it out. So Russ will be around for a long time. The longer you around the more likely your lyndy and your around your mail.
+01:42:11
+A lot of people ask me like I'm often torn between recommending either Python or JavaScript as the first language to play with because I mean, it's difficult because it's so easy to do JavaScript incorrectly. It's much it's much easier to do it correctly these days are like, well, like learn about programming.
+01:42:32
+But the cool thing about JavaScript is that you can create stuff that will put a smile on your face as a as a developer. You can create stuff and it'll visually look like something and they'll do stuff. And it makes you feel good. It makes you fall in love with programming. With Python, you could do the same. It's a little slower. And C++, it takes five to ten years to write a program that actually does something. Yeah.
+01:42:54
+So like there's that tension between is JavaScript the right first step or is the python? And I've been going back and forth on those to my python.
+01:43:03
+Right. It came from a lineage of ABC, which was a pedagogical language in the Netherlands. And it you know, it it was a good teaching language to I think it is a good teaching language.
+01:43:18
+And it's a little more restrictive in that if you misspell something in a way that JavaScript might let run, let rich runtime, it'll get stopped at syntax check in Python. That's good for beginners. I think the sloppiness that some people object to, like people were just tweeting about me having just learned JavaScript. They said I could take a number and I can index into it and get undefined out of it as a property. And why is that? A no is not an object.
+01:43:45
+And I explained why it is because, like in Java, the primitive types which unfortunately are not objects, can be automatically boxed or wrapped. To buy an object, and I made that implicit in Java, it's it's typed and you have to declare things and you'll get type errors. But there are cases in Java where you get auto boxing, auto wrapping because you've declared that you want it in JavaScript, which just happens.
+01:44:08
+So once I explain it like, oh, wow, I get it.
+01:44:11
+But it also means that you can commit a blunder that just you don't get punished for. You don't detect and undefined value and you don't know where it came from.
+01:44:20
+I've been reading a lot about military history recently, and one way to paint the picture of browser's Internet browsers is through the various wars throughout its history.
+01:44:31
+I don't know if that's a useful way to look at it, but we've already talked a little bit about Netscape and Internet Explorer in the early days. Can you tell the story of the different wars, if that's at all? An interesting way to look at it of the 90s and to today?
+01:44:47
+Yeah, so I mentioned that Microsoft, you know, which was convicted up for it, did abuse its monopoly, but they had a pretty good team by the time they did ifour.
+01:44:55
+And Netscape, unfortunately, I was like the second floor and I was friends with all the first floor people, the front end guys who did the JavaScript event cockup and things like that, that that team was fairly burnt out. And I think having gone public, the upper management wanted to buy a bunch of companies, try to go head to head with Microsoft, didn't work, but buying a bunch of companies usually doesn't work. I think the modern sort of approach roughly is like Mark Zuckerberg took, what, just to keep them at arm's length, let them do their thing.
+01:45:29
+And now that he's pulling WhatsApp in and people are fleeing it because it's tied into the ad surveillance. But, you know, for a while they're keeping it separate, really does work because you bought it for its value.
+01:45:39
+It's complementary and you're not messing with it. With Netscape, when they bought a bunch of companies, they had some of the first four people or the founders burned out. They had newcomers who wanted their turn to do the browser and they hadn't really done browsers or understood them. And so Netscape four was originally supposed to be three. And it was so late, they remember that we did it three released Jamy and a few others put some extra effort into your mind, was supported in the mail, built-In mail program and Netscape for it was late and it was only on Windows at first and Microsoft had really started doing better like they do.
+01:46:16
+They copy in the first versions trash and the second one you're starting to feel threatened. The third one, you can tell what's going to happen in the fourth one is good.
+01:46:23
+And plus there's the benefit, like you said, that it comes as the default browser. Yes.
+01:46:27
+And yet Netscape screwing it up and Microsoft really putting some quality people on it. I was good on Windows. It was good. And they did the dynamic HGL innovations.
+01:46:37
+The Scholastic's my old buddy, a former accountant who programmed in basic and became what Microsoft calls a program manager, which is kind of an elevated position. It's you can be a programmer or an engineer track, but you switch to it. You sort of lead a lot of design and standards efforts. And so, Scott, I was put in a lot of those funky HTML APIs that didn't quite have the same flavor as the stuff that I did. And neither of them was like the later sort of verbose Java, like, let me see, standardized, but I thought was pretty darn good.
+01:47:11
+I remember a friend, Scott Ferman. I got invited by Scott Isaacs to Gordon Derwish in San Jose. They were doing a preview of ifour this was in 1997.
+01:47:22
+And Scott said, yeah, we've got the new graphics stuff we're doing. We've got something like your Netscape layer's, we've got VML vector markup language. You know, we can do like virtual reality. And Scott and I look at each other and said, we're doing the right.
+01:47:37
+Microsoft was starting the fire on all cylinders, so I have to give them credit for that. Even though they abuse their market power. Maybe I shouldn't give them credit for having the resources to hire talented people, but they did a credible job on for what really was bad was that face of the browser wars ended with Monopoly and perhaps due to the antitrust case, perhaps due to regulation, Europe, perhaps just due to Microsoft not liking dealing with standardization. They they let it rot.
+01:48:06
+They just abandoned it a five five five I six later. But these were not well maintained. They had a lot of security bugs. And I was really close to now data to even those getting updated. It's just weird. Browsers like Mozilla and then Firefox were adding tabs. Opera had a version of tabs and they didn't have tabs and they pop up blocking something I should have done from the start. People realized that you can tell when the user clicks something and it goes in JavaScript to open a little window that you can sort of inspect the stack and see that the click originated that.
+01:48:38
+And that's probably OK, whereas if you're just loading a script and it opens a new window, that's a spam technique and you should block it.
+01:48:46
+Tabs were brilliant innovation. Like you said up, I had it. But like I remember, I fully switched to Firefox the moment. It was I remember like the moments of first using tabs and Firefox and like not liking it, like for the first few minutes and then like, wait a minute, get the groove, you get the groove and you understand it.
+01:49:05
+And so that timing, what year was this?
+01:49:09
+Because also, as a aspiring Web designer, I used table. So we didn't mention layout or Sasquatch. There's also a change in the way like the frames were going away. Yeah. So there's a change in the way websites looked and behaved and all that kind of stuff.
+01:49:26
+CCSC finally, which Microsoft embraced with ifour and Netscape never really did right. Success became a better standard over time for doing table layout that relieved you of the need to use what it called spacer gifts, spacer gifts because you were throwing the space up tables.
+01:49:44
+You know, the typographic power of the web has gotten better, but it's still not on the level of PDF and you can't do advanced typography, but it's gotten really better. And even then, tables were getting better.
+01:49:55
+If you were using Firefox, that would have been 2004 because it was called Firebird until really that you know.
+01:50:01
+Yeah, I think it wasn't one three I don't remember. It was a Firebird which had tabs. We had tabs the whole way. So Mozilla is less browser in 2002 became Phoenix.
+01:50:13
+There's a virus that has an embedded version of IHI and they said we're called Phoenix Technologies. You can't use Phoenix. And so we said, OK, we'll call it Firebird.
+01:50:20
+And then this Australian Centre Open Source Database project started really like in the true Mad Max style, just screaming at us saying you can't use Firebird. And I had to sort of be the ambassador and say, OK, we're going to rename it. We don't believe in the use that we hate you. And then we renamed it to Firefox and they're like, Oh, we love you. And then I don't haven't heard of them ever since. But Firefox was a clever name.
+01:50:42
+We had to think of something distinctive. We wanted to keep the fire going. And it turns out there's a red panda. It's a nickname for them.
+01:50:50
+So that's the second set of second browser wars.
+01:50:52
+So what how did you how was Firefox born?
+01:50:57
+How Mozilla born is there there's a long story there, too. So Netscape got acquired by AOL, which is, as I say, was a reasonable, happy ending for a lot of people because Netscape otherwise was going to go out of business because Microsoft was just killing its market. There was no way to charge for browser Windows came with i.e. ifour was pretty good and Netscape four wasn't that good.
+01:51:18
+It took a while to get better, but the Netscape executive said, let's do an open source escape pod, you know, and like in Star Wars, a new hope the gunner won't shoot it because there's no life forms on board. Right. It's not a threat.
+01:51:32
+And so we did Mozo in 1998 and it looked like it was going to initially give the world open source browser. But it's really hard to get people to work on. This sort of hairball had been hacked up over by that point for years. It also couldn't have the crypto module for secure sockets, so-called or now transport layer security. That was an electronic munition. We were not allowed to release that in the full one thousand twenty four, but key strength.
+01:52:01
+And yet people, one of whom I happened to meet previously at SGI when I went on a sales support engineering trip, Tim Hudson in Brisbane, Australia, and Erica Young did what became open. SSL was called SSL E.A.. Why, after Eric's initials and Tim and Eric took their openness, ACEL outside of the purview of the NSA and the Department of Commerce, and they stuck it in Mozilla's code and that was perhaps the best hack that was done in the first few months after we open sourced the browser, we had other problems.
+01:52:36
+The politics inside Netscape were driven by these acquisitions. So the one acquisition that kind of messed up Netscape for also wanted to keep doing a proprietary mail and groupware program, not Jamie Zelinski? S mail program. That was Netscape two and three, and they held it back. Open source. We didn't have a mail. Print was just a browser. We didn't know what anyone will do to us. It turns out they didn't interfere with us for a long time.
+01:53:00
+But Netscape wasn't the best steward of Mozilla.
+01:53:03
+We were operating Mozilla as a pirate ship without a legal entity. So most of us worked for Netscape under a separate organization. And initially the first engineering manager, Tom PAC, one of Netscape, was the model, our founding manager. But he he left pretty quickly and he left me is the acting manager, which is more like method acting in my case. And and I did.
+01:53:28
+That was my first management stint. But then someone who'd written the license's Mitchell Baker, she was a lawyer, Netscape. She was involved in the open source license decision making, a national writing and construction license. That was Mitchell's job, Netscape public license and the truly open Mozilla public license. And there were two because Netscape needed, because of some encumbered code, needed some special rights. But that went away over time. Mitchell. I was always interested in Brazil and she came back from maternity leave and she said, I'll be the manager if you want, and Jamie and I said, sure, and then Jamie quit.
+01:53:59
+He quit after a year and said, this didn't work. I'm sorry. You know, he acted like it was a total failure because Mozilla didn't restart the browser market. But there's no way it could have. Right. Netscape was still shipping variants of Netscape for which was based on the old code. Mozilla was trying to react to code to make green field for developers. It was one of my big goals. It wasn't a technical goal so much as, again, a social goal.
+01:54:25
+People wanted the more standard spaced browser. They wanted less of a hairball hacked on Vioxx, grad students starting four years prior. So we said we're going to make a modular code base. We're going to use a variance or an open source version of Microsoft's component object model has reference counting and standardize the tables, virtual calls and C++.
+01:54:46
+And we're going to use JavaScript. We're going to have a bridge between those two so you can script those components. Just like Java components. We're going to make a portable front end with a markup language for the user user interface, not tables, not XML, but custom menus and drop downs and toolbars. And and that was called Zuhal XML user interface language and some real talent on this side. Deliver that. Dave Hyett, who was instrumental and so Chris Waterson, Joe Hewitt, Blake Ross and Blake was an intern who was like a high school aged intern in that school.
+01:55:21
+And at some point we were innovating raptly in the Muslim world. And Netscape was still caught up in this management mess from these acquisitions and it wasn't delivering it. Every year they were wondering if AOL was going to come and start beheading the executive and do anything useful. And there was a thought you should take the Netscape browser engine and put it in the Windows AOL client, which was the dial up client that all the increasingly ageing users of AOL were using, never happened and would have to make a change.
+01:55:48
+So it wasn't clear why it all bought Netscape. But as I said, they left it alone. But Netscape didn't leave Mozilla alone. And so in 2001, Mitchell called me up and said, I'm no longer employed. That's what you quit. Oh, no, this wasn't my choice. And there was a layoff which maybe accidentally or on purpose got rid of Mitchell. But the funny thing was we had an open source project.
+01:56:09
+We had a lot of the engineers on staff on our side, and we had people we'd hired them as little community who were top notch.
+01:56:17
+The risen, you know, they came in high quality. They knew the code and they actually were better than the average or median hire of Netscape.
+01:56:24
+And so the funny thing was the executive who thought they'd gotten rid of Mitchell in the layoff on the next week's community call around Mozilla and what to do, there's Mitchell.
+01:56:35
+And so this show you can kind of transcend your boundaries of corporate open source if you get a project that has enough loyalty, even among the paid staff, because we had outside people contributing with people at Red Hat and a few other places. But the majority of the hackers were employed by Netscape. But a lot of them at that point had come from the community and others got the community and wanted to work with it. And it was really the weakest engineers and Netscape who didn't like Mozilla and didn't like the the crucible of competing with the better programmers.
+01:57:05
+Since the project is good enough, it will rise. The Phoenix will rise out of the. That's exactly right. And so we had this this Mosaica base that was getting better.
+01:57:12
+In fact, I think at some point in 2002 when we declared Mozilla 1.0, I engineer a roadmap that successively through similar sort of six week, five week releases like we all do with browser releases nowadays, Chrome does and Firefox Brave's a three weeks.
+01:57:27
+We we we got to a point where we said, you know what, it doesn't suck. This is like the one that you want to release, because if you hold it back any longer to polish it, you're denying others the ability to use it, like pro engineer, the mechanical catal embedded the code, the embedded layout engine and Mozilla. When I was like a Netscape communications suite at that point, gotten mail people to reintegrate mail news. And we had an editor for e-mail and it felt like a nice, sweet, sweet where and it felt kind of bloated.
+01:57:59
+And the people who were taking that Mozilla open source and then adding Netscape flavor to it, we're not calling the shots. Right. And they were also under Ailes thumb a little bit and that they said, well, we should probably put the AOL Instant Messenger chick lit on the toolbar and we should put the IQ. You know, the other message that AOL had acquired, we should put the ICU button on the toolbar. And pretty soon Netscape looked like a bit of a NASCAR badged Metsola.
+01:58:25
+And that also made Mozilla more popular. And and yet they had, you know, contrive to fire or lay off the leader. And and and we'd carried on with an open source structure where Mozilla was still, you know, Mitchell was calling sort of management or project level shots. And I was calling tactical shots and. We we had a popular suite, but we thought, why not make it just a browser because it'll be simpler, it will do one job well, and even then we can strip it down by having extensions.
+01:58:59
+So Dave Hiatt and Blake Ross, the high school aged intern, did the first version, which was called Mozilla Slash Browser. It was very small group of us, Ian Hicks and Asa Dotzler, me, Joe Hewitt and Whyatt and Plake. And they Hyett was really the senior hacker. He'd done all these things like amazing cross platform menus through the user interface markup language. And he knew how to do tap browsing and implemented it natively on Mac OS at the time in Camino originally called Chimaira, he'd he'd written multivolume flotations, which was a thing programmer should do.
+01:59:37
+It's like the victim did for those missing years when the rest of the chrome teams like Where's Vate that Dave's wife Rebecca told me a story about when they were at UIUC. They were also University, Illinois grad students. There was an assignment. It was a programming assignment to do the end of the semester. And Dave's friend was this. I'm going to go think and I'm going to design and I'm going to make this, you know, platonic perfect form of the program.
+02:00:02
+And then I'm going to write it at the end when it's due. And I just went in and started hacking and he wrote one version of it, a second and third version, end of the semester comes around. The friends not doing too well. It wasn't perfect and it wasn't written. I'm not sure how that story ended, but for him but Dave's version was the fifth iteration was great. And so he'd done that with everything you need. And it's had browser.
+02:00:22
+And this really showed well in Phoenix what we called Phoenix and had to rename two more times.
+02:00:28
+And, you know, Blake went to Stanford. He became a Stanford student and couldn't work on it. Dave Hiatt went to Apple 2001. He was one of the founding safari team members. Interesting.
+02:00:40
+Wow. But he was still blogging about TABD browsing. I think Apple at some point said you have to have browsing. Yeah, but it was because of high. It high. It was quite a feather in their cap that Don Melton, who had been the interim manager for Safari from the beginning, had been in Netscape also. And so this diaspora of talent and yet high, it was still kind of writing blog posts about how to do Tab's right.
+02:01:04
+And at some point people said, don't don't blog about that. That's our proprietary tab technology. And it's like, no, it's not. It was an opera. And I find it.
+02:01:12
+So we had to replace people and we had been Goodyear, the New Zealander. And this guy, I mean, he stepped in to be the Firefox lead. And we also had this weird circumstance where AOL finally did notice that Netscape was kind of an albatross, that they'd bought it for no particular benefit. And even then, the AOL politics were also heinous, sort of East Coast politics. Remember taking two trips there because I was the principal engineer. And so as principal engineers got trotted out to do dog and pony shows in Virginia and the the AOL Upper Management was very East Coast and flavor.
+02:01:47
+And they were at that time merging with Time Warner, which might not go well. So one of these years we went out there and we were all doing dog and pony shows, and there were these characters that were sort of like marketing guys. One of them was wearing a cravat and one was named Reggie. And they were they were they were very you rather than Nonu or they were like, what's what's Stoneman's metropolitan film? You be urban hotbox.
+02:02:12
+We which was the they were they were funny and they were kind of useless and kind of preppy. And then the next year went back and I said, Where's Reggie? And it's like, oh, Richie's not here anymore. Because Time Warner realized that the merger wasn't in their interest either in the sort of knives came out. And this was these mergers really work. It's just very difficult. You get these giant companies and they think there's going to be synergy.
+02:02:36
+That was the 90's, late 90's watchword. And there wasn't synergy with AOL by Netscape and there wasn't synergy with Time Warner and AOL ever really work. Was that ever really cool, like the same kind of fire and excitement in Firefox eventually created? Was that ever there? And AOL? AOL was the right time to do a dial up service that got distribution by basically leaflet bombing, compact discs right on the country, and they beat out CompuServe and the other ones prodigy.
+02:03:06
+And then the web happened.
+02:03:07
+And so you had almost like this isolated continent, like some of the evolutionary biologists I followed, make fun of the the funny large mammal, you know, marsupial mammals of Australia, how how silly they are.
+02:03:22
+And so it was like Australia. And you saw it over time because they kept aging and they were using AOL to get online and they couldn't really use a Web browser. And it became sort of a a valued cohort because they're still have relatively high socio economic status and they have grandchildren. But it's going away. It's dying at some point towards the end of the aughts, that decade and then to the decade 2010 plus that Firefox became. A few of them came up in 2008, September 2008, but Firefox's was the sexy, cool thing that represented a lot of the cutting edge technology, all that kind of stuff, too.
+02:04:00
+It was amazing. People Rally and John Battelle did the first Web 2.0 conference, which eventually became huge, and they split it. But that was in 2004 when Firefox was out.
+02:04:09
+Craig's List was huge. It was killing classified revenue for newspapers, but there was just this ferment, people starting Wikipedia along there.
+02:04:17
+So much email was already done and it was an impressive Web mail. There were others before it like Hotmail. But Gmail is really impressive. From Google and Google Maps, people started seeing what can be done. They thought, how can you drag the map around? And, you know, how does that work? And it was all JavaScript and images.
+02:04:32
+And Gmail was 2003 for this. Yeah, I actually started quite early. It might have been two thousand, two or three. But by the time we started dealing with Google and Firefox to get the search deal, which was the main revenue source for Mozilla and still is 2004 early Sergey Brin, one of his trusted engineer guys, Fritz Schneider, made contact with me at Mozilla. And we started talking and we realized search and browser need each other. And this is deeply true, right?
+02:04:59
+This is still true. This why a lot of the search engines have their own browsers. Yeah. So in case people don't know, the main revenue source for the browser is the default search engine, which is kind of incredible to think about that. That is a revenue source. That's a little bit sad. Yeah, it leads to this capture or kill effect where you have the search engine on its own browser and other browsers may struggle to get distribution.
+02:05:22
+We talked about earlier. So where and you said you've figured out that Google is working on its own browser at some point.
+02:05:30
+That doesn't Ciccio 2006. So would you say Firefox versus was Internet Explorer part of the war here or was the firefighters just Chrome?
+02:05:38
+So Firefox didn't quite cause Microsoft to reconvene, i.e. they did do. István and I remember being on a plane back from the standards meeting standards meeting from Seattle, from Redmond, and there was some Microsoft guy in front of me. Turns out my wife knew him from her past life before he married and he was just this bearded big guy. And he was like, we should have just killed Firefox in the cradle. All we needed to do was add up, locking in and tabs and we could have made it in Firefox.
+02:06:07
+It's like should have, could have, would have Palen.
+02:06:08
+That was right behind him during that. But they didn't. They were slow and they István wasn't that great. And what really got them started I think was Chrome. And you know, I talked to Larry Page in twenty five. I think I said, you know, we're talking about the Firefox relationship. But he was also saying, what about Web kit? This was Apple's version of the old HTML engine from from Linux, the KDE side of Linux that was used in the Conqueror browser.
+02:06:36
+Also the case that Apple had forked and and in 2005 was when Apple's principals, including Dave Whyatt Majestical, some of my friends who were still there, said, we we must stop patch bombing this poor cultural project. We should make a proper Mazola like organization Web kitbag. Now, it wasn't a separate non-profit or anything. It was still Apple.
+02:06:55
+It was Apple controlled, but they made their Falke first class and they made it be something that they all worked in and lived in. And that was before Chrome and then Chrome. Larry Page said, What about what can I say?
+02:07:06
+Yeah, it's nice. I have friends who work on it. You might use that if you do around browser. Why don't you do your own browser? Don't worry about Firefox. You should do your own browser. You can have your own opinion of how it should work. And and sure enough, they did so by 2006, we knew they'd been working on some of the some of my friends who'd been at Netscape did the original demo. And the demo wasn't what you thought.
+02:07:24
+It didn't have the fast JavaScript yet that was still often in Denmark in the form, did have tabs, it had tabs because all browsers had tabs this point and it had this software fault isolation. They mentioned it was through process isolation. So in theory, each Tabassum operating system process. And so what's going to take your tab down? Well, work has bugs that can crash it, but Flash was still big then. All the restaurant sites, remember, and Flash crashed a lot.
+02:07:54
+So the demo that I heard about my friends, Netscape, Mozilla people did inside Google was the sad tab. They showed an early version of Chrome, which is this barebones tab browser. They loaded the site with a known flash flashbang and then suddenly flash crashes and everyone expected the whole browser to go down. But instead, you got this little sad face in the tab and you could reload it. And there it is again.
+02:08:15
+So this was this was an improvement. It was a real move for security. It was based on, you know, a company that called Green Border that had some really big brains, like all Ellingsen. I think it was involved and they'd done some exotic security stuff, but they ended up simplifying it to this process, isolation.
+02:08:33
+And it was good.
+02:08:35
+And Firefox didn't have it at the time. So we were still struggling with, you know, security bugs.
+02:08:42
+So we knew Chrome was coming, but it took two more years to come out and we were still getting, you know, the Google search. We were still making Google the default engine and Firefox was still growing in Firefox grew, I think, until 2011, and that was when it peaked. And as it started falling, it was because of chrome. Chrome came out in 2008 and it was book that leaked accidentally that showed some of the people who worked on it last block was in there and so on.
+02:09:08
+It was kind of a soft launch because they didn't market it heavily. They didn't push distribution. But Google had reason to worry about distribution because Microsoft was, you know, doing a search engine Bing since 2007. In fact, when they came out with Bing, Google was worried that Microsoft would just brute force switch the default browser and everyone's Internet Explorer or even Firefox on Windows to being from Google. And Microsoft wasn't, I think, already there. The antitrust cops that way, even though they've gone to sleep.
+02:09:39
+And I don't think thing was ready either. But just in case it happens, Sundar Pichai, who rose very well based on this work, was sort of in charge of getting distribution deals. And he got Google toolbar and Google desktop search distribution. And remember those pieces of software, those were like desktop extensions, toolbars or operating system extensions for doing desktop search in your local files, kind of like. That's right. Mackiewicz Spotlight suddenly died down and there were some features that we still missed that didn't make it into Chrome.
+02:10:11
+But Sundara got OEM's to bundle those and then he got enough of those deals that by two thousand, seven or eight, Google felt, well, if Bing Microsoft does the worst and tries to force Bing, we can reach in and reset it with that point of presence.
+02:10:26
+So that was good for Sundowners career and it was good for Google, but it never came to pass that they had to defend. Microsoft was still, you know, slow. And by the time they saw Chrome come out, then they did what would have been I9 and then they said, we're going to have a fast JavaScript engine to chakra taqwacore. And they did OK. They were another isolated fast JavaScript browser tab browser.
+02:10:49
+So it sounds like there's a deep fundamental coupling of search engine and browser that's mixing this whole thing up.
+02:10:56
+And obviously, Firefox doesn't have a search engine that's like I mean, you're partnering with with somebody with a search engine. Yeah. With with Yahoo! Or with you with Google or Yahoo!
+02:11:10
+That was unfortunate because I think even though Marissa Mayer talked about it, she never pulled it off and never restored the search team that had been laid off. I believe Carol Bartz was running Yahoo! And Carol said, I've got to get rid of one of the three expensive things I'm going to get rid of search. And those researchers went to Google and Microsoft and there was no way to put Yahoo! Search back together. So when Firefox tried switching other users who stuck with a default from Google Yahoo!
+02:11:39
+Like mid-December 2014. But users have what just happened to my Facebook and others didn't notice right away.
+02:11:46
+But over time they did. And so over the next year, the traffic just went away for Yahoo! And and yet they were obliged. I understand it. I don't have insider knowledge, but this is leaked out and Danny Sullivan's written about it. Search engine one. I think the deal was like fixed payments to Mozilla. So Mozilla was getting a bunch of money for traffic that wasn't staying because users were resetting their default.
+02:12:07
+And this shows how defaults are important. But they have to be good enough that the user doesn't override them. And, you know, a lot of the commercial value in popular apps is one of the default settings. What is the default search? But oftentimes there's something just like I said.
+02:12:22
+I mean, if there's something compelling that's also can beat out the default, like browsing and so on. Yes. And that's where I mean, we'll talk about brave browser.
+02:12:33
+It feels like now we're in this third stage where there is Chrome, Firefox edge, I guess it's called and brave. And these all seem like really exciting. I don't know, innovative browsers. They're all kind of copying off of each other, picking up the good stuff. There's evolution again, especially on tracking protection.
+02:12:57
+So privacy is this sort of global wave that's rising. I like to call it a wave because it's a large, somewhat chaotic structure. It's not a unitary good. You can't say I'm buying privacy for three dollars. I'm paying three dollars privacy. Some people think a VPN does this and are disappointed when it fails them. But often people use VPN for region unlocking video or getting the Netflix catalogue.
+02:13:22
+Exactly. But privacy is not a unitary good. It's complex and people are understanding it only over time. And if they get burned. But there's a genie that's not going back in the bottle there.
+02:13:32
+People are fed up. Apple has responded to this. Apple was always making safari, I think, more of a privacy branded browser from the very beginning. I think this is probably Steve Jobs. Safari had private windows, private tabs before Firefox did. And these are only private in the sense that they don't leave local traces, if you don't want them to safari, just keep them around between shut down. But the canonical model is no local traces after you close the window.
+02:14:02
+No no leftover traces that you went to, you know, some site that you were embarrassed by or bought a gift for somebody you want to keep secret. But there's still some level of tracking.
+02:14:12
+There's network tracking. There's a network. Privacy is not guaranteed at all because you're using the same Internet. And ISP is a public window, a non-profit window. But sorry, had that early on. They also have a cookie blocking policy that might take a little explaining when you if you know what a cookie is, it's a little bit of storage in the browser indexed by the name of the site, and it's really only the main name of the site like biodata.
+02:14:37
+Com or, you know, something like NPR Big.
+02:14:44
+Every site can store some information, a cookie every time it's contacted by the browser, the previous version is sent back and the response from the server, the cookies updated. So it's a little bit of storage in the browser that the site can keep updating and it can store an encrypted version of your login credentials with a timestamp so you can stay logged in without having to retype your password every time you navigate, which is how it would be if you didn't have cookies.
+02:15:12
+The Web protocols, especially in the 90s, are so called stateless protocols. So go to your bank, you log in, you go from your login confirmed page to your account view. If you didn't have a cookie, you'd be logging in again every time you had been.
+02:15:27
+So that was a great thing with cookies until he did it in a hurry in 1994 before I joined Netscape. And he did it for really holding that kind of credential. But even then, there was the image element embedded in the page and the image gets fetched possibly from a different server. And that request carries the last cookie, which could be empty at first and the response carries the updated cookie. So just by having images and cookies you have tracking, because that image server can be serving a little one by one pixel and they still use the word pixel on ADTECH.
+02:15:57
+And that pixel can be served from the same server embedded differently with different URL spellings in The New York Times ESPN. As you go from one to the other, the image server can say, I haven't got a cookie for you. It's empty. Initially, I'm going to assign you user number one, two, three, four and put a database entry in. And I see, by the way, I always fetch the name of the path, part of the URL that I was in The New York Times.
+02:16:18
+So you're a New York Times reader and then you had ESPN, same thing. And the database gets updated and the number used are one, two, three, four indexes in the database to a profile of you.
+02:16:27
+You've been tracked. This was not intended and it was too late to undo. By the time I got Netscape, I think we wanted to do Twinkie's.
+02:16:35
+He called them and he was trying to solve several problems. He wanted them to be bigger because initially cookies had a short size limit. I think he wanted to solve the third party problem. But Tom Pache, one engineer, managed that. No, no, Twinkie's just cookies were done. Done, son. And that's how a lot of that stuff was. That's how JavaScript, you know, got frozen like a fly. Anambra in some ways with that sloppy quality operator that I made because the early adopters and the cookie got stuck with this tracking hazard.
+02:17:02
+And then because JavaScript can be like images, they're embedded in the page. By the time Netscape three, I made that work.
+02:17:09
+You can get a request with the last cookie value and the response updates it. That's a tracking mechanism and that's why you don't even need images to track. Now you just use scripts.
+02:17:17
+So this whole tracking economy evolved and it it depended on these accidents of the 90's, these unintended consequences.
+02:17:26
+Well, it created some of the richest companies in the world, mean the social media.
+02:17:29
+All I got was t shirts. All I got is this crappy t shirt. Yeah. I mean, so that's that's the fundamental problem the world is facing now. They're looking at what social media has created and they're looking at and look at a world is looking at itself in the mirror and seeing that privacy is actually something, I suppose, to like a nice thing to have. It's something that is actually should be fundamental to the way we interact with the world as part of our choosing.
+02:18:01
+And that's where the brave browser comes in. And I suppose others as well apply this idea of is at the forefront of that. So maybe can you describe what brave is and what are its key principles and what's broken, what is it brave trying to fix? So when I realized that these accidents like the third party cookie, the image your script is tracking you or the JavaScript that can do it invisibly now that all this stuff wasn't intended and that Firefox had supported extensions that blocks some of these things, I thought probably we should have browsers just block some of these things by default.
+02:18:38
+These were not intended and they're now unsafe. They're tracking you. There could be data breaches, malware distribution, you know, bullying and psy ops and other attacks. Some people block that stuff, block that JavaScript, I'm Dr. Frankenstein monster here, but obviously you go to Gmail, there's so much a script there to make that amazing Web client.
+02:19:00
+That's OK. That's first party JavaScript. So how do you tell the first from the third party? And it's not easy.
+02:19:05
+It's not a matter of just what's embedded from a different server because a lot of publishers use benign scripts from unrelated domains or apparently unrelated domains. So you end up having to develop some sort of human and machine learning practice around blocking and at Brave. We did that from the start and built a research team to help drive it an automated. We realized that protecting people needed machine learning and around twenty seventeen spring. I talked to my friends at Apple about this too, and they were also doing what they call Intelligent Tracking Prevention, which uses local machine learning in the browser.
+02:19:40
+And the funny thing is, you know, great minds think alike. They were taking their third party cookie blocker that was inspired from the old days and making it not have a big loophole, because what they did was in 2003 when story came out, they said we're going to block cookies that are from those third party embedded elements where you've never visited that site before. So I'm going to pick it up. And a company that got sold to AT&T.
+02:20:03
+So I'm not picking on anybody unfairly. AppNexus dot com. Have you ever been to AppNexus dot com? No, I never been there. But I guarantee you, 10 years ago you probably had if you're using Firefox, you had a cookie, third party cookie because you're being tracked by them. And they were using that cookie to build up a profile of you in Safari. As long as the user never went to AppNexus, that cookie would not be set.
+02:20:23
+And that was a real move for privacy early on when jobs were still around in Safari.
+02:20:28
+But it had this loophole that if you do go to AppNexus, then why it's OK to be a third party cookie. And so AppNexus did something very naughty. They took their ad partners that put the actual ad you click on and they said, hey, had a little script so that when somebody clicks on the ad before it goes to your landing page, redirect to AppNexus and we'll redirect to the landing page. And by doing that, they set a first party cookie and they got white listed.
+02:20:50
+So there's a loophole. They exploited intelligent tracking prevention. And Safari was sophisticated enough to counteract this and it did other things and it's evolved since they did it. And we've evolved brave, too. And so when I say machine and human learning, there's a real set of techniques here.
+02:21:06
+They have to face, I think. Fascinating problem fingerprinting. Right. Any time you have a little bit of storage in the browser associated with a website, if the bad guy can get thirty two websites, each one has a bit of storage. That's thirty two bits. You can turn a bit on or off. You can make four billion numbers, you can make an identifier. It's called a super cookie. Sometimes it's a weaker ways that are statistical.
+02:21:29
+They're called fingerprinting. You have to block all of them and you have to not only automate, you want to work in the web standards body to put privacy in by default, by design from the get go, not added as an afterthought or, you know, go hog wild with new web apps, add a bunch more local storage or fingerprint surface area. And that's been a struggle, too, because guess who's the new Microsoft in the standards body?
+02:21:52
+It's Google and they're not in favor of privacy. First, they they want to do privacy their way only under, I would say, market pressure. But with Apple and with Brave leading the way, we block third party cookies, almost without exception. So we've just blocked them. And that gives us a very strong privacy benefit. But it also means some sites just don't work. Right? Embedded YouTube videos, might that work? Right. So we're adapting in a similar way to Apple's done with ITP to make third party cookies blocked, but to sort of simulate what looks like a working third party cookie for the site, essentially tries to partition each site and its third parties into its own sort of Qajar.
+02:22:35
+Got it. And so, like I said, is this both like a human fine tuning issue and a machine learning problem?
+02:22:43
+So unless you as humans learn, then they train the machine, learn.
+02:22:47
+But, you know, maybe Google side or including Google, there is millions of dollars, if not be billions of dollars to be made from fighting the ways of brave. That's right.
+02:22:59
+And it's been an interesting change from when we started in 2015 when we started, you know, ad blocking extensions. Adblock Plus was one of the big ones sort of in Firefox. And 2006, I believe, had gotten to a certain level of use around the world. And browsers like you see Web, you see browser in Asia had some amount of ad blocking built in and by default. So apage fair was a start up and they measured ad blocking adoption and they tried to say, hey, publishers, you're you know, 30 percent of the visitors to Pitchfork are wired to Conde Nast Properties are using ad blockers.
+02:23:33
+If we can somehow convince them to lower their ad blocking for your site, that could be like a forty three percent lift rate and three sevenths. Well, that's easier said than done and paid fair. And others source point that many others tried to either. Mongul adds or cajole the user into letting know ads appear, and it didn't really work. Meanwhile, the ad blocking adoptions just continued. Intelligent Tracking Prevention Safari in 2000. Seventeen brave from twenty sixteen on with very strong cookie blocking and other protections.
+02:24:05
+And this, this is not going away. The publishers used to rage against it. Like we would try to say we can help you. You're dealing with users who are already blocking all your ads. We can try to put back some economics that help the user and you. That led to the basic attention, Tolkan, that we started Bitcoin. We can be your friend. Don't don't just fingerprint us as an ad blocker and treat us as an enemy.
+02:24:27
+But in twenty, fifteen or sixteen, it's like you're an ad blocker. Get out of here. I hate you. And by twenty, seventeen or eighteen, it's like something's happening. The ad walking is not stopping and we're all getting sort of pulled on the Googles plantation through amp ampe or you know we're getting killed by the Google ad system we use because it's taking all the revenue or you know, it's permitting or some other vendors. We use a permitting ad fraud.
+02:24:50
+And so a fake New York Times is getting paid by the marketer running an ad that a bot clicks on. And the real New York Times it's supposed to get that doesn't get it.
+02:25:01
+And there's something really broken about that kind of stuff.
+02:25:03
+And that that fraud is mediated through Google's ad exchange, which is the biggest of them all. And Google takes a fee. There's a flip side of that, which is malware distribution, advertising, where fake advertisers put malware payloads in or explicit loaders in JavaScript and they smuggle them in ads onto real publisher pages. The ad exchange takes the fee. Now, I'm not a lawyer. I'm not going to say this is a RICO predicate, but why is the ad exchange facilitating fraud and malware distribution and taking a fee?
+02:25:32
+It's not right as opposed to just fighting. This is the really interesting thing about bravas as opposed to just fighting and then being treated like an ad blocker. You're providing an alternate.
+02:25:43
+There's a there's a philosophical idea here that might change the nature of the Internet with the basic attention token.
+02:25:50
+Yes, maybe. What is basic attention to combat and how does that work? OK, I'll tell the story first by saying how I came to it. I realized for a long time that Firefox we were dependent on this Google search deal. And I thought, you know, now that comes out, maybe that's going to go away. And they just thought at some point Google will say, you know, Firefox, you know, like Old Yeller, you saved me from the rabid beast.
+02:26:15
+Now you have to shoot you in the head. Yeah, done your job. Sad but true. Goodbye. And what can we do? And I think this Mozilla doesn't know what to do. This is something that I couldn't solve there. I don't think they can solve. But I thought, why is the browser the sort of passive servant of these big tech companies? Why is it a blind runtime for ADTECH JavaScript, including from Google? Why doesn't it block some?
+02:26:40
+And if it blocks some, why can't it reconnect users, readers, fans with publishers, creators, Web sites? Why can't it help people make direct payments or even possibly get an ad revenue share for private ads that are placed in the browser? The ads are all placed in the browser.
+02:26:58
+Some people have this sort of model that the servers painting the ad into some, you know, flash combined package or into some giant image and then all gets sent down. That's not how it works. All the ads you see on the Web are placed in your browser by calling out to various ad tech partners and Google's among them. And and so if you block those scripts, you you break the the advertising flow of money from the brands and their agencies to the publishers.
+02:27:27
+And if you want to reconnect it directly with the user, you have limited choices. The user generally isn't going to sign up with a bank connection or credit card. The the publisher isn't going to sign up the user except as the subscriber. And then they're going to overcharge you because they want you to cross subsidise all the content and buy more than you read and all that stuff. And how many people are doing great who are big names like New York Times, The Washington Post.
+02:27:49
+But how many subscriptions are you as a user going to pay for? This is why startups like Tony Hale Scroll are trying to do a portable subscription system.
+02:27:57
+But by the way, just a small tangent there.
+02:27:59
+Even The New York Times is really annoying how difficult it is to subscribe the way too many clicks.
+02:28:05
+They don't make it easy. And I had friends four years ago. I think they fixed this who would pay for the paper? And then they go online and they get charged for the digital. And there was no break. There was no connection between them. Yeah, but publishers are not that technical and they're they can't all get you to subscribe. You can't have a thousand subscriptions. So for a long time people talked about micropayment. There was BLENDE on other ones which came to the US but didn't grow.
+02:28:28
+And I thought if you have just a browser and it's protecting you by blocking all this attack, tracking junk. It can provide you an option that uses cryptocurrency to let you support your your favorite sites and even YouTube channels and that we prototype of Bitcoin, and that meant the user had to be of means to contribute and willing to contribute. But it could be done on the Bitcoin block chain and it could be fairly efficient, even though Bitcoin went through a period when we had this prototype running in two thousand sixteen into twenty seventeen, where Bitcoin was very congested and very slow to confirm.
+02:28:59
+And the fees got very high and a lot of users who were not Bitcoin maximalists or even experienced, we helped them out by embedding a Coinbase buy widget and they had the income to buy. But it was hard. It was like, do I buy five dollars a month? But the fee is like 450. I better, by and large, are batches. Right then then I don't want to own that much bitcoin. So it became this painful thing.
+02:29:22
+And the real idea that I had of private ads that pay the user a share couldn't be realized alone in that kind of system. In these cryptocurrency systems, especially with the block chain, we switched to Ethereum. You can have smart contracts. The Bitcoin system is not turned complete. So what you can do with a script is more limited, but you can still do sort of clever things. Even with Bitcoin script, what we wanted to do was sort of a three sided ecosystem.
+02:29:50
+We wanted users, creators or publishers and advertisers, and we wanted the advertisers to put money in just like they do today, but without going through the Googles and the AppNexus and all these other companies, because those companies take out a huge cut. The Guardian in the U.K. once did an experiment for a month. They bought out their own ad space. They put in the pound and they were paid 30 pence, 70 percent was coming out to the intermediary vendors they were using.
+02:30:17
+And that's like the opposite of what the App Store does. The App Store takes 30 percent and gives the publisher 70 percent.
+02:30:23
+So pretty broken. In the old days of Superstation TBS, the media owner would get eighty five percent. So these splits have become really unbalanced. And the middle players, the attack vendors are taking out way too much money and they're doing something worse, which has been noticed there.
+02:30:41
+They're letting not just the malware vendors, but also the ad fraud side, which fakes the publishers and click bait merchants come in and steal traffic from good sites because once you have a certain audience identified at one site, Jason Calacanis told me this about his experience with I guess it was Engadget which said he was running. But once he started using an ad partner that was sharing his audience information across multiple sites, he saw his competitors stealing all his traffic. And then what's worse is the click bait sites that just have much cheaper rates steal all that traffic and that facilitates, you know, fraud.
+02:31:18
+It facilitates fake news, all sorts of problems. So great blocks it. And then we give users the ability to give back. And because we invented the basic attention, took on a theory. And we can do this three way split and we can give users a share of the revenue. And if they want to take it out, they can. Now, unfortunately for us and for all block chain, the regulators are saying we're going to have to know who you are.
+02:31:42
+There's there's the Treasury Department's fencing agency. There's the Office of Foreign Asset Controls Fact. There's the, you know, other regulators and the federal government that take a very dark look at things like money laundering and sending money to someone named Osama bin Laden. So compliance starts to come in. And even now, they're threatening for pure Bitcoin, something to some address.
+02:32:08
+If you're a Coinbase, you're going to have to know who was at that address, your actual identities of people involved.
+02:32:14
+Now, with Coinbase members, you sign up and they know you and they comply with regulations. They're a regulated money services business. And but if somebody is using their own self custody, so-called self custodial wallet, where they have the hardware, private key and they're not named and they want to send to that address, our friends in the government are talking about requiring at some threshold knowing that is so some threshold that's unreasonable.
+02:32:41
+It's not that big.
+02:32:42
+Yeah. Yeah, I know how this will play out. I think crypto is here to stay. I think the beauty of being able to send peer to peer without any bank in the middle, without any, you know, huge wire charge and two day delay and all that nonsense is beautiful. I've used it.
+02:32:54
+I love it. But we're pragmatists, the brave about crypto. And we realize that anything like a revenue split we can't facilitate without being licensed in a certain way. And it requires knowing who the user is. So our default mode doesn't know who the user is. Instead, imputes to the user's browser some of the revenue and allows that browser to steer it back to the creators. And we do have to identify the creators. But as things improve and you know, who knows how it will play out, there should come a day when this this full mission can be done more fully on a block chain.
+02:33:26
+But regulations and the practicalities of today's walk change, which are not that fast and not anonymous over time, you fingerprint. Yourself, over time, we do some of this with the browser. So one of the ideas of the basic attention, Tolkan, is to make a hybrid system that stronger than block chain alone. It's the browser and the block chain and the browser is this trusted endpoint software. It's this universal app. Everyone uses browsers. The bigger the screen, the more you're in the browser and the less you install that.
+02:33:55
+Clients for things I use slack on on Mac OS and it's it's like a browser. It's based on an electronic framework we used to use.
+02:34:03
+And it's just it's not that great. Some people are brave. You slack in brave as a in the browser. Yeah I use that often. And I noticed on the iPad I use apps less the smaller the screen, you know the browser got handicapped by Apple and Android both. And it also you know, can be slower or not have the right affordance is the user interface with the security limited APIs. But in principle with the right permissions, you can make the Web browser just as good as any app.
+02:34:32
+You make it be a super app and that's part of our mission break. So we want to have the economics captured by these big tech companies through tracking and through social networks. We want to block that for your own safety and then let you opt into a cleaner world where you keep your data defended in your browser and you can actually realize value from it. So the way our ad system works, I mentioned that being private, but how does that work?
+02:34:54
+We don't see your data at all. All browsers are sort of the mother of all data feeds your history, all your searches that all engines, each engine sees the queries you send to it, but it doesn't see the others. But the browser sees them all. Machine learning in the browser that you can opt into can study all that in a very complete way and do a better job than Google this. Google has, you know, cookie and scripts across the web from occurring DoubleClick.
+02:35:17
+They have YouTube, they have Android, they have search, which is still their big revenue line, but they don't see everything.
+02:35:23
+The browser sees everything. And if it can do a good job locally and this is not advanced machine learning, this is not Tenzer for this is like CPMs now native bais.
+02:35:32
+Then you can match intense signals, intense signals from those data feeds, searches, the queries, the history, how much you're scrolling down the page, how much you it a search. It's all blind browser algorithm. We don't see that data and then pick the best ad from a fixed catalog per day. And the catalog is fixed across a large population per day and it only updates the date once today because new offers come in and opens fire, sometimes every week or every month.
+02:36:00
+And that catalog, and there can be many such catalogs is sold by our direct sales team. And so we're making an anonymous audience available to advertisers without the advertisers tracking them. Instead, each browser is there's a little machine learning system that's picking the best catalogue in the catalog. It's not the ads. Those are big. It's a video or web page. It's just the link to an edge cache. And there are many, such as caches. We're not trying to protect them from seeing your IP address.
+02:36:27
+It's not really feasible. We could use Tor, but we don't yet. And some keywords about the ad. So it's basically like metadata and a link and that's what the catalog consists of and that's what the machine learning and the machine learning is learning about you specifically locally. Yes, in order to choose from the catalog of different ads, couldn't possibly be like a multibillion dollar.
+02:36:48
+Isn't this taken on the Google ad A3? So like what? I mean, one question to ask. There seems to be some really profound ideas here that are different than what the Internet has grown up to be.
+02:37:02
+If brave or something like brave, the ideas, a fundamental philosophical ideas underlying brave went out and runs ninety five percent of the Internet. How does that change the what what are the major things, these changes about the Internet.
+02:37:20
+So social networks and then the creatives like YouTube creators and all that kind of stuff. So let's talk about that. First of all, if brave gets 95 percent, I'm going to demand a recount because I won't believe it.
+02:37:30
+I don't know. I think we're trying to put things into Web standards that can be standardized across browsers. So the main value of brave will be the trust users have in us and our ability to give the best deal to users. So 70 percent of the gross ad revenue we give to the user and if they go through that KYC process and they can take it out, they can also give it back. They could take some out, give the rest back.
+02:37:52
+They can add basic tokens to give back some of them, turn off the ads because you just don't like as. But they put in twenty dollars a month, I believe Zucco Extreme does that. And that's very generous because the browser is just anonymously based on his browsing sort of keeping score on how much time he spent on this video, on that website. And if those sites verify and sort of like getting a domain certificate fashion, they can get paid, they can get part of his twenty dollars a month.
+02:38:20
+So that vision could go big. And if it does, I hope it's across multiple browsers. I don't know that they'll all compete. Well, on the quality of the ads, the quality of the ad blocking and tracking protection, those those are subject to competition will take a while to standardize them. But I think that would be a better world, it would have less counterparty risk, fewer fee takers in the middle, really just the browser we're taking 30 percent sort of the aptness app store split.
+02:38:45
+And if we get bigger, maybe we can take even less social networks, creators. If you look at YouTube, there's a lot of them of the indies that are getting some size are getting sponsorship deals. They're using Patreon. They're encouraging people to subscribe and give them regular money through patron. But that centralized your patron. So there's censorship hazards. There's a five percent fee. What if that were substandard? What if brave pioneer at first and we took three percent and we did it in a way that was through your browser so we couldn't censor it as brilliant.
+02:39:20
+Yeah. Do you think it could be standardized across browsers? Can an explorer come in again?
+02:39:26
+And the protocols are easy to copy and that is meant to be interoperable. So it's there's a risk there and the loyal users might be tricked into leaving you. Or they might because of that distribution power, you might end up getting stomped. I don't know. I can't predict the future. I think antitrust is back on the case finally in the U.S. and certainly in Europe, Digicom is doing its thing. So I'm hopeful that we'll have a period of innovation.
+02:39:49
+You know, people were talking like Elizabeth Warren was talking about breaking up the tech tech companies very clearly. Now, she didn't win, and I suspect that won't happen. But I also suspect that Google might be smart enough to see they should do something more than just put privacy perfume on Chrome. They should maybe get rid of DoubleClick or something, divest something. I don't know.
+02:40:08
+It might happen. So, so brave my buy Google to completely change the way they're doing things and they're already doing something you may have read about called the Privacy Sandbox or FLOC, which is birdmen bird metaphor going turtledove fleg.
+02:40:23
+But these these these systems have been very googly kind of overengineer. And yet depending on differential privacy, which has weakness over time, if you know how that works, it's kind of injecting noise to hide you in a in a crowd. But over time, an adversary can pull you out of the crowd that this doesn't look like it's going to become a standard like Apple brave Mozilla. We're not going to just say, oh, Google, you've saved us.
+02:40:45
+You've invented the privacy sandbox. We'll just adopt it. Not going to be that easy. It's going to be more like pieces of what we do in Brave, this anonymous ad matching or the blind signature cryptography. We used to confirm the ad impressions. That's David Chum's invention that could get standardized. In fact, some of that is being standardized. Even Google is in favor of so-called trust tokens, which are Charmian blit signature shirts, but they're not using them for ad confirmations because they don't want to blow up their own business.
+02:41:12
+And they need to let some of the publishers they serve have other attack scripts on the page. And so they're kind of caught. And this is something I realized doing great. I thought, what's Google's innovator's dilemma? Apart from just, you know, being mature and having trouble innovating, it's that they have come to depend on this ATEC system that has all these these vendors that are publishers rely on because publishers aren't technical enough. And I feel for the publishers, but I realized the users have to come first.
+02:41:40
+And if you give the users a better browser, that's faster, then you'll get enough users to give back or support publishers. The speed and the battery savings and the Dataplan savings are significant. There's so much bad JavaScript involved in ADTECH. If you block it, you sort of chop off the what's called the programatic waterfall, which chains a bunch of requests. Yeah, that's one of the incredible things about brave. I guess you're saying you should attribute it to the fact that the messy JavaScript no offense.
+02:42:07
+No, that's not my solution.
+02:42:10
+Is it mean brave just feels faster even than I mean, chrome is fast. And one of the things that it was like impressive is it showed that browsers can be really fast and brave is even faster than that, which is like so much. And it saves the network. It's which means Dataplan. It saves battery because the radio consumes your battery when it's running more to do those requests. And it's just stunning how many there are. Like some of my Google friends were like, oh, that's just that bad site.
+02:42:36
+They'll fix it. And you actually do a survey of Web pages that's mostly like that. I know Google or Google engineers could make everything super efficient, but they can't, especially in Italy. France can't do it. They cannot take over all the publishers and do that. They're trying with accelerated mobile profile ampe they're trying to pull publishers are like, oh, you poor publishers don't know how to make your pages fast. Put them on our AMP system.
+02:42:59
+We'll give you extra placement in the search carousel. That's an antitrust problem for one, but it's also publishers we talk to hate it because it degrades their brand. Now they look like a gig. Writer wrote a piece that's got Google's framing and AMP URL on top of it and they're trying to fix that too.
+02:43:14
+But it just looks like a Google board defying all these publishers and they don't want to be plugged into the board cube. They want to build their own brand and have loyal readers. So, you know, I'm in favor of giving the users power to help all the publishers and the little platoons and the creators. And so we talk to a patron. What about social networks? Well. Are inherently like search a global algorithm, you're trying to find friends of friends who are doing the transitive closure of a graph induced by this friend of relation, but.
+02:43:44
+You should own your friend relation, you should own your posts, they shouldn't be owned by somebody else who can take them down or censor them and your friend relations, you should be able to find those friends on other networks. And so I've tweeted about this. I haven't built it yet.
+02:43:57
+What if the browser could keep track of those for you? What if the browser could maybe combine Facebook and Twitter and you could find your friends on both and you could have sort of that relationship is not owned by Facebook or Twitter.
+02:44:10
+It's owned by, you know, have terms of use and instead they own it. But if they zap you on one and you're still on the other, your friends find you and the browser could serve a combined view.
+02:44:21
+You could resurrect almost across networks as something I want to maybe quickly ask you about on that front. There's been quite a lot of centralized. We talked about Wall Street bets and Robin Hood has been centralized banning of different accounts and removing like Parlo, for example, from W.S. in this kind of overreach of centralized control, is your hope that it's possible to ask, what are your thoughts about that in general?
+02:44:51
+Is it and then is it possible to create tools that give individual people the power to fight back against overreach of such control? So we're talking about oligarchy, I do think, and that if it controls a nation state that's formidable, it's the tax and the police power, the military power, it means that you may have the Great Firewall of China. You may have people in China who are jailed because of their tweets. This is a serious threat. I can't minimize it or say that will win.
+02:45:19
+I don't know how it's going to go. But I do think, like I said earlier, about the kind of reason people find ways around things, the Internet routes around censorship. And this is not to endorse any particular bad faction. One of the things that happens when you try to waive the free speech flag too much, you say I'm not going to censor anything and you get colonized by terrible, terrible people. I guess I don't care if you call neo-Nazis.
+02:45:40
+Some of them could be doing illegal things and you don't want them colonizing because it'll ruin your reputation and destroy your business. So what you really want is that kind of user first subsidiarity, that subjectivity. I want my social networks to be composited in some multi social user interface where I don't lose track of people across networks. And if they leave one or they get banned when I can find them on another, it can still sort of thread them together.
+02:46:05
+Yeah, that's brilliant. And this didn't happen because browsers got captured by the central powers. Why did they get captured? Mostly because of search and search is a central algorithm. So, you know, Larry Page said this too many years ago. He said with search, you're giving up a little privacy by handing the query over to us. And we'll air correct that. Alan Eustace used to be a Google and Google executive. He said, oh, yeah, we used to laugh.
+02:46:26
+They'd all be doing typos and they'd be typing the wrong words. Like, no dummy typed that query.
+02:46:30
+And it's like, OK, Google might want to dial back that ego a little bit. But yes, you do see all the queries and you can improve them and you can find the best results. And that was Google's forte when we did the Firefox deal. And that's for Google was really good. And over time, you know, SEO, which is an adversarial game. Yeah.
+02:46:47
+And Google itself buying all these companies and crowding its own results page with its own tied in the stuff that used to the slippery slope that happens when you when when you have control over these kinds of really important mechanisms as monopoly capitalism or cartel.
+02:47:03
+You get this with the Robin Hoods and the hedge funds. You get sort of the money interests take over and kind of abuse their power and wear out their welcome. So what how do you get around that?
+02:47:12
+You have to have either new land to go to, which, you know, some people's ancestors, not mine, did to found the country, mostly Irish, German. You have new virtual space people go to. And that requires, you know, an ISP to or a kolo center or Amazon to host you. It requires domain name registrar who will not strike you. And so you want parler was taken down. You know, I thought that was egregious parler.
+02:47:42
+I it was not well designed and I tried it out because I tried all these things. Yeah. But I didn't use it. And I also felt they were being unfairly scored for not moderating because you can find tweets this day that are horrendous and threatened also with the violence, whereas Twitter, why isn't Twitter being taken down? But it was very selective. It was the insiders who have the power are going to take out the new newcomer. And it looked bad, sort of like the the hedge funds shorting GameStop looked bad.
+02:48:08
+You know, you're seeing a piece in Time magazine this week that's like basically saying, yeah, we interfere with the election. But it was great, aren't we? Good. I don't know if you see this piece.
+02:48:16
+You know, if you tried to say that as a Trump supporter in November after the election, you get banned from Twitter. But now time in its Twitter account is saying, you know, we save the day. We, the AFL-CIO and big business, the Better Business Bureau got together. Thing kept Trump from spreading fake news.
+02:48:35
+So the country is kind of broken. I don't know how to fix that. The oligarchs have run wild, in my opinion, and big tech is in the antitrust. What's going to happen? I don't think to get out I think some of the DOJ and certainly the state cases, because they're separate cases, are not going to go away just because somebody got elected differently. And these are career prosecutors and they have a strong case. And Google smart and Microsoft almost got split up.
+02:48:59
+Right. The judge, Thomas Penfield Jackson, he overreached. He didn't hold a hearing about the remedy. He just said, I'm going to break you up. And Microsoft appealed in the higher level court said, go back and figure this out. You're not breaking them up. You didn't even hold a hearing. And when they got back, Microsoft said, let's settle, let's settle. We don't get broken up because Jackson was going to make the OPKO, the operating system company and the Abascal office word and Excel.
+02:49:25
+And that would have been a huge blow to Microsoft.
+02:49:28
+So but ultimately, I don't know I don't know if you're optimistic or cynical about the possibility of breaking up big tech. To me, I'm optimistic that tools like Brave.
+02:49:40
+I love the idea of owning your friendships like yours users more and more owning the stuff is the only real way. Unfortunately, like the Wall Street best suburb is the only real way to fight to centralized power. You can't break them up. The regulation is very want on wait for the law. Netscape was long dead or acquired by AOL and effectively dead.
+02:49:59
+It was only Mazola that returned Firefox to the market by the time that the Yousefi Microsoft case was finally settled and the penalties were put in place. And yet antitrust has a role to play.
+02:50:11
+Those penalties cost Microsoft to kind of turn away from the Windows Vista and they thought the web's too painful. We got punished in court and we got we had to standardize things with those standards people. So they ran back to proprietary lock in and Windows Vista flopped.
+02:50:25
+It was late. It was bloated Longhorn. Now, what Google was going to say, Google smart enough, they won't get split up. They'll put something out to get off the hook. I think this is a complicated subject, but I myself was so I decided to journey out from the world of being a researcher at MIT and potentially doing a startup myself. And I've been thinking of, you know, I wanted to come to Silicon Valley to do so.
+02:50:54
+It's the land of the entrepreneur. And there's a lot of my friends, a lot of them are successful. They have been entrepreneurs themselves, has said do not come to Silicon Valley. It be you you started you ran amazing teams of engineers. You started a lot of successful businesses. I wondered if you could comment on why a lot of people are leaving California. Is there something that can be fixed by California? If you were starting a business today, would you consider somewhere else like Austin or some other place, or is Silicon Valley still is it just a little lull?
+02:51:31
+Everybody's being overdramatic during this particular year, the coronavirus and so on.
+02:51:36
+I think, you know, even Austin's getting overheated, I hear. And I've had relatives and friends moved to Texas within the last few months. So Texas is a big place. And, you know, people are moving to Florida. There's a big movement toward Miami. Peter Thiel. Keith, for all of these people, the mayor has been very business friendly about it, which I think it's just good politics. The America is fundamentally a commercial republic.
+02:52:01
+So you would think this would be what's happening for a long time in California was the Golden State. I came here in late 76 when I was a teenager. It's in crushing debt to the lockdown's. It's got the highest taxes. That's got to matter. People will do flee to high taxes. It's got like fires every year because of the deadfall. It's not global warming. It's because the forests weren't managed like they had been in the first part of the twentieth century.
+02:52:29
+Just, I would say corruption at all levels, especially up to the governor who famously was eating at the French Laundry and a claim that the outside it was inside and they were up and it was great. Do what I say, not what I do. Rules for the but not for me.
+02:52:46
+When you see that in leadership, people either run or they they get rid of the leadership.
+02:52:51
+So there's a recall drive which is about to reach the threshold or in the old days, they get their guns. Right.
+02:52:56
+You don't put up with this junk. But ultimately, the thing that made Silicon Valley a special place, it gave freedom to like young kids, entrepreneurs, young minds, brave minds to think bold, to try different stuff. I mean, even if the taxes are high. So outside of financial stuff, outside of all of that housing, super expensive housing.
+02:53:18
+So it's hard, OK, everything about it was narrow and they didn't plan the roads, right? Yeah. They got rid of public transportation in L.A.. Like who framed Roger Rabbit cartoon show these trolley cars in Portland to the oil companies and the DOD conspired to build highways and make cars dominant and the rights of way are long gone like Elon is going to go underground.
+02:53:40
+I him. Well, it's probably the only way to do it now. But it's still a place do you think it's possible that Silicon Valley is still a place where magic happens, where the next Googles built for the next I mean, brave is built where I think all good things come to an end?
+02:53:55
+I think the problem is Silicon Valley had strong network effects through Stanford, through the angel investor networks and the wealth effect. And originally, you have to give the federal government credit like the ARPANET was a government project. Let's not kid ourselves. This wasn't wild, free market libertarian capitalism. This was all Cold War stuff you had out of academia. You had Shocklee and then the traders aid and Fairchild and Intel and but now, you know, once the last fab that was built in the Valley Micro Unit, you might have been the last I don't know, I haven't followed.
+02:54:28
+But we built a fab in Sunnyvale and in my community in the early 90s. And now the fabs are overseas. And the one thing that I would say that the oligarchs have intentionally done in both parties is sort of labor and environmental protection law arbitrage by going where the labor is cheaper and the environmental laws aren't strict. And, you know, that's polluted the hell out of parts of China, but it's made things you can make cheaper junk. And this this is not this is not a story.
+02:54:58
+It's over yet. So what is talking about it for now? It's for the network effect. The brain trust of who? You know, the parties, the Stanfords sort of network. That's fragile, too, over time, I'm afraid. Right. Stanford, a lot of good professors are like they still filter mainly based on socioeconomic status, but it's kind of a skate school. I had a friend hired out of Harvard twenty years ago at Netscape and we talked about Harvard.
+02:55:29
+And yeah, they're still professors are great on the curve. And I said, oh, yeah, I don't think they're any doing that at Stanford. Yeah. Oh, it was shocking. Some of the students got season D and they were crying. So I guess that's right.
+02:55:39
+The Precious just can't take that at Stanford. So they get A's and B's.
+02:55:43
+Now you look at China and they we all about China.
+02:55:47
+They screwed Russia to a lot of math, science trading, a lot of engineering, a lot of people who are doing their coursework to get the A's and B's.
+02:55:56
+So I'm an American. I'm born on the Fourth of July. Fourth of July.
+02:56:02
+Yeah. Wow. And America, as I say, fundamentally is a commercial republic. You can try to make it something else. You can see it's the new Atlantis and mystify it. You could you could talk about it in the more, I think, correct way, which is 13 colonies that grew.
+02:56:13
+And then there's a lot of local or in the original design. Anyway, the federal Federalist Papers talk about this is a lot of subsidiarity, but that's that's been eroded over time. And like I say, a lot of the offshoring has hurt. So what happened with coronavirus people working from home? And at first was funny because I have friends of Google who used to grumble that not only did they have to come into the office, if they join a different team that was sent in a different office, they had to move.
+02:56:39
+Or, you know, if if the VAT team was reconstituted in Munich, which it was after last, the JavaScript that they hired in Munich, they hired PhDs in Germany, moving to Munich with coronavirus.
+02:56:52
+Everyone's working for home. And it's like, what a relief. I can work for Google from home.
+02:56:55
+But then the next shoe dropped and people started asking Mark Zuckerberg, hey, can I move to my hometown in the Midwest? Yeah. And he said, OK. And they said, Oh, can I keep getting my Silicon Valley pay? No.
+02:57:07
+We're going to figure out what your cost of living there is and we're going to adjust your pay accordingly.
+02:57:11
+And these colonies in these little mini experiments that all combine to the big giant experiment, I have a. I don't know, I have this vision of America as a country. I was born in Russia. Like I said here, and this is truly a wonderful country. I wasn't born on the Fourth of July.
+02:57:27
+People still people still I still and I'm Red-Blooded American at this point.
+02:57:32
+And I have a sense that we figured it out somehow. If Silicon Valley burns, another place will come up in its place that even more innovation and people will move and the remote work might change fundamentally how we work or might not. It might just give you the freedom to then create many other small Silicon Valley's throughout the place that Austin included, but other places as well. And we somehow figure it figured it out.
+02:57:58
+And I think that's that's true, that there will be more mobility and maybe new places to come up. I don't know if Silicon Valley has passed some sell by date because it did hurt the coronavirus, hurt the lockdown's hurt in the sense that part of what keeps things going is social. And so a lot of young people, even before Coronavirus moved to San Francisco, it was very strange to watch because in the 80s, we all lived in the valley and it was less populated and San Francisco was grungier.
+02:58:26
+It was more like Dirty Harry in the 70s. But but by the 90s and Jimmy runs a nightclub there and he's talked about this, you had sort of wealthy tech people moving in south of market, fancy townhouses being built. And that's continued such a point that it's almost like what's the movie by the South African director, Nelson, Jodie Foster, up in the space colony. Matt Damon is the guy in the earth who gets to go up. And anyway, it's about the stratifications, it's about the great inequality.
+02:58:52
+The people in the space station have amazing medical docs that can extend their life or save them, cure cancer. People on Earth are all suffering ground down in poverty.
+02:59:03
+And, you know, that sort of happened while I was here.
+02:59:07
+You saw a lot of money drive prices up along the narrow peninsula and the single people wanted the nightlife to in the city and the condos in the city got super expensive. And, you know, even Google friends who are, you know, socially responsible say we should have more housing built. We should have. Yes, in my backyard, not not in my backyard. But that's not happening as far as I can tell. And from the government to the incumbent, you know, landowners and renters, it's just not happening.
+02:59:35
+And that has to drive people away. I appreciate that people come here and you should wait for the prices to rise. They will. But but a lot of people are going to go where the prices are lower.
+02:59:48
+You are in sorry for silly questions here, but just looking back, you have created things have been part of creating things that have transformed this world, the world of technology, perhaps more than almost anything else.
+03:00:04
+Um. But you're still a human being, and unfortunately, this ride ends, do you ever think about your own mortality? Not too much, I mean, I'm I'm a Roman Catholic, so I am not afraid of death. I think a lot of people who have problems with death are suffering from some lack of either faith in their transcending death or maybe they don't have children or they feel like, you know, they get later in life and they feel like they they've missed opportunities to do something that endures.
+03:00:41
+And I sympathize for it because I'm old. I got married fairly old. So I understand all that. I nothing human is alien to me is as Terence said, but I don't fear it.
+03:00:54
+Now, what do you hope your legacy is?
+03:00:57
+It's going to be JavaScript. I think you. No, I think my legacy has more to do with my children and their children.
+03:01:04
+I think it also has to do with Web standards. It has to do with things like brave, the things we did with Firefox when we did, you know, I'm not going to oversell very, but I think brave is important. And we continue to prove this in a way that counts for many decades to come. But even Firefox, whatever its future fortune, showed you can restart the browser market. The thing you said about people opting out and routing around, you don't need everybody to do that.
+03:01:29
+It's more like Tellabs stubborn minorities than do that. It's the lead users, hippo's lead users. You can be a few percent. You can tilt the market and that can be done in spite of the incumbents, the moneyed interests not being in favor of what you're doing. So I think what we do with Firefox won't be forgotten and it needs to be done more. And we're doing it brave. And you could argue that other products are doing it in some ways.
+03:01:50
+Block chain is doing it. The Robin Hood take down the use of Robin Hood by the the Wall Street. That's kids similar. So, yeah, that that kind of spirit endures. And I think it in some ways it's American, right? It's it's not hard revolutionary. It's not trying to burn the past and destroy everything. It's more like. We have these certain, let's say, rights, we have duties to so there's some debate about which comes first in American jurisprudence and the founding documents, but as long as things are working well will be like pragmatic Americans like to talk described in his writings.
+03:02:30
+But if things get out of whack for one reason or another to an equal to all garchik and abusive, we're going to start our rights and even a few of us can do it. And even in the American Revolution, it was the minority who fought and put their lives treasure in sacred honor. At stake it was a bunch of people went to, you know, Upper Canada, I think it was called Ontario.
+03:02:51
+And that's the beautiful. I mean, that's that is at the core we work stands for is that a few people can have the power to transform society with just a few radical ideas, with just a little bit of code change, the world got to do it. And that's empowering. And that is the American way. That's why this country is, I believe, the greatest country on earth. That's not over. Romanticize it too much. But I think some special things have already happened in this country and will continue to happen.
+03:03:19
+And that's and that spirit can continue no matter who comes here. They can they can adopt those folk ways and that spirit.
+03:03:26
+But I can't tell you how much I was freaking out, how much of an honor just to talk to you. You're an incredible human being is one of my favorite conversations ever. Thank you so much for wasting all this time with me. I really appreciate it. Oh, it seems like a breeze.
+03:03:38
+My pleasure. Thank you for listening to this conversation with Brendan like a thank you to our sponsors, Jordan Hama, to show son basketball delivery service, better help online therapy and sleep self cooling mattress. Click the sponsor links to get a discount and to support this podcast. And now let me leave you some words from Jeff Atwood. Any app that can be written in JavaScript will eventually be written in JavaScript. Thank you for listening and hope to see you next time.

@@ -1,0 +1,1224 @@
+00:00:00
+The following is a conversation with Chris Lardner, his second time in the podcast. He's one of the most brilliant engineers in modern computing, having created a VM compiler infrastructure project, the client compiler, the swift programming language, a lot of key contributions that have flown TP use as part of Google. He served as vice president of Autopilots Software. Tesla was a software innovator and leader at Apple and now is at sci fi, the senior vice president of Platform Engineering, looking to revolutionize chip design to make it faster, better and cheaper.
+00:00:36
+Quick mention of each sponsor, followed by some thoughts related to the episode four sponsors Blankest, an app that summarizes key ideas from thousands of books I use in almost every day to learn new things or to pick which books I want to read or listen to next. Second is Nero, the maker of functional sugar free gum and mints that I used to supercharge my mind with caffeine, Athenian and B vitamins. Third is master class online courses from the best people in the world, and each of the topics covered from rockets to game design to poker to writing and to guitar.
+00:01:13
+And finally, Kashyap, the app I used to send money to friends for food, drinks and unfortunately lost. But please check out the sponsors in the description to get a discount and to support this podcast. As a side note, let me say that Chris has been an inspiration to me and a human level because he is so damn good as an engineer and leader of engineers. And yet he's able to stay humble, especially humble enough to hear the voices of disagreement and to learn from them.
+00:01:43
+He was supportive of me and this podcast from the early days. And for that I'm forever grateful. To be honest, most of my life, no one really believed that I would amount to much. So when another human being looks at me, it makes me feel like I might be someone special. It can be truly inspiring. That's the lesson for educators. The weird kid in the corner with a dream is someone who might need your love and support in order for that dream to flourish.
+00:02:10
+If you enjoy this thing, subscribe on YouTube, review the first version of the podcast, follow on Spotify, support on Patrón or connect with me on Twitter, Allex Friedemann, as usual. I do a few minutes of ads now and no ads in the middle. I try to make this interesting, but I give you time stamps. So if you skip please to check out the sponsors by clicking the links and description, it's the best way to support this podcast.
+00:02:34
+This episode is supported by Blankest, my favorite app for learning new things. Get it a blink is that complex for seven day free trial and 25 percent off after Blankest takes the key ideas from thousands of nonfiction books and condenses them down into just 15 minutes they can read or listen to. I'm a big believer of reading at least an hour every day. As part of that, I use Blankest almost every day to try out a book. I mean, otherwise never have a chance to read.
+00:03:04
+And in general, it's a great way to broaden your view of the ideal landscape out there and find books that you may want to read more deeply. With blankest, you get unlimited access to read or listen to a massive library of condensed non-fiction books right now for a limited time, Blankest has a special offer just for you. The listener of this podcast, Go to Blink, is that councillor's likes to try it free for seven days and save twenty five percent of your new subscription as Blink is that councillor's Lex Blankest spelled B I, l and K, I just I'm not very good at spelling.
+00:03:42
+OK, this show is also sponsored by a company that makes functional gum and mints that supercharge your mind with the sugar free blend of caffeine Athenian and B6 B twelve vitamins. It's loved by Olympians and engineers like I personally love the mint gum. It helps me focus during times when I can use a boost. My favorite institute for like ten minutes at the start of a deep work sessions behind a standing desk typing frantically. That's what I need the energy most, I think, to get the ball rolling.
+00:04:16
+By the way, Cal Newport, author of Deep Work book I highly recommend, will eventually be on the podcast. I talk to him often. He's a friend. He's an inspiration. He has his own podcast. He should also check out call deep questions. Anyway, each piece of neuro gum is about one half cup of coffee worth of caffeine. I love caffeine. I also just love coffee and tea. Makes me feel like home. Anyway, Neuros offering 50 percent off when you use collects at checkout.
+00:04:44
+Go to get neuro dotcom and use Scolex.
+00:04:48
+This shows also sponsored by Master Class one hundred dollars a year for an all access pass to watch courses from literally the best people in the world and a bunch of different topics like Chris Hadfield on space exploration, Neil deGrasse Tyson, a scientific thinking and communication world. Right, creator of SIM City and Sims, both one of my favorite games, Carlos Santana, one of my favorite musicians on guitar, Garry Kasparov on chess, you know, say more about my favorite chess players and Danny on the ground on poker, many more.
+00:05:21
+Maybe one day I'll do a master class on how to drink vodka and ask overly philosophical questions of world class engineers who are too busy to bother with. My nonsense, by the way, you can watch it on basically any device. Sign up a master class. Dotcom's class looks to get 15 percent off the first year of an annual subscription. That's master class dot com slash Lex. Finally, this shows presented by Kashyap, the number one finance app in the App Store, when you get it, Use Collects podcast, catch up, lets you send money to friends, buy Bitcoin and invest in the stock market with as little as one dollar.
+00:05:59
+I'm thinking of doing more conversations with folks who work in and around the cryptocurrency space, similar to I think, but even more so. There are a lot of charlatans in the space, but there are also a lot of free thinkers and technical geniuses whose ideas are worth exploring in depth and would care if I make mistakes in guest selection and details and conversations themselves. I'll keep trying to improve correct where I can and also keep following my curiosity wherever the heck it takes me.
+00:06:32
+So again, if you get cash out from the App Store or Google Play and use the Code Leks podcast, you get ten dollars in cash. Will also donate ten dollars. The first, an organization that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Chris Ladner. What are the strongest qualities of Steve Jobs, Elon Musk and the great and powerful Jeff Dean since you've gotten the chance to work with each of you, starting with an easy question there?
+00:07:25
+These are three very different people. I guess you could do maybe a pairwise comparison between them instead of a group comparison. So if you look at Steve Jobs in Iran, I worked a lot more with Iran. They did with Steve. They have a lot of commonality. They're both visionary in their own way and they're very demanding in their own way. My sense is, Steve is much more human factor focused where Elon is more technology focused, whereas human factor, I mean, Steve's trying to build things that feel good, that people love, that affect people's lives, how they live.
+00:07:58
+He's looking into into the future a little bit in terms of what people want, or I think that Elon focuses more on learning how exponential his work and predicting the development of those still worked with a lot of engineers.
+00:08:13
+It was one of the things that reading the biography and how how can a designer essentially talk to engineers and get the respect? I think so I did not work very closely with Steve. I'm not an expert or my sense is that he pushed people really hard. But then when he got an explanation that made sense to him, then he would let go. And he did actually have a lot of respect for engineering. And but he also knew when to push.
+00:08:38
+And, you know, when you can read people well, you can know when they're holding back and when you can get a little bit more out of them. And I think he was very good at that. I mean, if you if you compare the other the other folks, so Jeff Dean is an amazing guy. He's super smart, as are the other guys. Jeff is a really, really, really nice guy. Well, meaning he's a classic Google or he wants people to be happy.
+00:09:04
+He combines it with brilliance so he can pull people together and really great where he's definitely not a CEO type. I don't think he would even want to be that, you know, CEO programs.
+00:09:16
+Oh, yeah, he definitely programs. Jeff is an amazing engineer today, and that has never changed. So it's really hard to compare, Jeff, to to either of those two. He I think that Jeff leads through technology and building it himself and then pulling people in and inspiring them. And so I think that that's one of the amazing things about Jeff. But each of these people, you know what? The pros and cons all are really inspirational and have achieved amazing things.
+00:09:43
+So, yes, it's been a it's been I've been very fortunate to get to work with these guys for yourself.
+00:09:48
+You've led large teams. You've done so many incredible, difficult technical challenges. Is there something you've picked up from them about how to lead? Yeah, also, I mean, I think leadership is really hard.
+00:10:01
+It really depends on where you're looking for there. I think you really need to know what you're talking about.
+00:10:07
+So being grounded on the product, on the technology, on the business, on the mission is really important, being understanding what people are looking for, whether they're one of the most amazing things about Tesla is the unifying vision. Right. People are there because they believe in clean energy and electric electrification, all these kinds of things.
+00:10:28
+The other is to understand what really motivates people, how to get the best people, how to how to build a plan that actually can be executed. Right. There's so many different aspects of leadership, and it really depends on the time, the place, the problems. You know, you know, there's a lot of issues that don't need to be solved. And so if you focus on the right things and prioritize, well, that can really help move things to interesting things you mentioned.
+00:10:50
+One is you really have to know what you're talking about, how you've. You've worked on a lot of very challenging technical things. Sure. So I kind of assume you were born technically savvy, but assuming that's not the case, how did how did you develop technical expertise, like even a Google you worked on?
+00:11:14
+I don't know how many projects, but really challenging, very varied compilers to use hardware cloud stuff, a bunch of different things.
+00:11:23
+The thing that I've become comfortable is I'm more comfortable with as I've gained experience is being OK with not knowing. And so a major part of leadership is actually it's not about having the right answer. It's about getting the right answer. And so if you're working in a team of amazing people, right. And many of these places, maybe these companies all have amazing people, it's a question of how do you get people together? How do you get how you build trust?
+00:11:50
+How do you get people to open up? How do you people get people to, you know, be vulnerable sometimes with an idea that maybe isn't good enough, but it's the start of something beautiful. How do you how do you provide an environment where you're not just like Top-Down? Thou shalt do the thing that I tell you to do. Right.
+00:12:07
+But you're encouraging people to be part of the solution and providing a safe space where if you're not doing the right thing, they're willing to tell you about it. And so you're asking dumb questions. Yeah, tough questions are my specialty.
+00:12:19
+Yeah, well, I've been in the harbour recently and I don't know much at all about how ships are designed. I know a lot about using them. I know some of the principles and the ARS Technica level of this. But it turns out it turns out that if you ask a lot of dumb questions, you get smarter really, really quick. And when you're surrounded by people that want to teach and learn themselves can be a beautiful thing. So let's talk about programming languages, if it's OK for the highest absurd philosophical level, because I don't get romantic comedy.
+00:12:50
+I will forever think and torture. I apologize.
+00:12:56
+Why do programming languages even matter?
+00:13:00
+OK, well, thank you very much. You're saying why should why should you care about any one programming language or why why do we care about programming computers or.
+00:13:07
+No. What do we care. Why do we care about programming languages, design, creating effective programming languages. Choosing a one programming languages which is another programming language, why we keep struggling and improving through the evolution of these programming languages. Sure. OK, so so I mean, I think you have to come back to what are you trying to do here? So we have these these beasts called computers that are very good at specific kinds of things and we think it's useful to have them do it for us.
+00:13:37
+Right now, you have this question of how best to express that, because you have a human brain still that has an idea on its head and you want to achieve something. Right? So while there's lots of ways of doing this, you can go directly to the machine and speak assembly language and then you can express directly what the computer understands. That's fine. You can then have higher and higher and higher levels of abstraction up until machine learning when you're designing a neural net to do the work for you.
+00:14:04
+The question is where where along this? Where do you want to stop and what benefits do you get out of doing so and so programming languages in general, Yevsey of Fortran and Java and ADA Pasko. So if you have lots of different things, they all have different tradeoffs and they're tackling different parts of the problems. Now, one of the things that most programming languages do as they're trying to make it so that you have pretty basic things like portability across different hardware.
+00:14:31
+So you've got I'm going to run on an Intel PC specifically. I'm going to run on our phone or something like that phone. I want to write one program and have it portable. And this is something that somebody doesn't do. Now, when you start looking at the space of programming languages, this is where I think it's fun because. Programming languages all have trade offs, and most people will walk up to them and they look at the surface level of syntax and say, oh, I like curly braces or I like tabs or I like, you know, semicolons or not or whatever, subjective, fairly subjective, very shallow things.
+00:15:08
+But programming languages when done right can actually be very powerful. And the the benefit they bring is expression, OK.
+00:15:17
+And if you look at programming languages, there's really kind of two different levels to them.
+00:15:21
+One is the down on the nuts and bolts of how do you get the computer to be efficient?
+00:15:26
+Stuff like that. How they work type systems, compiler stuff, things like that. The other is the UI. And the UA for programming language is really a design problem, and a lot of people don't think about it that way. And the UI, you mean all that stuff with the braces and. Yeah, the other stuff, the UI and what it is and UI means user interface. And so what what's really going on is it's the interface between the guts and the human.
+00:15:51
+And humans are hard, right? Humans have feelings, they have things they like, they have things they don't like, and a lot of people treat programming languages as though humans are just kind of abstract creatures that cannot be predicted.
+00:16:04
+But it turns out that actually there are there is better and worse, like people can tell when a programming language is good or when it was an accident. Right. And one of the things was swift in particular, is that a tremendous amount of time, bad from medicine. A number of people have been put into really polishing and make it feel good, but it also has really good nuts and bolts underneath it.
+00:16:25
+You said that work makes a lot of people feel good. How do you get to that point?
+00:16:32
+So how do you predict that, you know, tens of thousands, hundreds of thousands of people are going to enjoy using this, the user experience of this programming language? Well, you can you can look at in terms of better and worse. So if you have lots of boilerplate or something like that, you'll feel unproductive. And so that's a bad thing you can look at in terms of safety. If like see, for example, there's what's called a memory, unsafe language.
+00:16:56
+And so you get dangling pointers and you get all these kind of bugs, but then you have spent tons of time debugging. It's a real pain in the butt and you feel unproductive. And so by subtracting these things from the experience, you get, you know, happier people. But again, keep interrupting. I'm sorry, but so hard to deal with.
+00:17:15
+If you look at the people, people that are most productive on stack overflow. They are they have a set of priorities. Yeah, they may not always correlate perfectly with the experience of the majority of users.
+00:17:29
+You know, if you look at the most upvoted, quote unquote, correct answer on stack overflow is usually really sort of prioritized as like safe code, proper code, stable code, you know, that kind of stuff, as opposed to like if I want to use go to statements and my basic right. I want to use to go to like what if 99 percent of people wanted to go to services completely improper, you know, unsafe syntax?
+00:18:03
+I don't think that people actually like if you boil it down, you get below the surface level. People don't actually care about go to restaurants, estimates or things like this. They care about achieving a goal. Yeah. So the real question is, I want to set up a Web server and I want to do a thing or whatever, like how quickly can achieve that. And so from programming language perspective, there's really two things that that matter there.
+00:18:25
+One is what libraries exist and then how quickly can you put it together and what are the tools around that look like? Right.
+00:18:33
+And and when you want to build a library that's missing, what do you do? OK, now this is where you see huge divergence in the force between worlds.
+00:18:42
+And so you look at Python, for example. Python is really good at assembling things, but it's not so great at building all the libraries.
+00:18:49
+And so what you get because of performance reasons, other things like this, as you get Python layered on top of C, for example, and that means that doing certain kinds of things, well, it doesn't really make sense to do in Python.
+00:19:00
+So you do it in C and then you wrap it and then you have you're living in two worlds and two worlds. Never is really great because tooling in the library doesn't work right. Like all these kinds of things.
+00:19:10
+Can you clarify a little bit what we mean by Python is not good at building libraries, meaning it doesn't mean certain kinds of certain kinds of libraries, not just the actual meaning of the sentence.
+00:19:21
+Yeah, meaning like it's not conducive to developers to come in and add libraries or it's it's or the language or is it the duality of the. It's a dance between Python and see and what is amazing pythons.
+00:19:36
+Great language. I do not mean to say that Python is bad for libraries.
+00:19:40
+What I meant to say is there python, there are libraries that Python is really good at that you can write in Python. But there are other things like if you want to build a machine learning framework, you're not going to build a machine learning framework in Python because of performance, for example, or you want GPU acceleration or things like this. Instead, what you do is you write a bunch of C or C++ code or something like that, and then you talk to it from Python.
+00:20:04
+Right. And so this is because of decisions that were made in the python design and and those decisions have other counterbalancing forces.
+00:20:13
+But but the trick when you start looking at this from a programming perspective is just to say, OK, cool, how do I build this catalogue of libraries that are really powerful and how do I make it so that then they can be assembled into ways they feel good and they generally work the first time, because when you're talking about building a thing, you have to include the debugging, the fixing, the turnaround cycle, the development cycle, all that kind of stuff in in into the process of building the thing.
+00:20:42
+It's not just about tearing up the code. And so this is where things like, you know, catching bugs at compile time is valuable, for example.
+00:20:51
+But if you dive into the details in this SWIFT, for example, has certain things like value semantics, which is a fancy way of saying that when you try to treat a variable like a value, it acts like a mathematical object word.
+00:21:08
+OK, so you have you talked a little bit in Pateros, you have Tensas, Tensas are indeed and dimensional grid of numbers. Very simple. You can do plus another operators on them.
+00:21:21
+It's all totally fine. But why do you need to clone a Tenzer sometimes. Have you ever under that. Yeah, ok.
+00:21:28
+And so why is that. Why do you need to clone intenser.
+00:21:30
+It's the usual object thing that's in Python certain python and just like with Java in many other languages, this isn't unique Python in Python. It has a thing called reference semantics, which is the nerdy way of explaining this. And what that means is you actually have a pointer to a thing instead of the thing.
+00:21:47
+OK, now this is due to a bunch of implementation details that you don't go into. But in Swift, you have this thing called value semantics. And so when you have a Tenzer and Swift, it is a value. If you copy it, it looks like you have a unique copy. And if you go change one of those copies, then it doesn't update the other one because you just made a copy of this thing.
+00:22:08
+So that that's like highly error prone and at least computer science, math centric disciplines about Python, like the the thing you would expect.
+00:22:20
+Behave like a math, like math, it doesn't behave like math and in fact quietly doesn't behave like math and then can ruin the entirety of your.
+00:22:29
+Exactly. Well, and then put you in debugging England again. Yeah. Right now you just want to get something done and you're like, wait a second, wait.
+00:22:36
+Where do I need to put Klown and what level of the stack, which is very complicated, which I thought I was reading some of his library and now I need to understand it to know how to clone a thing.
+00:22:46
+Right. And harder to bug, by the way. Exactly right. And so this is where programming languages really matter so and so after having very somatics so that both you get the benefit of math working like math. Right.
+00:22:59
+But also the efficiency that comes with certain advantages. There are certain implementation details that are really benefit you as a programmer.
+00:23:05
+So by the values metrics like how do you know that things should be treated like a value? Yeah, so, so Swift has a pretty strong culture and good language support for defining values.
+00:23:17
+And so if you have an array so Tensas are one example that the machine learning folks are very used to just think about array's same thing, where you have an array, you put, you create an array, you put two or three or four things into it and then you pass it off to another function.
+00:23:33
+What happens is that that function add some more things to it. Well, you'll see it on the side, the opposite him, right. This is called reference somatics.
+00:23:43
+Now, what if you. Pass an array off to a function, escrows it away in some dictionary or some other data structure somewhere, right? Well, it thought that you just handed it that array, then you return back and that that reference to that are still exists in the car and they go and put more stuff in it. Right. The person you handed it off to may have thought they had the only reference there. And so they didn't know what this was going to change underneath the covers.
+00:24:10
+And so this is where you end up having to do. So, like, I was passa thing. I'm not sure if I have the only version of it, so now I have to clone it. So what Vegas semantics does is it allows you to say, hey, I have a son. Swift defaults to various memex for the most value semantics.
+00:24:27
+And then because most things like this, then it makes sense for that to be in. One of the important things about that is that arrays and dictionaries and all these other collections that are aggregations of other things also have value semantics. And so when you pass this around to different parts of your program, you don't have to do these of copies. And so this is this is great for two thirds, right? That's great, because you define away the bug, which is a big deal for productivity, the number one thing most people care about.
+00:24:55
+But it's also good for performance because when you're doing a clone, so you pass the array down to the thing. It was like, I don't know if anyone else has it. I have to clone it. Well, you just did a copy of a bunch of data. Could be big and then it could be the thing that called you is not keeping track of the old thing. So you just made a copy of it and you may not have had to.
+00:25:14
+Yeah. And so the way the semantics work is in Southwest is that it uses a thing called copy on. Right. Which means that you get you get the benefit of safety and performance and has another special trick, because if you think certain languages like Java, for example, they have immutable strings. And so what they're trying to do is they provide value semantics by having pure immutability, functional languages have pure immutability and lots of different places. And this provides a much safer model and it provides base somatics.
+00:25:42
+The promise this is if you have immutability, everything is expensive, everything requires a copy. For example, in Java, if you have a string X or string Y, you append them together. We have to allocate a new string to hold x y o. If there are immutable or industrial strength in Java are immutable and if there's there's optimizations for short ones and it's complicated. But but generally think about them as a separate application. And so when you append them together, you have to allocate a third thing because somebody might have a pointer to either of the other ones.
+00:26:17
+Right. And you can't go change them. So you have to allocate a third thing because of the beauty of how the swift basic system works out if you have a string. And so if you say, hey, put an X, right. And they say append on Y, Z, what it knows that there's only one reference to that and so can do an emplace update. And so you're not allocating tons of stuff on the side, you're not you don't have a response when you pass it off, you can no, you have the only reference if you pass it off to multiple different people, but nobody changes it, they can all share the same thing.
+00:26:49
+So you get a lot of the benefit of a purely mutable design. And so you get a really nice, sweet spot that I haven't seen in other languages. Yeah, I thought I thought there's going to be a philosophical like narrative here that you're going to have to pay a cost for it because it sounds like, I think value semantics is beneficial for easing of debugging or minimizing the risk of errors, like bringing the errors closer to the source. Bringing the symptom of the air closer to the source of the air, however you say that, but you're saying there's not a performance cost either if you implement correctly.
+00:27:33
+Well, so there's tradeoffs with everything. And so if you are doing very low level stuff, then sometimes you can lower costs. But then what you're doing is you're saying what is the right default? So coming back to user interface, when you talk about programming, language is one of the major things that Swift does that makes people love it. That is not obvious when it comes to designing a language. Is this UI principle of progressive disclosure of complexity so swift, like many languages, is very powerful.
+00:28:03
+The question is, when do you have to learn the power as a user? So swift like Python allows you to start with like print, hello, world, right, certain other languages start with like public static void main. This is like all the ceremony right here.
+00:28:18
+And so you got to teach, teach a new person. Hey, well, welcome to this new thing. Let's talk about public access control classes. Was that string system that out front line like packages, like car.
+00:28:32
+Right.
+00:28:33
+And so instead, if you take this and you say, hey, we need you need we need packages, you know, modules we need we need powerful things like classes. We need the instructions. We like all these things. The question is, how do you factor the complexity and how do you make it so that the normal case scenario is you're dealing with things that work the right way in the right way. Give you a good performance by default.
+00:28:56
+But then as a power user, if you want to have down to it, you have falsey see performance for control over low level pointers.
+00:29:02
+You could call Mallick if you want to call Marlock. This is not recommended on the first page of every tutorial, but it's actually really important when you want to get work done right.
+00:29:10
+And so being able to have that is really the design and programming. Language design and design is really, really hard. It's something that I think a lot of people kind of outside of UI again, a lot of people just think is subjective. Like there's nothing you know, it's just like curly braces or whatever. It's just like some it's preference. But actually good design is something that you can feel.
+00:29:35
+And how many people are involved with good design? Look, that's worth swift. Look, historically, I mean, this might touch like this almost like a Steve Jobs question to like how much dictatorial decision making is required versus collaborative.
+00:29:55
+And we'll talk about how that can go wrong or right.
+00:29:57
+But yeah, it was swift. So I can speak to in general, all design everywhere. So the way it works so swift is that there's a core team and soccer team is six or seven people ish, something like that. That is people that have been working with Swift since the very early days. And so by early days, it's not that long ago. OK, yeah.
+00:30:17
+So it became public in 2014. So it's been six years public now.
+00:30:22
+But but still that's enough time that there's a story arc there and there's mistakes have been made that then get fixed and you learn something and then you know, and so what the team does is it provides continuity. And so you want to have a OK, well, there's a big hole that we want to fill. We know we want to fill it. So don't do other things that invade that space until we fill the hole. Right. There's a border that's missing here.
+00:30:47
+We want to we will do that bolder.
+00:30:49
+Even those not today keep out of that space. And the whole team remembers of the remembers the myth of the boulder that's there.
+00:30:57
+Yeah. Yeah. There's a general sense of what the future looks like in broad strokes and a shared understanding of that, combined with the shared understanding of what has happened in the past that worked out well and didn't work out well. The next level out is you have the what's called the swift evolution community, and you've got, in that case, hundreds of people that really care passionately about the way the swift evolves. And that's like an amazing thing to again, the core team doesn't necessarily need to come up with all the good ideas.
+00:31:23
+You've got hundreds of people out there that care about something and they come up with really good ideas, too. And that provides this like tumbling rock tumbler for ideas. And so the the evolution process is, you know, a lot of people in a discourse forum, they're like hashing it out and trying to, like, talk about, OK, well, what should we go left or right?
+00:31:40
+Or if we did, this would be good. And, you know, here you're talking about hundreds of people. So you're not going to get consensus necessarily.
+00:31:47
+You're not obvious consensus. And so there's a proposal process that then allows the core team and the community to work this out. And what the core team does is it aims to get consensus out of the community and provide guardrails, but also provide long term make sure we're going in the right direction kind of things.
+00:32:07
+So does that group represent like the how much people will love the user interface, like you think they're able to capture that? Well, I mean, it's something we talk about a lot. It's something we care about. How are we how are we do? That's up for debate. But I think that we've done pretty well.
+00:32:23
+So this is the big winner in mind. You said the progressive disclosure. Yeah.
+00:32:27
+So we care a lot about a lot about that, a lot about power, a lot about efficiency, a lot about there are many factors to good design and you have to figure out a way to kind of work your way through that.
+00:32:39
+And so if you like, think about like the language I love is lisps probably still because I use Emacs, but I haven't done anything, any serious work on this, but it has a ridiculous amount of parentheses. Yeah. I've also, you know, with Java and C++, Brace's. Um, you know, I like I enjoyed the comfort of being between races, you know? Yeah, well done is it's just like a last thing to me as a designer.
+00:33:12
+If I was a language designer, God forbid, as I would be very surprised, the python with no braces would nevertheless somehow be comforting also.
+00:33:25
+Like, I can see arguments for all of this. But look at this. This is evidence that it's not about braces versus Tab's, right?
+00:33:31
+Exactly. You're good. That's a good point. Right. So, like, you know, there's there's evidence that bussy like this is one of the most argued about things. Oh, yeah. Of course.
+00:33:39
+Just like Deveson spaces, which it doesn't.
+00:33:41
+I mean, there's one obvious right answer, but it doesn't actually matter was that come on, we're friends. I get to try to do to me here. People are going to have the people are going to do now.
+00:33:52
+And so, so so you're able to identify things that don't really matter for the experience.
+00:33:59
+Well, it's always a really hard.
+00:34:01
+So the easy decisions are easy, right. I mean, you find those are not the interesting ones. The hard ones are the ones that are most interesting.
+00:34:08
+The hard ones are the places where, hey, we want to do a thing. Every agrees we should do it. There's one proposal on the table, but it has all these bad things associated with it. Well, OK, what are we gonna do about that?
+00:34:20
+Do we just take it or do we delay it?
+00:34:23
+Do we say, hey, well, maybe there's this other feature that if we do that first, this will work out better. How does this if we do this, are we paying ourselves into a corner? Right.
+00:34:32
+And so this is where, again, you're having that core team of people that has some continuity and has perspective, has some of the historical understanding is really valuable because you get it's not just like one brain.
+00:34:43
+You get the power of multiple people coming together to make a decisions and then you get the best out of all these people and you also can harness the the community around it.
+00:34:53
+But what about, like, the decision of whether, like in Python having one type or having a, you know, strict typing? Yeah, yeah.
+00:35:01
+Yeah. So I like how you put that, by the way, like so so many people would say that Python doesn't have tapes, doesn't have that. Yeah, but you're right. I've listened to you enough or I'm a fan of yours and I've listened to way too many podcasts and they you about this. Oh yeah.
+00:35:19
+So I would argue that Python has one type. And so so like when you import Python and Swift, which, by the way, works really well, you have everything comes in as a python object. No, here, there trade offs because, you know, it depends on where you're optimizing for.
+00:35:34
+And Python is a super successful language for a really good reason because it has one type. You get duct taping for free and things like this. But also you're pushing you're making it very easy to pound a code in one hand, but you're also making it very easy to introduce complicated bugs. You have to debug and you pass the string into something that expects an integer and it doesn't immediately die, goes all the way down the stack race and you find yourself in the middle of some code that you really didn't want to know anything about.
+00:36:01
+And it blows up and you're saying, well, what did I do wrong? Right. And so tapes are good and bad and they have trade offs. They're good for performance and certain other things depending on where you're coming from. But it's all about tradeoffs. And so this is this is what designers write designers about weighing tradeoffs and trying to understand the ramifications of that, the things that you're weighing like types or not, or one type for many types, but also within many types.
+00:36:26
+How powerful do you make that type system is another very complicated question with lots of tradeoffs. It's very interesting, by the way. But but that's like one one dimension.
+00:36:38
+And there's a bunch of other dimensions compiled versus data compiled, garbage collected versus reference counted versus Merrymount manual memory management versus, you know, like in like all these different trade offs and how you balance them or what make the program language good concurrency.
+00:36:53
+Yeah. So in all those things, I guess when you're designing the language, you also think of how that's going to get all compiled down to if you care about performance.
+00:37:03
+Yeah. Well and go back to list. Right. So list also I would say JavaScript is another example of a very simple language. Right. And so one of the so I also love Lisp. I don't use it as much as maybe you do.
+00:37:16
+Yeah you did. No, I think we're both everyone who loves the lisbeth's like, you know, it's like I don't know, I love Frank Sinatra, but like how often do I seriously listen to it?
+00:37:25
+Sure. So but you look at that or you look at JavaScript, which is another very different but relatively simple language. And there are certain things that don't exist in the language. But there's there is inherent complexity to the problems that we're trying to model.
+00:37:39
+And so what happens is the complexity in the case of both of them, for example, you say, well, what about large scale software development? OK, well, we need something like packages. Neither language has a like language affordance for packages. And so what you get is patterns you get and things like NPN. You get things like, you know, like these ecosystems that get built around. And I'm a believer that if you don't model at least the most important inherent complexity in language, then what ends up happening is that complexity gets pushed elsewhere.
+00:38:10
+And when it gets pushed elsewhere, sometimes that's great, because often building things like libraries is very flexible and very powerful and allows you to evolve and things like that. But often it leads to a lot of unnecessary divergence in the force and fragmentation. And and when that happens, you just get kind of a mess. And so the question is, how do you how do you balance that?
+00:38:29
+Don't put too much stuff in the language because that's really expensive and makes things complicated.
+00:38:33
+But how do you model enough of the inherent complexity of the problem that you provide, the framework and the structure for people to think about?
+00:38:42
+So the key thing to think about with with programming languages and you think about what a programming language is, therefore is it's about making a human more productive. Right. And so, like, there's an old I think it's a Steve Jobs quote about the bicycle for the mind.
+00:38:56
+Right. You can you can you can definitely walk, but you'll get there a lot faster if you can bicycle on your way.
+00:39:04
+And a programming language is a bicycle for the mind.
+00:39:06
+Yeah. It's basically wow. That's a really interesting way to think about it.
+00:39:10
+By raising the level of abstraction. Now, you can fit more things in your head by being able to just directly leverage someone's library. You can now get something done quickly. In the case of Swift Swiftie is this new framework that Apple has released recently for doing UI programming, and it has this declarative programming model which defines away entire classes of bugs. It builds on the somatics and many other nice things. And what this does is allows you to get way more done with way less code.
+00:39:39
+And now your productivity as a developer is much higher.
+00:39:43
+Right. And so that's really what programming languages should be about is it's not about tabs versus spaces or curly braces or whatever. It's about how productive you make the person.
+00:39:52
+And you can only see that when you have libraries that were built with the right intention that the language was designed for and was swift. I think we're still a little bit early. But Swiftie, you are and many other things that are coming out now are really showing that.
+00:40:07
+And I think that they're opening people's eyes as kind of interesting to think about, like how that, you know, the knowledge of something of how good the bicycle is, how people learn about that, you know, so I've used C++.
+00:40:22
+Now, this is not going to be a trash talking session, but C++ but you C++ for a really long go there if you want this, because I feel like I spent many years without realizing, like there's language that could for my particular life style, brain style thinking style.
+00:40:43
+There's language that that could make me a lot more productive in the debugging stage, in the just the development stage in thinking like the bicycle for the mind that can fit more stuff into my thumb is a great example.
+00:40:55
+Yeah. I mean a machine learning framework in Python is a great example that there's just very high abstraction level. And so you can be thinking about things on a like very high level algorithmic level instead of thinking about, OK, well, am I copying this tends to do a GPU or not, right?
+00:41:10
+It's not it's not what you want to be thinking about. And as I was telling you, I mean, I guess the question I had is, you know, how does a person like me or in general people discover more productive, you know, languages like how I was, as I've been telling you offline, I've been looking for like a project to work on. It's swift. So I can really try it out. I mean, my intuition was like doing a hello world is not going to get me there to.
+00:41:37
+To get me to experience the power of language, so you need a few weeks to change in metabolism. Exactly free, but that's one of the problems that people with diets like I'm actually currently to go in parallel. But a small tangent is I've been recently eating only meat. OK, and OK.
+00:41:58
+So most people like to think that's horribly unhealthy or whatever. You have like a million, whatever the science is, it just doesn't sound right.
+00:42:09
+Well, so so back when I was in college, we did the Atkins diet. That was that was a thing and similar.
+00:42:13
+And but if you the you have to always give these things a chance. I mean, I was dieting, I was not dieting, but just the things that you like for me personally, for me, just everything. I could be super focused, more focused than usual.
+00:42:29
+I just feel great. I mean, I'd been running a lot of, you know, doing push ups and polls and so on. And you put it on a similar in that sense for me, where you go, I mean, literally, I just I felt I had like a stupid smile on my face when I first started using Python. I could cut up really quick things like I think I would see the world. I'll be empowered to write a script to to.
+00:42:56
+In order to do some basic data processing, to rename files on my computer, yeah, right. And like Perl didn't do that for me.
+00:43:03
+Uh, a little bit. Well, and again, like, none of these are about which which is best or something like that. But there's definitely better and worse here. But it clicks. Well, yeah.
+00:43:13
+And if you look at Perl, for example, you get bogged down in scalars versus arrays versus hashes versus type clubs and like all that kind of stuff. And, and Pathans like, yeah, let's not do this. And some of it is debulking like everyone has different priorities.
+00:43:28
+But for me is I create systems for myself that empower me to the bug quickly, like I've always been a big fan, even just Krulak asserts, like always stating things that should be true, which in Python I find myself doing more because I type all kinds of stuff. Well, you could think of types in a programming languages as being kind of a cert.
+00:43:52
+Yeah, they could check to compile time. Right. So how do you learn anything? Well, so how do how do people learn new things. This is hard. People don't like to change. People generally don't like change around them either.
+00:44:06
+And so we're all very slow to adapt and change. And usually there's a catalyst that's required to force yourself over the over over this.
+00:44:14
+So for learning a programming language really comes down to finding an excuse like build a thing that's that the language is actually good for the ecosystems ready for.
+00:44:25
+And so and so if you were to write an for example, that would be the easy case.
+00:44:31
+Obviously, you would use Swift for that. Right.
+00:44:33
+There are other Android and Swift runs on Android. Oh, does it. Oh yeah. Yes. So friends and of that was. So Swift Swift is built on top of LVM, the avium runs everywhere, LVM, for example, builds the Android kernel.
+00:44:49
+Oh, OK. So that's didn't they realized this? Yes.
+00:44:53
+So swift Swift is very portable, runs on windows.
+00:44:56
+There's runs on lots of different things and as was cited as UI and then there's a thing called UI kit. I built an app with Swift. Well, so that's the thing is the ecosystem is what matters. They're so swift UI and you like it are Apple Technologies and so they happen swiftly. I happen to be written in Swift, but it's an Apple proprietary framework that Apple loves and wants to keep on its platform, which makes total sense.
+00:45:23
+You can go to Android. You don't have that library. Yeah. And so Android has a different ecosystem of things that hasn't been built out and doesn't work as well as swift. And so you can totally swerve to do arithmetic and things like this. But building UI was swift on Android is not not not not a great science right now.
+00:45:41
+So so if I wanted to learn swith, what's the I mean, one practical different version of that is swift potential for for example and one of the inspiring things for me with both transform PI talk is how quickly the community can, like, switch from different libraries.
+00:46:01
+Yeah, I could see some of the community switching to PI storage now, but it's very easy to see an intensive really stepping up its game and then there's no reason why. I think it the way it works is basically it has to be one GitHub repo, like one paper steps up, gets people excited, get people excited and they're like, oh, I have to learn this. I worked for Woodsworth again. And then they learn and they follow along with I mean, that's what happened.
+00:46:29
+I taught as there has to be a reason, a catalyst. Yeah. And so and and there I mean, people don't like change, but it turns out that once you've worked with one or two programming languages, that the basics are pretty similar. And so one of the fun things about learning, programming, languages, even even maybe Lisp, I don't know if you agree with this, is that when you start doing that, you start learning new things because you have a new way to do things and you're forced to do them.
+00:46:53
+And that forces you to explore and it puts you in learning mode. And when you get in learning mode, your mind kind of opens a little bit. And you can you can see things in a new way even when you go back to the old place.
+00:47:03
+I thought it would lisbeth's functional stuff, but I wish I was a kind of window. Maybe you can tell me if there is. There you go. This is a question to ask. What is the most beautiful feature, a programming language before I ask you. I mean say like with Python, I remember I saw this comprehensions. Yeah. I was like what I like really took it in. Yeah. It, I don't know, I just loved it.
+00:47:30
+It was like fun to do like it was fun to do that kind of. Yeah. Do something about it. To be able to filter through a list and to create a new list on a single line was elegant. I could all get into my head and it just made me fall in love with the language. So it's there. Let me ask you a question. Is there what you use the most beautiful feature in in a programming language is that you've ever encountered in Swift?
+00:47:59
+Maybe, and then outside of Swift?
+00:48:01
+I think the thing that I like the most from a programming language. So so I think the thing you have to think about with the programming language again, what is the goal? You're trying to get people to get things done quickly. And so you need libraries, you need high quality libraries, and then you need a user base around them that can assemble them and do cool things with them. Right. And so to me, the question is, what enables high quality libraries?
+00:48:26
+OK, yeah, and there's a huge divide in the world between libraries who enable high quality libraries versus the ones that put special stuff in the language.
+00:48:39
+So programming languages that enable high quality like libraries. Got it. So. So and what I mean by that is expressive libraries that then feel like a natural, integrated part of the language itself. So an example of this in Swift is the Internet float and also reinsuring things like this.
+00:48:58
+These are all part of the library like is not hard coded into swift. And so what that means is that because it is just a library thing to find in the library along with strings and raise and all the other things that come with the library.
+00:49:13
+Well, hopefully you do like it. But anything that any language features that you needed to define it, you can also use in your own tapes. So if you wanted to find a quaternion or something like this. Right. Well, it doesn't come to the standard library. There's a very special set of people that care a lot about this. But those people are also important.
+00:49:36
+It's not it's not about classism. It's not about the people who care about in some floats are more important than the people care about quaternions. And so to me, the beautiful things about programming languages is when you allow those communities to build HIGH-QUALITY libraries, they feel native that feel like they're built into the built into the compiler without having to be.
+00:49:54
+What does it mean for the end to be part of not hardcoded in so is it like how so what isn't? What is and isn't OK?
+00:50:06
+It is just a integer in this case. It's like a you know, like a 64 bit integer or something like this. But so like the 64 bit is hard coded or.
+00:50:14
+No, no, none of that sort. So if you go look at how it's implemented, it's just a struct and swift. And so it's a struct. And then how do you add to structure? Well, you define plus. And so you can define plus on it, you can define plus on your thing, too, you can define in terms like an is an odd method or something like that. And so, yeah, you can add methods on the.
+00:50:37
+Yeah.
+00:50:38
+So you can you can find operators like how it behaves. Yeah. That's you. It's beautiful when there's something about the language which enables others to create libraries which are not hackie.
+00:50:52
+Yeah.
+00:50:52
+The feel, the feel native. And so one of the best examples of this is lisp. Mm hmm. Right. Because in Lisp like all the libraries are basically part of the language. You write term rewrite systems and things like this.
+00:51:04
+And so can you as a counterexample, provide what makes it difficult to write a library that's native? Is it the Python C?
+00:51:12
+Well, so also one example. I'll give you two examples. Java and C++ or Java and C, they both allow you to define your own types, but it is hard code in the language. OK, well why? Well, in Java, for example, coming back to this whole reference, semantic semantic thing, it gets passed around by value. Yeah, but if you make if you make like a pair or something like that, a complex number, right?
+00:51:41
+It's a it's a class in Java and now it gets passed around by reference, by pointer. And so now you lose face.
+00:51:48
+Manics, you lost math. OK, well, that's not great, right? If you can do something with it, why can't I do with my type?
+00:51:56
+Yeah. So that's that's the negative side of the thing I find beautiful is when you can solve that, when you can have full expressivity, where you as a user of the language, have as much or almost as much power as the people who implemented all the standard built and stuff. Because what that enables is that enables truly beautiful libraries.
+00:52:18
+You know, it's kind of weird because I've gotten used to that. That's one, I guess, other aspect of programming, language design. You have to think, you know, the old first principles thinking like, why are we doing it this way, by the way? I mean, I remember because I was thinking about the Wallers operator and was asking you about it later, but it hit me that, like the equal sign for assignment.
+00:52:44
+Yeah. Like, why are we using the equal sign?
+00:52:47
+It's wrong. And that's not the only solution. Right. So if you look at Pasko, these koeneke will solve your assignment and equals four for equality and they use like less and greater than instead of the not equal. Yeah. Like there are other answers here.
+00:53:03
+So but like and I'd like to ask you all, but how do you then decide to break convention to say, you know what? Everybody is doing it wrong. We're going to do it right. Yeah, so so it's like an away like return on investment, trade off. So if you do something weird, let's just say, like not like Colen equal instead of equal for assignment. That would be weird with today's aesthetic. Right. And so you'd say, cool, this is theoretically better, but is it better and which is.
+00:53:36
+Like, what do I get out of that, do I define a class of bugs? Well, one of the class of bugs that she has is that you can use like, you know, if X equals without equals equals X equals Y. Yeah, right. Well, it turns out you can solve that problem in lots of ways.
+00:53:52
+Claiming, for example, you see all these compilers will detect that as a as a likely bug. Produce a warning, do they.
+00:53:58
+Yeah, I feel like they didn't or she didn't. It's like one of the important things of our programming. Language design is like you're literally creating suffering in the world.
+00:54:10
+Like like like I feel like I mean, one way to see it is the bicycle for the mind. But the other way is the like, minimizing suffering. Well, you have to decide if it's worth it. Right. So let's come back to that.
+00:54:22
+OK, but but if you look at this and again, this is where there's a lot of detail that goes into each of these things equal and C returns a value. That's messed up, that allows you say X equals Y, equals Z like that works and C. Yeah.
+00:54:40
+Is it messed up. Well, so most people think it's messed up.
+00:54:43
+I think it is very bi messed up. What I mean is it is very rarely used for good and it's often used for bugs.
+00:54:52
+Yeah. Right. And so and that's a good definition. Yeah. You could use you know it's a in hindsight this was not such a great idea right now one of the things was swift. That is really powerful.
+00:55:02
+And one of the reasons it's actually good versus it being full of good ideas is that when when we launched this one, we announced that it was public, people could use it, people could build apps, but it was going to change and break back when. So if came out, we said, hey, it's open source and there's this open process which people can help evolve and direct the language. So the community at large, like swift users, can now help shape the language as it is.
+00:55:29
+And what happened is that as part of that process, a lot of really bad mistakes get taken out. So, for example, Swift used to have the CEO plus plus and minus minus operators. Like what does it mean when you put it before versus after? Right. Well, that got cargo halted from sea into swift earlier cargo cult cargo halted means brought forward without really considering considering it. OK, this is maybe not the most PC term, but to look it up in Urban Dictionary.
+00:56:00
+Yeah, yeah.
+00:56:00
+So it got pulled it got pulled in to see whether it got pulled into Swift without very good consideration. And we went through this process and one of the first things got ripped out was plus plus and minus minus because they lead to confusion. They have very little value over saying, you know, X plus equals one and X plus equals one is way more clear.
+00:56:20
+And so when you're optimizing for ability and clarity and bugs and this multidimensional space that you're looking at, things like that really matter. And so being first principles on where you're coming from and what you're trying to achieve and being anchored on the objective is really important.
+00:56:36
+Well, let me ask you about the most. So this this this podcast isn't about information, it's about drama. OK. Talk to you about some drama. So you mentioned Pascaline and Colin equals there's something that's called the Walrus Operator and Python in Python, three point eight added the Walrus operator. And the reason I think it's interesting, it's not just because of the feature it does. It's it has the same kind of expression feature you mentioned. See that it returns the value of the assignment and maybe you can comment on that in general.
+00:57:16
+But on the other side of it, it's also the thing that toppled a dictator.
+00:57:23
+So it finally drove Greta to step down from Wiedefeld, the toxicity of the community. So maybe what do you think about the Walrus operator in Python? Is there an equivalent thing in Swift that really stress tested the community? And and then on the flip side, what do you think about Guéra stepping down over it?
+00:57:45
+Yeah, well, like, if I look past the details of the Walrus operator, one of the things that makes it most polarizing is that it's syntactic sugar.
+00:57:53
+OK, what do you mean by syntactic sugar? It means you can take something that already exists in language and you can express it in a more concise way. So, OK, I'm going to play devil's advocate. So this is great. Is that objective or subjective statement? Like, can you can you argue that basically anything is syntactic sugar or not?
+00:58:13
+You know, not everything is a syntactic sugar. So, for example, the type system like can you have classes versus versus like do you have types or not? So. So one type versus many types is not something that affects syntactic sugar. And so if you say I want to have the ability to define types, I have to have all this like language mechanics to define classes. And I know I have to have inheritance and I have like have all the stuff that just make them lives more complicated.
+00:58:43
+That's not that's not about sugaring. It swift has sugar. So like Swift has this thing called if left and it has various operators are used to specify specific use cases. So the problem with syntactic sugar, when you're talking about, hey, I have a thing that takes a lot to write and I have a new way to write it, you have this, like, horrible trade off, which becomes almost completely subjective, which is how often does this happen and doesn't matter.
+00:59:13
+And one of the things that is true about human psychology, particularly when you're talking about introducing a new thing, is that people over overestimate the burden of learning something.
+00:59:22
+And so it looks foreign when you haven't gotten used to it. But it was there from the beginning. Of course, it is part of Python like unquestionably like this is just the thing I know. And it's not a new thing that you're worried about learning.
+00:59:34
+It's just part of part of the deal now with Guido. I don't know Guido.
+00:59:40
+Well, yeah. Have you passed cosmically? I've met him a couple of times, but I don't know Guido well. But the sense that I got out of that whole dynamic was that he had put the not just the decision maker weight on his shoulders, but it was so tied to his personal identity that he took it personally and he felt the need and he kind of put himself in the situation of being the person instead of building a base of support around him.
+01:00:07
+I mean, he this is probably not quite literally true, but by too much.
+01:00:12
+So there's too much too much concentrated on him. Right. And so and that can wear you down.
+01:00:18
+Well, yeah. Particularly because people then say, Guido, you're a horrible person. I hate the saying blah blah blah blah blah, blah, blah. And sure, it's like, you know, maybe one percent of the community that's doing that. But Python's got big community in one percent of millions of people is a lot of hate mail. And that just from Human Factor, will just wear on you. Well, to clarify, look, from just what I saw in the messaging for the let's not look at the million Python users, but at the Python core developers, it feels like the majority, the big majority on the vote were opposed to it.
+01:00:50
+OK, I'm not that close to it. So, OK, so the situation is like literally.
+01:00:57
+Yeah.
+01:00:57
+I mean, the majority of the core developers oppose it, so. Right.
+01:01:02
+And they weren't they won't even like against it. It was there was a few more. They were against it but they against it wasn't like this is a bad idea. They were more like we don't see why this is a good idea. And what that results in is there is a stalling feeling like you you just slow things down.
+01:01:24
+Now, from my perspective, that you could argue this, and I think it's a very it's very interesting. If we look at politics today and the way Congress works, it's slowed down everything. It's a dampener. Yeah, it's a dampener. But that's a dangerous thing, too, because if it dampens things like, you know, dampening results, what are you talking about?
+01:01:46
+Like, it's a low pass filter. But if you need billions of dollars injected into the economy or trillions of dollars, then suddenly stuff happens. Right. And so for sure. So you're talking about I'm not defending our political situation, just to be clear.
+01:02:00
+But you're talking about like a global pandemic. Oh, I was hoping we could fix, like, the health care system and the education system.
+01:02:08
+Like, you know, I'm not I'm not a politics person. I don't I don't I don't know when it comes to languages, the community is kind of right in terms of it's a very high burden to add something to a language. So as soon as you add something, you have a community of people building on it and you can't remove it, OK? And if there's a community of people that feel really uncomfortable with it, then taking it slow, I think is is is an important thing to do.
+01:02:32
+And there's no rush, particularly if for something that's 25 years old and is very established and, you know, it's not like coming coming into its own level features. Well, so I think that the issue with with Guido is that maybe this is a case where he realized that had outgrown him. And it went from being or the language, the language, so Python, I mean, Guido's amazing, but but Python isn't about Guido anymore. It's about the users.
+01:03:00
+And to a certain extent, the users own it. And, you know, Guido spent years of his life, a significant fraction of his career on Python. And from his perspective, I imagine he's like, well, this is my thing. I should be able to do the thing I think is right. But you can also understand the users where they feel like, you know, this is my thing. I use this like and and I don't know, it's a hard it's a hard thing.
+01:03:25
+But what if we could talk about leadership in this? Because it's so interesting to me. I'm going to I'm going to make I'm going to work. Hopefully somebody makes it. If not, I'll make a walrus are pretty sure because I think it represents to me maybe it's my Russian roots or something, you know, it's the burden of leadership, like I feel like to push back. I feel like progress can only like most difficult decisions, just like you said, there will be a lot of divisiveness over, especially in the Pashtun community, and it just feels like leaders need to take those risky decisions that that if you like, listen, that was some non-zero probability, maybe even a high probability will be the wrong decision, but they have to use their gut and make that decision.
+01:04:16
+Well, this is like one of the things where you see amazing founders, the founders understand exactly what's happened and how the company got there and are willing to say to we have been doing things X the last 20 years, but today we're going to do thing Y and they make a major pivot for the whole company, the company Olanzapine, and they move in. It's the right thing. But then when the founder dies, the successor doesn't always feel that that agency to be able to make those kinds of decisions, even though the CEO, they could theoretically do whatever.
+01:04:49
+There's two reasons for that. In my opinion, or in many cases it's always different, but one of which is they weren't there for all the decisions that were made. And so they don't know the principles in which those decisions were made. And once the principles change, you're you should be obligated to change what you're doing and change direction. And so if you don't know how you got to where you are, it just seems like gospel and you know, you're not going to question it.
+01:05:16
+You may not understand that it really is the right thing to do. So you just may not see it. That's so brilliant. I never thought of it that way like this. It's so much higher burden when as the leader, you step into a thing that's already worked for a long time.
+01:05:28
+Yeah, yeah. One. And if you change it and it doesn't work out now, you're the person who screwed it up. People are always second guess it. Yeah. And the second thing is that even if you decide to make a change, even if you're theoretically in charge, you're just you're just a person that thinks they're in charge.
+01:05:43
+And meanwhile, you have to motivate the troops. You have to explain to them in terms of understand, you have to get them to buy into and believe in it, because if they don't, then they're not going to be able to make the turn. Even if you tell them, you know, their bonuses are going to be curtailed, there's not going to, like, buy into it, you know, and so there's only so much power. You have the leader and you have to understand what those limitations are.
+01:06:03
+Are you still bedfast? You've been bedfast.
+01:06:06
+Some stuff you're very heavy on the be the benevolent, benevolent dictator for life, I guess. LVM Yeah.
+01:06:16
+Yeah, I saw the LVM world, but I mean, what's the role of the sword? And Swiftie said that there's a group of people.
+01:06:25
+Yeah. So if you contrast Pythonic Swift. Right. One of the reasons. So everybody in the core team takes a role really seriously.
+01:06:33
+And I think we all really care about where Swift goes.
+01:06:36
+But you're almost delegating the final decision making to the wisdom of the group. And so it doesn't become personal and also when you're talking with the community.
+01:06:46
+So, yeah, some people are very annoyed at certain decisions get made. There's a certain faith in the process because it's a very transparent process. And when a decision gets made, a all rationales provided things like this. These are almost defense mechanisms to help both guide future discussions and provide case law. And the Supreme Court does about this decision was made for this reason. And here's the rationale and what we want to see more of or less of.
+01:07:12
+But it's also a way to provide a defense mechanism so that when somebody is griping about it, they're not saying that person did the wrong thing. They're saying, well, this thing sucks. And and later they move on and they get over.
+01:07:25
+Get the analogy to the Supreme Court, I think is really is really good. But then not to get personal on the SWAT team, but like is there is there it just seems like it's impossible for there for division not to emerge.
+01:07:39
+Well, each of the humans on the team, for example, are different. And the membership of the SWAT team changes slowly over time, which is, I think, a healthy thing. And so each of these different humans have different opinions. Trust me, it's not a singular consciousness by any stretch of the imagination. You've got three major organizations, including Apple, Google and so far of all working together. And it's a small group of people. But you need high trust.
+01:08:06
+You need again, it comes back to the principles of what you're trying to achieve and understanding, you know, what you're optimizing for. And I think that starting with strong principles and working towards decisions is always a good way to both make wise decisions in general, but then be able to communicate them to people so that they can buy into them and that that is hard. And so you mentioned LVM. LVM is going to be twenty years old this December.
+01:08:33
+So it's it's showing its own age.
+01:08:36
+Do you have like like a like a like a dragon cake plan or that have. I should definitely do that. Yeah. If we can have a pandemic and everybody gets this. Gets, you know, sent through email, but the but all has had tons of its own challenges over time to write, and one of the challenges that the committee has, in my opinion, is that as a whole bunch of people that have been working LVM for 10 years.
+01:09:05
+Right. Because this happens somehow and LVM has always been one way, but it needs to be a different way.
+01:09:11
+Right, and they've worked on it for like 10 years is a long time to work on something and, you know, you suddenly can't see the faults and the thing that you're working on an album has lots of problems and we need to address them and we can make it better. And if we don't make it better, then somebody else will come up with a better idea. And so it's just kind of that age where the community is like in danger of going to calcified.
+01:09:33
+And and so I'm happy to see new projects joining and new things. Mixing it up in Fortran is now new, a new thing in the alien community, which is hilarious and good.
+01:09:43
+I've been trying to find a little tangent, find people who program in COBOL or Fortran, Fortran especially to talk to the. They're hard to find. Yeah. Look to the scientific community facilities for quite a bit.
+01:09:58
+Interesting thing you kind of mentioned with LVM or just in general that as something evolved, you're not able to see the faults.
+01:10:06
+So do you fall in love with the thing over time or do you start hating everything about the thing over time?
+01:10:13
+Well, so my personal folly is that I see it maybe not all, but many of the faults and they grade on me and I don't have time to go fix them.
+01:10:22
+And they get magnified and I mean well, and they may not get magnified, but they never get fixed. It's like sand underneath in a it's just like railing against you and it's like underneath your fingernails or something is just like, you know, there you can't get rid of it.
+01:10:36
+And so the problem is that if other people don't see it right, nobody ever like I think I don't have time to go write the code and fix it anymore, but then people are resistant to change and say, hey, we should go fix this thing like, oh, yeah, that sounds risky.
+01:10:52
+Well, is it the right thing or not? Are the challenges the group dynamics or is it also just technical? I mean, some of these features like yeah, I think as an observer it's almost like a fan in the you know, as a spectator of the whole thing, I don't often think about, you know, some things might actually be technically difficult to implement.
+01:11:14
+Example, this is we built this new computer framework called Muleya. Yes. Ours is a whole new framework. It's not many people think it's about machine learning.
+01:11:24
+The smell sounds from multilevel because compiler people can't name things very well, I guess, to dig into what I r is.
+01:11:32
+Yeah. So when you look at compilers, compilers have historically been solutions for a given space. So LVM is a it's really good for doing CPU's. Let's just say at a high level. You look at Java, Java has a JVM. The JVM is very good for a garbage collected languages that need dynamic compilation and it's very optimized for specific space. And so Hotspot is one of the compilers that used in that space and that compiler is really good at that kind of stuff.
+01:12:00
+Usually when you build these domain specific compilers, you end up building the whole thing from scratch. For each domain of the domain, so what's this what's the scope of a domain? So here I would say like if you look at Swift, there's several different parts to the Swift compiler, one of which is covered by the LVM part of it.
+01:12:22
+There's also a high level piece that's specific to Swift, and there's a huge amount of redundancy between those two different infrastructures and a lot of reimplemented, stuff that is similar to a different what is a LVM defined LVM is effectively an infrastructure so you can mix and match in different ways.
+01:12:41
+That's built libraries. You can use it for different things, but it's really good at CPU's and use CPU's and like the tip of the iceberg because it's not really great at is OK, but it turns out the languages that then use it to talk to CPU's.
+01:12:57
+And so it turns out there's a lot of hardware out there that is custom accelerators. So machine learning, for example, there are a lot of matrix multiply accelerators and things like this there. There's a whole world of hardware synthesis. So we're using Emiliana to build circuits. OK. And so you're compiling for a domain of transistors. And so Emulator does is it provides a tremendous amount of compiler infrastructure that allows you to build these domain specific compilers in a much faster way and have the result be good.
+01:13:28
+If we're if we're thinking about the future now, we're talking about like ASICs or anything. Yeah, yeah. So if we project into the future, it's very possible that the number of these kinds of ASX very specific infrastructure think architecture, things like multiplies exponentially. I hope so. So that's MLR.
+01:13:55
+So what MLA does is it allows you to build these compilers very efficiently. Right now, one of the things that coming back to the LVM thing and then we'll go to hardware is LVM is a specific compiler for specific domain. MLR is now this very general, very flexible thing that can solve lots of different kinds of problems. So LVM is a subset of what MLR does. So, I mean, it's an ambitious project then?
+01:14:22
+Yeah, it's a very ambitious project.
+01:14:23
+And so to make it even more confusing, MLR has joined the LVM umbrella projects as part of the LVM family.
+01:14:31
+But all of this comes full circle as now folks that work on the LVM part, the classic part that's 20 years old, aren't aware of all the cool new things that have been done in the new the new thing that, you know, MLR was built by me and many other people that knew a lot about LVM.
+01:14:48
+And so we fixed a lot of the mistakes that lived in LVM. I mean, where you have this community dynamic where it's like, well, there's this new thing, but it's not familiar. And we know that it feels like it's new. And so let's not trust it. And so it's just really interesting to see the cultural social dynamic that comes out of that.
+01:15:03
+And and, you know, I think it's super healthy because we're seeing the ideas percolate and we're seeing the technology diffusion happen as people get more comfortable that they start to understand things in their own terms. And this just gets to the it takes a while for ideas to propagate, even though they may be very different than what people are used to maybe.
+01:15:22
+Let's talk about that a little bit. The world of ethics and. Yeah, well, actually, your.
+01:15:28
+You're you have a new role at sci fi. What's that place about, what is the vision or for their vision for? I would say the future of computer so early, the engineering product teams that so far, so far is a company whose was founded with this architecture called Risk Five, Risk five. The new instructions, the instructions that sort of things inside of your computer, the how to run things from Intel and arm from the ARM Company and things like this or other instruction sets.
+01:16:00
+I've talked to science. I talked to David Patterson, who's super excited about this five. Dave, Dave is awesome, is brilliant. And the risk five is distinguished by not being proprietary.
+01:16:11
+And so SSX can only be made by Intel. An M.D. arm can only be made by arm. They sell licenses to build erm ships to other companies, things like this. MIPS is another instruction set that is owned by the company now and then it gets licensed out, things like that. And so this five is an open standard that anybody can build chips for. And so sci fi was founded by three of the founders of Press five that design and built it in Berkeley working with Dave.
+01:16:39
+And so that was the genesis of the company. So perhaps today has some of the world's best for us, of course, and we're selling them. And that's really great. They're going into tons of products.
+01:16:49
+It's very exciting. They're taking this thing that's open source and just being trying to be or are the best in the world at building these things.
+01:16:57
+Yeah. So here is the specifications. Open source. It's like saying TCP IP is an open standard or C is an open standard, but then you have to build an implementation of the standard and so say five on the one hand, push us forward and defined and push us forward the standard. On the other hand, we have implementations that are best in class for different points in the space, depending on if you want a really tiny CPU or if you want a really big beefy one, that that is faster, but it uses more area and things like this.
+01:17:25
+What about the actual manufacture? So like what? Yeah. So where does that all fit, I guess. Combustion down question. That's OK. This is how we learn.
+01:17:34
+And so the way this works is that there's generally a separation of the people who design the circuits and the people who manufacture them. And so you'll hear about fabs like TSMC and Samsung and things like this that actually produce the chips. But they take a design coming in. And that design specifies how how the you know, you turn code for the chip into little rectangles that then use for the lithography to make mask's sets and then burn transistors onto a chip around silicon, rather.
+01:18:11
+So and we're talking about mass manufacturing.
+01:18:14
+So other talking about making hundreds of millions of parts and things like that. Yeah. And so the fab handles the volume, production, things like that. But when you look at this problem, the interesting thing about the space when you look at it is that these are the steps that you go from designing a chip and writing the quote unquote code for things like fair log and languages like that down to what you hand off to.
+01:18:37
+The Fab is a really well studied, really old problem. OK, tons of people have worked on it. Lots of smart people have built systems and tools. These tools then have generally gone through acquisitions and so they've ended up at three different major companies to build and sell these tools. They're called EDA tools like for electronic design, automation. The problem with this is you have huge amounts of fragmentation, you have loose standards and the tools don't really work together.
+01:19:06
+So you have tons of duct tape and you have tons of lost productivity. Now, these are these are tools for design. So the risk five is an instruction like what is risk five, how deep does it go? How how much does it touch the hardware? How much does it define? How much of the hardware is.
+01:19:25
+Yes. So five is all about given a CPU. So the the the processor and your computer, how does the compiler like the swift compiler of the C compiler, things like this, how does it make it work. So it's what does the assembly code and so you write risk five assembly instead of actually six assembly for example. But it's a set of instructions as a set of instructions. What do you say? It tells you how the compiler works.
+01:19:49
+Well, sorry, it's what the compiler talks to. OK, yeah.
+01:19:52
+And then so the tooling you mentioned, the disparate tools are for what?
+01:19:57
+For when you're building a specific chip. So. Ritvo in hardware. In hardware. Yeah. So, so W5 you can buy five core from Saipov five and say, hey, I want to have a certain number of running, a certain number of gigahertz, I want it to be this big, I want to be have these features. I want to have like I want floating point or not for example. And then what you get is you get a description of a CPU with those characteristics.
+01:20:23
+Now if you want to make a chip, you want to build like an iPhone chip or something like that.
+01:20:28
+Take both the CPU, but then you have to talk to memory, you have to have Tamar's Io's, a GPU, other components, and so you need to pull all of those things together into what's called network application, specific integrated circuits. So a custom chip. And then you take that design and then you have to transform it into something that the fabs, like TSMC, for example, know how to take to production. Got it. So, yeah.
+01:20:55
+And so that process will.
+01:20:58
+I can't help but see this is a big compiler. Yeah, it's a whole bunch of compilers without thinking about it through that lens and it is in the universe a compiler.
+01:21:12
+Compilers do two things. They represent things and transform them. Yeah. And so there's a lot of things that end up being compilers.
+01:21:18
+But this is a space where we're talking about design and usability and the way you think about things, the way things compose correctly, it matters a lot. And so safe havens investing a lot into that space. And we think that there's a lot lot of benefit that can be made by allowing people to design ships faster, get them to market quicker and scale up. Because, you know, at the alleged end of Moore's Law, you've got this problem of you're not getting free performance just by waiting another year for a faster CPU.
+01:21:50
+And so you have to find performance in other ways. And one of the ways to do that is with custom accelerators and other things and hardware and and so on.
+01:21:59
+We'll talk a little about a little more about A6. But do you see that a lot of people, a lot of companies will try to have like different sets of requirements that this whole process to go for is like like almost different car companies might use different and like different PC manufacturers like. So is this like guess risk five in this whole process? Is it potentially the future of all computing devices? Yeah, I think so.
+01:22:32
+If you look at risk five and step back from the silicon side of things, Risk five is an open standard.
+01:22:38
+And one of the things that has happened over the course of decades, if you look over the long arc of computing, somehow became decades old. Yeah. So you have companies that come and go and you have instructions that's to come and go. Like one example of this out of many is a sun will spark. Yeah. Sun one way sparks still lives on it if you just two.
+01:22:59
+But we have HP had this instructions that called risk. So pure risk was its big server business and had tons of customers. They decided to move to this architecture called Itanium from Intel didn't work out so well.
+01:23:16
+Yeah, right.
+01:23:17
+And so you have this issue of you're making many billion dollar investments on instruction sets that are owned by a company. And even companies as big as Intel don't always execute as well as they could. They have their own issues. HP, for example, decided that it wasn't in their best interest to continue investing in the space because it was very expensive. And so they make technology decisions, they make their own business decisions. And this means that as a customer, what do you do?
+01:23:44
+You've sunk all this time, all the engineering, all software work, all these you've built other products around them and now you're stuck. Right. What W5 does is provide you more optionality in the space, because if you buy an implementation of Restifo from Saipov and you should build the best ones. Yeah, but if something bad happens to say, five in 20 years. Right, well great. You can run by risk of course, from somebody else.
+01:24:09
+And there's an ecosystem of people that are making different risk, but of course with different trade offs, which means that if you have more than one requirement, if you have a family of products, you can probably find something in the rest of space that fit your needs. Whereas with if you're talking about sex, for example, it's intelligently going to bother to make certain classes of devices. I see, so maybe a weird question, but like sci fi is like infinitely successful in the next 20, 30 years, what is the world look like?
+01:24:44
+So like, how does the world of computing change so too much?
+01:24:49
+Diversity and hardware instruction sets, I think is bad. Like we have a lot of people that are using lots of different instruction sets, particularly in the embedded the like, very tiny microcontroller space.
+01:25:01
+The thing in your toaster that that are just weird and different for historical reasons. And so the compilers and the tool chains and the languages on top of them aren't there.
+01:25:13
+And so the developers for that software have to use really weird tools because the ecosystem that supports it is not big enough. So I expect that will change. Right. People will have better tools and better languages, better features everywhere that then can service many different points in the space. And I think W5 will progressively eat more of the ecosystem because it can scale up and scale down sideways. Left, right. It's very flexible and very well considered and well design instruction.
+01:25:41
+So I think when you look at sci fi of tackling silicon and how people build chips, which is a very different space, that's where you say, I think we'll see a lot more custom chips. And that means that you get much more battery life. You get better, better tuned solutions for your Iot thingy.
+01:26:02
+So you get you get people to move faster. You get the ability to have faster time to market, for example.
+01:26:08
+So how many customers? So first of all and Iot side of things, do you see the number of smart toasters increasing exponentially?
+01:26:17
+So, uh, and if you do like how much customization per toaster is there to all toasters in the world, run the same silicon, like the same design, or is it different? Companies have different design, like how how much customization is possible here?
+01:26:36
+Well, a lot of it comes down to cost. Right. Right. And so the way the chips work is you end up paying by the one of the factors is the size of the chip. And so what ends up happening just from an economic perspective is there's only so many chips that get made in any year of a given design, and so often what customers end up having to do is they end up having to pick up a chip that exists that was built for somebody else so that they can then ship their product.
+01:27:03
+And the reason for that is they don't have the volume of the iPhone. They can't afford to build a custom chip. However, what that means is they're now buying and off the shelf chip that isn't really good, isn't a perfect fit for their needs. And so they're paying a lot of money for it because they're buying silicon that they're not using. Well, if you now reduce the cost of designing the chip now you get a lot more chips and the more you reduce it, the easier it is to design chips, the more the world keeps evolving and we get more accelerated.
+01:27:32
+As we get more other things, we get more standards to talk to.
+01:27:35
+We get 60. Right. You get you get you get changes in the world that you want to be able to talk to these different things.
+01:27:41
+There's more diversity in the cross product of features that people want and that drives differentiated chips and different in another direction. And so nobody really knows what the future looks like. But but I think that there's a lot of silicon in the future.
+01:27:56
+Speaking of the future, you said Moore's Law allegedly is dead. So do you think do you agree with the Dave Patterson and many folks that Moore's Law is dead?
+01:28:08
+Or do you agree with Jim Keller, who says who's standing at the helm of the pirate ship saying it's still alive? Still alive? Yeah, I agree with what they're saying.
+01:28:22
+And different people are interpreting the end of Moore's Law in different ways. Yeah. So Jim would say, you know, there's another thousand acts left in physics and we can we can continue to squeeze the stone and make it faster and smaller and smaller geometries and all that kind of stuff.
+01:28:39
+He's right. So, Jim, Jim is absolutely right that there's a ton of ton of progress left and we're not at the limit of physics yet. That's not really what Moore's Law is, though.
+01:28:51
+If you look at what Moore's Law is, is that it's a very simple evaluation of, OK, well, you look at the cost for I think it was cost per area and the most economic point in that space. And if you go look at the now quite old paper that describes this, Moore's Law has a specific economic aspect to it. And I think this is something that Dave and others often point out. And so on a technicality. That's right.
+01:29:18
+I look at it from so I can acknowledge both of those viewpoints. They're both right. They're both right. I'll give you a third wrong viewpoint that may be right in its own way, which is a single thread performance. Doesn't improve like it used to, and it used to be back when you got a, you know, a Pentium 66 or something and the year before you had a Pentium three and now it's twice as fast. Right. Well, it was twice as fast at doing exactly the same thing.
+01:29:47
+OK, like literally the same program ran twice as fast. You just wrote a check and waited a year, year and a half. Well, so that's what a lot of people think about Moore's Law, and I think that is dead. And so what we're seeing instead is we're pushing we're pushing people to write software in different ways.
+01:30:04
+And so we're pushing people to write Khuda so they can get GPU compute. And the the thousands, of course, on GPU we're talking about see programmers having to Pitroda because they now have, you know, 100, 100 threads or 50 cores in a machine or something like that. You're not talking about machine learning accelerators that are now domain specific. And when you look at these kinds of use cases, you can still get performance and Jim will come up with cool things that utilize the silicon in new ways for sure.
+01:30:32
+But you're also going to change the programming model. Right? And now when you start talking about changing the programming model, that's when you come back to languages and things like this, too, because often what you see is like you take the C programming language, right? The C programming language is designed for CPU's. And so if you want to talk to you now, you're talking to its cousin, Kouda, OK, is a different thing with a different set of tools, a different world, a different way of thinking.
+01:31:01
+And we don't have one world that scales. And I think that we can get that. We can have one world that scales in a much better way.
+01:31:07
+And a small tangent than I think most programming languages are designed for CPU's for a single or even just in their spirit, even if they allow for paralyzation. So what is the look like for programming language to have parallelization or massive parallelization as it's like first principle? So the canonical example of this is the hardware design world. So very long video, these kinds of languages, they're what's called a high level synthesised language. This is the thing people design chips in.
+01:31:43
+And when you're designing a chip, it's kind of like a brain where you have infinite parallelism like you've got you're talking you're like laying down transistors. Transistors are always running back. And so you're not saying run, run this transistor, then this transistors and this transistor, it's like your brain, like your neurons are always just doing something. They're not clocked. Right. They're just doing they're doing their thing. And so when you design a chip or when using a CPU and you design GPU and you design when you're laying down the transistors, similarly you're talking about, well, OK, well, how do these things communicate?
+01:32:18
+And so these languages exist was a kind of mixed example of that, of these languages are really great. You have a very low level. Yeah, yeah. They're very low level. And abstraction is necessary here. And there's different different approaches that then it's a it's itself a very complicated world.
+01:32:34
+But but it's implicitly parallel. And so having that as a as the domain the You program towards makes it so that by default you get parallel systems. If you look at could as a point halfway in the space where in Kouda when you write a Kouta kernel for your GPU, it feels like you're writing a scalar program. So you're like you have Ephesian for loop stuff like this, you're just writing normal, normal code. But what happens outside of that and your driver is that it actually is running you on like a thousand things at once.
+01:33:05
+Right. And so it's it's parallel, but it has pulled it out of the programming model. And so now you as a programmer are working on that as in a simpler world, and it's solved that for you.
+01:33:18
+How do you take the language like with, um, you know, if we think about GPS, but also maybe we can dance back and forth between hardware and software is, you know, how do you design for these features to be able to program? You get a first class citizen to be able to do like Swift pretends to be able to do machine learning on current hardware, but also future hardware like GPS and all kinds of issues that I'm sure will be popping up more.
+01:33:48
+Yeah, also.
+01:33:50
+So a lot of this comes down to this whole idea of having the nuts and bolts underneath the covers that work really well. So you need if you're talking to TBAs, you need, you know, MLR Xolair or one of these compilers that toxic to use to build on top of.
+01:34:03
+OK. And if you're talking to circuits, you need to figure out how to lay down the transistors and how to organize and how to set up clocking in like all the domain problems that you get with circuits. Then you have to decide how to explain to human beings you are. Right, and if you do it right, that's a library problem, not a language from in that works. If you have a library or a language which allows your library to write things that feel native in the language by implementing libraries, because then you can innovate in programming models without having to change your syntax again and like have to invent new code formatting tools and like all the other things that languages come with.
+01:34:44
+And this gets really interesting. And so if you look at the space, the interesting thing, once you separate out syntax becomes what is that programming model? And so do you want the coolest style? I write one program and it runs many places. The do you want the implicitly parallel model? How you reason about that? How do you give developers, architects the the ability to express their intent? And that comes into this whole design question of how do you detect bugs quickly so you don't have to tip out Chip to find out what's wrong.
+01:35:18
+Ideally, right. How do you and you know, this is a spectrum. How do you make it so that people feel productive? So the turnaround time is very quick. All these things are really hard problems. And in this world, I think that not a lot of effort has been put into that design problem and thinking about the layering in other pieces. What you've on the top of concurrency, you've written the Swift Concurrency Manifesto, I think it's it's kind of interesting, anything that has the word manifesto.
+01:35:47
+And it is very interesting. Can you summarize the key ideas of each of the five parts you've written about?
+01:35:54
+So what does the manifesto. Yes, how about we start there?
+01:35:58
+So in the Swift community, we have this problem, which is on the one hand, you want to have relatively small proposals that you can kind of fit in your head.
+01:36:08
+You can understand the details that are very fine grained level that move the world forward. But then you also have these big arcs, OK? And often when you're working on something that is a big arc, but you're tackling in small pieces, you have this question of how do I know I'm not doing a random walk here?
+01:36:24
+What are we going like? How does this add up?
+01:36:26
+Furthermore, when you start that, first of all, the first small step, what terminology to use, how do we think about it?
+01:36:33
+What is better and worse and what are the principles? What are we trying to achieve and sort of manifesto in the surf community?
+01:36:38
+Does it starts to say, hey, well, let's step back from the details of everything and let's paint a broad picture to talk about how what we're trying to achieve. Let's give an example, design point. Let's try to paint the big picture so that then we can zero in on the individual steps and make sure that we're making good progress. And so the concurrency manifesto is something I wrote three years ago. It's been a while, maybe, maybe more trying to do that for for question concurrency.
+01:37:06
+It starts with some fairly simple things, like making the observation that when you have multiple different computers or multiple different threads are communicating, it's best for them to be asynchronous. Right. And so you need things to be able to run separately and then communicate with each other. And this means a synchrony and this means that you need a way to modeling asynchronous communication. Many languages have features like this async well as a popular one. And so that's what I think is very likely and swift.
+01:37:36
+But as you start building this tower of abstractions, it's not just about how do you write this? You then reach into the how do you get memory safety? Because you want correctness. You want the ability and sanity for developers.
+01:37:48
+And how do you get that memory safety into into the language. So if you take a language like Go or C or any of these languages, you get what's called a race condition when two different threads are guillotines or whatever, touch the same point in memory. Right. This is a huge, like, maddening problem to the bug because it's not reproducible generally.
+01:38:11
+And so there's tools, there's the whole ecosystem. The solutions are built up around this. But it's a huge problem when you're writing concurrent code. And so was this all very semantic thing is really powerful there, because it turns out that math and copies actually work even in concurrent worlds. And so you get a lot of safety just out of the box. But there are also some hard problems and it talks about some of that. When you start building up to the next level up and you start talking beyond memory safety, you have to talk about what does the programmer model, how does a human think about this?
+01:38:41
+So a developer that's trying to build a program, think about this, and it proposes a really old model with the new spin called actors. Actors are about saying we have islands of single threaded ness logically. So you write something that feels like it's one programming, one program running in a unit, and then it communicates asynchronously with other other things. And so making that expressive, a natural, feel good, be the first thing you reach for and being safe by default is a big part of the design of that proposal.
+01:39:13
+When you start going beyond that now, you start to say, cool, well, the things that communicate asynchronously, they don't have to share memory. Well, if they don't have memory and they're sending messages to each other, why do they have to be in the same process? These things should be able to be in different processes on your machine and why it just processes. Well, why not different machines? And so now you have a very nice, gradual transition towards distributed programming.
+01:39:38
+And of course, when we start talking about the big the big future, the the manifesto doesn't go into it. But accelerators are async things you talk to asynchronously by sending messages to them.
+01:39:50
+And how do you program those? That gets very interesting. That's not that's not in the proposal. So.
+01:39:56
+And how much do you want to make that explicit, like the control of that whole process explicit to the program? Yeah, good question. So when you're designing any of these kinds of features or language features or even libraries, you have this really hard trade off. You have to make which is how much is it magic or how much is it in the humans control? How much can they predict and control it? What do you do when the default case is the wrong case?
+01:40:26
+OK. And so when you're designing a system, I won't name names, but there are systems where you it's really easy to get started and then you, you jump.
+01:40:39
+So let's pick like logo. OK, so something like this.
+01:40:42
+So it's really easy to start is really designed for teaching kids. But as you get into it, you hit a ceiling and then you can't go any higher. And then what do you do? Well, you have to go switch to a different world and rewrite all your code and logos.
+01:40:55
+The silly example here, this exists in many other languages with Python, you would say like concurrency, right?
+01:41:02
+So Python has the global interpretive laakso threading is challenging in Python. And so if you if you start writing a large scale application in Python and then suddenly the concurrency, you're kind of stuck with the series of bad trade offs. Right.
+01:41:17
+There's other ways to go where you say like foist all the other complexity on these real ones.
+01:41:23
+Right. And that's also bad in a different way. And so what what I what I prefer is building a simple model that you can explain that then has an escape hatch. So you get in, you have guardrails, you memorize safety works like this and swift where you can start with like by default if you use all the standard things its members say, if you're not going to shoot your foot off. But if you want to get a C level pointer to something, you can explicitly do that.
+01:41:51
+But by default, it's just guardrails. There's guardrails. OK, so but like, you know, whose job is it to figure out which part of the code is paralyzed?
+01:42:04
+So in the case of the proposal, it is the human's job. So they decide how to architect their application and then the runtime and the compiler is very predictable. And so this this is in contrast to like there's a long body of work, including unfortune for auto parallelize and compilers. And this is an example of a bad thing and my so as a compiler person, I can write on compiler people often compiler people will say, cool, since I can't change the code, I'm going to write my compiler.
+01:42:35
+That then takes us unmodified code and mix go way faster on this machine. OK, application. And so it does pattern matching. It does like really deep analysis. Compiler people are really smart and so they like want to like do something really clever and tricky and you get like 10x speed up by taking like an array of structures and turn into a structure of arrays or something because it's so much better for memory. Like there's bodies like tons of tracks. Yeah.
+01:42:59
+They love optimization.
+01:43:00
+Yeah. You love everyone loves optimization as well. And it's just the promise of build with my compiler and your thing goes fast.
+01:43:06
+Yeah, right. But here's the problem. It lets you write your own program. You run it with my compiler.
+01:43:12
+It goes fast. You're very happy. Wow. So much faster than the other compiler. Then you go and you had a feature to your programmer, you refactor some code and suddenly you got a 10x loss in performance. Well, why what just happened there? What has happened is you the heuristic, the the pattern matching the compiler, whatever analysis was doing just got defeated because you didn't inline a function or something. Right. As a user, you don't know.
+01:43:36
+You don't want to know. That was all point. You don't want to know how the compiler works. You don't want to know how the memory hierarchy works. You don't want to know how it got parallelize across all these things.
+01:43:44
+You wanted that abstract away from you. But then the magic is lost.
+01:43:48
+As soon as you did something and you fall off a cliff and now you're in this funny position where what do I do? I don't change my code. I don't fix that bug. It cost him 10x performance. Now what do I do? Well, this is the problem with unpredictable performance. If you care about performance, predictability is a very important thing. And so and so what the proposal does is it provides an architectural patterns for being able to layout your code, gives you full control over that, makes it really simple.
+01:44:16
+So you can explain it.
+01:44:16
+And then and then if you want to scale out in different ways, you have more control over the seven years since the intuition is for compilers, too hard to do automated parallelization like, you know, because the compilers do stuff automatically. That's incredibly impressive for other things. Right. But for parallelization, we're not even we're not close to there.
+01:44:41
+Well, it depends on the programming model. So there's many different kinds of compilers and stuff you talk about like a C compiler, swift compiler or something like that, where you're writing imperative code. Paralyzing that and reasoning about all the pointers and stuff like that is very is a very difficult problem. Now, if you switch domains. So there's this cool thing called machine learning. Mm hmm. Right.
+01:45:02
+So the machine, the machine learning nerd's, among other endearing things like, you know, solving cat detectors and other things like that, have done this amazing breakthrough of producing a programming model, operations that you can post together that has raised the level of abstraction high enough that suddenly you can have auto paralyzing compilers.
+01:45:23
+You can write a model using tensor flow and have it run on 1024 nodes of ATP.
+01:45:30
+Yeah, sure. I didn't even think about, like, you know, because there's so much flexibility in the design of architectures that ultimately boil down to a graph that's paralyzed before for paralyzed for you. And if you think about it, that's pretty cool. That's pretty cool. Yeah. And you think about Batching, for example, as a way of being able to exploit more parallelism. Yeah, that's a very simple thing that now is very powerful. That didn't come out of the programming language nerd's.
+01:45:54
+Those people like that came out of people that are just looking to solve a problem and use a few views and organically developed by the community of people focusing on machine learning as an incredibly powerful, powerful abstraction layer that enables the compiler people to go and exploit that. And now you can drive supercomputers from Python.
+01:46:13
+Well, that's that's pretty cool. It's just because I'm not sufficiently low level. I forget to admire the beauty and power of that. But maybe just to linger on it. Like what? What does it take to run a neural network fast? Like, how hard is that compilation? It's really hard.
+01:46:32
+So we skipped you said like, it's amazing that that's a thing, but how hard is that of a thing? It's hard.
+01:46:38
+And I would say that not all of the systems are really great, including the ones I helped build.
+01:46:45
+So there's a lot of work left to be done.
+01:46:47
+There is a couple of years working on that. Or is it a whole new group of people? Well, it's a full stack problem, including compiler people, including APIs like Keris and the the the the module API and Petrarch and Jacs. And there's a bunch of people pushing on all the different parts of these things, because when you look at it as it's both, how do I express the computation? Do I stack up layers? Well, cool.
+01:47:10
+Like setting up a linear sequence of layers is great for the simple case. But how do we do the hardcase? How do I do reinforcement learning? Well, now I need to integrate my application logic in this.
+01:47:18
+Right then it's the next level down of. How do you represent that. The runtime, how do you get hardware abstraction? And then you get to the next level down of saying, like, forget about abstraction, how do I get the peak performance out of my Tipu or my iPhone accelerator or whatever and all these different things. And and so this is a layered problem with a lot of really interesting design and work going on in the space and a lot of really smart people working on it.
+01:47:43
+Machine learning is a very well funded area of investment right now, and so there's a lot of progress being made.
+01:47:49
+So how much innovation is there on the lower levels or closer to the to the basics of redesigning the hardware or redesigning concurrently compilers with that hardware is that if you were to predict the biggest, you know, the equivalent of Moore's Law improvements in the inference and the training of neural networks and just all of that, where is that going to come from?
+01:48:13
+Sure, you get scalability of different things. And so you get, you know, Jim Keller tracking process technology, you get three nanometer instead of five or seven or 10 or 28 or whatever. And so that that marches forward and that provides improvements. You get architectural level performance. And so the you know, a Tipu with a matrix multiplier in a stark array is much more efficient than having a scalar core doing multiplies and adds and things like that. You then get system level improvements.
+01:48:45
+So how you talk to memory, how you talk across a cluster of machines, how you scale out, how you have fast interconnect between machines, you then get system level programming model. So now that you have all this hardware, how to utilize it, you then have algorithmic breakthroughs where you say, hey, wow, cool. Instead of training in of fifty and a week, I'm now training in, you know, twenty five seconds. And the combination is a combination of, you know, new new optimizers and new new new just training regimens and different different approaches to train and, and all of these things come together to, to push for.
+01:49:22
+That was a beautiful exposition.
+01:49:26
+But if you were to force the bet all your money and one of these, would you why do we have to this that we have? Fortunately, we have people working on this. It's an exciting time. Right.
+01:49:39
+So, I mean, you know, openly, I did this little paper show on the algorithmic improvement you can get has been improving exponentially. I haven't quite seen the same kind of analysis on other layers of the stack. The I'm sure it's also improving significantly. I just it's it's a nice intuition builder. I mean, there's a reason why Moore's Law that's the beauty of Moore's Law as somebody writes a paper that makes a ridiculous prediction. Yeah. And it, you know, becomes reality in a sense.
+01:50:13
+There's there's something about these narratives when you when Crestline, a silly little podcast, makes all bets, all this money on a particular thing, somehow it can have a ripple effect of actually becoming real. That's an interesting aspect of it, because like it might have been, you know, we focused with Moore's Law. Most of the computing industry really, really focused on the hardware.
+01:50:40
+In software innovation, I don't know how much software innovation there was in terms of Intel giveth, Bill takes away. Yeah, I mean, compilers improved significantly also. Well, not not so, actually. I mean, some I'm joking about how suffers gotten slower pretty much as fast as I got better at least through the 90s. There's another joke, another law and compilers, which is called I think it's called Progestins Law, which is compilers double the performance of any given code every 18 years.
+01:51:13
+So they move slowly. Yeah, so, yeah, it's exponential, also making progress, but there again, it's not about the power of computers.
+01:51:23
+It's not just about how do you make the same thing go faster. It's how do you unlock the new hardware? A new chip came out how to utilize it. You say, oh, the programming. Well, how do you make people more productive?
+01:51:33
+How do we how do we, like, have better air messages, even such mundane things like how do I generate a very specific error message about your code actually makes people happy because they know how to fix it. Right. And it comes back to how do you help people get their job done?
+01:51:51
+Yeah. And yeah. And in this world of exponentially increasing smart toaster's, how do you expand computing to to all these kinds of devices? Do you see this world where just everything, the computing surface, you see that possibility, just everything's a computer. Yeah, I don't see any reason that that couldn't be achieved.
+01:52:13
+Turns out that sand goes into glass and glass is pretty useful too. And you know why not. Why not.
+01:52:22
+So a very important question then if. If we're living in a simulation and the simulation is running a computer, like what was the architecture, that computer, do you think?
+01:52:37
+Hmm? So you're saying is it a quantum system? Is it? Yeah. Like this whole quantum discussion is needed or it can can we run it on, you know, the risk five architecture, a bunch of CPUs?
+01:52:52
+I think it comes down to the right tool for the job. And so. Yeah, exactly. That's that's my question. And I get that job, the universe compiler.
+01:53:03
+And so there as far as we know, quantum quantum quantum systems are the bottom of the pile of turtles so far.
+01:53:11
+Yeah. And so we don't know efficient ways to implement quantum systems without using quantum computers. And that's totally outside of everything we've talked about who runs that quantum computer? Yeah, right. So if if if we really are living in a simulation, then is it bigger quantum computers?
+01:53:31
+Is it difference? Like, how does that work? How does that scale. Well, it's the same size.
+01:53:36
+It's the same size. But then but then the thought of the simulation is that you don't run the whole thing, that, you know, we humans are cognitively very checkpoints, checkpoints.
+01:53:46
+And and if we the point at which we human.
+01:53:49
+So you basically do a minimal amount of what is it swift does on right. On right. So you only you only adjust the simulation in a parallel universe. There is. Right. And so and so every time a decision is made, somebody opens the Schrodinger box, then there's a fork and then this could happen and and then, uh, thank you for for considering the possibility.
+01:54:17
+But yeah. So it may not require the entirety of the universe, the simulator, but it's interesting to think about as we create this higher and higher fidelity systems.
+01:54:30
+But I do want to ask on the on the quantum computer side, because everything we've talked about with us, with your work, with sci fi, with everything with compilers, none of that includes quantum computers, right? That's true. So. Have you ever thought about what this whole serious engineering work of quantum computers looks like, of compilers, of architectures of that kind of stuff?
+01:54:57
+So I've looked at it a little bit. I know almost nothing about it, which means that at some point I will have to find an excuse to get involved because that's. What do you think?
+01:55:05
+Do you think that's the thing to be like with your little tingly senses of the timing of when to be involved? Is it not yet.
+01:55:13
+Well, so so the thing I do really well is I jump into massive systems and figure out how to make them figure out what the truth in the situation is, to try to figure out what what the unifying theory is, how to factor the complexity, how to find a beautiful answer to a problem that has been well studied and lots of people have bashed their heads against it. I don't know. The quantum computers are mature enough and accessible enough to be figured out yet.
+01:55:40
+Right.
+01:55:40
+And the I think the open question with quantum computers is, is there a useful problem that gets solved with quantum computer that makes it worth the economic cost of like having one of these things and having having legions of people that that set it up.
+01:55:58
+You go back to the 50s. Right. And there's the projections of the world will only need seven, seven computers. Right. Well, and part of that was that people hadn't figured out what was useful for what are the algorithms we want to run, what are the problems get solved. And this goes back to how do we make the world better either economically or making space life better or like solving a problem that wasn't solved before, things like this.
+01:56:19
+And I think that just we're a little bit too early in that development cycle because it's still like literally a science project, not a negative connotation. Right. It's literally a science project. And the progress was amazing. And so I don't know if it's 10 years away, if it's two years away, exactly where that breakthrough happens.
+01:56:38
+But you look at machine learning it. We went through a few winners before the election, that transition, and then suddenly it had its breakout moment. And that was the catalyst that then drove the talent flocking into it. That's what drove the economic applications of it.
+01:56:57
+That's what drove the the technology to go faster because you now have more minds thrown at the problem. This is what caused like a serious knee and deep learning and the algorithms that we're using. And and so I think that's what quantum needs to go through. And so right now, it's in that that formidable finding itself, getting the literally the physics to figure it out.
+01:57:19
+And and then it has to figure out the application that makes that's useful right now. I'm not skeptical. I think that will happen. I think it's just, you know, ten years away, something like that.
+01:57:30
+Forgot to ask, what programming language do you think the simulation is written in? Well, probably list the N word like if you were to use it, but I'll just leave it at that.
+01:57:44
+So, I mean, we mentioned that you worked with all these companies. We talked about all these projects. It Kyle, if we just step back and zoom out about the way you did that work and we look at covid times, this pandemic we're living through, that may if I look at the way Silicon Valley folks are talking about it, the way MIT is talking about it, this might last for a long time. Not just the virus, but the the remote nature, the economic impact.
+01:58:16
+I mean, yes, it's going to be a mess. Do you think what's your prediction? I mean, from sci fi to Google to to just all the places you worked in Silicon Valley, you're in the middle of it. What do you think is how this whole place is going to change?
+01:58:33
+Yeah, so, I mean, I, I really can only speak to the tech perspective. I am in that bubble. I think it's really interesting because the, you know, the zoom culture of being remote and on video shot all the time has really interesting effects on people. So on the one hand, it's a great analyzer. It's a normal laser that I think will help communities of people that have traditionally been underrepresented because now you're taking in some cases of face off because you have to have a camera going.
+01:59:05
+Right, and so you can have conversations without physical appearance being part of that part of the dynamic, which is pretty powerful, you're taking remote employees that have already been remote and you're saying you're now on the same level and footing as everybody else.
+01:59:18
+Nobody gets whiteboards. You're not going to be the one person that doesn't get to be participating in the whiteboard conversation. And that's pretty powerful. You've got you're forcing people to think asynchronously in some cases because it's hard to just just get people physically together. And the bumping into each other forces people to find new ways to solve those problems. And I think that that leads to more inclusive behavior, which is good.
+01:59:43
+On the other hand, it's also it just sucks. Right.
+01:59:47
+And so the nature the communication just sucks being not with people like on a daily basis and collaborating with them.
+01:59:58
+Yeah, all of that.
+01:59:59
+I mean, everything this whole situation is terrible. What I meant primarily was the. I think the most humans like working physically with humans, I think this is something that not everybody, but many people are programmed to do. And I think that we get something out of that that is very hard to express, at least for me. And so maybe this isn't true of everybody.
+02:00:19
+But and so the question to me is, you know, when you get through that time of adaptation, you get out of March and April and you get into December and you get into next March if it's not changed. Right.
+02:00:33
+It's already terrifying. Well, if you think about that and you think about what is the nature of work and how do how do we adapt? And humans are very adaptable species. Right.
+02:00:41
+We can we can learn things and when we're forced to and there's a catalyst to make that happen. And so what is it that comes out of this? And are we better or worse off? Right. I think that, you know, you look at the Bay Area, housing prices are insane or why? Well, there's a high incentive to be physically located because if you don't have proximity, you end up paying for it and commute. Right.
+02:01:05
+And there's there has been huge source of social pressure in terms of like you will be there for the meeting. Right. Or whatever scenario it is.
+02:01:13
+And I think going can be way better. I think it's going to be much more the norm to have remote employees. And I think this is going to be really great.
+02:01:20
+Do you have friends or do you hear of people moving?
+02:01:23
+I know one family friend that moved. They moved back to Michigan and, you know, they were a family with three kids living in a small apartment. And like, we're going and saying, right. And they're InTech husband works for Google.
+02:01:41
+So first of all, friends of mine are in the process of or have already lost the business that represents their passion, their dream. It could be small entrepreneur projects to be large businesses like people that run gyms, like restaurants like Tunstall's. Yeah.
+02:01:57
+So but also people like look at themselves in the mirror and ask the question of like, what do I want to do in life? For some reason they don't haven't done it until covid like yeah. They really ask that question and that results often in moving or leaving the company with starting your business or transitioning to a different company. Do you think we're going to see that a lot? Like I can't speak to that.
+02:02:23
+I mean, we're definitely seeing a higher frequency than we did before. Just because I think what you're trying to say is there are decisions that you make yourself and big life decisions that you make yourself and like I'm going to quit my job and start a new thing. There's also decisions to be made for you, like I got fired from my job. What am I going to do? Right. And that's not a decision that you think about, but you're forced to act, OK?
+02:02:47
+And so I think that those you're forced to act kind of moments where like, you know, global pandemic comes and wipes out the economy and now your business doesn't exist. I think that does lead to more reflection.
+02:02:58
+Right, because you're less anchored on what you have. And it's not a what do I have to lose versus what I have to gain a comparison.
+02:03:07
+It's more of a fresh slate. Cool.
+02:03:09
+I could do anything now. Do I want to do the same thing I was doing? Did that make me happy?
+02:03:15
+Is this now time to go back to college and take a class and learn, learn new skill?
+02:03:19
+Is this is this a time to spend time with family? If you can afford to do that, is this time to like, you know, literally move in with parents? Right. I mean, all these things that were not normative before suddenly become, I think, very the value very systems changed.
+02:03:35
+And I think that's actually a good thing in the short term, at least, because it leads to, you know, there's kind of been an overall optimization along one one set of priorities for the world.
+02:03:48
+And now maybe we'll get to a more balanced and more interesting world where people are doing different things. I think it could be good. There could be more innovation that comes out of it.
+02:03:56
+For example, what do you think about all the social chaos in the middle of, like stocks? Because let me ask you, I hope you think it's all going to be OK.
+02:04:07
+Well, I think humanity will survive the next ten, OK? We're not going to kill. Yeah, well, I don't think the first of all, the humans I don't think all the humans are going to kill all the humans. I think that's unlikely. But I look at it as progress requires a catalyst.
+02:04:29
+So you need you need a reason for people to be willing to do things that are uncomfortable. I think that the US at least, but I think the world in general is a pretty and optimal place to live in for a lot of people. And I think that what we're seeing right now is we're seeing a lot of unhappiness. And because because of all the pressure, because of all the the badness in the world that's coming together, it's really kind of igniting some of that debate that should have happened a long time ago.
+02:04:56
+Right? I mean, I think that we'll see more progress. You're asking about offline. You're asking about politics and wouldn't be great if politics move faster because there's all these problems in the world, we can move it well.
+02:05:05
+People are intentionally or inherently conservative, and so if you're talking about conservative people, particularly if they have heavy burdens on their shoulders because they represent literally thousands of people.
+02:05:18
+It makes sense to be conservative, but on the other hand, when you need change, how do you get it? The global pandemic will probably lead to some change. And it's not a directed it's not directed plan. But I think that it leads to people asking really interesting questions. And some of those questions should have been asked a long time ago.
+02:05:36
+Well, let me know if you've observed this as well. Something is bothering me in the machine learning community. I'm guessing it might be prevalent in other places is something that feels like in twenty twenty increase level of toxicity, like people are just quicker to pile on, to just be just harsh on each other to to like mob pick a person that screwed up and make it a big thing. Yeah. And is there something that we can like. Have you observed that in other places, is there is there some way out of this?
+02:06:16
+I think there's an inherent thing in humanity that's kind of an us versus them thing, which is that you want to succeed and how do you succeed? What's relative to somebody else? And so what's happening, at least in some part, is that with the Internet and with online communication, the world is getting smaller. Right, and so we're having some of the social ties of, like my name, my town versus your town's football team, right, turn into a much larger, larger and shallower problems.
+02:06:49
+And people don't have time. The incentives, the click bait and like all these things can really, really feed into this machine.
+02:06:57
+And I don't know where that goes.
+02:06:59
+Yeah, I mean, the reason I think about that, I mentioned to you this I'll find a little bit.
+02:07:04
+But, you know, I've a few difficult conversations scheduled, some of them political related, some of them within the community are difficult personalities. I went through some stuff. I mean, one of them I've talked before I will talk again is John McCain. You got a little bit of crap on Twitter for for talking about a particular paper and the bias within a data set. And then there's been a huge in my view, and I'm feeling comfortable saying it irrational, overexaggerated pile on on his comments because he made pretty basic comments about the fact that if there's bias in the data, there's going to be bias and the results.
+02:07:49
+So we should not have bias in the data. But people piled on to him because he said he trivialized the problem of bias, like it's more than just bias in the data, but like, yes, that's a very good point. But that's what he was saying, that what he was saying and the response, like the implied response that he's basically sexist and racist is it's something that completely drives away the possibility of a nuanced discussion. And one nice thing about like a pocket long form of conversation is you can talk it out, you can lay your reasoning out.
+02:08:29
+Then even if you're wrong, you can still show that you're a good human being underneath it.
+02:08:34
+You know, your point about you can't have a productive discussion or how do you get to the point where people can turn, they can learn, they can listen, they can think, they can engage versus just being a shallow like like and then keep moving.
+02:08:48
+Right. And I don't think that that progress really comes from that. Right. And I don't think that one should expect that. I think that you'd see that as reinforcing individual circles in the US versus them thing. And I think that's fairly divisive.
+02:09:04
+Yeah, I think there's a big role. And I think the people that bother me most on Twitter when I observe things is not the people who get very emotional, angry, like over the top. It's the people who like. Prop them up. It's all the sure, it's that I think what should be the we should teach each other is to be sort of empathetic.
+02:09:29
+The thing that it's really easy to forget, particularly on Twitter or the Internet or in email, is that sometimes people just have a bad day.
+02:09:36
+Yeah, right. You have a bad day or you're like, I've been in the situation where it's like between meetings, like have a quick response to an email because I want to, like, help get something unblocked. Phrase it really objectively wrong. I screwed up and suddenly this is now something that sticks with people and it's not because they're bad, it's not because you're bad. Just psychology of, like you said, a thing. It sticks with you.
+02:10:02
+You didn't mean it that way, but it really impacted somebody because the way they interpret it, and this is just an aspect of working together as humans.
+02:10:10
+And I have a lot of optimism in the long term, the very long term, about what we as humanity can do.
+02:10:15
+But I think that's going to be it's always a rough ride. And you came into this by saying, like, what is covid and all the the social strife that's happening right now? I mean, and I think that it's really bad in the short term, but I think will lead to progress. And for that, I'm very thankful. Yeah, it's painful in the short term, though. Well, yeah, I mean, people are out of jobs like some people can't eat, like it's horrible and but but, you know, it's progress.
+02:10:43
+So we'll see. We'll see what happens. I mean, the real question is, when you look back 10 years, 20 years, 100 years from now, how do we evaluate the decisions being made right now? I think that's really the way you can frame that and look at it and you say, you know, you integrate across all the short term horribleness that's happening and you look at what that means.
+02:11:03
+And is the improvement across the world or the regression across the world significant enough to make it a good or a bad thing? I think that's the question. Yeah, and that's good to study history and one of the big problems for me right now is I'm reading the rise and fall of the Third Reich, like reading.
+02:11:24
+So everything is just I just see parallels and it means you have to be really careful not to overstep it. But just the the thing that worries me the most is the pain that people feel when, of course, when a few things combined, just like economic depression, which is quite possible in this country, and then just being disrespected by in some kind of way, which the German people were really disrespected by most of the world of like in a way that's over the top that something can build up.
+02:11:58
+And then all you need is a charismatic leader just to go either positive or negative. And both work as long as they're charismatic and they're taking advantage of, again, that that inflection point that the world then and what they do with it could be good or bad.
+02:12:16
+And so it's a good way to think about times now, like on the individual level, what we decided to do is when history is written, you know, 30 years from now, what happened, 20, 20, probably history's going to remember 20, 20.
+02:12:29
+Yeah, I think so. Either for good or bad. And it's up to us to read it. So it's good.
+02:12:36
+Well, one of the things I've observed that I find fascinating is most people act as though the world doesn't change. You make decisions and knowingly you make a decision.
+02:12:48
+You're predicting the future based on what you've seen in the recent past. And so if something's always been rained every single day, then, of course, you expect it to rain today, too, right?
+02:12:57
+And the world changes. All the time, yeah, constantly, like for better and for worse. So the question is, if you're interested in something that's not right, what is the inflection point that led to a change? And you can look to history for this, like what is what is the catalyst that led to that that explosion that led to that bill that led to the like?
+02:13:17
+You can kind of work your way backwards from that. And maybe if you pull together the right people and you get the right ideas together, you can actually start driving that change and doing in a way that's productive and hurts fewer people.
+02:13:28
+Yeah, like a single person, a single event can turn all of this slowly. Everything starts somewhere. And often it's a combination of multiple factors. But but yeah, this is these things can be engineered.
+02:13:39
+That's actually the optimistic view that I'm a long term optimist on pretty much everything and human nature.
+02:13:45
+You know, we can look at all the negative things that the humanity has, all the pettiness and all the like. Self-serving this and the just the cruelty, the biases, the just humans can be very horrible.
+02:14:00
+But on the other hand, we're capable of amazing things.
+02:14:03
+And and the progress across, you know, 100 year chunks is striking.
+02:14:10
+And even across decades, it's we've come a long ways and there's still a long ways to go. But that doesn't mean that we've stopped.
+02:14:16
+Yeah. Stuff within the last hundred years. It's unbelievable. It's kind of scary to think what's going to happen this year is scary, like exciting, scary in a sense that it's kind of sad that the kind of technology is going to come out in 10, 20, 30 years will probably be too old to really appreciate. You don't grow up with it.
+02:14:35
+It'll be like kids these days with virtual reality and their particular looks and stuff like this, like this thing and like, come on, give me my, you know, static photo, you know, my Commodore 64. Yeah. Yeah, exactly. OK, so we kind of skipped over. Let me ask on. You know, the machine learning world has been kind of inspired, the imagination captivated with three and these language models I thought would be cool to get your opinion on.
+02:15:08
+And what's your thoughts on this exciting world of it connects to computation actually is of language models that are huge. Yeah. And take multiple many, many computers, not just the train, but also do inference on.
+02:15:26
+Sure. Well, I mean, it depends on what you're speaking to there. But I mean, I think that there's been a pretty well understood Maximon deep learning that if you make the model bigger and you shove more data into it, assuming you train it right and you have a good model architecture, that you'll get a better model out. And so on one hand, GBG three was not that surprising. On the other hand, a tremendous amount of engineering went into making it possible.
+02:15:51
+The implications of it are pretty huge. I think that when you two came out, there is a very provocative blog post from open talking about, you know, we're not going to release it because of the social damage it could cause if it's misused.
+02:16:05
+I think that's still a concern.
+02:16:06
+I think that we need to look at how technology is applied and, you know, well-meaning tools can be applied in very horrible ways and they can have very profound impact on that. I think that is a huge technical achievement and will be will probably be bigger and more expensive than a really cool architectural tracks.
+02:16:29
+What do you think? Is there? I don't know how much thought you've done on distributed computing. Is there is there some technical challenges that are interesting that you're hopeful about exploring in terms of, you know, a system that like a piece of code that, you know, would opt for that might have, I don't know, hundreds of trillions of parameters which have to run on thousands of computers.
+02:16:58
+Is there some is there some hope that we can make that happen?
+02:17:02
+Yeah, well, I mean, today you can you can write a check and get access to a thousand Tipu course and you really interesting large scale training and inference and things like that in Google Cloud, for example. Right. And so I don't think it's a question about skills, question about utility. And when I look at the Transformer series of architectures that the series is based on, it's really interesting to look at that because they're actually very simple, simple designs.
+02:17:29
+They're not recurrent. The training regimens are pretty simple. And so they don't really reflect like human brains. Mm hmm. Right. But they're really good at learning language models and they're unrolled enough that you get you can simulate some recurrence. Right. And so the question I think about is where does this take us so we can just keep scaling it, have more parameters, more data, more things will get a better result, for sure.
+02:17:56
+But are there architectural techniques that can lead to progress at a faster pace? All right. This is when, you know, how do you get there? Just like making a Konstantine bigger. How do you get, like, an algorithmic improvement out of this? Right. And whether it be a new training regimen, if it becomes fastpass, networks, for example, human brains versus all these networks of dance, the connectivity patterns can be very different. I think this is where I get very interested in I'm way out of my league on the deep learning side of this.
+02:18:28
+But I think that could lead to big breakthroughs when we talk about large scale networks. One of the things that Jeff Dean likes to talk about and he's given a few talks on, is this idea of having a sparsely located mixture of experts, kind of a model where you have, you know, different nets that are trained and are really good at certain kinds of tasks. And so you have this distributed across a cluster. And so you have a lot of different computers that end up being kind of locally specialized and different demands.
+02:18:56
+And then when a query comes in, you you get it and you learn techniques to route to different parts of the network, and then you utilize the compute resources of the entire cluster by having specialization within it.
+02:19:07
+And I don't know where that goes or if it starts when it starts to work. But I think things like that could be really interesting as well.
+02:19:15
+And on the data side, too, if you can. Think of data selection as a kind of programming. Yeah, I mean, at the essentially, if you look at like Capozzi talked about software to point out. Yeah, I mean, in a sense, data is the programming.
+02:19:30
+Yeah. Yeah. So I just. So let me try to summarize Andre's position really quick before I disagree with that. Yeah. So Andre Fathi is amazing. So this is nothing, nothing personal with him. He is an amazing engineer and and also a good blog post writer.
+02:19:46
+Yeah, he's well, he's a great communicator. I mean, he's just an amazing person. He's he's also really sweet. So his basic premise is that software is suboptimal.
+02:19:56
+I think we can all agree to that. He also points out that deep learning and other learning, basic techniques are really great because you can solve problems and more structured ways with less like ad hoc code that people write out and don't write test cases for in some cases. And so they don't even know if it works in the first place. And so if you start replacing systems of imperative code with the learning models, then you get better a better result.
+02:20:24
+OK.
+02:20:25
+And I think that he argues that Software 2.0 is a pervasively learned set of models and you get away from writing code and he's given talks.
+02:20:34
+He talks about, you know, swapping over more and more and more parts of the code to being learned and driven that way.
+02:20:41
+I think that works. And if you're predisposed to liking machine learning, then I think that that's that's that's definitely a good thing. I think this is also good for accessibility in many ways because certain people are not going to write C code or something. And so having a data driven approach to do this kind of stuff I think can be very valuable. On the other hand, there are huge tradeoffs, and it's not clear to me that Software 2.0 is the answer.
+02:21:05
+And probably Andre wouldn't argue that it's the answer for every problem either. But I look at machine learning is not a replacement for Software 1.0. I look at it as a new programming paradigm.
+02:21:18
+And so programming paradigms, when you look across across demands as they are structured programming, where you go from Goto's to if then else or functional programming from Lisp, and you start talking about higher order functions and values and things like this, or you talk about object oriented programming, we're talking about encapsulation subclassing inherent. You start talking about generic programming where you start talking about code reuse through through specialization and different type instantiations. When we start talking about differentiable programming, something that I am very excited about in the context machine learning, talking about taking functions and generating variants like the derivative of another function, like that's a programming paradigm that's very useful for solving certain classes of problems.
+02:22:03
+Machine learning is amazing in solving certain classes of problems like you're not going to write a, you know, a cat detector or even a language translation system by writing C-code. That's not going to that's not a very productive way to do things anymore. And so machine learning is absolutely the right way to do that. In fact, I would say that learned models are really the one of the best ways to work with the human world in general. And so any time you're talking about sensory input of different modalities, anytime that you're talking about generating things in a way that makes sense to a human, I think that learning models are really, really useful.
+02:22:35
+And that's because humans are very difficult to characterize, OK? And so this is a very powerful paradigm for solving classes of problems.
+02:22:43
+But on the other hand, imperative code is to you're not going right. A bootloader for your computer and with a deep learning model, deep learning models are very hardware intensive. They're very energy intensive because you have a lot of parameters and you can provably implement any function with a learning model like this has been shown.
+02:23:04
+But that doesn't make it efficient. And so if you're talking about caring about a few orders of magnitude worth of energy usage, then it's useful to have other tools in the toolbox.
+02:23:14
+The robustness to I mean, exactly all the problems of dealing with data and bias and data, all the problems of, you know, suffer Tirado. And one of the great things that Andreas is arguing towards, which I completely agree with him, is that when you start implementing things with deep learning, you need to learn from software 1.0 in terms of testing continuous integration, how you deploy, how do you validate all these things in building building systems around that so that you're not just saying like, oh, it seems like it's good, ship it right.
+02:23:45
+Well, what happens when I regret something? What happens when I make a classification? That's wrong. And now I heard somebody right.
+02:23:52
+I mean, these things you have to reason about. Yeah. But at the same time, the bootloader that works for for us humans is looks awfully a lot like a neural network. Right. It's messy. And you can cut out different parts of the brain. There's a lot of this neuroplasticity work that shows it's going to adjust. It's a I mean, it's a really interesting question. How much of the world programming could be replaced by Software 2.0 with.
+02:24:19
+Oh, well, I mean, it's probably true that you could replace all of it. Right.
+02:24:24
+So it's quite a function. You can. So it's not a question about if I think it's an economic question, it's a what kind of talent can you get, what kind of trade offs in terms of maintenance. Right. Those kinds of questions, I think. What kind of data can you collect? I think one of the reasons that I'm most interested in machine learning is a programming paradigm, is that one of the things that we've seen across computing in general is that being laser focused on one paradigm often puts you in a box.
+02:24:53
+It's not super great. And so you look at object or programming like it was all the rage in the early 80s. And like everything has to be objects. And people forgot about functional programming, even though came first. And and then people rediscovered that, hey, if you mix functional and object oriented and structure like the Mexicans, together, you can provide very interesting tools that are good at solving different problems.
+02:25:15
+And so the question there is, how do you get the best way to solve the problems?
+02:25:19
+It's not about whose tribe should win, right? It's not about you know, that shouldn't be the question.
+02:25:25
+The question is, how do you make it so that people can solve those problems the fastest and they have the right tools in their box to build good libraries and they can solve these problems.
+02:25:33
+And when you look at that, that's like, you know, you look at reinforcement learning as one really interesting subdomain of this reinforcement learning. Often you have to have the integration of a learned model combined with your Attari or whatever the other scenario it is that you're you're working and you have to combine that that thing with the robot controller for the arm. Right.
+02:25:54
+And so now it's not just about that one paradigm.
+02:25:58
+It's about integrating that with all the other systems that you have, including often legacy systems and things like this. Right. And so to me, I think that the interesting the interesting thing to say is like, how do you get the best out of this demand and how do you enable people to achieve things that they otherwise couldn't do without excluding all the good things we already know how to do? Right, but OK, this is a crazy question, but we talked a lot about three, but do you think it's possible that these language models that are in essence in the language domain Software 2.0 could replace some aspect of compilation, for example, or do program synthesis replace some aspect of programming?
+02:26:43
+Yeah, absolutely.
+02:26:44
+So I think that that learning models in general are extremely powerful and I think the people underestimate them.
+02:26:51
+Maybe you can suggest what I should do. So if you have access to the GBG three API, would I be able to generate swift code, for example, or do you think that could do something interesting?
+02:27:02
+And also GBC three is not probably not trained on the right corpus, so it probably has the ability generate some swiftie, but it does. It's probably not going to generate a large enough body of stuff to be useful. But but like taking the next step further, like if you had the goal of training something like Jubilees three and you wanted to try to generate source code. Right, it could definitely do that. Now the question is, how do you express the intent of what you want filled in?
+02:27:31
+You can definitely like the scaffolding of code and say fill in the hole and sort of put in some for loops, opening some classes or whatever.
+02:27:38
+And the power of these models is impressive. But there's an unsolved question unsolved to me, which is how do I express the intent of what to fill in? Right. And kind of what you'd really want to have. And I don't know that that these models are up to the task because you want to be able to say, here's a scaffolding and hear the assertions at the end. And the assertions always pass, and so you want a generative model on the one hand.
+02:28:03
+Yes. That's fascinating. Yeah, right. But you also want some loop back, some reinforcement learning system or something where you're actually saying, like, I need to help climb towards something that is more correct. And I don't know that we have that.
+02:28:16
+So it would generate not only a bunch of the code, but like the checks that do the testing. It would generate the test. I think. I think the humans would generate the tests. Oh, that would be fascinating if the tests were the requirements.
+02:28:29
+Yes, but OK, so because you're you have to express to the model what you want to you don't just want gibberish code. Look at how compelling this code looks. You want a story about four horned unicorns or something.
+02:28:41
+Well, OK, so exactly. But that's human requirements.
+02:28:44
+But then I thought it's a compelling idea that the Deepti for model could generate checks like that are more high fidelity. That check for correctness because the code it generates, like, say, I ask it to generate a function that gives me the Fibonacci sequence I don't like.
+02:29:11
+So so decompose the problem. Right. So you have two things you have you need the ability to generate syntactically cracks of code that. That's interesting, right? I think GPP series of model architectures can do that, but then you need the ability to add the requirements.
+02:29:28
+So generate Fibonacci the human needs to express that goal. We don't have that language that I know of.
+02:29:35
+No, I mean, Congi. So have you seen would you think in general you can say I mean, this interface stuff like it can generate e-mail, it can generate basic for loops that give you like a picture.
+02:29:49
+How do I say I want Google dot com? I know that you could say are not not literally Google dot com.
+02:29:56
+How do I say I want a web page that's got a shopping cart into this and that does it. I mean. Okay, so just I don't know if you've seen these demonstrations, but you type in, I want a red button with the text that says hello and you type that natural language and it generates the correct e-mail done this demo, it's kind of compelling. So you have to prompt it with similar kinds of mappings. Of course, it's probably hand-picked.
+02:30:22
+I get to experiment that probably. But the fact they can do that once even out of like twenty. Yeah. Is is quite impressive. Again, that's very basic. Like the I was kind of messy and bad for sure. But yes, the intent is the idea is the intent to specify the natural language. And so I have not seen that. That's really cool. Yeah. Yeah, yeah.
+02:30:43
+But the question is the correctness of that, like visually you can check oh the buttons is red but the for more, for more complicated functions or the intent is harder to check. This goes into like and be complete in this kind of things. Like I want to know that this code is correct and generates a joint thing that does some kind of calculation. It seems to be working. It's interesting to think like should the system also try to generate checks for itself for correctness?
+02:31:18
+Yeah, I don't know. And this is way beyond my experience. The the thing that I think about is that there doesn't seem to be a lot of equation of reasoning going on.
+02:31:30
+Right. There's a lot of pattern matching and filling in and kind of propagating patterns that have been seen before into the future and into the general result. And so if you want to get correctness, you kind of need improvement kind of things and like higher level logic. And I don't know that you could talk to John about that and see and see what the bright minds are thinking about right now. But I don't think that it is in that that vein.
+02:31:54
+It's still really cool. Yeah. And who knows?
+02:31:58
+You know, maybe reasoning is is is overrated. Yeah, right. I mean, do we reason how do you how do you tell are we just pattern matching based on what we have and then reverse justifying to ourselves. Exactly the reverse. So like I think what the neural networks are missing and I think GBG for might have is to be able to tell stories to itself about what it did.
+02:32:20
+Well, that's what humans do, right? I mean, you talk about like network explain ability. Right. And we give no, that's a hard time about this. But humans don't know why we make decisions. We have this thing called intuition. And then we try to like, say this feels like the right thing, but why? Right. And, you know, you wrestle with that when you're making hard decisions and. That science. Not really.
+02:32:41
+Let me ask about a few high level questions, I guess is. You've done a million things in your life and been very successful, a bunch of young folks listen to this, ask for advice from successful people like you. If you were to give advice to somebody, you know, an undergraduate student or some high school student about pursuing a career in computing or just advice about life in general, they're sure there's some words of wisdom you can give them.
+02:33:15
+So I think you come back to change and, you know, profound leaps happen because people are willing to believe that change is possible and that the world does change and are willing to do the hard things that it takes to make change happen and whether it be influencing new programming language or employing new system or employing new research or designing a new thing moving forward in science and philosophy, whatever, it really comes down to somebody who's willing to put in the work.
+02:33:43
+Right, and you have the work is hard for a whole bunch of different reasons, one of which is, you know, it's work, right? And so you have to have the space in your life and what you can do that work, which is why going to grad school can be a beautiful thing for certain people.
+02:34:01
+But also there's the self-doubt that happens. Like you're two years into a project is going anywhere, right? Well, what do you do? Do you do you just give up because it's hard? Well, no.
+02:34:11
+I mean, some people like suffering, and so you plow through it. The the secret to me is that you have to love what you're doing and and follow that passion, because if when you get to the hard times, that's when, you know, if you if you love what you're doing, you're willing to kind of push through.
+02:34:28
+And this is really hard because it's hard to know what you will love doing until you start doing a lot of things.
+02:34:36
+And so that's why I think that particularly early in your career, it's good to experiment, do a little bit of everything, go go take the the survey class on, you know, for the first half of every class in your upper division, you know, lessons and just get exposure to things because certain things will resonate with you and you'll find out, wow, I'm really good at this. I'm really smart at this. Well, it's just it's the worst of the way your brain.
+02:34:59
+And when something jumps out, I mean, that's one of the things that people often ask about is like, well, I think there's a bunch of cool stuff out there, like, how do I pick the thing? Like, yeah, how do you how do you hook in your life? How did you just hook yourself in and stuck with it?
+02:35:17
+Well, I got lucky. I mean, I think that many people forget that a huge amount of it or most of it is luck. Right. So let's not forget that. So for me, I fell in love with computers early on because they spoke to me.
+02:35:33
+I guess the language that they speak basic, basic.
+02:35:40
+But the but then it was just kind of following a set of logical progressions, but also deciding that something that was hard was worth doing and and a lot of fun. And so I think that that is also something was true for many other demands, which is if you find something that you love doing, that's also hard. If you invest yourself in it and add value to the world, then it will mean something generally. Right. And again, that can be a research paper.
+02:36:05
+That can be a software system. That can be a new robot. That can be there's many things of that that can be.
+02:36:11
+But a lot of it is like real value comes from doing things that are hard. And it doesn't mean you have to suffer.
+02:36:19
+But it's hard. I mean, you don't often hear that message talked about some of it. But I it's one of my fear.
+02:36:27
+Not enough people talk about this. It's it's beautiful to hear a successful person well in self-doubt and imposter syndrome.
+02:36:36
+And these are all things that successful people suffer with as well, particularly when they put themselves in a point of being uncomfortable, which I like to do now and then just because it puts you in learning mode, like if you want to if you want to grow as a person, put yourself in a room with a bunch of people that know way more about whatever you're talking about than you do and ask dumb questions.
+02:36:58
+And guess what? Smart people love to teach often. Not always, but often. And if you listen, if you're prepared to listen, if you're prepared to grow, if you're prepared to make connections, you can do some really interesting things.
+02:37:09
+And I think that a lot of progress is made by people who kind of hop between demands now and then because they bring they bring a perspective into a field that nobody else has if people have only been working in that field themselves.
+02:37:25
+We mentioned that the universe is kind of like a compiler, you know, the entirety of it, the whole evolution is kind of a kind of a compilation maybe as human beings kind of compilers. Let me ask the old sort of question that I didn't ask you last time, which is what's the meaning of it all? Is there meaning like if you ask the compiler why, what would the compiler say and what's the meaning of life? What's the meaning of life?
+02:37:53
+You know, I'm prepared for it not to mean anything.
+02:37:56
+Here we are, all biological things programmed to survive and and in propagator our DNA.
+02:38:05
+And maybe the universe is just a just a computer and you just go until entropy takes over the world and takes over the universe and then you're done.
+02:38:14
+I don't think that's a very productive way to live your life.
+02:38:17
+If so. And so I prefer to bias towards the other way, which is saying the world has the universe has a lot of value.
+02:38:24
+And I take I take happiness out of other people. And a lot of times part of that is having kids, but also the relationships you build with other people. And so I try to live my life is like, what can I do that has value? How can I move the world forward? How can I take what I'm good at and bring it bring it into the world? And how can I? I'm one of these people that likes to work really hard and be very focused on the things that I do.
+02:38:49
+And so if I'm going to do that, how can it be in a demand that actually will matter? Right. Because a lot of things that we do, we find ourselves in the cycle of like, OK, I'm doing a thing. I'm very familiar with it. I've done it for a long time. I've never done anything else.
+02:39:03
+But I'm not really learning. I'm not really I'm keeping things going. But there's a there's a younger generation that can do the same thing, maybe even better than me. Right.
+02:39:13
+Maybe if I actually step out of this and jump into something I'm less comfortable with, it's scary. But on the other hand, it gives somebody else a new opportunity and also then put you back in learning mode. And that can be really interesting. And one of the things I've learned is that when you go through that, that first you're deep into imposter syndrome. But when you start working your way out, you start to realize, hey, well, there's actually a method to this.
+02:39:36
+And and now I'm able to add new things because they bring a different perspective. And this is one of the the good things about bringing different kinds of people together. Diversity of thought is really important. And if you can pull together people that are coming at things from different directions, you often get innovation. And I love to see that that aha moment where you're like, oh, what we've, like, really cracked. This is something that nobody's ever done before.
+02:40:01
+And then if you can do it in a context where it adds value, other people can build on it. It helps move the world, then that's what that's what really excites me.
+02:40:09
+So that kind of description of the magic of the human experience, do you think we'll ever create that in like an AGI system? You think we'll be able to create give give A.I. systems a sense of meaning where they operate in this kind of world?
+02:40:26
+Exactly the way you've described, which is they interact with each other. They interact with us humans.
+02:40:31
+Sure. Also, I mean, why why are you being so speciesist? Right. All right.
+02:40:37
+So so Aggie's versus Bayona and, you know, what are we about machines.
+02:40:46
+Right? We're just programmed to run our we have our objective function that we optimized for.
+02:40:52
+Right. And so we're doing our thing. We think we have purpose. But do we really? Yeah, right. I'm not prepared to say that those newfangled egos have no soul just because we don't understand them. Right. And I think that would be when when they exist, that would be very premature to look at a new thing through your own lens without fully understanding it.
+02:41:15
+You might be just saying that because our systems in the future will be listening to this and then. Oh, yeah, exactly. You don't want to say please be nice to me. You know, it's kind of Skynet kills everybody. Please spare me. The wise was was lookahead thinking.
+02:41:29
+Yeah, but I mean, I think that people will spend a lot of time worrying about this kind of stuff. And I think that what we should be worrying about is how do we make the world better. And the thing that I'm most scared about with eggs is not that that necessarily the Skynet will start shooting away with lasers and stuff like that to use us for calories. The thing that I'm worried about is that humanity, I think, needs a challenge.
+02:41:55
+And if we get into a mode of not having a personal challenge, not having a personal contribution, whether that be like, you know, your kids and seeing what they grow into and helping helping guide them, whether it be your community that you're engaged in, you're driving forward, whether it be your work and the things that you're doing and the people you're working with in the production building and the contribution there. If people don't have a objective, I'm afraid what that means and I think that this would lead to.
+02:42:24
+A rise of the worst part of people, right, instead of people striving together and trying to make the world better, it could degrade into a very unpleasant world.
+02:42:36
+But but I don't know.
+02:42:37
+I mean, we obviously have a long ways to go before we discover that actually we are pretty on the ground problems with the pandemic right now. And so I think we should be focused on that as well.
+02:42:48
+Ultimately, just as you said, you're optimistic. I think it helps for us to be optimistic. That's taken until you make it. Yeah, well, and why not?
+02:42:58
+What's what's the other side? And it's so I mean, I'm not personally a very religious person, but I've heard people say like, oh, yeah, of course I believe in God. Of course I go to church because if God is real, you know, I want to be on the right side of that.
+02:43:12
+And if it's not real, doesn't matter. Doesn't matter. So, you know, that's that's a fair way to do it.
+02:43:18
+Yeah. I mean, the same thing with with nuclear deterrence or, you know, global warming, all these things, all these threats, natural engineered pandemics, all these threats we face, I think it's. It's paralyzing to be terrified of all the possible ways we could destroy ourselves. I think it's much better or at least productive to be hopeful and to engineer defenses against these things, to engineer a future where like, you know, see like a positive future and engineer their future.
+02:43:54
+Yeah, well, and I think that's another thing to think about as, you know, a human, particularly if you're young and trying to figure out what it is you want to be when you grow up like I am, I'm always looking for that. The the question then is how do you wanna spend your time?
+02:44:11
+And right now, there seems to be a norm of being a consumption culture, like I'm going to watch the news and and revel in how horrible everything is right now. I'm going to go find out about the latest atrocity and find out all the details of the terrible thing that happened and be outraged by it. You can spend a lot of time watching TV and watching the new sitcom or whatever people watch these days. I don't know.
+02:44:36
+But that's a lot of hours. Right. And those are hours that if you're turned into being productive, learning, growing experience, you know, when the pandemic's over are going exploring right here, it leads to more growth. And I think it leads to more optimism and happiness because you're you're you're building right. You're building yourself. You're building your capabilities. You're building your viewpoints. You're building your perspective. And I think that a lot of the the consuming of other people's messages leads to kind of a negative viewpoint, which you need to be aware of what's happening, because that's also important.
+02:45:12
+But there's a balance that I think focusing on creation is is a very valuable thing to do. Yes.
+02:45:19
+Well, you're saying that people should focus on working on the sexiest feel of all, which is compiler design, exactly how you could go work on machine learning and be crowded out by the thousands of graduates popping out of school that I want to do the same thing.
+02:45:32
+Or you could work in the place that people overpay you because there's not enough smart people working in it. And here at the end of Moore's Law or in some people, yeah, actually the software is the hard part, too.
+02:45:45
+I mean, optimization is it's truly, truly beautiful. And also on the YouTube side, the education side, you know, it's there's it'd be nice to have some material that shows the beauty of compilers. Yeah. Yeah, that's that's something. So that's a call for for people to create that kind of content as well. Chris, you're one of my favorite people. Talk to such a huge honor that you waste your time talking to me. I've always appreciated things.
+02:46:15
+I mean, the truth of it is you spend a lot of time talking to me just on, you know, walks and all that. So it's great to catch up thanks to.
+02:46:23
+Thanks for listening to this conversation with Chris Lardner. Thank you to our sponsors, Blankest, an app that summarizes key ideas from thousands of books Neuro, which is a maker of functional gum and mints that supercharged My Mind Masterclass, which are online courses from world experts. And finally, Kashyap, which is an app for sending money to friends. Please check out these sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube review starting up a podcast.
+02:46:57
+Follow on Spotify, support on Patron. Connect with me on Twitter, Allex Friedman. And now let me leave you some words from Chris Lightener. So much of language design is about trade offs and you can't see those trade offs unless you have a community of people that really represent those different points. Thank you for listening and hope to see you next time.

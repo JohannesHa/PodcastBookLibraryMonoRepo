@@ -1,0 +1,476 @@
+00:00:00
+The following is a conversation with Andrew NG, one of the most impactful educators, researchers, innovators and leaders in artificial intelligence and technology space in general. He co-founded Coursera and Google Brain, launched Deep Learning A.I. Lending, A.I. and the A.I. Fund, and was the chief scientist of Baidu. As a Stanford professor and with Coursera and Deep Learning AI, he has helped educate and inspire millions of students, including me. This is the artificial intelligence podcast. Enjoy it, subscribe on YouTube.
+00:00:38
+Good five stars, an Apple podcast, supporter and patron are simply connected me on Twitter. Àlex Friedman spelled F.R. Idi Man as usual. I'll do one or two minutes of ads now and never any ads in the middle that can break the flow of the conversation. I hope that works for you and doesn't hurt the listening experience. This show is presented by Kashyap, the number one finance app in the App Store. When you get it, you Scolex podcast cash app lets you send money to friends, buy bitcoin and invest in the stock market with as little as one dollar.
+00:01:13
+Brokerage services are provided by cash up and vesting a subsidiary of Square, a member SIPC since cash allows you to buy Bitcoin. Let me mention that cryptocurrency in the context of the history of money is fascinating. I recommend Ascent of Money as a great book on this history. Debits and credits and ledgers started over 30000 thousand years ago. The US dollar has created over two hundred years ago and Bitcoin, the first decentralized cryptocurrency released just over 10 years ago.
+00:01:48
+So given that history, cryptocurrency still very much in its early days of development, but is still aiming to and just might redefine the nature of money. So again, if you get cash out from the App Store or Google Play and use the Lux podcast, you'll get ten dollars in cash. I will also donate ten dollars, the first one of my favorite organizations that is helping to advance robotics and stem education for young people around the world. And now here's my conversation with Andrew NG.
+00:02:40
+The courses you taught are machine learning at Stanford and later on Coursera, the co-founded have educated and inspired millions of people. So let me ask you what people are ideas inspire you to get into computer science and machine learning? When you were young, when did you first fall in love with the field is another way to put it.
+00:03:01
+Growing up in Hong Kong and Singapore, I started learning to code when I was five or six years old. At that time, I was learning the basic programming language and I would take these books and they'll tell you type this program into your computer type that programs or computer. And as a result of all that typing, I would get to play these very simple shoot them up games that that, you know, I had implemented on my on my computer.
+00:03:27
+So I thought it's fascinating as a young kid that I could write this code that was really just copying it from a book into my computer to play these cool video games. Another moment for me was when I was a teenager and my father, because the doctor was reading about expert systems and about neural networks. So he got me some of these books and I thought was really cool. The computer that started to exhibit intelligence then I remember doing an internship was in high school.
+00:04:00
+This is in Singapore where I remember doing a lot of photocopying and office assistants. And the highlight of my job was when I got to use the shredder. So the teenager me remember thinking, boy, this is a lot of photocopying. If only you could write software for the robot. Something to automate this, maybe I could do something else. So I think a lot of my work since then has centered on the theme of automation. Even the way I think about machine learning today, we're very good at writing learning algorithms that can automate things that people can do or even launching the first open line courses that later that Coursera.
+00:04:37
+I was trying to automate what could be automatable in how I was teaching on campus process of education, try to automate parts of that to make it more sort of to have more impact from a single teacher. A single educator.
+00:04:52
+Yeah, I felt your teacher, Stanford teaching machine learning to about 400 tons a year at the time. And I found myself forming the exact same video every year, telling the same jokes in the same room. And I thought, why am I doing this? Why would just take last year's video and then I can spend my time building a deeper relationship with students. So that process of thinking through how to do that, that led to the first first that we launched.
+00:05:19
+And then you have more time to write new jokes. Are there favorite memories from your early days at Stanford teaching thousands of people in person and then millions of people online, you know, teaching online?
+00:05:34
+What not many people know was that a lot of those videos were shot between the hours of 10 p.m. and three a.m..
+00:05:44
+Yeah, a lot of times watching the first movie last night with our in-house, of course, by 100000 people signed up. We just started to write the code and we had not yet actually filmed the video. So we had a lot of pressure. A hundred thousand people waiting for us to produce the content. So many Fris surveys, I would go out, have dinner, my friends, and then I would think, OK, do you want to go home now or do you want to go to the office to film videos?
+00:06:12
+And the thought of, you know, the hundred thousand people potentially learn machine learning? Fortunately, that made me think, OK, I might go to my office, go to my tiny little recording studio, I would adjust my webcam, adjust my, you know, Wacom tablet, made sure my lapel mike was on. And then there was start recording often until 2:00 a.m. or 3:00 a.m. I think I'm fortunate it doesn't doesn't show that it was recorded that late at night, but it was really inspiring the thought that we could create content to help so many people learn about machine learning.
+00:06:45
+How did that feel? The fact that you're probably somewhat along, maybe a couple of friends recording with a Logitech webcam and kind of going home alone at 1:00 or 2:00 a.m. at night and knowing that that's going to reach sort of thousands of people, eventually millions of people. It was that feeling like I mean, is there a feeling of just satisfaction of pushing through?
+00:07:11
+I think it's humbling. And I wasn't thinking about whether I was viewing. I think one thing we have to say right from the early days was I told my whole team back then that the number one priority is to do what's best for leeriness, do what's best for students.
+00:07:26
+And so when I went to the recording studio, the only thing on my mind was what can I say? How can I design my size, whether it's a draw, right. To make this concept as clear as possible for learners. I think your.
+00:07:39
+Sometimes instructors, it's tempting to say, hey, let's talk about my work, maybe if I teach you about my research, some will cite my papers a couple more times. And I think one thing is we can't right like the first few months later. But I think Sarah was put in a place that bedrock principle of let's just do what's best for learners and forget about everything else. And I think that that is a guiding principle turned out to be really important to the to the rise of the movement.
+00:08:04
+And the kind of learner you imagined in your mind is as as broad as possible, as global as possible.
+00:08:11
+So really try to reach as many people interested in machine learning and AI as possible.
+00:08:17
+I really want to help anyone that has an interest in machine learning to break into the field. And and I think sometimes people ask me, hey, why are you spending so much time explaining gradient descent? And my answer was, if I look at what I think the learning needs and would benefit from, I felt that having that a good understanding of the foundations coming back to the basics would put them in a better stead to then build on the long term career.
+00:08:44
+So try to consistently make decision on that principle.
+00:08:48
+So one of the things he actually revealed to the narrow aid community at the time and to the world is that the amount of people who are actually interested now is much larger than we imagined by you teaching the class and how popular it became.
+00:09:04
+It showed that, wow, this isn't just a small community of sort of people who go to new groups and and it's much bigger. It's developers. It's people from all over the world. I mean, I'm Russian. So is everybody in Russia is really this is a huge number of programmers who are interested in machine learning, India, China, South America, everywhere, that there's just millions of people who are interested in machine learning. So how big do you get a sense that this the number of people that are interested from your perspective?
+00:09:37
+I think the number's grown over time. I think one of those things that maybe it feels like it came out of nowhere, a person inside insider building, it took years. It's not those overnight successes that took years to get there. My first foray into this type of education was when reforming my Stanford class and sticking the videos on YouTube and then some of the things we had uploaded, the halls and so on. But, you know, basically the one hour, 15 minute video that we put on YouTube and then we had four or five other versions of websites that had built, most of which you would never have heard of because they were small audiences.
+00:10:13
+But that allowed me to innovate, allow my team and me to innovate, to learn what the ideas that work and what doesn't. Oh, for example, one of the features I was really excited about and really proud of was build this website where multiple people could be logged into the website at the same time. So today, if you go to the website, you know, if you are logged in and then I want to log in, you need to log out is the same browser, the same computer.
+00:10:36
+But I thought, well, what if two people say you and me were watching a video together in front of a computer, what a website could have. You type your name and password might have in your password. And now the computer knows both of us are watching together and it gives both of us credit for anything we do as a group. Influencers feature rolled it out in a in a school in San Francisco. We had about twenty something users. Was the teacher there at Sacred Heart Cathedral.
+00:11:02
+Perhaps it was great. And guess what? Zero people use this feature. It turns out people studying online, they want to watch the videos by themselves so you can play back, pause at your own speed rather than in groups. So that was one example of a timely lesson learned are the many that allowed us to hone in to the set of features. And it sounds like a brilliant feature. So I guess the lesson to take from that is if there's something that looks amazing on paper and then nobody uses it doesn't actually have the impact that you think it might have.
+00:11:35
+So, yeah, I saw that you really went through a lot of different features and a lot of ideas had to arrive at the Coursera final kind of powerful thing that showed the world that Mook's can educate millions.
+00:11:49
+And I think the whole machine learning movement as well, I think it didn't come out of nowhere. Instead, what happened was as more people learn about machine learning, they will tell their friends and their friends will see how applicable to their work and and in the community keep on growing. And I think we're still growing. You know, I don't know in the future what percentage of our developers will be developers. I could easily see it being north of 50 percent.
+00:12:16
+Right. Because so many developers broadly construed not just people doing the particular any modeling, but the people by the infrastructure, the pipelines, all the software surrounding the core machine learning model maybe is even bigger.
+00:12:32
+I feel like today almost every software engineer has some understanding of the cloud, not all.
+00:12:40
+Microcontroller developer does need to do, but I feel like the vast majority of software engineers today are sort of having appreciates the cloud. I think in the future, maybe we're approaching nearly 100 percent of all developers being, you know, in some way and API developer or at least having an appreciation of machine learning.
+00:12:59
+And my hope is that that there's this kind of effect that there's people who are not really interested in being a programmer or being into software engineering, like biologists, chemists and physicists, even mechanical engineers, all these disciplines that are now more and more sitting on large datasets. And here they didn't think they're interested in programming until they have this data set and they realize there's this set of machine learning tools that allow you to use the data. So they actually become they learn to program and they become new programmers.
+00:13:30
+So like the not just because you've mentioned a larger percentage of developers become machine learning people. The it seems like more and more the the kinds of people who are becoming developers is also growing significantly.
+00:13:44
+Yeah, yeah. I think I think once upon a time only a small part of humanity was literate. You could read and write and and maybe you thought maybe not everyone needs to learn to read and write. You just go listen to it a few months read to you and maybe that was enough. Or maybe just need a few handful of authors to write the bestsellers and then no one else needs to write. But what we found was that by giving as many people, you know, in some countries almost everyone basic literacy, it dramatically enhanced human to human communications.
+00:14:16
+And we can now write for an audience of one, such as if I sent you an email, you sent me an email.
+00:14:22
+I think in computing we're still in that phase where so few people know how to code that the coders mostly have to kofa relatively large audiences.
+00:14:31
+But if everyone well, most people became developers at some level, similar to how most people in developed economies are somewhat literate. I would love to see the owners of our mom and pop store. People have very little of the code to customize the TV display for their special this week and I think enhance human to computer communications, which is becoming more and more important today as well.
+00:14:56
+So you think you think it's possible that machine learning becomes kind of similar to literacy? Where where? Yeah, like you said, the owners of a mom and pop shop is basically everybody in all walks of life would have some degree of programming capability.
+00:15:12
+I can see society getting there. Does one of the interesting thing, you know, if I go talk to mom and pop store that has a lot of people in their daily professions, I previously didn't have a good story for why they should learn to code, give them some reasons. But what I found with the rise of machine learning and data science is that I think the number of people with a concrete use for data science in their daily lives and their jobs may be even larger than the number of people who have country used for software engineering.
+00:15:42
+For example, if you actually if you run a small mom and pop store, I think if you can analyze the data about your sales, your customers, I think there's actually a real value there, maybe even more than traditional software engineering. So I find it for a lot of my friends in various professions, be it recruiters or accountants or, you know, people that work in the factories, which I deal with more and more these days. I few if they were data scientist at some level, they could immediately use that in their work.
+00:16:11
+So I think that data science of machine learning maybe an even easier entry into the developing world. A lot of people then the software engineering, that's interesting and I agree with that.
+00:16:22
+But it's a beautifully put. We live in a world where most courses and talks have slides, PowerPoint, you know, and yet you famously often still use a marker and a whiteboard. The simplicity of that is compelling and for me, it least fun to watch. Thank you. So let me ask, why do you like using a marker and whiteboard, even the biggest of stages?
+00:16:46
+I think it depends on the concepts you can explain for mathematical concepts. It's nice to build out the equation one piece of the time and the whiteboard marker or the pen install. This is a very easy way to build up the equation. A bit of a complex concept, one piece at a time, why you're talking about it. And sometimes that enhances understandability. The downside of writing is that it's slow. And so if you want a long sentence, it's very hard to write that.
+00:17:14
+So I think there are pros and cons and sometimes I use slides and sometimes I use a whiteboard or a stylist. The slowness of a whiteboard is also upside because it forces you to reduce everything to the basics. So some of some of your talks involve the whiteboard. I mean, it's there's really no you go very slowly and you really focus on the most simple principles. And it's a beautiful. That enforces a kind of a minimalism of ideas that I think is surprising, at least for me, is is great for education, like a great talk, I think is not one that has a lot of content.
+00:17:54
+A great task is one that just clearly says a few simple ideas. And I think you see the whiteboard somehow reinforces that. Peter Abele, who is now one of the top roboticists and reinforcement learning experts of the world, was your first student.
+00:18:11
+So I bring him up just because I kind of imagined this is this was must have been an interesting time in your life. Do you have any favorite memories of working with Peter to your first student in those uncertain times, especially before deep learning? Really, really sort of blew up and your favorite memories from those times? Yeah, I was really fortunate to have Peter upon my first student, and I think even my long term professional success builds on early foundations or early work that that that Peter was so critical to.
+00:18:47
+So it was really grateful to him for working with me.
+00:18:51
+You know what not a lot of people know is just how hard research was and still is. Um, Peter's thesis was using reinforcement, learning to fly helicopters. And so, you know, even today, the website Hellie that Stanford, either Stanford I used to go up and watch videos of us using reinforcement, learning to make a helicopter fly upside down. Values is so cool.
+00:19:17
+It's one of the most incredible robotics videos ever.
+00:19:19
+So pleased to watch it. Oh, yeah, inspiring. That's from like two thousand eight or seven or six like that or something like that. Yeah. So it was over 10 years old. That was really inspiring to a lot of people. What not many people see is how hard it was. So Peter and Adam Kohl's and Morgan Quigley and I were working on various versions of the helicopter and a lot of things did not work, for example. Turns out one of the hardest times we had was when the helicopters flying around upside down doing stunts.
+00:19:50
+How do you figure out the position? How do you localize a helicopter? So we want to try all sorts of things. Having one GPS unit doesn't work because you're flying upside down the GPS unit facing down so you can't see the satellite. So we tried we we experimented trying to have two GPS units, one facing up, one facing down. So if you flip over, that didn't work because the downward facing one couldn't synchronize. If you're flipping quickly, Morgan quickly was exploring this crazy, complicated configuration of specialized hardware to interpret GPS signals.
+00:20:22
+Look at it, which is completely insane. Spent about a year working on that. Didn't work. So remember Peter, great guy, him and me, you know, sitting down in my office looking at sort of the latest things we had tried that didn't work and saying, you know, darn it, what now?
+00:20:40
+Because because we tried so many things in it and it just didn't work. In the end, what we did in Adam Coatsworth was crucial to this was put cameras on the ground and use cameras on the ground to localize the helicopter and that software localization problem so that we could then focus on the reinforcement, learning and interest and also learning techniques to didn't actually meet a helicopter fly.
+00:21:04
+Um, and, you know, I'm reminded when I was doing this work at Stanford around that time, there was a lot of reinforcement learning, theoretical papers, but not a lot of practical applications. So the autonomous helicopter were flying helicopters. Was this one of the few practical applications of reinforcement learning at the time which which caused it to become pretty well known? I feel like we might have almost come full circle with the data, so much about so much hype, so much excitement about reinforcement learning for the game.
+00:21:36
+We're hunting for more applications of all of these great ideas that he's come up with.
+00:21:42
+What was the drive sort of in the face of the fact that most people doing theoretical work, what motivate you in the uncertainty and the challenges to get the helicopter to do the applied work, to get the actual system to work? Yeah, in the face of fear, uncertainty is sort of the setbacks that you mentioned for localization. I think stuff that works I in the physical world. So like it's back to the shredder and, you know, I like theory, but when I work on the theory myself and its personal taste, I'm not seeing anyone else to do what I do when I work on theory.
+00:22:19
+I probably enjoy it more if I feel that my the work I do will influence people, have positive impact or help someone.
+00:22:29
+I remember when many years ago I was speaking with a mathematics professor and it kind of just said, hey, why do you do what you do? And then. He said, you know, he had stars in his eyes when he answered and this mathematician not from Stanford University. He said, I do what I do because it helps me to discover truth and beauty in the universe. He has thousands, he said, and that's great.
+00:22:58
+I don't want to do that. I think it's great that someone does that fully support the people that do a lot of respect for you that but I am more motivated when I can see a line to how the work that my team and I are doing helps people.
+00:23:14
+The world needs all sorts of people. I'm just one type. I don't think everyone should do things the same way as I do. But I when I delve into either theory or practice, if I press the have conviction, you know that here's a part of help people. I find that more satisfying to have that conviction that that's your path. Yeah. You were a proponent of deep learning before I gained widespread acceptance. What did you see in this field that gave you confidence?
+00:23:43
+What was your thinking process like in that first decade of the I don't know what that's called to thousands the odds?
+00:23:51
+Yeah, I can tell you the thing we got wrong with the thing we got right. The thing we really got wrong was the importance of the erm the importance of unsupervised learning. So early days of Google brain, we put a lot of effort into unsupervised learning rather than supervised learning. And there was this argument, I think it was around 2005 after NeuroPace at that time, Nipsy, but now NeuroPace had ended and Jeff and I were sitting in the cafeteria outside the conference.
+00:24:20
+We had lunch with us chatting and Geoff pulled up the snack and he started sketching this argument on a on a napkin. It was very compelling of repeated human brain has about 100 trillion. So there's 10 to the 14 synaptic connections. You will live for about ten to nine seconds. That's 30 years. You actually live for two to two by 10 today, maybe three by ten, ten, nine seconds. So just let's say ten tonight. So if each synaptic connection, each weight in your brains, your network has just a one bit parameter, that's 10 to the 14 bits you need to learn in up to ten to nine seconds of your life.
+00:24:59
+So by the simple argument, which a lot of problems is very simplified, that's 10 to the five bits per second you need to learn in your life. And I have a one year old daughter. I am not pointing out twenty five per second of labels to her.
+00:25:16
+So and I think I'm a very loving parent, but I'm just not going to do so from this, you know, very crude, definitely problematic argument. There's just no way that most of what we know is through supervised learning, the way she gets so many bits of information from satellite images, audio, just experiences in the world. And so that arguments and there are a lot of no forces argument is going to really convince me that this lot about unsupervised learning.
+00:25:46
+So that was the part that we actually maybe maybe got wrong. I still think unsupervised learning is really important. But we both the early days, you know, 10, 15 years ago, a lot of us thought that was the path forward.
+00:25:58
+Oh, so you're saying that that that perhaps was the wrong intuition for the time. For the time that that was the part we got from the pie we got right was the importance of scale. So Adam Cote's another wonderful person, fortunate to have worked with him. He was in my group at Stanford at the time. And Adam had run these experiments at Stanford showing that the people we train a learning algorithm to better US performance. And it was based on that.
+00:26:27
+There was a graph that Adam generated, you know, where the X-axis Y-axis lights going up into the rights of the thing. The better performance accuracy is a vertical axis. So it's really based on that chart that Adam generated, that he gave me the conviction that you could scale these models way bigger than what we could on the few CPU's, which is we had the Stanford that we could get even better results. And it was really based on that one figure that Adam generated that gave me the conviction to go with Sebastian Thrun to pitch, you know, starting starting a project at Google, which became the Google brain branch brain.
+00:27:01
+You can find Google brain. And there the intuition was scale will bring performance for the system. So we should chase larger and larger scale. And I think people don't don't realize how how groundbreaking of it is. Simple, but a groundbreaking idea that bigger data sets will result in better performance. It was controversial. It was controversial at the time. Some of my well-meaning friends, you'll senior people on the machine are angry. I won't name, but people thought people, some of whom, you know, my well-meaning friends came and were trying to give me friendly visit.
+00:27:37
+Hey, Andrew, why are you doing this is crazy. It's in the new architecture. Look at these architectures of building. You just go off a scale like this is a bad career move. So so my well-meaning friends, you know, we're trying to some of them were trying to talk me out of it. They find out if you want to make a breakthrough, you sometimes have to have conviction and do something before as popular. Since that lets you have a bigger impact, let me ask you this then, a small tangent on that topic.
+00:28:03
+I find myself arguing with people saying that greater scale, especially in the context of active learning, so very carefully selecting the data set, but growing the scale of the data set is going to lead to even further breakthroughs in deep learning. And there's currently push back at that idea that larger datasets are no longer that. So you want to increase the efficiency of learning. You want to make better learning mechanisms. And I personally believe that bigger datasets will still with the same learning methods we have now, will result in better performance.
+00:28:39
+What's your intuition at this time? And those and the dual side is do we need to come up with better architectures for learning or can we just get bigger, better data sets that will improve performance?
+00:28:55
+I think both are important and there's also problem dependent. So for a few data sets, we may be approaching your base error rate or approaching or surpass the human level performance. And then there is that theoretical ceiling that we will never surpass or be there. But then I think there are plenty of problems where where we're still quite far from either human level performance or from base error rate. And bigger datasets with neural networks without further African innovation will be sufficient to take us further.
+00:29:27
+But on the flip side, if we look at the recent breakthroughs using, you know, transforming networks or language models, it was a combination of novel architecture. But also scale has a lot to do with look at what happened with GP2 and birds. I think scale was a large part of the story. Yeah, that's that's not often talked about is the scale of the data that it was trained on and the quality of the data set, because there's some sort of threaded threads that had there were uprated highly.
+00:29:57
+So there's already some weak supervision and a very large data set that people don't often talk about. Right. I find it today we have maturing processes to managing encode things like version control. It takes a long time to evolve the good processes. I remember I remember when my friends and I were emailing each other C++ files and email and then we had was that CBSA version get maybe something else in the future? We're very immature in terms of tools of managing data and think of how clean data, how the soft and very messy data problems.
+00:30:32
+I think there's a lot of innovation there to be. Has, though.
+00:30:36
+I love the idea that you were versioning through email.
+00:30:39
+I'll give you one example.
+00:30:41
+When we work with manufacturing companies is not at all uncommon for there to be multiple labels that disagree with each other. Right.
+00:30:53
+And so we were doing the work in visual inspection. We will, you know, take their plastic parts and show to one inspector and the inspector, sometimes very opinionated. They'll go, clearly, that's a defect. The Strache unacceptable to reject this part, take the same parts of different inspecteur, different Veria phonetic. Clearly the smallest find don't throw the way you're going to make Castillos. And then sometimes you take the same plastic part shirt to the same inspector in the afternoon, I suppose in the morning.
+00:31:22
+And very often they go in the morning. The secretary is OK and the afternoon equally confident. Clearly this is a defect. And so what is the item supposed to do if, if, if sometimes even one person doesn't agree with himself or herself in the span of a day? So I think these are the types of very practical, very messy data problems that that that that my teams wrestle with. In the case of large consumer Internet companies, we have a billion users.
+00:31:51
+You have a lot of data. You don't worry about it. Just take the average. It kind of works. But in a case of other industry settings, we don't have big data if just a small data, very small datasets, maybe around one hundred defective parts or a hundred examples of a defect. If you have only 100 hundred examples, this little labeling errors you if ten of your labels are wrong, that actually is 10 percent of it is that has a big impact.
+00:32:16
+So how do you clean this up? What are you supposed to do? This is an example of the of the types of things that my team does, Alanya example are wrestling with to deal with small data, which comes up all the time once the outside consumer Internet.
+00:32:29
+Yeah, that's fascinating. So then you invest more effort and time and thinking about the actual labeling process. What are the labels? What are the how are disagreements resolved and all those kinds of like pragmatic, real world problems? That's a fascinating space. Yeah, I find it actually when I'm teaching at Stanford, I increasingly encourage students at Stanford to try to find their own project for the end of term project rather than just downloading someone else's. Data set is actually much harder if you're going to find your own problem, if you own data, rather than go to one of the several good websites, very good websites with clean scoped data sets that you could just work on.
+00:33:12
+You're now running three efforts that I fund, lending AI and deep learning that I, as you've said that I find, is involved in creating new companies from scratch. Learning is involved in helping already established companies do AI and deep learning is for education of everyone else or of individuals interested of getting into the field and excelling in it. So let's perhaps talk about each of these areas first. Deep learning that I how the basic question, how does a person interested in deep learning get started in the field?
+00:33:49
+Do you find AI is working to create courses to help people break into A.I.?
+00:33:54
+So my machine learning course that I taught through Stanford is one of the most popular courses on Coursera to this day is probably one of the courses sort of if I ask somebody, how did you get into machine learning or how did you fall in love with machine learning or get you interested? It always goes back to engineering at some point. So even for the amount of people you influence is ridiculous.
+00:34:20
+So for that, I'm sure I speak for a lot of people say big. Thank you.
+00:34:24
+No. Yeah, thank you. You know, I was once once reading a news article, I think it was Tech Review. And I'm going to mess up the statistic that I remember reading article that said something like one third of all programmers are self-taught. I may have the number one server, almost two thirds, but I read the article. I thought, this doesn't make sense. Everyone is self-taught. So because you teach yourself, I don't teach people, I just know it's well put.
+00:34:51
+So yeah.
+00:34:52
+So how does one get started in deep learning and where does deep learning that I fit into that.
+00:34:58
+So do you play specialization offered by different ages. I think it was corsairs top specialization. It might still be so. It's a very popular way for people to take that specialization, to learn about everything from neural networks to how to tune in your network, to what is a confidant, to whether they are in an or a sequence model or what is an attention model. And so that is specialization steps everyone through those algorithms. So you deeply understand it and can implement it and use it for whatever from the very beginning.
+00:35:33
+So what would you say are the prerequisites for somebody to take the deep learning specialization in terms of maybe math or programming background?
+00:35:43
+Yeah, I need to understand basic programming since there are probing exercises in Python and the math pre-record is quite basic. So know calculus is needed. If you know calculus is great, you get better intuitions but deliberately tried to teach that specialization without requiring calculus. So I think a high school math would be sufficient if you know how to multiply two matrices. I think I think that that does that test grades. So there are basically algebra great pieces when the algebra even very, very basically the algebra and some programming.
+00:36:17
+I think that people have done the machine or any course or find it if the specialization a bit easier. But it is also possible to jump into the specialization directly. But it would be a little bit harder since we tend to go over faster concepts like how this gradient descent work and what is the objective function which discover more mostly in the machine learning course.
+00:36:37
+Could you briefly mentioned some of the key concepts in deep learning that students should learn that you envision them learning in the first few months, in the first year or so?
+00:36:46
+So if you take the deep learning specialization, you learn the foundations of what is in your network. How do you build up a neural network from a single logistic unit, a stack of layers to different activation functions? You learn how to train the neural networks. One thing I'm very proud of in that as we go through a lot of practical know how how to actually make these things work so well, the difference is different optimization algorithms. So what do you do with the overfit?
+00:37:14
+So how do you tell the algorithms overfitting? When do you collect more data? When you do not bother to collect more data? I find that even today, unfortunately, there are, you know, engineers that will spend six months trying to pursue a particular direction, such as collect more data because we hope more data is valuable. But sometimes you could run some tests and could have figured out six months earlier that for this problem, collecting more data isn't going to cut it.
+00:37:41
+So just don't spend six months collecting more data, spend your time modifying the architecture or trying something else. So go through all the practical know how. So that when when when when someone when you take the device specialization, you have those skills to be very efficient in how you. These networks to dive right in, to play with the network, to train it, to do the inference on a particular data set to build the intuition about it without without building it up too big to where you spend, like you said, six months learning, building up your big project without building an intuition of a small, small aspect of the data that could already tell you everything you need to know about that did.
+00:38:23
+Yes, and also the systematic framework of thinking for how to go about building practical machine learning. Maybe to make an analogy, when we learn to code, we have to learn the syntax of some foreign language, maybe a python or C++ or octave or whatever.
+00:38:38
+But equally important, maybe even more important part of coding is to understand how to string together these lines of code into coherent things. So, you know, when should you put something in the function column? Why should you not? How do you think about abstraction? So those frameworks are what makes the program more efficient, even more than understanding the syntax. I remember when I was an undergrad at Carnegie Mellon, one of my friends would debug their code by first trying to compile it, and then it was C++ code and then every line to the syntax error.
+00:39:10
+They want to get rid of syntax errors as quickly as possible. So how do you do that? Well, they were every single line of code with a syntax error. So really efficient. Figueiro syntax errors were hardly spoken. So I think so we learn how to debug and I think of machine learning. The way you debug machine learning program is very different, the way you do binary search or whatever. Use a debugger. I traced you the code in the traditional software engineering, so as an evolving discipline.
+00:39:36
+But I find that the people they're really good at debulking machine learning algorithms are easily 10x, maybe 100 acts faster at getting something to work.
+00:39:45
+So and the basic process of debugging is so. So the the bug in this case, why isn't this thing learning, learning, improving, sort of going into the questions of Overfitting and all those kinds of things? That's that's the logical space that the debugging is happening in with neural networks.
+00:40:03
+Yeah, the often the question is why doesn't it work yet or can I expect it eventually work? And what are the things I could try? Change the architecture of more data, more regularisation, different optimization algorithm, you know, different types of data. So to answer those questions systematically so that you don't heading down there, so you don't spend six months heading down the blind alley before someone comes and says, why should you spend six months doing this work concepts and deep learning.
+00:40:31
+Do you think students struggle the most with or sort of this is the biggest challenge for them was to get over that hill. It's it hooks them and it inspires them and they really get it similar to learning mathematics.
+00:40:47
+I think one of the challenges of deep learning is that are a lot of concepts that build on top of each other. If you ask me what's hard about mathematics, I have a hard time pinpointing. One thing is in addition, subtraction. Is it Carrie, is it multiplication of all this is lost stuff? I think one of the challenges of learning math and of learning certain technical fields is that a lot of concepts and you miss the concept, then you're kind of missing the prerequisite for something that comes later.
+00:41:15
+So in the deep learning specialisation, try to break down the concepts to maximize the odds of, you know, each component being understandable. So when you move on to the more advanced thing we learn, you have confidence. Hopefully you have enough intuitions from the earlier sections to then understand why we structure confidence and a certain sort of way and then eventually why we built, you know, our own hands on our or attention more in a certain way building on top of the earlier concepts.
+00:41:45
+I'm curious, you do a lot of teaching as well. Do you have a do you have a favorite? This is the hard concept moment in your teaching.
+00:41:56
+Well, I don't think anyone's ever turned the interview on me. I think I think that's a really good question. Yeah, it's it's really hard to capture the moment when they struggle. I think you put a really eloquently I do think there's moments that are like, aha. Moments that really inspire people. I think for some reason, reinforcement learning, especially deep reinforcement learning, is a really great way to really inspire people and get what the use of neural networks can do, even though that never really are just a part of the jibaro framework.
+00:42:35
+But it's a really nice way to to paint the entirety of the picture of a neural network being able to learn from scratch, knowing nothing and explore the world and pick up lessons.
+00:42:46
+I find that a lot of the AHA moments happen when you use DeParle to teach people about neural networks, which is counterintuitive. I find like a lot of the inspired sort of fire and people's passion, people's eyes, it comes from the real world. Do you find reinforcement learning to be a useful part of the teaching process or not? I still teach reinforcement learning and one of my Stanford classes and my PTSD as well on the field. I find it if I'm trying to teach students the most useful techniques for them to use today, I end up shrinking the amount of time I talk about reinforcement learning.
+00:43:26
+It's not what's working today. Now, I won't change it so fast. Maybe it'll be totally different in a couple of years, but I think we need a couple more things for reinforcement learning to get there to actually get there. Yeah, one of my teams is looking to reinforce the learning for some robotic controlled tasks. So I see the applications. But if you look at it as a percentage of all of the impact of, you know, the types of things we do, at least today outside of, you know, playing video games in a few other games, the scope that Newroz a bunch of us were standing around saying, hey, what's your first example of an actual deploy reinforcement learning application?
+00:44:02
+And, you know, among senior Mashinini researchers? Right. And again, there are some emerging ones, but there are there are not that many great examples.
+00:44:12
+Well, I think you're absolutely right. The sad thing is there hasn't been a big application, impactful, real world application, reinforcement learning. I think its biggest impact to me has been in the toy domain, in the game domain, in the small example. That's what I mean for educational purposes seems to be a fun thing to explore. And that works with.
+00:44:34
+But I think from your perspective, I think that might be the best perspective is if you're trying to educate with a simple example in order to illustrate how this can actually be grown to scale and have a real world impact, then perhaps focusing on the fundamentals of supervised learning in the context of, you know, a simple dataset, even like an data set is the right way, is the right path to take just the amount of financing people have of the reinforcement.
+00:45:05
+Learning has been great, but not in the applied impact on the real world setting.
+00:45:10
+So it's it's a tradeoff how much impact you want to have versus how much fun you want to have. Yeah, that's really cool. And I feel like, you know, the world actually needs also even within machine learning, if you like, deep learning is so exciting, but it shouldn't just use deep learning. I find it might use a portfolio of tools and maybe that's not the exciting thing to say. But some days we use the Internet, some days we use your T.S.A..
+00:45:37
+I should are sitting down with my team looking at PC residuals, trying to figure out what's going on with PC applied to manufacturing problem. And sometimes we use a properly graphical model, something to use and all this trough with some of the things that has tremendous industry impact. But the amount of chatter about knowledge in academia has really thin compared to the actual raw impact. So so I think we faster than it should be in that portfolio. And this is about balancing how much we teach all of these things and what the world should have.
+00:46:04
+Diverse skills would be sad if, you know, everyone just learned one narrow thing. Yeah. The diversity will help you discover the right tool for the job. What is the most beautiful, surprising or inspiring idea in deep learning to you? Something that captivated your imagination? Is it the scale that could be the performance achieved scale or is there other ideas?
+00:46:29
+I think that if my only job was being an academic researcher have an unlimited budget and you didn't have to worry about short term impact and only focus on long term impact, I spent all my time doing research on unsupervised learning. I still think unsupervised learning is a beautiful idea. At both this past year and I came out, I was attending workshops or listening to various talks about. Self supervised learning, which is one vertical segment, maybe a sort of unsupervised learning that I'm excited about, maybe just to summarize the idea, I guess you know the idea of describing me now, please.
+00:47:06
+So here's an example. Self-service learning. Let's say we grab a lot of unlabeled images off the Internet. So with infinite amount of this type of data, I want to take each image and rotate it by a random multiple of 90 degrees. And then I'm going to train a supervised neural network to predict what was the original orientation. So it has to be rotated 90 degrees, 27 degrees or zero degrees. So you can generate an infinite amount of label data because you rotated the image.
+00:47:36
+So, you know, what's the structure of label. And so various researchers have found that by taking unlabeled data and making up label data sets and training a large neural network on these tasks, you can then take the hit in their representation and transfer it to a different task very powerfully on learning where the beddings, where we take a sentence to either work, predict the missing work, which is how we learn. One of the ways we were then beddings is another example.
+00:48:05
+And I think there's now this portfolio of techniques for generating these made up tasks. Another one called Jigsaw would be if you take an image, cuts it up into a three by three grit. So like a nine zero three puzzle piece, jump up to nine pieces and have a neuron. That's where I predict which of the nine factorial, possible permutations. It came from so many groups, including you Open the Eye. A PDP has been doing some work on this to Facebook, Google brain.
+00:48:36
+I think the My Aravinda all has great work on the S.P.C.A. So many teams are doing exciting work and I think this is a way to generate infinitely voltmeter. And I find this very exciting piece of the long term.
+00:48:52
+You think that's going to unlock a lot of power in machine learning systems? Is this kind of unsupervised learning?
+00:48:59
+I don't think there's the whole enchilada. I think it's just a piece of it. And I think this one piece on self supervised learning is starting to get traction. We're very close to it being useful. Well, within that is really, really useful. I think we're getting closer and closer to just having a significant real world impact, maybe in complete division and video. But I think this concept and I think there'll be other concepts around it, you know, other unsupervised learning things that I worked on, they've been excited about.
+00:49:29
+I was really excited about space coding. And I see a still feature analysis. I think all of these are ideas that various of us were working on about a decade ago before we all got distracted by how well supervised learning was doing work.
+00:49:43
+Yeah, that's a good return. We return to the fundamentals of representation, learning that that really started this movement of deep learning.
+00:49:51
+I think there's a lot more work that one could explore around the stream of ideas and other ideas to come with better algorithms.
+00:49:57
+So if we could return to maybe talk quickly about the specifics of deep learning that I had, the deep learning specialization, perhaps, how long does it take to complete the course, would you say?
+00:50:10
+The official length of the device specialization is, I think, 16 weeks, so about four months, but it's go at your own pace. So if you subscribe to the different specialization, there are people that finish that in less than a month by working more intensive study more intensively. So it really depends on on the individual what created the specialization. We wanted to make it very accessible and very affordable. And with, you know, Kazarian education mission, the one thing that's really important to me is that if there's someone for whom paying anything is a is a financial hardship, then just apply for financial aid and get it for free.
+00:50:51
+If you were to recommend a daily schedule for people in learning, whether it's through the deep learning that as specialization or just learning in the world of deep learning, what would you recommend how they go about day to day sort of specific advice about learning about their journey in the world of deep learning, machine learning?
+00:51:12
+I think I'm getting the habit of learning is key and that means regularity. So, for example, we send out our weekly newsletter, The Batch, every Wednesday so people know it's coming Wednesday. You can spend a little bit of time on Wednesday catching up on the latest news through the batch on the on on Wednesday. And for myself, I've picked up a habit of spending some time every Saturday and every Sunday reading or studying. And so I don't wake up on Saturday and have to make a decision.
+00:51:45
+Do I feel like reading or studying today or not? It's just it's just what I do. And the fact as a habit makes it easier. So I think if someone can get in that habit. It's like, you know, just like we brush our teeth every morning. I don't think about it if I thought about this a little bit annoying to spend two minutes doing that. But it's a habit that it takes no cognitive load but a so much harder we have to make a decision every morning.
+00:52:10
+So and actually that's the reason why we're the same thing every day as well. It's just one less decision. I just get out there where I'm sure. So I think if you get that habit, that consistency of studying, then that she feels easier.
+00:52:23
+So, yeah, it's kind of amazing in my own life. Like, I play guitar every day for the Air Force myself to at least for five minutes play guitar. It's it's a ridiculously short period of time. But because I've gotten into that habit, it's incredible what you can accomplish in a period of a year or two years. You can become, you know, exceptionally good at certain aspects of a thing by just doing it every day for a very short period of time.
+00:52:49
+It's kind of a miracle that that's how it works. It adds up over time. Yeah. And I think this is often not about the bursts of sustained effort and all nighters, because you can only do that a limited number of times is the sustained effort over a long time. I think you're reading through research papers is a nice thing to do. But the power's not reading to research papers, is reading through research papers a week for a year, then you've read 100 papers and you actually learn a lot.
+00:53:17
+We read a bunch of papers, so regularity and making learning a habit.
+00:53:23
+Divx do you have general other study tips for particularly deep learning that people should in their process of learning? Is there some kind of recommendation that tips you have as they learn?
+00:53:37
+One thing I still do when I'm trying to study something really deeply is take handwritten notes. It varies. I know there are a lot of people that take the deep learning courses doing a commute's or something where it may be more awkward to take notes. So I know it may not work for everyone, but when I'm taking courses on Coursera and I still take some every now and then, the most recent I took was a was a course on clinical trials because I was interested about that.
+00:54:03
+I got out my little Moleskine notebook and I was sitting at my desk, was just taking down notes of what the instructor was saying and that we know that that act of taking notes, preferably handwritten notes, increases retention.
+00:54:17
+So as you're sort of watching the video, just kind of pausing maybe and then taking the basic insights down on paper. Yeah. So there have been a few studies. If you search online, you find some of these studies that are taking handwritten notes because handwriting is slower, as we've seen just now. It causes you to recode the knowledge in your own words more. And that process of recording promotes long term retention distance as opposed to typing, which is fine.
+00:54:46
+Okay, typing is better than nothing and taking a class and not nearly as they're not getting any kind of law. But comparing handwritten notes and typing, you can usually type faster for all the people that you can hand radios. And so when people type, they're more likely to transcribe verbatim what they heard and that reduces the amount of recording and that actually results in less long term retention.
+00:55:09
+I don't know what the psychological effect there is, but so true, there's something fundamentally different about writing and handwriting. I wonder what that is. I wonder if it is as simple as just the time it takes to write a slower.
+00:55:21
+Yeah, and because because you can't write as many words, you have to take what they said and summarize it into fewer words. And that summarization process requires deeper processing of the meaning, which then results in better retention. That's fascinating. And I spent I think because of course are spent so much time studying pedagogy that you have a passion that I really love, learning how to more efficiently help others learn. Um, yeah. One of the things I do often creating videos or when we write the batch is I try to think is one minute spent of us going to be a more efficient learning experience than one minute spent anywhere else.
+00:56:01
+And we reach out to, you know, make a time efficient for the learners because everyone's busy.
+00:56:07
+So when when we're editing them, I often tell my teams every work needs to fight for his life and he can deliver where this is the lead to not wait. Let's not waste than there in this time.
+00:56:17
+Oh, that's so it's so amazing that you think that way because there is millions of people that are impacted by your teaching. And of that, one minute spent has a ripple effect right through years of time, which is just fascinating.
+00:56:28
+You talk about how does one make a career out of an interest in deep learning, give advice for people. We just talked about that at the beginning, early steps. But if you want to make it an entire life's journey or at least a journey of a decade or two, how did it how do you do it? So most important thing is to get started. Right. And I think in the early part of a career coursework like the. Specialization is a very efficient way to master this material, so because, you know, instructors beyond me or someone else or, you know, Laurence Maroney, teachers, I tend to specialization and the other things we're working on spend effort to try to make it time efficient.
+00:57:13
+For you to learn new concepts of coursework is actually a very efficient way for people to learn concepts at the beginning parts of break into new field. In fact, one thing I see at Stanford, some of my Puti students, when they jump in the research right away and actually tend to say, look, in your first couple years of didn't spend time taking courses because it lays the foundation is fine. If you are less productive in your first couple of years, you'd be better off in the long term beyond a certain point.
+00:57:42
+This materials that doesn't exist in courses because it's too cutting edge the courses we created as a practical experience that were not yet that good as teaching in the course. I think after exhausting the efficient coursework, then most people need to go on to either ideally work on projects and then maybe also continue their learning by reading blog polls and research papers and things like that. Doing is really important. And again, I think it's important to start small and just do something.
+00:58:15
+Today you read about deep learning. If you say, oh, all these people doing such exciting things, whether I'm not putting on their own network, they change the world, then what's the point? Well, the point is sometimes building that tiny neural network, be it a mess or a greater fashion amnesty to whatever, doing your own fun hobby project, that's how you gain the skills to let you do bigger and bigger projects. I find this to be true at the individual level and also at the organizational level.
+00:58:41
+For a company to become part of the machine learning. Sometimes the right thing to do is not to tackle. The giant project is instead to do the small project that lets the organization learn and then build out from there.
+00:58:52
+But it's true for individuals and for and for companies to taking the first step and then taking small steps is the key. Should students pursue or do you think you can do so much? That's one of the fascinating things in the machine learning. You can have so much impact without ever getting a Ph.D.. So what are your thoughts? Should people go to grad school?
+00:59:15
+Should people get a priority? I think that there are multiple good options of doing this. Could be one of them. I think that if someone's admitted to a top 50 program, you know, that might Stanford top schools, I think that's a very good experience. Or if someone gets a job at a top organization at the top of the team, I think that's also a very good experience. There are some things you still need to do. If someone's aspiration is to be a professor at the top academic university, you just need to do that.
+00:59:48
+But if your goal is to start a company, you build a company to create technical work, I think is a good experience. But I would look at the different options available to someone near where the places where you can get a job, where the pieces together run around and kind of weigh the pros and cons of those.
+01:00:04
+So just to linger on that for a little bit longer. What final dreams and goals do you think people should have? So, um, what options should they express? You can work in industry. So for a large company like Google, Facebook, Bida, all these large sort of companies already have huge teams of machine learning engineers. You can also do with an industry, sort of more research groups that kind of like Google Research, Google Brain. Then you can also do, like we said, a professor is in academia.
+01:00:37
+And what else? Oh, you can sort of build your own company. You can do a startup. Is there anything that stands out between those options or are they all beautiful, different journeys that people should consider?
+01:00:50
+I think the thing that affects your experience more is less. Are you in this company versus that company or academia versus industry? I think the thing that affects your Moses, who are the people you're interacting with, you know, on a daily basis. So even if you look at some of the large companies, the experience of individuals and different teams is very different. And what matters most is not the logo above the door. When you walk into the giant building every day, what matters most is who are the ten people?
+01:01:17
+Who are the 30 people you interact with every day? So I tend to advise people if you get a job from out from a company, ask, who is your manager? Who are your peers? Who are you going to talk to? We're all social creatures. We tend to, you know, become more like the people around us. And if you're working with great people, you will learn faster. Or if you get admitted, if you get a job at a great company or a great university, maybe the logo you walk and you know, it's great, but you're actually stuck in some team doing really work that doesn't excite you.
+01:01:48
+And that's actually a really bad experience. So this is true of universities and for. Companies for small companies, you can kind of figure out who you'd be working quite quickly, and I tend to advise people if a company refuses to tell you who you work with, someone say, oh, join us. The rotation system will figure it out.
+01:02:06
+I think that that's a worrying answer because it because it means you may not get sent, you may not actually get to to team with great peers and great people that work with. It's actually a really profound advice that we kind of sometimes sweep. We don't consider too rigorously or carefully. The people around you are really often, especially when you accomplish great things.
+01:02:30
+It seems that great things are accomplished because of the people around you.
+01:02:34
+So that's a it's not about the way whether you learn this thing or that thing or, like you said, the logo that hangs up top. It's the people that's fascinating. And it's such a hard search process of finding just like finding the right friends and somebody to get married with and that kind of thing.
+01:02:54
+It's a very hard search process that people search problem.
+01:02:58
+Yeah, but I think when someone interviews, you know, at the university or the research lab or the large corporation, it's good to insists on just asking who are the people, who is my manager? And if you refuse to tell me, I'm going to think, well, maybe that's because you don't have a good answer. I may not be someone I like. And if you don't particularly connect something feels off with the people, then don't stick to it.
+01:03:23
+You know, that's a really important signal to consider. Yeah, yeah.
+01:03:26
+And I see in my Stanford course. Yes. 230, I suppose in 89, I think I gave like an hour long talk on career advice, including on the job search process and to yourself so that you can find those videos on the Internet providers appoint people to them. Beautiful. So the A.I. Fund helps startups get off the ground. Or perhaps you can elaborate on all the fun things that's involved with. What's your advice and how does one build a successful startup?
+01:03:59
+You know, conversely, a lot of startup failures come from building products that no one wanted. So when you know, cool technology, but who's going to use it? So I think I tend to be very outcome driven and been customer obsessed.
+01:04:17
+Ultimately, we don't get to vote if we succeed or fail is only the customer that they are the only one that gets us thumbs up or thumbs down votes in the long term. In the short term, you know, there are various people who get various votes, but in the long term, that's what really matters.
+01:04:33
+So as you do Disturbia to constantly ask the question, well, the customer gives a give a thumbs up on this. I think so. I think startups that are very customer focused customer says deeply understand the customer and are oriented to serve the customer are more likely to succeed with a proposal, although I think all of us should only do things that we think create social good in the world forward. So I personally don't want to build addictive digital products. Just so I'm as you know, there are things that that could be lucrative.
+01:05:06
+They won't do. But if we can find ways to serve people in meaningful ways, I think those can be those can be great things to do, either in the academic setting or in a corporate setting or startup setting.
+01:05:20
+So can you give me the idea of why you started the A.I. Fund?
+01:05:25
+I remember when I was leading the AI Group at Baidu, I had two jobs to pass.
+01:05:32
+A major one was to build an engine to support existing businesses. And that was running just just performed by of the second part of my job at the time, which is to try to systematically initiate new lines of businesses using the company's A.I. capabilities. So, you know, the self-driving car team came out of my group, the Smart Speaker team, similar to what is Amazon echo Alexa in the U.S., but we announced it before Amazon did. So I do wasn't following I wasn't following Amazon that that came out of my group.
+01:06:06
+And I found that to be actually the most fun part of my job. So what I want to do was to build the fund as a startup studio to systematically create new startups from scratch with all the things we can now do. If I think the ability to build new teams to go after this rich space of opportunities is a very important way to very important mechanism to get these projects done that I think will move the world forward. So I've been fortunate to build a few teams that had a meaningful, positive impact and I felt that we might do this in a more systematic, repeatable way.
+01:06:45
+So a startup studio is a relatively new concept. There are maybe dozens of startup studios right now, but.
+01:06:54
+If you like all of us, many teams are still trying to figure out how do you systematically build companies with a high success rate? So I think even though my venture capital friends are seen to be more and more building companies rather than invest in companies, I find the fascinating thing to do to figure out the mechanisms by which we could systematically build successful teams, successful businesses in areas that we find meaningful.
+01:07:20
+So Startup Studio is something is a place and a mechanism for startups to go from zero to success to try to develop a blueprint is actually a place for us to build startups from scratch. So we often bring in founders and work with them or maybe even have existing ideas that we match founders with. And then this launches, you know, hopefully into successful companies.
+01:07:48
+So how close are you to figuring out a way to automate the process of starting from scratch and building successful startups?
+01:07:57
+Yeah, I think we've we've been constantly improving and iterating on our processes for how we do that.
+01:08:05
+So things like, you know, honey, customer calls we need to make in order to get customer validation. How do you make sure that the technology can be built?
+01:08:12
+Quite a lot of our businesses need cutting edge machine learning algorithm. So kind of our rules are developed in the last one or two years. And even if it works in a research paper, it turns out the production is really high. There are a lot of issues for making these things work in the real life that are not widely actress in academia. So how do we validate that this is actually doable? How did the team get the specialized domain knowledge being an education or health care or whatever that you are focusing on?
+01:08:40
+So I think we're actually getting we've been getting much better at giving the entrepreneurs a high success rate. But I think we're still I think the whole world is still in the early phases picking this up.
+01:08:52
+Where do you think there is some aspects of that process that are transferable from one startup to another to another to another? Yeah, very much so. You know, starting a company to most entrepreneurs is a is a really lonely thing. And I've seen so many entrepreneurs not know how to make certain decisions, like when do you need to. How do you do B2B sales if you don't know that this is really hard or how do you market this efficiently other than your buying ads, which is really expensive?
+01:09:25
+Are there more efficient tactics of that or are for a machine learning project? You know, basic decisions can change the course of weather machine learning, product works or not. And so there are so many hundreds of decisions that entrepreneurs need to make and making a mistake and a couple of key decisions can have a huge impact on the fate of the company. So I think it's another studio provides a support structure that makes starting a company much less of a lonely experience.
+01:09:53
+And also, when facing with these key decisions, like trying to hire your first VP of engineering, what's the selection criteria? How do you sort of I heard this person or not by helping, but by having an ecosystem around the entrepreneurs, the founders to help.
+01:10:12
+I think we helped them at the key moments and hopefully cyclically make them more enjoyable and then higher success rate for somebody to brainstorm with in these very difficult decision points and also to help them recognize what they may not even realize is a key decision points. That's the first and probably the most important part.
+01:10:34
+Yeah, I say one other thing I think of building companies is one thing, but I feel like it's really important that we build companies that move the world forward. For example, within their fan team, that was once an idea for a new company that if it had succeeded, would have resulted in people watching a lot more videos. In a certain narrow vertical type of video I looked at, the business case was fine, the revenue case was fine.
+01:11:04
+But I looked I just said, I don't want to do this. You know, I don't actually just want to have a lot more people watch. This type of video was an education that was educational. And so and so I got the idea on the basis that I didn't think it would actually help people.
+01:11:19
+So whether building companies or work of enterprises or doing personal projects, I think it's up to each of us to figure out what's the difference, who want to make in the world with learning.
+01:11:32
+I you help already established companies grow their AI and machine learning efforts. How does a large company integrate machine learning into their efforts?
+01:11:42
+AI is a general purpose technology and I think it will transform every industry. Our community has already transformed to a large extent a software Internet sector, most software into companies. Outside the top five or six or three or four already have reasonable machine learning capabilities or getting there is the room for improvement. But when I look outside the software into that sector, everything from manufacturing, agriculture, health care, logistics, transportation, there's so many opportunities that very few people are working on.
+01:12:15
+So I think the next wave, I must also transform all of those other industries. There was a McKinsey study estimating 13 trillion dollars of global economic growth to U.S. GDP is 19 trillion dollars or 13 trillion is a big number or Pewaukee estimate 16 trillion dollars. So whatever numbers is large. But here's the thing to me was a lot of that impact would be outside the software into that sector. So we need more teams to work with these companies to help them adopt by.
+01:12:47
+And I think this is one of things they'll make, you know, help drive global economic growth and make humanity more powerful.
+01:12:53
+And like you said, the impact is there. So what are the best industries, the biggest industries where I can help perhaps outside the software tech sector? Frankly, I think as all of them are, some of the ones I'm spending a lot of time on are manufacturing, agriculture, looking to health care, for example, in manufacturing, we do a lot of work in visual inspection where today there are people standing around using the eye, human eye to check if you know this positive part of the smartphone or this thing has a strache or dance or something in it, we can use a camera to take a picture, use a Alver of deep learning and other things to check Chekov's effective or not, and thus help factories improve youth and improve quality and improve throughput.
+01:13:40
+It turns out the practical problems we run into are very different than the ones you read about in most research papers. The data says they're really small, so we face maldita problems in the factories, keep on changing the environment so it works well on your test set. But guess what? You know, the something changes in the factory. The lights go on or off. We see we there was a factory in which burnt through the factory and put on something.
+01:14:06
+And so that, you know, so that change stuff and so increasing our robustness to all the changes happen. The factory factory runs like practical problems that that are not as widely discussed in academia. And it's really fun kind of being on the cutting edge, solving these problems before, you know, maybe before many people are even aware that there is a problem there.
+01:14:27
+And that's such a fascinating space. You're absolutely right. But what is the first step that a company should take? It's just scary leap into this new world of going from the human eye, inspecting to digitizing that process, having a camera, having an algorithm. What's the first step like? What's the early journey that you recommend that you see these companies taking?
+01:14:50
+I publish a document called The Transformation Playbook that's online and talked briefly for everyone course on Coursera about the long term journey that companies should take. But the first step is actually to start small. I've seen a lot more companies fail by starting to bake than by starting to small to even Google your. Most people don't realize how hard it was and how controversial was in the early days. So when I started Google Brain, it was controversial. You know, people thought deep learning leeriness tried.
+01:15:24
+It didn't work. Why would you want to do deep learning? So my first internal accustoming within Google was the Google Speech team, which is not the most lucrative project can Google, but not the most important. It's not Web search or advertising, but by starting small, my team helped the speech team build a more accurate speech recognition system and discourse, their peers, other teams to start up my favorite deep learning. My second internal customer was the Google Maps team, where we use computer vision to host numbers from Bessie Street View images to more accurately locate houses within Google Maps.
+01:16:01
+So improve the quality of your data. And there's only after those two successes that I then start to the most serious conversation with a Google ads team.
+01:16:10
+And so there's a ripple effect that you showed that it works in these in these cases and then it just propagates through the entire company that this this thing has a lot of value in use for us.
+01:16:20
+I think the early, small scale projects, it helps the teams gain favor, but also helps the teams learn what these technologies do. I still remember when our first GPU server, it was a server under some guy's desk and you know, and then that taught us early important lessons about how do you have multiple users share a set of CPUs, which is really not obvious at the time. But those early lessons were important. We learn a lot from that first GPU server that later helped the teams think through how the scale with up to to much larger deployments.
+01:16:54
+Are there concrete challenges that companies face that the U.S. is important for them to solve? I think building and deploying machine learning systems is hard. There's a huge gulf between something that works and a dupatta notebook on your laptop versus something that runs the production deployment, setting in a factory or a cultural plant or whatever. So I see a lot of people, you know, just having to work on your laptop and say, wow, look what I've done.
+01:17:19
+And that's that's that's great. That's hot. That's a very important first step. But teams underestimate the rest of the steps needed. So, for example, I've heard this exact same conversation between a lot of machine only people and business people. The machine, their only person says, look, my algorithm does well on the test set. And the Clinton said, I did the peak and the machine and the business person says, thank you very much, but your room sucks.
+01:17:45
+It doesn't work. And the machine only person says, no, wait, I did well on the test set. And I think there is a gulf between what it takes to do well in the test set on your hard drive versus what it takes to work well in a deployment setting some some common problems, robustness and generalization, you know, deploy something, the factory, maybe they chop down a tree outside the factory so that tree no longer covers a window and the lighting is different.
+01:18:13
+So the tax changes and in machine learning and especially in academia, we don't know how to deal with test distributions are dramatically different than the training set distribution. This research, the stuff like domain annotation transfer, learning that the people working on it, but we're really not good at this. So how do you actually get this to work? Because you tested distribution. That's going to change. And I think also, if you look at the number of lines of code in the software system, the machine learning model is maybe five percent or even fewer relative to the entire software system you need to build.
+01:18:52
+So how do you get all that work done? They make it reliable and systematic. It's a good software. Engineering work is fundamental here to building a successful small machine learning system.
+01:19:03
+Yes, and the software system needs to interface with people's workloads. So machine learning is automation on steroids. If we take one tasks out of many tasks that the factory. So a factory does lots of things. One tasks visual inspection. If we automate that one task, it can be really valuable. But you may need to redesign a lot of other tasks around that one task. For example, say the machine learning algorithm says this is defective. What are you supposed to do with youth or other way to get a human to?
+01:19:31
+Do you want to rework it or fix it? So you need to redesign a lot of tasks around that thing. You've now automated. So planning for the change management and making sure that the software you write is consistent with the new workflow and you take the time to explain to people when this happens. I think what Lanny has become good at and I think we learn by making missteps and new painful experiences for mining, what would become good at is working with our partners to think through all the things beyond just the machine learning model that you put a notebook to build the entire system, manage the change process and figure out how to deploy this in a way that has an actual impact.
+01:20:14
+The processes that the large software tech companies use for deploying don't work for a lot of other scenarios. For example, when I was leading, you know, Losh speech teams, if the speech recognition system goes down, what happens, what alarms goes off, and then someone like me would say, hey, you, twenty engineers, please fix this. But if you have a system go down the factory, there are not twenty machine engineers sitting around.
+01:20:39
+You can pay your duty and have them fix it. So how do you deal with the maintenance or the audit off? So the M.O. office or the other aspects of this? So these are concepts that I think Lanny and a few other teams on the cutting edge are, but we don't even have systematic terminology yet to describe some of the stuff we do because I think we're inventing and on the fly.
+01:21:02
+So you mentioned some people are interested in discovering mathematical beauty and truth in the universe and you're interested in having a big positive impact in the world. So let me ask the two are not inconsistent.
+01:21:14
+No, they're all together. I'm only half joking because you're probably interested a little bit in both. But let me ask a romanticised question. So much of the work, your work and our discussion today has been an applied I maybe even called narrow AI, where the goal is to create systems that automate some specific process that adds a lot of value to the world. But there's another branch of AI, starting with Alan Turing, the kind of dreams of creating a human level or superhuman level intelligence.
+01:21:45
+Is there something you dream of as well? Do you think we human beings love or build a human level intelligence or superhuman level intelligence system? I would love to get the ajai, and I think humanity will, but whether it takes 100 years or 500 or 5000, I find hard to estimate.
+01:22:05
+Do you have some folks have worries about the different trajectories that path would take, even existential threats of an aging system? Do you have such concerns, whether in the short term or the long term? I do worry about the long term fate of humanity. I do wonder as well. I do worry about overpopulation on the planet Mars, just not today. I think there will be a day when maybe, maybe someday in the future massively polluted. There are these children dying.
+01:22:39
+And some of the back at this video said, Andrew, how is it so heartless? You think about all these children dying the planet Mars. And I apologize to the future viewer. I do care about the children, but I just don't know how to productively work on that today.
+01:22:52
+Your picture will be in the dictionary for the people who are ignorant about the overpopulation on Mars. Yes. So it's a long term problem. Is there something in the short term we should be thinking about in terms of aligning the values of our systems with the values of us humans, sort of something that still Russell and other folks are thinking about as this system develops more and more, we want to make sure that it represents the better angels of our nature, the the ethics, the values of our society.
+01:23:26
+You know, if you think self-driving car is the biggest problem with social cause, it's not that there's some trolley dilemma and you teach that. So you know how many times when you are driving your car that you face this moral dilemma? Why would I crash into. So I think it's often cars will run with that problem roughly as often as we do when we drive our cars. The biggest problem, Saajan cars is when there's a big white truck across the road.
+01:23:53
+And what you should do is break and not crash into it. And Sushant car fails and it crashes into it. So I think we need to solve that problem for us.
+01:24:00
+I think the problem was these discussions about A.I., you know, alignment's, the paperclip problem is that is a huge distraction from the much harder problems that we actually need to address today. Some problems in just they I think bias is a huge issue. I worry about wealth inequality. The Internet are causing an acceleration of concentration of power because we can now centralize data using how to process it. And so industry after industry with the fact every industry. So the Internet industry has a lot of winner take most of winner take all dynamics, both with, in fact, all these other industries.
+01:24:41
+So also giving these other industries, when they take most of them, to take all flavors to look at what Uber and Lyft did to the taxi industry. So we're doing this type of thing to Lourenço this. So we're creating tremendous wealth, but how do we make sure that the wealth is fairly shared? I think that. And then how do we help people whose jobs are displaced? You know, I think education is part of it. There may be even more that we need to do than education.
+01:25:09
+I think bias is a serious issue. There are various uses of I like effects being used for various nefarious purposes.
+01:25:17
+So I worry about some teams, maybe accidentally and I hope not deliberately making a lot of noise about things that problems in the distant future rather than focusing on substance and much harder problems. Yeah. Overshadow the problems that we have already today that are exceptionally challenging, like you said, and even the silly ones, but the ones that have a huge impact, which is the lighting variation outside of your factory window, that that ultimately is what makes the difference between, like you said, the Jupiter notebook and something that actually transforms an entire industry potentially.
+01:25:54
+Yeah, and I think and just the some companies, the regulator comes to you and says, look, your product is messing things up. Fixing it may have a revenue impact. Was much more fun to talk to them about how you promise not to wipe out humanity at this interface. They're actually really hard problems we face.
+01:26:13
+So your life has been a great journey from teaching to research to entrepreneurship to two questions. One, are there regrets moments that if you went back, you would do differently? And two, are there moments you're especially proud of, moments that made you truly happy?
+01:26:30
+You know, I've made so many mistakes. It feels like every time I discover something, I go, why didn't I think of this, you know, five years earlier or even ten years earlier? And us and then sometimes I read a book and I go, I wish I read this book. Ten years ago, my life would've been so different. Although that happened recently and then I was thinking, if only I read this book when we were starting there, I could have been so much better.
+01:27:01
+But I discovered the book had not yet been written or starting out, Sarah, so that maybe it'd be better. But I find it the process of discovery. We keep on finding out things that seem so obvious in hindsight, but always takes us so much longer than than I wish to figure it out.
+01:27:20
+So on the second question, are there moments in your life that if you look back that you're especially proud of or especially happy that filled you with happiness and fulfillment?
+01:27:35
+Well, two answers. One, that's my daughter Nelva. Yes, of course. She's lying there with how much time I spent for. I just can't spend enough time with her. Congratulations, by the way. Thank you. And then second is helping other people. I think to me, I think the meaning of life is helping others achieve whatever their dreams and then also to try to move the world forward by making humanity more powerful as a whole.
+01:28:01
+So the times that I felt most happy or most proud was when I felt someone else allowed me the good fortune of helping them a little bit on the path to their dreams.
+01:28:14
+I think there's no better way to end it than talking about happiness and the meaning of life. So it's a huge honor for me and millions of people. Thank you for all the work you've done. Thank you for talking to.
+01:28:24
+Thank you so much. Thanks. Thanks for listening to this conversation with Andrew NG and thank you to our presenting sponsored cash app Download. It is called Leks Podcast. You'll get ten dollars and ten dollars will go to First, an organization that inspires and educates young minds to become science and technology innovators of tomorrow. If you enjoy this podcast, subscribe on YouTube, give it five stars, an Apple podcast, support and Pichon or simply connect with me on Twitter at LAX Friedman.
+01:28:54
+And now let me leave you with some words of wisdom from Andrew NG. Ask yourself if you're working on succeeds beyond your wildest dreams, which you have significantly helped other people. If not, they keep searching for something else to work on, otherwise you're not living up to your full potential. Thank you for listening and hope to see you next time.
