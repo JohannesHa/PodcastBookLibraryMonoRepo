@@ -7,8 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-YT_API_KEY = "AIzaSyBL84kZikSPm_vZ6l13RuUYriuRP47peGM"
-# PLAYLIST_ID = "PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4"
+YT_API_KEY = os.getenv('YT_API_KEY')
 
 logging.getLogger().setLevel(logging.INFO)
 
